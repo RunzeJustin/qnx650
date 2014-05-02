@@ -1,0 +1,108 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="task" />
+      <meta name="DC.Title" content="Importing a C/C++ Project from SVN" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/cvs_Importing_code_into_the_IDE_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="ImportingCPPFromSVN" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Importing a C/C++ Project from SVN</title>
+   </head>
+   <body id="ImportingCPPFromSVN"><a name="ImportingCPPFromSVN" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Importing a C/C++ Project from SVN</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <div class="section">
+            
+            <p>To check out an existing C/C++ project (either a QNX C, QNX C++, C, or C++ project) from the SVN repository into your workspace:
+               
+               
+               
+            </p>
+            
+            
+         </div>
+         
+         
+         <ol>
+            <li class="stepexpand">
+               <span>In the SVN Repositories view, right-click a project and select <span class="uicontrol">Check Out</span> from the menu. </span>
+               The IDE creates a project with the same name as the SVN module in your workspace. The project is automatically recognized
+               as a C/C++ or QNX C/C++ project (if the project has <span class="filepath">.project</span> and <span class="filepath">.cproject</span> files).
+               
+            </li>
+            <li class="stepexpand">
+               <span>If the project is a QNX project: </span>
+               
+               <ol type="a">
+                  <li class="substepexpand">
+                     <span>Right-click the new project in the Project Explorer view and select <span class="uicontrol">Properties</span>. </span>
+                     
+                  </li>
+                  <li class="substepexpand">
+                     <span>Click the <span class="uicontrol">Build Variants</span> tab, which shows a warning: </span>
+                     
+                     
+                     <p>
+                        <span><img src="../images/2Fcvs_Importing_CPP_from_SVN.xml_d36069e81.jpg" alt="At least one platform should be selected" /></span>
+                        
+                     </p>
+                     
+                     
+                     
+                  </li>
+                  <li class="substepexpand">
+                     <span>Select the build variants that are already present in the project's folder structure. </span>
+                     
+                  </li>
+                  <li class="substepexpand">
+                     <span>Click <span class="uicontrol">OK</span>.</span>
+                     
+                  </li>
+               </ol>
+               
+               
+            </li>
+         </ol>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/cvs_Importing_code_into_the_IDE_.html" shape="rect">Importing code into the IDE</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

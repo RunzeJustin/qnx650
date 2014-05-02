@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-Name: %pluginName
+Bundle-Activator: com.qnx.tools.ide.updater.QconnUpdaterPlugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Vendor: %providerName
+Bundle-ManifestVersion: 2
+Bundle-Localization: plugin
+Bundle-SymbolicName: com.qnx.tools.ide.updater;singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.up
+ date.configurator,org.eclipse.update.core,org.eclipse.update.schedule
+ r,org.eclipse.update.ui,org.eclipse.ui.ide,com.qnx.tools.utils,com.qn
+ x.tools.ide.core,org.apache.ant,org.eclipse.core.resources;bundle-ver
+ sion="3.4.2"
+Bundle-Version: 4.7.0.201006232051
+Eclipse-LazyStart: true
+
+

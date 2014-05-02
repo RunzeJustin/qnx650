@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Character Devices">
+      <topic label="About the Character DDK" href="about.html">
+          <topic label="What you'll find in this guide" href="about.html#In_this_guide"/>
+          <topic label="Assumptions" href="about.html#assumptions"/>
+          <topic label="Building DDKs" href="about.html#about"/>
+          <topic label="Typographical conventions" href="about.html#Typographical_conventions">
+            <topic label="Note to Windows users" href="about.html#WINDOWSNOTE"/>
+            <topic label="Navigation buttons" href="about.html#Navigation"/>
+          </topic>
+          <topic label="Technical support" href="about.html#Support"/>
+      </topic>
+      <topic label="Character I/O Architecture" href="architecture.html">
+          <topic label="Overview" href="architecture.html#Overview"/>
+          <topic label="DDK source code" href="architecture.html#DDKSource"/>
+      </topic>
+      <topic label="8250 Serial Driver" href="ser8250.html">
+          <topic label="Creating a serial driver" href="ser8250.html#Creating"/>
+          <topic label="Registers" href="ser8250.html#Registers"/>
+          <topic label="Source code" href="ser8250.html#SourceCode">
+            <topic label="Interrupts" href="ser8250.html#Interrupts"/>
+            <topic label="Functions" href="ser8250.html#Functions">
+              <topic label="create_device" href="ser8250.html#create_device"/>
+              <topic label="enable_device" href="ser8250.html#enable_device"/>
+              <topic label="options" href="ser8250.html#options"/>
+              <topic label="query_default_device" href="ser8250.html#query_default_device"/>
+              <topic label="ser_intr" href="ser8250.html#ser_intr"/>
+              <topic label="ser_stty" href="ser8250.html#ser_stty"/>
+              <topic label="set_port" href="ser8250.html#set_port"/>
+              <topic label="sys_ttyinit" href="ser8250.html#sys_ttyinit"/>
+              <topic label="tto" href="ser8250.html#tto"/>
+            </topic>
+          </topic>
+      </topic>
+      <topic label="Character I/O Library" href="lib.html">
+          <topic label="iochar_regdrv_power" href="lib/iochar_regdrv_power.html">
+            <topic label="Description:" href="lib/iochar_regdrv_power.html#id7"/>
+          </topic>
+          <topic label="iochar_send_event" href="lib/iochar_send_event.html">
+            <topic label="Description:" href="lib/iochar_send_event.html#id7"/>
+          </topic>
+          <topic label="kick" href="lib/kick.html">
+            <topic label="Description:" href="lib/kick.html#id7"/>
+          </topic>
+          <topic label="timer_queue" href="lib/timer_queue.html">
+            <topic label="Description:" href="lib/timer_queue.html#id7"/>
+          </topic>
+          <topic label="timer_remove" href="lib/timer_remove.html">
+            <topic label="Description:" href="lib/timer_remove.html#id7"/>
+          </topic>
+          <topic label="ttc" href="lib/ttc.html">
+            <topic label="Description:" href="lib/ttc.html#id7"/>
+          </topic>
+          <topic label="tti" href="lib/tti.html">
+            <topic label="Description:" href="lib/tti.html#id7"/>
+          </topic>
+          <topic label="tti2" href="lib/tti2.html">
+            <topic label="Description:" href="lib/tti2.html#id7"/>
+          </topic>
+          <topic label="tto_checkclients" href="lib/tto_checkclients.html">
+            <topic label="Description:" href="lib/tto_checkclients.html#id7"/>
+          </topic>
+          <topic label="tto_getchar" href="lib/tto_getchar.html">
+            <topic label="Description:" href="lib/tto_getchar.html#id7"/>
+          </topic>
+          <topic label="TTYCTRL" href="lib/ttyctrl.html">
+            <topic label="Description:" href="lib/ttyctrl.html#id5"/>
+          </topic>
+          <topic label="TTYDEV" href="lib/ttydev.html">
+            <topic label="Description:" href="lib/ttydev.html#id5"/>
+          </topic>
+          <topic label="TTYINIT" href="lib/ttyinit.html">
+            <topic label="Description:" href="lib/ttyinit.html#id5"/>
+          </topic>
+          <topic label="tx_inject" href="lib/tx_inject.html">
+            <topic label="Description:" href="lib/tx_inject.html#id7"/>
+          </topic>
+          <topic label="wait_add" href="lib/wait_add.html">
+            <topic label="Description:" href="lib/wait_add.html#id7"/>
+          </topic>
+          <topic label="wait_remove_rcvid" href="lib/wait_remove_rcvid.html">
+            <topic label="Description:" href="lib/wait_remove_rcvid.html#id7"/>
+          </topic>
+      </topic>
+</toc>

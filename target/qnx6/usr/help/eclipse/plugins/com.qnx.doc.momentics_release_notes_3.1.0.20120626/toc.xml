@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Release Notes">
+      <topic label="QNX(R) Software Development Platform 6.5.0 Service Pack 1: Release Notes" href="rel_6.5.0_SP1.html">
+          <topic label="Contents" href="rel_6.5.0_SP1.html#id3"/>
+          <topic label="What's new in QNX Neutrino 6.5.0 SP1?" href="rel_6.5.0_SP1.html#New_Neutrino">
+            <topic label="What's new: Kernel" href="rel_6.5.0_SP1.html#New_kernel"/>
+            <topic label="What's new: Startup" href="rel_6.5.0_SP1.html#New_startup"/>
+            <topic label="What's new: Core networking" href="rel_6.5.0_SP1.html#New_core_networking"/>
+            <topic label="What's new: Filesystems" href="rel_6.5.0_SP1.html#New_filesystems"/>
+            <topic label="What's new: Graphics" href="rel_6.5.0_SP1.html#New_Graphics">
+              <topic label="Advanced Graphics" href="rel_6.5.0_SP1.html#New_Advanced_Graphics"/>
+              <topic label="Composition Manager" href="rel_6.5.0_SP1.html#New_composition"/>
+              <topic label="Photon microGUI" href="rel_6.5.0_SP1.html#New_Photon"/>
+            </topic>
+            <topic label="What's new: Libraries and header files" href="rel_6.5.0_SP1.html#New_libraries"/>
+            <topic label="What's new: Drivers" href="rel_6.5.0_SP1.html#New_drivers">
+              <topic label="What's new: Audio device drivers (deva-*)" href="rel_6.5.0_SP1.html#New_deva"/>
+              <topic label="What's new: Block-oriented drivers (devb-*)" href="rel_6.5.0_SP1.html#New_devb"/>
+              <topic label="What's new: Character drivers (devc-*)" href="rel_6.5.0_SP1.html#New_devc"/>
+              <topic label="What's new: Flash filesystem drivers (devf-*)" href="rel_6.5.0_SP1.html#New_devf"/>
+              <topic label="What's new: Graphics drivers (devg-*)" href="rel_6.5.0_SP1.html#New_devg"/>
+              <topic label="What's new: Human interface device drivers (devh-*)" href="rel_6.5.0_SP1.html#New_devh"/>
+              <topic label="What's new: Input device drivers (devi-*)" href="rel_6.5.0_SP1.html#New_devi"/>
+              <topic label="What's new: Network drivers (devn-*, devnp-*)" href="rel_6.5.0_SP1.html#New_devn"/>
+              <topic label="What's new: USB drivers (devu-*)" href="rel_6.5.0_SP1.html#New_devu"/>
+            </topic>
+            <topic label="What's new: Documentation" href="rel_6.5.0_SP1.html#New_docs"/>
+            <topic label="What's new: I/O devices" href="rel_6.5.0_SP1.html#New_IO_devices"/>
+            <topic label="What's new: QNX Database (QDB)" href="rel_6.5.0_SP1.html#New_QDB"/>
+            <topic label="What's new: Security" href="rel_6.5.0_SP1.html#New_security"/>
+            <topic label="Using the VMware image of a QNX Neutrino runtime system" href="rel_6.5.0_SP1.html#Virtual_machine"/>
+            <topic label="What's new: Compiler, tools, and utilities" href="rel_6.5.0_SP1.html#New_compiler_and_tools"/>
+            <topic label="Debugging information for shipped binaries" href="rel_6.5.0_SP1.html#Debug_info"/>
+          </topic>
+          <topic label="Discontinued items" href="rel_6.5.0_SP1.html#Discontinued"/>
+          <topic label="Experimental items" href="rel_6.5.0_SP1.html#Experimental"/>
+          <topic label="Known issues" href="rel_6.5.0_SP1.html#BUGS">
+            <topic label="Known issues: Installing and uninstalling" href="rel_6.5.0_SP1.html#Issues_installing"/>
+            <topic label="Known issues: Kernel" href="rel_6.5.0_SP1.html#Issues_kernel"/>
+            <topic label="Known issues: Libraries and header files" href="rel_6.5.0_SP1.html#Issues_libraries"/>
+            <topic label="Known issues: Filesystems" href="rel_6.5.0_SP1.html#Issues_filesystems"/>
+            <topic label="Known issues: Startup" href="rel_6.5.0_SP1.html#Issues_startup"/>
+            <topic label="Known issues: Adaptive partitioning" href="rel_6.5.0_SP1.html#Issues_adaptive_partitioning"/>
+            <topic label="Known issues: Booting" href="rel_6.5.0_SP1.html#Issues_booting"/>
+            <topic label="Known issues: BSPs and DDKs" href="rel_6.5.0_SP1.html#Issues_BSPs_DDKs"/>
+            <topic label="Known issues: Compiler, tools, and utilities" href="rel_6.5.0_SP1.html#issues_compiler_and_tools"/>
+            <topic label="Known issues: Device drivers" href="rel_6.5.0_SP1.html#Issues_drivers">
+              <topic label="Audio device drivers (deva-*)" href="rel_6.5.0_SP1.html#Issues_Audio"/>
+              <topic label="Block-oriented drivers (devb-*)" href="rel_6.5.0_SP1.html#Issues_devb"/>
+              <topic label="Graphics drivers (devg-*)" href="rel_6.5.0_SP1.html#Issues_devg"/>
+              <topic label="Human interface device drivers (devh-*)" href="rel_6.5.0_SP1.html#Issues_devh"/>
+              <topic label="Network drivers (devn-*, devnp-*)" href="rel_6.5.0_SP1.html#Issues_devn"/>
+              <topic label="USB drivers (devu-*)" href="rel_6.5.0_SP1.html#Issues_USB_drivers"/>
+            </topic>
+            <topic label="Flash filesystems &amp; embedding" href="rel_6.5.0_SP1.html#Issues_flash"/>
+            <topic label="Known issues: IDE" href="rel_6.5.0_SP1.html#issues_ide">
+              <topic label="Known issues: General" href="rel_6.5.0_SP1.html#Issues_general"/>
+              <topic label="Known issues: Application Profiler perspective" href="rel_6.5.0_SP1.html#Issues_application_profiler"/>
+              <topic label="Known issues: System Profiler perspective" href="rel_6.5.0_SP1.html#Issues_system_profiler"/>
+              <topic label="Known issues: Memory Analysis perspective" href="rel_6.5.0_SP1.html#Issues_memory_analysis"/>
+              <topic label="Known issues: System Information perspective" href="rel_6.5.0_SP1.html#Issues_system_info"/>
+              <topic label="Known issues: System Builder perspective" href="rel_6.5.0_SP1.html#Issues_system_builder"/>
+              <topic label="Known issues: C/C++ development" href="rel_6.5.0_SP1.html#Issues_cdt"/>
+              <topic label="Known issues: Team/CVS" href="rel_6.5.0_SP1.html#Issues_team_cvs"/>
+              <topic label="Known issues: Debugging" href="rel_6.5.0_SP1.html#Issues_debug"/>
+            </topic>
+            <topic label="Known issues: Documentation" href="rel_6.5.0_SP1.html#Issues_docs"/>
+            <topic label="Known issues: Instant Device Activation" href="rel_6.5.0_SP1.html#Issues_IDA"/>
+            <topic label="Known issues: I/O devices" href="rel_6.5.0_SP1.html#Issues_IO"/>
+            <topic label="Known issues: Multimedia" href="rel_6.5.0_SP1.html#Issues_Multimedia"/>
+            <topic label="Known issues: Networking" href="rel_6.5.0_SP1.html#Issues_Network"/>
+            <topic label="Known issues: Graphics" href="rel_6.5.0_SP1.html#Issues_graphics">
+              <topic label="Advanced Graphics" href="rel_6.5.0_SP1.html#Issues_Advanced_Graphics"/>
+              <topic label="Photon microGUI" href="rel_6.5.0_SP1.html#Issues_Photon"/>
+            </topic>
+            <topic label="Known issues: Persistent Publish/Subscribe" href="rel_6.5.0_SP1.html#Issues_PPS"/>
+            <topic label="Known issues: Runtime kit" href="rel_6.5.0_SP1.html#Issues_runtime"/>
+            <topic label="Known issues: System Analysis Toolkit" href="rel_6.5.0_SP1.html#Issues_SAT"/>
+            <topic label="Known issues: Host-specific" href="rel_6.5.0_SP1.html#Issues_host_specific">
+              <topic label="Windows hosts" href="rel_6.5.0_SP1.html#Issues_Windows"/>
+              <topic label="Linux hosts" href="rel_6.5.0_SP1.html#Issues_Linux"/>
+            </topic>
+            <topic label="Known issues: Web browsers" href="rel_6.5.0_SP1.html#Issues_web"/>
+          </topic>
+          <topic label="Getting started with the documentation" href="rel_6.5.0_SP1.html#Docs"/>
+          <topic label="Technical support" href="rel_6.5.0_SP1.html#TSPORT"/>
+          <topic label="List of fixes" href="rel_6.5.0_SP1.html#FIXESTABLE">
+            <topic label="Software fixes" href="rel_6.5.0_SP1.html#Software_fixes"/>
+            <topic label="Documentation fixes" href="rel_6.5.0_SP1.html#Doc_fixes"/>
+          </topic>
+      </topic>
+</toc>

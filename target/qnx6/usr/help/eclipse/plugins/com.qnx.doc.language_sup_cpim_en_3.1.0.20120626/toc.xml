@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Photon Chinese Input Method (English)">
+      <topic label="Using the Photon Chinese Supplement" href="about.html">
+          <topic label="Chinese fonts" href="about.html#Fonts"/>
+          <topic label="Chinese input method (cpim)" href="about.html#InputMethod"/>
+      </topic>
+</toc>

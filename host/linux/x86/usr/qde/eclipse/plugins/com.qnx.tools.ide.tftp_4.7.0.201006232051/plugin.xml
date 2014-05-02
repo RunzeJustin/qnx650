@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+   <extension-point id="tftpStreamProvider" name="TFTP Stream Provider Extension" schema="schema/tftpStreamProvider.exsd"/>
+
+     <extension
+         point="org.eclipse.ui.views">
+      <view
+            name="TFTP Server"
+            icon="icons/cview16/tftp_view.gif"
+            category="com.qnx.tools.ide.qnxSystemBuilderViews"
+            class="com.qnx.tools.ide.tftp.internal.ui.TftpView"
+            id="qnxTftpView">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="QNXSystemBuilderPerspective">
+         <viewShortcut
+               id="qnxTftpView">
+         </viewShortcut>
+      </perspectiveExtension>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            name="User Search Paths"
+            category="com.qnx.tools.ide.preferences.tftp.general"
+            class="com.qnx.tools.ide.tftp.internal.ui.TftpSearchPreferences"
+            id="com.qnx.tools.ide.preferences.tftp.search">
+      </page>
+      <page
+            category="com.qnx.tools.ide.qnxPreferences"
+            class="com.qnx.tools.ide.tftp.internal.ui.TftpServerGeneralPreferences"
+            id="com.qnx.tools.ide.preferences.tftp.general"
+            name="Tftp Server"/>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer class="com.qnx.tools.ide.tftp.internal.core.TftpPreferenceInitializer"/>
+   </extension>
+   <extension
+         point="com.qnx.tools.ide.tftp.tftpStreamProvider">
+      <streamProvider
+            class="com.qnx.tools.ide.tftp.internal.core.TftpSearchPathsProvider"
+            id="com.qnx.tools.ide.tftp.stream.searchPaths"
+            name="User Search Paths"/>
+   </extension>
+   <extension
+         point="org.eclipse.ui.viewActions">
+      <viewContribution
+            id="com.qnx.tools.ide.tftp.viewContribution"
+            targetID="qnxTftpView">
+         <action
+               class="com.qnx.tools.ide.tftp.internal.ui.actions.TftpPreferencesAction"
+               id="com.qnx.tools.ide.tftp.PreferenceAction"
+               label="Preferences..."
+               menubarPath="additions"
+               style="push"/>
+         <action
+               class="com.qnx.tools.ide.tftp.internal.ui.actions.TftpStartServerAction"
+               id="com.qnx.tools.ide.tftp.Start"
+               label="Start"
+               menubarPath="additions"
+               style="push">
+         </action>
+         <action
+               class="com.qnx.tools.ide.tftp.internal.ui.actions.TftpStopServerAction"
+               id="com.qnx.tools.ide.tftp.Start"
+               label="Stop"
+               menubarPath="additions"
+               style="push">
+         </action>
+      </viewContribution>
+   </extension>
+
+</plugin>

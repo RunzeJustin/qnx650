@@ -1,0 +1,146 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Optimizing your system" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_Base_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_INTRO_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_Boot_script_files_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_OVER_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_CREATE_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_CREATEFLASH_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_BUILDOS_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_XFER_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_CONFIG_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_HOSTANDTARGET_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/cvs_Export_mkifs.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_DIET_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_Optimizing_A_Single_Library.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_Restoring_A_Slimmed_Down_Library.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="OptimizingYourSystemIDE" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Optimizing your system</title>
+   </head>
+   <body id="OptimizingYourSystemIDE"><a name="OptimizingYourSystemIDE" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Optimizing your system</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>Since less is better is the rule of thumb for embedded systems, the QNX System Builder's
+            System Optimizer and the Dietician help you optimize your final system by: 
+            
+            
+            
+            
+         </p>
+         
+         <br clear="none" /><ul>
+            <li>reducing the size of shared libraries for your image </li>
+            <li>performing system-wide optimizations to remove unnecessary shared libraries, add
+               required shared libraries, and reduce the size of <em>all</em> shared libraries in the
+               system
+            </li>
+         </ul>
+         
+         
+         <div class="cautiontitle">CAUTION:</div>
+         <div class="caution">If you reduce a shared library, and your image subsequently needs to
+            access binaries on a filesystem (disk, network, etc.) that isn't managed by the QNX
+            System Builder, then the functions required by those unmanaged binaries may not be
+            present. This causes those binaries to fail on execution. 
+            <p>In general, shared-library
+               optimizers such as the Dietician are truly useful only in the case of a finite
+               number of users of the shared libraries, as you would find in a closed system (i.e.
+               a typical embedded system). 
+            </p>
+            
+            <p>If you have only a small number of unmanaged
+               binaries, one workaround is to create a <em>dummy flash filesystem image</em> and add
+               to this image the binaries you need to access. This dummy image is built with the
+               rest of the images, but it can be ignored. This technique lets the Dietician be
+               aware of the requirements of your runtime system.
+            </p>
+            
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <ul class="ullinks">
+            <li class="ulchildlink"><strong><a href="../topic/builder_DIET_.html" shape="rect">Optimizing all libraries in your image</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/builder_Optimizing_A_Single_Library.html" shape="rect">Optimizing a single library</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/builder_Restoring_A_Slimmed_Down_Library.html" shape="rect">Restoring a slimmed-down library</a></strong><br clear="none" />
+               
+            </li>
+         </ul>
+         
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/builder_Base_.html" shape="rect">Building OS and Flash Images</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/builder_INTRO_.html" shape="rect">Introducing the QNX System Builder</a></div>
+            
+            <div><a href="../topic/builder_Boot_script_files_.html" shape="rect">Boot script files</a></div>
+            
+            <div><a href="../topic/builder_OVER_.html" shape="rect">Overview of images</a></div>
+            
+            <div><a href="../topic/builder_XFER_.html" shape="rect">Downloading an image to your target</a></div>
+            
+            <div><a href="../topic/builder_CONFIG_.html" shape="rect">Configuring your QNX System Builder projects</a></div>
+            
+            <div><a href="../topic/builder_HOSTANDTARGET_.html" shape="rect">Moving files between the host and target</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/builder_CREATE_.html" shape="rect">Creating a new QNX System Builder project for an OS image</a></div>
+            
+            <div><a href="../topic/builder_CREATEFLASH_.html" shape="rect">Creating a project for a flash filesystem image (an .efs file)</a></div>
+            
+            <div><a href="../topic/builder_BUILDOS_.html" shape="rect">Building an OS image</a></div>
+            
+            <div><a href="../topic/cvs_Export_mkifs.html" shape="rect">Exporting a System Builder project to a Mkxfs build file(s)</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

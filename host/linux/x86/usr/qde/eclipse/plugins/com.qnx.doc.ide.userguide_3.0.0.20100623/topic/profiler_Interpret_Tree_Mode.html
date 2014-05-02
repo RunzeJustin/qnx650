@@ -1,0 +1,254 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Interpreting Tree mode column information by profiling type" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_Exit_Enter_time_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_ExecTimVwFieldDescriptions_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFEXTIMEVWBTNS_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_profcontextnavmenu_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_Take_Snapshort_And_Watch_Difference.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_Show_Threads_Tree_View.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_Show_Table_Mode.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_Show_Calls.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_Show_Reverse_Calls.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_Show_Call_Graphs.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_Show_Source.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_FeatCloning_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_FeatViewHist_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_FeatGroup_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_FeatSetPref_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_FeatCopyClip_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_FeatFilter_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_FeatSearch_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="InterpretingTreeMode" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Interpreting Tree mode column information by profiling type</title>
+   </head>
+   <body id="InterpretingTreeMode"><a name="InterpretingTreeMode" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Interpreting Tree mode column information by profiling type</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>The following table describes the meanings for time columns for all data source combinations with visual modes: </p>
+         
+         
+         
+         <div class="tablenoborder">
+            <table cellpadding="4" cellspacing="0" summary="" frame="border" border="1" rules="all">
+               <thead align="left">
+                  <tr>
+                     <th class="cellrowborder" valign="top" width="NaN%" id="d151904e38" rowspan="1" colspan="1">Mode</th>
+                     <th class="cellrowborder" valign="top" width="NaN%" id="d151904e41" rowspan="1" colspan="1">Node</th>
+                     <th class="cellrowborder" valign="top" width="NaN%" id="d151904e44" rowspan="1" colspan="1">Deep Time</th>
+                     <th class="cellrowborder" valign="top" width="NaN%" id="d151904e47" rowspan="1" colspan="1">Shallow Time</th>
+                     <th class="cellrowborder" valign="top" width="NaN%" id="d151904e50" rowspan="1" colspan="1">Count</th>
+                     <th class="cellrowborder" valign="top" width="NaN%" id="d151904e54" rowspan="1" colspan="1">Average</th>
+                     <th class="cellrowborder" valign="top" width="NaN%" id="d151904e57" rowspan="1" colspan="1">Max (Min)</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e38" rowspan="1" colspan="1">Sampling and/or Call Count</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e41" rowspan="1" colspan="1">Function (All)</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e44" rowspan="1" colspan="1">Same as <span class="uicontrol">Shallow Time</span>, invisible
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e47" rowspan="1" colspan="1">The sum of all probes for a given function</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e50" rowspan="1" colspan="1">The sum of <span class="uicontrol">Count</span> for all Call Samples where given function is to
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e54" rowspan="1" colspan="1"><span class="uicontrol">Shallow Time</span> / Count, or <span class="uicontrol">Shallow Time</span> if count is 0
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e57" rowspan="1" colspan="1">N/A</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e38" rowspan="1" colspan="1">Sampling and/or Call Count</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e41" rowspan="1" colspan="1">Addressable (All)</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e44" rowspan="1" colspan="1">Same as <span class="uicontrol">Shallow Time</span>, invisible
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e47" rowspan="1" colspan="1">The sum of all probes for a given address, or 0 if there are no probes for a given address (but it exists in the Call Counts
+                        tree)
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e50" rowspan="1" colspan="1">The sum of <span class="uicontrol">Count</span> for all Call Samples where given function is to
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e54" rowspan="1" colspan="1"><span class="uicontrol">Shallow Time</span> / Count, or <span class="uicontrol">Shallow Time</span> if count is 0
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e57" rowspan="1" colspan="1">N/A</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e38" rowspan="1" colspan="1">Sampling and/or Call Count</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e41" rowspan="1" colspan="1">Line Probe (Call Tree mode)</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e44" rowspan="1" colspan="1">Same as <span class="uicontrol">Shallow Time</span>, invisible
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e47" rowspan="1" colspan="1">The sum of all probes for a given address</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e50" rowspan="1" colspan="1">0</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e54" rowspan="1" colspan="1">Same as <span class="uicontrol">Shallow Time</span></td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e57" rowspan="1" colspan="1">N/A</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e38" rowspan="1" colspan="1">Sampling and/or Call Count</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e41" rowspan="1" colspan="1">Call Pair (Call Tree mode, Reverse Call Tree mode)</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e44" rowspan="1" colspan="1">N/A</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e47" rowspan="1" colspan="1">N/A</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e50" rowspan="1" colspan="1">The sum of Call Counts a for given pair</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e54" rowspan="1" colspan="1">N/A</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e57" rowspan="1" colspan="1">N/A</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e38" rowspan="1" colspan="1">Sampling and/or Call Count, Function Instr.</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e41" rowspan="1" colspan="1">Group Node (Reverse Call Tree Mode, Table Mode)</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e44" rowspan="1" colspan="1">Same as <span class="uicontrol">Shallow Time</span></td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e47" rowspan="1" colspan="1">The sum of <span class="uicontrol">Shallow Time</span> for the children
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e50" rowspan="1" colspan="1">The sum of <span class="uicontrol">Count</span> for the children
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e54" rowspan="1" colspan="1"><span class="uicontrol">Deep Time</span> / <span class="uicontrol">Count</span></td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e57" rowspan="1" colspan="1"><span class="uicontrol">Max (Min)</span> of children
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e38" rowspan="1" colspan="1">Function Instr.</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e41" rowspan="1" colspan="1">Function (All)</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e44" rowspan="1" colspan="1">The sum of the <span class="uicontrol">Total Deep Function Time</span> for each occurrence of this function in a timed call tree, excluding inner recursive frames
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e47" rowspan="1" colspan="1">The sum of the <span class="uicontrol">Shallow Function Time</span> for all occurrences of this function in a call tree. The <span class="uicontrol">Shallow Function Time</span> for the call tree is the <span class="uicontrol">Total Deep Function Time</span> minus the sum of the <span class="uicontrol">Total Deep Function Time</span> for all descendants.
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e50" rowspan="1" colspan="1">The sum of all counts to this function in the call tree</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e54" rowspan="1" colspan="1">(<span class="uicontrol">Deep Time</span> + Rec. Time) / <span class="uicontrol">Count</span></td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e57" rowspan="1" colspan="1">The <span class="uicontrol">Max (Min)</span> of the <span class="uicontrol">Total Deep Function Time</span> between all occurrences
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e38" rowspan="1" colspan="1">Function Instr.</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e41" rowspan="1" colspan="1">Thread (Call Tree mode)</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e44" rowspan="1" colspan="1">The sum of the total for entry functions (only one entry, but there might be some unattached calls)</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e47" rowspan="1" colspan="1">Same as <span class="uicontrol">Total</span></td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e50" rowspan="1" colspan="1">1</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e54" rowspan="1" colspan="1">N/A</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e57" rowspan="1" colspan="1">N/A</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e38" rowspan="1" colspan="1">Function Instr.</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e41" rowspan="1" colspan="1">Call Pair (Call Tree mode)</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e44" rowspan="1" colspan="1">The sum of the <span class="uicontrol">Total Deep Function Time</span> for all occurrences of this call pair for a given parent backtrace
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e47" rowspan="1" colspan="1">N/A</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e50" rowspan="1" colspan="1"><span class="uicontrol">Call Count</span> of this call pair for a given parent backtrace
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e54" rowspan="1" colspan="1"><span class="uicontrol">Deep Time</span> / <span class="uicontrol">Count</span></td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e57" rowspan="1" colspan="1"><span class="uicontrol">Max (Min)</span> of this call pair's <span class="uicontrol">Total Deep Time</span> for a given parent backtrace
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e38" rowspan="1" colspan="1">Function Instr.</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e41" rowspan="1" colspan="1">Self (Call Tree mode)</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e44" rowspan="1" colspan="1">Same as <span class="uicontrol">Shallow Time</span></td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e47" rowspan="1" colspan="1">The parent <span class="uicontrol">Total</span> minus the sum of the <span class="uicontrol">Total</span> for the siblings
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e50" rowspan="1" colspan="1">Count of a parent</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e54" rowspan="1" colspan="1"><span class="uicontrol">Shallow Time</span> / <span class="uicontrol">Count</span></td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e57" rowspan="1" colspan="1"><span class="uicontrol">Max (Min)</span> of this call pair's <span class="uicontrol">Shallow Time</span> for a given parent backtrace
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e38" rowspan="1" colspan="1">Function Instr.</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e41" rowspan="1" colspan="1">Recursive Call Pair (Reverse Call Tree mode)</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e44" rowspan="1" colspan="1">N/A</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e47" rowspan="1" colspan="1">N/A</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e50" rowspan="1" colspan="1">The sum of Call Counts for a given pair</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e54" rowspan="1" colspan="1">N/A</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e57" rowspan="1" colspan="1">N/A</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e38" rowspan="1" colspan="1">Function Instr.</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e41" rowspan="1" colspan="1">Call Pair, Thread, Process (Reverse Call Tree mode)</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e44" rowspan="1" colspan="1">The sum of <span class="uicontrol">Total Call Pair</span> time for the <span class="uicontrol">Root</span> function for a given stackframe (the child in this tree represents the parent in the call stack)
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e47" rowspan="1" colspan="1">N/A</td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e50" rowspan="1" colspan="1">The sum of Call Counts for the <span class="uicontrol">Root</span> function for a given stackframe
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e54" rowspan="1" colspan="1"><span class="uicontrol">Deep Time</span> / <span class="uicontrol">Count</span></td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d151904e57" rowspan="1" colspan="1">N/A</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/profiler_Exit_Enter_time_.html" shape="rect">Execution Time view</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/profiler_ExecTimVwFieldDescriptions_.html" shape="rect">Column descriptions</a></div>
+            
+            <div><a href="../topic/profiler_PROFEXTIMEVWBTNS_.html" shape="rect">Toolbar options</a></div>
+            
+            <div><a href="../topic/profiler_profcontextnavmenu_.html" shape="rect">Context menu navigation options</a></div>
+            
+            <div><a href="../topic/profiler_Take_Snapshort_And_Watch_Difference.html" shape="rect">Take Snapshot and Watch Difference</a></div>
+            
+            <div><a href="../topic/profiler_Show_Threads_Tree_View.html" shape="rect">Show Threads Tree</a></div>
+            
+            <div><a href="../topic/profiler_Show_Table_Mode.html" shape="rect">Show Table mode</a></div>
+            
+            <div><a href="../topic/profiler_Show_Calls.html" shape="rect">Show Calls</a></div>
+            
+            <div><a href="../topic/profiler_Show_Reverse_Calls.html" shape="rect">Show Reverse Calls</a></div>
+            
+            <div><a href="../topic/profiler_Show_Call_Graphs.html" shape="rect">Show Call Graphs</a></div>
+            
+            <div><a href="../topic/profiler_Show_Source.html" shape="rect">Show Source</a></div>
+            
+            <div><a href="../topic/profiler_FeatCloning_.html" shape="rect">Duplicating the view</a></div>
+            
+            <div><a href="../topic/profiler_FeatViewHist_.html" shape="rect">Viewing history</a></div>
+            
+            <div><a href="../topic/profiler_FeatGroup_.html" shape="rect">Grouping</a></div>
+            
+            <div><a href="../topic/profiler_FeatSetPref_.html" shape="rect">Setting preferences</a></div>
+            
+            <div><a href="../topic/profiler_FeatCopyClip_.html" shape="rect">Copying to the clipboard</a></div>
+            
+            <div><a href="../topic/profiler_FeatFilter_.html" shape="rect">Filtering</a></div>
+            
+            <div><a href="../topic/profiler_FeatSearch_.html" shape="rect">Searching</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

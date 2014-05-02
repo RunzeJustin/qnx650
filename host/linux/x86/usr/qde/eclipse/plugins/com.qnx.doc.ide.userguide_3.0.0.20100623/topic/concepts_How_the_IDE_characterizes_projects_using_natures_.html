@@ -1,0 +1,156 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="How the IDE characterizes projects using natures" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/concepts_PROJ_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/concepts_Considerations_for_project_development_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="H2HowtheIDEcharacterizesprojectsusingnatures" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>How the IDE characterizes projects using natures</title>
+   </head>
+   <body id="H2HowtheIDEcharacterizesprojectsusingnatures"><a name="H2HowtheIDEcharacterizesprojectsusingnatures" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">How the IDE characterizes projects using natures</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>The IDE associates projects with <dfn class="term">natures</dfn> that define the characteristics of a
+            given project. For example, a Standard Make C Project has a C nature, whereas a QNX C Project
+            has a C nature as well as a QNX C nature, and so on.
+            
+            
+            
+            
+         </p>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> 
+            
+            <p>QNX C or C++ projects use the QNX recursive <span class="filepath">Makefile</span> hierarchy to
+               support multiple target architectures; Standard Make C/C++ projects don't.
+            </p>
+            
+            
+            <p>For more information about the QNX recursive <span class="filepath">Makefile</span> hierarchy, see
+               the <a href="../../com.qnx.doc.neutrino_prog/make_convent.html" shape="rect">Conventions for Recursive Makefiles and Directories</a> chapter in the Neutrino <cite>Programmer's Guide</cite>.
+            </p>
+            
+            
+         </div>
+         
+         
+         <p>The <dfn class="term">natures</dfn> inform the IDE what can and can't be done with each project. The IDE
+            also uses the natures to filter out projects that would be irrelevant in certain contexts (for
+            example, a list of QNX System Builder projects won't contain any C++ library projects). 
+         </p>
+         
+         
+         <p>The following table contains the most common projects and their associated natures:
+            
+            
+         </p>
+         
+         <a name="H2HowtheIDEcharacterizesprojectsusingnatures__simpletable_b15ea494-f755-4530-bc94-d7d488b69c6b" shape="rect">
+            <!-- --></a><table cellpadding="4" cellspacing="0" summary="" id="H2HowtheIDEcharacterizesprojectsusingnatures__simpletable_b15ea494-f755-4530-bc94-d7d488b69c6b" border="1" class="simpletableborder">
+            <tr>
+               <th valign="bottom" align="left" id="d21042e81" rowspan="1" colspan="1">Project</th>
+               <th valign="bottom" align="left" id="d21042e84" rowspan="1" colspan="1">Associated natures</th>
+            </tr>
+            <tr>
+               <td valign="top" headers="d21042e81" rowspan="1" colspan="1">Simple Project</td>
+               <td valign="top" headers="d21042e84" rowspan="1" colspan="1">None</td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d21042e81" rowspan="1" colspan="1">C Project</td>
+               <td valign="top" headers="d21042e84" rowspan="1" colspan="1">C</td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d21042e81" rowspan="1" colspan="1">C++ Project</td>
+               <td valign="top" headers="d21042e84" rowspan="1" colspan="1">C, C++</td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d21042e81" rowspan="1" colspan="1">QNX C Project</td>
+               <td valign="top" headers="d21042e84" rowspan="1" colspan="1">C, QNX C</td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d21042e81" rowspan="1" colspan="1">QNX C Library Project</td>
+               <td valign="top" headers="d21042e84" rowspan="1" colspan="1">C, QNX C</td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d21042e81" rowspan="1" colspan="1">QNX C++ Project</td>
+               <td valign="top" headers="d21042e84" rowspan="1" colspan="1">C, C++, QNX C</td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d21042e81" rowspan="1" colspan="1">QNX C++ Library Project</td>
+               <td valign="top" headers="d21042e84" rowspan="1" colspan="1">C, C++, QNX C</td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d21042e81" rowspan="1" colspan="1">QNX System Builder Project</td>
+               <td valign="top" headers="d21042e84" rowspan="1" colspan="1">QNX System Builder</td>
+            </tr>
+         </table>
+         
+         
+         <p>The IDE saves these natures and other information in the files called
+            <span class="filepath">.project</span> and <span class="filepath">.cproject</span> in each project. To
+            ensure that these natures persist in your source control system, such as CVS or SVN, include
+            these files when you commit the project. 
+            
+            
+            
+            
+         </p>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> The IDE doesn't directly support nested projects; each project must be organized as a
+            discrete entity. However, the IDE does support project dependencies by allowing a project to
+            reference other projects that reside in your workspace. Container projects also let you
+            logically nest projects by collecting several projects together.
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/concepts_PROJ_.html" shape="rect">Projects in the IDE</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/concepts_Considerations_for_project_development_.html" shape="rect">Considerations for project development</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

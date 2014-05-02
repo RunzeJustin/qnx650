@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<qnxPackageInstall>
+  <package>
+    <name></name>
+    <version></version>
+    <base></base>
+    <installLocation></installLocation>
+    <metaDataDir></metaDataDir>
+    <uninstallDir></uninstallDir>
+  </package>
+</qnxPackageInstall>

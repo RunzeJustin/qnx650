@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Developer's Guide">
+      <topic label="About This Guide" href="about.html">
+          <topic label="Typographical conventions" href="about.html#id3">
+            <topic label="Note to Windows users" href="about.html#WINDOWSNOTE"/>
+            <topic label="Navigation buttons" href="about.html#Navigation"/>
+          </topic>
+          <topic label="Technical support" href="about.html#id7"/>
+      </topic>
+      <topic label="Introduction" href="intro.html">
+          <topic label="Overview of the QNX Graphics Framework (GF) architecture" href="intro.html#Architecture">
+            <topic label="GF components" href="intro.html#id4"/>
+          </topic>
+          <topic label="GF compared to Photon" href="intro.html#Comparison"/>
+      </topic>
+      <topic label="Basic Drawing" href="draw.html">
+            <topic label="Setting up GF" href="draw.html#steps">
+              <topic label="Attaching to a device and display" href="draw.html#id4"/>
+              <topic label="Attaching to display layers" href="draw.html#id6"/>
+              <topic label="Create and set surfaces" href="draw.html#id8"/>
+              <topic label="Create a draw context" href="draw.html#id10"/>
+            </topic>
+            <topic label="Using draw coordinates" href="draw.html#general"/>
+            <topic label="Drawing rectangles" href="draw.html#rect"/>
+            <topic label="Drawing lines and polygons" href="draw.html#poly"/>
+            <topic label="Bitmaps" href="draw.html#bitmaps"/>
+            <topic label="Blitting" href="draw.html#blitting"/>
+            <topic label="Multithreaded applications" href="draw.html#threads"/>
+            <topic label="Debugging" href="draw.html#debugging"/>
+      </topic>
+      <topic label="Working with Images" href="images.html">
+              <topic label="Attaching to the image library" href="images.html#id3"/>
+              <topic label="Loading the image" href="images.html#id5"/>
+              <topic label="Attaching to a surface" href="images.html#id7"/>
+              <topic label="Blitting the image" href="images.html#id9"/>
+              <topic label="Cleaning up" href="images.html#id11"/>
+      </topic>
+      <topic label="Working with Layers, Surfaces, and Contexts" href="layers.html">
+            <topic label="Using layers" href="layers.html#layers">
+              <topic label="Layer visibility" href="layers.html#layer_visibility"/>
+              <topic label="Layer brightness, contrast, saturation, and hue" href="layers.html#layer_brightness"/>
+              <topic label="Viewports" href="layers.html#viewports"/>
+              <topic label="Layer blending and chroma" href="layers.html#layer_alpha"/>
+            </topic>
+            <topic label="Using surfaces" href="layers.html#surfaces"/>
+            <topic label="Using contexts" href="layers.html#contexts">
+              <topic label="Context Alpha Blending" href="layers.html#context_alpha"/>
+              <topic label="Chroma Keying" href="layers.html#context_chroma"/>
+              <topic label="Setting foreground and background colors" href="layers.html#context_foreground"/>
+              <topic label="Setting line attributes" href="layers.html#line_attributes"/>
+              <topic label="Clipping" href="layers.html#clipping"/>
+              <topic label="Raster operations" href="layers.html#rops"/>
+              <topic label="Anti-aliasing polylines" href="layers.html#anti-aliasing_polylines"/>
+              <topic label="Transform matrices and translations" href="layers.html#transform"/>
+            </topic>
+      </topic>
+      <topic label="Using OpenGL ES" href="3d.html">
+            <topic label="Using OpenGL ES" href="3d.html#using"/>
+            <topic label="Creating surfaces" href="3d.html#surfaces">
+              <topic label="Window surfaces" href="3d.html#window_surfaces"/>
+              <topic label="Pixmap surfaces" href="3d.html#pixmap_surfaces"/>
+              <topic label="pbuffer surfaces" href="3d.html#pbuffer_surfaces"/>
+            </topic>
+            <topic label="Using Vertex Buffer Objects" href="3d.html#vbos"/>
+      </topic>
+      <topic label="Using the Video-Capture API" href="vidcap.html">
+              <topic label="Video capture" href="vidcap.html#id3"/>
+              <topic label="An example" href="vidcap.html#id5"/>
+      </topic>
+      <topic label="Embedding 2D and 3D Applications" href="embedding.html">
+          <topic label="Assumptions" href="embedding.html#ASSUME"/>
+          <topic label="Building the image" href="embedding.html#id4">
+            <topic label="2D example: vsync" href="embedding.html#id6"/>
+            <topic label="Font example: font-cache" href="embedding.html#id8"/>
+            <topic label="Image example: img_decode_simple" href="embedding.html#id10"/>
+            <topic label="OpenGL ES: Gears" href="embedding.html#id12"/>
+          </topic>
+      </topic>
+      <topic label="Hardware Capabilities" href="hardware.html">
+          <topic label="Fujitsu Carmine" href="hardware.html#carmine">
+            <topic label="OpenGL ES Hardware Acceleration" href="hardware.html#id4"/>
+            <topic label="Supported Chipset" href="hardware.html#id6"/>
+            <topic label="OpenGL ES Lighting" href="hardware.html#id8"/>
+          </topic>
+          <topic label="Intel Extreme2" href="hardware.html#extreme2"/>
+          <topic label="Fujitsu Coral" href="hardware.html#coral">
+            <topic label="Hardware Acceleration" href="hardware.html#id12"/>
+          </topic>
+      </topic>
+      <topic label="Summary of Entries" href="fnsummary.html">
+          <topic label="3D rendering" href="fnsummary.html#3d"/>
+          <topic label="Contexts" href="fnsummary.html#contexts"/>
+          <topic label="Cursors" href="fnsummary.html#cursors"/>
+          <topic label="Devices and displays" href="fnsummary.html#devices"/>
+          <topic label="Drawing" href="fnsummary.html#draw"/>
+          <topic label="Layers" href="fnsummary.html#layers"/>
+          <topic label="Surfaces" href="fnsummary.html#surfaces"/>
+          <topic label="Video Capture" href="fnsummary.html#vcap"/>
+      </topic>
+      <topic label="QNX Graphics Framework Library Reference" href="gf-base.html">
+            <topic label="Functions" href="gf-base.html#id3"/>
+            <topic label="Structures and types" href="gf-base.html#id5"/>
+          <topic label="gf_3d_target_create" href="api/gf_3d_target_create.html">
+            <topic label="Description:" href="api/gf_3d_target_create.html#id9"/>
+          </topic>
+          <topic label="gf_3d_target_free" href="api/gf_3d_target_free.html">
+            <topic label="Description:" href="api/gf_3d_target_free.html#id9"/>
+          </topic>
+          <topic label="gf_3d_query_config" href="api/gf_3d_query_config.html">
+            <topic label="Description:" href="api/gf_3d_query_config.html#id9"/>
+          </topic>
+          <topic label="gf_alpha_t" href="api/gf_alpha_t.html">
+            <topic label="Description:" href="api/gf_alpha_t.html#id5">
+              <topic label="Alpha mode flags" href="api/gf_alpha_t.html#mode"/>
+            </topic>
+          </topic>
+          <topic label="gf_chroma_t" href="api/gf_chroma_t.html">
+            <topic label="Description:" href="api/gf_chroma_t.html#id5"/>
+          </topic>
+          <topic label="gf_context_create" href="api/gf_context_create.html">
+            <topic label="Description:" href="api/gf_context_create.html#id9"/>
+          </topic>
+          <topic label="gf_context_disable_alpha" href="api/gf_context_disable_alpha.html">
+            <topic label="Description:" href="api/gf_context_disable_alpha.html#id9"/>
+          </topic>
+          <topic label="gf_context_disable_antialias" href="api/gf_context_disable_antialias.html">
+            <topic label="Description:" href="api/gf_context_disable_antialias.html#id9"/>
+          </topic>
+          <topic label="gf_context_disable_chroma" href="api/gf_context_disable_chroma.html">
+            <topic label="Description:" href="api/gf_context_disable_chroma.html#id9"/>
+          </topic>
+          <topic label="gf_context_disable_clipping" href="api/gf_context_disable_clipping.html">
+            <topic label="Description:" href="api/gf_context_disable_clipping.html#id9"/>
+          </topic>
+          <topic label="gf_context_disable_linedash" href="api/gf_context_disable_linedash.html">
+            <topic label="Description:" href="api/gf_context_disable_linedash.html#id9"/>
+          </topic>
+          <topic label="gf_context_disable_pattern" href="api/gf_context_disable_pattern.html">
+            <topic label="Description:" href="api/gf_context_disable_pattern.html#id9"/>
+          </topic>
+          <topic label="gf_context_disable_planemask" href="api/gf_context_disable_planemask.html">
+            <topic label="Description:" href="api/gf_context_disable_planemask.html#id9"/>
+          </topic>
+          <topic label="gf_context_disable_transform" href="api/gf_context_disable_transform.html">
+            <topic label="Description:" href="api/gf_context_disable_transform.html#id9"/>
+          </topic>
+          <topic label="gf_context_disable_translation" href="api/gf_context_disable_translation.html">
+            <topic label="Description:" href="api/gf_context_disable_translation.html#id9"/>
+          </topic>
+          <topic label="gf_context_free" href="api/gf_context_free.html">
+            <topic label="Description:" href="api/gf_context_free.html#id9"/>
+          </topic>
+          <topic label="gf_context_get_surface" href="api/gf_context_get_surface.html">
+            <topic label="Description:" href="api/gf_context_get_surface.html#id9"/>
+          </topic>
+          <topic label="gf_context_init" href="api/gf_context_init.html">
+            <topic label="Description:" href="api/gf_context_init.html#id9"/>
+          </topic>
+          <topic label="gf_context_set_alpha" href="api/gf_context_set_alpha.html">
+            <topic label="Description:" href="api/gf_context_set_alpha.html#id9"/>
+          </topic>
+          <topic label="gf_context_set_antialias" href="api/gf_context_set_antialias.html">
+            <topic label="Description:" href="api/gf_context_set_antialias.html#id9"/>
+          </topic>
+          <topic label="gf_context_set_bgcolor" href="api/gf_context_set_bgcolor.html">
+            <topic label="Description:" href="api/gf_context_set_bgcolor.html#id9"/>
+          </topic>
+          <topic label="gf_context_set_bgcolor_native" href="api/gf_context_set_bgcolor_native.html">
+            <topic label="Description:" href="api/gf_context_set_bgcolor_native.html#id9"/>
+          </topic>
+          <topic label="gf_context_set_capstyle" href="api/gf_context_set_capstyle.html">
+            <topic label="Description:" href="api/gf_context_set_capstyle.html#id9"/>
+          </topic>
+          <topic label="gf_context_set_chroma" href="api/gf_context_set_chroma.html">
+            <topic label="Description:" href="api/gf_context_set_chroma.html#id9"/>
+          </topic>
+          <topic label="gf_context_set_clipping" href="api/gf_context_set_clipping.html">
+            <topic label="Description:" href="api/gf_context_set_clipping.html#id9"/>
+          </topic>
+          <topic label="gf_context_set_fgcolor" href="api/gf_context_set_fgcolor.html">
+            <topic label="Description:" href="api/gf_context_set_fgcolor.html#id9"/>
+          </topic>
+          <topic label="gf_context_set_fgcolor_native" href="api/gf_context_set_fgcolor_native.html">
+            <topic label="Description:" href="api/gf_context_set_fgcolor_native.html#id9"/>
+          </topic>
+          <topic label="gf_context_set_filter" href="api/gf_context_set_filter.html">
+            <topic label="Description:" href="api/gf_context_set_filter.html#id9"/>
+          </topic>
+          <topic label="gf_context_set_hw_polygon" href="api/gf_context_set_hw_polygon.html">
+            <topic label="Description:" href="api/gf_context_set_hw_polygon.html#id9"/>
+          </topic>
+          <topic label="gf_context_set_linedash" href="api/gf_context_set_linedash.html">
+            <topic label="Description:" href="api/gf_context_set_linedash.html#id9"/>
+          </topic>
+          <topic label="gf_context_set_linejoin" href="api/gf_context_set_linejoin.html">
+            <topic label="Description:" href="api/gf_context_set_linejoin.html#id9"/>
+          </topic>
+          <topic label="gf_context_set_pattern" href="api/gf_context_set_pattern.html">
+            <topic label="Description:" href="api/gf_context_set_pattern.html#id9"/>
+          </topic>
+          <topic label="gf_context_set_penwidth" href="api/gf_context_set_penwidth.html">
+            <topic label="Description:" href="api/gf_context_set_penwidth.html#id9"/>
+          </topic>
+          <topic label="gf_context_set_planemask" href="api/gf_context_set_planemask.html">
+            <topic label="Description:" href="api/gf_context_set_planemask.html#id9"/>
+          </topic>
+          <topic label="gf_context_set_polyfill" href="api/gf_context_set_polyfill.html">
+            <topic label="Description:" href="api/gf_context_set_polyfill.html#id9"/>
+          </topic>
+          <topic label="gf_context_set_rop" href="api/gf_context_set_rop.html">
+            <topic label="Description:" href="api/gf_context_set_rop.html#id9">
+              <topic label="Raster Operation Defines" href="api/gf_context_set_rop.html#id11"/>
+            </topic>
+          </topic>
+          <topic label="gf_context_set_surface" href="api/gf_context_set_surface.html">
+            <topic label="Description:" href="api/gf_context_set_surface.html#id9"/>
+          </topic>
+          <topic label="gf_context_set_surface_3d" href="api/gf_context_set_surface_3d.html">
+            <topic label="Description:" href="api/gf_context_set_surface_3d.html#id9"/>
+          </topic>
+          <topic label="gf_context_set_transform" href="api/gf_context_set_transform.html">
+            <topic label="Description:" href="api/gf_context_set_transform.html#id9"/>
+          </topic>
+          <topic label="gf_context_set_translation" href="api/gf_context_set_translation.html">
+            <topic label="Description:" href="api/gf_context_set_translation.html#id9"/>
+          </topic>
+          <topic label="gf_context_unset_surface" href="api/gf_context_unset_surface.html">
+            <topic label="Description:" href="api/gf_context_unset_surface.html#id9"/>
+          </topic>
+          <topic label="gf_cursor_disable" href="api/gf_cursor_disable.html">
+            <topic label="Description:" href="api/gf_cursor_disable.html#id9"/>
+          </topic>
+          <topic label="gf_cursor_enable" href="api/gf_cursor_enable.html">
+            <topic label="Description:" href="api/gf_cursor_enable.html#id9"/>
+          </topic>
+          <topic label="gf_cursor_set" href="api/gf_cursor_set.html">
+            <topic label="Description:" href="api/gf_cursor_set.html#id9"/>
+          </topic>
+          <topic label="gf_cursor_set_pos" href="api/gf_cursor_set_pos.html">
+            <topic label="Description:" href="api/gf_cursor_set_pos.html#id9"/>
+          </topic>
+          <topic label="gf_dev_attach" href="api/gf_dev_attach.html">
+            <topic label="Description:" href="api/gf_dev_attach.html#id9"/>
+            <topic label="Examples:" href="api/gf_dev_attach.html#id13"/>
+          </topic>
+          <topic label="gf_dev_detach" href="api/gf_dev_detach.html">
+            <topic label="Description:" href="api/gf_dev_detach.html#id9"/>
+          </topic>
+          <topic label="gf_dev_get_error" href="api/gf_dev_get_error.html">
+            <topic label="Description:" href="api/gf_dev_get_error.html#id9"/>
+          </topic>
+          <topic label="gf_dev_get_meminfo" href="api/gf_dev_get_meminfo.html">
+            <topic label="Description:" href="api/gf_dev_get_meminfo.html#id9"/>
+          </topic>
+          <topic label="gf_dev_register_thread" href="api/gf_dev_register_thread.html">
+            <topic label="Description:" href="api/gf_dev_register_thread.html#id9"/>
+          </topic>
+          <topic label="gf_dim_t" href="api/gf_dim_t.html">
+            <topic label="Description:" href="api/gf_dim_t.html#id5"/>
+          </topic>
+          <topic label="gf_display_attach" href="api/gf_display_attach.html">
+            <topic label="Description:" href="api/gf_display_attach.html#id9">
+              <topic label="gf_display_info_t" href="api/gf_display_attach.html#gf_display_info_t"/>
+            </topic>
+            <topic label="Examples:" href="api/gf_display_attach.html#id14"/>
+          </topic>
+          <topic label="gf_display_detach" href="api/gf_display_detach.html">
+            <topic label="Description:" href="api/gf_display_detach.html#id9"/>
+          </topic>
+          <topic label="gf_display_query" href="api/gf_display_query.html">
+            <topic label="Description:" href="api/gf_display_query.html#id9"/>
+          </topic>
+          <topic label="gf_display_query_mode" href="api/gf_display_query_mode.html">
+            <topic label="Description:" href="api/gf_display_query_mode.html#id9"/>
+          </topic>
+          <topic label="gf_display_set_dpms" href="api/gf_display_set_dpms.html">
+            <topic label="Description:" href="api/gf_display_set_dpms.html#id9"/>
+          </topic>
+          <topic label="gf_display_set_external_chroma" href="api/gf_display_set_external_chroma.html">
+            <topic label="Description:" href="api/gf_display_set_external_chroma.html#id9"/>
+          </topic>
+          <topic label="gf_display_set_layer_order" href="api/gf_display_set_layer_order.html">
+            <topic label="Description:" href="api/gf_display_set_layer_order.html#id9"/>
+          </topic>
+          <topic label="gf_display_set_mode" href="api/gf_display_set_mode.html">
+            <topic label="Description:" href="api/gf_display_set_mode.html#id9"/>
+          </topic>
+          <topic label="gf_display_snapshot" href="api/gf_display_snapshot.html">
+            <topic label="Description:" href="api/gf_display_snapshot.html#id9"/>
+          </topic>
+          <topic label="gf_display_wait_vsync" href="api/gf_display_wait_vsync.html">
+            <topic label="Description:" href="api/gf_display_wait_vsync.html#id9"/>
+          </topic>
+          <topic label="gf_draw_begin" href="api/gf_draw_begin.html">
+            <topic label="Description:" href="api/gf_draw_begin.html#id9"/>
+          </topic>
+          <topic label="gf_draw_bitmap" href="api/gf_draw_bitmap.html">
+            <topic label="Description:" href="api/gf_draw_bitmap.html#id9"/>
+          </topic>
+          <topic label="gf_draw_blit1" href="api/gf_draw_blit1.html">
+            <topic label="Description:" href="api/gf_draw_blit1.html#id9"/>
+          </topic>
+          <topic label="gf_draw_blit2" href="api/gf_draw_blit2.html">
+            <topic label="Description:" href="api/gf_draw_blit2.html#id9"/>
+          </topic>
+          <topic label="gf_draw_blitscaled" href="api/gf_draw_blitscaled.html">
+            <topic label="Description:" href="api/gf_draw_blitscaled.html#id9"/>
+          </topic>
+          <topic label="gf_draw_end" href="api/gf_draw_end.html">
+            <topic label="Description:" href="api/gf_draw_end.html#id9"/>
+          </topic>
+          <topic label="gf_draw_finish" href="api/gf_draw_finish.html">
+            <topic label="Description:" href="api/gf_draw_finish.html#id9"/>
+          </topic>
+          <topic label="gf_draw_flush" href="api/gf_draw_flush.html">
+            <topic label="Description:" href="api/gf_draw_flush.html#id9"/>
+          </topic>
+          <topic label="gf_draw_image" href="api/gf_draw_image.html">
+            <topic label="Description:" href="api/gf_draw_image.html#id9"/>
+          </topic>
+          <topic label="gf_draw_poly_fill" href="api/gf_draw_poly_fill.html">
+            <topic label="Description:" href="api/gf_draw_poly_fill.html#id9"/>
+          </topic>
+          <topic label="gf_draw_polyline" href="api/gf_draw_polyline.html">
+            <topic label="Description:" href="api/gf_draw_polyline.html#id9"/>
+          </topic>
+          <topic label="gf_draw_rect" href="api/gf_draw_rect.html">
+            <topic label="Description:" href="api/gf_draw_rect.html#id9"/>
+          </topic>
+          <topic label="gf_draw_span" href="api/gf_draw_span.html">
+            <topic label="Description:" href="api/gf_draw_span.html#id9"/>
+          </topic>
+          <topic label="gf_draw_spanlist" href="api/gf_draw_spanlist.html">
+            <topic label="Description:" href="api/gf_draw_spanlist.html#id9"/>
+          </topic>
+          <topic label="gf_format_t" href="api/gf_format_t.html">
+            <topic label="Description:" href="api/gf_format_t.html#id5">
+              <topic label="Endianness" href="api/gf_format_t.html#id7"/>
+            </topic>
+          </topic>
+          <topic label="gf_i2c_read" href="api/gf_i2c_read.html">
+            <topic label="Description:" href="api/gf_i2c_read.html#id9"/>
+          </topic>
+          <topic label="gf_i2c_write" href="api/gf_i2c_write.html">
+            <topic label="Description:" href="api/gf_i2c_write.html#id9"/>
+          </topic>
+          <topic label="gf_i2c_writeread" href="api/gf_i2c_writeread.html">
+            <topic label="Description:" href="api/gf_i2c_writeread.html#id9"/>
+          </topic>
+          <topic label="gf_layer_attach" href="api/gf_layer_attach.html">
+            <topic label="Description:" href="api/gf_layer_attach.html#id9"/>
+          </topic>
+          <topic label="gf_layer_choose_format" href="api/gf_layer_choose_format.html">
+            <topic label="Description:" href="api/gf_layer_choose_format.html#id9"/>
+          </topic>
+          <topic label="gf_layer_detach" href="api/gf_layer_detach.html">
+            <topic label="Description:" href="api/gf_layer_detach.html#id9"/>
+          </topic>
+          <topic label="gf_layer_disable" href="api/gf_layer_disable.html">
+            <topic label="Description:" href="api/gf_layer_disable.html#id9"/>
+          </topic>
+          <topic label="gf_layer_enable" href="api/gf_layer_enable.html">
+            <topic label="Description:" href="api/gf_layer_enable.html#id9"/>
+          </topic>
+          <topic label="gf_layer_query" href="api/gf_layer_query.html">
+            <topic label="Description:" href="api/gf_layer_query.html#id9"/>
+            <topic label="Examples:" href="api/gf_layer_query.html#id13"/>
+          </topic>
+          <topic label="gf_layer_set_blending" href="api/gf_layer_set_blending.html">
+            <topic label="Description:" href="api/gf_layer_set_blending.html#id9"/>
+          </topic>
+          <topic label="gf_layer_set_brightness" href="api/gf_layer_set_brightness.html">
+            <topic label="Description:" href="api/gf_layer_set_brightness.html#id9"/>
+          </topic>
+          <topic label="gf_layer_set_chroma" href="api/gf_layer_set_chroma.html">
+            <topic label="Description:" href="api/gf_layer_set_chroma.html#id9"/>
+          </topic>
+          <topic label="gf_layer_set_contrast" href="api/gf_layer_set_contrast.html">
+            <topic label="Description:" href="api/gf_layer_set_contrast.html#id9"/>
+          </topic>
+          <topic label="gf_layer_set_dst_viewport" href="api/gf_layer_set_dst_viewport.html">
+            <topic label="Description:" href="api/gf_layer_set_dst_viewport.html#id9"/>
+          </topic>
+          <topic label="gf_layer_set_edge" href="api/gf_layer_set_edge.html">
+            <topic label="Description:" href="api/gf_layer_set_edge.html#id9"/>
+          </topic>
+          <topic label="gf_layer_set_filter" href="api/gf_layer_set_filter.html">
+            <topic label="Description:" href="api/gf_layer_set_filter.html#id9"/>
+          </topic>
+          <topic label="gf_layer_set_hue" href="api/gf_layer_set_hue.html">
+            <topic label="Description:" href="api/gf_layer_set_hue.html#id9"/>
+          </topic>
+          <topic label="gf_layer_set_outputs" href="api/gf_layer_set_outputs.html">
+            <topic label="Description:" href="api/gf_layer_set_outputs.html#id9"/>
+          </topic>
+          <topic label="gf_layer_set_saturation" href="api/gf_layer_set_saturation.html">
+            <topic label="Description:" href="api/gf_layer_set_saturation.html#id9"/>
+          </topic>
+          <topic label="gf_layer_set_src_viewport" href="api/gf_layer_set_src_viewport.html">
+            <topic label="Description:" href="api/gf_layer_set_src_viewport.html#id9"/>
+          </topic>
+          <topic label="gf_layer_set_surfaces" href="api/gf_layer_set_surfaces.html">
+            <topic label="Description:" href="api/gf_layer_set_surfaces.html#id9"/>
+          </topic>
+          <topic label="gf_layer_update" href="api/gf_layer_update.html">
+            <topic label="Description:" href="api/gf_layer_update.html#id9"/>
+          </topic>
+          <topic label="gf_layer_update_multi" href="api/gf_layer_update_multi.html">
+            <topic label="Description:" href="api/gf_layer_update_multi.html#id9"/>
+          </topic>
+          <topic label="gf_palette_t" href="api/gf_palette_t.html">
+            <topic label="Description:" href="api/gf_palette_t.html#id5">
+              <topic label="The gf_color_t Type" href="api/gf_palette_t.html#gf_color_t"/>
+            </topic>
+          </topic>
+          <topic label="gf_point_t" href="api/gf_point_t.html">
+            <topic label="Description:" href="api/gf_point_t.html#id5"/>
+          </topic>
+          <topic label="gf_surface_attach" href="api/gf_surface_attach.html">
+            <topic label="Description:" href="api/gf_surface_attach.html#id9"/>
+          </topic>
+          <topic label="gf_surface_attach_by_sid" href="api/gf_surface_attach_by_sid.html">
+            <topic label="Description:" href="api/gf_surface_attach_by_sid.html#id9"/>
+          </topic>
+          <topic label="gf_surface_create" href="api/gf_surface_create.html">
+            <topic label="Description:" href="api/gf_surface_create.html#id9"/>
+          </topic>
+          <topic label="gf_surface_create_layer" href="api/gf_surface_create_layer.html">
+            <topic label="Description:" href="api/gf_surface_create_layer.html#id9"/>
+          </topic>
+          <topic label="gf_surface_free" href="api/gf_surface_free.html">
+            <topic label="Description:" href="api/gf_surface_free.html#id9"/>
+          </topic>
+          <topic label="gf_surface_get_dev" href="api/gf_surface_get_dev.html">
+            <topic label="Description:" href="api/gf_surface_get_dev.html#id9"/>
+          </topic>
+          <topic label="gf_surface_get_info" href="api/gf_surface_get_info.html">
+            <topic label="Description:" href="api/gf_surface_get_info.html#id9"/>
+          </topic>
+          <topic label="gf_surface_reattach" href="api/gf_surface_reattach.html">
+            <topic label="Description:" href="api/gf_surface_reattach.html#id9"/>
+          </topic>
+          <topic label="gf_vcap_attach" href="api/gf_vcap_attach.html">
+            <topic label="Description:" href="api/gf_vcap_attach.html#id9"/>
+          </topic>
+          <topic label="gf_vcap_bind_to_layer" href="api/gf_vcap_bind_to_layer.html">
+            <topic label="Description:" href="api/gf_vcap_bind_to_layer.html#id9"/>
+          </topic>
+          <topic label="gf_vcap_detach" href="api/gf_vcap_detach.html">
+            <topic label="Description:" href="api/gf_vcap_detach.html#id9"/>
+          </topic>
+          <topic label="gf_vcap_disable" href="api/gf_vcap_disable.html">
+            <topic label="Description:" href="api/gf_vcap_disable.html#id9"/>
+          </topic>
+          <topic label="gf_vcap_enable" href="api/gf_vcap_enable.html">
+            <topic label="Description:" href="api/gf_vcap_enable.html#id9"/>
+          </topic>
+          <topic label="gf_vcap_set_brightness" href="api/gf_vcap_set_brightness.html">
+            <topic label="Description:" href="api/gf_vcap_set_brightness.html#id9"/>
+          </topic>
+          <topic label="gf_vcap_set_contrast" href="api/gf_vcap_set_contrast.html">
+            <topic label="Description:" href="api/gf_vcap_set_contrast.html#id9"/>
+          </topic>
+          <topic label="gf_vcap_set_flags" href="api/gf_vcap_set_flags.html">
+            <topic label="Description:" href="api/gf_vcap_set_flags.html#id9"/>
+          </topic>
+          <topic label="gf_vcap_set_input_dimensions" href="api/gf_vcap_set_input_dimensions.html">
+            <topic label="Description:" href="api/gf_vcap_set_input_dimensions.html#id9"/>
+          </topic>
+          <topic label="gf_vcap_set_input_source" href="api/gf_vcap_set_input_source.html">
+            <topic label="Description:" href="api/gf_vcap_set_input_source.html#id9"/>
+          </topic>
+          <topic label="gf_vcap_set_input_viewport" href="api/gf_vcap_set_input_viewport.html">
+            <topic label="Description:" href="api/gf_vcap_set_input_viewport.html#id9"/>
+          </topic>
+          <topic label="gf_vcap_set_output_dimensions" href="api/gf_vcap_set_output_dimensions.html">
+            <topic label="Description:" href="api/gf_vcap_set_output_dimensions.html#id9"/>
+          </topic>
+          <topic label="gf_vcap_set_saturation" href="api/gf_vcap_set_saturation.html">
+            <topic label="Description:" href="api/gf_vcap_set_saturation.html#id9"/>
+          </topic>
+          <topic label="gf_vcap_set_sync_values" href="api/gf_vcap_set_sync_values.html">
+            <topic label="Description:" href="api/gf_vcap_set_sync_values.html#id9"/>
+          </topic>
+          <topic label="gf_vcap_update" href="api/gf_vcap_update.html">
+            <topic label="Description:" href="api/gf_vcap_update.html#id9"/>
+          </topic>
+      </topic>
+      <topic label="QNX Image Library Reference" href="img-base.html">
+            <topic label="Functions" href="img-base.html#id3"/>
+            <topic label="Macros" href="img-base.html#id5"/>
+            <topic label="Structures" href="img-base.html#id7"/>
+          <topic label="img_cfg_read" href="img/img_cfg_read.html">
+            <topic label="Description:" href="img/img_cfg_read.html#id9"/>
+          </topic>
+          <topic label="img_codec_get_criteria" href="img/img_codec_get_criteria.html">
+            <topic label="Description:" href="img/img_codec_get_criteria.html#id9"/>
+            <topic label="Examples:" href="img/img_codec_get_criteria.html#id11"/>
+          </topic>
+          <topic label="img_codec_list" href="img/img_codec_list.html">
+            <topic label="Description:" href="img/img_codec_list.html#id9"/>
+          </topic>
+          <topic label="img_codec_list_byext" href="img/img_codec_list_byext.html">
+            <topic label="Description:" href="img/img_codec_list_byext.html#id9"/>
+          </topic>
+          <topic label="img_codec_list_bymime" href="img/img_codec_list_bymime.html">
+            <topic label="Description:" href="img/img_codec_list_bymime.html#id9"/>
+          </topic>
+          <topic label="img_convert_data" href="img/img_convert_data.html">
+            <topic label="Description:" href="img/img_convert_data.html#id9">
+              <topic label="The img_format_t type" href="img/img_convert_data.html#img_format_t"/>
+            </topic>
+          </topic>
+          <topic label="img_convert_getfunc" href="img/img_convert_getfunc.html">
+            <topic label="Description:" href="img/img_convert_getfunc.html#id9"/>
+          </topic>
+          <topic label="img_crop" href="img/img_crop.html">
+            <topic label="Description:" href="img/img_crop.html#id9"/>
+          </topic>
+          <topic label="img_decode_begin" href="img/img_decode_begin.html">
+            <topic label="Description:" href="img/img_decode_begin.html#id9"/>
+          </topic>
+          <topic label="img_decode_callouts_t" href="img/img_decode_callouts_t.html">
+            <topic label="Description:" href="img/img_decode_callouts_t.html#id5">
+                <topic label="img_decode_choose_format_f *choose_format_f" href="img/img_decode_callouts_t.html#choose_format_f"/>
+                <topic label="img_decode_setup_f* setup_f" href="img/img_decode_callouts_t.html#setup_f"/>
+                <topic label="img_decode_abort_f* abort_f" href="img/img_decode_callouts_t.html#abort_f"/>
+                <topic label="img_decode_scanline_f* scanline_f" href="img/img_decode_callouts_t.html#scanline_f"/>
+                <topic label="img_decode_set_transparency_f* set_transparency_f" href="img/img_decode_callouts_t.html#set_transparency_f"/>
+                <topic label="img_decode_set_palette_f* set_palette_f" href="img/img_decode_callouts_t.html#set_palette_f"/>
+                <topic label="img_decode_frame_f* frame_f" href="img/img_decode_callouts_t.html#frame_f"/>
+                <topic label="img_decode_set_value_f* set_value_f" href="img/img_decode_callouts_t.html#set_value_f"/>
+                <topic label="uintptr_t data" href="img/img_decode_callouts_t.html#data"/>
+            </topic>
+          </topic>
+          <topic label="img_decode_finish" href="img/img_decode_finish.html">
+            <topic label="Description:" href="img/img_decode_finish.html#id9"/>
+          </topic>
+          <topic label="img_decode_frame" href="img/img_decode_frame.html">
+            <topic label="Description:" href="img/img_decode_frame.html#id9"/>
+          </topic>
+          <topic label="img_decode_validate" href="img/img_decode_validate.html">
+            <topic label="Description:" href="img/img_decode_validate.html#id9"/>
+          </topic>
+          <topic label="img_dtransform" href="img/img_dtransform.html">
+            <topic label="Description:" href="img/img_dtransform.html#id9"/>
+          </topic>
+          <topic label="img_dtransform_apply" href="img/img_dtransform_apply.html">
+            <topic label="Description:" href="img/img_dtransform_apply.html#id9"/>
+          </topic>
+          <topic label="img_dtransform_create" href="img/img_dtransform_create.html">
+            <topic label="Description:" href="img/img_dtransform_create.html#id9"/>
+          </topic>
+          <topic label="img_dtransform_free" href="img/img_dtransform_free.html">
+            <topic label="Description:" href="img/img_dtransform_free.html#id9"/>
+          </topic>
+          <topic label="img_encode_begin" href="img/img_encode_begin.html">
+            <topic label="Description:" href="img/img_encode_begin.html#id9"/>
+          </topic>
+          <topic label="img_encode_callouts_t" href="img/img_encode_callouts_t.html">
+            <topic label="Description:" href="img/img_encode_callouts_t.html#id5">
+                <topic label="img_encode_choose_format_f *choose_format_f" href="img/img_encode_callouts_t.html#id7"/>
+                <topic label="img_encode_setup_f* setup_f" href="img/img_encode_callouts_t.html#id9"/>
+                <topic label="img_encode_abort_f* abort_f" href="img/img_encode_callouts_t.html#id11"/>
+                <topic label="img_encode_scanline_f* scanline_f" href="img/img_encode_callouts_t.html#id13"/>
+                <topic label="img_encode_get_transparency_f* get_transparency_f" href="img/img_encode_callouts_t.html#id15"/>
+                <topic label="img_encode_get_palette_f* get_palette_f" href="img/img_encode_callouts_t.html#id17"/>
+                <topic label="img_encode_frame_f* frame_f" href="img/img_encode_callouts_t.html#id19"/>
+                <topic label="uintptrt_t data" href="img/img_encode_callouts_t.html#id21"/>
+            </topic>
+          </topic>
+          <topic label="img_encode_finish" href="img/img_encode_finish.html">
+            <topic label="Description:" href="img/img_encode_finish.html#id9"/>
+          </topic>
+          <topic label="img_encode_frame" href="img/img_encode_frame.html">
+            <topic label="Description:" href="img/img_encode_frame.html#id9"/>
+          </topic>
+          <topic label="img_expand_getfunc" href="img/img_expand_getfunc.html">
+            <topic label="Description:" href="img/img_expand_getfunc.html#id9"/>
+          </topic>
+          <topic label="IMG_FMT_BPL" href="img/img_fmt_bpl.html">
+            <topic label="Description:" href="img/img_fmt_bpl.html#id9"/>
+          </topic>
+          <topic label="IMG_FMT_BPP" href="img/img_fmt_bpp.html">
+            <topic label="Description:" href="img/img_fmt_bpp.html#id9"/>
+          </topic>
+          <topic label="img_lib_attach" href="img/img_lib_attach.html">
+            <topic label="Description:" href="img/img_lib_attach.html#id9">
+              <topic label="The img.conf Configuration File" href="img/img_lib_attach.html#config"/>
+            </topic>
+          </topic>
+          <topic label="img_lib_detach" href="img/img_lib_detach.html">
+            <topic label="Description:" href="img/img_lib_detach.html#id9"/>
+          </topic>
+          <topic label="img_load" href="img/img_load.html">
+            <topic label="Description:" href="img/img_load.html#id9"/>
+          </topic>
+          <topic label="img_load_file" href="img/img_load_file.html">
+            <topic label="Description:" href="img/img_load_file.html#id9"/>
+          </topic>
+          <topic label="img_load_resize_file" href="img/img_load_resize_file.html">
+            <topic label="Description:" href="img/img_load_resize_file.html#id9"/>
+          </topic>
+          <topic label="img_resize_fs" href="img/img_resize_fs.html">
+            <topic label="Description:" href="img/img_resize_fs.html#id9"/>
+          </topic>
+          <topic label="img_rotate_ortho" href="img/img_rotate_ortho.html">
+            <topic label="Description:" href="img/img_rotate_ortho.html#id9"/>
+          </topic>
+          <topic label="img_t" href="img/img_t.html">
+            <topic label="Description:" href="img/img_t.html#id5"/>
+          </topic>
+          <topic label="img_write_file" href="img/img_write_file.html">
+            <topic label="Description:" href="img/img_write_file.html#id9"/>
+          </topic>
+          <topic label="img_write" href="img/img_write.html">
+            <topic label="Description:" href="img/img_write.html#id9"/>
+          </topic>
+          <topic label="io_close" href="img/io_close.html">
+            <topic label="Description:" href="img/io_close.html#id9"/>
+          </topic>
+          <topic label="io_open" href="img/io_open.html">
+            <topic label="Description:" href="img/io_open.html#id9"/>
+          </topic>
+      </topic>
+      <topic label="What's New" href="whatsnew.html">
+          <topic label="What's new in QNX Neutrino Core Graphics for 6.5.0 Service Pack 1" href="whatsnew.html#651SP1"/>
+          <topic label="What's new in QNX Neutrino Core Graphics for 6.5.0" href="whatsnew.html#642"/>
+          <topic label="What's new in QNX Neutrino Core Graphics for 6.4.1" href="whatsnew.html#id5"/>
+          <topic label="What's new in QNX Neutrino Core Graphics for 6.4.0" href="whatsnew.html#WhatsNew4.0"/>
+          <topic label="What's new in QNX Advanced Graphics 2.1" href="whatsnew.html#WhatsNew2.1"/>
+          <topic label="What's new in QNX Advanced Graphics 2.0" href="whatsnew.html#WhatsNew2.0"/>
+      </topic>
+      <topic label="Glossary" href="glossary.html"/>
+</toc>

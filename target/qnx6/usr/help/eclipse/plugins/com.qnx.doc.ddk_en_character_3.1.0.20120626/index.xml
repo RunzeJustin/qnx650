@@ -1,0 +1,337 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<index>
+ <entry keyword="conventions">
+  <entry keyword="typographical">
+   <topic href="about.html#Typographical_conventions" title="Typographical conventions"/>
+  </entry>
+ </entry>
+ <entry keyword="create_device()">
+  <topic href="ser8250.html#create_device" title="create_device()"/>
+ </entry>
+ <entry keyword="dev_lock()">
+  <topic href="lib/ttyctrl.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="dev_unlock()">
+  <topic href="lib/ttyctrl.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="EDIT_INSERT">
+  <topic href="lib/ttydev.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="EDIT_PREFIX">
+  <topic href="lib/ttydev.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="enable_device()">
+  <topic href="ser8250.html#enable_device" title="enable_device()"/>
+ </entry>
+ <entry keyword="EVENT_CARRIER">
+  <topic href="lib/ttydev.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="EVENT_DRAIN">
+  <topic href="lib/ttydev.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="EVENT_NOTIFY_INPUT">
+  <topic href="lib/ttydev.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="EVENT_NOTIFY_OBAND">
+  <topic href="lib/ttydev.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="EVENT_NOTIFY_OUTPUT">
+  <topic href="lib/ttydev.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="EVENT_QUEUED">
+  <topic href="lib/ttydev.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="EVENT_READ">
+  <topic href="lib/ttydev.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="EVENT_SIGBRK">
+  <topic href="lib/ttydev.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="EVENT_SIGHUP">
+  <topic href="lib/ttydev.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="EVENT_SIGINT">
+  <topic href="lib/ttydev.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="EVENT_SIGQUIT">
+  <topic href="lib/ttydev.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="EVENT_SIGSUP">
+  <topic href="lib/ttydev.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="EVENT_TIMEOUT">
+  <topic href="lib/ttydev.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="EVENT_TTO">
+  <topic href="lib/ttydev.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="EVENT_WRITE">
+  <topic href="lib/ttydev.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="FIRST_TIME_ALONE">
+  <topic href="lib/ttydev.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="IHW_PAGED">
+  <topic href="lib/ttydev.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="iochar_regdrv_power()">
+  <topic href="lib/iochar_regdrv_power.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="iochar_send_event()">
+  <topic href="lib/iochar_send_event.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ISAPTY">
+  <topic href="lib/ttydev.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="ISW_PAGED">
+  <topic href="lib/ttydev.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="kick()">
+  <topic href="lib/kick.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="LITERAL">
+  <topic href="lib/ttydev.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="LOSES_TX_INTR">
+  <topic href="lib/ttydev.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="NL_INSERT">
+  <topic href="lib/ttydev.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="NOTTY">
+  <topic href="lib/ttydev.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="OBAND_DATA">
+  <topic href="lib/ttydev.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="OHW_PAGED">
+  <topic href="lib/ttydev.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="options()">
+  <topic href="ser8250.html#options" title="options()"/>
+ </entry>
+ <entry keyword="OSW_PAGED">
+  <topic href="lib/ttydev.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="OSW_PAGED_OVERRIDE">
+  <topic href="lib/ttydev.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="pathname delimiter in QNX documentation">
+  <topic href="about.html#WINDOWSNOTE" title="Note to Windows users"/>
+ </entry>
+ <entry keyword="PM_MODE_HW_ACTIVE">
+  <topic href="lib/iochar_regdrv_power.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="PM_MODE_HW_ALL">
+  <topic href="lib/iochar_regdrv_power.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="PM_MODE_HW_CTRL">
+  <topic href="lib/iochar_regdrv_power.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="PM_MODE_HW_DRAIN">
+  <topic href="lib/iochar_regdrv_power.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="PM_MODE_HW_NONE">
+  <topic href="lib/iochar_regdrv_power.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="PM_MODE_HW_OFF">
+  <topic href="lib/iochar_regdrv_power.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="PM_MODE_HW_REG">
+  <topic href="lib/iochar_regdrv_power.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="PM_MODE_HW_REGREAD">
+  <topic href="lib/iochar_regdrv_power.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="PM_MODE_HW_REGWRITE">
+  <topic href="lib/iochar_regdrv_power.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="PM_MODE_HW_RX">
+  <topic href="lib/iochar_regdrv_power.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="PM_MODE_HW_RXTX">
+  <topic href="lib/iochar_regdrv_power.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="PM_MODE_HW_TX">
+  <topic href="lib/iochar_regdrv_power.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="PTY_MASTER_ONLY">
+  <topic href="lib/ttydev.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="PWR_EVENT_DEVCTL">
+  <topic href="lib/iochar_regdrv_power.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="PWR_EVENT_DEVWAKEUP">
+  <topic href="lib/iochar_regdrv_power.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="PWR_FLOW_PAGED">
+  <topic href="lib/iochar_regdrv_power.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="PWR_INIT_DRVNOFLOWCTL">
+  <topic href="lib/iochar_regdrv_power.html#id5" title="Arguments:"/>
+  <topic href="lib/ttyinit.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="PWR_INIT_DRVOVERRIDE">
+  <topic href="lib/iochar_regdrv_power.html#id5" title="Arguments:"/>
+  <topic href="lib/ttyinit.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="PWR_INIT_DRVPSTORE">
+  <topic href="lib/iochar_regdrv_power.html#id5" title="Arguments:"/>
+  <topic href="lib/ttyinit.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="PWR_INIT_DRVREG">
+  <topic href="lib/iochar_regdrv_power.html#id5" title="Arguments:"/>
+  <topic href="lib/ttyinit.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="PWR_INIT_DRVSAVE">
+  <topic href="lib/iochar_regdrv_power.html#id5" title="Arguments:"/>
+  <topic href="lib/ttyinit.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="PWR_INIT_NOPMM">
+  <topic href="lib/iochar_regdrv_power.html#id5" title="Arguments:"/>
+  <topic href="lib/ttyinit.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="PWR_WAITING_DRAIN">
+  <topic href="lib/iochar_regdrv_power.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="query_default_device()">
+  <topic href="ser8250.html#query_default_device" title="query_default_device()"/>
+ </entry>
+ <entry keyword="ser_intr()">
+  <topic href="ser8250.html#ser_intr" title="ser_intr()"/>
+ </entry>
+ <entry keyword="ser_stty()">
+  <topic href="ser8250.html#ser_stty" title="ser_stty()"/>
+ </entry>
+ <entry keyword="set_port()">
+  <topic href="ser8250.html#set_port" title="set_port()"/>
+ </entry>
+ <entry keyword="support, technical">
+  <topic href="about.html#Support" title="Technical support"/>
+ </entry>
+ <entry keyword="sys_ttyinit()">
+  <topic href="ser8250.html#sys_ttyinit" title="sys_ttyinit()"/>
+ </entry>
+ <entry keyword="technical support">
+  <topic href="about.html#Support" title="Technical support"/>
+ </entry>
+ <entry keyword="TIMER_ACTIVE">
+  <topic href="lib/ttydev.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="TIMER_KEEP">
+  <topic href="lib/ttydev.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="timer_queue()">
+  <topic href="lib/timer_queue.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="timer_remove()">
+  <topic href="lib/timer_remove.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="tt">
+  <entry keyword="configuring">
+   <topic href="lib/iochar_regdrv_power.html#id7" title="Description:"/>
+   <topic href="lib/iochar_send_event.html#id7" title="Description:"/>
+   <topic href="lib/kick.html#id7" title="Description:"/>
+   <topic href="lib/timer_queue.html#id7" title="Description:"/>
+   <topic href="lib/timer_remove.html#id7" title="Description:"/>
+   <topic href="lib/ttc.html#id7" title="Description:"/>
+   <topic href="lib/tto_checkclients.html#id7" title="Description:"/>
+   <topic href="lib/tto_getchar.html#id7" title="Description:"/>
+   <topic href="lib/tx_inject.html#id7" title="Description:"/>
+   <topic href="lib/wait_add.html#id7" title="Description:"/>
+   <topic href="lib/wait_remove_rcvid.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="input">
+   <topic href="lib/tti.html#id7" title="Description:"/>
+   <topic href="lib/tti2.html#id7" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="ttc()">
+  <topic href="lib/ttc.html#id7" title="Description:"/>
+  <topic href="lib/tx_inject.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="TTC_INIT_ATTACH">
+  <topic href="lib/ttc.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="TTC_INIT_CC">
+  <topic href="lib/ttc.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="TTC_INIT_EDIT">
+  <topic href="lib/ttc.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="TTC_INIT_POWER">
+  <topic href="lib/ttc.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="TTC_INIT_PROC">
+  <topic href="lib/ttc.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="TTC_INIT_PTY">
+  <topic href="lib/ttc.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="TTC_INIT_RAW">
+  <topic href="lib/ttc.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="TTC_INIT_START">
+  <topic href="lib/ttc.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="TTC_INIT_TTYNAME">
+  <topic href="lib/ttc.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="TTC_TIMER_QUEUE">
+  <topic href="lib/ttc.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="TTC_TTY_DETACH">
+  <topic href="lib/ttc.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="tti()">
+  <topic href="lib/tti.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="tti2()">
+  <topic href="lib/tti2.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="TTI_*">
+  <topic href="lib/tti.html#id7" title="Description:"/>
+  <topic href="lib/tti2.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="TTI_BREAK">
+  <topic href="lib/ttydev.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="tto()">
+  <topic href="ser8250.html#tto" title="tto()"/>
+ </entry>
+ <entry keyword="tto_checkclients()">
+  <topic href="lib/tto_checkclients.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="tto_getchar()">
+  <topic href="lib/tto_getchar.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="tty">
+  <entry keyword="control">
+   <topic href="lib/ttyctrl.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="device">
+   <topic href="lib/ttydev.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="init">
+   <topic href="lib/ttyinit.html#id5" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="TTYCTRL">
+  <topic href="lib/ttyctrl.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="TTYDEV">
+  <topic href="lib/ttydev.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="TTYINIT">
+  <topic href="lib/ttyinit.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="typographical conventions">
+  <topic href="about.html#Typographical_conventions" title="Typographical conventions"/>
+ </entry>
+ <entry keyword="wait_add()">
+  <topic href="lib/wait_add.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="wait_remove_rcvid()">
+  <topic href="lib/wait_remove_rcvid.html#id7" title="Description:"/>
+ </entry>
+</index>

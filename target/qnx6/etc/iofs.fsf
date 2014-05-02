@@ -1,0 +1,38 @@
+# Filename rules
+# PATTERN     FLAGS
+*.aac         SN P(64K)   G(64K)
+*.flac/*.aac
+*.mp3/*.aac
+*.ogg/*.aac
+*.wav/*.aac
+*.wma/*.aac
+
+*.mpg         SN P(256K)  G(64K 256K,256K 2M,1M)
+*.avi/*.mpg
+*.mov/*.mpg
+*.mpeg/*.mpg
+*.wmv/*.mpg
+
+*.o           SN P(64K)   G(16K  16K,64K)
+*.lib         SN P(64K)   G(256K)
+
+# Next group for testing
+*.non         SN P(0K)    G(0K)
+*.pag         SN P(4K)    G(4K)
+*.bun         SN P(64K)   G(64K)
+*.wad         SN P(256K)  G(256K)
+*.thr         SN P(1M)    G(1M)
+*.xxx         E 
+
+!             S  P(64K)   G(16K 16K,64K)
+*                         G(4K  16K,8K 64K,32K)
+
+# Where
+# E - Encrypt
+# N - No reuse
+# R - Random
+# S - Sequential
+# P(n)           - Preread
+# G(n, n,n n,n)  - Growth
+
+

@@ -1,0 +1,200 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Locating sources of high CPU usage" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_Use_cases_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="LocatingsourcesofhighCPUusage" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Locating sources of high CPU usage</title>
+   </head>
+   <body id="LocatingsourcesofhighCPUusage"><a name="LocatingsourcesofhighCPUusage" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Locating sources of high CPU usage</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>You might want to know where in time your CPU cycles are being consumed and who is doing the consuming. The System Profiler
+            provides several tools to help extract this information and drill down to quickly and easily determine the source and distribution
+            of CPU consumption.
+            
+         </p>
+         
+         
+         <p>
+            <strong>Requirements</strong>
+            
+         </p>
+         
+         
+         <p>To extract CPU usage metrics using the System Profiler tools, the captured log file must contain at a minimum, the Neutrino
+            RUNNING thread state. If the RUNNING thread state is logged in wide mode, then additional information regarding CPU usage
+            distribution over priority and partitions can also be calculated. 
+         </p>
+         
+         
+         <p>In order to determine the CPU load caused by interrupts, you must also log the Interrupt Entry/Exit events. </p>
+         
+         
+         <p>
+            <strong>Procedure</strong>
+            
+         </p>
+         
+         
+         <p>To start, open the target log file in the System Profiler editor. By default, the initial view should show the Summary editor
+            pane; if this isn't the case, then you can get to the Summary editor pane via the menu item <span class="menucascade">
+               <span class="uicontrol">System Profiler</span>
+               &gt; <span class="uicontrol">Display</span>
+               &gt; <span class="uicontrol">Switch Pane</span>
+               &gt; <span class="uicontrol">Summary</span>
+               </span>. 
+         </p>
+         
+         
+         <p>The Summary editor pane shows a high-level overview of the log file contents: </p>
+         
+         
+         <p>
+            <span><img src="../images/pic2Fsysprof_High_CPU_usage_.xml_d175592e62.jpg" alt="Summary editor" /></span>
+            
+         </p>
+         
+         
+         <p>The System Activity section shows the distribution of time spent in the log file, separated into these categories: </p>
+         
+         
+         <dl>
+            <dt class="dlterm">Idle</dt>
+            <dd>The amount of time that the idle thread(s) spent running in this log file. </dd>
+            <dt class="dlterm">Interrupts</dt>
+            <dd>The amount of time that has been spent servicing hardware interrupts in this log file. </dd>
+            <dt class="dlterm">Kernel</dt>
+            <dd>The amount of time that has been spent making kernel calls (measured between kernel entry and exit events). This time doesn't
+               include any of the time spent handling hardware interrupts. 
+            </dd>
+            <dt class="dlterm">User</dt>
+            <dd>The amount of time that non-idle threads spend in the Neutrino RUNNING state, minus the time spent performing kernel calls
+               or in interrupt handlers. 
+            </dd>
+         </dl>
+         
+         
+         <p>Using these metrics, you can get a rough estimate of how efficiently your system is performing (e.g. amount of idle time,
+            ratio of system to user time, possible interrupt flooding). 
+         </p>
+         
+         
+         <p>The distribution of CPU usage over the time of the entire log file is shown graphically in the Process &amp; Thread Activity section
+            overlaid with the volume of events that have been generated. This same data is also available as the Overview view accessed
+            via <span class="menucascade">
+               <span class="uicontrol">Window</span>
+               &gt; <span class="uicontrol">Show View</span>
+               &gt; <span class="uicontrol">Other …</span>
+               &gt; <span class="uicontrol">Overview</span>
+               </span>. 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/pic2Fsysprof_High_CPU_usage_.xml_d175592e135.jpg" alt="System Profiler: CPU activity" /></span>
+            
+         </p>
+         
+         
+         <p>The peaks of these results indicate areas of particularly intense CPU usage and are the areas of most interest. </p>
+         
+         
+         <p>To focus on the particular threads that are causing these spikes, switch the editor display pane to the CPU Usage editor pane.
+            You can do this via the menu item <span class="menucascade">
+               <span class="uicontrol">System Profiler</span>
+               &gt; <span class="uicontrol">Display</span>
+               &gt; <span class="uicontrol">Switch Pane</span>
+               &gt; <span class="uicontrol">CPU Usage</span>
+               </span> or by using the editor pull down. 
+         </p>
+         
+         
+         <p>The CPU Usage editor display charts the CPU usage of consuming elements (threads and interrupts) over time and provides a
+            tabular view showing the sum of this usage categorized by CPU, priority, or partition. 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/pic2Fsysprof_High_CPU_usage_.xml_d175592e168.jpg" alt="System Profiler: CPU usage" /></span>
+            
+         </p>
+         
+         
+         <p>By selecting multiple elements in the table, you can stack the CPU usage to see how threads and interrupts are interacting.
+            For example, selecting the first few non-idle CPU consumers in this example provides the following result: 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/pic2Fsysprof_High_CPU_usage_.xml_d175592e181.jpg" alt="System Profiler: nonidle CPU users" /></span>
+            
+         </p>
+         
+         
+         <p>By selecting a region of the display, you can zoom in to the area of interest to further drill down into selected areas to
+            better examine the profile of the CPU execution. As the display zooms in, the editor panel's time bar is updated to show the
+            new range of time being examined. 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/pic2Fsysprof_High_CPU_usage_.xml_d175592e193.jpg" alt="System Profiler: zooming in" /></span>
+            
+         </p>
+         
+         
+         <p>This example has shown the CPU usage for process threads, but this technique applies equally well to individual interrupt
+            handlers, which show up as CPU consumers in the same manner as threads. 
+         </p>
+         
+         
+         <p>The CPU Usage editor pane lets you isolate and assign CPU consumption behavior to specific threads very quickly and easily.
+            With this information, you can generally use a more specialized, and application centric, tool such as the Application Profiler
+            to look more closely at execution behavior and to drill down directly to the application source code. 
+         </p>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/sysprof_Use_cases_.html" shape="rect">System Profiler use cases</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

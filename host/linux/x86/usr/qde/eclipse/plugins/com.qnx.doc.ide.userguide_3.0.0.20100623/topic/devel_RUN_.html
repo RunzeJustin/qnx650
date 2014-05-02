@@ -1,0 +1,235 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="task" />
+      <meta name="DC.Title" content="Running binaries for a project" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_Base_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_CDEVPERS_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_UnderstandingIDEProjects_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_CREATE_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_CONTROL_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_WRITE_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_BUILD_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_Delete_A_Project.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_FEATURES_.html" />
+      <meta name="DC.Relation" scheme="URI" content="devel_building_all_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Runningprojects" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Running binaries for a project</title>
+   </head>
+   <body id="Runningprojects"><a name="Runningprojects" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Running binaries for a project</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <div class="p">
+            
+            <div class="note"><span class="notetitle">Note:</span> Before running an application, you must prepare your target. If it isn't already prepared,
+               you must do so now. For information about configuring your target, see the <a href="target_Base_.html" shape="rect">Preparing Your Target</a> chapter in this guide.
+            </div>
+            
+            
+            <p>After you build a project, you're ready to run it. The IDE lets you run or debug your
+               executables on a remote QNX Neutrino target machine. (For a description of remote targets, see
+               the <a href="concepts_Base_.html" shape="rect">IDE Concepts</a> chapter.) 
+            </p>
+            
+            
+            <p>To run or debug your program, you must create both of the following: 
+               
+            </p>
+            
+            <br clear="none" /><ul>
+               <li>a QNX Target System Project, which specifies how the IDE communicates with your target; once
+                  you've created a QNX Target System Project, you can reuse it for every program that runs on that
+                  particular target. 
+               </li>
+               <li>a launch configuration, which describes how the program runs on your target; you'll need to
+                  set this up only once for that particular program. 
+               </li>
+            </ul>
+            
+            
+            <div class="note"><span class="notetitle">Note:</span> For a complete description of how to create a QNX Target System Project, see the <a href="wizards_Base_.html" shape="rect">Project and Wizard Properties Reference</a> chapter in this guide. 
+               <p>For a complete
+                  description of the Launch Configurations dialog and its available options, see the <a href="launch_Base_.html" shape="rect">Launch Configurations Reference</a> chapter in this guide.
+               </p>
+               
+            </div>
+            
+            
+         </div>
+         
+         
+         <div class="section">To run a project:
+            
+         </div>
+         
+         
+         <ol>
+            <li class="stepexpand">
+               <span>To create a QNX Target System Project, from the menu, select <span class="menucascade">
+                     <span class="uicontrol">File</span>
+                     &gt; <span class="uicontrol">New</span>
+                     &gt; <span class="uicontrol">Other…</span>
+                     </span>.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>In the list, expand <span class="uicontrol">QNX</span>.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Select <span class="uicontrol">QNX Target System Project</span>.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Click <span class="uicontrol">Next</span>.</span>
+               
+               
+               <p>
+                  <span><img src="../images/guide2Ftemp2Ftopic2Fdevel_RUN_.xml_d80893e119.jpg" alt="New QNX System Target project" /></span>
+                  
+               </p>
+               
+               
+               
+            </li>
+            <li class="stepexpand">
+               <span>Type a name for your target.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Type your target's hostname or IP address.</span>
+               
+               
+               <div class="note"><span class="notetitle">Note:</span> When you update the Target properties from
+                  the Attributes pane, your changes won't be updated if you modify the
+                  <span class="uicontrol">Hostname</span> or <span class="uicontrol">IP address</span>, and then click
+                  <span class="uicontrol">Apply</span>. You must click <span class="uicontrol">OK</span> to confirm the changes
+                  and close the properties window for the changes to take effect.
+               </div>
+               
+               
+               
+            </li>
+            <li class="stepexpand">
+               <span>Click <span class="uicontrol">Finish</span>.</span>
+               Next, you'll see your new QNX Target
+               System Project in the Project Explorer view.
+               
+            </li>
+            <li class="stepexpand">
+               <span>Make sure you build your project first before you create a launch configuration for it.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>To create a launch configuration to run your project, in the Project Explorer view, expand the <span class="filepath">Binaries</span> folder. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Right-click on your project's executable file.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Select <span class="menucascade">
+                     <span class="uicontrol">Run As</span>
+                     &gt; <span class="uicontrol">C/C++ QNX Application</span>
+                     </span>.</span>
+               
+               
+               <p>
+                  <span><img src="../images/guide2Ftemp2Ftopic2Fdevel_RUN_.xml_d80893e214.jpg" alt="New launch configuration" /></span>
+                  
+               </p>
+               
+               
+               
+            </li>
+            <li class="stepexpand">
+               <span>In the <span class="uicontrol">Name</span> field, give your launch configuration a name. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>In the <span class="uicontrol">Target Options</span> section, select your target. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Click the <span class="uicontrol">Run</span> button.</span>
+               
+            </li>
+         </ol>
+         
+         
+         <div class="section">Your program runs, and the IDE shows its output (if any) in the Console view. </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/devel_Base_.html" shape="rect">Developing C/C++ Programs</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/devel_CDEVPERS_.html" shape="rect">The C/C++ perspective</a></div>
+            
+            <div><a href="../topic/devel_UnderstandingIDEProjects_.html" shape="rect">Understanding projects in the IDE</a></div>
+            
+            <div><a href="../topic/devel_CREATE_.html" shape="rect">Developing projects in the IDE</a></div>
+            
+            <div><a href="../topic/devel_CONTROL_.html" shape="rect">Working with projects</a></div>
+            
+            <div><a href="../topic/devel_WRITE_.html" shape="rect">Writing code</a></div>
+            
+            <div><a href="../topic/devel_BUILD_.html" shape="rect">Building projects</a></div>
+            
+            <div><a href="../topic/devel_FEATURES_.html" shape="rect">More development features</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/devel_Delete_A_Project.html" shape="rect">Deleting a project</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related information</strong><br clear="none" />
+            
+            <div><a href="devel_building_all_.html" shape="rect">devel_building_all_.html</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

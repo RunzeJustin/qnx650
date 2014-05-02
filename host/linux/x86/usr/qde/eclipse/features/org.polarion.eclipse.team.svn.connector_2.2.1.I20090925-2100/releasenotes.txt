@@ -1,0 +1,39 @@
+********************************************************************************
+*                        Subversive connectors Change Log                      *
+*                                                                              *
+* Subversive - a brand new Eclipse Client for Subversion (SVN)                 *
+* See details at http://www.eclipse.org/subversive and http://www.polarion.org *
+********************************************************************************
+
+This connectors works only with Subversive version which is distributed from Eclipse.org site.
+ 
+Version 2.2.1.I20090925-2100 release date: 25 September 2009
+
+1. What's New
+
+   The version is 2.2.1 service release. The main target of the release is 
+   transferring Subversive development to Eclipse.org.
+   
+   Changes in compare with previous version are listed below. The full list of 
+   changes you can find in Change Log.
+    
+    Features:
+	 * Java HL 1.6.5 binaries are included	 
+
+2. Information
+
+2.1. System Requirements
+
+   Subversive requires JDK 1.5 or higher and supports following versions of Eclipse:
+    * 3.3 (tested with 3.3.2)
+    * 3.4 (tested with 3.4)
+    * 3.5 (tested with 3.5)
+       
+   Subversive supports
+   	Subversion version 1.4 with SVN Kit 1.1.x and JavaHL 1.4.x,
+   	Subversion version 1.5 with SVN Kit 1.2.x and JavaHL 1.5.x, 
+   	Subversion version 1.6 with SVN Kit 1.3.x and JavaHL 1.6.x
+
+2.2 Known issues
+
+	* "Find projects" part of "Find/Checkout As" action could take too much time on slow connections

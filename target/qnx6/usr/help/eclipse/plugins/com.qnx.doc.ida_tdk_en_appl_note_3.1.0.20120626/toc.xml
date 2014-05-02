@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="User's Guide">
+      <topic label="About This Guide" href="about.html">
+          <topic label="Typographical conventions" href="about.html#Typographical_conventions">
+            <topic label="Note to Windows users" href="about.html#WINDOWSNOTE"/>
+            <topic label="Navigation buttons" href="about.html#Navigation"/>
+          </topic>
+          <topic label="Technical support" href="about.html#Support"/>
+      </topic>
+      <topic label="Using Minidrivers for Instant Device Activation" href="ida_appl_note.html">
+          <topic label="The minidriver basics" href="ida_appl_note.html#id3"/>
+          <topic label="The minidriver architecture" href="ida_appl_note.html#id5"/>
+          <topic label="How does the minidriver work?" href="ida_appl_note.html#id7">
+            <topic label="Seamless transition" href="ida_appl_note.html#id9"/>
+            <topic label="Running multiple handler functions" href="ida_appl_note.html#id11"/>
+          </topic>
+          <topic label="Writing a minidriver" href="ida_appl_note.html#id13">
+            <topic label="Hardware platform" href="ida_appl_note.html#id15"/>
+            <topic label="Timing requirements" href="ida_appl_note.html#id17"/>
+            <topic label="Data storage" href="ida_appl_note.html#id19"/>
+            <topic label="Hardware initialization" href="ida_appl_note.html#id21"/>
+            <topic label="Hardware Access" href="ida_appl_note.html#id23"/>
+            <topic label="Transition to full driver" href="ida_appl_note.html#id25"/>
+          </topic>
+          <topic label="Sample minidriver" href="ida_appl_note.html#id27">
+              <topic label="Implementation notes" href="ida_appl_note.html#id29"/>
+            <topic label="The minidriver handler function" href="ida_appl_note.html#id31"/>
+            <topic label="Adding your minidriver to the system" href="ida_appl_note.html#id33"/>
+            <topic label="Build startup" href="ida_appl_note.html#id35"/>
+            <topic label="Test application: mini-peeker.c" href="ida_appl_note.html#id37"/>
+            <topic label="Transition from minidriver to full driver" href="ida_appl_note.html#id39"/>
+          </topic>
+          <topic label="Minidriver implementation notes" href="ida_appl_note.html#id41">
+            <topic label="Customizing the startup program that contains your minidriver code" href="ida_appl_note.html#id43"/>
+            <topic label="Making a boot image that includes your minidriver" href="ida_appl_note.html#id45"/>
+            <topic label="Debugging from within the minidriver" href="ida_appl_note.html#id47"/>
+            <topic label="Displaying information about minidriver status (after the kernel boots)" href="ida_appl_note.html#id49"/>
+            <topic label="Making the transition to the real driver" href="ida_appl_note.html#id51"/>
+          </topic>
+      </topic>
+      <topic label="APIs and Datatypes" href="ida_api_datatype.html">
+          <topic label="mdriver_add" href="mdriver_add.html">
+            <topic label="Description:" href="mdriver_add.html#id9">
+              <topic label="mdriver_handler" href="mdriver_add.html#MDRVR_HNDLR"/>
+            </topic>
+          </topic>
+          <topic label="mdriver_max" href="mdriver_max.html">
+            <topic label="Description:" href="mdriver_max.html#id5"/>
+          </topic>
+          <topic label="mdriver_entry" href="mdriver_entry.html">
+            <topic label="Description:" href="mdriver_entry.html#id5"/>
+          </topic>
+      </topic>
+      <topic label="Sample Drivers for Instant Device Activation" href="ida_examples.html">
+          <topic label="FreeScale Media5200b sample minidriver" href="ida_examples.html#id3">
+            <topic label="The minidriver handler function" href="ida_examples.html#id5"/>
+            <topic label="Adding your minidriver to the system" href="ida_examples.html#id7"/>
+            <topic label="Build startup" href="ida_examples.html#id9"/>
+            <topic label="Testing your minidriver" href="ida_examples.html#id11"/>
+            <topic label="Sample timings" href="ida_examples.html#id13"/>
+          </topic>
+          <topic label="Renesas Biscayne minidriver" href="ida_examples.html#id15">
+            <topic label="The minidriver handler function" href="ida_examples.html#id17"/>
+            <topic label="Adding your minidriver to the system" href="ida_examples.html#id19"/>
+            <topic label="Build startup" href="ida_examples.html#id21"/>
+            <topic label="Testing your minidriver" href="ida_examples.html#id23"/>
+            <topic label="Sample Timings" href="ida_examples.html#id25"/>
+          </topic>
+          <topic label="OMAP minidriver" href="ida_examples.html#id27">
+            <topic label="Adding your minidriver to the system" href="ida_examples.html#id29"/>
+            <topic label="Build startup" href="ida_examples.html#id31"/>
+            <topic label="Testing your minidriver" href="ida_examples.html#id33"/>
+            <topic label="Sample timings" href="ida_examples.html#id35"/>
+          </topic>
+      </topic>
+      <topic label="Hardware Interaction within the Minidriver" href="appendix_ida.html"/>
+</toc>

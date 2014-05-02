@@ -1,0 +1,133 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="task" />
+      <meta name="DC.Title" content="Connecting the Abatron BDI2000 JTAG Debugger to your host" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGAbtron_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="ConnectingtheAbatronBDI2000JTAGDebuggertoyourhost" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Connecting the Abatron BDI2000 JTAG Debugger to your host</title>
+   </head>
+   <body id="ConnectingtheAbatronBDI2000JTAGDebuggertoyourhost"><a name="ConnectingtheAbatronBDI2000JTAGDebuggertoyourhost" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Connecting the Abatron BDI2000 JTAG Debugger to your host</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <div class="p">
+            
+            <p>The Abatron BDI2000 JTAG Debugger enhances the GNU debugger with JTAG debugging for
+               various targets. 
+            </p>
+            
+            
+            <p>The following illustration shows how the Abatron BDI2000 JTAG Debugger is connected
+               to your host: 
+            </p>
+            
+            
+            <p>
+               <span><img src="../images/ug_JTAGAbtronConnectToHost_.xml_d45389e22.jpg" alt="Architecture for connecting the Abatron BDI2000 Debugger to your host&#xA;                        machine" /></span>
+               
+            </p>
+            
+            
+            <div class="fignone">
+               
+               <p>Architecture for connecting the Abatron BDI Debugger to your host machine.</p>
+               
+               
+            </div>
+            
+            
+            <p>The BDI2000 box implements the interface between the JTAG pins of the target CPU and
+               the Ethernet connector. Later, you'll install the specific Abatron firmware, and
+               configure the programmable logic of the BDI2000 Debugger device. 
+            </p>
+            
+            
+         </div>
+         
+         
+         <div class="section">To physically connect the Abatron BDI2000 Debugger to your host machine:</div>
+         
+         
+         <ol>
+            <li class="stepexpand">
+               <span>Connect one end of an Ethernet cable into the RJ45 jack of the Abatron BDI2000
+                  Debugger, and the other end into a network switch connected to your LAN. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Connect the female end of a serial cable to the serial port of the Abatron
+                  BDI2000 Debugger device, and then connect the other end to a COM port on the
+                  host machine.</span>
+               
+               
+               <div class="note"><span class="notetitle">Note:</span> <em>Don't</em> connect a JTAG debug cable into the Abatron BDI2000 Debugger.
+                  The debugger shouldn't be connected to the target until <em>after</em> you've
+                  updated the Abatron firmware for that architecture. 
+               </div>
+               
+               
+               
+            </li>
+            <li class="stepexpand">
+               <span>Connect the power adapter to the Abatron BDI2000 device, and then plug it in.
+                  At this point, the BDI2000 module should visibly power on.</span>
+               
+            </li>
+         </ol>
+         
+         
+         <div class="section">
+            
+            <div class="note"><span class="notetitle">Note:</span> The flash memory of the Abatron BDI2000 JTAG Debugger stores the IP address of the
+               debugger as well as the IP address of the host, along with the configuration file
+               and the name of the configuration file. Every time you turn on the Abatron BDI2000
+               JTAG Debugger, it reads the configuration file using TFTP (TFTP is included with the
+               software).
+            </div>
+            
+            
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/debug_JTAGAbtron_.html" shape="rect">JTAG: Using the Abatron BDI2000 JTAG Debugger with a QNX Neutrino kernel image</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

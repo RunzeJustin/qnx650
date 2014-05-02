@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cheatsheet title="Code Coverage">
+   <intro href="/com.qnx.doc.ide.userguide/topic/coverage_Base_.html">
+      <description>
+         Welcome to the &quot;Code Coverage&quot; tutorial. It will help you to create a sample project and run
+      the &quot;QNX Code Coverage&quot; tool to test it. Click the following link to start.
+      </description>
+   </intro>
+   <item title="Cheat Sheet introduction" dialog="true" skip="false" href="/org.eclipse.platform.doc.user/reference/ref-cheatsheets.htm">
+      <description>
+         If you need information about how to work with cheat sheets,
+   click on the  button with the question mark on the right. 
+   To see the contents of the next instruction,
+   you must complete all tasks by 
+   clicking on &quot;Click to Complete&quot;, or by performing the 
+   auto-complete command.
+      </description>
+   </item>
+   <item title="Create Sample Project for Code Coverage" dialog="true" skip="true">
+      <description>
+         If you previously created the sample Code Coverage project, skip this step.
+      <br/>
+      To create the sample project for Code Coverage, perform the following steps:
+      </description>
+      <subitem label='Select "File-&gt;New-&gt;Project..." from the main menu. In the resulting "New Project" dialog box, expand the "Examples" category, then the "QNX IDE Examples", and then select &quot;QNX Example Code Coverage&quot;."' skip="false">
+         <command serialization="org.eclipse.ui.newWizard(newWizardId=com.qnx.tools.ide.momentics.examples.wizards.2)" confirm="true">
+         </command>
+      </subitem>
+      <subitem label="Click &quot;Next&quot;. Do not change the project name; click &quot;Finish&quot;." skip="false">
+      </subitem>
+      <onCompletion>
+         You have created the &quot;CodeCoverage&quot; project.
+      </onCompletion>
+   </item>
+   <item title="Set code coverage options for the project" dialog="true" skip="false" href="/com.qnx.doc.ide.userguide/topic/coverage_START_.html">
+      <description>
+         To analyze code coverage for a project, you must set specific flags for the compiler and linker
+      before you build your project.
+      </description>
+      <subitem label="Open &quot;Makefile&quot; by double-clicking on it in the &quot;Project Explorer&quot; view." skip="false">
+         <command serialization="org.eclipse.ui.navigate.openResource(filePath=/CodeCoverage/Makefile)" confirm="true">
+         </command>
+      </subitem>
+      <subitem label="Check that the compiler options have the following flags set: &quot;-O0 -Wc,-fprofile-arcs -Wc,-ftest-coverage&quot;" skip="false">
+      </subitem>
+      <subitem label="Check that the linker options have the following flags set: &quot;-ftest-coverage -fprofile-arcs -p&quot;" skip="false">
+      </subitem>
+      <onCompletion>
+         You are now ready to build the project.
+      </onCompletion>
+   </item>
+   <item title="Build the project" dialog="true" skip="false" href="/org.eclipse.cdt.doc.user/tasks/cdt_t_manualbuild.htm">
+      <description>
+         Right click on the &quot;CodeCoverage&quot; project in the &quot;Project Explorer&quot; view, and
+      select &quot;Build Project&quot; from the drop-down menu.
+      </description>
+      <onCompletion>
+         Make sure you have the &quot;rbt_client&quot; and &quot;rbt_server&quot; executables in the &quot;Binaries&quot; folder.
+      </onCompletion>
+   </item>
+   <item title="Create a new launch configuration and run the server application on the target" dialog="true" skip="false" href="/com.qnx.doc.ide.userguide/topic/coverage_STRTCVGENABLPRG_.html">
+      <description>
+         To analyze coverage for the &quot;rbt_server&quot; application, create a launch configuration and
+      launch the application on the target:
+      </description>
+      <subitem label="Right click on the &quot;rbt_server&quot; executable in the &quot;Binaries&quot; folder, and select &quot;Run As-&gt;C/C++ QNX Application Dialog...&quot;." skip="false">
+      </subitem>
+      <subitem label="On the &quot;Main&quot; tab, select the target that you want to run the program on." skip="false">
+      </subitem>
+      <subitem label="Switch to the &quot;Tools&quot; tab." skip="false">
+      </subitem>
+      <subitem label="Click on &quot;Add/Delete Tool...&quot;." skip="false">
+      </subitem>
+      <subitem label="Select the &quot;Code Coverage&quot; checkbox, and click the &quot;OK&quot; button." skip="false">
+      </subitem>
+      <subitem label="Select the &quot;Switch to this tool&apos;s perspective on launch&quot; checkbox." skip="false">
+      </subitem>
+      <subitem label="Click the &quot;Run&quot; button to run the application." skip="false">
+      </subitem>
+      <onCompletion>
+         You have launched the server application.
+      </onCompletion>
+   </item>
+   <item title="Run the client application with option" dialog="true" skip="false">
+      <description>
+         Repeat the process of creating launch configuration for &quot;rbt_client&quot; executable. In the &quot;Arguments&quot; tab enter command line option &quot;-r l&quot; (that's a lower-case &quot;L&quot;) as the client option. Launch it.
+      </description>
+   </item>
+   <item title="Investigate code coverage for the server" dialog="true" skip="false" href="/com.qnx.doc.ide.userguide/topic/coverage_SESSIONSCC_.html">
+      <description>
+         Now, you want to investigate code coverage results and find lines which are not covered.
+      </description>
+      <subitem label="Expand the launch configuration in the &quot;Code Coverage Sessions View&quot;. Open the session for the &quot;rbt_server&quot;." skip="false">
+      </subitem>
+      <subitem label="Double-click on the &quot;rbt_server.c&quot; source file in the &quot;Code Coverage Sessions View&quot;." skip="false">
+      </subitem>
+      <subitem label="Check source markers for code coverage on the side of the code editor." skip="false">
+      </subitem>
+   </item>
+   <item title="Run the client application several more times with different options" dialog="true" skip="false">
+      <description>
+         Use the following options to run the client:
+      </description>
+      <subitem label="-r r" skip="false">
+      </subitem>
+      <subitem label="-l l (lowercase &quot;L L&quot;)" skip="false">
+      </subitem>
+      <subitem label="-l r (lowercase &quot;L&quot;)" skip="false">
+      </subitem>
+   </item>
+   <item title="Combine the code coverage sessions" dialog="true" skip="false">
+      <description>
+         To combine your client launch sessions into one session:
+      </description>
+      <subitem label="Select two client launch sessions (holding the Ctrl key)." skip="false">
+      </subitem>
+      <subitem label="Right-click and select &quot;Combine/Copy Sessions...&quot;." skip="false">
+      </subitem>
+      <subitem label="Enter a name for new session and click &quot;OK&quot;." skip="false">
+      </subitem>
+      <subitem label="Investigate the code coverage for the combined session." skip="false">
+      </subitem>
+   </item>
+   <item title="Generate report" dialog="true" skip="false" href="/com.qnx.doc.ide.userguide/topic/coverage_REPORTCC_.html">
+      <description>
+         Now, we&apos;ll generate an HTML report for this session.
+      </description>
+      <subitem label="Right-click on the combined report." skip="false">
+      </subitem>
+      <subitem label="Select &quot;Generate Report&quot;." skip="false">
+      </subitem>
+      <subitem label="Click on a project link in the table to expand it." skip="false">
+      </subitem>
+      <subitem label="Observe the per-file coverage." skip="false">
+      </subitem>
+   </item>
+</cheatsheet>

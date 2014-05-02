@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><plugin name="QNX Momentics IDE User's Guide" id="com.qnx.doc.ide.userguide" version="1.0" provider-name="DITA"><extension point="org.eclipse.help.toc"><toc file="main.xml" primary="true"/></extension><extension point="org.eclipse.help.index"><index file="index.xml"/></extension></plugin>

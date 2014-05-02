@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<index>
+ <entry keyword="affinity, thread">
+  <topic href="how_to.html#id7" title="Thread affinity"/>
+ </entry>
+ <entry keyword="AMP (Asymmetric Multiprocessing)">
+  <topic href="overview.html" title="What is Multicore Processing?"/>
+ </entry>
+ <entry keyword="atomic operations">
+  <topic href="how_to.html#id15" title="Multicore and atomic operations"/>
+ </entry>
+ <entry keyword="BMP (Bound Multiprocessing)">
+  <topic href="how_to.html#id7" title="Thread affinity"/>
+  <topic href="overview.html" title="What is Multicore Processing?"/>
+  <entry keyword="trying it">
+   <topic href="quickstart.html#BMP" title="Trying bound multiprocessing"/>
+  </entry>
+ </entry>
+ <entry keyword="buildfiles">
+  <entry keyword="modifying for multicore processing">
+   <topic href="quickstart.html#Image" title="Setting up the OS image"/>
+  </entry>
+  <entry keyword="sample">
+   <topic href="how_to.html#Building" title="Building a multicore image"/>
+  </entry>
+ </entry>
+ <entry keyword="conventions">
+  <entry keyword="typographical">
+   <topic href="about.html#Typographical_conventions" title="Typographical conventions"/>
+  </entry>
+ </entry>
+ <entry keyword="CPUs, number of">
+  <topic href="how_to.html#id24" title="Break the problem down"/>
+ </entry>
+ <entry keyword="FIFO scheduling, using with multicore">
+  <topic href="how_to.html#id11" title="Multicore and FIFO scheduling"/>
+ </entry>
+ <entry keyword="images, building for multicore">
+  <topic href="how_to.html#Building" title="Building a multicore image"/>
+ </entry>
+ <entry keyword="inherit mask">
+  <topic href="how_to.html#id7" title="Thread affinity"/>
+ </entry>
+ <entry keyword="InterruptLock()">
+  <topic href="how_to.html#id13" title="Multicore and interrupts"/>
+  <topic href="how_to.html#id20" title="Use the multicore primitives"/>
+ </entry>
+ <entry keyword="interrupts, handling">
+  <topic href="how_to.html#id13" title="Multicore and interrupts"/>
+ </entry>
+ <entry keyword="InterruptUnlock()">
+  <topic href="how_to.html#id13" title="Multicore and interrupts"/>
+  <topic href="how_to.html#id20" title="Use the multicore primitives"/>
+ </entry>
+ <entry keyword="ISR, preemption considerations">
+  <topic href="how_to.html#id13" title="Multicore and interrupts"/>
+ </entry>
+ <entry keyword="multicore processing">
+  <topic href="overview.html" title="What is Multicore Processing?"/>
+  <entry keyword="building an image for">
+   <topic href="how_to.html#Building" title="Building a multicore image"/>
+  </entry>
+  <entry keyword="designing for">
+   <topic href="how_to.html#DESIGN" title="Designing with multiprocessing in mind"/>
+  </entry>
+  <entry keyword="interrupts and">
+   <topic href="how_to.html#id13" title="Multicore and interrupts"/>
+  </entry>
+  <entry keyword="sample buildfile for">
+   <topic href="how_to.html#Building" title="Building a multicore image"/>
+  </entry>
+ </entry>
+ <entry keyword="mutexes">
+  <topic href="how_to.html#id11" title="Multicore and FIFO scheduling"/>
+ </entry>
+ <entry keyword="_NTO_TCTL_RUNMASK">
+  <topic href="how_to.html#id7" title="Thread affinity"/>
+ </entry>
+ <entry keyword="_NTO_TCTL_RUNMASK_GET_AND_SET_INHERIT">
+  <topic href="how_to.html#id7" title="Thread affinity"/>
+ </entry>
+ <entry keyword="on utility">
+  <topic href="how_to.html#id7" title="Thread affinity"/>
+  <topic href="quickstart.html#BMP" title="Trying bound multiprocessing"/>
+ </entry>
+ <entry keyword="operations, atomic">
+  <topic href="how_to.html#id15" title="Multicore and atomic operations"/>
+ </entry>
+ <entry keyword="OS images, building for multicore">
+  <topic href="how_to.html#Building" title="Building a multicore image"/>
+  <topic href="quickstart.html#Image" title="Setting up the OS image"/>
+ </entry>
+ <entry keyword="pathname delimiter in QNX documentation">
+  <topic href="about.html#WINDOWSNOTE" title="Note to Windows users"/>
+ </entry>
+ <entry keyword="pidin">
+  <topic href="quickstart.html#SMP" title="Trying symmetric multiprocessing"/>
+ </entry>
+ <entry keyword="processes, processor running on">
+  <entry keyword="displaying">
+   <topic href="quickstart.html#SMP" title="Trying symmetric multiprocessing"/>
+  </entry>
+  <entry keyword="specifying">
+   <topic href="quickstart.html#BMP" title="Trying bound multiprocessing"/>
+  </entry>
+ </entry>
+ <entry keyword="processors, determining number of">
+  <topic href="overview.html" title="What is Multicore Processing?"/>
+ </entry>
+ <entry keyword="procnto*-smp">
+  <topic href="how_to.html#Building" title="Building a multicore image"/>
+  <topic href="quickstart.html#Image" title="Setting up the OS image"/>
+ </entry>
+ <entry keyword="RMSK_CLR()">
+  <topic href="how_to.html#id7" title="Thread affinity"/>
+ </entry>
+ <entry keyword="RMSK_ISSET()">
+  <topic href="how_to.html#id7" title="Thread affinity"/>
+ </entry>
+ <entry keyword="RMSK_SET()">
+  <topic href="how_to.html#id7" title="Thread affinity"/>
+ </entry>
+ <entry keyword="RMSK_SIZE()">
+  <topic href="how_to.html#id7" title="Thread affinity"/>
+ </entry>
+ <entry keyword="runmask">
+  <topic href="how_to.html#id7" title="Thread affinity"/>
+ </entry>
+ <entry keyword="scheduling policies, using FIFO with multicore">
+  <topic href="how_to.html#id11" title="Multicore and FIFO scheduling"/>
+ </entry>
+ <entry keyword="SchedYield(), using with multicore">
+  <topic href="how_to.html#id11" title="Multicore and FIFO scheduling"/>
+ </entry>
+ <entry keyword="slay">
+  <topic href="how_to.html#id7" title="Thread affinity"/>
+  <topic href="quickstart.html#BMP" title="Trying bound multiprocessing"/>
+ </entry>
+ <entry keyword="SMP (Symmetric Multiprocessing)">
+  <topic href="overview.html" title="What is Multicore Processing?"/>
+  <entry keyword="trying it">
+   <topic href="quickstart.html#SMP" title="Trying symmetric multiprocessing"/>
+  </entry>
+ </entry>
+ <entry keyword="support, technical">
+  <topic href="about.html#Support" title="Technical support"/>
+ </entry>
+ <entry keyword="synchronization primitives and multicore">
+  <topic href="how_to.html#id9" title="Multicore and synchronization primitives"/>
+ </entry>
+ <entry keyword="system page, number of CPUs">
+  <topic href="how_to.html#id24" title="Break the problem down"/>
+ </entry>
+ <entry keyword="tasks, parallel">
+  <topic href="how_to.html#id24" title="Break the problem down"/>
+ </entry>
+ <entry keyword="technical support">
+  <topic href="about.html#Support" title="Technical support"/>
+ </entry>
+ <entry keyword="thread affinity">
+  <topic href="how_to.html#id7" title="Thread affinity"/>
+ </entry>
+ <entry keyword="_thread_runmask">
+  <topic href="how_to.html#id7" title="Thread affinity"/>
+ </entry>
+ <entry keyword="ThreadCtl()">
+  <topic href="how_to.html#id7" title="Thread affinity"/>
+ </entry>
+ <entry keyword="threads, running concurrently">
+  <topic href="how_to.html#id22" title="Assume that threads  run concurrently"/>
+  <topic href="how_to.html#IMPACT" title="The impact of multicore"/>
+ </entry>
+ <entry keyword="typographical conventions">
+  <topic href="about.html#Typographical_conventions" title="Typographical conventions"/>
+ </entry>
+</index>

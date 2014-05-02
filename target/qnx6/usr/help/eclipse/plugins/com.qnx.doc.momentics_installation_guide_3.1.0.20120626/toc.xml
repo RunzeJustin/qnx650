@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Installation Guide">
+      <topic label="About This Guide" href="about.html">
+          <topic label="Typographical conventions" href="about.html#Conventions"/>
+          <topic label="Before you start" href="about.html#Start"/>
+          <topic label="Getting started with the documentation" href="about.html#Docs"/>
+          <topic label="Technical support" href="about.html#TSPORT"/>
+      </topic>
+      <topic label="QNX Neutrino RTOS Hosts" href="neutrino_hosts.html">
+          <topic label="Before you start" href="neutrino_hosts.html#Special"/>
+          <topic label="System requirements" href="neutrino_hosts.html#SystemReq"/>
+          <topic label="BIOS settings" href="neutrino_hosts.html#BIOS_settings"/>
+          <topic label="Installing QNX SDP 6.5.0 SP1" href="neutrino_hosts.html#Install"/>
+          <topic label="Errors while booting" href="neutrino_hosts.html#Booting_errors"/>
+          <topic label="Activating QNX SDP" href="neutrino_hosts.html#Activating">
+            <topic label="Activating automatically" href="neutrino_hosts.html#id9"/>
+            <topic label="Activating manually" href="neutrino_hosts.html#id11"/>
+          </topic>
+          <topic label="Commercializing your evaluation software" href="neutrino_hosts.html#Commercial"/>
+          <topic label="Uninstalling QNX SDP 6.5.0 and SP1" href="neutrino_hosts.html#Uninstall"/>
+          <topic label="Determining your base directory" href="neutrino_hosts.html#Base_Directory"/>
+      </topic>
+      <topic label="Microsoft Windows Hosts" href="windows_hosts.html">
+          <topic label="Before you start" href="windows_hosts.html#Special"/>
+          <topic label="System requirements" href="windows_hosts.html#SystemReq"/>
+          <topic label="Installing QNX SDP 6.5.0 SP1" href="windows_hosts.html#Install"/>
+          <topic label="Activating QNX SDP" href="windows_hosts.html#Activating">
+            <topic label="Activating automatically" href="windows_hosts.html#id7"/>
+            <topic label="Activating manually" href="windows_hosts.html#id9"/>
+          </topic>
+          <topic label="Commercializing your evaluation software" href="windows_hosts.html#Commercial"/>
+          <topic label="Uninstalling QNX SDP 6.5.0 and SP1" href="windows_hosts.html#Uninstall"/>
+          <topic label="Determining your base directory" href="windows_hosts.html#Base_Directory"/>
+      </topic>
+      <topic label="Linux Hosts" href="linux_hosts.html">
+          <topic label="Before you start" href="linux_hosts.html#Special"/>
+          <topic label="System requirements" href="linux_hosts.html#SystemReq"/>
+          <topic label="Installing QNX SDP 6.5.0 SP1" href="linux_hosts.html#Install"/>
+          <topic label="Activating QNX SDP" href="linux_hosts.html#Activating">
+            <topic label="Activating automatically" href="linux_hosts.html#id7"/>
+            <topic label="Activating manually" href="linux_hosts.html#id9"/>
+          </topic>
+          <topic label="Commercializing your evaluation software" href="linux_hosts.html#Commercial"/>
+          <topic label="Uninstalling QNX SDP 6.5.0 and SP1" href="linux_hosts.html#Uninstall"/>
+          <topic label="Determining your base directory" href="linux_hosts.html#Base_Directory"/>
+      </topic>
+</toc>

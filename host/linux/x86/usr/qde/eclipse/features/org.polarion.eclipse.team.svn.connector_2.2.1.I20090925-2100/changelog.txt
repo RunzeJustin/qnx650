@@ -1,0 +1,270 @@
+********************************************************************************
+*                        Subversive connectors Change Log                      *
+*                                                                              *
+* Subversive - a brand new Eclipse Client for Subversion (SVN)                 *
+* See details at http://www.eclipse.org/subversive and http://www.polarion.org *
+********************************************************************************
+
+This connectors works only with Subversive version which is distributed from Eclipse.org site.
+
+Version 2.2.1.I20090925-2100 [25 September 2009]
+
+Features:
+ * Java HL 1.6.5 binaries are included
+
+--------------------------------------------------------------------------------
+
+Version 2.2.1.I20090708-1500 [08 July 2009]
+
+Features: 
+ * SVN Kit 1.2.3 is included
+ 
+ * Java HL 1.6.3 is included
+ 
+ * Restore SVN 1.4 connectors
+ 
+ * SVN Kit 1.3.0 is included
+
+Fixes:
+ * [Show History] Error: Retrieval of mergeinfo unsupported (bug 257669)
+ 
+--------------------------------------------------------------------------------
+
+Version 2.2.0.I20090505-1500 [05 May 2009]
+
+Features: 
+ * SVN Kit 1.3.0 beta is included
+
+ * Support for files in svn:externals (bug 269155)
+ 
+ * Detection of tree conflicts (bug 269156)
+ 
+ * Java HL 1.6.0 binaries are included    
+ 
+Fixes:
+ * SVN operation canceling problem (bug 269529)
+
+--------------------------------------------------------------------------------
+
+Version 2.1.0.I20090213-1500 [13 February 2009]
+
+Features:
+ * Add ability to create SVN repository (bug 263951)
+
+--------------------------------------------------------------------------------
+
+Version 2.0.8.I20090202-1500 [02 February 2009]
+
+Features:
+ * SVN Kit 1.2.2 is included
+
+--------------------------------------------------------------------------------
+
+Version 2.0.7.I20081222-1900 [22 December 2008]
+
+Fixes:
+ * Character encoding problem in Revision Properties View (bug 255055)
+ * ClassCastException SVNKit 1.5 getValidReference (bug 252103)
+
+--------------------------------------------------------------------------------
+
+Version 2.0.6.I20081205-1900 [12 December 2008]
+
+Features:
+ * Java HL 1.5.4 binaries are included
+ * SVN Kit 1.2.1 is included
+
+--------------------------------------------------------------------------------
+
+Version 2.0.5.I20081024-1200 [24 October 2008]
+
+Features:
+ * Java HL 1.5.3 binaries are included
+
+--------------------------------------------------------------------------------
+
+Version 2.0.4.I20081001-1900 [10 October 2008]
+
+Features:
+ * New SVN Kit 1.2.0 connector library
+
+Fixes:
+ * diffStatus returns improperly encoded URLs for SVN 1.5-compatible connectors
+
+--------------------------------------------------------------------------------
+
+Version 2.0.3.I20080814-1500 [14 August 2008]
+
+Features:
+ * Add date selection options to History View (bug 211408)
+   + special thanks to Gabor Liptak
+
+Fixes:
+ * Synchronize doesn't show incomming changes (bug 243401)
+   + special thanks to Tony Poppleton, Channing Walton, Radoslaw Jozwik
+
+ * Cannot create a new branch (bug 243181)
+   + special thanks to Jonathan Marston
+
+--------------------------------------------------------------------------------
+
+Version 2.0.2.I20080801-1500 [1 August 2008]
+
+Features:
+ * Ensure that merge action serves merge-tracking functionality (bug 239818)
+ * Allows to select multiple revisions in merge dialog (bug 239820)
+ * Support merge --reintegrate mode (bug 241500)
+ * Use latest SVN 1.5 binaries [REOPENED] (bug 218472)
+ * Include information about merged revisions into annotation (bug 240156)
+ * Show merged revisions in History View (bug 239819)
+
+Fixes:
+ * All protocols: Subversive uses incorrect credentials with SVN Kit 1.1.7-based connector (bug 221094)
+   + special thanks to Christopher Smith, Fabio N. Kepler, Antony Jones, Heath Borders, Martin Oberhuber, Jeroen, Nathan Vick, Cinly Ooi
+
+ * Merge problem "File not found: revision..." when opening 3-way comparator (bug 240291)
+   + special thanks to Alexey Kamenchuk
+   
+ * "Overwrite and Update" doing merge (bug 237218)
+   + special thanks to Tony Poppleton
+
+ * Commiting not up to date directory results in uninformative console message only (bug 239105)
+   + special thanks to Max Gilead
+
+ * NPE in SVN 1.5 compatible connectors when user has no access to repository revision (bug 237408)
+   + special thanks to Darren Hodges
+   
+ * Use latest SVN 1.5 binaries [REOPENED] (bug 218472)
+
+--------------------------------------------------------------------------------
+
+Version 2.0.1.I20080612-1500 [12 June 2008] [build ids are changed corresponding to guidelines]
+
+Features:
+ * Support latest SVN 1.5 API changes (bug 216473)
+
+Fixes:
+ * JavaHLConnector creates a huge amount of short living threads (bug 235764)
+   + special thanks to contributor Micha Riser
+
+--------------------------------------------------------------------------------
+
+Version 0.7.0.v20080517 [17 May 2008]
+
+Features:
+ * Support latest SVN 1.5 API changes [REOPENED] (bug 216473)
+ * Minimize transactions count where it is possible regarding to SVN 1.5 API changes (bug 231548)
+
+--------------------------------------------------------------------------------
+
+Version 0.7.0.v20080423 [23 April 2008]
+
+Features:
+ * Enhance copy and move behaviour (bug 227491)
+   + special thanks to Eric Jain
+
+Fixes:
+ * Properties status is not reported while merge. (bug 227102)
+
+--------------------------------------------------------------------------------
+
+Version 0.7.0.v20080404 [04 April 2008]
+
+Features:
+ * Use latest SVN Kit library version (for both: SVN 1.4 and 1.5 compatible) (bug 224347)
+ * Use latest JavaHL binaries [1.5.0 beta 1] (bug 224330)
+
+--------------------------------------------------------------------------------
+
+Version 0.7.0.v20080321 [21 March 2008]
+
+Fixes:
+ * Merge changes does not show conflict when file has been renamed (bug 222541)
+   + special thanks to Remi Nodet
+
+ * svn merge view graphical synchronize overwrites changes in local version (bug 221239)
+   + special thanks to Andrew Bachmann, Daniel Hirscher
+
+ * Advanced merge: Comparison uses empty "Remote File" (bug 220737)
+   + special thanks to Hubert Bildstein
+
+--------------------------------------------------------------------------------
+
+Version 2.0.0.v20080307 [07 March 2008]
+
+Features:
+ * Update JavaHL 1.5.0 connector binaries to alpha2 version (bug 221506)
+
+--------------------------------------------------------------------------------
+
+Version 2.0.0.v20080214 [14 February 2008]
+
+Features:
+ * Two URLs merge mode also should use Merge View (bug 217856)
+ * Use latest SVN 1.5 binaries (bug 218472)
+
+--------------------------------------------------------------------------------
+
+Version 2.0.0.v20080129 [29 January 2008]
+
+Features:
+ * Support latest SVN 1.5 API changes (bug 216473)
+
+Fixes:
+ * Commit errors seems to not be shown in console (bug 215188)
+   + special thanks to Kristoffer Peterhansel
+   
+ * It is impossible to install connectors sources on Linux (bug 216699)
+   + special thanks to Ilya Klyuchnikov
+
+--------------------------------------------------------------------------------
+
+Version 2.0.0.v20080116 [16 January 2008]
+
+Fixes:
+ * Comparing remote files in SVN Repositories view doesn't work (bug 207923)
+   + special thanks to Matthias Erche
+
+ * Compare: client library returns null value (bug 211260)
+   + special thanks to Samyem
+   
+ * Native libraries could not be loaded when SVN Kit connectors installed (bug 215639)
+
+--------------------------------------------------------------------------------
+
+Version 2.0.0.v20071221 [21 December 2007]
+
+Fixes:
+ * Create Unified Diff action handles direction incorrectly (bug 211272)
+   + special thanks to Artem Tikhomirov
+   
+ * SVN 1.5 support changes (bug 213289)
+
+--------------------------------------------------------------------------------
+
+Version 2.0.0.v20071214 [14 December 2007]
+
+Fixes:
+ * Check compatibility with the Eclipse Ganymede version (Bug: 212732)
+
+--------------------------------------------------------------------------------
+
+Version 2.0.0.v20071210 [10 December 2007]
+
+Fixes:
+ * Rework old-style plug-in manifests (bug 212125)
+   + special thanks to Thomas Hallgren
+
+--------------------------------------------------------------------------------
+
+Version 2.0.0.v20071123 [23 November 2007]
+
+Fixes:
+ * merge UI does not show any changes
+   + special thanks to Chris West
+
+ * Merge UI very slow and fails for projects which names on FS differs in compare to repository (bug 210643)
+ * Merge UI uses incorrectly encoded URL's (bug 210399)
+ * SVN client library connector interfaces reworked according to Eclipse guidelines (naming conventions etc.)
+ * incorrect log messages in Change Set mode of merge UI
+ * merge UI does not work in "reverse" mode

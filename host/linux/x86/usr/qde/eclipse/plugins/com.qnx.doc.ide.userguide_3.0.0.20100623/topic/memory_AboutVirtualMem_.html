@@ -1,0 +1,325 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Virtual memory" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_MEMMGT_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Virtualmemory" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Virtual memory</title>
+   </head>
+   <body id="Virtualmemory"><a name="Virtualmemory" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Virtual memory</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <div class="p">As you'll see when you use the Memory Information view of the QNX System Information
+            perspective, the IDE categorizes your program's virtual address space as follows:
+            
+            <br clear="none" /><ul>
+               <li> program</li>
+               <li>stack</li>
+               <li>shared library</li>
+               <li>object</li>
+               <li>heap</li>
+            </ul>
+            
+         </div>
+         
+         
+         
+         <p>
+            <span><img src="../images/pic2Fmemory_AboutVirtualMem_.xml_d103150e39.jpg" alt="Introduction: Process memory" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>Process memory layout on an x86.</p>
+            
+            
+         </div>
+         
+         
+         <p>The Memory Information and Malloc Information views of the QNX System Information
+            perspective provide detailed, live views of a process's memory. For more information,
+            see the <a href="sysinfo_Base_.html" shape="rect">Getting System Information</a> chapter.
+         </p>
+         
+         
+         <p>
+            <strong>Program memory</strong>
+            
+         </p>
+         
+         
+         <p>Program memory holds the executable contents of your program. The code section contains
+            the read-only execution instructions (i.e. your actual compiled code); the data section
+            contains all the values of the global and static variables used during your program's
+            lifetime:
+            
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/pic2Fmemory_AboutVirtualMem_.xml_d103150e80.jpg" alt="Introduction: Memory, program" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>The program memory.</p>
+            
+            
+         </div>
+         
+         
+         <p>
+            <strong>Stack memory</strong>
+            
+         </p>
+         
+         
+         <p>Stack memory holds the local variables and parameters your program's functions use. Each
+            process in Neutrino contains at least the main thread; each of the process's threads has
+            an associated stack. When the program creates a new thread, the program can either
+            allocate the stack and pass it into the thread-creation call, or let the system allocate
+            a default stack size and address: 
+            
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/pic2Fmemory_AboutVirtualMem_.xml_d103150e112.jpg" alt="Introduction: Memory, stack 2" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>The stack memory.</p>
+            
+            
+         </div>
+         
+         
+         <p>When your program runs, the process manager reserves the full stack in virtual memory,
+            but not in physical memory. Instead, the process manager requests additional blocks of
+            physical memory only when your program actually needs more stack memory. As one function
+            calls another, the state of the calling function is pushed onto the stack. When the
+            function returns, the local variables and parameters are popped off the stack. 
+         </p>
+         
+         
+         <p>The used portion of the stack holds your thread's state information and takes up physical
+            memory. The unused portion of the stack is initially allocated in virtual address space,
+            but not physical memory: 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/pic2Fmemory_AboutVirtualMem_.xml_d103150e134.jpg" alt="Introduction: Memory, stack 1" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>Stack memory: virtual and physical.</p>
+            
+            
+         </div>
+         
+         
+         <p>At the end of each virtual stack is a <dfn class="term">guard page</dfn> that the microkernel uses
+            to detect stack overflows. If your program writes to an address within the guard page,
+            the microkernel detects the error and sends the process a <tt>SIGSEGV</tt> signal. 
+         </p>
+         
+         
+         <p>As with other types of memory, the stack memory appears to be contiguous in virtual
+            process memory, but isn't necessarily so in physical memory. 
+         </p>
+         
+         
+         <p>
+            <strong>Shared-library memory</strong>
+            
+         </p>
+         
+         
+         <p>Shared-library memory stores the libraries you require for your process. Like program
+            memory, library memory consists of both code and data sections. In the case of shared
+            libraries, all the processes map to the same physical location for the code section and
+            to unique locations for the data section: 
+            
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/pic2Fmemory_AboutVirtualMem_.xml_d103150e178.jpg" alt="Introduction: Memory, library" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>The shared library memory.</p>
+            
+            
+         </div>
+         
+         
+         <p>
+            <strong>Object memory</strong>
+            
+         </p>
+         
+         
+         <p>Object memory represents the areas that map into a program's virtual memory space, but
+            this memory may be associated with a physical device. For example, the graphics driver
+            may map the video card's memory to an area of the program's address space: 
+            
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/pic2Fmemory_AboutVirtualMem_.xml_d103150e211.jpg" alt="Introduction: Memory, object" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>The object memory.</p>
+            
+            
+         </div>
+         
+         
+         <p>
+            <strong>Heap memory</strong>
+            
+         </p>
+         
+         
+         <p>Heap memory represents the dynamic memory used by programs at runtime. Typically,
+            processes allocate this memory using the <a href="../../com.qnx.doc.neutrino_lib_ref/m/malloc.html" shape="rect"><tt>malloc</tt></a>, <a href="../../com.qnx.doc.neutrino_lib_ref/r/realloc.html" shape="rect"><tt>realloc</tt></a>, and <a href="../../com.qnx.doc.neutrino_lib_ref/f/free.html" shape="rect"><tt>free</tt></a> functions. These calls
+            ultimately rely on the <a href="../../com.qnx.doc.neutrino_lib_ref/m/mmap.html" shape="rect"><tt>mmap</tt></a>
+            function to reserve memory that the <span class="filepath">malloc</span> library distributes.
+            
+         </p>
+         
+         
+         <p>The process manager usually allocates memory in 4 KB blocks, but allocations are
+            typically much smaller. Since it would be wasteful to use 4 KB of physical memory when
+            your program wants only 17 bytes, the <span class="filepath">malloc</span> library manages the
+            heap. The library dispenses the paged memory in smaller chunks and keeps track of the
+            allocated and unused portions of the page: 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/pic2Fmemory_AboutVirtualMem_.xml_d103150e268.jpg" alt="Introduction: Memory, heap1" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>The heap memory</p>
+            
+            
+         </div>
+         
+         
+         <p>Each allocation uses a small amount of fixed overhead to store internal data structures.
+            Since there's a fixed overhead with respect to block size, the ratio of allocator
+            overhead to data payload is larger for smaller allocation requests. 
+         </p>
+         
+         
+         <p>When your program uses the <a href="../../com.qnx.doc.neutrino_lib_ref/m/malloc.html" shape="rect"><tt>malloc</tt></a>
+            function to request a block of memory, the <span class="filepath">malloc</span> library returns
+            the address of an appropriately sized block. To maintain constant-time allocations, the
+            <span class="filepath">malloc</span> library may break some memory into fixed blocks. For
+            example, the library may return a 20-byte block to fulfill a request for 17 bytes, a
+            1088-byte block for a 1088-byte request, and so on. 
+         </p>
+         
+         
+         <p>When the <span class="filepath">malloc</span> library receives an allocation request that it can't
+            meet with its existing heap, the library requests additional physical memory from the
+            process manager. These allocations are done in chunks called arenas. By default, the
+            arena allocations are performed in 32 KB chunks. The value must be a multiple of 4 KB,
+            and currently is limited to less than 256 KB. When memory is freed, the library merges
+            adjacent free blocks within arenas and may, when appropriate, release an arena back to
+            the system. 
+         </p>
+         
+         
+         <p>For detailed information about arenas, see <a href="../../com.qnx.doc.neutrino_prog/hat.html#DynamicMemoryManagement" shape="rect">Dynamic memory management</a> in the QNX
+            Neutrino <cite>System Architecture</cite> guide. 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/pic2Fmemory_AboutVirtualMem_.xml_d103150e315.jpg" alt="Introduction: Memory, heap2" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>How virtual memory is mapped to physical memory.</p>
+            
+            
+         </div>
+         
+         
+         <p>For more information about the heap, see <a href="../../com.qnx.doc.neutrino_prog/hat.html#DynamicMemoryManagement" shape="rect">Dynamic memory management</a> in the QNX
+            Neutrino <cite>System Architecture</cite> guide. 
+         </p>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/memory_MEMMGT_.html" shape="rect">Memory management in QNX Neutrino</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

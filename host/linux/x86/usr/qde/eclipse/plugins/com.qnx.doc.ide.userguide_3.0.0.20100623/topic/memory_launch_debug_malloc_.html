@@ -1,0 +1,259 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="task" />
+      <meta name="DC.Title" content="Launching from the command line with Memory Analysis enabled" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_analyzing_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_File_trace_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_attach_debug_malloc_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_API.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Launchingwithdebugmalloc" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Launching from the command line with Memory Analysis enabled</title>
+   </head>
+   <body id="Launchingwithdebugmalloc"><a name="Launchingwithdebugmalloc" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Launching from the command line with Memory Analysis enabled</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <div class="section">
+            
+            <p>To start a program with Memory Analysis enabled, you should preload the <span class="filepath">librcheck.so</span> library and set other environment variables to configure Memory Analysis options. Below is an example of running with the
+               minimum settings:
+            </p>
+            
+            
+         </div>
+         
+         
+         <ol>
+            <li class="stepexpand">
+               <span>To start attaching from the IDE:</span>
+               
+               <pre class="codeblock" xml:space="preserve">LD_PRELOAD=librcheck.so MALLOC_CTHREAD=1 MALLOC_FILE=/tmp/trace.rmat ./my_app</pre>
+               
+               
+               </li>
+            <li class="stepexpand">
+               <span>To start for postmortem analysis with allocations tracing:</span>
+               
+               <pre class="codeblock" xml:space="preserve">LD_PRELOAD=librcheck.so MALLOC_FILE=/tmp/trace.rmat MALLOC_START_TRACING=1 ./my_app</pre>
+               
+               
+               </li>
+            <li class="stepexpand">
+               <span>To start for postmortem analysis with API control: </span>
+               
+               <pre class="codeblock" xml:space="preserve">LD_PRELOAD=librcheck.so MALLOC_FILE=/tmp/trace.rmat MALLOC_START_TRACING=0 ./my_app</pre>
+               
+               
+               </li>
+            <li class="stepexpand">
+               <span>To set environment for launch ALL subsequent processes with Memory Analysis to only find errors: </span>
+               
+               <pre class="codeblock" xml:space="preserve">export LD_PRELOAD=librcheck.so 
+export MALLOC_FILE=/tmp/trace\${pid}.rmat
+export MALLOC_TRUNCATE=1
+./my_app1
+./my_app2</pre>
+               
+               
+               </li>
+            <li class="stepexpand">
+               <span>To obtain a list of the environment variables for <span class="filepath">librcheck</span>, use this command: </span>
+               
+               <pre class="codeblock" xml:space="preserve">LD_PRELOAD=librcheck.so MALLOC_HELP=1 ./my_app</pre>
+               
+               
+               </li>
+         </ol>
+         
+         
+         <div class="section">
+            
+            <p>
+               
+               
+               
+               
+               
+            </p>
+            
+            
+            
+            <div class="tablenoborder">
+               <table cellpadding="4" cellspacing="0" summary="" frame="border" border="1" rules="all">
+                  <thead align="left">
+                     <tr>
+                        <th class="cellrowborder" valign="top" id="d132048e116" rowspan="1" colspan="1">Environment variable</th>
+                        <th class="cellrowborder" valign="top" id="d132048e119" rowspan="1" colspan="1">Description</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1"><var class="varname">MALLOC_START_TRACING</var>=1
+                        </td>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1">Enable memory tracing on start (0 to disable). If memory tracing is disabled, errors can't report allocation/deallocation
+                           backtraces for memory chunk involved in error condition.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1"><var class="varname">MALLOC_FILE</var>=<em>file</em></td>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1">Re-direct output to a file, can use <span class="filepath">${<var class="varname">pid</var>}</span> in the file name to replace it with process Id, escape $ if running from shell. Can use "-" to redirect to standard output.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1"><var class="varname">MALLOC_VERBOSE</var>=1
+                        </td>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1">Enable debug output.</td>
+                     </tr>
+                     <tr>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1"><var class="varname">MALLOC_HANDLE_SIGNALS</var>=0
+                        </td>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1">Don't install signal handlers for reporting errors on <tt>SIGSEGV</tt>, <tt>SIGBUS</tt>, etc.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1"><var class="varname">MALLOC_TRACEBTDEPTH</var>=<em>number</em></td>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1">Set <tt>alloc</tt> traces depth to <em>number</em> (the larger the depth, the more memory it takes to store the backtrace - the default is 5)
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1"><var class="varname">MALLOC_EVENTBTDEPTH</var>=<em>number</em></td>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1">Set error traces depth to <em>number</em> (the default is 5)
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1"><var class="varname">MALLOC_CKCHAIN</var>=1
+                        </td>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1">Check the allocator chain integrity on every allocation/deallocation (very expensive).</td>
+                     </tr>
+                     <tr>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1"><var class="varname">MALLOC_CKBOUNDS</var>=1 
+                        </td>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1">Check for out of bounds errors.</td>
+                     </tr>
+                     <tr>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1"><var class="varname">MALLOC_CKACCESS</var>=1
+                        </td>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1">Check strings and memory functions for errors (1 is default, use 0 to disable).</td>
+                     </tr>
+                     <tr>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1"><var class="varname">MALLOC_CKALLOC</var>=1
+                        </td>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1">Check <tt>alloc</tt> and <tt>free</tt> functions for errors (1 is default, use 0 to disable).
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1"><var class="varname">MALLOC_TRACEMIN</var>=<em>number</em>
+                           
+                        </td>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1">Only trace allocation &gt;= <em>number</em> bytes (allows you to filter in advance to reduce the amount of stored data).
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1"><var class="varname">MALLOC_TRACEMAX</var>=<em>number</em></td>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1">Only trace allocation &lt;= <em>number</em> bytes.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1"><var class="varname">MALLOC_STAT_BINS</var>=<em>bin1,bin2</em>,...
+                        </td>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1">Set the custom bins. Bins are used to define a bucket, for which Memory Analysis can collect usage statistics. For example,
+                           you can check how many allocation are done for 40, 80, and 120 byte bins.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1"><var class="varname">MALLOC_USE_CACHE</var>=<em>number</em></td>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1">Set to 0 to disable optimization. The default is 32 (turn off optimization if the application crashes during the run).</td>
+                     </tr>
+                     <tr>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1"><var class="varname">MALLOC_ACTION</var>=<em>number</em></td>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1">Set error action behavior: 0 - ignore (report an error and continue), 1 - abort, 2 - exit (no core), 3 - dump core, 4 - stop
+                           (send <tt>SIGSTOP</tt> to itself, later it can attach with debugger).
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1"><tt>MALLOC_DUMP_LEAKS</tt>=1
+                        </td>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1">Enable dumping leaks on exit (only works for normal exit, if you want to dump a leak on an abnormal exit, such as SIGTERM,
+                           you should install a handler to <span class="q">"exit"</span> on that signal).
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1"><var class="varname">MALLOC_TRUNCATE</var>=1
+                        </td>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1">Truncate output files before writing (otherwise it appends to a trace file).</td>
+                     </tr>
+                     <tr>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1"><var class="varname">MALLOC_CTHREAD</var>=1
+                        </td>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1">Start control thread, and allows the IDE to send commands to the application (can't use if process forks).</td>
+                     </tr>
+                     <tr>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1"><var class="varname">MALLOC_HELP</var>=1
+                        </td>
+                        <td class="cellrowborder" valign="top" headers="d132048e116 d132048e119" rowspan="1" colspan="1">Print a list of used environment variables.</td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+            </div>
+            
+            
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/memory_analyzing_.html" shape="rect">Launching your program with Memory Analysis</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/memory_File_trace_.html" shape="rect">Performing a postmortem memory analysis</a></div>
+            
+            <div><a href="../topic/memory_API.html" shape="rect">The Memory Analysis tooling API</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/memory_attach_debug_malloc_.html" shape="rect">Attaching to a running process</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

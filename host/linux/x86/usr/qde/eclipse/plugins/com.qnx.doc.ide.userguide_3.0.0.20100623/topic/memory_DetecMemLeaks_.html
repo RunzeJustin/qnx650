@@ -1,0 +1,140 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="task" />
+      <meta name="DC.Title" content="Enabling memory leak detection" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_OptHeapMem_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_MEMLEAKS_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_InspectMemAllocations_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Enablingmemoryleakdetection" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Enabling memory leak detection</title>
+   </head>
+   <body id="Enablingmemoryleakdetection"><a name="Enablingmemoryleakdetection" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Enabling memory leak detection</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <div class="section">In a continuously running application, the following procedure enables memory leak
+            detection at any particular point during program execution: 
+         </div>
+         
+         
+         <ol>
+            <li class="stepexpand">
+               <span>Find a location in the code where you want to check for memory leaks, and
+                  insert a breakpoint.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Launch the application in Debug mode with the Memory Analysis tool
+                  enabled.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Change to the Memory Analysis perspective.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Open the Debug view so it is available in the current perspective.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>When the application encounters the breakpoint you specified, open the Memory
+                  Analysis session from the Session View (by double-clicking) and select the
+                  Setting page for the Session Viewer.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Click the <span class="uicontrol">Get Leaks</span> button.</span>
+               Before you resume the process, take note that no new data will be
+               available in the Session Viewer because the memory analysis thread and
+               application threads are stopped while the process is suspended by the debugger.
+               
+               
+            </li>
+            <li class="stepexpand">
+               <span>Click <span class="uicontrol">Resume</span> in the Debug view to resume the process'
+                  threads.</span>
+               If leaks did not appear on the Memory Problems tab of the Session Viewer, either
+               there were no leaks, or the time given to the control thread (a special memory
+               analysis thread that processes dynamic requests) to collect the leaks was not
+               long enough to perform the command; and was suspended before the operation
+               completed. 
+               
+            </li>
+            <li class="stepexpand">
+               <span>Switch to the Errors page of the viewer, to review information about collected
+                  memory leaks.</span>
+               
+            </li>
+         </ol>
+         
+         
+         <div class="section">
+            
+            <div class="note"><span class="notetitle">Note:</span> Besides apparent memory leaks, an application can have other types of leaks that
+               the memory Analysis tool cannot detect. These leaks include objects with cyclic
+               references, accidental point matches, and left-over heap references (which can be
+               converted to apparent leaks by nullifying objects that refer to the heap). If you
+               continue to see the heap grow after eliminating apparent leaks, you should manually
+               inspect some of the allocations. You can do this after the program terminates
+               (completes), or you can stop the program and inspect the current heap state at any
+               time using the debugger.
+            </div>
+            
+            
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/memory_OptHeapMem_.html" shape="rect">Optimizing heap memory</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/memory_MEMLEAKS_.html" shape="rect">Memory leaks</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/memory_InspectMemAllocations_.html" shape="rect">Inspecting outstanding allocations</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

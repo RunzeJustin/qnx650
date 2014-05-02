@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin id="com.qnx.doc.io-pkt_en"
+    name="QNX Neutrino Core Networking Stack"
+    version="3.1.0.20120626"
+    provider-name="QNX Software Systems Limited">
+
+    <extension point="org.eclipse.help.toc">
+      <toc file="toc.xml" primary="true" />
+      <index path="index"/>
+   </extension>
+
+    <extension point="org.eclipse.help.toc">
+      <toc file="../com.qnx.doc.io-pkt_en_user_guide/toc.xml" />
+      <toc file="../com.qnx.doc.io-pkt_en_porting/toc.xml" />
+   </extension>
+</plugin>

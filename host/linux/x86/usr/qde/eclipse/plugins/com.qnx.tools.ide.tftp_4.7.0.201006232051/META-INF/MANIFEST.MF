@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-Activator: com.qnx.tools.ide.tftp.core.TftpPlugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ActivationPolicy: lazy
+Export-Package: com.qnx.tools.ide.tftp.core
+Bundle-Version: 4.7.0.201006232051
+Eclipse-LazyStart: true
+Bundle-Name: %pluginName
+Bundle-ClassPath: tftp.jar
+Bundle-ManifestVersion: 2
+Bundle-Vendor: %providerName
+Bundle-SymbolicName: com.qnx.tools.ide.tftp; singleton:=true
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.core.resources,or
+ g.eclipse.ui,com.qnx.tools.utils.ui,org.eclipse.core.variables,org.ec
+ lipse.ui.ide,org.eclipse.debug.ui,org.eclipse.core.filesystem
+
+

@@ -1,0 +1,91 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Trace Search" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_tracking_down_events.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_BookmarksX_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="TraceSearchpanel" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Trace Search</title>
+   </head>
+   <body id="TraceSearchpanel"><a name="TraceSearchpanel" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Trace Search</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>Invoked by <tt>Ctrl</tt>
+            <tt>H</tt> (or via <span class="menucascade">
+               <span class="uicontrol">Search</span>
+               &gt; <span class="uicontrol">Search…</span>
+               </span>), this dialog lets you execute more complex event queries than are possible with the Find dialog.
+            
+            
+         </p>
+         
+         
+         <p>You can define conditions, which may include regular expressions for matching particular event data content (e.g. all <tt>MsgSend()</tt> events whose calling function corresponds to <tt>mmap()</tt>). You can then evaluate these conditions and place annotations directly into the System Profiler editor. The results are
+            shown in the Search view.
+         </p>
+         
+         
+         <p>Unlike the other search dialogs in the IDE, the <span class="uicontrol">Trace Search</span>  can search for events only in the currently active System Profiler editor. You use this search to build conditions and then
+            combine them into an expression. A search iterates through the events from the active log file and is applied against the
+            expression; any hits appear in the Search Results view and are highlighted in the System Profiler editor.
+         </p>
+         
+         
+         <p>By default, the <span class="uicontrol">Trace Search</span> returns up to 1000 hits. You can change this maximum in the Preferences dialog (choose <span class="menucascade">
+               <span class="uicontrol">Window</span>
+               &gt; <span class="uicontrol">Preferences</span>
+               &gt; <span class="uicontrol">QNX</span>
+               &gt; <span class="uicontrol">System Profiler</span>
+               </span>). 
+         </p>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/sysprof_tracking_down_events.html" shape="rect">Tracking down events</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/sysprof_BookmarksX_.html" shape="rect">Bookmarks view</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

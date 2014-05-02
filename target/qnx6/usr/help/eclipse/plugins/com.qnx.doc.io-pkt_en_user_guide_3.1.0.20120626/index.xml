@@ -1,0 +1,1482 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<index>
+ <entry keyword="/dev/io-net/">
+  <topic href="drivers.html#io-net_other" title="Differences between io-net drivers and other drivers"/>
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+ </entry>
+ <entry keyword="802.11 a/b/g Wi-Fi support">
+  <topic href="wpa_background.html#802.11_support" title="802.11 a/b/g Wi-Fi Support"/>
+ </entry>
+ <entry keyword="802.11 layer">
+  <entry keyword="debugging information, dumping">
+   <topic href="drivers.html#Debug_info" title="Dumping 802.11 debugging information"/>
+  </entry>
+ </entry>
+ <entry keyword="802.11 standard">
+  <topic href="wpa_background.html#Background" title="Background on WPA"/>
+ </entry>
+ <entry keyword="access point, authentication and key-management daemon">
+  <topic href="wpa_background.html#WPA_access_point" title="WPA access point"/>
+  <topic href="wpa_background.html#WPA_utilities" title="WPA utilities"/>
+ </entry>
+ <entry keyword="ad hoc mode">
+  <topic href="wpa_background.html#802.11_support" title="802.11 a/b/g Wi-Fi Support"/>
+  <topic href="wpa_background.html#Using_WPA" title="Connecting with WPA or WPA2"/>
+  <topic href="wpa_background.html#Using_Wi-Fi" title="Using Wi-Fi with io-pkt"/>
+  <entry keyword="TCP/IP configuration">
+   <topic href="wpa_background.html#TCPIP_ad_hoc" title="Client in infrastructure or ad hoc mode"/>
+  </entry>
+ </entry>
+ <entry keyword="addresses, watching for additions and deletions">
+  <topic href="utilities_summary.html" title="Utilities, Managers, and Configuration Files"/>
+ </entry>
+ <entry keyword="AES (Advanced Encryption Standard)">
+  <topic href="wpa_background.html#Using_WPA" title="Connecting with WPA or WPA2"/>
+ </entry>
+ <entry keyword="AF_INET">
+  <topic href="filtering.html#PF" title="Packet Filter interface"/>
+ </entry>
+ <entry keyword="AF_INET, must set af_family">
+  <topic href="migrating.html#Compatibility_issues" title="Compatibility issues"/>
+ </entry>
+ <entry keyword="AF_INET6">
+  <topic href="filtering.html#PF" title="Packet Filter interface"/>
+ </entry>
+ <entry keyword="architecture of io-pkt">
+  <topic href="overview.html#Architecture" title="Architecture of io-pkt"/>
+ </entry>
+ <entry keyword="arp">
+  <topic href="migrating.html#Coexistence" title="Compatibility between io-net and io-pkt"/>
+ </entry>
+ <entry keyword="Auto IP">
+  <topic href="wpa_background.html#TCPIP_ad_hoc" title="Client in infrastructure or ad hoc mode"/>
+  <topic href="overview.html#Components" title="Components of core networking"/>
+ </entry>
+ <entry keyword="base station">
+  <topic href="wpa_background.html#802.11_support" title="802.11 a/b/g Wi-Fi Support"/>
+ </entry>
+ <entry keyword="Berkeley Packet Filter (BPF)">
+  <topic href="overview.html#Architecture" title="Architecture of io-pkt"/>
+  <topic href="filtering.html#BPF" title="Berkeley Packet Filter"/>
+  <topic href="overview.html#Components" title="Components of core networking"/>
+  <topic href="filtering.html#Packet_Filters" title="Packet Filters"/>
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+  <entry keyword="using ioctl_socket() instead of ioctl()">
+   <topic href="filtering.html#Packet_Filters" title="Packet Filters"/>
+  </entry>
+ </entry>
+ <entry keyword="bind(), must set af_family">
+  <topic href="migrating.html#Compatibility_issues" title="Compatibility issues"/>
+ </entry>
+ <entry keyword="BIOCSETIF">
+  <topic href="filtering.html#BPF" title="Berkeley Packet Filter"/>
+ </entry>
+ <entry keyword="BPF (Berkeley Packet Filter)">
+  <topic href="overview.html#Architecture" title="Architecture of io-pkt"/>
+  <topic href="filtering.html#BPF" title="Berkeley Packet Filter"/>
+  <topic href="overview.html#Components" title="Components of core networking"/>
+  <topic href="filtering.html#Packet_Filters" title="Packet Filters"/>
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+  <entry keyword="using ioctl_socket() instead of ioctl()">
+   <topic href="filtering.html#Packet_Filters" title="Packet Filters"/>
+  </entry>
+ </entry>
+ <entry keyword="brconfig">
+  <topic href="wpa_background.html#Bridge" title="Acting as a bridge"/>
+  <topic href="overview.html#Components" title="Components of core networking"/>
+ </entry>
+ <entry keyword="bridges">
+  <entry keyword="configuring">
+   <topic href="wpa_background.html#Bridge" title="Acting as a bridge"/>
+   <topic href="overview.html#Components" title="Components of core networking"/>
+  </entry>
+  <entry keyword="WAP acting as">
+   <topic href="wpa_background.html#Bridge" title="Acting as a bridge"/>
+  </entry>
+ </entry>
+ <entry keyword="bridging">
+  <topic href="overview.html#Threading" title="Threading model"/>
+ </entry>
+ <entry keyword="BSD">
+  <entry keyword="porting library">
+   <topic href="overview.html#Components" title="Components of core networking"/>
+  </entry>
+  <entry keyword="socket API">
+   <topic href="overview.html#Components" title="Components of core networking"/>
+  </entry>
+  <entry keyword="socket application API">
+   <topic href="overview.html#Components" title="Components of core networking"/>
+  </entry>
+ </entry>
+ <entry keyword="BSS (Basic Service Set)">
+ </entry>
+ <entry keyword="checksumming">
+  <entry keyword="hardware">
+   <topic href="drivers.html#Jumbo" title="Jumbo packets and hardware checksumming"/>
+  </entry>
+  <entry keyword="loopback">
+   <topic href="overview.html#New" title="What's new in the networking stack?"/>
+  </entry>
+ </entry>
+ <entry keyword="components of core networking">
+  <topic href="overview.html#Components" title="Components of core networking"/>
+ </entry>
+ <entry keyword="configuration files">
+  <entry keyword="dhcpd.conf">
+   <topic href="wpa_background.html#Router" title="Configuring an access point as a router"/>
+   <topic href="wpa_background.html#id29" title="DHCP server configuration file"/>
+  </entry>
+  <entry keyword="hostapd.conf">
+   <topic href="wpa_background.html#WPA_access_point" title="WPA access point"/>
+  </entry>
+  <entry keyword="pf.conf">
+   <topic href="filtering.html#id5" title="Packet Filter (pf) module: firewalls and NAT"/>
+  </entry>
+  <entry keyword="racoon.conf">
+   <topic href="security.html#Preshared_Key" title="With authentication using the preshared-key method"/>
+  </entry>
+  <entry keyword="wpa_supplicant.conf">
+   <topic href="wpa_background.html#Using_WPA" title="Connecting with WPA or WPA2"/>
+   <topic href="wpa_background.html#Connecting_no_encryption" title="Using no encryption"/>
+   <topic href="wpa_background.html#Connecting_wpa_supplicant" title="Using wpa_supplicant to manage your wireless network connections"/>
+  </entry>
+ </entry>
+ <entry keyword="console, sending error messages to">
+  <topic href="migrating.html#Behavior" title="Behavioral differences"/>
+ </entry>
+ <entry keyword="consumers">
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+ </entry>
+ <entry keyword="conventions">
+  <entry keyword="io-pkt name">
+   <topic href="overview.html#New" title="What's new in the networking stack?"/>
+  </entry>
+  <entry keyword="typographical">
+   <topic href="about.html#Typographical_conventions" title="Typographical conventions"/>
+  </entry>
+ </entry>
+ <entry keyword="cryptography, hardware-accelerated">
+  <topic href="overview.html#Architecture" title="Architecture of io-pkt"/>
+  <topic href="security.html#Hardware_crypto" title="Hardware-accelerated crypto"/>
+  <topic href="security.html" title="IP Security and Hardware Encryption"/>
+  <topic href="security.html#Crypto_Engines" title="Supported hardware crypto engines"/>
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+ </entry>
+ <entry keyword="_CS_DOMAIN">
+  <topic href="tdp.html#TDP_IP" title="Using TDP over IP"/>
+ </entry>
+ <entry keyword="decryption">
+  <topic href="wpa_background.html#Crypto" title="Crypto support"/>
+ </entry>
+ <entry keyword="delay() and DELAY()">
+  <topic href="drivers.html#NetBSD_native" title="Differences between ported NetBSD drivers and native drivers"/>
+ </entry>
+ <entry keyword="devctl(), not supported for native drivers">
+  <topic href="drivers.html#io-net_other" title="Differences between io-net drivers and other drivers"/>
+ </entry>
+ <entry keyword="devices">
+  <entry keyword="managing">
+   <topic href="wpa_background.html#Device_management" title="Device management"/>
+  </entry>
+ </entry>
+ <entry keyword="devn- prefix">
+  <topic href="drivers.html#Types" title="Types of network drivers"/>
+ </entry>
+ <entry keyword="devnp- prefix">
+  <topic href="drivers.html#Types" title="Types of network drivers"/>
+ </entry>
+ <entry keyword="devnp-mpc85xx.so">
+  <topic href="security.html#Crypto_Engines" title="Supported hardware crypto engines"/>
+ </entry>
+ <entry keyword="devnp-mpcsec.so">
+  <topic href="security.html#Crypto_Engines" title="Supported hardware crypto engines"/>
+ </entry>
+ <entry keyword="devnp-ral.so">
+  <topic href="wpa_background.html#Creating_WAP" title="Creating A WAP"/>
+  <topic href="wpa_background.html#Using_Wi-Fi" title="Using Wi-Fi with io-pkt"/>
+ </entry>
+ <entry keyword="devnp-shim.so">
+  <topic href="overview.html#Components" title="Components of core networking"/>
+  <topic href="drivers.html#Loading" title="Loading and unloading a driver"/>
+  <topic href="drivers.html#Types" title="Types of network drivers"/>
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+ </entry>
+ <entry keyword="dhcp.client">
+  <topic href="wpa_background.html#TCPIP_ad_hoc" title="Client in infrastructure or ad hoc mode"/>
+ </entry>
+ <entry keyword="dhcpd">
+  <topic href="wpa_background.html#Router" title="Configuring an access point as a router"/>
+  <topic href="wpa_background.html#TCPIP_DHCP" title="DHCP server on WAP acting as a gateway"/>
+ </entry>
+ <entry keyword="dhcpd.conf">
+  <topic href="wpa_background.html#Router" title="Configuring an access point as a router"/>
+  <topic href="wpa_background.html#id29" title="DHCP server configuration file"/>
+ </entry>
+ <entry keyword="dhcpd.leases">
+  <topic href="wpa_background.html#id29" title="DHCP server configuration file"/>
+ </entry>
+ <entry keyword="dhcprelay">
+  <topic href="wpa_background.html#TCPIP_DHCP" title="DHCP server on WAP acting as a gateway"/>
+  <topic href="wpa_background.html#id31" title="Launching the DHCP relay agent on your gateway"/>
+ </entry>
+ <entry keyword="DIOCSTART">
+  <topic href="filtering.html#id5" title="Packet Filter (pf) module: firewalls and NAT"/>
+ </entry>
+ <entry keyword="drivers">
+  <entry keyword="debugging with gdb">
+   <topic href="drivers.html#Debugging_with_gdb" title="Debugging a driver using gdb"/>
+  </entry>
+  <entry keyword="detaching">
+   <topic href="drivers.html#io-net_other" title="Differences between io-net drivers and other drivers"/>
+   <topic href="drivers.html#Loading" title="Loading and unloading a driver"/>
+   <topic href="overview.html#New" title="What's new in the networking stack?"/>
+  </entry>
+  <entry keyword="devnp-mpc85xx.so">
+   <topic href="security.html#Crypto_Engines" title="Supported hardware crypto engines"/>
+  </entry>
+  <entry keyword="devnp-mpcsec.so">
+   <topic href="security.html#Crypto_Engines" title="Supported hardware crypto engines"/>
+  </entry>
+  <entry keyword="information about, displaying">
+   <topic href="overview.html#Components" title="Components of core networking"/>
+   <topic href="overview.html#New" title="What's new in the networking stack?"/>
+  </entry>
+  <entry keyword="interfaces">
+   <entry keyword="names">
+    <topic href="drivers.html#io-net_other" title="Differences between io-net drivers and other drivers"/>
+    <topic href="overview.html#New" title="What's new in the networking stack?"/>
+   </entry>
+  </entry>
+  <entry keyword="legacy io-net">
+   <topic href="drivers.html#io-net_other" title="Differences between io-net drivers and other drivers"/>
+   <topic href="drivers.html#Types" title="Types of network drivers"/>
+  </entry>
+  <entry keyword="loading into io-pkt">
+   <topic href="overview.html#Architecture" title="Architecture of io-pkt"/>
+   <topic href="drivers.html#Loading" title="Loading and unloading a driver"/>
+  </entry>
+  <entry keyword="Maximum Transmission Unit (MTU), setting">
+   <topic href="drivers.html#Jumbo" title="Jumbo packets and hardware checksumming"/>
+  </entry>
+  <entry keyword="name space, entries in">
+   <topic href="drivers.html#io-net_other" title="Differences between io-net drivers and other drivers"/>
+  </entry>
+  <entry keyword="name space, no entries in">
+   <topic href="overview.html#New" title="What's new in the networking stack?"/>
+  </entry>
+  <entry keyword="native">
+   <topic href="drivers.html#io-net_other" title="Differences between io-net drivers and other drivers"/>
+   <topic href="drivers.html#NetBSD_native" title="Differences between ported NetBSD drivers and native drivers"/>
+   <topic href="drivers.html#Types" title="Types of network drivers"/>
+   <entry keyword="devctl(), not supported for">
+    <topic href="drivers.html#io-net_other" title="Differences between io-net drivers and other drivers"/>
+   </entry>
+   <entry keyword="jumbo packets">
+    <topic href="drivers.html#Jumbo" title="Jumbo packets and hardware checksumming"/>
+   </entry>
+  </entry>
+  <entry keyword="NetBSD">
+   <entry keyword="nicinfo, support for">
+    <topic href="drivers.html#NetBSD_native" title="Differences between ported NetBSD drivers and native drivers"/>
+    <topic href="overview.html#New" title="What's new in the networking stack?"/>
+   </entry>
+  </entry>
+  <entry keyword="ported NetBSD">
+   <topic href="drivers.html#io-net_other" title="Differences between io-net drivers and other drivers"/>
+   <topic href="drivers.html#NetBSD_native" title="Differences between ported NetBSD drivers and native drivers"/>
+   <topic href="drivers.html#Types" title="Types of network drivers"/>
+   <entry keyword="support for">
+    <topic href="drivers.html#Types" title="Types of network drivers"/>
+   </entry>
+  </entry>
+  <entry keyword="priorities for, specifying">
+   <topic href="overview.html#Threading" title="Threading model"/>
+  </entry>
+  <entry keyword="shim layer">
+   <topic href="overview.html#Components" title="Components of core networking"/>
+   <topic href="drivers.html#Loading" title="Loading and unloading a driver"/>
+   <topic href="drivers.html#Types" title="Types of network drivers"/>
+   <topic href="overview.html#New" title="What's new in the networking stack?"/>
+  </entry>
+  <entry keyword="troubleshooting">
+   <topic href="migrating.html#Behavior" title="Behavioral differences"/>
+   <topic href="drivers.html#Troubleshooting" title="Troubleshooting a driver"/>
+  </entry>
+  <entry keyword="verbose output">
+   <topic href="drivers.html#Troubleshooting" title="Troubleshooting a driver"/>
+  </entry>
+  <entry keyword="Wi-Fi">
+   <entry keyword="not supported by io-pkt-v4">
+    <topic href="wpa_background.html#Using_Wi-Fi" title="Using Wi-Fi with io-pkt"/>
+   </entry>
+  </entry>
+  <entry keyword="wireless, configuring">
+   <topic href="wpa_background.html#WPA_utilities" title="WPA utilities"/>
+  </entry>
+  <entry keyword="writing">
+   <topic href="drivers.html#New_driver" title="Writing a new driver"/>
+  </entry>
+ </entry>
+ <entry keyword="EAP-TLS (Extensible Authentication Protocol - Transport Layer Security)">
+  <topic href="wpa_background.html#id16" title="Personal-level authentication and Enterprise-level authentication"/>
+ </entry>
+ <entry keyword="encryption">
+  <topic href="wpa_background.html#Crypto" title="Crypto support"/>
+  <entry keyword="implementing for Wi-Fi">
+   <topic href="wpa_background.html#Using_Wi-Fi" title="Using Wi-Fi with io-pkt"/>
+  </entry>
+  <entry keyword="using none">
+   <topic href="wpa_background.html#Connecting_no_encryption" title="Using no encryption"/>
+  </entry>
+  <entry keyword="WEP, enabling">
+   <topic href="wpa_background.html#WEP" title="WEP access point"/>
+  </entry>
+ </entry>
+ <entry keyword="environment variables">
+  <entry keyword="LD_LIBRARY_PATH">
+   <topic href="drivers.html#Loading" title="Loading and unloading a driver"/>
+  </entry>
+ </entry>
+ <entry keyword="error messages sent to slogger">
+  <topic href="migrating.html#Behavior" title="Behavioral differences"/>
+ </entry>
+ <entry keyword="ETHERMIN">
+  <topic href="drivers.html#Padding" title="Padding Ethernet packets"/>
+ </entry>
+ <entry keyword="Ethernet">
+  <entry keyword="Transparent Distributed Processing over">
+   <topic href="tdp.html#TDP_IP" title="Using TDP over IP"/>
+  </entry>
+ </entry>
+ <entry keyword="Ethernet packets, padding">
+  <topic href="drivers.html#Padding" title="Padding Ethernet packets"/>
+ </entry>
+ <entry keyword="Ethernet traffic">
+  <topic href="overview.html#Architecture" title="Architecture of io-pkt"/>
+ </entry>
+ <entry keyword="events">
+  <topic href="overview.html#Threading" title="Threading model"/>
+ </entry>
+ <entry keyword="Fast IPsec">
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+ </entry>
+ <entry keyword="fast-forwarding">
+  <topic href="overview.html#Threading" title="Threading model"/>
+ </entry>
+ <entry keyword="filters">
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+ </entry>
+ <entry keyword="firewalls">
+  <topic href="filtering.html#PF" title="Packet Filter interface"/>
+ </entry>
+ <entry keyword="FreeBSD">
+  <topic href="wpa_background.html#NetBSD_80211" title="NetBSD 802.11 layer"/>
+ </entry>
+ <entry keyword="ftp">
+  <topic href="migrating.html#Coexistence" title="Compatibility between io-net and io-pkt"/>
+  <topic href="overview.html#Components" title="Components of core networking"/>
+  <entry keyword="compatibility issues with io-net">
+   <topic href="migrating.html#Compatibility_issues" title="Compatibility issues"/>
+  </entry>
+ </entry>
+ <entry keyword="ftpd">
+  <topic href="migrating.html#Coexistence" title="Compatibility between io-net and io-pkt"/>
+  <topic href="overview.html#Components" title="Components of core networking"/>
+ </entry>
+ <entry keyword="gateways">
+  <entry keyword="WAP acting as">
+   <topic href="wpa_background.html#Gateway" title="Acting as a gateway"/>
+  </entry>
+ </entry>
+ <entry keyword="gdb">
+  <topic href="drivers.html#Debugging_with_gdb" title="Debugging a driver using gdb"/>
+ </entry>
+ <entry keyword="gethostbyname()">
+  <topic href="tdp.html#TDP_IP" title="Using TDP over IP"/>
+ </entry>
+ <entry keyword="getifaddrs()">
+  <topic href="migrating.html#Behavior" title="Behavioral differences"/>
+ </entry>
+ <entry keyword="hardware">
+  <entry keyword="checksumming">
+   <topic href="drivers.html#Jumbo" title="Jumbo packets and hardware checksumming"/>
+  </entry>
+  <entry keyword="events">
+   <topic href="overview.html#Threading" title="Threading model"/>
+  </entry>
+ </entry>
+ <entry keyword="hardware-accelerated cryptography">
+  <topic href="overview.html#Architecture" title="Architecture of io-pkt"/>
+  <topic href="security.html#Hardware_crypto" title="Hardware-accelerated crypto"/>
+  <topic href="security.html" title="IP Security and Hardware Encryption"/>
+  <topic href="security.html#Crypto_Engines" title="Supported hardware crypto engines"/>
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+ </entry>
+ <entry keyword="hostapd">
+  <topic href="overview.html#Components" title="Components of core networking"/>
+  <topic href="wpa_background.html#WPA_access_point" title="WPA access point"/>
+  <topic href="wpa_background.html#WPA_utilities" title="WPA utilities"/>
+ </entry>
+ <entry keyword="hostapd.conf">
+  <topic href="wpa_background.html#WPA_access_point" title="WPA access point"/>
+ </entry>
+ <entry keyword="hostapd_cli">
+  <topic href="overview.html#Components" title="Components of core networking"/>
+ </entry>
+ <entry keyword="hostname">
+  <topic href="tdp.html#TDP_IP" title="Using TDP over IP"/>
+ </entry>
+ <entry keyword="IEEE 802.11 standard">
+  <topic href="wpa_background.html#Background" title="Background on WPA"/>
+ </entry>
+ <entry keyword="ieee80211_freebsd.c">
+  <topic href="wpa_background.html#NetBSD_80211" title="NetBSD 802.11 layer"/>
+ </entry>
+ <entry keyword="ieee80211_netbsd.c">
+  <topic href="wpa_background.html#NetBSD_80211" title="NetBSD 802.11 layer"/>
+ </entry>
+ <entry keyword="if_up">
+  <topic href="drivers.html#io-net_other" title="Differences between io-net drivers and other drivers"/>
+ </entry>
+ <entry keyword="ifconfig">
+  <topic href="migrating.html#Coexistence" title="Compatibility between io-net and io-pkt"/>
+  <topic href="overview.html#Components" title="Components of core networking"/>
+  <entry keyword="commands">
+   <entry keyword="create">
+    <topic href="wpa_background.html#Bridge" title="Acting as a bridge"/>
+   </entry>
+   <entry keyword="destroy">
+    <topic href="drivers.html#io-net_other" title="Differences between io-net drivers and other drivers"/>
+    <topic href="drivers.html#Loading" title="Loading and unloading a driver"/>
+    <topic href="overview.html#New" title="What's new in the networking stack?"/>
+   </entry>
+   <entry keyword="ip4csum">
+    <topic href="drivers.html#Jumbo" title="Jumbo packets and hardware checksumming"/>
+   </entry>
+   <entry keyword="media">
+    <topic href="wpa_background.html#WEP" title="WEP access point"/>
+   </entry>
+   <entry keyword="mediaopt">
+    <topic href="drivers.html#io-net_other" title="Differences between io-net drivers and other drivers"/>
+    <topic href="wpa_background.html#Using_Wi-Fi" title="Using Wi-Fi with io-pkt"/>
+    <topic href="wpa_background.html#WEP" title="WEP access point"/>
+   </entry>
+   <entry keyword="mtu">
+    <topic href="drivers.html#Jumbo" title="Jumbo packets and hardware checksumming"/>
+   </entry>
+   <entry keyword="nwkey">
+    <topic href="wpa_background.html#Connecting_no_encryption" title="Using no encryption"/>
+   </entry>
+   <entry keyword="scan">
+    <topic href="wpa_background.html#Using_Wi-Fi" title="Using Wi-Fi with io-pkt"/>
+   </entry>
+   <entry keyword="ssid">
+    <topic href="wpa_background.html#Connecting_WEP" title="Using WEP (Wired Equivalent Privacy) for authentication and encryption"/>
+    <topic href="wpa_background.html#WEP" title="WEP access point"/>
+   </entry>
+   <entry keyword="tcp4csum">
+    <topic href="drivers.html#Jumbo" title="Jumbo packets and hardware checksumming"/>
+   </entry>
+   <entry keyword="tso4">
+    <topic href="drivers.html#TSO" title="Transmit Segmentation Offload (TSO)"/>
+   </entry>
+   <entry keyword="udp4csum">
+    <topic href="drivers.html#Jumbo" title="Jumbo packets and hardware checksumming"/>
+   </entry>
+   <entry keyword="up">
+    <topic href="wpa_background.html#Using_Wi-Fi" title="Using Wi-Fi with io-pkt"/>
+   </entry>
+  </entry>
+  <entry keyword="compatibility issues with io-net">
+   <topic href="migrating.html#Compatibility_issues" title="Compatibility issues"/>
+  </entry>
+  <entry keyword="detaching drivers">
+   <topic href="drivers.html#io-net_other" title="Differences between io-net drivers and other drivers"/>
+   <topic href="drivers.html#Loading" title="Loading and unloading a driver"/>
+   <topic href="overview.html#New" title="What's new in the networking stack?"/>
+  </entry>
+  <entry keyword="duplex mode">
+   <topic href="drivers.html#io-net_other" title="Differences between io-net drivers and other drivers"/>
+  </entry>
+  <entry keyword="speed">
+   <topic href="drivers.html#io-net_other" title="Differences between io-net drivers and other drivers"/>
+  </entry>
+ </entry>
+ <entry keyword="ifnet">
+  <topic href="filtering.html#BPF" title="Berkeley Packet Filter"/>
+ </entry>
+ <entry keyword="ifreq">
+  <topic href="filtering.html#BPF" title="Berkeley Packet Filter"/>
+ </entry>
+ <entry keyword="ifwatchd">
+  <topic href="utilities_summary.html" title="Utilities, Managers, and Configuration Files"/>
+ </entry>
+ <entry keyword="IKE daemon (racoon)">
+  <topic href="security.html#IPsec_Tools" title="IPsec tools"/>
+  <topic href="security.html#Preshared_Key" title="With authentication using the preshared-key method"/>
+ </entry>
+ <entry keyword="Independent Basic Service Set (IBSS)">
+ </entry>
+ <entry keyword="inetd">
+  <topic href="migrating.html#Coexistence" title="Compatibility between io-net and io-pkt"/>
+  <topic href="overview.html#Components" title="Components of core networking"/>
+  <entry keyword="compatibility issues with io-net">
+   <topic href="migrating.html#Compatibility_issues" title="Compatibility issues"/>
+  </entry>
+ </entry>
+ <entry keyword="infrastructure mode">
+  <topic href="wpa_background.html#802.11_support" title="802.11 a/b/g Wi-Fi Support"/>
+  <topic href="wpa_background.html#Using_Wi-Fi" title="Using Wi-Fi with io-pkt"/>
+  <entry keyword="TCP/IP configuration">
+   <topic href="wpa_background.html#TCPIP_ad_hoc" title="Client in infrastructure or ad hoc mode"/>
+  </entry>
+ </entry>
+ <entry keyword="initialization vector (IV)">
+  <topic href="wpa_background.html#Background" title="Background on WPA"/>
+ </entry>
+ <entry keyword="interfaces">
+  <entry keyword="hooks">
+   <topic href="filtering.html#PF" title="Packet Filter interface"/>
+  </entry>
+  <entry keyword="names">
+   <topic href="drivers.html#io-net_other" title="Differences between io-net drivers and other drivers"/>
+   <topic href="overview.html#New" title="What's new in the networking stack?"/>
+  </entry>
+  <entry keyword="state, setting to up">
+   <topic href="wpa_background.html#Using_Wi-Fi" title="Using Wi-Fi with io-pkt"/>
+  </entry>
+  <entry keyword="watching for added or deleted addresses">
+   <topic href="utilities_summary.html" title="Utilities, Managers, and Configuration Files"/>
+  </entry>
+ </entry>
+ <entry keyword="Internet daemon (inetd)">
+  <topic href="overview.html#Components" title="Components of core networking"/>
+ </entry>
+ <entry keyword="interrupts">
+  <entry keyword="latency">
+   <topic href="drivers.html#Shared_interrupts" title="Problems with shared interrupts"/>
+  </entry>
+  <entry keyword="servicing">
+   <topic href="overview.html#Threading" title="Threading model"/>
+  </entry>
+  <entry keyword="shared, problems with">
+   <topic href="drivers.html#Shared_interrupts" title="Problems with shared interrupts"/>
+  </entry>
+ </entry>
+ <entry keyword="io-net">
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+  <entry keyword="drivers">
+   <topic href="drivers.html#io-net_other" title="Differences between io-net drivers and other drivers"/>
+   <topic href="drivers.html#Types" title="Types of network drivers"/>
+  </entry>
+  <entry keyword="filters, producers, and consumers no longer exist">
+   <topic href="overview.html#New" title="What's new in the networking stack?"/>
+  </entry>
+  <entry keyword="migrating to io-pkt">
+   <topic href="migrating.html" title="Migrating from io-net"/>
+   <topic href="overview.html#New" title="What's new in the networking stack?"/>
+   <entry keyword="filters">
+    <topic href="migrating.html#Filters" title="Using pfil hooks to implement an io-net filter"/>
+   </entry>
+   <entry keyword="nfm-nraw, replacing">
+    <topic href="filtering.html#BPF" title="Berkeley Packet Filter"/>
+   </entry>
+  </entry>
+  <entry keyword="option for mount">
+   <topic href="drivers.html#Loading" title="Loading and unloading a driver"/>
+  </entry>
+  <entry keyword="running simultaneously with io-pkt">
+   <topic href="migrating.html#Simultaneous_support" title="Simultaneous support"/>
+  </entry>
+  <entry keyword="shim layer">
+   <topic href="overview.html#Components" title="Components of core networking"/>
+   <topic href="drivers.html#Loading" title="Loading and unloading a driver"/>
+   <topic href="drivers.html#Types" title="Types of network drivers"/>
+   <topic href="overview.html#New" title="What's new in the networking stack?"/>
+  </entry>
+ </entry>
+ <entry keyword="io-pkt">
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+  <entry keyword="architecture">
+   <topic href="overview.html#Architecture" title="Architecture of io-pkt"/>
+  </entry>
+  <entry keyword="compatibility with NetBSD">
+   <topic href="overview.html#New" title="What's new in the networking stack?"/>
+  </entry>
+  <entry keyword="drivers, loading">
+   <topic href="overview.html#Architecture" title="Architecture of io-pkt"/>
+   <topic href="drivers.html#Loading" title="Loading and unloading a driver"/>
+  </entry>
+  <entry keyword="IP stack">
+   <topic href="overview.html#New" title="What's new in the networking stack?"/>
+  </entry>
+  <entry keyword="jumbo packets">
+   <topic href="drivers.html#Jumbo" title="Jumbo packets and hardware checksumming"/>
+  </entry>
+  <entry keyword="migrating from io-net">
+   <topic href="migrating.html" title="Migrating from io-net"/>
+   <topic href="overview.html#New" title="What's new in the networking stack?"/>
+  </entry>
+  <entry keyword="naming convention">
+   <topic href="overview.html#New" title="What's new in the networking stack?"/>
+  </entry>
+  <entry keyword="native drivers">
+   <topic href="drivers.html#io-net_other" title="Differences between io-net drivers and other drivers"/>
+   <topic href="drivers.html#NetBSD_native" title="Differences between ported NetBSD drivers and native drivers"/>
+   <topic href="drivers.html#Types" title="Types of network drivers"/>
+   <entry keyword="devctl(), not supported for">
+    <topic href="drivers.html#io-net_other" title="Differences between io-net drivers and other drivers"/>
+   </entry>
+   <entry keyword="jumbo packets">
+    <topic href="drivers.html#Jumbo" title="Jumbo packets and hardware checksumming"/>
+   </entry>
+  </entry>
+  <entry keyword="protocols, loading">
+   <topic href="overview.html#Architecture" title="Architecture of io-pkt"/>
+  </entry>
+  <entry keyword="running simultaneously with io-net">
+   <topic href="migrating.html#Simultaneous_support" title="Simultaneous support"/>
+  </entry>
+  <entry keyword="security">
+   <topic href="wpa_background.html#802.11_support" title="802.11 a/b/g Wi-Fi Support"/>
+  </entry>
+  <entry keyword="stack variants">
+   <topic href="overview.html#New" title="What's new in the networking stack?"/>
+  </entry>
+  <entry keyword="TCP/IP included in">
+   <topic href="overview.html#Architecture" title="Architecture of io-pkt"/>
+  </entry>
+  <entry keyword="threading model">
+   <topic href="drivers.html#NetBSD_native" title="Differences between ported NetBSD drivers and native drivers"/>
+   <topic href="overview.html#Threading" title="Threading model"/>
+   <topic href="drivers.html#Types" title="Types of network drivers"/>
+  </entry>
+  <entry keyword="updated binaries">
+   <topic href="migrating.html#Coexistence" title="Compatibility between io-net and io-pkt"/>
+  </entry>
+  <entry keyword="Wi-Fi, using with">
+   <topic href="wpa_background.html#Using_Wi-Fi" title="Using Wi-Fi with io-pkt"/>
+  </entry>
+ </entry>
+ <entry keyword="io-pkt-v4">
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+  <entry keyword="Wi-Fi drivers, no support for">
+   <topic href="wpa_background.html#Using_Wi-Fi" title="Using Wi-Fi with io-pkt"/>
+  </entry>
+ </entry>
+ <entry keyword="io-pkt-v4-hc">
+  <topic href="wpa_background.html#802.11_support" title="802.11 a/b/g Wi-Fi Support"/>
+  <topic href="security.html#Hardware_crypto" title="Hardware-accelerated crypto"/>
+  <topic href="security.html" title="IP Security and Hardware Encryption"/>
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+ </entry>
+ <entry keyword="io-pkt-v6-hc">
+  <topic href="wpa_background.html#802.11_support" title="802.11 a/b/g Wi-Fi Support"/>
+  <topic href="security.html#Hardware_crypto" title="Hardware-accelerated crypto"/>
+  <topic href="security.html" title="IP Security and Hardware Encryption"/>
+ </entry>
+ <entry keyword="ioctl()">
+  <topic href="migrating.html#Behavior" title="Behavioral differences"/>
+  <topic href="filtering.html#BPF" title="Berkeley Packet Filter"/>
+  <topic href="filtering.html#id5" title="Packet Filter (pf) module: firewalls and NAT"/>
+  <entry keyword="using ioctl_socket() for pf and bpf">
+   <topic href="filtering.html#Packet_Filters" title="Packet Filters"/>
+  </entry>
+ </entry>
+ <entry keyword="ioctl_socket()">
+  <entry keyword="using instead of ioctl() for pf and bpf">
+   <topic href="filtering.html#Packet_Filters" title="Packet Filters"/>
+  </entry>
+ </entry>
+ <entry keyword="IP Filtering">
+  <topic href="overview.html#Components" title="Components of core networking"/>
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+ </entry>
+ <entry keyword="IP stack, integral part of io-pkt">
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+ </entry>
+ <entry keyword="IP, Transparent Distributed Processing over">
+  <topic href="tdp.html#TDP_IP" title="Using TDP over IP"/>
+ </entry>
+ <entry keyword="ipfilter">
+  <topic href="filtering.html#id5" title="Packet Filter (pf) module: firewalls and NAT"/>
+ </entry>
+ <entry keyword="IPsec">
+  <topic href="security.html" title="IP Security and Hardware Encryption"/>
+  <entry keyword="IKE daemon (racoon)">
+   <topic href="security.html#IPsec_Tools" title="IPsec tools"/>
+   <topic href="security.html#Preshared_Key" title="With authentication using the preshared-key method"/>
+  </entry>
+  <entry keyword="sample configurations">
+   <topic href="security.html#Crypto_Engines" title="Supported hardware crypto engines"/>
+  </entry>
+  <entry keyword="setting up">
+   <topic href="security.html#Examples" title="Setting up an IPsec connection: examples"/>
+  </entry>
+  <entry keyword="tools">
+   <topic href="overview.html#Components" title="Components of core networking"/>
+   <topic href="security.html#IPsec_Tools" title="IPsec tools"/>
+  </entry>
+ </entry>
+ <entry keyword="IPv4">
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+ </entry>
+ <entry keyword="IPv6">
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+ </entry>
+ <entry keyword="IV (initialization vector)">
+  <topic href="wpa_background.html#Background" title="Background on WPA"/>
+ </entry>
+ <entry keyword="jumbo packets">
+  <topic href="drivers.html#Jumbo" title="Jumbo packets and hardware checksumming"/>
+  <entry keyword="disabled for io-net drivers">
+   <topic href="drivers.html#Types" title="Types of network drivers"/>
+  </entry>
+ </entry>
+ <entry keyword="keys">
+  <entry keyword="preshared">
+   <topic href="wpa_background.html#Using_WPA" title="Connecting with WPA or WPA2"/>
+   <topic href="security.html#Preshared_Key" title="With authentication using the preshared-key method"/>
+  </entry>
+  <entry keyword="WEP">
+   <topic href="wpa_background.html#WEP" title="WEP access point"/>
+  </entry>
+ </entry>
+ <entry keyword="LD_LIBRARY_PATH">
+  <topic href="drivers.html#Loading" title="Loading and unloading a driver"/>
+ </entry>
+ <entry keyword="libipsec">
+  <topic href="security.html#IPsec_Tools" title="IPsec tools"/>
+ </entry>
+ <entry keyword="libipsec(S).a">
+  <topic href="overview.html#Components" title="Components of core networking"/>
+ </entry>
+ <entry keyword="libnbdrvr.so">
+  <topic href="overview.html#Components" title="Components of core networking"/>
+ </entry>
+ <entry keyword="libpcap">
+  <topic href="filtering.html#BPF" title="Berkeley Packet Filter"/>
+ </entry>
+ <entry keyword="libsocket.so">
+  <topic href="migrating.html#Coexistence" title="Compatibility between io-net and io-pkt"/>
+  <topic href="overview.html#Components" title="Components of core networking"/>
+ </entry>
+ <entry keyword="libssl.so, libssl.a">
+  <topic href="overview.html#Components" title="Components of core networking"/>
+ </entry>
+ <entry keyword="loadable shared modules (lsm-*)">
+  <topic href="overview.html#Architecture" title="Architecture of io-pkt"/>
+ </entry>
+ <entry keyword="loopback checksumming">
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+ </entry>
+ <entry keyword="low-level packet-capture">
+  <topic href="overview.html#Components" title="Components of core networking"/>
+ </entry>
+ <entry keyword="lsm-autoip.so">
+  <topic href="wpa_background.html#TCPIP_ad_hoc" title="Client in infrastructure or ad hoc mode"/>
+  <topic href="overview.html#Components" title="Components of core networking"/>
+ </entry>
+ <entry keyword="lsm-pf-v4.so, lsm-pf-v6.so">
+  <topic href="overview.html#Components" title="Components of core networking"/>
+  <topic href="filtering.html#id5" title="Packet Filter (pf) module: firewalls and NAT"/>
+ </entry>
+ <entry keyword="lsm-qnet.so">
+  <topic href="overview.html#Components" title="Components of core networking"/>
+  <topic href="tdp.html#TDP" title="TDP and io-pkt"/>
+ </entry>
+ <entry keyword="Maximum Transmission Unit (MTU), setting">
+  <topic href="drivers.html#Jumbo" title="Jumbo packets and hardware checksumming"/>
+ </entry>
+ <entry keyword="mbuf">
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+  <entry keyword="inspecting">
+   <topic href="filtering.html#BPF" title="Berkeley Packet Filter"/>
+  </entry>
+ </entry>
+ <entry keyword="media options">
+  <entry keyword="disabled for io-net drivers">
+   <topic href="drivers.html#Types" title="Types of network drivers"/>
+  </entry>
+ </entry>
+ <entry keyword="migrating from io-net">
+  <topic href="migrating.html" title="Migrating from io-net"/>
+  <entry keyword="nfm-nraw, replacing">
+   <topic href="filtering.html#BPF" title="Berkeley Packet Filter"/>
+  </entry>
+ </entry>
+ <entry keyword="mod_entry()">
+  <topic href="filtering.html#PF" title="Packet Filter interface"/>
+ </entry>
+ <entry keyword="mount">
+  <topic href="drivers.html#Loading" title="Loading and unloading a driver"/>
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+  <entry keyword=" option still supported">
+   <topic href="tdp.html#TDP" title="TDP and io-pkt"/>
+  </entry>
+ </entry>
+ <entry keyword="MPCSEC crypto hardware core">
+  <topic href="security.html#Crypto_Engines" title="Supported hardware crypto engines"/>
+ </entry>
+ <entry keyword="multithreaded operation">
+  <topic href="drivers.html#NetBSD_native" title="Differences between ported NetBSD drivers and native drivers"/>
+  <topic href="overview.html#Threading" title="Threading model"/>
+  <topic href="drivers.html#Types" title="Types of network drivers"/>
+ </entry>
+ <entry keyword="name space, entries in">
+  <topic href="drivers.html#io-net_other" title="Differences between io-net drivers and other drivers"/>
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+ </entry>
+ <entry keyword="NAT (Network Address Translation)">
+  <topic href="overview.html#Components" title="Components of core networking"/>
+  <topic href="filtering.html#PF" title="Packet Filter interface"/>
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+ </entry>
+ <entry keyword="native drivers">
+  <topic href="drivers.html#io-net_other" title="Differences between io-net drivers and other drivers"/>
+  <topic href="drivers.html#NetBSD_native" title="Differences between ported NetBSD drivers and native drivers"/>
+  <topic href="drivers.html#Types" title="Types of network drivers"/>
+  <entry keyword="devctl(), not supported for">
+   <topic href="drivers.html#io-net_other" title="Differences between io-net drivers and other drivers"/>
+  </entry>
+  <entry keyword="jumbo packets">
+   <topic href="drivers.html#Jumbo" title="Jumbo packets and hardware checksumming"/>
+  </entry>
+ </entry>
+ <entry keyword="net.inet.ip.do_loopback_cksum">
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+ </entry>
+ <entry keyword="net.inet.tcp.do_loopback_cksum">
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+ </entry>
+ <entry keyword="net.inet.udp.do_loopback_cksum">
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+ </entry>
+ <entry keyword="net.link.ieee80211.debug">
+  <topic href="drivers.html#Debug_info" title="Dumping 802.11 debugging information"/>
+ </entry>
+ <entry keyword="net.link.ieee80211.vap0.debug">
+  <topic href="drivers.html#Debug_info" title="Dumping 802.11 debugging information"/>
+ </entry>
+ <entry keyword="net80211">
+  <topic href="wpa_background.html#NetBSD_80211" title="NetBSD 802.11 layer"/>
+ </entry>
+ <entry keyword="NetBSD">
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+  <entry keyword="802.11">
+   <topic href="wpa_background.html#802.11_support" title="802.11 a/b/g Wi-Fi Support"/>
+  </entry>
+  <entry keyword="802.11 layer">
+   <topic href="wpa_background.html#NetBSD_80211" title="NetBSD 802.11 layer"/>
+  </entry>
+  <entry keyword="drivers">
+   <topic href="drivers.html#io-net_other" title="Differences between io-net drivers and other drivers"/>
+   <topic href="drivers.html#NetBSD_native" title="Differences between ported NetBSD drivers and native drivers"/>
+   <topic href="drivers.html#Types" title="Types of network drivers"/>
+   <entry keyword="nicinfo, support for">
+    <topic href="drivers.html#NetBSD_native" title="Differences between ported NetBSD drivers and native drivers"/>
+    <topic href="overview.html#New" title="What's new in the networking stack?"/>
+   </entry>
+   <entry keyword="support for">
+    <topic href="drivers.html#Types" title="Types of network drivers"/>
+   </entry>
+  </entry>
+  <entry keyword="IPsec tools">
+   <topic href="overview.html#Components" title="Components of core networking"/>
+   <topic href="security.html#IPsec_Tools" title="IPsec tools"/>
+  </entry>
+ </entry>
+ <entry keyword="netmanager">
+  <topic href="migrating.html#Coexistence" title="Compatibility between io-net and io-pkt"/>
+ </entry>
+ <entry keyword="netstat">
+  <topic href="migrating.html#Coexistence" title="Compatibility between io-net and io-pkt"/>
+  <topic href="overview.html#Components" title="Components of core networking"/>
+  <topic href="drivers.html#Troubleshooting" title="Troubleshooting a driver"/>
+ </entry>
+ <entry keyword="Network Address Translation (NAT)">
+  <topic href="overview.html#Components" title="Components of core networking"/>
+  <topic href="filtering.html#PF" title="Packet Filter interface"/>
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+ </entry>
+ <entry keyword="network usage widget (pwm) is incompatible with io-pkt">
+  <topic href="migrating.html#Simultaneous_support" title="Simultaneous support"/>
+ </entry>
+ <entry keyword="nfm-nraw">
+  <topic href="filtering.html#BPF" title="Berkeley Packet Filter"/>
+ </entry>
+ <entry keyword="nicinfo">
+  <topic href="migrating.html#Coexistence" title="Compatibility between io-net and io-pkt"/>
+  <topic href="overview.html#Components" title="Components of core networking"/>
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+  <entry keyword="NetBSD drivers might not support">
+   <topic href="drivers.html#NetBSD_native" title="Differences between ported NetBSD drivers and native drivers"/>
+   <topic href="overview.html#New" title="What's new in the networking stack?"/>
+  </entry>
+  <entry keyword="troubleshooting, using for">
+   <topic href="drivers.html#Troubleshooting" title="Troubleshooting a driver"/>
+  </entry>
+ </entry>
+ <entry keyword="npkt">
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+ </entry>
+ <entry keyword="npm-qnet-compat.so, not supported with io-pkt">
+  <topic href="migrating.html#Discontinued" title="Discontinued features"/>
+ </entry>
+ <entry keyword="npm-ttcpip.so, not supported with io-pkt">
+  <topic href="migrating.html#Discontinued" title="Discontinued features"/>
+ </entry>
+ <entry keyword="open system authentication">
+  <topic href="wpa_background.html#Connecting_WEP" title="Using WEP (Wired Equivalent Privacy) for authentication and encryption"/>
+ </entry>
+ <entry keyword="OpenSSL">
+  <topic href="security.html#OpenSSL" title="OpenSSL support"/>
+ </entry>
+ <entry keyword="Packet Filter (PF) interface">
+  <topic href="overview.html#Architecture" title="Architecture of io-pkt"/>
+  <topic href="filtering.html#PF" title="Packet Filter interface"/>
+  <topic href="filtering.html#Packet_Filters" title="Packet Filters"/>
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+  <entry keyword="using ioctl_socket() instead of ioctl()">
+   <topic href="filtering.html#Packet_Filters" title="Packet Filters"/>
+  </entry>
+ </entry>
+ <entry keyword="packets">
+  <entry keyword="capturing">
+   <topic href="overview.html#Components" title="Components of core networking"/>
+  </entry>
+  <entry keyword="Ethernet, padding">
+   <topic href="drivers.html#Padding" title="Padding Ethernet packets"/>
+  </entry>
+  <entry keyword="filtering">
+   <entry keyword="See also BPF, PF"/>
+  </entry>
+  <entry keyword="forgery, preventing">
+   <topic href="wpa_background.html#Background" title="Background on WPA"/>
+  </entry>
+  <entry keyword="hooks">
+   <topic href="filtering.html#PF" title="Packet Filter interface"/>
+  </entry>
+  <entry keyword="jumbo">
+   <topic href="drivers.html#Jumbo" title="Jumbo packets and hardware checksumming"/>
+   <entry keyword="disabled for io-net drivers">
+    <topic href="drivers.html#Types" title="Types of network drivers"/>
+   </entry>
+  </entry>
+  <entry keyword="priority queuing">
+   <topic href="overview.html#Components" title="Components of core networking"/>
+  </entry>
+ </entry>
+ <entry keyword="padding Ethernet packets">
+  <topic href="drivers.html#Padding" title="Padding Ethernet packets"/>
+ </entry>
+ <entry keyword="pathname delimiter in QNX documentation">
+  <topic href="about.html#WINDOWSNOTE" title="Note to Windows users"/>
+ </entry>
+ <entry keyword="pci">
+  <topic href="drivers.html#Shared_interrupts" title="Problems with shared interrupts"/>
+ </entry>
+ <entry keyword="PEAP (Protected Extensible Authentication Protocol)">
+  <topic href="wpa_background.html#id16" title="Personal-level authentication and Enterprise-level authentication"/>
+ </entry>
+ <entry keyword="pf">
+  <topic href="filtering.html#id5" title="Packet Filter (pf) module: firewalls and NAT"/>
+ </entry>
+ <entry keyword="PF (Packet Filter)">
+  <topic href="overview.html#Architecture" title="Architecture of io-pkt"/>
+  <topic href="filtering.html#Packet_Filters" title="Packet Filters"/>
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+ </entry>
+ <entry keyword="pf.conf">
+  <topic href="filtering.html#id5" title="Packet Filter (pf) module: firewalls and NAT"/>
+ </entry>
+ <entry keyword="PF_KEY">
+  <topic href="overview.html#Components" title="Components of core networking"/>
+ </entry>
+ <entry keyword="pf_pfil_attach()">
+  <topic href="filtering.html#id5" title="Packet Filter (pf) module: firewalls and NAT"/>
+ </entry>
+ <entry keyword="pf_test(), pf_test6()">
+  <topic href="filtering.html#id5" title="Packet Filter (pf) module: firewalls and NAT"/>
+ </entry>
+ <entry keyword="pfctl">
+  <topic href="overview.html#Components" title="Components of core networking"/>
+  <topic href="filtering.html#id5" title="Packet Filter (pf) module: firewalls and NAT"/>
+ </entry>
+ <entry keyword="pfil hooks">
+  <topic href="filtering.html#Packet_Filters" title="Packet Filters"/>
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+  <entry keyword="example">
+   <topic href="filtering.html#PF" title="Packet Filter interface"/>
+  </entry>
+  <entry keyword="using to implement io-net filters">
+   <topic href="migrating.html#Filters" title="Using pfil hooks to implement an io-net filter"/>
+  </entry>
+ </entry>
+ <entry keyword="pfil_add_hook()">
+  <topic href="filtering.html#PF" title="Packet Filter interface"/>
+ </entry>
+ <entry keyword="PFIL_ALL">
+  <topic href="filtering.html#PF" title="Packet Filter interface"/>
+ </entry>
+ <entry keyword="pfil_head_get()">
+  <topic href="filtering.html#PF" title="Packet Filter interface"/>
+ </entry>
+ <entry keyword="pfil_hook_get()">
+  <topic href="filtering.html#PF" title="Packet Filter interface"/>
+ </entry>
+ <entry keyword="PFIL_IFADDR">
+  <topic href="filtering.html#PF" title="Packet Filter interface"/>
+ </entry>
+ <entry keyword="PFIL_IFNET">
+  <topic href="filtering.html#PF" title="Packet Filter interface"/>
+ </entry>
+ <entry keyword="PFIL_IFNET_ATTACH">
+  <topic href="filtering.html#PF" title="Packet Filter interface"/>
+ </entry>
+ <entry keyword="PFIL_IFNET_DETACH">
+  <topic href="filtering.html#PF" title="Packet Filter interface"/>
+ </entry>
+ <entry keyword="PFIL_IN">
+  <topic href="filtering.html#PF" title="Packet Filter interface"/>
+ </entry>
+ <entry keyword="PFIL_OUT">
+  <topic href="filtering.html#PF" title="Packet Filter interface"/>
+ </entry>
+ <entry keyword="pfil_remove_hook()">
+  <topic href="filtering.html#PF" title="Packet Filter interface"/>
+ </entry>
+ <entry keyword="PFIL_TYPE_AF">
+  <topic href="filtering.html#PF" title="Packet Filter interface"/>
+ </entry>
+ <entry keyword="PFIL_TYPE_IFNET">
+  <topic href="filtering.html#PF" title="Packet Filter interface"/>
+ </entry>
+ <entry keyword="phdialer, compatible with io-pkt">
+  <topic href="migrating.html#Simultaneous_support" title="Simultaneous support"/>
+ </entry>
+ <entry keyword="ping">
+  <topic href="migrating.html#Coexistence" title="Compatibility between io-net and io-pkt"/>
+ </entry>
+ <entry keyword="ping, ping6">
+  <topic href="overview.html#Components" title="Components of core networking"/>
+ </entry>
+ <entry keyword="ping6">
+  <topic href="migrating.html#Coexistence" title="Compatibility between io-net and io-pkt"/>
+ </entry>
+ <entry keyword="Point-to-Point Protocol (PPP)">
+  <topic href="overview.html#Components" title="Components of core networking"/>
+ </entry>
+ <entry keyword="pppd">
+  <topic href="migrating.html#Coexistence" title="Compatibility between io-net and io-pkt"/>
+  <topic href="overview.html#Components" title="Components of core networking"/>
+ </entry>
+ <entry keyword="pppoectl">
+  <topic href="overview.html#Components" title="Components of core networking"/>
+ </entry>
+ <entry keyword="pppoed">
+  <topic href="migrating.html#Coexistence" title="Compatibility between io-net and io-pkt"/>
+  <topic href="overview.html#Components" title="Components of core networking"/>
+  <entry keyword="compatibility issues with io-net">
+   <topic href="migrating.html#Compatibility_issues" title="Compatibility issues"/>
+  </entry>
+ </entry>
+ <entry keyword="preshared keys">
+  <topic href="wpa_background.html#Using_WPA" title="Connecting with WPA or WPA2"/>
+  <topic href="security.html#Preshared_Key" title="With authentication using the preshared-key method"/>
+ </entry>
+ <entry keyword="priorities">
+  <topic href="overview.html#Threading" title="Threading model"/>
+  <topic href="overview.html#Priorities" title="Threading priorities"/>
+ </entry>
+ <entry keyword="producers">
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+ </entry>
+ <entry keyword="protocols">
+  <topic href="overview.html#Architecture" title="Architecture of io-pkt"/>
+ </entry>
+ <entry keyword="pwm network usage widget is incompatible with io-pkt">
+  <topic href="migrating.html#Simultaneous_support" title="Simultaneous support"/>
+ </entry>
+ <entry keyword="Qnet">
+  <topic href="overview.html#Architecture" title="Architecture of io-pkt"/>
+  <topic href="overview.html#Components" title="Components of core networking"/>
+  <topic href="tdp.html#TDP" title="TDP and io-pkt"/>
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+  <entry keyword="6.2.1 version, not supported with io-pkt">
+   <topic href="migrating.html#Discontinued" title="Discontinued features"/>
+  </entry>
+ </entry>
+ <entry keyword="racoon">
+  <topic href="security.html#IPsec_Tools" title="IPsec tools"/>
+  <topic href="security.html#Preshared_Key" title="With authentication using the preshared-key method"/>
+ </entry>
+ <entry keyword="racoon.conf">
+  <topic href="security.html#Preshared_Key" title="With authentication using the preshared-key method"/>
+ </entry>
+ <entry keyword="racoonctl">
+  <topic href="security.html#IPsec_Tools" title="IPsec tools"/>
+ </entry>
+ <entry keyword="raw sockets">
+  <topic href="overview.html#Components" title="Components of core networking"/>
+ </entry>
+ <entry keyword="RC4">
+  <topic href="wpa_background.html#Background" title="Background on WPA"/>
+ </entry>
+ <entry keyword="resource managers">
+  <topic href="overview.html#Architecture" title="Architecture of io-pkt"/>
+ </entry>
+ <entry keyword="route">
+  <topic href="migrating.html#Coexistence" title="Compatibility between io-net and io-pkt"/>
+  <topic href="overview.html#Components" title="Components of core networking"/>
+ </entry>
+ <entry keyword="router, access point as">
+  <topic href="wpa_background.html#Router" title="Configuring an access point as a router"/>
+ </entry>
+ <entry keyword="Routing Socket">
+  <topic href="overview.html#Components" title="Components of core networking"/>
+ </entry>
+  <topic href="overview.html#Priorities" title="Threading priorities"/>
+ <entry keyword="SA (Security Association)">
+  <topic href="security.html#IPsec_Tools" title="IPsec tools"/>
+  <topic href="security.html#Preshared_Key" title="With authentication using the preshared-key method"/>
+ </entry>
+ <entry keyword="SCTP, not currently supported">
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+ </entry>
+ <entry keyword="security">
+  <topic href="security.html" title="IP Security and Hardware Encryption"/>
+ </entry>
+ <entry keyword="Security Association (SA)">
+  <topic href="security.html#IPsec_Tools" title="IPsec tools"/>
+  <topic href="security.html#Preshared_Key" title="With authentication using the preshared-key method"/>
+ </entry>
+ <entry keyword="Security Policy Database">
+  <topic href="security.html#IPsec_Tools" title="IPsec tools"/>
+ </entry>
+ <entry keyword="setconf">
+  <topic href="tdp.html#TDP_IP" title="Using TDP over IP"/>
+ </entry>
+ <entry keyword="setkey">
+  <topic href="security.html#Manual" title="Between two boxes manually"/>
+  <topic href="security.html#IPsec_Tools" title="IPsec tools"/>
+  <topic href="security.html#Preshared_Key" title="With authentication using the preshared-key method"/>
+ </entry>
+ <entry keyword="shared interrupts">
+  <topic href="drivers.html#Shared_interrupts" title="Problems with shared interrupts"/>
+ </entry>
+ <entry keyword="Shared Key Authentication (SKA)">
+  <topic href="wpa_background.html#Connecting_no_encryption" title="Using no encryption"/>
+  <topic href="wpa_background.html#Connecting_WEP" title="Using WEP (Wired Equivalent Privacy) for authentication and encryption"/>
+ </entry>
+ <entry keyword="shim layer">
+  <topic href="overview.html#Components" title="Components of core networking"/>
+  <topic href="drivers.html#Loading" title="Loading and unloading a driver"/>
+  <topic href="drivers.html#Types" title="Types of network drivers"/>
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+ </entry>
+ <entry keyword="SIOCGIFCONF">
+  <topic href="migrating.html#Behavior" title="Behavioral differences"/>
+ </entry>
+ <entry keyword="slogger">
+  <topic href="migrating.html#Behavior" title="Behavioral differences"/>
+  <topic href="drivers.html#Troubleshooting" title="Troubleshooting a driver"/>
+ </entry>
+ <entry keyword="sloginfo">
+  <topic href="drivers.html#Debug_info" title="Dumping 802.11 debugging information"/>
+  <topic href="drivers.html#Troubleshooting" title="Troubleshooting a driver"/>
+ </entry>
+ <entry keyword="snmpd">
+  <entry keyword="compatibility issues with io-pkt">
+   <topic href="migrating.html#Compatibility_issues" title="Compatibility issues"/>
+  </entry>
+ </entry>
+ <entry keyword="sockstat">
+  <topic href="migrating.html#Coexistence" title="Compatibility between io-net and io-pkt"/>
+  <topic href="overview.html#Components" title="Components of core networking"/>
+ </entry>
+ <entry keyword="SOHO (small office, home office)">
+  <topic href="wpa_background.html#Gateway" title="Acting as a gateway"/>
+  <topic href="wpa_background.html#TCPIP_DHCP" title="DHCP server on WAP acting as a gateway"/>
+ </entry>
+ <entry keyword="SSID (Service Set Identifier)">
+  <entry keyword="determining">
+   <topic href="wpa_background.html#Using_Wi-Fi" title="Using Wi-Fi with io-pkt"/>
+  </entry>
+  <entry keyword="passphrase, setting">
+   <topic href="wpa_background.html#WPA_utilities" title="WPA utilities"/>
+  </entry>
+ </entry>
+ <entry keyword="stack">
+  <entry keyword="architecture">
+   <topic href="overview.html#Architecture" title="Architecture of io-pkt"/>
+  </entry>
+  <entry keyword="configuring">
+   <topic href="overview.html#Components" title="Components of core networking"/>
+  </entry>
+  <entry keyword="context">
+   <topic href="overview.html#Threading" title="Threading model"/>
+  </entry>
+  <entry keyword="events">
+   <topic href="overview.html#Threading" title="Threading model"/>
+  </entry>
+  <entry keyword="prefixes">
+   <topic href="migrating.html#Simultaneous_support" title="Simultaneous support"/>
+  </entry>
+ </entry>
+ <entry keyword="support, technical">
+  <topic href="about.html#Support" title="Technical support"/>
+ </entry>
+ <entry keyword="sysctl">
+  <topic href="migrating.html#Coexistence" title="Compatibility between io-net and io-pkt"/>
+  <topic href="overview.html#Components" title="Components of core networking"/>
+  <topic href="drivers.html#Debug_info" title="Dumping 802.11 debugging information"/>
+  <entry keyword="compatibility issues with io-net">
+   <topic href="migrating.html#Compatibility_issues" title="Compatibility issues"/>
+  </entry>
+  <entry keyword="settings">
+   <entry keyword="net.inet.ip.do_loopback_cksum">
+    <topic href="overview.html#New" title="What's new in the networking stack?"/>
+   </entry>
+   <entry keyword="net.inet.ip.forwarding">
+    <topic href="wpa_background.html#Router" title="Configuring an access point as a router"/>
+   </entry>
+   <entry keyword="net.inet.tcp.do_loopback_cksum">
+    <topic href="overview.html#New" title="What's new in the networking stack?"/>
+   </entry>
+   <entry keyword="net.inet.udp.do_loopback_cksum">
+    <topic href="overview.html#New" title="What's new in the networking stack?"/>
+   </entry>
+   <entry keyword="net.link.ieee80211.debug">
+    <topic href="drivers.html#Debug_info" title="Dumping 802.11 debugging information"/>
+   </entry>
+   <entry keyword="net.link.ieee80211.vap0.debug">
+    <topic href="drivers.html#Debug_info" title="Dumping 802.11 debugging information"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="system log">
+  <topic href="drivers.html#Troubleshooting" title="Troubleshooting a driver"/>
+ </entry>
+ <entry keyword="TCP/IP">
+  <entry keyword="configuration in wireless networks">
+   <topic href="wpa_background.html#TCP_IP" title="TCP/IP configuration in a wireless network"/>
+  </entry>
+  <entry keyword="included in io-pkt">
+   <topic href="overview.html#Architecture" title="Architecture of io-pkt"/>
+  </entry>
+  <entry keyword="tiny stack, not supported with io-pkt">
+   <topic href="migrating.html#Discontinued" title="Discontinued features"/>
+  </entry>
+ </entry>
+ <entry keyword="tcpdump">
+  <topic href="filtering.html#BPF" title="Berkeley Packet Filter"/>
+  <topic href="overview.html#Components" title="Components of core networking"/>
+ </entry>
+ <entry keyword="TDP (Transparent Distributed Processing)">
+  <topic href="overview.html#Architecture" title="Architecture of io-pkt"/>
+  <topic href="overview.html#Components" title="Components of core networking"/>
+  <topic href="tdp.html#TDP" title="TDP and io-pkt"/>
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+ </entry>
+ <entry keyword="technical support">
+  <topic href="about.html#Support" title="Technical support"/>
+ </entry>
+ <entry keyword="Temporal Key Integrity Protocol (TKIP)">
+  <topic href="wpa_background.html#Background" title="Background on WPA"/>
+  <topic href="wpa_background.html#Using_WPA" title="Connecting with WPA or WPA2"/>
+ </entry>
+ <entry keyword="threads">
+  <entry keyword="priorities">
+   <topic href="overview.html#Threading" title="Threading model"/>
+   <topic href="overview.html#Priorities" title="Threading priorities"/>
+  </entry>
+  <entry keyword="threading model">
+   <topic href="drivers.html#NetBSD_native" title="Differences between ported NetBSD drivers and native drivers"/>
+   <topic href="overview.html#Threading" title="Threading model"/>
+   <topic href="drivers.html#Types" title="Types of network drivers"/>
+  </entry>
+ </entry>
+ <entry keyword="tiny TCP/IP stack, not supported with io-pkt">
+  <topic href="migrating.html#Discontinued" title="Discontinued features"/>
+ </entry>
+ <entry keyword="TKIP (Temporal Key Integrity Protocol)">
+  <topic href="wpa_background.html#Background" title="Background on WPA"/>
+ </entry>
+ <entry keyword="Transmit Segmentation Offload (TSO)">
+  <topic href="drivers.html#TSO" title="Transmit Segmentation Offload (TSO)"/>
+ </entry>
+ <entry keyword="Transparent Distributed Processing (TDP)">
+  <topic href="overview.html#Architecture" title="Architecture of io-pkt"/>
+  <topic href="overview.html#Components" title="Components of core networking"/>
+  <topic href="tdp.html#TDP" title="TDP and io-pkt"/>
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+ </entry>
+ <entry keyword="troubleshooting">
+  <entry keyword="drivers">
+   <topic href="migrating.html#Behavior" title="Behavioral differences"/>
+   <topic href="drivers.html#Troubleshooting" title="Troubleshooting a driver"/>
+  </entry>
+  <entry keyword="no received packets">
+   <topic href="drivers.html#Shared_interrupts" title="Problems with shared interrupts"/>
+  </entry>
+ </entry>
+ <entry keyword="TTLS (Tunneled Transport Layer Security)">
+  <topic href="wpa_background.html#id16" title="Personal-level authentication and Enterprise-level authentication"/>
+ </entry>
+ <entry keyword="typographical conventions">
+  <topic href="about.html#Typographical_conventions" title="Typographical conventions"/>
+ </entry>
+ <entry keyword="umount, supported only for io-net drivers">
+  <topic href="drivers.html#io-net_other" title="Differences between io-net drivers and other drivers"/>
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+ </entry>
+ <entry keyword="waitfor">
+  <topic href="drivers.html#io-net_other" title="Differences between io-net drivers and other drivers"/>
+ </entry>
+ <entry keyword="WAP (Wireless Access Point)">
+  <topic href="wpa_background.html#802.11_support" title="802.11 a/b/g Wi-Fi Support"/>
+  <topic href="overview.html#Components" title="Components of core networking"/>
+  <topic href="wpa_background.html#Using_WAP" title="Using a Wireless Access Point (WAP)"/>
+  <entry keyword="creating">
+   <topic href="wpa_background.html#Creating_WAP" title="Creating A WAP"/>
+  </entry>
+  <entry keyword="router, acting as">
+   <topic href="wpa_background.html#Router" title="Configuring an access point as a router"/>
+  </entry>
+ </entry>
+ <entry keyword="WEP (Wired Equivalent Privacy)">
+  <topic href="wpa_background.html#Background" title="Background on WPA"/>
+  <topic href="wpa_background.html#Router" title="Configuring an access point as a router"/>
+  <entry keyword="authentication">
+   <topic href="wpa_background.html#Connecting_WEP" title="Using WEP (Wired Equivalent Privacy) for authentication and encryption"/>
+   <topic href="wpa_background.html#WEP" title="WEP access point"/>
+  </entry>
+  <entry keyword="key">
+   <topic href="wpa_background.html#WEP" title="WEP access point"/>
+  </entry>
+ </entry>
+ <entry keyword="Wi-Fi">
+  <topic href="overview.html#New" title="What's new in the networking stack?"/>
+  <entry keyword="drivers">
+   <entry keyword="not supported by io-pkt-v4">
+    <topic href="wpa_background.html#Using_Wi-Fi" title="Using Wi-Fi with io-pkt"/>
+   </entry>
+  </entry>
+  <entry keyword="networks">
+   <entry keyword="connecting to">
+    <topic href="wpa_background.html#Connecting" title="Connecting to a wireless network"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="Wi-Fi Protected Access">
+ </entry>
+ <entry keyword="wiconfig">
+  <topic href="wpa_background.html#WPA_utilities" title="WPA utilities"/>
+ </entry>
+ <entry keyword="Wired Equivalent Privacy (WEP)">
+  <topic href="wpa_background.html#Background" title="Background on WPA"/>
+  <topic href="wpa_background.html#Router" title="Configuring an access point as a router"/>
+ </entry>
+ <entry keyword="Wireless Access Point (WAP)">
+  <topic href="wpa_background.html#802.11_support" title="802.11 a/b/g Wi-Fi Support"/>
+  <topic href="overview.html#Components" title="Components of core networking"/>
+  <topic href="wpa_background.html#Using_WAP" title="Using a Wireless Access Point (WAP)"/>
+  <entry keyword="creating">
+   <topic href="wpa_background.html#Creating_WAP" title="Creating A WAP"/>
+  </entry>
+  <entry keyword="router, acting as">
+   <topic href="wpa_background.html#Router" title="Configuring an access point as a router"/>
+  </entry>
+ </entry>
+ <entry keyword="Wireless LAN (WLAN)">
+  <topic href="wpa_background.html#802.11_support" title="802.11 a/b/g Wi-Fi Support"/>
+ </entry>
+ <entry keyword="wireless LAN client/peer table">
+  <topic href="wpa_background.html#Using_Wi-Fi" title="Using Wi-Fi with io-pkt"/>
+  <topic href="wpa_background.html#WPA_utilities" title="WPA utilities"/>
+ </entry>
+ <entry keyword="wireless networks">
+  <entry keyword="name, determining">
+   <topic href="wpa_background.html#Using_Wi-Fi" title="Using Wi-Fi with io-pkt"/>
+  </entry>
+  <entry keyword="scanning">
+   <topic href="wpa_background.html#Using_Wi-Fi" title="Using Wi-Fi with io-pkt"/>
+  </entry>
+  <entry keyword="TCP/IP configuration">
+   <topic href="wpa_background.html#TCP_IP" title="TCP/IP configuration in a wireless network"/>
+  </entry>
+  <entry keyword="using no encryption">
+   <topic href="wpa_background.html#Connecting_no_encryption" title="Using no encryption"/>
+  </entry>
+ </entry>
+ <entry keyword="WLAN (Wireless LAN)">
+  <topic href="wpa_background.html#802.11_support" title="802.11 a/b/g Wi-Fi Support"/>
+ </entry>
+ <entry keyword="wlanctl">
+  <topic href="wpa_background.html#Using_Wi-Fi" title="Using Wi-Fi with io-pkt"/>
+  <topic href="wpa_background.html#WPA_utilities" title="WPA utilities"/>
+ </entry>
+ <entry keyword="wlconfig">
+  <topic href="wpa_background.html#WPA_utilities" title="WPA utilities"/>
+ </entry>
+ <entry keyword="WPA (Wi-Fi Protected Access)">
+  <topic href="wpa_background.html#Background" title="Background on WPA"/>
+  <topic href="wpa_background.html#Using_WPA" title="Connecting with WPA or WPA2"/>
+  <topic href="wpa_background.html#WPA_access_point" title="WPA access point"/>
+  <entry keyword="passphrase">
+   <topic href="wpa_background.html#WPA_utilities" title="WPA utilities"/>
+  </entry>
+  <entry keyword="supplicant">
+   <topic href="wpa_background.html#Connecting" title="Connecting to a wireless network"/>
+   <topic href="wpa_background.html#Connecting_no_encryption" title="Using no encryption"/>
+   <topic href="wpa_background.html#Connecting_wpa_supplicant" title="Using wpa_supplicant to manage your wireless network connections"/>
+   <topic href="wpa_background.html#WPA_utilities" title="WPA utilities"/>
+   <entry keyword="command-line client">
+    <topic href="wpa_background.html#Using_WPA" title="Connecting with WPA or WPA2"/>
+    <topic href="wpa_background.html#Connecting_WEP" title="Using WEP (Wired Equivalent Privacy) for authentication and encryption"/>
+    <topic href="wpa_background.html#Connecting_wpa_supplicant" title="Using wpa_supplicant to manage your wireless network connections"/>
+    <topic href="wpa_background.html#WPA_utilities" title="WPA utilities"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="WPA-Enterprise">
+  <topic href="wpa_background.html#Background" title="Background on WPA"/>
+  <topic href="wpa_background.html#id16" title="Personal-level authentication and Enterprise-level authentication"/>
+ </entry>
+ <entry keyword="WPA-Personal">
+  <topic href="wpa_background.html#Background" title="Background on WPA"/>
+  <topic href="wpa_background.html#id16" title="Personal-level authentication and Enterprise-level authentication"/>
+ </entry>
+ <entry keyword="WPA-PSK">
+  <topic href="wpa_background.html#Using_WPA" title="Connecting with WPA or WPA2"/>
+ </entry>
+ <entry keyword="WPA2 (802.11i)">
+  <topic href="wpa_background.html#Using_WPA" title="Connecting with WPA or WPA2"/>
+  <topic href="wpa_background.html#WPA_access_point" title="WPA access point"/>
+ </entry>
+ <entry keyword="wpa_cli">
+  <topic href="overview.html#Components" title="Components of core networking"/>
+  <topic href="wpa_background.html#Using_WPA" title="Connecting with WPA or WPA2"/>
+  <topic href="wpa_background.html#Connecting_WEP" title="Using WEP (Wired Equivalent Privacy) for authentication and encryption"/>
+  <topic href="wpa_background.html#Connecting_wpa_supplicant" title="Using wpa_supplicant to manage your wireless network connections"/>
+  <topic href="wpa_background.html#WPA_utilities" title="WPA utilities"/>
+ </entry>
+ <entry keyword="wpa_passphrase">
+  <topic href="wpa_background.html#WPA_utilities" title="WPA utilities"/>
+ </entry>
+ <entry keyword="wpa_supplicant">
+  <topic href="overview.html#Components" title="Components of core networking"/>
+  <topic href="wpa_background.html#Connecting" title="Connecting to a wireless network"/>
+  <topic href="wpa_background.html#Connecting_no_encryption" title="Using no encryption"/>
+  <topic href="wpa_background.html#Using_Wi-Fi" title="Using Wi-Fi with io-pkt"/>
+  <topic href="wpa_background.html#Connecting_wpa_supplicant" title="Using wpa_supplicant to manage your wireless network connections"/>
+  <topic href="wpa_background.html#WPA_utilities" title="WPA utilities"/>
+ </entry>
+ <entry keyword="wpa_supplicant.conf">
+  <topic href="wpa_background.html#Using_WPA" title="Connecting with WPA or WPA2"/>
+  <topic href="wpa_background.html#Connecting_no_encryption" title="Using no encryption"/>
+  <topic href="wpa_background.html#Connecting_WEP" title="Using WEP (Wired Equivalent Privacy) for authentication and encryption"/>
+  <topic href="wpa_background.html#Connecting_wpa_supplicant" title="Using wpa_supplicant to manage your wireless network connections"/>
+ </entry>
+</index>

@@ -1,0 +1,211 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Summary of error messages for Memory Analysis" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Memory_detail_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Illegal_dealloc_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Null_pointderef_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Buffer_overflow_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Use_feedmem_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_uninit_mem_read_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Resrc_mem_leak_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Checked_functions_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="MAT_ErrorMessageSummary" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Summary of error messages for Memory Analysis</title>
+   </head>
+   <body id="MAT_ErrorMessageSummary"><a name="MAT_ErrorMessageSummary" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Summary of error messages for Memory Analysis</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>The following table shows a summary of potential error messages you might encounter during memory 
+            analysis: 
+            
+         </p>
+         
+         
+         
+         <div class="tablenoborder">
+            <table cellpadding="4" cellspacing="0" summary="" frame="border" border="1" rules="all">
+               <thead align="left">
+                  <tr>
+                     <th class="cellrowborder" valign="top" id="d107825e28" rowspan="1" colspan="1">Message</th>
+                     <th class="cellrowborder" valign="top" id="d107825e31" rowspan="1" colspan="1">Caused by</th>
+                     <th class="cellrowborder" valign="top" id="d107825e34" rowspan="1" colspan="1">Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1"><samp class="codeph">no errors</samp></td>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">No errors</td>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">No errors</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">
+                        <samp class="codeph">allocator inconsistency - Malloc chain is corrupted, pointers out of order</samp>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">A buffer overflow occurred in the heap.</td>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">The heap memory is corrupted.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">
+                        <samp class="codeph">allocator inconsistency - Malloc chain is corrupted, end before end pointer</samp>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">A buffer overflow occurred in the heap.</td>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">The heap memory is corrupted.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">
+                        <samp class="codeph">pointer does not point to heap area</samp>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">The illegal deallocation of memory.</td>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">You attempted to free non-heap memory.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">
+                        <samp class="codeph">possible overwrite - Malloc block header corrupted</samp>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">A buffer overflow occurred in the heap.</td>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">The heap memory is corrupted.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">
+                        <samp class="codeph">allocator inconsistency - Pointers between this segment and adjoining segments are invalid</samp>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">A buffer overflow occurred in the heap. </td>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">The heap memory is corrupted.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">
+                        <samp class="codeph">data has been written outside allocated memory block</samp>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">A buffer overflow occurred in the heap.</td>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">The program attempted to write data to a region beyond allocated memory.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">
+                        <samp class="codeph">data in free'd memory block has been modified</samp>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">Attempting to use memory that was previously freed.</td>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">The program is attempting to write to a memory region that was previously freed.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">
+                        <samp class="codeph">data area is not in use (can't be freed or realloced)</samp>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">A buffer overflow occurred in the heap.</td>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">The heap memory is corrupted.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">
+                        <samp class="codeph">unable to get additional memory from the system</samp>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">All memory resources are exhausted.</td>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">There are no more memory resources to allocate.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">
+                        <samp class="codeph">pointer points to the heap but not to a user writable area</samp>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">A buffer overflow occurred in the heap.</td>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">The heap memory is corrupted.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">
+                        <samp class="codeph">allocator inconsistency - Malloc segment in free list is in-use</samp>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">A buffer overflow occurred in the heap.</td>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">The heap memory is corrupted.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">
+                        <samp class="codeph">malloc region doesn't have a valid CRC in header</samp>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">A buffer overflow occurred in the heap.</td>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">The heap memory is corrupted.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">
+                        <samp class="codeph">free'd pointer isn't at start of allocated memory block</samp>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">An illegal deallocation of memory.</td>
+                     <td class="cellrowborder" valign="top" headers="d107825e28 d107825e31 d107825e34" rowspan="1" colspan="1">An attempt was made to deallocate the pointer that shifted from its original value when it was returned by the allocator.</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/memory_Memory_detail_.html" shape="rect">Interpreting errors during memory analysis</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/memory_Illegal_dealloc_.html" shape="rect">Illegal deallocation of memory</a></div>
+            
+            <div><a href="../topic/memory_Null_pointderef_.html" shape="rect">NULL pointer dereference</a></div>
+            
+            <div><a href="../topic/memory_Buffer_overflow_.html" shape="rect">Buffer overflow</a></div>
+            
+            <div><a href="../topic/memory_Use_feedmem_.html" shape="rect">Using freed memory</a></div>
+            
+            <div><a href="../topic/memory_uninit_mem_read_.html" shape="rect">Reading uninitialized memory</a></div>
+            
+            <div><a href="../topic/memory_Resrc_mem_leak_.html" shape="rect">Resource (memory) leaks</a></div>
+            
+            <div><a href="../topic/memory_Checked_functions_.html" shape="rect">Functions checked for memory errors during memory analysis</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

@@ -1,0 +1,135 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Bins tab" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Memory_Analysis_Editor_Group.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Selecting_Data.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Controlling_the_View.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Controlling_the_Overvew.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Controlling_the_Details.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_allocations_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_bands_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_usage_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Settings_Tab_Options.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="MemoryBinsTab" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Bins tab</title>
+   </head>
+   <body id="MemoryBinsTab"><a name="MemoryBinsTab" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Bins tab</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>The allocator keeps counters for allocations of various sizes to help gather statistics about how your application is using
+            memory. Blocks up to each power of two (2, 4, 8, 16, etc. up to 4096) and large blocks (anything over 4 KB) are tracked by
+            these counters.
+            
+         </p>
+         
+         
+         <p>The Bins tab shows the values for these counters over time:</p>
+         
+         
+         <p>
+            <span><img src="../images/ide2Ftemp2Ftopic2Fmemory_bins_.xml_d131136e27.jpg" alt="Bins" /></span>
+            
+         </p>
+         
+         
+         <p>The counters are listed at the top of the Bins tab. Click the circle to the left of each counter to enable or disable the
+            counter in the current view. 
+         </p>
+         
+         
+         <p> When the Bins tab is shown, the Chart pane shows allocations and deallocations for each bin at the time selected in the Details
+            pane. The Details pane lists the memory events for the selected region of the Bins tab. 
+         </p>
+         
+         
+         <div class="p">The Bins tab includes these additional buttons: 
+            <dl>
+               <dt class="dlterm">
+                  <span><img src="../images/ide2Ftemp2Ftopic2Fmemory_bins_.xml_d131136e49.jpg" alt="Play icon" /></span>
+                  
+               </dt>
+               <dd>Play the selected range of the Use Bins; the Bins Statistics chart shows the usage dynamically. </dd>
+               <dt class="dlterm">
+                  <span><img src="../images/ide2Ftemp2Ftopic2Fmemory_bins_.xml_d131136e64.jpg" alt="Play icon" /></span>
+                  
+               </dt>
+               <dd>Stop. </dd>
+            </dl>
+            
+         </div>
+         
+         
+         <p>Because of the logging that's done for each allocation and deallocation, tracing can be slow, and it may change the timing
+            of the application. You might want to do a first pass with the bins snapshots enabled to determine the hot spots or ranges,
+            and on the second pass reduce the tracing to a certain range (minimum, maximum) to filter and reduce the log set. 
+         </p>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/memory_Memory_Analysis_Editor_Group.html" shape="rect">Memory Analysis editor</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/memory_Selecting_Data.html" shape="rect">Selecting data</a></div>
+            
+            <div><a href="../topic/memory_Controlling_the_View.html" shape="rect">Controlling the page layout</a></div>
+            
+            <div><a href="../topic/memory_Controlling_the_Overvew.html" shape="rect">Controlling the overview</a></div>
+            
+            <div><a href="../topic/memory_allocations_.html" shape="rect">Allocations tab</a></div>
+            
+            <div><a href="../topic/memory_bands_.html" shape="rect">Bands tab</a></div>
+            
+            <div><a href="../topic/memory_usage_.html" shape="rect">Usage tab</a></div>
+            
+            <div><a href="../topic/memory_Settings_Tab_Options.html" shape="rect">Settings tab</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/memory_Controlling_the_Details.html" shape="rect">Controlling the detail pane</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

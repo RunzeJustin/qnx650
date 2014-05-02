@@ -1,0 +1,216 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Upload tab" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/launch_lnch_tabs_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/launch_tab_main_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/launch_tab_arguments_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/launch_tab_environment_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/launch_tab_debugger_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/launch_tab_source_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/launch_tab_common_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/launch_tab_tools_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Uploadtab" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Upload tab</title>
+   </head>
+   <body id="Uploadtab"><a name="Uploadtab" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Upload tab</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>The Upload tab lets you tell the IDE whether to transfer an executable from the host machine to the target. You use this tab
+            if libraries have to be uploaded every time an application runs. 
+            
+            
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/2Ftopic2Flaunch_tab_download_.xml_d101093e25.jpg" alt="Launch - Download tab" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>The Upload tab in the Launch Configurations dialog.</p>
+            
+            
+         </div>
+         
+         
+         <p>You also have the option of not downloading any shared libraries to your target.</p>
+         
+         
+         <dl>
+            <dt class="dlterm">
+               <span class="uicontrol">Upload executable to target</span>
+               
+            </dt>
+            <dd>Send the executable to the target every time you run or debug. 
+               
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Use executable on target</span>
+               
+            </dt>
+            <dd>Make the IDE use the existing version of the executable on the target. If you select this option, you'll need to specify a
+               <span class="uicontrol">Remote directory</span> for the executable. 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Remote directory</span>
+               
+            </dt>
+            <dd>Show the remote directory of <span class="filepath">/tmp</span> on your target. You can also click <span class="uicontrol">Browse…</span> to locate a directory. Since the IDE doesn't know the location of your shared library paths, you must specify the directory
+               containing any libraries. 
+               
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Strip debug information before uploading</span>
+               
+            </dt>
+            <dd>Remove the debug information from the executable being uploaded to the target. 
+               
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Use unique name</span>
+               
+            </dt>
+            <dd>Append a number to make your executable's filename unique during each download session.
+               
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Upload shared libraries to the target</span>
+               
+            </dt>
+            <dd>Transfer a shared library from the host machine to the target. 
+               
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Upload</span>
+               
+            </dt>
+            <dd>Select the shared libraries your program needs from the list. 
+               
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Local path</span>
+               
+            </dt>
+            <dd>Shows the local path to the library. 
+               
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Remote directory</span>
+               
+            </dt>
+            <dd>Shows the remote directory of the library on your target. 
+               
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Strip</span>
+               
+            </dt>
+            <dd>Remove debug information before downloading. By default, the <span class="uicontrol">Strip debug information before uploading</span> option is selected. Deselect this option if you don't want the IDE to strip the executable you're uploading to your target.
+               
+               
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Auto</span>
+               
+            </dt>
+            <dd>Attempts to automatically find the required libraries. 
+               
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Project…</span>
+               
+            </dt>
+            <dd>Open a dialog to look in your workspace for libraries. 
+               
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Add…</span>
+               
+            </dt>
+            <dd>Add a new shared library path to the list. 
+               
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Delete</span>
+               
+            </dt>
+            <dd>Remove the selected shared library path from the list. 
+               
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Remove uploaded components after session</span>
+               
+            </dt>
+            <dd>Remove files that the IDE downloaded after each session. If you don't want the IDE to clean up after itself, then deselect
+               this option. 
+               
+               
+            </dd>
+         </dl>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/launch_lnch_tabs_.html" shape="rect">Setting execution options</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/launch_tab_main_.html" shape="rect">Main tab</a></div>
+            
+            <div><a href="../topic/launch_tab_arguments_.html" shape="rect">Arguments tab</a></div>
+            
+            <div><a href="../topic/launch_tab_environment_.html" shape="rect">Environment tab</a></div>
+            
+            <div><a href="../topic/launch_tab_debugger_.html" shape="rect">Debugger tab</a></div>
+            
+            <div><a href="../topic/launch_tab_source_.html" shape="rect">Source tab</a></div>
+            
+            <div><a href="../topic/launch_tab_common_.html" shape="rect">Common tab</a></div>
+            
+            <div><a href="../topic/launch_tab_tools_.html" shape="rect">Tools tab</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

@@ -1,0 +1,126 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Combine" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_prop_item_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="ImagePropertiesCombine" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Combine</title>
+   </head>
+   <body id="ImagePropertiesCombine"><a name="ImagePropertiesCombine" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Combine</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         
+         <p>These settings control how images are combined with your System Builder project. For example,
+            you can control how the EFS is aligned, what format the resulting image is, the location of
+            the IPL, its image offset, and whether or not the IPL is padded to a certain size or not.
+         </p>
+         
+         
+         <dl>
+            <dt class="dlterm">
+               <span class="uicontrol">IPL file</span>
+               
+            </dt>
+            <dd>The fully qualified name of a file that is concatenated to the front of an IFS image.
+               
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Pad IPL to</span>
+               
+            </dt>
+            <dd>The amount of padding that is required for the IPL file you want to append to the front
+               of an IFS image. If you need to accommodate an IPL file, the IPL plus the padding amount
+               will provide the start of the IFS image. 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Align file system to</span>
+               
+            </dt>
+            <dd>Indicates the sector size that you want to align the file system to. Use this setting if
+               you want to combine an EFS image. This image must be aligned to a sector size for the
+               hardware (NOR flash). 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Offset</span>
+               
+            </dt>
+            <dd>A hexadecimal amount that indicates the distance (displacement) from the beginning of
+               the image up until the IFS image starts. 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">ROM size</span>
+               
+            </dt>
+            <dd>A numerical value for the size of the ROM. To determine the amount of ROM you'll
+               require, you can compile the code to create a hexadecimal file of the code, and then the
+               size of the hexadecimal file is the size of the ROM you require. 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Combined image format</span>
+               
+            </dt>
+            <dd>Indicates the type of image format. If you want to download to the target, the resulting
+               file will be copied to the type specified here. 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Images to combine with</span>
+               
+            </dt>
+            <dd>A list of the fully-qualified file names for the IFS and EFS images. The IFS and EFS
+               images are appended in the order specified in this comma-separated list. 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Mount unbootable IFSs?</span>
+               
+            </dt>
+            <dd>Indicates whether you want any specified IFS images mounted when they are unbootable.
+               For advanced situations, if you might have multiple IFS filesystems, and because only the
+               ones with a startup are bootable, you might want any secondary IFSs mounted, regardless if
+               they are not bootable. 
+            </dd>
+         </dl>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/builder_prop_item_.html" shape="rect">Item properties</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

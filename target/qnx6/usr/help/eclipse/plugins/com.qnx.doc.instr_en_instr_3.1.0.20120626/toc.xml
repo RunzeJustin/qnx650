@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="User's Guide">
+      <topic label="About This Guide" href="about.html">
+          <topic label="What you'll find in this guide" href="about.html#In_this_guide"/>
+          <topic label="Typographical conventions" href="about.html#Typographical_conventions">
+            <topic label="Note to Windows users" href="about.html#WINDOWSNOTE"/>
+            <topic label="Navigation buttons" href="about.html#Navigation"/>
+          </topic>
+          <topic label="Technical support" href="about.html#Support"/>
+      </topic>
+      <topic label="Introduction" href="introduction.html">
+          <topic label="What is the System Analysis Toolkit (SAT)?" href="introduction.html#Introduction"/>
+          <topic label="What can the SAT do for you?" href="introduction.html#Why_needed"/>
+          <topic label="Components of the SAT" href="introduction.html#Components">
+            <topic label="Instrumented kernel" href="introduction.html#Kernel"/>
+            <topic label="Kernel buffer management" href="introduction.html#Kernel_buffer"/>
+            <topic label="Data-capture program (tracelogger)" href="introduction.html#Capture"/>
+            <topic label="Data interpretation (e.g. traceprinter)" href="introduction.html#Interpretation"/>
+            <topic label="Integrated Development Environment" href="introduction.html#IDE"/>
+          </topic>
+      </topic>
+      <topic label="Events and the Kernel" href="events.html">
+          <topic label="What generates events" href="events.html#Generating"/>
+          <topic label="Generating events: a typical scenario" href="events.html#Scenario">
+            <topic label="Multithreaded example" href="events.html#id5"/>
+            <topic label="Thread context-switch time" href="events.html#id7"/>
+            <topic label="Restarting threads" href="events.html#id9"/>
+          </topic>
+          <topic label="Simple and combine events" href="events.html#Simple_combine"/>
+          <topic label="Fast and wide modes" href="events.html#Fast_wide"/>
+          <topic label="Classes and events" href="events.html#Classes">
+            <topic label="Communication class: _NTO_TRACE_COMM" href="events.html#Communication_class"/>
+            <topic label="Control class: _NTO_TRACE_CONTROL" href="events.html#Control_class"/>
+            <topic label="Interrupt classes: _NTO_TRACE_INTENTER, _NTO_TRACE_INTEXIT, _NTO_TRACE_INT_HANDLER_ENTER, and _NTO_TRACE_INT_HANDLER_EXIT" href="events.html#Interrupt_class"/>
+            <topic label="Kernel-call classes: _NTO_TRACE_KERCALLENTER, _NTO_TRACE_KERCALLEXIT, and _NTO_TRACE_KERCALLINT" href="events.html#Kernel_call_class"/>
+            <topic label="Process class: _NTO_TRACE_PROCESS" href="events.html#Process_class"/>
+            <topic label="System class: _NTO_TRACE_SYSTEM" href="events.html#System_class"/>
+            <topic label="Thread class: _NTO_TRACE_THREAD" href="events.html#Thread_class"/>
+            <topic label="User class: _NTO_TRACE_USER" href="events.html#User_class"/>
+            <topic label="Virtual thread class: _NTO_TRACE_VTHREAD" href="events.html#VThread_class"/>
+          </topic>
+      </topic>
+      <topic label="Kernel Buffer Management" href="buffers.html">
+          <topic label="Instrumented kernel and kernel buffer management" href="buffers.html#Buffer_management"/>
+          <topic label="Buffer specifications" href="buffers.html#Specifications"/>
+          <topic label="Circular linked lists" href="buffers.html#Linked_lists">
+            <topic label="Linked list size" href="buffers.html#id6"/>
+            <topic label="Full buffers and the high-water mark" href="buffers.html#id8"/>
+            <topic label="Buffer overruns" href="buffers.html#id10"/>
+          </topic>
+      </topic>
+      <topic label="Capturing Trace Data" href="datacapture.html">
+          <topic label="Overview" href="datacapture.html#Overview"/>
+          <topic label="Using tracelogger to control tracing" href="datacapture.html#Running_tracelogger">
+            <topic label="Managing trace buffers" href="datacapture.html#Buffer_management_tracelogger"/>
+            <topic label="tracelogger's modes of operation" href="datacapture.html#Modes"/>
+            <topic label="Choosing between wide and fast modes" href="datacapture.html#Wide_fast"/>
+            <topic label="Filtering events" href="datacapture.html#Filtering_tracelogger"/>
+            <topic label="Specifying where to send the output" href="datacapture.html#File"/>
+          </topic>
+          <topic label="Using TraceEvent to control tracing" href="datacapture.html#Using_TraceEvent">
+            <topic label="Managing trace buffers" href="datacapture.html#Buffer_management_TraceEvent"/>
+            <topic label="Modes of operation" href="datacapture.html#Modes_TraceEvent"/>
+            <topic label="Filtering events" href="datacapture.html#Filtering_TraceEvent"/>
+            <topic label="Choosing between wide and fast modes" href="datacapture.html#Wide_fast_TraceEvent"/>
+            <topic label="Inserting trace events" href="datacapture.html#Inserting_events"/>
+          </topic>
+      </topic>
+      <topic label="Filtering" href="filtering.html">
+          <topic label="Overview" href="filtering.html#Overview"/>
+          <topic label="The static rules filter" href="filtering.html#Static_rules"/>
+          <topic label="The dynamic rules filter" href="filtering.html#Dynamic_rules">
+            <topic label="Setting up a dynamic rules filter" href="filtering.html#Setting_up_dynamic"/>
+            <topic label="Event handler" href="filtering.html#Event_handler"/>
+            <topic label="Removing event handlers" href="filtering.html#Removing_event_handlers"/>
+          </topic>
+          <topic label="The post-processing facility" href="filtering.html#Post_processing"/>
+      </topic>
+      <topic label="Interpreting Trace Data" href="datainterpretation.html">
+          <topic label="Overview" href="datainterpretation.html#Overview"/>
+          <topic label="Using traceprinter and interpreting the output" href="datainterpretation.html#Using_traceprinter"/>
+          <topic label="Building your own parser" href="datainterpretation.html#Your_own">
+            <topic label="The traceparser library" href="datainterpretation.html#traceparser_library"/>
+            <topic label="Simple and combine events" href="datainterpretation.html#Simple_combine"/>
+            <topic label="The traceevent_t structure" href="datainterpretation.html#traceevent_t"/>
+            <topic label="Event interlacing" href="datainterpretation.html#Interlacing"/>
+            <topic label="Timestamps" href="datainterpretation.html#Timestamps"/>
+          </topic>
+      </topic>
+      <topic label="Tutorials" href="tutorial-intro.html">
+          <topic label="Overview" href="tutorial-intro.html#Overview"/>
+          <topic label="The instrex.h header file" href="tutorial-intro.html#Header"/>
+          <topic label="Gathering all events from all classes" href="tutorial-intro.html#ALL_CLASSES.C"/>
+          <topic label="Gathering all events from one class" href="tutorial-intro.html#ONE_CLASS.C"/>
+          <topic label="Gathering five events from four classes" href="tutorial-intro.html#FIVE_EVENTS.C"/>
+          <topic label="Gathering kernel calls" href="tutorial-intro.html#KER_CALLS.C"/>
+          <topic label="Event handling - simple" href="tutorial-intro.html#EH_SIMPLE.C"/>
+          <topic label="Inserting a user simple event" href="tutorial-intro.html#USR_EVENT_SIMPLE.C"/>
+      </topic>
+      <topic label="Current Trace Events and Data" href="kercall_table.html">
+          <topic label="Interpreting the table" href="kercall_table.html#Interpreting"/>
+          <topic label="Table of events" href="kercall_table.html#Events"/>
+      </topic>
+</toc>

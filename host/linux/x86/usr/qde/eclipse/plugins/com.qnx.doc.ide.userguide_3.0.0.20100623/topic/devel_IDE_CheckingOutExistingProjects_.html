@@ -1,0 +1,125 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="task" />
+      <meta name="DC.Title" content="Checking out existing projects" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_UnderstandingIDEProjects_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_TheIDEProjectModel_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_SupportedProjectTypes_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_IDE_ProjectCreation_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_CheckingOutPartialSourceTree_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_IDE_SharingProjects_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_IDE_ProjectBuildProperties_.html" />
+      <meta name="DC.Relation" scheme="URI" content="devel_Example_4.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Checkingoutexistingprojects" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Checking out existing projects</title>
+   </head>
+   <body id="Checkingoutexistingprojects"><a name="Checkingoutexistingprojects" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Checking out existing projects</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <div class="p">
+            
+            <p>The IDE integration with source control (CVS and SVN) can detect the presence of the project metadata in the repository, or
+               check out existing projects. You have an option to search recursively and check out all existing projects from a selected
+               folder, or choose a specific project. You can also create a special file, called <span class="uicontrol">Team Project Set</span> (<span class="filepath">.psf</span>), which contains a set of projects that you want everyone to check out. Team sets can be located in the source control repository,
+               and the IDE will recognize them (and check out all specified projects automatically).
+            </p>
+            
+            
+            <p>For simplified project creation, if you don't want to build using the IDE, but you want to use the debugger, the System Profiler,
+               or if you want to find memory corruption, you can create a simple project in IDE to use by any of these tools.
+            </p>
+            
+            
+         </div>
+         
+         
+         <div class="section"> To configure this type of project, follow these steps: </div>
+         
+         
+         <ol>
+            <li class="stepexpand">
+               <span>Create an empty <tt>Makefile</tt> project. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Copy or link sources into the project. To create a link, create a new directory in the project, and in the new directory dialog,
+                  click <span class="uicontrol">Advanced</span> and select <span class="uicontrol">Link to folder</span>. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Copy or link any binaries and library into the project. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Create a launch configuration for the selected binary. </span>
+               If you want the source navigation and sources aren't in the same location where they were compiled, you need to enable <span class="uicontrol">Source Path Lookup</span> (edit the <span class="uicontrol">Source</span> tab for the launch configuration to provide a lookup). 
+               
+            </li>
+         </ol>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/devel_UnderstandingIDEProjects_.html" shape="rect">Understanding projects in the IDE</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/devel_TheIDEProjectModel_.html" shape="rect">The IDE project model</a></div>
+            
+            <div><a href="../topic/devel_SupportedProjectTypes_.html" shape="rect">Supported project types in the IDE</a></div>
+            
+            <div><a href="../topic/devel_IDE_ProjectCreation_.html" shape="rect">Scenarios for creating a project for the first time</a></div>
+            
+            <div><a href="../topic/devel_IDE_SharingProjects_.html" shape="rect">Sharing projects</a></div>
+            
+            <div><a href="../topic/devel_IDE_ProjectBuildProperties_.html" shape="rect">Setting build properties for a project</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/devel_CheckingOutPartialSourceTree_.html" shape="rect">Checking out a partial source tree</a></div>
+            
+            <div><a href="devel_Example_4.html" shape="rect">Example #4: there are links for everything</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

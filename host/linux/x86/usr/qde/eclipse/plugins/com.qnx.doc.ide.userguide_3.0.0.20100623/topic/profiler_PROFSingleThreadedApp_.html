@@ -1,0 +1,241 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="task" />
+      <meta name="DC.Title" content="Profiling a single-threaded application" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROUSECASES_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_USEAPPPROFUNCINST_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_FISAMPLMODE_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_FISINGAPP_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_FISYSPROF_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFCreateSessFromIDELnch_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFCreateSessByImpData_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFaRunProcess_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFUsingPostmortemProf_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFPsotMortemProfiling_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFRunningFromTermCmdLine_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFTakeSnapshot_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROCompResults_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Profilingasinglethreadedapplication" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Profiling a single-threaded application</title>
+   </head>
+   <body id="Profilingasinglethreadedapplication"><a name="Profilingasinglethreadedapplication" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Profiling a single-threaded application</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <div class="p">
+            <p>For this particular situation for example, you might have a single-threaded
+               application that performs badly for a specific test case, and you
+               want to understand the reason(s) why, and try to attempt to
+               optimize it, if possible. 
+            </p>
+            
+            
+            <p>Before you start: </p>
+            
+            <br clear="none" /><ul>
+               <li>The application you use must have been compiled from an IDE
+                  project. 
+               </li>
+               <li>You must have a launch configuration that runs the application
+                  with some existing test data.
+               </li>
+            </ul>
+            
+         </div>
+         
+         
+         
+         <div class="section">To profile the application, follow these steps: </div>
+         
+         
+         <ol>
+            <li class="stepexpand"><span>Create an Application Profiler session using the IDE launch
+                  configuration: </span>
+               <br clear="none" /><ol type="a">
+                  <li>Enable instrumentation for profiling for your
+                     project (see <a href="profiler_build_.html" shape="rect">Building a program for profiling</a>). 
+                  </li>
+                  <li>Open your desired launch configuration. </li>
+                  <li>Click the <span class="uicontrol">Tools</span> tab. 
+                  </li>
+                  <li>Click <span class="uicontrol">Add/Delete
+                        Tool…</span>. 
+                  </li>
+                  <li>Select <span class="uicontrol">Application
+                        Profiler</span> and click
+                     <span class="uicontrol">OK</span>. 
+                  </li>
+                  <li>In the <span class="uicontrol">Application
+                        Profiler</span> options, enable
+                     <span class="uicontrol">Function Instrumentation</span>,
+                     and click <span class="uicontrol">Apply</span>. 
+                  </li>
+                  <li>Return to the <span class="uicontrol">Application
+                        Profiler</span> tab in the Launch
+                     configuration dialog and click
+                     <span class="uicontrol">Run</span> again. There will be no
+                     error message this time. 
+                     <p>The IDE changes to the
+                        Application Profiling perspective, populates the
+                        session view, and shows the Execution Time view,
+                        which dynamically changes. 
+                     </p>
+                     
+                  </li>
+               </ol>
+               
+            </li>
+            <li class="stepexpand"><span>After the application terminates, inspect the Application
+                  Profiler results: </span>
+               <br clear="none" /><ol type="a">
+                  <li>In the Execution Time view, click the
+                     <span class="uicontrol">Menu</span> icon and select
+                     <span class="uicontrol">Show Caller Tree</span>. 
+                     <p>The
+                        active page shows the Tree containing the list of
+                        functions being called. 
+                     </p>
+                     
+                  </li>
+                  <li>Expand the root node and observe the functions
+                     it called with times, percentages, and call times. 
+                  </li>
+                  <li>Continue expanding until you encounter any
+                     suspicious functions that consume the CPU time.
+                     
+                     <p>Now, you can investigate why the certain
+                        functions consume the CPU time. 
+                     </p>
+                     
+                  </li>
+               </ol>
+               
+            </li>
+            <li class="stepexpand"><span>Select the function and perform the <span class="uicontrol">Show Caller
+                     Tree</span> action. </span></li>
+            <li class="stepexpand"><span>View the changes to show the function that you want to
+                  investigate as the root, and its callers as children
+                  (Caller Tree mode).</span>  Now, you might notice that this
+               function is called from other places as well;
+               however, you need to investigate its total
+               contributions versus the amount of CPU it
+               consumes. 
+            </li>
+            <li class="stepexpand"><span>Select another function from the list, right-click on the
+                  function and select <span class="uicontrol">Show Reverse
+                     Calls</span> from the menu. </span></li>
+            <li class="stepexpand"><span>View the changes to show this function as the root in the
+                  hierarchy, and its calling functions as children (Show
+                  Call Tree mode). </span></li>
+            <li class="stepexpand"><span>Observe the number of times that this function is called, the
+                  percentage of CPU time it consumes, the number of times
+                  its child (children) is called, and the total time. </span></li>
+            <li class="stepexpand"><span>Open the source code for the function to confirm any
+                  suspicions, and to perform any necessary edits to the
+                  code.</span>  
+               <p>Next, you can confirm your results by running
+                  another profiling session, and then using the
+                  <a href="profiler_PROCompResults_.html" shape="rect">Comparing profiles</a>
+                  feature to compare the results. 
+               </p>
+               <br clear="none" /><ol type="a">
+                  <li>Run the launch configuration again. </li>
+                  <li>Wait until the application terminates. </li>
+                  <li>In the Profile Sessions view, right-click on a
+                     session and select <span class="uicontrol">Compare</span>.
+                     
+                     <p>The IDE opens a view where you can see the
+                        total time compared to the other session time with
+                        the percentage of improvements (a green arrow
+                        pointing downward). 
+                     </p>
+                     
+                  </li>
+               </ol>
+               
+            </li>
+            <li class="stepexpand"><span>Return to your normal development cycle by disabling the
+                  Application Profiler tool in the launch configuration.</span>
+               
+               <div class="note"><span class="notetitle">Note:</span> There's no need to change your compile
+                  options.
+               </div>
+               
+            </li>
+         </ol>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/profiler_PROUSECASES_.html" shape="rect">Using the Application Profiler</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/profiler_USEAPPPROFUNCINST_.html" shape="rect">Using Function Instrumentation with the Application Profiler</a></div>
+            
+            <div><a href="../topic/profiler_FISAMPLMODE_.html" shape="rect">Using Sampling and Call Count instrumentation mode</a></div>
+            
+            <div><a href="../topic/profiler_FISINGAPP_.html" shape="rect">Using Function Instrumentation mode for a single application</a></div>
+            
+            <div><a href="../topic/profiler_FISYSPROF_.html" shape="rect">Using Function Instrumentation in the System Profiler</a></div>
+            
+            <div><a href="../topic/profiler_PROCompResults_.html" shape="rect">Comparing profiles</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/profiler_PROFCreateSessFromIDELnch_.html" shape="rect">Creating an Application Profiler session</a></div>
+            
+            <div><a href="../topic/profiler_PROFCreateSessByImpData_.html" shape="rect">Creating a profiler session by importing profiler data</a></div>
+            
+            <div><a href="../topic/profiler_PROFaRunProcess_.html" shape="rect">Profiling a running process for an existing project</a></div>
+            
+            <div><a href="../topic/profiler_PROFUsingPostmortemProf_.html" shape="rect">Using postmortem profiling for Call Count and Sampling</a></div>
+            
+            <div><a href="../topic/profiler_PROFPsotMortemProfiling_.html" shape="rect">Postmortem profiling</a></div>
+            
+            <div><a href="../topic/profiler_PROFRunningFromTermCmdLine_.html" shape="rect">Running an instrumented binary with profiling from a command prompt (Function Instrumentation mode)</a></div>
+            
+            <div><a href="../topic/profiler_PROFTakeSnapshot_.html" shape="rect">Taking a snapshot of a profiling session</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

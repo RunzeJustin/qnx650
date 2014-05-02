@@ -1,0 +1,187 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="task" />
+      <meta name="DC.Title" content="Creating a launch configuration for the target hardware" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGNeutrino_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Creatingalaunchconfigurationforthetargethardware" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Creating a launch configuration for the target hardware</title>
+   </head>
+   <body id="Creatingalaunchconfigurationforthetargethardware"><a name="Creatingalaunchconfigurationforthetargethardware" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Creating a launch configuration for the target hardware</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <div class="p">Earlier, you installed the Lauterbach Trace32 In-Circuit plugin to start the Trace32 Powerview using the QNX Momentics IDE
+            launch configurations. 
+            
+         </div>
+         
+         
+         <div class="section">To create a launch configuration:</div>
+         
+         
+         <ol>
+            <li class="stepexpand">
+               <span>Launch configurations are set up in the usual Launch Configurations dialog (accessible from <span class="menucascade">
+                     <span class="uicontrol">Debug As</span>
+                     &gt; <span class="uicontrol">Debug Configurations…</span>
+                     </span>). </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>In the opening dialog select <span class="uicontrol">Lauterbach TRACE32 Debugger</span> and add a new configuration. </span>
+               
+               
+               <div class="note"><span class="notetitle">Note:</span> It is mandatory to have a project to use the Lauterbach Trace32 In-Circuit Debugger plugin. Breakpoint synchronization and
+                  edit-source functionality work only with files contained in a project; otherwise, the plugin doesn't know which Trace32 instance
+                  it belongs to.
+               </div>
+               
+               
+               <p>The Lauterbach Trace32 In-Circuit Debugger launch configuration type contains these tabs: the <span class="uicontrol">Trace32 Debugger</span>, <span class="uicontrol">Edit Configuration File</span>, and <span class="uicontrol">Common</span>. 
+               </p>
+               
+               
+               
+               
+               <p>
+                  <span><img src="../images/JTAGNeutCreateLaunchConfig_.xml_d50869e75.jpg" alt="The Lauterbach Launch Configuration type- Trace32 Debugger tab" /></span>
+                  
+               </p>
+               
+               
+               
+            </li>
+            <li class="stepexpand">
+               <span>In the <span class="uicontrol">T32 executable</span> field, type the path to the Trace32 application that you want to associate with this launch configuration. </span>
+               By default, the Trace32 installation process will have located the executable in the folder <span class="filepath">c:\T32</span>; however, the executable depends on your target architecture (e.g. <span class="filepath">T32MARM.EXE</span> for ARM, <span class="filepath">T32MPPC.EXE</span> for PPC).
+               
+            </li>
+            <li class="stepexpand">
+               <span>In the <span class="uicontrol">Configuration File</span> field, type the name of the <span class="filepath">Trace32</span> configuration file to use with the executable.</span>
+               After specifying the configuration file, you may conveniently edit this file on the <span class="uicontrol">Edit configuration File</span> tab.
+               
+            </li>
+            <li class="stepexpand">
+               <span>If not already present, add the following lines to your configuration file, including the empty lines at the beginning and
+                  end of the block:</span>
+               
+               <pre class="codeblock" xml:space="preserve">&lt;- mandatory empty line RCL=NETASSIST PACKLEN=1024 Eclipse Plugin for Coupling 
+                   with TRACE32 6 Creation of Launch Configurations PORT=20006
+&lt;- mandatory empty line</pre>
+               
+               <p>This configures Trace32 to accept commands via the built-in socket API which is a prerequisite for connecting with the plugin.
+                  Note that the port number used in the example (20006) is rather arbitrary, but must be unique among all concurrently active
+                  connections between Trace32 and the IDE and must not be used by other programs on the host. You don't need to configure the
+                  plugin; it will parse the chosen configuration file and extract the relevant parameters. 
+               </p>
+               
+               
+               
+            </li>
+            <li class="stepexpand">
+               <span>To start the Lauterbach Trace32 In-Circuit Debugger, click <span class="uicontrol">Debug</span>.</span>
+               
+               
+               <p>Next, you'll want to create a launch configuration for the target hardware. The following steps describe how to create a launch
+                  configuration for a C++ Project written for the target hardware. 
+               </p>
+               
+               
+               <p>To create a launch configuration:</p>
+               
+               
+               
+               <ol type="a">
+                  <li class="substepexpand">
+                     <span>Open the Project Explorer view and select a project that you want to debug. </span>
+                     
+                  </li>
+                  <li class="substepexpand">
+                     <span>Right-click on the project icon, and select <span class="menucascade">
+                           <span class="uicontrol">Debug As</span>
+                           &gt; <span class="uicontrol">Debug Configurations…</span>
+                           </span>.</span>
+                     
+                     
+                     <p>
+                        <span><img src="../images/JTAGNeutCreateLaunchConfig_.xml_d50869e182.jpg" alt="Lauterbach Trace32 Debugger launch configuration type" /></span>
+                        
+                     </p>
+                     
+                     
+                     
+                  </li>
+                  <li class="substepexpand">
+                     <span>Create a new instance of the Lauterbach Trace32 Debug Configuration. Give it an appropriate name, and ensure that the <span class="uicontrol">Project</span> field is correctly set to the project you're debugging. </span>
+                     
+                     
+                     <p>
+                        <span><img src="../images/JTAGNeutCreateLaunchConfig_.xml_d50869e203.jpg" alt="Lauterbach Trace32 Debugger launch configuration" /></span>
+                        
+                     </p>
+                     
+                     
+                     
+                  </li>
+                  <li class="substepexpand">
+                     <span>Under <span class="uicontrol">Debugger Setting</span>, select the <span class="uicontrol">T32 executable</span> option, browse to the Trace32 installation directory, and select the appropriate executable for your target hardware architecture.
+                        For example, choose <span class="filepath">t32mppc.exe</span> for a PowerPC target. </span>
+                     
+                  </li>
+                  <li class="substepexpand">
+                     <span>Set the <span class="uicontrol">Configuration File</span> to the name of your <span class="filepath">Trace32</span> configuration. Unless you have created your own, this file will usually be named <span class="filepath">config.t32</span> and will be located in the root of your TRACE32 installation directory. </span>
+                     
+                  </li>
+                  <li class="substepexpand">
+                     <span>Click <span class="uicontrol">Apply</span> to save the configuration, and then click <span class="uicontrol">Close</span> to exit the debug dialog.</span>
+                     
+                  </li>
+               </ol>
+               
+               
+            </li>
+         </ol>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/debug_JTAGNeutrino_.html" shape="rect">JTAG: Using the Lauterbach Trace32 In-Circuit Debugger with a QNX Neutrino kernel image</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

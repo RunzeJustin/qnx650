@@ -1,0 +1,127 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="task" />
+      <meta name="DC.Title" content="Creating a startup script for the Lauterbach Trace32 In-Circuit software" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGNeutrino_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_Create_Multicore_Launch_Configs.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="CreatingastartupscriptfortheLauterbachTrace32InCircuitsoftware" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Creating a startup script for the Lauterbach Trace32 In-Circuit software</title>
+   </head>
+   <body id="CreatingastartupscriptfortheLauterbachTrace32InCircuitsoftware"><a name="CreatingastartupscriptfortheLauterbachTrace32InCircuitsoftware" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Creating a startup script for the Lauterbach Trace32 In-Circuit software</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <div class="p">You can create a startup script for the Trace32 Debugger software, which can bring up the
+            target hardware and load the image into RAM.
+            
+         </div>
+         
+         
+         <div class="section">To create a startup script:</div>
+         
+         
+         <ol>
+            <li class="stepexpand"><span>Do one of the following: </span>
+               <br clear="none" /><ul>
+                  <li>From the Lauterbach TRACE32 launch configuration, select the <span class="uicontrol">Edit
+                        Configuration File</span> tab. 
+                     <p>Or: </p>
+                     
+                  </li>
+                  <li>Locate and open the <span class="filepath">T32.cmm</span> file located in the root of
+                     your TRACE32 installation directory. 
+                  </li>
+               </ul>
+               
+               
+            </li>
+            <li class="stepexpand"><span>Locate the <cite>enddo</cite> line of the file. Usually, this is the last nonempty
+                  line. All of the extra lines appear directly before this line. </span></li>
+            <li class="stepexpand"><span>Add a line: </span>
+               <pre class="codeblock" xml:space="preserve">sys.cpu <var class="varname">_CPU_</var></pre>
+               
+               <p>where <var class="varname">_CPU_</var> is your architecture. For example, <samp class="codeph">sys.cpu MPC8349</samp>.
+               </p>
+               
+            </li>
+            <li class="stepexpand"><span>Add the following lines, in this order, directly after the previous one:</span>
+               <pre class="codeblock" xml:space="preserve">sys.reset sys.up go wait 5000.ms break</pre>
+               </li>
+            <li class="stepexpand"><span>Locate the image file you want to load onto the target on your hard drive. It should
+                  be in either <span class="filepath">.srec</span>, <span class="filepath">.elf</span>, or
+                  <span class="filepath">.ifs</span> format. </span></li>
+            <li class="stepexpand"><span>Add the line:</span>
+               <pre class="codeblock" xml:space="preserve">data.load.<var class="varname">_FORMAT_</var><var class="varname">_IMAGE</var></pre>
+               
+               <p>where: </p>
+               <br clear="none" /><ul>
+                  <li><var class="varname">_FORMAT_</var> is one of ELF (<span class="filepath">.elf</span>),
+                     S1record (<span class="filepath">.srec</span>), or Binary (<span class="filepath">.ifs</span>) 
+                  </li>
+                  <li><var class="varname">_IMAGE_</var> is the full path to the image from the previous
+                     step. 
+                  </li>
+               </ul>
+               
+            </li>
+            <li class="stepexpand"><span>Add the following lines, in order: </span>
+               <pre class="codeblock" xml:space="preserve">step, 
+Data.List,
+Register/SpotLight</pre>
+               
+               </li>
+            <li class="stepexpand"><span>Either click <span class="uicontrol">Apply</span> if you edited the file within the IDE;
+                  otherwise, save and close the file <span class="filepath">T32.cmm</span>.</span></li>
+         </ol>
+         
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <ul class="ullinks">
+            <li class="ulchildlink"><strong><a href="../topic/debug_Create_Multicore_Launch_Configs.html" shape="rect">Creating multicore launch configurations</a></strong><br clear="none" />
+               
+            </li>
+         </ul>
+         
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/debug_JTAGNeutrino_.html" shape="rect">JTAG: Using the Lauterbach Trace32 In-Circuit Debugger with a QNX Neutrino kernel image</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

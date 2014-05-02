@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="System Architecture">
+      <topic label="About This Guide" href="about.html">
+          <topic label="What you'll find in this guide" href="about.html#In_this_guide"/>
+          <topic label="Typographical conventions" href="about.html#Typographical_conventions">
+            <topic label="Note to Windows users" href="about.html#WINDOWSNOTE"/>
+            <topic label="Navigation buttons" href="about.html#Navigation"/>
+          </topic>
+          <topic label="Technical support" href="about.html#Support"/>
+      </topic>
+      <topic label="The Philosophy of QNX Neutrino" href="intro.html">
+          <topic label="Design goals" href="intro.html#GOALS">
+            <topic label="An embeddable POSIX OS?" href="intro.html#id4"/>
+            <topic label="Product scaling" href="intro.html#id6"/>
+            <topic label="Why POSIX for embedded systems?" href="intro.html#id8">
+              <topic label="Multiple OS sources" href="intro.html#id10"/>
+              <topic label="Portability of development staff" href="intro.html#id12"/>
+              <topic label="Development environment: native and cross development" href="intro.html#id14"/>
+            </topic>
+          </topic>
+          <topic label="Why QNX Neutrino for embedded systems?" href="intro.html#WHYQNX"/>
+          <topic label="Microkernel architecture" href="intro.html#MICROKERNELARCH">
+            <topic label="The OS as a team of processes" href="intro.html#id18"/>
+            <topic label="A true kernel" href="intro.html#id20"/>
+            <topic label="System processes" href="intro.html#id22">
+              <topic label="System processes vs user-written processes" href="intro.html#id24"/>
+              <topic label="Device drivers" href="intro.html#id26"/>
+            </topic>
+          </topic>
+          <topic label="Interprocess communication" href="intro.html#IPC">
+            <topic label="QNX Neutrino as a message-passing operating system" href="intro.html#id29"/>
+          </topic>
+          <topic label="Network distribution of kernels" href="intro.html#QNXASANETWORK">
+            <topic label="Single-computer model" href="intro.html#id32"/>
+            <topic label="Flexible networking" href="intro.html#id34"/>
+          </topic>
+      </topic>
+      <topic label="The QNX Neutrino Microkernel" href="kernel.html">
+          <topic label="Introduction" href="kernel.html#INTRO"/>
+          <topic label="The implementation of QNX Neutrino" href="kernel.html#IMPLEMENT">
+            <topic label="POSIX realtime and thread extensions" href="kernel.html#id5"/>
+          </topic>
+          <topic label="System services" href="kernel.html#SERVICES"/>
+          <topic label="Threads and processes" href="kernel.html#THREADSANDPRO">
+            <topic label="Thread attributes" href="kernel.html#id9">
+              <topic label="Thread life cycle" href="kernel.html#Life_Cycle"/>
+            </topic>
+          </topic>
+          <topic label="Thread scheduling" href="kernel.html#SCHEDULING">
+            <topic label="When are scheduling decisions are made?" href="kernel.html#id13">
+              <topic label="When is a thread blocked?" href="kernel.html#id15"/>
+              <topic label="When is a thread preempted?" href="kernel.html#id17"/>
+              <topic label="When is a thread yielded?" href="kernel.html#id19"/>
+            </topic>
+            <topic label="Scheduling priority" href="kernel.html#id21"/>
+            <topic label="Scheduling policies" href="kernel.html#SchedulingAlgorithms">
+              <topic label="FIFO scheduling" href="kernel.html#id24"/>
+              <topic label="Round-robin scheduling" href="kernel.html#id26"/>
+              <topic label="Sporadic scheduling" href="kernel.html#Sporadic_scheduling"/>
+              <topic label="Manipulating priority and scheduling policies" href="kernel.html#id29"/>
+            </topic>
+            <topic label="IPC issues" href="kernel.html#id31"/>
+            <topic label="Thread complexity issues" href="kernel.html#id33"/>
+          </topic>
+          <topic label="Synchronization services" href="kernel.html#SYNCHRO">
+            <topic label="Mutexes: mutual exclusion locks" href="kernel.html#Mutexes">
+              <topic label="Priority inheritance and mutexes" href="kernel.html#Priority_inheritance_mutexes"/>
+            </topic>
+            <topic label="Condvars: condition variables" href="kernel.html#Condvars"/>
+            <topic label="Barriers" href="kernel.html#Barriers"/>
+            <topic label="Sleepon locks" href="kernel.html#Sleepon_locks"/>
+            <topic label="Reader/writer locks" href="kernel.html#Reader_writer_locks"/>
+            <topic label="Semaphores" href="kernel.html#Semaphores"/>
+            <topic label="Synchronization via scheduling policy" href="kernel.html#Sync_scheduling"/>
+            <topic label="Synchronization via message passing" href="kernel.html#Sync_message_passing"/>
+            <topic label="Synchronization via atomic operations" href="kernel.html#Sync_atomic"/>
+            <topic label="Synchronization services implementation" href="kernel.html#id46"/>
+          </topic>
+          <topic label="Clock and timer services" href="kernel.html#CLOCKANDTIMER">
+            <topic label="Time correction" href="kernel.html#id49"/>
+            <topic label="Timers" href="kernel.html#id51"/>
+          </topic>
+          <topic label="Interrupt handling" href="kernel.html#INTERRUPTHANDLING">
+            <topic label="Interrupt latency" href="kernel.html#id54"/>
+            <topic label="Scheduling latency" href="kernel.html#id56"/>
+            <topic label="Nested interrupts" href="kernel.html#id58"/>
+            <topic label="Interrupt calls" href="kernel.html#id60"/>
+          </topic>
+      </topic>
+      <topic label="Interprocess Communication (IPC)" href="ipc.html">
+          <topic label="Synchronous message passing" href="ipc.html#Sync_messaging">
+            <topic label="MsgReply vs MsgError" href="ipc.html#id4"/>
+          </topic>
+          <topic label="Message copying" href="ipc.html#Message_copying"/>
+          <topic label="Simple messages" href="ipc.html#Simple_messages"/>
+          <topic label="Channels and connections" href="ipc.html#Channels">
+            <topic label="Pulses" href="ipc.html#id9"/>
+            <topic label="Priority inheritance and messages" href="ipc.html#Priority_inheritance_messages"/>
+          </topic>
+          <topic label="Message-passing API" href="ipc.html#Message_API"/>
+          <topic label="Robust implementations with Send/Receive/Reply" href="ipc.html#Robust"/>
+          <topic label="Events" href="ipc.html#Events">
+            <topic label="I/O notification" href="ipc.html#id15"/>
+          </topic>
+          <topic label="Signals" href="ipc.html#Signals">
+            <topic label="Special signals" href="ipc.html#id18"/>
+            <topic label="Summary of signals" href="ipc.html#Signal_summary"/>
+          </topic>
+          <topic label="POSIX message queues" href="ipc.html#Message_queues">
+            <topic label="Why use POSIX message queues?" href="ipc.html#id22"/>
+            <topic label="File-like interface" href="ipc.html#id24"/>
+            <topic label="Message-queue functions" href="ipc.html#id26"/>
+          </topic>
+          <topic label="Shared memory" href="ipc.html#Shared_memory">
+            <topic label="Shared memory with message passing" href="ipc.html#id29"/>
+            <topic label="Creating a shared-memory object" href="ipc.html#id31"/>
+            <topic label="mmap" href="ipc.html#id33"/>
+            <topic label="Initializing allocated memory" href="ipc.html#Init_mmap_memory"/>
+          </topic>
+          <topic label="Typed memory" href="ipc.html#Typed_memory">
+            <topic label="Implementation-defined behavior" href="ipc.html#Typed_memory_implementation">
+              <topic label="Seeding of typed memory regions" href="ipc.html#Seeding_typed_memory"/>
+              <topic label="Naming of typed memory regions" href="ipc.html#Naming_typed_memory"/>
+              <topic label="Pathname space and typed memory" href="ipc.html#Pathname_space"/>
+              <topic label="mmap allocation flags and typed memory objects" href="ipc.html#mmap_allocation"/>
+              <topic label="Permissions and typed memory objects" href="ipc.html#Permissions_typed_memory"/>
+              <topic label="Object length and offset definitions" href="ipc.html#Length_offset"/>
+              <topic label="Interaction with other POSIX APIs" href="ipc.html#Interaction"/>
+            </topic>
+            <topic label="Practical examples" href="ipc.html#Typed_memory_examples">
+              <topic label="Allocating contiguous memory from system RAM" href="ipc.html#id46"/>
+              <topic label="Defining packet memory and allocating from it" href="ipc.html#id48"/>
+              <topic label="Defining a DMA-safe region" href="ipc.html#id50"/>
+            </topic>
+          </topic>
+          <topic label="Pipes and FIFOs" href="ipc.html#Pipes_FIFOs">
+            <topic label="Pipes" href="ipc.html#id53"/>
+            <topic label="FIFOs" href="ipc.html#id55"/>
+          </topic>
+      </topic>
+      <topic label="The Instrumented Microkernel" href="trace.html">
+          <topic label="Introduction" href="trace.html#INTRO"/>
+          <topic label="Instrumentation at a glance" href="trace.html#NUTSHELL"/>
+          <topic label="Event control" href="trace.html#EVENTCONTROL">
+            <topic label="Modes of emission" href="trace.html#id6"/>
+            <topic label="Ring buffer" href="trace.html#id8"/>
+          </topic>
+          <topic label="Data interpretation" href="trace.html#DATAINTERPRET">
+            <topic label="System analysis with the IDE" href="trace.html#id11"/>
+          </topic>
+          <topic label="Proactive tracing" href="trace.html#PROACTIVE"/>
+      </topic>
+      <topic label="Multicore Processing" href="smp.html">
+          <topic label="Introduction" href="smp.html#Introduction"/>
+          <topic label="Asymmetric multiprocessing (AMP)" href="smp.html#AMP"/>
+          <topic label="Symmetric multiprocessing (SMP)" href="smp.html#SMP">
+            <topic label="Neutrino's microkernel approach" href="smp.html#Microkernel"/>
+            <topic label="Booting an x86 SMP system" href="smp.html#BOOTINGX86"/>
+            <topic label="Booting a PowerPC or MIPS SMP system" href="smp.html#BOOTINGPPC"/>
+            <topic label="How the SMP microkernel works" href="smp.html#HOWTHESMP">
+              <topic label="Scheduling" href="smp.html#SMP_scheduling"/>
+              <topic label="Kernel locking" href="smp.html#id11"/>
+              <topic label="Interprocessor interrupts (IPIs)" href="smp.html#id13"/>
+            </topic>
+            <topic label="Critical sections" href="smp.html#CRITICAL"/>
+          </topic>
+          <topic label="Bound multiprocessing (BMP)" href="smp.html#BMP">
+            <topic label="A viable migration strategy" href="smp.html#id17"/>
+          </topic>
+          <topic label="Choosing between AMP, SMP, and BMP" href="smp.html#Choosing"/>
+      </topic>
+      <topic label="Process Manager" href="proc.html">
+          <topic label="Introduction" href="proc.html#INTRO"/>
+          <topic label="Process management" href="proc.html#PROCMAN">
+            <topic label="Process primitives" href="proc.html#id5">
+              <topic label="posix_spawn" href="proc.html#id7"/>
+              <topic label="spawn" href="proc.html#id9"/>
+              <topic label="fork" href="proc.html#id11"/>
+              <topic label="vfork" href="proc.html#id13"/>
+              <topic label="exec*" href="proc.html#id15"/>
+            </topic>
+            <topic label="Process loading" href="proc.html#Process_loading"/>
+          </topic>
+          <topic label="Memory management" href="proc.html#MEMMAN">
+            <topic label="Memory Management Units (MMUs)" href="proc.html#id19"/>
+            <topic label="Memory protection at run time" href="proc.html#id21">
+              <topic label="Software watchdog" href="proc.html#id23"/>
+            </topic>
+            <topic label="Quality control" href="proc.html#id25"/>
+            <topic label="Full-protection model" href="proc.html#id27">
+              <topic label="Private virtual memory" href="proc.html#id29"/>
+            </topic>
+            <topic label="Variable page size" href="proc.html#VMMVARPGSIZE"/>
+            <topic label="Locking memory" href="proc.html#Locking_memory"/>
+            <topic label="Defragmenting physical memory" href="proc.html#Defragmenting">
+              <topic label="Automatically marking memory as unmovable" href="proc.html#Auto_marking"/>
+            </topic>
+          </topic>
+          <topic label="Pathname management" href="proc.html#PATHMAN">
+            <topic label="Domains of authority" href="proc.html#id36"/>
+            <topic label="Resolving pathnames" href="proc.html#id38">
+              <topic label="Ordering mountpoints" href="proc.html#Ordering_mountpoints"/>
+              <topic label="Single-device mountpoints" href="proc.html#id41"/>
+              <topic label="Unioned filesystem mountpoints" href="proc.html#id43"/>
+              <topic label="Why overlay mountpoints?" href="proc.html#id45"/>
+            </topic>
+            <topic label="Symbolic prefixes" href="proc.html#id47">
+              <topic label="Creating special device names" href="proc.html#id49"/>
+              <topic label="Relative pathnames" href="proc.html#id51"/>
+              <topic label="Network root" href="proc.html#Network_root"/>
+              <topic label="A note about cd" href="proc.html#id54"/>
+            </topic>
+            <topic label="File descriptor namespace" href="proc.html#id56">
+              <topic label="Open control blocks" href="proc.html#id58"/>
+            </topic>
+          </topic>
+      </topic>
+      <topic label="Dynamic Linking" href="dll.html">
+          <topic label="Shared objects" href="dll.html#SHARED">
+            <topic label="Statically linked" href="dll.html#id4"/>
+            <topic label="Dynamically linked" href="dll.html#id6"/>
+            <topic label="Augmenting code at runtime" href="dll.html#id8"/>
+          </topic>
+          <topic label="How shared objects are used" href="dll.html#HOWUSED">
+            <topic label="ELF format" href="dll.html#id11"/>
+            <topic label="ELF without COFF" href="dll.html#id13"/>
+            <topic label="The process" href="dll.html#id15"/>
+            <topic label="Runtime linker" href="dll.html#id17"/>
+            <topic label="Loading a shared library at runtime" href="dll.html#id19"/>
+            <topic label="Symbol name resolution" href="dll.html#SYMBOLNAME"/>
+          </topic>
+      </topic>
+      <topic label="Resource Managers" href="resource.html">
+          <topic label="Introduction" href="resource.html#INTRO"/>
+          <topic label="What is a resource manager?" href="resource.html#WHATISRESMGR">
+            <topic label="Why write a resource manager?" href="resource.html#WhyWrite"/>
+            <topic label="The types of resource managers" href="resource.html#RESMGRtypes">
+              <topic label="Device resource managers" href="resource.html#DEVICEresmgr"/>
+              <topic label="Filesystem resource managers" href="resource.html#FILESYSresmgr"/>
+            </topic>
+            <topic label="Communication via native IPC" href="resource.html#id9"/>
+          </topic>
+          <topic label="Resource manager architecture" href="resource.html#RESMGRARCH">
+            <topic label="Message types" href="resource.html#MESTYPES"/>
+            <topic label="The resource manager shared library" href="resource.html#id13">
+              <topic label="Automatic default message handling" href="resource.html#id15"/>
+              <topic label="open, dup, and close" href="resource.html#id17"/>
+              <topic label="Multiple thread handling" href="resource.html#id19"/>
+              <topic label="Dispatch functions" href="resource.html#id21"/>
+              <topic label="Combine messages" href="resource.html#id23"/>
+              <topic label="Second-level default message handling" href="resource.html#id25"/>
+            </topic>
+          </topic>
+          <topic label="Summary" href="resource.html#SUMMARY"/>
+      </topic>
+      <topic label="Filesystems" href="fsys.html">
+          <topic label="Introduction" href="fsys.html#INTRO">
+            <topic label="Filesystems and pathname resolution" href="fsys.html#id4"/>
+          </topic>
+          <topic label="Filesystem classes" href="fsys.html#FSYSCLASSES">
+            <topic label="Filesystems as shared libraries" href="fsys.html#id7"/>
+            <topic label="io-blk" href="fsys.html#id9">
+              <topic label="Builtin RAM disk" href="fsys.html#id11"/>
+              <topic label="Partitions" href="fsys.html#Partitions"/>
+              <topic label="Buffer cache" href="fsys.html#id14"/>
+            </topic>
+            <topic label="Filesystem limitations" href="fsys.html#Limitations"/>
+          </topic>
+          <topic label="Image filesystem" href="fsys.html#IMAGE"/>
+          <topic label="RAM filesystem" href="fsys.html#DEVSHMEM"/>
+          <topic label="Embedded transaction filesystem (ETFS)" href="fsys.html#ETFS">
+            <topic label="Inside a transaction" href="fsys.html#id20"/>
+            <topic label="Types of storage media" href="fsys.html#id22"/>
+            <topic label="Reliability features" href="fsys.html#id24">
+              <topic label="Dynamic wear-leveling" href="fsys.html#id26"/>
+              <topic label="Static wear-leveling" href="fsys.html#id28"/>
+              <topic label="CRC error detection" href="fsys.html#id30"/>
+              <topic label="ECC error correction" href="fsys.html#id32"/>
+              <topic label="Read degradation monitoring with automatic refresh" href="fsys.html#id34"/>
+              <topic label="Transaction rollback" href="fsys.html#id36"/>
+              <topic label="Atomic file operations" href="fsys.html#id38"/>
+              <topic label="Automatic file defragmentation" href="fsys.html#id40"/>
+            </topic>
+          </topic>
+          <topic label="QNX 4 filesystem" href="fsys.html#QNXFSYS"/>
+          <topic label="Power-Safe filesystem" href="fsys.html#QNX6_filesystem">
+            <topic label="Problems with existing disk filesystems" href="fsys.html#Existing_systems"/>
+            <topic label="Copy-on-write filesystem" href="fsys.html#COW_filesystem"/>
+            <topic label="Performance" href="fsys.html#QNX6_performance"/>
+          </topic>
+          <topic label="DOS Filesystem" href="fsys.html#DOSFSYS">
+              <topic label="DOS version support" href="fsys.html#id48"/>
+              <topic label="DOS text files" href="fsys.html#id50"/>
+              <topic label="QNX-to-DOS filename mapping" href="fsys.html#id52"/>
+              <topic label="Handling filenames" href="fsys.html#id54"/>
+              <topic label="International filenames" href="fsys.html#id56"/>
+              <topic label="DOS volume labels" href="fsys.html#id58"/>
+              <topic label="DOS-QNX permission mapping" href="fsys.html#id60"/>
+              <topic label="File ownership" href="fsys.html#id62"/>
+          </topic>
+          <topic label="CD-ROM filesystem" href="fsys.html#CDROMFSYS"/>
+          <topic label="FFS3 filesystem" href="fsys.html#FFS3">
+            <topic label="Customization" href="fsys.html#id66"/>
+            <topic label="Organization" href="fsys.html#id68">
+              <topic label="Raw partitions" href="fsys.html#id70"/>
+              <topic label="Filesystem partitions" href="fsys.html#id72"/>
+              <topic label="Mountpoints" href="fsys.html#id74"/>
+            </topic>
+            <topic label="Features" href="fsys.html#id76">
+              <topic label="POSIX" href="fsys.html#id78"/>
+              <topic label="Background reclaim" href="fsys.html#id80"/>
+              <topic label="Fault recovery" href="fsys.html#id82"/>
+              <topic label="Compression/decompression" href="fsys.html#id84"/>
+              <topic label="Flash errors" href="fsys.html#id86"/>
+              <topic label="Endian awareness" href="fsys.html#id88"/>
+            </topic>
+            <topic label="Utilities" href="fsys.html#id90"/>
+            <topic label="System calls" href="fsys.html#id92"/>
+          </topic>
+          <topic label="NFS filesystem" href="fsys.html#NFS"/>
+          <topic label="CIFS filesystem" href="fsys.html#CIFS"/>
+          <topic label="Linux Ext2 filesystem" href="fsys.html#EXT2"/>
+          <topic label="Universal Disk Format (UDF) filesystem" href="fsys.html#UDF"/>
+          <topic label="Apple Macintosh HFS and HFS Plus" href="fsys.html#HFS"/>
+          <topic label="Windows NT filesystem" href="fsys.html#NTFS"/>
+          <topic label="Virtual filesystems" href="fsys.html#VIRTUAL"/>
+      </topic>
+      <topic label="PPS" href="pps.html">
+          <topic label="Persistence" href="pps.html#persistence">
+            <topic label="Behavior at startup" href="pps.html#start"/>
+            <topic label="Behavior at shutdown" href="pps.html#shut"/>
+          </topic>
+          <topic label="PPS objects" href="pps.html#objects">
+            <topic label="Object files" href="pps.html#fil"/>
+            <topic label="Change notification" href="pps.html#o_cre_del"/>
+            <topic label="Options and qualifiers" href="pps.html#object_opt">
+              <topic label="Pathname open options" href="pps.html#pathname_opt"/>
+              <topic label="Object and attribute qualifiers" href="pps.html#attr_opt"/>
+            </topic>
+          </topic>
+          <topic label="Publishing" href="pps.html#pub">
+            <topic label="Multiple publishers" href="pps.html#mpb"/>
+          </topic>
+          <topic label="Subscribing" href="pps.html#sub">
+            <topic label="Subscription modes" href="pps.html#ofd">
+              <topic label="Full mode" href="pps.html#ful"/>
+              <topic label="Delta mode" href="pps.html#dta"/>
+            </topic>
+            <topic label="Subscribing to multiple objects" href="pps.html#smo"/>
+            <topic label="Notification groups" href="pps.html#notif_groups"/>
+          </topic>
+      </topic>
+      <topic label="Character I/O" href="char.html">
+          <topic label="Introduction" href="char.html#INTRO">
+            <topic label="Driver/io-char communication" href="char.html#id4"/>
+            <topic label="Device control" href="char.html#id6">
+              <topic label="QNX extensions" href="char.html#id8"/>
+            </topic>
+            <topic label="Input modes" href="char.html#INPUTMODES">
+              <topic label="Raw input mode" href="char.html#id11"/>
+              <topic label="MIN" href="char.html#id13"/>
+              <topic label="TIME" href="char.html#id15"/>
+              <topic label="TIMEOUT" href="char.html#id17"/>
+              <topic label="FORWARD" href="char.html#id19"/>
+              <topic label="Edited input mode" href="char.html#id21"/>
+            </topic>
+            <topic label="Device subsystem performance" href="char.html#id23"/>
+          </topic>
+          <topic label="Console devices" href="char.html#CONSOLE">
+            <topic label="Terminal emulation" href="char.html#id26"/>
+          </topic>
+          <topic label="Serial devices" href="char.html#SER"/>
+          <topic label="Parallel devices" href="char.html#PAR"/>
+          <topic label="Pseudo terminal devices (ptys)" href="char.html#PTY"/>
+      </topic>
+      <topic label="Networking Architecture" href="net.html">
+          <topic label="Introduction" href="net.html#INTRO"/>
+          <topic label="Network manager (io-pkt*)" href="net.html#Manager"/>
+          <topic label="Threading model" href="net.html#Threading"/>
+          <topic label="Protocol module" href="net.html#PROTOCOL"/>
+          <topic label="Driver module" href="net.html#DRIVERINT">
+            <topic label="Loading and unloading a driver" href="net.html#id8"/>
+          </topic>
+      </topic>
+      <topic label="Native Networking (Qnet)" href="qnet.html">
+          <topic label="QNX Neutrino distributed" href="qnet.html#DISTRIB"/>
+          <topic label="Name resolution and lookup" href="qnet.html#NAMERESOL">
+            <topic label="File descriptor (connection ID)" href="qnet.html#File_descriptor"/>
+            <topic label="Behind a simple open" href="qnet.html#Behind_an_open"/>
+            <topic label="Global Name Service (GNS)" href="qnet.html#GNS"/>
+            <topic label="Network naming" href="qnet.html#Network_naming">
+              <topic label="Resolvers" href="qnet.html#Resolvers"/>
+            </topic>
+          </topic>
+          <topic label="Redundant Qnet: Quality of Service (QoS) and multiple paths" href="qnet.html#QOS">
+            <topic label="QoS policies" href="qnet.html#QoS_policies">
+              <topic label="loadbalance" href="qnet.html#loadbalance"/>
+              <topic label="preferred" href="qnet.html#preferred"/>
+              <topic label="exclusive" href="qnet.html#exclusive"/>
+            </topic>
+            <topic label="Specifying QoS policies" href="qnet.html#Specifying_QoS"/>
+            <topic label="Symbolic links" href="qnet.html#Symbolic_links"/>
+          </topic>
+          <topic label="Examples" href="qnet.html#EXAMPLES">
+            <topic label="Local networks" href="qnet.html#Local_networks"/>
+            <topic label="Remote networks" href="qnet.html#Remote_networks"/>
+          </topic>
+      </topic>
+      <topic label="TCP/IP Networking" href="tcpip.html">
+          <topic label="Introduction" href="tcpip.html#INTRO">
+            <topic label="Stack configurations" href="tcpip.html#id4"/>
+          </topic>
+          <topic label="Structure of the TCP/IP manager" href="tcpip.html#STRUCT"/>
+          <topic label="Socket API" href="tcpip.html#SOCK">
+            <topic label="Database routines" href="tcpip.html#id8">
+              <topic label="/etc/resolv.conf" href="tcpip.html#id10"/>
+              <topic label="/etc/protocols" href="tcpip.html#id12"/>
+              <topic label="/etc/services" href="tcpip.html#id14"/>
+            </topic>
+          </topic>
+          <topic label="Multiple stacks" href="tcpip.html#MULTISTACK"/>
+          <topic label="IP filtering and NAT" href="tcpip.html#IPNAT"/>
+          <topic label="NTP" href="tcpip.html#NTP"/>
+          <topic label="Dynamic host configuration" href="tcpip.html#DYNAMIC">
+            <topic label="AutoIP" href="tcpip.html#id20"/>
+          </topic>
+          <topic label="PPP over Ethernet" href="tcpip.html#PPPOE"/>
+          <topic label="/etc/autoconnect" href="tcpip.html#AUTOCONNECT"/>
+          <topic label="Embedded web server" href="tcpip.html#SLINGER">
+            <topic label="CGI method" href="tcpip.html#id25"/>
+            <topic label="SSI method" href="tcpip.html#id27">
+              <topic label="Data server method" href="tcpip.html#id29"/>
+            </topic>
+          </topic>
+      </topic>
+      <topic label="High Availability" href="ham.html">
+          <topic label="What is High Availability?" href="ham.html#INTRO">
+            <topic label="An OS for HA" href="ham.html#QNXWAY">
+              <topic label="Inherent HA" href="ham.html#id5"/>
+              <topic label="HA-specific modules" href="ham.html#id7"/>
+            </topic>
+            <topic label="Custom hardware support" href="ham.html#CUSTOM"/>
+          </topic>
+          <topic label="Client library" href="ham.html#CLIENTLIB">
+            <topic label="Recovery example" href="ham.html#id11"/>
+          </topic>
+          <topic label="High Availability Manager" href="ham.html#HAM">
+            <topic label="HAM and the Guardian" href="ham.html#SELFMONITOR"/>
+            <topic label="HAM hierarchy" href="ham.html#HAMHIER">
+              <topic label="Entities" href="ham.html#ENTITIES"/>
+              <topic label="Conditions" href="ham.html#CONDITIONS"/>
+              <topic label="Actions" href="ham.html#ACTIONS">
+                <topic label="Alternate actions" href="ham.html#id19"/>
+              </topic>
+            </topic>
+            <topic label="Publishing autonomously detected conditions" href="ham.html#PUBLISHING">
+              <topic label="State transitions" href="ham.html#id22"/>
+              <topic label="Other conditions" href="ham.html#id24"/>
+            </topic>
+            <topic label="Subscribing to autonomously published conditions" href="ham.html#SUBSCRIBING">
+              <topic label="Trigger based on state transition" href="ham.html#id27"/>
+              <topic label="Trigger based on specific published condition" href="ham.html#id29"/>
+            </topic>
+            <topic label="HAM as a filesystem" href="ham.html#HAMFS"/>
+            <topic label="Multistage recovery" href="ham.html#MULTISTAGE"/>
+            <topic label="HAM API" href="ham.html#API"/>
+          </topic>
+      </topic>
+      <topic label="Adaptive Partitioning" href="adaptive.html">
+          <topic label="What are partitions?" href="adaptive.html#Partitions">
+            <topic label="If adaptive partitions aren't boxes, what are they?" href="adaptive.html#id4"/>
+          </topic>
+          <topic label="Why adaptive?" href="adaptive.html#Adaptive"/>
+          <topic label="Benefits of adaptive partitioning" href="adaptive.html#Benefits">
+            <topic label="Engineering product performance" href="adaptive.html#Performance">
+              <topic label="Partitioning" href="adaptive.html#id9"/>
+              <topic label="Partition inheritance" href="adaptive.html#id11"/>
+            </topic>
+            <topic label="Dealing with design complexity" href="adaptive.html#Complexity"/>
+            <topic label="Providing security" href="adaptive.html#Security"/>
+            <topic label="Debugging" href="adaptive.html#Debugging"/>
+          </topic>
+          <topic label="Adaptive partitioning thread scheduler" href="adaptive.html#Scheduler"/>
+      </topic>
+      <topic label="The Photon microGUI" href="photon.html">
+          <topic label="A graphical microkernel" href="photon.html#GRAPHMICROK"/>
+          <topic label="The Photon event space" href="photon.html#EVENTSPACE">
+            <topic label="Regions" href="photon.html#id5"/>
+            <topic label="Events" href="photon.html#id7"/>
+          </topic>
+          <topic label="Graphics drivers" href="photon.html#GRAPHDRIVERS">
+            <topic label="Multiple graphics drivers" href="photon.html#id10"/>
+            <topic label="Color model" href="photon.html#id12"/>
+          </topic>
+          <topic label="Font support" href="photon.html#FONTS">
+            <topic label="Stroke-based fonts" href="photon.html#id15"/>
+          </topic>
+          <topic label="Unicode multilingual support" href="photon.html#UNICODE">
+            <topic label="UTF-8 encoding" href="photon.html#id18"/>
+          </topic>
+          <topic label="Animation support" href="photon.html#ANIMATE">
+              <topic label="Video overlay" href="photon.html#id21"/>
+              <topic label="Layers" href="photon.html#id23"/>
+          </topic>
+          <topic label="Printing support" href="photon.html#PRINTING"/>
+          <topic label="The Photon Window Manager" href="photon.html#PWM"/>
+          <topic label="Widget library" href="photon.html#WIDGET">
+            <topic label="Fundamental widgets" href="photon.html#id28">
+              <topic label="Label widget (PtLabel)" href="photon.html#id30"/>
+              <topic label="Push-button widget (PtButton)" href="photon.html#id32"/>
+              <topic label="Text input widgets (PtText, PtMultiText)" href="photon.html#id34"/>
+              <topic label="Toggle-button widgets (PtToggleButton)" href="photon.html#id36"/>
+              <topic label="Graphical widgets (PtArc, PtPixel, PtRect, PtLine, PtPolygon, PtEllipse, PtBezier, PtGrid)" href="photon.html#id38"/>
+              <topic label="Scrollbar widget (PtScrollbar)" href="photon.html#id40"/>
+              <topic label="Separator widget (PtSeparator)" href="photon.html#id42"/>
+              <topic label="Slider widget (PtSlider)" href="photon.html#id44"/>
+              <topic label="Image widgets (PtLabel, PtButton)" href="photon.html#id46"/>
+              <topic label="Progress-bar widget (PtProgress)" href="photon.html#id48"/>
+              <topic label="Numeric widgets (PtNumericInteger, PtNumericFloat)" href="photon.html#id50"/>
+            </topic>
+            <topic label="Container widgets" href="photon.html#id52">
+              <topic label="Window widget (PtWindow)" href="photon.html#id54"/>
+              <topic label="Group widget (PtGroup)" href="photon.html#id56"/>
+              <topic label="Panel group widget (PtPanelGroup)" href="photon.html#id58"/>
+              <topic label="Viewport widget (PtScrollContainer)" href="photon.html#id60"/>
+              <topic label="Background widget (PtBkgd)" href="photon.html#id62"/>
+            </topic>
+            <topic label="Advanced widgets" href="photon.html#id64">
+              <topic label="Menu-related widgets (PtMenu, PtMenuBar, PtMenuButton)" href="photon.html#id66"/>
+              <topic label="Toolbar widgets (PtToolbar, PtToolbarGroup)" href="photon.html#id68"/>
+              <topic label="List widget (PtList)" href="photon.html#id70"/>
+              <topic label="Pulldown list widget (PtComboBox)" href="photon.html#id72"/>
+              <topic label="Tree widget (PtTree)" href="photon.html#id74"/>
+              <topic label="Terminal widgets (PtTty, PtTerminal)" href="photon.html#id76"/>
+              <topic label="Divider widget (PtDivider)" href="photon.html#id78"/>
+              <topic label="Trend graph widgets (PtTrend and PtMTrend)" href="photon.html#id80"/>
+              <topic label="Color-selection widgets (PtColorSel, PtColorPanel, PtColorPatch, PtColorSelGroup, PtColorWell)" href="photon.html#id82"/>
+              <topic label="Web client widget (PtWebClient)" href="photon.html#id84"/>
+            </topic>
+            <topic label="Convenience functions" href="photon.html#id86">
+              <topic label="File-selection dialog (PtFileSelection)" href="photon.html#id88"/>
+              <topic label="Font-selection dialog (PtFontSelection)" href="photon.html#id90"/>
+              <topic label="Print-selection dialog (PtPrintSelection)" href="photon.html#id92"/>
+              <topic label="Alert dialog (PtAlert)" href="photon.html#id94"/>
+              <topic label="Notice dialog (PtNotice)" href="photon.html#id96"/>
+              <topic label="Prompt dialog (PtPrompt)" href="photon.html#id98"/>
+            </topic>
+          </topic>
+          <topic label="Driver development kits" href="photon.html#DDK"/>
+          <topic label="Summary" href="photon.html#SUMMARY"/>
+      </topic>
+      <topic label="Multimedia" href="mme.html">
+          <topic label="Overview" href="mme.html#1over">
+            <topic label="MME functional areas" href="mme.html#2cap">
+              <topic label="Mediastore access" href="mme.html#id5"/>
+              <topic label="Mediastore content management" href="mme.html#id7"/>
+              <topic label="Media playback and recording" href="mme.html#id9"/>
+            </topic>
+            <topic label="The MME interface" href="mme.html#id11"/>
+            <topic label="Component-based architecture" href="mme.html#2mme_components"/>
+          </topic>
+          <topic label="The MME resource managers" href="mme.html#1arch_resource_mgrs"/>
+      </topic>
+      <topic label="Glossary" href="glossary.html"/>
+</toc>

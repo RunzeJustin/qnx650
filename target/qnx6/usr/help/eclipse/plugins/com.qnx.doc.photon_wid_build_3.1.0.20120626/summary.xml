@@ -1,0 +1,413 @@
+<function_summary>
+<function
+   name="PtSuperClassGenListDraw"
+   summary="Invoke the List Draw method in a superclass"
+   synopsis="void PtSuperClassGenListDraw( PtWidgetClassRef_t *cref, PtWidget_t *widget, PtGenListItem_t *item, unsigned index, unsigned nitems, PhRect_t *where );\n"
+/>
+<function
+   name="PtSuperClassGenListInflate"
+   summary="Invoke the List Inflate method in a superclass"
+   synopsis="PtWidget_t *PtSuperClassGenListInflate( PtWidgetClassRef_t *cref, PtWidget_t *wgt, PtWidget_t *parent, PtGenListItem_t *item, unsigned index, int column, PhArea_t *area );\n"
+/>
+<function
+   name="PtSuperClassGenListKey"
+   summary="Invoke the List Key method in a superclass"
+   synopsis="int PtSuperClassGenListKey( PtWidgetClassRef_t *cref, PtWidget_t *wgt, PhEvent_t *ev, PhKeyEvent_t *kev, PtGenListItem_t *newcur, unsigned newpos );\n"
+/>
+<function
+   name="PtSuperClassGenListMouse"
+   summary="Invoke the List Mouse method in a superclass"
+   synopsis="int PtSuperClassGenListMouse( PtWidgetClassRef_t *cref, PtWidget_t *wgt, PtGenListItem_t *item, unsigned index, PhPoint_t *where, int column, PhEvent_t *ev );\n"
+/>
+<function
+   name="PtSuperClassGenListSelect"
+   summary="Invoke the List Select method in a superclass"
+   synopsis="void PtSuperClassGenListSelect( PtWidgetClassRef_t *cref, PtWidget_t *wgt, PtGenListItem_t *item, int pos, int column, int nitems, int subtype, PhEvent_t *ev );\n"
+/>
+<function
+   name="PtSuperClassGenTreeDrawItem"
+   summary="Invoke the Tree Draw Item method of a given superclass"
+   synopsis="void PtSuperClassGenTreeDrawItem( PtWidgetClassRef_t *cref, PtWidget_t *wgt, PtGenTreeItem_t *item, PhRect_t const *where, int lmargin, int rmargin );\n"
+/>
+<function
+   name="PtSuperClassGenTreeItemState"
+   summary="Invoke the Tree Item State method of a superclass"
+   synopsis="int PtSuperClassGenTreeItemState( PtWidgetClassRef_t *cref, PtWidget_t *wgt, PtGenTreeItem_t *item, PhEvent_t *event, int reason );\n"
+/>
+<function
+   name="PtAddWidgetData"
+   summary="Add data to the widget data chain"
+   synopsis="int PtAddWidgetData( PtWidget_t *widget, PtWidgetClassRef_t *type, long subtype, void *data );\n"
+/>
+<function
+   name="PtAnchorDeregister"
+   summary="Deregister a widget from its parent for anchoring"
+   synopsis="void PtAnchorDeregister( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtAnchorRegister"
+   summary="Register a widget with its parent for anchoring"
+   synopsis="void PtAnchorRegister( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtAnchorWidget"
+   summary="Anchor the provided widget"
+   synopsis="void PtAnchorWidget( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtApplyAnchors"
+   summary="Anchor a widget and its children"
+   synopsis="int PtApplyAnchors( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtAttemptResize"
+   summary="Adjust the size of a widget"
+   synopsis="int PtAttemptResize( PtWidget_t *widget, PhRect_t const *canvas, PhRect_t const *render );\n"
+/>
+<function
+   name="PtCalcAnchorOffsets"
+   summary="Update the anchoring values (rules) for the given widget"
+   synopsis="int PtCalcAnchorOffsets( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtCalcRegion"
+   summary="Determine whether or not a widget needs a region"
+   synopsis="int PtCalcRegion( unsigned int *fields, PtWidget_t *widget, PhRegion_t *region, PhRect_t *rect );\n"
+/>
+<function
+   name="PtChildBoundingBox"
+   summary="Calculate a widget's canvas and its children's bounding boxes"
+   synopsis="PhRect_t *PtChildBoundingBox( PtWidget_t *widget, PhRect_t *canvas, PhRect_t *render );\n"
+/>
+<function
+   name="PtClipAdd"
+   summary="Add a clipping rectangle to the stack"
+   synopsis="int PtClipAdd( PtWidget_t *widget, PhRect_t *rect );\n"
+/>
+<function
+   name="PtClipRemove"
+   summary="Take a clipping rectangle off the stack"
+   synopsis="int PtClipRemove();\n"
+/>
+<function
+   name="PtCompoundRedirect"
+   summary="Redirect widgets to a parent"
+   synopsis="PtWidget_t *PtCompoundRedirect( PtWidget_t *container, PtWidgetClassRef_t *child_cref );\n"
+/>
+<function
+   name="PtCoreChangeRegion"
+   summary="Determine if a region is required"
+   synopsis="void PtCoreChangeRegion( unsigned int fields, PtWidget_t *widget );\n"
+/>
+<function
+   name="PtCreateWidgetClass"
+   summary="Create a widget class"
+   synopsis="PtWidgetClass_t *PtCreateWidgetClass( PtWidgetClassRef_t *superclass_ref, unsigned int size, unsigned int num_args, PtArg_t const *args );\n"
+/>
+<function
+   name="PtDamageExposed"
+   summary="Damage the specified widgets"
+   synopsis="void PtDamageExposed( PtWidget_t *widget, PhTile_t *tile );\n"
+/>
+<function
+   name="PtDestroyCallbackList"
+   summary="Free the specified callbacks"
+   synopsis="int PtDestroyCallbackList( PtCallbackList_t **cbp );\n"
+/>
+<function
+   name="PtDestroyHotkeyCallbacks"
+   summary="Free the specified hotkey callbacks"
+   synopsis="void PtDestroyHotkeyCallbacks( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtDestroyRawCallbacks"
+   summary="Free the specified raw callbacks"
+   synopsis="void PtDestroyRawCallbacks( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtFindNextWidgetData"
+   summary="Find the next appropriate data block"
+   synopsis="void * PtFindNextWidgetData( PtWidget_t *widget, PtDataHdr_t *data_node, PtWidgetClassRef_t *type, long subtype, PtDataHdr_t **_node )"
+/>
+<function
+   name="PtFindResource"
+   summary="Find the record associated with a resource"
+   synopsis="PtResourceRec_t const * PtFindResource( long type, PtWidgetClass_t const * const a_class );\n"
+/>
+<function
+   name="PtFindWidgetData"
+   summary="Find the first widget data block of a given type and subtype"
+   synopsis="void * PtFindWidgetData( PtWidget_t *widget, PtWidgetClassRef_t *type, long subtype, PtDataHdr_t **_node );\n"
+/>
+<function
+   name="PtGetCallbackList"
+   summary="Get a callback list"
+   synopsis="void *PtGetCallbackList( PtWidget_t *widget, long cb_type );\n"
+/>
+<function
+   name="PtGetStruct"
+   summary="Retrieve the specified resource"
+   synopsis="int PtGetStruct( char *base, PtResourceRec_t const *mod, PtArg_t *arg );\n"
+/>
+<function
+   name="PtInvokeCallbackList"
+   summary="Invoke a callback list"
+   synopsis="int PtInvokeCallbackList( PtCallbackList_t *cb_list, PtWidget_t *widget, PtCallbackInfo_t *cbinfo );\n"
+/>
+<function
+   name="PtInvokeCallbackType"
+   summary="Invoke a callback list of a specific type"
+   synopsis="int PtInvokeCallbackType( PtWidget_t *widget, long type, PtCallbackInfo_t *cbinfo );\n"
+/>
+<function
+   name="PtInvokeResizeCallbacks"
+   summary="Invoke the resize callbacks of the specified container"
+   synopsis="void PtInvokeResizeCallbacks( PtWidget_t *container );\n"
+/>
+<function
+   name="PtMoveResizeWidget"
+   summary="Synchronize a widget's extent"
+   synopsis="int PtMoveResizeWidget( PtWidget_t *widget, unsigned blit );\n"
+/>
+<function
+   name="PtRemoveWidgetData"
+   summary="Remove data from the widget data chain"
+   synopsis="int PtRemoveWidgetData( PtWidget_t *widget, PtWidgetClassRef_t *type, long subtype );\n"
+/>
+<function
+   name="PtResizeCanvas"
+   summary="Set the size of a widget's canvas"
+   synopsis="int PtResizeCanvas( PtWidget_t *widget, PhDim_t const *render );\n"
+/>
+<function
+   name="PtResizePolicy"
+   summary="Determine whether a widget has a resize policy"
+   synopsis="int PtResizePolicy( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtSetExtentFromArea"
+   summary="Calculate the extent of a widget"
+   synopsis="PhRect_t * PtSetExtentFromArea( PtWidget_t *widget, PhArea_t const *area, PhRect_t *extent );\n"
+/>
+<function
+   name="PtSetStruct"
+   summary="Set the specified resource"
+   synopsis="int PtSetStruct( char *base, PtResourceRec_t const *mod, PtArg_t const *arg );\n"
+/>
+<function
+   name="PtSetValue"
+   summary="Set the value of a resource using mod_f"
+   synopsis="int PtSetValue( PtWidget_t *widget, PtResourceRec_t const *mod, PtArg_t const *args );\n"
+/>
+<function
+   name="PtSuperClassCalcOpaque"
+   summary="Call the Calc Opaque Rect method of specified superclass"
+   synopsis="void PtSuperClassCalcOpaque( PtWidgetClassRef_t *cref, PtWidget_t *widget );\n"
+/>
+<function
+   name="PtSuperClassChildCreated"
+   summary="Invoke a Child Created method"
+   synopsis="void PtSuperClassChildCreated( PtWidgetClassRef_t *cref, PtWidget_t *widget, PtWidget_t *child );\n"
+/>
+<function
+   name="PtSuperClassChildDestroyed"
+   summary="Invoke a Child Destroyed method"
+   synopsis="void PtSuperClassChildDestroyed( PtWidgetClassRef_t *cref, PtWidget_t *widget, PtWidget_t *child );\n"
+/>
+<function
+   name="PtSuperClassChildGettingFocus"
+   summary="Invoke a Child Getting Focus method"
+   synopsis="int PtSuperClassChildGettingFocus( PtWidgetClassRef_t *cref, PtWidget_t *widget, PtWidget_t *child, PhEvent_t *event );\n"
+/>
+<function
+   name="PtSuperClassChildGettingResources"
+   summary="Invoke a Child Getting Resources method"
+   synopsis="int PtSuperClassChildGettingResources( PtWidgetClassRef_t *cref, PtWidget_t *widget, PtWidget_t *child, PtArg_t *argt);\n"
+/>
+<function
+   name="PtSuperClassChildLosingFocus"
+   summary="Invoke a Child Losing Focus method"
+   synopsis="int PtSuperClassChildLosingFocus( PtWidgetClassRef_t *cref, PtWidget_t *widget, PtWidget_t *child, PhEvent_t *event );\n"
+/>
+<function
+   name="PtSuperClassChildMovedResized"
+   summary="Invoke a Child Moved/Resized method"
+   synopsis="void PtSuperClassChildMovedResized( PtWidgetClassRef_t *cref, PtWidget_t *widget, PtWidget_t *child, PhArea_t *current_area, PhRect_t *current_extent, PhArea_t *old_area, PhRect_t *old_extent );\n"
+/>
+<function
+   name="PtSuperClassChildRealized"
+   summary="Invoke a Child Realized method"
+   synopsis="void PtSuperClassChildRealized( PtWidgetClassRef_t *cref, PtWidget_t *widget, PtWidget_t *child );\n"
+/>
+<function
+   name="PtSuperClassChildSettingResources"
+   summary="Invoke a Child Setting Resources method"
+   synopsis="int PtSuperClassChildSettingResources( PtWidgetClassRef_t *cref, PtWidget_t *widget, PtWidget_t *child, PtArg_t const *argt );\n"
+/>
+<function
+   name="PtSuperClassChildUnrealized"
+   summary="Invoke a Child Unrealized method"
+   synopsis="void PtSuperClassChildUnrealized( PtWidgetClassRef_t *cref, PtWidget_t *widget, PtWidget_t *child );\n"
+/>
+<function
+   name="PtSuperClassConnect, PtSuperClassConnectFrom"
+   summary="Invoke the Connection method of specified widget class"
+   synopsis="int PtSuperClassConnect( PtWidgetClassRef_t *cref, PtWidget_t *widget);\n int PtSuperClassConnectFrom( PtWidgetClassRef_t *cref, PtWidget_t *widget );\n"
+/>
+<function
+   name="PtSuperClassDraw"
+   summary="Invoke the Draw method of the specified superclass"
+   synopsis="void PtSuperClassDraw( PtWidgetClassRef_t *wc_ref, PtWidget_t *widget, PhTile_t const *damage );\n"
+/>
+<function
+   name="PtSuperClassExtent"
+   summary="Invoke the Extent method of the specified superclass"
+   synopsis="void PtSuperClassExtent( PtWidgetClassRef_t *wc_ref, PtWidget_t *widget );\n"
+/>
+<function
+   name="PtSuperClassGetResources"
+   summary="Get the specified resource"
+   synopsis="int PtSuperClassGetResources( PtWidgetClassRef_t *wc_ref, PtWidget_t *widget, int num_args, PtArg_t *args );\n"
+/>
+<function
+   name="PtSuperClassGotFocus"
+   summary="Invoke the Got Focus method of the specified superclass"
+   synopsis="void PtSuperClassGotFocus( PtWidgetClassRef_t *cref, PtWidget_t *widget, PhEvent_t *event );\n"
+/>
+<function
+   name="PtSuperClassInit, PtSuperClassInitFrom"
+   summary="Invoke the Initialize method of specified widget class"
+   synopsis="int PtSuperClassInit( PtWidgetClassRef_t *cref, PtWidget_t *widget );\n int PtSuperClassInitFrom( PtWidgetClassRef_t *cref, PtWidget_t *widget );\n"
+/>
+<function
+   name="PtSuperClassLostFocus"
+   summary="Invoke the Lost Focus method of the specified superclass"
+   synopsis="int PtSuperClassLostFocus( PtWidgetClassRef_t *cref, PtWidget_t *widget, PhEvent_t *event );\n"
+/>
+<function
+   name="PtSuperClassRawEvent, PtSuperClassRawEventFrom"
+   summary="Invoke the raw callback list of the specified widget class"
+   synopsis="int PtSuperClassRawEvent( PtWidgetClassRef_t *cref, PtWidget_t *widget void *data, PtCallbackInfo_t *cbinfo );\n int PtSuperClassRawEventFrom( PtWidgetClassRef_t *cref, PtWidget_t *widget, void *data, PtCallbackInfo_t *cbinfo );\n"
+/>
+<function
+   name="PtSuperClassRealized"
+   summary="Invoke Realization function of specified widget class"
+   synopsis="void PtSuperClassRealized( PtWidgetClassRef_t *cref, PtWidget_t *widget );\n"
+/>
+<function
+   name="PtSuperClassSetResources"
+   summary="Set resources"
+   synopsis="int PtSuperClassSetResources( PtWidgetClassRef_t *wc_ref, PtWidget_t *widget, int num_args, PtArg_t const *args )"
+/>
+<function
+   name="PtUpdateVisibility"
+   summary="Tell the widget library about a change in visibility"
+   synopsis="PtUpdateVisibility( PtWidget_t *widget, PhRect_t *rect );\n"
+/>
+<function
+   name="PtWidgetAbove"
+   summary="Get the widget that's above a given widget in a family hierarchy"
+   synopsis="PtWidget_t * PtWidgetAbove( PtWidget_t *root, PtWidget_t *widget );\n"
+/>
+<function
+   name="PhABResExportCommon_t.alloc_image"
+   summary="A function exported by PhAB to allocate memory for an image"
+   synopsis="PhImage_t* alloc_image ( PhImage_t *src );\n"
+/>
+<function
+   name="PhABResExportCommon_t.alloc_mem"
+   summary="A function exported by PhAB to allocate memory for the
+resource editor's copy of some data"
+   synopsis="char* alloc_mem ( int size )"
+/>
+<function
+   name="PhABResExportFull_t.answer_changes"
+   summary="A function exported by PhAB to answer a call to a  ResPluginAnyChangesF_t function"
+   synopsis="void answer_changes ( PhABHandle_t phab, int answer, int n, void *pvalue )"
+/>
+<function
+   name="PhABResExportCommon_t.apply"
+   summary="Function exported by PhAB to apply changes in the resource
+editor"
+   synopsis="int apply ( PhABHandle_t phab, int n, void * value )"
+/>
+<function
+   name="PhABResExportFull_t.closing"
+   summary="Function exported by PhAB to inform PhAB that the resource
+editor is closing"
+   synopsis="void closing ( PhABHandle_t phab )"
+/>
+<function
+   name="PhABResExportCommon_t.cmp"
+   summary="A function exported by PhAB to compare two resource editor
+values"
+   synopsis="int cmp ( ResDatatype_t type, int n1, void *v1, int n2, void *v2 );\n"
+/>
+<function
+   name="PhABResExportFull_t.create_window"
+   summary="A function exported by PhAB to create a resource editor
+window"
+   synopsis="PhabResWindowHandle_t create_window ( PhArea_t *area, char *caption, unsigned int flags, PtWidget_t **container, ResPluginActionNotifyF_t *notify, void *notify_data )"
+/>
+<function
+   name="PhABResExportFull_t.destroy"
+   summary="A function exported by PhAB to destroy a window created
+by create_window"
+   synopsis="void destroy ( PhabResWindowHandle_t wnd )"
+/>
+<function
+   name="PhABResExportCommon_t.dup"
+   summary="A PhAB exported function to duplicate a value"
+   synopsis="void dup ( ResDatatype_t type, int n, void *v, int *dest_n, void **dest_value );\n"
+/>
+<function
+   name="PhABResExportCommon_t.free"
+   summary="A function exported by PhAB to free a value allocated with "
+   synopsis="void free ( ResDatatype_t type, int n, void *v );\n"
+/>
+<function
+   name="PhABResExportCommon_t.free_image"
+   summary="A function exported by PhAB to free an image created with alloc_image"
+   synopsis="void free_image ( PhImage_t *p )"
+/>
+<function
+   name="PhABResExportCommon_t.free_mem"
+   summary="A function exported by PhAB to free memory allocated by alloc_mem"
+   synopsis="void free_mem ( char *p )"
+/>
+<function
+   name="PhABResExportFull_t.get_area"
+   summary="A function exported by PhAB to get the area of a window
+created by create_window"
+   synopsis="void get_area ( PhabResWindowHandle_t wnd, PhArea_t *area)"
+/>
+<function
+   name="PhABResExportCommon_t.get_res"
+   summary="A function exported by PhAB to get the resource structure
+for another datatype"
+   synopsis="void get_res ( ResDatatype_t type char *abstract_name_editor ResPluginFrugalEditor_t **pfrugal_editor, ResPluginFullEditor_t **pfull_editor )"
+/>
+<function
+   name="PhABResExportCommon_t.message"
+   summary="A function exported by PhAB to display a message dialog "
+   synopsis="int message ( char *message, char *button1, char *button2, char *button3, int default_button );\n"
+/>
+<function
+   name="PhABResExportFrugal_t.open"
+   summary="Function exported by PhAB to open the full editor from
+the frugal editor"
+   synopsis="void open ( PhABHandle_t phab )"
+/>
+<function
+   name="PhABResExportFull_t.set_state"
+   summary="A function exported by PhAB to set the state of a window
+created by create_window"
+   synopsis="int set_state ( PhabResWindowHandle_t wnd, ResFullWindowState_t state );\n"
+/>
+<function
+   name="PhABResExportFull_t.to_front"
+   summary="A function exported by PhAB to bring to the front a window
+created by create_window"
+   synopsis="void to_front ( PhabResWindowHandle_t wnd )"
+/>
+</function_summary>

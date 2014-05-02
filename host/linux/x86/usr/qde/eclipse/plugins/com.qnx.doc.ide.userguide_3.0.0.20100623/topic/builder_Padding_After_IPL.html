@@ -1,0 +1,89 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Padding after the IPL" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_IMAGES_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="PaddingAfterTheIPL" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Padding after the IPL</title>
+   </head>
+   <body id="PaddingAfterTheIPL"><a name="PaddingAfterTheIPL" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Padding after the IPL</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>The IPL can scan the entire combined image for the presence of the startup header, but
+            this slows the boot process. Instead, you can have the IPL scan through a range of only
+            two addresses and place the startup header at the first address. 
+            
+         </p>
+         
+         
+         <p>Specifying a final IPL size that's larger than the actual IPL lets you modify the IPL
+            (and change its length) without having to modify the scanning addresses with each
+            change. This way, the starting address of the OS image is independent of the IPL size. 
+         </p>
+         
+         
+         <div class="cautiontitle">CAUTION:</div>
+         <div class="caution">You must specify a padding size greater than the total size of the IPL
+            to prevent the rest of the data in the combined image file from partially overwriting
+            your IPL.
+         </div>
+         
+         
+         <p>
+            <strong>Padding before <span class="filepath">.ifs</span> images</strong>
+            
+         </p>
+         
+         
+         <p>If your combined image includes one or more <span class="filepath">.efs</span> images, specify an
+            alignment equal to the block size of your system's onboard flash. The optimized design
+            of the flash filesystem driver requires that all <span class="filepath">.efs</span> images begin
+            at a block boundary. When you build your combined image, the IDE adds padding to align
+            the beginning of the <span class="filepath">.efs</span> image(s) with the address of the next
+            block boundary. 
+         </p>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/builder_IMAGES_.html" shape="rect">Types of images you can create</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

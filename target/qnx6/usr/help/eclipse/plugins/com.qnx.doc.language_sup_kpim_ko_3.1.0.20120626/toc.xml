@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="한글 입력기 (kpim)">
+    <topic label="本書について" href="about.html"/>
+    <topic label="日本語入力ツール・バーと入力の手順" href="intro.html">
+      <topic label="日本語入力ツール・バー" href="intro.html"/>
+    </topic>
+</toc>

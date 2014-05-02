@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="QNX Photon microGUI Windowing System" topic="bookset.html"> 
+    <anchor id="1_bookset" />
+    <anchor id="2_bookset" />
+    <anchor id="3_bookset" />
+    <topic label="Programmer's Guide" href="../com.qnx.doc.photon_prog_guide/about.html" >
+        <link toc="../com.qnx.doc.photon_prog_guide/toc.xml" />
+    </topic>
+    <anchor id="1_prog_guide" />
+    <anchor id="2_prog_guide" />
+    <anchor id="3_prog_guide" />
+    <topic label="Library Reference" href="../com.qnx.doc.photon_lib_ref/about.html" >
+        <link toc="../com.qnx.doc.photon_lib_ref/toc.xml" />
+    </topic>
+    <anchor id="1_lib_ref" />
+    <anchor id="2_lib_ref" />
+    <anchor id="3_lib_ref" />
+    <topic label="Widget Reference" href="../com.qnx.doc.photon_widget_ref/about.html" >
+        <link toc="../com.qnx.doc.photon_widget_ref/toc.xml" />
+    </topic>
+    <anchor id="1_widget_ref" />
+    <anchor id="2_widget_ref" />
+    <anchor id="3_widget_ref" />
+    <topic label="Building Custom Widgets" href="../com.qnx.doc.photon_wid_build/about.html" >
+        <link toc="../com.qnx.doc.photon_wid_build/toc.xml" />
+    </topic>
+    <anchor id="1_wid_build" />
+    <anchor id="2_wid_build" />
+    <anchor id="3_wid_build" />
+</toc>

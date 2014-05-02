@@ -1,0 +1,188 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="JTAG: Using the Lauterbach Trace32 In-Circuit Debugger with a QNX Neutrino kernel image" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGDebugging_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGAbtron_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGMacraigor_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGNeutInstTrace32Prereq_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGNeutInstTrace32sw_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGNeutInstTrace32pi_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGNeutConnectTrace32_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGNeutConfigTrace32_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGNeutCreateLaunchConfig_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGNeutCreateStartup_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_Create_Multicore_Launch_Configs.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGNeutUsing_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="JTAGUsingtheLauterbachTrace32InCircuitDebuggerwithaQNXNeutrinokernelimage" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>JTAG: Using the Lauterbach Trace32 In-Circuit Debugger with a QNX Neutrino kernel image</title>
+   </head>
+   <body id="JTAGUsingtheLauterbachTrace32InCircuitDebuggerwithaQNXNeutrinokernelimage"><a name="JTAGUsingtheLauterbachTrace32InCircuitDebuggerwithaQNXNeutrinokernelimage" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">JTAG: Using the Lauterbach Trace32 In-Circuit Debugger with a QNX Neutrino kernel
+         image
+      </h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>The following topics discuss the process of installing, configuring, and using the Lauterbach
+            Trace32 In-Circuit Debugger with a QNX Neutrino kernel image, as well as describing the steps
+            necessary to debug using the Debugger: 
+         </p>
+         
+         <br clear="none" /><ul>
+            <li>
+               <a href="debug_JTAGNeutInstTrace32Prereq_.html" shape="rect">Prerequisites</a>
+               
+            </li>
+            <li>
+               <a href="debug_JTAGNeutInstTrace32sw_.html" shape="rect">Installing the Lauterbach Trace32 In-Circuit Debugger software</a>
+               
+            </li>
+            <li>
+               <a href="debug_JTAGNeutInstTrace32pi_.html" shape="rect">Installing the Lauterbach Trace32 Eclipse plug-in software</a>
+               
+            </li>
+            <li>
+               <a href="debug_JTAGNeutConnectTrace32_.html" shape="rect">Connecting the Lauterbach Trace32 In-Circuit Debugger</a>
+               
+            </li>
+            <li>
+               <a href="debug_JTAGNeutConfigTrace32_.html" shape="rect">Configuring the Lauterbach Trace32 In-Circuit Debugger</a>
+               
+            </li>
+            <li>
+               <a href="debug_JTAGNeutCreateLaunchConfig_.html" shape="rect">Creating a launch configuration for the target hardware</a>
+               
+            </li>
+            <li>
+               <a href="debug_JTAGNeutCreateStartup_.html" shape="rect">Creating a startup script for the Lauterbach Trace32 In-Circuit software</a>
+               
+            </li>
+         </ul>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> 
+            
+            <p>Currently, the Lauterbach TRACE In-Circuit Debugger doesn't integrate with <tt>gdb</tt>.
+            </p>
+            
+            
+            <p>The JTAG integration in the IDE is limited to source-level debugging of the source code only. </p>
+            
+            
+            <p>Since the Lauterbach Trace32 In-Circuit Debugger doesn't support Linux or Neutrino hosts, your
+               host must run with Microsoft Windows. 
+            </p>
+            
+            
+            <p>The proper powering-up/down sequence is to power up the debugger first, and then the target,
+               and the powering-down sequence is to power down the target, and then the debugger. 
+            </p>
+            
+            
+            <p>When prompted to specify a directory location, if you don't want to use the default directory
+               specified, we recommended that you not use the system directory itself. 
+            </p>
+            
+            
+            <p>The IDE contains built-in support for the Abatron BDI2000 and Macraigor USB2Demon JTAG
+               devices, with other device support through self-defined hardware-specific command sets. 
+            </p>
+            
+            
+            <p>The JTAG debug launch configuration supports GDB Hardware Debug through the JTAG
+               interface.
+            </p>
+            
+            
+         </div>
+         
+         
+         <p>For more information about the Lauterbach Trace32 In-Circuit Debugger, see the Lauterbach
+            documentation and refer specifically to the <cite>ICD Debugger User's Guide</cite>, <cite>ICE
+               User's Guide</cite>, and <cite>ICE User's Guide</cite>. Descriptions for all of the general
+            commands are found in the <cite>IDE Reference Guide</cite> and <cite>General Reference
+               Guide</cite>.
+         </p>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <ul class="ullinks">
+            <li class="ulchildlink"><strong><a href="../topic/debug_JTAGNeutInstTrace32Prereq_.html" shape="rect">Prerequisites</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_JTAGNeutInstTrace32sw_.html" shape="rect">Installing the Lauterbach Trace32 In-Circuit Debugger software</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_JTAGNeutInstTrace32pi_.html" shape="rect">Installing the Lauterbach Trace32 Eclipse plug-in software</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_JTAGNeutConnectTrace32_.html" shape="rect">Connecting the Lauterbach Trace32 In-Circuit Debugger</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_JTAGNeutConfigTrace32_.html" shape="rect">Configuring the Lauterbach Trace32 In-Circuit Debugger</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_JTAGNeutCreateLaunchConfig_.html" shape="rect">Creating a launch configuration for the target hardware</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_JTAGNeutCreateStartup_.html" shape="rect">Creating a startup script for the Lauterbach Trace32 In-Circuit software</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_Create_Multicore_Launch_Configs.html" shape="rect">Creating multicore launch configurations</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_JTAGNeutUsing_.html" shape="rect">Using the debugger</a></strong><br clear="none" />
+               
+            </li>
+         </ul>
+         
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/debug_JTAGDebugging_.html" shape="rect">Using JTAG debugging</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/debug_JTAGAbtron_.html" shape="rect">JTAG: Using the Abatron BDI2000 JTAG Debugger with a QNX Neutrino kernel image</a></div>
+            
+            <div><a href="../topic/debug_JTAGMacraigor_.html" shape="rect">JTAG: Using the Macraigor Usb2Demon Debugger with a QNX Neutrino kernel image</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

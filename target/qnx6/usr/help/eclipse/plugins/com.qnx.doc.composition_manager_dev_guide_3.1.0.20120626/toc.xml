@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Developer's Guide">
+      <topic label="About This Guide" href="about.html">
+          <topic label="What's in this guide?" href="about.html#Contents"/>
+          <topic label="Typographical conventions" href="about.html#Typographical_conventions">
+            <topic label="Note to Windows users" href="about.html#WINDOWSNOTE"/>
+            <topic label="Navigation buttons" href="about.html#Navigation"/>
+          </topic>
+          <topic label="Technical support" href="about.html#Support"/>
+      </topic>
+      <topic label="Overview of the Composition Manager" href="overview.html">
+            <topic label="Communicating with applications" href="overview.html#id3"/>
+            <topic label="Handling composition" href="overview.html#id5"/>
+            <topic label="Enabling the HMI" href="overview.html#id7"/>
+      </topic>
+      <topic label="Why use Composition Manager?" href="why.html">
+            <topic label="Advantages of using multiple processes" href="why.html#id3"/>
+            <topic label="Is Composition Manager right for you?" href="why.html#id5"/>
+      </topic>
+      <topic label="Understanding Composition" href="understanding.html">
+            <topic label="Hardware level composition" href="understanding.html#hlc">
+              <topic label="Advantages:" href="understanding.html#id4"/>
+              <topic label="Disadvantages:" href="understanding.html#id6"/>
+            </topic>
+            <topic label="Composited frame-buffer" href="understanding.html#id8">
+              <topic label="Advantages:" href="understanding.html#id10"/>
+              <topic label="Disadvantages:" href="understanding.html#id12"/>
+            </topic>
+            <topic label="Layers, WFD pipelines and EGL levels" href="understanding.html#layers"/>
+            <topic label="Composition Modules" href="understanding.html#cm"/>
+            <topic label="Cursors" href="understanding.html#cursors"/>
+          <topic label="io-winmgr" href="io-winmgr.html">
+            <topic label="Description:" href="io-winmgr.html#id9"/>
+            <topic label="Examples:" href="io-winmgr.html#id11"/>
+          </topic>
+      </topic>
+      <topic label="Configuring io-winmgr" href="configuring.html">
+              <topic label="Global settings" href="configuring.html#global"/>
+              <topic label="Display settings" href="configuring.html#display"/>
+              <topic label="Window class settings" href="configuring.html#window"/>
+      </topic>
+      <topic label="Configuring Composition Manager" href="configuring_cm.html">
+              <topic label="Configuration 1:" href="configuring_cm.html#id3"/>
+              <topic label="Configuration 2:" href="configuring_cm.html#id5"/>
+              <topic label="Configuration 3:" href="configuring_cm.html#id7"/>
+              <topic label="Configuration 4:" href="configuring_cm.html#id9"/>
+      </topic>
+      <topic label="Working with External APIs" href="externalapi.html">
+          <topic label="OpenKODE" href="externalapi.html#id3">
+              <topic label="OpenKODE 1.0.2 header files on QNX Neutrino ( /usr/include/KD )" href="externalapi.html#id5"/>
+              <topic label="OpenKODE 1.0.2 libraries on QNX Neutrino" href="externalapi.html#id7"/>
+              <topic label="OpenKODE 1.0.2 Core Entry Points" href="externalapi.html#id9"/>
+          </topic>
+          <topic label="EGL" href="externalapi.html#id11">
+              <topic label="EGL 1.4 header files on QNX Neutrino ( /usr/include/EGL )" href="externalapi.html#id13"/>
+              <topic label="EGL 1.4 libraries on QNX Neutrino ( /usr/lib )" href="externalapi.html#id15"/>
+          </topic>
+          <topic label="OpenGL ES" href="externalapi.html#id17">
+              <topic label="OpenGL ES 1.0 Header Files on QNX Neutrino ( /usr/include/GLES )" href="externalapi.html#id19"/>
+              <topic label="OpenGL ES 1.0 Libraries on QNX Neutrino ( /usr/lib )" href="externalapi.html#id21"/>
+          </topic>
+      </topic>
+      <topic label="Using the Tutorials and Demos" href="tutorials.html">
+            <topic label="Demos" href="tutorials.html#id3">
+              <topic label="Notes:" href="tutorials.html#id7"/>
+            </topic>
+            <topic label="Tutorials" href="tutorials.html#id9"/>
+            <topic label="Community" href="tutorials.html#id11"/>
+      </topic>
+      <topic label="Composition Manager Extensions" href="extensions.html">
+          <topic label="KD_QNX_window" href="kd_qnx_window.html">
+            <topic label="Description:" href="kd_qnx_window.html#id5">
+              <topic label="Functions:" href="kd_qnx_window.html#id7">
+                <topic label="kdPostWindowEventQNX( )" href="kd_qnx_window.html#id9"/>
+                <topic label="KDint32 kdSetWindowOrderQNX( )" href="kd_qnx_window.html#id11"/>
+              </topic>
+              <topic label="Properties:" href="kd_qnx_window.html#id13"/>
+              <topic label="Events:" href="kd_qnx_window.html#id15"/>
+            </topic>
+          </topic>
+          <topic label="KD_QNX_input" href="kd_qnx_input.html">
+            <topic label="Description:" href="kd_qnx_input.html#id3">
+              <topic label="Functions:" href="kd_qnx_input.html#id5">
+                <topic label="kdOutputSetpQNX()" href="kd_qnx_input.html#id7"/>
+              </topic>
+              <topic label="Events:" href="kd_qnx_input.html#id9"/>
+              <topic label="I/O groups and items" href="kd_qnx_input.html#id11">
+                <topic label="KD_IOGROUP_KEYBOARD_QNX" href="kd_qnx_input.html#id13"/>
+                <topic label="I/O items" href="kd_qnx_input.html#id15"/>
+                <topic label="KD_QNX_IOGROUP_DISP_GROUP" href="kd_qnx_input.html#id17"/>
+                <topic label="I/O items" href="kd_qnx_input.html#id19"/>
+                <topic label="KD_QNX_IOGROUP_ASSIGN_GROUP" href="kd_qnx_input.html#id21"/>
+                <topic label="I/O items" href="kd_qnx_input.html#id23"/>
+              </topic>
+            </topic>
+          </topic>
+      </topic>
+      <topic label="What's New" href="whatsnew.html">
+          <topic label="What's new in Composition Manager for 6.5.0" href="whatsnew.html#642"/>
+      </topic>
+</toc>

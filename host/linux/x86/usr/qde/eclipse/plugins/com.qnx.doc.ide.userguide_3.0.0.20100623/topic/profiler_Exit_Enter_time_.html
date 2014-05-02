@@ -1,0 +1,212 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Execution Time view" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_Base_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_INTRO_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFILING_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_CONTROLLING_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_UNDERSTANDING_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_APPSESSVIEW_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_IDE_DEBUGSESSTAB_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_APPPROFEDITPANE_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROUSECASES_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_ExecTimVwFieldDescriptions_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_Interpret_Tree_Mode.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFEXTIMEVWBTNS_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_profcontextnavmenu_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_Take_Snapshort_And_Watch_Difference.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_Show_Threads_Tree_View.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_Show_Table_Mode.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_Show_Calls.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_Show_Reverse_Calls.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_Show_Call_Graphs.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_Show_Source.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_FeatCloning_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_FeatViewHist_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_FeatGroup_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_FeatSetPref_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_FeatCopyClip_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_FeatFilter_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_FeatSearch_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="ExecutionTimeview" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Execution Time view</title>
+   </head>
+   <body id="ExecutionTimeview"><a name="ExecutionTimeview" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Execution Time view</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>This view provides you with valuable decision-making capabilities in that it helps you
+            identify those functions that clearly consume the most CPU time, making them candidates
+            for optimization. This type of instrumentation is the most effective way of optimizing
+            bottlenecks in a single application. This data-collection technique lets you gather
+            precise information about the duration of time that the processor spends in each
+            function, and provides stack trace and Call Count information at the same time. 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/c2Fprofiler_Exit_Enter_time_.xml_d146978e17.jpg" alt="Execution Time view" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>The Execution Time view in the Application Profiler perspective.</p>
+            
+            
+         </div>
+         
+         
+         <p>Using a call tree, you can see exactly where the application spends its time, and which
+            functions are used in the process. 
+         </p>
+         
+         
+         <p>By default, the selected preferences provide you with the basic columns containing
+            valuable profiling data; however, you can specify additional columns and display
+            settings (see <a href="profiler_ExecTimVwFieldDescriptions_.html" shape="rect">Column descriptions</a> and <a href="profiler_PROFEXTIMEVWBTNS_.html" shape="rect">Toolbar options</a>), if desired. 
+         </p>
+         
+         
+         <p>The Execution time view supports the following tree views and graph:</p>
+         
+         <br clear="none" /><ul>
+            <li><a href="profiler_Show_Table_Mode.html" shape="rect">Show Table mode</a> — shows a list of functions. 
+            </li>
+            <li><a href="profiler_Show_Calls.html" shape="rect">Show Calls</a> — shows root node(s),
+               and usually what this node calls or what is inside it. 
+            </li>
+            <li><a href="profiler_Show_Reverse_Calls.html" shape="rect">Show Reverse Calls</a> — shows root function(s),
+               and functions calling it, including grouping where possible. 
+            </li>
+            <li><a href="profiler_Show_Call_Graphs.html" shape="rect">Show Call Graphs</a> — shows the calling
+               functions, and the functions called by this function, in a graphical mode. 
+            </li>
+            <li><a href="profiler_Show_Source.html" shape="rect">Show Source</a> — shows the source for the
+               selected function, where possible.
+            </li>
+         </ul>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <ul class="ullinks">
+            <li class="ulchildlink"><strong><a href="../topic/profiler_ExecTimVwFieldDescriptions_.html" shape="rect">Column descriptions</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_Interpret_Tree_Mode.html" shape="rect">Interpreting Tree mode column information by profiling type</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_PROFEXTIMEVWBTNS_.html" shape="rect">Toolbar options</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_profcontextnavmenu_.html" shape="rect">Context menu navigation options</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_Take_Snapshort_And_Watch_Difference.html" shape="rect">Take Snapshot and Watch Difference</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_Show_Threads_Tree_View.html" shape="rect">Show Threads Tree</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_Show_Table_Mode.html" shape="rect">Show Table mode</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_Show_Calls.html" shape="rect">Show Calls</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_Show_Reverse_Calls.html" shape="rect">Show Reverse Calls</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_Show_Call_Graphs.html" shape="rect">Show Call Graphs</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_Show_Source.html" shape="rect">Show Source</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_FeatCloning_.html" shape="rect">Duplicating the view</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_FeatViewHist_.html" shape="rect">Viewing history</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_FeatGroup_.html" shape="rect">Grouping</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_FeatSetPref_.html" shape="rect">Setting preferences</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_FeatCopyClip_.html" shape="rect">Copying to the clipboard</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_FeatFilter_.html" shape="rect">Filtering</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_FeatSearch_.html" shape="rect">Searching</a></strong><br clear="none" />
+               
+            </li>
+         </ul>
+         
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/profiler_Base_.html" shape="rect">Profiling an Application</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/profiler_INTRO_.html" shape="rect">Types of profiling</a></div>
+            
+            <div><a href="../topic/profiler_PROFILING_.html" shape="rect">Profiling your programs</a></div>
+            
+            <div><a href="../topic/profiler_CONTROLLING_.html" shape="rect">Controlling your profiling sessions</a></div>
+            
+            <div><a href="../topic/profiler_UNDERSTANDING_.html" shape="rect">Understanding your profiling data</a></div>
+            
+            <div><a href="../topic/profiler_APPSESSVIEW_.html" shape="rect">Profiler Sessions view</a></div>
+            
+            <div><a href="../topic/profiler_IDE_DEBUGSESSTAB_.html" shape="rect">Debug view</a></div>
+            
+            <div><a href="../topic/profiler_APPPROFEDITPANE_.html" shape="rect">Annotated source editor</a></div>
+            
+            <div><a href="../topic/profiler_PROUSECASES_.html" shape="rect">Using the Application Profiler</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

@@ -1,0 +1,191 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Tutorial 4: Importing a QNX BSP into the IDE" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/tutorials_Base_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/tutorials_START_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/tutorials_TUT1_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/tutorials_TUT2_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/tutorials_TUT3_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Tutorial4ImportingaQNXBSPintotheIDE" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Tutorial 4: Importing a QNX BSP into the IDE</title>
+   </head>
+   <body id="Tutorial4ImportingaQNXBSPintotheIDE"><a name="Tutorial4ImportingaQNXBSPintotheIDE" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Tutorial 4: Importing a QNX BSP into the IDE</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>QNX BSPs and other source packages are distributed as <span class="filepath">.zip</span> archives. The IDE lets you import both kinds of packages into the IDE: 
+         </p>
+         
+         
+         <table cellpadding="4" cellspacing="0" summary="" border="1" class="simpletableborder">
+            <tr>
+               <th valign="bottom" align="left" id="d189387e22" rowspan="1" colspan="1">When you import:</th>
+               <th valign="bottom" align="left" id="d189387e25" rowspan="1" colspan="1">The IDE creates a:</th>
+            </tr>
+            <tr>
+               <td valign="top" headers="d189387e22" rowspan="1" colspan="1">QNX source package and BSP</td>
+               <td valign="top" headers="d189387e25" rowspan="1" colspan="1">System Builder project</td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d189387e22" rowspan="1" colspan="1">QNX C/C++ source package</td>
+               <td valign="top" headers="d189387e25" rowspan="1" colspan="1">C or C++ application or library project</td>
+            </tr>
+         </table>
+         
+         
+         <p>For more information about System Builder projects, see the <a href="builder_Base_.html" shape="rect">Building OS and Flash Images</a> chapter. 
+         </p>
+         
+         
+         <p>To import a BSP:</p>
+         
+         <br clear="none" /><ol>
+            <li>Click <span class="menucascade">
+                  <span class="uicontrol">File</span>
+                  &gt; <span class="uicontrol">Import</span>
+                  </span>, and then expand <span class="uicontrol">QNX</span>. 
+               <p>
+                  <span><img src="../images/2Ftemp2Ftopic2Ftutorials_TUT4_.xml_d189387e76.jpg" alt="Importing from Foundry27" /></span>
+                  
+               </p>
+               
+            </li>
+            <li>Select <span class="uicontrol">QNX Source Package and BSP</span>, and then click <span class="uicontrol">Next</span>. 
+               <p>
+                  <span><img src="../images/2Ftemp2Ftopic2Ftutorials_TUT4_.xml_d189387e93.jpg" alt="Importing: Selecting a method for import" /></span>
+                  
+               </p>
+               
+               <p>Specify the method that you want to use to select a file: either a Foundary27 SVN repository or a local archive file (i.e.
+                  <span class="filepath">$QNX_TARGET/usr/src/archives</span>).
+               </p>
+               
+            </li>
+            <li> For this tutorial, select <span class="uicontrol">Import from Foundry27 SVN repository</span> and click <span class="uicontrol">Next</span>.
+            </li>
+            <li>Select a package by specifying a name in the <span class="uicontrol">Search Package by Name</span> field, or you can expand the existing packages in the <span class="uicontrol">Known Foundry27 Source Packages</span> list. 
+               <p>The panel shows the Foundry27 package in a tree structure. The packages are expandable if they contain sub-packages. </p>
+               
+               <p>The <span class="uicontrol">Description</span> field provides a brief description about the selected package.
+               </p>
+               
+               <p>
+                  <span><img src="../images/2Ftemp2Ftopic2Ftutorials_TUT4_.xml_d189387e131.jpg" alt="Importing: setting package to import" /></span>
+                  
+               </p>
+               
+            </li>
+            <li>For this tutorial, we'll select the <span class="uicontrol">x86 BIOS</span> package, and then click <span class="uicontrol">Next</span>. 
+               <p>If this is the first time you perform a checkout from Foundry27, the <span class="uicontrol">SVN New Repository Wizard</span> is displayed.
+               </p>
+               
+               <p>You'll need to specify your user ID and password that correspond to your Foundry27 account. In addition, you'll need to be
+                  successfully authenticated before you can proceed to the next panel in the wizard. 
+               </p>
+               
+               <p>
+                  <span><img src="../images/2Ftemp2Ftopic2Ftutorials_TUT4_.xml_d189387e155.jpg" alt="Importing from Foundry27 for the first time" /></span>
+                  
+               </p>
+               
+            </li>
+            <li>Click <span class="uicontrol">Finish</span> to begin importing the package. 
+               <p>You might see a list of dependent package(s) with warning message at the bottom of the panel. The package won't build if you
+                  don't checkout the dependencies for the selected package.
+               </p>
+               
+               <div class="note"><span class="notetitle">Note:</span> 
+                  
+                  <p>If required, you might have to select any required dependency checkbox(s); you'll need to select which dependent package(s)
+                     to checkout at the same time.
+                  </p>
+                  
+                  
+               </div>
+               
+               <p>The IDE sets up the required project properties (compiler options, build targets, and so on) so that the projects are able
+                  to build after the checkout process. In addition, the IDE maintains the source tree layout (to preserve the current status
+                  of the checked out source), sets up prebuilt and staging areas for the project, when necessary, and also creates the BSP project.
+                  
+               </p>
+               
+               <p>
+                  <span><img src="../images/2Ftemp2Ftopic2Ftutorials_TUT4_.xml_d189387e179.jpg" alt="Imported BSP package from Foundry27" /></span>
+                  
+               </p>
+               
+            </li>
+            <li>After the checkout of the BSP completes, right-click on the BSP project and select <span class="uicontrol">Build</span>; the <span class="filepath">src</span> project will be auto-built by the BSP project. 
+               <p>The IDE will build all of the source under one project. Because the IDE creates a dependency between the <span class="filepath">BSP</span> project and the <span class="filepath">src</span> project, you don't need to build the <span class="filepath">src</span> project; only the BSP project.
+               </p>
+               
+               <p>When you import a QNX Board Support Package, the IDE opens the QNX BSP perspective. This perspective combines the minimum
+                  elements from both the C/C++ perspective and the QNX System Builder perspective. 
+               </p>
+               
+            </li>
+         </ol>
+         
+         
+         <p>Congratulations! You've just imported a QNX BSP into the IDE. </p>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/tutorials_Base_.html" shape="rect">Tutorials</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/tutorials_START_.html" shape="rect">Before you start</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/tutorials_TUT1_.html" shape="rect">Tutorial 1: Creating a C/C++ project</a></div>
+            
+            <div><a href="../topic/tutorials_TUT2_.html" shape="rect">Tutorial 2: Creating a QNX C/C++ project</a></div>
+            
+            <div><a href="../topic/tutorials_TUT3_.html" shape="rect">Tutorial 3: Importing an existing project into the IDE</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

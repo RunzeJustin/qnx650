@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="User's Guide">
+      <topic label="About This Guide" href="about.html">
+          <topic label="What you'll find in this guide" href="about.html#In_this_guide"/>
+          <topic label="Typographical conventions" href="about.html#Typographical_conventions">
+            <topic label="Note to Windows users" href="about.html#WINDOWSNOTE"/>
+            <topic label="Navigation buttons" href="about.html#Navigation"/>
+          </topic>
+          <topic label="Technical support" href="about.html#Support"/>
+      </topic>
+      <topic label="What is Multicore Processing?" href="overview.html"/>
+      <topic label="A Quick Introduction to Multicore Processing" href="quickstart.html">
+          <topic label="Setting up the OS image" href="quickstart.html#Image"/>
+          <topic label="Trying symmetric multiprocessing" href="quickstart.html#SMP"/>
+          <topic label="Trying bound multiprocessing" href="quickstart.html#BMP"/>
+      </topic>
+      <topic label="Developing Multicore Systems" href="how_to.html">
+          <topic label="Building a multicore image" href="how_to.html#Building"/>
+          <topic label="The impact of multicore" href="how_to.html#IMPACT">
+            <topic label="To multicore or not to multicore" href="how_to.html#id5"/>
+            <topic label="Thread affinity" href="how_to.html#id7"/>
+            <topic label="Multicore and synchronization primitives" href="how_to.html#id9"/>
+            <topic label="Multicore and FIFO scheduling" href="how_to.html#id11"/>
+            <topic label="Multicore and interrupts" href="how_to.html#id13"/>
+            <topic label="Multicore and atomic operations" href="how_to.html#id15"/>
+            <topic label="Adaptive partitioning" href="how_to.html#id17"/>
+          </topic>
+          <topic label="Designing with multiprocessing in mind" href="how_to.html#DESIGN">
+            <topic label="Use the multicore primitives" href="how_to.html#id20"/>
+            <topic label="Assume that threads really do run concurrently" href="how_to.html#id22"/>
+            <topic label="Break the problem down" href="how_to.html#id24"/>
+          </topic>
+      </topic>
+      <topic label="Glossary" href="glossary.html"/>
+</toc>

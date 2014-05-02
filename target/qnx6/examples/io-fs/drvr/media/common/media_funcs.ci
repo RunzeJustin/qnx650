@@ -1,0 +1,213 @@
+/* $QNXLicenseC$ */
+
+/*
+ * This file contains common mediafs routines that can me included into media filesystems
+ */
+
+#ifndef MEDIA_FUNCS_H
+#error Missing #include "media_funcs.h"
+#endif
+
+#ifdef MEDIA_PLAYBACK
+void IOFS_CAT(MODULE_NAME, _playback_clean)(FS_MOUNT_T *fmp, unsigned *freelist) {
+	struct hier_dir			*hdp;
+	struct hier_file		*hfp, *last_inuse_hfp = NULL;
+	int						notified = 0;
+	unsigned				fid, sibling;
+
+	// Get the playback directory
+	if(!(hdp = hier_getdir(&fmp->fsmount, FID_PLAYBACK, 0))) {
+		return;
+	}
+
+	// Lock the hier to it can't change
+	ATTR_LOCK(&fmp->fsmount, &fmp->fsmount.fs_attr->fsattr);
+
+	// Scan down all files to remove them
+	hfp = 0;
+	for(fid = GET_CHILD(hdp); fid != FID_FREE && fid != FID_LDDIR; fid = sibling) {
+		FS_ATTR_T				*fap;
+
+		hfp = GET_HPTR(&fmp->fsmount, fid);
+		sibling = GET_SIBLING(hfp);
+
+		// First open the file
+		if((fap = attr_open(fmp, hdp, fid))) {
+IFDBG if(S_ISDIR(fap->fsattr.attr.mode)) abort();
+IFDBG if(fap->fsattr.attr.nlink != 1) abort();
+			// Notify anyone listening on the parent.
+			if(!notified) {
+				notified = 1;
+				notify(&fap->fsattr.parent->fsattr);
+			}
+
+			// Clear the meta cache
+			mcache_set(&fmp->fsmount, fid, 0, 0, 0);
+			
+			// Mark the fid as unused, the real cleanup occurs in attr_detach
+			SET_NAMESUM(hfp, NAMESUM_UNLNK);
+			fap->fsattr.attr.nlink = 0;
+
+			// Tell attr_detach() not to unlink the fid, just mark it as empty
+			fap->fsattr.flags |= FSATTR_KEEP_PDIR;
+
+			if (fap->fsattr.attr.count != 0) {
+				last_inuse_hfp = hfp;
+			}
+			// Close the file letting the normal deletion occur
+			attr_close(fmp, fap, 0, 0);
+
+			if (freelist && (hfp != last_inuse_hfp)) {
+				if (last_inuse_hfp)
+					SET_SIBLING(last_inuse_hfp, sibling);
+				else
+					SET_CHILD(hdp, sibling);
+				SET_SIBLING(hfp, *freelist);
+				*freelist = fid;
+			}
+		}
+	}
+	if (freelist)
+		hfp = last_inuse_hfp;
+	if(hfp) {
+		SET_SIBLING(hfp, FID_LDDIR);
+	} else {
+		SET_CHILD(hdp, FID_LDDIR);
+	}
+
+	ATTR_UNLOCK(&fmp->fsmount, &fmp->fsmount.fs_attr->fsattr);
+}
+#endif
+
+#ifdef MEDIA_CONTROL
+void IOFS_CAT(MODULE_NAME, _control_notify)(FS_MOUNT_T *fmp) {
+	FS_ATTR_T				*fap;
+
+	if((fap = attr_open(fmp, hier_getdir(&fmp->fsmount, FID_MNTINFO_DIR(fmp), 1), FID_CONTROL))) {
+		if(fap->fsattr.flags & FSATTR_NOTIFY) {
+			notify(&fap->fsattr);
+		}
+		attr_close(fmp, fap, 0, 0);
+	}
+}
+#endif
+
+int IOFS_CAT(MODULE_NAME, _media_node_get)(FS_MOUNT_T *fmp, FS_INODE_T *fip, unsigned flags, const char *name) {
+	fip->fsinode.atime = fip->fsinode.mtime = fip->fsinode.ctime = fmp->fsmount.stats.s_time_mount;
+	fip->fsinode.nlink = 1;
+	fip->fsinode.size = 0;
+	switch(fip->fsinode.fid) {
+#ifdef MEDIA_CONTROL
+	case FID_CONTROL:
+		fip->fsinode.mode = S_IFNAM | 0666;
+		fip->fsinode.rdev = _S_QNX_SPECIAL;
+		strcpy(fip->fsinode.name, FNAME_CONTROL);
+		break;
+#endif
+
+#ifdef MEDIA_CURRENT
+	case FID_CURRENT:
+		fip->fsinode.mode = S_IFLNK | 0777;
+		fip->fsinode.size = IOFS_CAT(MODULE_NAME, _playback_current)(fmp, 0, 0);
+		strcpy(fip->fsinode.name, FNAME_CURRENT);
+		break;
+#endif
+
+#ifdef MEDIA_PLAYBACK
+	case FID_PLAYBACK:
+		fip->fsinode.mode = S_IFDIR | 0555;
+		fip->fsinode.nlink = 2;
+		strcpy(fip->fsinode.name, FNAME_PLAYBACK);
+		break;
+#endif
+
+	default:
+		return ENOENT;
+	}
+
+	// Don't bother to cache these entries as they are generated
+	fip->fsinode.flags &= ~NODE_GET_CACHE_ALL;
+
+	// All information is set
+	fip->fsinode.flags |= NODE_GET_ALL;
+
+	if(name && strcmp(fip->fsinode.name, name)) {
+		return ENOENT;
+	}
+	return EOK;
+}
+
+// Populate special files in .FS_info.
+int IOFS_CAT(MODULE_NAME, _media_hier_build)(FS_MOUNT_T *fmp, FS_ATTR_T *fap, struct hier_file *last_hfp) {
+	unsigned				fid;
+
+	for(fid = FID_MEDIA_ROOT; fid < FID_MEDIA_LAST; fid++) {
+		FS_INODE_T				inode;
+
+		inode.fsinode.fid = fid;
+		if(IOFS_CAT(MODULE_NAME, _node_get)(fmp, &inode, NODE_GET_NAME, 0) == EOK) {
+			if(last_hfp) {
+				SET_SIBLING(last_hfp, fid);
+			} else {
+				SET_CHILD(fap->fsattr.dir, fid);
+			}
+			last_hfp = GET_HPTR(&fmp->fsmount, fid);
+			SET_NAMESUM(last_hfp, path_sum(inode.fsinode.name));
+			SET_SIBLING(last_hfp, FID_FREE);
+
+			if(S_ISDIR(inode.fsinode.mode)) {
+				struct hier_dir				*hdp;
+
+				hdp = hier_getdir(&fmp->fsmount, fid, 1);
+				INC_NLINKS(fap->fsattr.dir);
+				SET_PARENT(hdp, fap->fsattr.fid);
+				SET_CHILD(hdp, FID_LDDIR);
+			}
+		}
+	}
+	return EOK;
+}
+
+
+int IOFS_CAT(MODULE_NAME, _media_attr_open)(FS_MOUNT_T *fmp, FS_ATTR_T *fap, const FS_INODE_T *fip) {
+	if(fap->fsattr.fid >= FID_MEDIA_ROOT && fap->fsattr.fid < FID_MEDIA_LAST) {
+		// These files are magic files
+		fap->fsattr.flags |= FSATTR_LOCK_NLINK | FSATTR_LOCK_MODE;
+#ifdef MEDIA_CONTROL
+		if(fap->fsattr.fid == FID_CONTROL) {
+			fap->fsattr.flags |= FSATTR_SPECIAL;
+		} else
+#endif
+			fap->fsattr.flags |= FSATTR_FORCE_PERM;
+		return EOK;
+	}
+#ifdef MEDIA_PLAYBACK
+	else if(fap->fsattr.parent && fap->fsattr.parent->fsattr.fid == FID_PLAYBACK) {
+		fap->fsattr.flags |= FSATTR_LOCK_NLINK | FSATTR_LOCK_MODE | FSATTR_FORCE_PERM;
+		return EOK;
+	}
+#endif
+	return ENOSYS;
+}
+
+
+#ifdef MEDIA_CURRENT
+int IOFS_CAT(MODULE_NAME, _current_symlink_get)(FS_MOUNT_T *fmp, FS_ATTR_T *fap, char *sympath, unsigned len) {
+	int							symlen;
+
+	// Only handle current file
+	if(fap->fsattr.fid != FID_CURRENT) {
+		return ENOTSUP;
+	}
+
+	// Get the current symlink and its size
+	symlen = IOFS_CAT(MODULE_NAME, _playback_current)(fmp, sympath, fmp->fsmount.symlink_maxlen);
+
+	// Adjust the attribute size
+	fap->fsattr.attr.nbytes = symlen;
+
+	return EOK;
+}
+#endif
+
+__SRCVERSION("media_funcs.ci $Rev$");

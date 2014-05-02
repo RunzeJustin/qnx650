@@ -1,0 +1,145 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="task" />
+      <meta name="DC.Title" content="Importing event information" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_ImpMemanalysisdata_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_impxmldat_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Importingeventinformation" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Importing event information</title>
+   </head>
+   <body id="Importingeventinformation"><a name="Importingeventinformation" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Importing event information</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <div class="p">
+            
+            <p>The import of memory analysis data is useful in two cases. If it isn't possible to start a Memory Analysis session using the
+               IDE, for example, when there is no network connection between a target and host machine, or if <span class="cmdname">qconn</span> isn't running on the target machine, you can start memory analysis on the target (see <a href="memory_launch_debug_malloc_.html" shape="rect">Launching from the command line with Memory Analysis enabled</a>), and then transfer the data file to your host to perform a postmortem memory analysis. If you want to share a session, you
+               can export it in XML format, and then later it can be imported to view the data. Compared to a trace file, the XML format
+               is self-contained and doesn't require binaries and libraries to be present at import time. 
+               
+               
+            </p>
+            
+            
+         </div>
+         
+         
+         <div class="section">To import a memory analysis trace file: </div>
+         
+         
+         <ol>
+            <li class="stepexpand">
+               <span>Click <span class="menucascade">
+                     <span class="uicontrol">File</span>
+                     &gt; <span class="uicontrol">Import</span>
+                     </span>.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Select <span class="menucascade">
+                     <span class="uicontrol">QNX</span>
+                     &gt; <span class="uicontrol">Memory Analysis Data</span>
+                     </span>, and then click <span class="uicontrol">Next</span>.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>For the <span class="uicontrol">Input File</span> field, click <span class="uicontrol">Browse</span> to select an input file.</span>
+               
+               
+               <p>
+                  <span><img src="../images/p2Ftopic2Fmemory_impeventdat_.xml_d131330e88.jpg" alt="Importing Memory Analysis Data wizard" /></span>
+                  
+               </p>
+               
+               
+               
+            </li>
+            <li class="stepexpand">
+               <span>Choose a session from the <span class="uicontrol">Session to import</span> list, or click <span class="uicontrol">Create New Session</span> to create a new session to import data into.</span>
+               You can select only one session for the import process.
+               
+            </li>
+            <li class="stepexpand">
+               <span>Click <span class="uicontrol">Next</span>.</span>
+               
+               
+               <p>
+                  <span><img src="../images/p2Ftopic2Fmemory_impeventdat_.xml_d131330e124.jpg" alt="Importing Memory Analysis Data wizard" /></span>
+                  
+               </p>
+               
+               
+               
+            </li>
+            <li class="stepexpand">
+               <span>On this page, you can select an executable for the application. Click <span class="uicontrol">From Workspace</span> or <span class="uicontrol">From File System</span> to select an executable file.</span>
+               Although this step is optional, you should select a binary for the application; otherwise, reported events won't have a connection
+               to the source code, and traces won't have navigation data. 
+               <p>The executable you select should be exactly the same as the one running on the target machine. </p>
+               
+               
+            </li>
+            <li class="stepexpand">
+               <span>Optional: Add locations for the source folders. This step is required only if you intend to navigate to the editor from the
+                  memory analysis tables. Click <span class="uicontrol">Add from File System</span> or <span class="uicontrol">Add From Workspace</span> to add a source lookup path to the list.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Click <span class="uicontrol">Finish</span>, to begin importing.</span>
+               
+            </li>
+         </ol>
+         
+         
+         <div class="section">When the importing process completes, you can open the Memory Analysis session to view the results.</div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/memory_ImpMemanalysisdata_.html" shape="rect">Importing memory analysis data</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/memory_impxmldat_.html" shape="rect">Importing session information from an XML file</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+	id="com.qnx.tools.ide.doc.photon.microgui"
+	label="%featureName"
+	version="3.1.0.20120626"
+	provider-name="%providerName"
+	plugin="com.qnx.tools.ide.doc.photon.microgui">
+
+	<description>
+		%description
+	</description>
+
+	<copyright>
+		%copyright
+	</copyright>
+
+	<license url="%licenseURL">
+		%license
+	</license>
+
+	<plugin
+		id="com.qnx.doc.photon"
+		version="3.1.0.20120626"
+		download-size="0"
+		install-size="0"
+		unpack="true"/>
+	<plugin
+		id="com.qnx.doc.photon_lib_ref"
+		version="3.1.0.20120626"
+		download-size="0"
+		install-size="0"
+		unpack="true"/>
+	<plugin
+		id="com.qnx.doc.photon_prog_guide"
+		version="3.1.0.20120626"
+		download-size="0"
+		install-size="0"
+		unpack="true"/>
+	<plugin
+		id="com.qnx.doc.photon_wid_build"
+		version="3.1.0.20120626"
+		download-size="0"
+		install-size="0"
+		unpack="true"/>
+	<plugin
+		id="com.qnx.doc.photon_widget_ref"
+		version="3.1.0.20120626"
+		download-size="0"
+		install-size="0"
+		unpack="true"/>
+	<plugin
+		id="com.qnx.doc.gf"
+		version="3.1.0.20120626"
+		download-size="0"
+		install-size="0"
+		unpack="true"/>
+	<plugin
+		id="com.qnx.doc.gf_dev_guide"
+		version="3.1.0.20120626"
+		download-size="0"
+		install-size="0"
+		unpack="true"/>
+	<plugin
+		id="com.qnx.doc.composition_manager"
+		version="3.1.0.20120626"
+		download-size="0"
+		install-size="0"
+		unpack="true"/>
+	<plugin
+		id="com.qnx.doc.composition_manager_dev_guide"
+		version="3.1.0.20120626"
+		download-size="0"
+		install-size="0"
+		unpack="true"/>
+	<plugin
+		id="com.qnx.doc.webkit"
+		version="3.1.0.20120626"
+		download-size="0"
+		install-size="0"
+		unpack="true"/>
+	<plugin
+		id="com.qnx.doc.webkit_dev_guide"
+		version="3.1.0.20120626"
+		download-size="0"
+		install-size="0"
+		unpack="true"/>
+</feature>

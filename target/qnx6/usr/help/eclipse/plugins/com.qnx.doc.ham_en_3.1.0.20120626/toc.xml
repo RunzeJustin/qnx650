@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="QNX Neutrino High Availability Framework" topic="bookset.html"> 
+    <anchor id="1_bookset" />
+    <anchor id="2_bookset" />
+    <anchor id="3_bookset" />
+    <topic label="Developer's Guide" href="../com.qnx.doc.ham_en_ham/about.html" >
+        <link toc="../com.qnx.doc.ham_en_ham/toc.xml" />
+    </topic>
+    <anchor id="1_ham" />
+    <anchor id="2_ham" />
+    <anchor id="3_ham" />
+</toc>

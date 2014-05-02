@@ -1,0 +1,63 @@
+# Mount rule table
+# DEVICE            FSYS     MOUNT           OPTIONS
+*.dos-*             dos      /fs/dos%#
+*.nt-*              nt       /fs/ntfs%#
+*.lt-*              lt       /fs/ltfs%#      if=unknown,format,endif
+*.qnx4-*            qnx4     /fs/qnx%#
+*.ext-*             ext2     /fs/ext%#
+*-cd                cd       /fs/cda%#
+usb-*-disk          pc       volmgr          if=invalid,format,endif,if=empty,add=dos:full,endif
+*-flop-*-disk       dos      /fs/dosflop%#
+*-disk              efi      volmgr
+*-disk              pc       volmgr
+*-disk              dos      /fs/dos%#       if=invalid,abandon,endif
+*-disk              qnx4     /fs/qnx%#       if=invalid,abandon,endif
+*-disk              lt       /fs/ltfs%#      if=invalid,abandon,endif
+
+
+#
+# This table defines the rules for auto-mounting. The three fields are:
+#
+# Pattern
+#   A pattern as defined by the fnmatch() function which is applied to
+#   a block device containing a file system. The block device has a
+#   well defined naming convention as follows:
+#
+#     bus-busdevno-class-unit-type.fstype-partslot
+#
+#   Where:
+#     bus:       Name of bus the controller is on. eg: "pci", "usb", etc ...
+#     busdevno:  A number relative to the bus. (hex number)
+#     class:     Name of controller. eg: "ata", "scsi", "umass", etc ...
+#     unit:      A unit number on the controller. (decimal number)
+#                eg: 0 primary master, 1 primary slave, 2 secondary master, etc ...
+#     type:      Type for filesystem if known. e.g. "disk", "cd", "tmp", "flash", etc ...
+#     fstype:    The filesystem type for the partition. e.g. "lt", "dos", "qnx4", etc ...
+#     partslot:  Volume specific slot number. (decimal number)
+#
+# FS Name
+#   The name of the filesystem to start.
+#     eg: "lt", "dos", "qnx4", "nt", "ext2", "cd", etc ...
+#   Or if mount point is NULL, the name of the volume manager to use.
+#     eg: "pc" for standard microsoft partition table
+#
+# Mount Point
+#   Where to mount the filesystem in the pathname space. The % is a special
+#   macro character. The following values are defined:
+#     %% - %
+#     %0 - bus, %1 - busedevno, %2 - class, %3 - unit, %4 - type, %5 - fstype, %6 - partslot
+#     %# - Minor number of a filesystem. eg: 0, 1, 2, etc ... Each filesystem
+#          is independant starting at zero.
+#     %@ - Minor number common across all file systems
+#
+# Options
+#   Filesystem or Volume manager specific options. Some common options:
+#     if={cond},cmd1,cmd2,else{=cond},cmd3,cmd4,endif,cmd5
+#     abandon - exit without mounting
+#
+#     Conditions {cond} or !{cond}:
+#       unknown - partition is not identifyable by the filesystem
+#       bad - partition is identfied, but is not usable
+#       invalid - unknown or bad
+#       empty - no partitions defined in volume
+#

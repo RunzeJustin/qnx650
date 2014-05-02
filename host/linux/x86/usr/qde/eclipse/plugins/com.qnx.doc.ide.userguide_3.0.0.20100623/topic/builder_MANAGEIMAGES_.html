@@ -1,0 +1,130 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Managing your images" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_CONFIG_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_IMAGEPROPS_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_prop_image_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_prop_item_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_PROJECTPROPS_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_Determining_Shared_Lib_And_DLL.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_Adding_Files_To_Image.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_Deleting_Files.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_Adding_Directories.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_Deleting_Directories.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Managingyourimages" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Managing your images</title>
+   </head>
+   <body id="Managingyourimages"><a name="Managingyourimages" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Managing your images</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>The Images pane shows a tree of all the files in your image, sorted by type: </p>
+         
+         <br clear="none" /><ul>
+            <li>binaries</li>
+            <li>shared libraries — A shared library is linked in at compile time so that
+               the linker will resolve the symbols it needs, particularly when they're not included
+               into the program. These libraries are listed in the <samp class="codeph">NEEDED</samp> section
+               of the main application (nto&lt;<var class="varname">cpu</var>&gt;-objdump -x
+               displays the contents of this section).
+            </li>
+            <li>symbolic links</li>
+            <li>DLLs — A DLL has its symbols resolved through <tt>dlopen</tt> and
+               <tt>dlsym</tt>, and does not need to be specified at compile time. These
+               libraries aren't listed in the <samp class="codeph">NEEDED</samp> section.
+            </li>
+            <li>other files</li>
+            <li>directories</li>
+         </ul>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> 
+            
+            <p>The System Builder can determine which shared libraries are required since it
+               inspects the <samp class="codeph">NEEDED</samp> section for the binaries. Since DLLs don't get
+               listed in the <samp class="codeph">NEEDED</samp> section, they're not automatically included.
+               If they exist in the <samp class="codeph">NEEDED</samp> section, every DLL would have to be
+               linked into every server (i.e. <span class="cmdname">io-net</span> would have to load every driver at
+               runtime, as well as every protocol stack.) Alternately, you'll have to rebuild
+               everything to specify all of the libraries you're using. Ensure that you include the
+               proper driver; otherwise, you'll have to rebuild. 
+            </p>
+            
+            
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <ul class="ullinks">
+            <li class="ulchildlink"><strong><a href="../topic/builder_Determining_Shared_Lib_And_DLL.html" shape="rect">Determining the shared libraries and DLLs are required for an executable</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/builder_Adding_Files_To_Image.html" shape="rect">Adding files to your image</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/builder_Deleting_Files.html" shape="rect">Deleting files</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/builder_Adding_Directories.html" shape="rect">Adding directories</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/builder_Deleting_Directories.html" shape="rect">Deleting directories</a></strong><br clear="none" />
+               
+            </li>
+         </ul>
+         
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/builder_CONFIG_.html" shape="rect">Configuring your QNX System Builder projects</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/builder_IMAGEPROPS_.html" shape="rect">Configuring image properties</a></div>
+            
+            <div><a href="../topic/builder_prop_image_.html" shape="rect">Image properties</a></div>
+            
+            <div><a href="../topic/builder_prop_item_.html" shape="rect">Item properties</a></div>
+            
+            <div><a href="../topic/builder_PROJECTPROPS_.html" shape="rect">Configuring project properties</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

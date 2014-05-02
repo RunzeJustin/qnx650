@@ -1,0 +1,67 @@
+<function_summary>
+<function
+   name="iochar_regdrv_power"
+   summary="Register as a power-managed device driver"
+   synopsis="#include &lt;sys/io-char.h&gt;\n int iochar_regdrv_power(TTYDEV *dev, TTYINITPOWER *init, unsigned flags);\n"
+/>
+<function
+   name="iochar_send_event"
+   summary="Send a pulse event into io-char's event handler"
+   synopsis="#include &lt;sys/io-char.h&gt;\n void iochar_send_event(TTYDEV *dev);\n"
+/>
+<function
+   name="kick"
+   summary="Kick the output driver into life"
+   synopsis="#include &lt;sys/io-char.h&gt;\n void kick(TTYDEV *dev);\n"
+/>
+<function
+   name="timer_queue"
+   summary="Add a timer entry to the io-char timer queue"
+   synopsis="#include &lt;sys/io-char.h&gt;\n void timer_queue(TTYDEV *dev);\n"
+/>
+<function
+   name="timer_remove"
+   summary="Remove a timer entry from the io-char timer queue."
+   synopsis="#include &lt;sys/io-char.h&gt;\n void timer_remove(TTYDEV *dev);\n"
+/>
+<function
+   name="ttc"
+   summary="Configure the terminal's settings"
+   synopsis="#include &lt;sys/io-char.h&gt;\n int ttc(int type, void *ptr, int arg );\n"
+/>
+<function
+   name="tti"
+   summary="Pass data or error and control codes to io-char"
+   synopsis="#include &lt;sys/io-char.h&gt;\n int tti(TTYDEV *dev, unsigned c );\n"
+/>
+<function
+   name="tti2"
+   summary="Pass a data buffer or error and control codes to io-char"
+   synopsis="#include &lt;sys/io-char.h&gt;\n int tti2(TTYDEV *dev, unsigned char *char_buf, int len, uint16_t ctrl);\n"
+/>
+<function
+   name="tto_checkclients"
+   summary="Check client lists for notify conditions"
+   synopsis="#include &lt;sys/io-char.h&gt;\n int tto_checkclients(TTYDEV *dev);\n"
+/>
+<function
+   name="tto_getchar"
+   summary=" Get the first character from the output buffer to process"
+   synopsis="#include &lt;sys/io-char.h &gt;\n unsigned char tto_getchar( TTYDEV *dev);\n"
+/>
+<function
+   name="tx_inject"
+   summary="Inject a character at the front of the output buffer"
+   synopsis="#include &lt;sys/io-char.h&gt;\n void tx_inject(TTYDEV *dev, unsigned char c);\n"
+/>
+<function
+   name="wait_add"
+   summary="Add a new wait entry to the client message buffer"
+   synopsis="#include &lt;sys/io-char.h&gt;\n TTYWAIT *wait_add(TTYWAIT **queue, resmgr_context_t *ctp, int offset);\n"
+/>
+<function
+   name="wait_remove_rcvid"
+   summary=" Remove the rcvid matching the wait entry"
+   synopsis="#include &lt;sys/io-char.h&gt;\n int wait_remove_rcvid(TTYWAIT **head, int rcvid, int *offset);\n"
+/>
+</function_summary>

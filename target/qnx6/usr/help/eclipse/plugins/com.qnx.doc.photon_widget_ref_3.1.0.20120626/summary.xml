@@ -1,0 +1,797 @@
+<function_summary>
+<function
+   name="PtComboBoxListClose"
+   summary="Close an open combobox list"
+   synopsis="int PtComboBoxListClose( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtComboBoxListOpen"
+   summary="Open a combobox list"
+   synopsis="int PtComboBoxListOpen( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtFSAddAfter"
+   summary="Insert an item after the specified item"
+   synopsis="void PtFSAddAfter( PtWidget_t *fs, PtFileSelItem_t *item, PtFileSelItem_t *brother );\n"
+/>
+<function
+   name="PtFSAddFirst"
+   summary="Add a root item to a file selector tree"
+   synopsis="void PtFSAddFirst( PtWidget_t *fs, PtFileSelItem_t *item, PtFileSelItem_t *parent );\n"
+/>
+<function
+   name="PtFSAllItems"
+   summary="Fill a buffer with pointers to all items"
+   synopsis="PtFileSelItem_t **PtFSAllItems( PtWidget_t *widget, PtFileSelItem_t **buffer );\n"
+/>
+<function
+   name="PtFSAllocItem"
+   summary="Create an item for a PtFileSel widget"
+   synopsis="PtFileSelItem_t * PtFSAllocItem( PtFileSelWidget_t *fs, int type, char const *info );\n"
+/>
+<function
+   name="PtFSClearSelection"
+   summary="Clear the selection"
+   synopsis="void PtFSClearSelection( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtFSDamageItem"
+   summary="Redraw an item in the file selector"
+   synopsis="void PtFSDamageItem( PtWidget_t *fs, PtFileSelItem_t *item );\n"
+/>
+<function
+   name="PtFSExpandParents"
+   summary="Expand an item's collapsed ancestors"
+   synopsis="void PtFSExpandParents( PtWidget_t *fs, PtFileSelItem_t *item, PhEvent_t *event );\n"
+/>
+<function
+   name="PtFSFolderCollapse"
+   summary="Collapse an expandable item (directory)"
+   synopsis="void PtFSFolderCollapse( PtWidget_t *fs, PtFileSelItem_t *item, PhEvent_t *event );\n"
+/>
+<function
+   name="PtFSFolderExpand"
+   summary="Expand an expandable item (directory)"
+   synopsis="int PtFSFolderExpand( PtWidget_t *fs, PtFileSelItem_t *item, PhEvent_t *event );\n"
+/>
+<function
+   name="PtFSFreeAllItems"
+   summary="Unlink and free all items"
+   synopsis="void PtFSFreeAllItems( PtWidget_t const *fs );\n"
+/>
+<function
+   name="PtFSFreeItems"
+   summary="Free an unlinked item"
+   synopsis="void PtFSFreeItems( PtFileSelItem_t *item );\n"
+/>
+<function
+   name="PtFSGetCurrent"
+   summary="Get the current item"
+   synopsis="PtFileSelItem_t *PtFSGetCurrent( PtWidget_t const *widget );\n"
+/>
+<function
+   name="PtFSGetSelIndexes"
+   summary="Fill a buffer with indexes"
+   synopsis="unsigned short *PtFSGetSelIndexes( PtWidget_t *widget, unsigned short *buffer );\n"
+/>
+<function
+   name="PtFSGoto"
+   summary="Set the current item"
+   synopsis="void PtFSGoto( PtWidget_t *fs, PtFileSelItem_t *item );\n"
+/>
+<function
+   name="PtFSItemIndex"
+   summary="Calculate the index of the given item within the file selector"
+   synopsis="int PtFSItemIndex( PtFileSelWidget_t const *fs, PtFileSelItem_t const *item );\n"
+/>
+<function
+   name="PtFSRemoveChildren"
+   summary="Unlink the children of the specified item"
+   synopsis="PtFileSelItem_t *PtFSRemoveChildren( PtFileSelItem_t *item );\n"
+/>
+<function
+   name="PtFSRemoveItem"
+   summary="Unlink an item"
+   synopsis="void PtFSRemoveItem( PtWidget_t *fs, PtFileSelItem_t *item );\n"
+/>
+<function
+   name="PtFSRemoveList"
+   summary="Unlink the root item"
+   synopsis="void PtFSRemoveList( PtWidget_t *fs, PtFileSelItem_t *first );\n"
+/>
+<function
+   name="PtFSRootItem"
+   summary="Return the first root item of the file selector"
+   synopsis="PtFileSelItem_t *PtFSRootItem( PtFileSelWidget_t const *fs );\n"
+/>
+<function
+   name="PtFSSelect"
+   summary="Select the specified item"
+   synopsis="void PtFSSelect( PtWidget_t *widget, PtFileSelItem_t *item );\n"
+/>
+<function
+   name="PtFSSelectedItems"
+   summary="Fill a buffer with pointers to the selected items"
+   synopsis="PtFileSelItem_t **PtFSSelectedItems( PtWidget_t *widget, PtFileSelItem_t **buffer );\n"
+/>
+<function
+   name="PtFSSetSelIndexes"
+   summary="Set the selection indexes"
+   synopsis="int PtFSSetSelIndexes( PtWidget_t *widget, const unsigned short *buffer, int count );\n"
+/>
+<function
+   name="PtFSShow"
+   summary="Set the position so that the specified item is visible"
+   synopsis="void PtFSShow( PtWidget_t *widget, PtFileSelItem_t *item );\n"
+/>
+<function
+   name="PtFSUnselect"
+   summary="Unselect the given item"
+   synopsis="void PtFSUnselect( PtWidget_t *widget, PtFileSelItem_t *item );\n"
+/>
+<function
+   name="PtFSUnselectNonBrothers"
+   summary="Unselect all items that aren't siblings of the specified item"
+   synopsis="void PtFSUnselectNonBrothers( PtWidget_t *widget, PtFileSelItem_t *item );\n"
+/>
+<function
+   name="PtGenListAddItems"
+   summary="Add items to a list"
+   synopsis="void PtGenListAddItems( PtWidget_t *list, PtGenListItem_t *items, PtGenListItem_t *after );\n"
+/>
+<function
+   name="PtGenListAllItems"
+   summary="Get pointers to all the items in a list"
+   synopsis="PtGenListItem_t **PtGenListAllItems( PtWidget_t *widget, PtGenListItem_t **buffer );\n"
+/>
+<function
+   name="PtGenListClearSelection"
+   summary="Clear the selection"
+   synopsis="void PtGenListClearSelection( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtGenListCreateTextBalloon"
+   summary="Create a popup balloon for a list item"
+   synopsis="PtWidget_t *PtGenListCreateTextBalloon( PtWidget_t *widget, PtWidget_t *parent, const PhArea_t *area, const char *string, int column, const char *font);\n"
+/>
+<function
+   name="PtGenListDamageItem"
+   summary="Redraw an item when its data has been changed"
+   synopsis="void PtGenListDamageItem( PtWidget_t *list, PtGenListItem_t *item );\n"
+/>
+<function
+   name="PtGenListDrawBackground"
+   summary="Draw the background of a list"
+   synopsis="void PtGenListDrawBackground( PtWidget_t *list, PtGenListItem_t const *items, unsigned nitems, PhRect_t const *where, int lmarg, int rmarg, int tmarg, int bmarg );\n"
+/>
+<function
+   name="PtGenListDrawString"
+   summary="Draw a string"
+   synopsis="void PtGenListDrawString( PtWidget_t *list, PtGenListItem_t const *item, const char *string, PhRect_t const *where, int lmarg, int rmarg );\n"
+/>
+<function
+   name="PtGenListFirstItem"
+   summary="Return a pointer to the first item in a list"
+   synopsis="PtGenListItem_t *PtGenListFirstItem( PtWidget_t const *list );\n"
+/>
+<function
+   name="PtGenListGetCurrent"
+   summary="Return a pointer to the current item in a list"
+   synopsis="PtGenListItem_t *PtGenListGetCurrent( PtWidget_t const *widget );\n"
+/>
+<function
+   name="PtGenListGetSelIndexes"
+   summary="Get the indexes of the selected items"
+   synopsis="unsigned short *PtGenListGetSelIndexes( PtWidget_t *widget, unsigned short *buffer );\n"
+/>
+<function
+   name="PtGenListGoto"
+   summary="Set the current item so that the new current item is visible"
+   synopsis="void PtGenListGoto( PtWidget_t *list, PtGenListItem_t *item );\n"
+/>
+<function
+   name="PtGenListHold"
+   summary="Prevent visible repair of a list widget"
+   synopsis="void PtGenListHold( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtGenListItemIndex"
+   summary="Find the index of an item"
+   synopsis="int PtGenListItemIndex( PtWidget_t const *list, PtGenListItem_t const *item );\n"
+/>
+<function
+   name="PtGenListItemRealloc"
+   summary="Reallocate memory for an item"
+   synopsis="PtGenListItem_t *PtGenListItemRealloc( PtGenListItem_t *item, PtWidget_t *list, size_t size );\n"
+/>
+<function
+   name="PtGenListLastItem"
+   summary="Return a pointer to the last item in a list"
+   synopsis="PtGenListItem_t *PtGenListLastItem( PtWidget_t const *list );\n"
+/>
+<function
+   name="PtGenListLockItem"
+   summary="Lock an item so it can be resized"
+   synopsis="void PtGenListLockItem( PtWidget_t *list, PtGenListItem_t *item );\n"
+/>
+<function
+   name="PtGenListRelease"
+   summary="Release a hold on visible repairs of a list widget"
+   synopsis="void PtGenListRelease( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtGenListRemoveItems"
+   summary="Remove items from a list"
+   synopsis="PtGenListItem_t *PtGenListRemoveItems( PtWidget_t *list, PtGenListItem_t *first, PtGenListItem_t *last );\n"
+/>
+<function
+   name="PtGenListResize"
+   summary="Resize a list widget"
+   synopsis="void PtGenListResize( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtGenListSelect"
+   summary="Select an item in a list"
+   synopsis="void PtGenListSelect( PtWidget_t *widget, PtGenListItem_t *item );\n"
+/>
+<function
+   name="PtGenListSelectedItems"
+   summary="Get pointers to the selected items"
+   synopsis="PtGenListItem_t **PtGenListSelectedItems( PtWidget_t *widget, PtGenListItem_t **buffer );\n"
+/>
+<function
+   name="PtGenListSetColumnBalloon"
+   summary="Adjust the balloon text for a list item to correspond to a column"
+   synopsis="PhArea_t *PtGenListSetColumnBalloon( PhArea_t *area, PtListColumn_t const *column );\n"
+/>
+<function
+   name="PtGenListSetGflags"
+   summary="Modify the gflags field of the widget"
+   synopsis="unsigned PtGenListSetGflags( PtWidget_t *widget, unsigned value, unsigned mask );\n"
+/>
+<function
+   name="PtGenListSetSelIndexes"
+   summary="Set the selection indexes"
+   synopsis="int PtGenListSetSelIndexes( PtWidget_t *widget, const unsigned short *buffer int count );\n"
+/>
+<function
+   name="PtGenListShow"
+   summary="Set the current position so a given item is visible"
+   synopsis="void PtGenListShow( PtWidget_t *list, PtGenListItem_t *item );\n"
+/>
+<function
+   name="PtGenListUnlockItem"
+   summary="Unlock an item so it can be updated"
+   synopsis="void PtGenListUnlockItem( PtWidget_t *list, PtGenListItem_t *item );\n"
+/>
+<function
+   name="PtGenListUnselect"
+   summary="Unselect an item in a list"
+   synopsis="void PtGenListUnselect( PtWidget_t *widget, PtGenListItem_t *item );\n"
+/>
+<function
+   name="PtGenTreeAddAfter"
+   summary="Add items after a given item"
+   synopsis="int PtGenTreeAddAfter( PtWidget_t *tree, PtGenTreeItem_t *items, PtGenTreeItem_t *brother );\n"
+/>
+<function
+   name="PtGenTreeAddFirst"
+   summary="Add items in front of any existing items"
+   synopsis="int PtGenTreeAddFirst( PtWidget_t *tree, PtGenTreeItem_t *item, PtGenTreeItem_t *parent );\n"
+/>
+<function
+   name="PtGenTreeAllItems"
+   summary="Get pointers to all the items in the tree"
+   synopsis="PtGenTreeItem_t **PtGenTreeAllItems( PtWidget_t *widget, PtGenTreeItem_t **buffer );\n"
+/>
+<function
+   name="PtGenTreeClearSelection"
+   summary="Clear the selection"
+   synopsis="void PtGenTreeClearSelection( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtGenTreeCollapse"
+   summary="Collapse a subtree"
+   synopsis="int PtGenTreeCollapse( PtWidget_t *tree, PtGenTreeItem_t *item, PhEvent_t *event );\n"
+/>
+<function
+   name="PtGenTreeDamageItem"
+   summary="Redraw an item when its data has changed"
+   synopsis="void PtGenTreeDamageItem( PtWidget_t *tree, PtGenTreeItem_t *item );\n"
+/>
+<function
+   name="PtGenTreeExpand"
+   summary="Expand a given subtree"
+   synopsis="int PtGenTreeExpand( PtWidget_t *tree, PtGenTreeItem_t *item, PhEvent_t *event );\n"
+/>
+<function
+   name="PtGenTreeExpandParents"
+   summary="Expand any collapsed ancestors of a given item"
+   synopsis="int PtGenTreeExpandParents( PtWidget_t *tree, PtGenTreeItem_t *item, PhEvent_t *event );\n"
+/>
+<function
+   name="PtGenTreeFreeAllItems"
+   summary="Free all the items in a tree"
+   synopsis="void PtGenTreeFreeAllItems( PtWidget_t *tree );\n"
+/>
+<function
+   name="PtGenTreeFreeItems"
+   summary="Free the items in a subtree"
+   synopsis="int PtGenTreeFreeItems( PtGenTreeItem_t *item );\n"
+/>
+<function
+   name="PtGenTreeGetCurrent"
+   summary="Get a pointer to the current item"
+   synopsis="PtGenTreeItem_t *PtGenTreeGetCurrent( const PtWidget_t *widget );\n"
+/>
+<function
+   name="PtGenTreeGetSelIndexes"
+   summary="Get the indexes of the selected items"
+   synopsis="unsigned short *PtGenTreeGetSelIndexes( PtWidget_t *widget, unsigned short *buffer );\n"
+/>
+<function
+   name="PtGenTreeGoto"
+   summary="Set the current item and position so that a given item is visible"
+   synopsis="int PtGenTreeGoto( PtWidget_t *tree, PtGenTreeItem_t *item );\n"
+/>
+<function
+   name="PtGenTreeItemIndex"
+   summary="Calculate the index of a given item"
+   synopsis="int PtGenTreeItemIndex( const PtWidget_t *tree, const PtGenTreeTtem_t *item );\n"
+/>
+<function
+   name="PtGenTreeItemRealloc"
+   summary="Reallocate an item"
+   synopsis="PtGenTreeItem_t *PtGenTreeItemRealloc( PtGenTreeItem_t *item, PtWidget_t *tree, size_t newsize );\n"
+/>
+<function
+   name="PtGenTreeItemResize"
+   summary="Resize an item"
+   synopsis="void PtGenTreeItemResize( PtGenTreeItem_t *item, PtWidget_t *tree );\n"
+/>
+<function
+   name="PtGenTreeRemoveChildren"
+   summary="Unlink all the children of a given item"
+   synopsis="PtGenTreeItem_t *PtGenTreeRemoveChildren( PtGenTreeItem_t *item );\n"
+/>
+<function
+   name="PtGenTreeRemoveItem"
+   summary="Remove a given item and its children from its parents and siblings"
+   synopsis="void PtGenTreeRemoveItem( PtWidget_t *tree, PtGenTreeItem_t *item );\n"
+/>
+<function
+   name="PtGenTreeRemoveList"
+   summary="Remove a given items and its siblings from their parent"
+   synopsis="void PtGenTreeRemoveList( PtWidget_t *tree, PtGenTreeItem_t *first );\n"
+/>
+<function
+   name="PtGenTreeResize"
+   summary="Resize many items"
+   synopsis="void PtGenTreeResize( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtGenTreeRootItem"
+   summary="Get a pointer to the first root item"
+   synopsis="PtGenTreeItem_t *PtGenTreeRootItem( PtWidget_t const *tree );\n"
+/>
+<function
+   name="PtGenTreeSelect"
+   summary="Select a given item"
+   synopsis="void PtGenTreeSelect( PtWidget_t *widget, PtGenTreeItem_t *item );\n"
+/>
+<function
+   name="PtGenTreeSelectedItems"
+   summary="Get pointers to the selected items"
+   synopsis="PtGenTreeItem_t **PtGenTreeSelectedItems( PtWidget_t *widget, PtGenTreeItem_t **buffer );\n"
+/>
+<function
+   name="PtGenTreeSetSelIndexes"
+   summary="Set the selection indexes"
+   synopsis="int PtGenTreeSetSelIndexes( PtWidget_t *widget, unsigned short const *buffer, int count );\n"
+/>
+<function
+   name="PtGenTreeShow"
+   summary="Set the current position so that a given item is visible"
+   synopsis="int PtGenTreeShow( PtWidget_t *widget, PtGenTreeItem_t *item );\n"
+/>
+<function
+   name="PtGenTreeUnselect"
+   summary="Unselect a given item"
+   synopsis="void PtGenTreeUnselect( PtWidget_t *widget, PtGenTreeItem_t *item );\n"
+/>
+<function
+   name="PtGenTreeUnselectNonBrothers"
+   summary="Deselect all items that aren't siblings of a given item"
+   synopsis="void PtGenTreeUnselectNonBrothers( PtWidget_t *wgt, PtGenTreeItem_t *item );\n"
+/>
+<function
+   name="PtListAddItems"
+   summary="Add items to a list"
+   synopsis="int PtListAddItems( PtWidget_t *widget, const char **items, int item_count, unsigned int position );\n"
+/>
+<function
+   name="PtListDeleteAllItems"
+   summary="Delete all items from a list"
+   synopsis="int PtListDeleteAllItems( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtListDeleteItemPos"
+   summary="Delete a range of items from a list"
+   synopsis="int PtListDeleteItemPos( PtWidget_t *widget, int item_count, int position );\n"
+/>
+<function
+   name="PtListDeleteItems"
+   summary="Delete specific items from a list"
+   synopsis="int PtListDeleteItems( PtWidget_t *widget, const char **items, int item_count );\n"
+/>
+<function
+   name="PtListGotoPos"
+   summary="Make an item the current item and display it"
+   synopsis="void PtListGotoPos( PtWidget_t *widget, int pos );\n"
+/>
+<function
+   name="PtListItemExists"
+   summary="Determine whether a list contains a particular item"
+   synopsis="int PtListItemExists( PtWidget_t *widget, const char *item );\n"
+/>
+<function
+   name="PtListItemPos"
+   summary="Determine the position of an item in a list"
+   synopsis="int PtListItemPos( PtWidget_t *widget, const char *item );\n"
+/>
+<function
+   name="PtListRemovePositions"
+   summary="Remove items in a list at specific positions"
+   synopsis="int PtListRemovePositions( PtWidget_t *widget, const unsigned short *pos_list, int pos_count );\n"
+/>
+<function
+   name="PtListReplaceItemPos"
+   summary="Replace items in a list at a specific position"
+   synopsis="int PtListReplaceItemPos( PtWidget_t *widget, const char **new_items, int item_count, int position );\n"
+/>
+<function
+   name="PtListReplaceItems"
+   summary="Replace specific items in a list"
+   synopsis="int PtListReplaceItems( PtWidget_t *widget, const char **old_items, const char **new_items, int item_count );\n"
+/>
+<function
+   name="PtListSelectPos"
+   summary="Select the item at a given position"
+   synopsis="void PtListSelectPos( PtWidget_t *widget, int pos );\n"
+/>
+<function
+   name="PtListShowPos"
+   summary="Show the item at the given position"
+   synopsis="void PtListShowPos( PtWidget_t *widget, int pos );\n"
+/>
+<function
+   name="PtListUnselectPos"
+   summary="Unselect the item at the given position"
+   synopsis="void PtListUnselectPos( PtWidget_t *widget, int pos );\n"
+/>
+<function
+   name="PtMTrendAddData, PtMTrendChangeData"
+   summary="Add or change data for a PtMTrend widget"
+   synopsis="void PtMTrendAddData( PtWidget_t *widget, unsigned graph_no, const int *newdata, unsigned nsamples );\n void PtMTrendChangeData( PtWidget_t *widget, unsigned graph_no, int const *newdata, unsigned last_sample, unsigned nsamples );\n"
+/>
+<function
+   name="PtMultiTextCreateAttributes"
+   summary="Initialize a multitext attribute structure"
+   synopsis="PtMultiTextAttributes_t * PtMultiTextCreateAttributes( PtMultiTextAttributes_t *attrs);\n"
+/>
+<function
+   name="PtMultiTextGetAttributes"
+   summary="Get the attributes of a PtMultiText widget"
+   synopsis="PtMultiTextAttributes_t * PtMultiTextGetAttributes( PtWidget_t *widget, int char_offset, PtMultiTextAttributes_t *attributes, int *start, int *end );\n"
+/>
+<function
+   name="PtMultiTextInfo"
+   summary="Get character or line information from a PtMultiText widget"
+   synopsis="int PtMultiTextInfo( PtWidget_t *widget, int query_type, int *char_offset, int *line_num, PtMultiTextLine_t *line, int *start, int *end, int *length, PtMultiTextSegment_t *seg, PtMultiTextAttributes_t *attrs);\n"
+/>
+<function
+   name="PtMultiTextModifyAttributes"
+   summary="Modify the attributes of a PtMultiText widget"
+   synopsis="void PtMultiTextModifyAttributes( PtWidget_t *widget, int start, int end, PtMultiTextAttributes_t const *attrs, int attributes_mask );\n"
+/>
+<function
+   name="PtMultiTextModifyText"
+   summary="Modify the contents of a PtMultiText widget"
+   synopsis="void PtMultiTextModifyText( PtWidget_t *widget, int start, int end, int insert_pos, char *text, int length, PtMultiTextAttributes_t const *attrs, int attributes_mask );\n"
+/>
+<function
+   name="PtPGCreatePopup"
+   summary="Create an empty copy of a panel group as a popup window"
+   synopsis="PtWidget_t *PtPGCreatePopup( PtWidget_t *widget, PhPoint_t const *pos );\n"
+/>
+<function
+   name="PtPGFindIndexByPanel"
+   summary="Get the index of a panel, given a pointer to the panel"
+   synopsis="int PtPGFindIndexByPanel( PtWidget_t *widget, PtWidget_t const *panel );\n"
+/>
+<function
+   name="PtPGFindIndexByTitle"
+   summary="Get the index of a panel, given its title"
+   synopsis="int PtPGFindIndexByTitle( PtWidget_t *widget, char const *title );\n"
+/>
+<function
+   name="PtPGFindPanelByIndex"
+   summary="Get a pointer to the panel widget with a given index"
+   synopsis="PtWidget_t *PtPGFindPanelByIndex( PtWidget_t *widget, int panel );\n"
+/>
+<function
+   name="PtPGFindPanelByTitle"
+   summary="Get a pointer to the panel widget with a given title"
+   synopsis="PtWidget_t *PtPGFindPanelByTitle( PtWidget_t *widget, char const *title );\n"
+/>
+<function
+   name="PtPGFindTitleByIndex"
+   summary="Get the title of the panel with a given index"
+   synopsis="char *PtPGFindTitleByIndex( PtWidget_t *widget, int index );\n"
+/>
+<function
+   name="PtProgressEntireSegment"
+   summary="Get the entire segment of a progress bar"
+   synopsis="int PtProgressEntireSegment( PtWidget_t *widget, short *start, short *end);\n"
+/>
+<function
+   name="PtProgressFirstSegment"
+   summary="Get the first segment of a progress bar"
+   synopsis="int PtProgressFirstSegment(PtWidget_t *widget, short *start, short *end );\n"
+/>
+<function
+   name="PtProgressNextSegment"
+   summary="Get the next segment of a progress bar"
+   synopsis="int PtProgressNextSegment( PtWidget_t *widget, short *start, short *end);\n"
+/>
+<function
+   name="PtProgressTextRect"
+   summary="Get the text area of a progress bar"
+   synopsis="void PtProgressTextRect( PtWidget_t const *widget, PhRect_t *rect );\n"
+/>
+<function
+   name="PtScrollAreaCanvas"
+   summary="Get the viewport canvas of a PtScrollArea"
+   synopsis="PhRect_t *PtScrollAreaCanvas( PtWidget_t *widget, PhRect_t *rect );\n"
+/>
+<function
+   name="PtTerminalCopy"
+   summary="Copy the current selection to the clipboard"
+   synopsis="void PtTerminalCopy( PtWidget_t *widget, PhEvent_t *event );\n"
+/>
+<function
+   name="PtTerminalCreateCsXlat"
+   summary="Create a translation table for PtTerminal's character sets"
+   synopsis="PtTerminalCsXlatData_t *PtTerminalCreateCsXlat( PtTerminalCharsets_t const *csets );\n"
+/>
+<function
+   name="PtTerminalDefaultCharsets"
+   summary="Get the default character sets used by PtTerminal"
+   synopsis="const PtTerminalCharsets_t * PtTerminalDefaultCharsets( void );\n"
+/>
+<function
+   name="PtTerminalFontInfo"
+   summary="Convert the font name to a fixed-width font name"
+   synopsis="int PtTerminalFontInfo( const char *font, PhDim_t *size, PhPoint_t *offs );\n"
+/>
+<function
+   name="PtTerminalGetKeys"
+   summary="Get the terminal line-editing keys"
+   synopsis="void PtTerminalGetKeys( int protocol, struct termios *buf );\n"
+/>
+<function
+   name="PtTerminalGetSelection"
+   summary="Get a copy of the current selection"
+   synopsis="char *PtTerminalGetSelection( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtTerminalName"
+   summary="Get the terminal termcap or terminfo name "
+   synopsis="const char *PtTerminalName( int protocol );\n"
+/>
+<function
+   name="PtTerminalPasteClipboard"
+   summary="Paste the contents of the clipboard into the terminal"
+   synopsis="void PtTerminalPasteClipboard( PtWidget_t *widget, PhEvent_t *event );\n"
+/>
+<function
+   name="PtTerminalPasteSelection"
+   summary="Paste the current selection into the terminal"
+   synopsis="void PtTerminalPasteSelection( PtWidget_t *widget, PhEvent_t *event );\n"
+/>
+<function
+   name="PtTerminalPut, PtTerminalPutc, PtTerminalPuts"
+   summary="Output text to the terminal"
+   synopsis="int PtTerminalPut( PtWidget_t *widget, const char *buffer, size_t nchars );\n int PtTerminalPutc( PtWidget_t *widget, char character );\n int PtTerminalPuts( PtWidget_t *widget, const char *string );\n"
+/>
+<function
+   name="PtTerminalSelectWord"
+   summary="Select a word"
+   synopsis="int PtTerminalSelectWord( PtWidget_t *widget, PtTerminalRowCol_t const *pos );\n"
+/>
+<function
+   name="PtTextGetSelection"
+   summary="Get the selected range from a PtText widget"
+   synopsis="int PtTextGetSelection( PtWidget_t *widget, int *start, int *end );\n"
+/>
+<function
+   name="PtTextModifyText"
+   summary="Modify the contents of a PtText widget"
+   synopsis="int PtTextModifyText( PtWidget_t *widget, int start, int end, int insert_pos, char const *text, int length );\n"
+/>
+<function
+   name="PtTextSetSelection"
+   summary="Set the selected range for a PtText widget"
+   synopsis="int PtTextSetSelection( PtWidget_t *widget, int *start, int *end );\n"
+/>
+<function
+   name="PtTreeAddAfter"
+   summary="Insert an item after the specified item"
+   synopsis="int PtTreeAddAfter( PtWidget_t *tree, PtTreeItem_t *item, PtTreeItem_t *brother );\n"
+/>
+<function
+   name="PtTreeAddFirst"
+   summary="Add a root item to a tree list"
+   synopsis="int PtTreeAddFirst( PtWidget_t *tree, PtTreeItem_t *item, PtTreeItem_t *parent );\n"
+/>
+<function
+   name="PtTreeAddImages"
+   summary="Add images to the PtTree widget's image list"
+   synopsis="int PtTreeAddImages( PtWidget_t *widget, PhImage_t const *images, int n );\n"
+/>
+<function
+   name="PtTreeAllItems"
+   summary="Fill a buffer with pointers to all items"
+   synopsis="PtTreeItem_t **PtTreeAllItems( PtWidget_t *widget, PtTreeItem_t **buffer );\n"
+/>
+<function
+   name="PtTreeAllocItem"
+   summary="Allocate a new item"
+   synopsis="PtTreeItem_t *PtTreeAllocItem( PtWidget_t const *tree, const char *string, short set_img, short unset_img );\n"
+/>
+<function
+   name="PtTreeChangeItem"
+   summary="Create a tree item with attributes"
+   synopsis="PtTreeItem_t *PtTreeChangeItem( PtWidget_t *tree, PtTreeItem_t *item, const char *string, PtTreeItemAttributes_t const *attr );\n"
+/>
+<function
+   name="PtTreeClearSelection"
+   summary="Clear the selection"
+   synopsis="void PtTreeClearSelection( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtTreeCollapse"
+   summary="Collapse an expandable item"
+   synopsis="int PtTreeCollapse( PtWidget_t *tree, PtTreeItem_t *item, PhEvent_t *event );\n"
+/>
+<function
+   name="PtTreeCreateItem"
+   summary="Create a tree item with attributes"
+   synopsis="PtTreeItem_t *PtTreeCreateItem( PtWidget_t const *tree, const char *string, PtTreeItemAttributes_t const *attr );\n"
+/>
+<function
+   name="PtTreeExpand"
+   summary="Expand an expandable item"
+   synopsis="int PtTreeExpand( PtWidget_t *tree, PtTreeItem_t *item, PhEvent_t *event );\n"
+/>
+<function
+   name="PtTreeFreeAllItems"
+   summary="Unlink and free all items"
+   synopsis="void PtTreeFreeAllItems( PtWidget_t *tree );\n"
+/>
+<function
+   name="PtTreeFreeItems"
+   summary="Free an unlinked item"
+   synopsis="int PtTreeFreeItems( PtTreeItem_t *item );\n"
+/>
+<function
+   name="PtTreeGetCurrent"
+   summary="Get the current item"
+   synopsis="PtTreeItem_t *PtTreeGetCurrent( const PtWidget_t *widget );\n"
+/>
+<function
+   name="PtTreeGetSelIndexes"
+   summary="Fill a buffer with indexes"
+   synopsis="unsigned short *PtTreeGetSelIndexes( PtWidget_t *widget, unsigned short *buffer );\n"
+/>
+<function
+   name="PtTreeGoto"
+   summary="Set the current item"
+   synopsis="int PtTreeGoto( PtWidget_t *list, PtTreeItem_t *item );\n"
+/>
+<function
+   name="PtTreeItemIndex"
+   summary="Calculate the index of the given item within the tree"
+   synopsis="int PtTreeItemIndex( const PtTreeWidget_t *tree, const PtTreeItem_t *item );\n"
+/>
+<function
+   name="PtTreeModifyItem"
+   summary="Change item resources"
+   synopsis="PtTreeItem_t *PtTreeModifyItem( PtWidget_t *tree, PtTreeItem_t *item, const char *string, short set_img, short unset_img );\n"
+/>
+<function
+   name="PtTreeModifyItemString"
+   summary="Change the string for a PtTree item"
+   synopsis="PtTreeItem_t *PtTreeModifyItemString( PtWidget_t *tree, PtTreeItem_t *item, const char *string );\n"
+/>
+<function
+   name="PtTreeRemoveChildren"
+   summary="Unlink the children of the specified item"
+   synopsis="PtTreeItem_t *PtTreeRemoveChildren( PtTreeItem_t *item );\n"
+/>
+<function
+   name="PtTreeRemoveItem"
+   summary="Unlink an item"
+   synopsis="void PtTreeRemoveItem( PtWidget_t *tree, PtTreeItem_t *item );\n"
+/>
+<function
+   name="PtTreeRemoveList"
+   summary="Unlink the root item"
+   synopsis="void PtTreeRemoveList( PtWidget_t *tree, PtTreeItem_t *first );\n"
+/>
+<function
+   name="PtTreeRootItem"
+   summary="Return the first root item of the tree"
+   synopsis="PtTreeItem_t *PtTreeRootItem( PtTreeWidget_t const *tree );\n"
+/>
+<function
+   name="PtTreeSelect"
+   summary="Select the specified item"
+   synopsis="void PtTreeSelect( PtWidget_t *widget, PtTreeItem_t *item );\n"
+/>
+<function
+   name="PtTreeSelectedItems"
+   summary="Fill a buffer with item pointers"
+   synopsis="PtTreeItem_t **PtTreeSelectedItems( PtWidget_t *widget, PtTreeItem_t **buffer );\n"
+/>
+<function
+   name="PtTreeSetSelIndexes"
+   summary="Set the selection indexes"
+   synopsis="int PtTreeSetSelIndexes( PtWidget_t *widget, const unsigned short *buffer, int count );\n"
+/>
+<function
+   name="PtTreeShow"
+   summary="Set the position so that the specified item is visible"
+   synopsis="int PtTreeShow( PtWidget_t *widget, PtTreeItem_t *item );\n"
+/>
+<function
+   name="PtTreeUnselect"
+   summary="Unselect the given item"
+   synopsis="void PtTreeUnselect( PtWidget_t *widget, PtTreeItem_t *item );\n"
+/>
+<function
+   name="PtTreeUnselectNonBrothers"
+   summary="Unselect all items that aren't siblings of the specified item"
+   synopsis="void PtTreeUnselectNonBrothers( PtWidget_t *widget, PtTreeItem_t *item );\n"
+/>
+<function
+   name="PtTrendChangeData, PtTrendChangeTrendData"
+   summary="Replace some samples for one or all trends"
+   synopsis="void PtTrendChangeData( PtWidget_t *widget, short const *newdata, unsigned last_sample, unsigned nsamples);\n void PtTrendChangeTrendData( PtWidget_t *widget, unsigned tn, short const *newdata, unsigned last_sample, unsigned nsamples);\n"
+/>
+<function
+   name="PtTtyShell"
+   summary="Return the user's default shell"
+   synopsis="const char PtTtyShell( void );\n"
+/>
+<function
+   name="PtWindowFocus"
+   summary="Give a window focus"
+   synopsis="int PtWindowFocus( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtWindowGetState"
+   summary="Return the current state of a window"
+   synopsis="long PtWindowGetState( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtWindowToBack"
+   summary="Move a window to the back of the workspace"
+   synopsis="void PtWindowToBack( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtWindowToFront"
+   summary="Bring a window to the front and give it focus"
+   synopsis="void PtWindowToFront( PtWidget_t *widget );\n"
+/>
+</function_summary>

@@ -1,0 +1,672 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<index>
+ <entry keyword=".all">
+  <topic href="objects.html#o_cre_del" title="Change notification"/>
+  <topic href="objects.html#obj_spec" title="Special objects"/>
+ </entry>
+ <entry keyword=".notify">
+  <topic href="objects.html#obj_spec" title="Special objects"/>
+  <entry keyword="file">
+   <topic href="subscribe.html#notif_fd" title="Getting notifications of data on a file descriptor"/>
+  </entry>
+ </entry>
+ <entry keyword=".server">
+  <topic href="objects.html#obj_spec" title="Special objects"/>
+ </entry>
+ <entry keyword="adding">
+  <entry keyword="items">
+   <topic href="options.html#item_ad" title="Adding and deleting set items"/>
+  </entry>
+ </entry>
+ <entry keyword="asynchronous">
+  <entry keyword="publishing">
+   <topic href="pps.html" title="QNX PPS Service"/>
+  </entry>
+ </entry>
+ <entry keyword="attribute">
+  <topic href="objects.html#attributes" title="Attributes"/>
+  <entry keyword="deleting">
+   <topic href="publish.html" title="Publishing"/>
+  </entry>
+  <entry keyword="name prefixes">
+   <topic href="objects.html#o_cre_del" title="Change notification"/>
+  </entry>
+  <entry keyword="names">
+   <topic href="objects.html#attributes" title="Attributes"/>
+  </entry>
+  <entry keyword="options">
+   <entry keyword="PPS">
+    <topic href="options.html#object_opt" title="Object and attribute qualifiers"/>
+   </entry>
+  </entry>
+  <entry keyword="PPS object">
+   <entry keyword="adding new">
+    <topic href="publish.html" title="Publishing"/>
+   </entry>
+   <entry keyword="changing">
+    <topic href="publish.html" title="Publishing"/>
+   </entry>
+  </entry>
+  <entry keyword="rules">
+   <topic href="objects.html#attributes" title="Attributes"/>
+  </entry>
+  <entry keyword="special characters prefixed to names">
+   <topic href="objects.html#o_cre_del" title="Change notification"/>
+  </entry>
+ </entry>
+ <entry keyword="binary data">
+  <entry keyword="encoding">
+   <topic href="objects.html#syntax" title="Object syntax"/>
+  </entry>
+ </entry>
+ <entry keyword="characters">
+  <entry keyword="special prefixed to attribute names">
+   <topic href="objects.html#o_cre_del" title="Change notification"/>
+  </entry>
+ </entry>
+ <entry keyword="conventions">
+  <entry keyword="typographical">
+   <topic href="about.html#conventions" title="Typographical conventions"/>
+  </entry>
+ </entry>
+ <entry keyword="creating">
+  <entry keyword="objects">
+   <topic href="objects.html#o_cre_del" title="Change notification"/>
+  </entry>
+ </entry>
+ <entry keyword="critical">
+  <entry keyword="file descriptors">
+   <topic href="options.html#caveat" title="Duplicate file descriptors"/>
+  </entry>
+  <entry keyword="option">
+   <topic href="options.html#critical" title="Critical option"/>
+  </entry>
+ </entry>
+ <entry keyword="deleting">
+  <entry keyword="attributes">
+   <topic href="publish.html" title="Publishing"/>
+  </entry>
+  <entry keyword="items">
+   <topic href="options.html#item_ad" title="Adding and deleting set items"/>
+  </entry>
+  <entry keyword="objects">
+   <topic href="objects.html#o_cre_del" title="Change notification"/>
+  </entry>
+ </entry>
+ <entry keyword="delta mode">
+  <topic href="subscribe.html#dta" title="Delta mode"/>
+ </entry>
+ <entry keyword="depth">
+  <entry keyword="directory">
+   <topic href="objects.html#siz" title="Object and directory sizes"/>
+  </entry>
+ </entry>
+ <entry keyword="descriptor">
+  <entry keyword="file">
+   <topic href="options.html#caveat" title="Duplicate file descriptors"/>
+  </entry>
+ </entry>
+ <entry keyword="directory">
+  <entry keyword="depth">
+   <topic href="objects.html#siz" title="Object and directory sizes"/>
+  </entry>
+ </entry>
+ <entry keyword="encoding">
+  <topic href="objects.html#syntax" title="Object syntax"/>
+  <topic href="persistence.html#pru" title="Saving objects"/>
+ </entry>
+ <entry keyword="file descriptor">
+  <entry keyword="critical">
+   <topic href="options.html#caveat" title="Duplicate file descriptors"/>
+  </entry>
+  <entry keyword="getting notification of data">
+   <topic href="subscribe.html#notif_fd" title="Getting notifications of data on a file descriptor"/>
+  </entry>
+  <entry keyword="notification of closing">
+   <topic href="subscribe.html#notif_close" title="Notification of closed file descriptors for objects"/>
+  </entry>
+  <entry keyword="server">
+   <topic href="options.html#caveat" title="Duplicate file descriptors"/>
+  </entry>
+  <entry keyword="setting to not block on PPS object read">
+   <topic href="subscribe.html" title="Subscribing"/>
+  </entry>
+ </entry>
+ <entry keyword="files">
+  <entry keyword="object">
+   <topic href="objects.html#fil" title="Object files"/>
+  </entry>
+  <entry keyword="PPS">
+   <topic href="objects.html" title="Objects and their Attributes"/>
+  </entry>
+  <entry keyword="special">
+   <topic href="objects.html#obj_spec" title="Special objects"/>
+  </entry>
+ </entry>
+ <entry keyword="filesystem">
+  <entry keyword="limitations on persistence">
+   <topic href="persistence.html#fs" title="Persistence and filesystem limitations"/>
+  </entry>
+  <entry keyword="PPS">
+   <topic href="objects.html" title="Objects and their Attributes"/>
+  </entry>
+  <entry keyword="support for persistence">
+   <topic href="persistence.html#storage" title="Persistent storage"/>
+  </entry>
+ </entry>
+ <entry keyword="full mode">
+  <topic href="subscribe.html#ful" title="Full mode"/>
+ </entry>
+ <entry keyword="groups">
+  <entry keyword="notification">
+   <topic href="subscribe.html#notif_groups" title="Notification groups"/>
+   <entry keyword="creating">
+    <topic href="subscribe.html#notif_create" title="Creating notification groups"/>
+   </entry>
+   <entry keyword="using">
+    <topic href="subscribe.html#notif_use" title="Using notification groups"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword=" qualifier">
+ </entry>
+ <entry keyword="io_notify()">
+  <entry keyword="functionality in PPS">
+   <topic href="subscribe.html#not" title="io_notify() functionality"/>
+  </entry>
+ </entry>
+ <entry keyword="item">
+  <entry keyword="qualifier">
+   <topic href="options.html#item" title="Item qualifier"/>
+  </entry>
+  <entry keyword="set">
+   <topic href="options.html#item" title="Item qualifier"/>
+   <entry keyword="adding">
+    <topic href="options.html#item_ad" title="Adding and deleting set items"/>
+   </entry>
+   <entry keyword="deleting">
+    <topic href="options.html#item_ad" title="Adding and deleting set items"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="linefeed">
+  <topic href="objects.html#syntax" title="Object syntax"/>
+ </entry>
+ <entry keyword="mode">
+  <entry keyword="delta">
+   <topic href="subscribe.html#dta" title="Delta mode"/>
+  </entry>
+  <entry keyword="full">
+   <topic href="subscribe.html#ful" title="Full mode"/>
+  </entry>
+  <entry keyword="opening">
+   <entry keyword="subscriber">
+    <topic href="subscribe.html#ofd" title="Subscription Modes"/>
+   </entry>
+  </entry>
+  <entry keyword="subscriber">
+   <entry keyword="opening">
+    <topic href="subscribe.html#ofd" title="Subscription Modes"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword=" qualifier">
+  <entry keyword="attribute">
+   <topic href="options.html#non_persist" title="No-persistence qualifier"/>
+  </entry>
+  <entry keyword="object">
+   <topic href="options.html#non_persist" title="No-persistence qualifier"/>
+  </entry>
+ </entry>
+ <entry keyword="names">
+  <entry keyword="attribute">
+   <topic href="objects.html#attributes" title="Attributes"/>
+  </entry>
+  <entry keyword="object">
+   <topic href="objects.html#syntax" title="Object syntax"/>
+  </entry>
+ </entry>
+ <entry keyword="NFS server">
+  <entry keyword="persistence">
+   <topic href="persistence.html#fs" title="Persistence and filesystem limitations"/>
+  </entry>
+ </entry>
+ <entry keyword="no-persistence">
+  <entry keyword="qualifier">
+   <topic href="options.html#non_persist" title="No-persistence qualifier"/>
+  </entry>
+ </entry>
+ <entry keyword="notification">
+  <entry keyword="attribute change">
+   <topic href="objects.html#o_cre_del" title="Change notification"/>
+  </entry>
+  <entry keyword="groups">
+   <topic href="subscribe.html#notif_groups" title="Notification groups"/>
+   <entry keyword="creating">
+    <topic href="subscribe.html#notif_create" title="Creating notification groups"/>
+   </entry>
+   <entry keyword="using">
+    <topic href="subscribe.html#notif_use" title="Using notification groups"/>
+   </entry>
+  </entry>
+  <entry keyword="object change">
+   <topic href="objects.html#o_cre_del" title="Change notification"/>
+  </entry>
+  <entry keyword=" of closed file descriptor">
+   <topic href="subscribe.html#notif_close" title="Notification of closed file descriptors for objects"/>
+  </entry>
+  <entry keyword="of data on a file descriptor">
+   <topic href="subscribe.html#notif_fd" title="Getting notifications of data on a file descriptor"/>
+  </entry>
+ </entry>
+ <entry keyword="O_NONBLOCK">
+  <topic href="subscribe.html#sbl" title="Blocking and non-blocking reads"/>
+ </entry>
+ <entry keyword="object">
+  <entry keyword="creation">
+   <entry keyword="notification">
+    <topic href="objects.html#o_cre_del" title="Change notification"/>
+   </entry>
+  </entry>
+  <entry keyword="critical">
+   <entry keyword="option">
+    <topic href="options.html#critical" title="Critical option"/>
+   </entry>
+  </entry>
+  <entry keyword="deletion">
+   <entry keyword="notification">
+    <topic href="objects.html#o_cre_del" title="Change notification"/>
+   </entry>
+  </entry>
+  <entry keyword="files">
+   <topic href="objects.html#fil" title="Object files"/>
+  </entry>
+  <entry keyword="loading">
+   <entry keyword="PPS">
+    <topic href="persistence.html#olr" title="Loading objects"/>
+   </entry>
+  </entry>
+  <entry keyword="lost critical publisher">
+   <entry keyword="notification">
+    <topic href="objects.html#o_cre_del" title="Change notification"/>
+   </entry>
+  </entry>
+  <entry keyword="maximum size">
+   <topic href="objects.html#siz" title="Object and directory sizes"/>
+  </entry>
+  <entry keyword="modes">
+   <entry keyword="opening">
+    <topic href="subscribe.html#ofd" title="Subscription Modes"/>
+   </entry>
+  </entry>
+  <entry keyword="names">
+   <topic href="objects.html#syntax" title="Object syntax"/>
+  </entry>
+  <entry keyword="option">
+   <entry keyword="critical">
+    <topic href="options.html#critical" title="Critical option"/>
+   </entry>
+  </entry>
+  <entry keyword="options">
+   <entry keyword="PPS">
+    <topic href="options.html#object_opt" title="Object and attribute qualifiers"/>
+   </entry>
+  </entry>
+  <entry keyword="PPS">
+   <topic href="objects.html" title="Objects and their Attributes"/>
+   <entry keyword="loading">
+    <topic href="persistence.html#olr" title="Loading objects"/>
+   </entry>
+   <entry keyword="saved">
+    <topic href="persistence.html#pru" title="Saving objects"/>
+   </entry>
+  </entry>
+  <entry keyword="size">
+   <topic href="objects.html#siz" title="Object and directory sizes"/>
+  </entry>
+  <entry keyword="special">
+   <topic href="objects.html#obj_spec" title="Special objects"/>
+  </entry>
+  <entry keyword="state">
+   <entry keyword="changes">
+    <topic href="subscribe.html" title="Subscribing"/>
+   </entry>
+  </entry>
+  <entry keyword="subscribing to">
+   <topic href="subscribe.html" title="Subscribing"/>
+  </entry>
+  <entry keyword="subscribing to all in a directory">
+   <topic href="subscribe.html#smo" title="Subscribing to multiple objects"/>
+  </entry>
+  <entry keyword="subscribing to multiple">
+   <topic href="subscribe.html#smo" title="Subscribing to multiple objects"/>
+  </entry>
+  <entry keyword="syntax">
+   <topic href="objects.html#syntax" title="Object syntax"/>
+  </entry>
+  <entry keyword="temporary">
+   <topic href="options.html#non_persist" title="No-persistence qualifier"/>
+  </entry>
+  <entry keyword="truncated">
+   <entry keyword="notification">
+    <topic href="objects.html#o_cre_del" title="Change notification"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="open">
+  <entry keyword="modes">
+   <topic href="subscribe.html#ofd" title="Subscription Modes"/>
+  </entry>
+  <entry keyword="query">
+   <entry keyword="options">
+    <topic href="options.html#pathname_opt" title="Pathname open options"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="option">
+  <entry keyword="critical">
+   <topic href="options.html#critical" title="Critical option"/>
+  </entry>
+ </entry>
+ <entry keyword="options">
+  <entry keyword="open">
+   <entry keyword="pathname">
+    <topic href="options.html#pathname_opt" title="Pathname open options"/>
+   </entry>
+  </entry>
+  <entry keyword="PPS">
+   <topic href="pps.html#run" title="Running PPS"/>
+   <entry keyword="attributes">
+    <topic href="options.html#object_opt" title="Object and attribute qualifiers"/>
+   </entry>
+   <entry keyword="non-persistent">
+    <topic href="options.html#pathname_opt" title="Pathname open options"/>
+   </entry>
+   <entry keyword="objects">
+    <topic href="options.html#object_opt" title="Object and attribute qualifiers"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="parse">
+  <entry keyword="object">
+   <entry keyword="PPS">
+    <topic href="api/ppsparse.html" title="ppsparse"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="pathname">
+  <entry keyword="open">
+   <entry keyword="options">
+    <topic href="options.html#pathname_opt" title="Pathname open options"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="pathname delimiter in QNX documentation">
+  <topic href="about.html#WINDOWSNOTE" title="Note to Windows users"/>
+ </entry>
+ <entry keyword="persistence">
+  <entry keyword="filesystems">
+   <topic href="persistence.html#storage" title="Persistent storage"/>
+  </entry>
+  <entry keyword="limitations from filesystem">
+   <topic href="persistence.html#fs" title="Persistence and filesystem limitations"/>
+  </entry>
+  <entry keyword="no-persistence qualifier">
+   <topic href="options.html#non_persist" title="No-persistence qualifier"/>
+  </entry>
+  <entry keyword="PPS">
+   <topic href="persistence.html" title="Persistence"/>
+   <entry keyword="object">
+    <topic href="persistence.html" title="Persistence"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="Persistent Publish/Subscribe">
+ </entry>
+ <entry keyword="PPS">
+  <topic href="pps.html" title="QNX PPS Service"/>
+  <entry keyword="files">
+   <topic href="objects.html" title="Objects and their Attributes"/>
+  </entry>
+  <entry keyword="filesystem">
+   <topic href="objects.html" title="Objects and their Attributes"/>
+  </entry>
+  <entry keyword="io_notify() functionality">
+   <topic href="subscribe.html#not" title="io_notify() functionality"/>
+  </entry>
+  <entry keyword="loading">
+   <entry keyword="objects">
+    <topic href="persistence.html#olr" title="Loading objects"/>
+   </entry>
+  </entry>
+  <entry keyword="notification">
+   <entry keyword="object creation">
+    <topic href="objects.html#o_cre_del" title="Change notification"/>
+   </entry>
+   <entry keyword="object deletion">
+    <topic href="objects.html#o_cre_del" title="Change notification"/>
+   </entry>
+   <entry keyword="object truncated">
+    <topic href="objects.html#o_cre_del" title="Change notification"/>
+   </entry>
+  </entry>
+  <entry keyword="object">
+   <topic href="objects.html" title="Objects and their Attributes"/>
+   <entry keyword="changing attribute">
+    <topic href="publish.html" title="Publishing"/>
+   </entry>
+   <entry keyword="loading">
+    <topic href="persistence.html#olr" title="Loading objects"/>
+   </entry>
+   <entry keyword="new attribute">
+    <topic href="publish.html" title="Publishing"/>
+   </entry>
+   <entry keyword="persistence">
+    <topic href="persistence.html" title="Persistence"/>
+   </entry>
+   <entry keyword="restoring">
+    <topic href="persistence.html#olr" title="Loading objects"/>
+   </entry>
+   <entry keyword="saved">
+    <topic href="persistence.html#pru" title="Saving objects"/>
+   </entry>
+  </entry>
+  <entry keyword="options">
+   <topic href="pps.html#run" title="Running PPS"/>
+  </entry>
+  <entry keyword="overview">
+   <topic href="objects.html#syntax" title="Object syntax"/>
+  </entry>
+  <entry keyword="parse">
+   <entry keyword="objects">
+    <topic href="api/ppsparse.html" title="ppsparse"/>
+   </entry>
+  </entry>
+  <entry keyword="persistence">
+   <topic href="persistence.html" title="Persistence"/>
+  </entry>
+  <entry keyword="publishing">
+   <topic href="publish.html" title="Publishing"/>
+  </entry>
+  <entry keyword="restoring">
+   <entry keyword="objects">
+    <topic href="persistence.html#olr" title="Loading objects"/>
+   </entry>
+  </entry>
+  <entry keyword="running">
+   <topic href="pps.html#run" title="Running PPS"/>
+  </entry>
+  <entry keyword="subscriber">
+   <entry keyword="blocking and non-blocking reads">
+    <topic href="subscribe.html#sbl" title="Blocking and non-blocking reads"/>
+   </entry>
+  </entry>
+  <entry keyword="subscribing">
+   <topic href="subscribe.html" title="Subscribing"/>
+  </entry>
+ </entry>
+ <entry keyword="PPS_*">
+  <entry keyword="pps_attrib_flags_t">
+   <topic href="api/ppsparse.html#pps_attrib_flags_t" title="pps_attrib_flags_t"/>
+  </entry>
+  <entry keyword="pps_status_t">
+   <topic href="api/ppsparse.html#pps_status_t" title="pps_status_t"/>
+  </entry>
+ </entry>
+ <entry keyword="pps_attrib_flags_t">
+  <topic href="api/ppsparse.html#pps_attrib_flags_t" title="pps_attrib_flags_t"/>
+  <entry keyword="PPS_*">
+   <topic href="api/ppsparse.html#pps_attrib_flags_t" title="pps_attrib_flags_t"/>
+  </entry>
+ </entry>
+ <entry keyword="pps_attrib_t">
+  <topic href="api/ppsparse.html#pps_attrib_t" title="pps_attrib_t"/>
+ </entry>
+ <entry keyword="pps_status_t">
+  <topic href="api/ppsparse.html#pps_status_t" title="pps_status_t"/>
+  <entry keyword="PPS_*">
+   <topic href="api/ppsparse.html#pps_status_t" title="pps_status_t"/>
+  </entry>
+ </entry>
+ <entry keyword="ppsparse()">
+  <topic href="api/ppsparse.html" title="ppsparse"/>
+ </entry>
+ <entry keyword="priority inheritance">
+  <topic href="pps.html" title="QNX PPS Service"/>
+ </entry>
+ <entry keyword="Publish/Subscribe">
+  <entry keyword="Persistent">
+   <topic href="pps.html" title="QNX PPS Service"/>
+  </entry>
+ </entry>
+ <entry keyword="publisher">
+  <entry keyword="connection to subscriber">
+   <topic href="pps.html" title="QNX PPS Service"/>
+  </entry>
+  <entry keyword="lost critical for object">
+   <topic href="objects.html#o_cre_del" title="Change notification"/>
+  </entry>
+  <entry keyword="multiple">
+   <topic href="publish.html#mpb" title="Multiple publishers"/>
+  </entry>
+ </entry>
+ <entry keyword="publishing">
+  <topic href="publish.html" title="Publishing"/>
+  <entry keyword="asynchronous">
+   <topic href="pps.html" title="QNX PPS Service"/>
+  </entry>
+ </entry>
+ <entry keyword="qualifier">
+  <entry keyword="item">
+   <topic href="options.html#item" title="Item qualifier"/>
+  </entry>
+  <entry keyword="no-persistence">
+   <topic href="options.html#non_persist" title="No-persistence qualifier"/>
+  </entry>
+ </entry>
+ <entry keyword="read">
+  <entry keyword="PPS subscriber">
+   <entry keyword="blocking and non-blocking">
+    <topic href="subscribe.html#sbl" title="Blocking and non-blocking reads"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="rules">
+  <entry keyword="attribute">
+   <topic href="objects.html#attributes" title="Attributes"/>
+  </entry>
+ </entry>
+ <entry keyword="separator">
+  <entry keyword="item">
+   <topic href="options.html#item" title="Item qualifier"/>
+  </entry>
+ </entry>
+ <entry keyword="server">
+  <entry keyword="file descriptors">
+   <topic href="options.html#caveat" title="Duplicate file descriptors"/>
+  </entry>
+ </entry>
+ <entry keyword="Server objects">
+  <entry keyword="writing to a single object">
+   <topic href="subscribe.html#server" title="Server objects"/>
+  </entry>
+ </entry>
+ <entry keyword="set">
+  <entry keyword="item">
+   <entry keyword="adding">
+    <topic href="options.html#item_ad" title="Adding and deleting set items"/>
+   </entry>
+   <entry keyword="deleting">
+    <topic href="options.html#item_ad" title="Adding and deleting set items"/>
+   </entry>
+  </entry>
+  <entry keyword="items">
+   <topic href="options.html#item" title="Item qualifier"/>
+  </entry>
+ </entry>
+ <entry keyword="shutdown">
+  <entry keyword="saving objects at">
+   <topic href="persistence.html" title="Persistence"/>
+  </entry>
+ </entry>
+ <entry keyword="size">
+  <entry keyword="maximum for object">
+   <topic href="objects.html#siz" title="Object and directory sizes"/>
+  </entry>
+ </entry>
+ <entry keyword="state">
+  <entry keyword="changes">
+   <entry keyword="object">
+    <topic href="subscribe.html" title="Subscribing"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="subscriber">
+  <entry keyword="connection to publisher">
+   <topic href="pps.html" title="QNX PPS Service"/>
+  </entry>
+  <entry keyword="object">
+   <entry keyword="opening modes">
+    <topic href="subscribe.html#ofd" title="Subscription Modes"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="subscribing">
+  <entry keyword="to a PPS object">
+   <topic href="subscribe.html" title="Subscribing"/>
+  </entry>
+  <entry keyword="to all objects in a directory">
+   <topic href="subscribe.html#smo" title="Subscribing to multiple objects"/>
+  </entry>
+  <entry keyword="to multiple objects in a directory">
+   <topic href="subscribe.html#smo" title="Subscribing to multiple objects"/>
+  </entry>
+ </entry>
+ <entry keyword="support, technical">
+  <topic href="about.html#id6" title="Technical support options"/>
+ </entry>
+ <entry keyword="syntax">
+  <entry keyword="object">
+   <topic href="objects.html#syntax" title="Object syntax"/>
+  </entry>
+ </entry>
+ <entry keyword="technical support">
+  <topic href="about.html#id6" title="Technical support options"/>
+ </entry>
+ <entry keyword="temporary">
+  <entry keyword="object">
+   <topic href="options.html#non_persist" title="No-persistence qualifier"/>
+  </entry>
+ </entry>
+ <entry keyword="truncating">
+  <entry keyword="object">
+   <topic href="objects.html#o_cre_del" title="Change notification"/>
+  </entry>
+ </entry>
+ <entry keyword="typographical conventions">
+  <topic href="about.html#conventions" title="Typographical conventions"/>
+ </entry>
+ <entry keyword="UTF-8">
+  <topic href="persistence.html#pru" title="Saving objects"/>
+ </entry>
+</index>

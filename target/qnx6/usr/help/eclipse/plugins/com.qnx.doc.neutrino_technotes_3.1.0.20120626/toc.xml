@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Technical Notes">
+      <topic label="About These Technotes" href="about.html">
+          <topic label="Typographical conventions" href="about.html#Typographical_conventions">
+            <topic label="Note to Windows users" href="about.html#WINDOWSNOTE"/>
+            <topic label="Navigation buttons" href="about.html#Navigation"/>
+          </topic>
+          <topic label="Technical support" href="about.html#Support"/>
+      </topic>
+      <topic label="IP Tunneling (Generic Routing Encapsulation)" href="gre.html">
+              <topic label="How do I use it?" href="gre.html#id3"/>
+              <topic label="A more typical example" href="gre.html#id5"/>
+              <topic label="Final tidbits" href="gre.html#id7"/>
+      </topic>
+      <topic label="PPPOE and Path MTU Discovery" href="path_mtu.html"/>
+      <topic label="Making Multiple Images" href="multiple.html">
+          <topic label="What's a multiple image?" href="multiple.html#Overview"/>
+          <topic label="Restrictions on XIP image filesystems" href="multiple.html#Restrictions"/>
+          <topic label="Mounting an IFS" href="multiple.html#Mounting"/>
+          <topic label="Using a second IFS" href="multiple.html#Using"/>
+          <topic label="Example: mounting an IFS on the MGT5200 Total board" href="multiple.html#Example"/>
+          <topic label="Sample buildfiles" href="multiple.html#Buildfiles">
+            <topic label="os1.build" href="multiple.html#os1.build"/>
+            <topic label="os2.build" href="multiple.html#os2.build"/>
+          </topic>
+          <topic label="Programming into flash" href="multiple.html#Programming_flash"/>
+          <topic label="Putting the images together" href="multiple.html#Putting_together"/>
+          <topic label="Test program" href="multiple.html#Testing"/>
+          <topic label="See also" href="multiple.html#SEEALSO"/>
+      </topic>
+      <topic label="QNX Neutrino and QNX4 bootloader partitions" href="qnx6bootloader.html">
+            <topic label="Encountering the .altboot message" href="qnx6bootloader.html#id3"/>
+            <topic label="Booting or rebooting using a partition bootloader" href="qnx6bootloader.html#id5"/>
+            <topic label="Resolving problems with bootloader partitions" href="qnx6bootloader.html#id7"/>
+      </topic>
+      <topic label="Managing POSIX Message Queues" href="managing_mq_mqueue.html"/>
+      <topic label="Choosing the Correct MTD Routine for the Flash Filesystem" href="choose_correct_MTD.html">
+            <topic label="Unusual flash configurations" href="choose_correct_MTD.html#id3"/>
+            <topic label="MTD source code" href="choose_correct_MTD.html#id5"/>
+            <topic label="Manufacturer" href="choose_correct_MTD.html#id7"/>
+            <topic label="Choosing read callout" href="choose_correct_MTD.html#id9"/>
+            <topic label="Choosing ident callout" href="choose_correct_MTD.html#id11"/>
+            <topic label="Choosing write callout" href="choose_correct_MTD.html#id13"/>
+            <topic label="Choosing erase callout" href="choose_correct_MTD.html#id15"/>
+            <topic label="Choosing sync callout" href="choose_correct_MTD.html#id17"/>
+            <topic label="Choosing suspend and resume callouts" href="choose_correct_MTD.html#id19"/>
+            <topic label="Choosing islock, lock, unlock, unlockall callouts" href="choose_correct_MTD.html#id21"/>
+      </topic>
+      <topic label="Asynchronous Messaging" href="async_messaging.html">
+          <topic label="Overview" href="async_messaging.html#Overview"/>
+          <topic label="Asynchronous-messaging functions" href="async_messaging.html#Functions"/>
+          <topic label="Examples" href="async_messaging.html#Examples">
+            <topic label="Example 1: Sending one message" href="async_messaging.html#Example1"/>
+            <topic label="Example 2: Sending more than one message at a time" href="async_messaging.html#Example2"/>
+            <topic label="Example 3: Flushing" href="async_messaging.html#Example3"/>
+            <topic label="Example 4: Setting up an event that triggers the copy" href="async_messaging.html#Example4"/>
+            <topic label="Example 5: Using time as the trigger" href="async_messaging.html#Example5"/>
+            <topic label="Example 6: Client and server processes" href="async_messaging.html#Example6"/>
+          </topic>
+      </topic>
+      <topic label="Reading a Kernel Dump" href="proc_dump.html"/>
+      <topic label="I2C (Inter-Integrated Circuit) Framework" href="i2c_framework.html">
+          <topic label="Overview" href="i2c_framework.html#Overview"/>
+          <topic label="Hardware interface" href="i2c_framework.html#Hardware_interface">
+            <topic label="Function table" href="i2c_framework.html#id5">
+              <topic label="version_info function" href="i2c_framework.html#version_info"/>
+              <topic label="init function" href="i2c_framework.html#init"/>
+              <topic label="fini function" href="i2c_framework.html#fini"/>
+              <topic label="send function" href="i2c_framework.html#send"/>
+              <topic label="recv function" href="i2c_framework.html#recv"/>
+              <topic label="abort function" href="i2c_framework.html#abort"/>
+              <topic label="set_slave_addr function" href="i2c_framework.html#set_slave_addr"/>
+              <topic label="set_bus_speed function" href="i2c_framework.html#set_bus_speed"/>
+              <topic label="driver_info function" href="i2c_framework.html#driver_info"/>
+              <topic label="ctl function" href="i2c_framework.html#ctl"/>
+            </topic>
+            <topic label="Access function" href="i2c_framework.html#id17"/>
+            <topic label="Sample calls" href="i2c_framework.html#id19"/>
+          </topic>
+          <topic label="Application interfaces" href="i2c_framework.html#API">
+            <topic label="Shared-library interface" href="i2c_framework.html#Shared_library"/>
+            <topic label="Resource manager interface" href="i2c_framework.html#Resmgr">
+              <topic label="Supporting data types" href="i2c_framework.html#Data_types"/>
+              <topic label="DCMD_I2C_DRIVER_INFO" href="i2c_framework.html#DCMD_I2C_DRIVER_INFO"/>
+              <topic label="DCMD_I2C_SEND" href="i2c_framework.html#DCMD_I2C_SEND"/>
+              <topic label="DCMD_I2C_RECV" href="i2c_framework.html#DCMD_I2C_RECV"/>
+              <topic label="DCMD_I2C_SENDRECV" href="i2c_framework.html#DCMD_I2C_SENDRECV"/>
+              <topic label="DCMD_I2C_SET_BUS_SPEED" href="i2c_framework.html#DCMD_I2C_SET_BUS_SPEED"/>
+              <topic label="DCMD_I2C_SET_SLAVE_ADDR (deprecated)" href="i2c_framework.html#DCMD_I2C_SET_SLAVE_ADDR"/>
+              <topic label="DCMD_I2C_MASTER_SEND (deprecated)" href="i2c_framework.html#DCMD_I2C_MASTER_SEND"/>
+              <topic label="DCMD_I2C_MASTER_RECV (deprecated)" href="i2c_framework.html#DCMD_I2C_MASTER_RECV"/>
+            </topic>
+          </topic>
+          <topic label="Resource manager design" href="i2c_framework.html#Resmgr_design"/>
+      </topic>
+      <topic label="SPI (Serial Peripheral Interface) Framework" href="spi_overview.html">
+          <topic label="Hardware interface" href="spi_overview.html#Hardware_interface">
+            <topic label="Function table" href="spi_overview.html#Function_table"/>
+            <topic label="Low-level module handle structure" href="spi_overview.html#Handle"/>
+            <topic label="init function" href="spi_overview.html#init"/>
+            <topic label="fini function" href="spi_overview.html#fini"/>
+            <topic label="drvinfo function" href="spi_overview.html#drvinfo"/>
+            <topic label="devinfo function" href="spi_overview.html#devinfo"/>
+            <topic label="setcfg function" href="spi_overview.html#setcfg"/>
+            <topic label="xfer function" href="spi_overview.html#xfer"/>
+            <topic label="dma_xfer function" href="spi_overview.html#dma_xfer"/>
+          </topic>
+          <topic label="API library" href="spi_overview.html#API">
+            <topic label="spi_open" href="spi_overview.html#spi_open"/>
+            <topic label="spi_close" href="spi_overview.html#spi_close"/>
+            <topic label="spi_setcfg" href="spi_overview.html#spi_setcfg"/>
+            <topic label="spi_getdevinfo" href="spi_overview.html#spi_getdevinfo"/>
+            <topic label="spi_getdrvinfo" href="spi_overview.html#spi_getdrvinfo"/>
+            <topic label="spi_read" href="spi_overview.html#spi_read"/>
+            <topic label="spi_write" href="spi_overview.html#spi_write"/>
+            <topic label="spi_xchange" href="spi_overview.html#spi_xchange"/>
+            <topic label="spi_cmdread" href="spi_overview.html#spi_cmdread"/>
+            <topic label="spi_dma_xchange" href="spi_overview.html#spi_dma_xchange"/>
+          </topic>
+      </topic>
+      <topic label="Fine-tuning your network drivers" href="finetune_net.html">
+            <topic label="High-performance NICs" href="finetune_net.html#High_performance"/>
+            <topic label="Low-performance NICs" href="finetune_net.html#Low_performance"/>
+            <topic label="Tuning high-performance NIC drivers" href="finetune_net.html#Tuning_high"/>
+            <topic label="PHY probing" href="finetune_net.html#PHY_probing"/>
+            <topic label="Speed and duplex" href="finetune_net.html#Speed"/>
+      </topic>
+      <topic label="Migrating to QNX Neutrino for ARMv6-Processor-Based Boards" href="migrating_to_ARMv6.html">
+          <topic label="Overview" href="migrating_to_ARMv6.html#id3"/>
+          <topic label="BSP configuration" href="migrating_to_ARMv6.html#id5">
+            <topic label="armv_chip" href="migrating_to_ARMv6.html#MIG_armvchip"/>
+            <topic label="armv_cache" href="migrating_to_ARMv6.html#MIG_armvcache"/>
+            <topic label="armv_pte" href="migrating_to_ARMv6.html#MIG_armvpte"/>
+            <topic label="setup" href="migrating_to_ARMv6.html#MIG_setup"/>
+          </topic>
+          <topic label="Behavior of procnto-v6 shm_ctl" href="migrating_to_ARMv6.html#id11"/>
+          <topic label="Using ARMv6 instructions" href="migrating_to_ARMv6.html#id13"/>
+      </topic>
+      <topic label="QNX Neutrino for ARMv7 Cortex A-8 and A-9 Processors" href="QNX_for_ARMv7_Cortex_Processors.html">
+          <topic label="Contents" href="QNX_for_ARMv7_Cortex_Processors.html#id3"/>
+          <topic label="Overview" href="QNX_for_ARMv7_Cortex_Processors.html#MIG_Overview"/>
+          <topic label="libstartup" href="QNX_for_ARMv7_Cortex_Processors.html#MIG_libstartup">
+            <topic label="armv_chip" href="QNX_for_ARMv7_Cortex_Processors.html#MIG_armvchip"/>
+            <topic label="armv_cache" href="QNX_for_ARMv7_Cortex_Processors.html#MIG_armvcache"/>
+            <topic label="armv_pte" href="QNX_for_ARMv7_Cortex_Processors.html#MIG_armvpte"/>
+            <topic label="setup" href="QNX_for_ARMv7_Cortex_Processors.html#MIG_setup"/>
+            <topic label="arm_chip_detect" href="QNX_for_ARMv7_Cortex_Processors.html#MIG_detect"/>
+          </topic>
+          <topic label="Behavior of procnto-v6 shm_ctl" href="QNX_for_ARMv7_Cortex_Processors.html#MIG_Behavior_of_proc">
+            <topic label="The procnto-v6 microkernel" href="QNX_for_ARMv7_Cortex_Processors.html#MIG_procnto_v6_mic"/>
+            <topic label="CPU flags" href="QNX_for_ARMv7_Cortex_Processors.html#MIG_FEATURE_FLAGS"/>
+          </topic>
+          <topic label="Board startup for SMP" href="QNX_for_ARMv7_Cortex_Processors.html#MIG_Board_Startup_SMP_Support">
+            <topic label="board_smp_num_cpu" href="QNX_for_ARMv7_Cortex_Processors.html#MIG_board_smp_num_cpu"/>
+            <topic label="board_smp_init" href="QNX_for_ARMv7_Cortex_Processors.html#MIG_board_smp_init"/>
+            <topic label="board_smp_start" href="QNX_for_ARMv7_Cortex_Processors.html#MIG_board_smp_start"/>
+            <topic label="board_smp_adjust_num" href="QNX_for_ARMv7_Cortex_Processors.html#MIG_board_smp_adjust_num"/>
+          </topic>
+          <topic label="Using ARMv7 instructions" href="QNX_for_ARMv7_Cortex_Processors.html#MIG_UsingARMv7_Instructions"/>
+          <topic label="Compiling for the ARMv7 architecture" href="QNX_for_ARMv7_Cortex_Processors.html#MIG_Compile_for_ARMv7">
+            <topic label="Using Makefiles" href="QNX_for_ARMv7_Cortex_Processors.html#MIG_Using_MakeFiles"/>
+            <topic label="Using qcc" href="QNX_for_ARMv7_Cortex_Processors.html#MIG_Using_QCC"/>
+            <topic label="Using command-line compile options" href="QNX_for_ARMv7_Cortex_Processors.html#MIG_Using_Command_Line"/>
+            <topic label="Generating hardware floating point instructions" href="QNX_for_ARMv7_Cortex_Processors.html#MIG_GENFPI"/>
+            <topic label="Optimizing source code" href="QNX_for_ARMv7_Cortex_Processors.html#MIG_optimize_For_CPU"/>
+          </topic>
+          <topic label="Vector Floating Point (VFP) math library" href="QNX_for_ARMv7_Cortex_Processors.html#MIG_Using_VFP"/>
+          <topic label="BSP configuration for VFP" href="QNX_for_ARMv7_Cortex_Processors.html#MIG_VFP_Config"/>
+      </topic>
+      <topic label="Supporting Vector Floating Point Functionality for ARM Processors" href="vector_floating_point.html">
+            <topic label="Overview" href="vector_floating_point.html#id3"/>
+            <topic label="Restrictions on VFP usage" href="vector_floating_point.html#id5"/>
+            <topic label="BSP configuration" href="vector_floating_point.html#id7"/>
+            <topic label="Using VFP instructions" href="vector_floating_point.html#id9"/>
+      </topic>
+      <topic label="How to create a Runtime Kit from the QNX Software Development Platform" href="howto_rtkit.html">
+          <topic label="Introduction" href="howto_rtkit.html#Introduction"/>
+          <topic label="Organization of the Runtime Kit" href="howto_rtkit.html#Organization"/>
+          <topic label="Standard installation steps" href="howto_rtkit.html#Installation"/>
+          <topic label="Creating the archives" href="howto_rtkit.html#Creating_archives"/>
+          <topic label="Creating the CD" href="howto_rtkit.html#Creating_CD"/>
+          <topic label="Sample installation script" href="howto_rtkit.html#Sample_script"/>
+      </topic>
+      <topic label="Backtraces" href="backtrace.html">
+          <topic label="Overview" href="backtrace.html#Overview"/>
+          <topic label="API" href="backtrace.html#API"/>
+          <topic label="Examples" href="backtrace.html#Examples">
+            <topic label="Obtaining and printing a memory map" href="backtrace.html#Print_memmap"/>
+            <topic label="Backtracing a thread in another process" href="backtrace.html#Another_process"/>
+            <topic label="Backtracing another thread within the same process" href="backtrace.html#Same_process"/>
+            <topic label="Backtracing the current thread" href="backtrace.html#Self"/>
+            <topic label="Doing a BT_SELF backtrace in a signal handler" href="backtrace.html#Signal_handler"/>
+            <topic label="Backtracing a collection of threads" href="backtrace.html#Collection"/>
+          </topic>
+      </topic>
+      <topic label="QNX support for using Freescale e500 SPE" href="freescale_e500_spe_support.html">
+          <topic label="Overview" href="freescale_e500_spe_support.html#id3"/>
+          <topic label="Configuring for floating point" href="freescale_e500_spe_support.html#e500floatingpoint"/>
+          <topic label="Configuring for the command line" href="freescale_e500_spe_support.html#e500CommandLine"/>
+      </topic>
+      <topic label="Reloadable Image Filesystems" href="reloadable_ifs.html">
+          <topic label="Introduction" href="reloadable_ifs.html#Introduction"/>
+          <topic label="Command-line options" href="reloadable_ifs.html#Options">
+            <topic label="Kernel restoration" href="reloadable_ifs.html#Kernel_options"/>
+            <topic label="Secondary IFS restoration" href="reloadable_ifs.html#Secondary_options"/>
+          </topic>
+          <topic label="Examples" href="reloadable_ifs.html#Examples">
+            <topic label="Kernel restoration" href="reloadable_ifs.html#Kernel_example"/>
+            <topic label="Secondary IFS restoration" href="reloadable_ifs.html#Secondary_example"/>
+          </topic>
+          <topic label="Power callout" href="reloadable_ifs.html#Power_callout"/>
+          <topic label="Minidriver support" href="reloadable_ifs.html#Mini_driver"/>
+          <topic label="Performance measurements" href="reloadable_ifs.html#Performance"/>
+          <topic label="Appendix" href="reloadable_ifs.html#Appendix">
+            <topic label="Sample program that uses sysmgr_cpumode to call the power callout" href="reloadable_ifs.html#sysmgr_cpumode"/>
+            <topic label="Manually mounting an IFS" href="reloadable_ifs.html#Manually_mounting"/>
+            <topic label="Sample script to combine IPL with boot image for the EDOSK7780" href="reloadable_ifs.html#Combine"/>
+            <topic label="Commands to burn a new IPL/Boot image for the EDOSK7780" href="reloadable_ifs.html#Burn"/>
+          </topic>
+      </topic>
+      <topic label="Filesystems and Power Failures" href="fsys_fault_tolerance.html">
+          <topic label="Introduction" href="fsys_fault_tolerance.html#Introduction"/>
+          <topic label="Guidelines for using hard drives in an environment subject to abrupt power failures" href="fsys_fault_tolerance.html#Guidelines"/>
+          <topic label="Recipe for creating hard drive corruption" href="fsys_fault_tolerance.html#Corruption"/>
+          <topic label="How to limit the possible hard drive corruption" href="fsys_fault_tolerance.html#Limiting_corruption"/>
+          <topic label="How to repair hard disk corruption" href="fsys_fault_tolerance.html#Repairing"/>
+          <topic label="Power failures while writing" href="fsys_fault_tolerance.html#Writing"/>
+      </topic>
+      <topic label="Customizing language sort orders for libqdb_cldr.so" href="libqdb_cldr.html">
+            <topic label="Standard language sort order files" href="libqdb_cldr.html#coll_default"/>
+            <topic label="Sort order algorithm" href="libqdb_cldr.html#coll_alg">
+              <topic label="Contractions and expansions" href="libqdb_cldr.html#unicode_also"/>
+              <topic label="Locale data files" href="libqdb_cldr.html#coll_files"/>
+            </topic>
+            <topic label="Adding a new sort order locale" href="libqdb_cldr.html#coll_add">
+                <topic label="Converting CLDR POSIX files" href="libqdb_cldr.html#convert"/>
+            </topic>
+            <topic label="Tailoring a sort order algorithm" href="libqdb_cldr.html#coll_tailor"/>
+      </topic>
+</toc>

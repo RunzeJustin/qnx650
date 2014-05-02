@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="QNX Usage, Licensing, and Copyright Information"
+     topic="topic/coverpage.html">
+   <topic label="Usage information" href="topic/about.html">
+      <topic label="Typographical conventions" href="topic/conventions.html"/>
+      <topic label="Technical support" href="topic/tech_sup.html"/>
+   </topic>
+   <topic label="Copyright information" href="topic/copyright_overview.html">
+      <topic label="QNX Momentics IDE User's Guide" href="topic/ide_copyright.html"/>
+      <topic label="Phindows User's Guide" href="topic/phindows_copyright.html"/>
+   </topic>
+   <topic label="Licensing information" href="topic/ic_licensing_coverpage.html"/>
+</toc>

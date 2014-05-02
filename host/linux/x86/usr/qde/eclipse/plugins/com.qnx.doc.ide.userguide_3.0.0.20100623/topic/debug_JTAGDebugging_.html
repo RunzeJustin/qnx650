@@ -1,0 +1,251 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Using JTAG debugging" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_Base_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_debug_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_control_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_more_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGAbtron_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGAbtronPrerequisites_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGAbtronConnectToHost_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGAbtronFirmwareUpdate_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGAbtronConnectToTarget_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGAbtronBuildImage_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGAbtronCreateLaunchConfig_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGAbtronDebugStartup_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGNeutrino_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGNeutInstTrace32Prereq_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGNeutInstTrace32sw_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGNeutInstTrace32pi_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGNeutConnectTrace32_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGNeutConfigTrace32_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGNeutCreateLaunchConfig_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGNeutCreateStartup_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_Create_Multicore_Launch_Configs.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGNeutUsing_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGMacraigor_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGMacgPrerequisites_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGMacgInstHWSupptPkg.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGMacgConnectToHost_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGMacgConnectToTarget_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGMacgStartOCDRemote_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGMacgBuildImage_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGMacgCreateLaunchConfig_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGMacgDebugStartup_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="UsingJTAGdebugging" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Using JTAG debugging</title>
+   </head>
+   <body id="UsingJTAGdebugging"><a name="UsingJTAGdebugging" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Using JTAG debugging</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>JTAG debuggers use a connector to write an image directly into RAM, setting the machine to the start address, and then resuming
+            the processor. The launch configurations for a JTAG device let you select which image to use (the supported types are ELF
+            and SRecord).
+            
+            
+         </p>
+         
+         
+         <p>The QNX Momentics IDE supports the <a href="debug_JTAGAbtron_.html" shape="rect">JTAG: Using the Abatron BDI2000 JTAG Debugger with a QNX Neutrino kernel image</a>. Each of these debuggers (each of which has an associated launch configuration type) writes a QNX Neutrino image directly
+            into RAM in a slightly different way:
+            
+            
+         </p>
+         
+         <br clear="none" /><ul>
+            <li>For the Abatron BDI2000 Debugger, the default GDB Hardware Debugging contains the <tt>init</tt> commands dialog. From this dialog, 
+               you can browse the filesystem to select an image (using the Automatically load image dialog.)
+            </li>
+            <li>The Lauterbach Trace32 In-Circuit Debugger requires you to write a startup script in a specialized scripting language, called
+               <tt>PRACTICE</tt>, to provide all of the setup. In particular, loading the image is done through the <tt>Data.load.&lt;<var class="varname">type</var>&gt; &lt;<var class="varname">file</var>&gt; &lt;<var class="varname">addr</var>&gt;</tt> command. In addition, the Lauterbach device has its own plugin that adds a Trace32 Debugger launch configuration type to
+               the debug dialog. 
+            </li>
+            <li>For the Macraigor Usb2Demon device, the debugger also uses the default GDB Hardware Debugging that contains a textbox for
+               <tt>init</tt> commands to use with GDB, where you type the GDB command <tt>restore &lt;<var class="varname">file</var>&gt; &lt;<var class="varname">addr</var>&gt;</tt> and the launcher would execute this command before passing control of the debugger over to the IDE. In addition, the Macraigor
+               Usb2Demon Debugger sends GDB commands to a process called <tt>OCDremote()</tt> that converts them into JTAG commands, which are then understood by the JTAG device.
+            </li>
+         </ul>
+         
+         
+         <p>
+            <strong>Updates to the launch configuration types</strong>
+            
+         </p>
+         
+         
+         <p>These launch configuration types are used for JTAG debugging in the IDE:
+            
+            
+         </p>
+         
+         <br clear="none" /><ul>
+            <li><span class="uicontrol">GDB Hardware Debugging</span>
+               — currently included as part of the IDE application, and is used by the Abatron BDI2000 Debugger and the Macraigor Usb2Demon
+               Debugger 
+            </li>
+            <li><span class="uicontrol">Lauterbach Trace32 Debugger</span>
+               — an optional plugin that you can install (see <a href="debug_JTAGNeutInstTrace32pi_.html" shape="rect">Installing the Lauterbach Trace32 Eclipse plug-in software</a>)
+            </li>
+         </ul>
+         
+         
+         <p>
+            <strong>Updates to the Debug perspective</strong>
+            
+         </p>
+         
+         
+         <p>In the IDE, the Debug perspective includes buttons to control the processor state through the JTAG device. These buttons start,
+            reset, and halt the device, and link to the corresponding GDB commands for the Abatron and Macraigor devices, and the corresponding
+            <tt>PRACTICE</tt> command for the Lauterbach Trace32 Debugger. 
+         </p>
+         
+         
+         <p>The Lauterbach Trace32 In-Circuit Debugger plugin don't include a Debug perspective; it launches its own Trace32 software
+            that contains its own buttons for performing actions. 
+         </p>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <ul class="ullinks">
+            <li class="ulchildlink"><strong><a href="../topic/debug_JTAGAbtron_.html" shape="rect">JTAG: Using the Abatron BDI2000 JTAG Debugger with a QNX Neutrino kernel image</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_JTAGAbtronPrerequisites_.html" shape="rect">Prerequisites</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_JTAGAbtronConnectToHost_.html" shape="rect">Connecting the Abatron BDI2000 JTAG Debugger to your host</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_JTAGAbtronFirmwareUpdate_.html" shape="rect">Updating the Abatron firmware</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_JTAGAbtronConnectToTarget_.html" shape="rect">Connecting the Abatron BDI2000 Debugger to your target</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_JTAGAbtronBuildImage_.html" shape="rect">Building a system image</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_JTAGAbtronCreateLaunchConfig_.html" shape="rect">Creating a launch configuration</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_JTAGAbtronDebugStartup_.html" shape="rect">Debugging the startup binary</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_JTAGNeutrino_.html" shape="rect">JTAG: Using the Lauterbach Trace32 In-Circuit Debugger with a QNX Neutrino kernel image</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_JTAGNeutInstTrace32Prereq_.html" shape="rect">Prerequisites</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_JTAGNeutInstTrace32sw_.html" shape="rect">Installing the Lauterbach Trace32 In-Circuit Debugger software</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_JTAGNeutInstTrace32pi_.html" shape="rect">Installing the Lauterbach Trace32 Eclipse plug-in software</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_JTAGNeutConnectTrace32_.html" shape="rect">Connecting the Lauterbach Trace32 In-Circuit Debugger</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_JTAGNeutConfigTrace32_.html" shape="rect">Configuring the Lauterbach Trace32 In-Circuit Debugger</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_JTAGNeutCreateLaunchConfig_.html" shape="rect">Creating a launch configuration for the target hardware</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_JTAGNeutCreateStartup_.html" shape="rect">Creating a startup script for the Lauterbach Trace32 In-Circuit software</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_Create_Multicore_Launch_Configs.html" shape="rect">Creating multicore launch configurations</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_JTAGNeutUsing_.html" shape="rect">Using the debugger</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_JTAGMacraigor_.html" shape="rect">JTAG: Using the Macraigor Usb2Demon Debugger with a QNX Neutrino kernel image</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_JTAGMacgPrerequisites_.html" shape="rect">Prerequisites</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_JTAGMacgInstHWSupptPkg.html" shape="rect">Installing the Macraigor hardware support package</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_JTAGMacgConnectToHost_.html" shape="rect">Connecting the Macraigor Usb2Demon Debugger to your host</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_JTAGMacgConnectToTarget_.html" shape="rect">Connecting the Macraigor Usb2Demon Debugger to your target</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_JTAGMacgStartOCDRemote_.html" shape="rect">Starting the OCDremote</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_JTAGMacgBuildImage_.html" shape="rect">Building a system image</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_JTAGMacgCreateLaunchConfig_.html" shape="rect">Creating a launch configuration</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_JTAGMacgDebugStartup_.html" shape="rect">Debugging a startup binary</a></strong><br clear="none" />
+               
+            </li>
+         </ul>
+         
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/debug_Base_.html" shape="rect">Debugging in the IDE</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/debug_control_.html" shape="rect">Controlling your debug session</a></div>
+            
+            <div><a href="../topic/debug_more_.html" shape="rect">More debugging features</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/debug_debug_.html" shape="rect">Debugging your program (building an executable for debugging)</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin id="com.qnx.doc.language_sup"
+    name="QNX Photon microGUI Multilingual Input"
+    version="3.1.0.20120626"
+    provider-name="QNX Software Systems Limited">
+
+    <extension point="org.eclipse.help.toc">
+      <toc file="toc.xml" primary="true" />
+      <index path="index"/>
+   </extension>
+
+    <extension point="org.eclipse.help.toc">
+      <toc file="../com.qnx.doc.language_sup_cpim_ch/toc.xml" />
+      <toc file="../com.qnx.doc.language_sup_cpim_en/toc.xml" />
+      <toc file="../com.qnx.doc.language_sup_vpim_ja/toc.xml" />
+      <toc file="../com.qnx.doc.language_sup_vpim_en/toc.xml" />
+      <toc file="../com.qnx.doc.language_sup_kpim_ko/toc.xml" />
+      <toc file="../com.qnx.doc.language_sup_kpim_en/toc.xml" />
+   </extension>
+</plugin>

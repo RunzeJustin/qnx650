@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cheatsheet title="Memory Analysis Tool" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="cheatsheet" xsi:schemaLocation="cheatsheet contentFile.xsd">
+  <intro href="/com.qnx.doc.ide.userguide/topic/memory_Understand_And_Debug.html">
+    <description>
+      Welcome to the "Memory Analysis" tutorial. It will help you to create a sample project and run
+      the QNX Memory Analysis tool to find memory leaks and memory errors in this application. Click the
+      following link to start.
+    </description>
+  </intro>
+  <item href="/org.eclipse.platform.doc.user/reference/ref-cheatsheets.htm" title="Cheat Sheet introduction">
+  <description>If you need information about how to work with cheat sheets,
+   click on the button with the question mark on the right. 
+   To see the contents of the next instruction,
+   you must complete all tasks by 
+   clicking on "Click to Complete", or by performing the 
+   auto-complete command.</description>
+  </item>
+  <item title="Create a Sample Project for Memory Analysis" dialog="true">
+    <description>
+      If you have previously created the sample Memory Analysis project, skip this step.
+      <br />
+      To create the sample project for Memory Analysis, perform the following steps:
+    </description>
+    <subitem
+      label='Select "File-&gt;New-&gt;Project..." from the main menu. In the resulting "New Project" dialog box, expand the "Examples" category, then "QNX IDE Examples", and then select "QNX Example Project - Detecting Runtime Errors".'
+      >
+      
+      <command
+        serialization="org.eclipse.ui.newWizard(newWizardId=com.qnx.tools.ide.momentics.examples.wizards.3)" 
+        confirm="true"/>
+    </subitem>
+    <subitem label='Click "Next", and then click "Finish".' />
+        <subitem
+      label='Repeat the process to create the sample project: "QNX Example Project - Inspecting Allocations and Memory Leaks".'
+      >
+      
+      <command
+        serialization="org.eclipse.ui.newWizard(newWizardId=com.qnx.tools.ide.momentics.examples.wizards.9)" 
+        confirm="true"/>
+    </subitem>
+    <onCompletion>You have now created the &quot;MemoryErrors&quot; and &quot;MemoryLeak&quot; projects.</onCompletion>
+  </item>
+  <item title="Detecting Runtime Errors">
+    <description>
+      The following steps will guide you through the process of running an application with runtime error detection tooling.
+    </description>
+  </item>
+  <item title="Build the project" href="/com.qnx.doc.ide.userguide/topic/devel_BUILD_.html">
+    <description>
+      Right-click on the &quot;MemoryErrors&quot; project in the &quot;Project Explorer&quot; view,
+      and then select &quot;Build Project&quot; from the dropdown menu.
+    </description>
+    <onCompletion>
+      You should now have the &quot;MemoryErrors&quot; executable in the &quot;Binaries&quot; folder.
+    </onCompletion>
+  </item>
+  <item title="Create a new launch configuration and run the application on the target" dialog="true"
+    href="/com.qnx.doc.ide.userguide/topic/devel_RUN_.html">
+    <description>
+      To launch the &quot;MemoryErrors&quot; executable with &quot;Memory Analysis Tooling&quot;, perform the
+      following steps:
+    </description>
+    <subitem
+      label="Right-click on the &quot;MemoryErrors_g&quot; executable in the &quot;Binaries&quot; folder, and then select &quot;Run As-&gt;C/C++ QNX Application Dialog...&quot;." />
+    <subitem label="On the &quot;Main&quot; tab, select the target you want to run the program on." />
+    <subitem label="Switch to the &quot;Tools&quot; tab." />
+    <subitem label="Click &quot;Add/Delete Tool...&quot;." />
+    <subitem
+      label="Select the &quot;Memory Analysis&quot; checkbox, and then click &quot;OK&quot;." />
+    <subitem label="Select the &quot;Switch to this tool's perspective on launch&quot; checkbox." />
+    <subitem label="Click &quot;Run&quot; to run the application." />
+    <onCompletion>Now, you have launched the application. Let it run for several seconds.</onCompletion>
+  </item>
+  <item title="Navigate through the memory errors" href="/com.qnx.doc.ide.userguide/topic/memory_Base_.html">
+    <description>
+      To view and navigate through the memory errors, perform the following steps:
+    </description>
+    <subitem
+      label="Click the &quot;MemoryErrors_g&quot; session in the &quot;Session View&quot;." />
+    <subitem label="Switch to the &quot;Memory Problems&quot; view." />
+    <subitem 
+      label="Double-click on a row in the Problems table. The IDE opens the code editor and positions the cursor at or near the line for the selected error." />
+    <subitem
+      label="The IDE populates the Memory Backtrace view with a backtrace of where it detected the error. This example has two backtraces: detected (where the error was detected) and allocated (where the memory involved in the violation was allocated). Double-click on the trace element of the allocated backtrace to navigate to the code that allocated the memory." />
+  </item>
+  <item title="Inspecting Allocations and Memory Leaks">
+    <description>Now we&apos;ll use the "MemoryLeak" project to see how to use the Memory Analysis tool to inspect allocations and detect memory leaks.</description>
+      <subitem
+        label="Build the project and create a launch configuration, and launch as described above, but for the MemoryLeak_g binary. On the &quot;Tools&quot; tab in the Launch Configuration, for the &quot;Memory Snapshots&quot; category, change the value of &quot;Perform snapshot every (ms)&quot; to 5000. This is to allow the snapshot to be taken more frequently so we can capture &quot;Bins&quot; and &quot;Bands&quot; events." />
+    <subitem label="Open the &quot;MemoryLeak_g&quot; session by double clicking on it." />
+    <subitem label="This editor keeps refreshing itself while the program is running; to stop this, press the &quot;Prevent Auto-refresh&quot; button at the top of the editor." />
+    
+    <subitem label="At the bottom of the Allocations page, you can see the Memory Allocation and Deallocation events chart." />
+
+    <subitem label="Select a region between event 46 and 56 by dragging the mouse in the middle of the chart." />
+    <subitem label="The Details chart at the top is updated to show approximately 11 events." />
+    <subitem label="Open the Memory Events view. It should show the same 11 events, but in a table format."/>
+    <subitem label="Each allocation event in the table has an icon that shows if this allocation has a corresponding deallocation or not (a check mark means it has one). Find one with a check mark and right-click on the event. You will see a &quot;Find matching event&quot; menu. Select it. You will be placed on a matching deallocation event." />
+    <subitem label="Icons without check mark signify a potential memory leak, but could also represent a memory object with a long life. To determine which, check the &quot;Memory Problems&quot; tab."/>
+
+    
+    <subitem label="Now, switch to the &quot;Memory Problems&quot; tab at the bottom. If your application has terminated, you can see any memory leaks in this view. In general, an application does not have to be terminated for you to see them; you can change the leak collection behavior in the launch configuration." />
+    <subitem label="You should observe many leak items for this example. Double-click on one of them to see where the memory was allocated in the code." />
+  
+  </item>
+    <item title="Inspecting Bins, Bands and Memory Usage">
+    <description>For advanced memory inspection and optimization, you can use Bins, Bands, and Usage pages, or the editor.</description>
+        <subitem
+          label="Now, switch to the &quot;Bins&quot; or &quot;Bands&quot; page of the editor to inspect the memory allocation details for each memory bin and band.">
+    </subitem>
+    <subitem
+      label="A band is a memory block of the band allocator. You can see how your memory is physically allocated. The band allocator is associated with better performance, but increased overhead. You can tune the band size for the allocator to improve overhead. To check the overhead, switch to the Usage page.">
+    </subitem>
+    <subitem
+          label="A bin is a user-defined memory block; the allocator can collect statistics about the usage of these blocks. You can define bin sizes in the Launch Configuration for the Memory Analysis tool.">
+    </subitem>
+      <onCompletion>Now you have successfully run an application with memory analysis tooling, and you know how to inspect memory allocation, find leaks, and detect runtime errors.</onCompletion>
+    </item>
+
+</cheatsheet>

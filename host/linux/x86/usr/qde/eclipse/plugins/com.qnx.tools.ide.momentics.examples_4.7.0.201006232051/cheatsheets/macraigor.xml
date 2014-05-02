@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cheatsheet title="Macraigor Cheat Sheet">
+   <intro href="/com.qnx.doc.ide.userguide/topic/debug_JTAGMacraigor_.html">
+      <description>
+         This cheat sheet will walk you through the process of installing, configuring, and using the Macraigor Usb2Demon Debugger with a QNX Neutrino kernel image.
+      </description>
+   </intro>
+   <item title="Hardware Check" dialog="true" skip="false" href="/com.qnx.doc.ide.userguide/topic/debug_JTAGMacgPrerequisites_.html">
+      <description>
+         The Macraigor JTAG devices are among the smallest and most compact debuggers available. The only required hardware is:<br/><br/>
+
+• Macraigor Usb2Demon debugger<br/>
+• USB cable<br/>
+      </description>
+   </item>
+   <item title="Software Check" dialog="true" skip="false" href="/com.qnx.doc.ide.userguide/topic/debug_JTAGMacgInstHWSupptPkg.html">
+      <description>
+         Although the Macraigor has very light hardware requirements, it does depend on a large amount of software. On the host machine, ensure you have installed: <br/><br/>
+
+• Cygwin environment (containing libexpat and make)<br/>
+• Sun Java Runtime <br/>
+• Macraigor hw_support package containing the OCD Remote utility<br/>
+• QNX Momentics IDE <br/>
+      </description>
+   </item>
+   <item title="Connecting the Macraigor Usb2Demon to your host" dialog="true" skip="false" href="/com.qnx.doc.ide.userguide/topic/debug_JTAGMacgConnectToHost_.html">
+      <description>
+         Connect one end of the provided USB cable into the Usb2Demon device, and the other end into a USB port on your host machine. If all of the required software has already been installed, Windows should recognize it as a Macraigor Device, and the green LED on the Usb2Demon should come on.
+      </description>
+   </item>
+   <item title="Connecting the Macraigor Usb2Demon to your target" dialog="true" skip="false" href="/com.qnx.doc.ide.userguide/topic/debug_JTAGMacgConnectToTarget_.html">
+      <description>
+         Connect the JTAG cable into the JTAG port of your target machine. The JTAG port may also be labelled &quot;COP&quot; or &quot;RISCWATCH&quot; depending on the hardware.
+      </description>
+   </item>
+   <item title="Starting OCDremote" dialog="true" skip="false" href="/com.qnx.doc.ide.userguide/topic/debug_JTAGMacgStartOCDRemote_.html">
+      <description>
+         In this step, we will start OCDremote listening on a local port for incoming GDB client connections. OCDremote is a server that translates incoming gdb commands into instructions understood by the JTAG device.
+      </description>
+      <subitem label="Obtain the appropriate flags for your JTAG device, USB port, and target board. A complete reference can be found in Appendix A of the &quot;Using Macraigor JTAG/BDM Devices with Eclipse and the Macraigor GNU Tools Suite on Windows Hosts&quot; documentation by Macraigor." skip="false">
+      </subitem>
+      <subitem label="As an External Tool in Eclipse, or from the command line, start OCDremote on a local port, such as 8888." skip="false">
+      </subitem>
+   </item>
+   <item title="Building a System Image" dialog="true" skip="false" href="/com.qnx.doc.ide.userguide/topic/debug_JTAGMacgBuildImage_.html">
+      <description>
+         In this step, we will use the Momentics IDE to build an image file that can be loaded onto the target board, and debugged by the Usb2Demon.
+      </description>
+      <subitem label="Download a BSP (Board Support Package) corresponding to your target hardware. You can find BSPs for a wide variety of architectures from the QNX Foundry27 BSP Directory at http://community.qnx.com/sf/wiki/do/viewPage/projects.bsp/wiki/BSPAndDrivers . Make sure you download a version of the BSP installer appropriate for your host machine as well." skip="false">
+      </subitem>
+      <subitem label="Install the BSP downloaded in the previous step." skip="false">
+      </subitem>
+      <subitem label="Launch the QNX Momentics IDE and switch to the &quot;System Builder&quot; perspective." skip="false">
+      </subitem>
+      <subitem label="In the &quot;System Builder Projects&quot; view, right-click and select &quot;Import&quot;. Choose &quot;QNX -&gt; QNX Board Support Package&quot; as an import source." skip="false">
+         <command serialization="org.eclipse.ui.file.import" confirm="false">
+         </command>
+      </subitem>
+      <subitem label="Select the recently-installed BSP as the package to import, and click &quot;Finish&quot;. If you are asked whether you would like to build the project now, select &quot;Yes.&quot; Wait for the build to finish before proceeding. It may take several minutes." skip="false">
+      </subitem>
+      <subitem label="Open the project.bld file from the System Builder Projects view, and from the new view that appears, select the image that corresponds to your board. In the Properties view on the right, ensure that the &quot;Create startup sym file?&quot; property is set to Yes, and that the &quot;Boot file&quot; type is set to &quot;elf&quot;. Also, make note of the &quot;Image Address&quot; value, as it will be needed later." skip="false">
+      </subitem>
+      <subitem label="Open the Project Explorer view. There will be a project whose name ends in &quot;_libstartup&quot;. Right-click that project and select &quot;Properties&quot;. From the menu on the left, select &quot;QNX C/C++ Project&quot;, and go to the &quot;Compiler&quot; tab. Here, ensure that the Optimization level is set to &quot;No optimize&quot;, and add &quot;-g&quot; to the end of the &quot;Other Options&quot; text box. Sometimes you have to specify a &quot;-O0&quot; in the &quot;Other Options&quot; text box in order to overwirte the macros defined which could contain optimization. Press &quot;OK&quot; and when asked if you would like to rebuild the C++ project, click &quot;Yes&quot; and wait for the build to finish." skip="false">
+      </subitem>
+      <subitem label="Return to the System Builder Projects view and rebuild the image by right-clicking on the project and selecting &quot;Build Project&quot;. In the Console view, you will see some output. Scroll up and find a line that looks like:  &quot;30280   c188    32334      --- startup-walnut.sym&quot;   (the exact numerical values and filename will differ, but it will be the only line ending in &quot;.sym&quot;). Note the first and third numerical values on this line, as they will be needed later on." skip="false">
+      </subitem>
+      <subitem label="In the System Builder Projects view, there should be an &quot;Images&quot; directory. Expand it. It should contain a .elf file and a .sym file. If so, we now have the Neutrino image ready to be  uploaded and debugged." skip="false">
+      </subitem>
+   </item>
+   <item title="Creating a Launch Configuration" dialog="true" skip="false" href="/com.qnx.doc.ide.userguide/topic/debug_JTAGMacgCreateLaunchConfig_.html">
+      <description>
+         In this step, we will create a debug configuration in the Momentics IDE that will allow us to easily upload the image into the target board&apos;s RAM and debug it through the JTAG pins.
+      </description>
+      <subitem label="In the Images directory in the System Builder Projects view, right-click on the .elf file and select &quot;Debug-&gt;Open Debug Dialog...&quot;" skip="false">
+      </subitem>
+      <subitem label="Create a new instance of the &quot;GDB Hardware Debugging&quot; debug configuration. In the &quot;Main&quot; tab, fill in the name of the -libstartup project as the Project, and select the .elf file as the C/C++ Application." skip="false">
+      </subitem>
+      <subitem label="Switch to the &quot;Debugger&quot; tab." skip="false">
+      </subitem>
+      <subitem label="Change the &quot;GDB Command:&quot; field to the path to a gdb debugger appropriate for your target architecture (for instance, ntoppc-gdb.exe)." skip="false">
+      </subitem>
+      <subitem label="Check the &quot;Use remote target&quot; checkbox, ensure that the &quot;JTAG Device&quot; combo box is set to &quot;Macraigor USB2Demon&quot;, and verify the &quot;Host name or IP address&quot; textbox to the IP address assigned to the USB2Demon device. It is usually &quot;localhost&quot; if you run OCD Remote at the same machine from where you launch the debugging. The port number, unless you have manually changed it, is 8888." skip="false">
+      </subitem>
+      <subitem label="Switch to the &quot;Startup&quot; tab." skip="false">
+      </subitem>
+      <subitem label="Check the &quot;Reset and Delay (seconds):&quot; checkbox, enter an integer representing the number of seconds to wait  between resetting the target board and halting it to send the image. You should give it enough time to bring up all the hardware. 3 seconds is a safe bet here." skip="false">
+      </subitem>
+      <subitem label="Check the &quot;Halt&quot; checkbox to stop the target in order to start sending image." skip="false">
+      </subitem>
+      <subitem label="If there are any monitor commands you would like to execute before sending image to the target, input those commands in the textbox, seperated those commands by newlines, making sure to prefix them with the keyword &quot;monitor&quot; and a space. You do not need to add commands to restart or halt the board here, as that is done automatically." skip="true">
+      </subitem>
+      <subitem label="Check the &quot;Load image&quot; checkbox, and browse to the location of the .elf file in the textbox below. In the image offset field, enter the number previously noted in the Properties view of the System Builder project." skip="false">
+      </subitem>
+      <subitem label="Check the &quot;Load symbols&quot; checkbox, and browse to the location of the .sym file in the textbox below. In the symbol offset field, enter the value in the first column in the console output noted earlier." skip="false">
+      </subitem>
+      <subitem label="Check the &quot;Set program counter at (hex)&quot; checkbox and enter the value in the third column of the console output noted earlier." skip="false">
+      </subitem>
+      <subitem label="Check the &quot;Set breakpoint at:&quot; checkbox and enter the name of the function you want to set the initial break point, for example _main" skip="false">
+      </subitem>
+      <subitem label="Check the &quot;Resume:&quot; checkbox" skip="false">
+      </subitem>
+      <subitem label="In the &quot;Run Commands&quot; textbox, enter any GDB commands you would like to have automatically executed after the image and symbols have been successfully uploaded to the target. For example, you can have the &quot;si&quot; command at the end of this box in order to start stepping." skip="false">
+      </subitem>
+      <subitem label="We are now done configuring the debug configuration. You may click &quot;Apply&quot; and begin debugging." skip="false">
+      </subitem>
+   </item>
+   <item title="Debugging Startup" dialog="true" skip="false" href="/com.qnx.doc.ide.userguide/topic/debug_JTAGMacgDebugStartup_.html">
+      <description>
+         In this step, we will be debugging the startup binary of the Neutrino image using Momentics&apos; Debug perspective.
+      </description>
+      <subitem label="The previous step should have automatically opened the Debug perspective. If it has not, switch to it now." skip="true">
+      </subitem>
+      <subitem label="The first thing you will notice is that the target board has been automatically restarted. After waiting a certain number of seconds as specified in the &quot;Reset and Delay (seconds):&quot; checkbox in the Startup tab of the debug configuration, Momentics will begin uploading the image to the target through the JTAG pins." skip="false">
+      </subitem>
+      <subitem label="Once the image has been succesfully uploaded, startup will commence until it hits a breakpoint." skip="false">
+      </subitem>
+      <subitem label="Once it hits a breakpoint, you will see several things at once. In the top-left portion of the debug perspective, you will see a stack trace for the current location of the code. It will appear to be shallower than the stack traces one usually sees, because our code is not running in a complicated environment, but rather directly on the hardware.  To the right you will see a Registers view, which can be expanded to display all of the processor registers on the target board, and their contents over time. While stepping, register rows will change color to indicate a changed value. You can also select the &quot;variables&quot; tab here to view the value of local and global variables for which symbols exist.  Under these you will see the code view and disassembly view. The disassembly view will incorporate the source code into its display, allowing you to easily see which machine instructions correspond to which lines of code." skip="false">
+      </subitem>
+      <subitem label="In either the code view or the disassembly view, you can set and remove breakpoints by double-clicking on the margin. You can use the step and continue tools at the top of the screen to resume execution." skip="false">
+      </subitem>
+   </item>
+   <item title="Finishing Up" dialog="true" skip="false">
+      <description>
+         Once you have completed your debugging session, you should remove all breakpoints and click the &quot;Continue&quot; button to let startup finish booting up. A quick look at the serial console will show a fully-booted Neutrino image.
+
+
+Congratulations! You have succesfully debugged your program using the Macraigor USB2Demon JTAG Debugger!
+      </description>
+   </item>
+</cheatsheet>

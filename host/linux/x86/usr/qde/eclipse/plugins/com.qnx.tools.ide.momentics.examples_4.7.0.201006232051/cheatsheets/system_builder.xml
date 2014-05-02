@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cheatsheet title="System Builder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="cheatsheet" xsi:schemaLocation="cheatsheet contentFile.xsd">
+  <intro href="/com.qnx.doc.ide.userguide/topic/builder_Base_.html">
+    <description>
+      Welcome to the "QNX System Builder" tutorial. QNX "System Builder" is used to create OS and
+      Flash images for your target.
+    </description>
+  </intro>
+  <item href="/org.eclipse.platform.doc.user/reference/ref-cheatsheets.htm" title="Cheat Sheet introduction">
+  <description>If you need information about how to work with cheat sheets,
+   click on the  button with the question mark on the right. 
+   To see the contents of the next instruction,
+   you must complete all tasks by 
+   clicking on "Click to Complete", or by performing the 
+   auto-complete command.</description>
+  </item>
+  <item title='Create a "System Builder" project' dialog="true" href="/com.qnx.doc.ide.userguide/topic/builder_CREATE_.html">
+    <description>
+      In this exercise we create a system image for an x86 target. First, we need to create a project.
+    </description>
+    <subitem
+      label='Open "File->New->Other...". Expand "QNX". Select "QNX System Builder Project".'>
+      <command serialization="org.eclipse.ui.newWizard(newWizardId=QNXSystemBuilderProject)"
+        confirm="true" />
+    </subitem>
+    <subitem label='Enter the name for this project "image-x86" (type this exact name). Click "Next".'>
+    </subitem>
+  </item>
+  <item title="Select an existing build file">
+    <description>
+      Click "Browse" and select an existing build file from the installation of "QNX Momentics". 
+      For example "$QNX_TARGET/x86/boot/build/qnxbase.build". Click "Finish". Your
+      perspective would switch to the "QNX System Builder" perspective.
+    </description>
+  </item>
+  <item title="Browse an image" >
+    <description>
+      You can look at the build file in a "QNX System Builder Editor". Click on the "qnxbase" image
+      to see a file system which would be built on the right.
+    </description>
+  </item>
+  <item title="Open a script file"
+    href="/com.qnx.doc.ide.userguide/topic/builder_INTROBININSPECT_.html">
+    <description>
+      You can look at startup script by opening file "qnxbase.bsh" from the "System Builder
+      Projects" view (double click).
+    </description>
+    <command serialization="org.eclipse.ui.navigate.openResource(filePath=/image-x86/qnxbase.bsh)"
+      confirm="true" />
+  </item>
+  <item title="Making changes: Add a binary" dialog="true"
+    href="/com.qnx.doc.ide.userguide/topic/builder_MANAGEIMAGES_.html">
+    <description>We want to add another binary in the boot image.</description>
+    <subitem
+      label='Switch back to the editor (double-click on "project.bld" file from "System Builder Projects" view).'>
+    </subitem>
+    <subitem label='Click the "Add Binary" button in the editor.'></subitem>
+    <subitem label='Find the "zip" executable from the "Files Found in the Search Path" list, usually located at "$QNX_TARGET/x86/usr/bin/zip"'></subitem>
+    <subitem label='Click "Ok".'></subitem>
+    <onCompletion>You should see "zip" appeared in the "Binaries sub-folder of the "qnxbase" tree for "Images" panel.</onCompletion>
+  </item>
+  <item title="Making changes: Change the property" dialog="true" href="/com.qnx.doc.ide.userguide/topic/builder_IMAGEPROPS_.html">
+    <description>
+      You can also change some properties for the build image. For example, turn on/off kernel logging
+      possibility.
+    </description>
+    <subitem label='Select the "qnxbase" target in the editor.'></subitem>
+    <subitem label='Locate the "Procnto" property In the "Properties" view'></subitem>
+    <subitem
+      label='Click on the empty space at the end of second column; a drop-down menu will appear.'>
+    </subitem>
+    <subitem label='Select "procnto" from this drop-down list.'></subitem>
+  </item>
+  <item title="Building from the IDE"
+    href="/com.qnx.doc.ide.userguide/topic/builder_BUILDOS_.html">
+    <description>
+      Now you can build your image from the IDE. 
+      Select the "qnxbase" image in the editor, and click
+      the "Build Selected Images" button.
+    </description>
+  </item>
+  <item title="Exporting the build file">
+    <description>
+      To perform your build offline, you can export a build file, and use it as an argument
+      to the command line utility mkifs.
+    </description>
+    <subitem label='Select "File->Export...".'></subitem>
+    <subitem label='Expand the "Other" folder.'></subitem>
+    <subitem label='Select "System Builder Project to Mkxfs Build File(s)"'></subitem>
+    <subitem label='Select an output directory and click "Finish".'></subitem>
+  </item>
+</cheatsheet>

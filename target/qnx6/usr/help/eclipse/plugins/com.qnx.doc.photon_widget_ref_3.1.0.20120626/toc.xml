@@ -1,0 +1,2245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Widget Reference">
+      <topic label="About This Reference" href="about.html">
+          <topic label="What you'll find in this guide" href="about.html#In_this_guide"/>
+          <topic label="Typographical conventions" href="about.html#Typographical_conventions">
+            <topic label="Note to Windows users" href="about.html#WINDOWSNOTE"/>
+            <topic label="Navigation buttons" href="about.html#Navigation"/>
+          </topic>
+          <topic label="Technical support" href="about.html#Support"/>
+      </topic>
+      <topic label="Global Data Structures" href="datastruct.html">
+          <topic label="PtBalloonCallback_t" href="ptballooncallback_t.html">
+            <topic label="Description:" href="ptballooncallback_t.html#id5"/>
+          </topic>
+          <topic label="PtCallback_t" href="ptcallback_t.html">
+            <topic label="Description:" href="ptcallback_t.html#id5">
+              <topic label="Callback functions" href="ptcallback_t.html#id7"/>
+            </topic>
+          </topic>
+          <topic label="PtCallbackInfo_t" href="ptcallbackinfo_t.html">
+            <topic label="Description:" href="ptcallbackinfo_t.html#id5"/>
+          </topic>
+          <topic label="PtHotkeyCallback_t" href="pthotkeycallback_t.html">
+            <topic label="Description:" href="pthotkeycallback_t.html#id5"/>
+          </topic>
+          <topic label="PtRawCallback_t" href="ptrawcallback_t.html">
+            <topic label="Description:" href="ptrawcallback_t.html#id5"/>
+          </topic>
+      </topic>
+      <topic label="Widgets" href="widgets.html">
+          <topic label="Widget hierarchy" href="widgets.html#WidgetHierarchy"/>
+          <topic label="Widget icons in PhAB" href="widgets.html#PhABIcons"/>
+          <topic label="What's in a widget description?" href="widgets.html#WidgetDescription">
+              <topic label="Class hierarchy" href="widgets.html#id6"/>
+              <topic label="PhAB icon" href="widgets.html#id8"/>
+              <topic label="Public header" href="widgets.html#id10"/>
+              <topic label="Description" href="widgets.html#id12"/>
+              <topic label="New resources" href="widgets.html#RESOURCES"/>
+              <topic label="Inherited resources" href="widgets.html#INHERITED"/>
+              <topic label="Convenience functions" href="widgets.html#id16"/>
+          </topic>
+        <topic label="PtArc" href="ptarc.html">
+            <topic label="Class hierarchy:" href="ptarc.html#id3"/>
+            <topic label="PhAB icon:" href="ptarc.html#id5"/>
+            <topic label="Public header:" href="ptarc.html#id7"/>
+            <topic label="Description:" href="ptarc.html#id9"/>
+            <topic label="New resources:" href="ptarc.html#NRESOURCES">
+              <topic label="Pt_ARG_ARC_END" href="ptarc.html#Pt_ARG_ARC_END"/>
+              <topic label="Pt_ARG_ARC_START" href="ptarc.html#Pt_ARG_ARC_START"/>
+              <topic label="Pt_ARG_ARC_TYPE" href="ptarc.html#Pt_ARG_ARC_TYPE"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptarc.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtBarGraph" href="ptbargraph.html">
+            <topic label="Class hierarchy:" href="ptbargraph.html#id3"/>
+            <topic label="PhAB icon:" href="ptbargraph.html#id5"/>
+            <topic label="Public header:" href="ptbargraph.html#id7"/>
+            <topic label="Description:" href="ptbargraph.html#id9"/>
+            <topic label="New resources:" href="ptbargraph.html#NRESOURCES">
+              <topic label="Pt_ARG_BARGRAPH_BASE" href="ptbargraph.html#Pt_ARG_BARGRAPH_BASE"/>
+              <topic label="Pt_ARG_BARGRAPH_COLOR" href="ptbargraph.html#Pt_ARG_BARGRAPH_COLOR"/>
+              <topic label="Pt_ARG_BARGRAPH_DATA" href="ptbargraph.html#Pt_ARG_BARGRAPH_DATA"/>
+              <topic label="Pt_ARG_BARGRAPH_DEPTH" href="ptbargraph.html#Pt_ARG_BARGRAPH_DEPTH"/>
+              <topic label="Pt_ARG_BARGRAPH_FLAGS" href="ptbargraph.html#Pt_ARG_BARGRAPH_FLAGS"/>
+              <topic label="Pt_ARG_BARGRAPH_GRID_COLOR" href="ptbargraph.html#Pt_ARG_BARGRAPH_GRID_COLOR"/>
+              <topic label="Pt_ARG_BARGRAPH_GRID_HORIZ" href="ptbargraph.html#Pt_ARG_BARGRAPH_GRID_HORIZ"/>
+              <topic label="Pt_ARG_BARGRAPH_GRID_VERT" href="ptbargraph.html#Pt_ARG_BARGRAPH_GRID_VERT"/>
+              <topic label="Pt_ARG_BARGRAPH_MAX" href="ptbargraph.html#Pt_ARG_BARGRAPH_MAX"/>
+              <topic label="Pt_ARG_BARGRAPH_MIN" href="ptbargraph.html#Pt_ARG_BARGRAPH_MIN"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptbargraph.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtBasic" href="ptbasic.html">
+            <topic label="Class hierarchy:" href="ptbasic.html#id3"/>
+            <topic label="PhAB icon:" href="ptbasic.html#id5"/>
+            <topic label="Public header:" href="ptbasic.html#id7"/>
+            <topic label="Description:" href="ptbasic.html#id9">
+              <topic label="Selecting widgets" href="ptbasic.html#SelectingWidgets"/>
+              <topic label="Borders and colors" href="ptbasic.html#BordersColors"/>
+            </topic>
+            <topic label="New resources:" href="ptbasic.html#NRESOURCES">
+              <topic label="Pt_ARG_BANDWIDTH_THRESHOLD" href="ptbasic.html#Pt_ARG_BANDWIDTH_THRESHOLD"/>
+              <topic label="Pt_ARG_BASIC_FLAGS" href="ptbasic.html#Pt_ARG_BASIC_FLAGS">
+                <topic label="Edge-control bits" href="ptbasic.html#EdgeControl"/>
+                <topic label="Fill-control bits" href="ptbasic.html#FillControl"/>
+                <topic label="Behavior on state change" href="ptbasic.html#StateChange"/>
+              </topic>
+              <topic label="Pt_ARG_BEVEL_COLOR" href="ptbasic.html#Pt_ARG_BEVEL_COLOR"/>
+              <topic label="Pt_ARG_BEVEL_CONTRAST" href="ptbasic.html#Pt_ARG_BEVEL_CONTRAST"/>
+              <topic label="Pt_ARG_COLOR" href="ptbasic.html#Pt_ARG_COLOR"/>
+              <topic label="Pt_ARG_CONTRAST" href="ptbasic.html#Pt_ARG_CONTRAST"/>
+              <topic label="Pt_ARG_DARK_BEVEL_COLOR" href="ptbasic.html#Pt_ARG_DARK_BEVEL_COLOR"/>
+              <topic label="Pt_ARG_DARK_FILL_COLOR" href="ptbasic.html#Pt_ARG_DARK_FILL_COLOR"/>
+              <topic label="Pt_ARG_FILL_COLOR" href="ptbasic.html#Pt_ARG_FILL_COLOR"/>
+              <topic label="Pt_ARG_FILL_PATTERN" href="ptbasic.html#Pt_ARG_FILL_PATTERN"/>
+              <topic label="Pt_ARG_HIGHLIGHT_ROUNDNESS" href="ptbasic.html#Pt_ARG_HIGHLIGHT_ROUNDNESS"/>
+              <topic label="Pt_ARG_INLINE_COLOR" href="ptbasic.html#Pt_ARG_INLINE_COLOR"/>
+              <topic label="Pt_ARG_LIGHT_BEVEL_COLOR" href="ptbasic.html#Pt_ARG_LIGHT_BEVEL_COLOR"/>
+              <topic label="Pt_ARG_LIGHT_FILL_COLOR" href="ptbasic.html#Pt_ARG_LIGHT_FILL_COLOR"/>
+              <topic label="Pt_ARG_MARGIN_HEIGHT" href="ptbasic.html#Pt_ARG_MARGIN_HEIGHT"/>
+              <topic label="Pt_ARG_MARGIN_WIDTH" href="ptbasic.html#Pt_ARG_MARGIN_WIDTH"/>
+              <topic label="Pt_ARG_OUTLINE_COLOR" href="ptbasic.html#Pt_ARG_OUTLINE_COLOR"/>
+              <topic label="Pt_ARG_STYLE" href="ptbasic.html#Pt_ARG_STYLE"/>
+              <topic label="Pt_ARG_TRANS_PATTERN" href="ptbasic.html#Pt_ARG_TRANS_PATTERN"/>
+              <topic label="Pt_CB_ACTIVATE" href="ptbasic.html#Pt_CB_ACTIVATE"/>
+              <topic label="Pt_CB_ARM" href="ptbasic.html#Pt_CB_ARM"/>
+              <topic label="Pt_CB_DISARM" href="ptbasic.html#Pt_CB_DISARM"/>
+              <topic label="Pt_CB_GOT_FOCUS" href="ptbasic.html#Pt_CB_GOT_FOCUS"/>
+              <topic label="Pt_CB_LOST_FOCUS" href="ptbasic.html#Pt_CB_LOST_FOCUS"/>
+              <topic label="Pt_CB_MENU" href="ptbasic.html#Pt_CB_MENU"/>
+              <topic label="Pt_CB_REPEAT" href="ptbasic.html#Pt_CB_REPEAT"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptbasic.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtBezier" href="ptbezier.html">
+            <topic label="Class hierarchy:" href="ptbezier.html#id3"/>
+            <topic label="PhAB icon:" href="ptbezier.html#id5"/>
+            <topic label="Public header:" href="ptbezier.html#id7"/>
+            <topic label="Description:" href="ptbezier.html#id9"/>
+            <topic label="New resources:" href="ptbezier.html#NRESOURCES">
+              <topic label="Pt_ARG_BEZIER_FLAGS" href="ptbezier.html#Pt_ARG_BEZIER_FLAGS"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptbezier.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtBkgd" href="ptbkgd.html">
+            <topic label="Class hierarchy:" href="ptbkgd.html#id3"/>
+            <topic label="PhAB icon:" href="ptbkgd.html#id5"/>
+            <topic label="Public header:" href="ptbkgd.html#id7"/>
+            <topic label="Description:" href="ptbkgd.html#id9"/>
+            <topic label="New resources:" href="ptbkgd.html#NRESOURCES">
+              <topic label="Pt_ARG_BKGD_IMAGE" href="ptbkgd.html#Pt_ARG_BKGD_IMAGE"/>
+              <topic label="Pt_ARG_BKGD_SPACING_X" href="ptbkgd.html#Pt_ARG_BKGD_SPACING_X"/>
+              <topic label="Pt_ARG_BKGD_SPACING_Y" href="ptbkgd.html#Pt_ARG_BKGD_SPACING_Y"/>
+              <topic label="Pt_ARG_BKGD_TILE" href="ptbkgd.html#Pt_ARG_BKGD_TILE"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptbkgd.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtButton" href="ptbutton.html">
+            <topic label="Class hierarchy:" href="ptbutton.html#id3"/>
+            <topic label="PhAB icon:" href="ptbutton.html#id5"/>
+            <topic label="Public header:" href="ptbutton.html#id7"/>
+            <topic label="Description:" href="ptbutton.html#id9">
+              <topic label="Creating pushbuttons" href="ptbutton.html#id11"/>
+              <topic label="Pushbutton behavior" href="ptbutton.html#id13"/>
+              <topic label="Visual feedback" href="ptbutton.html#id15"/>
+            </topic>
+            <topic label="New resources:" href="ptbutton.html#NRESOURCES">
+              <topic label="Pt_ARG_ARM_COLOR" href="ptbutton.html#Pt_ARG_ARM_COLOR"/>
+              <topic label="Pt_ARG_ARM_FILL" href="ptbutton.html#Pt_ARG_ARM_FILL"/>
+              <topic label="Pt_ARG_ARM_IMAGE" href="ptbutton.html#Pt_ARG_ARM_IMAGE"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptbutton.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtCalendar" href="ptcalendar.html">
+            <topic label="Class hierarchy:" href="ptcalendar.html#id3"/>
+            <topic label="PhAB icon:" href="ptcalendar.html#id5"/>
+            <topic label="Public header:" href="ptcalendar.html#id7"/>
+            <topic label="Description:" href="ptcalendar.html#id9"/>
+            <topic label="New resources:" href="ptcalendar.html#NRESOURCES">
+              <topic label="Pt_ARG_CALENDAR_COLOR1" href="ptcalendar.html#Pt_ARG_CALENDAR_COLOR1"/>
+              <topic label="Pt_ARG_CALENDAR_COLOR2" href="ptcalendar.html#Pt_ARG_CALENDAR_COLOR2"/>
+              <topic label="Pt_ARG_CALENDAR_COLOR3" href="ptcalendar.html#Pt_ARG_CALENDAR_COLOR3"/>
+              <topic label="Pt_ARG_CALENDAR_COLOR4" href="ptcalendar.html#Pt_ARG_CALENDAR_COLOR4"/>
+              <topic label="Pt_ARG_CALENDAR_COLOR5" href="ptcalendar.html#Pt_ARG_CALENDAR_COLOR5"/>
+              <topic label="Pt_ARG_CALENDAR_DATE" href="ptcalendar.html#Pt_ARG_CALENDAR_DATE"/>
+              <topic label="Pt_ARG_CALENDAR_FLAGS" href="ptcalendar.html#Pt_ARG_CALENDAR_FLAGS"/>
+              <topic label="Pt_ARG_CALENDAR_FONT1" href="ptcalendar.html#Pt_ARG_CALENDAR_FONT1"/>
+              <topic label="Pt_ARG_CALENDAR_FONT2" href="ptcalendar.html#Pt_ARG_CALENDAR_FONT2"/>
+              <topic label="Pt_ARG_CALENDAR_FONT3" href="ptcalendar.html#Pt_ARG_CALENDAR_FONT3"/>
+              <topic label="Pt_ARG_CALENDAR_FONT4" href="ptcalendar.html#Pt_ARG_CALENDAR_FONT4"/>
+              <topic label="Pt_ARG_CALENDAR_FONT5" href="ptcalendar.html#Pt_ARG_CALENDAR_FONT5"/>
+              <topic label="Pt_ARG_CALENDAR_HIGHLIGHT" href="ptcalendar.html#Pt_ARG_CALENDAR_HIGHLIGHT"/>
+              <topic label="Pt_ARG_CALENDAR_MONTH_BTN_COLOR" href="ptcalendar.html#Pt_ARG_CALENDAR_MONTH_BTN_COLOR"/>
+              <topic label="Pt_ARG_CALENDAR_MONTH_NAMES" href="ptcalendar.html#Pt_ARG_CALENDAR_MONTH_NAMES"/>
+              <topic label="Pt_ARG_CALENDAR_SEL_COLOR" href="ptcalendar.html#Pt_ARG_CALENDAR_SEL_COLOR"/>
+              <topic label="Pt_ARG_CALENDAR_TIME_T" href="ptcalendar.html#Pt_ARG_CALENDAR_TIME_T"/>
+              <topic label="Pt_ARG_CALENDAR_WDAY_NAMES" href="ptcalendar.html#Pt_ARG_CALENDAR_WDAY_NAMES"/>
+              <topic label="Pt_ARG_CALENDAR_YEAR_BTN_COLOR" href="ptcalendar.html#Pt_ARG_CALENDAR_YEAR_BTN_COLOR"/>
+              <topic label="Pt_CB_CALENDAR_SELECT" href="ptcalendar.html#Pt_CB_CALENDAR_SELECT"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptcalendar.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtClient" href="ptclient.html">
+            <topic label="Class hierarchy:" href="ptclient.html#id3"/>
+            <topic label="PhAB icon:" href="ptclient.html#id5"/>
+            <topic label="Public header:" href="ptclient.html#id7"/>
+            <topic label="Description:" href="ptclient.html#id9"/>
+            <topic label="New resources:" href="ptclient.html#NRESOURCES">
+              <topic label="Pt_ARG_CLIENT_FLAGS" href="ptclient.html#Pt_ARG_CLIENT_FLAGS"/>
+              <topic label="Pt_ARG_CLIENT_NAME" href="ptclient.html#Pt_ARG_CLIENT_NAME"/>
+              <topic label="Pt_ARG_CLIENT_REPLY_LEN" href="ptclient.html#Pt_ARG_CLIENT_REPLY_LEN"/>
+              <topic label="Pt_ARG_CLIENT_SEND" href="ptclient.html#Pt_ARG_CLIENT_SEND"/>
+              <topic label="Pt_ARG_CLIENT_SERVER (read only)" href="ptclient.html#Pt_ARG_CLIENT_SERVER"/>
+              <topic label="Pt_CB_CLIENT_CONNECTED" href="ptclient.html#Pt_CB_CLIENT_CONNECTED"/>
+              <topic label="Pt_CB_CLIENT_ERROR" href="ptclient.html#Pt_CB_CLIENT_ERROR"/>
+              <topic label="Pt_CB_CLIENT_EVENT" href="ptclient.html#Pt_CB_CLIENT_EVENT"/>
+              <topic label="Pt_CB_CLIENT_NOT_FOUND" href="ptclient.html#Pt_CB_CLIENT_NOT_FOUND"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptclient.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtClock" href="ptclock.html">
+            <topic label="Class hierarchy:" href="ptclock.html#id3"/>
+            <topic label="PhAB icon:" href="ptclock.html#id5"/>
+            <topic label="Public header:" href="ptclock.html#id7"/>
+            <topic label="Description:" href="ptclock.html#id9"/>
+            <topic label="New resources:" href="ptclock.html#NRESOURCES">
+              <topic label="Pt_ARG_CLOCK_FACE_COLOR" href="ptclock.html#Pt_ARG_CLOCK_FACE_COLOR"/>
+              <topic label="Pt_ARG_CLOCK_FACE_OUTLINE_COLOR" href="ptclock.html#Pt_ARG_CLOCK_FACE_OUTLINE_COLOR"/>
+              <topic label="Pt_ARG_CLOCK_FLAGS" href="ptclock.html#Pt_ARG_CLOCK_FLAGS"/>
+              <topic label="Pt_ARG_CLOCK_FONT" href="ptclock.html#Pt_ARG_CLOCK_FONT"/>
+              <topic label="Pt_ARG_CLOCK_HOUR" href="ptclock.html#Pt_ARG_CLOCK_HOUR"/>
+              <topic label="Pt_ARG_CLOCK_HOUR_COLOR" href="ptclock.html#Pt_ARG_CLOCK_HOUR_COLOR"/>
+              <topic label="Pt_ARG_CLOCK_HOUR_OFFSET" href="ptclock.html#Pt_ARG_CLOCK_HOUR_OFFSET"/>
+              <topic label="Pt_ARG_CLOCK_MINUTE" href="ptclock.html#Pt_ARG_CLOCK_MINUTE"/>
+              <topic label="Pt_ARG_CLOCK_MINUTE_COLOR" href="ptclock.html#Pt_ARG_CLOCK_MINUTE_COLOR"/>
+              <topic label="Pt_ARG_CLOCK_MINUTE_OFFSET" href="ptclock.html#Pt_ARG_CLOCK_MINUTE_OFFSET"/>
+              <topic label="Pt_ARG_CLOCK_SECOND" href="ptclock.html#Pt_ARG_CLOCK_SECOND"/>
+              <topic label="Pt_ARG_CLOCK_SECOND_COLOR" href="ptclock.html#Pt_ARG_CLOCK_SECOND_COLOR"/>
+              <topic label="Pt_ARG_CLOCK_SECOND_OFFSET" href="ptclock.html#Pt_ARG_CLOCK_SECOND_OFFSET"/>
+              <topic label="Pt_ARG_CLOCK_SEP1" href="ptclock.html#Pt_ARG_CLOCK_SEP1"/>
+              <topic label="Pt_ARG_CLOCK_SEP1_COLOR" href="ptclock.html#Pt_ARG_CLOCK_SEP1_COLOR"/>
+              <topic label="Pt_ARG_CLOCK_SEP2" href="ptclock.html#Pt_ARG_CLOCK_SEP2"/>
+              <topic label="Pt_ARG_CLOCK_SEP2_COLOR" href="ptclock.html#Pt_ARG_CLOCK_SEP2_COLOR"/>
+              <topic label="Pt_ARG_CLOCK_TYPE" href="ptclock.html#Pt_ARG_CLOCK_TYPE"/>
+              <topic label="Pt_CB_CLOCK_TIME_CHANGED" href="ptclock.html#Pt_CB_CLOCK_TIME_CHANGED"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptclock.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtColorPanel" href="ptcolorpanel.html">
+            <topic label="Class hierarchy:" href="ptcolorpanel.html#id3"/>
+            <topic label="PhAB icon:" href="ptcolorpanel.html#id5"/>
+            <topic label="Public header:" href="ptcolorpanel.html#id7"/>
+            <topic label="Description:" href="ptcolorpanel.html#id9"/>
+            <topic label="New resources:" href="ptcolorpanel.html#NRESOURCES">
+              <topic label="Pt_ARG_CPANEL_FLAGS" href="ptcolorpanel.html#Pt_ARG_CPANEL_FLAGS"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptcolorpanel.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtColorPatch" href="ptcolorpatch.html">
+            <topic label="Class hierarchy:" href="ptcolorpatch.html#id3"/>
+            <topic label="PhAB icon:" href="ptcolorpatch.html#id5"/>
+            <topic label="Public header:" href="ptcolorpatch.html#id7"/>
+            <topic label="Description:" href="ptcolorpatch.html#id9"/>
+            <topic label="New resources:" href="ptcolorpatch.html#NRESOURCES">
+              <topic label="Pt_ARG_CPATCH_FLAGS" href="ptcolorpatch.html#Pt_ARG_CPATCH_FLAGS"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptcolorpatch.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtColorSel" href="ptcolorsel.html">
+            <topic label="Class hierarchy:" href="ptcolorsel.html#id3"/>
+            <topic label="PhAB icon:" href="ptcolorsel.html#id5"/>
+            <topic label="Public header:" href="ptcolorsel.html#id7"/>
+            <topic label="Description:" href="ptcolorsel.html#id9"/>
+            <topic label="New resources:" href="ptcolorsel.html#NRESOURCES">
+              <topic label="Pt_ARG_CS_COLOR" href="ptcolorsel.html#Pt_ARG_CS_COLOR"/>
+              <topic label="Pt_ARG_CS_COLOR_MODELS" href="ptcolorsel.html#Pt_ARG_CS_COLOR_MODELS"/>
+              <topic label="Pt_ARG_CS_CURRENT_MODEL" href="ptcolorsel.html#Pt_ARG_CS_CURRENT_MODEL"/>
+              <topic label="Pt_ARG_CS_FLAGS" href="ptcolorsel.html#Pt_ARG_CS_FLAGS"/>
+              <topic label="Pt_ARG_CS_PALETTE" href="ptcolorsel.html#Pt_ARG_CS_PALETTE"/>
+              <topic label="Pt_CB_CS_COLOR_CHANGED" href="ptcolorsel.html#Pt_CB_CS_COLOR_CHANGED"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptcolorsel.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtColorSelGroup" href="ptcolorselgroup.html">
+            <topic label="Class hierarchy:" href="ptcolorselgroup.html#id3"/>
+            <topic label="PhAB icon:" href="ptcolorselgroup.html#id5"/>
+            <topic label="Public header:" href="ptcolorselgroup.html#id7"/>
+            <topic label="Description:" href="ptcolorselgroup.html#id9"/>
+            <topic label="New resources:" href="ptcolorselgroup.html#NRESOURCES">
+              <topic label="Pt_ARG_CSGROUP_FLAGS" href="ptcolorselgroup.html#Pt_ARG_CSGROUP_FLAGS"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptcolorselgroup.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtColorWell" href="ptcolorwell.html">
+            <topic label="Class hierarchy:" href="ptcolorwell.html#id3"/>
+            <topic label="PhAB icon:" href="ptcolorwell.html#id5"/>
+            <topic label="Public header:" href="ptcolorwell.html#id7"/>
+            <topic label="Description:" href="ptcolorwell.html#id9"/>
+            <topic label="New resources:" href="ptcolorwell.html#NRESOURCES">
+              <topic label="Pt_ARG_CWELL_FLAGS" href="ptcolorwell.html#Pt_ARG_CWELL_FLAGS"/>
+              <topic label="Pt_ARG_CWELL_SWATCH_DIM" href="ptcolorwell.html#Pt_ARG_CWELL_SWATCH_DIM"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptcolorwell.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtComboBox" href="ptcombobox.html">
+            <topic label="Class hierarchy:" href="ptcombobox.html#id3"/>
+            <topic label="PhAB icon:" href="ptcombobox.html#id5"/>
+            <topic label="Public header:" href="ptcombobox.html#id7"/>
+            <topic label="Description:" href="ptcombobox.html#id9">
+              <topic label="Keyboard actions" href="ptcombobox.html#KeyboardActions"/>
+              <topic label="Callbacks" href="ptcombobox.html#Callbacks"/>
+            </topic>
+            <topic label="New resources:" href="ptcombobox.html#NRESOURCES">
+              <topic label="Pt_ARG_CBOX_BUTTON_WIDTH" href="ptcombobox.html#Pt_ARG_CBOX_BUTTON_WIDTH"/>
+              <topic label="Pt_ARG_CBOX_FLAGS" href="ptcombobox.html#Pt_ARG_CBOX_FLAGS"/>
+              <topic label="Pt_ARG_CBOX_MAX_VISIBLE_COUNT" href="ptcombobox.html#Pt_ARG_CBOX_MAX_VISIBLE_COUNT"/>
+              <topic label="Pt_ARG_CBOX_SEL_ITEM" href="ptcombobox.html#Pt_ARG_CBOX_SEL_ITEM"/>
+              <topic label="Pt_ARG_CBOX_TEXT_FILL_COLOR" href="ptcombobox.html#Pt_ARG_CBOX_TEXT_FILL_COLOR"/>
+              <topic label="Pt_CB_CBOX_ACTIVATE" href="ptcombobox.html#Pt_CB_CBOX_ACTIVATE"/>
+              <topic label="Pt_CB_CBOX_CLOSE" href="ptcombobox.html#Pt_CB_CBOX_CLOSE"/>
+            </topic>
+            <topic label="Exported subordinate children:" href="ptcombobox.html#BRESOURCES"/>
+            <topic label="Inherited resources:" href="ptcombobox.html#IRESOURCES">
+              <topic label="Pt_ARG_VISIBLE_COUNT" href="ptcombobox.html#Pt_ARG_VISIBLE_COUNT"/>
+            </topic>
+            <topic label="Convenience functions:" href="ptcombobox.html#FUNCTIONS"/>
+          <topic label="PtComboBoxListClose" href="pt/ptcomboboxlistclose.html">
+            <topic label="Description:" href="pt/ptcomboboxlistclose.html#id5"/>
+          </topic>
+          <topic label="PtComboBoxListOpen" href="pt/ptcomboboxlistopen.html">
+            <topic label="Description:" href="pt/ptcomboboxlistopen.html#id5"/>
+          </topic>
+        </topic>
+        <topic label="PtCompound" href="ptcompound.html">
+            <topic label="Class hierarchy:" href="ptcompound.html#id3"/>
+            <topic label="PhAB icon:" href="ptcompound.html#id5"/>
+            <topic label="Public header:" href="ptcompound.html#id7"/>
+            <topic label="Description:" href="ptcompound.html#id9"/>
+            <topic label="Inherited resources:" href="ptcompound.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtContainer" href="ptcontainer.html">
+            <topic label="Class hierarchy:" href="ptcontainer.html#id3"/>
+            <topic label="PhAB icon:" href="ptcontainer.html#id5"/>
+            <topic label="Public header:" href="ptcontainer.html#id7"/>
+            <topic label="Description:" href="ptcontainer.html#id9"/>
+            <topic label="New resources:" href="ptcontainer.html#NRESOURCES">
+              <topic label="Pt_ARG_CONTAINER_FLAGS" href="ptcontainer.html#Pt_ARG_CONTAINER_FLAGS"/>
+              <topic label="Pt_ARG_CURSOR_OVERRIDE" href="ptcontainer.html#Pt_ARG_CURSOR_OVERRIDE"/>
+              <topic label="Pt_ARG_LAYOUT" href="ptcontainer.html#Pt_ARG_LAYOUT"/>
+              <topic label="Pt_ARG_LAYOUT_INFO" href="ptcontainer.html#Pt_ARG_LAYOUT_INFO"/>
+              <topic label="Pt_ARG_LAYOUT_TYPE" href="ptcontainer.html#Pt_ARG_LAYOUT_TYPE"/>
+              <topic label="Pt_ARG_FILL_LAYOUT_INFO" href="ptcontainer.html#Pt_ARG_FILL_LAYOUT_INFO"/>
+              <topic label="Pt_ARG_ROW_LAYOUT_INFO" href="ptcontainer.html#Pt_ARG_ROW_LAYOUT_INFO"/>
+              <topic label="Pt_ARG_GRID_LAYOUT_INFO" href="ptcontainer.html#Pt_ARG_GRID_LAYOUT_INFO"/>
+              <topic label="Pt_ARG_TITLE" href="ptcontainer.html#Pt_ARG_TITLE"/>
+              <topic label="Pt_ARG_TITLE_FONT" href="ptcontainer.html#Pt_ARG_TITLE_FONT"/>
+              <topic label="Pt_CB_BALLOONS" href="ptcontainer.html#Pt_CB_BALLOONS"/>
+              <topic label="Pt_CB_CHILD_ADDED_REMOVED" href="ptcontainer.html#Pt_CB_CHILD_ADDED_REMOVED"/>
+              <topic label="Pt_CB_CHILD_GETTING_FOCUS" href="ptcontainer.html#Pt_CB_CHILD_GETTING_FOCUS"/>
+              <topic label="Pt_CB_CHILD_LOSING_FOCUS" href="ptcontainer.html#Pt_CB_CHILD_LOSING_FOCUS"/>
+              <topic label="Pt_CB_LAYOUT" href="ptcontainer.html#Pt_CB_LAYOUT"/>
+              <topic label="Pt_CB_RESIZE" href="ptcontainer.html#Pt_CB_RESIZE"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptcontainer.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtDisjoint" href="ptdisjoint.html">
+            <topic label="Class hierarchy:" href="ptdisjoint.html#id3"/>
+            <topic label="PhAB icon:" href="ptdisjoint.html#id5"/>
+            <topic label="Public header:" href="ptdisjoint.html#id7"/>
+            <topic label="Description:" href="ptdisjoint.html#id9"/>
+            <topic label="New resources:" href="ptdisjoint.html#NRESOURCES">
+              <topic label="Pt_ARG_SYSINFO (read only)" href="ptdisjoint.html#Pt_ARG_SYSINFO"/>
+              <topic label="Pt_CB_SYSINFO" href="ptdisjoint.html#Pt_CB_SYSINFO"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptdisjoint.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtDivider" href="ptdivider.html">
+            <topic label="Class hierarchy:" href="ptdivider.html#id3"/>
+            <topic label="PhAB icon:" href="ptdivider.html#id5"/>
+            <topic label="Public header:" href="ptdivider.html#id7"/>
+            <topic label="Description:" href="ptdivider.html#id9">
+              <topic label="Examples" href="ptdivider.html#id11"/>
+            </topic>
+            <topic label="New resources:" href="ptdivider.html#NRESOURCES">
+              <topic label="Pt_ARG_DIVIDER_FLAGS" href="ptdivider.html#Pt_ARG_DIVIDER_FLAGS"/>
+              <topic label="Pt_ARG_DIVIDER_OFFSET" href="ptdivider.html#Pt_ARG_DIVIDER_OFFSET"/>
+              <topic label="Pt_ARG_DIVIDER_SIZES (read-only)" href="ptdivider.html#Pt_ARG_DIVIDER_SIZES"/>
+              <topic label="Pt_CB_DIVIDER_DRAG" href="ptdivider.html#Pt_CB_DIVIDER_DRAG"/>
+              <topic label="Pt_CB_DIVIDER_HANDLE_CALLBACK" href="ptdivider.html#Pt_CB_DIVIDER_HANDLE_CALLBACK"/>
+            </topic>
+            <topic label="Exported subordinate children:" href="ptdivider.html#BRESOURCES"/>
+            <topic label="Inherited resources:" href="ptdivider.html#IRESOURCES">
+              <topic label="Pt_ARG_BANDWIDTH_THRESHOLD" href="ptdivider.html#Pt_ARG_BANDWIDTH_THRESHOLD"/>
+              <topic label="Pt_ARG_GROUP_ORIENTATION" href="ptdivider.html#Pt_ARG_GROUP_ORIENTATION"/>
+            </topic>
+        </topic>
+        <topic label="PtEllipse" href="ptellipse.html">
+            <topic label="Class hierarchy:" href="ptellipse.html#id3"/>
+            <topic label="PhAB icon:" href="ptellipse.html#id5"/>
+            <topic label="Public header:" href="ptellipse.html#id7"/>
+            <topic label="Description:" href="ptellipse.html#id9"/>
+            <topic label="Inherited resources:" href="ptellipse.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtFileSel" href="ptfilesel.html">
+            <topic label="Class hierarchy:" href="ptfilesel.html#id3"/>
+            <topic label="PhAB icon:" href="ptfilesel.html#id5"/>
+            <topic label="Public header:" href="ptfilesel.html#id7"/>
+            <topic label="Description:" href="ptfilesel.html#id9">
+              <topic label="Examples" href="ptfilesel.html#id11"/>
+            </topic>
+            <topic label="New resources:" href="ptfilesel.html#NRESOURCES">
+              <topic label="Pt_ARG_FS_FILE_SPEC" href="ptfilesel.html#Pt_ARG_FS_FILE_SPEC"/>
+              <topic label="Pt_ARG_FS_FLAGS" href="ptfilesel.html#Pt_ARG_FS_FLAGS"/>
+              <topic label="Pt_ARG_FS_FORMAT" href="ptfilesel.html#Pt_ARG_FS_FORMAT"/>
+              <topic label="Pt_ARG_FS_IMAGES (write-only)" href="ptfilesel.html#Pt_ARG_FS_IMAGES"/>
+              <topic label="Pt_ARG_FS_LBL_DATE" href="ptfilesel.html#Pt_ARG_FS_LBL_DATE"/>
+              <topic label="Pt_ARG_FS_LBL_GROUP" href="ptfilesel.html#Pt_ARG_FS_LBL_GROUP"/>
+              <topic label="Pt_ARG_FS_LBL_NAME" href="ptfilesel.html#Pt_ARG_FS_LBL_NAME"/>
+              <topic label="Pt_ARG_FS_LBL_OWNER" href="ptfilesel.html#Pt_ARG_FS_LBL_OWNER"/>
+              <topic label="Pt_ARG_FS_LBL_PERMISSIONS" href="ptfilesel.html#Pt_ARG_FS_LBL_PERMISSIONS"/>
+              <topic label="Pt_ARG_FS_LBL_SIZE" href="ptfilesel.html#Pt_ARG_FS_LBL_SIZE"/>
+              <topic label="Pt_ARG_FS_REFRESH" href="ptfilesel.html#Pt_ARG_FS_REFRESH"/>
+              <topic label="Pt_ARG_FS_ROOT_DIR" href="ptfilesel.html#Pt_ARG_FS_ROOT_DIR"/>
+              <topic label="Pt_CB_FS_BKGD_HANDLER" href="ptfilesel.html#Pt_CB_FS_BKGD_HANDLER"/>
+              <topic label="Pt_CB_FS_SELECTION" href="ptfilesel.html#Pt_CB_FS_SELECTION"/>
+              <topic label="Pt_CB_FS_STATE" href="ptfilesel.html#Pt_CB_FS_STATE"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptfilesel.html#IRESOURCES">
+              <topic label="Pt_CB_DND" href="ptfilesel.html#Pt_CB_DND"/>
+            </topic>
+            <topic label="Convenience functions:" href="ptfilesel.html#FUNCTIONS"/>
+          <topic label="PtFSAddAfter" href="pt/ptfsaddafter.html">
+            <topic label="Description:" href="pt/ptfsaddafter.html#id5"/>
+          </topic>
+          <topic label="PtFSAddFirst" href="pt/ptfsaddfirst.html">
+            <topic label="Description:" href="pt/ptfsaddfirst.html#id5"/>
+          </topic>
+          <topic label="PtFSAllItems" href="pt/ptfsallitems.html">
+            <topic label="Description:" href="pt/ptfsallitems.html#id5"/>
+          </topic>
+          <topic label="PtFSAllocItem" href="pt/ptfsallocitem.html">
+            <topic label="Description:" href="pt/ptfsallocitem.html#id5"/>
+            <topic label="Examples:" href="pt/ptfsallocitem.html#id9"/>
+          </topic>
+          <topic label="PtFSClearSelection" href="pt/ptfsclearselection.html">
+            <topic label="Description:" href="pt/ptfsclearselection.html#id5"/>
+          </topic>
+          <topic label="PtFSDamageItem" href="pt/ptfsdamageitem.html">
+            <topic label="Description:" href="pt/ptfsdamageitem.html#id5"/>
+          </topic>
+          <topic label="PtFSExpandParents" href="pt/ptfsexpandparents.html">
+            <topic label="Description:" href="pt/ptfsexpandparents.html#id5"/>
+          </topic>
+          <topic label="PtFSFolderCollapse" href="pt/ptfsfoldercollapse.html">
+            <topic label="Description:" href="pt/ptfsfoldercollapse.html#id5"/>
+          </topic>
+          <topic label="PtFSFolderExpand" href="pt/ptfsfolderexpand.html">
+            <topic label="Description:" href="pt/ptfsfolderexpand.html#id5"/>
+          </topic>
+          <topic label="PtFSFreeAllItems" href="pt/ptfsfreeallitems.html">
+            <topic label="Description:" href="pt/ptfsfreeallitems.html#id5"/>
+          </topic>
+          <topic label="PtFSFreeItems" href="pt/ptfsfreeitems.html">
+            <topic label="Description:" href="pt/ptfsfreeitems.html#id5"/>
+          </topic>
+          <topic label="PtFSGetCurrent" href="pt/ptfsgetcurrent.html">
+            <topic label="Description:" href="pt/ptfsgetcurrent.html#id5"/>
+          </topic>
+          <topic label="PtFSGetSelIndexes" href="pt/ptfsgetselindexes.html">
+            <topic label="Description:" href="pt/ptfsgetselindexes.html#id5"/>
+          </topic>
+          <topic label="PtFSGoto" href="pt/ptfsgoto.html">
+            <topic label="Description:" href="pt/ptfsgoto.html#id5"/>
+          </topic>
+          <topic label="PtFSItemIndex" href="pt/ptfsitemindex.html">
+            <topic label="Description:" href="pt/ptfsitemindex.html#id5"/>
+          </topic>
+          <topic label="PtFSRemoveChildren" href="pt/ptfsremovechildren.html">
+            <topic label="Description:" href="pt/ptfsremovechildren.html#id5"/>
+          </topic>
+          <topic label="PtFSRemoveItem" href="pt/ptfsremoveitem.html">
+            <topic label="Description:" href="pt/ptfsremoveitem.html#id5"/>
+          </topic>
+          <topic label="PtFSRemoveList" href="pt/ptfsremovelist.html">
+            <topic label="Description:" href="pt/ptfsremovelist.html#id5"/>
+          </topic>
+          <topic label="PtFSRootItem" href="pt/ptfsrootitem.html">
+            <topic label="Description:" href="pt/ptfsrootitem.html#id5"/>
+          </topic>
+          <topic label="PtFSSelect" href="pt/ptfsselect.html">
+            <topic label="Description:" href="pt/ptfsselect.html#id5"/>
+          </topic>
+          <topic label="PtFSSelectedItems" href="pt/ptfsselecteditems.html">
+            <topic label="Description:" href="pt/ptfsselecteditems.html#id5"/>
+          </topic>
+          <topic label="PtFSSetSelIndexes" href="pt/ptfssetselindexes.html">
+            <topic label="Description:" href="pt/ptfssetselindexes.html#id5"/>
+          </topic>
+          <topic label="PtFSShow" href="pt/ptfsshow.html">
+            <topic label="Description:" href="pt/ptfsshow.html#id5"/>
+          </topic>
+          <topic label="PtFSUnselect" href="pt/ptfsunselect.html">
+            <topic label="Description:" href="pt/ptfsunselect.html#id5"/>
+          </topic>
+          <topic label="PtFSUnselectNonBrothers" href="pt/ptfsunselectnonbrothers.html">
+            <topic label="Description:" href="pt/ptfsunselectnonbrothers.html#id5"/>
+          </topic>
+        </topic>
+        <topic label="PtFontSel" href="ptfontsel.html">
+            <topic label="Class hierarchy:" href="ptfontsel.html#id3"/>
+            <topic label="PhAB icon:" href="ptfontsel.html#id5"/>
+            <topic label="Public header:" href="ptfontsel.html#id7"/>
+            <topic label="Description:" href="ptfontsel.html#id9"/>
+            <topic label="New resources:" href="ptfontsel.html#NRESOURCES">
+              <topic label="Pt_ARG_FONT_DISPLAY" href="ptfontsel.html#Pt_ARG_FONT_DISPLAY"/>
+              <topic label="Pt_ARG_FONT_FLAGS" href="ptfontsel.html#Pt_ARG_FONT_FLAGS"/>
+              <topic label="Pt_ARG_FONT_LBL_BKGDCOLOR" href="ptfontsel.html#Pt_ARG_FONT_LBL_BKGDCOLOR"/>
+              <topic label="Pt_ARG_FONT_LBL_FONT" href="ptfontsel.html#Pt_ARG_FONT_LBL_FONT"/>
+              <topic label="Pt_ARG_FONT_LBL_SIZE" href="ptfontsel.html#Pt_ARG_FONT_LBL_SIZE"/>
+              <topic label="Pt_ARG_FONT_LBL_STYLE" href="ptfontsel.html#Pt_ARG_FONT_LBL_STYLE"/>
+              <topic label="Pt_ARG_FONT_LBL_TEXTCOLOR" href="ptfontsel.html#Pt_ARG_FONT_LBL_TEXTCOLOR"/>
+              <topic label="Pt_ARG_FONT_NAME" href="ptfontsel.html#Pt_ARG_FONT_NAME"/>
+              <topic label="Pt_ARG_FONT_POINT_SIZE_MAX" href="ptfontsel.html#Pt_ARG_FONT_POINT_SIZE_MAX"/>
+              <topic label="Pt_ARG_FONT_SAMPLE" href="ptfontsel.html#Pt_ARG_FONT_SAMPLE"/>
+              <topic label="Pt_ARG_FONT_SYMBOL" href="ptfontsel.html#Pt_ARG_FONT_SYMBOL"/>
+              <topic label="Pt_ARG_FONT_TEXT_COLOR" href="ptfontsel.html#Pt_ARG_FONT_TEXT_COLOR"/>
+              <topic label="Pt_ARG_FONT_TEXT_BKGD_COLOR" href="ptfontsel.html#Pt_ARG_FONT_TEXT_BKGD_COLOR"/>
+              <topic label="Pt_CB_FONT_MODIFY" href="ptfontsel.html#Pt_CB_FONT_MODIFY"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptfontsel.html#IRESOURCES"/>
+            <topic label="Convenience functions:" href="ptfontsel.html#FUNCTIONS"/>
+        </topic>
+        <topic label="PtGauge" href="ptgauge.html">
+            <topic label="Class hierarchy:" href="ptgauge.html#id3"/>
+            <topic label="PhAB icon:" href="ptgauge.html#id5"/>
+            <topic label="Public header:" href="ptgauge.html#id7"/>
+            <topic label="Description:" href="ptgauge.html#id9"/>
+            <topic label="New resources:" href="ptgauge.html#NRESOURCES">
+              <topic label="Pt_ARG_GAUGE_FLAGS" href="ptgauge.html#Pt_ARG_GAUGE_FLAGS"/>
+              <topic label="Pt_ARG_GAUGE_FONT" href="ptgauge.html#Pt_ARG_GAUGE_FONT"/>
+              <topic label="Pt_ARG_GAUGE_H_ALIGN" href="ptgauge.html#Pt_ARG_GAUGE_H_ALIGN"/>
+              <topic label="Pt_ARG_GAUGE_V_ALIGN" href="ptgauge.html#Pt_ARG_GAUGE_V_ALIGN"/>
+              <topic label="Pt_ARG_GAUGE_VALUE" href="ptgauge.html#Pt_ARG_GAUGE_VALUE"/>
+              <topic label="Pt_ARG_GAUGE_VALUE_PREFIX" href="ptgauge.html#Pt_ARG_GAUGE_VALUE_PREFIX"/>
+              <topic label="Pt_ARG_GAUGE_VALUE_SUFFIX" href="ptgauge.html#Pt_ARG_GAUGE_VALUE_SUFFIX"/>
+              <topic label="Pt_ARG_MAXIMUM" href="ptgauge.html#Pt_ARG_MAXIMUM"/>
+              <topic label="Pt_ARG_MINIMUM" href="ptgauge.html#Pt_ARG_MINIMUM"/>
+              <topic label="Pt_ARG_ORIENTATION" href="ptgauge.html#Pt_ARG_ORIENTATION"/>
+              <topic label="Pt_CB_GAUGE_VALUE_CHANGED" href="ptgauge.html#Pt_CB_GAUGE_VALUE_CHANGED"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptgauge.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtGenList" href="ptgenlist.html">
+            <topic label="Class hierarchy:" href="ptgenlist.html#id3"/>
+            <topic label="PhAB icon:" href="ptgenlist.html#id5"/>
+            <topic label="Public header:" href="ptgenlist.html#id7"/>
+            <topic label="Description:" href="ptgenlist.html#id9">
+              <topic label="Using scrollbars" href="ptgenlist.html#Scrollbars"/>
+              <topic label="Current item" href="ptgenlist.html#CurrentItem"/>
+              <topic label="Mouse actions" href="ptgenlist.html#MOUSEACTIONS"/>
+              <topic label="Keyboard actions" href="ptgenlist.html#KeyboardActions"/>
+            </topic>
+            <topic label="New resources:" href="ptgenlist.html#NRESOURCES">
+              <topic label="Pt_ARG_LIST_COLUMN_ATTR" href="ptgenlist.html#Pt_ARG_LIST_COLUMN_ATTR"/>
+              <topic label="Pt_ARG_LIST_COLUMN_POS" href="ptgenlist.html#Pt_ARG_LIST_COLUMN_POS"/>
+              <topic label="Pt_ARG_LIST_DNDSEL_COLOR" href="ptgenlist.html#Pt_ARG_LIST_DNDSEL_COLOR"/>
+              <topic label="Pt_ARG_LIST_FLAGS" href="ptgenlist.html#Pt_ARG_LIST_FLAGS"/>
+              <topic label="Pt_ARG_LIST_FONT" href="ptgenlist.html#Pt_ARG_LIST_FONT"/>
+              <topic label="Pt_ARG_LIST_ITEM_COUNT (read-only)" href="ptgenlist.html#Pt_ARG_LIST_ITEM_COUNT"/>
+              <topic label="Pt_ARG_LIST_SB_RES" href="ptgenlist.html#Pt_ARG_LIST_SB_RES"/>
+              <topic label="Pt_ARG_LIST_SCROLL_RATE" href="ptgenlist.html#Pt_ARG_LIST_SCROLL_RATE"/>
+              <topic label="Pt_ARG_LIST_SEL_COUNT (read-only)" href="ptgenlist.html#Pt_ARG_LIST_SEL_COUNT"/>
+              <topic label="Pt_ARG_LIST_TOTAL_HEIGHT (read-only)" href="ptgenlist.html#Pt_ARG_LIST_TOTAL_HEIGHT"/>
+              <topic label="Pt_ARG_SCROLLBAR_WIDTH" href="ptgenlist.html#Pt_ARG_SCROLLBAR_WIDTH"/>
+              <topic label="Pt_ARG_SELECTION_FILL_COLOR" href="ptgenlist.html#Pt_ARG_SELECTION_FILL_COLOR"/>
+              <topic label="Pt_ARG_SELECTION_MODE" href="ptgenlist.html#Pt_ARG_SELECTION_MODE"/>
+              <topic label="Pt_ARG_SELECTION_TEXT_COLOR" href="ptgenlist.html#Pt_ARG_SELECTION_TEXT_COLOR"/>
+              <topic label="Pt_ARG_TOP_ITEM_POS" href="ptgenlist.html#Pt_ARG_TOP_ITEM_POS"/>
+              <topic label="Pt_ARG_VISIBLE_COUNT (read-only)" href="ptgenlist.html#Pt_ARG_VISIBLE_COUNT"/>
+              <topic label="Pt_CB_SCROLL_MOVE" href="ptgenlist.html#Pt_CB_SCROLL_MOVE"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptgenlist.html#IRESOURCES">
+              <topic label="Pt_CB_DND" href="ptgenlist.html#Pt_CB_DND"/>
+            </topic>
+            <topic label="Convenience functions:" href="ptgenlist.html#FUNCTIONS"/>
+          <topic label="PtGenListAddItems" href="pt/ptgenlistadditems.html">
+            <topic label="Description:" href="pt/ptgenlistadditems.html#id5"/>
+          </topic>
+          <topic label="PtGenListAllItems" href="pt/ptgenlistallitems.html">
+            <topic label="Description:" href="pt/ptgenlistallitems.html#id5"/>
+          </topic>
+          <topic label="PtGenListClearSelection" href="pt/ptgenlistclearselection.html">
+            <topic label="Description:" href="pt/ptgenlistclearselection.html#id5"/>
+          </topic>
+          <topic label="PtGenListCreateTextBalloon" href="pt/ptgenlistcreatetextballoon.html">
+            <topic label="Description:" href="pt/ptgenlistcreatetextballoon.html#id5"/>
+          </topic>
+          <topic label="PtGenListDamageItem" href="pt/ptgenlistdamageitem.html">
+            <topic label="Description:" href="pt/ptgenlistdamageitem.html#id5"/>
+          </topic>
+          <topic label="PtGenListDrawBackground" href="pt/ptgenlistdrawbackground.html">
+            <topic label="Description:" href="pt/ptgenlistdrawbackground.html#id7"/>
+          </topic>
+          <topic label="PtGenListDrawString" href="pt/ptgenlistdrawstring.html">
+            <topic label="Description:" href="pt/ptgenlistdrawstring.html#id7"/>
+            <topic label="Examples:" href="pt/ptgenlistdrawstring.html#id9"/>
+          </topic>
+          <topic label="PtGenListFirstItem" href="pt/ptgenlistfirstitem.html">
+            <topic label="Description:" href="pt/ptgenlistfirstitem.html#id5"/>
+          </topic>
+          <topic label="PtGenListGetCurrent" href="pt/ptgenlistgetcurrent.html">
+            <topic label="Description:" href="pt/ptgenlistgetcurrent.html#id5"/>
+          </topic>
+          <topic label="PtGenListGetSelIndexes" href="pt/ptgenlistgetselindexes.html">
+            <topic label="Description:" href="pt/ptgenlistgetselindexes.html#id5"/>
+          </topic>
+          <topic label="PtGenListGoto" href="pt/ptgenlistgoto.html">
+            <topic label="Description:" href="pt/ptgenlistgoto.html#id5"/>
+          </topic>
+          <topic label="PtGenListHold" href="pt/ptgenlisthold.html">
+            <topic label="Description:" href="pt/ptgenlisthold.html#id5"/>
+          </topic>
+          <topic label="PtGenListItem_t" href="ptgenlistitem_t.html">
+            <topic label="Description:" href="ptgenlistitem_t.html#id5"/>
+          </topic>
+          <topic label="PtGenListItemIndex" href="pt/ptgenlistitemindex.html">
+            <topic label="Description:" href="pt/ptgenlistitemindex.html#id5"/>
+          </topic>
+          <topic label="PtGenListItemRealloc" href="pt/ptgenlistitemrealloc.html">
+            <topic label="Description:" href="pt/ptgenlistitemrealloc.html#id5"/>
+          </topic>
+          <topic label="PtGenListLastItem" href="pt/ptgenlistlastitem.html">
+            <topic label="Description:" href="pt/ptgenlistlastitem.html#id5"/>
+          </topic>
+          <topic label="PtGenListLockItem" href="pt/ptgenlistlockitem.html">
+            <topic label="Description:" href="pt/ptgenlistlockitem.html#id5"/>
+          </topic>
+          <topic label="PtGenListRelease" href="pt/ptgenlistrelease.html">
+            <topic label="Description:" href="pt/ptgenlistrelease.html#id5"/>
+          </topic>
+          <topic label="PtGenListRemoveItems" href="pt/ptgenlistremoveitems.html">
+            <topic label="Description:" href="pt/ptgenlistremoveitems.html#id5"/>
+          </topic>
+          <topic label="PtGenListResize" href="pt/ptgenlistresize.html">
+            <topic label="Description:" href="pt/ptgenlistresize.html#id5"/>
+          </topic>
+          <topic label="PtGenListSelect" href="pt/ptgenlistselect.html">
+            <topic label="Description:" href="pt/ptgenlistselect.html#id5"/>
+          </topic>
+          <topic label="PtGenListSelectedItems" href="pt/ptgenlistselecteditems.html">
+            <topic label="Description:" href="pt/ptgenlistselecteditems.html#id5"/>
+          </topic>
+          <topic label="PtGenListSetColumnBalloon" href="pt/ptgenlistsetcolumnballoon.html">
+            <topic label="Description:" href="pt/ptgenlistsetcolumnballoon.html#id5"/>
+          </topic>
+          <topic label="PtGenListSetGflags" href="pt/ptgenlistsetgflags.html">
+            <topic label="Description:" href="pt/ptgenlistsetgflags.html#id5"/>
+          </topic>
+          <topic label="PtGenListSetSelIndexes" href="pt/ptgenlistsetselindexes.html">
+            <topic label="Description:" href="pt/ptgenlistsetselindexes.html#id5"/>
+          </topic>
+          <topic label="PtGenListShow" href="pt/ptgenlistshow.html">
+            <topic label="Description:" href="pt/ptgenlistshow.html#id5"/>
+          </topic>
+          <topic label="PtGenListUnlockItem" href="pt/ptgenlistunlockitem.html">
+            <topic label="Description:" href="pt/ptgenlistunlockitem.html#id5"/>
+          </topic>
+          <topic label="PtGenListUnselect" href="pt/ptgenlistunselect.html">
+            <topic label="Description:" href="pt/ptgenlistunselect.html#id5"/>
+          </topic>
+        </topic>
+        <topic label="PtGenTree" href="ptgentree.html">
+            <topic label="Class hierarchy:" href="ptgentree.html#id3"/>
+            <topic label="PhAB icon:" href="ptgentree.html#id5"/>
+            <topic label="Public header:" href="ptgentree.html#id7"/>
+            <topic label="Description:" href="ptgentree.html#id9"/>
+            <topic label="New resources:" href="ptgentree.html#NRESOURCES">
+              <topic label="Pt_ARG_TREE_FLAGS" href="ptgentree.html#Pt_ARG_TREE_FLAGS"/>
+              <topic label="Pt_ARG_TREE_LINE_COLOR" href="ptgentree.html#Pt_ARG_TREE_LINE_COLOR"/>
+              <topic label="Pt_ARG_TREE_LINE_SPACING" href="ptgentree.html#Pt_ARG_TREE_LINE_SPACING"/>
+              <topic label="Pt_ARG_TREE_MARGIN_COLOR" href="ptgentree.html#Pt_ARG_TREE_MARGIN_COLOR"/>
+              <topic label="Pt_CB_GEN_TREE_INPUT" href="ptgentree.html#Pt_CB_GEN_TREE_INPUT"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptgentree.html#IRESOURCES">
+              <topic label="Pt_CB_DND" href="ptgentree.html#Pt_CB_DND"/>
+            </topic>
+            <topic label="Convenience functions:" href="ptgentree.html#FUNCTIONS"/>
+          <topic label="PtGenTreeAddAfter" href="pt/ptgentreeaddafter.html">
+            <topic label="Description:" href="pt/ptgentreeaddafter.html#id5"/>
+          </topic>
+          <topic label="PtGenTreeAddFirst" href="pt/ptgentreeaddfirst.html">
+            <topic label="Description:" href="pt/ptgentreeaddfirst.html#id5"/>
+          </topic>
+          <topic label="PtGenTreeAllItems" href="pt/ptgentreeallitems.html">
+            <topic label="Description:" href="pt/ptgentreeallitems.html#id5"/>
+          </topic>
+          <topic label="PtGenTreeClearSelection" href="pt/ptgentreeclearselection.html">
+            <topic label="Description:" href="pt/ptgentreeclearselection.html#id5"/>
+          </topic>
+          <topic label="PtGenTreeCollapse" href="pt/ptgentreecollapse.html">
+            <topic label="Description:" href="pt/ptgentreecollapse.html#id5"/>
+          </topic>
+          <topic label="PtGenTreeDamageItem" href="pt/ptgentreedamageitem.html">
+            <topic label="Description:" href="pt/ptgentreedamageitem.html#id5"/>
+          </topic>
+          <topic label="PtGenTreeExpand" href="pt/ptgentreeexpand.html">
+            <topic label="Description:" href="pt/ptgentreeexpand.html#id5"/>
+          </topic>
+          <topic label="PtGenTreeExpandParents" href="pt/ptgentreeexpandparents.html">
+            <topic label="Description:" href="pt/ptgentreeexpandparents.html#id5"/>
+          </topic>
+          <topic label="PtGenTreeFreeAllItems" href="pt/ptgentreefreeallitems.html">
+            <topic label="Description:" href="pt/ptgentreefreeallitems.html#id5"/>
+          </topic>
+          <topic label="PtGenTreeFreeItems" href="pt/ptgentreefreeitems.html">
+            <topic label="Description:" href="pt/ptgentreefreeitems.html#id5"/>
+          </topic>
+          <topic label="PtGenTreeGetCurrent" href="pt/ptgentreegetcurrent.html">
+            <topic label="Description:" href="pt/ptgentreegetcurrent.html#id5"/>
+          </topic>
+          <topic label="PtGenTreeGetSelIndexes" href="pt/ptgentreegetselindexes.html">
+            <topic label="Description:" href="pt/ptgentreegetselindexes.html#id5"/>
+          </topic>
+          <topic label="PtGenTreeGoto" href="pt/ptgentreegoto.html">
+            <topic label="Description:" href="pt/ptgentreegoto.html#id5"/>
+          </topic>
+          <topic label="PtGenTreeItem_t" href="ptgentreeitem_t.html">
+            <topic label="Description:" href="ptgentreeitem_t.html#id5"/>
+          </topic>
+          <topic label="PtGenTreeItemIndex" href="pt/ptgentreeitemindex.html">
+            <topic label="Description:" href="pt/ptgentreeitemindex.html#id5"/>
+          </topic>
+          <topic label="PtGenTreeItemRealloc" href="pt/ptgentreeitemrealloc.html">
+            <topic label="Description:" href="pt/ptgentreeitemrealloc.html#id5"/>
+          </topic>
+          <topic label="PtGenTreeItemResize" href="pt/ptgentreeitemresize.html">
+            <topic label="Description:" href="pt/ptgentreeitemresize.html#id5"/>
+          </topic>
+          <topic label="PtGenTreeRemoveChildren" href="pt/ptgentreeremovechildren.html">
+            <topic label="Description:" href="pt/ptgentreeremovechildren.html#id5"/>
+          </topic>
+          <topic label="PtGenTreeRemoveItem" href="pt/ptgentreeremoveitem.html">
+            <topic label="Description:" href="pt/ptgentreeremoveitem.html#id5"/>
+          </topic>
+          <topic label="PtGenTreeRemoveList" href="pt/ptgentreeremovelist.html">
+            <topic label="Description:" href="pt/ptgentreeremovelist.html#id5"/>
+          </topic>
+          <topic label="PtGenTreeResize" href="pt/ptgentreeresize.html">
+            <topic label="Description:" href="pt/ptgentreeresize.html#id5"/>
+          </topic>
+          <topic label="PtGenTreeRootItem" href="pt/ptgentreerootitem.html">
+            <topic label="Description:" href="pt/ptgentreerootitem.html#id5"/>
+          </topic>
+          <topic label="PtGenTreeSelect" href="pt/ptgentreeselect.html">
+            <topic label="Description:" href="pt/ptgentreeselect.html#id5"/>
+          </topic>
+          <topic label="PtGenTreeSelectedItems" href="pt/ptgentreeselecteditems.html">
+            <topic label="Description:" href="pt/ptgentreeselecteditems.html#id5"/>
+          </topic>
+          <topic label="PtGenTreeSetSelIndexes" href="pt/ptgentreesetselindexes.html">
+            <topic label="Description:" href="pt/ptgentreesetselindexes.html#id5"/>
+          </topic>
+          <topic label="PtGenTreeShow" href="pt/ptgentreeshow.html">
+            <topic label="Description:" href="pt/ptgentreeshow.html#id5"/>
+          </topic>
+          <topic label="PtGenTreeUnselect" href="pt/ptgentreeunselect.html">
+            <topic label="Description:" href="pt/ptgentreeunselect.html#id5"/>
+          </topic>
+          <topic label="PtGenTreeUnselectNonBrothers" href="pt/ptgentreeunselectnonbrothers.html">
+            <topic label="Description:" href="pt/ptgentreeunselectnonbrothers.html#id5"/>
+          </topic>
+        </topic>
+        <topic label="PtGraphic" href="ptgraphic.html">
+            <topic label="Class hierarchy:" href="ptgraphic.html#id3"/>
+            <topic label="PhAB icon:" href="ptgraphic.html#id5"/>
+            <topic label="Public header:" href="ptgraphic.html#id7"/>
+            <topic label="Description:" href="ptgraphic.html#id9">
+              <topic label="Origin and coordinates" href="ptgraphic.html#Points"/>
+              <topic label="Line attributes" href="ptgraphic.html#LineAttributes"/>
+              <topic label="Colors" href="ptgraphic.html#Colors"/>
+              <topic label="Creating a drawing" href="ptgraphic.html#id14">
+                <topic label="Sizing the primitives" href="ptgraphic.html#id16"/>
+                <topic label="Grouping elements of the drawing" href="ptgraphic.html#id18"/>
+              </topic>
+            </topic>
+            <topic label="New resources:" href="ptgraphic.html#NRESOURCES">
+              <topic label="Pt_ARG_DASH_LIST" href="ptgraphic.html#Pt_ARG_DASH_LIST"/>
+              <topic label="Pt_ARG_DASH_SCALE" href="ptgraphic.html#Pt_ARG_DASH_SCALE"/>
+              <topic label="Pt_ARG_GRAPHIC_FLAGS" href="ptgraphic.html#Pt_ARG_GRAPHIC_FLAGS"/>
+              <topic label="Pt_ARG_INSIDE_COLOR" href="ptgraphic.html#Pt_ARG_INSIDE_COLOR"/>
+              <topic label="Pt_ARG_INSIDE_FILL_PATTERN" href="ptgraphic.html#Pt_ARG_INSIDE_FILL_PATTERN"/>
+              <topic label="Pt_ARG_INSIDE_TRANS_PATTERN" href="ptgraphic.html#Pt_ARG_INSIDE_TRANS_PATTERN"/>
+              <topic label="Pt_ARG_LINE_CAP" href="ptgraphic.html#Pt_ARG_LINE_CAP"/>
+              <topic label="Pt_ARG_LINE_JOIN" href="ptgraphic.html#Pt_ARG_LINE_JOIN"/>
+              <topic label="Pt_ARG_LINE_WIDTH" href="ptgraphic.html#Pt_ARG_LINE_WIDTH"/>
+              <topic label="Pt_ARG_ORIGIN" href="ptgraphic.html#Pt_ARG_ORIGIN"/>
+              <topic label="Pt_ARG_POINTS" href="ptgraphic.html#Pt_ARG_POINTS"/>
+              <topic label="Pt_CB_RESCALE" href="ptgraphic.html#Pt_CB_RESCALE"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptgraphic.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtGrid" href="ptgrid.html">
+            <topic label="Class hierarchy:" href="ptgrid.html#id3"/>
+            <topic label="PhAB icon:" href="ptgrid.html#id5"/>
+            <topic label="Public header:" href="ptgrid.html#id7"/>
+            <topic label="Description:" href="ptgrid.html#id9"/>
+            <topic label="New resources:" href="ptgrid.html#NRESOURCES">
+              <topic label="Pt_ARG_GRID_HORIZONTAL" href="ptgrid.html#Pt_ARG_GRID_HORIZONTAL"/>
+              <topic label="Pt_ARG_GRID_VERTICAL" href="ptgrid.html#Pt_ARG_GRID_VERTICAL"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptgrid.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtGroup" href="ptgroup.html">
+            <topic label="Class hierarchy:" href="ptgroup.html#id3"/>
+            <topic label="PhAB icon:" href="ptgroup.html#id5"/>
+            <topic label="Public header:" href="ptgroup.html#id7"/>
+            <topic label="Description:" href="ptgroup.html#id9"/>
+            <topic label="New resources:" href="ptgroup.html#NRESOURCES">
+              <topic label="Pt_ARG_CELL_HORZ_ALIGN" href="ptgroup.html#Pt_ARG_CELL_HORZ_ALIGN"/>
+              <topic label="Pt_ARG_CELL_VERT_ALIGN" href="ptgroup.html#Pt_ARG_CELL_VERT_ALIGN"/>
+              <topic label="Pt_ARG_GROUP_FLAGS" href="ptgroup.html#Pt_ARG_GROUP_FLAGS"/>
+              <topic label="Pt_ARG_GROUP_HORZ_ALIGN" href="ptgroup.html#Pt_ARG_GROUP_HORZ_ALIGN"/>
+              <topic label="Pt_ARG_GROUP_ORIENTATION" href="ptgroup.html#Pt_ARG_GROUP_ORIENTATION"/>
+              <topic label="Pt_ARG_GROUP_ROWS_COLS" href="ptgroup.html#Pt_ARG_GROUP_ROWS_COLS"/>
+              <topic label="Pt_ARG_GROUP_SPACING" href="ptgroup.html#Pt_ARG_GROUP_SPACING"/>
+              <topic label="Pt_ARG_GROUP_SPACING_X" href="ptgroup.html#Pt_ARG_GROUP_SPACING_X"/>
+              <topic label="Pt_ARG_GROUP_SPACING_Y" href="ptgroup.html#Pt_ARG_GROUP_SPACING_Y"/>
+              <topic label="Pt_ARG_GROUP_VERT_ALIGN" href="ptgroup.html#Pt_ARG_GROUP_VERT_ALIGN"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptgroup.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtImageArea" href="ptimagearea.html">
+            <topic label="Class hierarchy:" href="ptimagearea.html#id3"/>
+            <topic label="PhAB icon:" href="ptimagearea.html#id5"/>
+            <topic label="Public header:" href="ptimagearea.html#id7"/>
+            <topic label="Description:" href="ptimagearea.html#id9"/>
+            <topic label="New resources:" href="ptimagearea.html#NRESOURCES">
+              <topic label="Pt_ARG_IMAGEAREA_FLAGS" href="ptimagearea.html#Pt_ARG_IMAGEAREA_FLAGS"/>
+              <topic label="Pt_ARG_IMAGEAREA_GRID_COLOR" href="ptimagearea.html#Pt_ARG_IMAGEAREA_GRID_COLOR"/>
+              <topic label="Pt_ARG_IMAGEAREA_GRID_THRESHOLD" href="ptimagearea.html#Pt_ARG_IMAGEAREA_GRID_THRESHOLD"/>
+              <topic label="Pt_ARG_IMAGEAREA_IMAGE" href="ptimagearea.html#Pt_ARG_IMAGEAREA_IMAGE"/>
+              <topic label="Pt_ARG_IMAGEAREA_LEFT" href="ptimagearea.html#Pt_ARG_IMAGEAREA_LEFT"/>
+              <topic label="Pt_ARG_IMAGEAREA_SELECTION" href="ptimagearea.html#Pt_ARG_IMAGEAREA_SELECTION"/>
+              <topic label="Pt_ARG_IMAGEAREA_TOP" href="ptimagearea.html#Pt_ARG_IMAGEAREA_TOP"/>
+              <topic label="Pt_ARG_IMAGEAREA_ZOOM" href="ptimagearea.html#Pt_ARG_IMAGEAREA_ZOOM"/>
+              <topic label="Pt_CB_IMAGEAREA_DRAG" href="ptimagearea.html#Pt_CB_IMAGEAREA_DRAG"/>
+              <topic label="Pt_CB_IMAGEAREA_MOVEMENT" href="ptimagearea.html#Pt_CB_IMAGEAREA_MOVEMENT"/>
+              <topic label="Pt_CB_IMAGEAREA_SCROLLED" href="ptimagearea.html#Pt_CB_IMAGEAREA_SCROLLED"/>
+              <topic label="Pt_CB_IMAGEAREA_SELECTION" href="ptimagearea.html#Pt_CB_IMAGEAREA_SELECTION"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptimagearea.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtLabel" href="ptlabel.html">
+            <topic label="Class hierarchy:" href="ptlabel.html#id3"/>
+            <topic label="PhAB icon:" href="ptlabel.html#id5"/>
+            <topic label="Public header:" href="ptlabel.html#id7"/>
+            <topic label="Description:" href="ptlabel.html#id9">
+              <topic label="Creating labels" href="ptlabel.html#id11"/>
+              <topic label="Text labels" href="ptlabel.html#id13"/>
+              <topic label="Image and bitmap labels" href="ptlabel.html#id15"/>
+              <topic label="Balloons" href="ptlabel.html#id17"/>
+            </topic>
+            <topic label="New resources:" href="ptlabel.html#NRESOURCES">
+              <topic label="Pt_ARG_ACCEL_KEY" href="ptlabel.html#Pt_ARG_ACCEL_KEY"/>
+              <topic label="Pt_ARG_BALLOON_COLOR" href="ptlabel.html#Pt_ARG_BALLOON_COLOR"/>
+              <topic label="Pt_ARG_BALLOON_FILL_COLOR" href="ptlabel.html#Pt_ARG_BALLOON_FILL_COLOR"/>
+              <topic label="Pt_ARG_BALLOON_POSITION" href="ptlabel.html#Pt_ARG_BALLOON_POSITION"/>
+              <topic label="Pt_ARG_BALLOON_TEXT" href="ptlabel.html#Pt_ARG_BALLOON_TEXT"/>
+              <topic label="Pt_ARG_HORIZONTAL_ALIGNMENT" href="ptlabel.html#Pt_ARG_HORIZONTAL_ALIGNMENT"/>
+              <topic label="Pt_ARG_LABEL_BALLOON" href="ptlabel.html#Pt_ARG_LABEL_BALLOON"/>
+              <topic label="Pt_ARG_LABEL_FLAGS" href="ptlabel.html#Pt_ARG_LABEL_FLAGS"/>
+              <topic label="Pt_ARG_LABEL_IMAGE" href="ptlabel.html#Pt_ARG_LABEL_IMAGE"/>
+              <topic label="Pt_ARG_LABEL_TYPE" href="ptlabel.html#Pt_ARG_LABEL_TYPE"/>
+              <topic label="Pt_ARG_LINE_SPACING" href="ptlabel.html#Pt_ARG_LINE_SPACING"/>
+              <topic label="Pt_ARG_MARGIN_BOTTOM" href="ptlabel.html#Pt_ARG_MARGIN_BOTTOM"/>
+              <topic label="Pt_ARG_MARGIN_LEFT" href="ptlabel.html#Pt_ARG_MARGIN_LEFT"/>
+              <topic label="Pt_ARG_MARGIN_RIGHT" href="ptlabel.html#Pt_ARG_MARGIN_RIGHT"/>
+              <topic label="Pt_ARG_MARGIN_TOP" href="ptlabel.html#Pt_ARG_MARGIN_TOP"/>
+              <topic label="Pt_ARG_SECONDARY_H_ALIGN" href="ptlabel.html#Pt_ARG_SECONDARY_H_ALIGN"/>
+              <topic label="Pt_ARG_SECONDARY_V_ALIGN" href="ptlabel.html#Pt_ARG_SECONDARY_V_ALIGN"/>
+              <topic label="Pt_ARG_TEXT_FONT" href="ptlabel.html#Pt_ARG_TEXT_FONT"/>
+              <topic label="Pt_ARG_TEXT_IMAGE_SPACING" href="ptlabel.html#Pt_ARG_TEXT_IMAGE_SPACING"/>
+              <topic label="Pt_ARG_TEXT_STRING" href="ptlabel.html#Pt_ARG_TEXT_STRING"/>
+              <topic label="Pt_ARG_UNDERLINE1" href="ptlabel.html#Pt_ARG_UNDERLINE1"/>
+              <topic label="Pt_ARG_UNDERLINE2" href="ptlabel.html#Pt_ARG_UNDERLINE2"/>
+              <topic label="Pt_ARG_UNDERLINE_TYPE" href="ptlabel.html#Pt_ARG_UNDERLINE_TYPE"/>
+              <topic label="Pt_ARG_VERTICAL_ALIGNMENT" href="ptlabel.html#Pt_ARG_VERTICAL_ALIGNMENT"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptlabel.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtLine" href="ptline.html">
+            <topic label="Class hierarchy:" href="ptline.html#id3"/>
+            <topic label="PhAB icon:" href="ptline.html#id5"/>
+            <topic label="Public header:" href="ptline.html#id7"/>
+            <topic label="Description:" href="ptline.html#id9"/>
+            <topic label="Inherited resources:" href="ptline.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtList" href="ptlist.html">
+            <topic label="Class hierarchy:" href="ptlist.html#id3"/>
+            <topic label="PhAB icon:" href="ptlist.html#id5"/>
+            <topic label="Public header:" href="ptlist.html#id7"/>
+            <topic label="Description:" href="ptlist.html#id9">
+              <topic label="Limitations" href="ptlist.html#Limitations"/>
+              <topic label="Displaying items in columns" href="ptlist.html#Columns"/>
+              <topic label="Creating lists" href="ptlist.html#CreatingLists"/>
+              <topic label="Controlling the number of items displayed" href="ptlist.html#NumberItemsDisplayed"/>
+              <topic label="Selection notification" href="ptlist.html#SELECTIONNOTIFICATION">
+                <topic label="Handling single selections" href="ptlist.html#id16"/>
+                <topic label="Handling multiple selections" href="ptlist.html#id18"/>
+              </topic>
+            </topic>
+            <topic label="New resources:" href="ptlist.html#NRESOURCES">
+              <topic label="Pt_ARG_ITEMS" href="ptlist.html#Pt_ARG_ITEMS"/>
+              <topic label="Pt_ARG_LIST_BALLOON" href="ptlist.html#Pt_ARG_LIST_BALLOON"/>
+              <topic label="Pt_ARG_LIST_SPACING" href="ptlist.html#Pt_ARG_LIST_SPACING"/>
+              <topic label="Pt_ARG_MODIFY_ITEMS (write only)" href="ptlist.html#Pt_ARG_MODIFY_ITEMS"/>
+              <topic label="Pt_ARG_SELECTION_INDEXES" href="ptlist.html#Pt_ARG_SELECTION_INDEXES"/>
+              <topic label="Pt_CB_LIST_INPUT" href="ptlist.html#Pt_CB_LIST_INPUT"/>
+              <topic label="Pt_CB_SELECTION" href="ptlist.html#Pt_CB_SELECTION"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptlist.html#IRESOURCES">
+              <topic label="Pt_ARG_VISIBLE_COUNT" href="ptlist.html#Pt_ARG_VISIBLE_COUNT"/>
+              <topic label="Pt_CB_DND" href="ptlist.html#Pt_CB_DND"/>
+            </topic>
+            <topic label="Convenience functions:" href="ptlist.html#FUNCTIONS"/>
+          <topic label="PtListAddItems" href="pt/ptlistadditems.html">
+            <topic label="Description:" href="pt/ptlistadditems.html#id5"/>
+          </topic>
+          <topic label="PtListDeleteAllItems" href="pt/ptlistdeleteallitems.html">
+            <topic label="Description:" href="pt/ptlistdeleteallitems.html#id5"/>
+          </topic>
+          <topic label="PtListDeleteItemPos" href="pt/ptlistdeleteitempos.html">
+            <topic label="Description:" href="pt/ptlistdeleteitempos.html#id5"/>
+          </topic>
+          <topic label="PtListDeleteItems" href="pt/ptlistdeleteitems.html">
+            <topic label="Description:" href="pt/ptlistdeleteitems.html#id5"/>
+          </topic>
+          <topic label="PtListGotoPos" href="pt/ptlistgotopos.html">
+            <topic label="Description:" href="pt/ptlistgotopos.html#id5"/>
+          </topic>
+          <topic label="PtListItemExists" href="pt/ptlistitemexists.html">
+            <topic label="Description:" href="pt/ptlistitemexists.html#id5"/>
+          </topic>
+          <topic label="PtListItemPos" href="pt/ptlistitempos.html">
+            <topic label="Description:" href="pt/ptlistitempos.html#id5"/>
+          </topic>
+          <topic label="PtListRemovePositions" href="pt/ptlistremovepositions.html">
+            <topic label="Description:" href="pt/ptlistremovepositions.html#id5"/>
+          </topic>
+          <topic label="PtListReplaceItemPos" href="pt/ptlistreplaceitempos.html">
+            <topic label="Description:" href="pt/ptlistreplaceitempos.html#id5"/>
+          </topic>
+          <topic label="PtListReplaceItems" href="pt/ptlistreplaceitems.html">
+            <topic label="Description:" href="pt/ptlistreplaceitems.html#id5"/>
+          </topic>
+          <topic label="PtListSelectPos" href="pt/ptlistselectpos.html">
+            <topic label="Description:" href="pt/ptlistselectpos.html#id5"/>
+          </topic>
+          <topic label="PtListShowPos" href="pt/ptlistshowpos.html">
+            <topic label="Description:" href="pt/ptlistshowpos.html#id5"/>
+          </topic>
+          <topic label="PtListUnselectPos" href="pt/ptlistunselectpos.html">
+            <topic label="Description:" href="pt/ptlistunselectpos.html#id5"/>
+          </topic>
+        </topic>
+        <topic label="PtMenu" href="ptmenu.html">
+            <topic label="Class hierarchy:" href="ptmenu.html#id3"/>
+            <topic label="PhAB icon:" href="ptmenu.html#id5"/>
+            <topic label="Public header:" href="ptmenu.html#id7"/>
+            <topic label="Description:" href="ptmenu.html#id9">
+              <topic label="Creating menus" href="ptmenu.html#id11">
+                <topic label="Populating the menu" href="ptmenu.html#id13"/>
+                <topic label="Sizing" href="ptmenu.html#id15"/>
+                <topic label="Lifetime" href="ptmenu.html#Lifetime"/>
+              </topic>
+              <topic label="Pulldown menus" href="ptmenu.html#id18"/>
+              <topic label="Popup menus" href="ptmenu.html#id20"/>
+              <topic label="Cascaded menus" href="ptmenu.html#CASCADEDMENUS"/>
+              <topic label="Complete menu example" href="ptmenu.html#CompleteMenuExample"/>
+            </topic>
+            <topic label="New resources:" href="ptmenu.html#NRESOURCES">
+              <topic label="Pt_ARG_MENU_FLAGS" href="ptmenu.html#Pt_ARG_MENU_FLAGS"/>
+              <topic label="Pt_ARG_MENU_INPUT_GROUP" href="ptmenu.html#Pt_ARG_MENU_INPUT_GROUP"/>
+              <topic label="Pt_ARG_MENU_ITEM_FILL_COLOR" href="ptmenu.html#Pt_ARG_MENU_ITEM_FILL_COLOR"/>
+              <topic label="Pt_ARG_MENU_ITEM_HIGHLIGHT_COLOR" href="ptmenu.html#Pt_ARG_MENU_ITEM_HIGHLIGHT_COLOR"/>
+              <topic label="Pt_ARG_MENU_SPACING" href="ptmenu.html#Pt_ARG_MENU_SPACING"/>
+              <topic label="Pt_ARG_MENU_TEXT_FONT" href="ptmenu.html#Pt_ARG_MENU_TEXT_FONT"/>
+              <topic label="Pt_ARG_MENU_TITLE" href="ptmenu.html#Pt_ARG_MENU_TITLE"/>
+              <topic label="Pt_ARG_MENU_TITLE_FONT" href="ptmenu.html#Pt_ARG_MENU_TITLE_FONT"/>
+              <topic label="Pt_ARG_SUBMENU_PARENT_HIGHLIGHT_COLOR" href="ptmenu.html#Pt_ARG_SUBMENU_PARENT_HIGHLIGHT_COLOR"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptmenu.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtMenuBar" href="ptmenubar.html">
+            <topic label="Class hierarchy:" href="ptmenubar.html#id3"/>
+            <topic label="PhAB icon:" href="ptmenubar.html#id5"/>
+            <topic label="Public header:" href="ptmenubar.html#id7"/>
+            <topic label="Description:" href="ptmenubar.html#id9"/>
+            <topic label="Inherited resources:" href="ptmenubar.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtMenuButton" href="ptmenubutton.html">
+            <topic label="Class hierarchy:" href="ptmenubutton.html#id3"/>
+            <topic label="PhAB icon:" href="ptmenubutton.html#id5"/>
+            <topic label="Public header:" href="ptmenubutton.html#id7"/>
+            <topic label="Description:" href="ptmenubutton.html#id9"/>
+            <topic label="New resources:" href="ptmenubutton.html#NRESOURCES">
+              <topic label="Pt_ARG_ACCEL_FONT" href="ptmenubutton.html#Pt_ARG_ACCEL_FONT"/>
+              <topic label="Pt_ARG_ACCEL_TEXT" href="ptmenubutton.html#Pt_ARG_ACCEL_TEXT"/>
+              <topic label="Pt_ARG_BUTTON_TYPE" href="ptmenubutton.html#Pt_ARG_BUTTON_TYPE"/>
+              <topic label="Pt_ARG_MODIFIER_KEYS" href="ptmenubutton.html#Pt_ARG_MODIFIER_KEYS"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptmenubutton.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtMeter" href="ptmeter.html">
+            <topic label="Class hierarchy:" href="ptmeter.html#id3"/>
+            <topic label="PhAB icon:" href="ptmeter.html#id5"/>
+            <topic label="Public header:" href="ptmeter.html#id7"/>
+            <topic label="Description:" href="ptmeter.html#id9">
+              <topic label="Creating a 3-arc meter" href="ptmeter.html#id11"/>
+              <topic label="Creating a 1-arc meter" href="ptmeter.html#id13"/>
+              <topic label="Creating a 3-arc meter movable by keys and mouse" href="ptmeter.html#id15"/>
+              <topic label="Full meter example" href="ptmeter.html#FullMeterExample"/>
+            </topic>
+            <topic label="New resources:" href="ptmeter.html#NRESOURCES">
+              <topic label="Pt_ARG_METER_COLOR" href="ptmeter.html#Pt_ARG_METER_COLOR"/>
+              <topic label="Pt_ARG_METER_FLAGS" href="ptmeter.html#Pt_ARG_METER_FLAGS"/>
+              <topic label="Pt_ARG_METER_FONT_COLOR" href="ptmeter.html#Pt_ARG_METER_FONT_COLOR"/>
+              <topic label="Pt_ARG_METER_INCREMENT" href="ptmeter.html#Pt_ARG_METER_INCREMENT"/>
+              <topic label="Pt_ARG_METER_KEY_LEFT" href="ptmeter.html#Pt_ARG_METER_KEY_LEFT"/>
+              <topic label="Pt_ARG_METER_KEY_RIGHT" href="ptmeter.html#Pt_ARG_METER_KEY_RIGHT"/>
+              <topic label="Pt_ARG_METER_LEVEL1_COLOR" href="ptmeter.html#Pt_ARG_METER_LEVEL1_COLOR"/>
+              <topic label="Pt_ARG_METER_LEVEL1_POS" href="ptmeter.html#Pt_ARG_METER_LEVEL1_POS"/>
+              <topic label="Pt_ARG_METER_LEVEL2_COLOR" href="ptmeter.html#Pt_ARG_METER_LEVEL2_COLOR"/>
+              <topic label="Pt_ARG_METER_LEVEL2_POS" href="ptmeter.html#Pt_ARG_METER_LEVEL2_POS"/>
+              <topic label="Pt_ARG_METER_LEVEL3_COLOR" href="ptmeter.html#Pt_ARG_METER_LEVEL3_COLOR"/>
+              <topic label="Pt_ARG_METER_MAX_NEEDLE_POSITION" href="ptmeter.html#Pt_ARG_METER_MAX_NEEDLE_POSITION"/>
+              <topic label="Pt_ARG_METER_MIN_NEEDLE_POSITION" href="ptmeter.html#Pt_ARG_METER_MIN_NEEDLE_POSITION"/>
+              <topic label="Pt_ARG_METER_NEEDLE_COLOR" href="ptmeter.html#Pt_ARG_METER_NEEDLE_COLOR"/>
+              <topic label="Pt_ARG_METER_NEEDLE_POSITION" href="ptmeter.html#Pt_ARG_METER_NEEDLE_POSITION"/>
+              <topic label="Pt_ARG_METER_NUM_SEVERITY_LEVELS" href="ptmeter.html#Pt_ARG_METER_NUM_SEVERITY_LEVELS"/>
+              <topic label="Pt_ARG_METER_TEXT_FONT" href="ptmeter.html#Pt_ARG_METER_TEXT_FONT"/>
+              <topic label="Pt_CB_METER_MOVED" href="ptmeter.html#Pt_CB_METER_MOVED"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptmeter.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtMTrend" href="ptmtrend.html">
+            <topic label="Class hierarchy:" href="ptmtrend.html#id3"/>
+            <topic label="PhAB icon:" href="ptmtrend.html#id5"/>
+            <topic label="Public header:" href="ptmtrend.html#id7"/>
+            <topic label="Description:" href="ptmtrend.html#id9">
+              <topic label="Example" href="ptmtrend.html#id11"/>
+            </topic>
+            <topic label="New resources:" href="ptmtrend.html#NRESOURCES">
+              <topic label="Pt_ARG_MTREND_FLAGS" href="ptmtrend.html#Pt_ARG_MTREND_FLAGS"/>
+              <topic label="Pt_ARG_MTREND_N_SAMPLES" href="ptmtrend.html#Pt_ARG_MTREND_N_SAMPLES"/>
+              <topic label="Pt_ARG_MTREND_N_GRAPHS" href="ptmtrend.html#Pt_ARG_MTREND_N_GRAPHS"/>
+              <topic label="Pt_ARG_MTREND_GRAPH_ATTR" href="ptmtrend.html#Pt_ARG_MTREND_GRAPH_ATTR"/>
+              <topic label="Pt_ARG_MTREND_GRAPH_STATE" href="ptmtrend.html#Pt_ARG_MTREND_GRAPH_STATE"/>
+              <topic label="Pt_ARG_MTREND_GRAPH_DATA" href="ptmtrend.html#Pt_ARG_MTREND_GRAPH_DATA"/>
+              <topic label="Pt_ARG_MTREND_TRACE_WIDTH" href="ptmtrend.html#Pt_ARG_MTREND_TRACE_WIDTH"/>
+              <topic label="Pt_ARG_MTREND_TRACE_COLOR" href="ptmtrend.html#Pt_ARG_MTREND_TRACE_COLOR"/>
+              <topic label="Pt_ARG_MTREND_TRACE_DRAW_F" href="ptmtrend.html#Pt_ARG_MTREND_TRACE_DRAW_F"/>
+              <topic label="Pt_ARG_MTREND_GRID_X" href="ptmtrend.html#Pt_ARG_MTREND_GRID_X"/>
+              <topic label="Pt_ARG_MTREND_GRID_Y" href="ptmtrend.html#Pt_ARG_MTREND_GRID_Y"/>
+              <topic label="Pt_ARG_MTREND_GRID_COLOR" href="ptmtrend.html#Pt_ARG_MTREND_GRID_COLOR"/>
+              <topic label="Pt_ARG_MTREND_GRID_DRAW_F" href="ptmtrend.html#Pt_ARG_MTREND_GRID_DRAW_F"/>
+              <topic label="Pt_ARG_MTREND_ADVANCE_BY_N_SAMPLES" href="ptmtrend.html#Pt_ARG_MTREND_ADVANCE_BY_N_SAMPLES"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptmtrend.html#IRESOURCES"/>
+            <topic label="Convenience functions:" href="ptmtrend.html#FUNCTIONS"/>
+          <topic label="PtMTrendAddData, PtMTrendChangeData" href="pt/ptmtrendchangedata.html">
+            <topic label="Description:" href="pt/ptmtrendchangedata.html#id7"/>
+          </topic>
+        </topic>
+        <topic label="PtMultiText" href="ptmultitext.html">
+            <topic label="Class hierarchy:" href="ptmultitext.html#id3"/>
+            <topic label="PhAB icon:" href="ptmultitext.html#id5"/>
+            <topic label="Public header:" href="ptmultitext.html#id7"/>
+            <topic label="Description:" href="ptmultitext.html#id9">
+              <topic label="Features" href="ptmultitext.html#Features"/>
+              <topic label="Setting text" href="ptmultitext.html#SettingText"/>
+              <topic label="Text attributes" href="ptmultitext.html#TextAttributes"/>
+              <topic label="Setting text using ranges" href="ptmultitext.html#UsingRanges"/>
+              <topic label="Inserting text with assigned attributes" href="ptmultitext.html#INSERTINGTEXTWITHASSIGNEDATTRIBUTES"/>
+              <topic label="Changing the attributes of a range of text" href="ptmultitext.html#ChangingAttributes"/>
+              <topic label="Hyperlinks using cursor-motion callbacks" href="ptmultitext.html#HYPERLINKSUSINGCURSORMOTIONCALLBACKS"/>
+              <topic label="Widget dimensions" href="ptmultitext.html#WidgetDimensions"/>
+              <topic label="Drag and Drop" href="ptmultitext.html#DragAndDrop"/>
+            </topic>
+            <topic label="New resources:" href="ptmultitext.html#NRESOURCES">
+              <topic label="Pt_ARG_MULTITEXT_BOTTOM_LINE (write-only)" href="ptmultitext.html#Pt_ARG_MULTITEXT_BOTTOM_LINE"/>
+              <topic label="Pt_ARG_MULTITEXT_FLAGS" href="ptmultitext.html#Pt_ARG_MULTITEXT_FLAGS"/>
+              <topic label="Pt_ARG_MULTITEXT_NUM_LINES (read-only)" href="ptmultitext.html#Pt_ARG_MULTITEXT_NUM_LINES"/>
+              <topic label="Pt_ARG_MULTITEXT_NUM_LINES_VISIBLE (read-only)" href="ptmultitext.html#Pt_ARG_MULTITEXT_NUM_LINES_VISIBLE"/>
+              <topic label="Pt_ARG_MULTITEXT_QUERY_CHARACTER (read-only)" href="ptmultitext.html#Pt_ARG_MULTITEXT_QUERY_CHARACTER"/>
+              <topic label="Pt_ARG_MULTITEXT_QUERY_LINE (read-only)" href="ptmultitext.html#Pt_ARG_MULTITEXT_QUERY_LINE"/>
+              <topic label="Pt_ARG_MULTITEXT_RANGE_ATTRIBUTES" href="ptmultitext.html#Pt_ARG_MULTITEXT_RANGE_ATTRIBUTES"/>
+              <topic label="Pt_ARG_MULTITEXT_ROWS (write-only)" href="ptmultitext.html#Pt_ARG_MULTITEXT_ROWS"/>
+              <topic label="Pt_ARG_MULTITEXT_SEGMENTS (write-only)" href="ptmultitext.html#Pt_ARG_MULTITEXT_SEGMENTS"/>
+              <topic label="Pt_ARG_MULTITEXT_TABS" href="ptmultitext.html#Pt_ARG_MULTITEXT_TABS"/>
+              <topic label="Pt_ARG_MULTITEXT_TOP_LINE" href="ptmultitext.html#Pt_ARG_MULTITEXT_TOP_LINE"/>
+              <topic label="Pt_ARG_MULTITEXT_WRAP_FLAGS" href="ptmultitext.html#Pt_ARG_MULTITEXT_WRAP_FLAGS"/>
+              <topic label="Pt_ARG_MULTITEXT_X_SCROLL_POS" href="ptmultitext.html#Pt_ARG_MULTITEXT_X_SCROLL_POS"/>
+              <topic label="Pt_ARG_MULTITEXT_Y_SCROLL_POS" href="ptmultitext.html#Pt_ARG_MULTITEXT_Y_SCROLL_POS"/>
+              <topic label="Pt_ARG_SCROLLBAR_X_DISPLAY" href="ptmultitext.html#Pt_ARG_SCROLLBAR_X_DISPLAY"/>
+              <topic label="Pt_ARG_SCROLLBAR_X_HEIGHT" href="ptmultitext.html#Pt_ARG_SCROLLBAR_X_HEIGHT"/>
+              <topic label="Pt_ARG_SCROLLBAR_Y_DISPLAY" href="ptmultitext.html#Pt_ARG_SCROLLBAR_Y_DISPLAY"/>
+              <topic label="Pt_ARG_SCROLLBAR_Y_WIDTH" href="ptmultitext.html#Pt_ARG_SCROLLBAR_Y_WIDTH"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptmultitext.html#IRESOURCES">
+              <topic label="Pt_CB_ACTIVATE" href="ptmultitext.html#Pt_CB_ACTIVATE"/>
+              <topic label="Pt_CB_GOT_FOCUS, Pt_CB_LOST_FOCUS" href="ptmultitext.html#Pt_CB_GOT_FOCUS"/>
+              <topic label="Pt_CB_TEXT_CHANGED, Pt_CB_MODIFY_NOTIFY, Pt_CB_MOTION_NOTIFY" href="ptmultitext.html#Pt_CB_TEXT_CHANGED"/>
+              <topic label="Pt_CB_MODIFY_VERIFY" href="ptmultitext.html#Pt_CB_MODIFY_VERIFY"/>
+              <topic label="Pt_CB_MOTION_VERIFY" href="ptmultitext.html#Pt_CB_MOTION_VERIFY"/>
+            </topic>
+            <topic label="Convenience functions:" href="ptmultitext.html#FUNCTIONS"/>
+          <topic label="PtMultiLines_t" href="ptmultilines_t.html">
+            <topic label="Description:" href="ptmultilines_t.html#id5"/>
+          </topic>
+          <topic label="PtMultiTextAttributes_t" href="ptmultitextattributes_t.html">
+            <topic label="Description:" href="ptmultitextattributes_t.html#id5"/>
+          </topic>
+          <topic label="PtMultiTextCallback_t" href="ptmultitextcallback_t.html">
+            <topic label="Description:" href="ptmultitextcallback_t.html#id5"/>
+          </topic>
+          <topic label="PtMultiTextCreateAttributes" href="pt/ptmultitextcreateattributes.html">
+            <topic label="Description:" href="pt/ptmultitextcreateattributes.html#id5"/>
+            <topic label="Examples:" href="pt/ptmultitextcreateattributes.html#id9"/>
+          </topic>
+          <topic label="PtMultiTextGetAttributes" href="pt/ptmultitextgetattributes.html">
+            <topic label="Description:" href="pt/ptmultitextgetattributes.html#id5"/>
+            <topic label="Examples:" href="pt/ptmultitextgetattributes.html#id9"/>
+          </topic>
+          <topic label="PtMultiTextInfo" href="pt/ptmultitextinfo.html">
+            <topic label="Description:" href="pt/ptmultitextinfo.html#id5"/>
+          </topic>
+          <topic label="PtMultiTextLine_t" href="ptmultitextline_t.html">
+            <topic label="Description:" href="ptmultitextline_t.html#id5"/>
+          </topic>
+          <topic label="PtMultiTextModifyAttributes" href="pt/ptmultitextmodifyattributes.html">
+            <topic label="Description:" href="pt/ptmultitextmodifyattributes.html#id5"/>
+            <topic label="Examples:" href="pt/ptmultitextmodifyattributes.html#id7"/>
+          </topic>
+          <topic label="PtMultiTextModifyText" href="pt/ptmultitextmodifytext.html">
+            <topic label="Description:" href="pt/ptmultitextmodifytext.html#id5"/>
+          </topic>
+          <topic label="PtMultiTextQuery_t" href="ptmultitextquery_t.html">
+            <topic label="Description:" href="ptmultitextquery_t.html#id5"/>
+          </topic>
+          <topic label="PtMultiTextSegment_t" href="ptmultitextsegment_t.html">
+            <topic label="Description:" href="ptmultitextsegment_t.html#id5"/>
+          </topic>
+        </topic>
+        <topic label="PtNumeric" href="ptnumeric.html">
+            <topic label="Class hierarchy:" href="ptnumeric.html#id3"/>
+            <topic label="PhAB icon:" href="ptnumeric.html#id5"/>
+            <topic label="Public header:" href="ptnumeric.html#id7"/>
+            <topic label="Description:" href="ptnumeric.html#id9"/>
+            <topic label="New resources:" href="ptnumeric.html#NRESOURCES">
+              <topic label="Pt_ARG_NUMERIC_FLAGS" href="ptnumeric.html#Pt_ARG_NUMERIC_FLAGS"/>
+              <topic label="Pt_ARG_NUMERIC_PREFIX" href="ptnumeric.html#Pt_ARG_NUMERIC_PREFIX"/>
+              <topic label="Pt_ARG_NUMERIC_SPACING" href="ptnumeric.html#Pt_ARG_NUMERIC_SPACING"/>
+              <topic label="Pt_ARG_NUMERIC_SUFFIX" href="ptnumeric.html#Pt_ARG_NUMERIC_SUFFIX"/>
+              <topic label="Pt_ARG_NUMERIC_UPDOWN_WIDTH" href="ptnumeric.html#Pt_ARG_NUMERIC_UPDOWN_WIDTH"/>
+            </topic>
+            <topic label="Exported subordinate children:" href="ptnumeric.html#BRESOURCES"/>
+            <topic label="Inherited resources:" href="ptnumeric.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtNumericFloat" href="ptnumericfloat.html">
+            <topic label="Class hierarchy:" href="ptnumericfloat.html#id3"/>
+            <topic label="PhAB icon:" href="ptnumericfloat.html#id5"/>
+            <topic label="Public header:" href="ptnumericfloat.html#id7"/>
+            <topic label="Description:" href="ptnumericfloat.html#id9"/>
+            <topic label="New resources:" href="ptnumericfloat.html#NRESOURCES">
+              <topic label="Pt_ARG_NUMERIC_INCREMENT" href="ptnumericfloat.html#Pt_ARG_NUMERIC_INCREMENT"/>
+              <topic label="Pt_ARG_NUMERIC_MAX" href="ptnumericfloat.html#Pt_ARG_NUMERIC_MAX"/>
+              <topic label="Pt_ARG_NUMERIC_MIN" href="ptnumericfloat.html#Pt_ARG_NUMERIC_MIN"/>
+              <topic label="Pt_ARG_NUMERIC_PRECISION" href="ptnumericfloat.html#Pt_ARG_NUMERIC_PRECISION"/>
+              <topic label="Pt_ARG_NUMERIC_VALUE" href="ptnumericfloat.html#Pt_ARG_NUMERIC_VALUE"/>
+              <topic label="Pt_CB_NUMERIC_CHANGED" href="ptnumericfloat.html#Pt_CB_NUMERIC_CHANGED"/>
+            </topic>
+            <topic label="Exported subordinate children:" href="ptnumericfloat.html#BRESOURCES"/>
+            <topic label="Inherited resources:" href="ptnumericfloat.html#IRESOURCES">
+              <topic label="Pt_CB_ACTIVATE" href="ptnumericfloat.html#Pt_CB_ACTIVATE"/>
+            </topic>
+        </topic>
+        <topic label="PtNumericInteger" href="ptnumericinteger.html">
+            <topic label="Class hierarchy:" href="ptnumericinteger.html#id3"/>
+            <topic label="PhAB icon:" href="ptnumericinteger.html#id5"/>
+            <topic label="Public header:" href="ptnumericinteger.html#id7"/>
+            <topic label="Description:" href="ptnumericinteger.html#id9"/>
+            <topic label="New resources:" href="ptnumericinteger.html#NRESOURCES">
+              <topic label="Pt_ARG_NUMERIC_INCREMENT" href="ptnumericinteger.html#Pt_ARG_NUMERIC_INCREMENT"/>
+              <topic label="Pt_ARG_NUMERIC_MAX" href="ptnumericinteger.html#Pt_ARG_NUMERIC_MAX"/>
+              <topic label="Pt_ARG_NUMERIC_MIN" href="ptnumericinteger.html#Pt_ARG_NUMERIC_MIN"/>
+              <topic label="Pt_ARG_NUMERIC_VALUE" href="ptnumericinteger.html#Pt_ARG_NUMERIC_VALUE"/>
+              <topic label="Pt_CB_NUMERIC_CHANGED" href="ptnumericinteger.html#Pt_CB_NUMERIC_CHANGED"/>
+            </topic>
+            <topic label="Exported subordinate children:" href="ptnumericinteger.html#BRESOURCES"/>
+            <topic label="Inherited resources:" href="ptnumericinteger.html#IRESOURCES">
+              <topic label="Pt_CB_ACTIVATE" href="ptnumericinteger.html#Pt_CB_ACTIVATE"/>
+            </topic>
+        </topic>
+        <topic label="PtOnOffButton" href="ptonoffbutton.html">
+            <topic label="Class hierarchy:" href="ptonoffbutton.html#id3"/>
+            <topic label="PhAB icon:" href="ptonoffbutton.html#id5"/>
+            <topic label="Public header:" href="ptonoffbutton.html#id7"/>
+            <topic label="Description:" href="ptonoffbutton.html#id9"/>
+            <topic label="New resources:" href="ptonoffbutton.html#NRESOURCES">
+              <topic label="Pt_ARG_ONOFF_STATE" href="ptonoffbutton.html#Pt_ARG_ONOFF_STATE"/>
+              <topic label="Pt_CB_ONOFF_NEW_VALUE" href="ptonoffbutton.html#Pt_CB_ONOFF_NEW_VALUE"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptonoffbutton.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtOSContainer" href="ptoscontainer.html">
+            <topic label="Class hierarchy:" href="ptoscontainer.html#id3"/>
+            <topic label="PhAB icon:" href="ptoscontainer.html#id5"/>
+            <topic label="Public header:" href="ptoscontainer.html#id7"/>
+            <topic label="Description:" href="ptoscontainer.html#id9"/>
+            <topic label="Inherited resources:" href="ptoscontainer.html#IRESOURCES">
+              <topic label="Pt_ARG_FILL_COLOR" href="ptoscontainer.html#Pt_ARG_FILL_COLOR"/>
+            </topic>
+        </topic>
+        <topic label="PtPane" href="ptpane.html">
+            <topic label="Class hierarchy:" href="ptpane.html#id3"/>
+            <topic label="PhAB icon:" href="ptpane.html#id5"/>
+            <topic label="Public header:" href="ptpane.html#id7"/>
+            <topic label="Description:" href="ptpane.html#id9"/>
+            <topic label="Inherited resources:" href="ptpane.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtPanelGroup" href="ptpanelgroup.html">
+            <topic label="Class hierarchy:" href="ptpanelgroup.html#id3"/>
+            <topic label="PhAB icon:" href="ptpanelgroup.html#id5"/>
+            <topic label="Public header:" href="ptpanelgroup.html#id7"/>
+            <topic label="Description:" href="ptpanelgroup.html#id9">
+              <topic label="Populating a panel group" href="ptpanelgroup.html#Populating">
+                <topic label="Multiple panels" href="ptpanelgroup.html#MultiplePanels"/>
+                <topic label="Single panel" href="ptpanelgroup.html#SinglePanel"/>
+              </topic>
+              <topic label="Panel margins" href="ptpanelgroup.html#PanelMargins"/>
+              <topic label="Panel indexes" href="ptpanelgroup.html#PanelIndexes"/>
+            </topic>
+            <topic label="New resources:" href="ptpanelgroup.html#NRESOURCES">
+              <topic label="Pt_ARG_MARGIN_BOTTOM" href="ptpanelgroup.html#Pt_ARG_MARGIN_BOTTOM"/>
+              <topic label="Pt_ARG_MARGIN_LEFT" href="ptpanelgroup.html#Pt_ARG_MARGIN_LEFT"/>
+              <topic label="Pt_ARG_MARGIN_RIGHT" href="ptpanelgroup.html#Pt_ARG_MARGIN_RIGHT"/>
+              <topic label="Pt_ARG_MARGIN_TOP" href="ptpanelgroup.html#Pt_ARG_MARGIN_TOP"/>
+              <topic label="Pt_ARG_PG_CURRENT" href="ptpanelgroup.html#Pt_ARG_PG_CURRENT"/>
+              <topic label="Pt_ARG_PG_CURRENT_INDEX" href="ptpanelgroup.html#Pt_ARG_PG_CURRENT_INDEX"/>
+              <topic label="Pt_ARG_PG_FLAGS" href="ptpanelgroup.html#Pt_ARG_PG_FLAGS"/>
+              <topic label="Pt_ARG_PG_OVERLAP_THRESHOLD" href="ptpanelgroup.html#Pt_ARG_PG_OVERLAP_THRESHOLD"/>
+              <topic label="Pt_ARG_PG_PANEL_TITLES" href="ptpanelgroup.html#Pt_ARG_PG_PANEL_TITLES"/>
+              <topic label="Pt_ARG_PG_SELECTION_MODE" href="ptpanelgroup.html#Pt_ARG_PG_SELECTION_MODE"/>
+              <topic label="Pt_CB_PG_PANEL_SWITCHING" href="ptpanelgroup.html#Pt_CB_PG_PANEL_SWITCHING"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptpanelgroup.html#IRESOURCES"/>
+            <topic label="Convenience functions:" href="ptpanelgroup.html#FUNCTIONS"/>
+          <topic label="PtPGCreatePopup" href="pt/ptpgcreatepopup.html">
+            <topic label="Description:" href="pt/ptpgcreatepopup.html#id5"/>
+          </topic>
+          <topic label="PtPGFindIndexByPanel" href="pt/ptpgfindindexbypanel.html">
+            <topic label="Description:" href="pt/ptpgfindindexbypanel.html#id5"/>
+          </topic>
+          <topic label="PtPGFindIndexByTitle" href="pt/ptpgfindindexbytitle.html">
+            <topic label="Description:" href="pt/ptpgfindindexbytitle.html#id5"/>
+          </topic>
+          <topic label="PtPGFindPanelByIndex" href="pt/ptpgfindpanelbyindex.html">
+            <topic label="Description:" href="pt/ptpgfindpanelbyindex.html#id5"/>
+          </topic>
+          <topic label="PtPGFindPanelByTitle" href="pt/ptpgfindpanelbytitle.html">
+            <topic label="Description:" href="pt/ptpgfindpanelbytitle.html#id5"/>
+          </topic>
+          <topic label="PtPGFindTitleByIndex" href="pt/ptpgfindtitlebyindex.html">
+            <topic label="Description:" href="pt/ptpgfindtitlebyindex.html#id5"/>
+          </topic>
+        </topic>
+        <topic label="PtPixel" href="ptpixel.html">
+            <topic label="Class hierarchy:" href="ptpixel.html#id3"/>
+            <topic label="PhAB icon:" href="ptpixel.html#id5"/>
+            <topic label="Public header:" href="ptpixel.html#id7"/>
+            <topic label="Description:" href="ptpixel.html#id9"/>
+            <topic label="Inherited resources:" href="ptpixel.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtPolygon" href="ptpolygon.html">
+            <topic label="Class hierarchy:" href="ptpolygon.html#id3"/>
+            <topic label="PhAB icon:" href="ptpolygon.html#id5"/>
+            <topic label="Public header:" href="ptpolygon.html#id7"/>
+            <topic label="Description:" href="ptpolygon.html#id9"/>
+            <topic label="New resources:" href="ptpolygon.html#NRESOURCES">
+              <topic label="Pt_ARG_POLYGON_FLAGS" href="ptpolygon.html#Pt_ARG_POLYGON_FLAGS"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptpolygon.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtPrintSel" href="ptprintsel.html">
+            <topic label="Class hierarchy:" href="ptprintsel.html#id3"/>
+            <topic label="PhAB icon:" href="ptprintsel.html#id5"/>
+            <topic label="Public header:" href="ptprintsel.html#id7"/>
+            <topic label="Description:" href="ptprintsel.html#id9"/>
+            <topic label="New resources:" href="ptprintsel.html#NRESOURCES">
+              <topic label="Pt_ARG_PRINT_CONTEXT" href="ptprintsel.html#Pt_ARG_PRINT_CONTEXT"/>
+              <topic label="Pt_ARG_PRINT_FILE" href="ptprintsel.html#Pt_ARG_PRINT_FILE"/>
+              <topic label="Pt_ARG_PRINT_FLAGS" href="ptprintsel.html#Pt_ARG_PRINT_FLAGS"/>
+              <topic label="Pt_ARG_PS_LBL_ALL" href="ptprintsel.html#Pt_ARG_PS_LBL_ALL"/>
+              <topic label="Pt_ARG_PS_LBL_COLLATED" href="ptprintsel.html#Pt_ARG_PS_LBL_COLLATED"/>
+              <topic label="Pt_ARG_PS_LBL_COPIES" href="ptprintsel.html#Pt_ARG_PS_LBL_COPIES"/>
+              <topic label="Pt_ARG_PS_LBL_DOUBLE_SIDED" href="ptprintsel.html#Pt_ARG_PS_LBL_DOUBLE_SIDED"/>
+              <topic label="Pt_ARG_PS_LBL_FILE" href="ptprintsel.html#Pt_ARG_PS_LBL_FILE"/>
+              <topic label="Pt_ARG_PS_LBL_FROM" href="ptprintsel.html#Pt_ARG_PS_LBL_FROM"/>
+              <topic label="Pt_ARG_PS_LBL_NAME" href="ptprintsel.html#Pt_ARG_PS_LBL_NAME"/>
+              <topic label="Pt_ARG_PS_LBL_NOT_COLLATED" href="ptprintsel.html#Pt_ARG_PS_LBL_NOT_COLLATED"/>
+              <topic label="Pt_ARG_PS_LBL_PREFERENCES" href="ptprintsel.html#Pt_ARG_PS_LBL_PREFERENCES"/>
+              <topic label="Pt_ARG_PS_LBL_PRINT_ORDER" href="ptprintsel.html#Pt_ARG_PS_LBL_PRINT_ORDER"/>
+              <topic label="Pt_ARG_PS_LBL_PRINT_PAGES" href="ptprintsel.html#Pt_ARG_PS_LBL_PRINT_PAGES"/>
+              <topic label="Pt_ARG_PS_LBL_RANGE" href="ptprintsel.html#Pt_ARG_PS_LBL_RANGE"/>
+              <topic label="Pt_ARG_PS_LBL_REVERSED" href="ptprintsel.html#Pt_ARG_PS_LBL_REVERSED"/>
+              <topic label="Pt_ARG_PS_LBL_SELECTION" href="ptprintsel.html#Pt_ARG_PS_LBL_SELECTION"/>
+              <topic label="Pt_ARG_PS_LBL_SEND_TO_FILE" href="ptprintsel.html#Pt_ARG_PS_LBL_SEND_TO_FILE"/>
+              <topic label="Pt_ARG_PS_LBL_SEND_TO_PRINTER" href="ptprintsel.html#Pt_ARG_PS_LBL_SEND_TO_PRINTER"/>
+              <topic label="Pt_ARG_PS_LBL_TO" href="ptprintsel.html#Pt_ARG_PS_LBL_TO"/>
+              <topic label="Pt_CB_PRINT_PROPS" href="ptprintsel.html#Pt_CB_PRINT_PROPS"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptprintsel.html#IRESOURCES"/>
+            <topic label="Convenience functions:" href="ptprintsel.html#FUNCTIONS"/>
+        </topic>
+        <topic label="PtProgress" href="ptprogress.html">
+            <topic label="Class hierarchy:" href="ptprogress.html#id3"/>
+            <topic label="PhAB icon:" href="ptprogress.html#id5"/>
+            <topic label="Public header:" href="ptprogress.html#id7"/>
+            <topic label="Description:" href="ptprogress.html#id9"/>
+            <topic label="New resources:" href="ptprogress.html#NRESOURCES">
+              <topic label="Pt_ARG_PROGRESS_BAR_COLOR" href="ptprogress.html#Pt_ARG_PROGRESS_BAR_COLOR"/>
+              <topic label="Pt_ARG_PROGRESS_DIVISIONS" href="ptprogress.html#Pt_ARG_PROGRESS_DIVISIONS"/>
+              <topic label="Pt_ARG_PROGRESS_GAP" href="ptprogress.html#Pt_ARG_PROGRESS_GAP"/>
+              <topic label="Pt_ARG_PROGRESS_SPACING" href="ptprogress.html#Pt_ARG_PROGRESS_SPACING"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptprogress.html#IRESOURCES"/>
+            <topic label="Convenience functions:" href="ptprogress.html#FUNCTIONS"/>
+          <topic label="PtProgressEntireSegment" href="pt/ptprogressentiresegment.html">
+            <topic label="Description:" href="pt/ptprogressentiresegment.html#id5"/>
+          </topic>
+          <topic label="PtProgressFirstSegment" href="pt/ptprogressfirstsegment.html">
+            <topic label="Description:" href="pt/ptprogressfirstsegment.html#id5"/>
+          </topic>
+          <topic label="PtProgressNextSegment" href="pt/ptprogressnextsegment.html">
+            <topic label="Description:" href="pt/ptprogressnextsegment.html#id5"/>
+          </topic>
+          <topic label="PtProgressTextRect" href="pt/ptprogresstextrect.html">
+            <topic label="Description:" href="pt/ptprogresstextrect.html#id5"/>
+          </topic>
+        </topic>
+        <topic label="PtRaw" href="ptraw.html">
+            <topic label="Class hierarchy:" href="ptraw.html#id3"/>
+            <topic label="PhAB icon:" href="ptraw.html#id5"/>
+            <topic label="Public header:" href="ptraw.html#id7"/>
+            <topic label="Description:" href="ptraw.html#id9">
+              <topic label="Draw function" href="ptraw.html#id11"/>
+            </topic>
+            <topic label="New resources:" href="ptraw.html#NRESOURCES">
+              <topic label="Pt_ARG_RAW_CALC_OPAQUE_F" href="ptraw.html#Pt_ARG_RAW_CALC_OPAQUE_F"/>
+              <topic label="Pt_ARG_RAW_CONNECT_F" href="ptraw.html#Pt_ARG_RAW_CONNECT_F"/>
+              <topic label="Pt_ARG_RAW_DRAW_F" href="ptraw.html#Pt_ARG_RAW_DRAW_F"/>
+              <topic label="Pt_ARG_RAW_EXTENT_F" href="ptraw.html#Pt_ARG_RAW_EXTENT_F"/>
+              <topic label="Pt_ARG_RAW_INIT_F" href="ptraw.html#Pt_ARG_RAW_INIT_F"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptraw.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtRawList" href="ptrawlist.html">
+            <topic label="Class hierarchy:" href="ptrawlist.html#id3"/>
+            <topic label="PhAB icon:" href="ptrawlist.html#id5"/>
+            <topic label="Public header:" href="ptrawlist.html#id7"/>
+            <topic label="Description:" href="ptrawlist.html#id9"/>
+            <topic label="New resources:" href="ptrawlist.html#NRESOURCES">
+              <topic label="Pt_ARG_RAWLIST_BACKGROUND_F" href="ptrawlist.html#Pt_ARG_RAWLIST_BACKGROUND_F"/>
+              <topic label="Pt_ARG_RAWLIST_DRAW_F" href="ptrawlist.html#Pt_ARG_RAWLIST_DRAW_F"/>
+              <topic label="Pt_ARG_RAWLIST_GFLAGS" href="ptrawlist.html#Pt_ARG_RAWLIST_GFLAGS"/>
+              <topic label="Pt_ARG_RAWLIST_INFLATE_F" href="ptrawlist.html#Pt_ARG_RAWLIST_INFLATE_F"/>
+              <topic label="Pt_ARG_RAWLIST_KEY_F" href="ptrawlist.html#Pt_ARG_RAWLIST_KEY_F"/>
+              <topic label="Pt_ARG_RAWLIST_MOUSE_F" href="ptrawlist.html#Pt_ARG_RAWLIST_MOUSE_F"/>
+              <topic label="Pt_ARG_RAWLIST_SELECT_F" href="ptrawlist.html#Pt_ARG_RAWLIST_SELECT_F"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptrawlist.html#IRESOURCES">
+              <topic label="Pt_CB_DND" href="ptrawlist.html#Pt_CB_DND"/>
+            </topic>
+            <topic label="Convenience functions:" href="ptrawlist.html#FUNCTIONS"/>
+        </topic>
+        <topic label="PtRawTree" href="ptrawtree.html">
+            <topic label="Class hierarchy:" href="ptrawtree.html#id3"/>
+            <topic label="PhAB icon:" href="ptrawtree.html#id5"/>
+            <topic label="Public header:" href="ptrawtree.html#id7"/>
+            <topic label="Description:" href="ptrawtree.html#id9"/>
+            <topic label="New resources:" href="ptrawtree.html#NRESOURCES">
+              <topic label="Pt_ARG_RAWTREE_DRAW_F" href="ptrawtree.html#Pt_ARG_RAWTREE_DRAW_F"/>
+              <topic label="Pt_ARG_RAWTREE_INFLATE_F" href="ptrawtree.html#Pt_ARG_RAWTREE_INFLATE_F"/>
+              <topic label="Pt_ARG_RAWTREE_SELECT_F" href="ptrawtree.html#Pt_ARG_RAWTREE_SELECT_F"/>
+              <topic label="Pt_ARG_RAWTREE_STATE_F" href="ptrawtree.html#Pt_ARG_RAWTREE_STATE_F"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptrawtree.html#IRESOURCES">
+              <topic label="Pt_ARG_TREE_FLAGS" href="ptrawtree.html#Pt_ARG_TREE_FLAGS"/>
+              <topic label="Pt_CB_DND" href="ptrawtree.html#Pt_CB_DND"/>
+            </topic>
+            <topic label="Convenience functions:" href="ptrawtree.html#FUNCTIONS"/>
+        </topic>
+        <topic label="PtRect" href="ptrect.html">
+            <topic label="Class hierarchy:" href="ptrect.html#id3"/>
+            <topic label="PhAB icon:" href="ptrect.html#id5"/>
+            <topic label="Public header:" href="ptrect.html#id7"/>
+            <topic label="Description:" href="ptrect.html#id9"/>
+            <topic label="New resources:" href="ptrect.html#NRESOURCES">
+              <topic label="Pt_ARG_RECT_ROUNDNESS" href="ptrect.html#Pt_ARG_RECT_ROUNDNESS"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptrect.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtRegion" href="ptregion.html">
+            <topic label="Class hierarchy:" href="ptregion.html#id3"/>
+            <topic label="PhAB icon:" href="ptregion.html#id5"/>
+            <topic label="Public header:" href="ptregion.html#id7"/>
+            <topic label="Description:" href="ptregion.html#id9"/>
+            <topic label="New resources:" href="ptregion.html#NRESOURCES">
+              <topic label="Pt_ARG_REGION_FIELDS" href="ptregion.html#Pt_ARG_REGION_FIELDS"/>
+              <topic label="Pt_ARG_REGION_FLAGS" href="ptregion.html#Pt_ARG_REGION_FLAGS"/>
+              <topic label="Pt_ARG_REGION_INFRONT" href="ptregion.html#Pt_ARG_REGION_INFRONT"/>
+              <topic label="Pt_ARG_REGION_INPUT_GROUP" href="ptregion.html#Pt_ARG_REGION_INPUT_GROUP"/>
+              <topic label="Pt_ARG_REGION_OPAQUE" href="ptregion.html#Pt_ARG_REGION_OPAQUE"/>
+              <topic label="Pt_ARG_REGION_PARENT" href="ptregion.html#Pt_ARG_REGION_PARENT"/>
+              <topic label="Pt_ARG_REGION_RECTANGLES" href="ptregion.html#Pt_ARG_REGION_RECTANGLES"/>
+              <topic label="Pt_ARG_REGION_SENSE" href="ptregion.html#Pt_ARG_REGION_SENSE"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptregion.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtScrollArea" href="ptscrollarea.html">
+            <topic label="Class hierarchy:" href="ptscrollarea.html#id3"/>
+            <topic label="PhAB icon:" href="ptscrollarea.html#id5"/>
+            <topic label="Public header:" href="ptscrollarea.html#id7"/>
+            <topic label="Description:" href="ptscrollarea.html#id9">
+              <topic label="Scrolling notification" href="ptscrollarea.html#id11"/>
+              <topic label="Scrolling control" href="ptscrollarea.html#SCROLLINGCONTROL"/>
+            </topic>
+            <topic label="New resources:" href="ptscrollarea.html#NRESOURCES">
+              <topic label="Pt_ARG_SCROLLAREA_FLAGS" href="ptscrollarea.html#Pt_ARG_SCROLLAREA_FLAGS"/>
+              <topic label="Pt_ARG_SCROLLAREA_INCREMENT_X" href="ptscrollarea.html#Pt_ARG_SCROLLAREA_INCREMENT_X"/>
+              <topic label="Pt_ARG_SCROLLAREA_INCREMENT_Y" href="ptscrollarea.html#Pt_ARG_SCROLLAREA_INCREMENT_Y"/>
+              <topic label="Pt_ARG_SCROLLAREA_MAX_X" href="ptscrollarea.html#Pt_ARG_SCROLLAREA_MAX_X"/>
+              <topic label="Pt_ARG_SCROLLAREA_MAX_Y" href="ptscrollarea.html#Pt_ARG_SCROLLAREA_MAX_Y"/>
+              <topic label="Pt_ARG_SCROLLAREA_POS_X" href="ptscrollarea.html#Pt_ARG_SCROLLAREA_POS_X"/>
+              <topic label="Pt_ARG_SCROLLAREA_POS_Y" href="ptscrollarea.html#Pt_ARG_SCROLLAREA_POS_Y"/>
+              <topic label="Pt_ARG_SCROLLAREA_SCROLLBAR_COLOR" href="ptscrollarea.html#Pt_ARG_SCROLLAREA_SCROLLBAR_COLOR"/>
+              <topic label="Pt_ARG_SCROLLBAR_X_DISPLAY" href="ptscrollarea.html#Pt_ARG_SCROLLBAR_X_DISPLAY"/>
+              <topic label="Pt_ARG_SCROLLBAR_X_HEIGHT" href="ptscrollarea.html#Pt_ARG_SCROLLBAR_X_HEIGHT"/>
+              <topic label="Pt_ARG_SCROLLBAR_Y_DISPLAY" href="ptscrollarea.html#Pt_ARG_SCROLLBAR_Y_DISPLAY"/>
+              <topic label="Pt_ARG_SCROLLBAR_Y_WIDTH" href="ptscrollarea.html#Pt_ARG_SCROLLBAR_Y_WIDTH"/>
+              <topic label="Pt_CB_SCROLLAREA_SCROLLED" href="ptscrollarea.html#Pt_CB_SCROLLAREA_SCROLLED"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptscrollarea.html#IRESOURCES"/>
+            <topic label="Convenience functions:" href="ptscrollarea.html#FUNCTIONS"/>
+          <topic label="PtScrollAreaCanvas" href="pt/ptscrollareacanvas.html">
+            <topic label="Description:" href="pt/ptscrollareacanvas.html#id7"/>
+          </topic>
+        </topic>
+        <topic label="PtScrollbar" href="ptscrollbar.html">
+            <topic label="Class hierarchy:" href="ptscrollbar.html#id3"/>
+            <topic label="PhAB icon:" href="ptscrollbar.html#id5"/>
+            <topic label="Public header:" href="ptscrollbar.html#id7"/>
+            <topic label="Description:" href="ptscrollbar.html#id9">
+              <topic label="Mouse actions" href="ptscrollbar.html#MOUSEACTIONS"/>
+              <topic label="Keyboard actions" href="ptscrollbar.html#KeyboardActions"/>
+            </topic>
+            <topic label="New resources:" href="ptscrollbar.html#NRESOURCES">
+              <topic label="Pt_ARG_INCREMENT" href="ptscrollbar.html#Pt_ARG_INCREMENT"/>
+              <topic label="Pt_ARG_MIN_SLIDER_SIZE" href="ptscrollbar.html#Pt_ARG_MIN_SLIDER_SIZE"/>
+              <topic label="Pt_ARG_PAGE_INCREMENT" href="ptscrollbar.html#Pt_ARG_PAGE_INCREMENT"/>
+              <topic label="Pt_ARG_SCROLLBAR_FLAGS" href="ptscrollbar.html#Pt_ARG_SCROLLBAR_FLAGS"/>
+              <topic label="Pt_ARG_SLIDER_SIZE" href="ptscrollbar.html#Pt_ARG_SLIDER_SIZE"/>
+              <topic label="Pt_CB_SCROLL_MOVE" href="ptscrollbar.html#Pt_CB_SCROLL_MOVE"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptscrollbar.html#IRESOURCES">
+              <topic label="Pt_ARG_BANDWIDTH_THRESHOLD" href="ptscrollbar.html#Pt_ARG_BANDWIDTH_THRESHOLD"/>
+            </topic>
+        </topic>
+        <topic label="PtScrollContainer" href="ptscrollcontainer.html">
+            <topic label="Class hierarchy:" href="ptscrollcontainer.html#id3"/>
+            <topic label="PhAB icon:" href="ptscrollcontainer.html#id5"/>
+            <topic label="Public header:" href="ptscrollcontainer.html#id7"/>
+            <topic label="Description:" href="ptscrollcontainer.html#id9">
+              <topic label="Anchors and resize policy" href="ptscrollcontainer.html#id11"/>
+            </topic>
+            <topic label="New resources:" href="ptscrollcontainer.html#NRESOURCES">
+              <topic label="Pt_ARG_SCROLLCONT_FLAGS" href="ptscrollcontainer.html#Pt_ARG_SCROLLCONT_FLAGS"/>
+              <topic label="Pt_ARG_SCROLLCONT_RESIZE_FLAGS" href="ptscrollcontainer.html#Pt_ARG_SCROLLCONT_RESIZE_FLAGS"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptscrollcontainer.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtSeparator" href="ptseparator.html">
+            <topic label="Class hierarchy:" href="ptseparator.html#id3"/>
+            <topic label="PhAB icon:" href="ptseparator.html#id5"/>
+            <topic label="Public header:" href="ptseparator.html#id7"/>
+            <topic label="Description:" href="ptseparator.html#id9"/>
+            <topic label="New resources:" href="ptseparator.html#NRESOURCES">
+              <topic label="Pt_ARG_SEP_ARM_BITMAP_CURSOR" href="ptseparator.html#Pt_ARG_SEP_ARM_BITMAP_CURSOR"/>
+              <topic label="Pt_ARG_SEP_ARM_CURSOR_COLOR" href="ptseparator.html#Pt_ARG_SEP_ARM_CURSOR_COLOR"/>
+              <topic label="Pt_ARG_SEP_ARM_CURSOR_TYPE" href="ptseparator.html#Pt_ARG_SEP_ARM_CURSOR_TYPE"/>
+              <topic label="Pt_ARG_SEP_DRAG_BOUNDS" href="ptseparator.html#Pt_ARG_SEP_DRAG_BOUNDS"/>
+              <topic label="Pt_ARG_SEP_FLAGS" href="ptseparator.html#Pt_ARG_SEP_FLAGS"/>
+              <topic label="Pt_ARG_SEP_IMAGE" href="ptseparator.html#Pt_ARG_SEP_IMAGE"/>
+              <topic label="Pt_ARG_SEP_IMAGE_H_ALIGN" href="ptseparator.html#Pt_ARG_SEP_IMAGE_H_ALIGN"/>
+              <topic label="Pt_ARG_SEP_IMAGE_V_ALIGN" href="ptseparator.html#Pt_ARG_SEP_IMAGE_V_ALIGN"/>
+              <topic label="Pt_ARG_SEP_TYPE" href="ptseparator.html#Pt_ARG_SEP_TYPE"/>
+              <topic label="Pt_CB_SEP_DRAG" href="ptseparator.html#Pt_CB_SEP_DRAG"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptseparator.html#IRESOURCES">
+              <topic label="Pt_ARG_BANDWIDTH_THRESHOLD" href="ptseparator.html#Pt_ARG_BANDWIDTH_THRESHOLD"/>
+            </topic>
+        </topic>
+        <topic label="PtServer" href="ptserver.html">
+            <topic label="Class hierarchy:" href="ptserver.html#id3"/>
+            <topic label="PhAB icon:" href="ptserver.html#id5"/>
+            <topic label="Public header:" href="ptserver.html#id7"/>
+            <topic label="Description:" href="ptserver.html#id9"/>
+            <topic label="New resources:" href="ptserver.html#NRESOURCES">
+              <topic label="Pt_ARG_SERVER_CONNECTION" href="ptserver.html#Pt_ARG_SERVER_CONNECTION"/>
+              <topic label="Pt_ARG_SERVER_NAME" href="ptserver.html#Pt_ARG_SERVER_NAME"/>
+              <topic label="Pt_ARG_SERVER_SEND (write only)" href="ptserver.html#Pt_ARG_SERVER_SEND"/>
+              <topic label="Pt_CB_SERVER_CONNECTED" href="ptserver.html#Pt_CB_SERVER_CONNECTED"/>
+              <topic label="Pt_CB_SERVER_ERROR" href="ptserver.html#Pt_CB_SERVER_ERROR"/>
+              <topic label="Pt_CB_SERVER_RECEIVE" href="ptserver.html#Pt_CB_SERVER_RECEIVE"/>
+              <topic label="Pt_CB_SERVER_TRANSPORT" href="ptserver.html#Pt_CB_SERVER_TRANSPORT"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptserver.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtSlider" href="ptslider.html">
+            <topic label="Class hierarchy:" href="ptslider.html#id3"/>
+            <topic label="PhAB icon:" href="ptslider.html#id5"/>
+            <topic label="Public header:" href="ptslider.html#id7"/>
+            <topic label="Description:" href="ptslider.html#id9">
+              <topic label="Mouse actions" href="ptslider.html#MOUSEACTIONS"/>
+              <topic label="Keyboard actions" href="ptslider.html#KeyboardActions"/>
+            </topic>
+            <topic label="New resources:" href="ptslider.html#NRESOURCES">
+              <topic label="Pt_ARG_SLIDER_FLAGS" href="ptslider.html#Pt_ARG_SLIDER_FLAGS"/>
+              <topic label="Pt_ARG_SLIDER_HANDLE_COLOR" href="ptslider.html#Pt_ARG_SLIDER_HANDLE_COLOR"/>
+              <topic label="Pt_ARG_SLIDER_HANDLE_WIDTH" href="ptslider.html#Pt_ARG_SLIDER_HANDLE_WIDTH"/>
+              <topic label="Pt_ARG_SLIDER_IMAGE" href="ptslider.html#Pt_ARG_SLIDER_IMAGE"/>
+              <topic label="Pt_ARG_SLIDER_INCREMENT" href="ptslider.html#Pt_ARG_SLIDER_INCREMENT"/>
+              <topic label="Pt_ARG_SLIDER_MULTIPLE" href="ptslider.html#Pt_ARG_SLIDER_MULTIPLE"/>
+              <topic label="Pt_ARG_SLIDER_TICK_MAJOR_DIV" href="ptslider.html#Pt_ARG_SLIDER_TICK_MAJOR_DIV"/>
+              <topic label="Pt_ARG_SLIDER_TROUGH_IMAGE1, Pt_ARG_SLIDER_TROUGH_IMAGE2" href="ptslider.html#Pt_ARG_SLIDER_TROUGH_IMAGE1"/>
+              <topic label="Pt_CB_SLIDER_MOVE" href="ptslider.html#Pt_CB_SLIDER_MOVE"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptslider.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtTab" href="pttab.html">
+            <topic label="Class hierarchy:" href="pttab.html#id3"/>
+            <topic label="PhAB icon:" href="pttab.html#id5"/>
+            <topic label="Public header:" href="pttab.html#id7"/>
+            <topic label="Description:" href="pttab.html#id9"/>
+            <topic label="New resources:" href="pttab.html#NRESOURCES">
+              <topic label="Pt_ARG_TAB_FLAGS" href="pttab.html#Pt_ARG_TAB_FLAGS"/>
+              <topic label="Pt_ARG_TAB_UNSELECTED_COLOR" href="pttab.html#Pt_ARG_TAB_UNSELECTED_COLOR"/>
+            </topic>
+            <topic label="Inherited resources:" href="pttab.html#IRESOURCES"/>
+            <topic label="Convenience functions:" href="pttab.html#FUNCTIONS"/>
+        </topic>
+        <topic label="PtTerminal" href="ptterminal.html">
+            <topic label="Class hierarchy:" href="ptterminal.html#id3"/>
+            <topic label="PhAB icon:" href="ptterminal.html#id5"/>
+            <topic label="Public header:" href="ptterminal.html#id7"/>
+            <topic label="Description:" href="ptterminal.html#id9">
+              <topic label="PtTerminal and PtTty" href="ptterminal.html#id11"/>
+              <topic label="Fonts" href="ptterminal.html#Fonts"/>
+              <topic label="Character sets" href="ptterminal.html#CharacterSets"/>
+              <topic label="Resource changes and function reentrancy" href="ptterminal.html#id15"/>
+              <topic label="Geometry" href="ptterminal.html#Geometry">
+                <topic label="Resizing" href="ptterminal.html#id18"/>
+                <topic label="Adjusting after a resize" href="ptterminal.html#id20"/>
+                <topic label="The default resize function" href="ptterminal.html#id22"/>
+              </topic>
+              <topic label="Size limits" href="ptterminal.html#id24"/>
+              <topic label="Console emulation" href="ptterminal.html#ConsoleEmulation"/>
+              <topic label="Color coding" href="ptterminal.html#id27"/>
+              <topic label="Drawing and scrolling" href="ptterminal.html#DrawingAndScrolling">
+                <topic label="Scrolling optimization" href="ptterminal.html#ScrollingOptimization"/>
+              </topic>
+              <topic label="Drag and Drop" href="ptterminal.html#DragAndDrop"/>
+            </topic>
+            <topic label="New resources:" href="ptterminal.html#NRESOURCES">
+              <topic label="Pt_ARG_TERM_ANSI_PROTOCOL" href="ptterminal.html#Pt_ARG_TERM_ANSI_PROTOCOL"/>
+              <topic label="Pt_ARG_TERM_APP" href="ptterminal.html#Pt_ARG_TERM_APP"/>
+              <topic label="Pt_ARG_TERM_CHARSETS" href="ptterminal.html#Pt_ARG_TERM_CHARSETS"/>
+              <topic label="Pt_ARG_TERM_COLOR_MODE" href="ptterminal.html#Pt_ARG_TERM_COLOR_MODE"/>
+              <topic label="Pt_ARG_TERM_COLOR_TABLE" href="ptterminal.html#Pt_ARG_TERM_COLOR_TABLE"/>
+              <topic label="Pt_ARG_TERM_COLS" href="ptterminal.html#Pt_ARG_TERM_COLS"/>
+              <topic label="Pt_ARG_TERM_CONSOLE" href="ptterminal.html#Pt_ARG_TERM_CONSOLE"/>
+              <topic label="Pt_ARG_TERM_CUR_COL" href="ptterminal.html#Pt_ARG_TERM_CUR_COL"/>
+              <topic label="Pt_ARG_TERM_CUR_POS" href="ptterminal.html#Pt_ARG_TERM_CUR_POS"/>
+              <topic label="Pt_ARG_TERM_CUR_ROW" href="ptterminal.html#Pt_ARG_TERM_CUR_ROW"/>
+              <topic label="Pt_ARG_TERM_CURSOR_FLAGS" href="ptterminal.html#Pt_ARG_TERM_CURSOR_FLAGS"/>
+              <topic label="Pt_ARG_TERM_DRAW_MODES" href="ptterminal.html#Pt_ARG_TERM_DRAW_MODES"/>
+              <topic label="Pt_ARG_TERM_FONT" href="ptterminal.html#Pt_ARG_TERM_FONT"/>
+              <topic label="Pt_ARG_TERM_FONT_INDEX" href="ptterminal.html#Pt_ARG_TERM_FONT_INDEX"/>
+              <topic label="Pt_ARG_TERM_FONT_LIST" href="ptterminal.html#Pt_ARG_TERM_FONT_LIST"/>
+              <topic label="Pt_ARG_TERM_FONT_SIZE (read-only)" href="ptterminal.html#Pt_ARG_TERM_FONT_SIZE"/>
+              <topic label="Pt_ARG_TERM_MARGINS (read-only)" href="ptterminal.html#Pt_ARG_TERM_MARGINS"/>
+              <topic label="Pt_ARG_TERM_MAXCOLS" href="ptterminal.html#Pt_ARG_TERM_MAXCOLS"/>
+              <topic label="Pt_ARG_TERM_MAXROWS" href="ptterminal.html#Pt_ARG_TERM_MAXROWS"/>
+              <topic label="Pt_ARG_TERM_MAXSIZE" href="ptterminal.html#Pt_ARG_TERM_MAXSIZE"/>
+              <topic label="Pt_ARG_TERM_MINCOLS" href="ptterminal.html#Pt_ARG_TERM_MINCOLS"/>
+              <topic label="Pt_ARG_TERM_MINROWS" href="ptterminal.html#Pt_ARG_TERM_MINROWS"/>
+              <topic label="Pt_ARG_TERM_MINSIZE" href="ptterminal.html#Pt_ARG_TERM_MINSIZE"/>
+              <topic label="Pt_ARG_TERM_OPTIONS" href="ptterminal.html#Pt_ARG_TERM_OPTIONS"/>
+              <topic label="Pt_ARG_TERM_OPTMASK" href="ptterminal.html#Pt_ARG_TERM_OPTMASK"/>
+              <topic label="Pt_ARG_TERM_RESIZE_FL" href="ptterminal.html#Pt_ARG_TERM_RESIZE_FL"/>
+              <topic label="Pt_ARG_TERM_RESIZE_FUN" href="ptterminal.html#Pt_ARG_TERM_RESIZE_FUN"/>
+              <topic label="Pt_ARG_TERM_RESIZE_STR" href="ptterminal.html#Pt_ARG_TERM_RESIZE_STR"/>
+              <topic label="Pt_ARG_TERM_ROWS" href="ptterminal.html#Pt_ARG_TERM_ROWS"/>
+              <topic label="Pt_ARG_TERM_SCRLBK_COUNT" href="ptterminal.html#Pt_ARG_TERM_SCRLBK_COUNT"/>
+              <topic label="Pt_ARG_TERM_SCRLBK_LIMIT" href="ptterminal.html#Pt_ARG_TERM_SCRLBK_LIMIT"/>
+              <topic label="Pt_ARG_TERM_SCRLBK_POS" href="ptterminal.html#Pt_ARG_TERM_SCRLBK_POS"/>
+              <topic label="Pt_ARG_TERM_SCROLL" href="ptterminal.html#Pt_ARG_TERM_SCROLL"/>
+              <topic label="Pt_ARG_TERM_SELECTION" href="ptterminal.html#Pt_ARG_TERM_SELECTION"/>
+              <topic label="Pt_ARG_TERM_SIZE" href="ptterminal.html#Pt_ARG_TERM_SIZE"/>
+              <topic label="Pt_ARG_TERM_VISUAL_BELL" href="ptterminal.html#Pt_ARG_TERM_VISUAL_BELL"/>
+              <topic label="Pt_CB_TERM_APP" href="ptterminal.html#Pt_CB_TERM_APP"/>
+              <topic label="Pt_CB_TERM_FONT" href="ptterminal.html#Pt_CB_TERM_FONT"/>
+              <topic label="Pt_CB_TERM_INPUT" href="ptterminal.html#Pt_CB_TERM_INPUT"/>
+              <topic label="Pt_CB_TERM_OPTIONS" href="ptterminal.html#Pt_CB_TERM_OPTIONS"/>
+              <topic label="Pt_CB_TERM_RESIZE" href="ptterminal.html#Pt_CB_TERM_RESIZE"/>
+              <topic label="Pt_CB_TERM_RESIZED" href="ptterminal.html#Pt_CB_TERM_RESIZED"/>
+              <topic label="Pt_CB_TERM_SCRLBK" href="ptterminal.html#Pt_CB_TERM_SCRLBK"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptterminal.html#IRESOURCES">
+              <topic label="Pt_ARG_BANDWIDTH_THRESHOLD" href="ptterminal.html#Pt_ARG_BANDWIDTH_THRESHOLD"/>
+              <topic label="Pt_ARG_FILL_COLOR" href="ptterminal.html#Pt_ARG_FILL_COLOR"/>
+            </topic>
+            <topic label="Convenience functions:" href="ptterminal.html#FUNCTIONS"/>
+          <topic label="PtTerminalCharset_t, PtTerminalCharsets_t" href="pt/ptterminalcharset_t.html">
+            <topic label="Description:" href="pt/ptterminalcharset_t.html#id5"/>
+          </topic>
+          <topic label="PtTerminalCopy" href="pt/ptterminalcopy.html">
+            <topic label="Description:" href="pt/ptterminalcopy.html#id5"/>
+          </topic>
+          <topic label="PtTerminalCreateCsXlat" href="pt/ptterminalcreatecsxlat.html">
+            <topic label="Description:" href="pt/ptterminalcreatecsxlat.html#id5"/>
+          </topic>
+          <topic label="PtTerminalDefaultCharsets" href="pt/ptterminaldefaultcharsets.html">
+            <topic label="Description:" href="pt/ptterminaldefaultcharsets.html#id5"/>
+          </topic>
+          <topic label="PtTerminalFontInfo" href="pt/ptterminalfontinfo.html">
+            <topic label="Description:" href="pt/ptterminalfontinfo.html#id5"/>
+          </topic>
+          <topic label="PtTerminalGetKeys" href="pt/ptterminalgetkeys.html">
+            <topic label="Description:" href="pt/ptterminalgetkeys.html#id5"/>
+          </topic>
+          <topic label="PtTerminalGetSelection" href="pt/ptterminalgetselection.html">
+            <topic label="Description:" href="pt/ptterminalgetselection.html#id5"/>
+          </topic>
+          <topic label="PtTerminalName" href="pt/ptterminalname.html">
+            <topic label="Description:" href="pt/ptterminalname.html#id5"/>
+          </topic>
+          <topic label="PtTerminalPasteClipboard" href="pt/ptterminalpasteclipboard.html">
+            <topic label="Description:" href="pt/ptterminalpasteclipboard.html#id5"/>
+          </topic>
+          <topic label="PtTerminalPasteSelection" href="pt/ptterminalpasteselection.html">
+            <topic label="Description:" href="pt/ptterminalpasteselection.html#id5"/>
+          </topic>
+          <topic label="PtTerminalPut, PtTerminalPutc, PtTerminalPuts" href="pt/ptterminalput.html">
+            <topic label="Description:" href="pt/ptterminalput.html#id5"/>
+          </topic>
+          <topic label="PtTerminalSelectWord" href="pt/ptterminalselectword.html">
+            <topic label="Description:" href="pt/ptterminalselectword.html#id5"/>
+          </topic>
+        </topic>
+        <topic label="PtText" href="pttext.html">
+            <topic label="Class hierarchy:" href="pttext.html#id3"/>
+            <topic label="PhAB icon:" href="pttext.html#id5"/>
+            <topic label="Public header:" href="pttext.html#id7"/>
+            <topic label="Description:" href="pttext.html#id9">
+              <topic label="Interaction model" href="pttext.html#id11"/>
+              <topic label="Selecting text" href="pttext.html#id13"/>
+              <topic label="The widget's text" href="pttext.html#id15">
+                <topic label="Setting text" href="pttext.html#id17"/>
+                <topic label="Getting text" href="pttext.html#id19"/>
+                <topic label="Getting the current selection" href="pttext.html#id21"/>
+                <topic label="Replacing text" href="pttext.html#id23"/>
+              </topic>
+              <topic label="Text-modification callbacks" href="pttext.html#ModificationCallbacks">
+                <topic label="Validation" href="pttext.html#id26"/>
+                <topic label="Preventing the modification" href="pttext.html#id28"/>
+                <topic label="Handling deletions" href="pttext.html#HandlingDeletions"/>
+                <topic label="Example: entering a password" href="pttext.html#PasswordExample"/>
+                <topic label="String changes" href="pttext.html#StringChanges"/>
+              </topic>
+              <topic label="Focus callbacks" href="pttext.html#id33"/>
+              <topic label="Cursor-movement callbacks" href="pttext.html#CursorMovement"/>
+              <topic label="Activate callback" href="pttext.html#ActivateCallback"/>
+              <topic label="Edit masks" href="pttext.html#EditMasks"/>
+              <topic label="Mouse actions" href="pttext.html#MOUSEACTIONS"/>
+              <topic label="Keyboard actions" href="pttext.html#KeyboardActions"/>
+              <topic label="Drag and Drop" href="pttext.html#DragAndDrop"/>
+            </topic>
+            <topic label="New resources:" href="pttext.html#NRESOURCES">
+              <topic label="Pt_ARG_COLUMNS" href="pttext.html#Pt_ARG_COLUMNS"/>
+              <topic label="Pt_ARG_CURSOR_POSITION" href="pttext.html#Pt_ARG_CURSOR_POSITION"/>
+              <topic label="Pt_ARG_EDIT_MASK" href="pttext.html#Pt_ARG_EDIT_MASK"/>
+              <topic label="Pt_ARG_MAX_LENGTH" href="pttext.html#Pt_ARG_MAX_LENGTH"/>
+              <topic label="Pt_ARG_SELECTION_RANGE" href="pttext.html#Pt_ARG_SELECTION_RANGE"/>
+              <topic label="Pt_ARG_TEXT_CURSOR_WIDTH" href="pttext.html#Pt_ARG_TEXT_CURSOR_WIDTH"/>
+              <topic label="Pt_ARG_TEXT_FLAGS" href="pttext.html#Pt_ARG_TEXT_FLAGS"/>
+              <topic label="Pt_ARG_TEXT_HIGHLIGHT_BACKGROUND_COLOR" href="pttext.html#Pt_ARG_TEXT_HIGHLIGHT_BACKGROUND_COLOR"/>
+              <topic label="Pt_ARG_TEXT_HIGHLIGHT_TEXT_COLOR" href="pttext.html#Pt_ARG_TEXT_HIGHLIGHT_TEXT_COLOR"/>
+              <topic label="Pt_ARG_TEXT_SUBSTRING" href="pttext.html#Pt_ARG_TEXT_SUBSTRING"/>
+              <topic label="Pt_CB_MODIFY_NOTIFY or Pt_CB_TEXT_CHANGED" href="pttext.html#Pt_CB_MODIFY_NOTIFY"/>
+              <topic label="Pt_CB_MODIFY_VERIFY" href="pttext.html#Pt_CB_MODIFY_VERIFY"/>
+              <topic label="Pt_CB_MOTION_NOTIFY" href="pttext.html#Pt_CB_MOTION_NOTIFY"/>
+              <topic label="Pt_CB_MOTION_VERIFY" href="pttext.html#Pt_CB_MOTION_VERIFY"/>
+            </topic>
+            <topic label="Inherited resources:" href="pttext.html#IRESOURCES">
+              <topic label="Pt_CB_ACTIVATE" href="pttext.html#Pt_CB_ACTIVATE"/>
+              <topic label="Pt_CB_GOT_FOCUS, Pt_CB_LOST_FOCUS" href="pttext.html#Pt_CB_GOT_FOCUS"/>
+            </topic>
+            <topic label="Convenience functions:" href="pttext.html#FUNCTIONS"/>
+          <topic label="PtTextCallback_t, PtTextControl_t, PtTextControlInfo_t" href="pttextcallback_t.html">
+            <topic label="Description:" href="pttextcallback_t.html#id5"/>
+          </topic>
+          <topic label="PtTextGetSelection" href="pt/pttextgetselection.html">
+            <topic label="Description:" href="pt/pttextgetselection.html#id5"/>
+          </topic>
+          <topic label="PtTextModifyText" href="pt/pttextmodifytext.html">
+            <topic label="Description:" href="pt/pttextmodifytext.html#id5"/>
+          </topic>
+          <topic label="PtTextSetSelection" href="pt/pttextsetselection.html">
+            <topic label="Description:" href="pt/pttextsetselection.html#id5"/>
+          </topic>
+        </topic>
+        <topic label="PtTimer" href="pttimer.html">
+            <topic label="Class hierarchy:" href="pttimer.html#id3"/>
+            <topic label="PhAB icon:" href="pttimer.html#id5"/>
+            <topic label="Public header:" href="pttimer.html#id7"/>
+            <topic label="Description:" href="pttimer.html#id9"/>
+            <topic label="New resources:" href="pttimer.html#NRESOURCES">
+              <topic label="Pt_ARG_TIMER_INITIAL" href="pttimer.html#Pt_ARG_TIMER_INITIAL"/>
+              <topic label="Pt_ARG_TIMER_REPEAT" href="pttimer.html#Pt_ARG_TIMER_REPEAT"/>
+              <topic label="Pt_CB_TIMER_ACTIVATE" href="pttimer.html#Pt_CB_TIMER_ACTIVATE"/>
+            </topic>
+            <topic label="Inherited resources:" href="pttimer.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtToggleButton" href="pttogglebutton.html">
+            <topic label="Class hierarchy:" href="pttogglebutton.html#id3"/>
+            <topic label="PhAB icon:" href="pttogglebutton.html#id5"/>
+            <topic label="Public header:" href="pttogglebutton.html#id7"/>
+            <topic label="Description:" href="pttogglebutton.html#Description">
+              <topic label="Creating toggle buttons" href="pttogglebutton.html#id10"/>
+              <topic label="Grouping toggle buttons" href="pttogglebutton.html#GroupingToggles"/>
+            </topic>
+            <topic label="New resources:" href="pttogglebutton.html#NRESOURCES">
+              <topic label="Pt_ARG_INDICATOR_COLOR" href="pttogglebutton.html#Pt_ARG_INDICATOR_COLOR"/>
+              <topic label="Pt_ARG_INDICATOR_TYPE" href="pttogglebutton.html#Pt_ARG_INDICATOR_TYPE"/>
+            </topic>
+            <topic label="Inherited resources:" href="pttogglebutton.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtToolbar" href="pttoolbar.html">
+            <topic label="Class hierarchy:" href="pttoolbar.html#id3"/>
+            <topic label="PhAB icon:" href="pttoolbar.html#id5"/>
+            <topic label="Public header:" href="pttoolbar.html#id7"/>
+            <topic label="Description:" href="pttoolbar.html#id9"/>
+            <topic label="New resources:" href="pttoolbar.html#NRESOURCES">
+              <topic label="Pt_ARG_ORIENTATION" href="pttoolbar.html#Pt_ARG_ORIENTATION"/>
+              <topic label="Pt_ARG_TOOLBAR_FLAGS" href="pttoolbar.html#Pt_ARG_TOOLBAR_FLAGS"/>
+              <topic label="Pt_ARG_TOOLBAR_LAYOUT_FLAGS" href="pttoolbar.html#Pt_ARG_TOOLBAR_LAYOUT_FLAGS"/>
+              <topic label="Pt_ARG_TOOLBAR_SPACING" href="pttoolbar.html#Pt_ARG_TOOLBAR_SPACING"/>
+            </topic>
+            <topic label="Inherited resources:" href="pttoolbar.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtToolbarGroup" href="pttoolbargroup.html">
+            <topic label="Class hierarchy:" href="pttoolbargroup.html#id3"/>
+            <topic label="PhAB icon:" href="pttoolbargroup.html#id5"/>
+            <topic label="Public header:" href="pttoolbargroup.html#id7"/>
+            <topic label="Description:" href="pttoolbargroup.html#id9"/>
+            <topic label="New resources:" href="pttoolbargroup.html#NRESOURCES">
+              <topic label="Pt_ARG_ORIENTATION" href="pttoolbargroup.html#Pt_ARG_ORIENTATION"/>
+              <topic label="Pt_ARG_TG_FLAGS" href="pttoolbargroup.html#Pt_ARG_TG_FLAGS"/>
+            </topic>
+            <topic label="Inherited resources:" href="pttoolbargroup.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtTree" href="pttree.html">
+            <topic label="Class hierarchy:" href="pttree.html#id3"/>
+            <topic label="PhAB icon:" href="pttree.html#id5"/>
+            <topic label="Public header:" href="pttree.html#id7"/>
+            <topic label="Description:" href="pttree.html#id9">
+              <topic label="Allocating items and building a tree" href="pttree.html#BuildingTree"/>
+              <topic label="Using images in tree items" href="pttree.html#Images"/>
+              <topic label="Displaying text in columns" href="pttree.html#Columns"/>
+              <topic label="Displaying images in columns" href="pttree.html#ImagesInColumns"/>
+            </topic>
+            <topic label="New resources:" href="pttree.html#NRESOURCES">
+              <topic label="Pt_ARG_TREE_BALLOON" href="pttree.html#Pt_ARG_TREE_BALLOON"/>
+              <topic label="Pt_ARG_TREE_COLUMN_ATTR" href="pttree.html#Pt_ARG_TREE_COLUMN_ATTR"/>
+              <topic label="Pt_ARG_TREE_COLUMN_IMGFUN" href="pttree.html#Pt_ARG_TREE_COLUMN_IMGFUN"/>
+              <topic label="Pt_ARG_TREE_IMAGES" href="pttree.html#Pt_ARG_TREE_IMAGES"/>
+              <topic label="Pt_ARG_TREE_IMGMASK" href="pttree.html#Pt_ARG_TREE_IMGMASK"/>
+              <topic label="Pt_CB_TREE_COLUMN_SEL" href="pttree.html#Pt_CB_TREE_COLUMN_SEL"/>
+              <topic label="Pt_CB_TREE_SELECTION" href="pttree.html#Pt_CB_TREE_SELECTION"/>
+              <topic label="Pt_CB_TREE_STATE" href="pttree.html#Pt_CB_TREE_STATE"/>
+            </topic>
+            <topic label="Inherited resources:" href="pttree.html#IRESOURCES">
+              <topic label="Pt_ARG_TREE_FLAGS" href="pttree.html#Pt_ARG_TREE_FLAGS"/>
+              <topic label="Pt_CB_DND" href="pttree.html#Pt_CB_DND"/>
+            </topic>
+            <topic label="Convenience functions:" href="pttree.html#FUNCTIONS"/>
+          <topic label="PtTreeAddAfter" href="pt/pttreeaddafter.html">
+            <topic label="Description:" href="pt/pttreeaddafter.html#id5"/>
+            <topic label="Examples:" href="pt/pttreeaddafter.html#id9"/>
+          </topic>
+          <topic label="PtTreeAddFirst" href="pt/pttreeaddfirst.html">
+            <topic label="Description:" href="pt/pttreeaddfirst.html#id5"/>
+            <topic label="Examples:" href="pt/pttreeaddfirst.html#id9"/>
+          </topic>
+          <topic label="PtTreeAddImages" href="pt/pttreeaddimages.html">
+            <topic label="Description:" href="pt/pttreeaddimages.html#id5"/>
+            <topic label="Examples:" href="pt/pttreeaddimages.html#id9"/>
+          </topic>
+          <topic label="PtTreeAllItems" href="pt/pttreeallitems.html">
+            <topic label="Description:" href="pt/pttreeallitems.html#id5"/>
+            <topic label="Examples:" href="pt/pttreeallitems.html#id9"/>
+          </topic>
+          <topic label="PtTreeAllocItem" href="pt/pttreeallocitem.html">
+            <topic label="Description:" href="pt/pttreeallocitem.html#id5"/>
+            <topic label="Examples:" href="pt/pttreeallocitem.html#id7"/>
+          </topic>
+          <topic label="PtTreeChangeItem" href="pt/pttreechangeitem.html">
+            <topic label="Description:" href="pt/pttreechangeitem.html#id7"/>
+            <topic label="Examples:" href="pt/pttreechangeitem.html#id11"/>
+          </topic>
+          <topic label="PtTreeClearSelection" href="pt/pttreeclearselection.html">
+            <topic label="Description:" href="pt/pttreeclearselection.html#id5"/>
+          </topic>
+          <topic label="PtTreeCollapse" href="pt/pttreecollapse.html">
+            <topic label="Description:" href="pt/pttreecollapse.html#id5"/>
+          </topic>
+          <topic label="PtTreeCreateItem" href="pt/pttreecreateitem.html">
+            <topic label="Description:" href="pt/pttreecreateitem.html#id7"/>
+            <topic label="Examples:" href="pt/pttreecreateitem.html#id11"/>
+          </topic>
+          <topic label="PtTreeExpand" href="pt/pttreeexpand.html">
+            <topic label="Description:" href="pt/pttreeexpand.html#id5"/>
+          </topic>
+          <topic label="PtTreeFreeAllItems" href="pt/pttreefreeallitems.html">
+            <topic label="Description:" href="pt/pttreefreeallitems.html#id5"/>
+          </topic>
+          <topic label="PtTreeFreeItems" href="pt/pttreefreeitems.html">
+            <topic label="Description:" href="pt/pttreefreeitems.html#id5"/>
+          </topic>
+          <topic label="PtTreeGetCurrent" href="pt/pttreegetcurrent.html">
+            <topic label="Description:" href="pt/pttreegetcurrent.html#id5"/>
+          </topic>
+          <topic label="PtTreeGetSelIndexes" href="pt/pttreegetselindexes.html">
+            <topic label="Description:" href="pt/pttreegetselindexes.html#id5"/>
+          </topic>
+          <topic label="PtTreeGoto" href="pt/pttreegoto.html">
+            <topic label="Description:" href="pt/pttreegoto.html#id5"/>
+          </topic>
+          <topic label="PtTreeItem_t" href="pttreeitem_t.html">
+            <topic label="Description:" href="pttreeitem_t.html#id5"/>
+          </topic>
+          <topic label="PtTreeItemAttributes_t" href="pttreeitemattributes_t.html">
+            <topic label="Description:" href="pttreeitemattributes_t.html#id5"/>
+          </topic>
+          <topic label="PtTreeItemIndex" href="pt/pttreeitemindex.html">
+            <topic label="Description:" href="pt/pttreeitemindex.html#id5"/>
+          </topic>
+          <topic label="PtTreeModifyItem" href="pt/pttreemodifyitem.html">
+            <topic label="Description:" href="pt/pttreemodifyitem.html#id5"/>
+          </topic>
+          <topic label="PtTreeModifyItemString" href="pt/pttreemodifyitemstring.html">
+            <topic label="Description:" href="pt/pttreemodifyitemstring.html#id5"/>
+          </topic>
+          <topic label="PtTreeRemoveChildren" href="pt/pttreeremovechildren.html">
+            <topic label="Description:" href="pt/pttreeremovechildren.html#id5"/>
+          </topic>
+          <topic label="PtTreeRemoveItem" href="pt/pttreeremoveitem.html">
+            <topic label="Description:" href="pt/pttreeremoveitem.html#id5"/>
+          </topic>
+          <topic label="PtTreeRemoveList" href="pt/pttreeremovelist.html">
+            <topic label="Description:" href="pt/pttreeremovelist.html#id5"/>
+          </topic>
+          <topic label="PtTreeRootItem" href="pt/pttreerootitem.html">
+            <topic label="Description:" href="pt/pttreerootitem.html#id5"/>
+          </topic>
+          <topic label="PtTreeSelect" href="pt/pttreeselect.html">
+            <topic label="Description:" href="pt/pttreeselect.html#id5"/>
+          </topic>
+          <topic label="PtTreeSelectedItems" href="pt/pttreeselecteditems.html">
+            <topic label="Description:" href="pt/pttreeselecteditems.html#id5"/>
+          </topic>
+          <topic label="PtTreeSetSelIndexes" href="pt/pttreesetselindexes.html">
+            <topic label="Description:" href="pt/pttreesetselindexes.html#id5"/>
+          </topic>
+          <topic label="PtTreeShow" href="pt/pttreeshow.html">
+            <topic label="Description:" href="pt/pttreeshow.html#id5"/>
+          </topic>
+          <topic label="PtTreeUnselect" href="pt/pttreeunselect.html">
+            <topic label="Description:" href="pt/pttreeunselect.html#id5"/>
+          </topic>
+          <topic label="PtTreeUnselectNonBrothers" href="pt/pttreeunselectnonbrothers.html">
+            <topic label="Description:" href="pt/pttreeunselectnonbrothers.html#id5"/>
+          </topic>
+        </topic>
+        <topic label="PtTrend" href="pttrend.html">
+            <topic label="Class hierarchy:" href="pttrend.html#id3"/>
+            <topic label="PhAB icon:" href="pttrend.html#id5"/>
+            <topic label="Public header:" href="pttrend.html#id7"/>
+            <topic label="Description:" href="pttrend.html#id9"/>
+            <topic label="New resources:" href="pttrend.html#NRESOURCES">
+              <topic label="Pt_ARG_TREND_ATTRIBUTES" href="pttrend.html#Pt_ARG_TREND_ATTRIBUTES"/>
+              <topic label="Pt_ARG_TREND_COLOR_LIST" href="pttrend.html#Pt_ARG_TREND_COLOR_LIST"/>
+              <topic label="Pt_ARG_TREND_COUNT" href="pttrend.html#Pt_ARG_TREND_COUNT"/>
+              <topic label="Pt_ARG_TREND_DATA (write-only)" href="pttrend.html#Pt_ARG_TREND_DATA"/>
+              <topic label="Pt_ARG_TREND_FLAGS" href="pttrend.html#Pt_ARG_TREND_FLAGS"/>
+              <topic label="Pt_ARG_TREND_GRID_COLOR" href="pttrend.html#Pt_ARG_TREND_GRID_COLOR"/>
+              <topic label="Pt_ARG_TREND_GRID_X" href="pttrend.html#Pt_ARG_TREND_GRID_X"/>
+              <topic label="Pt_ARG_TREND_GRID_Y" href="pttrend.html#Pt_ARG_TREND_GRID_Y"/>
+              <topic label="Pt_ARG_TREND_INC" href="pttrend.html#Pt_ARG_TREND_INC"/>
+              <topic label="Pt_ARG_TREND_MAX" href="pttrend.html#Pt_ARG_TREND_MAX"/>
+              <topic label="Pt_ARG_TREND_MIN" href="pttrend.html#Pt_ARG_TREND_MIN"/>
+              <topic label="Pt_ARG_TREND_PALETTE_END" href="pttrend.html#Pt_ARG_TREND_PALETTE_END"/>
+            </topic>
+            <topic label="Inherited resources:" href="pttrend.html#IRESOURCES"/>
+            <topic label="Convenience functions:" href="pttrend.html#FUNCTIONS"/>
+          <topic label="PtTrendChangeData, PtTrendChangeTrendData" href="pt/pttrendchangedata.html">
+            <topic label="Description:" href="pt/pttrendchangedata.html#id5"/>
+          </topic>
+        </topic>
+        <topic label="PtTty" href="pttty.html">
+            <topic label="Class hierarchy:" href="pttty.html#id3"/>
+            <topic label="PhAB icon:" href="pttty.html#id5"/>
+            <topic label="Public header:" href="pttty.html#id7"/>
+            <topic label="Description:" href="pttty.html#id9">
+              <topic label="PtTerminal and PtTty" href="pttty.html#TerminalVsTTy"/>
+              <topic label="Setting PtTty resources" href="pttty.html#SettingResources"/>
+              <topic label="File descriptors" href="pttty.html#FileDescriptors"/>
+              <topic label="Drag and Drop" href="pttty.html#DragAndDrop"/>
+            </topic>
+            <topic label="New resources:" href="pttty.html#NRESOURCES">
+              <topic label="Pt_ARG_TTY_ARGV (write-only)" href="pttty.html#Pt_ARG_TTY_ARGV"/>
+              <topic label="Pt_ARG_TTY_BUFFER" href="pttty.html#Pt_ARG_TTY_BUFFER"/>
+              <topic label="Pt_ARG_TTY_BUFLEN" href="pttty.html#Pt_ARG_TTY_BUFLEN"/>
+              <topic label="Pt_ARG_TTY_CMD (write-only)" href="pttty.html#Pt_ARG_TTY_CMD"/>
+              <topic label="Pt_ARG_TTY_DEVSIZE" href="pttty.html#Pt_ARG_TTY_DEVSIZE"/>
+              <topic label="Pt_ARG_TTY_EXIT_STATUS (read-only)" href="pttty.html#Pt_ARG_TTY_EXIT_STATUS"/>
+              <topic label="Pt_ARG_TTY_FDS" href="pttty.html#Pt_ARG_TTY_FDS"/>
+              <topic label="Pt_ARG_TTY_FDSET" href="pttty.html#Pt_ARG_TTY_FDSET"/>
+              <topic label="Pt_ARG_TTY_FLAGS" href="pttty.html#Pt_ARG_TTY_FLAGS"/>
+              <topic label="Pt_ARG_TTY_INPUT" href="pttty.html#Pt_ARG_TTY_INPUT"/>
+              <topic label="Pt_ARG_TTY_INPUT_WRITTEN (read-only)" href="pttty.html#Pt_ARG_TTY_INPUT_WRITTEN"/>
+              <topic label="Pt_ARG_TTY_PATH" href="pttty.html#Pt_ARG_TTY_PATH"/>
+              <topic label="Pt_ARG_TTY_PID" href="pttty.html#Pt_ARG_TTY_PID"/>
+              <topic label="Pt_ARG_TTY_PRI" href="pttty.html#Pt_ARG_TTY_PRI"/>
+              <topic label="Pt_ARG_TTY_PSEUDO" href="pttty.html#Pt_ARG_TTY_PSEUDO"/>
+              <topic label="Pt_ARG_TTY_RFD" href="pttty.html#Pt_ARG_TTY_RFD"/>
+              <topic label="Pt_ARG_TTY_SFD" href="pttty.html#Pt_ARG_TTY_SFD"/>
+              <topic label="Pt_ARG_TTY_SPAWN_OPTIONS" href="pttty.html#Pt_ARG_TTY_SPAWN_OPTIONS"/>
+              <topic label="Pt_ARG_TTY_WFD" href="pttty.html#Pt_ARG_TTY_WFD"/>
+              <topic label="Pt_CB_TTY_DEVSIZE" href="pttty.html#Pt_CB_TTY_DEVSIZE"/>
+              <topic label="Pt_CB_TTY_OUTPUT" href="pttty.html#Pt_CB_TTY_OUTPUT"/>
+              <topic label="Pt_CB_TTY_TERMINATED" href="pttty.html#Pt_CB_TTY_TERMINATED"/>
+            </topic>
+            <topic label="Inherited resources:" href="pttty.html#IRESOURCES"/>
+            <topic label="Convenience functions:" href="pttty.html#FUNCTIONS"/>
+          <topic label="PtTtyShell" href="pt/ptttyshell.html">
+            <topic label="Description:" href="pt/ptttyshell.html#id5"/>
+          </topic>
+        </topic>
+        <topic label="PtUpDown" href="ptupdown.html">
+            <topic label="Class hierarchy:" href="ptupdown.html#id3"/>
+            <topic label="PhAB icon:" href="ptupdown.html#id5"/>
+            <topic label="Public header:" href="ptupdown.html#id7"/>
+            <topic label="Description:" href="ptupdown.html#id9"/>
+            <topic label="New resources:" href="ptupdown.html#NRESOURCES">
+              <topic label="Pt_ARG_ARM_COLOR" href="ptupdown.html#Pt_ARG_ARM_COLOR"/>
+              <topic label="Pt_ARG_ORIENTATION" href="ptupdown.html#Pt_ARG_ORIENTATION"/>
+              <topic label="Pt_ARG_SPACING" href="ptupdown.html#Pt_ARG_SPACING"/>
+              <topic label="Pt_ARG_UPDOWN_ARM_DATA_DECREMENT" href="ptupdown.html#Pt_ARG_UPDOWN_ARM_DATA_DECREMENT"/>
+              <topic label="Pt_ARG_UPDOWN_ARM_DATA_INCREMENT" href="ptupdown.html#Pt_ARG_UPDOWN_ARM_DATA_INCREMENT"/>
+              <topic label="Pt_ARG_UPDOWN_BORDER_WIDTH" href="ptupdown.html#Pt_ARG_UPDOWN_BORDER_WIDTH"/>
+              <topic label="Pt_ARG_UPDOWN_DATA_DECREMENT" href="ptupdown.html#Pt_ARG_UPDOWN_DATA_DECREMENT"/>
+              <topic label="Pt_ARG_UPDOWN_DATA_INCREMENT" href="ptupdown.html#Pt_ARG_UPDOWN_DATA_INCREMENT"/>
+              <topic label="Pt_ARG_UPDOWN_FLAGS" href="ptupdown.html#Pt_ARG_UPDOWN_FLAGS"/>
+              <topic label="Pt_ARG_UPDOWN_INDICATOR_MARGIN" href="ptupdown.html#Pt_ARG_UPDOWN_INDICATOR_MARGIN"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptupdown.html#IRESOURCES">
+              <topic label="Pt_CB_ACTIVATE, Pt_CB_ARM, Pt_CB_DISARM, Pt_CB_REPEAT" href="ptupdown.html#InheritedCallbacks"/>
+            </topic>
+        </topic>
+        <topic label="PtWebClient" href="ptwebclient.html">
+            <topic label="Class hierarchy:" href="ptwebclient.html#id3"/>
+            <topic label="PhAB icon:" href="ptwebclient.html#id5"/>
+            <topic label="Public header:" href="ptwebclient.html#id7"/>
+            <topic label="Description:" href="ptwebclient.html#id9">
+              <topic label="Starting the server" href="ptwebclient.html#StartingServer"/>
+              <topic label="Migrating from libPtWeb.so.2 to libPtWeb.so.3" href="ptwebclient.html#Migrating"/>
+            </topic>
+            <topic label="New resources:" href="ptwebclient.html#NRESOURCES">
+              <topic label="Pt_ARG_WEB_ACTIVATE_LINK (key mode only)" href="ptwebclient.html#Pt_ARG_WEB_ACTIVATE_LINK"/>
+              <topic label="Pt_ARG_WEB_AUTHENTICATE" href="ptwebclient.html#Pt_ARG_WEB_AUTHENTICATE"/>
+              <topic label="Pt_ARG_WEB_BUILD_DATE (read only)" href="ptwebclient.html#Pt_ARG_WEB_BUILD_DATE"/>
+              <topic label="Pt_ARG_WEB_COMMAND (write only)" href="ptwebclient.html#Pt_ARG_WEB_COMMAND"/>
+              <topic label="Pt_ARG_WEB_DATA (write only)" href="ptwebclient.html#Pt_ARG_WEB_DATA"/>
+              <topic label="Pt_ARG_WEB_DOWNLOAD (write only)" href="ptwebclient.html#Pt_ARG_WEB_DOWNLOAD"/>
+              <topic label="Pt_ARG_WEB_ENCODING" href="ptwebclient.html#Pt_ARG_WEB_ENCODING"/>
+              <topic label="Pt_ARG_WEB_GET_CERTIFICATES (read only)" href="ptwebclient.html#Pt_ARG_WEB_GET_CERTIFICATES"/>
+              <topic label="Pt_ARG_WEB_GET_CONTEXT (read only)" href="ptwebclient.html#Pt_ARG_WEB_GET_CONTEXT"/>
+              <topic label="Pt_ARG_WEB_GET_HISTORY (read only)" href="ptwebclient.html#Pt_ARG_WEB_GET_HISTORY"/>
+              <topic label="Pt_ARG_WEB_GET_URL (write only)" href="ptwebclient.html#Pt_ARG_WEB_GET_URL"/>
+              <topic label="Pt_ARG_WEB_HELPER (write only)" href="ptwebclient.html#Pt_ARG_WEB_HELPER"/>
+              <topic label="Pt_ARG_WEB_H_ERRNO" href="ptwebclient.html#Pt_ARG_WEB_H_ERRNO"/>
+              <topic label="Pt_ARG_WEB_IMPORT_CERTIFICATE" href="ptwebclient.html#Pt_ARG_WEB_IMPORT_CERTIFICATE"/>
+              <topic label="Pt_ARG_WEB_NAVIGATE_FRAME" href="ptwebclient.html#Pt_ARG_WEB_NAVIGATE_FRAME"/>
+              <topic label="Pt_ARG_WEB_NAVIGATE_LINK" href="ptwebclient.html#Pt_ARG_WEB_NAVIGATE_LINK"/>
+              <topic label="Pt_ARG_WEB_NAVIGATE_PAGE" href="ptwebclient.html#Pt_ARG_WEB_NAVIGATE_PAGE"/>
+              <topic label="Pt_ARG_WEB_OPTION" href="ptwebclient.html#Pt_ARG_WEB_OPTION">
+                <topic label="HTML Options" href="ptwebclient.html#HTMLOptions"/>
+                <topic label="HTTP cookie options" href="ptwebclient.html#HTTPCookieOptions"/>
+                <topic label="Authentication options" href="ptwebclient.html#AuthenticationOptions"/>
+                <topic label="FTP options" href="ptwebclient.html#FTPOptions"/>
+                <topic label="Gopher options" href="ptwebclient.html#GopherOptions"/>
+                <topic label="HTTP options" href="ptwebclient.html#HTTPOptions"/>
+                <topic label="File options" href="ptwebclient.html#FileOPtions"/>
+                <topic label="Image options" href="ptwebclient.html#ImageOptions"/>
+                <topic label="Print options" href="ptwebclient.html#PrintOptions"/>
+                <topic label="SOCKS options" href="ptwebclient.html#SOCKSOptions"/>
+                <topic label="TCP/IP options" href="ptwebclient.html#TCPIPOptions"/>
+                <topic label="Disk-cache options" href="ptwebclient.html#DiskCacheOptions"/>
+                <topic label="Miscellaneous options" href="ptwebclient.html#MiscellaneousOptions"/>
+                <topic label="NetFront-specific options" href="ptwebclient.html#netfront"/>
+              </topic>
+              <topic label="Pt_ARG_WEB_PRINT (write-only)" href="ptwebclient.html#Pt_ARG_WEB_PRINT"/>
+              <topic label="Pt_ARG_WEB_RELOAD (write only)" href="ptwebclient.html#Pt_ARG_WEB_RELOAD"/>
+              <topic label="Pt_ARG_WEB_SERVER" href="ptwebclient.html#Pt_ARG_WEB_SERVER"/>
+              <topic label="Pt_ARG_WEB_SERVER_PID (read only)" href="ptwebclient.html#Pt_ARG_WEB_SERVER_PID"/>
+              <topic label="Pt_ARG_WEB_SSL_RESPONSE" href="ptwebclient.html#Pt_ARG_WEB_SSL_RESPONSE"/>
+              <topic label="Pt_ARG_WEB_STARTUP_ERRNO (read only)" href="ptwebclient.html#Pt_ARG_WEB_STARTUP_ERRNO"/>
+              <topic label="Pt_ARG_WEB_STOP (write only)" href="ptwebclient.html#Pt_ARG_WEB_STOP"/>
+              <topic label="Pt_ARG_WEB_UNKNOWN_RESP (write-only)" href="ptwebclient.html#Pt_ARG_WEB_UNKNOWN_RESP"/>
+              <topic label="Pt_ARG_WEB_VERSION (read only)" href="ptwebclient.html#Pt_ARG_WEB_VERSION"/>
+              <topic label="Pt_CB_WEB_AUTHENTICATE" href="ptwebclient.html#Pt_CB_WEB_AUTHENTICATE"/>
+              <topic label="Pt_CB_WEB_CLOSE_WINDOW" href="ptwebclient.html#Pt_CB_WEB_CLOSE_WINDOW"/>
+              <topic label="Pt_CB_WEB_COMPLETE" href="ptwebclient.html#Pt_CB_WEB_COMPLETE"/>
+              <topic label="Pt_CB_WEB_CONTEXT" href="ptwebclient.html#Pt_CB_WEB_CONTEXT"/>
+              <topic label="Pt_CB_WEB_DATA_REQ" href="ptwebclient.html#Pt_CB_WEB_DATA_REQ"/>
+              <topic label="Pt_CB_WEB_DOWNLOAD" href="ptwebclient.html#Pt_CB_WEB_DOWNLOAD"/>
+              <topic label="Pt_CB_WEB_ERROR" href="ptwebclient.html#Pt_CB_WEB_ERROR"/>
+              <topic label="Pt_CB_WEB_IMPORT_CERTIFICATE" href="ptwebclient.html#Pt_CB_WEB_IMPORT_CERTIFICATE"/>
+              <topic label="Pt_CB_WEB_METADATA" href="ptwebclient.html#Pt_CB_WEB_METADATA"/>
+              <topic label="Pt_CB_WEB_NEED_SCROLL (key mode only)" href="ptwebclient.html#Pt_CB_WEB_NEED_SCROLL"/>
+              <topic label="Pt_CB_WEB_NEW_WINDOW" href="ptwebclient.html#Pt_CB_WEB_NEW_WINDOW"/>
+              <topic label="Pt_CB_WEB_PAGE_INFO" href="ptwebclient.html#Pt_CB_WEB_PAGE_INFO"/>
+              <topic label="Pt_CB_WEB_SSL_CERTINFO" href="ptwebclient.html#Pt_CB_WEB_SSL_CERTINFO"/>
+              <topic label="Pt_CB_WEB_SSL_CERTNONTRUSTED" href="ptwebclient.html#Pt_CB_WEB_SSL_CERTNONTRUSTED"/>
+              <topic label="Pt_CB_WEB_SSL_CLIENT_CERT_SELECT" href="ptwebclient.html#Pt_CB_WEB_SSL_CLIENT_CERT_SELECT"/>
+              <topic label="Pt_CB_WEB_SSL_ERROR" href="ptwebclient.html#Pt_CB_WEB_SSL_ERROR"/>
+              <topic label="Pt_CB_WEB_START" href="ptwebclient.html#Pt_CB_WEB_START"/>
+              <topic label="Pt_CB_WEB_STATUS" href="ptwebclient.html#Pt_CB_WEB_STATUS"/>
+              <topic label="Pt_CB_WEB_UNKNOWN" href="ptwebclient.html#Pt_CB_WEB_UNKNOWN"/>
+              <topic label="Pt_CB_WEB_URL" href="ptwebclient.html#Pt_CB_WEB_URL"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptwebclient.html#IRESOURCES"/>
+        </topic>
+        <topic label="PtWidget" href="ptwidget.html">
+            <topic label="Class hierarchy:" href="ptwidget.html#id3"/>
+            <topic label="PhAB icon:" href="ptwidget.html#id5"/>
+            <topic label="Public header:" href="ptwidget.html#id7"/>
+            <topic label="Description:" href="ptwidget.html#id9">
+              <topic label="Geometry" href="ptwidget.html#Geometry"/>
+              <topic label="Storing arbitrary user data" href="ptwidget.html#UserData"/>
+            </topic>
+            <topic label="New resources:" href="ptwidget.html#NRESOURCES">
+              <topic label="Pt_ARG_ANCHOR_FLAGS" href="ptwidget.html#Pt_ARG_ANCHOR_FLAGS"/>
+              <topic label="Pt_ARG_ANCHOR_OFFSETS" href="ptwidget.html#Pt_ARG_ANCHOR_OFFSETS"/>
+              <topic label="Pt_ARG_AREA" href="ptwidget.html#Pt_ARG_AREA"/>
+              <topic label="Pt_ARG_BEVEL_WIDTH" href="ptwidget.html#Pt_ARG_BEVEL_WIDTH"/>
+              <topic label="Pt_ARG_BITMAP_CURSOR" href="ptwidget.html#Pt_ARG_BITMAP_CURSOR"/>
+              <topic label="Pt_ARG_CURSOR_COLOR" href="ptwidget.html#Pt_ARG_CURSOR_COLOR"/>
+              <topic label="Pt_ARG_CURSOR_TYPE" href="ptwidget.html#Pt_ARG_CURSOR_TYPE"/>
+              <topic label="Pt_ARG_DATA" href="ptwidget.html#Pt_ARG_DATA"/>
+              <topic label="Pt_ARG_DIM" href="ptwidget.html#Pt_ARG_DIM"/>
+              <topic label="Pt_ARG_EFLAGS" href="ptwidget.html#Pt_ARG_EFLAGS"/>
+              <topic label="Pt_ARG_EXTENT" href="ptwidget.html#Pt_ARG_EXTENT"/>
+              <topic label="Pt_ARG_FLAGS" href="ptwidget.html#Pt_ARG_FLAGS"/>
+              <topic label="Pt_ARG_GRID_LAYOUT_DATA" href="ptwidget.html#Pt_ARG_GRID_LAYOUT_DATA"/>
+              <topic label="Pt_ARG_HEIGHT" href="ptwidget.html#Pt_ARG_HEIGHT"/>
+              <topic label="Pt_ARG_HELP_TOPIC" href="ptwidget.html#Pt_ARG_HELP_TOPIC"/>
+              <topic label="Pt_ARG_LAYOUT_DATA" href="ptwidget.html#Pt_ARG_LAYOUT_DATA"/>
+              <topic label="Pt_ARG_MAXIMUM_DIM" href="ptwidget.html#Pt_ARG_MAXIMUM_DIM"/>
+              <topic label="Pt_ARG_MINIMUM_DIM" href="ptwidget.html#Pt_ARG_MINIMUM_DIM"/>
+              <topic label="Pt_ARG_POINTER" href="ptwidget.html#Pt_ARG_POINTER"/>
+              <topic label="Pt_ARG_POS" href="ptwidget.html#Pt_ARG_POS"/>
+              <topic label="Pt_ARG_RESIZE_FLAGS" href="ptwidget.html#Pt_ARG_RESIZE_FLAGS"/>
+              <topic label="Pt_ARG_ROW_LAYOUT_DATA" href="ptwidget.html#Pt_ARG_ROW_LAYOUT_DATA"/>
+              <topic label="Pt_ARG_USER_DATA" href="ptwidget.html#Pt_ARG_USER_DATA"/>
+              <topic label="Pt_ARG_WIDTH" href="ptwidget.html#Pt_ARG_WIDTH"/>
+              <topic label="Pt_CB_BLOCKED" href="ptwidget.html#Pt_CB_BLOCKED"/>
+              <topic label="Pt_CB_DESTROYED" href="ptwidget.html#Pt_CB_DESTROYED"/>
+              <topic label="Pt_CB_DND" href="ptwidget.html#Pt_CB_DND"/>
+              <topic label="Pt_CB_FILTER" href="ptwidget.html#Pt_CB_FILTER"/>
+              <topic label="Pt_CB_HOTKEY" href="ptwidget.html#Pt_CB_HOTKEY"/>
+              <topic label="Pt_CB_IS_DESTROYED" href="ptwidget.html#Pt_CB_IS_DESTROYED"/>
+              <topic label="Pt_CB_OUTBOUND" href="ptwidget.html#Pt_CB_OUTBOUND"/>
+              <topic label="Pt_CB_RAW" href="ptwidget.html#Pt_CB_RAW"/>
+              <topic label="Pt_CB_REALIZED" href="ptwidget.html#Pt_CB_REALIZED"/>
+              <topic label="Pt_CB_UNREALIZED" href="ptwidget.html#Pt_CB_UNREALIZED"/>
+            </topic>
+        </topic>
+        <topic label="PtWindow" href="ptwindow.html">
+            <topic label="Class hierarchy:" href="ptwindow.html#id3"/>
+            <topic label="PhAB icon:" href="ptwindow.html#id5"/>
+            <topic label="Public header:" href="ptwindow.html#id7"/>
+            <topic label="Description:" href="ptwindow.html#id9">
+              <topic label="Interacting with the Window Manager" href="ptwindow.html#id11">
+                <topic label="Setting the window's title" href="ptwindow.html#id13"/>
+                <topic label="Controlling the decorations" href="ptwindow.html#id15"/>
+                <topic label="Controlling window resizing" href="ptwindow.html#id17"/>
+                <topic label="Enabling Window Manager functions" href="ptwindow.html#id19"/>
+                <topic label="Notifying the application" href="ptwindow.html#id21"/>
+              </topic>
+              <topic label="Creating subwindows" href="ptwindow.html#id23"/>
+            </topic>
+            <topic label="New resources:" href="ptwindow.html#NRESOURCES">
+              <topic label="Pt_ARG_MAX_HEIGHT" href="ptwindow.html#Pt_ARG_MAX_HEIGHT"/>
+              <topic label="Pt_ARG_MAX_WIDTH" href="ptwindow.html#Pt_ARG_MAX_WIDTH"/>
+              <topic label="Pt_ARG_MIN_HEIGHT" href="ptwindow.html#Pt_ARG_MIN_HEIGHT"/>
+              <topic label="Pt_ARG_MIN_WIDTH" href="ptwindow.html#Pt_ARG_MIN_WIDTH"/>
+              <topic label="Pt_ARG_WINDOW_ACTIVE_COLOR" href="ptwindow.html#Pt_ARG_WINDOW_ACTIVE_COLOR"/>
+              <topic label="Pt_ARG_WINDOW_FLAGS" href="ptwindow.html#Pt_ARG_WINDOW_FLAGS"/>
+              <topic label="Pt_ARG_WINDOW_FRONT_WINDOW" href="ptwindow.html#Pt_ARG_WINDOW_FRONT_WINDOW"/>
+              <topic label="Pt_ARG_WINDOW_HELP_ROOT" href="ptwindow.html#Pt_ARG_WINDOW_HELP_ROOT"/>
+              <topic label="Pt_ARG_WINDOW_INACTIVE_COLOR" href="ptwindow.html#Pt_ARG_WINDOW_INACTIVE_COLOR"/>
+              <topic label="Pt_ARG_WINDOW_MANAGED_FLAGS" href="ptwindow.html#Pt_ARG_WINDOW_MANAGED_FLAGS"/>
+              <topic label="Pt_ARG_WINDOW_NOTIFY_FLAGS" href="ptwindow.html#Pt_ARG_WINDOW_NOTIFY_FLAGS"/>
+              <topic label="Pt_ARG_WINDOW_RENDER_FLAGS" href="ptwindow.html#Pt_ARG_WINDOW_RENDER_FLAGS"/>
+              <topic label="Pt_ARG_WINDOW_STATE" href="ptwindow.html#Pt_ARG_WINDOW_STATE"/>
+              <topic label="Pt_ARG_WINDOW_TITLE" href="ptwindow.html#Pt_ARG_WINDOW_TITLE"/>
+              <topic label="Pt_ARG_WINDOW_TITLE_COLOR" href="ptwindow.html#Pt_ARG_WINDOW_TITLE_COLOR"/>
+              <topic label="Pt_CB_WINDOW" href="ptwindow.html#Pt_CB_WINDOW"/>
+              <topic label="Pt_CB_WINDOW_CLOSING" href="ptwindow.html#Pt_CB_WINDOW_CLOSING"/>
+              <topic label="Pt_CB_WINDOW_OPENING" href="ptwindow.html#Pt_CB_WINDOW_OPENING"/>
+              <topic label="Pt_CB_WINDOW_TRANSPORT" href="ptwindow.html#Pt_CB_WINDOW_TRANSPORT"/>
+            </topic>
+            <topic label="Inherited resources:" href="ptwindow.html#IRESOURCES"/>
+            <topic label="Convenience functions:" href="ptwindow.html#FUNCTIONS"/>
+          <topic label="PtWindowFocus" href="pt/ptwindowfocus.html">
+            <topic label="Description:" href="pt/ptwindowfocus.html#id5"/>
+            <topic label="Examples:" href="pt/ptwindowfocus.html#id9"/>
+          </topic>
+          <topic label="PtWindowGetState" href="pt/ptwindowgetstate.html">
+            <topic label="Description:" href="pt/ptwindowgetstate.html#id5"/>
+          </topic>
+          <topic label="PtWindowToBack" href="pt/ptwindowtoback.html">
+            <topic label="Description:" href="pt/ptwindowtoback.html#id5"/>
+            <topic label="Examples:" href="pt/ptwindowtoback.html#id7"/>
+          </topic>
+          <topic label="PtWindowToFront" href="pt/ptwindowtofront.html">
+            <topic label="Description:" href="pt/ptwindowtofront.html#id5"/>
+            <topic label="Examples:" href="pt/ptwindowtofront.html#id7"/>
+          </topic>
+        </topic>
+      </topic>
+      <topic label="What's New" href="whatsnew.html">
+          <topic label="What's new in Photon for QNX Neutrino 6.5.0" href="whatsnew.html#WhatsNew650">
+            <topic label="Changes" href="whatsnew.html#Changes650"/>
+            <topic label="Errata" href="whatsnew.html#Errata650"/>
+          </topic>
+          <topic label="What's new in Photon for QNX Neutrino 6.4" href="whatsnew.html#WhatsNew64">
+            <topic label="Changes" href="whatsnew.html#Changes64">
+              <topic label="PtPrintSel" href="whatsnew.html#Changes64_PtPrintSel"/>
+              <topic label="PtFileSel" href="whatsnew.html#id9"/>
+            </topic>
+          </topic>
+          <topic label="What's new in Photon for QNX Neutrino 6.3 Service Pack 1" href="whatsnew.html#WhatsNew63sp1">
+            <topic label="New widgets" href="whatsnew.html#NewWidgets63sp1"/>
+            <topic label="Changes" href="whatsnew.html#Changes63sp1">
+              <topic label="PtGenList" href="whatsnew.html#Changes63sp1_PtGenList"/>
+              <topic label="PtBasic" href="whatsnew.html#Changes63sp1_PtBasic"/>
+              <topic label="PtWindow" href="whatsnew.html#Changes63sp1_PtWindow"/>
+            </topic>
+          </topic>
+          <topic label="What's new in Photon for QNX Neutrino 6.3" href="whatsnew.html#WhatsNew63">
+            <topic label="New widgets" href="whatsnew.html#NewWidgets63"/>
+            <topic label="Changes" href="whatsnew.html#Changes63">
+              <topic label="PtBasic" href="whatsnew.html#Changes63_PtBasic"/>
+              <topic label="PtContainer" href="whatsnew.html#Changes63_PtContainer"/>
+              <topic label="PtFontSel" href="whatsnew.html#Changes63_PtFontSel"/>
+              <topic label="PtLabel" href="whatsnew.html#Changes63_PtLabel"/>
+              <topic label="PtSeparator" href="whatsnew.html#Changes63_PtSeparator"/>
+              <topic label="PtTerminal" href="whatsnew.html#Changes63_PtTerminal"/>
+              <topic label="PtTree" href="whatsnew.html#Changes63_PtTree"/>
+              <topic label="PtWebClient" href="whatsnew.html#Changes63_PtWebClient"/>
+              <topic label="PtWidget" href="whatsnew.html#Changes63_PtWidget"/>
+            </topic>
+          </topic>
+          <topic label="What's new in Photon for QNX Neutrino 6.2.1" href="whatsnew.html#WhatsNew621">
+            <topic label="Changes" href="whatsnew.html#Changes621">
+              <topic label="PtGraphics" href="whatsnew.html#Changes621_PtGraphics"/>
+            </topic>
+            <topic label="Errata" href="whatsnew.html#Errata621"/>
+          </topic>
+          <topic label="What's new in Photon for QNX Neutrino 6.2.0" href="whatsnew.html#WhatsNew62">
+              <topic label="PtBasic" href="whatsnew.html#Changes62_PtBasic"/>
+              <topic label="PtFontSel" href="whatsnew.html#Changes62_PtFontSel"/>
+              <topic label="PtGenList" href="whatsnew.html#Changes62_PtGenList"/>
+              <topic label="PtMultiText" href="whatsnew.html#Changes62_PtMultiText"/>
+              <topic label="PtOSContainer" href="whatsnew.html#Changes62_PtOSContainer"/>
+              <topic label="PtSlider" href="whatsnew.html#Changes62_PtSlider"/>
+              <topic label="PtTerminal" href="whatsnew.html#Changes62_PtTerminal"/>
+              <topic label="PtText" href="whatsnew.html#Changes62_PtText"/>
+              <topic label="PtTty" href="whatsnew.html#Changes62_PtTty"/>
+          </topic>
+          <topic label="What's new in Photon for QNX Neutrino 6.1.0" href="whatsnew.html#WhatsNew61">
+              <topic label="PtGroup" href="whatsnew.html#Changes61_PtGroup"/>
+              <topic label="PtMenu" href="whatsnew.html#Changes61_PtMenu"/>
+              <topic label="PtNumericFloat" href="whatsnew.html#Changes61_PtNumericFloat"/>
+              <topic label="PtNumericInteger" href="whatsnew.html#Changes61_PtNumericInteger"/>
+          </topic>
+          <topic label="What's new in Photon for QNX Neutrino 6.0" href="whatsnew.html#WhatsNew20">
+            <topic label="New widgets" href="whatsnew.html#NewWidgets"/>
+            <topic label="Deprecated widgets" href="whatsnew.html#DeprecatedWidgets"/>
+            <topic label="Other changes" href="whatsnew.html#OtherChanges">
+              <topic label="PtBasic" href="whatsnew.html#Changes_PtBasic"/>
+              <topic label="PtBezier" href="whatsnew.html#Changes_PtBezier"/>
+              <topic label="PtBkgd" href="whatsnew.html#Changes_PtBkgd"/>
+              <topic label="PtButton" href="whatsnew.html#Changes_PtButton"/>
+              <topic label="PtComboBox" href="whatsnew.html#Changes_PtComboBox"/>
+              <topic label="PtContainer" href="whatsnew.html#Changes_PtContainer"/>
+              <topic label="PtFileSel" href="whatsnew.html#Changes_PtFileSel"/>
+              <topic label="PtFontSel" href="whatsnew.html#Changes_PtFontSel"/>
+              <topic label="PtGenList" href="whatsnew.html#Changes_PtGenList"/>
+              <topic label="PtGauge" href="whatsnew.html#Changes_PtGauge"/>
+              <topic label="PtGenTree" href="whatsnew.html#Changes_PtGenTree"/>
+              <topic label="PtGraphic" href="whatsnew.html#Changes_PtGraphic"/>
+              <topic label="PtGrid" href="whatsnew.html#Changes_PtGrid"/>
+              <topic label="PtLabel" href="whatsnew.html#Changes_PtLabel"/>
+              <topic label="PtMenuButton" href="whatsnew.html#Changes_PtMenuButton"/>
+              <topic label="PtMultiText" href="whatsnew.html#Changes_PtMultiText"/>
+              <topic label="PtNumeric" href="whatsnew.html#Changes_PtNumeric"/>
+              <topic label="PtNumericInteger" href="whatsnew.html#Changes_PtNumericInteger"/>
+              <topic label="PtPolygon" href="whatsnew.html#Changes_PtPolygon"/>
+              <topic label="PtPrintSel" href="whatsnew.html#Changes_PtPrintSel"/>
+              <topic label="PtRaw" href="whatsnew.html#Changes_PtRaw"/>
+              <topic label="PtRegion" href="whatsnew.html#Changes_PtRegion"/>
+              <topic label="PtScrollArea" href="whatsnew.html#Changes_PtScrollArea"/>
+              <topic label="PtScrollbar" href="whatsnew.html#Changes_PtScrollbar"/>
+              <topic label="PtSlider" href="whatsnew.html#Changes_PtSlider"/>
+              <topic label="PtTerminal" href="whatsnew.html#Changes_PtTerminal"/>
+              <topic label="PtText" href="whatsnew.html#Changes_PtText"/>
+              <topic label="PtTimer" href="whatsnew.html#Changes_PtTimer"/>
+              <topic label="PtToggleButton" href="whatsnew.html#Changes_PtToggleButton"/>
+              <topic label="PtTree" href="whatsnew.html#Changes_PtTree"/>
+              <topic label="PtTty" href="whatsnew.html#Changes_PtTty"/>
+              <topic label="PtWidget" href="whatsnew.html#Changes_PtWidget"/>
+              <topic label="PtWindow" href="whatsnew.html#Changes_PtWindow"/>
+            </topic>
+          </topic>
+      </topic>
+      <topic label="Glossary" href="glossary.html"/>
+</toc>

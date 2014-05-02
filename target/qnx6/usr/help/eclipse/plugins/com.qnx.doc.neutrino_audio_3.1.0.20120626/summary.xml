@@ -1,0 +1,407 @@
+<function_summary>
+<function
+   name="snd_card_get_longname"
+   summary="Find the long name for a given card number"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_card_get_longname ( int card, char *name, size_t size );\n"
+/>
+<function
+   name="snd_card_get_name"
+   summary="Find the name for a given card number"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_card_get_name( int card, char *name, size_t size );\n"
+/>
+<function
+   name="snd_card_name"
+   summary="Find the card number for a given name"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_card_name ( const char *string );\n"
+/>
+<function
+   name="snd_cards"
+   summary="Count the sound cards"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_cards ( void );\n"
+/>
+<function
+   name="snd_cards_list"
+   summary="Count the sound cards and list their card numbers in an array"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_cards_list( int *cards, int card_array_size, int *cards_over );\n"
+/>
+<function
+   name="snd_ctl_close"
+   summary="Close a control handle"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_ctl_close( snd_ctl_t *handle );\n"
+/>
+<function
+   name="snd_ctl_file_descriptor"
+   summary="Get the control file descriptor"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_ctl_file_descriptor( snd_ctl_t *handle );\n"
+/>
+<function
+   name="snd_ctl_hw_info"
+   summary="Get information about a sound card's hardware"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_ctl_hw_info( snd_ctl_t *handle, struct snd_ctl_hw_info *info );\n"
+/>
+<function
+   name="snd_ctl_mixer_switch_list"
+   summary="Get the number and names of control switches for the mixer"
+   synopsis="#include &lt;sys/asoundlib.h &gt;\n int snd_ctl_mixer_switch_list( snd_ctl_t *handle, int dev, snd_switch_list_t *list );\n"
+/>
+<function
+   name="snd_ctl_mixer_switch_read"
+   summary="Get a mixer switch setting"
+   synopsis="#include &lt;sys/asoundlib.h &gt;\n int snd_ctl_mixer_switch_read( snd_ctl_t *handle, int dev, snd_switch_t * sw )"
+/>
+<function
+   name="snd_ctl_mixer_switch_write"
+   summary="Adjust a mixer switch setting"
+   synopsis="#include &lt; sys/asoundlib.h &gt;\n int snd_ctl_mixer_switch_write( snd_ctl_t *handle, int dev, snd_switch_t * sw )"
+/>
+<function
+   name="snd_ctl_open"
+   summary="Create a connection and handle to the specified control device"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_ctl_open( snd_ctl_t **handle, int card );\n"
+/>
+<function
+   name="snd_ctl_pcm_channel_info"
+   summary="Get information about a PCM channel's capabilities from a control handle"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_ctl_pcm_channel_info( snd_ctl_t *handle, int dev, int chn, int subdev, snd_pcm_channel_info_t *info );\n"
+/>
+<function
+   name="snd_ctl_pcm_info"
+   summary="Get general information about a PCM device from a control handle"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_ctl_pcm_info( snd_ctl_t *handle, int dev, snd_pcm_info_t *info );\n"
+/>
+<function
+   name="snd_ctl_read"
+   summary="Read pending control events"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_ctl_read( snd_ctl_t *handle, snd_ctl_callbacks_t *callbacks );\n"
+/>
+<function
+   name="snd_mixer_close"
+   summary="Close a mixer handle"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_mixer_close( snd_mixer_t *handle );\n"
+/>
+<function
+   name="snd_mixer_element_read"
+   summary="Get a mixer element's configurable parameters"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_mixer_element_read( snd_mixer_t *handle, snd_mixer_element_t *element );\n"
+/>
+<function
+   name="snd_mixer_element_write"
+   summary="Set a mixer element's configurable parameters"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_mixer_element_write( snd_mixer_t *handle, snd_mixer_element_t *element );\n"
+/>
+<function
+   name="snd_mixer_elements"
+   summary="Get the number of elements in the mixer and their element IDs"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_mixer_elements( snd_mixer_t *handle, snd_mixer_elements_t *elements );\n"
+/>
+<function
+   name="snd_mixer_file_descriptor"
+   summary="Return the file descriptor of the connection to the sound mixer interface"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_mixer_file_descriptor( snd_mixer_t *handle );\n"
+/>
+<function
+   name="snd_mixer_get_bit"
+   summary="Return the boolean value of a single bit in the specified bitmap"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_mixer_get_bit( unsigned int *bitmap, int bit );\n"
+/>
+<function
+   name="snd_mixer_get_filter"
+   summary="Get the current mask of mixer events that the driver is tracking"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_mixer_get_filter( snd_mixer_t *handle, snd_mixer_filter_t *filter );\n"
+/>
+<function
+   name="snd_mixer_group_read"
+   summary="Get a mixer group's configurable parameters"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_mixer_group_read( snd_mixer_t *handle, snd_mixer_group_t *group );\n"
+/>
+<function
+   name="snd_mixer_group_write"
+   summary="Set a mixer group's configurable parameters"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_mixer_group_write( snd_mixer_t *handle, snd_mixer_group_t *group );\n"
+/>
+<function
+   name="snd_mixer_groups"
+   summary="Get the number of groups in the mixer and their group IDs"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_mixer_groups( snd_mixer_t *handle, snd_mixer_groups_t *groups );\n"
+/>
+<function
+   name="snd_mixer_info"
+   summary="Get general information about a mixer device"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_mixer_info( snd_mixer_t *handle, snd_mixer_info_t *info );\n"
+/>
+<function
+   name="snd_mixer_open"
+   summary="Create a connection and handle to a specified mixer device"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_mixer_open( snd_mixer_t **handle, int card, int device );\n"
+/>
+<function
+   name="snd_mixer_open_name"
+   summary="Create a connection and handle to a mixer device specified by name"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_mixer_open_name( snd_mixer_t **handle, char *name );\n"
+/>
+<function
+   name="snd_mixer_read"
+   summary="Read pending mixer events"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_mixer_read( snd_mixer_t *handle, snd_mixer_callbacks_t *callbacks );\n"
+/>
+<function
+   name="snd_mixer_routes"
+   summary="Get the number of routes in the mixer and their IDs"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_mixer_routes( snd_mixer_t *handle, snd_mixer_routes_t *routes );\n"
+/>
+<function
+   name="snd_mixer_set_bit"
+   summary="Set the boolean value of a single bit in the specified bitmap"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n void snd_mixer_set_bit( unsigned int *bitmap, int bit, int val );\n"
+/>
+<function
+   name="snd_mixer_set_filter"
+   summary="Set the mask of mixer events that the driver will track"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_mixer_set_filter( snd_mixer_t *handle, snd_mixer_filter_t *filter );\n"
+/>
+<function
+   name="snd_mixer_sort_eid_table"
+   summary="Sort a list of element ID structures"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n void snd_mixer_sort_eid_table( snd_mixer_eid_t *list, int count, snd_mixer_weight_entry_t *table );\n"
+/>
+<function
+   name="snd_mixer_sort_gid_table"
+   summary="Sort a list of group ID structures"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n void snd_mixer_sort_gid_table( snd_mixer_gid_t *list, int count, snd_mixer_weight_entry_t *table );\n"
+/>
+<function
+   name="snd_pcm_build_linear_format"
+   summary="Encode a linear format value"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_pcm_build_linear_format( int width, int unsigned, int big_endian );\n"
+/>
+<function
+   name="snd_pcm_capture_flush"
+   summary="Discard all pending data in a PCM capture channel's queue and stop the channel"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_pcm_capture_flush( snd_pcm_t *handle);\n"
+/>
+<function
+   name="snd_pcm_capture_prepare"
+   summary="Signal the driver to ready the capture channel"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_pcm_capture_prepare( snd_pcm_t *handle);\n"
+/>
+<function
+   name="snd_pcm_channel_flush"
+   summary="Flush all pending data in a PCM channel's queue and stop the channel"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_pcm_channel_flush( snd_pcm_t *handle, int channel );\n"
+/>
+<function
+   name="snd_pcm_channel_info"
+   summary="Get information about a PCM channel's current capabilities"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_pcm_channel_info( snd_pcm_t *handle, snd_pcm_channel_info_t *info );\n"
+/>
+<function
+   name="snd_pcm_channel_params"
+   summary="Set a PCM channel's configurable parameters"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_pcm_channel_params( snd_pcm_t *handle, snd_pcm_channel_params_t *params );\n"
+/>
+<function
+   name="snd_pcm_channel_prepare"
+   summary="Signal the driver to ready the specified channel"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_pcm_channel_prepare( snd_pcm_t *handle, int channel );\n"
+/>
+<function
+   name="snd_pcm_channel_setup"
+   summary="Get the current configuration for the specified PCM channel"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_pcm_channel_setup( snd_pcm_t *handle, snd_pcm_channel_setup_t *setup );\n"
+/>
+<function
+   name="snd_pcm_channel_status"
+   summary="Get the runtime status of a PCM channel"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_pcm_channel_status( snd_pcm_t *handle, snd_pcm_channel_status_t *status );\n"
+/>
+<function
+   name="snd_pcm_close"
+   summary="Close a PCM handle and free its resources"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_pcm_close( snd_pcm_t *handle );\n"
+/>
+<function
+   name="snd_pcm_file_descriptor"
+   summary="Return the file descriptor of the connection to the PCM interface"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_pcm_file_descriptor( snd_pcm_t *handle, int channel );\n"
+/>
+<function
+   name="snd_pcm_find"
+   summary="Find all PCM devices in the system that meet the given criteria"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_pcm_find( unsigned int format, int *number, int *cards, int *devices, int mode );\n"
+/>
+<function
+   name="snd_pcm_format_big_endian"
+   summary="Check for a big-endian format"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_pcm_format_big_endian( int format );\n"
+/>
+<function
+   name="snd_pcm_format_linear"
+   summary="Check for a linear format"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_pcm_format_linear( int format );\n"
+/>
+<function
+   name="snd_pcm_format_little_endian"
+   summary="Check for a little-endian format"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_pcm_format_little_endian( int format );\n"
+/>
+<function
+   name="snd_pcm_format_signed"
+   summary="Check for a signed format"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_pcm_format_signed( int format );\n"
+/>
+<function
+   name="snd_pcm_format_size"
+   summary="Convert the size in the given samples to bytes"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n ssize_t snd_pcm_format_size( int format, size_t num_samples );\n"
+/>
+<function
+   name="snd_pcm_format_unsigned"
+   summary="Check for an unsigned format"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_pcm_format_unsigned( int format );\n"
+/>
+<function
+   name="snd_pcm_format_width"
+   summary="Return the sample width in bits for a format"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_pcm_format_width( int format );\n"
+/>
+<function
+   name="snd_pcm_get_format_name"
+   summary="Convert a format value into a human-readable text string"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n const char *snd_pcm_get_format_name( int format );\n"
+/>
+<function
+   name="snd_pcm_info"
+   summary="Get general information about a PCM device"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_pcm_info( snd_pcm_t *handle, snd_pcm_info_t *info );\n"
+/>
+<function
+   name="snd_pcm_nonblock_mode"
+   summary="Set or reset the blocking behavior of reads and writes to PCM channels"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_pcm_nonblock_mode( snd_pcm_t *handle, int nonblock );\n"
+/>
+<function
+   name="snd_pcm_open"
+   summary="Create a handle and open a connection to a specified audio interface"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_pcm_open( snd_pcm_t **handle, int card, int device, int mode );\n"
+/>
+<function
+   name="snd_pcm_open_name"
+   summary="Create a handle and open a connection to an audio interface specified by name"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_pcm_open_name( snd_pcm_t **handle, char *name, int mode );\n"
+/>
+<function
+   name="snd_pcm_open_preferred"
+   summary="Create a handle and open a connection to the preferred audio interface"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_pcm_open_preferred( snd_pcm_t **handle, int *rcard, int *rdevice, int mode );\n"
+/>
+<function
+   name="snd_pcm_playback_drain"
+   summary="Stop the PCM playback channel and discard the contents of its queue"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_pcm_playback_drain( snd_pcm_t *handle );\n"
+/>
+<function
+   name="snd_pcm_playback_flush"
+   summary="Play out all pending data in a PCM playback channel's queue and stop the channel"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_pcm_playback_flush( snd_pcm_t *handle);\n"
+/>
+<function
+   name="snd_pcm_playback_prepare"
+   summary="Signal the driver to ready the playback channel"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_pcm_playback_prepare( snd_pcm_t *handle);\n"
+/>
+<function
+   name="snd_pcm_plugin_flush"
+   summary="Finish processing all pending data in a PCM channel's queue and stop the channel"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_pcm_plugin_flush( snd_pcm_t *handle, int channel );\n"
+/>
+<function
+   name="snd_pcm_plugin_get_voice_conversion"
+   summary="Get the current voice conversion structure for a channel"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_pcm_plugin_get_voice_conversion ( snd_pcm_t *handle, int channel, snd_pcm_voice_conversion_t *voice_conversion );\n"
+/>
+<function
+   name="snd_pcm_plugin_info"
+   summary="Get information about a PCM channel's capabilities (plugin-aware)"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_pcm_plugin_info( snd_pcm_t *handle, snd_pcm_channel_info_t *info );\n"
+/>
+<function
+   name="snd_pcm_plugin_params"
+   summary="Set the configurable parameters for a PCM channel (plugin-aware)"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_pcm_plugin_params( snd_pcm_t *handle, snd_pcm_channel_params_t *params );\n"
+/>
+<function
+   name="snd_pcm_plugin_playback_drain"
+   summary="Stop the PCM playback channel and discard the contents of its queue (plugin-aware)"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_pcm_plugin_playback_drain( snd_pcm_t *handle );\n"
+/>
+<function
+   name="snd_pcm_plugin_prepare"
+   summary="Signal the driver to ready the specified channel (plugin-aware)"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_pcm_plugin_prepare( snd_pcm_t *handle, int channel );\n"
+/>
+<function
+   name="snd_pcm_plugin_read"
+   summary="Transfer PCM data from the capture channel (plugin-aware)"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n ssize_t snd_pcm_plugin_read( snd_pcm_t *handle, void *buffer, size_t size );\n"
+/>
+<function
+   name="snd_pcm_plugin_set_disable"
+   summary="Disable PCM plugins"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n unsigned int snd_pcm_plugin_set_disable( snd_pcm_t *pcm, unsigned int mask );\n"
+/>
+<function
+   name="snd_pcm_plugin_set_src_mode"
+   summary="Set the system's source mode (plugin-aware)"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n unsigned int snd_pcm_plugin_set_src_mode( snd_pcm_t *handle, unsigned int src_mode, int target );\n"
+/>
+<function
+   name="snd_pcm_plugin_set_voice_conversion"
+   summary="Set the current voice conversion structure for a channel"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_pcm_plugin_set_voice_conversion ( snd_pcm_t *handle, int channel, snd_pcm_voice_conversion_t *voice_conversion );\n"
+/>
+<function
+   name="snd_pcm_plugin_setup"
+   summary="Get the current configuration for the specified PCM channel (plugin aware)"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_pcm_plugin_setup( snd_pcm_t *handle, snd_pcm_channel_setup_t *setup );\n"
+/>
+<function
+   name="snd_pcm_plugin_src_max_frag"
+   summary="Get the maximum possible fragment size (plugin-aware)"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_pcm_plugin_src_max_frag ( snd_pcm_t *handle, unsigned int fragsize );\n"
+/>
+<function
+   name="snd_pcm_plugin_set_src_method"
+   summary="Set the system's source filter method (plugin-aware)"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n unsigned int snd_pcm_plugin_set_src_method ( snd_pcm_t *handle, unsigned int method );\n"
+/>
+<function
+   name="snd_pcm_plugin_status"
+   summary="Get the runtime status of a PCM channel (plugin aware)"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_pcm_plugin_status( snd_pcm_t *handle, snd_pcm_channel_status_t *status );\n"
+/>
+<function
+   name="snd_pcm_plugin_update_src"
+   summary="Get the size of the next fragment to write (plugin-aware)"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n int snd_pcm_plugin_update_src( snd_pcm_t *handle, snd_pcm_channel_setup_t *setup, int currlevel );\n"
+/>
+<function
+   name="snd_pcm_plugin_write"
+   summary="Transfer PCM data to playback channel (plugin-aware)"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n ssize_t snd_pcm_plugin_write( snd_pcm_t *handle, const void *buffer, size_t size );\n"
+/>
+<function
+   name="snd_pcm_read"
+   summary="Transfer PCM data from the capture channel"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n ssize_t snd_pcm_read( snd_pcm_t *handle, void *buffer, size_t size );\n"
+/>
+<function
+   name="snd_pcm_write"
+   summary="Transfer PCM data to playback channel"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n ssize_t snd_pcm_write( snd_pcm_t *handle, const void *buffer, size_t size );\n"
+/>
+<function
+   name="snd_strerror"
+   summary="Convert an error code to a string"
+   synopsis="#include &lt;sys/asoundlib.h&gt;\n const char *snd_strerror( int errnum );\n"
+/>
+</function_summary>

@@ -1,0 +1,2998 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Library Reference">
+      <topic label="About This Reference" href="about.html">
+          <topic label="Typographical conventions" href="about.html#id3">
+            <topic label="Note to Windows users" href="about.html#WINDOWSNOTE"/>
+            <topic label="Navigation buttons" href="about.html#Navigation"/>
+          </topic>
+          <topic label="Technical support" href="about.html#id7"/>
+      </topic>
+      <topic label="Summary of Entries" href="fnsummary.html">
+          <topic label="Alpha blending" href="fnsummary.html#AlphaBlending"/>
+          <topic label="Background processing" href="fnsummary.html#BackgroundProcessing"/>
+          <topic label="Bitmaps and Images" href="fnsummary.html#BitmapsAndImages"/>
+          <topic label="Blitting" href="fnsummary.html#Blitting"/>
+          <topic label="Characters, translating" href="fnsummary.html#TranslatingCharacters"/>
+          <topic label="Chroma key operations" href="fnsummary.html#ChromaKey"/>
+          <topic label="Clipboard operations" href="fnsummary.html#Clipboard"/>
+          <topic label="Clipping" href="fnsummary.html#Clipping"/>
+          <topic label="Colors, converting and parsing" href="fnsummary.html#Colors"/>
+          <topic label="Configuration files" href="fnsummary.html#ConfigFiles"/>
+          <topic label="Connections to other applications" href="fnsummary.html#ConnectingApps"/>
+          <topic label="Coordinates, translating" href="fnsummary.html#TranslatingCoordinates"/>
+          <topic label="Cursors/pointers" href="fnsummary.html#Cursors"/>
+          <topic label="Data chains" href="fnsummary.html#DataChains"/>
+          <topic label="Direct mode" href="fnsummary.html#DirectMode"/>
+          <topic label="Drag and drop" href="fnsummary.html#DragAndDrop"/>
+          <topic label="Dragging" href="fnsummary.html#Dragging"/>
+          <topic label="Draw contexts" href="fnsummary.html#DrawContexts"/>
+          <topic label="Drawing attributes" href="fnsummary.html#DrawingAttributes">
+            <topic label="General attributes" href="fnsummary.html#GeneralDrawingAttributes"/>
+            <topic label="Fill attributes" href="fnsummary.html#FillAttributes"/>
+            <topic label="Line (stroke) attributes" href="fnsummary.html#StrokeAttributes"/>
+            <topic label="Text attributes" href="fnsummary.html#TextAttributes"/>
+          </topic>
+          <topic label="Events" href="fnsummary.html#Events"/>
+          <topic label="Font handling" href="fnsummary.html#FontHandling"/>
+          <topic label="Geometry" href="fnsummary.html#Geometry"/>
+          <topic label="Gradients" href="fnsummary.html#Gradients">
+            <topic label="Driver-level" href="fnsummary.html#DriverGradients"/>
+            <topic label="Application-level" href="fnsummary.html#ApplicationGradients"/>
+          </topic>
+          <topic label="Graphical contexts" href="fnsummary.html#GraphicalContexts"/>
+          <topic label="Input/Output events" href="fnsummary.html#InputOutput"/>
+          <topic label="Interprocess Communication (IPC)" href="fnsummary.html#IPC"/>
+          <topic label="Layers" href="fnsummary.html#Layers"/>
+          <topic label="Key events, translating" href="fnsummary.html#TranslatingKeyEvents"/>
+          <topic label="Memory contexts" href="fnsummary.html#MemoryContexts"/>
+          <topic label="Messages and questions" href="fnsummary.html#Messages"/>
+          <topic label="Modal dialogs" href="fnsummary.html#ModalDialogs"/>
+          <topic label="Modules" href="fnsummary.html#Modules"/>
+          <topic label="Online help" href="fnsummary.html#OnlineHelp"/>
+          <topic label="Photon Application Builder functions" href="fnsummary.html#PhABfunctions"/>
+          <topic label="Photon services, connecting and disconnecting" href="fnsummary.html#Connecting"/>
+          <topic label="Power-saving modes" href="fnsummary.html#PowerSaving"/>
+          <topic label="Primitive drawing routines" href="fnsummary.html#PrimitiveDrawingRoutines"/>
+          <topic label="Printing" href="fnsummary.html#Printing"/>
+          <topic label="Processes" href="fnsummary.html#Processes"/>
+          <topic label="Realtime timers" href="fnsummary.html#RealtimeTimers"/>
+          <topic label="Regions" href="fnsummary.html#Regions"/>
+          <topic label="Shared memory" href="fnsummary.html#SharedMemory"/>
+          <topic label="Signals" href="fnsummary.html#Signals"/>
+          <topic label="Strings, translating" href="fnsummary.html#TranslatingStrings"/>
+          <topic label="Synchronization" href="fnsummary.html#Synchronization"/>
+          <topic label="System information" href="fnsummary.html#SystemInfo"/>
+          <topic label="Text" href="fnsummary.html#Text"/>
+          <topic label="Threads" href="fnsummary.html#Threads"/>
+          <topic label="Tiles" href="fnsummary.html#Tiles"/>
+          <topic label="UTF-8 character strings" href="fnsummary.html#UTF8"/>
+          <topic label="Video modes" href="fnsummary.html#VideoModes"/>
+          <topic label="Video offscreen memory" href="fnsummary.html#VideoOffscreenMemory"/>
+          <topic label="Video overlay" href="fnsummary.html#VideoOverlay"/>
+          <topic label="Wide characters" href="fnsummary.html#WideCharacter"/>
+          <topic label="Widgets" href="fnsummary.html#Widgets">
+            <topic label="Callbacks and hotkey handlers" href="fnsummary.html#Callbacks"/>
+            <topic label="Class hierarchy" href="fnsummary.html#WidgetClassHierarchy"/>
+            <topic label="Control surfaces" href="fnsummary.html#WidgetControlSurfaces"/>
+            <topic label="Creating and destroying widgets" href="fnsummary.html#CreatingWidgets"/>
+            <topic label="Custom widgets" href="fnsummary.html#CustomWidgets"/>
+            <topic label="Damaging widgets" href="fnsummary.html#MarkingWidgetsAsDamaged"/>
+            <topic label="Databases" href="fnsummary.html#WidgetDatabases"/>
+            <topic label="Family hierarchy" href="fnsummary.html#WidgetFamilyHierarchy"/>
+            <topic label="Finding widgets in an area" href="fnsummary.html#FindingWidgets"/>
+            <topic label="Focus" href="fnsummary.html#Focus"/>
+            <topic label="Geometry" href="fnsummary.html#WidgetGeometry"/>
+            <topic label="Library initialization" href="fnsummary.html#WidgetLibraryInitialization"/>
+            <topic label="Menus" href="fnsummary.html#Menus"/>
+            <topic label="PtComboBox" href="fnsummary.html#PtComboBox"/>
+            <topic label="PtFileSel" href="fnsummary.html#PtFileSel"/>
+            <topic label="PtGenList" href="fnsummary.html#PtGenList"/>
+            <topic label="PtGenTree" href="fnsummary.html#PtGenTree"/>
+            <topic label="PtList" href="fnsummary.html#PtList"/>
+            <topic label="PtMTrend" href="fnsummary.html#PtMTrend"/>
+            <topic label="PtMultiText" href="fnsummary.html#PtMultiText"/>
+            <topic label="PtPanelGroup" href="fnsummary.html#PtPanelGroup"/>
+            <topic label="PtProgress" href="fnsummary.html#PtProgress"/>
+            <topic label="PtTerminal" href="fnsummary.html#PtTerminal"/>
+            <topic label="PtText" href="fnsummary.html#PtText"/>
+            <topic label="PtTree" href="fnsummary.html#PtTree"/>
+            <topic label="PtTrend" href="fnsummary.html#PtTrend"/>
+            <topic label="PtTty" href="fnsummary.html#PtTty"/>
+            <topic label="PtWindow" href="fnsummary.html#PtWindow"/>
+            <topic label="Realizing and unrealizing widgets" href="fnsummary.html#RealizingAndUnrealizingWidgets"/>
+            <topic label="Resources" href="fnsummary.html#Resources"/>
+            <topic label="Styles" href="fnsummary.html#Styles"/>
+            <topic label="Updates, forcing and holding off" href="fnsummary.html#ForcingUpdates"/>
+          </topic>
+          <topic label="Window Manager" href="fnsummary.html#WindowManager"/>
+      </topic>
+      <topic label="Ab---PhAB-Generated Code" href="ab-base.html">
+          <topic label="AbGetABW" href="ab/abgetabw.html">
+            <topic label="Description:" href="ab/abgetabw.html#id7"/>
+          </topic>
+      </topic>
+      <topic label="Al---PhAB Translation" href="al-base.html">
+          <topic label="AlClearTranslation" href="al/alcleartranslation.html">
+            <topic label="Description:" href="al/alcleartranslation.html#id9"/>
+          </topic>
+          <topic label="AlCloseDBase" href="al/alclosedbase.html">
+            <topic label="Description:" href="al/alclosedbase.html#id9"/>
+          </topic>
+          <topic label="AlGetEntry" href="al/algetentry.html">
+            <topic label="Description:" href="al/algetentry.html#id9"/>
+          </topic>
+          <topic label="AlGetSize" href="al/algetsize.html">
+            <topic label="Description:" href="al/algetsize.html#id9"/>
+          </topic>
+          <topic label="AlOpenDBase" href="al/alopendbase.html">
+            <topic label="Description:" href="al/alopendbase.html#id9"/>
+          </topic>
+          <topic label="AlReadTranslation" href="al/alreadtranslation.html">
+            <topic label="Description:" href="al/alreadtranslation.html#id9"/>
+          </topic>
+          <topic label="AlSaveTranslation" href="al/alsavetranslation.html">
+            <topic label="Description:" href="al/alsavetranslation.html#id9"/>
+          </topic>
+          <topic label="AlSetEntry" href="al/alsetentry.html">
+            <topic label="Description:" href="al/alsetentry.html#id9"/>
+          </topic>
+      </topic>
+      <topic label="Ap---PhAB" href="ap-base.html">
+          <topic label="ApAddClass" href="ap/apaddclass.html">
+            <topic label="Description:" href="ap/apaddclass.html#id9"/>
+            <topic label="Examples:" href="ap/apaddclass.html#id13"/>
+          </topic>
+          <topic label="ApAddContext" href="ap/apaddcontext.html">
+            <topic label="Description:" href="ap/apaddcontext.html#id9"/>
+          </topic>
+          <topic label="ApAppendTranslation" href="ap/apappendtranslation.html">
+            <topic label="Description:" href="ap/apappendtranslation.html#id9"/>
+            <topic label="Examples:" href="ap/apappendtranslation.html#id13"/>
+          </topic>
+          <topic label="ApCloseDBase" href="ap/apclosedbase.html">
+            <topic label="Description:" href="ap/apclosedbase.html#id9"/>
+            <topic label="Examples:" href="ap/apclosedbase.html#id13"/>
+          </topic>
+          <topic label="ApCloseMessageDB" href="ap/apclosemessagedb.html">
+            <topic label="Description:" href="ap/apclosemessagedb.html#id9"/>
+          </topic>
+          <topic label="ApCopyDBWidget" href="ap/apcopydbwidget.html">
+            <topic label="Description:" href="ap/apcopydbwidget.html#id9"/>
+            <topic label="Examples:" href="ap/apcopydbwidget.html#id13"/>
+          </topic>
+          <topic label="ApCreateDBWidget" href="ap/apcreatedbwidget.html">
+            <topic label="Description:" href="ap/apcreatedbwidget.html#id9"/>
+            <topic label="Examples:" href="ap/apcreatedbwidget.html#id13"/>
+          </topic>
+          <topic label="ApCreateDBWidgetFamily" href="ap/apcreatedbwidgetfamily.html">
+            <topic label="Description:" href="ap/apcreatedbwidgetfamily.html#id9"/>
+          </topic>
+          <topic label="ApCreateModule" href="ap/apcreatemodule.html">
+            <topic label="Description:" href="ap/apcreatemodule.html#id9">
+              <topic label="Usage with window, dialog, menu, and other modules" href="ap/apcreatemodule.html#OtherUsage"/>
+              <topic label="Usage with picture modules" href="ap/apcreatemodule.html#PictureModules"/>
+            </topic>
+          </topic>
+          <topic label="ApCreateWidget" href="ap/apcreatewidget.html">
+            <topic label="Description:" href="ap/apcreatewidget.html#id9"/>
+            <topic label="Examples:" href="ap/apcreatewidget.html#id13"/>
+          </topic>
+          <topic label="ApCreateWidgetFamily" href="ap/apcreatewidgetfamily.html">
+            <topic label="Description:" href="ap/apcreatewidgetfamily.html#id9"/>
+          </topic>
+          <topic label="ApDeleteDBWidget" href="ap/apdeletedbwidget.html">
+            <topic label="Description:" href="ap/apdeletedbwidget.html#id9"/>
+            <topic label="Examples:" href="ap/apdeletedbwidget.html#id13"/>
+          </topic>
+          <topic label="ApError" href="ap/aperror.html">
+            <topic label="Description:" href="ap/aperror.html#id9"/>
+            <topic label="Examples:" href="ap/aperror.html#id11"/>
+          </topic>
+          <topic label="ApGetDBWidgetInfo" href="ap/apgetdbwidgetinfo.html">
+            <topic label="Description:" href="ap/apgetdbwidgetinfo.html#id9"/>
+            <topic label="Examples:" href="ap/apgetdbwidgetinfo.html#id13"/>
+          </topic>
+          <topic label="ApGetImageRes" href="ap/apgetimageres.html">
+            <topic label="Description:" href="ap/apgetimageres.html#id9"/>
+            <topic label="Examples:" href="ap/apgetimageres.html#id13"/>
+          </topic>
+          <topic label="ApGetInstance" href="ap/apgetinstance.html">
+            <topic label="Description:" href="ap/apgetinstance.html#id9"/>
+            <topic label="Examples:" href="ap/apgetinstance.html#id13"/>
+          </topic>
+          <topic label="ApGetItemText" href="ap/apgetitemtext.html">
+            <topic label="Description:" href="ap/apgetitemtext.html#id9"/>
+            <topic label="Examples:" href="ap/apgetitemtext.html#id13"/>
+          </topic>
+          <topic label="ApGetMessage" href="ap/apgetmessage.html">
+            <topic label="Description:" href="ap/apgetmessage.html#id9"/>
+          </topic>
+          <topic label="ApGetTextRes" href="ap/apgettextres.html">
+            <topic label="Description:" href="ap/apgettextres.html#id9"/>
+            <topic label="Examples:" href="ap/apgettextres.html#id13"/>
+          </topic>
+          <topic label="ApGetWidgetPtr" href="ap/apgetwidgetptr.html">
+            <topic label="Description:" href="ap/apgetwidgetptr.html#id9"/>
+            <topic label="Examples:" href="ap/apgetwidgetptr.html#id13"/>
+          </topic>
+          <topic label="ApInfo_t" href="ap/apinfot.html">
+            <topic label="Description:" href="ap/apinfot.html#id5"/>
+          </topic>
+          <topic label="ApInitialize" href="ap/apinitialize.html">
+            <topic label="Description:" href="ap/apinitialize.html#id9"/>
+          </topic>
+          <topic label="ApInstanceName" href="ap/apinstancename.html">
+            <topic label="Description:" href="ap/apinstancename.html#id9"/>
+            <topic label="Examples:" href="ap/apinstancename.html#id13"/>
+          </topic>
+          <topic label="ApLoadMessageDB" href="ap/aploadmessagedb.html">
+            <topic label="Description:" href="ap/aploadmessagedb.html#id9"/>
+          </topic>
+          <topic label="ApLinkWindow" href="ap/aplinkwindow.html">
+            <topic label="Description:" href="ap/aplinkwindow.html#id9"/>
+          </topic>
+          <topic label="ApModalWait" href="ap/apmodalwait.html">
+            <topic label="Description:" href="ap/apmodalwait.html#id9"/>
+          </topic>
+          <topic label="ApModifyItemAccel" href="ap/apmodifyitemaccel.html">
+            <topic label="Description:" href="ap/apmodifyitemaccel.html#id9"/>
+          </topic>
+          <topic label="ApModifyItemState" href="ap/apmodifyitemstate.html">
+            <topic label="Description:" href="ap/apmodifyitemstate.html#id9"/>
+            <topic label="Examples:" href="ap/apmodifyitemstate.html#id13"/>
+          </topic>
+          <topic label="ApModifyItemText" href="ap/apmodifyitemtext.html">
+            <topic label="Description:" href="ap/apmodifyitemtext.html#id9"/>
+            <topic label="Examples:" href="ap/apmodifyitemtext.html#id13"/>
+          </topic>
+          <topic label="ApModuleFunction" href="ap/apmodulefunction.html">
+            <topic label="Description:" href="ap/apmodulefunction.html#id9"/>
+            <topic label="Examples:" href="ap/apmodulefunction.html#id11"/>
+          </topic>
+          <topic label="ApModuleLocation" href="ap/apmodulelocation.html">
+            <topic label="Description:" href="ap/apmodulelocation.html#id9"/>
+            <topic label="Examples:" href="ap/apmodulelocation.html#id11"/>
+          </topic>
+          <topic label="ApModuleParent" href="ap/apmoduleparent.html">
+            <topic label="Description:" href="ap/apmoduleparent.html#id9"/>
+            <topic label="Examples:" href="ap/apmoduleparent.html#id11"/>
+          </topic>
+          <topic label="ApName" href="ap/apname.html">
+            <topic label="Description:" href="ap/apname.html#id9"/>
+            <topic label="Examples:" href="ap/apname.html#id13"/>
+          </topic>
+          <topic label="ApOpenDBase" href="ap/apopendbase.html">
+            <topic label="Description:" href="ap/apopendbase.html#id9"/>
+            <topic label="Examples:" href="ap/apopendbase.html#id13"/>
+          </topic>
+          <topic label="ApOpenDBaseFile" href="ap/apopendbasefile.html">
+            <topic label="Description:" href="ap/apopendbasefile.html#id9"/>
+            <topic label="Examples:" href="ap/apopendbasefile.html#id13"/>
+          </topic>
+          <topic label="ApRemoveClass" href="ap/apremoveclass.html">
+            <topic label="Description:" href="ap/apremoveclass.html#id9"/>
+          </topic>
+          <topic label="ApRemoveContext" href="ap/apremovecontext.html">
+            <topic label="Description:" href="ap/apremovecontext.html#id9"/>
+          </topic>
+          <topic label="ApResClose" href="ap/apresclose.html">
+            <topic label="Description:" href="ap/apresclose.html#id7"/>
+            <topic label="Examples:" href="ap/apresclose.html#id9"/>
+          </topic>
+          <topic label="ApSaveDBaseFile" href="ap/apsavedbasefile.html">
+            <topic label="Description:" href="ap/apsavedbasefile.html#id9"/>
+            <topic label="Examples:" href="ap/apsavedbasefile.html#id13"/>
+          </topic>
+          <topic label="ApSetContext" href="ap/apsetcontext.html">
+            <topic label="Description:" href="ap/apsetcontext.html#id9"/>
+            <topic label="Examples:" href="ap/apsetcontext.html#id13"/>
+          </topic>
+          <topic label="ApSetTranslation" href="ap/apsettranslation.html">
+            <topic label="Description:" href="ap/apsettranslation.html#id9"/>
+            <topic label="Examples:" href="ap/apsettranslation.html#id13"/>
+          </topic>
+          <topic label="ApWidget" href="ap/apwidget.html">
+            <topic label="Description:" href="ap/apwidget.html#id9"/>
+            <topic label="Examples:" href="ap/apwidget.html#id13"/>
+          </topic>
+      </topic>
+      <topic label="mbstr---Multibyte-Character" href="mbstr-base.html"/>
+      <topic label="Pd---Draw Context" href="pd-base.html">
+          <topic label="PdCreateDirectContext" href="pd/pdcreatedirectcontext.html">
+            <topic label="Description:" href="pd/pdcreatedirectcontext.html#id7"/>
+            <topic label="Examples:" href="pd/pdcreatedirectcontext.html#id11"/>
+          </topic>
+          <topic label="PdCreateOffscreenContext" href="pd/pdcreateoffscreencontext.html">
+            <topic label="Description:" href="pd/pdcreateoffscreencontext.html#id9"/>
+          </topic>
+          <topic label="PdCreateOffscreenContextGF" href="pd/pdcreateoffscreencontextgf.html">
+            <topic label="Description:" href="pd/pdcreateoffscreencontextgf.html#id9"/>
+          </topic>
+          <topic label="PdCreateOffscreenLock" href="pd/pdcreateoffscreenlock.html">
+            <topic label="Description:" href="pd/pdcreateoffscreenlock.html#id9"/>
+          </topic>
+          <topic label="PdDestroyOffscreenLock" href="pd/pddestroyoffscreenlock.html">
+            <topic label="Description:" href="pd/pddestroyoffscreenlock.html#id9"/>
+          </topic>
+          <topic label="PdDirectStart" href="pd/pddirectstart.html">
+            <topic label="Description:" href="pd/pddirectstart.html#id9"/>
+            <topic label="Examples:" href="pd/pddirectstart.html#id13"/>
+          </topic>
+          <topic label="PdDirectStop" href="pd/pddirectstop.html">
+            <topic label="Description:" href="pd/pddirectstop.html#id9"/>
+            <topic label="Examples:" href="pd/pddirectstop.html#id13"/>
+          </topic>
+          <topic label="PdDupOffscreenContext" href="pd/pddupoffscreencontext.html">
+            <topic label="Description:" href="pd/pddupoffscreencontext.html#id9"/>
+          </topic>
+          <topic label="PdGetDevices" href="pd/pdgetdevices.html">
+            <topic label="Description:" href="pd/pdgetdevices.html#id9"/>
+            <topic label="Examples:" href="pd/pdgetdevices.html#id13"/>
+          </topic>
+          <topic label="PdGetOffscreenContextPtr" href="pd/pdgetoffscreencontextptr.html">
+            <topic label="Description:" href="pd/pdgetoffscreencontextptr.html#id9"/>
+            <topic label="Examples:" href="pd/pdgetoffscreencontextptr.html#id13"/>
+          </topic>
+          <topic label="PdGetOffscreenSurface" href="pd/pdgetoffscreensurface.html">
+            <topic label="Description:" href="pd/pdgetoffscreensurface.html#id9"/>
+          </topic>
+          <topic label="PdIsOffscreenLocked" href="pd/pdisoffscreenlocked.html">
+            <topic label="Description:" href="pd/pdisoffscreenlocked.html#id9"/>
+          </topic>
+          <topic label="PdLockOffscreen" href="pd/pdlockoffscreen.html">
+            <topic label="Description:" href="pd/pdlockoffscreen.html#id9"/>
+          </topic>
+          <topic label="PdOffscreenContext_t" href="pd/pdoffscreencontext_t.html">
+            <topic label="Description:" href="pd/pdoffscreencontext_t.html#id5"/>
+          </topic>
+          <topic label="PdReleaseDirectContext" href="pd/pdreleasedirectcontext.html">
+            <topic label="Description:" href="pd/pdreleasedirectcontext.html#id9"/>
+            <topic label="Examples:" href="pd/pdreleasedirectcontext.html#id11"/>
+          </topic>
+          <topic label="PdSetOffscreenTranslation" href="pd/pdsetoffscreentranslation.html">
+            <topic label="Description:" href="pd/pdsetoffscreentranslation.html#id9"/>
+          </topic>
+          <topic label="PdSetTargetDevice" href="pd/pdsettargetdevice.html">
+            <topic label="Description:" href="pd/pdsettargetdevice.html#id9"/>
+            <topic label="Examples:" href="pd/pdsettargetdevice.html#id13"/>
+          </topic>
+          <topic label="PdUnlockOffscreen" href="pd/pdunlockoffscreen.html">
+            <topic label="Description:" href="pd/pdunlockoffscreen.html#id9"/>
+          </topic>
+      </topic>
+      <topic label="Pf---Font Server" href="pf-base.html">
+          <topic label="PfAllocDetailsCx" href="pf/pfallocdetailscx.html">
+            <topic label="Description:" href="pf/pfallocdetailscx.html#id9"/>
+            <topic label="Examples:" href="pf/pfallocdetailscx.html#id15"/>
+          </topic>
+          <topic label="PfAllocRenderCx" href="pf/pfallocrendercx.html">
+            <topic label="Description:" href="pf/pfallocrendercx.html#id9"/>
+            <topic label="Examples:" href="pf/pfallocrendercx.html#id15"/>
+          </topic>
+          <topic label="PfAssignDllCx" href="pf/pfassigndllcx.html">
+            <topic label="Description:" href="pf/pfassigndllcx.html#id9"/>
+            <topic label="Examples:" href="pf/pfassigndllcx.html#id15"/>
+          </topic>
+          <topic label="PfAttach, PfAttachCx" href="pf/pfattach.html">
+            <topic label="Description:" href="pf/pfattach.html#id9"/>
+            <topic label="Examples:" href="pf/pfattach.html#id13"/>
+          </topic>
+          <topic label="PfAttachDllCx" href="pf/pfattachdllcx.html">
+            <topic label="Description:" href="pf/pfattachdllcx.html#id9"/>
+            <topic label="Examples:" href="pf/pfattachdllcx.html#id15"/>
+          </topic>
+          <topic label="PfAttachLocalDll" href="pf/pfattachlocaldll.html">
+            <topic label="Description:" href="pf/pfattachlocaldll.html#id9"/>
+            <topic label="Examples:" href="pf/pfattachlocaldll.html#id15"/>
+          </topic>
+          <topic label="PfAttachServerDll" href="pf/pfattachserverdll.html">
+            <topic label="Description:" href="pf/pfattachserverdll.html#id9"/>
+            <topic label="Examples:" href="pf/pfattachserverdll.html#id13"/>
+          </topic>
+          <topic label="PfAttachSleuthMonitorDll" href="pf/pfattachsleuthmonitordll.html">
+            <topic label="Description:" href="pf/pfattachsleuthmonitordll.html#id9"/>
+            <topic label="Examples:" href="pf/pfattachsleuthmonitordll.html#id13"/>
+          </topic>
+          <topic label="PfConvertFontID, PfConvertFontIDCx" href="pf/pfconvertfontid.html">
+            <topic label="Description:" href="pf/pfconvertfontid.html#id9"/>
+            <topic label="Examples:" href="pf/pfconvertfontid.html#id13"/>
+          </topic>
+          <topic label="PfConvertPixelsToPointSizeCx" href="pf/pfconvertpixelstopointsizecx.html">
+            <topic label="Description:" href="pf/pfconvertpixelstopointsizecx.html#id9"/>
+            <topic label="Examples:" href="pf/pfconvertpixelstopointsizecx.html#id15"/>
+          </topic>
+          <topic label="PfDecomposeStemToID, PfDecomposeStemToIDCx" href="pf/pfdecomposestemtoid.html">
+            <topic label="Description:" href="pf/pfdecomposestemtoid.html#id9"/>
+            <topic label="Examples:" href="pf/pfdecomposestemtoid.html#id13"/>
+          </topic>
+          <topic label="PfDefaultContext" href="pf/pfdefaultcontext.html">
+            <topic label="Description:" href="pf/pfdefaultcontext.html#id7"/>
+            <topic label="Examples:" href="pf/pfdefaultcontext.html#id11"/>
+          </topic>
+          <topic label="PfDetach, PfDetachCx" href="pf/pfdetach.html">
+            <topic label="Description:" href="pf/pfdetach.html#id9"/>
+            <topic label="Examples:" href="pf/pfdetach.html#id11"/>
+          </topic>
+          <topic label="PfDetachLocalDll" href="pf/pfdetachlocaldll.html">
+            <topic label="Description:" href="pf/pfdetachlocaldll.html#id9"/>
+            <topic label="Examples:" href="pf/pfdetachlocaldll.html#id15"/>
+          </topic>
+          <topic label="PfDynamicFontIDCx" href="pf/pfdynamicfontidcx.html">
+            <topic label="Description:" href="pf/pfdynamicfontidcx.html#id9"/>
+            <topic label="Examples:" href="pf/pfdynamicfontidcx.html#id15"/>
+          </topic>
+          <topic label="PfDynamicLoad, PfDynamicLoadCx" href="pf/pfdynamicload.html">
+            <topic label="Description:" href="pf/pfdynamicload.html#id9"/>
+            <topic label="Examples:" href="pf/pfdynamicload.html#id15"/>
+          </topic>
+          <topic label="PfDynamicUnload, PfDynamicUnloadCx" href="pf/pfdynamicunload.html">
+            <topic label="Description:" href="pf/pfdynamicunload.html#id9"/>
+            <topic label="Examples:" href="pf/pfdynamicunload.html#id15"/>
+          </topic>
+          <topic label="PfExtent" href="pf/pfextent.html">
+            <topic label="Description:" href="pf/pfextent.html#id9"/>
+            <topic label="Examples:" href="pf/pfextent.html#id13"/>
+          </topic>
+          <topic label="PfExtentCx" href="pf/pfextentcx.html">
+            <topic label="Description:" href="pf/pfextentcx.html#id9"/>
+            <topic label="Examples:" href="pf/pfextentcx.html#id13"/>
+          </topic>
+          <topic label="PfExtent16dot16" href="pf/pfextent16dot16.html">
+            <topic label="Description:" href="pf/pfextent16dot16.html#id9"/>
+          </topic>
+          <topic label="PfExtent16dot16Cx" href="pf/pfextent16dot16cx.html">
+            <topic label="Description:" href="pf/pfextent16dot16cx.html#id9"/>
+          </topic>
+          <topic label="PfExtentComponents, PfExtentComponentsCx" href="pf/pfextentcomponents.html">
+            <topic label="Description:" href="pf/pfextentcomponents.html#id9"/>
+          </topic>
+          <topic label="PfExtentFractTextCharPositions" href="pf/pfextentfracttextcharpositions.html">
+            <topic label="Description:" href="pf/pfextentfracttextcharpositions.html#id9"/>
+          </topic>
+          <topic label="PfExtentText" href="pf/pfextenttext.html">
+            <topic label="Description:" href="pf/pfextenttext.html#id9"/>
+          </topic>
+          <topic label="PfExtentTextCharPositions, PfExtentTextCharPositionsCx" href="pf/pfextenttextcharpositions.html">
+            <topic label="Description:" href="pf/pfextenttextcharpositions.html#id9"/>
+            <topic label="Examples:" href="pf/pfextenttextcharpositions.html#id15"/>
+          </topic>
+          <topic label="PfExtentTextToRect" href="pf/pfextenttexttorect.html">
+            <topic label="Description:" href="pf/pfextenttexttorect.html#id9"/>
+            <topic label="Examples:" href="pf/pfextenttexttorect.html#id13"/>
+          </topic>
+          <topic label="PfExtentWideText" href="pf/pfextentwidetext.html">
+            <topic label="Description:" href="pf/pfextentwidetext.html#id9"/>
+          </topic>
+          <topic label="PfFindFont, PfFindFontCx" href="pf/pffindfont.html">
+            <topic label="Description:" href="pf/pffindfont.html#id9"/>
+            <topic label="Examples:" href="pf/pffindfont.html#id15"/>
+          </topic>
+          <topic label="PfFontBaseStem, PfFontBaseStemCx" href="pf/pffontbasestem.html">
+            <topic label="Description:" href="pf/pffontbasestem.html#id9"/>
+          </topic>
+          <topic label="PfFontDescription, PfFontDescriptionCx" href="pf/pffontdescription.html">
+            <topic label="Description:" href="pf/pffontdescription.html#id9"/>
+            <topic label="Examples:" href="pf/pffontdescription.html#id13"/>
+          </topic>
+          <topic label="PfFontFlags, PfFontFlagsCx" href="pf/pffontflags.html">
+            <topic label="Description:" href="pf/pffontflags.html#id9"/>
+            <topic label="Examples:" href="pf/pffontflags.html#id13"/>
+          </topic>
+          <topic label="PfFontSize, PfFontSizeCx" href="pf/pffontsize.html">
+            <topic label="Description:" href="pf/pffontsize.html#id9"/>
+            <topic label="Examples:" href="pf/pffontsize.html#id13"/>
+          </topic>
+          <topic label="PfFontTypeCx" href="pf/pffonttypecx.html">
+            <topic label="Description:" href="pf/pffonttypecx.html#id9"/>
+          </topic>
+          <topic label="PfFractionalExtentText" href="pf/pffractionalextenttext.html">
+            <topic label="Description:" href="pf/pffractionalextenttext.html#id9"/>
+          </topic>
+          <topic label="PfFreeFont, PfFreeFontCx" href="pf/pffreefont.html">
+            <topic label="Description:" href="pf/pffreefont.html#id9"/>
+            <topic label="Examples:" href="pf/pffreefont.html#id15"/>
+          </topic>
+          <topic label="PfGenerateFontName, PfGenerateFontNameCx" href="pf/pfgeneratefontname.html">
+            <topic label="Description:" href="pf/pfgeneratefontname.html#id9"/>
+            <topic label="Examples:" href="pf/pfgeneratefontname.html#id15"/>
+          </topic>
+          <topic label="PfGetGlyphIndexCx" href="pf/pfgetglyphindexcx.html">
+            <topic label="Description:" href="pf/pfgetglyphindexcx.html#id9"/>
+            <topic label="Examples:" href="pf/pfgetglyphindexcx.html#id15"/>
+          </topic>
+          <topic label="PfGetOutline, PfGetOutlineCx" href="pf/pfgetoutline.html">
+            <topic label="Description:" href="pf/pfgetoutline.html#id9"/>
+            <topic label="Examples:" href="pf/pfgetoutline.html#id13"/>
+          </topic>
+          <topic label="PfGlyph, PfGlyphCx" href="pf/pfglyph.html">
+            <topic label="Description:" href="pf/pfglyph.html#id9"/>
+            <topic label="Examples:" href="pf/pfglyph.html#id13"/>
+          </topic>
+          <topic label="PfLoadFont, PfLoadFontCx" href="pf/pfloadfont.html">
+            <topic label="Description:" href="pf/pfloadfont.html#id9"/>
+          </topic>
+          <topic label="PfLoadMetrics, PfLoadMetricsCx" href="pf/pfloadmetrics.html">
+            <topic label="Description:" href="pf/pfloadmetrics.html#id9"/>
+            <topic label="Examples:" href="pf/pfloadmetrics.html#id13"/>
+          </topic>
+          <topic label="pf_point_t" href="pf/pf_point_t.html">
+            <topic label="Description:" href="pf/pf_point_t.html#id5"/>
+          </topic>
+          <topic label="pf_point_16dot16_t" href="pf/pf_point16dot16_t.html">
+            <topic label="Description:" href="pf/pf_point16dot16_t.html#id5"/>
+          </topic>
+          <topic label="PfQueryFontInfo, PfQueryFontInfoCx" href="pf/pfqueryfontinfo.html">
+            <topic label="Description:" href="pf/pfqueryfontinfo.html#id9"/>
+            <topic label="Examples:" href="pf/pfqueryfontinfo.html#id13"/>
+          </topic>
+          <topic label="PfQueryFonts, PfQueryFontsCx" href="pf/pfqueryfonts.html">
+            <topic label="Description:" href="pf/pfqueryfonts.html#id9">
+              <topic label="FontDetails structure" href="pf/pfqueryfonts.html#FontDetails"/>
+            </topic>
+          </topic>
+          <topic label="pf_rect_t" href="pf/pf_rect_t.html">
+            <topic label="Description:" href="pf/pf_rect_t.html#id5"/>
+          </topic>
+          <topic label="pf_rect_16dot16_t" href="pf/pf_rect_16dot16_t.html">
+            <topic label="Description:" href="pf/pf_rect_16dot16_t.html#id5"/>
+          </topic>
+          <topic label="PfRender, PfRenderCx" href="pf/pfrenderctx.html">
+            <topic label="Description:" href="pf/pfrenderctx.html#id9"/>
+            <topic label="Examples:" href="pf/pfrenderctx.html#id13"/>
+          </topic>
+          <topic label="PfRestartServerDll" href="pf/pfrestartserverdll.html">
+            <topic label="Description:" href="pf/pfrestartserverdll.html#id9"/>
+            <topic label="Examples:" href="pf/pfrestartserverdll.html#id13"/>
+          </topic>
+          <topic label="PfSetOptionsDll" href="pf/pfsetoptionsdll.html">
+            <topic label="Description:" href="pf/pfsetoptionsdll.html#id9"/>
+            <topic label="Examples:" href="pf/pfsetoptionsdll.html#id15"/>
+          </topic>
+          <topic label="PfSetRenderingDPICx" href="pf/pfsetrenderingdpicx.html">
+            <topic label="Description:" href="pf/pfsetrenderingdpicx.html#id9"/>
+            <topic label="Examples:" href="pf/pfsetrenderingdpicx.html#id15"/>
+          </topic>
+          <topic label="PfTextWidthBytes" href="pf/pftextwidthbytes.html">
+            <topic label="Description:" href="pf/pftextwidthbytes.html#id9"/>
+            <topic label="Examples:" href="pf/pftextwidthbytes.html#id13"/>
+          </topic>
+          <topic label="PfTextWidthChars" href="pf/pftextwidthchars.html">
+            <topic label="Description:" href="pf/pftextwidthchars.html#id9"/>
+          </topic>
+          <topic label="PfUnloadMetrics" href="pf/pfunloadmetrics.html">
+            <topic label="Description:" href="pf/pfunloadmetrics.html#id9"/>
+          </topic>
+          <topic label="PfWaitOnServerDll" href="pf/pfwaitonserverdll.html">
+            <topic label="Description:" href="pf/pfwaitonserverdll.html#id9"/>
+            <topic label="Examples:" href="pf/pfwaitonserverdll.html#id13"/>
+          </topic>
+          <topic label="PfWideTextWidthBytes" href="pf/pfwidetextwidthbytes.html">
+            <topic label="Description:" href="pf/pfwidetextwidthbytes.html#id9"/>
+          </topic>
+          <topic label="PfWideTextWidthChars" href="pf/pfwidetextwidthchars.html">
+            <topic label="Description:" href="pf/pfwidetextwidthchars.html#id9"/>
+          </topic>
+      </topic>
+      <topic label="Pg---Graphics" href="pg-base.html">
+          <topic label="PgAlphaOff, PgAlphaOffCx" href="pg/pgalphaoff.html">
+            <topic label="Description:" href="pg/pgalphaoff.html#id9"/>
+          </topic>
+          <topic label="PgAlphaOn, PgAlphaOnCx" href="pg/pgalphaon.html">
+            <topic label="Description:" href="pg/pgalphaon.html#id9"/>
+          </topic>
+          <topic label="PgAlphaValue" href="pg/pgalphavalue.html">
+            <topic label="Description:" href="pg/pgalphavalue.html#id9"/>
+          </topic>
+          <topic label="PgARGB" href="pg/pgargb.html">
+            <topic label="Description:" href="pg/pgargb.html#id9"/>
+          </topic>
+          <topic label="PgBackgroundShadings" href="pg/pgbackgroundshadings.html">
+            <topic label="Description:" href="pg/pgbackgroundshadings.html#id9"/>
+          </topic>
+          <topic label="PgBevelBox, PgBevelBoxCx" href="pg/pgbevelbox.html">
+            <topic label="Description:" href="pg/pgbevelbox.html#id9"/>
+          </topic>
+          <topic label="PgBlit, PgBlitCx" href="pg/pgblit.html">
+            <topic label="Description:" href="pg/pgblit.html#id9"/>
+          </topic>
+          <topic label="PgBlueValue" href="pg/pgbluevalue.html">
+            <topic label="Description:" href="pg/pgbluevalue.html#id9"/>
+          </topic>
+          <topic label="PgCalcColorContrast" href="pg/pgcalccolorcontrast.html">
+            <topic label="Description:" href="pg/pgcalccolorcontrast.html#id9"/>
+          </topic>
+          <topic label="PgChromaOff, PgChromaOffCx" href="pg/pgchromaoff.html">
+            <topic label="Description:" href="pg/pgchromaoff.html#id9"/>
+          </topic>
+          <topic label="PgChromaOn, PgChromaOnCx" href="pg/pgchromaon.html">
+            <topic label="Description:" href="pg/pgchromaon.html#id9"/>
+          </topic>
+          <topic label="PgClearDrawBuffer, PgClearDrawBufferCx" href="pg/pgcleardrawbuffer.html">
+            <topic label="Description:" href="pg/pgcleardrawbuffer.html#id9"/>
+            <topic label="Examples:" href="pg/pgcleardrawbuffer.html#id11"/>
+          </topic>
+          <topic label="PgClearTranslation, PgClearTranslationCx" href="pg/pgcleartranslation.html">
+            <topic label="Description:" href="pg/pgcleartranslation.html#id9"/>
+          </topic>
+          <topic label="PgCMY" href="pg/pgcmy.html">
+            <topic label="Description:" href="pg/pgcmy.html#id9"/>
+            <topic label="Examples:" href="pg/pgcmy.html#id13"/>
+          </topic>
+          <topic label="PgColor_t" href="pg/pgcolor_t.html">
+            <topic label="Description:" href="pg/pgcolor_t.html#id5">
+              <topic label="Standard colors" href="pg/pgcolor_t.html#StandardColors"/>
+            </topic>
+          </topic>
+          <topic label="PgColorHSV_t" href="pg/pgcolorhsv_t.html">
+            <topic label="Description:" href="pg/pgcolorhsv_t.html#id5"/>
+          </topic>
+          <topic label="PgColorMatch" href="pg/pgcolormatch.html">
+            <topic label="Description:" href="pg/pgcolormatch.html#id9"/>
+          </topic>
+          <topic label="PgConfigScalerChannel" href="pg/pgconfigscalerchannel.html">
+            <topic label="Description:" href="pg/pgconfigscalerchannel.html#id9"/>
+          </topic>
+          <topic label="PgContextBlit, PgContextBlitCx" href="pg/pgcontextblit.html">
+            <topic label="Description:" href="pg/pgcontextblit.html#id9"/>
+          </topic>
+          <topic label="PgContextBlitArea, PgContextBlitAreaCx" href="pg/pgcontextblitarea.html">
+            <topic label="Description:" href="pg/pgcontextblitarea.html#id9"/>
+          </topic>
+          <topic label="PgContrastBevelBox, PgContrastBevelBoxCx" href="pg/pgcontrastbevelbox.html">
+            <topic label="Description:" href="pg/pgcontrastbevelbox.html#id9"/>
+          </topic>
+          <topic label="PgCreateDriverRegion" href="pg/pgcreatedriverregion.html">
+            <topic label="Description:" href="pg/pgcreatedriverregion.html#id9"/>
+          </topic>
+          <topic label="PgCreateGC" href="pg/pgcreategc.html">
+            <topic label="Description:" href="pg/pgcreategc.html#id9"/>
+          </topic>
+          <topic label="PgCreateLayerSurface" href="pg/pgcreatelayersurface.html">
+            <topic label="Description:" href="pg/pgcreatelayersurface.html#id9"/>
+          </topic>
+          <topic label="PgCreateVideoChannel" href="pg/pgcreatevideochannel.html">
+            <topic label="Description:" href="pg/pgcreatevideochannel.html#id9"/>
+          </topic>
+          <topic label="PgDefaultAlpha" href="pg/pgdefaultalpha.html">
+            <topic label="Description:" href="pg/pgdefaultalpha.html#id9"/>
+          </topic>
+          <topic label="PgDefaultChroma" href="pg/pgdefaultchroma.html">
+            <topic label="Description:" href="pg/pgdefaultchroma.html#id9"/>
+          </topic>
+          <topic label="PgDefaultFill" href="pg/pgdefaultfill.html">
+            <topic label="Description:" href="pg/pgdefaultfill.html#id9"/>
+          </topic>
+          <topic label="PgDefaultGC" href="pg/pgdefaultgc.html">
+            <topic label="Description:" href="pg/pgdefaultgc.html#id9"/>
+          </topic>
+          <topic label="PgDefaultMode" href="pg/pgdefaultmode.html">
+            <topic label="Description:" href="pg/pgdefaultmode.html#id9"/>
+          </topic>
+          <topic label="PgDefaultStroke" href="pg/pgdefaultstroke.html">
+            <topic label="Description:" href="pg/pgdefaultstroke.html#id9"/>
+          </topic>
+          <topic label="PgDefaultText" href="pg/pgdefaulttext.html">
+            <topic label="Description:" href="pg/pgdefaulttext.html#id9"/>
+          </topic>
+          <topic label="PgDestroyGC" href="pg/pgdestroygc.html">
+            <topic label="Description:" href="pg/pgdestroygc.html#id9"/>
+          </topic>
+          <topic label="PgDestroyVideoChannel" href="pg/pgdestroyvideochannel.html">
+            <topic label="Description:" href="pg/pgdestroyvideochannel.html#id9"/>
+          </topic>
+          <topic label="PgDrawArc, PgDrawArcCx" href="pg/pgdrawarc.html">
+            <topic label="Description:" href="pg/pgdrawarc.html#id9"/>
+            <topic label="Examples:" href="pg/pgdrawarc.html#id13"/>
+          </topic>
+          <topic label="PgDrawArrow, PgDrawArrowCx" href="pg/pgdrawarrow.html">
+            <topic label="Description:" href="pg/pgdrawarrow.html#id9"/>
+          </topic>
+          <topic label="PgDrawBevelBox, PgDrawIBevelBox, PgDrawBevelBoxCx, PgDrawIBevelBoxCx" href="pg/pgdrawbevelbox.html">
+            <topic label="Description:" href="pg/pgdrawbevelbox.html#id9"/>
+            <topic label="Examples:" href="pg/pgdrawbevelbox.html#id13"/>
+          </topic>
+          <topic label="PgDrawBeveled, PgDrawBeveledCx" href="pg/pgdrawbeveled.html">
+            <topic label="Description:" href="pg/pgdrawbeveled.html#id9"/>
+            <topic label="Examples:" href="pg/pgdrawbeveled.html#id13"/>
+          </topic>
+          <topic label="PgDrawBezier, PgDrawBezierv, PgDrawBezierCx, PgDrawBezierCxv" href="pg/pgdrawbezier.html">
+            <topic label="Description:" href="pg/pgdrawbezier.html#id9"/>
+            <topic label="Examples:" href="pg/pgdrawbezier.html#id13"/>
+          </topic>
+          <topic label="PgDrawBitmap, PgDrawBitmapv, PgDrawBitmapCx, PgDrawBitmapCxv" href="pg/pgdrawbitmap.html">
+            <topic label="Description:" href="pg/pgdrawbitmap.html#id9"/>
+            <topic label="Examples:" href="pg/pgdrawbitmap.html#id13"/>
+          </topic>
+          <topic label="PgDrawEllipse, PgDrawEllipseCx" href="pg/pgdrawellipse.html">
+            <topic label="Description:" href="pg/pgdrawellipse.html#id9"/>
+            <topic label="Examples:" href="pg/pgdrawellipse.html#id13"/>
+          </topic>
+          <topic label="PgDrawGradient, PgDrawGradientCx" href="pg/pgdrawgradient.html">
+            <topic label="Description:" href="pg/pgdrawgradient.html#id9"/>
+            <topic label="Examples:" href="pg/pgdrawgradient.html#id13"/>
+          </topic>
+          <topic label="PgDrawGradientBevelBox, PgDrawGradientBevelBoxCx" href="pg/pgdrawgradientbevelbox.html">
+            <topic label="Description:" href="pg/pgdrawgradientbevelbox.html#id9"/>
+          </topic>
+          <topic label="PgDrawGrid, PgDrawGridCx" href="pg/pgdrawgrid.html">
+            <topic label="Description:" href="pg/pgdrawgrid.html#id9"/>
+            <topic label="Examples:" href="pg/pgdrawgrid.html#id13"/>
+          </topic>
+          <topic label="PgDrawImage, PgDrawImagev, PgDrawImageCx, PgDrawImageCxv" href="pg/pgdrawimage.html">
+            <topic label="Description:" href="pg/pgdrawimage.html#id7"/>
+            <topic label="Examples:" href="pg/pgdrawimage.html#id11"/>
+          </topic>
+          <topic label="PgDrawLine, PgDrawILine, PgDrawLineCx, PgDrawILineCx" href="pg/pgdrawline.html">
+            <topic label="Description:" href="pg/pgdrawline.html#id7"/>
+            <topic label="Examples:" href="pg/pgdrawline.html#id11"/>
+          </topic>
+          <topic label="PgDrawMultiTextArea, PgDrawMultiTextAreaCx" href="pg/pgdrawmultitextarea.html">
+            <topic label="Description:" href="pg/pgdrawmultitextarea.html#id9"/>
+            <topic label="Examples:" href="pg/pgdrawmultitextarea.html#id13"/>
+          </topic>
+          <topic label="PgDrawPhImage, PgDrawPhImagev, PgDrawPhImageCx, PgDrawPhImageCxv" href="pg/pgdrawphimage.html">
+            <topic label="Description:" href="pg/pgdrawphimage.html#id7"/>
+          </topic>
+          <topic label="PgDrawPhImageRectv, PgDrawPhImageRectCxv" href="pg/pgdrawphimagerect.html">
+            <topic label="Description:" href="pg/pgdrawphimagerect.html#id7"/>
+          </topic>
+          <topic label="PgDrawPixel, PgDrawIPixel, PgDrawPixelCx, PgDrawIPixelCx" href="pg/pgdrawpixel.html">
+            <topic label="Description:" href="pg/pgdrawpixel.html#id7"/>
+          </topic>
+          <topic label="PgDrawPixelArray, PgDrawPixelArrayv, PgDrawPixelArrayCx, PgDrawPixelArrayCxv" href="pg/pgdrawpixelarray.html">
+            <topic label="Description:" href="pg/pgdrawpixelarray.html#id7"/>
+          </topic>
+          <topic label="PgDrawPolygon, PgDrawPolygonv, PgDrawPolygonCx, PgDrawPolygonCxv" href="pg/pgdrawpolygon.html">
+            <topic label="Description:" href="pg/pgdrawpolygon.html#id7"/>
+            <topic label="Examples:" href="pg/pgdrawpolygon.html#id11"/>
+          </topic>
+          <topic label="PgDrawRect, PgDrawIRect, PgDrawRectCx, PgDrawIRectCx" href="pg/pgdrawrect.html">
+            <topic label="Description:" href="pg/pgdrawrect.html#id7"/>
+            <topic label="Examples:" href="pg/pgdrawrect.html#id11"/>
+          </topic>
+          <topic label="PgDrawRepBitmap, PgDrawRepBitmapv, PgDrawRepBitmapCx, PgDrawRepBitmapCxv" href="pg/pgdrawrepbitmap.html">
+            <topic label="Description:" href="pg/pgdrawrepbitmap.html#id7"/>
+            <topic label="Examples:" href="pg/pgdrawrepbitmap.html#id11"/>
+          </topic>
+          <topic label="PgDrawRepImage, PgDrawRepImagev, PgDrawRepImageCx, PgDrawRepImageCxv" href="pg/pgdrawrepimage.html">
+            <topic label="Description:" href="pg/pgdrawrepimage.html#id7"/>
+          </topic>
+          <topic label="PgDrawRepPhImage*" href="pg/pgdrawrepphimage.html">
+            <topic label="Description:" href="pg/pgdrawrepphimage.html#id7"/>
+          </topic>
+          <topic label="PgDrawRoundRect, PgDrawRoundRectCx" href="pg/pgdrawroundrect.html">
+            <topic label="Description:" href="pg/pgdrawroundrect.html#id7"/>
+            <topic label="Examples:" href="pg/pgdrawroundrect.html#id11"/>
+          </topic>
+          <topic label="PgDrawSpan, PgDrawSpanv, PgDrawSpanCx, PgDrawSpanCxv" href="pg/pgdrawspan.html">
+            <topic label="Description:" href="pg/pgdrawspan.html#id7"/>
+            <topic label="Examples:" href="pg/pgdrawspan.html#id11"/>
+          </topic>
+          <topic label="PgDrawString, PgDrawStringv, PgDrawStringCx, PgDrawStringCxv" href="pg/pgdrawstring.html">
+            <topic label="Description:" href="pg/pgdrawstring.html#id7"/>
+          </topic>
+          <topic label="PgDrawText*, PgDrawTextChars*" href="pg/pgdrawtext.html">
+            <topic label="Description:" href="pg/pgdrawtext.html#id7"/>
+            <topic label="Examples:" href="pg/pgdrawtext.html#id11"/>
+          </topic>
+          <topic label="PgDrawTextArea, PgDrawTextAreaCx" href="pg/pgdrawtextarea.html">
+            <topic label="Description:" href="pg/pgdrawtextarea.html#id7"/>
+          </topic>
+          <topic label="PgDrawTImage, PgDrawTImagev, PgDrawTImageCx, PgDrawTImageCxv" href="pg/pgdrawtimage.html">
+            <topic label="Description:" href="pg/pgdrawtimage.html#id7"/>
+          </topic>
+          <topic label="PgDrawTrend, PgDrawTrendv, PgDrawTrendCx, PgDrawTrendCxv" href="pg/pgdrawtrend.html">
+            <topic label="Description:" href="pg/pgdrawtrend.html#id7"/>
+            <topic label="Examples:" href="pg/pgdrawtrend.html#id11"/>
+          </topic>
+          <topic label="PgExtentMultiText" href="pg/pgextentmultitext.html">
+            <topic label="Description:" href="pg/pgextentmultitext.html#id7"/>
+            <topic label="Examples:" href="pg/pgextentmultitext.html#id11"/>
+          </topic>
+          <topic label="PgExtentText" href="pg/pgextenttext.html">
+            <topic label="Description:" href="pg/pgextenttext.html#id7"/>
+            <topic label="Examples:" href="pg/pgextenttext.html#id11"/>
+          </topic>
+          <topic label="PgFlush, PgFFlush, PgFlushCx, PgFFlushCx" href="pg/pgflush.html">
+            <topic label="Description:" href="pg/pgflush.html#id7"/>
+            <topic label="Examples:" href="pg/pgflush.html#id11"/>
+          </topic>
+          <topic label="PgGetColorModel, PgGetColorModelCx" href="pg/pggetcolormodel.html">
+            <topic label="Description:" href="pg/pggetcolormodel.html#id9"/>
+          </topic>
+          <topic label="PgGetGC, PgGetGCCx" href="pg/pggetgc.html">
+            <topic label="Description:" href="pg/pggetgc.html#id9"/>
+          </topic>
+          <topic label="PgGetGraphicsHWCaps" href="pg/pggetgraphicshwcaps.html">
+            <topic label="Description:" href="pg/pggetgraphicshwcaps.html#id9">
+              <topic label="PgHWCaps_t" href="pg/pggetgraphicshwcaps.html#PgHWCaps_t"/>
+            </topic>
+          </topic>
+          <topic label="PgGetLayerCaps" href="pg/pggetlayercaps.html">
+            <topic label="Description:" href="pg/pggetlayercaps.html#id9"/>
+          </topic>
+          <topic label="PgGetOverlayChromaColor" href="pg/pggetoverlaychromacolor.html">
+            <topic label="Description:" href="pg/pggetoverlaychromacolor.html#id7"/>
+          </topic>
+          <topic label="PgGetPalette" href="pg/pggetpalette.html">
+            <topic label="Description:" href="pg/pggetpalette.html#id7"/>
+          </topic>
+          <topic label="PgGetRegion, PgGetRegionCx" href="pg/pggetregion.html">
+            <topic label="Description:" href="pg/pggetregion.html#id9"/>
+          </topic>
+          <topic label="PgGetScalerCapabilities" href="pg/pggetscalercapabilities.html">
+            <topic label="Description:" href="pg/pggetscalercapabilities.html#id7"/>
+          </topic>
+          <topic label="PgGetSurfaceGFSid" href="pg/pggetsurfacegfsid.html">
+            <topic label="Description:" href="pg/pggetsurfacegfsid.html#id9"/>
+          </topic>
+          <topic label="PgGetVideoMode" href="pg/pggetvideomode.html">
+            <topic label="Description:" href="pg/pggetvideomode.html#id7"/>
+          </topic>
+          <topic label="PgGetVideoModeInfo" href="pg/pggetvideomodeinfo.html">
+            <topic label="Description:" href="pg/pggetvideomodeinfo.html#id7"/>
+          </topic>
+          <topic label="PgGetVideoModeList" href="pg/pggetvideomodelist.html">
+            <topic label="Description:" href="pg/pggetvideomodelist.html#id7"/>
+          </topic>
+          <topic label="PgGray" href="pg/pggray.html">
+            <topic label="Description:" href="pg/pggray.html#id9"/>
+            <topic label="Examples:" href="pg/pggray.html#id13"/>
+          </topic>
+          <topic label="PgGrayValue" href="pg/pggrayvalue.html">
+            <topic label="Description:" href="pg/pggrayvalue.html#id9"/>
+            <topic label="Examples:" href="pg/pggrayvalue.html#id13"/>
+          </topic>
+          <topic label="PgGreenValue" href="pg/pggreenvalue.html">
+            <topic label="Description:" href="pg/pggreenvalue.html#id9"/>
+          </topic>
+          <topic label="PgHSV" href="pg/pghsv.html">
+            <topic label="Description:" href="pg/pghsv.html#id7"/>
+            <topic label="Examples:" href="pg/pghsv.html#id11"/>
+          </topic>
+          <topic label="PgHSV2RGB" href="pg/pghsv2rgb.html">
+            <topic label="Description:" href="pg/pghsv2rgb.html#id7"/>
+          </topic>
+          <topic label="PgLayerCaps_t" href="pg/pglayercaps_t.html">
+            <topic label="Description:" href="pg/pglayercaps_t.html#id5"/>
+          </topic>
+          <topic label="PgLockLayer" href="pg/pglocklayer.html">
+            <topic label="Description:" href="pg/pglocklayer.html#id9"/>
+          </topic>
+          <topic label="PgMap_t" href="pg/pgmap_t.html">
+            <topic label="Description:" href="pg/pgmap_t.html#id5"/>
+          </topic>
+          <topic label="PgMultiBlit, PgMultiBlitCx" href="pg/pgmultiblit.html">
+            <topic label="Description:" href="pg/pgmultiblit.html#id9"/>
+          </topic>
+          <topic label="PgNextVideoFrame" href="pg/pgnextvideoframe.html">
+            <topic label="Description:" href="pg/pgnextvideoframe.html#id7"/>
+          </topic>
+          <topic label="PgPHookRegister" href="pg/pgphookregister.html">
+            <topic label="Description:" href="pg/pgphookregister.html#id9"/>
+          </topic>
+          <topic label="PgReadScreen" href="pg/pgreadscreen.html">
+            <topic label="Description:" href="pg/pgreadscreen.html#id7"/>
+            <topic label="Examples:" href="pg/pgreadscreen.html#id13"/>
+          </topic>
+          <topic label="PgReadScreenSize" href="pg/pgreadscreensize.html">
+            <topic label="Description:" href="pg/pgreadscreensize.html#id7"/>
+          </topic>
+          <topic label="PgRedValue" href="pg/pgredvalue.html">
+            <topic label="Description:" href="pg/pgredvalue.html#id9"/>
+          </topic>
+          <topic label="PgRGB" href="pg/pgrgb.html">
+            <topic label="Description:" href="pg/pgrgb.html#id7"/>
+            <topic label="Examples:" href="pg/pgrgb.html#id9"/>
+          </topic>
+          <topic label="PgRGB2HSV" href="pg/pgrgb2hsv.html">
+            <topic label="Description:" href="pg/pgrgb2hsv.html#id7"/>
+          </topic>
+          <topic label="PgScalerCaps_t" href="pg/pgscalercaps_t.html">
+            <topic label="Description:" href="pg/pgscalercaps_t.html#id5"/>
+          </topic>
+          <topic label="PgScalerProps_t" href="pg/pgscalerprops_t.html">
+            <topic label="Description:" href="pg/pgscalerprops_t.html#id5"/>
+          </topic>
+          <topic label="PgSetAlpha, PgSetAlphaCx" href="pg/pgsetalpha.html">
+            <topic label="Description:" href="pg/pgsetalpha.html#id9">
+              <topic label="Operation flags" href="pg/pgsetalpha.html#id11"/>
+              <topic label="Multiplier flags" href="pg/pgsetalpha.html#id13">
+                <topic label="Source multiplier flags" href="pg/pgsetalpha.html#id15"/>
+                <topic label="Destination multiplier flags" href="pg/pgsetalpha.html#id17"/>
+              </topic>
+              <topic label="Alpha test flags:" href="pg/pgsetalpha.html#id19"/>
+            </topic>
+            <topic label="Examples:" href="pg/pgsetalpha.html#id21"/>
+          </topic>
+          <topic label="PgSetAlphaBlend, PgSetAlphaBlendCx" href="pg/pgsetalphablend.html">
+            <topic label="Description:" href="pg/pgsetalphablend.html#id7"/>
+            <topic label="Examples:" href="pg/pgsetalphablend.html#id9"/>
+          </topic>
+          <topic label="PgSetChroma, PgSetChromaCx" href="pg/pgsetchroma.html">
+            <topic label="Description:" href="pg/pgsetchroma.html#id7"/>
+            <topic label="Examples:" href="pg/pgsetchroma.html#id9"/>
+          </topic>
+          <topic label="PgSetClipping, PgSetClippingCx" href="pg/pgsetclipping.html">
+            <topic label="Description:" href="pg/pgsetclipping.html#id7"/>
+          </topic>
+          <topic label="PgSetColorModel, PgSetColorModelCx" href="pg/pgsetcolormodel.html">
+            <topic label="Description:" href="pg/pgsetcolormodel.html#id7"/>
+          </topic>
+          <topic label="PgSetControlFlagGCCx" href="pg/pgsetcontrolflaggccx.html">
+            <topic label="Description:" href="pg/pgsetcontrolflaggccx.html#id7"/>
+          </topic>
+          <topic label="PgSetDPMSMode" href="pg/pgsetdpmsmode.html">
+            <topic label="Description:" href="pg/pgsetdpmsmode.html#id7"/>
+          </topic>
+          <topic label="PgSetDrawBufferSize, PgSetDrawBufferSizeCx" href="pg/pgsetdrawbuffersize.html">
+            <topic label="Description:" href="pg/pgsetdrawbuffersize.html#id7"/>
+            <topic label="Examples:" href="pg/pgsetdrawbuffersize.html#id11"/>
+          </topic>
+          <topic label="PgSetDrawMode, PgSetDrawModeCx" href="pg/pgsetdrawmode.html">
+            <topic label="Description:" href="pg/pgsetdrawmode.html#id7">
+              <topic label="Photon 1.14 and earlier" href="pg/pgsetdrawmode.html#id9"/>
+              <topic label="Photon for QNX Neutrino" href="pg/pgsetdrawmode.html#id11"/>
+            </topic>
+          </topic>
+          <topic label="PgSetFillColor, PgSetFillColorCx" href="pg/pgsetfillcolor.html">
+            <topic label="Description:" href="pg/pgsetfillcolor.html#id7"/>
+            <topic label="Examples:" href="pg/pgsetfillcolor.html#id11"/>
+          </topic>
+          <topic label="PgSetFillDither, PgSetFillDitherCx" href="pg/pgsetfilldither.html">
+            <topic label="Description:" href="pg/pgsetfilldither.html#id7"/>
+            <topic label="Examples:" href="pg/pgsetfilldither.html#id9"/>
+          </topic>
+          <topic label="PgSetFillTransPat, PgSetFillTransPatCx" href="pg/pgsetfilltranspat.html">
+            <topic label="Description:" href="pg/pgsetfilltranspat.html#id7"/>
+            <topic label="Examples:" href="pg/pgsetfilltranspat.html#id9"/>
+          </topic>
+          <topic label="PgSetFillXORColor, PgSetFillXORColorCx" href="pg/pgsetfillxorcolor.html">
+            <topic label="Description:" href="pg/pgsetfillxorcolor.html#id7"/>
+            <topic label="Examples:" href="pg/pgsetfillxorcolor.html#id9"/>
+          </topic>
+          <topic label="PgSetFont, PgSetFontCx" href="pg/pgsetfont.html">
+            <topic label="Description:" href="pg/pgsetfont.html#id7"/>
+            <topic label="Examples:" href="pg/pgsetfont.html#id9"/>
+          </topic>
+          <topic label="PgSetGC, PgSetGCCx" href="pg/pgsetgc.html">
+            <topic label="Description:" href="pg/pgsetgc.html#id9"/>
+          </topic>
+          <topic label="PgSetLayerArg" href="pg/pgsetlayerarg.html">
+            <topic label="Description:" href="pg/pgsetlayerarg.html#id9">
+              <topic label="Layer arguments" href="pg/pgsetlayerarg.html#Arguments"/>
+            </topic>
+            <topic label="Examples:" href="pg/pgsetlayerarg.html#id16"/>
+          </topic>
+          <topic label="PgSetLayerSurface" href="pg/pgsetlayersurface.html">
+            <topic label="Description:" href="pg/pgsetlayersurface.html#id9"/>
+          </topic>
+          <topic label="PgSetMultiClip, PgSetMultiClipCx" href="pg/pgsetmulticlip.html">
+            <topic label="Description:" href="pg/pgsetmulticlip.html#id7"/>
+          </topic>
+          <topic label="PgSetPalette, PgSetPaletteCx" href="pg/pgsetpalette.html">
+            <topic label="Description:" href="pg/pgsetpalette.html#id7"/>
+          </topic>
+          <topic label="PgSetPlaneMask, PgSetPlaneMaskCx" href="pg/pgsetplanemask.html">
+            <topic label="Description:" href="pg/pgsetplanemask.html#id7"/>
+          </topic>
+          <topic label="PgSetRegion, PgSetRegionCx" href="pg/pgsetregion.html">
+            <topic label="Description:" href="pg/pgsetregion.html#id9"/>
+          </topic>
+          <topic label="PgSetStrokeCap, PgSetStrokeCapCx" href="pg/pgsetstrokecap.html">
+            <topic label="Description:" href="pg/pgsetstrokecap.html#id7"/>
+          </topic>
+          <topic label="PgSetStrokeColor, PgSetStrokeColorCx" href="pg/pgsetstrokecolor.html">
+            <topic label="Description:" href="pg/pgsetstrokecolor.html#id7"/>
+          </topic>
+          <topic label="PgSetStrokeDash, PgSetStrokeDashCx" href="pg/pgsetstrokedash.html">
+            <topic label="Description:" href="pg/pgsetstrokedash.html#id7"/>
+            <topic label="Examples:" href="pg/pgsetstrokedash.html#id9"/>
+          </topic>
+          <topic label="PgSetStrokeDither, PgSetStrokeDitherCx" href="pg/pgsetstrokedither.html">
+            <topic label="Description:" href="pg/pgsetstrokedither.html#id7"/>
+          </topic>
+          <topic label="PgSetStrokeJoin, PgSetStrokeJoinCx" href="pg/pgsetstrokejoin.html">
+            <topic label="Description:" href="pg/pgsetstrokejoin.html#id7"/>
+          </topic>
+          <topic label="PgSetStrokeTransPat, PgSetStrokeTransPatCx" href="pg/pgsetstroketranspat.html">
+            <topic label="Description:" href="pg/pgsetstroketranspat.html#id7"/>
+          </topic>
+          <topic label="PgSetStrokeWidth, PgSetStrokeFWidth, PgSetStrokeWidthCx, PgSetStrokeFWidthCx" href="pg/pgsetstrokewidth.html">
+            <topic label="Description:" href="pg/pgsetstrokewidth.html#id7"/>
+          </topic>
+          <topic label="PgSetStrokeXORColor, PgSetStrokeXORColorCx" href="pg/pgsetstrokexorcolor.html">
+            <topic label="Description:" href="pg/pgsetstrokexorcolor.html#id7"/>
+          </topic>
+          <topic label="PgSetTextColor, PgSetTextColorCx" href="pg/pgsettextcolor.html">
+            <topic label="Description:" href="pg/pgsettextcolor.html#id7"/>
+          </topic>
+          <topic label="PgSetTextDither, PgSetTextDitherCx" href="pg/pgsettextdither.html">
+            <topic label="Description:" href="pg/pgsettextdither.html#id7"/>
+          </topic>
+          <topic label="PgSetTextTransPat, PgSetTextTransPatCx" href="pg/pgsettexttranspat.html">
+            <topic label="Description:" href="pg/pgsettexttranspat.html#id7"/>
+          </topic>
+          <topic label="PgSetTextXORColor, PgSetTextXORColorCx" href="pg/pgsettextxorcolor.html">
+            <topic label="Description:" href="pg/pgsettextxorcolor.html#id7"/>
+          </topic>
+          <topic label="PgSetTranslation, PgSetTranslationCx" href="pg/pgsettranslation.html">
+            <topic label="Description:" href="pg/pgsettranslation.html#id7"/>
+            <topic label="Examples:" href="pg/pgsettranslation.html#id9"/>
+          </topic>
+          <topic label="PgSetUnderline, PgSetUnderlineCx" href="pg/pgsetunderline.html">
+            <topic label="Description:" href="pg/pgsetunderline.html#id7"/>
+          </topic>
+          <topic label="PgSetUserClip, PgSetUserClipAbsolute, PgSetUserClipCx, PgSetUserClipAbsoluteCx" href="pg/pgsetuserclip.html">
+            <topic label="Description:" href="pg/pgsetuserclip.html#id7"/>
+          </topic>
+          <topic label="PgSetVideoMode" href="pg/pgsetvideomode.html">
+            <topic label="Description:" href="pg/pgsetvideomode.html#id7"/>
+          </topic>
+          <topic label="PgShmemAttach" href="pg/pgshmemattach.html">
+            <topic label="Description:" href="pg/pgshmemattach.html#id7"/>
+          </topic>
+          <topic label="PgShmemCleanup" href="pg/pgshmemcleanup.html">
+            <topic label="Description:" href="pg/pgshmemcleanup.html#id7"/>
+            <topic label="Examples:" href="pg/pgshmemcleanup.html#id9"/>
+          </topic>
+          <topic label="PgShmemCreate" href="pg/pgshmemcreate.html">
+            <topic label="Description:" href="pg/pgshmemcreate.html#id7"/>
+          </topic>
+          <topic label="PgShmemDestroy" href="pg/pgshmemdestroy.html">
+            <topic label="Description:" href="pg/pgshmemdestroy.html#id7"/>
+          </topic>
+          <topic label="PgShmemDetach" href="pg/pgshmemdetach.html">
+            <topic label="Description:" href="pg/pgshmemdetach.html#id7"/>
+          </topic>
+          <topic label="PgSyncFlush, PgSyncFlushCx" href="pg/pgsyncflush.html">
+            <topic label="Description:" href="pg/pgsyncflush.html#id7"/>
+          </topic>
+          <topic label="PgSwapDisplay, PgSwapDisplayCx" href="pg/pgswapdisplay.html">
+            <topic label="Description:" href="pg/pgswapdisplay.html#id7"/>
+            <topic label="Examples:" href="pg/pgswapdisplay.html#id11"/>
+          </topic>
+          <topic label="PgUnlockLayer" href="pg/pgunlocklayer.html">
+            <topic label="Description:" href="pg/pgunlocklayer.html#id9"/>
+          </topic>
+          <topic label="PgVideoChannel_t" href="pg/pgvideochannel_t.html">
+            <topic label="Description:" href="pg/pgvideochannel_t.html#id5"/>
+          </topic>
+          <topic label="PgWaitDrawComplete" href="pg/pgwaitdrawcomplete.html">
+            <topic label="Description:" href="pg/pgwaitdrawcomplete.html#id7"/>
+          </topic>
+          <topic label="PgWaitHWIdle" href="pg/pgwaithwidle.html">
+            <topic label="Description:" href="pg/pgwaithwidle.html#id7"/>
+          </topic>
+          <topic label="PgWaitVSync, PgWaitVSyncCx" href="pg/pgwaitvsync.html">
+            <topic label="Description:" href="pg/pgwaitvsync.html#id9"/>
+            <topic label="Examples:" href="pg/pgwaitvsync.html#id11"/>
+          </topic>
+      </topic>
+      <topic label="Ph---Photon" href="ph-base.html">
+          <topic label="PhAddMergeTiles" href="ph/phaddmergetiles.html">
+            <topic label="Description:" href="ph/phaddmergetiles.html#id9"/>
+          </topic>
+          <topic label="PhAllocPackType" href="ph/phallocpacktype.html">
+            <topic label="Description:" href="ph/phallocpacktype.html#id9"/>
+          </topic>
+          <topic label="PhArea_t" href="ph/pharea_t.html">
+            <topic label="Description:" href="ph/pharea_t.html#id5"/>
+          </topic>
+          <topic label="PhAreaToRect" href="ph/phareatorect.html">
+            <topic label="Description:" href="ph/phareatorect.html#id7"/>
+          </topic>
+          <topic label="PhAttach" href="ph/phattach.html">
+            <topic label="Description:" href="ph/phattach.html#id7"/>
+            <topic label="Examples:" href="ph/phattach.html#id11"/>
+          </topic>
+          <topic label="PhBlit" href="ph/phblit.html">
+            <topic label="Description:" href="ph/phblit.html#id9"/>
+            <topic label="Examples:" href="ph/phblit.html#id13"/>
+          </topic>
+          <topic label="PhBitmapCursorDescription_t" href="ph/phbitmapcursordescription_t.html">
+            <topic label="Description:" href="ph/phbitmapcursordescription_t.html#id5"/>
+          </topic>
+          <topic label="PhCancelDrag" href="ph/phcanceldrag.html">
+            <topic label="Description:" href="ph/phcanceldrag.html#id9"/>
+          </topic>
+          <topic label="PhChannelAttach" href="ph/phchannelattach.html">
+            <topic label="Description:" href="ph/phchannelattach.html#id9">
+              <topic label="name_attach and PtAppAddInput" href="ph/phchannelattach.html#NameAttach"/>
+            </topic>
+            <topic label="Examples:" href="ph/phchannelattach.html#id16"/>
+          </topic>
+          <topic label="PhCharacterCursorDescription_t" href="ph/phcharactercursordescription_t.html">
+            <topic label="Description:" href="ph/phcharactercursordescription_t.html#id5"/>
+          </topic>
+          <topic label="PhClipboardCopyString" href="ph/phclipboardcopystring.html">
+            <topic label="Description:" href="ph/phclipboardcopystring.html#id7"/>
+          </topic>
+          <topic label="PhClipboardHdr" href="ph/phclipboardhdr.html">
+            <topic label="Description:" href="ph/phclipboardhdr.html#id5"/>
+          </topic>
+          <topic label="PhClipboardPasteString" href="ph/phclipboardpastestring.html">
+            <topic label="Description:" href="ph/phclipboardpastestring.html#id7"/>
+          </topic>
+          <topic label="PhClipboardRead" href="ph/phclipboardread.html">
+            <topic label="Description:" href="ph/phclipboardread.html#id9"/>
+            <topic label="Examples:" href="ph/phclipboardread.html#id13"/>
+          </topic>
+          <topic label="PhClipboardWrite" href="ph/phclipboardwrite.html">
+            <topic label="Description:" href="ph/phclipboardwrite.html#id9"/>
+            <topic label="Examples:" href="ph/phclipboardwrite.html#id13"/>
+          </topic>
+          <topic label="PhClipTilings" href="ph/phcliptilings.html">
+            <topic label="Description:" href="ph/phcliptilings.html#id7"/>
+          </topic>
+          <topic label="PhCoalesceTiles" href="ph/phcoalescetiles.html">
+            <topic label="Description:" href="ph/phcoalescetiles.html#id7"/>
+          </topic>
+          <topic label="PhCopyTiles" href="ph/phcopytiles.html">
+            <topic label="Description:" href="ph/phcopytiles.html#id7"/>
+          </topic>
+          <topic label="PhCreateImage" href="ph/phcreateimage.html">
+            <topic label="Description:" href="ph/phcreateimage.html#id7"/>
+          </topic>
+          <topic label="PhCreateTransportCtrl" href="ph/phcreatetransportctrl.html">
+            <topic label="Description:" href="ph/phcreatetransportctrl.html#id7"/>
+          </topic>
+          <topic label="PhCursorDef_t" href="ph/phcursordef_t.html">
+            <topic label="Description:" href="ph/phcursordef_t.html#id5"/>
+          </topic>
+          <topic label="PhCursorDescription_t" href="ph/phcursordescription_t.html">
+            <topic label="Description:" href="ph/phcursordescription_t.html#id5"/>
+          </topic>
+          <topic label="PhDCCreate" href="ph/phdccreate.html">
+            <topic label="Description:" href="ph/phdccreate.html#id9"/>
+          </topic>
+          <topic label="PhDCGetCurrent" href="ph/phdcgetcurrent.html">
+            <topic label="Description:" href="ph/phdcgetcurrent.html#id7"/>
+          </topic>
+          <topic label="PhDCRelease" href="ph/phdcrelease.html">
+            <topic label="Description:" href="ph/phdcrelease.html#id7"/>
+          </topic>
+          <topic label="PhDCSetCurrent" href="ph/phdcsetcurrent.html">
+            <topic label="Description:" href="ph/phdcsetcurrent.html#id9"/>
+            <topic label="Examples:" href="ph/phdcsetcurrent.html#id13"/>
+          </topic>
+          <topic label="PhDetach" href="ph/phdetach.html">
+            <topic label="Description:" href="ph/phdetach.html#id7"/>
+            <topic label="Examples:" href="ph/phdetach.html#id11"/>
+          </topic>
+          <topic label="PhDeTranslateRect" href="ph/phdetranslaterect.html">
+            <topic label="Description:" href="ph/phdetranslaterect.html#id7"/>
+          </topic>
+          <topic label="PhDeTranslateTiles" href="ph/phdetranslatetiles.html">
+            <topic label="Description:" href="ph/phdetranslatetiles.html#id7"/>
+          </topic>
+          <topic label="PhDim_t" href="ph/phdim_t.html">
+            <topic label="Description:" href="ph/phdim_t.html#id5"/>
+          </topic>
+          <topic label="PhDragEvent_t" href="ph/phdragevent_t.html">
+            <topic label="Description:" href="ph/phdragevent_t.html#id5"/>
+          </topic>
+          <topic label="PhEmit" href="ph/phemit.html">
+            <topic label="Description:" href="ph/phemit.html#id7"/>
+            <topic label="Examples:" href="ph/phemit.html#id11"/>
+          </topic>
+          <topic label="PhEmitmx" href="ph/phemitmx.html">
+            <topic label="Description:" href="ph/phemitmx.html#id7"/>
+            <topic label="Examples:" href="ph/phemitmx.html#id11"/>
+          </topic>
+          <topic label="PhEvent_t" href="ph/phevent_t.html">
+            <topic label="Description:" href="ph/phevent_t.html#id5">
+                <topic label="Ph_EV_BOUNDARY" href="ph/phevent_t.html#Ph_EV_BOUNDARY"/>
+                <topic label="Ph_EV_BUT_PRESS" href="ph/phevent_t.html#PhEVBUTPRESS"/>
+                <topic label="Ph_EV_BUT_RELEASE" href="ph/phevent_t.html#PhEVBUTRELEASE"/>
+                <topic label="Ph_EV_BUT_REPEAT" href="ph/phevent_t.html#PhEVBUTREPEAT"/>
+                <topic label="Ph_EV_DNDROP" href="ph/phevent_t.html#Ph_EV_DNDROP"/>
+                <topic label="Ph_EV_DRAG" href="ph/phevent_t.html#PhEVDRAG"/>
+                <topic label="Ph_EV_DRAW" href="ph/phevent_t.html#PhEVDRAW"/>
+                <topic label="Ph_EV_EXPOSE" href="ph/phevent_t.html#PhEVEXPOSE"/>
+                <topic label="Ph_EV_INFO" href="ph/phevent_t.html#Ph_EV_INFO"/>
+                <topic label="Ph_EV_KEY" href="ph/phevent_t.html#PhEVKEY"/>
+                <topic label="Ph_EV_PTR_MOTION_BUTTON" href="ph/phevent_t.html#PhEVPTRMOTIONBUTTON"/>
+                <topic label="Ph_EV_PTR_MOTION_NOBUTTON" href="ph/phevent_t.html#Ph_EV_PTR_MOTION_NOBUTTON"/>
+                <topic label="Ph_EV_RAW" href="ph/phevent_t.html#Ph_EV_RAW"/>
+                <topic label="Ph_EV_SERVICE" href="ph/phevent_t.html#Ph_EV_SERVICE"/>
+                <topic label="Ph_EV_SYSTEM" href="ph/phevent_t.html#Ph_EV_SYSTEM"/>
+                <topic label="Ph_EV_TIMER" href="ph/phevent_t.html#Ph_EV_TIMER"/>
+                <topic label="Ph_EV_USER" href="ph/phevent_t.html#Ph_EV_USER"/>
+                <topic label="Ph_EV_WM" href="ph/phevent_t.html#Ph_EV_WM"/>
+            </topic>
+          </topic>
+          <topic label="PhEventArm" href="ph/pheventarm.html">
+            <topic label="Description:" href="ph/pheventarm.html#id7"/>
+            <topic label="Examples:" href="ph/pheventarm.html#id11"/>
+          </topic>
+          <topic label="PhEventEmit" href="ph/pheventemit.html">
+            <topic label="Description:" href="ph/pheventemit.html#id7"/>
+            <topic label="Examples:" href="ph/pheventemit.html#id11"/>
+          </topic>
+          <topic label="PhEventEmitmx" href="ph/pheventemitmx.html">
+            <topic label="Description:" href="ph/pheventemitmx.html#id7"/>
+            <topic label="Examples:" href="ph/pheventemitmx.html#id11"/>
+          </topic>
+          <topic label="PhEventNext" href="ph/pheventnext.html">
+            <topic label="Description:" href="ph/pheventnext.html#id7"/>
+            <topic label="Examples:" href="ph/pheventnext.html#id11"/>
+          </topic>
+          <topic label="PhEventPeek" href="ph/pheventpeek.html">
+            <topic label="Description:" href="ph/pheventpeek.html#id7"/>
+            <topic label="Examples:" href="ph/pheventpeek.html#id11"/>
+          </topic>
+          <topic label="PhEventRead" href="ph/pheventread.html">
+            <topic label="Description:" href="ph/pheventread.html#id9"/>
+            <topic label="Examples:" href="ph/pheventread.html#id13"/>
+          </topic>
+          <topic label="PhEventRegion_t" href="ph/pheventregion_t.html">
+            <topic label="Description:" href="ph/pheventregion_t.html#id5"/>
+          </topic>
+          <topic label="PhFindTransportType" href="ph/phfindtransporttype.html">
+            <topic label="Description:" href="ph/phfindtransporttype.html#id7"/>
+          </topic>
+          <topic label="PhFreeTiles" href="ph/phfreetiles.html">
+            <topic label="Description:" href="ph/phfreetiles.html#id7"/>
+          </topic>
+          <topic label="PhFreeTransportType" href="ph/phfreetransporttype.html">
+            <topic label="Description:" href="ph/phfreetransporttype.html#id7"/>
+            <topic label="Examples:" href="ph/phfreetransporttype.html#id11"/>
+          </topic>
+          <topic label="PhGetAllTransportHdrs" href="ph/phgetalltransporthdrs.html">
+            <topic label="Description:" href="ph/phgetalltransporthdrs.html#id7"/>
+          </topic>
+          <topic label="PhGetConnectId" href="ph/phgetconnectid.html">
+            <topic label="Description:" href="ph/phgetconnectid.html#id7"/>
+          </topic>
+          <topic label="PhGetConnectInfo" href="ph/phgetconnectinfo.html">
+            <topic label="Description:" href="ph/phgetconnectinfo.html#id7"/>
+          </topic>
+          <topic label="PhGetData" href="ph/phgetdata.html">
+            <topic label="Description:" href="ph/phgetdata.html#id7"/>
+          </topic>
+          <topic label="PhGetMsgSize" href="ph/phgetmsgsize.html">
+            <topic label="Description:" href="ph/phgetmsgsize.html#id7"/>
+            <topic label="Examples:" href="ph/phgetmsgsize.html#id11"/>
+          </topic>
+          <topic label="PhGetNextInlineData" href="ph/phgetnextinlinedata.html">
+            <topic label="Description:" href="ph/phgetnextinlinedata.html#id7"/>
+          </topic>
+          <topic label="PhGetNextTransportHdr" href="ph/phgetnexttransporthdr.html">
+            <topic label="Description:" href="ph/phgetnexttransporthdr.html#id7"/>
+          </topic>
+          <topic label="PhGetRects" href="ph/phgetrects.html">
+            <topic label="Description:" href="ph/phgetrects.html#id7"/>
+          </topic>
+          <topic label="PhGetTile" href="ph/phgettile.html">
+            <topic label="Description:" href="ph/phgettile.html#id7"/>
+          </topic>
+          <topic label="PhGetTransportHdr" href="ph/phgettransporthdr.html">
+            <topic label="Description:" href="ph/phgettransporthdr.html#id7"/>
+          </topic>
+          <topic label="PhGetTransportVectors" href="ph/phgettransportvectors.html">
+            <topic label="Description:" href="ph/phgettransportvectors.html#id7"/>
+          </topic>
+          <topic label="PhImage_t" href="ph/phimage_t.html">
+            <topic label="Description:" href="ph/phimage_t.html#id5">
+              <topic label="Image types" href="ph/phimage_t.html#ImageTypes"/>
+            </topic>
+          </topic>
+          <topic label="PhInitDrag" href="ph/phinitdrag.html">
+            <topic label="Description:" href="ph/phinitdrag.html#id9"/>
+            <topic label="Examples:" href="ph/phinitdrag.html#id13"/>
+          </topic>
+          <topic label="PhInputGroup" href="ph/phinputgroup.html">
+            <topic label="Description:" href="ph/phinputgroup.html#id7"/>
+          </topic>
+          <topic label="PhIntersectTilings" href="ph/phintersecttilings.html">
+            <topic label="Description:" href="ph/phintersecttilings.html#id7"/>
+          </topic>
+          <topic label="PhKeyEvent_t" href="ph/phkeyevent_t.html">
+            <topic label="Description:" href="ph/phkeyevent_t.html#id5"/>
+          </topic>
+          <topic label="PhKeyToMb" href="ph/phkeytomb.html">
+            <topic label="Description:" href="ph/phkeytomb.html#id7"/>
+          </topic>
+          <topic label="PhLibVersion" href="ph/phlibversion.html">
+            <topic label="Description:" href="ph/phlibversion.html#id7"/>
+          </topic>
+          <topic label="PhLinkTransportData" href="ph/phlinktransportdata.html">
+            <topic label="Description:" href="ph/phlinktransportdata.html#id7"/>
+          </topic>
+          <topic label="PhLocateTransHdr" href="ph/phlocatetranshdr.html">
+            <topic label="Description:" href="ph/phlocatetranshdr.html#id7"/>
+          </topic>
+          <topic label="PhMakeGhostBitmap" href="ph/phmakeghostbitmap.html">
+            <topic label="Description:" href="ph/phmakeghostbitmap.html#id7"/>
+          </topic>
+          <topic label="PhMakeTransBitmap" href="ph/phmaketransbitmap.html">
+            <topic label="Description:" href="ph/phmaketransbitmap.html#id7"/>
+            <topic label="Examples:" href="ph/phmaketransbitmap.html#id11"/>
+          </topic>
+          <topic label="PhMakeTransparent" href="ph/phmaketransparent.html">
+            <topic label="Description:" href="ph/phmaketransparent.html#id7"/>
+            <topic label="Examples:" href="ph/phmaketransparent.html#id11"/>
+          </topic>
+          <topic label="PhMallocUnpack" href="ph/phmallocunpack.html">
+            <topic label="Description:" href="ph/phmallocunpack.html#id7"/>
+          </topic>
+          <topic label="PhMergeTiles" href="ph/phmergetiles.html">
+            <topic label="Description:" href="ph/phmergetiles.html#id7"/>
+          </topic>
+          <topic label="PhMoveCursorAbs" href="ph/phmovecursorabs.html">
+            <topic label="Description:" href="ph/phmovecursorabs.html#id7"/>
+          </topic>
+          <topic label="PhMoveCursorRel" href="ph/phmovecursorrel.html">
+            <topic label="Description:" href="ph/phmovecursorrel.html#id7"/>
+          </topic>
+          <topic label="PhMultiBlit" href="ph/phmultiblit.html">
+            <topic label="Description:" href="ph/phmultiblit.html#id9"/>
+          </topic>
+          <topic label="PhPackEntry" href="ph/phpackentry.html">
+            <topic label="Description:" href="ph/phpackentry.html#id7"/>
+          </topic>
+          <topic label="PhPackType" href="ph/phpacktype.html">
+            <topic label="Description:" href="ph/phpacktype.html#id7"/>
+          </topic>
+          <topic label="PhPoint_t" href="ph/phpoint_t.html">
+            <topic label="Description:" href="ph/phpoint_t.html#id5"/>
+          </topic>
+          <topic label="PhPoint16dot16_t" href="ph/phpoint16dot16_t.html">
+            <topic label="Description:" href="ph/phpoint16dot16_t.html#id5"/>
+          </topic>
+          <topic label="PhPointerEvent_t" href="ph/phpointerevent_t.html">
+            <topic label="Description:" href="ph/phpointerevent_t.html#id5"/>
+          </topic>
+          <topic label="PhQueryCursor" href="ph/phquerycursor.html">
+            <topic label="Description:" href="ph/phquerycursor.html#id9"/>
+          </topic>
+          <topic label="PhQueryRids" href="ph/phqueryrids.html">
+            <topic label="Description:" href="ph/phqueryrids.html#id7"/>
+          </topic>
+          <topic label="PhQuerySystemInfo" href="ph/phquerysysteminfo.html">
+            <topic label="Description:" href="ph/phquerysysteminfo.html#id7"/>
+          </topic>
+          <topic label="PhReattach" href="ph/phreattach.html">
+            <topic label="Description:" href="ph/phreattach.html#id7"/>
+            <topic label="Examples:" href="ph/phreattach.html#id11"/>
+          </topic>
+          <topic label="PhRect_t" href="ph/phrect_t.html">
+            <topic label="Description:" href="ph/phrect_t.html#id5"/>
+          </topic>
+          <topic label="PhRect16dot16_t" href="ph/phrect16dot16_t.html">
+            <topic label="Description:" href="ph/phrect16dot16_t.html#id5"/>
+          </topic>
+          <topic label="PhRectIntersect" href="ph/phrectintersect.html">
+            <topic label="Description:" href="ph/phrectintersect.html#id7"/>
+          </topic>
+          <topic label="PhRectsToTiles" href="ph/phrectstotiles.html">
+            <topic label="Description:" href="ph/phrectstotiles.html#id7"/>
+          </topic>
+          <topic label="PhRectToArea" href="ph/phrecttoarea.html">
+            <topic label="Description:" href="ph/phrecttoarea.html#id7"/>
+          </topic>
+          <topic label="PhRectUnion" href="ph/phrectunion.html">
+            <topic label="Description:" href="ph/phrectunion.html#id7"/>
+          </topic>
+          <topic label="PhRegion_t" href="ph/phregion_t.html">
+            <topic label="Description:" href="ph/phregion_t.html#id5"/>
+          </topic>
+          <topic label="PhRegionChange" href="ph/phregionchange.html">
+            <topic label="Description:" href="ph/phregionchange.html#id7"/>
+            <topic label="Examples:" href="ph/phregionchange.html#id11"/>
+          </topic>
+          <topic label="PhRegionClose" href="ph/phregionclose.html">
+            <topic label="Description:" href="ph/phregionclose.html#id7"/>
+          </topic>
+          <topic label="PhRegionDataFindType" href="ph/phregiondatafindtype.html">
+            <topic label="Description:" href="ph/phregiondatafindtype.html#id7"/>
+            <topic label="Examples:" href="ph/phregiondatafindtype.html#id11"/>
+          </topic>
+          <topic label="PhRegionDataHdr_t" href="ph/phregiondatahdr_t.html">
+            <topic label="Description:" href="ph/phregiondatahdr_t.html#id5"/>
+          </topic>
+          <topic label="PhRegionInfo" href="ph/phregioninfo.html">
+            <topic label="Description:" href="ph/phregioninfo.html#id9"/>
+            <topic label="Examples:" href="ph/phregioninfo.html#id13"/>
+          </topic>
+          <topic label="PhRegionOpen" href="ph/phregionopen.html">
+            <topic label="Description:" href="ph/phregionopen.html#id7"/>
+            <topic label="Examples:" href="ph/phregionopen.html#id11"/>
+          </topic>
+          <topic label="PhRegionQuery" href="ph/phregionquery.html">
+            <topic label="Description:" href="ph/phregionquery.html#id7"/>
+            <topic label="Examples:" href="ph/phregionquery.html#id11"/>
+          </topic>
+          <topic label="PhRegisterTransportType" href="ph/phregistertransporttype.html">
+            <topic label="Description:" href="ph/phregistertransporttype.html#id7"/>
+          </topic>
+          <topic label="PhReleaseImage" href="ph/phreleaseimage.html">
+            <topic label="Description:" href="ph/phreleaseimage.html#id7"/>
+          </topic>
+          <topic label="PhReleaseTransportCtrl" href="ph/phreleasetransportctrl.html">
+            <topic label="Description:" href="ph/phreleasetransportctrl.html#id7"/>
+          </topic>
+          <topic label="PhReleaseTransportHdrs" href="ph/phreleasetransporthdrs.html">
+            <topic label="Description:" href="ph/phreleasetransporthdrs.html#id7"/>
+          </topic>
+          <topic label="PhSortTiles" href="ph/phsorttiles.html">
+            <topic label="Description:" href="ph/phsorttiles.html#id7"/>
+          </topic>
+          <topic label="PhSysInfo_t" href="ph/phsysinfo_t.html">
+            <topic label="Description:" href="ph/phsysinfo_t.html#id5">
+              <topic label="gen" href="ph/phsysinfo_t.html#gen"/>
+              <topic label="gfx" href="ph/phsysinfo_t.html#gfx"/>
+            </topic>
+          </topic>
+          <topic label="PhTile_t" href="ph/phtile_t.html">
+            <topic label="Description:" href="ph/phtile_t.html#id5"/>
+          </topic>
+          <topic label="PhTilesBoundingRect" href="ph/phtilesboundingrect.html">
+            <topic label="Description:" href="ph/phtilesboundingrect.html#id9"/>
+          </topic>
+          <topic label="PhTilesToRects" href="ph/phtilestorects.html">
+            <topic label="Description:" href="ph/phtilestorects.html#id7"/>
+          </topic>
+          <topic label="PhTimerArm" href="ph/phtimerarm.html">
+            <topic label="Description:" href="ph/phtimerarm.html#id7"/>
+          </topic>
+          <topic label="PhTo8859_1" href="ph/phto8859_1.html">
+            <topic label="Description:" href="ph/phto8859_1.html#id7"/>
+          </topic>
+          <topic label="PhTranslateRect" href="ph/phtranslaterect.html">
+            <topic label="Description:" href="ph/phtranslaterect.html#id7"/>
+            <topic label="Examples:" href="ph/phtranslaterect.html#id11"/>
+          </topic>
+          <topic label="PhTranslateTiles" href="ph/phtranslatetiles.html">
+            <topic label="Description:" href="ph/phtranslatetiles.html#id7"/>
+          </topic>
+          <topic label="PhTransportCtrl_t" href="ph/phtransportctrl_t.html">
+            <topic label="Description:" href="ph/phtransportctrl_t.html#id5"/>
+          </topic>
+          <topic label="PhTransportFindLink" href="ph/phtransportfindlink.html">
+            <topic label="Description:" href="ph/phtransportfindlink.html#id7"/>
+          </topic>
+          <topic label="PhTransportLink_t" href="ph/phtransportlink_t.html">
+            <topic label="Description:" href="ph/phtransportlink_t.html#id5"/>
+          </topic>
+          <topic label="PhTransportRegEntry_t" href="ph/phtransportregentry_t.html">
+            <topic label="Description:" href="ph/phtransportregentry_t.html#id5">
+              <topic label="Fixup manifests" href="ph/phtransportregentry_t.html#FixupManifests"/>
+              <topic label="Endian information" href="ph/phtransportregentry_t.html#EndianInformation"/>
+            </topic>
+          </topic>
+          <topic label="PhTransportType" href="ph/phtransporttype.html">
+            <topic label="Description:" href="ph/phtransporttype.html#id7"/>
+          </topic>
+          <topic label="PhUnlinkTransportHdr" href="ph/phunlinktransporthdr.html">
+            <topic label="Description:" href="ph/phunlinktransporthdr.html#id7"/>
+          </topic>
+          <topic label="PhUnpack" href="ph/phunpack.html">
+            <topic label="Description:" href="ph/phunpack.html#id7"/>
+          </topic>
+          <topic label="PhWindowChange" href="ph/phwindowchange.html">
+            <topic label="Description:" href="ph/phwindowchange.html#id9"/>
+          </topic>
+          <topic label="PhWindowClose" href="ph/phwindowclose.html">
+            <topic label="Description:" href="ph/phwindowclose.html#id9"/>
+          </topic>
+          <topic label="PhWindowEvent_t" href="ph/phwindowevent_t.html">
+            <topic label="Description:" href="ph/phwindowevent_t.html#id5"/>
+          </topic>
+          <topic label="PhWindowOpen" href="ph/phwindowopen.html">
+            <topic label="Description:" href="ph/phwindowopen.html#id9"/>
+          </topic>
+          <topic label="PhWindowQueryVisible" href="ph/phwindowqueryvisible.html">
+            <topic label="Description:" href="ph/phwindowqueryvisible.html#id7"/>
+            <topic label="Examples:" href="ph/phwindowqueryvisible.html#id11"/>
+          </topic>
+      </topic>
+      <topic label="Pi---Images" href="pi-base.html">
+          <topic label="PiConvertImage" href="pi/piconvertimage.html">
+            <topic label="Description:" href="pi/piconvertimage.html#id9"/>
+            <topic label="Examples:" href="pi/piconvertimage.html#id13"/>
+          </topic>
+          <topic label="PiCropImage" href="pi/picropimage.html">
+            <topic label="Description:" href="pi/picropimage.html#id7"/>
+          </topic>
+          <topic label="PiDuplicateImage" href="pi/piduplicateimage.html">
+            <topic label="Description:" href="pi/piduplicateimage.html#id9"/>
+          </topic>
+          <topic label="PiFlipImage" href="pi/piflipimage.html">
+            <topic label="Description:" href="pi/piflipimage.html#id7"/>
+          </topic>
+          <topic label="PiGetPixel" href="pi/pigetpixel.html">
+            <topic label="Description:" href="pi/pigetpixel.html#id7"/>
+          </topic>
+          <topic label="PiGetPixelFromData" href="pi/pigetpixelfromdata.html">
+            <topic label="Description:" href="pi/pigetpixelfromdata.html#id7"/>
+          </topic>
+          <topic label="PiGetPixelRGB" href="pi/pigetpixelrgb.html">
+            <topic label="Description:" href="pi/pigetpixelrgb.html#id7"/>
+          </topic>
+          <topic label="PiInitImage" href="pi/piinitimage.html">
+            <topic label="Description:" href="pi/piinitimage.html#id9"/>
+          </topic>
+          <topic label="PiResizeImage" href="pi/piresizeimage.html">
+            <topic label="Description:" href="pi/piresizeimage.html#id9"/>
+            <topic label="Examples:" href="pi/piresizeimage.html#id13"/>
+          </topic>
+          <topic label="PiSetPixel" href="pi/pisetpixel.html">
+            <topic label="Description:" href="pi/pisetpixel.html#id7"/>
+          </topic>
+          <topic label="PiSetPixelInData" href="pi/pisetpixelindata.html">
+            <topic label="Description:" href="pi/pisetpixelindata.html#id7"/>
+          </topic>
+      </topic>
+      <topic label="Pm---Memory" href="pm-base.html">
+          <topic label="PmMemCreateMC" href="pm/pmmemcreatemc.html">
+            <topic label="Description:" href="pm/pmmemcreatemc.html#id7"/>
+            <topic label="Examples:" href="pm/pmmemcreatemc.html#id11"/>
+          </topic>
+          <topic label="PmMemFlush" href="pm/pmmemflush.html">
+            <topic label="Description:" href="pm/pmmemflush.html#id7"/>
+            <topic label="Examples:" href="pm/pmmemflush.html#id11"/>
+          </topic>
+          <topic label="PmMemReleaseMC" href="pm/pmmemreleasemc.html">
+            <topic label="Description:" href="pm/pmmemreleasemc.html#id7"/>
+            <topic label="Examples:" href="pm/pmmemreleasemc.html#id9"/>
+          </topic>
+          <topic label="PmMemSetChunkSize" href="pm/pmmemsetchunksize.html">
+            <topic label="Description:" href="pm/pmmemsetchunksize.html#id7"/>
+          </topic>
+          <topic label="PmMemSetMaxBufSize" href="pm/pmmemsetmaxbufsize.html">
+            <topic label="Description:" href="pm/pmmemsetmaxbufsize.html#id7"/>
+          </topic>
+          <topic label="PmMemSetType" href="pm/pmmemsettype.html">
+            <topic label="Description:" href="pm/pmmemsettype.html#id7"/>
+          </topic>
+          <topic label="PmMemStart" href="pm/pmmemstart.html">
+            <topic label="Description:" href="pm/pmmemstart.html#id7"/>
+            <topic label="Examples:" href="pm/pmmemstart.html#id13"/>
+          </topic>
+          <topic label="PmMemStop" href="pm/pmmemstop.html">
+            <topic label="Description:" href="pm/pmmemstop.html#id7"/>
+            <topic label="Examples:" href="pm/pmmemstop.html#id11"/>
+          </topic>
+      </topic>
+      <topic label="Pp---Printing" href="pp-base.html">
+          <topic label="PpContinueJob" href="pp/ppcontinuejob.html">
+            <topic label="Description:" href="pp/ppcontinuejob.html#id9"/>
+            <topic label="Examples:" href="pp/ppcontinuejob.html#id15"/>
+          </topic>
+          <topic label="PpCreatePC" href="pp/ppcreatepc.html">
+            <topic label="Description:" href="pp/ppcreatepc.html#id7"/>
+            <topic label="Examples:" href="pp/ppcreatepc.html#id11"/>
+          </topic>
+          <topic label="PpEndJob" href="pp/ppendjob.html">
+            <topic label="Description:" href="pp/ppendjob.html#id9"/>
+            <topic label="Examples:" href="pp/ppendjob.html#id13"/>
+          </topic>
+          <topic label="PpFreePrinterList" href="pp/ppfreeprinterlist.html">
+            <topic label="Description:" href="pp/ppfreeprinterlist.html#id9"/>
+          </topic>
+          <topic label="PpGetCanvas" href="pp/ppgetcanvas.html">
+            <topic label="Description:" href="pp/ppgetcanvas.html#id9"/>
+          </topic>
+          <topic label="PpGetPC" href="pp/ppgetpc.html">
+            <topic label="Description:" href="pp/ppgetpc.html#id9"/>
+            <topic label="Examples:" href="pp/ppgetpc.html#id13"/>
+          </topic>
+          <topic label="PpLoadDefaultPrinter" href="pp/pploaddefaultprinter.html">
+            <topic label="Description:" href="pp/pploaddefaultprinter.html#id9"/>
+            <topic label="Examples:" href="pp/pploaddefaultprinter.html#id13"/>
+          </topic>
+          <topic label="PpLoadPrinter" href="pp/pploadprinter.html">
+            <topic label="Description:" href="pp/pploadprinter.html#id9"/>
+            <topic label="Examples:" href="pp/pploadprinter.html#id13"/>
+          </topic>
+          <topic label="PpLoadPrinterList" href="pp/pploadprinterlist.html">
+            <topic label="Description:" href="pp/pploadprinterlist.html#id7"/>
+          </topic>
+          <topic label="PpPrintContext_t" href="pp/ppprintcontext_t.html">
+            <topic label="Description:" href="pp/ppprintcontext_t.html#id5">
+              <topic label="Pp_PC_COLLATING_MODE" href="pp/ppprintcontext_t.html#Pp_PC_COLLATING_MODE"/>
+              <topic label="Pp_PC_COLOR_MODE" href="pp/ppprintcontext_t.html#Pp_PC_COLOR_MODE"/>
+              <topic label="Pp_PC_CONTROL (read-only)" href="pp/ppprintcontext_t.html#Pp_PC_CONTROL"/>
+              <topic label="Pp_PC_COPIES" href="pp/ppprintcontext_t.html#Pp_PC_COPIES"/>
+              <topic label="Pp_PC_DATE" href="pp/ppprintcontext_t.html#Pp_PC_DATE"/>
+              <topic label="Pp_PC_DEVICE" href="pp/ppprintcontext_t.html#Pp_PC_DEVICE"/>
+              <topic label="Pp_PC_DITHERING" href="pp/ppprintcontext_t.html#Pp_PC_DITHERING"/>
+              <topic label="Pp_PC_DO_PREVIEW" href="pp/ppprintcontext_t.html#Pp_PC_DO_PREVIEW"/>
+              <topic label="Pp_PC_DRIVER" href="pp/ppprintcontext_t.html#Pp_PC_DRIVER"/>
+              <topic label="Pp_PC_DUPLEX" href="pp/ppprintcontext_t.html#Pp_PC_DUPLEX"/>
+              <topic label="Pp_PC_FILENAME" href="pp/ppprintcontext_t.html#Pp_PC_FILENAME"/>
+              <topic label="Pp_PC_INKTYPE" href="pp/ppprintcontext_t.html#Pp_PC_INKTYPE"/>
+              <topic label="Pp_PC_INTENSITY" href="pp/ppprintcontext_t.html#Pp_PC_INTENSITY"/>
+              <topic label="Pp_PC_JOB_NAME" href="pp/ppprintcontext_t.html#Pp_PC_JOB_NAME"/>
+              <topic label="Pp_PC_MARGINS" href="pp/ppprintcontext_t.html#Pp_PC_MARGINS"/>
+              <topic label="Pp_PC_MAX_DEST_SIZE" href="pp/ppprintcontext_t.html#Pp_PC_MAX_DEST_SIZE"/>
+              <topic label="Pp_PC_NAME" href="pp/ppprintcontext_t.html#Pp_PC_NAME"/>
+              <topic label="Pp_PC_NONPRINT_MARGINS" href="pp/ppprintcontext_t.html#Pp_PC_NONPRINT_MARGINS"/>
+              <topic label="Pp_PC_ORIENTATION" href="pp/ppprintcontext_t.html#Pp_PC_ORIENTATION"/>
+              <topic label="Pp_PC_PAGE_NUM" href="pp/ppprintcontext_t.html#Pp_PC_PAGE_NUM"/>
+              <topic label="Pp_PC_PAGE_RANGE" href="pp/ppprintcontext_t.html#Pp_PC_PAGE_RANGE"/>
+              <topic label="Pp_PC_PAPER_SIZE" href="pp/ppprintcontext_t.html#Pp_PC_PAPER_SIZE"/>
+              <topic label="Pp_PC_PAPER_SOURCE" href="pp/ppprintcontext_t.html#Pp_PC_PAPER_SOURCE"/>
+              <topic label="Pp_PC_PAPER_TYPE" href="pp/ppprintcontext_t.html#Pp_PC_PAPER_TYPE"/>
+              <topic label="Pp_PC_PREVIEW_APP" href="pp/ppprintcontext_t.html#Pp_PC_PREVIEW_APP"/>
+              <topic label="Pp_PC_PRINTER_RESOLUTION" href="pp/ppprintcontext_t.html#Pp_PC_PRINTER_RESOLUTION"/>
+              <topic label="Pp_PC_PROP_APP" href="pp/ppprintcontext_t.html#Pp_PC_PROP_APP"/>
+              <topic label="Pp_PC_REVERSED" href="pp/ppprintcontext_t.html#Pp_PC_REVERSED"/>
+              <topic label="Pp_PC_SCALE" href="pp/ppprintcontext_t.html#Pp_PC_SCALE"/>
+              <topic label="Pp_PC_SOURCE_COLORS" href="pp/ppprintcontext_t.html#Pp_PC_SOURCE_COLORS"/>
+              <topic label="Pp_PC_SOURCE_OFFSET" href="pp/ppprintcontext_t.html#Pp_PC_SOURCE_OFFSET"/>
+              <topic label="Pp_PC_SOURCE_RESOLUTION" href="pp/ppprintcontext_t.html#Pp_PC_SOURCE_RESOLUTION"/>
+              <topic label="Pp_PC_SOURCE_SIZE" href="pp/ppprintcontext_t.html#Pp_PC_SOURCE_SIZE"/>
+              <topic label="Pp_PC_USER_ID (read-only)" href="pp/ppprintcontext_t.html#Pp_PC_USER_ID"/>
+            </topic>
+          </topic>
+          <topic label="PpPrintNewPage" href="pp/ppprintnewpage.html">
+            <topic label="Description:" href="pp/ppprintnewpage.html#id9"/>
+          </topic>
+          <topic label="PpPrintWidget" href="pp/ppprintwidget.html">
+            <topic label="Description:" href="pp/ppprintwidget.html#id9"/>
+            <topic label="Examples:" href="pp/ppprintwidget.html#id11"/>
+          </topic>
+          <topic label="PpReleasePC" href="pp/ppreleasepc.html">
+            <topic label="Description:" href="pp/ppreleasepc.html#id9"/>
+            <topic label="Examples:" href="pp/ppreleasepc.html#id11"/>
+          </topic>
+          <topic label="PpSetCanvas" href="pp/ppsetcanvas.html">
+            <topic label="Description:" href="pp/ppsetcanvas.html#id9"/>
+          </topic>
+          <topic label="PpSetPC" href="pp/ppsetpc.html">
+            <topic label="Description:" href="pp/ppsetpc.html#id9"/>
+            <topic label="Examples:" href="pp/ppsetpc.html#id15"/>
+          </topic>
+          <topic label="PpStartJob" href="pp/ppstartjob.html">
+            <topic label="Description:" href="pp/ppstartjob.html#id9"/>
+            <topic label="Examples:" href="pp/ppstartjob.html#id15"/>
+          </topic>
+          <topic label="PpSuspendJob" href="pp/ppsuspendjob.html">
+            <topic label="Description:" href="pp/ppsuspendjob.html#id9"/>
+          </topic>
+      </topic>
+      <topic label="Pt---Widget Toolkit" href="pt-base.html">
+          <topic label="PtAddCallback" href="pt/ptaddcallback.html">
+            <topic label="Description:" href="pt/ptaddcallback.html#id9"/>
+            <topic label="Examples:" href="pt/ptaddcallback.html#id11"/>
+          </topic>
+          <topic label="PtAddCallbacks" href="pt/ptaddcallbacks.html">
+            <topic label="Description:" href="pt/ptaddcallbacks.html#id7"/>
+            <topic label="Examples:" href="pt/ptaddcallbacks.html#id9"/>
+          </topic>
+          <topic label="PtAddClassStyle" href="pt/ptaddclassstyle.html">
+            <topic label="Description:" href="pt/ptaddclassstyle.html#id7"/>
+            <topic label="Examples:" href="pt/ptaddclassstyle.html#id11"/>
+          </topic>
+          <topic label="PtAddData" href="pt/ptadddata.html">
+            <topic label="Description:" href="pt/ptadddata.html#id9"/>
+          </topic>
+          <topic label="PtAddEventHandler" href="pt/ptaddeventhandler.html">
+            <topic label="Description:" href="pt/ptaddeventhandler.html#id7"/>
+            <topic label="Examples:" href="pt/ptaddeventhandler.html#id9"/>
+          </topic>
+          <topic label="PtAddEventHandlers" href="pt/ptaddeventhandlers.html">
+            <topic label="Description:" href="pt/ptaddeventhandlers.html#id7"/>
+            <topic label="Examples:" href="pt/ptaddeventhandlers.html#id9"/>
+          </topic>
+          <topic label="PtAddFilterCallback" href="pt/ptaddfiltercallback.html">
+            <topic label="Description:" href="pt/ptaddfiltercallback.html#id7"/>
+            <topic label="Examples:" href="pt/ptaddfiltercallback.html#id9"/>
+          </topic>
+          <topic label="PtAddFilterCallbacks" href="pt/ptaddfiltercallbacks.html">
+            <topic label="Description:" href="pt/ptaddfiltercallbacks.html#id7"/>
+            <topic label="Examples:" href="pt/ptaddfiltercallbacks.html#id9"/>
+          </topic>
+          <topic label="PtAddHotkeyHandler" href="pt/ptaddhotkeyhandler.html">
+            <topic label="Description:" href="pt/ptaddhotkeyhandler.html#id7"/>
+            <topic label="Examples:" href="pt/ptaddhotkeyhandler.html#id9"/>
+          </topic>
+          <topic label="PtAddResponseType" href="pt/ptaddresponsetype.html">
+            <topic label="Description:" href="pt/ptaddresponsetype.html#id7"/>
+          </topic>
+          <topic label="PtAlert" href="pt/ptalert.html">
+            <topic label="Description:" href="pt/ptalert.html#id9"/>
+            <topic label="Examples:" href="pt/ptalert.html#id13"/>
+          </topic>
+          <topic label="PtAllowExit" href="pt/ptallowexit.html">
+            <topic label="Description:" href="pt/ptallowexit.html#id7"/>
+          </topic>
+          <topic label="PtAppAddCallback" href="pt/ptappaddcallback.html">
+            <topic label="Description:" href="pt/ptappaddcallback.html#id9"/>
+            <topic label="Examples:" href="pt/ptappaddcallback.html#id13"/>
+          </topic>
+          <topic label="PtAppAddEventHandler" href="pt/ptappaddeventhandler.html">
+            <topic label="Description:" href="pt/ptappaddeventhandler.html#id9"/>
+          </topic>
+          <topic label="PtAppAddFd, PtAppAddFdPri" href="pt/ptappaddfd.html">
+            <topic label="Description:" href="pt/ptappaddfd.html#id9"/>
+          </topic>
+          <topic label="PtAddFilterCallback" href="pt/ptappaddfiltercallback.html">
+            <topic label="Description:" href="pt/ptappaddfiltercallback.html#id9"/>
+          </topic>
+          <topic label="PtAppAddHotkeyHandler" href="pt/ptappaddhotkeyhandler.html">
+            <topic label="Description:" href="pt/ptappaddhotkeyhandler.html#id9"/>
+          </topic>
+          <topic label="PtAppAddInput" href="pt/ptappaddinput.html">
+            <topic label="Description:" href="pt/ptappaddinput.html#id9">
+              <topic label="name_attach and PtAppAddInput" href="pt/ptappaddinput.html#NameAttach"/>
+            </topic>
+            <topic label="Examples:" href="pt/ptappaddinput.html#id14"/>
+          </topic>
+          <topic label="PtAppAddInputRemote" href="pt/ptappaddinputremote.html">
+            <topic label="Description:" href="pt/ptappaddinputremote.html#id9">
+              <topic label="name_attach and PtAppAddInputRemote" href="pt/ptappaddinputremote.html#NameAttach"/>
+            </topic>
+          </topic>
+          <topic label="PtAppAddSignalProc" href="pt/ptappaddsignalproc.html">
+            <topic label="Description:" href="pt/ptappaddsignalproc.html#id7"/>
+          </topic>
+          <topic label="PtAppAddWorkProc" href="pt/ptappaddworkproc.html">
+            <topic label="Description:" href="pt/ptappaddworkproc.html#id7"/>
+            <topic label="Examples:" href="pt/ptappaddworkproc.html#id11"/>
+          </topic>
+          <topic label="PtAppCreatePulse" href="pt/ptappcreatepulse.html">
+            <topic label="Description:" href="pt/ptappcreatepulse.html#id9"/>
+          </topic>
+          <topic label="PtAppDeletePulse" href="pt/ptappdeletepulse.html">
+            <topic label="Description:" href="pt/ptappdeletepulse.html#id7"/>
+          </topic>
+          <topic label="PtAppGetResource" href="pt/ptappgetresource.html">
+            <topic label="Description:" href="pt/ptappgetresource.html#id9"/>
+          </topic>
+          <topic label="PtAppGetResources" href="pt/ptappgetresources.html">
+            <topic label="Description:" href="pt/ptappgetresources.html#id9"/>
+          </topic>
+          <topic label="PtAppInit" href="pt/ptappinit.html">
+            <topic label="Description:" href="pt/ptappinit.html#id7"/>
+          </topic>
+          <topic label="PtAppPulseTrigger" href="pt/ptapppulsetrigger.html">
+            <topic label="Description:" href="pt/ptapppulsetrigger.html#id7"/>
+          </topic>
+          <topic label="PtAppRemoveCallback" href="pt/ptappremovecallback.html">
+            <topic label="Description:" href="pt/ptappremovecallback.html#id9"/>
+          </topic>
+          <topic label="PtAppRemoveEventHandler" href="pt/ptappremoveeventhandler.html">
+            <topic label="Description:" href="pt/ptappremoveeventhandler.html#id9"/>
+          </topic>
+          <topic label="PtAppRemoveFd" href="pt/ptappremovefd.html">
+            <topic label="Description:" href="pt/ptappremovefd.html#id7"/>
+          </topic>
+          <topic label="PtAppRemoveFilterCallback" href="pt/ptappremovefiltercallback.html">
+            <topic label="Description:" href="pt/ptappremovefiltercallback.html#id9"/>
+          </topic>
+          <topic label="PtAppRemoveHotkeyHandler" href="pt/ptappremovehotkeyhandler.html">
+            <topic label="Description:" href="pt/ptappremovehotkeyhandler.html#id9"/>
+          </topic>
+          <topic label="PtAppRemoveInput" href="pt/ptappremoveinput.html">
+            <topic label="Description:" href="pt/ptappremoveinput.html#id7"/>
+          </topic>
+          <topic label="PtAppRemoveSignal" href="pt/ptappremovesignal.html">
+            <topic label="Description:" href="pt/ptappremovesignal.html#id7"/>
+          </topic>
+          <topic label="PtAppRemoveWorkProc" href="pt/ptappremoveworkproc.html">
+            <topic label="Description:" href="pt/ptappremoveworkproc.html#id7"/>
+            <topic label="Examples:" href="pt/ptappremoveworkproc.html#id9"/>
+          </topic>
+          <topic label="PtAppSetFdMode" href="pt/ptappsetfdmode.html">
+            <topic label="Description:" href="pt/ptappsetfdmode.html#id7"/>
+          </topic>
+          <topic label="PtAppSetResource" href="pt/ptappsetresource.html">
+            <topic label="Description:" href="pt/ptappsetresource.html#id9"/>
+            <topic label="Examples:" href="pt/ptappsetresource.html#id13"/>
+          </topic>
+          <topic label="PtAppSetResources" href="pt/ptappsetresources.html">
+            <topic label="Description:" href="pt/ptappsetresources.html#id9">
+              <topic label="Pt_CB_APP_EXIT" href="pt/ptappsetresources.html#Pt_CB_APP_EXIT"/>
+              <topic label="Pt_CB_APP_WCLASS_CREATED" href="pt/ptappsetresources.html#Pt_CB_APP_WCLASS_CREATED"/>
+              <topic label="Pt_CB_FILTER" href="pt/ptappsetresources.html#Pt_CB_FILTER"/>
+              <topic label="Pt_CB_RAW" href="pt/ptappsetresources.html#Pt_CB_RAW"/>
+              <topic label="Pt_CB_HOTKEY" href="pt/ptappsetresources.html#Pt_CB_HOTKEY"/>
+              <topic label="PtAppCallback_t" href="pt/ptappsetresources.html#PtAppCallback_t"/>
+              <topic label="PtAppRawCallback_t" href="pt/ptappsetresources.html#PtAppRawCallback_t"/>
+              <topic label="PtAppHotkeyCallback_t" href="pt/ptappsetresources.html#PtAppHotkeyCallback_t"/>
+            </topic>
+            <topic label="Examples:" href="pt/ptappsetresources.html#id21"/>
+          </topic>
+          <topic label="PtArg_t" href="pt/ptarg_t.html">
+            <topic label="Description:" href="pt/ptarg_t.html#id5"/>
+          </topic>
+          <topic label="Pt_ARG" href="pt/pt_arg.html">
+            <topic label="Description:" href="pt/pt_arg.html#id7"/>
+          </topic>
+          <topic label="PtBalloonCallback_t" href="pt/ptballooncallback_t.html">
+            <topic label="Description:" href="pt/ptballooncallback_t.html#id3"/>
+          </topic>
+          <topic label="PtBkgdHandlerProcess" href="pt/ptbkgdhandlerprocess.html">
+            <topic label="Description:" href="pt/ptbkgdhandlerprocess.html#id7"/>
+            <topic label="Examples:" href="pt/ptbkgdhandlerprocess.html#id9"/>
+          </topic>
+          <topic label="PtBlit" href="pt/ptblit.html">
+            <topic label="Description:" href="pt/ptblit.html#id7"/>
+          </topic>
+          <topic label="PtBlockAllWindows" href="pt/ptblockallwindows.html">
+            <topic label="Description:" href="pt/ptblockallwindows.html#id7"/>
+          </topic>
+          <topic label="PtBlockWindow" href="pt/ptblockwindow.html">
+            <topic label="Description:" href="pt/ptblockwindow.html#id7"/>
+          </topic>
+          <topic label="PtCalcAbsPosition" href="pt/ptcalcabsposition.html">
+            <topic label="Description:" href="pt/ptcalcabsposition.html#id7"/>
+            <topic label="Examples:" href="pt/ptcalcabsposition.html#id11"/>
+          </topic>
+          <topic label="PtCalcCanvas" href="pt/ptcalccanvas.html">
+            <topic label="Description:" href="pt/ptcalccanvas.html#id7"/>
+          </topic>
+          <topic label="PtCalcSurface" href="pt/ptcalcsurface.html">
+            <topic label="Description:" href="pt/ptcalcsurface.html#id7"/>
+          </topic>
+          <topic label="PtCalcSurfaceByAction" href="pt/ptcalcsurfacebyaction.html">
+            <topic label="Description:" href="pt/ptcalcsurfacebyaction.html#id7"/>
+          </topic>
+          <topic label="PtCalcSurfaceById" href="pt/ptcalcsurfacebyid.html">
+            <topic label="Description:" href="pt/ptcalcsurfacebyid.html#id7"/>
+          </topic>
+          <topic label="PtCallback_t" href="pt/ptcallback_t.html">
+            <topic label="Description:" href="pt/ptcallback_t.html#id3"/>
+          </topic>
+          <topic label="PtCallbackInfo_t" href="pt/ptcallbackinfo_t.html">
+            <topic label="Description:" href="pt/ptcallbackinfo_t.html#id3"/>
+          </topic>
+          <topic label="PtCancelDnd" href="pt/ptcanceldnd.html">
+            <topic label="Description:" href="pt/ptcanceldnd.html#id9"/>
+          </topic>
+          <topic label="PtChannelCreate" href="pt/ptchannelcreate.html">
+            <topic label="Description:" href="pt/ptchannelcreate.html#id7"/>
+          </topic>
+          <topic label="PtCheckSurfaces" href="pt/ptchecksurfaces.html">
+            <topic label="Description:" href="pt/ptchecksurfaces.html#id7"/>
+          </topic>
+          <topic label="PtChildType" href="pt/ptchildtype.html">
+            <topic label="Description:" href="pt/ptchildtype.html#id7"/>
+          </topic>
+          <topic label="PtClearWidget" href="pt/ptclearwidget.html">
+            <topic label="Description:" href="pt/ptclearwidget.html#id9"/>
+            <topic label="Examples:" href="pt/ptclearwidget.html#id13"/>
+          </topic>
+          <topic label="PtClipAdd" href="pt/ptclipadd.html">
+            <topic label="Description:" href="pt/ptclipadd.html#id5"/>
+          </topic>
+          <topic label="PtClippedBlit" href="pt/ptclippedblit.html">
+            <topic label="Description:" href="pt/ptclippedblit.html#id7"/>
+          </topic>
+          <topic label="PtClipRemove" href="pt/ptclipremove.html">
+            <topic label="Description:" href="pt/ptclipremove.html#id5"/>
+          </topic>
+          <topic label="PtComboBox*" href="pt/ptcombobox_funcs.html">
+            <topic label="Description:" href="pt/ptcombobox_funcs.html#id3"/>
+          </topic>
+          <topic label="PtCondTimedWait" href="pt/ptcondtimedwait.html">
+            <topic label="Description:" href="pt/ptcondtimedwait.html#id9"/>
+          </topic>
+          <topic label="PtCondWait" href="pt/ptcondwait.html">
+            <topic label="Description:" href="pt/ptcondwait.html#id9"/>
+          </topic>
+          <topic label="PtConnectionAddEventHandlers" href="pt/ptconnectionaddeventhandlers.html">
+            <topic label="Description:" href="pt/ptconnectionaddeventhandlers.html#id7"/>
+          </topic>
+          <topic label="PtConnectionAddMsgHandlers" href="pt/ptconnectionaddmsghandlers.html">
+            <topic label="Description:" href="pt/ptconnectionaddmsghandlers.html#id7"/>
+          </topic>
+          <topic label="PtConnectionClientDestroy" href="pt/ptconnectionclientdestroy.html">
+            <topic label="Description:" href="pt/ptconnectionclientdestroy.html#id7"/>
+          </topic>
+          <topic label="PtConnectionClientGetUserData" href="pt/ptconnectionclientgetuserdata.html">
+            <topic label="Description:" href="pt/ptconnectionclientgetuserdata.html#id7"/>
+          </topic>
+          <topic label="PtConnectionClientSetError" href="pt/ptconnectionclientseterror.html">
+            <topic label="Description:" href="pt/ptconnectionclientseterror.html#id7"/>
+          </topic>
+          <topic label="PtConnectionClientSetUserData" href="pt/ptconnectionclientsetuserdata.html">
+            <topic label="Description:" href="pt/ptconnectionclientsetuserdata.html#id7"/>
+          </topic>
+          <topic label="PtConnectionFindId" href="pt/ptconnectionfindid.html">
+            <topic label="Description:" href="pt/ptconnectionfindid.html#id7"/>
+          </topic>
+          <topic label="PtConnectionFindName" href="pt/ptconnectionfindname.html">
+            <topic label="Description:" href="pt/ptconnectionfindname.html#id7"/>
+          </topic>
+          <topic label="PtConnectionFlush" href="pt/ptconnectionflush.html">
+            <topic label="Description:" href="pt/ptconnectionflush.html#id7"/>
+          </topic>
+          <topic label="PtConnectionNotify" href="pt/ptconnectionnotify.html">
+            <topic label="Description:" href="pt/ptconnectionnotify.html#id7"/>
+          </topic>
+          <topic label="PtConnectionReply, PtConnectionReplymx" href="pt/ptconnectionreply.html">
+            <topic label="Description:" href="pt/ptconnectionreply.html#id7"/>
+          </topic>
+          <topic label="PtConnectionResizeEventBuffer" href="pt/ptconnectionresizeeventbuffer.html">
+            <topic label="Description:" href="pt/ptconnectionresizeeventbuffer.html#id7"/>
+          </topic>
+          <topic label="PtConnectionSend, PtConnectionSendmx" href="pt/ptconnectionsend.html">
+            <topic label="Description:" href="pt/ptconnectionsend.html#id7"/>
+          </topic>
+          <topic label="PtConnectionServerDestroy" href="pt/ptconnectionserverdestroy.html">
+            <topic label="Description:" href="pt/ptconnectionserverdestroy.html#id7"/>
+          </topic>
+          <topic label="PtConnectionServerGetUserData" href="pt/ptconnectionservergetuserdata.html">
+            <topic label="Description:" href="pt/ptconnectionservergetuserdata.html#id7"/>
+          </topic>
+          <topic label="PtConnectionServerSetError" href="pt/ptconnectionserverseterror.html">
+            <topic label="Description:" href="pt/ptconnectionserverseterror.html#id7"/>
+          </topic>
+          <topic label="PtConnectionServerSetUserData" href="pt/ptconnectionserversetuserdata.html">
+            <topic label="Description:" href="pt/ptconnectionserversetuserdata.html#id7"/>
+          </topic>
+          <topic label="PtConnectionTmpName" href="pt/ptconnectiontmpname.html">
+            <topic label="Description:" href="pt/ptconnectiontmpname.html#id7"/>
+          </topic>
+          <topic label="PtConnectionWaitForName" href="pt/ptconnectionwaitforname.html">
+            <topic label="Description:" href="pt/ptconnectionwaitforname.html#id7"/>
+          </topic>
+          <topic label="PtConnectorCreate" href="pt/ptconnectorcreate.html">
+            <topic label="Description:" href="pt/ptconnectorcreate.html#id9"/>
+          </topic>
+          <topic label="PtConnectorDestroy" href="pt/ptconnectordestroy.html">
+            <topic label="Description:" href="pt/ptconnectordestroy.html#id7"/>
+          </topic>
+          <topic label="PtConnectorGetId" href="pt/ptconnectorgetid.html">
+            <topic label="Description:" href="pt/ptconnectorgetid.html#id7"/>
+          </topic>
+          <topic label="PtConsoleSwitch" href="pt/ptconsoleswitch.html">
+            <topic label="Description:" href="pt/ptconsoleswitch.html#id7"/>
+          </topic>
+          <topic label="PtContainerBox" href="pt/ptcontainerbox.html">
+            <topic label="Description:" href="pt/ptcontainerbox.html#id7"/>
+            <topic label="Examples:" href="pt/ptcontainerbox.html#id11"/>
+          </topic>
+          <topic label="PtContainerFindFocus" href="pt/ptcontainerfindfocus.html">
+            <topic label="Description:" href="pt/ptcontainerfindfocus.html#id7"/>
+          </topic>
+          <topic label="PtContainerFocusNext" href="pt/ptcontainerfocusnext.html">
+            <topic label="Description:" href="pt/ptcontainerfocusnext.html#id7"/>
+            <topic label="Examples:" href="pt/ptcontainerfocusnext.html#id11"/>
+          </topic>
+          <topic label="PtContainerFocusPrev" href="pt/ptcontainerfocusprev.html">
+            <topic label="Description:" href="pt/ptcontainerfocusprev.html#id7"/>
+            <topic label="Examples:" href="pt/ptcontainerfocusprev.html#id11"/>
+          </topic>
+          <topic label="PtContainerGiveFocus" href="pt/ptcontainergivefocus.html">
+            <topic label="Description:" href="pt/ptcontainergivefocus.html#id7"/>
+            <topic label="Examples:" href="pt/ptcontainergivefocus.html#id11"/>
+          </topic>
+          <topic label="PtContainerHit" href="pt/ptcontainerhit.html">
+            <topic label="Description:" href="pt/ptcontainerhit.html#id7"/>
+            <topic label="Examples:" href="pt/ptcontainerhit.html#id9"/>
+          </topic>
+          <topic label="PtContainerHold" href="pt/ptcontainerhold.html">
+            <topic label="Description:" href="pt/ptcontainerhold.html#id7"/>
+            <topic label="Examples:" href="pt/ptcontainerhold.html#id11"/>
+          </topic>
+          <topic label="PtContainerNullFocus" href="pt/ptcontainernullfocus.html">
+            <topic label="Description:" href="pt/ptcontainernullfocus.html#id7"/>
+            <topic label="Examples:" href="pt/ptcontainernullfocus.html#id11"/>
+          </topic>
+          <topic label="PtContainerRelease" href="pt/ptcontainerrelease.html">
+            <topic label="Description:" href="pt/ptcontainerrelease.html#id7"/>
+            <topic label="Examples:" href="pt/ptcontainerrelease.html#id11"/>
+          </topic>
+          <topic label="PtCRC" href="pt/ptcrc.html">
+            <topic label="Description:" href="pt/ptcrc.html#id7"/>
+          </topic>
+          <topic label="PtCRCValue" href="pt/ptcrcvalue.html">
+            <topic label="Description:" href="pt/ptcrcvalue.html#id7"/>
+            <topic label="Examples:" href="pt/ptcrcvalue.html#id11"/>
+          </topic>
+          <topic label="PtCreateActionSurface" href="pt/ptcreateactionsurface.html">
+            <topic label="Description:" href="pt/ptcreateactionsurface.html#id7"/>
+          </topic>
+          <topic label="PtCreateClassStyle" href="pt/ptcreateclassstyle.html">
+            <topic label="Description:" href="pt/ptcreateclassstyle.html#id7"/>
+            <topic label="Examples:" href="pt/ptcreateclassstyle.html#id11"/>
+          </topic>
+          <topic label="PtCreateSurface" href="pt/ptcreatesurface.html">
+            <topic label="Description:" href="pt/ptcreatesurface.html#id7"/>
+          </topic>
+          <topic label="PtCreateTransportCtrl" href="pt/ptcreatetransportctrl.html">
+            <topic label="Description:" href="pt/ptcreatetransportctrl.html#id7"/>
+          </topic>
+          <topic label="PtCreateWidget" href="pt/ptcreatewidget.html">
+            <topic label="Description:" href="pt/ptcreatewidget.html#id7"/>
+            <topic label="Examples:" href="pt/ptcreatewidget.html#id11"/>
+          </topic>
+          <topic label="PtDamageExtent" href="pt/ptdamageextent.html">
+            <topic label="Description:" href="pt/ptdamageextent.html#id7"/>
+            <topic label="Examples:" href="pt/ptdamageextent.html#id11"/>
+          </topic>
+          <topic label="PtDamageSurface, PtDamageSurfaceById" href="pt/ptdamagesurface.html">
+            <topic label="Description:" href="pt/ptdamagesurface.html#id7"/>
+          </topic>
+          <topic label="PtDamageSurfaceByAction" href="pt/ptdamagesurfacebyaction.html">
+            <topic label="Description:" href="pt/ptdamagesurfacebyaction.html#id7"/>
+          </topic>
+          <topic label="PtDamageWidget" href="pt/ptdamagewidget.html">
+            <topic label="Description:" href="pt/ptdamagewidget.html#id7"/>
+            <topic label="Examples:" href="pt/ptdamagewidget.html#id11"/>
+          </topic>
+          <topic label="PtDestroyAllSurfaces" href="pt/ptdestroyallsurfaces.html">
+            <topic label="Description:" href="pt/ptdestroyallsurfaces.html#id7"/>
+          </topic>
+          <topic label="PtDestroySurface" href="pt/ptdestroysurface.html">
+            <topic label="Description:" href="pt/ptdestroysurface.html#id7"/>
+          </topic>
+          <topic label="PtDestroySurfaceById" href="pt/ptdestroysurfacebyid.html">
+            <topic label="Description:" href="pt/ptdestroysurfacebyid.html#id7"/>
+          </topic>
+          <topic label="PtDestroyWidget" href="pt/ptdestroywidget.html">
+            <topic label="Description:" href="pt/ptdestroywidget.html#id7"/>
+            <topic label="Examples:" href="pt/ptdestroywidget.html#id11"/>
+          </topic>
+          <topic label="PtDisableSurface, PtDisableSurfaceById" href="pt/ptdisablesurface.html">
+            <topic label="Description:" href="pt/ptdisablesurface.html#id7"/>
+          </topic>
+          <topic label="PtDisableSurfaceByAction" href="pt/ptdisablesurfacebyaction.html">
+            <topic label="Description:" href="pt/ptdisablesurfacebyaction.html#id7"/>
+          </topic>
+          <topic label="PtDndFetch_t" href="pt/ptdndfetch_t.html">
+            <topic label="Description:" href="pt/ptdndfetch_t.html#id5"/>
+          </topic>
+          <topic label="PtDndSelect" href="pt/ptdndselect.html">
+            <topic label="Description:" href="pt/ptdndselect.html#id9"/>
+          </topic>
+          <topic label="PtDupClassStyle" href="pt/ptdupclassstyle.html">
+            <topic label="Description:" href="pt/ptdupclassstyle.html#id7"/>
+            <topic label="Examples:" href="pt/ptdupclassstyle.html#id11"/>
+          </topic>
+          <topic label="PtEnableSurface, PtEnableSurfaceById" href="pt/ptenablesurface.html">
+            <topic label="Description:" href="pt/ptenablesurface.html#id7"/>
+          </topic>
+          <topic label="PtEnableSurfaceByAction" href="pt/ptenablesurfacebyaction.html">
+            <topic label="Description:" href="pt/ptenablesurfacebyaction.html#id7"/>
+          </topic>
+          <topic label="PtEndFlux" href="pt/ptendflux.html">
+            <topic label="Description:" href="pt/ptendflux.html#id7"/>
+          </topic>
+          <topic label="PtEnter" href="pt/ptenter.html">
+            <topic label="Description:" href="pt/ptenter.html#id9"/>
+            <topic label="Examples:" href="pt/ptenter.html#id15"/>
+          </topic>
+          <topic label="PtEventHandler" href="pt/pteventhandler.html">
+            <topic label="Description:" href="pt/pteventhandler.html#id7"/>
+            <topic label="Examples:" href="pt/pteventhandler.html#id11"/>
+          </topic>
+          <topic label="PtExit" href="pt/ptexit.html">
+            <topic label="Description:" href="pt/ptexit.html#id7"/>
+          </topic>
+          <topic label="PtExtentWidget" href="pt/ptextentwidget.html">
+            <topic label="Description:" href="pt/ptextentwidget.html#id7"/>
+            <topic label="Examples:" href="pt/ptextentwidget.html#id11"/>
+          </topic>
+          <topic label="PtExtentWidgetFamily" href="pt/ptextentwidgetfamily.html">
+            <topic label="Description:" href="pt/ptextentwidgetfamily.html#id7"/>
+          </topic>
+          <topic label="PtFdProcF_t, PtFdProc_t" href="pt/ptfdproc_t.html">
+            <topic label="Description:" href="pt/ptfdproc_t.html#id5"/>
+          </topic>
+          <topic label="PtFepCmd" href="pt/ptfepcmd.html">
+            <topic label="Description:" href="pt/ptfepcmd.html#id9"/>
+          </topic>
+          <topic label="PtFileSelection" href="pt/ptfileselection.html">
+            <topic label="Description:" href="pt/ptfileselection.html#id9">
+              <topic label="PtFileSelectionInfo_t structure" href="pt/ptfileselection.html#PtFileSelectionInfo_t"/>
+              <topic label="PtFileSelectorInfo_t structure" href="pt/ptfileselection.html#PtFileSelectorInfo_t"/>
+            </topic>
+            <topic label="Examples:" href="pt/ptfileselection.html#id15"/>
+          </topic>
+          <topic label="PtFindChildClass" href="pt/ptfindchildclass.html">
+            <topic label="Description:" href="pt/ptfindchildclass.html#id7"/>
+            <topic label="Examples:" href="pt/ptfindchildclass.html#id11"/>
+          </topic>
+          <topic label="PtFindChildClassMember" href="pt/ptfindchildclassmember.html">
+            <topic label="Description:" href="pt/ptfindchildclassmember.html#id7"/>
+            <topic label="Examples:" href="pt/ptfindchildclassmember.html#id11"/>
+          </topic>
+          <topic label="PtFindClassStyle" href="pt/ptfindclassstyle.html">
+            <topic label="Description:" href="pt/ptfindclassstyle.html#id7"/>
+            <topic label="Examples:" href="pt/ptfindclassstyle.html#id11"/>
+          </topic>
+          <topic label="PtFindContainer" href="pt/ptfindcontainer.html">
+            <topic label="Description:" href="pt/ptfindcontainer.html#id7"/>
+          </topic>
+          <topic label="PtFindData" href="pt/ptfinddata.html">
+            <topic label="Description:" href="pt/ptfinddata.html#id7"/>
+          </topic>
+          <topic label="PtFindDisjoint" href="pt/ptfinddisjoint.html">
+            <topic label="Description:" href="pt/ptfinddisjoint.html#id7"/>
+          </topic>
+          <topic label="PtFindFocusChild" href="pt/ptfindfocuschild.html">
+            <topic label="Description:" href="pt/ptfindfocuschild.html#id7"/>
+          </topic>
+          <topic label="PtFindFocusNextFrom" href="pt/ptfindfocusnextfrom.html">
+            <topic label="Description:" href="pt/ptfindfocusnextfrom.html#id7"/>
+          </topic>
+          <topic label="PtFindFocusPrevFrom" href="pt/ptfindfocusprevfrom.html">
+            <topic label="Description:" href="pt/ptfindfocusprevfrom.html#id7"/>
+          </topic>
+          <topic label="PtFindGuardian" href="pt/ptfindguardian.html">
+            <topic label="Description:" href="pt/ptfindguardian.html#id7"/>
+          </topic>
+          <topic label="PtFindNextData" href="pt/ptfindnextdata.html">
+            <topic label="Description:" href="pt/ptfindnextdata.html#id7"/>
+          </topic>
+          <topic label="PtFindSurface" href="pt/ptfindsurface.html">
+            <topic label="Description:" href="pt/ptfindsurface.html#id7"/>
+          </topic>
+          <topic label="PtFindSurfaceByAction" href="pt/ptfindsurfacebyaction.html">
+            <topic label="Description:" href="pt/ptfindsurfacebyaction.html#id7"/>
+          </topic>
+          <topic label="PtFlush" href="pt/ptflush.html">
+            <topic label="Description:" href="pt/ptflush.html#id7"/>
+          </topic>
+          <topic label="PtFontSelection" href="pt/ptfontselection.html">
+            <topic label="Description:" href="pt/ptfontselection.html#id7"/>
+            <topic label="Examples:" href="pt/ptfontselection.html#id11"/>
+          </topic>
+          <topic label="PtForwardWindowEvent" href="pt/ptforwardwindowevent.html">
+            <topic label="Description:" href="pt/ptforwardwindowevent.html#id7"/>
+            <topic label="Examples:" href="pt/ptforwardwindowevent.html#id11"/>
+          </topic>
+          <topic label="PtForwardWindowTaskEvent" href="pt/ptforwardwindowtaskevent.html">
+            <topic label="Description:" href="pt/ptforwardwindowtaskevent.html#id7"/>
+            <topic label="Examples:" href="pt/ptforwardwindowtaskevent.html#id11"/>
+          </topic>
+          <topic label="PtFS*" href="pt/ptfs_funcs.html">
+            <topic label="Description:" href="pt/ptfs_funcs.html#id3"/>
+          </topic>
+          <topic label="PtGenList*" href="pt/ptgenlist_funcs.html">
+            <topic label="Description:" href="pt/ptgenlist_funcs.html#id3"/>
+          </topic>
+          <topic label="PtGenTree*" href="pt/ptgentree_funcs.html">
+            <topic label="Description:" href="pt/ptgentree_funcs.html#id3"/>
+          </topic>
+          <topic label="PtGetAbsPosition" href="pt/ptgetabsposition.html">
+            <topic label="Description:" href="pt/ptgetabsposition.html#id7"/>
+          </topic>
+          <topic label="PtGetControlFlags" href="pt/ptgetcontrolflags.html">
+            <topic label="Description:" href="pt/ptgetcontrolflags.html#id7"/>
+          </topic>
+          <topic label="PtGetDndFetchIndex" href="pt/ptgetdndfetchindex.html">
+            <topic label="Description:" href="pt/ptgetdndfetchindex.html#id9"/>
+            <topic label="Examples:" href="pt/ptgetdndfetchindex.html#id13"/>
+          </topic>
+          <topic label="PtGetParent" href="pt/ptgetparent.html">
+            <topic label="Description:" href="pt/ptgetparent.html#id7"/>
+            <topic label="Examples:" href="pt/ptgetparent.html#id11"/>
+          </topic>
+          <topic label="PtGetParentWidget" href="pt/ptgetparentwidget.html">
+            <topic label="Description:" href="pt/ptgetparentwidget.html#id7"/>
+          </topic>
+          <topic label="PtGetRcvidPid" href="pt/ptgetrcvidpid.html">
+            <topic label="Description:" href="pt/ptgetrcvidpid.html#id7"/>
+            <topic label="Examples:" href="pt/ptgetrcvidpid.html#id11"/>
+          </topic>
+          <topic label="PtGetRcvidPidNd" href="pt/ptgetrcvidpidnd.html">
+            <topic label="Description:" href="pt/ptgetrcvidpidnd.html#id9"/>
+          </topic>
+          <topic label="PtGetResource" href="pt/ptgetresource.html">
+            <topic label="Description:" href="pt/ptgetresource.html#id9"/>
+            <topic label="Examples:" href="pt/ptgetresource.html#id13"/>
+          </topic>
+          <topic label="PtGetResources" href="pt/ptgetresources.html">
+            <topic label="Description:" href="pt/ptgetresources.html#id7"/>
+            <topic label="Examples:" href="pt/ptgetresources.html#id11"/>
+          </topic>
+          <topic label="PtGetStyleMember" href="pt/ptgetstylemember.html">
+            <topic label="Description:" href="pt/ptgetstylemember.html#id7"/>
+            <topic label="Examples:" href="pt/ptgetstylemember.html#id11"/>
+          </topic>
+          <topic label="PtGetWidgetStyle" href="pt/ptgetwidgetstyle.html">
+            <topic label="Description:" href="pt/ptgetwidgetstyle.html#id7"/>
+            <topic label="Examples:" href="pt/ptgetwidgetstyle.html#id11"/>
+          </topic>
+          <topic label="PtGiveFocus" href="pt/ptgivefocus.html">
+            <topic label="Description:" href="pt/ptgivefocus.html#id7"/>
+            <topic label="Examples:" href="pt/ptgivefocus.html#id11"/>
+          </topic>
+          <topic label="PtGlobalFocusNext" href="pt/ptglobalfocusnext.html">
+            <topic label="Description:" href="pt/ptglobalfocusnext.html#id7"/>
+          </topic>
+          <topic label="PtGlobalFocusNextContainer" href="pt/ptglobalfocusnextcontainer.html">
+            <topic label="Description:" href="pt/ptglobalfocusnextcontainer.html#id7"/>
+          </topic>
+          <topic label="PtGlobalFocusNextFrom" href="pt/ptglobalfocusnextfrom.html">
+            <topic label="Description:" href="pt/ptglobalfocusnextfrom.html#id7"/>
+          </topic>
+          <topic label="PtGlobalFocusPrev" href="pt/ptglobalfocusprev.html">
+            <topic label="Description:" href="pt/ptglobalfocusprev.html#id7"/>
+          </topic>
+          <topic label="PtGlobalFocusPrevContainer" href="pt/ptglobalfocusprevcontainer.html">
+            <topic label="Description:" href="pt/ptglobalfocusprevcontainer.html#id7"/>
+          </topic>
+          <topic label="PtGlobalFocusPrevFrom" href="pt/ptglobalfocusprevfrom.html">
+            <topic label="Description:" href="pt/ptglobalfocusprevfrom.html#id7"/>
+          </topic>
+          <topic label="PtHelpQuit" href="pt/pthelpquit.html">
+            <topic label="Description:" href="pt/pthelpquit.html#id7"/>
+          </topic>
+          <topic label="PtHelpSearch" href="pt/pthelpsearch.html">
+            <topic label="Description:" href="pt/pthelpsearch.html#id9"/>
+            <topic label="Examples:" href="pt/pthelpsearch.html#id13"/>
+          </topic>
+          <topic label="PtHelpTopic" href="pt/pthelptopic.html">
+            <topic label="Description:" href="pt/pthelptopic.html#id7"/>
+            <topic label="Examples:" href="pt/pthelptopic.html#id11"/>
+          </topic>
+          <topic label="PtHelpTopicRoot" href="pt/pthelptopicroot.html">
+            <topic label="Description:" href="pt/pthelptopicroot.html#id7"/>
+            <topic label="Examples:" href="pt/pthelptopicroot.html#id9"/>
+          </topic>
+          <topic label="PtHelpTopicTree" href="pt/pthelptopictree.html">
+            <topic label="Description:" href="pt/pthelptopictree.html#id7"/>
+            <topic label="Examples:" href="pt/pthelptopictree.html#id11"/>
+          </topic>
+          <topic label="PtHelpUrl" href="pt/pthelpurl.html">
+            <topic label="Description:" href="pt/pthelpurl.html#id7"/>
+            <topic label="Examples:" href="pt/pthelpurl.html#id11"/>
+          </topic>
+          <topic label="PtHelpUrlRoot" href="pt/pthelpurlroot.html">
+            <topic label="Description:" href="pt/pthelpurlroot.html#id7"/>
+            <topic label="Examples:" href="pt/pthelpurlroot.html#id9"/>
+          </topic>
+          <topic label="PtHideSurface, PtHideSurfaceById" href="pt/pthidesurface.html">
+            <topic label="Description:" href="pt/pthidesurface.html#id7"/>
+          </topic>
+          <topic label="PtHideSurfaceByAction" href="pt/pthidesurfacebyaction.html">
+            <topic label="Description:" href="pt/pthidesurfacebyaction.html#id7"/>
+          </topic>
+          <topic label="PtHit" href="pt/pthit.html">
+            <topic label="Description:" href="pt/pthit.html#id7"/>
+          </topic>
+          <topic label="PtHold" href="pt/pthold.html">
+            <topic label="Description:" href="pt/pthold.html#id7"/>
+          </topic>
+          <topic label="PtHotkeyCallback_t" href="pt/pthotkeycallback_t.html">
+            <topic label="Description:" href="pt/pthotkeycallback_t.html#id3"/>
+          </topic>
+          <topic label="PtInflateBalloon" href="pt/ptinflateballoon.html">
+            <topic label="Description:" href="pt/ptinflateballoon.html#id7"/>
+          </topic>
+          <topic label="PtInit" href="pt/ptinit.html">
+            <topic label="Description:" href="pt/ptinit.html#id7"/>
+            <topic label="Examples:" href="pt/ptinit.html#id11"/>
+          </topic>
+          <topic label="PtInitDnd" href="pt/ptinitdnd.html">
+            <topic label="Description:" href="pt/ptinitdnd.html#id9"/>
+            <topic label="Examples:" href="pt/ptinitdnd.html#id13"/>
+          </topic>
+          <topic label="PtInputCallbackProcF_t, PtInputCallbackProc_t" href="pt/ptinputcallbackproc_t.html">
+            <topic label="Description:" href="pt/ptinputcallbackproc_t.html#id5"/>
+          </topic>
+          <topic label="PtInsertSurface, PtInsertSurfaceById" href="pt/ptinsertsurface.html">
+            <topic label="Description:" href="pt/ptinsertsurface.html#id7"/>
+          </topic>
+          <topic label="PtIsFluxing" href="pt/ptisfluxing.html">
+            <topic label="Description:" href="pt/ptisfluxing.html#id7"/>
+          </topic>
+          <topic label="PtIsFocused" href="pt/ptisfocused.html">
+            <topic label="Description:" href="pt/ptisfocused.html#id9"/>
+          </topic>
+          <topic label="PtLeave" href="pt/ptleave.html">
+            <topic label="Description:" href="pt/ptleave.html#id9"/>
+            <topic label="Examples:" href="pt/ptleave.html#id15"/>
+          </topic>
+          <topic label="PtList*" href="pt/ptlist_funcs.html">
+            <topic label="Description:" href="pt/ptlist_funcs.html#id3"/>
+          </topic>
+          <topic label="PtMainLoop" href="pt/ptmainloop.html">
+            <topic label="Description:" href="pt/ptmainloop.html#id7"/>
+          </topic>
+          <topic label="PtMakeModal" href="pt/ptmakemodal.html">
+            <topic label="Description:" href="pt/ptmakemodal.html#id7"/>
+          </topic>
+          <topic label="PtMessageBox" href="pt/ptmessagebox.html">
+            <topic label="Description:" href="pt/ptmessagebox.html#id7"/>
+          </topic>
+          <topic label="PtModalBlock" href="pt/ptmodalblock.html">
+            <topic label="Description:" href="pt/ptmodalblock.html#id7"/>
+            <topic label="Examples:" href="pt/ptmodalblock.html#id11"/>
+          </topic>
+          <topic label="PtModalEnd" href="pt/ptmodalend.html">
+            <topic label="Description:" href="pt/ptmodalend.html#id7"/>
+          </topic>
+          <topic label="PtModalStart" href="pt/ptmodalstart.html">
+            <topic label="Description:" href="pt/ptmodalstart.html#id7"/>
+          </topic>
+          <topic label="PtModalUnblock" href="pt/ptmodalunblock.html">
+            <topic label="Description:" href="pt/ptmodalunblock.html#id7"/>
+            <topic label="Examples:" href="pt/ptmodalunblock.html#id11"/>
+          </topic>
+          <topic label="PtMulti*" href="pt/ptmulti_funcs.html">
+            <topic label="Description:" href="pt/ptmulti_funcs.html#id3"/>
+          </topic>
+          <topic label="PtNextTopLevelWidget" href="pt/ptnexttoplevelwidget.html">
+            <topic label="Description:" href="pt/ptnexttoplevelwidget.html#id7"/>
+          </topic>
+          <topic label="PtNotice" href="pt/ptnotice.html">
+            <topic label="Description:" href="pt/ptnotice.html#id9"/>
+            <topic label="Examples:" href="pt/ptnotice.html#id11"/>
+          </topic>
+          <topic label="PtPassword" href="pt/ptpassword.html">
+            <topic label="Description:" href="pt/ptpassword.html#id9"/>
+          </topic>
+          <topic label="PtPG*" href="pt/ptpg_funcs.html">
+            <topic label="Description:" href="pt/ptpg_funcs.html#id3"/>
+          </topic>
+          <topic label="PtPositionMenu" href="pt/ptpositionmenu.html">
+            <topic label="Description:" href="pt/ptpositionmenu.html#id7"/>
+          </topic>
+          <topic label="PtPreventExit" href="pt/ptpreventexit.html">
+            <topic label="Description:" href="pt/ptpreventexit.html#id7"/>
+          </topic>
+          <topic label="PtPrintPropSelect" href="pt/ptprintpropselect.html">
+            <topic label="Description:" href="pt/ptprintpropselect.html#id9">
+              <topic label="PtPrintPropSelectionInfo_t structure" href="pt/ptprintpropselect.html#PtPrintPropSelectionInfo_t"/>
+              <topic label="Dialog resources" href="pt/ptprintpropselect.html#DialogResources">
+                <topic label="Main dialog buttons" href="pt/ptprintpropselect.html#MainDialogButtons"/>
+                <topic label="Main dialog titles" href="pt/ptprintpropselect.html#MainDialogTitles"/>
+                <topic label="Paper pane" href="pt/ptprintpropselect.html#PaperPane"/>
+                <topic label="Graphics pane" href="pt/ptprintpropselect.html#GraphicsPane"/>
+                <topic label="Margins pane" href="pt/ptprintpropselect.html#MarginsPane"/>
+                <topic label="Defaults pane" href="pt/ptprintpropselect.html#DefaultsPane"/>
+                <topic label="Printers pane" href="pt/ptprintpropselect.html#PrintersPane"/>
+                <topic label="Print Order pane" href="pt/ptprintpropselect.html#PrintOrderPane"/>
+              </topic>
+            </topic>
+            <topic label="Examples:" href="pt/ptprintpropselect.html#id23"/>
+          </topic>
+          <topic label="PtPrintSelect" href="pt/ptprintselect.html">
+            <topic label="Description:" href="pt/ptprintselect.html#id7"/>
+          </topic>
+          <topic label="PtPrintSelection" href="pt/ptprintselection.html">
+            <topic label="Description:" href="pt/ptprintselection.html#id9"/>
+            <topic label="Examples:" href="pt/ptprintselection.html#id13"/>
+          </topic>
+          <topic label="PtProcessEvent" href="pt/ptprocessevent.html">
+            <topic label="Description:" href="pt/ptprocessevent.html#id7"/>
+          </topic>
+          <topic label="PtProgress*" href="pt/ptprogress_funcs.html">
+            <topic label="Description:" href="pt/ptprogress_funcs.html#id3"/>
+          </topic>
+          <topic label="PtPrompt" href="pt/ptprompt.html">
+            <topic label="Description:" href="pt/ptprompt.html#id9"/>
+            <topic label="Examples:" href="pt/ptprompt.html#id13"/>
+          </topic>
+          <topic label="PtPulseArm" href="pt/ptpulsearm.html">
+            <topic label="Description:" href="pt/ptpulsearm.html#id7"/>
+          </topic>
+          <topic label="PtQuerySystemInfo" href="pt/ptquerysysteminfo.html">
+            <topic label="Description:" href="pt/ptquerysysteminfo.html#id7"/>
+          </topic>
+          <topic label="PtQuitMainLoop" href="pt/ptquitmainloop.html">
+            <topic label="Description:" href="pt/ptquitmainloop.html#id7"/>
+          </topic>
+          <topic label="PtRawCallback_t" href="pt/ptrawcallback_t.html">
+            <topic label="Description:" href="pt/ptrawcallback_t.html#id3"/>
+          </topic>
+          <topic label="PtRealizeWidget" href="pt/ptrealizewidget.html">
+            <topic label="Description:" href="pt/ptrealizewidget.html#id7"/>
+            <topic label="Examples:" href="pt/ptrealizewidget.html#id11"/>
+          </topic>
+          <topic label="PtReattach" href="pt/ptreattach.html">
+            <topic label="Description:" href="pt/ptreattach.html#id7"/>
+            <topic label="Examples:" href="pt/ptreattach.html#id11"/>
+          </topic>
+          <topic label="PtRelease" href="pt/ptrelease.html">
+            <topic label="Description:" href="pt/ptrelease.html#id7"/>
+          </topic>
+          <topic label="PtReleaseTransportCtrl" href="pt/ptreleasetransportctrl.html">
+            <topic label="Description:" href="pt/ptreleasetransportctrl.html#id7"/>
+          </topic>
+          <topic label="PtRemoveCallback" href="pt/ptremovecallback.html">
+            <topic label="Description:" href="pt/ptremovecallback.html#id7"/>
+            <topic label="Examples:" href="pt/ptremovecallback.html#id9"/>
+          </topic>
+          <topic label="PtRemoveCallbacks" href="pt/ptremovecallbacks.html">
+            <topic label="Description:" href="pt/ptremovecallbacks.html#id7"/>
+          </topic>
+          <topic label="PtRemoveData" href="pt/ptremovedata.html">
+            <topic label="Description:" href="pt/ptremovedata.html#id7"/>
+          </topic>
+          <topic label="PtRemoveEventHandler" href="pt/ptremoveeventhandler.html">
+            <topic label="Description:" href="pt/ptremoveeventhandler.html#id7"/>
+            <topic label="Examples:" href="pt/ptremoveeventhandler.html#id9"/>
+          </topic>
+          <topic label="PtRemoveEventHandlers" href="pt/ptremoveeventhandlers.html">
+            <topic label="Description:" href="pt/ptremoveeventhandlers.html#id7"/>
+            <topic label="Examples:" href="pt/ptremoveeventhandlers.html#id9"/>
+          </topic>
+          <topic label="PtRemoveFilterCallback" href="pt/ptremovefiltercallback.html">
+            <topic label="Description:" href="pt/ptremovefiltercallback.html#id7"/>
+            <topic label="Examples:" href="pt/ptremovefiltercallback.html#id9"/>
+          </topic>
+          <topic label="PtRemoveFilterCallbacks" href="pt/ptremovefiltercallbacks.html">
+            <topic label="Description:" href="pt/ptremovefiltercallbacks.html#id7"/>
+            <topic label="Examples:" href="pt/ptremovefiltercallbacks.html#id9"/>
+          </topic>
+          <topic label="PtRemoveHotkeyHandler" href="pt/ptremovehotkeyhandler.html">
+            <topic label="Description:" href="pt/ptremovehotkeyhandler.html#id7"/>
+            <topic label="Examples:" href="pt/ptremovehotkeyhandler.html#id9"/>
+          </topic>
+          <topic label="PtReparentWidget" href="pt/ptreparentwidget.html">
+            <topic label="Description:" href="pt/ptreparentwidget.html#id7"/>
+            <topic label="Examples:" href="pt/ptreparentwidget.html#id11"/>
+          </topic>
+          <topic label="PtReRealizeWidget" href="pt/ptrerealizewidget.html">
+            <topic label="Description:" href="pt/ptrerealizewidget.html#id7"/>
+          </topic>
+          <topic label="PtResizeEventMsg" href="pt/ptresizeeventmsg.html">
+            <topic label="Description:" href="pt/ptresizeeventmsg.html#id7"/>
+          </topic>
+          <topic label="PtSendEventToWidget" href="pt/ptsendeventtowidget.html">
+            <topic label="Description:" href="pt/ptsendeventtowidget.html#id7"/>
+            <topic label="Examples:" href="pt/ptsendeventtowidget.html#id11"/>
+          </topic>
+          <topic label="PtSetAreaFromCanvas" href="pt/ptsetareafromcanvas.html">
+            <topic label="Description:" href="pt/ptsetareafromcanvas.html#id7"/>
+          </topic>
+          <topic label="PtSetArg" href="pt/ptsetarg.html">
+            <topic label="Description:" href="pt/ptsetarg.html#id7"/>
+            <topic label="Examples:" href="pt/ptsetarg.html#id9"/>
+          </topic>
+          <topic label="PtSetClassStyleMethods" href="pt/ptsetclassstylemethods.html">
+            <topic label="Description:" href="pt/ptsetclassstylemethods.html#id7"/>
+            <topic label="Examples:" href="pt/ptsetclassstylemethods.html#id11"/>
+          </topic>
+          <topic label="PtSetParentWidget" href="pt/ptsetparentwidget.html">
+            <topic label="Description:" href="pt/ptsetparentwidget.html#id7"/>
+            <topic label="Examples:" href="pt/ptsetparentwidget.html#id11"/>
+          </topic>
+          <topic label="PtSetResource" href="pt/ptsetresource.html">
+            <topic label="Description:" href="pt/ptsetresource.html#id7"/>
+            <topic label="Examples:" href="pt/ptsetresource.html#id11"/>
+          </topic>
+          <topic label="PtSetResources" href="pt/ptsetresources.html">
+            <topic label="Description:" href="pt/ptsetresources.html#id7"/>
+            <topic label="Examples:" href="pt/ptsetresources.html#id11"/>
+          </topic>
+          <topic label="PtSetStyleMember" href="pt/ptsetstylemember.html">
+            <topic label="Description:" href="pt/ptsetstylemember.html#id7"/>
+            <topic label="Examples:" href="pt/ptsetstylemember.html#id11"/>
+          </topic>
+          <topic label="PtSetStyleMembers" href="pt/ptsetstylemembers.html">
+            <topic label="Description:" href="pt/ptsetstylemembers.html#id7"/>
+            <topic label="Examples:" href="pt/ptsetstylemembers.html#id11"/>
+          </topic>
+          <topic label="PtSetWidgetStyle" href="pt/ptsetwidgetstyle.html">
+            <topic label="Description:" href="pt/ptsetwidgetstyle.html#id7"/>
+            <topic label="Examples:" href="pt/ptsetwidgetstyle.html#id11"/>
+          </topic>
+          <topic label="PtShowSurface, PtShowSurfaceById" href="pt/ptshowsurface.html">
+            <topic label="Description:" href="pt/ptshowsurface.html#id7"/>
+          </topic>
+          <topic label="PtShowSurfaceByAction" href="pt/ptshowsurfacebyaction.html">
+            <topic label="Description:" href="pt/ptshowsurfacebyaction.html#id7"/>
+          </topic>
+          <topic label="PtSignalProcF_t, PtSignalProc_t" href="pt/ptsignalproc_t.html">
+            <topic label="Description:" href="pt/ptsignalproc_t.html#id5"/>
+          </topic>
+          <topic label="PtSpawn" href="pt/ptspawn.html">
+            <topic label="Description:" href="pt/ptspawn.html#id9">
+              <topic label="Options" href="pt/ptspawn.html#Options"/>
+              <topic label="Callback function" href="pt/ptspawn.html#Callback"/>
+            </topic>
+          </topic>
+          <topic label="PtSpawnDeleteCallback" href="pt/ptspawndeletecallback.html">
+            <topic label="Description:" href="pt/ptspawndeletecallback.html#id7"/>
+          </topic>
+          <topic label="PtSpawnSetCallback" href="pt/ptspawnsetcallback.html">
+            <topic label="Description:" href="pt/ptspawnsetcallback.html#id7"/>
+          </topic>
+          <topic label="PtSpawnWait" href="pt/ptspawnwait.html">
+            <topic label="Description:" href="pt/ptspawnwait.html#id7"/>
+          </topic>
+          <topic label="PtStartFlux" href="pt/ptstartflux.html">
+            <topic label="Description:" href="pt/ptstartflux.html#id7"/>
+          </topic>
+          <topic label="PtSurfaceActionId" href="pt/ptsurfaceactionid.html">
+            <topic label="Description:" href="pt/ptsurfaceactionid.html#id7"/>
+          </topic>
+          <topic label="PtSurfaceAddData, PtSurfaceAddDataById" href="pt/ptsurfaceadddata.html">
+            <topic label="Description:" href="pt/ptsurfaceadddata.html#id7"/>
+          </topic>
+          <topic label="PtSurfaceBrotherBehind" href="pt/ptsurfacebrotherbehind.html">
+            <topic label="Description:" href="pt/ptsurfacebrotherbehind.html#id7"/>
+          </topic>
+          <topic label="PtSurfaceBrotherInFront" href="pt/ptsurfacebrotherinfront.html">
+            <topic label="Description:" href="pt/ptsurfacebrotherinfront.html#id7"/>
+          </topic>
+          <topic label="PtSurfaceCalcBoundingBox, PtSurfaceCalcBoundingBoxById" href="pt/ptsurfacecalcboundingbox.html">
+            <topic label="Description:" href="pt/ptsurfacecalcboundingbox.html#id7"/>
+          </topic>
+          <topic label="PtSurfaceExtent, PtSurfaceExtentById" href="pt/ptsurfaceextent.html">
+            <topic label="Description:" href="pt/ptsurfaceextent.html#id7"/>
+          </topic>
+          <topic label="PtSurfaceGetData" href="pt/ptsurfacegetdata.html">
+            <topic label="Description:" href="pt/ptsurfacegetdata.html#id7"/>
+          </topic>
+          <topic label="PtSurfaceHit" href="pt/ptsurfacehit.html">
+            <topic label="Description:" href="pt/ptsurfacehit.html#id7"/>
+          </topic>
+          <topic label="PtSurfaceId" href="pt/ptsurfaceid.html">
+            <topic label="Description:" href="pt/ptsurfaceid.html#id7"/>
+          </topic>
+          <topic label="PtSurfaceInBack" href="pt/ptsurfaceinback.html">
+            <topic label="Description:" href="pt/ptsurfaceinback.html#id7"/>
+          </topic>
+          <topic label="PtSurfaceInFront" href="pt/ptsurfaceinfront.html">
+            <topic label="Description:" href="pt/ptsurfaceinfront.html#id7"/>
+          </topic>
+          <topic label="PtSurfaceIsDisabled" href="pt/ptsurfaceisdisabled.html">
+            <topic label="Description:" href="pt/ptsurfaceisdisabled.html#id7"/>
+          </topic>
+          <topic label="PtSurfaceIsEnabled" href="pt/ptsurfaceisenabled.html">
+            <topic label="Description:" href="pt/ptsurfaceisenabled.html#id7"/>
+          </topic>
+          <topic label="PtSurfaceIsHidden" href="pt/ptsurfaceishidden.html">
+            <topic label="Description:" href="pt/ptsurfaceishidden.html#id7"/>
+          </topic>
+          <topic label="PtSurfaceIsShown" href="pt/ptsurfaceisshown.html">
+            <topic label="Description:" href="pt/ptsurfaceisshown.html#id9"/>
+          </topic>
+          <topic label="PtSurfaceRect, PtSurfaceRectById" href="pt/ptsurfacerect.html">
+            <topic label="Description:" href="pt/ptsurfacerect.html#id7"/>
+          </topic>
+          <topic label="PtSurfaceRemoveData, PtSurfaceRemoveDataById" href="pt/ptsurfaceremovedata.html">
+            <topic label="Description:" href="pt/ptsurfaceremovedata.html#id7"/>
+          </topic>
+          <topic label="PtSurfaceTestPoint" href="pt/ptsurfacetestpoint.html">
+            <topic label="Description:" href="pt/ptsurfacetestpoint.html#id7"/>
+          </topic>
+          <topic label="PtSurfaceToBack, PtSurfaceToBackById" href="pt/ptsurfacetoback.html">
+            <topic label="Description:" href="pt/ptsurfacetoback.html#id7"/>
+          </topic>
+          <topic label="PtSurfaceToFront, PtSurfaceToFrontById" href="pt/ptsurfacetofront.html">
+            <topic label="Description:" href="pt/ptsurfacetofront.html#id7"/>
+          </topic>
+          <topic label="PtSyncWidget" href="pt/ptsyncwidget.html">
+            <topic label="Description:" href="pt/ptsyncwidget.html#id7"/>
+          </topic>
+          <topic label="PtTerminal*" href="pt/ptterminal_funcs.html">
+            <topic label="Description:" href="pt/ptterminal_funcs.html#id3"/>
+          </topic>
+          <topic label="PtText*" href="pt/pttext_funcs.html">
+            <topic label="Description:" href="pt/pttext_funcs.html#id3"/>
+          </topic>
+          <topic label="PtTimerArm" href="pt/pttimerarm.html">
+            <topic label="Description:" href="pt/pttimerarm.html#id7"/>
+          </topic>
+          <topic label="PtTransportCtrl_t" href="pt/pttransportctrl_t.html">
+            <topic label="Description:" href="pt/pttransportctrl_t.html#id5"/>
+          </topic>
+          <topic label="PtTransportRequestable" href="pt/pttransportrequestable.html">
+            <topic label="Description:" href="pt/pttransportrequestable.html#id9">
+              <topic label="Request callback function" href="pt/pttransportrequestable.html#RQ_Callback"/>
+              <topic label="PtReqResponseHdr_t structure" href="pt/pttransportrequestable.html#PtReqResponseHdr_t"/>
+            </topic>
+          </topic>
+          <topic label="PtTransportType" href="pt/pttransporttype.html">
+            <topic label="Description:" href="pt/pttransporttype.html#id9"/>
+          </topic>
+          <topic label="PtTree*" href="pt/pttree_funcs.html">
+            <topic label="Description:" href="pt/pttree_funcs.html#id3"/>
+          </topic>
+          <topic label="PtTrend*" href="pt/pttrend_funcs.html">
+            <topic label="Description:" href="pt/pttrend_funcs.html#id3"/>
+          </topic>
+          <topic label="PtTty*" href="pt/pttty_funcs.html">
+            <topic label="Description:" href="pt/pttty_funcs.html#id3"/>
+          </topic>
+          <topic label="PtUnblockWindows" href="pt/ptunblockwindows.html">
+            <topic label="Description:" href="pt/ptunblockwindows.html#id7"/>
+          </topic>
+          <topic label="PtUnlinkData" href="pt/ptunlinkdata.html">
+            <topic label="Description:" href="pt/ptunlinkdata.html#id7"/>
+          </topic>
+          <topic label="PtUnrealizeWidget" href="pt/ptunrealizewidget.html">
+            <topic label="Description:" href="pt/ptunrealizewidget.html#id7"/>
+          </topic>
+          <topic label="PtUpdate" href="pt/ptupdate.html">
+            <topic label="Description:" href="pt/ptupdate.html#id7"/>
+          </topic>
+          <topic label="PtValidParent" href="pt/ptvalidparent.html">
+            <topic label="Description:" href="pt/ptvalidparent.html#id7"/>
+            <topic label="Examples:" href="pt/ptvalidparent.html#id11"/>
+          </topic>
+          <topic label="PtWidgetActiveSurface" href="pt/ptwidgetactivesurface.html">
+            <topic label="Description:" href="pt/ptwidgetactivesurface.html#id7"/>
+          </topic>
+          <topic label="PtWidgetArea" href="pt/ptwidgetarea.html">
+            <topic label="Description:" href="pt/ptwidgetarea.html#id7"/>
+          </topic>
+          <topic label="PtWidgetBrotherBehind" href="pt/ptwidgetbrotherbehind.html">
+            <topic label="Description:" href="pt/ptwidgetbrotherbehind.html#id9"/>
+            <topic label="Examples:" href="pt/ptwidgetbrotherbehind.html#id11"/>
+          </topic>
+          <topic label="PtWidgetBrotherInFront" href="pt/ptwidgetbrotherinfront.html">
+            <topic label="Description:" href="pt/ptwidgetbrotherinfront.html#id9"/>
+            <topic label="Examples:" href="pt/ptwidgetbrotherinfront.html#id11"/>
+          </topic>
+          <topic label="PtWidgetChildBack" href="pt/ptwidgetchildback.html">
+            <topic label="Description:" href="pt/ptwidgetchildback.html#id7"/>
+            <topic label="Examples:" href="pt/ptwidgetchildback.html#id9"/>
+          </topic>
+          <topic label="PtWidgetChildFront" href="pt/ptwidgetchildfront.html">
+            <topic label="Description:" href="pt/ptwidgetchildfront.html#id7"/>
+            <topic label="Examples:" href="pt/ptwidgetchildfront.html#id9"/>
+          </topic>
+          <topic label="PtWidgetClass" href="pt/ptwidgetclass.html">
+            <topic label="Description:" href="pt/ptwidgetclass.html#id7"/>
+            <topic label="Examples:" href="pt/ptwidgetclass.html#id11"/>
+          </topic>
+          <topic label="PtWidgetClassFlags" href="pt/ptwidgetclassflags.html">
+            <topic label="Description:" href="pt/ptwidgetclassflags.html#id7"/>
+          </topic>
+          <topic label="PtWidgetDim" href="pt/ptwidgetdim.html">
+            <topic label="Description:" href="pt/ptwidgetdim.html#id7"/>
+          </topic>
+          <topic label="PtWidgetExtent" href="pt/ptwidgetextent.html">
+            <topic label="Description:" href="pt/ptwidgetextent.html#id7"/>
+            <topic label="Examples:" href="pt/ptwidgetextent.html#id11"/>
+          </topic>
+          <topic label="PtWidgetFamily" href="pt/ptwidgetfamily.html">
+            <topic label="Description:" href="pt/ptwidgetfamily.html#id7"/>
+            <topic label="Examples:" href="pt/ptwidgetfamily.html#id11"/>
+          </topic>
+          <topic label="PtWidgetFlags" href="pt/ptwidgetflags.html">
+            <topic label="Description:" href="pt/ptwidgetflags.html#id7"/>
+          </topic>
+          <topic label="PtWidgetHelpHit" href="pt/ptwidgethelphit.html">
+            <topic label="Description:" href="pt/ptwidgethelphit.html#id9"/>
+          </topic>
+          <topic label="PtWidgetInsert" href="pt/ptwidgetinsert.html">
+            <topic label="Description:" href="pt/ptwidgetinsert.html#id7"/>
+          </topic>
+          <topic label="PtWidgetIsClass" href="pt/ptwidgetisclass.html">
+            <topic label="Description:" href="pt/ptwidgetisclass.html#id7"/>
+            <topic label="Examples:" href="pt/ptwidgetisclass.html#id11"/>
+          </topic>
+          <topic label="PtWidgetIsClassMember" href="pt/ptwidgetisclassmember.html">
+            <topic label="Description:" href="pt/ptwidgetisclassmember.html#id7"/>
+            <topic label="Examples:" href="pt/ptwidgetisclassmember.html#id11"/>
+          </topic>
+          <topic label="PtWidgetIsRealized" href="pt/ptwidgetisrealized.html">
+            <topic label="Description:" href="pt/ptwidgetisrealized.html#id7"/>
+          </topic>
+          <topic label="PtWidgetMinimumSize" href="pt/ptwidgetminimumsize.html">
+            <topic label="Description:" href="pt/ptwidgetminimumsize.html#id7"/>
+          </topic>
+          <topic label="PtWidgetOffset" href="pt/ptwidgetoffset.html">
+            <topic label="Description:" href="pt/ptwidgetoffset.html#id7"/>
+            <topic label="Examples:" href="pt/ptwidgetoffset.html#id11"/>
+          </topic>
+          <topic label="PtWidgetParent" href="pt/ptwidgetparent.html">
+            <topic label="Description:" href="pt/ptwidgetparent.html#id7"/>
+            <topic label="Examples:" href="pt/ptwidgetparent.html#id9"/>
+          </topic>
+          <topic label="PtWidgetPreferredSize" href="pt/ptwidgetpreferredsize.html">
+            <topic label="Description:" href="pt/ptwidgetpreferredsize.html#id7"/>
+          </topic>
+          <topic label="PtWidgetRid" href="pt/ptwidgetrid.html">
+            <topic label="Description:" href="pt/ptwidgetrid.html#id7"/>
+            <topic label="Examples:" href="pt/ptwidgetrid.html#id9"/>
+          </topic>
+          <topic label="PtWidgetSkip" href="pt/ptwidgetskip.html">
+            <topic label="Description:" href="pt/ptwidgetskip.html#id7"/>
+            <topic label="Examples:" href="pt/ptwidgetskip.html#id11"/>
+          </topic>
+          <topic label="PtWidgetToBack" href="pt/ptwidgettoback.html">
+            <topic label="Description:" href="pt/ptwidgettoback.html#id7"/>
+            <topic label="Examples:" href="pt/ptwidgettoback.html#id11"/>
+          </topic>
+          <topic label="PtWidgetToFront" href="pt/ptwidgettofront.html">
+            <topic label="Description:" href="pt/ptwidgettofront.html#id7"/>
+            <topic label="Examples:" href="pt/ptwidgettofront.html#id11"/>
+          </topic>
+          <topic label="PtWidgetTree" href="pt/ptwidgettree.html">
+            <topic label="Description:" href="pt/ptwidgettree.html#id7"/>
+            <topic label="Examples:" href="pt/ptwidgettree.html#id11"/>
+          </topic>
+          <topic label="PtWidgetTreeTraverse" href="pt/ptwidgettreetraverse.html">
+            <topic label="Description:" href="pt/ptwidgettreetraverse.html#id7"/>
+            <topic label="Examples:" href="pt/ptwidgettreetraverse.html#id11"/>
+          </topic>
+          <topic label="PtWidgetVisibleExtent" href="pt/ptwidgetvisibleextent.html">
+            <topic label="Description:" href="pt/ptwidgetvisibleextent.html#id7"/>
+          </topic>
+          <topic label="PtWindow*" href="pt/ptwindow_funcs.html">
+            <topic label="Description:" href="pt/ptwindow_funcs.html#id3"/>
+          </topic>
+          <topic label="PtWindowConsoleSwitch" href="pt/ptwindowconsoleswitch.html">
+            <topic label="Description:" href="pt/ptwindowconsoleswitch.html#id7"/>
+          </topic>
+          <topic label="PtWindowGetFrameSize" href="pt/ptwindowgetframesize.html">
+            <topic label="Description:" href="pt/ptwindowgetframesize.html#id9"/>
+          </topic>
+          <topic label="PtWorkProcF_t, PtWorkProc_t" href="pt/ptworkproc_t.html">
+            <topic label="Description:" href="pt/ptworkproc_t.html#id5"/>
+          </topic>
+      </topic>
+      <topic label="Px---Extended" href="px-base.html">
+          <topic label="PxConfigClose, PxConfigCloseCx" href="px/pxconfigclose.html">
+            <topic label="Description:" href="px/pxconfigclose.html#id9"/>
+          </topic>
+          <topic label="PxConfigDeleteEntry, PxConfigDeleteEntryCx" href="px/pxconfigdeleteentry.html">
+            <topic label="Description:" href="px/pxconfigdeleteentry.html#id9"/>
+          </topic>
+          <topic label="PxConfigDeleteSection, PxConfigDeleteSectionCx" href="px/pxconfigdeletesection.html">
+            <topic label="Description:" href="px/pxconfigdeletesection.html#id9"/>
+          </topic>
+          <topic label="PxConfigFirstSection, PxConfigFirstSectionCx" href="px/pxconfigfirstsection.html">
+            <topic label="Description:" href="px/pxconfigfirstsection.html#id9"/>
+          </topic>
+          <topic label="PxConfigForceEmptySection, PxConfigForceEmptySectionCx" href="px/pxconfigforceemptysection.html">
+            <topic label="Description:" href="px/pxconfigforceemptysection.html#id9"/>
+          </topic>
+          <topic label="PxConfigNextEntry, PxConfigNextEntryCx" href="px/pxconfignextentry.html">
+            <topic label="Description:" href="px/pxconfignextentry.html#id9"/>
+          </topic>
+          <topic label="PxConfigNextSection, PxConfigNextSectionCx" href="px/pxconfignextsection.html">
+            <topic label="Description:" href="px/pxconfignextsection.html#id9"/>
+            <topic label="Examples:" href="px/pxconfignextsection.html#id13"/>
+          </topic>
+          <topic label="PxConfigNextString, PxConfigNextStringCx" href="px/pxconfignextstring.html">
+            <topic label="Description:" href="px/pxconfignextstring.html#id9"/>
+            <topic label="Examples:" href="px/pxconfignextstring.html#id13"/>
+          </topic>
+          <topic label="PxConfigOpen, PxConfigOpenCx" href="px/pxconfigopen.html">
+            <topic label="Description:" href="px/pxconfigopen.html#id9"/>
+            <topic label="Examples:" href="px/pxconfigopen.html#id13"/>
+          </topic>
+          <topic label="PxConfigReadBool, PxConfigReadBoolCx" href="px/pxconfigreadbool.html">
+            <topic label="Description:" href="px/pxconfigreadbool.html#id9"/>
+          </topic>
+          <topic label="PxConfigReadChar, PxConfigReadCharCx" href="px/pxconfigreadchar.html">
+            <topic label="Description:" href="px/pxconfigreadchar.html#id9"/>
+          </topic>
+          <topic label="PxConfigReadDouble, PxConfigReadDoubleCx" href="px/pxconfigreaddouble.html">
+            <topic label="Description:" href="px/pxconfigreaddouble.html#id9"/>
+          </topic>
+          <topic label="PxConfigReadInt, PxConfigReadIntCx" href="px/pxconfigreadint.html">
+            <topic label="Description:" href="px/pxconfigreadint.html#id9"/>
+          </topic>
+          <topic label="PxConfigReadLLong, PxConfigReadLLongCx" href="px/pxconfigreadllong.html">
+            <topic label="Description:" href="px/pxconfigreadllong.html#id9"/>
+          </topic>
+          <topic label="PxConfigReadLong, PxConfigReadLongCx" href="px/pxconfigreadlong.html">
+            <topic label="Description:" href="px/pxconfigreadlong.html#id9"/>
+          </topic>
+          <topic label="PxConfigReadShort, PxConfigReadShortCx" href="px/pxconfigreadshort.html">
+            <topic label="Description:" href="px/pxconfigreadshort.html#id9"/>
+          </topic>
+          <topic label="PxConfigReadString, PxConfigReadStringCx" href="px/pxconfigreadstring.html">
+            <topic label="Description:" href="px/pxconfigreadstring.html#id9"/>
+          </topic>
+          <topic label="PxConfigSection, PxConfigSectionCx" href="px/pxconfigsection.html">
+            <topic label="Description:" href="px/pxconfigsection.html#id9"/>
+          </topic>
+          <topic label="PxConfigWriteBool, PxConfigWriteBoolCx" href="px/pxconfigwritebool.html">
+            <topic label="Description:" href="px/pxconfigwritebool.html#id9"/>
+          </topic>
+          <topic label="PxConfigWriteChar" href="px/pxconfigwritechar.html">
+            <topic label="Description:" href="px/pxconfigwritechar.html#id9"/>
+          </topic>
+          <topic label="PxConfigWriteDouble, PxConfigWriteDoubleCx" href="px/pxconfigwritedouble.html">
+            <topic label="Description:" href="px/pxconfigwritedouble.html#id9"/>
+          </topic>
+          <topic label="PxConfigWriteInt, PxConfigWriteIntCx" href="px/pxconfigwriteint.html">
+            <topic label="Description:" href="px/pxconfigwriteint.html#id9"/>
+          </topic>
+          <topic label="PxConfigWriteLLong, PxConfigWriteLLongCx" href="px/pxconfigwritellong.html">
+            <topic label="Description:" href="px/pxconfigwritellong.html#id9"/>
+          </topic>
+          <topic label="PxConfigWriteLong, PxConfigWriteLongCx" href="px/pxconfigwritelong.html">
+            <topic label="Description:" href="px/pxconfigwritelong.html#id9"/>
+          </topic>
+          <topic label="PxConfigWriteShort, PxConfigWriteShortCx" href="px/pxconfigwriteshort.html">
+            <topic label="Description:" href="px/pxconfigwriteshort.html#id9"/>
+          </topic>
+          <topic label="PxConfigWriteString, PxConfigWriteStringCx" href="px/pxconfigwritestring.html">
+            <topic label="Description:" href="px/pxconfigwritestring.html#id9"/>
+          </topic>
+          <topic label="PxGetImageExtensions" href="px/pxgetimageextensions.html">
+            <topic label="Description:" href="px/pxgetimageextensions.html#id9"/>
+          </topic>
+          <topic label="PxLoadImage" href="px/pxloadimage.html">
+            <topic label="Description:" href="px/pxloadimage.html#id9">
+              <topic label="PxMethods_t" href="px/pxloadimage.html#PxMethods_t"/>
+              <topic label="Threads and PxLoadImage" href="px/pxloadimage.html#Threads"/>
+            </topic>
+            <topic label="Examples:" href="px/pxloadimage.html#id15"/>
+          </topic>
+          <topic label="PxRotateImage" href="px/pxrotateimage.html">
+            <topic label="Description:" href="px/pxrotateimage.html#id9">
+              <topic label="Methods" href="px/pxrotateimage.html#Methods"/>
+            </topic>
+          </topic>
+          <topic label="PxTerminalBuildCharsets" href="px/pxterminalbuildcharsets.html">
+            <topic label="Description:" href="px/pxterminalbuildcharsets.html#id7"/>
+          </topic>
+          <topic label="PxTerminalLoadCharsets" href="px/pxterminalloadcharsets.html">
+            <topic label="Description:" href="px/pxterminalloadcharsets.html#id7"/>
+          </topic>
+          <topic label="PxTerminalSaveCharsets" href="px/pxterminalsavecharsets.html">
+            <topic label="Description:" href="px/pxterminalsavecharsets.html#id7"/>
+          </topic>
+          <topic label="PxTerminate" href="px/pxterminate.html">
+            <topic label="Description:" href="px/pxterminate.html#id9"/>
+          </topic>
+          <topic label="PxTranslateFromUTF" href="px/pxtranslatefromutf.html">
+            <topic label="Description:" href="px/pxtranslatefromutf.html#id7"/>
+          </topic>
+          <topic label="PxTranslateList" href="px/pxtranslatelist.html">
+            <topic label="Description:" href="px/pxtranslatelist.html#id7"/>
+          </topic>
+          <topic label="PxTranslateSet" href="px/pxtranslateset.html">
+            <topic label="Description:" href="px/pxtranslateset.html#id7"/>
+            <topic label="Examples:" href="px/pxtranslateset.html#id11"/>
+          </topic>
+          <topic label="PxTranslateStateFromUTF" href="px/pxtranslatestatefromutf.html">
+            <topic label="Description:" href="px/pxtranslatestatefromutf.html#id7"/>
+          </topic>
+          <topic label="PxTranslateStateToUTF" href="px/pxtranslatestatetoutf.html">
+            <topic label="Description:" href="px/pxtranslatestatetoutf.html#id7"/>
+          </topic>
+          <topic label="PxTranslateToUTF" href="px/pxtranslatetoutf.html">
+            <topic label="Description:" href="px/pxtranslatetoutf.html#id7"/>
+          </topic>
+          <topic label="PxTranslateUnknown" href="px/pxtranslateunknown.html">
+            <topic label="Description:" href="px/pxtranslateunknown.html#id7"/>
+          </topic>
+      </topic>
+      <topic label="Rt---Realtime" href="rt-base.html">
+          <topic label="RtTimerCreate" href="rt/rttimercreate.html">
+            <topic label="Description:" href="rt/rttimercreate.html#id9"/>
+          </topic>
+          <topic label="RtTimerDelete" href="rt/rttimerdelete.html">
+            <topic label="Description:" href="rt/rttimerdelete.html#id9"/>
+          </topic>
+          <topic label="RtTimerGetTime" href="rt/rttimergettime.html">
+            <topic label="Description:" href="rt/rttimergettime.html#id9"/>
+          </topic>
+          <topic label="RtTimerSetTime" href="rt/rttimersettime.html">
+            <topic label="Description:" href="rt/rttimersettime.html#id9"/>
+          </topic>
+      </topic>
+      <topic label="utf8---UTF-8 Character" href="utf8-base.html">
+          <topic label="utf8len" href="utf8/utf8len.html">
+            <topic label="Description:" href="utf8/utf8len.html#id9"/>
+          </topic>
+          <topic label="utf8strblen" href="utf8/utf8strblen.html">
+            <topic label="Description:" href="utf8/utf8strblen.html#id9"/>
+          </topic>
+          <topic label="utf8strchr" href="utf8/utf8strchr.html">
+            <topic label="Description:" href="utf8/utf8strchr.html#id9"/>
+            <topic label="Examples:" href="utf8/utf8strchr.html#id13"/>
+          </topic>
+          <topic label="utf8strichr" href="utf8/utf8strichr.html">
+            <topic label="Description:" href="utf8/utf8strichr.html#id9"/>
+          </topic>
+          <topic label="utf8strirchr" href="utf8/utf8strirchr.html">
+            <topic label="Description:" href="utf8/utf8strirchr.html#id9"/>
+          </topic>
+          <topic label="utf8strlen" href="utf8/utf8strlen.html">
+            <topic label="Description:" href="utf8/utf8strlen.html#id9"/>
+          </topic>
+          <topic label="utf8strnchr" href="utf8/utf8strnchr.html">
+            <topic label="Description:" href="utf8/utf8strnchr.html#id9"/>
+            <topic label="Examples:" href="utf8/utf8strnchr.html#id13"/>
+          </topic>
+          <topic label="utf8strncmp" href="utf8/utf8strncmp.html">
+            <topic label="Description:" href="utf8/utf8strncmp.html#id9"/>
+          </topic>
+          <topic label="utf8strndup" href="utf8/utf8strndup.html">
+            <topic label="Description:" href="utf8/utf8strndup.html#id9"/>
+          </topic>
+          <topic label="utf8strnichr" href="utf8/utf8strnichr.html">
+            <topic label="Description:" href="utf8/utf8strnichr.html#id9"/>
+          </topic>
+          <topic label="utf8strnlen" href="utf8/utf8strnlen.html">
+            <topic label="Description:" href="utf8/utf8strnlen.html#id9"/>
+          </topic>
+          <topic label="utf8strrchr" href="utf8/utf8strrchr.html">
+            <topic label="Description:" href="utf8/utf8strrchr.html#id9"/>
+            <topic label="Examples:" href="utf8/utf8strrchr.html#id13"/>
+          </topic>
+          <topic label="utf8towc" href="utf8/utf8towc.html">
+            <topic label="Description:" href="utf8/utf8towc.html#id9"/>
+          </topic>
+      </topic>
+      <topic label="wc---Wide-Character" href="wc-base.html">
+          <topic label="wctolower" href="wc/wctolower.html">
+            <topic label="Description:" href="wc/wctolower.html#id9"/>
+          </topic>
+          <topic label="wctoutf8" href="wc/wctoutf8.html">
+            <topic label="Description:" href="wc/wctoutf8.html#id9"/>
+          </topic>
+      </topic>
+      <topic label="What's New" href="whatsnew.html">
+          <topic label="What's new in Photon for QNX Neutrino 6.5.0 Service Pack 1" href="whatsnew.html#WhatsNew650SP1">
+            <topic label="Errata" href="whatsnew.html#Errata650SP1"/>
+          </topic>
+          <topic label="What's new in Photon for QNX Neutrino 6.5.0" href="whatsnew.html#WhatsNew650">
+            <topic label="New entries" href="whatsnew.html#NewContent650"/>
+            <topic label="Changed entries" href="whatsnew.html#Changes650"/>
+            <topic label="Errata" href="whatsnew.html#Errata650"/>
+          </topic>
+          <topic label="What's new in Photon for QNX Neutrino 6.4.1" href="whatsnew.html#WhatsNew641">
+            <topic label="New content in the docs" href="whatsnew.html#NewContent641"/>
+            <topic label="Corrections, clarifications, and other changes" href="whatsnew.html#Changes641"/>
+          </topic>
+          <topic label="What's new in Photon for QNX Neutrino 6.4.0" href="whatsnew.html#WhatsNew640">
+            <topic label="New content in the docs" href="whatsnew.html#NewContent640"/>
+            <topic label="Corrections, clarifications, and other changes" href="whatsnew.html#Changes640"/>
+          </topic>
+          <topic label="What's new in Photon for QNX Neutrino 6.3 Service Pack 1" href="whatsnew.html#WhatsNew63sp1">
+            <topic label="New content in the docs" href="whatsnew.html#NewContent63sp1"/>
+          </topic>
+          <topic label="What's new in Photon for QNX Neutrino 6.3" href="whatsnew.html#WhatsNew63">
+            <topic label="New content in the docs" href="whatsnew.html#NewContent63"/>
+            <topic label="Corrections, clarifications, and other changes" href="whatsnew.html#Changes63"/>
+            <topic label="Deprecated functions and data types" href="whatsnew.html#Deprecated63"/>
+          </topic>
+          <topic label="What's new in Photon for QNX Neutrino 6.2.1" href="whatsnew.html#WhatsNew621">
+            <topic label="New content in the docs" href="whatsnew.html#NewContent621"/>
+            <topic label="Deprecated functions and data types" href="whatsnew.html#Deprecated621"/>
+            <topic label="Corrections" href="whatsnew.html#Errata621"/>
+          </topic>
+          <topic label="What's new in Photon for QNX Neutrino 6.2.0" href="whatsnew.html#WhatsNew62">
+            <topic label="New content in the docs" href="whatsnew.html#NewContent62">
+              <topic label="Ap" href="whatsnew.html#ApNew62"/>
+              <topic label="Pd" href="whatsnew.html#PdNew62"/>
+              <topic label="Pf" href="whatsnew.html#PfNew62"/>
+              <topic label="Pg" href="whatsnew.html#PgNew62"/>
+              <topic label="Ph" href="whatsnew.html#PhNew62"/>
+              <topic label="Pp" href="whatsnew.html#PpNew62"/>
+              <topic label="Pt" href="whatsnew.html#PtNew62"/>
+              <topic label="utf8" href="whatsnew.html#utf8New62"/>
+              <topic label="wc" href="whatsnew.html#wcNew62"/>
+            </topic>
+            <topic label="Deprecated functions and data types" href="whatsnew.html#Deprecated62"/>
+            <topic label="Corrections, clarifications, and other changes" href="whatsnew.html#Changes62"/>
+          </topic>
+          <topic label="What's new in Photon for QNX Neutrino 6.1.0" href="whatsnew.html#WhatsNew61">
+            <topic label="Patch A" href="whatsnew.html#6.1.0PatchA"/>
+            <topic label="New content in the docs" href="whatsnew.html#NewContent61"/>
+            <topic label="Deprecated functions and data types" href="whatsnew.html#Deprecated61"/>
+            <topic label="Other changes" href="whatsnew.html#Changes61"/>
+          </topic>
+          <topic label="What's new in Photon for QNX Neutrino 6.0" href="whatsnew.html#WhatsNew20">
+            <topic label="New functionality" href="whatsnew.html#NewFunctionality20">
+              <topic label="Font names" href="whatsnew.html#id45"/>
+            </topic>
+            <topic label="New content in the docs" href="whatsnew.html#NewContent20">
+              <topic label="Al---PhAB Translation" href="whatsnew.html#Al20New"/>
+              <topic label="Ap---PhAB" href="whatsnew.html#Ap20New"/>
+              <topic label="mbstr---Multibyte-Character" href="whatsnew.html#Mbstr20New"/>
+              <topic label="Pd---Draw Context" href="whatsnew.html#Pd20New"/>
+              <topic label="Pf---Font Server" href="whatsnew.html#Pf20New"/>
+              <topic label="Pg---Graphics" href="whatsnew.html#Pg20New"/>
+              <topic label="Ph---Photon" href="whatsnew.html#Ph20New"/>
+              <topic label="Pi---Images" href="whatsnew.html#Pi20New"/>
+              <topic label="Pp---Printing" href="whatsnew.html#Pp20New"/>
+              <topic label="Pt---Widget toolkit" href="whatsnew.html#Pt20New"/>
+              <topic label="Px---Extended" href="whatsnew.html#Px20New"/>
+              <topic label="Rt---Realtime" href="whatsnew.html#Rt20New"/>
+            </topic>
+            <topic label="Corrections" href="whatsnew.html#Corrections20">
+              <topic label="Pg---Graphics" href="whatsnew.html#Pg20Corrections"/>
+              <topic label="Ph---Photon" href="whatsnew.html#Ph20Corrections"/>
+            </topic>
+          </topic>
+      </topic>
+      <topic label="Glossary" href="glossary.html"/>
+</toc>

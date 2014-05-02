@@ -1,0 +1,148 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Before you begin" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_INTRO_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Beforeyoubegin" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Before you begin</title>
+   </head>
+   <body id="Beforeyoubegin"><a name="Beforeyoubegin" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Before you begin</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         
+         <p>As mentioned earlier, to capture instrumentation data for analysis, the instrumented kernel (<tt>procnto*-instr</tt>) 
+            must be running. This kernel is a drop-in replacement for the standard kernel (though the instrumented kernel is 
+            slightly larger). When you're not gathering instrumentation data, the instrumented kernel is almost exactly as fast 
+            as the regular kernel. 
+            
+            
+            
+            
+            
+            
+         </p>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> To determine if the instrumented kernel is running, enter this command: <samp class="codeph">ls /proc/boot</samp>
+            
+            <p>If <tt>procnto*-instr</tt> appears in the output, then the OS image is running the instrumented kernel.
+            </p>
+            
+         </div>
+         
+         
+         <p>To substitute the <tt>procnto*-instr</tt> module in the OS image on your board, you can either manually edit your buildfile, 
+            then run <span class="cmdname">mkifs</span> to generate a new image, or use the System Builder perspective to configure the image's properties. 
+         </p>
+         
+         
+         <p>
+            <strong>Replacing the kernel using the System Builder</strong>
+            
+         </p>
+         
+         <br clear="none" /><ol>
+            <li>In the System Builder Projects view, double-click the <span class="filepath">project.bld</span> file for the image you want to 
+               change. 
+            </li>
+            <li>In the Images pane of the System Builder editor, select the image. </li>
+            <li>In the Properties view, click the <span class="uicontrol">Procnto</span> field (under <span class="uicontrol">System</span>). A 
+               dropdown-menu button appears in the field: 
+               <p>
+                  <span><img src="../images/emp2Ftopic2Fsysprof_GETSTART_.xml_d175136e89.jpg" alt="Instrumented kernel selection" /></span>
+                  
+               </p>
+               
+            </li>
+            <li>Select <tt>procnto*-instr</tt>, press <tt>Enter</tt>, then save your change. 
+            </li>
+            <li>Rebuild your project, then transfer your new OS image to your board.</li>
+         </ol>
+         
+         
+         <p>Assuming you're running the instrumented kernel on your board, you're ready to use the System Profiler. A profiling 
+            session usually involves these three steps: 
+         </p>
+         
+         <br clear="none" /><ul>
+            <li><a href="sysprof_TARGET_.html" shape="rect">Configuring a target for system profiling</a> a target for system profiling
+            </li>
+            <li><a href="sysprof_CAPTURE_.html" shape="rect">Capturing instrumentation data in event log files</a> instrumentation data in event log files
+            </li>
+            <li><a href="sysprof_INTERPRET_.html" shape="rect">Viewing and interpreting the captured data</a> the captured data
+            </li>
+         </ul>
+         
+         
+         <p>You can gather trace events from the instrumented kernel in two different ways. You can run a command-line utility (e.g. <tt>tracelogger</tt>) on your target to generate a log file, and then transfer that log file back to your development environment for analysis.
+            Or, you can capture events directly from the IDE using the Log Configuration dialog.
+            
+            
+            
+         </p>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> In order to get timing information from the kernel, you need to run <tt>tracelogger</tt> as the <em>root</em> user. 
+            <p> If you gather system-profiling data through <span class="cmdname">qconn</span> in the IDE, you're already accessing the instrumented kernel as <em>root</em>.
+            </p>
+            
+         </div>
+         
+         
+         <p>Using the command-line server currently offers more flexibility as to when the data is captured, but requires that you set
+            up and configure filters yourself using the <tt>TraceEvent()</tt> API. The Log Configuration dialog lets you set a variety of different static filters and configure the duration of time that
+            the events are logged for. 
+         </p>
+         
+         
+         <p>For more information on the <a href="../../com.qnx.doc.neutrino_utilities/t/tracelogger.html" shape="rect">
+               <tt>tracelogger</tt>
+               </a> utility, see its entry in the <cite>Utilities Reference</cite>. For <a href="../../com.qnx.doc.neutrino_lib_ref/t/traceevent.html" shape="rect">
+               <tt>traceevent</tt>
+               </a>, see the Neutrino <cite>Library Reference</cite>. 
+         </p>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/sysprof_INTRO_.html" shape="rect">Introducing the QNX System Profiler</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

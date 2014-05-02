@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Addon Interfaces Library Reference">
+      <topic label="About This Reference" href="about.html">
+          <topic label="What you'll find in this guide" href="about.html#In_this_guide"/>
+          <topic label="Typographical conventions" href="about.html#Typographical_conventions">
+            <topic label="Note to Windows users" href="about.html#WINDOWSNOTE"/>
+            <topic label="Navigation buttons" href="about.html#Navigation"/>
+          </topic>
+          <topic label="Technical support" href="about.html#Support"/>
+      </topic>
+      <topic label="Overview" href="overview.html">
+            <topic label="An Example" href="overview.html#id3"/>
+            <topic label="Library components" href="overview.html#id5"/>
+      </topic>
+      <topic label="Addon Interfaces Library Reference" href="elements.html">
+                <topic label="AOI Structures" href="elements.html#id3"/>
+                <topic label="AOI Functions" href="elements.html#id5"/>
+          <topic label="AOICtrl_t" href="ao/aoictrl_t.html">
+            <topic label="Description:" href="ao/aoictrl_t.html#id5"/>
+          </topic>
+          <topic label="AOInterface_t" href="ao/aointerface_t.html">
+            <topic label="Description:" href="ao/aointerface_t.html#id5"/>
+          </topic>
+          <topic label="AoAdd" href="ao/aoadd.html">
+            <topic label="Description:" href="ao/aoadd.html#id9"/>
+          </topic>
+          <topic label="AoAddDirectory" href="ao/aoadddirectory.html">
+            <topic label="Description:" href="ao/aoadddirectory.html#id9"/>
+          </topic>
+          <topic label="AoAddStatic" href="ao/aoaddstatic.html">
+            <topic label="Description:" href="ao/aoaddstatic.html#id9"/>
+          </topic>
+          <topic label="AoAddUnloadSignal" href="ao/aoaddunloadsignal.html">
+            <topic label="Description:" href="ao/aoaddunloadsignal.html#id9"/>
+          </topic>
+          <topic label="AoGetInterface" href="ao/aogetinterface.html">
+            <topic label="Description:" href="ao/aogetinterface.html#id9"/>
+          </topic>
+          <topic label="AoHold" href="ao/aohold.html">
+            <topic label="Description:" href="ao/aohold.html#id9"/>
+          </topic>
+          <topic label="AoIterate" href="ao/aoiterate.html">
+            <topic label="Description:" href="ao/aoiterate.html#id9"/>
+          </topic>
+          <topic label="AoIterateHoldGet" href="ao/aoiterateholdget.html">
+            <topic label="Description:" href="ao/aoiterateholdget.html#id9"/>
+          </topic>
+          <topic label="AoRelease" href="ao/aorelease.html">
+            <topic label="Description:" href="ao/aorelease.html#id9"/>
+          </topic>
+          <topic label="AoRemove" href="ao/aoremove.html">
+            <topic label="Description:" href="ao/aoremove.html#id9"/>
+          </topic>
+          <topic label="AoFindExt" href="ao/aofindext.html">
+            <topic label="Description:" href="ao/aofindext.html#id9"/>
+          </topic>
+          <topic label="AoFindFormats" href="ao/aofindformats.html">
+            <topic label="Description:" href="ao/aofindformats.html#id9"/>
+          </topic>
+          <topic label="AoFindMime" href="ao/aofindmime.html">
+            <topic label="Description:" href="ao/aofindmime.html#id9"/>
+          </topic>
+          <topic label="AoFindName" href="ao/aofindname.html">
+            <topic label="Description:" href="ao/aofindname.html#id9"/>
+            <topic label="Examples:" href="ao/aofindname.html#id13"/>
+          </topic>
+          <topic label="AoFindStreams" href="ao/aofindstreams.html">
+            <topic label="Description:" href="ao/aofindstreams.html#id9"/>
+          </topic>
+          <topic label="AoOpenFilespec" href="ao/aoopenfilespec.html">
+            <topic label="Description:" href="ao/aoopenfilespec.html#id9"/>
+          </topic>
+      </topic>
+      <topic label="Implemented Interfaces" href="existing_interfaces.html">
+            <topic label="Built-in Interfaces" href="existing_interfaces.html#id3"/>
+          <topic label="AODeConstructor" href="existing_interfaces.html#aodeconstructor">
+            <topic label="Create" href="existing_interfaces.html#create">
+              <topic label="Synopsis" href="existing_interfaces.html#id7"/>
+              <topic label="Arguments" href="existing_interfaces.html#id9"/>
+              <topic label="Description" href="existing_interfaces.html#id11"/>
+              <topic label="Returns" href="existing_interfaces.html#id13"/>
+            </topic>
+            <topic label="Destroy" href="existing_interfaces.html#destroy">
+              <topic label="Synopsis" href="existing_interfaces.html#id16"/>
+              <topic label="Arguments" href="existing_interfaces.html#id18"/>
+              <topic label="Description" href="existing_interfaces.html#id20"/>
+              <topic label="Returns" href="existing_interfaces.html#id22"/>
+            </topic>
+          </topic>
+          <topic label="AOExtInspector" href="existing_interfaces.html#aoextinspector">
+            <topic label="RateExtension" href="existing_interfaces.html#id25">
+              <topic label="Synopsis" href="existing_interfaces.html#id27"/>
+              <topic label="Arguments" href="existing_interfaces.html#id29"/>
+              <topic label="Description" href="existing_interfaces.html#id31"/>
+              <topic label="Returns" href="existing_interfaces.html#id33"/>
+            </topic>
+          </topic>
+          <topic label="AOFormatInspector" href="existing_interfaces.html#aoformatinspector">
+            <topic label="RateFormat" href="existing_interfaces.html#id36">
+              <topic label="Synopsis" href="existing_interfaces.html#id38"/>
+              <topic label="Arguments" href="existing_interfaces.html#id40"/>
+              <topic label="Description" href="existing_interfaces.html#id42"/>
+              <topic label="Returns" href="existing_interfaces.html#id44"/>
+            </topic>
+          </topic>
+          <topic label="AOMimetypeInspector" href="existing_interfaces.html#aomimetypeinspector">
+            <topic label="RateMimetype" href="existing_interfaces.html#id47">
+              <topic label="Synopsis" href="existing_interfaces.html#id49"/>
+              <topic label="Arguments" href="existing_interfaces.html#id51"/>
+              <topic label="Description" href="existing_interfaces.html#id53"/>
+              <topic label="Returns" href="existing_interfaces.html#id55"/>
+            </topic>
+          </topic>
+          <topic label="AOStreamer" href="existing_interfaces.html#aostreamer">
+            <topic label="Open" href="existing_interfaces.html#open">
+              <topic label="Synopsis" href="existing_interfaces.html#id59"/>
+              <topic label="Arguments" href="existing_interfaces.html#id61"/>
+              <topic label="Description" href="existing_interfaces.html#id63"/>
+              <topic label="Returns" href="existing_interfaces.html#id65"/>
+            </topic>
+            <topic label="Close" href="existing_interfaces.html#close">
+              <topic label="Synopsis" href="existing_interfaces.html#id68"/>
+              <topic label="Arguments" href="existing_interfaces.html#id70"/>
+              <topic label="Description" href="existing_interfaces.html#id72"/>
+              <topic label="Returns" href="existing_interfaces.html#id74"/>
+            </topic>
+            <topic label="Sniff" href="existing_interfaces.html#sniff">
+              <topic label="Synopsis" href="existing_interfaces.html#id77"/>
+              <topic label="Arguments" href="existing_interfaces.html#id79"/>
+              <topic label="Description" href="existing_interfaces.html#id81"/>
+              <topic label="Returns" href="existing_interfaces.html#id83"/>
+            </topic>
+            <topic label="Read" href="existing_interfaces.html#read">
+              <topic label="Synopsis" href="existing_interfaces.html#id86"/>
+              <topic label="Arguments" href="existing_interfaces.html#id88"/>
+              <topic label="Description" href="existing_interfaces.html#id90"/>
+              <topic label="Returns" href="existing_interfaces.html#id92"/>
+            </topic>
+            <topic label="Write" href="existing_interfaces.html#write">
+              <topic label="Synopsis" href="existing_interfaces.html#id95"/>
+              <topic label="Arguments" href="existing_interfaces.html#id97"/>
+              <topic label="Description" href="existing_interfaces.html#id99"/>
+              <topic label="Returns" href="existing_interfaces.html#id101"/>
+            </topic>
+            <topic label="Seek" href="existing_interfaces.html#seek">
+              <topic label="Synopsis" href="existing_interfaces.html#id104"/>
+              <topic label="Arguments" href="existing_interfaces.html#id106"/>
+              <topic label="Description" href="existing_interfaces.html#id108"/>
+              <topic label="Returns" href="existing_interfaces.html#id110"/>
+            </topic>
+            <topic label="Tell" href="existing_interfaces.html#tell">
+              <topic label="Synopsis" href="existing_interfaces.html#id113"/>
+              <topic label="Arguments" href="existing_interfaces.html#id115"/>
+              <topic label="Description" href="existing_interfaces.html#id117"/>
+              <topic label="Returns" href="existing_interfaces.html#id119"/>
+            </topic>
+            <topic label="Length" href="existing_interfaces.html#length">
+              <topic label="Synopsis" href="existing_interfaces.html#id122"/>
+              <topic label="Arguments" href="existing_interfaces.html#id124"/>
+              <topic label="Description" href="existing_interfaces.html#id126"/>
+              <topic label="Returns" href="existing_interfaces.html#id128"/>
+            </topic>
+            <topic label="SideInfo" href="existing_interfaces.html#sideinfo">
+              <topic label="Synopsis" href="existing_interfaces.html#id131"/>
+              <topic label="Arguments" href="existing_interfaces.html#id133"/>
+              <topic label="Description" href="existing_interfaces.html#id135"/>
+              <topic label="Returns" href="existing_interfaces.html#id137"/>
+            </topic>
+          </topic>
+          <topic label="AOStreamInspector" href="existing_interfaces.html#aostreaminspector">
+            <topic label="RateStream" href="existing_interfaces.html#id140">
+              <topic label="Synopsis" href="existing_interfaces.html#id142"/>
+              <topic label="Arguments" href="existing_interfaces.html#id144"/>
+              <topic label="Description" href="existing_interfaces.html#id146"/>
+              <topic label="Returns" href="existing_interfaces.html#id148"/>
+            </topic>
+          </topic>
+          <topic label="AOResourceAccess" href="existing_interfaces.html#aoresourceaccess">
+            <topic label="GetResources" href="existing_interfaces.html#getresources">
+              <topic label="Synopsis" href="existing_interfaces.html#id152"/>
+              <topic label="Arguments" href="existing_interfaces.html#id154"/>
+              <topic label="Description" href="existing_interfaces.html#id156"/>
+              <topic label="Returns" href="existing_interfaces.html#id158"/>
+            </topic>
+            <topic label="SetResource" href="existing_interfaces.html#setresource">
+              <topic label="Synopsis" href="existing_interfaces.html#id161"/>
+              <topic label="Arguments" href="existing_interfaces.html#id163"/>
+              <topic label="Description" href="existing_interfaces.html#id165"/>
+              <topic label="Returns" href="existing_interfaces.html#id167"/>
+            </topic>
+          </topic>
+          <topic label="Built-in interfaces" href="existing_interfaces.html#builtin">
+            <topic label="Unloading and InitializeInterface" href="existing_interfaces.html#id170"/>
+            <topic label="Name" href="existing_interfaces.html#id172"/>
+          </topic>
+      </topic>
+      <topic label="Using Addon Resources" href="resources.html">
+          <topic label="An Example" href="resources.html#id3"/>
+          <topic label="Using addon resources in your application" href="resources.html#id5"/>
+      </topic>
+      <topic label="Defined Structures" href="existing_structures.html">
+          <topic label="AOIStream_t" href="structures/aoistream_t.html">
+            <topic label="Description:" href="structures/aoistream_t.html#id5"/>
+          </topic>
+          <topic label="AOMimeInfo_t" href="structures/aomimeinfo_t.html">
+            <topic label="Description:" href="structures/aomimeinfo_t.html#id5"/>
+          </topic>
+          <topic label="AOResource_t" href="structures/aoresource_t.html">
+            <topic label="Description:" href="structures/aoresource_t.html#id5"/>
+          </topic>
+          <topic label="AOAudioFormat_t" href="structures/audioformat_t.html">
+            <topic label="Description:" href="structures/audioformat_t.html#id5"/>
+          </topic>
+          <topic label="ImageFormat_t" href="structures/imageformat_t.html">
+            <topic label="Description:" href="structures/imageformat_t.html#id5"/>
+          </topic>
+          <topic label="MediaFormat_t" href="structures/mediaformat_t.html">
+            <topic label="Description:" href="structures/mediaformat_t.html#id5"/>
+          </topic>
+          <topic label="VideoFormat_t" href="structures/videoformat_t.html">
+            <topic label="Description:" href="structures/videoformat_t.html#id5"/>
+          </topic>
+      </topic>
+</toc>

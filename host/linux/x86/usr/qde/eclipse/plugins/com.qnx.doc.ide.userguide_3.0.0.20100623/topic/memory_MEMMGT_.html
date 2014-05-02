@@ -1,0 +1,125 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Memory management in QNX Neutrino" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Understand_And_Debug.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Memory_Optimization.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Base_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Memory_Analysis_Procedures.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_AboutVirtualMem_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="MemorymanagementinQNXNeutrino" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Memory management in QNX Neutrino</title>
+   </head>
+   <body id="MemorymanagementinQNXNeutrino"><a name="MemorymanagementinQNXNeutrino" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Memory management in QNX Neutrino</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>By design, Neutrino's architecture helps ensure that faults, including memory errors, are
+            confined to the program that caused them. Programs are less likely to cause a cascade of
+            faults because processes are isolated from each other and from the microkernel. Even
+            device drivers behave like regular debuggable processes: 
+            
+         </p>
+         
+         
+         <p><span><img src="../images/e2Ftemp2Ftopic2Fmemory_MEMMGT_.xml_d115503e21.jpg" alt="Introduction; Neutrino architecture" /></span></p>
+         
+         
+         <div class="fignone">
+            
+            <p>The microkernel architecture.</p>
+            
+            
+         </div>
+         
+         
+         <p>This robust architecture ensures that crashing one program has little or no effect on
+            other programs throughout the system. If a program faults, you can be sure that the
+            error is restricted to that process's operation. 
+            
+            
+         </p>
+         
+         
+         <p>Neutrino's full memory protection means that almost all the memory addresses your program
+            encounters are <em>virtual addresses</em>. The process manager maps your program's virtual
+            memory addresses to the actual physical memory; memory that is contiguous in your
+            program may be transparently split up in your system's physical memory: 
+         </p>
+         
+         
+         <p><span><img src="../images/e2Ftemp2Ftopic2Fmemory_MEMMGT_.xml_d115503e54.jpg" alt="Introduction; Contiguous memory" /></span></p>
+         
+         
+         <div class="fignone">
+            
+            <p>How the process manager allocates memory into pages.</p>
+            
+            
+         </div>
+         
+         
+         <p>The process manager allocates memory in small pages (typically 4 KB each). To
+            determine the size for your system, use the <a href="../../com.qnx.doc.neutrino_lib_ref/s/sysconf.html" shape="rect"><tt>sysconf</tt></a> function. 
+         </p>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <ul class="ullinks">
+            <li class="ulchildlink"><strong><a href="../topic/memory_AboutVirtualMem_.html" shape="rect">Virtual memory</a></strong><br clear="none" />
+               
+            </li>
+         </ul>
+         
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/memory_Understand_And_Debug.html" shape="rect">Analyzing Memory Usage and Finding Errors</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/memory_Memory_Optimization.html" shape="rect">Memory optimization</a></div>
+            
+            <div><a href="../topic/memory_Base_.html" shape="rect">Finding memory errors and leaks</a></div>
+            
+            <div><a href="../topic/memory_Memory_Analysis_Procedures.html" shape="rect">The Memory Analysis tool</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

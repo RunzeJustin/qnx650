@@ -1,0 +1,137 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="task" />
+      <meta name="DC.Title" content="Viewing statistics for memory events" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Memory_Events_View.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Memory_Event_Filter.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Memory_Event_Preferences.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Memory_ViewStatsForMemEvents" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Viewing statistics for memory events</title>
+   </head>
+   <body id="Memory_ViewStatsForMemEvents"><a name="Memory_ViewStatsForMemEvents" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Viewing statistics for memory events</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <div class="section">
+            
+            <p>To view statistics for memory events (by allocation kind):</p>
+            
+            
+         </div>
+         
+         
+         <ol>
+            <li class="stepexpand">
+               <span>Right-click anywhere on the table to open the context menu.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Select <span class="uicontrol">Preferences…</span></span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>In the Preferences dialog, select the options <span class="uicontrol">Expand</span>, 
+                  <span class="uicontrol">Kind</span>, <span class="uicontrol">Average Size</span>, 
+                  <span class="uicontrol">Max Size</span>, and <span class="uicontrol">Count columns</span>, 
+                  and deselect all of the other options.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Click <span class="uicontrol">OK</span>.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Right-click, and then select <span class="menucascade">
+                     <span class="uicontrol">Group By</span>
+                     &gt; <span class="uicontrol">Kind</span>
+                     </span>. </span>
+               
+               
+               <p><span><img src="../images/tatistics_For_Memory_Events.xml_d128169e81.jpg" alt="event statistics by kind" /></span></p>
+               
+               
+               
+            </li>
+         </ol>
+         
+         
+         <div class="section">
+            
+            <p>Events are grouped by the kind, as in example shown above. The column <span class="uicontrol">Count</span> shows the number of events in the group. The non-aggregated columns show the value of the first problem in the group. 
+            </p>
+            
+            
+            <p>Similar statistics by size can be obtained by selecting <span class="menucascade">
+                  <span class="uicontrol">Group By</span>
+                  &gt; <span class="uicontrol">Band Size</span>
+                  </span> (and then by adding the <span class="uicontrol">Actual Size</span> column 
+               using <span class="uicontrol">Preferences…</span>).
+            </p>
+            
+            
+            <p><span><img src="../images/tatistics_For_Memory_Events.xml_d128169e117.jpg" alt="event statistics by kind" /></span></p>
+            
+            
+            <p>And you can obtain statistics by its backtrace by selecting <span class="menucascade">
+                  <span class="uicontrol">Group By</span>
+                  &gt; <span class="uicontrol">Backtrace</span>
+                  </span>.
+            </p>
+            
+            
+            <p><span><img src="../images/tatistics_For_Memory_Events.xml_d128169e136.jpg" alt="event statistics by kind" /></span></p>
+            
+            
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/memory_Memory_Events_View.html" shape="rect">Memory Events view</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/memory_Memory_Event_Filter.html" shape="rect">Memory Events Filter</a></div>
+            
+            <div><a href="../topic/memory_Memory_Event_Preferences.html" shape="rect">Memory Events Preferences</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

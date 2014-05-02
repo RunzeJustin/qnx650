@@ -1,0 +1,8 @@
+Manifest-Version: 3.1.0
+Ant-Version: Apache Ant 1.7.1
+Created-By: 10.0-b19 (Sun Microsystems Inc.)
+Bundle-SymbolicName: com.qnx.doc.copyright
+Bundle-Version: 3.1.0.20120626
+Bundle-Name: QNX Common Copyright and Usage Information
+Bundle-Vendor: QNX
+

@@ -1,0 +1,124 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="task" />
+      <meta name="DC.Title" content="Setting properties of breakpoints and watchpoints" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_view_breakpoints_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="SettingBreakpointWatchpointProperties" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Setting properties of breakpoints and watchpoints</title>
+   </head>
+   <body id="SettingBreakpointWatchpointProperties"><a name="SettingBreakpointWatchpointProperties" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Setting properties of breakpoints and watchpoints</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <div class="p">After you've set your breakpoint or watchpoint, the IDE unconditionally halts the
+            program when: <br clear="none" /><ul>
+               <li>it reaches a line of code that the breakpoint is set on 
+                  <p>or:</p>
+                  
+               </li>
+               <li>the expression specified by the watchpoint becomes true</li>
+            </ul>
+            
+         </div>
+         
+         
+         <div class="section">To set the properties for a breakpoint or watchpoint: </div>
+         
+         
+         <ol>
+            <li class="stepexpand">
+               <span>In the Breakpoints view, right-click the breakpoint or watchpoint and select
+                  the <span class="uicontrol">Properties…</span> item. (For breakpoints only, in
+                  the C/C++ editor, right-click the breakpoint and select <span class="uicontrol">Breakpoint
+                     Properties…</span>.) </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Use the <span class="uicontrol">Common</span> panel to modify the watchpoint's
+                  behavior.</span>
+               
+               
+               <p>
+                  <span><img src="../images/g_Properties_OF_Breakpoints.xml_d59611e54.jpg" alt="Common Breakpoint properties" /></span>
+                  
+               </p>
+               
+               
+               
+            </li>
+            <li class="stepexpand">
+               <span>In the <span class="uicontrol">Condition</span> field, enter the Boolean expression to
+                  evaluate. The expression may be anything that can be evaluated inside an
+                  <samp class="codeph">if</samp> statement (e.g. <samp class="codeph">x &gt; y</samp>). The
+                  default is <tt>TRUE</tt>.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>In the <span class="uicontrol">Ignore Count</span> field, enter the number of times the
+                  breakpoint or watchpoint may be hit before it begins to take effect (not the
+                  number of times the condition is true). The default is 0.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>To restrict the breakpoint to specific threads, make sure they're selected in
+                  the <span class="uicontrol">Filtering</span> panel:</span>
+               
+               
+               <p>
+                  <span><img src="../images/g_Properties_OF_Breakpoints.xml_d59611e102.jpg" alt="Breakpoints view; setting breakpoint properties" /></span>
+                  
+               </p>
+               
+               
+               
+            </li>
+            <li class="stepexpand">
+               <span>Click <span class="uicontrol">OK</span>. When in debug mode, your program stops when it
+                  meets the conditions you've set for the breakpoint or watchpoint.</span>
+               
+            </li>
+         </ol>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/debug_view_breakpoints_.html" shape="rect">Using breakpoints and watchpoints</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

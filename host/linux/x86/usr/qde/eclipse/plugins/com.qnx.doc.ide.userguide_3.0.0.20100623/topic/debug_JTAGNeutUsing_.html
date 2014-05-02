@@ -1,0 +1,212 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Using the debugger" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGNeutrino_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Usingthedebugger" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Using the debugger</title>
+   </head>
+   <body id="Usingthedebugger"><a name="Usingthedebugger" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Using the debugger</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>A typical use case is to implement a new feature inside the IDE and build the executable file. After the Trace32 launch configuration
+            starts, through the use of a PRACTICE script, it automatically downloads the modified binary to the target. 
+         </p>
+         
+         
+         <p>The program is then started and debugged inside the Trace32 Debugger. When an error is detected and its location identified,
+            you can right-click inside any window with source code and select <span class="uicontrol">Edit source</span> to return to the IDE. The IDE will open the requested file and position the cursor on the correct line. 
+         </p>
+         
+         
+         <p>After you correct the error, you can set a breakpoint at the same location from within IDE (see <a href="debug_view_breakpoints_.html" shape="rect">Using breakpoints and watchpoints</a>). The breakpoint is communicated to the TRACE32 Debugger. After rebuilding and reloading the program, you can restart it
+            again; the processor will stop at the breakpoint you set earlier. 
+         </p>
+         
+         
+         <p>As is common for IDE-based projects, all source code needs to be organized within projects. If a source file isn't part of
+            a project, the plugin can't communicate breakpoints, or provide the required functionality. 
+         </p>
+         
+         
+         <p>If you need to change the IP address, add a static <tt>arp</tt> entry on the Windows host: 
+         </p>
+         
+         <pre class="codeblock" xml:space="preserve">arp -s <var class="varname">ip-addr</var> 00-C0-8A-80-42-23</pre>
+         
+         <p>And edit the <samp class="codeph">NODE=<var class="varname">ip-addr</var></samp> line in <span class="filepath">c:\t32\config.t32</span> before running <span class="filepath">t32w95.exe</span>. 
+         </p>
+         
+         
+         <p>To obtain basic access: </p>
+         
+         <pre class="codeblock" xml:space="preserve">sys.reset sys.up go</pre>
+         
+         <p>
+            <strong>Programming flash example</strong>
+            
+         </p>
+         
+         <pre class="codeblock" xml:space="preserve">FLASH.RESET 
+FLASH.Create 1. 0xFF800000--0xFF80FFFF 0x02000 AM29LV100B Byte 
+FLASH.Create 1. 0xFF810000--0xFFFEFFFF 0x10000 AM29LV100B Byte 
+FLASH.Create 1. 0xFFFF0000--0xFFFFFFFF 0x02000 AM29LV100B Byte 
+
+flash.erase 0xfff00000--0xfff1ffff 
+flash.program 1. 
+data.load h:\ipl.bin # SREC Format 
+flash.program</pre>
+         
+         <p>
+            <strong>PRACTICE startup scripts</strong>
+            
+         </p>
+         
+         
+         <p>The Trace32 debugger software uses a simple startup script in the Lauterbach scripting language called PRACTICE. The software
+            includes a few PRACTICE scripts to boot some boards in common use at QNX. The file called <span class="filepath">T32.CMM</span> is available from:
+            
+         </p>
+         
+         
+         <p>
+            <a href="http://community.qnx.com/sf/frs/do/viewRelease/projects.ide/frs.ide.jtag_utilities" target="_blank" shape="rect">http://community.qnx.com/sf/frs/do/viewRelease/projects.ide/frs.ide.jtag_utilities</a>
+            
+         </p>
+         
+         
+         <p>
+            <a href="http://community.qnx.com/sf/frs/do/viewRelease/projects.internal_tools/frs.jtag_utilities.trace32_practice_scripts" target="_blank" shape="rect">http://community.qnx.com/sf/frs/do/viewRelease/trace32_practice_scripts</a>
+            
+         </p>
+         
+         
+         <p>
+            <a href="http://community.qnx.com/sf/frs/do/viewRelease/projects.internal_tools/frs.jtag_utilities.trace32_practice_scripts" target="_blank" shape="rect">/projects.internal_tools/frs.jtag_utilities.</a>
+            
+         </p>
+         
+         <pre class="codeblock" xml:space="preserve">;Default startup program for TRACE32  
+;
+;This startup program can be modified according to your needs. 
+   
+;choose hex mode for input 
+  radix hex 
+  
+;Add some extra buttons to the toolbar
+
+menu.rp 
+( 
+   add
+   toolbar 
+   ( 
+   separator 
+   toolitem "Source/List" "list" "Data.List" 
+   toolitem "Memory Dump" "dump" "Data.dump" 
+   toolitem "Register" "reg" "Register /SpotLight" 
+   separator 
+   toolitem "Watch" ":var" "Var.Watch" 
+   toolitem "Stack" ":varframe" "Var.Frame /l /c" 
+   toolitem "Automatic Watch" ":varref" "Var.Ref" 
+   separator 
+   toolitem "List Breakpoints" "break" "Break.List" 
+   toolitem "List Symbols" "symbols" "sYmbol.Browse" 
+   separator 
+   ) 
+ ) 
+ 
+;Recall and Define History File 
+ autostore , history 
+ 
+ enddo</pre>
+         
+         <p>The Macraigor JTAG debugger allows a host computer to control and debug an embedded target processor. Through the process
+            of installing, configuring, and using the Macraigor Usb2Demon Debugger with a QNX Neutrino kernel image, you'll be able to
+            write the image directly into RAM 
+            
+         </p>
+         
+         
+         <p>The following topics discuss the process of installing, configuring, and using the Macraigor Usb2Demon Debugger with a QNX
+            Neutrino kernel image, as well as describing the steps necessary for debugging using the Macraigor debugger: 
+         </p>
+         
+         <br clear="none" /><ul>
+            <li>
+               <a href="debug_JTAGMacgPrerequisites_.html" shape="rect">Prerequisites</a>
+               
+            </li>
+            <li>
+               <a href="debug_JTAGMacgInstHWSupptPkg.html" shape="rect">Installing the Macraigor hardware support package</a>
+               
+            </li>
+            <li>
+               <a href="debug_JTAGMacgConnectToHost_.html" shape="rect">Connecting the Macraigor Usb2Demon Debugger to your host</a>
+               
+            </li>
+            <li>
+               <a href="debug_JTAGMacgConnectToTarget_.html" shape="rect">Connecting the Macraigor Usb2Demon Debugger to your target</a>
+               
+            </li>
+            <li>
+               <a href="debug_JTAGMacgStartOCDRemote_.html" shape="rect">Starting the OCDremote</a>
+               
+            </li>
+            <li>
+               <a href="debug_JTAGMacgBuildImage_.html" shape="rect">Building a system image</a>
+               
+            </li>
+            <li>
+               <a href="debug_JTAGMacgCreateLaunchConfig_.html" shape="rect">Creating a launch configuration</a>
+               
+            </li>
+            <li>
+               <a href="debug_JTAGMacgDebugStartup_.html" shape="rect">Debugging a startup binary</a>
+               
+            </li>
+         </ul>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/debug_JTAGNeutrino_.html" shape="rect">JTAG: Using the Lauterbach Trace32 In-Circuit Debugger with a QNX Neutrino kernel image</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

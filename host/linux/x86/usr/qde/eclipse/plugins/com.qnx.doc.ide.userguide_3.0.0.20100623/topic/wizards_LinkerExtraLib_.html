@@ -1,0 +1,165 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Extra libraries" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_Linker_Tab.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Extralibraries" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Extra libraries</title>
+   </head>
+   <body id="Extralibraries"><a name="Extralibraries" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Extra libraries</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>You can add a list of libraries (<span class="filepath">.so</span> or <span class="filepath">.a</span> files) to search for unsatisfied references. For each item in this list, you can define: 
+            
+            
+            
+            
+            
+            
+         </p>
+         
+         <br clear="none" /><ul>
+            <li><span class="uicontrol">Name</span>
+               — the stripped name, the base name without the <span class="filepath">lib</span> prefix (which <tt>ld</tt> adds automatically), and without the suffix (<span class="filepath">.so</span> or <span class="filepath">.a</span>). 
+            </li>
+            <li><span class="uicontrol">Type</span> — the library type: <span class="uicontrol">Static</span>, <span class="uicontrol">Dynamic</span>, <span class="uicontrol">Stat+Dyn</span>, or <span class="uicontrol">Dyn+Stat</span> (this field is optional because you can let the linker find the first available type). For descriptions about theses types,
+               see below. 
+            </li>
+            <li><span class="uicontrol">Use proper variant</span> — A <span class="uicontrol">No</span> or <span class="uicontrol">Yes</span> in this field indicates whether or not the builder matches the debug or release version of the library with the final binary's
+               type. For example, if you select <span class="uicontrol">Yes</span> and you want to link against a debug version of the library, the IDE appends <span class="filepath">_g</span> to the library's base name. If you select <span class="uicontrol">No</span>, then the builder passes (to <tt>ld</tt>) the specified name, exactly as you entered it. Therefore, if you want to use a release version of your binary and link against
+               a debug version of the library, for debug specify <span class="uicontrol">Yes</span>. 
+            </li>
+         </ul>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> Adding a new element to the extra library list automatically adds the directory where this library resides to the <span class="uicontrol">Extra library paths</span> list (see above), provided that it's path isn't already in the list. However, if you remove an item from the list, its parent
+            directory is not automatically removed. 
+         </div>
+         
+         
+         <p>You can add a library in three ways: the <span class="uicontrol">Add</span>, <span class="uicontrol">Project…</span>, and <span class="uicontrol">QNX target…</span> buttons. 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/pic2Fwizards_LinkerExtraLib_.xml_d204114e134.jpg" alt="Linker Tab: Extra libraries" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>Shows the additional library to use for given build configuration.</p>
+            
+            
+         </div>
+         
+         
+         <p>
+            <strong>Field descriptions for the <span class="uicontrol">External libraries</span> category</strong>
+            
+         </p>
+         
+         
+         <dl>
+            <dt class="dlterm">
+               <span class="uicontrol">Name</span>
+               
+            </dt>
+            <dd>The base library without the <span class="filepath">lib</span> prefix or a suffix.
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Type</span>
+               
+            </dt>
+            <dd>Show the type for the library: <span class="uicontrol">Static</span> (all the functionality of the static library becomes part of your executable), <span class="uicontrol">Dynamic</span> (routines are loaded into your application at run time), <span class="uicontrol">Stat+Dyn</span>, and <span class="uicontrol">Dyn+Stat</span>. To modify the type, select a cell in the <span class="uicontrol">Type</span> column, and then click the arrow to select a different type from the dropdown list. 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Use proper variant</span>
+               
+            </dt>
+            <dd>Indicate whether the matching variant is used for the library, for example, The IDE uses a <span class="filepath">_g</span> variant if the executable is a <span class="filepath">_g</span> variant. To modify the type, select a cell in the <span class="uicontrol">Use proper variant</span> column, and then click the arrow to select either <span class="uicontrol">Yes</span> or <span class="uicontrol">No</span>. Note that setting this value appears to create errors with the library names in the <span class="filepath">common.mk</span> file; however, the <span class="filepath">qnx_internal.mk</span> that is included with <span class="filepath">common.mk</span> corrects this problem.
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Add</span>
+               
+            </dt>
+            <dd>Add a new library by creating an empty element and allowing you to define it manually. </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Project…</span>
+               
+            </dt>
+            <dd>Add a library project by browsing your workspace for the library. When you add a library from your workspace, the IDE uses
+               a relocatable notation so other members with different workspace locations can all work successfully without having to make
+               any project adjustments. 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">QNX target…</span>
+               
+            </dt>
+            <dd>Add a library from an existing QNX target. </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Delete</span>
+               
+            </dt>
+            <dd>Remove the selected library from the list of extra libraries. The library isn't deleted from the system; only from the list.</dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Up</span>
+               
+            </dt>
+            <dd>Change the order by moving the currently selected library up in the list. Libraries are processed in the order in which they
+               appear in the list. If a static library references symbols defined in another static library, the library containing the reference
+               must be listed before the library containing the definition. If you have cross references or circular references, you might
+               not be able to satisfy this requirement.
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Down</span>
+               
+            </dt>
+            <dd>Change the order by moving the currently selected library down in the list. </dd>
+         </dl>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/wizards_Linker_Tab.html" shape="rect">Linker tab</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

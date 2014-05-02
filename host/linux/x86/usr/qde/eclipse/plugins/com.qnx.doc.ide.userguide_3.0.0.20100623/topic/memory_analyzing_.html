@@ -1,0 +1,359 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Launching your program with Memory Analysis" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Memory_Analysis_Procedures.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Using_Memory_Analysis.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_MEMANALEDIT_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_session_view_info.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_ImpMemanalysisdata_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_ExmpMemanalysisdata_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_launch_debug_malloc_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_File_trace_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_attach_debug_malloc_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_API.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="LaunchingyourprogramwithMemoryAnalysis" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Launching your program with Memory Analysis</title>
+   </head>
+   <body id="LaunchingyourprogramwithMemoryAnalysis"><a name="LaunchingyourprogramwithMemoryAnalysis" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Launching your program with Memory Analysis</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>To launch your program with memory analysis from IDE:</p>
+         
+         <br clear="none" /><ol>
+            <li>Create a Run or Debug type of QNX Application launch configuration as you normally would, but don't click <span class="uicontrol">Run</span> or <span class="uicontrol">Debug</span>. 
+            </li>
+            <li>In the <span class="uicontrol">Create, manage, and run configurations</span> dialog, click the <span class="uicontrol">Tools</span> tab. 
+            </li>
+            <li>Click <span class="uicontrol">Add/Delete Tool</span>. 
+            </li>
+            <li>In the <span class="uicontrol">Tools Selection</span> dialog, check <span class="uicontrol">Memory Analysis</span>: 
+               <p>
+                  <span><img src="../images/emp2Ftopic2Fmemory_analyzing_.xml_d129172e51.jpg" alt="Adding a tool" /></span>
+                  
+               </p>
+               
+            </li>
+            <li>Click <span class="uicontrol">OK</span>. 
+            </li>
+            <li>Click the <span class="uicontrol">Memory Analysis</span> tab. 
+               <p>
+                  <span><img src="../images/emp2Ftopic2Fmemory_analyzing_.xml_d129172e72.jpg" alt="Memory Analysis tool" /></span>
+                  
+               </p>
+               
+            </li>
+            <li>To configure the Memory Analysis settings for your program, expand the groups to view the appropriate set of options: <br clear="none" /><ul>
+                  <li>
+                     <span class="uicontrol">Memory Errors</span>
+                     
+                     <p>This group of configuration options controls the Memory Analysis tool's behavior when memory errors are detected.
+                        
+                     </p>
+                     
+                     
+                     <dl>
+                        <dt class="dlterm">
+                           <span class="uicontrol">Enable error detection</span>
+                           
+                        </dt>
+                        <dd> Check this to detect memory allocation, deallocation, and access errors: <br clear="none" /><ul>
+                              <li>
+                                 <span class="uicontrol">Verify parameters in string and memory functions</span>
+                                 
+                                 <p>When enabled, check the parameters in calls to <tt>str*()</tt> and <tt>mem*()</tt> functions for sanity. 
+                                 </p>
+                                 
+                                 
+                              </li>
+                              <li>
+                                 <span class="uicontrol">Perform full heap integrity check on every allocation/deallocation</span>
+                                 
+                                 <p>When enabled, check the heap's memory chains for consistency before every allocation or deallocation. Note that this type
+                                    of checking comes with a performance penalty. 
+                                 </p>
+                                 
+                                 
+                              </li>
+                              <li>
+                                 <span class="uicontrol">Enable bounds checking (where possible)</span>
+                                 
+                                 <p>When enabled, check for buffer overruns and underruns. Note that this is possible only for dynamically allocated buffers.
+                                    
+                                 </p>
+                                 
+                                 
+                              </li>
+                           </ul>
+                           
+                        </dd>
+                        <dt class="dlterm">
+                           <span class="uicontrol">When an error is detected</span>
+                           
+                        </dt>
+                        <dd> Memory Analysis takes the selected action when a memory error is detected. By default, it reports the error and attempts
+                           to continue, but you can also choose to launch the debugger or terminate the process. 
+                        </dd>
+                        <dt class="dlterm">
+                           <span class="uicontrol">Limit trace-back depth to</span>
+                           
+                        </dt>
+                        <dd> Specify the number of stack frames to record when logging a memory error. </dd>
+                        <dt class="dlterm">
+                           <span class="uicontrol">Perform leak check every (ms)</span>
+                           
+                        </dt>
+                        <dd>Specify how often you want to check for leaks. Note that this type of checking comes with a performance penalty. The control
+                           thread must be enabled for this option to work.
+                        </dd>
+                        <dt class="dlterm">
+                           <span class="uicontrol">Perform leak check when process exits</span>
+                           
+                        </dt>
+                        <dd>When checked, prints memory leaks when the process exits, before the operating system cleans up the process's resources. For
+                           this option to work, the application must exist cleanly, i.e. using the <tt>exit</tt> method. 
+                        </dd>
+                     </dl>
+                     
+                     
+                  </li>
+                  <li>
+                     <span class="uicontrol">Memory Tracing</span>
+                     
+                     <p>This group of configuration options controls the Memory Analysis tool's memory tracing features.
+                        
+                     </p>
+                     
+                     
+                     <dl>
+                        <dt class="dlterm">
+                           <span class="uicontrol">Enable memory allocation/deallocation tracing</span>
+                           
+                        </dt>
+                        <dd> When checked, trace all memory allocations and deallocations. Tracing is required to provide backtrace of allocation for
+                           memory leaks and errors. It can also can be used on its own to inspect allocations.
+                        </dd>
+                        <dt class="dlterm">
+                           <span class="uicontrol">Limit back-trace depth to</span>
+                           
+                        </dt>
+                        <dd> Specify the number of stack frames to record when tracing memory events. A higher number significantly increases memory consumption
+                           for the application. 
+                        </dd>
+                        <dt class="dlterm">
+                           <span class="uicontrol">Minimum allocation to trace</span>
+                           
+                        </dt>
+                        <dd> The size, in bytes, of the smallest allocation to trace. </dd>
+                        <dt class="dlterm">
+                           <span class="uicontrol">Maximum allocation to trace</span>
+                           
+                        </dt>
+                        <dd> The size, in bytes, of the largest allocation to trace. Use <cite>0</cite> for unlimited. 
+                        </dd>
+                        <dt class="dlterm">
+                           <span class="uicontrol">Perform tracing every (ms)</span>
+                           
+                        </dt>
+                        <dd>Deprecated. How often to collect information about your program's allocation and deallocation activity. When setting this,
+                           consider how often your program allocates and deallocates memory, and for how long you plan to run the program. 
+                           <div class="note"><span class="notetitle">Note:</span> This option is not supported by the latest library. Now, you can only turn tracing on or off.
+                           </div>
+                           
+                        </dd>
+                     </dl>
+                     
+                     
+                  </li>
+                  <li>
+                     <span class="uicontrol">Memory Snapshots</span>
+                     
+                     <p>Controls the Memory Analysis tool's memory snapshot feature.
+                        
+                     </p>
+                     
+                     
+                     <dl>
+                        <dt class="dlterm">
+                           <span class="uicontrol">Memory Snapshots</span>
+                           
+                        </dt>
+                        <dd> Enable memory snapshots. Memory snapshots include total memory usage, bins and bands statistics.</dd>
+                        <dt class="dlterm">
+                           <span class="uicontrol">Perform snapshot every (ms)</span>
+                           
+                        </dt>
+                        <dd> Specify the number of milliseconds between each memory snapshot. Recommended minim settings is 1000 ms (= 1 sec)</dd>
+                        <dt class="dlterm">
+                           <span class="uicontrol">Bins counters (comma separated) ex: 10,100,1000,...</span>
+                           
+                        </dt>
+                        <dd>A comma-separated list of the memory bins you want to trace. A bin is a container for memory blocks of the same size (within
+                           a bin range). In comparison, for <span class="q">"band"</span>, bin is a user-defined value.
+                        </dd>
+                     </dl>
+                     
+                     
+                  </li>
+                  <li>
+                     <span class="uicontrol">Advanced Settings</span>
+                     
+                     <p>These settings let you specify details about how memory debugging will be handled on the target system.
+                        
+                     </p>
+                     
+                     
+                     <dl>
+                        <dt class="dlterm">
+                           <span class="uicontrol">Runtime library:</span>
+                           
+                        </dt>
+                        <dd>The full path <em>on the target</em> to the memory-debugging library, usually <var class="varname">$QNX_TARGET/</var><var class="varname">target_architecture</var><span class="filepath">/usr/lib/librcheck.so</span>. 
+                        </dd>
+                     </dl>
+                     
+                     
+                  </li>
+                  <li>
+                     <span class="uicontrol">Use regular file</span>
+                     
+                     <p>The data will be stored in the file specified in <span class="uicontrol">Target output file or device</span> field. The default is <span class="filepath">/tmp/traces.rmat</span>. If more than one person using the same target, change the file name to be user specific, or add <span class="filepath">${pid}</span> as part or a name, which would be replaced by the process ID of a running process. When this option is used, the user process
+                        won't be blocked when writing data, however if data file exceeds 2G, the remaining log would be lost. For more information,
+                        see <a href="memory_File_trace_.html" shape="rect">Performing a postmortem memory analysis</a>.
+                        
+                     </p>
+                     
+                     
+                  </li>
+                  <li>
+                     <span class="uicontrol">Use streaming device</span>
+                     
+                     <p>Data is collected and streamed directly to the IDE using a "device" created by <span class="cmdname">qconn</span> agent. The <span class="uicontrol">Target output file or device</span> field contains the full path to the device that will receive memory events. The default is <span class="filepath">/dev/rcheck/traces.rmat</span>.  If this option is used <span class="cmdname">qconn</span> would require more memory to operate (for a data buffer) and the application will be blocked if it sends data faster than
+                        the IDE can read it. But in this case, there is no limit of the size of the data transferred to the IDE. 
+                     </p>
+                     
+                     
+                  </li>
+                  <li>
+                     <span class="uicontrol">Create control thread</span>
+                     
+                     <p>Enable this if you want to control data collection at runtime (such as dumping leaks or snapshots).</p>
+                     
+                     
+                     <div class="note"><span class="notetitle">Note:</span> If your program uses <em>fork</em>(), you can't use a control thread since <em>fork</em>() only works with single-threaded programs. Consequently, you must disable the control thread of the Memory Analysis tool
+                        (from the Launch Configuration, select <span class="menucascade">
+                           <span class="uicontrol">Memory Analysis</span>
+                           &gt; <span class="uicontrol">Target Settings</span>
+                           </span> and disable <span class="uicontrol">Create control thread</span>.) 
+                     </div>
+                     
+                     
+                  </li>
+                  <li>
+                     <span class="uicontrol">Use dladdr to find dll names</span>
+                     
+                     <p>Deprecated. Provide backtrace information from shared objects that were built with debugging information. </p>
+                     
+                     
+                     <div class="note"><span class="notetitle">Note:</span> This option isn't available for the newer library file <span class="filepath">librcheck.so</span>; however, it is available for the older file <span class="filepath">libmalloc_g.so</span>. The availability of this option depends on which library was specified as a Runtime library. 
+                     </div>
+                     
+                     
+                  </li>
+                  <li>
+                     <span class="uicontrol">Show debug output on console</span>
+                     
+                     <p>Enable this to show messages from the memory-debugging library in the Console view. </p>
+                     
+                     
+                  </li>
+               </ul>
+               
+            </li>
+            <li>If you want the IDE to automatically change to the QNX Memory Analysis perspective when you run or debug, select <span class="uicontrol">Switch to this tool's perspective on launch</span>. 
+               
+            </li>
+            <li>Click <span class="uicontrol">Apply</span> to save your changes. 
+            </li>
+            <li>Click <span class="uicontrol">Run</span>, <span class="uicontrol">Debug</span>, or <span class="uicontrol">Profile</span>. The IDE starts your program and lets you analyze your program's memory.
+            </li>
+         </ol>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <ul class="ullinks">
+            <li class="ulchildlink"><strong><a href="../topic/memory_launch_debug_malloc_.html" shape="rect">Launching from the command line with Memory Analysis enabled</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/memory_File_trace_.html" shape="rect">Performing a postmortem memory analysis</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/memory_attach_debug_malloc_.html" shape="rect">Attaching to a running process</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/memory_API.html" shape="rect">The Memory Analysis tooling API</a></strong><br clear="none" />
+               
+            </li>
+         </ul>
+         
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/memory_Memory_Analysis_Procedures.html" shape="rect">The Memory Analysis tool</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/memory_Using_Memory_Analysis.html" shape="rect">Advanced topics</a></div>
+            
+            <div><a href="../topic/memory_MEMANALEDIT_.html" shape="rect">Viewing Memory Analysis data</a></div>
+            
+            <div><a href="../topic/memory_session_view_info.html" shape="rect">Managing Memory Analysis sessions: The Session view</a></div>
+            
+            <div><a href="../topic/memory_ExmpMemanalysisdata_.html" shape="rect">Exporting memory analysis data</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/memory_ImpMemanalysisdata_.html" shape="rect">Importing memory analysis data</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

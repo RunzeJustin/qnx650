@@ -1,0 +1,129 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Extra library paths" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_Linker_Tab.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Extralibrarypaths" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Extra library paths</title>
+   </head>
+   <body id="Extralibrarypaths"><a name="Extralibrarypaths" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Extra library paths</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>Select this category to modify the list of library paths (to specify locations where the linker should look for import libraries
+            (<span class="filepath">.so</span> or <span class="filepath">.a</span> files), and change the order in which they are referenced. 
+            
+            
+            
+            
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/c2Fwizards_LinkerExtraPaths_.xml_d204899e42.jpg" alt="Linker Tab: Extra Library paths" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>The default dialog for the Extra paths category.</p>
+            
+            
+         </div>
+         
+         
+         <p>
+            <strong>Field descriptions for the <span class="uicontrol">External library paths</span> category</strong>
+            
+         </p>
+         
+         
+         <dl>
+            <dt class="dlterm">
+               <span class="uicontrol">Library directory expression</span>
+               
+            </dt>
+            <dd>Show the list of directory expressions for the library paths you specified. </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Project…</span>
+               
+            </dt>
+            <dd>Add a library project path by browsing your workspace for the library. When you add a library from your workspace, the IDE
+               uses a relocatable notation so that other members with different workspace locations can all work successfully without having
+               to make any project adjustments. 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">QNX target…</span>
+               
+            </dt>
+            <dd>Add a library path from an existing QNX target. </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Disk…</span>
+               
+            </dt>
+            <dd>Add a library path from the entire filesystem. </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Delete</span>
+               
+            </dt>
+            <dd>Remove the selected library path reference from the list of library directory expressions. </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Up</span>
+               
+            </dt>
+            <dd>Change the order by moving the currently selected library path up in the list. Libraries are processed in the order in which
+               they appear in the list. If a static library references symbols defined in another static library, the library containing
+               the reference must be listed before the library containing the definition. If you have cross references or circular references,
+               you might not be able to satisfy this requirement.
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Down</span>
+               
+            </dt>
+            <dd>Change the order by moving the currently selected library path down in the list. </dd>
+         </dl>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/wizards_Linker_Tab.html" shape="rect">Linker tab</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

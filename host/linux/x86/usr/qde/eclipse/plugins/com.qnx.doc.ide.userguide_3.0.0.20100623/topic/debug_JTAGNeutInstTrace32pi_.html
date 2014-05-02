@@ -1,0 +1,163 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="task" />
+      <meta name="DC.Title" content="Installing the Lauterbach Trace32 Eclipse plug-in software" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGNeutrino_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="InstallingtheLauterbachTrace32Eclipsepluginsoftware" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Installing the Lauterbach Trace32 Eclipse plug-in software</title>
+   </head>
+   <body id="InstallingtheLauterbachTrace32Eclipsepluginsoftware"><a name="InstallingtheLauterbachTrace32Eclipsepluginsoftware" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Installing the Lauterbach Trace32 Eclipse plug-in software</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <div class="p">The Lauterbach Trace32 Eclipse plug-in software links the IDE and the Trace32 Debugger; it provides the connection between
+            both development environments. The plugin adds a launch configuration to the IDE that you can use to start existing Trace32
+            installations; however, it doesn't let you use Trace32 debug functionality from within the IDE, such as using watch variable
+            values, or using the step and go functionality.
+            
+         </div>
+         
+         
+         <div class="section">To install the Lauterbach Trace32 Eclipse plug-in software: </div>
+         
+         
+         <ol>
+            <li class="stepexpand">
+               <span>Launch the QNX Momentics IDE on the host development machine. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Select <span class="menucascade">
+                     <span class="uicontrol">Help</span>
+                     &gt; <span class="uicontrol">Check For Updates</span>
+                     &gt; <span class="uicontrol">Find and Install</span>
+                     </span>. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Select <span class="uicontrol">Search for new features to install</span>, and then click <span class="uicontrol">Next</span>. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Click <span class="uicontrol">New Remote Site</span>. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>In the <span class="uicontrol">Name</span> field, type a name for the update site. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>In the <span class="uicontrol">URL</span> field, type the URL <span class="filepath">http://www.Lauterbach.com/eclipse</span>, and then click <span class="uicontrol">OK</span>.</span>
+               
+               
+               <p>
+                  <span><img src="../images/ebug_JTAGNeutInstTrace32pi_.xml_d51889e98.jpg" alt="Specifying an URL for the update" /></span>
+                  
+               </p>
+               
+               
+               
+            </li>
+            <li class="stepexpand">
+               <span>Verify that the newly added site is selected, and then click <span class="uicontrol">Finish</span>. </span>
+               
+               
+               <p>
+                  <span><img src="../images/ebug_JTAGNeutInstTrace32pi_.xml_d51889e119.jpg" alt="Verifying the newly added update site is selected" /></span>
+                  
+               </p>
+               
+               
+               
+            </li>
+            <li class="stepexpand">
+               <span>From the remote site, install the Lauterbach Trace32 In-Circuit Debugger Integration feature. Follow the instructions and,
+                  if required, restart the IDE for the changes to take effect.</span>
+               
+            </li>
+         </ol>
+         
+         
+         <div class="section">
+            
+            <p>Now, the Lauterbach Trace32 Debugger appears in the list of configuration types. </p>
+            
+            
+            <p>
+               <span><img src="../images/ebug_JTAGNeutInstTrace32pi_.xml_d51889e142.jpg" alt="Lauterbach Trace32 Debugger launch configuration type" /></span>
+               
+            </p>
+            
+            
+            <div class="fignone">
+               
+               <p>The Lauterbach Trace32 Debugger launch configuration type.</p>
+               
+               
+            </div>
+            
+            
+            <p>In addition, the Lauterbach Trace32 In-Circuit Debugger icon is added to the Toolbar. You can use this icon to conveniently
+               launch the Lauterbach CMM PRACTICE script from the latest open launch configuration dialog. 
+            </p>
+            
+            
+            <p>
+               <span><img src="../images/ebug_JTAGNeutInstTrace32pi_.xml_d51889e160.jpg" alt="Lauterbach Trace32 CMM icon" /></span>
+               
+            </p>
+            
+            
+            <div class="fignone">
+               
+               <p>The Lauterbach Trace32 CMM icon.</p>
+               
+               
+            </div>
+            
+            
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/debug_JTAGNeutrino_.html" shape="rect">JTAG: Using the Lauterbach Trace32 In-Circuit Debugger with a QNX Neutrino kernel image</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

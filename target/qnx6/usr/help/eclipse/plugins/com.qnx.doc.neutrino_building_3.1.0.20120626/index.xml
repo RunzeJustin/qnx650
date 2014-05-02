@@ -1,0 +1,2091 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<index>
+ <entry keyword=".~~~ filename extension">
+  <topic href="building_nto.html#id49" title="Compression rules"/>
+  <topic href="building_nto.html#id47" title="Two sizes"/>
+ </entry>
+ <entry keyword="/dev/shmem">
+  <topic href="overview.html#id35" title="Additional read/write nonpersistent storage required"/>
+ </entry>
+ <entry keyword="/tmp, creating on a RAM-disk">
+  <topic href="config.html#id15" title="/tmp"/>
+ </entry>
+ <entry keyword="startup.h">
+  <topic href="startup.html#id35" title="Defaults"/>
+ </entry>
+ <entry keyword="A20">
+  <topic href="hardware.html#id24" title="A20 gate"/>
+  <topic href="startup.html#x86_enable_a20" title="x86_enable_a20()"/>
+ </entry>
+ <entry keyword="adaptive partitioning">
+  <topic href="building_nto.html#Bootstrap" title="The bootstrap file"/>
+ </entry>
+ <entry keyword="add_cache()">
+  <topic href="startup.html#add_cache" title="add_cache()"/>
+ </entry>
+ <entry keyword="add_callout()">
+  <topic href="startup.html#add_callout" title="add_callout()"/>
+ </entry>
+ <entry keyword="add_callout_array()">
+  <topic href="startup.html#add_callout_array" title="add_callout_array()"/>
+ </entry>
+ <entry keyword="add_interrupt()">
+  <topic href="startup.html#add_interrupt" title="add_interrupt()"/>
+ </entry>
+ <entry keyword="add_interrupt_array()">
+  <topic href="startup.html#add_interrupt_array" title="add_interrupt_array()"/>
+  <topic href="startup.html#init_intrinfo" title="init_intrinfo()"/>
+  <topic href="startup.html#intrinfo" title="intrinfo"/>
+ </entry>
+ <entry keyword="add_ram()">
+  <topic href="startup.html#add_ram" title="add_ram()"/>
+  <topic href="startup.html#init_raminfo" title="init_raminfo()"/>
+ </entry>
+ <entry keyword="add_string()">
+  <topic href="startup.html#add_string" title="add_string()"/>
+  <topic href="startup.html#strings" title="strings"/>
+ </entry>
+ <entry keyword="add_typed_string()">
+  <topic href="startup.html#add_typed_string" title="add_typed_string()"/>
+  <topic href="startup.html#typed_strings" title="typed_strings"/>
+ </entry>
+ <entry keyword="alloc_qtime()">
+  <topic href="startup.html#alloc_qtime" title="alloc_qtime()"/>
+ </entry>
+ <entry keyword="alloc_ram()">
+  <topic href="startup.html#alloc_ram" title="alloc_ram()"/>
+ </entry>
+ <entry keyword="ARM">
+  <topic href="startup.html#init_intrinfo" title="init_intrinfo()"/>
+  <topic href="startup.html#init_mmu" title="init_mmu()"/>
+  <topic href="startup.html#init_qtime" title="init_qtime()"/>
+  <topic href="startup.html#init_qtime_sa1100" title="init_qtime_sa1100()"/>
+  <topic href="startup.html#init_raminfo" title="init_raminfo()"/>
+  <topic href="startup.html#rtc_time" title="rtc_time()"/>
+  <topic href="config.html#id26" title="Specifying the processor"/>
+  <topic href="startup.html#id61" title="The cpu_intr_base member"/>
+  <topic href="startup.html#arm" title="un.arm"/>
+ </entry>
+ <entry keyword="as_add()">
+  <topic href="startup.html#as_add" title="as_add()"/>
+ </entry>
+ <entry keyword="as_add_containing()">
+  <topic href="startup.html#as_add_containing" title="as_add_containing()"/>
+ </entry>
+ <entry keyword="AS_ATTR_CACHABLE">
+  <topic href="startup.html#attr_field" title="The attr field"/>
+ </entry>
+ <entry keyword="AS_ATTR_CONTINUED">
+  <topic href="startup.html#attr_field" title="The attr field"/>
+ </entry>
+ <entry keyword="AS_ATTR_KIDS">
+  <topic href="startup.html#attr_field" title="The attr field"/>
+ </entry>
+ <entry keyword="AS_ATTR_READABLE">
+  <topic href="startup.html#attr_field" title="The attr field"/>
+ </entry>
+ <entry keyword="AS_ATTR_WRITABLE">
+  <topic href="startup.html#attr_field" title="The attr field"/>
+ </entry>
+ <entry keyword="as_default()">
+  <topic href="startup.html#as_default" title="as_default()"/>
+ </entry>
+ <entry keyword="as_find()">
+  <topic href="startup.html#as_find" title="as_find()"/>
+ </entry>
+ <entry keyword="as_find_containing()">
+  <topic href="startup.html#as_find_containing" title="as_find_containing()"/>
+ </entry>
+ <entry keyword="as_info2off()">
+  <topic href="startup.html#as_info2off" title="as_info2off()"/>
+ </entry>
+ <entry keyword="AS_NULL_OFF">
+  <topic href="startup.html#asinfo" title="asinfo"/>
+ </entry>
+ <entry keyword="as_off2info()">
+  <topic href="startup.html#as_off2info" title="as_off2info()"/>
+ </entry>
+ <entry keyword="AS_PRIORITY_DEFAULT">
+  <topic href="startup.html#asinfo" title="asinfo"/>
+ </entry>
+ <entry keyword="as_set_checker()">
+  <topic href="startup.html#as_set_checker" title="as_set_checker()"/>
+ </entry>
+ <entry keyword="as_set_priority()">
+  <topic href="startup.html#as_set_priority" title="as_set_priority()"/>
+ </entry>
+ <entry keyword="avoid_ram()">
+  <topic href="startup.html#avoid_ram" title="avoid_ram()"/>
+ </entry>
+ <entry keyword="bank-switched">
+  <entry keyword="defined">
+   <topic href="load_process.html#RESPONSIBLE" title="Responsibilities of the IPL"/>
+  </entry>
+  <entry keyword="See also image"/>
+ </entry>
+ <entry keyword="BIOS">
+  <topic href="startup.html#id49" title="diskgeometry tag"/>
+  <topic href="overview.html#WARMANDCOLD" title="Warm-start and cold-start IPL"/>
+  <topic href="startup.html#x86_init_pcbios" title="x86_init_pcbios()"/>
+  <entry keyword="extension">
+   <topic href="load_process.html#id14" title="Warm-start IPL"/>
+   <topic href="startup.html#x86_pcbios_shadow_rom" title="x86_pcbios_shadow_rom()"/>
+  </entry>
+  <entry keyword="if you don&#x0027;t have one">
+   <topic href="config.html#id30" title="Specifying the startup program"/>
+  </entry>
+ </entry>
+ <entry keyword="block_size buildfile attribute">
+  <topic href="building_nto.html#id41" title="Block size"/>
+  <topic href="building_nto.html#id39" title="mkefs buildfile"/>
+ </entry>
+ <entry keyword="Board Support Packages">
+ </entry>
+ <entry keyword="boot header">
+  <topic href="load_process.html#id41" title="Structure of the boot header"/>
+ </entry>
+ <entry keyword="bootfile">
+  <topic href="building_nto.html#SimpleBuildfile" title="A simple buildfile"/>
+ </entry>
+ <entry keyword="BOOTP">
+  <topic href="load_process.html#BOOTPSERVER" title="Using a BOOTP server"/>
+  <topic href="load_process.html#id14" title="Warm-start IPL"/>
+ </entry>
+ <entry keyword="bootstrap file (.bootstrap)">
+  <topic href="building_nto.html#Bootstrap" title="The bootstrap file"/>
+ </entry>
+ <entry keyword="bound multiprocessing (BMP)">
+  <topic href="building_nto.html#id14" title="Bound multiprocessing attributes"/>
+ </entry>
+ <entry keyword="break_detect()">
+  <topic href="startup.html#id78" title="Debug interface"/>
+ </entry>
+ <entry keyword="bsp_working_dir">
+  <topic href="bsp.html#Structure" title="Structure of a BSP"/>
+ </entry>
+ <entry keyword="BSPs">
+  <entry keyword="content">
+   <topic href="bsp.html#OVERVIEW" title="BSP Overview"/>
+   <topic href="bsp.html#Structure" title="Structure of a BSP"/>
+  </entry>
+  <entry keyword="obtaining">
+   <topic href="bsp.html#OVERVIEW" title="BSP Overview"/>
+  </entry>
+  <entry keyword="source code">
+   <topic href="bsp.html#id13" title="src subdirectory"/>
+   <entry keyword="command line">
+    <topic href="bsp.html#BUILDSRC" title="Building source from the command line"/>
+    <topic href="bsp.html#CMDLINE" title="Using BSPs on the command line"/>
+   </entry>
+   <entry keyword="importing into the IDE">
+    <topic href="bsp.html#IDE" title="Using BSPs in the IDE"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="buildfile">
+  <entry keyword="attributes">
+   <topic href="building_nto.html#id8" title="Inline files"/>
+   <entry keyword="block_size">
+    <topic href="building_nto.html#id41" title="Block size"/>
+    <topic href="building_nto.html#id39" title="mkefs buildfile"/>
+   </entry>
+   <entry keyword="combining">
+    <topic href="building_nto.html#id28" title="Specifying file ownership and permissions"/>
+   </entry>
+   <entry keyword="compress">
+    <topic href="building_nto.html#id11" title="Compressing the image"/>
+    <topic href="load_process.html#id47" title="flags1 and flags2"/>
+   </entry>
+   <entry keyword="data">
+    <topic href="config.html#id7" title="Running executables more than once"/>
+   </entry>
+   <entry keyword="filter">
+    <topic href="building_nto.html#Compressing_files" title="Compressing files"/>
+    <topic href="building_nto.html#id39" title="mkefs buildfile"/>
+   </entry>
+   <entry keyword="gid">
+    <topic href="building_nto.html#id28" title="Specifying file ownership and permissions"/>
+   </entry>
+   <entry keyword="keeplinked">
+    <topic href="building_nto.html#StartupDebugSymbols" title="Generating startup debug symbols"/>
+   </entry>
+   <entry keyword="max_size">
+    <topic href="building_nto.html#id39" title="mkefs buildfile"/>
+   </entry>
+   <entry keyword="min_size">
+    <topic href="building_nto.html#id39" title="mkefs buildfile"/>
+   </entry>
+   <entry keyword="module">
+    <topic href="building_nto.html#Bootstrap" title="The bootstrap file"/>
+   </entry>
+   <entry keyword="newpath">
+    <topic href="building_nto.html#id22" title="Modifying the search path"/>
+   </entry>
+   <entry keyword="perms">
+    <topic href="building_nto.html#id28" title="Specifying file ownership and permissions"/>
+   </entry>
+   <entry keyword="physical">
+    <topic href="building_nto.html#Bootstrap" title="The bootstrap file"/>
+   </entry>
+   <entry keyword="script">
+    <topic href="building_nto.html#Script" title="The script file"/>
+   </entry>
+   <entry keyword="search">
+    <topic href="building_nto.html#id20" title="Including files from different places"/>
+   </entry>
+   <entry keyword="spare_blocks">
+    <topic href="building_nto.html#id39" title="mkefs buildfile"/>
+    <topic href="building_nto.html#Spare_blocks" title="Spare blocks"/>
+   </entry>
+   <entry keyword="type">
+    <topic href="config.html#id15" title="/tmp"/>
+   </entry>
+   <entry keyword="uid">
+    <topic href="building_nto.html#id28" title="Specifying file ownership and permissions"/>
+   </entry>
+   <entry keyword="virtual">
+    <topic href="config.html#id28" title="Examples"/>
+    <topic href="load_process.html#id47" title="flags1 and flags2"/>
+    <topic href="building_nto.html#Bootstrap" title="The bootstrap file"/>
+   </entry>
+  </entry>
+  <entry keyword="complete examples of">
+   <topic href="config.html#GENERIC" title="Generic examples"/>
+  </entry>
+  <entry keyword="including lots of files in">
+   <topic href="building_nto.html#id30" title="Including a whole whack of files"/>
+  </entry>
+  <entry keyword="inline files">
+   <topic href="building_nto.html#id26" title="Creating the contents of the file in line"/>
+   <topic href="building_nto.html#id8" title="Inline files"/>
+  </entry>
+  <entry keyword="modifiers">
+   <entry keyword="CPU">
+    <topic href="building_nto.html#id14" title="Bound multiprocessing attributes"/>
+   </entry>
+  </entry>
+  <entry keyword="simple example of">
+   <topic href="building_nto.html#SimpleBuildfile" title="A simple buildfile"/>
+  </entry>
+  <entry keyword="specifying a processor in">
+   <topic href="config.html#id26" title="Specifying the processor"/>
+  </entry>
+  <entry keyword="syntax">
+   <topic href="building_nto.html#SimpleBuildfile" title="A simple buildfile"/>
+  </entry>
+ </entry>
+ <entry keyword="Bus item (system page)">
+  <topic href="startup.html#id41" title="Bus item"/>
+ </entry>
+ <entry keyword="cache">
+  <topic href="startup.html#id84" title="Cache controller interface"/>
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+  <topic href="startup.html#cacheattr" title="syspage_entry cacheattr"/>
+ </entry>
+ <entry keyword="CACHE_FLAG_CTRL_PHYS">
+  <topic href="startup.html#cacheattr" title="syspage_entry cacheattr"/>
+ </entry>
+ <entry keyword="CACHE_FLAG_DATA">
+  <topic href="startup.html#cacheattr" title="syspage_entry cacheattr"/>
+ </entry>
+ <entry keyword="CACHE_FLAG_INSTR">
+  <topic href="startup.html#cacheattr" title="syspage_entry cacheattr"/>
+ </entry>
+ <entry keyword="CACHE_FLAG_NONCOHERENT">
+  <topic href="startup.html#cacheattr" title="syspage_entry cacheattr"/>
+ </entry>
+ <entry keyword="CACHE_FLAG_NONISA">
+  <topic href="startup.html#cacheattr" title="syspage_entry cacheattr"/>
+ </entry>
+ <entry keyword="CACHE_FLAG_SHARED">
+  <topic href="startup.html#cacheattr" title="syspage_entry cacheattr"/>
+ </entry>
+ <entry keyword="CACHE_FLAG_SNOOPED">
+  <topic href="startup.html#cacheattr" title="syspage_entry cacheattr"/>
+ </entry>
+ <entry keyword="CACHE_FLAG_SUBSET">
+  <topic href="startup.html#cacheattr" title="syspage_entry cacheattr"/>
+ </entry>
+ <entry keyword="CACHE_FLAG_UNIFIED">
+  <topic href="startup.html#cacheattr" title="syspage_entry cacheattr"/>
+ </entry>
+ <entry keyword="CACHE_FLAG_VIRTUAL">
+  <topic href="startup.html#cacheattr" title="syspage_entry cacheattr"/>
+ </entry>
+ <entry keyword="CACHE_FLAG_WRITEBACK">
+  <topic href="startup.html#cacheattr" title="syspage_entry cacheattr"/>
+ </entry>
+ <entry keyword="cacheattr">
+  <topic href="startup.html#cacheattr" title="syspage_entry cacheattr"/>
+ </entry>
+ <entry keyword="calc_time_t()">
+  <topic href="startup.html#calc_time_t" title="calc_time_t()"/>
+ </entry>
+ <entry keyword="calloc_ram()">
+  <topic href="startup.html#calloc_ram" title="calloc_ram()"/>
+ </entry>
+ <entry keyword="callout area">
+  <topic href="startup.html#callout" title="callout"/>
+ </entry>
+ <entry keyword="CALLOUT_END">
+  <topic href="startup.html#id189" title="Starting off"/>
+ </entry>
+ <entry keyword="callout_io_map()">
+  <topic href="startup.html#callout_io_map_indirect" title="callout_io_map(), callout_io_map_indirect()"/>
+ </entry>
+ <entry keyword="callout_io_map_indirect()">
+  <topic href="startup.html#callout_io_map_indirect" title="callout_io_map(), callout_io_map_indirect()"/>
+ </entry>
+ <entry keyword="callout_memory_map()">
+  <topic href="startup.html#callout_memory_map_indirect" title="callout_memory_map(), callout_memory_map_indirect()"/>
+ </entry>
+ <entry keyword="callout_memory_map_indirect()">
+  <topic href="startup.html#callout_memory_map_indirect" title="callout_memory_map(), callout_memory_map_indirect()"/>
+ </entry>
+ <entry keyword="callout_register_data()">
+  <topic href="startup.html#callout_register_data" title="callout_register_data()"/>
+ </entry>
+ <entry keyword="CALLOUT_START">
+  <topic href="startup.html#id189" title="Starting off"/>
+ </entry>
+ <entry keyword="callouts">
+  <topic href="startup.html#CALLOUTINFO" title="Callout information"/>
+  <topic href="overview.html#ESTABCALLOUTS" title="Establishing callouts"/>
+  <topic href="overview.html#id7" title="The role of the startup program"/>
+  <entry keyword="writing your own">
+   <topic href="startup.html#WRITCALLOUT" title="Writing your own kernel callout"/>
+  </entry>
+ </entry>
+ <entry keyword="character I/O devices">
+  <topic href="overview.html#id47" title="Character I/O devices"/>
+ </entry>
+ <entry keyword="chip_access()">
+  <topic href="startup.html#chip_access" title="chip_access()"/>
+ </entry>
+ <entry keyword="chip_done()">
+  <topic href="startup.html#chip_done" title="chip_done()"/>
+ </entry>
+ <entry keyword="chip_read16()">
+  <topic href="startup.html#chip_read16" title="chip_read16()"/>
+ </entry>
+ <entry keyword="chip_read32()">
+  <topic href="startup.html#chip_read32" title="chip_read32()"/>
+ </entry>
+ <entry keyword="chip_read8()">
+  <topic href="startup.html#chip_read8" title="chip_read8()"/>
+ </entry>
+ <entry keyword="chip_write16()">
+  <topic href="startup.html#chip_write16" title="chip_write16()"/>
+ </entry>
+ <entry keyword="chip_write32()">
+  <topic href="startup.html#chip_write32" title="chip_write32()"/>
+ </entry>
+ <entry keyword="chip_write8()">
+  <topic href="startup.html#chip_write8" title="chip_write8()"/>
+ </entry>
+ <entry keyword="CIFS">
+  <topic href="building_nto.html#id74" title="Network filesystems"/>
+ </entry>
+ <entry keyword="CIFS (Common Internet File System)">
+  <topic href="building_nto.html#id74" title="Network filesystems"/>
+ </entry>
+ <entry keyword="clock, external">
+  <topic href="hardware.html#id30" title="External clocks"/>
+ </entry>
+ <entry keyword="ClockAdjust()">
+  <topic href="startup.html#qtime" title="syspage_entry qtime"/>
+ </entry>
+ <entry keyword="ClockCycles()">
+  <topic href="startup.html#qtime" title="syspage_entry qtime"/>
+ </entry>
+ <entry keyword="ClockPeriod()">
+  <topic href="startup.html#qtime" title="syspage_entry qtime"/>
+ </entry>
+ <entry keyword="ClockTime()">
+  <topic href="startup.html#qtime" title="syspage_entry qtime"/>
+ </entry>
+ <entry keyword="cold-start IPL">
+  <topic href="load_process.html#id16" title="Cold-start IPL"/>
+  <topic href="overview.html#WARMANDCOLD" title="Warm-start and cold-start IPL"/>
+ </entry>
+ <entry keyword="compress buildfile attribute">
+  <topic href="building_nto.html#id11" title="Compressing the image"/>
+  <topic href="load_process.html#id47" title="flags1 and flags2"/>
+ </entry>
+ <entry keyword="compressing/decompressing">
+  <topic href="building_nto.html#Compressing_files" title="Compressing files"/>
+ </entry>
+ <entry keyword="compression">
+  <entry keyword=".~~~ filename extension">
+   <topic href="building_nto.html#id49" title="Compression rules"/>
+   <topic href="building_nto.html#id47" title="Two sizes"/>
+  </entry>
+  <entry keyword="methods, choosing">
+   <topic href="load_process.html#id47" title="flags1 and flags2"/>
+  </entry>
+  <entry keyword="rules">
+   <topic href="building_nto.html#id49" title="Compression rules"/>
+  </entry>
+ </entry>
+ <entry keyword="config callout">
+  <topic href="startup.html#id65" title="config return values"/>
+ </entry>
+ <entry keyword="config()">
+  <topic href="startup.html#id82" title="Interrupt controller interface"/>
+ </entry>
+ <entry keyword="confname()">
+  <topic href="startup.html#typed_strings" title="typed_strings"/>
+ </entry>
+ <entry keyword="control()">
+  <topic href="startup.html#id84" title="Cache controller interface"/>
+ </entry>
+ <entry keyword="conventions">
+  <entry keyword="typographical">
+   <topic href="about.html#Typographical_conventions" title="Typographical conventions"/>
+  </entry>
+ </entry>
+ <entry keyword="copy_memory()">
+  <topic href="startup.html#copy_memory" title="copy_memory()"/>
+ </entry>
+ <entry keyword="CPU buildfile modifier">
+  <topic href="building_nto.html#id14" title="Bound multiprocessing attributes"/>
+ </entry>
+ <entry keyword="CPU mode, setting">
+  <topic href="startup.html#Power_management" title="Power management callout"/>
+ </entry>
+ <entry keyword="CPU_FLAG_FPU">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="CPU_FLAG_MMU">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="cpuinfo">
+  <topic href="startup.html#cacheattr" title="syspage_entry cacheattr"/>
+ </entry>
+ <entry keyword="CPUs, number of on the system">
+  <topic href="startup.html#num_cpu" title="num_cpu"/>
+ </entry>
+ <entry keyword="_CS_LIBPATH">
+  <entry keyword="in bootstrap files">
+   <topic href="building_nto.html#Bootstrap" title="The bootstrap file"/>
+  </entry>
+ </entry>
+ <entry keyword="_CS_PATH">
+  <entry keyword="in bootstrap files">
+   <topic href="building_nto.html#Bootstrap" title="The bootstrap file"/>
+  </entry>
+ </entry>
+ <entry keyword="custom engineering">
+  <topic href="hardware.html#id10" title="Peripherals"/>
+ </entry>
+ <entry keyword="data buildfile attribute">
+  <topic href="config.html#id7" title="Running executables more than once"/>
+ </entry>
+ <entry keyword="debugging">
+  <topic href="building_nto.html#Debugging" title="Debugging an embedded system"/>
+  <entry keyword="hardware considerations">
+   <topic href="hardware.html#id12" title="Debugging"/>
+  </entry>
+  <entry keyword="shared objects">
+   <topic href="config.html#id5" title="Shared libraries"/>
+  </entry>
+  <entry keyword="symbol information, providing">
+   <topic href="building_nto.html#DebugSymbolInfo" title="Producing debug symbol information for IPL and startup"/>
+  </entry>
+  <entry keyword="versions of software">
+   <topic href="hardware.html#id8" title="Memory requirements"/>
+  </entry>
+ </entry>
+ <entry keyword="deflate">
+  <topic href="building_nto.html#Compressing_files" title="Compressing files"/>
+ </entry>
+ <entry keyword="del_typed_string()">
+  <topic href="startup.html#del_typed_string" title="del_typed_string()"/>
+ </entry>
+ <entry keyword="design do&#x0027;s and don&#x0027;ts">
+  <topic href="hardware.html#DESIGN" title="Design do's and don'ts"/>
+ </entry>
+ <entry keyword="devf-generic">
+  <topic href="overview.html#id39" title="Flash filesystems and media"/>
+  <topic href="bsp.html#id28" title="How do I create a partition?"/>
+  <topic href="flashfsys.html#INTRO" title="Introduction"/>
+ </entry>
+ <entry keyword="devf-ram">
+  <topic href="overview.html#id35" title="Additional read/write nonpersistent storage required"/>
+  <entry keyword="template for new drivers">
+   <topic href="flashfsys.html#BUILDINGYOUR" title="Building your flash filesystem driver"/>
+   <topic href="flashfsys.html#EXAMPLE" title="Example: The devf-ram driver"/>
+  </entry>
+ </entry>
+ <entry keyword="Device item (system page)">
+  <topic href="startup.html#id43" title="Device item"/>
+ </entry>
+ <entry keyword="disks, information about detected">
+  <topic href="load_process.html#id80" title="struct startup_info_disk"/>
+ </entry>
+ <entry keyword="display_char()">
+  <topic href="startup.html#id78" title="Debug interface"/>
+ </entry>
+ <entry keyword="DL_DEBUG">
+  <topic href="config.html#id5" title="Shared libraries"/>
+ </entry>
+ <entry keyword="DOS filesystem">
+  <topic href="building_nto.html#id68" title="Disk drivers"/>
+ </entry>
+ <entry keyword="dumpifs">
+  <topic href="building_nto.html#id34" title="Listing the contents of an image"/>
+ </entry>
+ <entry keyword="dynamically linked libraries, debugging">
+  <topic href="config.html#id5" title="Shared libraries"/>
+ </entry>
+ <entry keyword="Embedded Transaction Filesystem (ETFS) images">
+  <topic href="building_nto.html#IMAGES" title="Images, images, images"/>
+ </entry>
+ <entry keyword="enable_cache()">
+  <topic href="load_process.html#enable_cache" title="enable_cache"/>
+ </entry>
+ <entry keyword="environment variables">
+  <entry keyword="DL_DEBUG">
+   <topic href="config.html#id5" title="Shared libraries"/>
+  </entry>
+  <entry keyword="setting in the script file">
+   <topic href="building_nto.html#Script" title="The script file"/>
+  </entry>
+ </entry>
+ <entry keyword="EOI (End of Interrupt)">
+  <topic href="startup.html#intrinfo" title="intrinfo"/>
+  <topic href="startup.html#id63" title="The flags member"/>
+ </entry>
+ <entry keyword="Ethernet">
+  <topic href="config.html#id23" title="Complete example — TCP/IP with network filesystem"/>
+ </entry>
+ <entry keyword="extension signature">
+  <topic href="load_process.html#id14" title="Warm-start IPL"/>
+ </entry>
+ <entry keyword="External Process ID Registers, Power ISA 2.06">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="f3s_close()">
+  <topic href="flashfsys.html#f3s_close" title="f3s_close()"/>
+ </entry>
+ <entry keyword="f3s_flash_t">
+  <topic href="flashfsys.html#MAIN" title="The main() function"/>
+ </entry>
+ <entry keyword="f3s_ident()">
+  <topic href="flashfsys.html#f3s_ident" title="f3s_ident()"/>
+ </entry>
+ <entry keyword="f3s_init()">
+  <topic href="flashfsys.html#f3s_init" title="f3s_init()"/>
+ </entry>
+ <entry keyword="f3s_open()">
+  <topic href="flashfsys.html#f3s_open" title="f3s_open()"/>
+  <topic href="flashfsys.html#OPTSPARSE" title="Options parsing"/>
+ </entry>
+ <entry keyword="F3S_OPER_SOCKET">
+  <topic href="flashfsys.html#f3s_close" title="f3s_close()"/>
+ </entry>
+ <entry keyword="F3S_OPER_WINDOW">
+  <topic href="flashfsys.html#f3s_close" title="f3s_close()"/>
+ </entry>
+ <entry keyword="f3s_page()">
+  <topic href="flashfsys.html#f3s_page" title="f3s_page()"/>
+ </entry>
+ <entry keyword="F3S_POWER_VCC">
+  <topic href="flashfsys.html#f3s_close" title="f3s_close()"/>
+ </entry>
+ <entry keyword="F3S_POWER_VPP">
+  <topic href="flashfsys.html#f3s_close" title="f3s_close()"/>
+ </entry>
+ <entry keyword="f3s_reset()">
+  <topic href="flashfsys.html#f3s_reset" title="f3s_reset()"/>
+ </entry>
+ <entry keyword="f3s_service_t">
+  <topic href="flashfsys.html#MAIN" title="The main() function"/>
+ </entry>
+ <entry keyword="f3s_socket_option()">
+  <topic href="flashfsys.html#f3s_close" title="f3s_close()"/>
+  <topic href="flashfsys.html#f3s_socket_option" title="f3s_socket_option()"/>
+ </entry>
+ <entry keyword="f3s_socket_syspage()">
+  <topic href="flashfsys.html#f3s_socket_syspage" title="f3s_socket_syspage()"/>
+ </entry>
+ <entry keyword="f3s_start()">
+  <topic href="flashfsys.html#f3s_start" title="f3s_start()"/>
+ </entry>
+ <entry keyword="f3s_status()">
+  <topic href="flashfsys.html#f3s_status" title="f3s_status()"/>
+ </entry>
+ <entry keyword="f3s_sync()">
+  <topic href="flashfsys.html#f3s_v2sync" title="f3s_v2sync()"/>
+ </entry>
+ <entry keyword="f3s_v2erase()">
+  <topic href="flashfsys.html#f3s_v2erase" title="f3s_v2erase()"/>
+ </entry>
+ <entry keyword="f3s_v2islock()">
+  <topic href="flashfsys.html#f3s_v2islock" title="f3s_v2islock()"/>
+ </entry>
+ <entry keyword="f3s_v2lock()">
+  <topic href="flashfsys.html#f3s_v2lock" title="f3s_v2lock()"/>
+ </entry>
+ <entry keyword="f3s_v2read()">
+  <topic href="flashfsys.html#f3s_v2read" title="f3s_v2read()"/>
+ </entry>
+ <entry keyword="f3s_v2resume()">
+  <topic href="flashfsys.html#f3s_v2resume" title="f3s_v2resume()"/>
+ </entry>
+ <entry keyword="f3s_v2suspend()">
+  <topic href="flashfsys.html#f3s_v2suspend" title="f3s_v2suspend()"/>
+ </entry>
+ <entry keyword="f3s_v2unlock()">
+  <topic href="flashfsys.html#f3s_v2unlock" title="f3s_v2unlock()"/>
+ </entry>
+ <entry keyword="f3s_v2unlockall()">
+  <topic href="flashfsys.html#f3s_v2unlockall" title="f3s_v2unlockall()"/>
+ </entry>
+ <entry keyword="f3s_v2write()">
+  <topic href="flashfsys.html#f3s_v2write" title="f3s_v2write()"/>
+ </entry>
+ <entry keyword="falcon_init_l2_cache()">
+  <topic href="startup.html#falcon_init_l2_cache" title="falcon_init_l2_cache()"/>
+ </entry>
+ <entry keyword="falcon_init_raminfo()">
+  <topic href="startup.html#falcon_init_raminfo" title="falcon_init_raminfo()"/>
+ </entry>
+ <entry keyword="falcon_system_clock()">
+  <topic href="startup.html#falcon_system_clock" title="falcon_system_clock()"/>
+ </entry>
+ <entry keyword="field upgrades">
+  <topic href="hardware.html#id14" title="Field upgrades"/>
+ </entry>
+ <entry keyword="files">
+  <entry keyword=".bootstrap">
+   <topic href="building_nto.html#Bootstrap" title="The bootstrap file"/>
+  </entry>
+  <entry keyword="compressing">
+   <topic href="building_nto.html#Compressing_files" title="Compressing files"/>
+  </entry>
+  <entry keyword="inline">
+   <topic href="building_nto.html#id26" title="Creating the contents of the file in line"/>
+   <topic href="building_nto.html#id8" title="Inline files"/>
+  </entry>
+  <entry keyword="main.c">
+   <topic href="load_process.html#IPLCODESTRUCT" title="IPL code structure"/>
+  </entry>
+ </entry>
+ <entry keyword="filesystems">
+  <entry keyword="choosing">
+   <topic href="overview.html#id29" title="Choice of filesystems"/>
+  </entry>
+  <entry keyword="CIFS (Common Internet File System) [fs-cifs]">
+   <topic href="building_nto.html#id74" title="Network filesystems"/>
+  </entry>
+  <entry keyword="ISO-9660 CD-ROM (fs-udf.so)">
+   <topic href="building_nto.html#id68" title="Disk drivers"/>
+  </entry>
+  <entry keyword="Linux (fs-ext2.so)">
+   <topic href="building_nto.html#id68" title="Disk drivers"/>
+  </entry>
+  <entry keyword="Macintosh HFS and HFS Plus (fs-mac.so)">
+   <topic href="building_nto.html#id68" title="Disk drivers"/>
+  </entry>
+  <entry keyword="MS-DOS (fs-dos.so)">
+   <topic href="building_nto.html#id68" title="Disk drivers"/>
+  </entry>
+  <entry keyword="NFS (Network File System) [fs-nfs2, fs-nfs3]">
+   <topic href="building_nto.html#id74" title="Network filesystems"/>
+  </entry>
+  <entry keyword="Power-Safe (fs-qnx6.so)">
+   <topic href="building_nto.html#id68" title="Disk drivers"/>
+  </entry>
+  <entry keyword="QNX 4 (fs-qnx4.so)">
+   <topic href="building_nto.html#id68" title="Disk drivers"/>
+  </entry>
+  <entry keyword="Universal Disk Format (UDF) [fs-udf.so]">
+   <topic href="building_nto.html#id68" title="Disk drivers"/>
+  </entry>
+  <entry keyword="Windows NT (fs-nt.so)">
+   <topic href="building_nto.html#id68" title="Disk drivers"/>
+  </entry>
+ </entry>
+ <entry keyword="filter buildfile attribute">
+  <topic href="building_nto.html#Compressing_files" title="Compressing files"/>
+  <topic href="building_nto.html#id39" title="mkefs buildfile"/>
+ </entry>
+ <entry keyword="find_startup_info()">
+  <topic href="startup.html#find_startup_info" title="find_startup_info()"/>
+  <topic href="startup.html#init_raminfo" title="init_raminfo()"/>
+ </entry>
+ <entry keyword="find_typed_string()">
+  <topic href="startup.html#find_typed_string" title="find_typed_string()"/>
+ </entry>
+ <entry keyword="flags member">
+  <topic href="startup.html#id63" title="The flags member"/>
+ </entry>
+ <entry keyword="flash">
+  <topic href="hardware.html#id18" title="EPROM/Flash filesystem considerations"/>
+  <entry keyword="accessing compressed files without decompressing">
+   <topic href="building_nto.html#Compressing_files" title="Compressing files"/>
+  </entry>
+  <entry keyword="erasing">
+   <topic href="bsp.html#id28" title="How do I create a partition?"/>
+  </entry>
+  <entry keyword="filesystem">
+   <entry keyword="customizing">
+    <topic href="flashfsys.html#INTRO" title="Introduction"/>
+   </entry>
+   <entry keyword="images">
+    <topic href="building_nto.html#FLASH" title="Building a flash filesystem image"/>
+    <topic href="building_nto.html#IMAGES" title="Images, images, images"/>
+   </entry>
+   <entry keyword="partitions">
+    <topic href="bsp.html#id24" title="Flash filesystem partitions"/>
+    <topic href="bsp.html#id28" title="How do I create a partition?"/>
+   </entry>
+  </entry>
+  <entry keyword="logical layout of memory chips">
+   <topic href="hardware.html#id18" title="EPROM/Flash filesystem considerations"/>
+  </entry>
+  <entry keyword="transferring images to">
+   <topic href="building_nto.html#TransferringToFlash" title="Transferring an image to flash"/>
+  </entry>
+  <entry keyword="two independent sets of devices">
+   <topic href="hardware.html#id18" title="EPROM/Flash filesystem considerations"/>
+  </entry>
+ </entry>
+ <entry keyword="flashctl">
+  <topic href="bsp.html#id28" title="How do I create a partition?"/>
+  <topic href="building_nto.html#TransferringToFlash" title="Transferring an image to flash"/>
+ </entry>
+ <entry keyword="floating-point emulator (fpemu.so), can&#x0027;t use in statically linked executables">
+  <topic href="config.html#id21" title="Complete example — disk filesystem"/>
+ </entry>
+ <entry keyword="fs-cifs">
+  <topic href="building_nto.html#id74" title="Network filesystems"/>
+ </entry>
+ <entry keyword="fs-dos.so">
+  <topic href="building_nto.html#id68" title="Disk drivers"/>
+ </entry>
+ <entry keyword="fs-ext2.so">
+  <topic href="building_nto.html#id68" title="Disk drivers"/>
+ </entry>
+ <entry keyword="fs-mac.so">
+  <topic href="building_nto.html#id68" title="Disk drivers"/>
+ </entry>
+ <entry keyword="fs-nfs2, fs-nfs3">
+  <topic href="building_nto.html#id74" title="Network filesystems"/>
+ </entry>
+ <entry keyword="fs-nt.so">
+  <topic href="building_nto.html#id68" title="Disk drivers"/>
+ </entry>
+ <entry keyword="fs-qnx4.so">
+  <topic href="building_nto.html#id68" title="Disk drivers"/>
+ </entry>
+ <entry keyword="fs-qnx6.so">
+  <topic href="building_nto.html#id68" title="Disk drivers"/>
+ </entry>
+ <entry keyword="fs-udf.so">
+  <topic href="building_nto.html#id68" title="Disk drivers"/>
+ </entry>
+ <entry keyword="ftruncate()">
+  <topic href="building_nto.html#id51" title="The exception"/>
+ </entry>
+ <entry keyword="gid buildfile attribute">
+  <topic href="building_nto.html#id28" title="Specifying file ownership and permissions"/>
+ </entry>
+ <entry keyword="glitch interrupts, beware of">
+  <topic href="hardware.html#id32" title="Interrupts &#x0026; controllers"/>
+ </entry>
+ <entry keyword="Global Descriptor Table (GDT)">
+  <topic href="startup.html#x86" title="un.x86"/>
+ </entry>
+ <entry keyword="Group item (system page)">
+  <topic href="startup.html#id39" title="Group item"/>
+ </entry>
+ <entry keyword="handle_common_option()">
+  <topic href="startup.html#handle_common_option" title="handle_common_option()"/>
+ </entry>
+ <entry keyword="hardware">
+  <entry keyword="bugs, working around">
+   <entry keyword="stwcx. instruction on PPC">
+    <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+   </entry>
+  </entry>
+  <entry keyword="debuggers">
+   <topic href="building_nto.html#Debugging" title="Debugging an embedded system"/>
+  </entry>
+  <entry keyword="information about">
+   <topic href="startup.html#hwinfo" title="hwinfo"/>
+  </entry>
+  <entry keyword="supported by Neutrino">
+   <topic href="overview.html#id47" title="Character I/O devices"/>
+   <topic href="overview.html#id43" title="Network media and filesystems"/>
+   <topic href="overview.html#id41" title="Rotating media and filesystems"/>
+   <topic href="overview.html#id27" title="Source of initialization and configuration"/>
+  </entry>
+  <entry keyword="system design considerations">
+   <topic href="hardware.html#INTRO" title="Introduction"/>
+  </entry>
+ </entry>
+ <entry keyword="HFS and HFS Plus">
+  <topic href="building_nto.html#id68" title="Disk drivers"/>
+ </entry>
+ <entry keyword="hwi_add_device()">
+  <topic href="startup.html#hwi_add_device" title="hwi_add_device()"/>
+ </entry>
+ <entry keyword="hwi_add_inputclk()">
+  <topic href="startup.html#hwi_add_inputclk" title="hwi_add_inputclk()"/>
+ </entry>
+ <entry keyword="hwi_add_irq()">
+  <topic href="startup.html#hwi_add_irq" title="hwi_add_irq()"/>
+ </entry>
+ <entry keyword="hwi_add_location()">
+  <topic href="startup.html#hwi_add_location" title="hwi_add_location()"/>
+ </entry>
+ <entry keyword="hwi_add_nicaddr()">
+  <topic href="startup.html#hwi_add_nicaddr" title="hwi_add_nicaddr()"/>
+ </entry>
+ <entry keyword="hwi_add_rtc()">
+  <topic href="startup.html#hwi_add_rtc" title="hwi_add_rtc()"/>
+ </entry>
+ <entry keyword="hwi_alloc_item()">
+  <topic href="startup.html#id31" title="Building the section"/>
+  <topic href="startup.html#id35" title="Defaults"/>
+  <topic href="startup.html#hwi_alloc_item" title="hwi_alloc_item()"/>
+ </entry>
+ <entry keyword="hwi_alloc_tag">
+  <topic href="startup.html#hwi_alloc_tag" title="hwi_alloc_tag()"/>
+ </entry>
+ <entry keyword="hwi_alloc_tag()">
+  <topic href="startup.html#id31" title="Building the section"/>
+  <topic href="startup.html#id35" title="Defaults"/>
+ </entry>
+ <entry keyword="hwi_find_as()">
+  <topic href="startup.html#hwi_find_as" title="hwi_find_as()"/>
+ </entry>
+ <entry keyword="hwi_find_item()">
+  <topic href="startup.html#id31" title="Building the section"/>
+  <topic href="startup.html#hwi_find_item" title="hwi_find_item()"/>
+  <topic href="startup.html#id33" title="Other functions"/>
+ </entry>
+ <entry keyword="hwi_find_tag()">
+  <topic href="startup.html#hwi_find_tag" title="hwi_find_tag()"/>
+ </entry>
+ <entry keyword="HWI_NULL_OFF">
+  <topic href="startup.html#id31" title="Building the section"/>
+  <topic href="startup.html#id27" title="Items"/>
+  <topic href="startup.html#id33" title="Other functions"/>
+ </entry>
+ <entry keyword="hwi_off2tag()">
+  <topic href="startup.html#hwi_off2tag" title="hwi_off2tag()"/>
+  <topic href="startup.html#id33" title="Other functions"/>
+ </entry>
+ <entry keyword="hwi_tag2off()">
+  <topic href="startup.html#hwi_tag2off" title="hwi_tag2off()"/>
+  <topic href="startup.html#id33" title="Other functions"/>
+ </entry>
+ <entry keyword="HWI_TAG_INFO()">
+  <topic href="startup.html#id35" title="Defaults"/>
+  <topic href="startup.html#id37" title="Predefined items and tags"/>
+ </entry>
+ <entry keyword="IDT (Interrupt Descriptor Table)">
+  <topic href="startup.html#id61" title="The cpu_intr_base member"/>
+ </entry>
+ <entry keyword="image_download_8250()">
+  <topic href="load_process.html#BOOTBANK" title="Booting from a bank-switched device"/>
+  <topic href="load_process.html#image_download_8250" title="image_download_8250()"/>
+  <topic href="load_process.html#IPLCODESTRUCT" title="IPL code structure"/>
+ </entry>
+ <entry keyword="image_scan()">
+  <topic href="load_process.html#BOOTBANK" title="Booting from a bank-switched device"/>
+  <topic href="load_process.html#image_scan" title="image_scan()"/>
+  <topic href="load_process.html#IPLCODESTRUCT" title="IPL code structure"/>
+ </entry>
+ <entry keyword="image_scan_ext()">
+  <topic href="load_process.html#image_scan_ext" title="image_scan_ext()"/>
+ </entry>
+ <entry keyword="image_setup()">
+  <topic href="load_process.html#BOOTBANK" title="Booting from a bank-switched device"/>
+  <topic href="load_process.html#image_setup" title="image_setup()"/>
+  <topic href="load_process.html#IPLCODESTRUCT" title="IPL code structure"/>
+ </entry>
+ <entry keyword="image_setup_ext()">
+  <topic href="load_process.html#image_setup_ext" title="image_setup_ext()"/>
+ </entry>
+ <entry keyword="image_start()">
+  <topic href="load_process.html#BOOTBANK" title="Booting from a bank-switched device"/>
+  <topic href="load_process.html#image_start" title="image_start()"/>
+  <topic href="load_process.html#IPLCODESTRUCT" title="IPL code structure"/>
+ </entry>
+ <entry keyword="image_start_ext()">
+  <topic href="load_process.html#image_start_ext" title="image_start_ext()"/>
+ </entry>
+ <entry keyword="images">
+  <entry keyword="bank-switched">
+   <topic href="load_process.html#id21" title="If the source is a bank-switched device"/>
+   <topic href="load_process.html#RESPONSIBLE" title="Responsibilities of the IPL"/>
+   <entry keyword="sources of">
+    <topic href="load_process.html#id7" title="Bank-switched images"/>
+   </entry>
+  </entry>
+  <entry keyword="bootable">
+   <topic href="building_nto.html#NTOIMAGE" title="What is an OS image?"/>
+  </entry>
+  <entry keyword="building">
+   <topic href="building_nto.html#id32" title="Generating the image"/>
+   <topic href="building_nto.html" title="Making an OS Image"/>
+   <topic href="bsp.html#DEVICES" title="Supporting additional devices"/>
+  </entry>
+  <entry keyword="combining multiple files">
+   <topic href="building_nto.html#id54" title="Combining image files using mkimage"/>
+  </entry>
+  <entry keyword="compressing">
+   <topic href="building_nto.html#id11" title="Compressing the image"/>
+  </entry>
+  <entry keyword="defined">
+   <topic href="building_nto.html#NTOIMAGE" title="What is an OS image?"/>
+  </entry>
+  <entry keyword="determining which shared libraries to include">
+   <topic href="config.html#id5" title="Shared libraries"/>
+  </entry>
+  <entry keyword="example of using an OS image as a filesystem">
+   <topic href="building_nto.html#IMAGEFSYS" title="The OS image as a filesystem"/>
+  </entry>
+  <entry keyword="format">
+   <topic href="building_nto.html#PLACINGIMG" title="Embedding an image"/>
+   <topic href="overview.html#WARMANDCOLD" title="Warm-start and cold-start IPL"/>
+  </entry>
+  <entry keyword="linearly mapped">
+   <topic href="load_process.html#RESPONSIBLE" title="Responsibilities of the IPL"/>
+  </entry>
+  <entry keyword="listing contents of">
+   <topic href="building_nto.html#id34" title="Listing the contents of an image"/>
+  </entry>
+  <entry keyword="loading">
+   <topic href="load_process.html#LOADIMG" title="Loading the image"/>
+  </entry>
+  <entry keyword="more than one in system">
+   <topic href="building_nto.html#NTOIMAGE" title="What is an OS image?"/>
+  </entry>
+  <entry keyword="nonbootable">
+   <topic href="building_nto.html#NTOIMAGE" title="What is an OS image?"/>
+  </entry>
+  <entry keyword="physical address">
+   <topic href="load_process.html#id57" title="image_paddr"/>
+  </entry>
+  <entry keyword="signature">
+   <topic href="load_process.html#id43" title="signature"/>
+  </entry>
+  <entry keyword="transferring onto your board">
+   <topic href="bsp.html#OSIMAGE" title="Transferring an OS image onto your board"/>
+  </entry>
+  <entry keyword="transferring to flash">
+   <topic href="building_nto.html#TransferringToFlash" title="Transferring an image to flash"/>
+  </entry>
+ </entry>
+ <entry keyword="inflator">
+  <topic href="building_nto.html#id45" title="Abstraction layer"/>
+  <topic href="building_nto.html#Compressing_files" title="Compressing files"/>
+ </entry>
+ <entry keyword="init_asinfo()">
+  <topic href="startup.html#init_asinfo" title="init_asinfo()"/>
+ </entry>
+ <entry keyword="init_cacheattr()">
+  <topic href="startup.html#init_cacheattr" title="init_cacheattr()"/>
+  <topic href="startup.html#cacheattr" title="syspage_entry cacheattr"/>
+ </entry>
+ <entry keyword="init_cpuinfo()">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+  <topic href="startup.html#init_cpuinfo" title="init_cpuinfo()"/>
+  <topic href="startup.html#cacheattr" title="syspage_entry cacheattr"/>
+ </entry>
+ <entry keyword="init_hwinfo()">
+  <topic href="startup.html#hwinfo" title="hwinfo"/>
+  <topic href="startup.html#init_hwinfo" title="init_hwinfo()"/>
+ </entry>
+ <entry keyword="init_intrinfo()">
+  <topic href="startup.html#init_intrinfo" title="init_intrinfo()"/>
+  <topic href="startup.html#intrinfo" title="intrinfo"/>
+ </entry>
+ <entry keyword="init_mmu()">
+  <topic href="startup.html#init_mmu" title="init_mmu()"/>
+ </entry>
+ <entry keyword="init_pminfo()">
+  <topic href="startup.html#init_pminfo" title="init_pminfo()"/>
+ </entry>
+ <entry keyword="init_qtime()">
+  <topic href="startup.html#init_qtime" title="init_qtime()"/>
+  <topic href="startup.html#qtime" title="syspage_entry qtime"/>
+ </entry>
+ <entry keyword="init_qtime_sa1100()">
+  <topic href="startup.html#init_qtime" title="init_qtime()"/>
+  <topic href="startup.html#init_qtime_sa1100" title="init_qtime_sa1100()"/>
+ </entry>
+ <entry keyword="init_raminfo()">
+  <topic href="startup.html#alloc_ram" title="alloc_ram()"/>
+  <topic href="startup.html#calloc_ram" title="calloc_ram()"/>
+  <topic href="startup.html#init_raminfo" title="init_raminfo()"/>
+ </entry>
+ <entry keyword="init_smp()">
+  <topic href="startup.html#init_smp" title="init_smp()"/>
+  <topic href="startup.html#num_cpu" title="num_cpu"/>
+  <topic href="startup.html#x86" title="un.x86"/>
+  <topic href="startup.html#x86_smpinfo" title="un.x86.smpinfo (deprecated)"/>
+ </entry>
+ <entry keyword="init_syspage_memory()">
+  <topic href="startup.html#init_syspage_memory" title="init_syspage_memory() (deprecated)"/>
+ </entry>
+ <entry keyword="init_system_private()">
+  <topic href="startup.html#handle_common_option" title="handle_common_option()"/>
+  <topic href="startup.html#init_system_private" title="init_system_private()"/>
+  <topic href="startup.html#system_private" title="system_private"/>
+ </entry>
+ <entry keyword="Initial Program Loader">
+ </entry>
+ <entry keyword="inline files">
+  <topic href="building_nto.html#id26" title="Creating the contents of the file in line"/>
+  <topic href="building_nto.html#id8" title="Inline files"/>
+ </entry>
+ <entry keyword="int15_copy()">
+  <topic href="load_process.html#int15_copy" title="int15_copy()"/>
+ </entry>
+ <entry keyword="Intel hex records">
+  <topic href="building_nto.html#id58" title="Converting images using mkrec"/>
+ </entry>
+ <entry keyword="interrupt_eoi_dec()">
+  <topic href="startup.html#id63" title="The flags member"/>
+ </entry>
+ <entry keyword="interrupt_id_dec()">
+  <topic href="startup.html#id63" title="The flags member"/>
+ </entry>
+ <entry keyword="interrupt_id_dec_smp()">
+  <topic href="startup.html#id63" title="The flags member"/>
+ </entry>
+ <entry keyword="InterruptAttach()">
+  <topic href="startup.html#id65" title="config return values"/>
+  <topic href="hardware.html#id32" title="Interrupts &#x0026; controllers"/>
+  <topic href="startup.html#intrinfo" title="intrinfo"/>
+ </entry>
+ <entry keyword="InterruptAttachEvent()">
+  <topic href="startup.html#id65" title="config return values"/>
+  <topic href="hardware.html#id32" title="Interrupts &#x0026; controllers"/>
+ </entry>
+ <entry keyword="InterruptMask()">
+  <topic href="startup.html#id63" title="The flags member"/>
+ </entry>
+ <entry keyword="interrupts">
+  <entry keyword="clock">
+   <topic href="hardware.html#id40" title="Do:"/>
+   <topic href="hardware.html#id30" title="External clocks"/>
+   <topic href="startup.html#qtime" title="syspage_entry qtime"/>
+  </entry>
+  <entry keyword="controller, callouts for">
+   <topic href="startup.html#id82" title="Interrupt controller interface"/>
+  </entry>
+  <entry keyword="EOI (End of Interrupt)">
+   <topic href="startup.html#intrinfo" title="intrinfo"/>
+   <topic href="startup.html#id63" title="The flags member"/>
+  </entry>
+  <entry keyword="IDT (Interrupt Descriptor Table)">
+   <topic href="startup.html#id61" title="The cpu_intr_base member"/>
+  </entry>
+  <entry keyword="Interrupt Descriptor Table (IDT)">
+   <topic href="startup.html#x86" title="un.x86"/>
+  </entry>
+  <entry keyword="IPI (Interprocess Interrupt)">
+   <topic href="startup.html#smp" title="smp"/>
+  </entry>
+  <entry keyword="IVOR (Interrupt Vector Offset Register)">
+   <topic href="startup.html#id61" title="The cpu_intr_base member"/>
+  </entry>
+  <entry keyword="multicore systems">
+   <topic href="startup.html#intrinfo" title="intrinfo"/>
+  </entry>
+  <entry keyword="NMI (Non-Maskable Interrupt)">
+   <topic href="hardware.html#NMI" title="NMI"/>
+   <topic href="startup.html#id63" title="The flags member"/>
+  </entry>
+  <entry keyword="parallel ports">
+   <topic href="hardware.html#id36" title="Parallel port considerations"/>
+  </entry>
+  <entry keyword="Programmable Interrupt Controller (PIC)">
+   <topic href="hardware.html#id32" title="Interrupts &#x0026; controllers"/>
+  </entry>
+  <entry keyword="programming in startup">
+   <topic href="startup.html#intrinfo" title="intrinfo"/>
+   <topic href="overview.html#id7" title="The role of the startup program"/>
+  </entry>
+  <entry keyword="serial ports">
+   <topic href="hardware.html#id34" title="Serial and parallel ports"/>
+  </entry>
+ </entry>
+ <entry keyword="InterruptUnmask()">
+  <topic href="startup.html#id63" title="The flags member"/>
+ </entry>
+ <entry keyword="INTR_CONFIG_FLAG_DISALLOWED">
+  <topic href="startup.html#id65" title="config return values"/>
+ </entry>
+ <entry keyword="INTR_CONFIG_FLAG_IPI">
+  <topic href="startup.html#id65" title="config return values"/>
+ </entry>
+ <entry keyword="INTR_CONFIG_FLAG_PREATTACH">
+  <topic href="startup.html#id65" title="config return values"/>
+ </entry>
+ <entry keyword="INTR_FLAG_CASCADE_IMPLICIT_EOI">
+  <topic href="startup.html#id63" title="The flags member"/>
+ </entry>
+ <entry keyword="INTR_FLAG_CPU_FAULT">
+  <topic href="startup.html#id63" title="The flags member"/>
+ </entry>
+ <entry keyword="INTR_FLAG_NMI">
+  <topic href="startup.html#id63" title="The flags member"/>
+ </entry>
+ <entry keyword="INTR_GENFLAG_ID_LOOP">
+  <topic href="startup.html#id63" title="The flags member"/>
+ </entry>
+ <entry keyword="INTR_GENFLAG_LOAD_CPUNUM">
+  <topic href="startup.html#id63" title="The flags member"/>
+ </entry>
+ <entry keyword="INTR_GENFLAG_LOAD_INTRINFO">
+  <topic href="startup.html#id63" title="The flags member"/>
+ </entry>
+ <entry keyword="INTR_GENFLAG_LOAD_INTRMASK">
+  <topic href="startup.html#id63" title="The flags member"/>
+ </entry>
+ <entry keyword="INTR_GENFLAG_LOAD_SYSPAGE">
+  <topic href="startup.html#id63" title="The flags member"/>
+ </entry>
+ <entry keyword="INTR_GENFLAG_NOGLITCH">
+  <topic href="startup.html#id63" title="The flags member"/>
+ </entry>
+ <entry keyword="intrinfo area">
+  <topic href="startup.html#intrinfo" title="intrinfo"/>
+ </entry>
+ <entry keyword="io">
+  <topic href="startup.html#id45" title="location tag"/>
+ </entry>
+ <entry keyword="IPI (Interprocess Interrupt)">
+  <topic href="startup.html#smp" title="smp"/>
+ </entry>
+ <entry keyword="IPL">
+  <topic href="overview.html#INTRO" title="Introduction"/>
+  <topic href="overview.html#id4" title="The role of the IPL"/>
+  <topic href="bsp.html#id18" title="Transferring an OS image"/>
+  <entry keyword="code, structure of">
+   <topic href="load_process.html#IPLCODESTRUCT" title="IPL code structure"/>
+  </entry>
+  <entry keyword="cold-start">
+   <topic href="load_process.html#id16" title="Cold-start IPL"/>
+   <topic href="overview.html#WARMANDCOLD" title="Warm-start and cold-start IPL"/>
+  </entry>
+  <entry keyword="customizing">
+   <topic href="load_process.html#CUSTOMIPL" title="Customizing IPLs"/>
+  </entry>
+  <entry keyword="debugging">
+   <topic href="building_nto.html#Debugging" title="Debugging an embedded system"/>
+   <entry keyword="debug symbol information">
+    <topic href="building_nto.html#IPLDebug" title="Generating IPL debug symbols"/>
+   </entry>
+  </entry>
+  <entry keyword="responsibilities of">
+   <topic href="load_process.html#RESPONSIBLE" title="Responsibilities of the IPL"/>
+  </entry>
+  <entry keyword="types of">
+   <topic href="overview.html#WARMANDCOLD" title="Warm-start and cold-start IPL"/>
+  </entry>
+  <entry keyword="warm-start">
+   <topic href="load_process.html#COLDWARM" title="“Warm” vs “cold” start"/>
+   <topic href="overview.html#WARMANDCOLD" title="Warm-start and cold-start IPL"/>
+  </entry>
+ </entry>
+ <entry keyword="IRQ7 and IRQ15, beware of">
+  <topic href="hardware.html#id32" title="Interrupts &#x0026; controllers"/>
+ </entry>
+ <entry keyword="ISA bus slots, external">
+  <topic href="hardware.html#id26" title="External ISA bus slots"/>
+ </entry>
+ <entry keyword="ISO-9660 CD-ROM filesystem">
+  <topic href="building_nto.html#id68" title="Disk drivers"/>
+ </entry>
+ <entry keyword="IVOR (Interrupt Vector Offset Register)">
+  <topic href="startup.html#id61" title="The cpu_intr_base member"/>
+ </entry>
+ <entry keyword="JTAG">
+  <entry keyword="field upgrades">
+   <topic href="hardware.html#id14" title="Field upgrades"/>
+  </entry>
+  <entry keyword="hardware debuggers">
+   <topic href="building_nto.html#Debugging" title="Debugging an embedded system"/>
+  </entry>
+ </entry>
+ <entry keyword="jtag_reserve_memory()">
+  <topic href="startup.html#jtag" title="jtag_reserve_memory()"/>
+ </entry>
+ <entry keyword="keeplinked buildfile attribute">
+  <topic href="building_nto.html#StartupDebugSymbols" title="Generating startup debug symbols"/>
+ </entry>
+ <entry keyword="kernel callouts">
+ </entry>
+ <entry keyword="kprintf()">
+  <topic href="startup.html#handle_common_option" title="handle_common_option()"/>
+  <topic href="startup.html#kprintf" title="kprintf()"/>
+ </entry>
+ <entry keyword="LD_LIBRARY_PATH">
+  <entry keyword="in bootstrap files">
+   <topic href="building_nto.html#Bootstrap" title="The bootstrap file"/>
+  </entry>
+ </entry>
+ <entry keyword="ldd">
+  <topic href="config.html#id5" title="Shared libraries"/>
+ </entry>
+ <entry keyword="ldqnx.so.2">
+  <topic href="config.html#id5" title="Shared libraries"/>
+  <topic href="building_nto.html#Script" title="The script file"/>
+ </entry>
+ <entry keyword="ldqnx.so.3 (for MIPS)">
+  <topic href="config.html#id5" title="Shared libraries"/>
+  <topic href="building_nto.html#Script" title="The script file"/>
+ </entry>
+ <entry keyword="linearly mapped">
+  <topic href="load_process.html#id19" title="If the source is a linearly mapped device"/>
+  <entry keyword="defined">
+   <topic href="load_process.html#RESPONSIBLE" title="Responsibilities of the IPL"/>
+  </entry>
+  <entry keyword="recommended">
+   <topic href="load_process.html#id23" title="ROM devices"/>
+  </entry>
+  <entry keyword="sources of">
+   <topic href="load_process.html#id5" title="Linearly mapped images"/>
+  </entry>
+  <entry keyword="See also image"/>
+ </entry>
+ <entry keyword="linker, runtime">
+  <topic href="config.html#id5" title="Shared libraries"/>
+ </entry>
+ <entry keyword="Linux filesystem">
+  <topic href="building_nto.html#id68" title="Disk drivers"/>
+ </entry>
+ <entry keyword="ln">
+  <topic href="overview.html#id35" title="Additional read/write nonpersistent storage required"/>
+ </entry>
+ <entry keyword="location tag">
+  <topic href="startup.html#id45" title="location tag"/>
+ </entry>
+ <entry keyword="lseek()">
+  <topic href="building_nto.html#id45" title="Abstraction layer"/>
+ </entry>
+ <entry keyword="lstat()">
+  <topic href="building_nto.html#id45" title="Abstraction layer"/>
+ </entry>
+ <entry keyword="machine type">
+  <topic href="load_process.html#id51" title="machine"/>
+ </entry>
+ <entry keyword="Macintosh HFS and HFS Plus">
+  <topic href="building_nto.html#id68" title="Disk drivers"/>
+ </entry>
+ <entry keyword="main()">
+  <topic href="startup.html#id35" title="Defaults"/>
+  <topic href="flashfsys.html#STRUCTURE" title="Driver structure"/>
+  <topic href="startup.html#id10" title="Structure of a startup program"/>
+  <topic href="flashfsys.html#MAIN" title="The main() function"/>
+ </entry>
+ <entry keyword="mask()">
+  <topic href="startup.html#id82" title="Interrupt controller interface"/>
+ </entry>
+ <entry keyword="max_size buildfile attribute">
+  <topic href="building_nto.html#id39" title="mkefs buildfile"/>
+ </entry>
+ <entry keyword="memory">
+  <topic href="startup.html#id45" title="location tag"/>
+ </entry>
+ <entry keyword="memory">
+  <entry keyword="linearly addressable">
+   <topic href="overview.html#WARMANDCOLD" title="Warm-start and cold-start IPL"/>
+  </entry>
+  <entry keyword="planning for target system">
+   <topic href="hardware.html#id8" title="Memory requirements"/>
+  </entry>
+ </entry>
+ <entry keyword="min_size buildfile attribute">
+  <topic href="building_nto.html#id39" title="mkefs buildfile"/>
+ </entry>
+ <entry keyword="MIPS">
+  <topic href="startup.html#init_intrinfo" title="init_intrinfo()"/>
+  <topic href="startup.html#init_mmu" title="init_mmu()"/>
+  <topic href="startup.html#init_raminfo" title="init_raminfo()"/>
+  <topic href="startup.html#rtc_time" title="rtc_time()"/>
+  <topic href="config.html#id26" title="Specifying the processor"/>
+  <topic href="startup.html#id61" title="The cpu_intr_base member"/>
+  <topic href="startup.html#mips" title="un.mips"/>
+ </entry>
+ <entry keyword="mips41xx_set_clock_freqs()">
+  <topic href="startup.html#mips41xx_set_clock_freqs" title="mips41xx_set_clock_freqs()"/>
+ </entry>
+ <entry keyword="MIPS_CPU_FLAG_128BIT">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="MIPS_CPU_FLAG_64BIT">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="MIPS_CPU_FLAG_L2_PAGE_CACHE_OPS">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="MIPS_CPU_FLAG_MAX_PGSIZE_MASK">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="MIPS_CPU_FLAG_NO_COUNT">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="MIPS_CPU_FLAG_NO_WIRED">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="MIPS_CPU_FLAG_PFNTOPSHIFT_MASK">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="MIPS_CPU_FLAG_SUPERVISOR">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="MIPS_CPU_FLAGS_MAX_PGSIZE_SHIFT">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="mkefs">
+  <topic href="building_nto.html#IMAGES" title="Images, images, images"/>
+  <topic href="building_nto.html#id37" title="Using mkefs"/>
+  <entry keyword="buildfile">
+   <topic href="building_nto.html#id39" title="mkefs buildfile"/>
+  </entry>
+ </entry>
+ <entry keyword="mketfs">
+  <topic href="building_nto.html#IMAGES" title="Images, images, images"/>
+ </entry>
+ <entry keyword="mkifs">
+  <topic href="building_nto.html#CONFIG" title="Configuring an OS image"/>
+  <topic href="building_nto.html#id32" title="Generating the image"/>
+  <topic href="building_nto.html#IMAGES" title="Images, images, images"/>
+  <topic href="config.html#INTRO" title="Introduction"/>
+  <entry keyword="version of">
+   <topic href="load_process.html#id45" title="version"/>
+  </entry>
+ </entry>
+ <entry keyword="MKIFS_PATH">
+  <topic href="building_nto.html#id20" title="Including files from different places"/>
+ </entry>
+ <entry keyword="mkimage">
+  <topic href="building_nto.html#PLACINGIMG" title="Embedding an image"/>
+ </entry>
+ <entry keyword="mkrec">
+  <topic href="building_nto.html#id58" title="Converting images using mkrec"/>
+  <topic href="building_nto.html#PLACINGIMG" title="Embedding an image"/>
+ </entry>
+ <entry keyword="module buildfile attribute">
+  <topic href="building_nto.html#Bootstrap" title="The bootstrap file"/>
+ </entry>
+ <entry keyword="Motorola S records">
+  <topic href="building_nto.html#id58" title="Converting images using mkrec"/>
+ </entry>
+ <entry keyword="mountpoints">
+  <entry keyword="filesystem">
+   <topic href="building_nto.html#TransferringToFlash" title="Transferring an image to flash"/>
+  </entry>
+  <entry keyword="raw">
+   <entry keyword="transferring images to flash">
+    <topic href="building_nto.html#TransferringToFlash" title="Transferring an image to flash"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="MS-DOS filesystem">
+  <topic href="building_nto.html#id68" title="Disk drivers"/>
+ </entry>
+ <entry keyword="multicore systems">
+  <entry keyword="interrupts on">
+   <topic href="startup.html#intrinfo" title="intrinfo"/>
+  </entry>
+  <entry keyword="number of processors">
+   <topic href="startup.html#num_cpu" title="num_cpu"/>
+  </entry>
+ </entry>
+ <entry keyword="network">
+  <entry keyword="boot">
+   <topic href="load_process.html#id25" title="Network boot"/>
+  </entry>
+  <entry keyword="drivers">
+   <topic href="building_nto.html#id72" title="Network drivers"/>
+   <topic href="building_nto.html#id66" title="Running drivers/filesystems"/>
+  </entry>
+  <entry keyword="filesystems">
+   <topic href="config.html#id23" title="Complete example — TCP/IP with network filesystem"/>
+   <topic href="building_nto.html#id74" title="Network filesystems"/>
+   <topic href="building_nto.html#id66" title="Running drivers/filesystems"/>
+  </entry>
+  <entry keyword="media">
+   <topic href="overview.html#id43" title="Network media and filesystems"/>
+  </entry>
+ </entry>
+ <entry keyword="newpath buildfile attribute">
+  <topic href="building_nto.html#id22" title="Modifying the search path"/>
+ </entry>
+ <entry keyword="NFS (Network File System)">
+  <topic href="building_nto.html#id74" title="Network filesystems"/>
+ </entry>
+ <entry keyword="NFS (Network Filesystem)">
+  <topic href="config.html#id23" title="Complete example — TCP/IP with network filesystem"/>
+  <topic href="overview.html#id43" title="Network media and filesystems"/>
+ </entry>
+ <entry keyword="NMI (Non-Maskable Interrupt)">
+  <topic href="hardware.html#NMI" title="NMI"/>
+  <topic href="startup.html#id63" title="The flags member"/>
+ </entry>
+ <entry keyword="NT filesystem">
+  <topic href="building_nto.html#id68" title="Disk drivers"/>
+ </entry>
+ <entry keyword="O_TRUNC">
+  <topic href="building_nto.html#id51" title="The exception"/>
+ </entry>
+ <entry keyword="objdump">
+  <topic href="config.html#id5" title="Shared libraries"/>
+ </entry>
+ <entry keyword="openbios_init_raminfo()">
+  <topic href="startup.html#openbios_init_raminfo" title="openbios_init_raminfo()"/>
+ </entry>
+ <entry keyword="OS images">
+ </entry>
+ <entry keyword="Page Directory Tables">
+  <topic href="startup.html#x86" title="un.x86"/>
+ </entry>
+ <entry keyword="parallel port">
+  <entry keyword="doesn&#x0027;t need an interrupt line">
+   <topic href="hardware.html#id36" title="Parallel port considerations"/>
+  </entry>
+ </entry>
+ <entry keyword="PATH">
+  <entry keyword="in bootstrap files">
+   <topic href="building_nto.html#Bootstrap" title="The bootstrap file"/>
+  </entry>
+ </entry>
+ <entry keyword="pathname delimiter in QNX documentation">
+  <topic href="about.html#WINDOWSNOTE" title="Note to Windows users"/>
+ </entry>
+ <entry keyword="pcnet_reset()">
+  <topic href="startup.html#pcnet_reset" title="pcnet_reset()"/>
+ </entry>
+ <entry keyword="pdebug">
+  <topic href="building_nto.html#pdebug" title="pdebug software debugging agent"/>
+ </entry>
+ <entry keyword="peripherals, choosing">
+  <topic href="hardware.html#id10" title="Peripherals"/>
+ </entry>
+ <entry keyword="perms buildfile attribute">
+  <topic href="building_nto.html#id28" title="Specifying file ownership and permissions"/>
+ </entry>
+ <entry keyword="Photon, in embedded systems">
+  <topic href="about.html#In_this_guide" title="What you'll find in this guide"/>
+ </entry>
+ <entry keyword="physical buildfile attribute">
+  <topic href="building_nto.html#Bootstrap" title="The bootstrap file"/>
+ </entry>
+ <entry keyword="PIC">
+  <topic href="hardware.html#id32" title="Interrupts &#x0026; controllers"/>
+ </entry>
+ <entry keyword="poll_key()">
+  <topic href="startup.html#id78" title="Debug interface"/>
+ </entry>
+ <entry keyword="POSIX">
+  <topic href="building_nto.html#id45" title="Abstraction layer"/>
+  <topic href="building_nto.html#FLASH" title="Building a flash filesystem image"/>
+  <topic href="building_nto.html#id74" title="Network filesystems"/>
+  <topic href="config.html#id11" title="Starting other programs on consoles"/>
+  <topic href="building_nto.html#id51" title="The exception"/>
+ </entry>
+ <entry keyword="pound sign, in buildfiles">
+  <topic href="building_nto.html#SimpleBuildfile" title="A simple buildfile"/>
+ </entry>
+ <entry keyword="Power ISA 2.06 External Process ID Registers">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="power management">
+  <topic href="startup.html#pminfo" title="pminfo"/>
+  <topic href="startup.html#Power_management" title="Power management callout"/>
+ </entry>
+ <entry keyword="power()">
+  <topic href="startup.html#Power_management" title="Power management callout"/>
+ </entry>
+ <entry keyword="Power-Safe filesystem">
+  <topic href="building_nto.html#id68" title="Disk drivers"/>
+ </entry>
+ <entry keyword="PPC">
+  <topic href="startup.html#init_intrinfo" title="init_intrinfo()"/>
+  <topic href="startup.html#init_mmu" title="init_mmu()"/>
+  <topic href="startup.html#init_raminfo" title="init_raminfo()"/>
+  <topic href="startup.html#PPCSUPPORT" title="PPC chips support"/>
+  <topic href="config.html#SPECIFIC" title="Processor-specific notes"/>
+  <topic href="startup.html#rtc_time" title="rtc_time()"/>
+  <topic href="config.html#id26" title="Specifying the processor"/>
+  <topic href="startup.html#id61" title="The cpu_intr_base member"/>
+  <topic href="startup.html#ppc" title="un.ppc (deprecated)"/>
+ </entry>
+ <entry keyword="PPC/BE">
+  <topic href="startup.html#id61" title="The cpu_intr_base member"/>
+ </entry>
+ <entry keyword="ppc400_pit_init_qtime()">
+  <topic href="startup.html#ppc400_pit_init_qtime" title="ppc400_pit_init_qtime()"/>
+ </entry>
+ <entry keyword="ppc405_set_clock_freqs()">
+  <topic href="startup.html#ppc405_set_clock_freqs" title="ppc405_set_clock_freqs()"/>
+ </entry>
+ <entry keyword="ppc600_set_clock_freqs()">
+  <topic href="startup.html#ppc600_set_clock_freqs" title="ppc600_set_clock_freqs()"/>
+ </entry>
+ <entry keyword="ppc700_init_l2_cache()">
+  <topic href="startup.html#ppc700_init_l2_cache" title="ppc700_init_l2_cache()"/>
+ </entry>
+ <entry keyword="ppc800_pit_init_qtime()">
+  <topic href="startup.html#ppc800_pit_init_qtime" title="ppc800_pit_init_qtime()"/>
+ </entry>
+ <entry keyword="ppc800_set_clock_freqs()">
+  <topic href="startup.html#ppc800_set_clock_freqs" title="ppc800_set_clock_freqs()"/>
+ </entry>
+ <entry keyword="PPC_CPU_ALTIVEC">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="PPC_CPU_DCBZ_NONCOHERENT">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="PPC_CPU_EAR">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="PPC_CPU_FPREGS">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="PPC_CPU_HW_HT">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="PPC_CPU_HW_POW">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="PPC_CPU_STWCX_BUG">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="PPC_CPU_SW_HT">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="PPC_CPU_SW_TLBSYNC">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="PPC_CPU_TLB_SHADOW">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="PPC_CPU_XAEN">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="PPC_CPU_XASPACE">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="ppc_dec_init_qtime()">
+  <topic href="startup.html#ppc_dec_init_qtime" title="ppc_dec_init_qtime()"/>
+ </entry>
+ <entry keyword="PPC_INTR_FLAG_400ALT">
+  <topic href="startup.html#id63" title="The flags member"/>
+ </entry>
+ <entry keyword="PPC_INTR_FLAG_CI">
+  <topic href="startup.html#id63" title="The flags member"/>
+ </entry>
+ <entry keyword="PPC_INTR_FLAG_SHORTVEC">
+  <topic href="startup.html#id63" title="The flags member"/>
+ </entry>
+ <entry keyword="print_byte()">
+  <topic href="load_process.html#print_byte" title="print_byte()"/>
+ </entry>
+ <entry keyword="print_char()">
+  <topic href="startup.html#kprintf" title="kprintf()"/>
+  <topic href="load_process.html#print_char" title="print_char()"/>
+ </entry>
+ <entry keyword="print_long()">
+  <topic href="load_process.html#print_long" title="print_long()"/>
+ </entry>
+ <entry keyword="print_sl()">
+  <topic href="load_process.html#print_sl" title="print_sl()"/>
+ </entry>
+ <entry keyword="print_string()">
+  <topic href="load_process.html#print_string" title="print_string()"/>
+ </entry>
+ <entry keyword="print_syspage()">
+  <topic href="startup.html#print_syspage" title="print_syspage()"/>
+ </entry>
+ <entry keyword="print_var()">
+  <topic href="load_process.html#print_var" title="print_var()"/>
+ </entry>
+ <entry keyword="print_word()">
+  <topic href="load_process.html#print_word" title="print_word()"/>
+ </entry>
+ <entry keyword="printf()">
+  <topic href="startup.html#kprintf" title="kprintf()"/>
+ </entry>
+ <entry keyword="PROCESSOR">
+  <topic href="building_nto.html#id20" title="Including files from different places"/>
+ </entry>
+ <entry keyword="processors">
+  <entry keyword="families, supported">
+   <topic href="overview.html#id25" title="Choice of processor"/>
+  </entry>
+  <entry keyword="number of on the system">
+   <topic href="startup.html#num_cpu" title="num_cpu"/>
+  </entry>
+  <entry keyword="speed">
+   <topic href="hardware.html#id6" title="Processor speed"/>
+  </entry>
+ </entry>
+ <entry keyword="procnto">
+  <entry keyword="memory pool, adding to">
+   <topic href="load_process.html#id78" title="struct startup_info_mem and startup_info_mem_extended"/>
+  </entry>
+  <entry keyword="optional modules, binding">
+   <topic href="building_nto.html#Bootstrap" title="The bootstrap file"/>
+  </entry>
+  <entry keyword="starting">
+   <topic href="overview.html#INTRO" title="Introduction"/>
+   <topic href="building_nto.html#Bootstrap" title="The bootstrap file"/>
+   <topic href="overview.html#id7" title="The role of the startup program"/>
+  </entry>
+  <entry keyword="version, verifying">
+   <topic href="startup.html#PPCSUPPORT" title="PPC chips support"/>
+  </entry>
+ </entry>
+ <entry keyword="protected_mode()">
+  <topic href="load_process.html#protected mode" title="protected_mode()"/>
+ </entry>
+ <entry keyword="Qnet (QNX native networking)">
+  <topic href="overview.html#id43" title="Network media and filesystems"/>
+ </entry>
+ <entry keyword="QNX 4 filesystem">
+  <topic href="building_nto.html#id68" title="Disk drivers"/>
+ </entry>
+ <entry keyword="QNX Neutrino">
+  <entry keyword="running for the first time">
+   <topic href="bsp.html#TESTNTO" title="Testing Neutrino on your board"/>
+  </entry>
+ </entry>
+ <entry keyword="qtime">
+  <topic href="startup.html#qtime" title="syspage_entry qtime"/>
+ </entry>
+ <entry keyword="RAM, using as a “disk”">
+  <topic href="overview.html#id35" title="Additional read/write nonpersistent storage required"/>
+ </entry>
+ <entry keyword="read()">
+  <topic href="building_nto.html#id45" title="Abstraction layer"/>
+ </entry>
+ <entry keyword="reboot()">
+  <topic href="startup.html#id86" title="System reset callout"/>
+ </entry>
+ <entry keyword="reclamation">
+  <topic href="building_nto.html#Spare_blocks" title="Spare blocks"/>
+ </entry>
+ <entry keyword="reopen">
+  <topic href="config.html#id13" title="Redirection"/>
+ </entry>
+ <entry keyword="reset vector">
+  <topic href="overview.html#INTRO" title="Introduction"/>
+  <topic href="overview.html#id27" title="Source of initialization and configuration"/>
+ </entry>
+ <entry keyword="ROM ">
+  <entry keyword="devices">
+   <topic href="load_process.html#id23" title="ROM devices"/>
+  </entry>
+  <entry keyword="monitor">
+   <topic href="overview.html#WARMANDCOLD" title="Warm-start and cold-start IPL"/>
+  </entry>
+ </entry>
+ <entry keyword="rtc_time()">
+  <topic href="startup.html#rtc_time" title="rtc_time()"/>
+ </entry>
+ <entry keyword="runmask, specifying">
+  <topic href="building_nto.html#id14" title="Bound multiprocessing attributes"/>
+ </entry>
+ <entry keyword="runtime linker">
+  <topic href="config.html#id5" title="Shared libraries"/>
+ </entry>
+ <entry keyword="script buildfile attribute">
+  <topic href="building_nto.html#Script" title="The script file"/>
+ </entry>
+ <entry keyword="script file">
+  <topic href="overview.html#id22" title="The role of Neutrino"/>
+  <entry keyword="on the target">
+   <topic href="building_nto.html#id16" title="The script file on the target"/>
+  </entry>
+ </entry>
+ <entry keyword="search buildfile attribute">
+  <topic href="building_nto.html#id20" title="Including files from different places"/>
+ </entry>
+ <entry keyword="sendnto">
+  <topic href="bsp.html#id18" title="Transferring an OS image"/>
+ </entry>
+ <entry keyword="serial port">
+  <topic href="load_process.html#id28" title="Serial port"/>
+  <entry keyword="loader">
+   <topic href="load_process.html#id28" title="Serial port"/>
+  </entry>
+  <entry keyword="recommended on target system">
+   <topic href="hardware.html#id34" title="Serial and parallel ports"/>
+  </entry>
+  <entry keyword="support for multiple">
+   <topic href="hardware.html#id34" title="Serial and parallel ports"/>
+  </entry>
+ </entry>
+ <entry keyword="SH">
+  <topic href="startup.html#init_intrinfo" title="init_intrinfo()"/>
+  <topic href="startup.html#init_mmu" title="init_mmu()"/>
+  <topic href="startup.html#init_raminfo" title="init_raminfo()"/>
+  <topic href="startup.html#rtc_time" title="rtc_time()"/>
+  <topic href="config.html#id26" title="Specifying the processor"/>
+  <topic href="startup.html#sh" title="un.sh"/>
+ </entry>
+ <entry keyword="shared libraries">
+  <topic href="config.html#id5" title="Shared libraries"/>
+  <entry keyword="which to include in an image">
+   <topic href="config.html#id5" title="Shared libraries"/>
+  </entry>
+ </entry>
+ <entry keyword="shared memory">
+  <topic href="overview.html#id35" title="Additional read/write nonpersistent storage required"/>
+ </entry>
+ <entry keyword="shell">
+  <entry keyword="running in background">
+   <topic href="config.html#id9" title="Multiple consoles"/>
+  </entry>
+ </entry>
+ <entry keyword="SMP">
+  <topic href="startup.html#init_smp" title="init_smp()"/>
+  <topic href="startup.html#x86" title="un.x86"/>
+ </entry>
+ <entry keyword="SMP (Symmetric Multiprocessing)">
+  <entry keyword="interrupts on">
+   <topic href="startup.html#intrinfo" title="intrinfo"/>
+  </entry>
+ </entry>
+ <entry keyword="socket services">
+  <topic href="flashfsys.html#SOCKET" title="Socket services component"/>
+  <topic href="flashfsys.html#SOCKSER" title="Socket services interface"/>
+ </entry>
+ <entry keyword="software debuggers">
+  <topic href="building_nto.html#Debugging" title="Debugging an embedded system"/>
+  <topic href="building_nto.html#pdebug" title="pdebug software debugging agent"/>
+ </entry>
+ <entry keyword="spare_blocks buildfile attribute">
+  <topic href="building_nto.html#id39" title="mkefs buildfile"/>
+  <topic href="building_nto.html#Spare_blocks" title="Spare blocks"/>
+ </entry>
+ <entry keyword="startup">
+  <topic href="overview.html#id9" title="Startup's responsibilities"/>
+  <topic href="overview.html#id7" title="The role of the startup program"/>
+  <entry keyword="creating your own">
+   <topic href="startup.html#id12" title="Creating a new startup program"/>
+  </entry>
+  <entry keyword="debugging">
+   <topic href="building_nto.html#Debugging" title="Debugging an embedded system"/>
+   <entry keyword="debug symbol information">
+    <topic href="building_nto.html#StartupDebugSymbols" title="Generating startup debug symbols"/>
+   </entry>
+  </entry>
+  <entry keyword="library">
+   <topic href="startup.html#STARTUPLIB" title="The startup library"/>
+  </entry>
+  <entry keyword="structure of">
+   <topic href="startup.html#id10" title="Structure of a startup program"/>
+  </entry>
+  <entry keyword="transferring control to">
+   <topic href="load_process.html#id34" title="Transferring control to the startup program"/>
+  </entry>
+ </entry>
+ <entry keyword="STARTUP_HDR_FLAGS1_BIGENDIAN">
+  <topic href="load_process.html#id47" title="flags1 and flags2"/>
+ </entry>
+ <entry keyword="STARTUP_HDR_FLAGS1_COMPRESS_LZO">
+  <topic href="load_process.html#id47" title="flags1 and flags2"/>
+ </entry>
+ <entry keyword="STARTUP_HDR_FLAGS1_COMPRESS_NONE">
+  <topic href="load_process.html#id47" title="flags1 and flags2"/>
+ </entry>
+ <entry keyword="STARTUP_HDR_FLAGS1_COMPRESS_UCL">
+  <topic href="load_process.html#id47" title="flags1 and flags2"/>
+ </entry>
+ <entry keyword="STARTUP_HDR_FLAGS1_COMPRESS_ZLIB">
+  <topic href="load_process.html#id47" title="flags1 and flags2"/>
+ </entry>
+ <entry keyword="STARTUP_HDR_FLAGS1_VIRTUAL">
+  <topic href="load_process.html#id47" title="flags1 and flags2"/>
+ </entry>
+ <entry keyword="STARTUP_HDR_SIGNATURE">
+  <topic href="load_process.html#BOOTBANK" title="Booting from a bank-switched device"/>
+ </entry>
+ <entry keyword="startup_header">
+  <topic href="load_process.html#BOOTBANK" title="Booting from a bank-switched device"/>
+  <entry keyword="structure of">
+   <topic href="load_process.html#id41" title="Structure of the boot header"/>
+  </entry>
+  <entry keyword="use by IPL and startup">
+   <topic href="load_process.html#Relationship" title="Relationship of struct startup_header fields"/>
+  </entry>
+ </entry>
+ <entry keyword="startup_info* structures">
+  <topic href="load_process.html#TUPLE" title="info"/>
+ </entry>
+ <entry keyword="STARTUP_INFO_*">
+  <topic href="load_process.html#TUPLE" title="info"/>
+ </entry>
+ <entry keyword="startup_info_box">
+  <topic href="load_process.html#id84" title="struct startup_info_box"/>
+ </entry>
+ <entry keyword="startup_info_disk">
+  <topic href="load_process.html#id80" title="struct startup_info_disk"/>
+ </entry>
+ <entry keyword="startup_info_mem, startup_info_mem_extended">
+  <topic href="load_process.html#id78" title="struct startup_info_mem and startup_info_mem_extended"/>
+ </entry>
+ <entry keyword="startup_info_skip">
+  <topic href="load_process.html#id76" title="struct startup_info_skip"/>
+ </entry>
+ <entry keyword="startup_info_time">
+  <topic href="load_process.html#id82" title="struct startup_info_time"/>
+ </entry>
+ <entry keyword="startup_io_map()">
+  <topic href="startup.html#startup_io_map" title="startup_io_map()"/>
+ </entry>
+ <entry keyword="startup_io_unmap()">
+  <topic href="startup.html#startup_io_unmap" title="startup_io_unmap()"/>
+ </entry>
+ <entry keyword="startup_memory_map()">
+  <topic href="startup.html#startup_memory_map" title="startup_memory_map()"/>
+ </entry>
+ <entry keyword="startup_memory_unmap()">
+  <topic href="startup.html#startup_memory_unmap" title="startup_memory_unmap()"/>
+ </entry>
+ <entry keyword="stat()">
+  <topic href="building_nto.html#id76" title="Running applications"/>
+  <topic href="building_nto.html#id47" title="Two sizes"/>
+ </entry>
+ <entry keyword="stwcx. instruction, hardware bug concerning">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="support, technical">
+  <topic href="about.html#Support" title="Technical support"/>
+ </entry>
+ <entry keyword="SUPPORT_CMP_*">
+  <topic href="load_process.html#id47" title="flags1 and flags2"/>
+ </entry>
+ <entry keyword="SYSENTER/SYSEXIT">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="SYSPAGE_ARM">
+  <topic href="startup.html#un" title="syspage_entry union un"/>
+  <topic href="startup.html#type" title="type"/>
+ </entry>
+ <entry keyword="syspage_entry">
+  <topic href="startup.html#SYSPAGE_STUFF" title="Structure of the system page"/>
+  <topic href="startup.html#cacheattr" title="syspage_entry cacheattr"/>
+  <topic href="startup.html#qtime" title="syspage_entry qtime"/>
+ </entry>
+ <entry keyword="SYSPAGE_MIPS">
+  <topic href="startup.html#un" title="syspage_entry union un"/>
+  <topic href="startup.html#type" title="type"/>
+ </entry>
+ <entry keyword="SYSPAGE_PPC">
+  <topic href="startup.html#un" title="syspage_entry union un"/>
+  <topic href="startup.html#type" title="type"/>
+ </entry>
+ <entry keyword="SYSPAGE_SH">
+  <topic href="startup.html#un" title="syspage_entry union un"/>
+ </entry>
+ <entry keyword="SYSPAGE_SH4">
+  <topic href="startup.html#type" title="type"/>
+ </entry>
+ <entry keyword="SYSPAGE_X86">
+  <topic href="startup.html#un" title="syspage_entry union un"/>
+  <topic href="startup.html#type" title="type"/>
+ </entry>
+ <entry keyword="system page area">
+  <topic href="overview.html#id15" title="Determining system configuration"/>
+  <topic href="startup.html#INITSYSPAGE" title="Initialize system page"/>
+  <topic href="startup.html#SYSPAGE_STUFF" title="Structure of the system page"/>
+  <entry keyword="accessing data within">
+   <topic href="startup.html#SYSPAGE_STUFF" title="Structure of the system page"/>
+  </entry>
+  <entry keyword="fields in">
+   <topic href="startup.html#SYSPAGE_STUFF" title="Structure of the system page"/>
+  </entry>
+ </entry>
+ <entry keyword="TCP/IP">
+  <topic href="config.html#id23" title="Complete example — TCP/IP with network filesystem"/>
+ </entry>
+ <entry keyword="technical support">
+  <topic href="about.html#Support" title="Technical support"/>
+ </entry>
+ <entry keyword="temporary directory, creating on a RAM-disk">
+  <topic href="config.html#id15" title="/tmp"/>
+ </entry>
+ <entry keyword="timer_load()">
+  <topic href="startup.html#id80" title="Clock/timer interface"/>
+ </entry>
+ <entry keyword="timer_reload()">
+  <topic href="startup.html#id80" title="Clock/timer interface"/>
+ </entry>
+ <entry keyword="timer_value()">
+  <topic href="startup.html#id80" title="Clock/timer interface"/>
+ </entry>
+ <entry keyword="truncation">
+  <topic href="building_nto.html#id51" title="The exception"/>
+ </entry>
+ <entry keyword="tulip_reset()">
+  <topic href="startup.html#tulip_reset" title="tulip_reset()"/>
+ </entry>
+ <entry keyword="type buildfile attribute">
+  <topic href="config.html#id15" title="/tmp"/>
+ </entry>
+ <entry keyword="typed_strings area">
+  <topic href="startup.html#typed_strings" title="typed_strings"/>
+ </entry>
+ <entry keyword="typographical conventions">
+  <topic href="about.html#Typographical_conventions" title="Typographical conventions"/>
+ </entry>
+ <entry keyword="uart32_hex16">
+  <topic href="load_process.html#uart32_hex16" title="uart32_hex16"/>
+ </entry>
+ <entry keyword="uart32_hex32">
+  <topic href="load_process.html#uart32_hex32" title="uart32_hex32"/>
+ </entry>
+ <entry keyword="uart32_hex8">
+  <topic href="load_process.html#uart32_hex8" title="uart32_hex8"/>
+ </entry>
+ <entry keyword="uart32_init">
+  <topic href="load_process.html#uart32_init" title="uart32_init"/>
+ </entry>
+ <entry keyword="uart32_put">
+  <topic href="load_process.html#uart32_put" title="uart32_put"/>
+ </entry>
+ <entry keyword="uart32_string">
+  <topic href="load_process.html#uart32_string" title="uart32_string"/>
+ </entry>
+ <entry keyword="uart_hex16">
+  <topic href="load_process.html#uart_hex16" title="uart_hex16"/>
+ </entry>
+ <entry keyword="uart_hex32">
+  <topic href="load_process.html#uart_hex32" title="uart_hex32"/>
+ </entry>
+ <entry keyword="uart_hex8">
+  <topic href="load_process.html#uart_hex8" title="uart_hex8"/>
+ </entry>
+ <entry keyword="uart_init">
+  <topic href="load_process.html#uart_init" title="uart_init"/>
+ </entry>
+ <entry keyword="uart_put">
+  <topic href="load_process.html#uart_put" title="uart_put"/>
+ </entry>
+ <entry keyword="uart_string">
+  <topic href="load_process.html#uart_string" title="uart_string"/>
+ </entry>
+ <entry keyword="uid buildfile attribute">
+  <topic href="building_nto.html#id28" title="Specifying file ownership and permissions"/>
+ </entry>
+ <entry keyword="uncompress()">
+  <topic href="load_process.html#id95" title="Disk/network compressed image"/>
+  <topic href="load_process.html#id89" title="Linear ROM compressed boot image"/>
+  <topic href="startup.html#uncompress" title="uncompress()"/>
+ </entry>
+ <entry keyword="union">
+  <topic href="startup.html#un" title="syspage_entry union un"/>
+ </entry>
+ <entry keyword="Universal Disk Format (UDF) filesystem">
+  <topic href="building_nto.html#id68" title="Disk drivers"/>
+ </entry>
+ <entry keyword="unmask()">
+  <topic href="startup.html#id82" title="Interrupt controller interface"/>
+ </entry>
+ <entry keyword="video, displaying on">
+  <topic href="load_process.html#print_byte" title="print_byte()"/>
+  <topic href="load_process.html#print_char" title="print_char()"/>
+  <topic href="load_process.html#print_long" title="print_long()"/>
+  <topic href="load_process.html#print_sl" title="print_sl()"/>
+  <topic href="load_process.html#print_string" title="print_string()"/>
+  <topic href="load_process.html#print_var" title="print_var()"/>
+  <topic href="load_process.html#print_word" title="print_word()"/>
+ </entry>
+ <entry keyword="virtual buildfile attribute">
+  <topic href="config.html#id28" title="Examples"/>
+  <topic href="load_process.html#id47" title="flags1 and flags2"/>
+  <topic href="building_nto.html#Bootstrap" title="The bootstrap file"/>
+ </entry>
+ <entry keyword="waitfor">
+  <topic href="building_nto.html#id76" title="Running applications"/>
+ </entry>
+ <entry keyword="warm-start IPL">
+  <topic href="load_process.html#COLDWARM" title="“Warm” vs “cold” start"/>
+  <topic href="overview.html#WARMANDCOLD" title="Warm-start and cold-start IPL"/>
+ </entry>
+ <entry keyword="Windows NT filesystem">
+  <topic href="building_nto.html#id68" title="Disk drivers"/>
+ </entry>
+ <entry keyword="x86-specific information">
+  <topic href="startup.html#x86" title="un.x86"/>
+ </entry>
+ <entry keyword="X86_CPU_BSWAP">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="X86_CPU_CMOV">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="X86_CPU_CPUID">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="X86_CPU_FXSR">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="X86_CPU_INVLPG">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="X86_CPU_MMX">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="X86_CPU_MTRR">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="X86_CPU_PAE">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="X86_CPU_PGE">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="X86_CPU_PSE">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="X86_CPU_RDTSC">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="X86_CPU_SEP">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="X86_CPU_SIMD">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="X86_CPU_WP">
+  <topic href="startup.html#cpuinfo" title="cpuinfo"/>
+ </entry>
+ <entry keyword="x86_cpuid_string()">
+  <topic href="startup.html#x86_cpuid_string" title="x86_cpuid_string()"/>
+ </entry>
+ <entry keyword="x86_cputype()">
+  <topic href="startup.html#x86_cputype" title="x86_cputype()"/>
+ </entry>
+ <entry keyword="x86_enable_a20()">
+  <topic href="startup.html#x86_enable_a20" title="x86_enable_a20()"/>
+ </entry>
+ <entry keyword="x86_fputype()">
+  <topic href="startup.html#x86_fputype" title="x86_fputype()"/>
+ </entry>
+ <entry keyword="x86_init_pcbios()">
+  <topic href="startup.html#x86_init_pcbios" title="x86_init_pcbios()"/>
+ </entry>
+ <entry keyword="x86_pcbios_shadow_rom()">
+  <topic href="startup.html#x86_pcbios_shadow_rom" title="x86_pcbios_shadow_rom()"/>
+ </entry>
+ <entry keyword="x86_scanmem()">
+  <topic href="startup.html#init_raminfo" title="init_raminfo()"/>
+  <topic href="startup.html#x86_scanmem" title="x86_scanmem()"/>
+ </entry>
+</index>

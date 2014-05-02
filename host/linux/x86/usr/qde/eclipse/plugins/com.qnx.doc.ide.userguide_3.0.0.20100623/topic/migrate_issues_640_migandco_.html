@@ -1,0 +1,225 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Coexistence" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_630sp2_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_642_General_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_640_compilers_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_Binary_Compatibility.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_640_CDTImpact_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_640_installLoc_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_640_switch_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_640_reset_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_640_console_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_640_revert_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Coexistence" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Coexistence</title>
+   </head>
+   <body id="Coexistence"><a name="Coexistence" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Coexistence</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>By default, the IDE uses the last installed version of the QNX software that appears in the <span class="uicontrol">Select Install</span> list on the Global QNX Preferences page (select <span class="menucascade">
+               <span class="uicontrol">Window</span>
+               &gt; <span class="uicontrol">Preferences</span>
+               </span>, and then select <span class="uicontrol">QNX</span>).
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/igrate_issues_640_migandco_.xml_d136313e32.jpg" /></span>
+            
+         </p>
+         
+         
+         <p>
+            <strong>Using toolchains from earlier releases</strong>
+            
+         </p>
+         
+         
+         <p>
+            
+            You can have a QNX Software Development Platform version 6.5.0 installed on the same machine as QNX Momentics 6.4.1, 6.3.x
+            and 6.2.x, and in most cases, the IDE installed with version 6.5.0 should work with the toolchains from these earlier releases.
+            
+         </p>
+         
+         
+         <p>
+            <strong>Changing versions of the QNX Momentics Tool Suite</strong>
+            
+         </p>
+         
+         
+         <div class="p">To change versions of the QNX Momentics Tool Suite for the IDE:
+            
+            <br clear="none" /><ol>
+               <li>Use <span class="cmdname">QWinCfg</span> for Windows, or use <span class="cmdname">qconfig</span> for other hosts, to set the version of the QNX Momentics Tool Suite for the IDE you want to use.
+               </li>
+               <li>Start the IDE.</li>
+               <li>Select <span class="menucascade">
+                     <span class="uicontrol">Window</span>
+                     &gt; <span class="uicontrol">Preferences</span>
+                     </span>, and then select <span class="uicontrol">QNX</span>. 
+               </li>
+               <li>Select <span class="uicontrol">Use Environment Variables</span> from the <span class="uicontrol">Select Install</span> list on the Global QNX Preferences page.
+                  
+                  <p>
+                     <span><img src="../images/igrate_issues_640_migandco_.xml_d136313e127.jpg" /></span>
+                     
+                  </p>
+                  
+               </li>
+               <li>Click <span class="uicontrol">OK</span> for the changes to take effect.
+               </li>
+               <li>Restart the IDE so that the changes made to the environment variables in Step 1 are recognized by the IDE. 
+                  <div class="note"><span class="notetitle">Note:</span> When the IDE restarts, it always uses your current <span class="cmdname">qconfig</span> or <span class="cmdname">QWinCfg</span> setting as the default version of the operating system. 
+                  </div>
+                  
+               </li>
+            </ol>
+            Once you specify the <span class="uicontrol">Use Environment Variables</span> option, when you start the IDE, it uses your current <span class="cmdname">qconfig</span> choice as the default version of the OS; if you haven't chosen a version, the IDE chooses an entry from the directory identified
+            by <span class="envar">QNX_CONFIGURATION</span>. If you want to override the IDE's choice, you can choose the appropriate build target.
+         </div>
+         
+         
+         <p>On Windows hosts, you can use the configuration program (<span class="cmdname">QWinCfg</span>) to let you change versions of the QNX Momentics Tool Suite for the IDE, and on Linux, use <span class="cmdname">qconfig</span>.  You can have a QNX Software Development Platform version 6.5.0 installed on the same machine as QNX Momentics 6.4.1, 6.4.0,
+            6.3.x and 6.2.x; however, the IDE installed with version 6.5.0 doesn't necessarily work with the tool chains from these earlier
+            releases. 
+         </p>
+         
+         
+         <p>
+            <strong>Environment variables</strong>
+            
+         </p>
+         
+         
+         <div class="p">The configuration program sets the environment variables (listed below) according to the version of the QNX Momentics Tool
+            Suite that you specify. The host uses these environment variables to locate files on the host computer:
+            
+            <div class="tablenoborder"><a name="Coexistence__table_2243db06-f579-4e01-8fed-8ffd4dc0a62e" shape="rect">
+                  <!-- --></a><table cellpadding="4" cellspacing="0" summary="" id="Coexistence__table_2243db06-f579-4e01-8fed-8ffd4dc0a62e" frame="border" border="1" rules="all">
+                  <thead align="left">
+                     <tr>
+                        <th class="cellrowborder" valign="top" id="d136313e188" rowspan="1" colspan="1">Environment variable</th>
+                        <th class="cellrowborder" valign="top" id="d136313e191" rowspan="1" colspan="1">Description</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td class="cellrowborder" valign="top" headers="d136313e188 d136313e191" rowspan="1" colspan="1">
+                           <span class="envar">QNX_CONFIGURATION</span>
+                           
+                        </td>
+                        <td class="cellrowborder" valign="top" headers="d136313e188 d136313e191" rowspan="1" colspan="1">The location of the <span class="cmdname">qconfig</span> configuration files.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="cellrowborder" valign="top" headers="d136313e188 d136313e191" rowspan="1" colspan="1">
+                           <span class="envar">QNX_HOST</span>
+                           
+                        </td>
+                        <td class="cellrowborder" valign="top" headers="d136313e188 d136313e191" rowspan="1" colspan="1">The location of host-specific files.</td>
+                     </tr>
+                     <tr>
+                        <td class="cellrowborder" valign="top" headers="d136313e188 d136313e191" rowspan="1" colspan="1">
+                           <span class="envar">QNX_JAVAHOME</span>
+                           
+                        </td>
+                        <td class="cellrowborder" valign="top" headers="d136313e188 d136313e191" rowspan="1" colspan="1">A directory used for temporary files. The <span class="cmdname">gcc</span> compiler uses temporary files for the output of one stage of compilation used as input to the next stage. For example, the
+                           output of the preprocessor is the input to the compiler.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="cellrowborder" valign="top" headers="d136313e188 d136313e191" rowspan="1" colspan="1">
+                           <span class="envar">QNX_TARGET</span>
+                           
+                        </td>
+                        <td class="cellrowborder" valign="top" headers="d136313e188 d136313e191" rowspan="1" colspan="1">The location of target backends on the host machine.</td>
+                     </tr>
+                     <tr>
+                        <td class="cellrowborder" valign="top" headers="d136313e188 d136313e191" rowspan="1" colspan="1">
+                           <span class="envar">MAKEFLAGS</span>
+                           
+                        </td>
+                        <td class="cellrowborder" valign="top" headers="d136313e188 d136313e191" rowspan="1" colspan="1">The location of included <span class="filepath">*.mk</span> files.
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+            </div>
+            
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/migrate_issues_630sp2_.html" shape="rect">Migration issues</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/migrate_issues_642_General_.html" shape="rect">General migration considerations</a></div>
+            
+            <div><a href="../topic/migrate_issues_640_compilers_.html" shape="rect">Compiler issues</a></div>
+            
+            <div><a href="../topic/migrate_Binary_Compatibility.html" shape="rect">Binary compatibility</a></div>
+            
+            <div><a href="../topic/migrate_issues_640_CDTImpact_.html" shape="rect">CDT impact on the IDE</a></div>
+            
+            <div><a href="../topic/migrate_issues_640_installLoc_.html" shape="rect">IDE location</a></div>
+            
+            <div><a href="../topic/migrate_issues_640_reset_.html" shape="rect">Missing features in context menus</a></div>
+            
+            <div><a href="../topic/migrate_issues_640_revert_.html" shape="rect">Reverting to an older version of the IDE</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/migrate_issues_640_switch_.html" shape="rect">Old launch configurations don't switch perspectives automatically</a></div>
+            
+            <div><a href="../topic/migrate_issues_640_console_.html" shape="rect">System Builder Console doesn't come to front</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

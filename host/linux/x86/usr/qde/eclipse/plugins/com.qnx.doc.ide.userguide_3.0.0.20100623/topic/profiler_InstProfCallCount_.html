@@ -1,0 +1,100 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Sampling and Call Count instrumentation profiling" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_INTRO_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_TypeStatisticalProf_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_TypeFunctionalProf_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_TypePostmortemProf_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="SamplingAndCallCountInstrumentationProfiling" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Sampling and Call Count instrumentation profiling</title>
+   </head>
+   <body id="SamplingAndCallCountInstrumentationProfiling"><a name="SamplingAndCallCountInstrumentationProfiling" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Sampling and Call Count instrumentation profiling</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         
+         <p>This type of profiling is a combination of sampling mode and Call Count instrumentation data, and it provides per line statistical
+            coverage (as well as a call graph at the same time),
+            with relatively small overhead.
+            
+            
+         </p>
+         
+         
+         <p>To instrument a binary or library in this mode, use the <span class="option">-p</span> option for both compiling and linking. The <span class="option">-p</span> option for the compiler prepares the binary for profiling (the compiler will then insert code before each function to gather
+            call information); however, it won't cause the profiling versions of the libraries to be linked in. To link in the profiling
+            versions from the <tt>libc</tt> library, use the <span class="option">-p</span> option for the linker.
+            
+            
+         </p>
+         
+         
+         <p>If you compile and link with either the <span class="option">-pg</span> or <span class="option">-p</span> option, when the executable program runs, either <tt>gprof</tt> or <tt>prof</tt> monitors the program and produces a report file called <span class="filepath">gmon.out</span>. The <tt>gprof</tt> utility can't report information about program calls to routines from a precompiled library (such as <tt>libc</tt>) that weren't compiled with the <span class="option">-pg</span> option. Consequently, the resulting profiling information won't include data about calls made to those routines (for example
+            <tt>printf()</tt>).
+            
+            
+         </p>
+         
+         
+         <p>If most of the execution time occurs in various library routines, then this fact will likely reduce the value of the profiling
+            results, since there is no indication in the results of where the call was made. In this case, you can use Function Instrumentation
+            profiling, which causes this additional time to be charged to the higher-level routine that called the library function.
+            
+            
+            
+         </p>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/profiler_INTRO_.html" shape="rect">Types of profiling</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/profiler_TypeStatisticalProf_.html" shape="rect">Statistical sample profiling (sampling)</a></div>
+            
+            <div><a href="../topic/profiler_TypeFunctionalProf_.html" shape="rect">Function Instrumentation profiling</a></div>
+            
+            <div><a href="../topic/profiler_TypePostmortemProf_.html" shape="rect">Postmortem profiling for Call Count and Function Instrumentation profiling</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

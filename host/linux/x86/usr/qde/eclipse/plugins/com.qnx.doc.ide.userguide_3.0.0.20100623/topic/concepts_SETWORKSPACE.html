@@ -1,0 +1,108 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="task" />
+      <meta name="DC.Title" content="Specifying a workspace location" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/concepts_WORKSPACE.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="SetWorkspaceLocation" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Specifying a workspace location</title>
+   </head>
+   <body id="SetWorkspaceLocation"><a name="SetWorkspaceLocation" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Specifying a workspace location</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <div class="section">
+            
+            <p>To redirect the IDE to reference different workspaces:</p>
+            
+            
+         </div>
+         
+         
+         <ol>
+            <li>
+               <span>Navigate to the directory where the <tt>qde.exe</tt> executable (for Windows)
+                  or the <span class="cmdname">qde</span> script (all other hosts) resides. </span>
+               
+            </li>
+            <li>
+               <span>Run the following command: <samp class="codeph">./qde -data
+                     <var class="varname">path_to_workspace</var></samp> where
+                  <var class="varname">path_to_workspace</var> is the location of your working
+                  directory. </span>
+               
+            </li>
+         </ol>
+         
+         
+         <div class="section">
+            
+            <p>This command launches the IDE and specifies where you want the IDE to create (or look
+               for) the workspace folder. 
+            </p>
+            
+            
+            <div class="note"><span class="notetitle">Note:</span> 
+               
+               <p>Don't use spaces when naming a project or file; they might cause problems with
+                  some tools, such as the <span class="cmdname">make</span> utility. 
+                  
+               </p>
+               
+               
+               <p>For Unix-type hosts (such as Linux), filenames are case-sensitive, but for
+                  Windows they're not. For this reason, don't use case alone to distinguish files
+                  and projects. For example, <span class="filepath">Hello.c</span> and
+                  <span class="filepath">hello.c</span> refer to the same file in Windows, but they're
+                  two separate files for a Unix-type system. 
+                  
+               </p>
+               
+               
+            </div>
+            
+            
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/concepts_WORKSPACE.html" shape="rect">The IDE Workspace</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

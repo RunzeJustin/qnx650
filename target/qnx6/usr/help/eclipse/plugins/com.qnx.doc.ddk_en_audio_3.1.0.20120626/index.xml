@@ -1,0 +1,608 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<index>
+ <entry keyword="AC97 (Audio Codec 97)">
+  <topic href="codecs.html#id4" title="DLL Name"/>
+ </entry>
+ <entry keyword="ado_attach_interrupt()">
+  <topic href="api-ref/ado_attach_interrupt.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_calloc()">
+  <topic href="api-ref/ado_calloc.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_card_set_longname()">
+  <topic href="architecture.html#ctrl_init" title="ctrl_init()"/>
+  <topic href="api-ref/ado_card_set_longname.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_card_set_shortname()">
+  <topic href="architecture.html#ctrl_init" title="ctrl_init()"/>
+  <topic href="api-ref/ado_card_set_shortname.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_card_t">
+  <topic href="architecture.html#ctrl_init" title="ctrl_init()"/>
+  <topic href="architecture.html#OpaqueDataTypes" title="Opaque data types"/>
+ </entry>
+ <entry keyword="ado_ctrl_dll_destroy_t">
+  <topic href="architecture.html#ctrl_destroy" title="ctrl_destroy()"/>
+ </entry>
+ <entry keyword="ado_ctrl_dll_init_t">
+  <topic href="architecture.html#ctrl_init" title="ctrl_init()"/>
+ </entry>
+ <entry keyword="ado_debug()">
+  <topic href="api-ref/ado_debug.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_device_mmap()">
+  <topic href="api-ref/ado_device_mmap.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_device_munmap()">
+  <topic href="api-ref/ado_device_munmap.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ADO_DMA_16M">
+  <topic href="api-ref/ado_shm_alloc.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="ADO_DMA_ISA">
+  <topic href="api-ref/ado_shm_alloc.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="ado_dswitch_t">
+  <topic href="architecture.html#OpaqueDataTypes" title="Opaque data types"/>
+ </entry>
+ <entry keyword="ado_error()">
+  <topic href="api-ref/ado_error.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_free()">
+  <topic href="api-ref/ado_free.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_malloc()">
+  <topic href="api-ref/ado_malloc.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_memory_dump()">
+  <topic href="architecture.html#Debugging" title="Debugging an audio driver"/>
+  <topic href="api-ref/ado_memory_dump.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="ado_mixer_capture_group_create()">
+  <topic href="api-ref/ado_mixer_capture_group_create.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_mixer_create()">
+  <topic href="api-ref/ado_mixer_create.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_mixer_delement">
+  <topic href="architecture.html#OpaqueDataTypes" title="Opaque data types"/>
+ </entry>
+ <entry keyword="ado_mixer_delement_control_accu3_t">
+  <topic href="api-ref/ado_mixer_element_accu3.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="ado_mixer_delement_control_mux1_t">
+  <topic href="api-ref/ado_mixer_element_mux1.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="ado_mixer_delement_control_mux2_t">
+  <topic href="api-ref/ado_mixer_element_mux2.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="ado_mixer_delement_control_sw1_t">
+  <topic href="api-ref/ado_mixer_element_sw1.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="ado_mixer_delement_control_sw2_t">
+  <topic href="api-ref/ado_mixer_element_sw2.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="ado_mixer_delement_control_sw3_t">
+  <topic href="api-ref/ado_mixer_element_sw3.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="ado_mixer_delement_control_volume1_t">
+  <topic href="api-ref/ado_mixer_element_volume1.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="ado_mixer_delement_t">
+  <topic href="analogmixer.html#id5" title="Supported element types"/>
+ </entry>
+ <entry keyword="ado_mixer_destroy_t">
+  <topic href="api-ref/ado_mixer_set_destroy_func.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_mixer_dgroup_t">
+  <topic href="architecture.html#OpaqueDataTypes" title="Opaque data types"/>
+ </entry>
+ <entry keyword="ado_mixer_dll()">
+  <topic href="api-ref/ado_mixer_dll.html#id7" title="Description:"/>
+  <topic href="analogmixer.html#StandardMixerInit" title="Initialization"/>
+  <topic href="codecs.html" title="Supported Codecs"/>
+ </entry>
+ <entry keyword="ado_mixer_dll_callbacks_ac97_t">
+  <topic href="codecs.html#id10" title="Supported Device Controls"/>
+ </entry>
+ <entry keyword="ado_mixer_dll_params_ac97_t">
+  <topic href="codecs.html#id8" title="Parameter Structure"/>
+ </entry>
+ <entry keyword="ado_mixer_dll_params_ak4531_t">
+  <topic href="codecs.html#id19" title="Parameter Structure"/>
+ </entry>
+ <entry keyword="ado_mixer_element_accu1()">
+  <topic href="api-ref/ado_mixer_element_accu1.html#id7" title="Description:"/>
+  <topic href="api-ref/ado_mixer_element_accu2.html#id7" title="Description:"/>
+  <topic href="api-ref/ado_mixer_element_accu3.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_mixer_element_io()">
+  <topic href="api-ref/ado_mixer_element_io.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_mixer_element_mux1()">
+  <topic href="api-ref/ado_mixer_element_mux1.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_mixer_element_mux2()">
+  <topic href="api-ref/ado_mixer_element_mux2.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_mixer_element_notify()">
+  <topic href="api-ref/ado_mixer_element_notify.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_mixer_element_pcm1()">
+  <topic href="api-ref/ado_mixer_element_pcm1.html#id7" title="Description:"/>
+  <topic href="api-ref/ado_mixer_element_pcm2.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_mixer_element_route_add()">
+  <topic href="analogmixer.html#id13" title="Building the mixer"/>
+  <topic href="api-ref/ado_mixer_element_route_add.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_mixer_element_sw1()">
+  <topic href="api-ref/ado_mixer_element_sw1.html#id7" title="Description:"/>
+  <topic href="api-ref/ado_mixer_element_sw2.html#id7" title="Description:"/>
+  <topic href="api-ref/ado_mixer_element_sw3.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_mixer_element_tone_control1()">
+  <topic href="api-ref/ado_mixer_element_vol_range_max.html#id7" title="Description:"/>
+  <topic href="api-ref/ado_mixer_element_vol_range_min.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_mixer_element_volume1()">
+  <topic href="api-ref/ado_mixer_element_volume1.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_mixer_find_element()">
+  <topic href="api-ref/ado_mixer_find_element.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_mixer_find_group()">
+  <topic href="api-ref/ado_mixer_find_group.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_mixer_get_context()">
+  <topic href="architecture.html#CustomDataTypes" title="Custom data types"/>
+  <topic href="api-ref/ado_mixer_get_context.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_mixer_get_element_inst_data()">
+  <topic href="api-ref/ado_mixer_get_element_inst_data.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_mixer_get_element_instance_data()">
+  <topic href="analogmixer.html#id5" title="Supported element types"/>
+ </entry>
+ <entry keyword="ado_mixer_lock()">
+  <topic href="api-ref/ado_mixer_lock.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_mixer_playback_group_create()">
+  <topic href="api-ref/ado_mixer_playback_group_create.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_mixer_reset_t">
+  <topic href="api-ref/ado_mixer_set_reset_func.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_mixer_set_destroy_func()">
+  <topic href="api-ref/ado_mixer_set_destroy_func.html#id7" title="Description:"/>
+  <topic href="analogmixer.html#CustomMixerInit" title="Initialization"/>
+ </entry>
+ <entry keyword="ado_mixer_set_name()">
+  <topic href="api-ref/ado_mixer_set_name.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_mixer_set_reset_func()">
+  <topic href="api-ref/ado_mixer_set_reset_func.html#id7" title="Description:"/>
+  <topic href="analogmixer.html#CustomMixerInit" title="Initialization"/>
+ </entry>
+ <entry keyword="ado_mixer_switch_new()">
+  <topic href="api-ref/ado_mixer_switch_new.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_mixer_t">
+  <topic href="api-ref/ado_mixer_create.html#id5" title="Arguments:"/>
+  <topic href="api-ref/ado_mixer_dll.html#id5" title="Arguments:"/>
+  <topic href="architecture.html#CustomDataTypes" title="Custom data types"/>
+  <topic href="analogmixer.html#CustomMixerInit" title="Initialization"/>
+  <topic href="architecture.html#OpaqueDataTypes" title="Opaque data types"/>
+ </entry>
+ <entry keyword="ado_mixer_unlock()">
+  <topic href="api-ref/ado_mixer_unlock.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ADO_MUTEX_DEBUG">
+  <topic href="architecture.html#Debugging" title="Debugging an audio driver"/>
+ </entry>
+ <entry keyword="ado_mutex_destroy()">
+  <topic href="api-ref/ado_mutex_destroy.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_mutex_init()">
+  <topic href="api-ref/ado_mutex_init.html#id7" title="Description:"/>
+  <topic href="api-ref/ado_mutex_lock.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_mutex_unlock()">
+  <topic href="api-ref/ado_mutex_unlock.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_pci">
+  <topic href="architecture.html#ctrl_init" title="ctrl_init()"/>
+  <topic href="api-ref/ado_pci.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="ado_pci_device()">
+  <topic href="api-ref/ado_pci_device.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_pci_release()">
+  <topic href="architecture.html#ctrl_destroy" title="ctrl_destroy()"/>
+  <topic href="api-ref/ado_pci_release.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_pcm_cap_t">
+  <topic href="api-ref/ado_pcm_cap_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="ADO_PCM_CHANNEL_CAPTURE">
+  <topic href="api-ref/ado_pcm_chn_mixer.html#id5" title="Arguments:"/>
+  <topic href="api-ref/ado_pcm_subchn_is_channel.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="ADO_PCM_CHANNEL_PLAYBACK">
+  <topic href="api-ref/ado_pcm_chn_mixer.html#id5" title="Arguments:"/>
+  <topic href="api-ref/ado_pcm_subchn_is_channel.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="ado_pcm_chn_mixer()">
+  <topic href="api-ref/ado_pcm_chn_mixer.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_pcm_config_t">
+  <topic href="api-ref/ado_pcm_config_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="ado_pcm_create()">
+  <topic href="pcm.html#id7" title="ado_pcm_create()"/>
+  <topic href="api-ref/ado_pcm_create.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_pcm_dma_int_size()">
+  <topic href="api-ref/ado_pcm_dma_int_size.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_pcm_dmabuf">
+  <topic href="api-ref/ado_pcm_config_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="ado_pcm_format_bit_width()">
+  <topic href="api-ref/ado_pcm_format_bit_width.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_pcm_hw_t">
+  <topic href="api-ref/ado_pcm_hw_t.html#id5" title="Description:"/>
+  <topic href="pcm.html#pcm-stream" title="How does the PCM stream operate?"/>
+ </entry>
+ <entry keyword="ado_pcm_subchn_caps()">
+  <topic href="api-ref/ado_pcm_subchn_caps.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_pcm_subchn_is_channel()">
+  <topic href="api-ref/ado_pcm_hw_t.html#CapabilitiesCallback" title="capabilities"/>
+  <topic href="api-ref/ado_pcm_subchn_is_channel.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_pcm_subchn_mixer()">
+  <topic href="api-ref/ado_pcm_subchn_mixer.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_pcm_subchn_mixer_create()">
+  <topic href="api-ref/ado_pcm_subchn_mixer_create.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_pcm_subchn_mixer_destroy()">
+  <topic href="api-ref/ado_pcm_subchn_mixer_destroy.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_pcm_subchn_mixer_t">
+  <topic href="architecture.html#OpaqueDataTypes" title="Opaque data types"/>
+ </entry>
+ <entry keyword="ado_pcm_subchn_t">
+  <topic href="architecture.html#OpaqueDataTypes" title="Opaque data types"/>
+ </entry>
+ <entry keyword="ado_pcm_sw_mix()">
+  <topic href="api-ref/ado_pcm_sw_mix.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_pcm_t">
+  <topic href="architecture.html#OpaqueDataTypes" title="Opaque data types"/>
+ </entry>
+ <entry keyword="ADO_PCM_TRIGGER_*">
+  <topic href="api-ref/ado_pcm_hw_t.html#TriggerCallback" title="trigger"/>
+ </entry>
+ <entry keyword="ado_realloc()">
+  <topic href="api-ref/ado_realloc.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ADO_RWLOCK_DEBUG">
+  <topic href="architecture.html#Debugging" title="Debugging an audio driver"/>
+ </entry>
+ <entry keyword="ado_rwlock_destroy()">
+  <topic href="api-ref/ado_rwlock_destroy.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_rwlock_init()">
+  <topic href="api-ref/ado_rwlock_init.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_rwlock_rdlock()">
+  <topic href="api-ref/ado_rwlock_rdlock.html#id7" title="Description:"/>
+  <topic href="api-ref/ado_rwlock_unlock.html#id7" title="Description:"/>
+  <topic href="api-ref/ado_rwlock_wrlock.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_shm_alloc()">
+  <topic href="api-ref/ado_shm_alloc.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ADO_SHM_DMA_SAFE">
+  <topic href="api-ref/ado_shm_alloc.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="ado_shm_free()">
+  <topic href="api-ref/ado_shm_free.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_shm_mmap()">
+  <topic href="api-ref/ado_shm_mmap.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="ado_strdup()">
+  <topic href="api-ref/ado_strdup.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="AK4531">
+  <topic href="codecs.html#id15" title="DLL Name"/>
+ </entry>
+ <entry keyword="aquire callback">
+  <topic href="api-ref/ado_pcm_hw_t.html#AcquireCallback" title="aquire"/>
+ </entry>
+ <entry keyword="Audio Codec 97 (AC97)">
+  <topic href="codecs.html#id4" title="DLL Name"/>
+ </entry>
+ <entry keyword="callback functions (ado_pcm_hw_t)">
+  <topic href="api-ref/ado_pcm_hw_t.html#id5" title="Description:"/>
+  <topic href="pcm.html#pcm-stream" title="How does the PCM stream operate?"/>
+ </entry>
+ <entry keyword="capabilities callback">
+  <topic href="api-ref/ado_pcm_hw_t.html#CapabilitiesCallback" title="capabilities"/>
+ </entry>
+ <entry keyword="codecs, supported">
+  <topic href="codecs.html" title="Supported Codecs"/>
+ </entry>
+ <entry keyword="conventions">
+  <entry keyword="typographical">
+   <topic href="about.html#Typographical_conventions" title="Typographical conventions"/>
+  </entry>
+ </entry>
+ <entry keyword="ctrl_destroy()">
+  <topic href="architecture.html#ctrl_destroy" title="ctrl_destroy()"/>
+ </entry>
+ <entry keyword="ctrl_init()">
+  <topic href="architecture.html#ctrl_init" title="ctrl_init()"/>
+ </entry>
+ <entry keyword="data types, opaque">
+  <topic href="architecture.html#OpaqueDataTypes" title="Opaque data types"/>
+ </entry>
+ <entry keyword="DLL">
+  <topic href="codecs.html" title="Supported Codecs"/>
+ </entry>
+ <entry keyword="DMA buffer">
+  <topic href="pcm.html#pcm-stream" title="How does the PCM stream operate?"/>
+ </entry>
+ <entry keyword="dma_interrupt()">
+  <topic href="api-ref/dma_interrupt.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="elements">
+  <entry keyword="instance data">
+   <topic href="analogmixer.html#id5" title="Supported element types"/>
+  </entry>
+ </entry>
+ <entry keyword="HW_CONTEXT_T">
+  <topic href="architecture.html#ctrl_init" title="ctrl_init()"/>
+  <topic href="architecture.html#CustomDataTypes" title="Custom data types"/>
+ </entry>
+ <entry keyword="interrupts">
+  <entry keyword="handler function, attaching">
+   <topic href="api-ref/ado_attach_interrupt.html#id7" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="locks, read-write">
+  <entry keyword="destroying">
+   <topic href="api-ref/ado_rwlock_destroy.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="initializing">
+   <topic href="api-ref/ado_rwlock_init.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="read lock, acquiring">
+   <topic href="api-ref/ado_rwlock_rdlock.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="unlocking">
+   <topic href="api-ref/ado_rwlock_unlock.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="write lock, acquiring">
+   <topic href="api-ref/ado_rwlock_wrlock.html#id7" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="memory">
+  <entry keyword="allocating">
+   <topic href="api-ref/ado_calloc.html#id7" title="Description:"/>
+   <topic href="api-ref/ado_malloc.html#id7" title="Description:"/>
+   <topic href="api-ref/ado_strdup.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="freeing">
+   <topic href="api-ref/ado_free.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="mapping">
+   <topic href="api-ref/ado_device_mmap.html#id7" title="Description:"/>
+   <topic href="api-ref/ado_device_munmap.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="reallocating">
+   <topic href="api-ref/ado_realloc.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="shared">
+   <entry keyword="allocating">
+    <topic href="api-ref/ado_shm_alloc.html#id7" title="Description:"/>
+   </entry>
+   <entry keyword="freeing">
+    <topic href="api-ref/ado_shm_free.html#id7" title="Description:"/>
+   </entry>
+   <entry keyword="mapping">
+    <topic href="api-ref/ado_shm_mmap.html#id7" title="Description:"/>
+   </entry>
+  </entry>
+  <entry keyword="tracking">
+   <topic href="api-ref/ado_memory_dump.html#id5" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="mixer">
+  <entry keyword="context">
+   <entry keyword="accessing">
+    <topic href="api-ref/ado_mixer_get_context.html#id7" title="Description:"/>
+   </entry>
+  </entry>
+  <entry keyword="destroying">
+   <topic href="api-ref/ado_mixer_set_destroy_func.html#id7" title="Description:"/>
+   <topic href="analogmixer.html#CustomMixerInit" title="Initialization"/>
+  </entry>
+  <entry keyword="resetting">
+   <topic href="api-ref/ado_mixer_set_reset_func.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="routes, creating">
+   <topic href="analogmixer.html#id13" title="Building the mixer"/>
+   <topic href="api-ref/ado_mixer_element_route_add.html#id7" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="MIXER_CONTEXT_T">
+  <topic href="api-ref/ado_mixer_create.html#id5" title="Arguments:"/>
+  <topic href="architecture.html#CustomDataTypes" title="Custom data types"/>
+ </entry>
+ <entry keyword="mutexes">
+  <entry keyword="destroying">
+   <topic href="api-ref/ado_mutex_destroy.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="initializing">
+   <topic href="api-ref/ado_mutex_init.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="locking">
+   <topic href="api-ref/ado_mutex_lock.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="unlocking">
+   <topic href="api-ref/ado_mutex_unlock.html#id7" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="pathname delimiter in QNX documentation">
+  <topic href="about.html#WINDOWSNOTE" title="Note to Windows users"/>
+ </entry>
+ <entry keyword="PCI card">
+  <entry keyword="ado_pci">
+   <topic href="api-ref/ado_pci.html#id5" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="PCI cards">
+  <entry keyword="detaching">
+   <topic href="api-ref/ado_pci_release.html#id7" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="PCM">
+  <entry keyword="callback functions (ado_pcm_hw_t)">
+   <topic href="api-ref/ado_pcm_hw_t.html#id5" title="Description:"/>
+   <topic href="pcm.html#pcm-stream" title="How does the PCM stream operate?"/>
+  </entry>
+  <entry keyword="capabilities (ado_pcm_cap_t)">
+   <topic href="api-ref/ado_pcm_cap_t.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="subchannel">
+   <entry keyword="configuration">
+    <topic href="api-ref/ado_pcm_config_t.html#id5" title="Description:"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="position callback">
+  <topic href="api-ref/ado_pcm_hw_t.html#PositionCallback" title="position"/>
+ </entry>
+ <entry keyword="prepare callback">
+  <topic href="api-ref/ado_pcm_hw_t.html#PrepareCallback" title="prepare"/>
+ </entry>
+ <entry keyword="read-write locks">
+  <entry keyword="destroying">
+   <topic href="api-ref/ado_rwlock_destroy.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="initializing">
+   <topic href="api-ref/ado_rwlock_init.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="read lock, acquiring">
+   <topic href="api-ref/ado_rwlock_rdlock.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="unlocking">
+   <topic href="api-ref/ado_rwlock_unlock.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="write lock, acquiring">
+   <topic href="api-ref/ado_rwlock_wrlock.html#id7" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="reconstitute callback">
+  <topic href="api-ref/ado_pcm_hw_t.html#ReconstituteCallback" title="reconstitute"/>
+ </entry>
+ <entry keyword="release callback">
+  <topic href="api-ref/ado_pcm_hw_t.html#ReleaseCallback" title="release"/>
+ </entry>
+ <entry keyword="S/PDIF">
+  <topic href="codecs.html" title="Supported Codecs"/>
+ </entry>
+ <entry keyword="Sample Rate Conversion (SRC)">
+  <topic href="codecs.html" title="Supported Codecs"/>
+ </entry>
+ <entry keyword="shared memory">
+  <entry keyword="allocating">
+   <topic href="api-ref/ado_shm_alloc.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="freeing">
+   <topic href="api-ref/ado_shm_free.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="mapping">
+   <topic href="api-ref/ado_shm_mmap.html#id7" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="SND_MIXER_CHN_MASK_*">
+  <topic href="api-ref/ado_mixer_capture_group_create.html#id5" title="Arguments:"/>
+  <topic href="api-ref/ado_mixer_playback_group_create.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="snd_mixer_element_volume1_range">
+  <topic href="api-ref/ado_mixer_element_volume1.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="SND_MIXER_ETYPE_*">
+  <topic href="api-ref/ado_mixer_find_element.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="SND_MIXER_ETYPE_CAPTURE1">
+  <topic href="api-ref/ado_mixer_element_pcm1.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="SND_MIXER_ETYPE_CAPTURE2">
+  <topic href="api-ref/ado_mixer_element_pcm2.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="SND_MIXER_ETYPE_INPUT">
+  <topic href="api-ref/ado_mixer_element_io.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="SND_MIXER_ETYPE_OUTPUT">
+  <topic href="api-ref/ado_mixer_element_io.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="SND_MIXER_ETYPE_PLAYBACK1">
+  <topic href="api-ref/ado_mixer_element_pcm1.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="SND_MIXER_ETYPE_PLAYBACK2">
+  <topic href="api-ref/ado_mixer_element_pcm2.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="SND_MIXER_SWITCH3_*">
+  <topic href="api-ref/ado_mixer_element_sw3.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="SND_MIXER_VOICE_*">
+  <topic href="api-ref/ado_mixer_element_io.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="snd_mixer_voice_t">
+  <topic href="api-ref/ado_mixer_element_io.html#id5" title="Arguments:"/>
+  <topic href="api-ref/ado_mixer_element_sw3.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="SND_PCM_CHNINFO_*">
+  <topic href="api-ref/ado_pcm_cap_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="SND_PCM_FMT_*">
+  <topic href="api-ref/ado_pcm_cap_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="SND_PCM_PARAMS_BAD_*">
+  <topic href="api-ref/ado_pcm_hw_t.html#AcquireCallback" title="aquire"/>
+ </entry>
+ <entry keyword="SND_PCM_RATE_*">
+  <topic href="api-ref/ado_pcm_cap_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="SND_SW_SUBTYPE_*">
+  <topic href="api-ref/ado_mixer_switch_new.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="SND_SW_TYPE_*">
+  <topic href="api-ref/ado_mixer_switch_new.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="SRC (Sample Rate Conversion)">
+  <topic href="codecs.html" title="Supported Codecs"/>
+ </entry>
+ <entry keyword="strings, copying">
+  <topic href="api-ref/ado_strdup.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="support, technical">
+  <topic href="about.html#Support" title="Technical support"/>
+ </entry>
+ <entry keyword="technical support">
+  <topic href="about.html#Support" title="Technical support"/>
+ </entry>
+ <entry keyword="trigger callback">
+  <topic href="api-ref/ado_pcm_hw_t.html#TriggerCallback" title="trigger"/>
+ </entry>
+ <entry keyword="typographical conventions">
+  <topic href="about.html#Typographical_conventions" title="Typographical conventions"/>
+ </entry>
+</index>

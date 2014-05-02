@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin id="com.qnx.doc.momentics"
+    name="A Roadmap to the QNX Software Development Platform"
+    version="3.1.0.20120626"
+    provider-name="QNX Software Systems Limited">
+
+    <extension point="org.eclipse.help.toc">
+      <toc file="toc.xml" primary="true" />
+      <index path="index"/>
+   </extension>
+
+    <extension point="org.eclipse.help.toc">
+      <toc file="../com.qnx.doc.momentics_welcome/toc.xml" />
+      <toc file="../com.qnx.doc.momentics_quickstart/toc.xml" />
+      <toc file="../com.qnx.doc.momentics_release_notes/toc.xml" />
+      <toc file="../com.qnx.doc.momentics_installation_guide/toc.xml" />
+   </extension>
+</plugin>

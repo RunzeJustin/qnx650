@@ -1,0 +1,18 @@
+#!/bin/sh
+
+(
+BASEDIR=$1
+if test ! -r $BASEDIR/target/qnx6/usr/include; then
+    test -r $BASEDIR/target || mkdir $BASEDIR/target
+    test -r $BASEDIR/target/qnx6 || mkdir $BASEDIR/target/qnx6
+    test -r $BASEDIR/target/qnx6/usr || mkdir $BASEDIR/target/qnx6/usr
+    test -r $BASEDIR/target/qnx6/usr/include || mkdir $BASEDIR/target/qnx6/usr/include
+fi
+if test -d $BASEDIR/target/qnx6/usr/include; then
+   cd $BASEDIR/target/qnx6/usr/include
+   ln -s mk/qconf-linux.mk qconfig.mk
+else
+   echo "Could not change to $BASEDIR/target/qnx6/usr/include"
+fi
+) >>/tmp/qnxlink.log 2>&1
+

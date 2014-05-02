@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Building Embedded Systems">
+      <topic label="About This Book" href="about.html">
+          <topic label="What you'll find in this guide" href="about.html#In_this_guide"/>
+          <topic label="Typographical conventions" href="about.html#Typographical_conventions">
+            <topic label="Note to Windows users" href="about.html#WINDOWSNOTE"/>
+            <topic label="Navigation buttons" href="about.html#Navigation"/>
+          </topic>
+          <topic label="Technical support" href="about.html#Support"/>
+      </topic>
+      <topic label="Overview of Building Embedded Systems" href="overview.html">
+          <topic label="Introduction" href="overview.html#INTRO">
+            <topic label="The role of the IPL" href="overview.html#id4">
+              <topic label="Warm-start and cold-start IPL" href="overview.html#WARMANDCOLD"/>
+            </topic>
+            <topic label="The role of the startup program" href="overview.html#id7"/>
+            <topic label="Startup's responsibilities" href="overview.html#id9">
+              <topic label="Copying and decompressing the image" href="overview.html#id11"/>
+              <topic label="Configuring the hardware" href="overview.html#id13"/>
+              <topic label="Determining system configuration" href="overview.html#id15"/>
+              <topic label="Establishing callouts" href="overview.html#ESTABCALLOUTS"/>
+              <topic label="Starting the OS" href="overview.html#id18"/>
+              <topic label="The startup library" href="overview.html#id20"/>
+            </topic>
+            <topic label="The role of Neutrino" href="overview.html#id22"/>
+          </topic>
+          <topic label="Hardware aspects" href="overview.html#HARDWARE">
+            <topic label="Choice of processor" href="overview.html#id25"/>
+            <topic label="Source of initialization and configuration" href="overview.html#id27"/>
+            <topic label="Choice of filesystems" href="overview.html#id29">
+              <topic label="No additional storage required" href="overview.html#id31"/>
+              <topic label="Additional read-only storage required" href="overview.html#id33"/>
+              <topic label="Additional read/write nonpersistent storage required" href="overview.html#id35"/>
+              <topic label="Additional read/write persistent storage required" href="overview.html#id37">
+                <topic label="Flash filesystems and media" href="overview.html#id39"/>
+                <topic label="Rotating media and filesystems" href="overview.html#id41"/>
+                <topic label="Network media and filesystems" href="overview.html#id43"/>
+              </topic>
+            </topic>
+            <topic label="I/O devices" href="overview.html#id45">
+              <topic label="Character I/O devices" href="overview.html#id47"/>
+              <topic label="Special/custom devices" href="overview.html#id49"/>
+            </topic>
+          </topic>
+          <topic label="Getting started" href="overview.html#GETSTART">
+            <topic label="Hardware design" href="overview.html#id52"/>
+            <topic label="Customizing the software" href="overview.html#id54">
+              <topic label="Customizing the source" href="overview.html#id56"/>
+            </topic>
+          </topic>
+      </topic>
+      <topic label="Working with a BSP" href="bsp.html">
+            <topic label="In this chapter..." href="bsp.html#id3"/>
+          <topic label="BSP Overview" href="bsp.html#OVERVIEW"/>
+          <topic label="Using BSPs in the IDE" href="bsp.html#IDE"/>
+          <topic label="Using BSPs on the command line" href="bsp.html#CMDLINE">
+            <topic label="Structure of a BSP" href="bsp.html#Structure">
+              <topic label="prebuilt subdirectory" href="bsp.html#id9"/>
+              <topic label="install subdirectory" href="bsp.html#id11"/>
+              <topic label="src subdirectory" href="bsp.html#id13"/>
+            </topic>
+            <topic label="Building source from the command line" href="bsp.html#BUILDSRC"/>
+            <topic label="Supporting additional devices" href="bsp.html#DEVICES"/>
+          </topic>
+          <topic label="Transferring an OS image onto your board" href="bsp.html#OSIMAGE">
+            <topic label="Transferring an OS image" href="bsp.html#id18"/>
+            <topic label="Working with a flash filesystem" href="bsp.html#id20">
+              <topic label="Raw partitions" href="bsp.html#id22"/>
+              <topic label="Flash filesystem partitions" href="bsp.html#id24"/>
+              <topic label="Flash filesystem source" href="bsp.html#id26"/>
+              <topic label="How do I create a partition?" href="bsp.html#id28"/>
+            </topic>
+          </topic>
+          <topic label="Testing Neutrino on your board" href="bsp.html#TESTNTO"/>
+          <topic label="Getting Photon on your board" href="bsp.html#GETPHT"/>
+          <topic label="Where do I go from here?" href="bsp.html#WHERE"/>
+          <topic label="Filename conventions" href="bsp.html#FILENAMES"/>
+      </topic>
+      <topic label="Making an OS Image" href="building_nto.html">
+          <topic label="Images, images, images" href="building_nto.html#IMAGES"/>
+          <topic label="What is an OS image?" href="building_nto.html#NTOIMAGE"/>
+          <topic label="The OS image as a filesystem" href="building_nto.html#IMAGEFSYS"/>
+          <topic label="Configuring an OS image" href="building_nto.html#CONFIG">
+            <topic label="A simple buildfile" href="building_nto.html#SimpleBuildfile">
+              <topic label="Inline files" href="building_nto.html#id8"/>
+            </topic>
+            <topic label="The bootstrap file" href="building_nto.html#Bootstrap">
+              <topic label="Compressing the image" href="building_nto.html#id11"/>
+            </topic>
+            <topic label="The script file" href="building_nto.html#Script">
+              <topic label="Bound multiprocessing attributes" href="building_nto.html#id14"/>
+              <topic label="The script file on the target" href="building_nto.html#id16"/>
+            </topic>
+            <topic label="Plain ordinary lists of files" href="building_nto.html#id18">
+              <topic label="Including files from different places" href="building_nto.html#id20"/>
+              <topic label="Modifying the search path" href="building_nto.html#id22"/>
+              <topic label="Specifying the pathname explicitly" href="building_nto.html#id24"/>
+              <topic label="Creating the contents of the file in line" href="building_nto.html#id26"/>
+              <topic label="Specifying file ownership and permissions" href="building_nto.html#id28"/>
+              <topic label="Including a whole whack of files" href="building_nto.html#id30"/>
+            </topic>
+            <topic label="Generating the image" href="building_nto.html#id32"/>
+            <topic label="Listing the contents of an image" href="building_nto.html#id34"/>
+          </topic>
+          <topic label="Building a flash filesystem image" href="building_nto.html#FLASH">
+            <topic label="Using mkefs" href="building_nto.html#id37">
+              <topic label="mkefs buildfile" href="building_nto.html#id39"/>
+              <topic label="Block size" href="building_nto.html#id41"/>
+              <topic label="Spare blocks" href="building_nto.html#Spare_blocks"/>
+            </topic>
+            <topic label="Compressing files" href="building_nto.html#Compressing_files">
+              <topic label="Abstraction layer" href="building_nto.html#id45"/>
+              <topic label="Two sizes" href="building_nto.html#id47"/>
+            </topic>
+            <topic label="Compression rules" href="building_nto.html#id49">
+              <topic label="The exception" href="building_nto.html#id51"/>
+            </topic>
+          </topic>
+          <topic label="Embedding an image" href="building_nto.html#PLACINGIMG">
+            <topic label="Combining image files using mkimage" href="building_nto.html#id54">
+              <topic label="Combining image files using the IDE" href="building_nto.html#id56"/>
+            </topic>
+            <topic label="Converting images using mkrec" href="building_nto.html#id58"/>
+            <topic label="Transferring an image to flash" href="building_nto.html#TransferringToFlash"/>
+          </topic>
+          <topic label="System configuration" href="building_nto.html#SYSCONF">
+            <topic label="Establishing an output device" href="building_nto.html#id62">
+              <topic label="A simple desktop example" href="building_nto.html#id64"/>
+            </topic>
+            <topic label="Running drivers/filesystems" href="building_nto.html#id66">
+              <topic label="Disk drivers" href="building_nto.html#id68"/>
+              <topic label="Flash filesystems" href="building_nto.html#id70"/>
+              <topic label="Network drivers" href="building_nto.html#id72"/>
+              <topic label="Network filesystems" href="building_nto.html#id74"/>
+            </topic>
+            <topic label="Running applications" href="building_nto.html#id76"/>
+          </topic>
+          <topic label="Debugging an embedded system" href="building_nto.html#Debugging">
+            <topic label="pdebug software debugging agent" href="building_nto.html#pdebug"/>
+            <topic label="Hardware debuggers and Neutrino" href="building_nto.html#HardwareDebuggers"/>
+            <topic label="Producing debug symbol information for IPL and startup" href="building_nto.html#DebugSymbolInfo">
+              <topic label="Generating IPL debug symbols" href="building_nto.html#IPLDebug"/>
+              <topic label="Generating startup debug symbols" href="building_nto.html#StartupDebugSymbols"/>
+            </topic>
+          </topic>
+      </topic>
+      <topic label="Writing an IPL Program" href="load_process.html">
+          <topic label="Initial program loader (IPL)" href="load_process.html#IPLOVER">
+            <topic label="Responsibilities of the IPL" href="load_process.html#RESPONSIBLE">
+              <topic label="Linearly mapped images" href="load_process.html#id5"/>
+              <topic label="Bank-switched images" href="load_process.html#id7"/>
+              <topic label="Processors &amp; configurations" href="load_process.html#id9"/>
+            </topic>
+            <topic label="Booting from a bank-switched device" href="load_process.html#BOOTBANK"/>
+            <topic label="Booting from a linear device" href="load_process.html#BOOTLIN"/>
+            <topic label="Warm vs cold start" href="load_process.html#COLDWARM">
+              <topic label="Warm-start IPL" href="load_process.html#id14"/>
+              <topic label="Cold-start IPL" href="load_process.html#id16"/>
+            </topic>
+            <topic label="Loading the image" href="load_process.html#LOADIMG">
+              <topic label="If the source is a linearly mapped device" href="load_process.html#id19"/>
+              <topic label="If the source is a bank-switched device" href="load_process.html#id21"/>
+              <topic label="ROM devices" href="load_process.html#id23"/>
+              <topic label="Network boot" href="load_process.html#id25"/>
+              <topic label="Using a BOOTP server" href="load_process.html#BOOTPSERVER"/>
+              <topic label="Serial port" href="load_process.html#id28"/>
+              <topic label="Traditional disk" href="load_process.html#id30"/>
+              <topic label="None of the above?" href="load_process.html#id32"/>
+            </topic>
+            <topic label="Transferring control to the startup program" href="load_process.html#id34"/>
+          </topic>
+          <topic label="Customizing IPLs" href="load_process.html#CUSTOMIPL">
+            <topic label="Initialize hardware" href="load_process.html#id37"/>
+            <topic label="Loading the image into RAM" href="load_process.html#id39"/>
+            <topic label="Structure of the boot header" href="load_process.html#id41">
+              <topic label="signature" href="load_process.html#id43"/>
+              <topic label="version" href="load_process.html#id45"/>
+              <topic label="flags1 and flags2" href="load_process.html#id47"/>
+              <topic label="header_size" href="load_process.html#id49"/>
+              <topic label="machine" href="load_process.html#id51"/>
+              <topic label="startup_vaddr" href="load_process.html#id53"/>
+              <topic label="paddr_bias" href="load_process.html#id55"/>
+              <topic label="image_paddr" href="load_process.html#id57"/>
+              <topic label="ram_paddr" href="load_process.html#id59"/>
+              <topic label="ram_size" href="load_process.html#id61"/>
+              <topic label="startup_size" href="load_process.html#id63"/>
+              <topic label="stored_size" href="load_process.html#id65"/>
+              <topic label="imagefs_paddr" href="load_process.html#id67"/>
+              <topic label="imagefs_size" href="load_process.html#id69"/>
+              <topic label="preboot_size" href="load_process.html#id71"/>
+              <topic label="zero and zero0" href="load_process.html#id73"/>
+              <topic label="info" href="load_process.html#TUPLE"/>
+              <topic label="struct startup_info_skip" href="load_process.html#id76"/>
+              <topic label="struct startup_info_mem and startup_info_mem_extended" href="load_process.html#id78"/>
+              <topic label="struct startup_info_disk" href="load_process.html#id80"/>
+              <topic label="struct startup_info_time" href="load_process.html#id82"/>
+              <topic label="struct startup_info_box" href="load_process.html#id84"/>
+            </topic>
+            <topic label="Relationship of struct startup_header fields" href="load_process.html#Relationship">
+              <topic label="Linear ROM execute-in-place boot image" href="load_process.html#id87"/>
+              <topic label="Linear ROM compressed boot image" href="load_process.html#id89"/>
+              <topic label="ROM non-XIP image" href="load_process.html#id91"/>
+              <topic label="Disk/network image (x86 BIOS)" href="load_process.html#id93"/>
+              <topic label="Disk/network compressed image" href="load_process.html#id95"/>
+            </topic>
+            <topic label="IPL structure" href="load_process.html#id97">
+              <topic label="IPL source directory structure" href="load_process.html#id99"/>
+              <topic label="IPL code structure" href="load_process.html#IPLCODESTRUCT"/>
+              <topic label="An example" href="load_process.html#id102"/>
+            </topic>
+            <topic label="Creating a new IPL" href="load_process.html#id104"/>
+          </topic>
+          <topic label="The IPL library" href="load_process.html#IPLLIB">
+              <topic label="enable_cache" href="load_process.html#enable_cache"/>
+              <topic label="image_download_8250" href="load_process.html#image_download_8250"/>
+              <topic label="image_scan" href="load_process.html#image_scan"/>
+              <topic label="image_scan_ext" href="load_process.html#image_scan_ext"/>
+              <topic label="image_setup" href="load_process.html#image_setup"/>
+              <topic label="image_setup_ext" href="load_process.html#image_setup_ext"/>
+              <topic label="image_start" href="load_process.html#image_start"/>
+              <topic label="image_start_ext" href="load_process.html#image_start_ext"/>
+              <topic label="int15_copy" href="load_process.html#int15_copy"/>
+              <topic label="print_byte" href="load_process.html#print_byte"/>
+              <topic label="print_char" href="load_process.html#print_char"/>
+              <topic label="print_long" href="load_process.html#print_long"/>
+              <topic label="print_sl" href="load_process.html#print_sl"/>
+              <topic label="print_string" href="load_process.html#print_string"/>
+              <topic label="print_var" href="load_process.html#print_var"/>
+              <topic label="print_word" href="load_process.html#print_word"/>
+              <topic label="protected_mode" href="load_process.html#protected mode"/>
+              <topic label="uart_hex8" href="load_process.html#uart_hex8"/>
+              <topic label="uart_hex16" href="load_process.html#uart_hex16"/>
+              <topic label="uart_hex32" href="load_process.html#uart_hex32"/>
+              <topic label="uart_init" href="load_process.html#uart_init"/>
+              <topic label="uart_put" href="load_process.html#uart_put"/>
+              <topic label="uart_string" href="load_process.html#uart_string"/>
+              <topic label="uart32_hex8" href="load_process.html#uart32_hex8"/>
+              <topic label="uart32_hex16" href="load_process.html#uart32_hex16"/>
+              <topic label="uart32_hex32" href="load_process.html#uart32_hex32"/>
+              <topic label="uart32_init" href="load_process.html#uart32_init"/>
+              <topic label="uart32_put" href="load_process.html#uart32_put"/>
+              <topic label="uart32_string" href="load_process.html#uart32_string"/>
+          </topic>
+      </topic>
+      <topic label="Customizing Image Startup Programs" href="startup.html">
+            <topic label="In this chapter..." href="startup.html#id3"/>
+          <topic label="Introduction" href="startup.html#INTRO">
+            <topic label="Initialize hardware" href="startup.html#INITHARDWARE"/>
+            <topic label="Initialize system page" href="startup.html#INITSYSPAGE"/>
+            <topic label="Initialize callouts" href="startup.html#INITCALLOUTS"/>
+          </topic>
+          <topic label="Anatomy of a startup program" href="startup.html#STARTUPPROGS">
+            <topic label="Structure of a startup program" href="startup.html#id10"/>
+            <topic label="Creating a new startup program" href="startup.html#id12"/>
+          </topic>
+          <topic label="Structure of the system page" href="startup.html#SYSPAGE_STUFF">
+            <topic label="size" href="startup.html#size"/>
+            <topic label="total_size" href="startup.html#total_size"/>
+            <topic label="type" href="startup.html#type"/>
+            <topic label="num_cpu" href="startup.html#num_cpu"/>
+            <topic label="system_private" href="startup.html#system_private"/>
+            <topic label="asinfo" href="startup.html#asinfo">
+              <topic label="The attr field" href="startup.html#attr_field"/>
+              <topic label="Address space trees" href="startup.html#id22"/>
+            </topic>
+            <topic label="hwinfo" href="startup.html#hwinfo">
+              <topic label="Tags" href="startup.html#id25"/>
+              <topic label="Items" href="startup.html#id27"/>
+              <topic label="Device trees" href="startup.html#id29"/>
+              <topic label="Building the section" href="startup.html#id31"/>
+              <topic label="Other functions" href="startup.html#id33"/>
+              <topic label="Defaults" href="startup.html#id35"/>
+              <topic label="Predefined items and tags" href="startup.html#id37"/>
+              <topic label="Group item" href="startup.html#id39"/>
+              <topic label="Bus item" href="startup.html#id41"/>
+              <topic label="Device item" href="startup.html#id43"/>
+              <topic label="location tag" href="startup.html#id45"/>
+              <topic label="irq tag" href="startup.html#id47"/>
+              <topic label="diskgeometry tag" href="startup.html#id49"/>
+              <topic label="pad tag" href="startup.html#id51"/>
+            </topic>
+            <topic label="cpuinfo" href="startup.html#cpuinfo"/>
+            <topic label="syspage_entry cacheattr" href="startup.html#cacheattr"/>
+            <topic label="syspage_entry qtime" href="startup.html#qtime"/>
+            <topic label="callout" href="startup.html#callout"/>
+            <topic label="callin" href="startup.html#callin"/>
+            <topic label="typed_strings" href="startup.html#typed_strings"/>
+            <topic label="strings" href="startup.html#strings"/>
+            <topic label="intrinfo" href="startup.html#intrinfo">
+              <topic label="The cpu_intr_base member" href="startup.html#id61"/>
+              <topic label="The flags member" href="startup.html#id63"/>
+              <topic label="config return values" href="startup.html#id65"/>
+            </topic>
+            <topic label="syspage_entry union un" href="startup.html#un"/>
+            <topic label="un.x86" href="startup.html#x86"/>
+            <topic label="un.x86.smpinfo (deprecated)" href="startup.html#x86_smpinfo"/>
+            <topic label="un.ppc (deprecated)" href="startup.html#ppc"/>
+            <topic label="un.ppc.kerinfo" href="startup.html#ppc_kerinfo"/>
+            <topic label="un.mips" href="startup.html#mips"/>
+            <topic label="un.arm" href="startup.html#arm"/>
+            <topic label="un.sh" href="startup.html#sh"/>
+            <topic label="smp" href="startup.html#smp"/>
+            <topic label="pminfo" href="startup.html#pminfo"/>
+          </topic>
+          <topic label="Callout information" href="startup.html#CALLOUTINFO">
+            <topic label="Debug interface" href="startup.html#id78"/>
+            <topic label="Clock/timer interface" href="startup.html#id80"/>
+            <topic label="Interrupt controller interface" href="startup.html#id82"/>
+            <topic label="Cache controller interface" href="startup.html#id84"/>
+            <topic label="System reset callout" href="startup.html#id86"/>
+            <topic label="Power management callout" href="startup.html#Power_management"/>
+          </topic>
+          <topic label="The startup library" href="startup.html#STARTUPLIB">
+            <topic label="add_cache" href="startup.html#add_cache"/>
+            <topic label="add_callout" href="startup.html#add_callout"/>
+            <topic label="add_callout_array" href="startup.html#add_callout_array"/>
+            <topic label="add_interrupt" href="startup.html#add_interrupt"/>
+            <topic label="add_interrupt_array" href="startup.html#add_interrupt_array"/>
+            <topic label="add_ram" href="startup.html#add_ram"/>
+            <topic label="add_string" href="startup.html#add_string"/>
+            <topic label="add_typed_string" href="startup.html#add_typed_string"/>
+            <topic label="alloc_qtime" href="startup.html#alloc_qtime"/>
+            <topic label="alloc_ram" href="startup.html#alloc_ram"/>
+            <topic label="as_add" href="startup.html#as_add"/>
+            <topic label="as_add_containing" href="startup.html#as_add_containing"/>
+            <topic label="as_default" href="startup.html#as_default"/>
+            <topic label="as_find" href="startup.html#as_find"/>
+            <topic label="as_find_containing" href="startup.html#as_find_containing"/>
+            <topic label="as_info2off" href="startup.html#as_info2off"/>
+            <topic label="as_off2info" href="startup.html#as_off2info"/>
+            <topic label="as_set_checker" href="startup.html#as_set_checker"/>
+            <topic label="as_set_priority" href="startup.html#as_set_priority"/>
+            <topic label="avoid_ram" href="startup.html#avoid_ram"/>
+            <topic label="calc_time_t" href="startup.html#calc_time_t"/>
+            <topic label="calloc_ram" href="startup.html#calloc_ram"/>
+            <topic label="callout_io_map, callout_io_map_indirect" href="startup.html#callout_io_map_indirect"/>
+            <topic label="callout_memory_map, callout_memory_map_indirect" href="startup.html#callout_memory_map_indirect"/>
+            <topic label="callout_register_data" href="startup.html#callout_register_data"/>
+            <topic label="chip_access" href="startup.html#chip_access"/>
+            <topic label="chip_done" href="startup.html#chip_done"/>
+            <topic label="chip_read8" href="startup.html#chip_read8"/>
+            <topic label="chip_read16" href="startup.html#chip_read16"/>
+            <topic label="chip_read32" href="startup.html#chip_read32"/>
+            <topic label="chip_write8" href="startup.html#chip_write8"/>
+            <topic label="chip_write16" href="startup.html#chip_write16"/>
+            <topic label="chip_write32" href="startup.html#chip_write32"/>
+            <topic label="copy_memory" href="startup.html#copy_memory"/>
+            <topic label="del_typed_string" href="startup.html#del_typed_string"/>
+            <topic label="falcon_init_l2_cache" href="startup.html#falcon_init_l2_cache"/>
+            <topic label="falcon_init_raminfo" href="startup.html#falcon_init_raminfo"/>
+            <topic label="falcon_system_clock" href="startup.html#falcon_system_clock"/>
+            <topic label="find_startup_info" href="startup.html#find_startup_info"/>
+            <topic label="find_typed_string" href="startup.html#find_typed_string"/>
+            <topic label="handle_common_option" href="startup.html#handle_common_option"/>
+            <topic label="hwi_add_device" href="startup.html#hwi_add_device"/>
+            <topic label="hwi_add_inputclk" href="startup.html#hwi_add_inputclk"/>
+            <topic label="hwi_add_irq" href="startup.html#hwi_add_irq"/>
+            <topic label="hwi_add_location" href="startup.html#hwi_add_location"/>
+            <topic label="hwi_add_nicaddr" href="startup.html#hwi_add_nicaddr"/>
+            <topic label="hwi_add_rtc" href="startup.html#hwi_add_rtc"/>
+            <topic label="hwi_alloc_item" href="startup.html#hwi_alloc_item"/>
+            <topic label="hwi_alloc_tag" href="startup.html#hwi_alloc_tag"/>
+            <topic label="hwi_find_as" href="startup.html#hwi_find_as"/>
+            <topic label="hwi_find_item" href="startup.html#hwi_find_item"/>
+            <topic label="hwi_find_tag" href="startup.html#hwi_find_tag"/>
+            <topic label="hwi_off2tag" href="startup.html#hwi_off2tag"/>
+            <topic label="hwi_tag2off" href="startup.html#hwi_tag2off"/>
+            <topic label="init_asinfo" href="startup.html#init_asinfo"/>
+            <topic label="init_cacheattr" href="startup.html#init_cacheattr"/>
+            <topic label="init_cpuinfo" href="startup.html#init_cpuinfo"/>
+            <topic label="init_hwinfo" href="startup.html#init_hwinfo"/>
+            <topic label="init_intrinfo" href="startup.html#init_intrinfo"/>
+            <topic label="init_mmu" href="startup.html#init_mmu"/>
+            <topic label="init_pminfo" href="startup.html#init_pminfo"/>
+            <topic label="init_qtime" href="startup.html#init_qtime"/>
+            <topic label="init_qtime_sa1100" href="startup.html#init_qtime_sa1100"/>
+            <topic label="init_raminfo" href="startup.html#init_raminfo"/>
+            <topic label="init_smp" href="startup.html#init_smp"/>
+            <topic label="init_syspage_memory (deprecated)" href="startup.html#init_syspage_memory"/>
+            <topic label="init_system_private" href="startup.html#init_system_private"/>
+            <topic label="jtag_reserve_memory" href="startup.html#jtag"/>
+            <topic label="kprintf" href="startup.html#kprintf"/>
+            <topic label="mips41xx_set_clock_freqs" href="startup.html#mips41xx_set_clock_freqs"/>
+            <topic label="openbios_init_raminfo" href="startup.html#openbios_init_raminfo"/>
+            <topic label="pcnet_reset" href="startup.html#pcnet_reset"/>
+            <topic label="ppc400_pit_init_qtime" href="startup.html#ppc400_pit_init_qtime"/>
+            <topic label="ppc405_set_clock_freqs" href="startup.html#ppc405_set_clock_freqs"/>
+            <topic label="ppc600_set_clock_freqs" href="startup.html#ppc600_set_clock_freqs"/>
+            <topic label="ppc700_init_l2_cache" href="startup.html#ppc700_init_l2_cache"/>
+            <topic label="ppc800_pit_init_qtime" href="startup.html#ppc800_pit_init_qtime"/>
+            <topic label="ppc800_set_clock_freqs" href="startup.html#ppc800_set_clock_freqs"/>
+            <topic label="ppc_dec_init_qtime" href="startup.html#ppc_dec_init_qtime"/>
+            <topic label="print_syspage" href="startup.html#print_syspage"/>
+            <topic label="rtc_time" href="startup.html#rtc_time"/>
+            <topic label="startup_io_map" href="startup.html#startup_io_map"/>
+            <topic label="startup_io_unmap" href="startup.html#startup_io_unmap"/>
+            <topic label="startup_memory_map" href="startup.html#startup_memory_map"/>
+            <topic label="startup_memory_unmap" href="startup.html#startup_memory_unmap"/>
+            <topic label="tulip_reset" href="startup.html#tulip_reset"/>
+            <topic label="uncompress" href="startup.html#uncompress"/>
+            <topic label="x86_cpuid_string" href="startup.html#x86_cpuid_string"/>
+            <topic label="x86_cputype" href="startup.html#x86_cputype"/>
+            <topic label="x86_enable_a20" href="startup.html#x86_enable_a20"/>
+            <topic label="x86_fputype" href="startup.html#x86_fputype"/>
+            <topic label="x86_init_pcbios" href="startup.html#x86_init_pcbios"/>
+            <topic label="x86_pcbios_shadow_rom" href="startup.html#x86_pcbios_shadow_rom"/>
+            <topic label="x86_scanmem" href="startup.html#x86_scanmem"/>
+          </topic>
+          <topic label="Writing your own kernel callout" href="startup.html#WRITCALLOUT">
+            <topic label="Find out who's gone before" href="startup.html#id185"/>
+            <topic label="Why are they in assembly language?" href="startup.html#id187"/>
+            <topic label="Starting off" href="startup.html#id189"/>
+            <topic label="Patching the callout code" href="startup.html#Patching"/>
+            <topic label="Getting some R/W storage" href="startup.html#RWSTORAGE"/>
+            <topic label="The exception that proves the rule" href="startup.html#id193"/>
+          </topic>
+          <topic label="PPC chips support" href="startup.html#PPCSUPPORT">
+            <topic label="Adding a new CPU to the startup library" href="startup.html#id196"/>
+          </topic>
+      </topic>
+      <topic label="Customizing the Flash Filesystem" href="flashfsys.html">
+          <topic label="Introduction" href="flashfsys.html#INTRO"/>
+          <topic label="Driver structure" href="flashfsys.html#STRUCTURE">
+            <topic label="resmgr and iofunc layers" href="flashfsys.html#RESMGRIOFUNC"/>
+            <topic label="Flash filesystem component" href="flashfsys.html#FLASHFS"/>
+            <topic label="Socket services component" href="flashfsys.html#SOCKET"/>
+            <topic label="Flash services component" href="flashfsys.html#FLASHSER"/>
+            <topic label="Probe routine component" href="flashfsys.html#PROBE"/>
+          </topic>
+          <topic label="Building your flash filesystem driver" href="flashfsys.html#BUILDINGYOUR">
+            <topic label="The source tree" href="flashfsys.html#SRCTREE"/>
+            <topic label="The Makefile" href="flashfsys.html#MAKE"/>
+            <topic label="Making the driver" href="flashfsys.html#MAKEDRIVER"/>
+            <topic label="The main function" href="flashfsys.html#MAIN">
+              <topic label="f3s_init" href="flashfsys.html#f3s_init"/>
+              <topic label="f3s_start" href="flashfsys.html#f3s_start"/>
+            </topic>
+            <topic label="Socket services interface" href="flashfsys.html#SOCKSER">
+              <topic label="f3s_open" href="flashfsys.html#f3s_open"/>
+              <topic label="f3s_page" href="flashfsys.html#f3s_page"/>
+              <topic label="f3s_status" href="flashfsys.html#f3s_status"/>
+              <topic label="f3s_close" href="flashfsys.html#f3s_close"/>
+            </topic>
+            <topic label="Options parsing" href="flashfsys.html#OPTSPARSE">
+              <topic label="f3s_socket_option" href="flashfsys.html#f3s_socket_option"/>
+              <topic label="f3s_socket_syspage" href="flashfsys.html#f3s_socket_syspage"/>
+            </topic>
+            <topic label="Flash services interface" href="flashfsys.html#FLASHSERINT">
+              <topic label="f3s_ident" href="flashfsys.html#f3s_ident"/>
+              <topic label="f3s_reset" href="flashfsys.html#f3s_reset"/>
+              <topic label="f3s_v2read" href="flashfsys.html#f3s_v2read"/>
+              <topic label="f3s_v2write" href="flashfsys.html#f3s_v2write"/>
+              <topic label="f3s_v2erase" href="flashfsys.html#f3s_v2erase"/>
+              <topic label="f3s_v2suspend" href="flashfsys.html#f3s_v2suspend"/>
+              <topic label="f3s_v2resume" href="flashfsys.html#f3s_v2resume"/>
+              <topic label="f3s_v2sync" href="flashfsys.html#f3s_v2sync"/>
+              <topic label="f3s_v2islock" href="flashfsys.html#f3s_v2islock"/>
+              <topic label="f3s_v2lock" href="flashfsys.html#f3s_v2lock"/>
+              <topic label="f3s_v2unlock" href="flashfsys.html#f3s_v2unlock"/>
+              <topic label="f3s_v2unlockall" href="flashfsys.html#f3s_v2unlockall"/>
+            </topic>
+            <topic label="Choosing the right routines" href="flashfsys.html#CHOOSE"/>
+          </topic>
+          <topic label="Example: The devf-ram driver" href="flashfsys.html#EXAMPLE">
+            <topic label="main" href="flashfsys.html#MAINAGAIN"/>
+            <topic label="f3s_ram_open" href="flashfsys.html#RAMOPEN"/>
+            <topic label="f3s_ram_page" href="flashfsys.html#RAMPAGE"/>
+          </topic>
+      </topic>
+      <topic label="System Design Considerations" href="hardware.html">
+          <topic label="Introduction" href="hardware.html#INTRO">
+            <topic label="Before you design your system" href="hardware.html#id4">
+              <topic label="Processor speed" href="hardware.html#id6"/>
+              <topic label="Memory requirements" href="hardware.html#id8"/>
+              <topic label="Peripherals" href="hardware.html#id10"/>
+              <topic label="Debugging" href="hardware.html#id12"/>
+              <topic label="Field upgrades" href="hardware.html#id14"/>
+            </topic>
+            <topic label="Other design considerations" href="hardware.html#id16">
+              <topic label="EPROM/Flash filesystem considerations" href="hardware.html#id18"/>
+              <topic label="IPL location" href="hardware.html#id20"/>
+              <topic label="Graphics cards" href="hardware.html#id22"/>
+              <topic label="A20 gate" href="hardware.html#id24"/>
+              <topic label="External ISA bus slots" href="hardware.html#id26"/>
+              <topic label="PCI bus slots" href="hardware.html#id28"/>
+              <topic label="External clocks" href="hardware.html#id30"/>
+              <topic label="Interrupts &amp; controllers" href="hardware.html#id32"/>
+              <topic label="Serial and parallel ports" href="hardware.html#id34"/>
+              <topic label="Parallel port considerations" href="hardware.html#id36"/>
+            </topic>
+          </topic>
+          <topic label="NMI" href="hardware.html#NMI"/>
+          <topic label="Design do's and don'ts" href="hardware.html#DESIGN">
+            <topic label="Do:" href="hardware.html#id40"/>
+            <topic label="Don't:" href="hardware.html#id42"/>
+          </topic>
+      </topic>
+      <topic label="Sample Buildfiles" href="config.html">
+          <topic label="Introduction" href="config.html#INTRO"/>
+          <topic label="Generic examples" href="config.html#GENERIC">
+            <topic label="Shared libraries" href="config.html#id5"/>
+            <topic label="Running executables more than once" href="config.html#id7"/>
+            <topic label="Multiple consoles" href="config.html#id9">
+              <topic label="Starting other programs on consoles" href="config.html#id11"/>
+              <topic label="Redirection" href="config.html#id13"/>
+              <topic label="/tmp" href="config.html#id15"/>
+            </topic>
+            <topic label="Complete example --- minimal configuration" href="config.html#id17"/>
+            <topic label="Complete example --- flash filesystem" href="config.html#id19"/>
+            <topic label="Complete example --- disk filesystem" href="config.html#id21"/>
+            <topic label="Complete example --- TCP/IP with network filesystem" href="config.html#id23"/>
+          </topic>
+          <topic label="Processor-specific notes" href="config.html#SPECIFIC">
+            <topic label="Specifying the processor" href="config.html#id26">
+              <topic label="Examples" href="config.html#id28"/>
+            </topic>
+            <topic label="Specifying the startup program" href="config.html#id30"/>
+            <topic label="Specifying the serial device" href="config.html#id32"/>
+          </topic>
+      </topic>
+      <topic label="Glossary" href="glossary.html"/>
+</toc>

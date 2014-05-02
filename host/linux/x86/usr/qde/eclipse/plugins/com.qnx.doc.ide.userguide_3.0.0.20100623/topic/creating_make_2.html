@@ -1,0 +1,166 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="task" />
+      <meta name="DC.Title" content="Creating a make project that can be launched outside the IDE" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/getstarted_CPSTEP1_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/getstarted_Creating_Basic_Project.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_c_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/getstarted_Creating_C_Makefile_Project.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/creating_make.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_target_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_convert_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_importing_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/getstarted_Rename_Project.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_640_CDTImpact_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="IDE_make_outside" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Creating a make project that can be launched outside the IDE</title>
+   </head>
+   <body id="IDE_make_outside"><a name="IDE_make_outside" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Creating a make project that can be launched outside the IDE</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <div class="section">To create a <span class="cmdname">make</span> file that can be launched outside the IDE:
+         </div>
+         
+         
+         <ol>
+            <li class="stepexpand">
+               <span>In the Project Explorer view, select a project, right-click and select <span class="uicontrol">Properties</span>.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>On the left, select <span class="uicontrol">C/C++ Build</span>.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>On the right, verify that the <span class="uicontrol">Generate Makefiles automatically</span> and the options <span class="uicontrol">Expand Env. Variable Refs in Makefiles</span> in the group <span class="uicontrol">Makefile generation</span> are selected.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>On the left, expand <span class="uicontrol">C/C++ Build</span>, and select <span class="uicontrol">Tool chain editor</span>.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>In the <span class="uicontrol">Current builder</span> list, select the GNU Make Builder.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Specify any other desirable options for properties on the other panels.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Click <span class="uicontrol">OK</span>.</span>
+               As a result, the IDE generates a number of <span class="filepath">.mk</span> files, and a top level make file for each processed configuration (the last one in the configuration folder). This <span class="cmdname">make</span> file can be processed from the command line using the <span class="cmdname">make</span> utility: <pre class="codeblock" xml:space="preserve">make -f [<var class="varname">configuration</var>]/makefile [<var class="varname">target</var>]</pre>
+               
+               </li>
+            <li class="stepexpand">
+               <span>Every time any configuration is changed, updated, or deleted, you need to refresh the <span class="cmdname">make</span> infrastructure either by regenerating the <span class="cmdname">make</span> files, or changing the existing files manually.</span>
+               
+            </li>
+         </ol>
+         
+         
+         <div class="section">
+            
+            <p>For more information about using the CDT new project wizard, see <a href="wizards_c_.html" shape="rect">Creating a C/C++ project</a>. 
+            </p>
+            
+            
+            <p>For a list of new workbench features, see What's New in 3.5 in the <cite>Workbench User Guide</cite> (<span class="menucascade">
+                  <span class="uicontrol">Help</span>
+                  &gt; <span class="uicontrol">Help Contents</span>
+                  &gt; <span class="uicontrol">Workbench User Guide</span>
+                  &gt; <span class="uicontrol">What's new</span>
+                  </span>).
+            </p>
+            
+            
+            <p>For a list of new CDT features, see What's new in the CDT? in the <cite>C/C++ Development User Guide</cite> (<span class="menucascade">
+                  <span class="uicontrol">Help</span>
+                  &gt; <span class="uicontrol">Help Contents</span>
+                  &gt; <span class="uicontrol">C/C++ Development User Guide</span>
+                  &gt; <span class="uicontrol">What's new</span>
+                  </span>).
+            </p>
+            
+            
+            <p>In addition to information about <a href="migrate_ws_630sp2_.html" shape="rect">Migrating your workspace</a> that you might run into.
+            </p>
+            
+            
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/getstarted_CPSTEP1_.html" shape="rect">Creating a project</a></div>
+            
+         </div>
+         
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/migrate_issues_640_CDTImpact_.html" shape="rect">CDT impact on the IDE</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/wizards_c_.html" shape="rect">Creating a C/C++ project</a></div>
+            
+            <div><a href="../topic/wizards_convert_.html" shape="rect">Converting projects</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/getstarted_Creating_Basic_Project.html" shape="rect">Creating a simple project</a></div>
+            
+            <div><a href="../topic/getstarted_Creating_C_Makefile_Project.html" shape="rect">Creating a C Makefile project</a></div>
+            
+            <div><a href="../topic/creating_make.html" shape="rect">Creating a make project</a></div>
+            
+            <div><a href="../topic/wizards_target_.html" shape="rect">Creating a target system project</a></div>
+            
+            <div><a href="../topic/wizards_importing_.html" shape="rect">Importing projects</a></div>
+            
+            <div><a href="../topic/getstarted_Rename_Project.html" shape="rect">Renaming a project</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

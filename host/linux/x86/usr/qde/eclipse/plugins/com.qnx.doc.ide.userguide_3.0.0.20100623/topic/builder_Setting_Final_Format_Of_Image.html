@@ -1,0 +1,118 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="task" />
+      <meta name="DC.Title" content="Setting the final format of your OS image" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_dialog_properties_imagecombine_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="SettingFinalFormatOFOSImage" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Setting the final format of your OS image</title>
+   </head>
+   <body id="SettingFinalFormatOFOSImage"><a name="SettingFinalFormatOFOSImage" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Setting the final format of your OS image</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <div class="section">You'll use the <span class="uicontrol">Final Processing</span> section of the Create New
+            Image dialog to set the final format for your image: 
+            
+         </div>
+         
+         
+         <ol>
+            <li>
+               <span>In the Create New Image dialog, check the <span class="uicontrol">Final
+                     Processing</span> box. </span>
+               
+            </li>
+            <li>
+               <span>In the <span class="uicontrol">Offset</span> field, enter the board-specific offset.
+                  This setting is generally used for S-Record images. </span>
+               
+            </li>
+            <li>
+               <span>In the <span class="uicontrol">ROM size</span> field, enter the size of the ROM. </span>
+               
+            </li>
+            <li>
+               <span>In the <span class="uicontrol">Format</span> field, select the format from the dropdown
+                  menu (e.g. SREC, Intel hex records, binary.) </span>
+               
+            </li>
+            <li>
+               <span>Click <span class="uicontrol">OK</span>.</span>
+               
+            </li>
+         </ol>
+         
+         
+         <div class="section">
+            
+            <p>For more information of the final processing of an OS image, see <a href="../../com.qnx.doc.neutrino_utilities/m/mkrec.html" shape="rect"><span class="cmdname">mkrec</span></a> in the <cite>Utilities Reference</cite>. 
+            </p>
+            
+            
+            <p>Many boards have a <dfn class="term">ROM monitor</dfn>, a simple program that runs when you
+               first power on the board. The ROM monitor lets you communicate with your board via a
+               command-line interface (over a serial or Ethernet link), download images to the
+               board's system memory, burn images into flash, etc. 
+               
+               
+            </p>
+            
+            
+            <p>The QNX System Builder has a TFTP server that you can use to communicate with your
+               board. 
+               
+            </p>
+            
+            
+            <div class="note"><span class="notetitle">Note:</span> If your board doesn't have a ROM monitor, you probably can't use the download
+               services in the IDE; you'll have to get the image onto the board some other way
+               (e.g. JTAG). To learn how to connect to your particular target, consult your
+               hardware and BSP documentation.
+            </div>
+            
+            
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/builder_dialog_properties_imagecombine_.html" shape="rect">Combining images</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

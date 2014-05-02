@@ -1,0 +1,151 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Trace Event Log view" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_INTERPRET_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_System_profiler_editor_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_profile_filtering_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_Raw_event_data_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_Properties_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="TraceEventLogview" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Trace Event Log view</title>
+   </head>
+   <body id="TraceEventLogview"><a name="TraceEventLogview" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Trace Event Log view</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>This view can display additional details for the events surrounding the cursor in the editor. The additional detail includes
+            the event number, time, class, and type, as well as decoding the data associated with a particular event.
+            
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/ic2Fsysprof_Trace_event_log_.xml_d180683e24.jpg" alt="System Profiler Trace Event Log" /></span>
+            
+         </p>
+         
+         
+         <p>To set the format for event data, select <span class="menucascade">
+               <span class="uicontrol">Windows</span>
+               &gt; <span class="uicontrol">Preferences</span>
+               </span>, expand <span class="uicontrol">QNX</span>, and then select <span class="uicontrol">User Events Data</span>. 
+         </p>
+         
+         
+         <p>The following is an example of an event configuration file that has been documented to describe it's contents: </p>
+         
+         <pre class="codeblock" xml:space="preserve">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+
+&lt;!--
+  Root tag for the event definition file format
+--&gt;
+&lt;eventdefinitions&gt;
+
+ &lt;!--
+  Events definitions are broken down by the event class.
+  The user event class is '6' (from &lt;trace.h&gt;); all event codes
+  in this section are part of this event class.
+ --&gt;
+ &lt;eventclass name="User Events"&lt;
+
+  &lt;!--
+    The user event we want to describe is coded as event #12 within
+    the user event class (6).  It is composed of a single 4 byte
+    (32 bit) unsigned integer that is followed by a null terminated
+    string.  In C the structure might look something like:
+
+     struct event_twelve {
+      uint32_t myvalue;
+      char     mystring[28];    /* Null Terminated */
+     };
+
+    And be emitted using code:
+
+     stuct event_twelve event;
+     ... /* Fill event */
+     TraceEvent(_NTO_TRACE_INSERTCUSEREVENT, 12, &amp;event, sizeof(event));
+
+  --&gt;
+  &lt;event sformat="%4u1x myvalue %1s0 mystring" /&gt;
+
+  &lt;!--
+    In general an event is described as a serial series of event
+    payload definitions:
+
+      %&lt;size&gt;&lt;signed&gt;&lt;count&gt;&lt;format&gt; &lt;label&gt;
+
+    Where:
+      &lt;size&gt;
+        Is the size in bytes (1,2,4,8)
+      &lt;signed&gt;
+        Is the signed/unsigned attribute of the value (s,u)
+      &lt;count&gt;
+        Is the number of items to read (ie an array).  There is a
+        special case where if the &lt;size&gt; is 1 and there is _NO_
+        format then the &lt;count&gt; can be 0 to accomodate NULL
+        terminated strings.
+      &lt;format&gt; (optional)
+        Is a hint as to how to format this value: d=decimal,
+        x=hexadecimal, o=octal, c=character
+      &lt;label&gt;
+        Is a string label that can't contain the % character
+  --&gt;
+
+ &lt;/eventclass&gt;
+&lt;/eventdefinitions&gt;</pre>
+         
+         </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/sysprof_INTERPRET_.html" shape="rect">Viewing and interpreting the captured data</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/sysprof_System_profiler_editor_.html" shape="rect">System Profiler editor</a></div>
+            
+            <div><a href="../topic/sysprof_profile_filtering_.html" shape="rect">Filtering profile data</a></div>
+            
+            <div><a href="../topic/sysprof_Raw_event_data_.html" shape="rect">Raw Event Data view</a></div>
+            
+            <div><a href="../topic/sysprof_Properties_.html" shape="rect">Properties view</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

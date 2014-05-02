@@ -1,0 +1,170 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Process memory" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Memory_Optimization.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Performance_Of_Heap_Allocations.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_analyzingallocpatterns_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_OptHeapMem_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_AllocationOverhead_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_EstimatingAllocationSize_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_TuningAllocator_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_OptstaticStackMem_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Inspect_Proc_mem_Distrib_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Processmemory" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Process memory</title>
+   </head>
+   <body id="Processmemory"><a name="Processmemory" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Process memory</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>Typically, virtual memory occupied by a process can be separated into the following
+            categories: 
+         </p>
+         
+         <br clear="none" /><ul>
+            <li>Code — Contains the executable code for a process and the code for the shared
+               libraries. If more than one process uses the same library, then the virtual segment
+               containing its code will be mapped to the same physical segment (i.e., shared
+               between processes). 
+            </li>
+            <li>Data — Contains a process data segment and the data segments for the shared
+               libraries. This type of memory is usually referred to as static memory. 
+            </li>
+            <li>Stack — This segment contains memory required for function stacks (one stack for
+               each thread). 
+            </li>
+            <li>Heap — This segment contains all memory dynamically allocated by a process. </li>
+            <li>Shared Heap — Contains other types of memory allocation, such as shared memory and
+               mapped memory for a process.
+            </li>
+         </ul>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> It is important to know how much memory each individual process uses, otherwise you
+            can spend considerable time trying to optimize the heap (i.e., if a process uses only 5%
+            of the total process memory, is it unlikely to return any noticeable result). Techniques
+            for optimizing a particular type of memory are also dramatically different.
+         </div>
+         
+         
+         <p>For information about obtaining process memory distribution details, see <a href="sysinfo_Inspect_Proc_mem_Distrib_.html" shape="rect">Inspecting your process memory distribution</a>. 
+         </p>
+         
+         
+         <p>The main system allocator has been instrumented to keep track of statistics associated
+            with allocating and freeing memory. This lets the memory statistics module unobtrusively
+            inspect any process's memory usage. 
+            
+            
+            
+         </p>
+         
+         
+         <p>When you launch your program with the Memory Analysis tool, your program uses the debug
+            version of the <span class="filepath">malloc</span> library
+            (<span class="filepath">librcheck.so</span>). Besides the normal statistics, this library also
+            tracks the history of every allocation and deallocation, and provides cover functions
+            for the string and memory functions (e.g. <a href="../../com.qnx.doc.neutrino_lib_ref/s/strcmp.html" shape="rect"><tt>strcmp</tt></a>, <a href="../../com.qnx.doc.neutrino_lib_ref/m/memcpy.html" shape="rect"><tt>memcpy</tt></a>, <a href="../../com.qnx.doc.neutrino_lib_ref/m/memmove.html" shape="rect"><tt>memmove</tt></a>). Each cover function
+            validates the corresponding function's arguments before using them. For example, if you
+            allocate 16 bytes, then forget the terminating <tt>NULL</tt> character and attempt to
+            copy a 16-byte string into the block using the <a href="../../com.qnx.doc.neutrino_lib_ref/s/strcpy.html" shape="rect"><tt>strcpy</tt></a> function, the library
+            detects the error. 
+            
+         </p>
+         
+         
+         <p>The debug version of the <span class="filepath">malloc</span> library uses more memory than the
+            nondebug version. When tracing all calls to <a href="../../com.qnx.doc.neutrino_lib_ref/m/malloc.html" shape="rect"><tt>malloc</tt></a>, the library requires
+            additional CPU overhead to process and store the memory-trace events. 
+         </p>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> Be sure to occasionally check the Downloads area on our website for updated versions
+            of the debug <span class="filepath">malloc</span> library.
+         </div>
+         
+         
+         <p>The QNX Memory Analysis perspective can help you pinpoint and solve various kinds of
+            problems, including: 
+         </p>
+         
+         <br clear="none" /><ul>
+            <li>
+               <a href="memory_MEMLEAKS_.html" shape="rect">Memory leaks</a>
+               
+            </li>
+            <li>
+               <a href="memory_MEMERR_.html" shape="rect">Memory errors</a>
+               
+            </li>
+         </ul>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <ul class="ullinks">
+            <li class="ulchildlink"><strong><a href="../topic/sysinfo_Inspect_Proc_mem_Distrib_.html" shape="rect">Inspecting your process memory distribution</a></strong><br clear="none" />
+               
+            </li>
+         </ul>
+         
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/memory_Memory_Optimization.html" shape="rect">Memory optimization</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/memory_Performance_Of_Heap_Allocations.html" shape="rect">Performance of heap allocations</a></div>
+            
+            <div><a href="../topic/memory_analyzingallocpatterns_.html" shape="rect">Analyzing allocation patterns</a></div>
+            
+            <div><a href="../topic/memory_OptHeapMem_.html" shape="rect">Optimizing heap memory</a></div>
+            
+            <div><a href="../topic/memory_AllocationOverhead_.html" shape="rect">Types of allocation overhead</a></div>
+            
+            <div><a href="../topic/memory_EstimatingAllocationSize_.html" shape="rect">Estimating the average allocation size</a></div>
+            
+            <div><a href="../topic/memory_TuningAllocator_.html" shape="rect">Tuning the allocator</a></div>
+            
+            <div><a href="../topic/memory_OptstaticStackMem_.html" shape="rect">Optimizing static and stack memory</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

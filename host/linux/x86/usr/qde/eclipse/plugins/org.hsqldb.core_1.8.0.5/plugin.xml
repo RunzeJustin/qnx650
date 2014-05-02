@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+   id="org.hsqldb.core"
+   name="Hsqldb Core Plug-in"
+   version="1.8.0.5"
+   provider-name="Hsqldb">
+
+   <runtime>
+      <library name="hsqldb.jar">
+         <export name="*"/>
+      </library>
+   </runtime>
+
+</plugin>

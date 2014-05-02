@@ -1,0 +1,230 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Using breakpoints and watchpoints" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_more_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_view_variables_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_Change_Variable_Values.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_Control_Display_of_Variables.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_Change_Variable_To_Different_Type.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_Viewing_Variables_In_Memory.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_view_expressions_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_view_registers_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_view_memory_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_view_sharedlibraries_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_view_signals_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_view_console_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_view_console_gdb_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_adding_Breakpoints.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_AddingWatchpoints.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_Setting_Action_For_Breakpoint.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_Adding_Event_Breakpoints.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_Setting_Properties_OF_Breakpoints.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_Enable_Disable_Breakpoints.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_Removing_Breakpoints_Watchpoints.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Usingbreakpointsandwatchpoints" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Using breakpoints and watchpoints</title>
+   </head>
+   <body id="Usingbreakpointsandwatchpoints"><a name="Usingbreakpointsandwatchpoints" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Using breakpoints and watchpoints</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>The Breakpoints view lists all the breakpoints and watchpoints you've set in your open projects: 
+            
+            
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/pic2Fdebug_view_breakpoints_.xml_d65274e23.jpg" alt="Breakpoints view" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>The Breakpoints view shows you existing breakpoints and watchpoints that are currently set.</p>
+            
+            
+         </div>
+         
+         
+         <p>A <dfn class="term">breakpoint</dfn> makes your program stop whenever a certain point in the program is reached. For each breakpoint, you can add conditions to
+            better control whether or not your program stops. 
+         </p>
+         
+         
+         <p>A <dfn class="term">watchpoint</dfn> is a special breakpoint that stops the program's execution whenever the value of an expression changes, without specifying
+            where this may happen. Unlike breakpoints, which are line-specific, watchpoints are event-specific and take effect whenever
+            a specified condition is true, regardless of when or where it occurred. 
+         </p>
+         
+         
+         <p>An <dfn class="term">event breakpoint</dfn> is similar to breakpoint that's set on a specific event rather than a specific line of source code. 
+         </p>
+         
+         
+         <table cellpadding="4" cellspacing="0" summary="" border="1" class="simpletableborder">
+            <tr>
+               <th valign="bottom" align="left" id="d65274e59" rowspan="1" colspan="1">Object</th>
+               <th valign="bottom" align="left" id="d65274e62" rowspan="1" colspan="1">Icon</th>
+            </tr>
+            <tr>
+               <td valign="top" headers="d65274e59" rowspan="1" colspan="1">Breakpoint</td>
+               <td valign="top" headers="d65274e62" rowspan="1" colspan="1">
+                  
+                  <p>
+                     <span><img src="../images/pic2Fdebug_view_breakpoints_.xml_d65274e75.jpg" alt="Icon: Breakpoint" /></span>
+                     
+                  </p>
+                  
+                  
+               </td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d65274e59" rowspan="1" colspan="1">Watchpoint (read)</td>
+               <td valign="top" headers="d65274e62" rowspan="1" colspan="1">
+                  
+                  <p>
+                     <span><img src="../images/pic2Fdebug_view_breakpoints_.xml_d65274e93.jpg" alt="Icon: Watchpoint; read" /></span>
+                     
+                  </p>
+                  
+                  
+               </td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d65274e59" rowspan="1" colspan="1">Watchpoint (write)</td>
+               <td valign="top" headers="d65274e62" rowspan="1" colspan="1">
+                  
+                  <p>
+                     <span><img src="../images/pic2Fdebug_view_breakpoints_.xml_d65274e111.jpg" alt="Icon: Watchpoint; write" /></span>
+                     
+                  </p>
+                  
+                  
+               </td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d65274e59" rowspan="1" colspan="1">Watchpoint (read and write)</td>
+               <td valign="top" headers="d65274e62" rowspan="1" colspan="1">
+                  
+                  <p>
+                     <span><img src="../images/pic2Fdebug_view_breakpoints_.xml_d65274e129.jpg" alt="Icon: Watchpoint; read and write" /></span>
+                     
+                  </p>
+                  
+                  
+               </td>
+            </tr>
+         </table>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> If the breakpoint or watchpoint is for a connected target, the IDE places a check mark on the icon. For example: 
+            <p>
+               <span><img src="../images/pic2Fdebug_view_breakpoints_.xml_d65274e143.jpg" alt="Icon with an overlaid check mark" /></span>
+               
+            </p>
+            
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <ul class="ullinks">
+            <li class="ulchildlink"><strong><a href="../topic/debug_adding_Breakpoints.html" shape="rect">Adding breakpoints</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_AddingWatchpoints.html" shape="rect">Adding watchpoints</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_Setting_Action_For_Breakpoint.html" shape="rect">Setting an action for the breakpoint</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_Adding_Event_Breakpoints.html" shape="rect">Adding event breakpoints</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_Setting_Properties_OF_Breakpoints.html" shape="rect">Setting properties of breakpoints and watchpoints</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_Enable_Disable_Breakpoints.html" shape="rect">Disabling/enabling breakpoints and watchpoints</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_Removing_Breakpoints_Watchpoints.html" shape="rect">Removing breakpoints and watchpoints</a></strong><br clear="none" />
+               
+            </li>
+         </ul>
+         
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/debug_more_.html" shape="rect">More debugging features</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/debug_view_registers_.html" shape="rect">Inspecting your registers</a></div>
+            
+            <div><a href="../topic/debug_view_memory_.html" shape="rect">Inspecting a process's memory</a></div>
+            
+            <div><a href="../topic/debug_view_sharedlibraries_.html" shape="rect">Inspecting shared-library usage</a></div>
+            
+            <div><a href="../topic/debug_view_signals_.html" shape="rect">Monitoring signal handling</a></div>
+            
+            <div><a href="../topic/debug_view_console_.html" shape="rect">Viewing your output</a></div>
+            
+            <div><a href="../topic/debug_view_console_gdb_.html" shape="rect">Interacting with GDB</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/debug_view_variables_.html" shape="rect">Inspecting variables</a></div>
+            
+            <div><a href="../topic/debug_Change_Variable_Values.html" shape="rect">Changing variable values</a></div>
+            
+            <div><a href="../topic/debug_Control_Display_of_Variables.html" shape="rect">Controlling the display of variables</a></div>
+            
+            <div><a href="../topic/debug_Change_Variable_To_Different_Type.html" shape="rect">Changing variable to a different type</a></div>
+            
+            <div><a href="../topic/debug_Viewing_Variables_In_Memory.html" shape="rect">Viewing variables in memory</a></div>
+            
+            <div><a href="../topic/debug_view_expressions_.html" shape="rect">Evaluating your expressions</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

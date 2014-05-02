@@ -1,0 +1,87 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="task" />
+      <meta name="DC.Title" content="Adding a usage message when using a QNX C/C++ Project" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_make_addusemessage_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="AddUseMagForQNXCPPProject" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Adding a usage message when using a QNX C/C++ Project</title>
+   </head>
+   <body id="AddUseMagForQNXCPPProject"><a name="AddUseMagForQNXCPPProject" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Adding a usage message when using a QNX C/C++ Project</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <div class="section">To add a usage message to your application when using a QNX C/C++ Project:</div>
+         
+         
+         <ol>
+            <li class="stepexpand"><span>In the Project Explorer view, open your project's <span class="filepath">common.mk</span> file. This
+                  file specifies common options used for building all of your active variants. </span></li>
+            <li class="stepexpand"><span> Locate the <samp class="codeph">USEFILE</samp> entry. </span></li>
+            <li class="stepexpand"><span> If your usage message is in <span class="filepath"><var class="varname">app_name</var>.use</span>, where
+                  <var class="varname">app_name</var> is your executable name, add a <cite>#</cite> character at the
+                  start of the <samp class="codeph">USEFILE</samp> line. This lets the recursive
+                  <span class="filepath">Makefile</span> system automatically pick up your usage message.</span>
+               
+               <p>If your
+                  usage message is in a file with a different name, or you want to explicitly specify your usage
+                  message's file name, change the <samp class="codeph">USAGE</samp> line as follows:
+               </p>
+               
+               <pre class="codeblock" xml:space="preserve">USAGE=$(PROJECT_ROOT)/</pre>
+               <var class="varname">usage_message.use</var>
+               
+               <p>where <var class="varname">usage_message.use</var> is the name of the file containing your usage
+                  message. This also assumes that your usage message file is in the root of the project
+                  directory. If the usage message file is located in another directory, include it instead of
+                  <samp class="codeph">$(PROJECT_ROOT)</samp>. 
+               </p>
+               
+               
+               
+            </li>
+            <li class="stepexpand"><span> Build your project as usual to include the usage message. </span></li>
+         </ol>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/devel_make_addusemessage_.html" shape="rect">Adding a use message</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

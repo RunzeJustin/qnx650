@@ -1,0 +1,176 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Introducing the QNX System Profiler" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_Base_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_TARGET_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_INTERPRET_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_tracking_down_events.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_Views_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_determine_thread_state_behav.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_anal_multiproc_sys.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_anal_sys_with_AP.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_USESYSPROFFUNCINST_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_Use_cases_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_GETSTART_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="IntroducingtheQNXSystemProfiler" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Introducing the QNX System Profiler</title>
+   </head>
+   <body id="IntroducingtheQNXSystemProfiler"><a name="IntroducingtheQNXSystemProfiler" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Introducing the QNX System Profiler</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>The System Profiler is a tool that works in concert with the Neutrino instrumented kernel (<tt>procnto*-instr</tt>) to provide insight into the operating system's events and activities. Think of the System Profiler as a system-level software
+            logic analyzer. Like the Application Profiler, the System Profiler can help pinpoint areas that need improvement, but at a
+            <em>system-wide</em> level.
+            
+            
+            
+         </p>
+         
+         
+         <p>You might use the System Profiler to solve such problems as: </p>
+         
+         <br clear="none" /><ul>
+            <li>IPC bottlenecks (by observing the flow of messages among threads)</li>
+            <li>resource contention (by watching threads as they change states)</li>
+            <li>cache coherency in a multicore machine (by watching threads as they migrate from one CPU or core to another)</li>
+         </ul>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> Details on kernel instrumentation (such as types and classes of events) are more fully covered in the System Analysis Toolkit
+            (SAT) <a href="../../com.qnx.doc.instr_en_instr/about.html" shape="rect">
+               <em>User's Guide</em>
+               </a>.
+         </div>
+         
+         
+         <p>The QNX System Profiler perspective includes several components that are relevant to system profiling: </p>
+         
+         
+         <dl>
+            <dt class="dlterm">File System Navigator</dt>
+            <dd>Events are stored in <dfn class="term">log files</dfn> (with the extension <span class="filepath">.kev</span>) within projects in your workspace. These log files are associated with the System Profiler editor. 
+               
+               
+            </dd>
+            <dt class="dlterm">Target Navigator view</dt>
+            <dd>When you right-click a target machine in the Target Navigator view, you can select <span class="menucascade">
+                  <span class="uicontrol">Log With…</span>
+                  &gt; <span class="uicontrol">Kernel Event Trace</span>
+                  </span>, which initiates the Log Configuration dialog. You use this wizard to specify which events to capture, the duration of the
+               capture period, as well as specific details about where the generated event log file (<span class="filepath">.kev</span> file) is stored. 
+            </dd>
+            <dt class="dlterm">System Profiler editor</dt>
+            <dd>This editor provides the graphical representation of the instrumentation events in the captured log file. Like all other Eclipse
+               editors, the System Profiler editor shows up in the editor area and can be brought into any perspective. This editor is automatically
+               associated with <span class="filepath">.kev</span> files. 
+               
+            </dd>
+            <dt class="dlterm">Trace Event Log view</dt>
+            <dd>This view lists instrumentation events, as well as their details (time, owner, etc.), surrounding the selected position in
+               the currently active System Profiler editor. 
+               
+               
+            </dd>
+            <dt class="dlterm">General Statistics view</dt>
+            <dd>A tabular statistical representation of events. 
+               
+               
+               
+            </dd>
+            <dt class="dlterm">Condition Statistics view</dt>
+            <dd>A tabular or graphical statistical representation of the conditions used in the search panel. 
+               
+               
+               
+            </dd>
+            <dt class="dlterm">Event Owner Statistics view</dt>
+            <dd>A tabular statistical representation of events broken down per owner. 
+               
+               
+            </dd>
+         </dl>
+         
+         
+         <p>Other components help you determine why a given thread is running, examine the migration of threads from one processor or
+            core to another, and so on. For more details, see <a href="sysprof_Views_.html" shape="rect">Gathering statistics from trace data</a>, later in this chapter. 
+         </p>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> The QNX System Profiler perspective may produce incorrect results when more than one IDE is communicating with the same target
+            system. To use this perspective, make sure only one IDE is connected to the target system.
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <ul class="ullinks">
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_GETSTART_.html" shape="rect">Before you begin</a></strong><br clear="none" />
+               
+            </li>
+         </ul>
+         
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/sysprof_Base_.html" shape="rect">Analyzing Your System with Kernel Tracing</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/sysprof_TARGET_.html" shape="rect">Configuring a target for system profiling</a></div>
+            
+            <div><a href="../topic/sysprof_INTERPRET_.html" shape="rect">Viewing and interpreting the captured data</a></div>
+            
+            <div><a href="../topic/sysprof_tracking_down_events.html" shape="rect">Tracking down events</a></div>
+            
+            <div><a href="../topic/sysprof_Views_.html" shape="rect">Gathering statistics from trace data</a></div>
+            
+            <div><a href="../topic/sysprof_determine_thread_state_behav.html" shape="rect">Determining thread state behavior</a></div>
+            
+            <div><a href="../topic/sysprof_anal_multiproc_sys.html" shape="rect">Analyzing multiprocessor systems</a></div>
+            
+            <div><a href="../topic/sysprof_anal_sys_with_AP.html" shape="rect">Analyzing systems with AP scheduling</a></div>
+            
+            <div><a href="../topic/sysprof_USESYSPROFFUNCINST_.html" shape="rect">Using Function Instrumentation mode with the System Profiler</a></div>
+            
+            <div><a href="../topic/sysprof_Use_cases_.html" shape="rect">System Profiler use cases</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Developer's Guide">
+      <topic label="About This Guide" href="about.html">
+          <topic label="What you'll find in this guide" href="about.html#In_this_guide"/>
+          <topic label="Typographical conventions" href="about.html#Typographical_conventions">
+            <topic label="Note to Windows users" href="about.html#WINDOWSNOTE"/>
+            <topic label="Navigation buttons" href="about.html#Navigation"/>
+          </topic>
+          <topic label="Technical support" href="about.html#Support"/>
+      </topic>
+      <topic label="Introduction" href="intro.html">
+            <topic label="In this chapter..." href="intro.html#id3"/>
+          <topic label="Where's the problem?" href="intro.html#PROBLEM"/>
+          <topic label="A software foundation for HA" href="intro.html#SOFTWARE"/>
+      </topic>
+      <topic label="What's in the High Availability Framework?" href="parts.html">
+            <topic label="In this chapter..." href="parts.html#id3"/>
+          <topic label="What you get" href="parts.html#WHATYOUGET"/>
+      </topic>
+      <topic label="The QNX Approach to HA" href="qnxapproach.html">
+            <topic label="In this chapter..." href="qnxapproach.html#id3"/>
+          <topic label="The reset solution" href="qnxapproach.html#RESET">
+            <topic label="Traditional RTOS architecture" href="qnxapproach.html#TRADITION"/>
+          </topic>
+          <topic label="Modularity means granularity" href="qnxapproach.html#MODULARITY">
+            <topic label="Intrinsic HA" href="qnxapproach.html#INTRINSIC"/>
+          </topic>
+      </topic>
+      <topic label="Using the High Availability Manager" href="hamover.html">
+            <topic label="In this chapter..." href="hamover.html#id3"/>
+          <topic label="Introduction" href="hamover.html#INTRO"/>
+          <topic label="HAM hierarchy" href="hamover.html#HAMHIER">
+            <topic label="Entities" href="hamover.html#ENTITIES"/>
+            <topic label="Conditions" href="hamover.html#CONDITIONS"/>
+            <topic label="Actions" href="hamover.html#ACTIONS"/>
+            <topic label="Action Fail actions" href="hamover.html#ACTION_FAIL"/>
+            <topic label="Multistaged recovery" href="hamover.html#MULTISTAGE"/>
+          </topic>
+          <topic label="State of the HAM" href="hamover.html#HAMSTATE">
+            <topic label="Example of the view shown in /proc/ham" href="hamover.html#PROCHAMVIEW"/>
+          </topic>
+          <topic label="HAM API" href="hamover.html#HAMAPI">
+            <topic label="Connect/disconnect functions" href="hamover.html#CONNECTFNS"/>
+            <topic label="Attach/detach functions" href="hamover.html#ATTACHFNS">
+              <topic label="For self-attached entities" href="hamover.html#id17"/>
+              <topic label="Code snippet using self-attach/detach calls" href="hamover.html#id19"/>
+              <topic label="For attaching/detaching all other entities" href="hamover.html#id21"/>
+              <topic label="Code snippet using attach/detach calls" href="hamover.html#id23"/>
+            </topic>
+            <topic label="Entity functions" href="hamover.html#ENTFNS"/>
+            <topic label="Condition functions" href="hamover.html#CONDFNS">
+              <topic label="Condition types" href="hamover.html#CONDTYPES"/>
+              <topic label="Condition flags" href="hamover.html#CONDFLAGS"/>
+            </topic>
+            <topic label="Action functions" href="hamover.html#ACTIONFNS"/>
+            <topic label="Action fail functions" href="hamover.html#ACTIONFAILFNS">
+              <topic label="Example to monitor inetd" href="hamover.html#id31"/>
+              <topic label="Example to monitor fs-nfs2" href="hamover.html#id33"/>
+            </topic>
+            <topic label="Functions to operate on handles" href="hamover.html#HANDLEFNS"/>
+          </topic>
+          <topic label="A client example" href="hamover.html#EXAMPLE"/>
+          <topic label="Starting and stopping a HAM" href="hamover.html#HAMSTARTSTOP">
+            <topic label="Stopping a HAM" href="hamover.html#HAMSTOP"/>
+            <topic label="Control functions" href="hamover.html#CONTROLFNS"/>
+            <topic label="Verbosity control" href="hamover.html#VERBOSITY"/>
+            <topic label="Publishing autonomously detected conditions" href="hamover.html#PUBLDETECT"/>
+            <topic label="Publish state transitions" href="hamover.html#PUBLSTATE"/>
+            <topic label="Publish other conditions" href="hamover.html#PUBLOTHER"/>
+            <topic label="Subscribing to autonomously published conditions" href="hamover.html#SUBSCRIBE_AUTON"/>
+            <topic label="Trigger based on state transitions" href="hamover.html#TRIGGER_STATETRANS"/>
+            <topic label="Trigger based on specific published condition" href="hamover.html#TRIGGER_SPEC"/>
+          </topic>
+      </topic>
+      <topic label="Using the Client Recovery Library" href="clientover.html">
+            <topic label="In this chapter..." href="clientover.html#id3"/>
+          <topic label="Introduction" href="clientover.html#INTRO"/>
+          <topic label="MsgSend* functions" href="clientover.html#MSGFNS"/>
+          <topic label="Other covers and convenience functions" href="clientover.html#CONVENIENCE">
+            <topic label="HA-awareness functions" href="clientover.html#id8"/>
+            <topic label="I/O covers" href="clientover.html#id10"/>
+            <topic label="Convenience functions" href="clientover.html#id12"/>
+          </topic>
+          <topic label="A simple example" href="clientover.html#EGSIMPLE"/>
+          <topic label="State-reconstruction example" href="clientover.html#EGSTATE"/>
+      </topic>
+      <topic label="HAM API Reference" href="hamapi_funcs.html">
+          <topic label="ham_action_control" href="hamapi/ham_action_control.html">
+            <topic label="Description:" href="hamapi/ham_action_control.html#id7">
+              <topic label="Flags" href="hamapi/ham_action_control.html#FLAGS"/>
+            </topic>
+          </topic>
+          <topic label="ham_action_execute" href="hamapi/ham_action_execute.html">
+            <topic label="Description:" href="hamapi/ham_action_execute.html#id7"/>
+          </topic>
+          <topic label="ham_action_fail_execute" href="hamapi/ham_action_fail_execute.html">
+            <topic label="Description:" href="hamapi/ham_action_fail_execute.html#id7"/>
+          </topic>
+          <topic label="ham_action_fail_log" href="hamapi/ham_action_fail_log.html">
+            <topic label="Description:" href="hamapi/ham_action_fail_log.html#id7"/>
+          </topic>
+          <topic label="ham_action_fail_notify_pulse, ham_action_fail_notify_pulse_node" href="hamapi/ham_action_fail_notify_pulse.html">
+            <topic label="Description:" href="hamapi/ham_action_fail_notify_pulse.html#id7"/>
+          </topic>
+          <topic label="ham_action_fail_notify_signal, ham_action_fail_notify_signal_node" href="hamapi/ham_action_fail_notify_signal.html">
+            <topic label="Description:" href="hamapi/ham_action_fail_notify_signal.html#id7"/>
+          </topic>
+          <topic label="ham_action_fail_waitfor" href="hamapi/ham_action_fail_waitfor.html">
+            <topic label="Description:" href="hamapi/ham_action_fail_waitfor.html#id7"/>
+          </topic>
+          <topic label="ham_action_handle, ham_action_handle_node" href="hamapi/ham_action_handle.html">
+            <topic label="Description:" href="hamapi/ham_action_handle.html#id7"/>
+          </topic>
+          <topic label="ham_action_handle_free" href="hamapi/ham_action_handle_free.html">
+            <topic label="Description:" href="hamapi/ham_action_handle_free.html#id7"/>
+          </topic>
+          <topic label="ham_action_heartbeat_healthy" href="hamapi/ham_action_heartbeat_healthy.html">
+            <topic label="Description:" href="hamapi/ham_action_heartbeat_healthy.html#id5"/>
+          </topic>
+          <topic label="ham_action_log" href="hamapi/ham_action_log.html">
+            <topic label="Description:" href="hamapi/ham_action_log.html#id7"/>
+          </topic>
+          <topic label="ham_action_notify_pulse, ham_action_notify_pulse_node" href="hamapi/ham_action_notify_pulse.html">
+            <topic label="Description:" href="hamapi/ham_action_notify_pulse.html#id7"/>
+          </topic>
+          <topic label="ham_action_notify_signal, ham_action_notify_signal_node" href="hamapi/ham_action_notify_signal.html">
+            <topic label="Description:" href="hamapi/ham_action_notify_signal.html#id7"/>
+          </topic>
+          <topic label="ham_action_remove" href="hamapi/ham_action_remove.html">
+            <topic label="Description:" href="hamapi/ham_action_remove.html#id7"/>
+          </topic>
+          <topic label="ham_action_restart" href="hamapi/ham_action_restart.html">
+            <topic label="Description:" href="hamapi/ham_action_restart.html#id7"/>
+          </topic>
+          <topic label="ham_action_waitfor" href="hamapi/ham_action_waitfor.html">
+            <topic label="Description:" href="hamapi/ham_action_waitfor.html#id7"/>
+          </topic>
+          <topic label="ham_attach, ham_attach_node" href="hamapi/ham_attach.html">
+            <topic label="Description:" href="hamapi/ham_attach.html#id7"/>
+          </topic>
+          <topic label="ham_attach_self" href="hamapi/ham_attach_self.html">
+            <topic label="Description:" href="hamapi/ham_attach_self.html#id7"/>
+          </topic>
+          <topic label="ham_condition" href="hamapi/ham_condition.html">
+            <topic label="Description:" href="hamapi/ham_condition.html#id7"/>
+          </topic>
+          <topic label="ham_entity_control" href="hamapi/ham_condition_control.html">
+            <topic label="Description:" href="hamapi/ham_condition_control.html#id7">
+              <topic label="Flags" href="hamapi/ham_condition_control.html#FLAGS"/>
+            </topic>
+          </topic>
+          <topic label="ham_condition_handle, ham_condition_handle_node" href="hamapi/ham_condition_handle.html">
+            <topic label="Description:" href="hamapi/ham_condition_handle.html#id7"/>
+          </topic>
+          <topic label="ham_condition_handle_free" href="hamapi/ham_condition_handle_free.html">
+            <topic label="Description:" href="hamapi/ham_condition_handle_free.html#id7"/>
+          </topic>
+          <topic label="ham_condition_raise" href="hamapi/ham_condition_raise.html">
+            <topic label="Description:" href="hamapi/ham_condition_raise.html#id7"/>
+          </topic>
+          <topic label="ham_condition_remove" href="hamapi/ham_condition_remove.html">
+            <topic label="Description:" href="hamapi/ham_condition_remove.html#id7"/>
+          </topic>
+          <topic label="ham_condition_state" href="hamapi/ham_condition_state.html">
+            <topic label="Description:" href="hamapi/ham_condition_state.html#id7">
+              <topic label="Flags" href="hamapi/ham_condition_state.html#FLAGS"/>
+            </topic>
+          </topic>
+          <topic label="ham_connect, ham_connect_nd, ham_connect_node" href="hamapi/ham_connect.html">
+            <topic label="Description:" href="hamapi/ham_connect.html#id7"/>
+          </topic>
+          <topic label="ham_detach" href="hamapi/ham_detach.html">
+            <topic label="Description:" href="hamapi/ham_detach.html#id7"/>
+          </topic>
+          <topic label="ham_detach_name, ham_detach_name_node" href="hamapi/ham_detach_name.html">
+            <topic label="Description:" href="hamapi/ham_detach_name.html#id7"/>
+          </topic>
+          <topic label="ham_detach_self" href="hamapi/ham_detach_self.html">
+            <topic label="Description:" href="hamapi/ham_detach_self.html#id7"/>
+          </topic>
+          <topic label="ham_disconnect, ham_disconnect_nd, ham_disconnect_node" href="hamapi/ham_disconnect.html">
+            <topic label="Description:" href="hamapi/ham_disconnect.html#id7"/>
+          </topic>
+          <topic label="ham_entity, ham_entity_node" href="hamapi/ham_entity.html">
+            <topic label="Description:" href="hamapi/ham_entity.html#id7"/>
+          </topic>
+          <topic label="ham_entity_condition_raise" href="hamapi/ham_entity_condition_raise.html">
+            <topic label="Description:" href="hamapi/ham_entity_condition_raise.html#id7"/>
+          </topic>
+          <topic label="ham_entity_condition_state" href="hamapi/ham_entity_condition_state.html">
+            <topic label="Description:" href="hamapi/ham_entity_condition_state.html#id7"/>
+          </topic>
+          <topic label="ham_entity_control" href="hamapi/ham_entity_control.html">
+            <topic label="Description:" href="hamapi/ham_entity_control.html#id7">
+              <topic label="Flags" href="hamapi/ham_entity_control.html#FLAGS"/>
+            </topic>
+          </topic>
+          <topic label="ham_entity_handle, ham_entity_handle_node" href="hamapi/ham_entity_handle.html">
+            <topic label="Description:" href="hamapi/ham_entity_handle.html#id7"/>
+          </topic>
+          <topic label="ham_entity_handle_free" href="hamapi/ham_entity_handle_free.html">
+            <topic label="Description:" href="hamapi/ham_entity_handle_free.html#id7"/>
+          </topic>
+          <topic label="ham_heartbeat" href="hamapi/ham_heartbeat.html">
+            <topic label="Description:" href="hamapi/ham_heartbeat.html#id7"/>
+          </topic>
+          <topic label="ham_stop, ham_stop_nd, ham_stop_node" href="hamapi/ham_stop.html">
+            <topic label="Description:" href="hamapi/ham_stop.html#id7"/>
+          </topic>
+          <topic label="ham__verbose" href="hamapi/ham_verbose.html">
+            <topic label="Description:" href="hamapi/ham_verbose.html#id9"/>
+          </topic>
+      </topic>
+      <topic label="Client Recovery Library Reference" href="client_funcs.html">
+          <topic label="ha_attach" href="clientlib/ha_attach.html">
+            <topic label="Description:" href="clientlib/ha_attach.html#id7"/>
+          </topic>
+          <topic label="ha_close" href="clientlib/ha_close.html">
+            <topic label="Description:" href="clientlib/ha_close.html#id7"/>
+          </topic>
+          <topic label="ha_connection_ctrl" href="clientlib/ha_connection_ctrl.html">
+            <topic label="Description:" href="clientlib/ha_connection_ctrl.html#id7"/>
+          </topic>
+          <topic label="ha_ConnectAttach, ha_ConnectAttach_r" href="clientlib/ha_ConnectAttach.html">
+            <topic label="Description:" href="clientlib/ha_ConnectAttach.html#id7"/>
+          </topic>
+          <topic label="ha_ConnectDetach, ha_ConnectDetach_r" href="clientlib/ha_ConnectDetach.html">
+            <topic label="Description:" href="clientlib/ha_ConnectDetach.html#id7"/>
+          </topic>
+          <topic label="ha_creat, ha_creat64" href="clientlib/ha_creat.html">
+            <topic label="Description:" href="clientlib/ha_creat.html#id7"/>
+          </topic>
+          <topic label="ha_detach" href="clientlib/ha_detach.html">
+            <topic label="Description:" href="clientlib/ha_detach.html#id7"/>
+          </topic>
+          <topic label="ha_dup" href="clientlib/ha_dup.html">
+            <topic label="Description:" href="clientlib/ha_dup.html#id7"/>
+          </topic>
+          <topic label="ha_fclose" href="clientlib/ha_fclose.html">
+            <topic label="Description:" href="clientlib/ha_fclose.html#id7"/>
+          </topic>
+          <topic label="ha_fopen" href="clientlib/ha_fopen.html">
+            <topic label="Description:" href="clientlib/ha_fopen.html#id7"/>
+          </topic>
+          <topic label="ha_open, ha_open64" href="clientlib/ha_open.html">
+            <topic label="Description:" href="clientlib/ha_open.html#id7"/>
+          </topic>
+          <topic label="ha_ReConnectAttach" href="clientlib/ha_ReConnectAttach.html">
+            <topic label="Description:" href="clientlib/ha_ReConnectAttach.html#id7"/>
+          </topic>
+          <topic label="ha_reopen" href="clientlib/ha_reopen.html">
+            <topic label="Description:" href="clientlib/ha_reopen.html#id7"/>
+          </topic>
+      </topic>
+      <topic label="Examples" href="examples.html">
+            <topic label="In this appendix..." href="examples.html#id3"/>
+          <topic label="Simple restart" href="examples.html#SIMPLE"/>
+          <topic label="Compound restart" href="examples.html#COMPOUND"/>
+          <topic label="Death/condition notification" href="examples.html#DEATH"/>
+          <topic label="Heartbeating clients (liveness detection)" href="examples.html#LIVENESS">
+            <topic label="The process is made to heartbeat" href="examples.html#id9"/>
+          </topic>
+          <topic label="Process starvation" href="examples.html#STARVE">
+            <topic label="Thread 2 is made to heartbeat" href="examples.html#id12"/>
+          </topic>
+      </topic>
+      <topic label="Glossary" href="glossary.html"/>
+</toc>

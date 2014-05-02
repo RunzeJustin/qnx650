@@ -1,0 +1,143 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="task" />
+      <meta name="DC.Title" content="Inspecting outstanding allocations" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_OptHeapMem_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_MEMLEAKS_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_DetecMemLeaks_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_MEMANALEDIT_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Memory_Analysis_Editor_Group.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Memory_Problems_View.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Memory_Events_View.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Memory_Backtrace.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Memory_detail_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Manuallyinspectingoutstandingallocations" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Inspecting outstanding allocations</title>
+   </head>
+   <body id="Manuallyinspectingoutstandingallocations"><a name="Manuallyinspectingoutstandingallocations" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Inspecting outstanding allocations</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <div class="p">
+            
+            <p>Outstanding allocations are memory allocations that are currently active (i.e. not freed). Sometimes, they are valid allocations,
+               and sometimes they are implicit memory leaks. Since an allocation pointer is used, it can't be detected as a memory leak;
+               to validate that an allocation is required, you have to manually inspect it.
+            </p>
+            
+            
+         </div>
+         
+         
+         <div class="section">
+            
+            <p>To manually inspect outstanding allocations:</p>
+            
+            
+         </div>
+         
+         
+         <ol>
+            <li class="stepexpand">
+               <span>Open the <span class="uicontrol">Memory Events</span> view and click on a desired session to populate it.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Select the <span class="uicontrol">Filter…</span> option from the context menu.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Select the <span class="uicontrol">Hide matching allocation/deallocation pair</span> option and click <span class="uicontrol">OK</span>.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Select the <span class="uicontrol">Group By Backtrace</span> option from the context menu.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Review the results (only those allocations that remain in memory, or were in memory at the moment of the exit).</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Select one allocation from the table.</span>
+               The Memory Backtrace view becomes populated with the current stack trace for the selected event.
+               
+            </li>
+            <li class="stepexpand">
+               <span>Optional: To inspect allocations that only occurred between certain time intervals, use the <span class="uicontrol">Quick Filter</span> option from the context menu to restrict the events range.</span>
+               
+            </li>
+         </ol>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/memory_OptHeapMem_.html" shape="rect">Optimizing heap memory</a></div>
+            
+         </div>
+         
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/memory_MEMANALEDIT_.html" shape="rect">Viewing Memory Analysis data</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/memory_MEMLEAKS_.html" shape="rect">Memory leaks</a></div>
+            
+            <div><a href="../topic/memory_Memory_Analysis_Editor_Group.html" shape="rect">Memory Analysis editor</a></div>
+            
+            <div><a href="../topic/memory_Memory_Problems_View.html" shape="rect">Memory Problems view</a></div>
+            
+            <div><a href="../topic/memory_Memory_Events_View.html" shape="rect">Memory Events view</a></div>
+            
+            <div><a href="../topic/memory_Memory_Backtrace.html" shape="rect">Memory Backtrace view</a></div>
+            
+            <div><a href="../topic/memory_Memory_detail_.html" shape="rect">Interpreting errors during memory analysis</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/memory_DetecMemLeaks_.html" shape="rect">Enabling memory leak detection</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

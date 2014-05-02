@@ -1,0 +1,5 @@
+#!/opt/qnx640/host/linux/x86/unsupported/python25//bin/python
+
+import pydoc
+if __name__ == '__main__':
+    pydoc.cli()

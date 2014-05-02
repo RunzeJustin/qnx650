@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+	id="com.qnx.tools.ide.doc.qnx.neutrino.references"
+	label="%featureName"
+	version="3.1.0.20120626"
+	provider-name="%providerName"
+	plugin="com.qnx.tools.ide.doc.qnx.neutrino.references">
+
+	<description>
+		%description
+	</description>
+
+	<copyright>
+		%copyright
+	</copyright>
+
+	<license url="%licenseURL">
+		%license
+	</license>
+
+	<plugin
+		id="com.qnx.doc.neutrino_lib_ref"
+		version="3.1.0.20120626"
+		download-size="0"
+		install-size="0"
+		unpack="true"/>
+	<plugin
+		id="com.qnx.doc.neutrino_utilities"
+		version="3.1.0.20120626"
+		download-size="0"
+		install-size="0"
+		unpack="true"/>
+	<plugin
+		id="com.qnx.doc.dinkum_en"
+		version="3.1.0.20120626"
+		download-size="0"
+		install-size="0"
+		unpack="true"/>
+	<plugin
+		id="com.qnx.doc.dinkum_en_c99"
+		version="3.1.0.20120626"
+		download-size="0"
+		install-size="0"
+		unpack="true"/>
+	<plugin
+		id="com.qnx.doc.dinkum_en_cpp"
+		version="3.1.0.20120626"
+		download-size="0"
+		install-size="0"
+		unpack="true"/>
+	<plugin
+		id="com.qnx.doc.dinkum_en_ecpp"
+		version="3.1.0.20120626"
+		download-size="0"
+		install-size="0"
+		unpack="true"/>
+</feature>

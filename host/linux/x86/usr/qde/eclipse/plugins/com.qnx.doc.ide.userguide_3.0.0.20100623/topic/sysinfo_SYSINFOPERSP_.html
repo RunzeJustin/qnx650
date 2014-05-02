@@ -1,0 +1,222 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="What the System Information perspective reveals" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Base_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_INTRO_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Logging_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Views_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Target_navigator_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_System_summary_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Process_information_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Memory_information_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Malloc_information_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Signal_information_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_System_blocking_graph_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Connection_information_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_System_resources_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Aps_view_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Views_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="WhattheSystemInformationperspectivereveals" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>What the System Information perspective reveals</title>
+   </head>
+   <body id="WhattheSystemInformationperspectivereveals"><a name="WhattheSystemInformationperspectivereveals" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">What the System Information perspective reveals</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>The System Information perspective provides a complete and detailed report on your system's resource allocation and use, along
+            with key metrics such as CPU usage, program layout, the interaction of different programs, and more: 
+            
+            
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/topic2Fsysinfo_SYSINFOPERSP_.xml_d169135e27.jpg" alt="System Information perspective" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>The System Information perspective shows a detailed report of the system's resource allocation, CPU usage, and more.</p>
+            
+            
+         </div>
+         
+         
+         <p>The perspective's metrics may prove useful throughout your development cycle, from writing and debugging your code through
+            your quality-control strategy. 
+         </p>
+         
+         
+         <p>
+            <strong>Key terms</strong>
+            
+         </p>
+         
+         
+         <p>Before we describe how to work with the System Information perspective, let's first briefly discuss the terms used in the
+            perspective itself. The main items are: 
+            
+         </p>
+         
+         
+         <dl>
+            <dt class="dlterm">thread</dt>
+            <dd>The minimum unit of execution that can be scheduled to run.
+               
+            </dd>
+            <dt class="dlterm">process</dt>
+            <dd>A container for threads, defining the virtual address space within which threads execute. A process always contains at least
+               one thread. Each process has its own set of virtual addresses, typically ranging from 0 to 4 GB.
+               
+               <p>Threads within a process share the same virtual memory space, but have their own stack. This common address space lets threads
+                  within the process easily access shared code and data, and lets you optimize or group common functionality, while still providing
+                  process-level protection from the rest of the system. 
+               </p>
+               
+            </dd>
+            <dt class="dlterm">scheduling priority</dt>
+            <dd>Neutrino uses priorities to establish the order in which threads get to execute when multiple threads are competing for CPU
+               time.
+               
+               <p>Each thread can have a scheduling priority ranging from 1 to 255 (the highest priority), <em>independent of the scheduling policy</em>. The special <em>idle</em> thread (in the process manager) has priority 0 and is always ready to run. A thread inherits the priority of its parent thread
+                  by default. 
+               </p>
+               
+               <p>You can set a thread's priority using the <a href="../../com.qnx.doc.neutrino_lib_ref/p/pthread_setschedparam.html" shape="rect"><tt>pthread_setschedparam</tt></a> function. 
+               </p>
+               
+            </dd>
+            <dt class="dlterm">scheduling policy</dt>
+            <dd>When two or more threads share the <em>same priority</em> (i.e. the threads are directly competing with each other for the CPU), the OS relies on the threads' scheduling policy to
+               determine which thread should run next. Three policies are available:
+               <br clear="none" /><ul>
+                  <li>round-robin</li>
+                  <li>FIFO</li>
+                  <li>sporadic</li>
+               </ul>
+               
+               <p>You can set a thread's scheduling policy using the <a href="../../com.qnx.doc.neutrino_lib_ref/p/pthread_setschedparam.html" shape="rect"><tt>pthread_setschedparam</tt></a> function or you can start a process with a specific priority and policy by using the <a href="../../com.qnx.doc.neutrino_utilities/o/on.html" shape="rect"><tt>on</tt></a> command (see the <cite>Utilities Reference</cite> for details). 
+               </p>
+               
+            </dd>
+            <dt class="dlterm">state</dt>
+            <dd>Only one thread can actually run at any one time. If a thread isn't in this RUNNING state, it must either be READY or BLOCKED
+               (or in one of the many blocked variants).
+               
+            </dd>
+            <dt class="dlterm">message passing</dt>
+            <dd>The most fundamental form of communication in Neutrino. The OS relays messages from thread to thread via a send-receive-reply
+               protocol. For example, if a thread calls <tt>MsgSend()</tt>, but the server hasn't yet received the message, the thread would be SEND-blocked; a thread waiting for an answer is REPLY-blocked,
+               and so on.
+               
+            </dd>
+            <dt class="dlterm">channel</dt>
+            <dd>Message passing is directed towards channels and connections, rather than targeted directly from thread to thread. A thread
+               that wishes to receive messages first creates a channel; another thread that wishes to send a message to that thread must
+               first make a connection by attaching to that channel.
+               
+            </dd>
+            <dt class="dlterm">signal</dt>
+            <dd>Asynchronous event notifications that can be sent to your process. Signals may include:
+               <br clear="none" /><ul>
+                  <li>simple alarms based on a previously set timer</li>
+                  <li>a notification of unauthorized access of memory or hardware</li>
+                  <li>a request for termination</li>
+                  <li>user-definable alerts</li>
+               </ul>
+               
+               <p>The OS supports the standard POSIX signals (as in UNIX) as well as the POSIX realtime signals. The POSIX signals interface
+                  specifies how signals target a particular process, not a specific thread. To ensure that signals go to a thread that can handle
+                  specific signals, many applications mask most signals from all but one thread. 
+               </p>
+               
+               <p>You can specify the action associated with a signal by using the <a href="../../com.qnx.doc.neutrino_lib_ref/s/sigaction.html" shape="rect"><tt>sigaction</tt></a> function, and block signals by using <a href="../../com.qnx.doc.neutrino_lib_ref/s/sigprocmask.html" shape="rect"><tt>sigprocmask</tt></a>. You can send signals by using the <a href="../../com.qnx.doc.neutrino_lib_ref/r/raise.html" shape="rect"><tt>raise</tt></a> function, or send them manually using the Target Navigator view (see <a href="sysinfo_SIGSEND_.html" shape="rect">Sending a signal</a> below).
+               </p>
+               
+            </dd>
+         </dl>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> For more information on all these terms and concepts, see the <a href="../../com.qnx.doc.neutrino_sys_arch/about.html" shape="rect">QNX Neutrino Microkernel</a> chapter in the <cite>System Architecture</cite> guide.
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/sysinfo_Base_.html" shape="rect">Getting System Information</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/sysinfo_INTRO_.html" shape="rect">Introduction</a></div>
+            
+            <div><a href="../topic/sysinfo_Views_.html" shape="rect">Associated views</a></div>
+            
+            <div><a href="../topic/sysinfo_Target_navigator_.html" shape="rect">Controlling your system information session</a></div>
+            
+            <div><a href="../topic/sysinfo_System_summary_.html" shape="rect">Examining your target system's attributes</a></div>
+            
+            <div><a href="../topic/sysinfo_Process_information_.html" shape="rect">Watching your processes</a></div>
+            
+            <div><a href="../topic/sysinfo_Memory_information_.html" shape="rect">Examining your target system's memory (inspecting virtual address space)</a></div>
+            
+            <div><a href="../topic/sysinfo_Malloc_information_.html" shape="rect">Tracking heap usage</a></div>
+            
+            <div><a href="../topic/sysinfo_Signal_information_.html" shape="rect">Examining process signals</a></div>
+            
+            <div><a href="../topic/sysinfo_System_blocking_graph_.html" shape="rect">Getting channel information</a></div>
+            
+            <div><a href="../topic/sysinfo_Connection_information_.html" shape="rect">Tracking file descriptors</a></div>
+            
+            <div><a href="../topic/sysinfo_System_resources_.html" shape="rect">Tracking resource usage</a></div>
+            
+            <div><a href="../topic/sysinfo_Aps_view_.html" shape="rect">Tracking the use of adaptive partitioning</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/sysinfo_Logging_.html" shape="rect">Logging system information</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

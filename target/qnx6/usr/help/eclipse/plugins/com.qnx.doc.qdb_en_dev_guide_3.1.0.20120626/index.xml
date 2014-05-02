@@ -1,0 +1,1369 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<index>
+ <entry keyword="ABORT">
+  <topic href="sql/on_conflict.html" title="ON CONFLICT"/>
+ </entry>
+ <entry keyword="abs()">
+  <topic href="sql/expressions.html#id19" title="Core Functions"/>
+ </entry>
+ <entry keyword="administration">
+  <entry keyword="QDB">
+   <topic href="administration.html" title="QDB Administration"/>
+  </entry>
+ </entry>
+ <entry keyword="affinity">
+  <entry keyword="column">
+   <topic href="datatypes.html#affinity" title="Column affinity"/>
+  </entry>
+ </entry>
+ <entry keyword="aggregate">
+  <entry keyword="functions">
+   <topic href="sql/expressions.html#id21" title="Aggregate Functions"/>
+   <topic href="writing_functions.html" title="Writing User-Defined Functions"/>
+  </entry>
+ </entry>
+ <entry keyword="ALTER TABLE">
+  <topic href="sql/alter_table.html" title="ALTER TABLE"/>
+ </entry>
+ <entry keyword="ANALYZE">
+  <topic href="sql/analyze.html" title="ANALYZE"/>
+ </entry>
+ <entry keyword="analyze">
+  <entry keyword="database">
+   <topic href="sql/analyze.html" title="ANALYZE"/>
+  </entry>
+ </entry>
+ <entry keyword="asynchronous mode">
+  <topic href="api/qdb_connect.html#async" title="Using asynchronous mode"/>
+ </entry>
+ <entry keyword="ATTACH DATABASE">
+  <topic href="sql/attach_database.html" title="ATTACH DATABASE"/>
+ </entry>
+ <entry keyword="attached database">
+  <entry keyword="analyze">
+   <topic href="sql/analyze.html" title="ANALYZE"/>
+  </entry>
+ </entry>
+ <entry keyword="auto">
+  <entry keyword="vacuum">
+   <topic href="sql/pragma.html#auto_vacuum" title="Auto vacuum"/>
+  </entry>
+ </entry>
+ <entry keyword="auto-vacuum mode">
+  <topic href="sql/vacuum.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="AUTOINCREMENT">
+  <entry keyword="keyword">
+   <topic href="sql/autoinc.html#id5" title="The AUTOINCREMENT Keyword"/>
+  </entry>
+ </entry>
+ <entry keyword="avg()">
+  <topic href="sql/expressions.html#id21" title="Aggregate Functions"/>
+ </entry>
+ <entry keyword="backing up">
+  <entry keyword="databases">
+   <topic href="administration.html#backup" title="Backing up and restoring databases"/>
+  </entry>
+ </entry>
+ <entry keyword="backup">
+  <topic href="starting.html#maintenance" title="Maintenance Commands"/>
+ </entry>
+ <entry keyword="backup">
+  <entry keyword="database">
+   <topic href="api/qdb_backup.html" title="qdb_backup"/>
+   <entry keyword="canceling">
+    <topic href="api/qdb_bkcancel.html#id9" title="Description:"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="busy">
+  <entry keyword="timeout">
+   <topic href="starting.html#busy_timeout" title="Busy timeout"/>
+  </entry>
+ </entry>
+ <entry keyword="busy timeout">
+  <entry keyword="setting">
+   <topic href="api/qdb_setbusytimeout.html" title="qdb_setbusytimeout"/>
+  </entry>
+ </entry>
+ <entry keyword="C++ API">
+  <topic href="writing_functions.html#id9" title="SQLite C/C++ API"/>
+ </entry>
+ <entry keyword="cache">
+  <entry keyword="default">
+   <entry keyword="size">
+    <topic href="sql/pragma.html#default_cache_size" title="Default cache size"/>
+   </entry>
+  </entry>
+  <entry keyword="shared">
+   <topic href="starting.html#63542" title="Shared caching"/>
+  </entry>
+  <entry keyword="size">
+   <topic href="sql/pragma.html#cache_size" title="Cache size"/>
+   <entry keyword="default">
+    <topic href="sql/pragma.html#default_cache_size" title="Default cache size"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="cancel">
+  <topic href="starting.html#maintenance" title="Maintenance Commands"/>
+ </entry>
+ <entry keyword="case sesitivity">
+  <topic href="sql/pragma.html#case_sensitivity" title="Case sensitivity"/>
+ </entry>
+ <entry keyword="CAST">
+  <topic href="sql/expressions.html#id15" title="CAST"/>
+ </entry>
+ <entry keyword="cell">
+  <entry keyword="data">
+   <topic href="example.html#id8" title="Using a result"/>
+   <entry keyword="getting">
+    <topic href="api/qdb_cell.html" title="qdb_cell"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="changes">
+  <entry keyword="count">
+   <topic href="sql/pragma.html#count_changes" title="Count changes"/>
+  </entry>
+ </entry>
+ <entry keyword="check">
+  <entry keyword="integrity">
+   <topic href="sql/pragma.html#integrity_check" title="Integrity check"/>
+  </entry>
+ </entry>
+ <entry keyword="CIFS">
+  <entry keyword="filesystems">
+   <topic href="starting.html#db_dir" title="Database directory"/>
+  </entry>
+ </entry>
+ <entry keyword="classes">
+  <entry keyword="storage">
+   <topic href="datatypes.html#id3" title="Storage classes"/>
+  </entry>
+ </entry>
+ <entry keyword="clause">
+  <entry keyword="GROUP BY">
+   <topic href="sql/select.html#id11" title="GROUP BY clauses"/>
+  </entry>
+  <entry keyword="LIMIT">
+   <topic href="sql/select.html#id15" title="LIMIT clauses"/>
+  </entry>
+  <entry keyword="ORDER BY">
+   <topic href="sql/select.html#id13" title="ORDER BY clauses"/>
+  </entry>
+  <entry keyword="WHERE">
+   <topic href="sql/select.html#id9" title="WHERE clause"/>
+  </entry>
+ </entry>
+ <entry keyword="client">
+  <entry keyword="QDB">
+   <topic href="qdbc.html#id5" title="Options:"/>
+  </entry>
+ </entry>
+ <entry keyword="clients">
+  <entry keyword="sharing connections">
+   <topic href="starting.html#connection_sharing" title="Sharing connections between clients"/>
+  </entry>
+ </entry>
+ <entry keyword="coalesce()">
+  <topic href="sql/expressions.html#id19" title="Core Functions"/>
+ </entry>
+ <entry keyword="collation">
+  <entry keyword="functions">
+   <topic href="writing_functions.html" title="Writing User-Defined Functions"/>
+  </entry>
+  <entry keyword="user-defined">
+   <topic href="api/qdb_collation.html" title="qdb_collation"/>
+  </entry>
+ </entry>
+ <entry keyword="collation routines">
+  <entry keyword="user">
+   <topic href="writing_functions.html#id5" title="User collation routines"/>
+  </entry>
+ </entry>
+ <entry keyword="collation sequences">
+  <entry keyword="assigning from SQL">
+   <topic href="datatypes.html#id20" title="Assigning Collation Sequences from SQL"/>
+  </entry>
+  <entry keyword="user-defined">
+   <topic href="datatypes.html#collation" title="User-defined collation sequences"/>
+  </entry>
+ </entry>
+ <entry keyword="column">
+  <entry keyword="affinity">
+   <topic href="datatypes.html#affinity" title="Column affinity"/>
+  </entry>
+  <entry keyword="determining affinity">
+   <topic href="datatypes.html#id6" title="Determination of column affinity"/>
+  </entry>
+  <entry keyword="full names">
+   <topic href="sql/pragma.html#full_column_names" title="Full column names"/>
+  </entry>
+  <entry keyword="name">
+   <topic href="api/qdb_column_decltype.html" title="qdb_column_decltype"/>
+   <topic href="api/qdb_column_index.html" title="qdb_column_index"/>
+   <topic href="api/qdb_column_name.html" title="qdb_column_name"/>
+  </entry>
+  <entry keyword="names">
+   <topic href="sql/expressions.html#id11" title="Column Names"/>
+  </entry>
+  <entry keyword="short names">
+   <topic href="sql/pragma.html#short_column_names" title="Short column names"/>
+  </entry>
+ </entry>
+ <entry keyword="comments">
+  <entry keyword="SQL">
+   <topic href="sql/comments.html" title="Comment"/>
+  </entry>
+ </entry>
+ <entry keyword="comparison">
+  <entry keyword="expressions">
+   <topic href="datatypes.html#id10" title="Comparison expressions"/>
+  </entry>
+ </entry>
+ <entry keyword="compound">
+  <entry keyword="SELECT statements">
+   <topic href="sql/select.html#id17" title="Compund SELECT statements"/>
+  </entry>
+ </entry>
+ <entry keyword="compound SELECT statments">
+  <topic href="datatypes.html#id16" title="Sorting, grouping and compound SELECTs"/>
+ </entry>
+ <entry keyword="configuration file">
+  <topic href="starting.html#config_file" title="The configuration file"/>
+ </entry>
+ <entry keyword="connecting to the database">
+  <entry keyword="example">
+   <topic href="example.html#connect" title="Connecting to the database"/>
+  </entry>
+ </entry>
+ <entry keyword="connections">
+  <entry keyword="sharing between clients">
+   <topic href="starting.html#connection_sharing" title="Sharing connections between clients"/>
+  </entry>
+ </entry>
+ <entry keyword="conventions">
+  <entry keyword="typographical">
+   <topic href="about.html#id3" title="Typographical conventions"/>
+  </entry>
+ </entry>
+ <entry keyword="corrupt database">
+  <entry keyword="recovering from">
+   <topic href="starting.html#corrupt" title="Handling corrupt databases"/>
+  </entry>
+ </entry>
+ <entry keyword="count changes">
+  <topic href="sql/pragma.html#count_changes" title="Count changes"/>
+ </entry>
+ <entry keyword="count()">
+  <topic href="sql/expressions.html#id21" title="Aggregate Functions"/>
+ </entry>
+ <entry keyword="CREATE INDEX">
+  <topic href="sql/create_index.html" title="CREATE INDEX"/>
+ </entry>
+ <entry keyword="CREATE TABLE">
+  <topic href="sql/create_table.html" title="CREATE TABLE"/>
+ </entry>
+ <entry keyword="CREATE TRIGGER">
+  <topic href="sql/create_trigger.html" title="CREATE TRIGGER"/>
+ </entry>
+ <entry keyword="CREATE VIEW">
+  <topic href="sql/create_view.html" title="CREATE VIEW"/>
+ </entry>
+ <entry keyword="data">
+  <entry keyword="cell">
+   <topic href="example.html#id8" title="Using a result"/>
+   <entry keyword="getting">
+    <topic href="api/qdb_cell.html" title="qdb_cell"/>
+   </entry>
+  </entry>
+  <entry keyword="maximum that can be sent with qdb_stmt_exec()">
+   <topic href="api/qdb_stmt_exec.html#qdb_binding_t" title="The qdb_binding_t structure"/>
+  </entry>
+ </entry>
+ <entry keyword="data source">
+  <entry keyword="extracting">
+   <topic href="api/qdb_data_source.html" title="qdb_data_source"/>
+  </entry>
+ </entry>
+ <entry keyword="database">
+  <entry keyword="analyse">
+   <topic href="sql/analyze.html" title="ANALYZE"/>
+  </entry>
+  <entry keyword="attach">
+   <topic href="sql/attach_database.html" title="ATTACH DATABASE"/>
+  </entry>
+  <entry keyword="backing up">
+   <topic href="administration.html#backup" title="Backing up and restoring databases"/>
+  </entry>
+  <entry keyword="busy timeout">
+   <topic href="starting.html#busy_timeout" title="Busy timeout"/>
+  </entry>
+  <entry keyword="connecting">
+   <topic href="api/qdb_connect.html" title="qdb_connect"/>
+  </entry>
+  <entry keyword="detach from">
+   <topic href="sql/detach_database.html" title="DETACH DATABASE"/>
+  </entry>
+  <entry keyword="directory">
+   <topic href="starting.html#db_dir" title="Database directory"/>
+  </entry>
+  <entry keyword="disconnecting">
+   <topic href="api/qdb_disconnect.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="maintenance commands">
+   <topic href="starting.html#maintenance" title="Maintenance Commands"/>
+  </entry>
+  <entry keyword="recovering from corrupt">
+   <topic href="starting.html#corrupt" title="Handling corrupt databases"/>
+  </entry>
+  <entry keyword="recovery">
+   <topic href="starting.html#recovery" title="Database recovery"/>
+  </entry>
+  <entry keyword="recovery script">
+   <topic href="starting.html#corrupt" title="Handling corrupt databases"/>
+  </entry>
+  <entry keyword="restoring up">
+   <topic href="administration.html#backup" title="Backing up and restoring databases"/>
+  </entry>
+ </entry>
+ <entry keyword="database size">
+  <entry keyword="getting">
+   <topic href="api/qdb_getdbsize.html" title="qdb_getdbsize"/>
+  </entry>
+ </entry>
+ <entry keyword="datatypes">
+  <topic href="datatypes.html#id3" title="Storage classes"/>
+ </entry>
+ <entry keyword="DELETE">
+  <topic href="sql/delete.html" title="DELETE"/>
+ </entry>
+ <entry keyword="DETACH DATABASE">
+  <topic href="sql/detach_database.html" title="DETACH DATABASE"/>
+ </entry>
+ <entry keyword="disconnecting">
+  <entry keyword="server (example)">
+   <topic href="example.html#id10" title="Disconnecting from the Server"/>
+  </entry>
+ </entry>
+ <entry keyword="DISTINCT">
+  <entry keyword="keyword">
+   <topic href="sql/select.html#id7" title="DISTINCT keyword"/>
+  </entry>
+ </entry>
+ <entry keyword="DROP INDEX">
+  <topic href="sql/drop_index.html" title="DROP INDEX"/>
+ </entry>
+ <entry keyword="DROP TABLE">
+  <topic href="sql/drop_table.html" title="DROP TABLE"/>
+ </entry>
+ <entry keyword="DROP TRIGGER">
+  <topic href="sql/drop_trigger.html" title="DROP TRIGGER"/>
+ </entry>
+ <entry keyword="DROP VIEW">
+  <topic href="sql/drop_view.html" title="DROP VIEW"/>
+ </entry>
+ <entry keyword="error message">
+  <entry keyword="getting">
+   <topic href="api/qdb_geterrmsg.html" title="qdb_geterrmsg"/>
+  </entry>
+ </entry>
+ <entry keyword="example">
+  <entry keyword="using a result">
+   <topic href="example.html#id8" title="Using a result"/>
+  </entry>
+ </entry>
+ <entry keyword="examples">
+  <entry keyword="connecting to the database">
+   <topic href="example.html#connect" title="Connecting to the database"/>
+   <topic href="example.html#id12" title="Example"/>
+  </entry>
+  <entry keyword="disconnecting the server">
+   <topic href="example.html#id10" title="Disconnecting from the Server"/>
+  </entry>
+  <entry keyword="executing a statement">
+   <topic href="example.html#id4" title="Executing a Statement"/>
+  </entry>
+  <entry keyword="getting result of a query">
+   <topic href="example.html#id6" title="Getting the result of a query"/>
+  </entry>
+  <entry keyword="inserting">
+   <topic href="example.html#id12" title="Example"/>
+  </entry>
+  <entry keyword="program">
+   <topic href="example.html#id12" title="Example"/>
+  </entry>
+  <entry keyword="QDB">
+   <topic href="example.html" title="QDB Examples"/>
+  </entry>
+ </entry>
+ <entry keyword="EXCEPT">
+  <entry keyword="operator">
+   <topic href="sql/select.html#id17" title="Compund SELECT statements"/>
+  </entry>
+ </entry>
+ <entry keyword="EXCLUSIVE">
+  <entry keyword="lock">
+   <topic href="sql/transaction.html#id7" title="Locks"/>
+  </entry>
+ </entry>
+ <entry keyword="executing a statement">
+  <entry keyword="example">
+   <topic href="example.html#id4" title="Executing a Statement"/>
+  </entry>
+ </entry>
+ <entry keyword="EXPLAIN">
+  <topic href="sql/explain.html" title="EXPLAIN"/>
+ </entry>
+ <entry keyword="expressions">
+  <entry keyword="comparison">
+   <topic href="datatypes.html#id10" title="Comparison expressions"/>
+  </entry>
+  <entry keyword="non-standard">
+   <topic href="sql/explain.html" title="EXPLAIN"/>
+  </entry>
+  <entry keyword="SQL">
+   <topic href="sql/expressions.html" title="expressions"/>
+  </entry>
+ </entry>
+ <entry keyword="FAIL">
+  <topic href="sql/on_conflict.html" title="ON CONFLICT"/>
+ </entry>
+ <entry keyword="features">
+  <entry keyword="QDB">
+   <topic href="intro.html" title="Introduction"/>
+  </entry>
+ </entry>
+ <entry keyword="file">
+  <entry keyword="legacy format">
+   <topic href="sql/pragma.html#legacy_file_format" title="Legacy file format"/>
+  </entry>
+ </entry>
+ <entry keyword="filesystem">
+  <entry keyword="temporary storage">
+   <topic href="starting.html#temp_fs" title="Temporary storage filesystem"/>
+  </entry>
+ </entry>
+ <entry keyword="filesystems">
+  <entry keyword="CIFS">
+   <topic href="starting.html#db_dir" title="Database directory"/>
+  </entry>
+  <entry keyword="NFS">
+   <topic href="starting.html#db_dir" title="Database directory"/>
+  </entry>
+  <entry keyword="supported">
+   <topic href="starting.html#db_dir" title="Database directory"/>
+  </entry>
+ </entry>
+ <entry keyword="flag">
+  <entry keyword="synchronous">
+   <topic href="sql/pragma.html#synchronous" title="Synchronous"/>
+  </entry>
+ </entry>
+ <entry keyword="foreign">
+  <entry keyword="key list">
+   <topic href="sql/pragma.html#foreign_key_list" title="Foreign key list"/>
+  </entry>
+ </entry>
+ <entry keyword="format">
+  <entry keyword="legacy file">
+   <topic href="sql/pragma.html#legacy_file_format" title="Legacy file format"/>
+  </entry>
+ </entry>
+ <entry keyword="full">
+  <entry keyword="column names">
+   <topic href="sql/pragma.html#full_column_names" title="Full column names"/>
+  </entry>
+ </entry>
+ <entry keyword="functions">
+  <entry keyword="aggregate">
+   <topic href="sql/expressions.html#id21" title="Aggregate Functions"/>
+   <topic href="writing_functions.html" title="Writing User-Defined Functions"/>
+  </entry>
+  <entry keyword="collation">
+   <topic href="writing_functions.html" title="Writing User-Defined Functions"/>
+  </entry>
+  <entry keyword="default">
+   <topic href="sql/expressions.html#id19" title="Core Functions"/>
+  </entry>
+  <entry keyword="scalar">
+   <topic href="writing_functions.html" title="Writing User-Defined Functions"/>
+  </entry>
+  <entry keyword="writing user-defined">
+   <topic href="writing_functions.html" title="Writing User-Defined Functions"/>
+  </entry>
+ </entry>
+ <entry keyword="generated">
+  <entry keyword="programs (viewing)">
+   <topic href="opcode.html#id3" title="Viewing programs generated by QDB"/>
+  </entry>
+ </entry>
+ <entry keyword="GLOB operator">
+  <topic href="sql/expressions.html#GLOB" title="GLOB"/>
+ </entry>
+ <entry keyword="glob()">
+  <topic href="sql/expressions.html#id19" title="Core Functions"/>
+ </entry>
+ <entry keyword="GROUP BY">
+  <entry keyword="clause">
+   <topic href="sql/select.html#id11" title="GROUP BY clauses"/>
+  </entry>
+ </entry>
+ <entry keyword="grouping">
+  <topic href="datatypes.html#id16" title="Sorting, grouping and compound SELECTs"/>
+ </entry>
+ <entry keyword="hex()">
+  <topic href="sql/expressions.html#id19" title="Core Functions"/>
+ </entry>
+ <entry keyword="ifnull()">
+  <topic href="sql/expressions.html#id19" title="Core Functions"/>
+ </entry>
+ <entry keyword="IGNORE">
+  <topic href="sql/on_conflict.html" title="ON CONFLICT"/>
+ </entry>
+ <entry keyword="index">
+  <entry keyword="create">
+   <topic href="sql/create_index.html" title="CREATE INDEX"/>
+  </entry>
+  <entry keyword="drop">
+   <topic href="sql/drop_index.html" title="DROP INDEX"/>
+  </entry>
+ </entry>
+ <entry keyword="index info">
+  <topic href="sql/pragma.html#index_info" title="Index info"/>
+ </entry>
+ <entry keyword="index list">
+  <topic href="sql/pragma.html#index_list" title="Index list"/>
+ </entry>
+ <entry keyword="indexes">
+  <entry keyword="recreate">
+   <topic href="sql/reindex.html" title="REINDEX"/>
+  </entry>
+ </entry>
+ <entry keyword="indices">
+  <entry keyword="cleaning up">
+   <topic href="sql/vacuum.html" title="VACUUM"/>
+  </entry>
+ </entry>
+ <entry keyword="INSERT">
+  <topic href="sql/insert.html" title="INSERT"/>
+ </entry>
+ <entry keyword="INTEGER PRIMARY KEY AUTOINCREMENT">
+  <topic href="sql/autoinc.html#id5" title="The AUTOINCREMENT Keyword"/>
+ </entry>
+ <entry keyword="integrity">
+  <entry keyword="check">
+   <topic href="sql/pragma.html#integrity_check" title="Integrity check"/>
+  </entry>
+ </entry>
+ <entry keyword="INTERSECT">
+  <entry keyword="operator">
+   <topic href="sql/select.html#id17" title="Compund SELECT statements"/>
+  </entry>
+ </entry>
+ <entry keyword="key list">
+  <entry keyword="foreign">
+   <topic href="sql/pragma.html#foreign_key_list" title="Foreign key list"/>
+  </entry>
+ </entry>
+ <entry keyword="keyword">
+  <entry keyword="DISTINCT">
+   <topic href="sql/select.html#id7" title="DISTINCT keyword"/>
+  </entry>
+ </entry>
+ <entry keyword="keywords">
+  <entry keyword="QDB">
+   <topic href="sql/keywords.html" title="QDB Keywords"/>
+  </entry>
+ </entry>
+ <entry keyword="last_insert_rowid()">
+  <topic href="sql/expressions.html#id19" title="Core Functions"/>
+ </entry>
+ <entry keyword="legacy format">
+  <entry keyword="file">
+   <topic href="sql/pragma.html#legacy_file_format" title="Legacy file format"/>
+  </entry>
+ </entry>
+ <entry keyword="length()">
+  <topic href="sql/expressions.html#id19" title="Core Functions"/>
+ </entry>
+ <entry keyword="LIKE operator">
+  <topic href="sql/expressions.html#LIKE" title="LIKE"/>
+ </entry>
+ <entry keyword="like()">
+  <topic href="sql/expressions.html#id19" title="Core Functions"/>
+ </entry>
+ <entry keyword="LIMIT">
+  <entry keyword="clause">
+   <topic href="sql/select.html#id15" title="LIMIT clauses"/>
+  </entry>
+ </entry>
+ <entry keyword="list">
+  <entry keyword="foreign key">
+   <topic href="sql/pragma.html#foreign_key_list" title="Foreign key list"/>
+  </entry>
+ </entry>
+ <entry keyword="literal values">
+  <topic href="sql/expressions.html#literal_value" title="Literal values"/>
+ </entry>
+ <entry keyword="lock">
+  <entry keyword="EXCLUSIVE">
+   <topic href="sql/transaction.html#id7" title="Locks"/>
+  </entry>
+  <entry keyword="RESERVED">
+   <topic href="sql/transaction.html#id7" title="Locks"/>
+  </entry>
+  <entry keyword="SHARED">
+   <topic href="sql/transaction.html#id7" title="Locks"/>
+  </entry>
+ </entry>
+ <entry keyword="lower()">
+  <topic href="sql/expressions.html#id19" title="Core Functions"/>
+ </entry>
+ <entry keyword="ltrim()">
+  <topic href="sql/expressions.html#id19" title="Core Functions"/>
+ </entry>
+ <entry keyword="maintenance">
+  <entry keyword="commands">
+   <topic href="starting.html#maintenance" title="Maintenance Commands"/>
+  </entry>
+ </entry>
+ <entry keyword="max()">
+  <topic href="sql/expressions.html#id21" title="Aggregate Functions"/>
+  <topic href="sql/expressions.html#id19" title="Core Functions"/>
+ </entry>
+ <entry keyword="min">
+  <topic href="sql/expressions.html#id21" title="Aggregate Functions"/>
+ </entry>
+ <entry keyword="min()">
+  <topic href="sql/expressions.html#id19" title="Core Functions"/>
+ </entry>
+ <entry keyword="modes">
+  <entry keyword="auto-vacuum">
+   <topic href="sql/vacuum.html#id5" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="names">
+  <entry keyword="column">
+   <topic href="sql/expressions.html#id11" title="Column Names"/>
+   <topic href="sql/pragma.html#full_column_names" title="Full column names"/>
+   <topic href="sql/pragma.html#short_column_names" title="Short column names"/>
+  </entry>
+ </entry>
+ <entry keyword="NFS">
+  <entry keyword="filesystems">
+   <topic href="starting.html#db_dir" title="Database directory"/>
+  </entry>
+ </entry>
+ <entry keyword="non-attached database">
+  <entry keyword="analyze">
+   <topic href="sql/analyze.html" title="ANALYZE"/>
+  </entry>
+ </entry>
+ <entry keyword="non-standard">
+  <entry keyword="expressions">
+   <topic href="sql/explain.html" title="EXPLAIN"/>
+  </entry>
+ </entry>
+ <entry keyword="nullif()">
+  <topic href="sql/expressions.html#id19" title="Core Functions"/>
+ </entry>
+ <entry keyword="objects">
+  <entry keyword="system">
+   <topic href="sql/keywords.html#id5" title="Special names"/>
+  </entry>
+ </entry>
+ <entry keyword="OID">
+  <topic href="sql/autoinc.html" title="Row ID and Autoincrement"/>
+ </entry>
+ <entry keyword="ON CONFLICT">
+  <topic href="sql/on_conflict.html" title="ON CONFLICT"/>
+ </entry>
+ <entry keyword="opcodes">
+  <entry keyword="QDB virtual machine">
+   <topic href="opcode.html" title="QDB Virtual Machine Opcodes"/>
+  </entry>
+ </entry>
+ <entry keyword="operator">
+  <entry keyword="GLOB">
+   <topic href="sql/expressions.html#GLOB" title="GLOB"/>
+  </entry>
+  <entry keyword="LIKE">
+   <topic href="sql/expressions.html#LIKE" title="LIKE"/>
+  </entry>
+ </entry>
+ <entry keyword="operators">
+  <topic href="datatypes.html#id14" title="Operators"/>
+  <entry keyword="EXCEPT">
+   <topic href="sql/select.html#id17" title="Compund SELECT statements"/>
+  </entry>
+  <entry keyword="INTERSECT">
+   <topic href="sql/select.html#id17" title="Compund SELECT statements"/>
+  </entry>
+  <entry keyword="UNION">
+   <topic href="sql/select.html#id17" title="Compund SELECT statements"/>
+  </entry>
+  <entry keyword="UNION ALL">
+   <topic href="sql/select.html#id17" title="Compund SELECT statements"/>
+  </entry>
+ </entry>
+ <entry keyword="options">
+  <entry keyword="getting">
+   <topic href="api/qdb_getoption.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="QDB">
+   <topic href="starting.html#id5" title="Options:"/>
+  </entry>
+  <entry keyword="QDB client">
+   <topic href="qdbc.html#id5" title="Options:"/>
+  </entry>
+  <entry keyword="setting">
+   <topic href="api/qdb_setoption.html" title="qdb_setoption"/>
+  </entry>
+ </entry>
+ <entry keyword="ORDER BY">
+  <entry keyword="clause">
+   <topic href="sql/select.html#id13" title="ORDER BY clauses"/>
+  </entry>
+ </entry>
+ <entry keyword="page">
+  <entry keyword="size">
+   <topic href="sql/pragma.html#page_size" title="Page size"/>
+  </entry>
+ </entry>
+ <entry keyword="parameters">
+  <entry keyword="getting">
+   <topic href="api/qdb_parameters.html" title="qdb_parameters"/>
+  </entry>
+  <entry keyword="SQL">
+   <topic href="sql/expressions.html#parameters" title="Parameters"/>
+  </entry>
+ </entry>
+ <entry keyword="pathname delimiter in QNX documentation">
+  <topic href="about.html#WINDOWSNOTE" title="Note to Windows users"/>
+ </entry>
+ <entry keyword="PRAGMA">
+  <topic href="sql/pragma.html" title="PRAGMA"/>
+ </entry>
+ <entry keyword="pre-compiled statements">
+  <entry keyword="freeing">
+   <topic href="api/qdb_stmt_free.html" title="qdb_stmt_free"/>
+  </entry>
+ </entry>
+ <entry keyword="prepared statements">
+  <entry keyword="declared types">
+   <topic href="api/qdb_stmt_decltypes.html" title="qdb_stmt_decltypes"/>
+  </entry>
+  <entry keyword="executing">
+   <topic href="api/qdb_stmt_exec.html" title="qdb_stmt_exec"/>
+  </entry>
+  <entry keyword="initializing">
+   <topic href="api/qdb_stmt_init.html" title="qdb_stmt_init"/>
+  </entry>
+ </entry>
+ <entry keyword="programs">
+  <entry keyword="viewing QDB-generated">
+   <topic href="opcode.html#id3" title="Viewing programs generated by QDB"/>
+  </entry>
+ </entry>
+ <entry keyword="QDB">
+  <entry keyword="administration">
+   <topic href="administration.html" title="QDB Administration"/>
+  </entry>
+  <entry keyword="examples">
+   <topic href="example.html" title="QDB Examples"/>
+  </entry>
+ </entry>
+ <entry keyword="QDB client">
+  <entry keyword="description">
+   <topic href="qdbc.html#id7" title="Description"/>
+  </entry>
+  <entry keyword="options">
+   <topic href="qdbc.html#id5" title="Options:"/>
+  </entry>
+ </entry>
+ <entry keyword="QDB configuration file">
+  <topic href="starting.html#config_file" title="The configuration file"/>
+ </entry>
+ <entry keyword="qdb_backup()">
+  <topic href="api/qdb_backup.html" title="qdb_backup"/>
+ </entry>
+ <entry keyword="qdb_bkcancel()">
+  <topic href="api/qdb_bkcancel.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="qdb_cell()">
+  <topic href="api/qdb_cell.html" title="qdb_cell"/>
+  <topic href="example.html#id8" title="Using a result"/>
+ </entry>
+ <entry keyword="qdb_cell_length()">
+  <topic href="api/qdb_cell_length.html" title="qdb_cell_length"/>
+  <topic href="example.html#id8" title="Using a result"/>
+ </entry>
+ <entry keyword="qdb_cell_type()">
+  <topic href="api/qdb_cell_type.html" title="qdb_cell_type"/>
+  <topic href="example.html#id8" title="Using a result"/>
+ </entry>
+ <entry keyword="qdb_collation()">
+  <topic href="api/qdb_collation.html" title="qdb_collation"/>
+ </entry>
+ <entry keyword="qdb_column_index()">
+  <topic href="api/qdb_column_index.html" title="qdb_column_index"/>
+  <topic href="example.html#id8" title="Using a result"/>
+ </entry>
+ <entry keyword="qdb_column_name()">
+  <topic href="api/qdb_column_decltype.html" title="qdb_column_decltype"/>
+  <topic href="api/qdb_column_name.html" title="qdb_column_name"/>
+  <topic href="example.html#id8" title="Using a result"/>
+ </entry>
+ <entry keyword="qdb_columns()">
+  <topic href="example.html#id8" title="Using a result"/>
+ </entry>
+ <entry keyword="QDB_CONN_BLOCK_FOREVER">
+  <topic href="api/qdb_parameters.html" title="qdb_parameters"/>
+ </entry>
+ <entry keyword="QDB_CONN_DFLT_SHARE">
+  <topic href="api/qdb_parameters.html" title="qdb_parameters"/>
+ </entry>
+ <entry keyword="QDB_CONN_NONBLOCKING">
+  <topic href="api/qdb_setbusytimeout.html" title="qdb_setbusytimeout"/>
+ </entry>
+ <entry keyword="QDB_CONN_STMT_ASYNC">
+  <topic href="api/qdb_parameters.html" title="qdb_parameters"/>
+ </entry>
+ <entry keyword="qdb_connect()">
+  <topic href="api/qdb_connect.html" title="qdb_connect"/>
+ </entry>
+ <entry keyword="qdb_data_source()">
+  <topic href="api/qdb_data_source.html" title="qdb_data_source"/>
+ </entry>
+ <entry keyword="qdb_disconnect()">
+  <topic href="api/qdb_disconnect.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="qdb_freeresult()">
+  <topic href="api/qdb_freeresult.html" title="qdb_freeresult"/>
+ </entry>
+ <entry keyword="qdb_getdbsize()">
+  <topic href="api/qdb_getdbsize.html" title="qdb_getdbsize"/>
+ </entry>
+ <entry keyword="qdb_geterrmsg()">
+  <topic href="api/qdb_geterrmsg.html" title="qdb_geterrmsg"/>
+ </entry>
+ <entry keyword="qdb_getoption()">
+  <topic href="api/qdb_getoption.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="qdb_getresult()">
+  <topic href="api/qdb_getresult.html" title="qdb_getresult"/>
+ </entry>
+ <entry keyword="qdb_gettransstate()">
+  <topic href="api/qdb_gettransstate.html" title="qdb_gettransstate"/>
+ </entry>
+ <entry keyword="qdb_interrupt()">
+  <topic href="api/qdb_interrupt.html" title="qdb_interrupt"/>
+ </entry>
+ <entry keyword="qdb_last_insert_rowid()">
+  <topic href="api/qdb_last_insert_rowid.html" title="qdb_last_insert_rowid"/>
+ </entry>
+ <entry keyword="qdb_mprintf()">
+  <topic href="api/qdb_mprintf.html" title="qdb_mprintf"/>
+ </entry>
+ <entry keyword="QDB_OPTION_COLUMN_NAMES">
+  <topic href="api/qdb_setoption.html" title="qdb_setoption"/>
+ </entry>
+ <entry keyword="QDB_OPTION_LAST_INSERT_ROWID">
+  <topic href="api/qdb_last_insert_rowid.html" title="qdb_last_insert_rowid"/>
+  <topic href="api/qdb_setoption.html" title="qdb_setoption"/>
+ </entry>
+ <entry keyword="QDB_OPTION_ROW_CHANGES">
+  <topic href="api/qdb_rowchanges.html" title="qdb_rowchanges"/>
+  <topic href="api/qdb_setoption.html" title="qdb_setoption"/>
+ </entry>
+ <entry keyword="qdb_parameters()">
+  <topic href="api/qdb_parameters.html" title="qdb_parameters"/>
+ </entry>
+ <entry keyword="qdb_printmsg()">
+  <topic href="api/qdb_printmsg.html" title="qdb_printmsg"/>
+  <topic href="example.html#id8" title="Using a result"/>
+ </entry>
+ <entry keyword="qdb_query()">
+  <topic href="api/qdb_query.html" title="qdb_query"/>
+ </entry>
+ <entry keyword="qdb_result_t">
+  <topic href="api/qdb_columns.html" title="qdb_columns"/>
+  <topic href="api/qdb_freeresult.html" title="qdb_freeresult"/>
+  <topic href="api/qdb_rows.html" title="qdb_rows"/>
+ </entry>
+ <entry keyword="qdb_rollback()">
+  <topic href="api/qdb_rollback.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="qdb_rowchanges()">
+  <topic href="api/qdb_rowchanges.html" title="qdb_rowchanges"/>
+ </entry>
+ <entry keyword="qdb_rows()">
+  <topic href="example.html#id8" title="Using a result"/>
+ </entry>
+ <entry keyword="qdb_setbusytimeout()">
+  <topic href="api/qdb_setbusytimeout.html" title="qdb_setbusytimeout"/>
+ </entry>
+ <entry keyword="qdb_setoption()">
+  <topic href="api/qdb_setoption.html" title="qdb_setoption"/>
+ </entry>
+ <entry keyword="qdb_snprintf()">
+  <topic href="api/qdb_snprintf.html" title="qdb_snprintf"/>
+ </entry>
+ <entry keyword="qdb_statement()">
+  <topic href="api/qdb_statement.html" title="qdb_statement"/>
+ </entry>
+ <entry keyword="qdb_stmt_decltypes()">
+  <topic href="api/qdb_stmt_decltypes.html" title="qdb_stmt_decltypes"/>
+ </entry>
+ <entry keyword="qdb_stmt_exec()">
+  <topic href="api/qdb_stmt_exec.html" title="qdb_stmt_exec"/>
+  <entry keyword="maximum data">
+   <topic href="api/qdb_stmt_exec.html#qdb_binding_t" title="The qdb_binding_t structure"/>
+  </entry>
+ </entry>
+ <entry keyword="qdb_stmt_free()">
+  <topic href="api/qdb_stmt_free.html" title="qdb_stmt_free"/>
+ </entry>
+ <entry keyword="qdb_stmt_init()">
+  <topic href="api/qdb_stmt_init.html" title="qdb_stmt_init"/>
+ </entry>
+ <entry keyword="QDB_TIMEOUT_BLOCK">
+  <topic href="api/qdb_setbusytimeout.html" title="qdb_setbusytimeout"/>
+ </entry>
+ <entry keyword="QDB_TIMEOUT_NONBLOCK">
+  <topic href="api/qdb_setbusytimeout.html" title="qdb_setbusytimeout"/>
+ </entry>
+ <entry keyword="qdb_vacuum()">
+  <topic href="api/qdb_vacuum.html" title="qdb_vacuum"/>
+ </entry>
+ <entry keyword="qdb_vmprintf()">
+  <topic href="api/qdb_vmprintf.html" title="qdb_vmprintf"/>
+ </entry>
+ <entry keyword="qdbc">
+  <topic href="qdbc.html#id5" title="Options:"/>
+ </entry>
+ <entry keyword="query">
+  <entry keyword="convenience function">
+   <topic href="api/qdb_query.html" title="qdb_query"/>
+  </entry>
+  <entry keyword="example of how to get result">
+   <topic href="example.html#id6" title="Getting the result of a query"/>
+  </entry>
+  <entry keyword="getting result">
+   <topic href="example.html#id6" title="Getting the result of a query"/>
+  </entry>
+  <entry keyword="interrupting">
+   <topic href="api/qdb_interrupt.html" title="qdb_interrupt"/>
+  </entry>
+ </entry>
+ <entry keyword="quote()">
+  <topic href="sql/expressions.html#id19" title="Core Functions"/>
+ </entry>
+ <entry keyword="random()">
+  <topic href="sql/expressions.html#id19" title="Core Functions"/>
+ </entry>
+ <entry keyword="randomblob()">
+  <topic href="sql/expressions.html#id19" title="Core Functions"/>
+ </entry>
+ <entry keyword="records">
+  <entry keyword="delete from tables">
+   <topic href="sql/delete.html" title="DELETE"/>
+  </entry>
+ </entry>
+ <entry keyword="recovery">
+  <entry keyword="database">
+   <topic href="starting.html#recovery" title="Database recovery"/>
+  </entry>
+ </entry>
+ <entry keyword="recreate">
+  <entry keyword="indexes">
+   <topic href="sql/reindex.html" title="REINDEX"/>
+  </entry>
+ </entry>
+ <entry keyword="REINDEX">
+  <topic href="sql/reindex.html" title="REINDEX"/>
+ </entry>
+ <entry keyword="REPLACE">
+  <topic href="sql/replace.html#id5" title="Description:"/>
+  <topic href="sql/on_conflict.html" title="ON CONFLICT"/>
+  <topic href="sql/replace.html" title="REPLACE"/>
+ </entry>
+ <entry keyword="replace()">
+  <topic href="sql/expressions.html#id19" title="Core Functions"/>
+ </entry>
+ <entry keyword="RESERVED">
+  <entry keyword="lock">
+   <topic href="sql/transaction.html#id7" title="Locks"/>
+  </entry>
+ </entry>
+ <entry keyword="restoring up">
+  <entry keyword="databases">
+   <topic href="administration.html#backup" title="Backing up and restoring databases"/>
+  </entry>
+ </entry>
+ <entry keyword="result (using)">
+  <entry keyword="example">
+   <topic href="example.html#id8" title="Using a result"/>
+  </entry>
+ </entry>
+ <entry keyword="results">
+  <entry keyword="columns in">
+   <topic href="api/qdb_columns.html" title="qdb_columns"/>
+  </entry>
+  <entry keyword="datatype">
+   <topic href="api/qdb_cell_type.html" title="qdb_cell_type"/>
+  </entry>
+  <entry keyword="freeing">
+   <topic href="api/qdb_freeresult.html" title="qdb_freeresult"/>
+  </entry>
+  <entry keyword="length">
+   <topic href="api/qdb_cell_length.html" title="qdb_cell_length"/>
+  </entry>
+  <entry keyword="printing">
+   <topic href="api/qdb_printmsg.html" title="qdb_printmsg"/>
+  </entry>
+  <entry keyword="rows in">
+   <topic href="api/qdb_rows.html" title="qdb_rows"/>
+  </entry>
+ </entry>
+ <entry keyword="ROLLBACK">
+  <topic href="sql/on_conflict.html" title="ON CONFLICT"/>
+ </entry>
+ <entry keyword="round()">
+  <topic href="sql/expressions.html#id19" title="Core Functions"/>
+ </entry>
+ <entry keyword="row ID">
+  <topic href="sql/autoinc.html" title="Row ID and Autoincrement"/>
+  <entry keyword="last">
+   <topic href="api/qdb_last_insert_rowid.html" title="qdb_last_insert_rowid"/>
+  </entry>
+ </entry>
+ <entry keyword="ROWID">
+  <topic href="sql/autoinc.html" title="Row ID and Autoincrement"/>
+ </entry>
+ <entry keyword="_ROWID_">
+  <topic href="sql/autoinc.html" title="Row ID and Autoincrement"/>
+ </entry>
+ <entry keyword="rows">
+  <entry keyword="affected by statement">
+   <topic href="api/qdb_rowchanges.html" title="qdb_rowchanges"/>
+  </entry>
+ </entry>
+ <entry keyword="rtrim()">
+  <topic href="sql/expressions.html#id19" title="Core Functions"/>
+ </entry>
+ <entry keyword="scalar">
+  <entry keyword="functions">
+   <topic href="writing_functions.html" title="Writing User-Defined Functions"/>
+  </entry>
+ </entry>
+ <entry keyword="schema">
+  <entry keyword="version">
+   <topic href="sql/pragma.html#schema_version" title="Schema and user version"/>
+  </entry>
+ </entry>
+ <entry keyword="schema files">
+  <topic href="starting.html#schema_files" title="Schema files"/>
+ </entry>
+ <entry keyword="SELECT">
+  <topic href="sql/select.html" title="SELECT"/>
+  <entry keyword="column">
+   <topic href="sql/expressions.html#id13" title="SELECT statements"/>
+  </entry>
+  <entry keyword="compound statements">
+   <topic href="sql/select.html#id17" title="Compund SELECT statements"/>
+  </entry>
+ </entry>
+ <entry keyword="SELECT statement">
+  <entry keyword="results">
+   <topic href="api/qdb_getresult.html" title="qdb_getresult"/>
+  </entry>
+ </entry>
+ <entry keyword="sequences">
+  <entry keyword="collation">
+   <topic href="datatypes.html#collation" title="User-defined collation sequences"/>
+  </entry>
+ </entry>
+ <entry keyword="server">
+  <entry keyword="example of how to disconnect">
+   <topic href="example.html#id10" title="Disconnecting from the Server"/>
+  </entry>
+ </entry>
+ <entry keyword="SHARED">
+  <entry keyword="lock">
+   <topic href="sql/transaction.html#id7" title="Locks"/>
+  </entry>
+ </entry>
+ <entry keyword="shared">
+  <entry keyword="cache">
+   <topic href="starting.html#63542" title="Shared caching"/>
+  </entry>
+ </entry>
+ <entry keyword="sharing">
+  <entry keyword="connections between clients">
+   <topic href="starting.html#connection_sharing" title="Sharing connections between clients"/>
+  </entry>
+ </entry>
+ <entry keyword="short">
+  <entry keyword="column names">
+   <topic href="sql/pragma.html#short_column_names" title="Short column names"/>
+  </entry>
+ </entry>
+ <entry keyword="size">
+  <entry keyword="page">
+   <topic href="sql/pragma.html#page_size" title="Page size"/>
+  </entry>
+ </entry>
+ <entry keyword="sorting">
+  <topic href="datatypes.html#id16" title="Sorting, grouping and compound SELECTs"/>
+ </entry>
+ <entry keyword="soundex()">
+  <topic href="sql/expressions.html#id19" title="Core Functions"/>
+ </entry>
+ <entry keyword="SQL">
+  <entry keyword="comments">
+   <topic href="sql/comments.html" title="Comment"/>
+  </entry>
+  <entry keyword="errors">
+   <topic href="api/qdb_geterrmsg.html" title="qdb_geterrmsg"/>
+  </entry>
+  <entry keyword="expressions">
+   <topic href="sql/expressions.html" title="expressions"/>
+  </entry>
+  <entry keyword="REPLACE">
+   <topic href="sql/replace.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="results, printing">
+   <topic href="api/qdb_printmsg.html" title="qdb_printmsg"/>
+  </entry>
+ </entry>
+ <entry keyword="SQL statement">
+  <entry keyword="running">
+   <topic href="api/qdb_statement.html" title="qdb_statement"/>
+  </entry>
+ </entry>
+ <entry keyword="SQLite C">
+  <topic href="writing_functions.html#id9" title="SQLite C/C++ API"/>
+ </entry>
+ <entry keyword="sqlite3_result_*">
+  <topic href="writing_functions.html#id11" title="sqlite3_result_*"/>
+ </entry>
+ <entry keyword="sqlite3_user_data">
+  <topic href="writing_functions.html#id15" title="sqlite3_user_data"/>
+ </entry>
+ <entry keyword="sqlite3_value_*">
+  <topic href="writing_functions.html#id13" title="sqlite3_value_*"/>
+ </entry>
+ <entry keyword="sqlite3_value_type()">
+  <topic href="writing_functions.html#id13" title="sqlite3_value_*"/>
+ </entry>
+ <entry keyword="sqlite_version()">
+  <topic href="sql/expressions.html#id19" title="Core Functions"/>
+ </entry>
+ <entry keyword="starting the QDB">
+  <topic href="starting.html#starting" title="Starting the QDB server"/>
+ </entry>
+ <entry keyword="statement (executing)">
+  <entry keyword="example">
+   <topic href="example.html#id4" title="Executing a Statement"/>
+  </entry>
+ </entry>
+ <entry keyword="statements">
+  <entry keyword="SELECT">
+   <topic href="sql/expressions.html#id13" title="SELECT statements"/>
+  </entry>
+ </entry>
+ <entry keyword="storage">
+  <entry keyword="classes">
+   <topic href="datatypes.html#id3" title="Storage classes"/>
+  </entry>
+ </entry>
+ <entry keyword="store">
+  <entry keyword="temp">
+   <topic href="sql/pragma.html#temp_store" title="Temp store"/>
+  </entry>
+ </entry>
+ <entry keyword="strings">
+  <entry keyword="formatting">
+   <topic href="api/qdb_mprintf.html" title="qdb_mprintf"/>
+   <topic href="api/qdb_snprintf.html" title="qdb_snprintf"/>
+   <topic href="api/qdb_vmprintf.html" title="qdb_vmprintf"/>
+  </entry>
+ </entry>
+ <entry keyword="substr()">
+  <topic href="sql/expressions.html#id19" title="Core Functions"/>
+ </entry>
+ <entry keyword="sum()">
+  <topic href="sql/expressions.html#id21" title="Aggregate Functions"/>
+ </entry>
+ <entry keyword="support">
+  <topic href="about.html#Support" title="Technical support"/>
+ </entry>
+ <entry keyword="synchronous">
+  <entry keyword="flag">
+   <topic href="sql/pragma.html#synchronous" title="Synchronous"/>
+  </entry>
+ </entry>
+ <entry keyword="system">
+  <entry keyword="objects">
+   <topic href="sql/keywords.html#id5" title="Special names"/>
+  </entry>
+ </entry>
+ <entry keyword="table">
+  <entry keyword="create">
+   <topic href="sql/create_table.html" title="CREATE TABLE"/>
+  </entry>
+  <entry keyword="drop">
+   <topic href="sql/drop_table.html" title="DROP TABLE"/>
+  </entry>
+ </entry>
+ <entry keyword="table info">
+  <topic href="sql/pragma.html#table_info" title="Table info"/>
+ </entry>
+ <entry keyword="tables">
+  <entry keyword="cleaning up">
+   <topic href="sql/vacuum.html" title="VACUUM"/>
+  </entry>
+ </entry>
+ <entry keyword="technical support">
+  <topic href="about.html#Support" title="Technical support"/>
+ </entry>
+ <entry keyword="temp">
+  <entry keyword="store">
+   <topic href="sql/pragma.html#temp_store" title="Temp store"/>
+  </entry>
+ </entry>
+ <entry keyword="temp_store parameter">
+  <topic href="sql/pragma.html#temp_store" title="Temp store"/>
+ </entry>
+ <entry keyword="temporary storage">
+  <entry keyword="filesystem">
+   <topic href="starting.html#temp_fs" title="Temporary storage filesystem"/>
+  </entry>
+ </entry>
+ <entry keyword="timeout">
+  <entry keyword="busy">
+   <topic href="starting.html#busy_timeout" title="Busy timeout"/>
+  </entry>
+  <entry keyword="setting for busy">
+   <topic href="api/qdb_setbusytimeout.html" title="qdb_setbusytimeout"/>
+  </entry>
+ </entry>
+ <entry keyword="total()">
+  <topic href="sql/expressions.html#id21" title="Aggregate Functions"/>
+ </entry>
+ <entry keyword="TRANSACTION">
+  <topic href="sql/transaction.html" title="TRANSACTION"/>
+ </entry>
+ <entry keyword="transaction">
+  <entry keyword="rolling back">
+   <topic href="api/qdb_rollback.html#id9" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="transaction state">
+  <entry keyword="getting">
+   <topic href="api/qdb_gettransstate.html" title="qdb_gettransstate"/>
+  </entry>
+ </entry>
+ <entry keyword="trigger">
+  <entry keyword="create">
+   <topic href="sql/create_trigger.html" title="CREATE TRIGGER"/>
+  </entry>
+  <entry keyword="drop">
+   <topic href="sql/drop_trigger.html" title="DROP TRIGGER"/>
+  </entry>
+ </entry>
+ <entry keyword="trim()">
+  <topic href="sql/expressions.html#id19" title="Core Functions"/>
+ </entry>
+ <entry keyword="typeof()">
+  <topic href="sql/expressions.html#id19" title="Core Functions"/>
+ </entry>
+ <entry keyword="typographical conventions">
+  <topic href="about.html#id3" title="Typographical conventions"/>
+ </entry>
+ <entry keyword="UNION">
+  <entry keyword="operator">
+   <topic href="sql/select.html#id17" title="Compund SELECT statements"/>
+  </entry>
+ </entry>
+ <entry keyword="UNION ALL">
+  <entry keyword="operator">
+   <topic href="sql/select.html#id17" title="Compund SELECT statements"/>
+  </entry>
+ </entry>
+ <entry keyword="UPDATE">
+  <topic href="sql/update.html" title="UPDATE"/>
+ </entry>
+ <entry keyword="upper(X)()">
+  <topic href="sql/expressions.html#id19" title="Core Functions"/>
+ </entry>
+ <entry keyword="user">
+  <entry keyword="collation routines">
+   <topic href="writing_functions.html#id5" title="User collation routines"/>
+  </entry>
+  <entry keyword="version">
+   <topic href="sql/pragma.html#schema_version" title="Schema and user version"/>
+  </entry>
+ </entry>
+ <entry keyword="user-defined functions">
+  <entry keyword="writing">
+   <topic href="writing_functions.html" title="Writing User-Defined Functions"/>
+  </entry>
+ </entry>
+ <entry keyword="VACUUM">
+  <topic href="sql/vacuum.html" title="VACUUM"/>
+ </entry>
+ <entry keyword="vacuum">
+  <topic href="starting.html#maintenance" title="Maintenance Commands"/>
+ </entry>
+ <entry keyword="vacuum">
+  <entry keyword="auto">
+   <topic href="sql/pragma.html#auto_vacuum" title="Auto vacuum"/>
+  </entry>
+ </entry>
+ <entry keyword="vacuuming">
+  <topic href="api/qdb_vacuum.html" title="qdb_vacuum"/>
+ </entry>
+ <entry keyword="values">
+  <entry keyword="literal">
+   <topic href="sql/expressions.html#literal_value" title="Literal values"/>
+  </entry>
+ </entry>
+ <entry keyword="verify">
+  <topic href="starting.html#maintenance" title="Maintenance Commands"/>
+ </entry>
+ <entry keyword="version">
+  <entry keyword="schema">
+   <topic href="sql/pragma.html#schema_version" title="Schema and user version"/>
+  </entry>
+  <entry keyword="user">
+   <topic href="sql/pragma.html#schema_version" title="Schema and user version"/>
+  </entry>
+ </entry>
+ <entry keyword="view">
+  <entry keyword="create">
+   <topic href="sql/create_view.html" title="CREATE VIEW"/>
+  </entry>
+  <entry keyword="drop">
+   <topic href="sql/drop_view.html" title="DROP VIEW"/>
+  </entry>
+ </entry>
+ <entry keyword="viewing">
+  <entry keyword="QDB-generated">
+   <topic href="opcode.html#id3" title="Viewing programs generated by QDB"/>
+  </entry>
+ </entry>
+ <entry keyword="virutal machine">
+  <entry keyword="opcodes">
+   <topic href="opcode.html" title="QDB Virtual Machine Opcodes"/>
+  </entry>
+ </entry>
+ <entry keyword="WHERE">
+  <entry keyword="clause">
+   <topic href="sql/select.html#id9" title="WHERE clause"/>
+  </entry>
+ </entry>
+</index>

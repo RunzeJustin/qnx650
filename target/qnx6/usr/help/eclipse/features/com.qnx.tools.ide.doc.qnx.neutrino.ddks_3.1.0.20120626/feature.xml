@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+	id="com.qnx.tools.ide.doc.qnx.neutrino.ddks"
+	label="%featureName"
+	version="3.1.0.20120626"
+	provider-name="%providerName"
+	plugin="com.qnx.tools.ide.doc.qnx.neutrino.ddks">
+
+	<description>
+		%description
+	</description>
+
+	<copyright>
+		%copyright
+	</copyright>
+
+	<license url="%licenseURL">
+		%license
+	</license>
+
+	<plugin
+		id="com.qnx.doc.ddk_en"
+		version="3.1.0.20120626"
+		download-size="0"
+		install-size="0"
+		unpack="true"/>
+	<plugin
+		id="com.qnx.doc.ddk_en_audio"
+		version="3.1.0.20120626"
+		download-size="0"
+		install-size="0"
+		unpack="true"/>
+	<plugin
+		id="com.qnx.doc.ddk_en_character"
+		version="3.1.0.20120626"
+		download-size="0"
+		install-size="0"
+		unpack="true"/>
+	<plugin
+		id="com.qnx.doc.ddk_en_graphics"
+		version="3.1.0.20120626"
+		download-size="0"
+		install-size="0"
+		unpack="true"/>
+	<plugin
+		id="com.qnx.doc.ddk_en_input"
+		version="3.1.0.20120626"
+		download-size="0"
+		install-size="0"
+		unpack="true"/>
+	<plugin
+		id="com.qnx.doc.ddk_en_usb"
+		version="3.1.0.20120626"
+		download-size="0"
+		install-size="0"
+		unpack="true"/>
+</feature>

@@ -1,0 +1,1623 @@
+QNX COMMERCIAL SOFTWARE LICENSE AGREEMENT
+
+The software and related documentation that you are about to access
+(the "Software", as further defined below) is offered by QNX Software
+Systems Co. ("QSS"), having offices at 175 Terence Matthews
+Crescent, Kanata, Ontario, Canada K2M 1W8 (ph: +1-613-591-0931,
+fax: +1-613-591-3579), for your use in accordance with the terms and
+conditions below.
+
+By answering "I ACCEPT" during the download, installation or activation
+of the Software, you represent that you have read, understood and
+agree to be bound by the terms and conditions of this QNX Commercial
+Software License Agreement, including (as applicable) Schedules A, B,
+and C (collectively, this "License" or "CSLA"). If you do not accept these
+terms and conditions then you are not granted a license and are not
+authorized to access, download, install or use the Software.
+
+
+TERMS AND CONDITIONS
+
+0.  BACKGROUND
+
+QSS has developed and licenses a general purpose real-time operating
+system known as the QNX (R) Neutrino (R) RTOS ("QNX Neutrino
+RTOS"). Its unique microkernel architecture provides an extensible
+operating system framework based on the foundational components of
+the Kernel and System Libraries. Additional operating system services
+are implemented by plugging in other software modules (e.g.,
+networking, file systems, graphics, etc.). These modules are licensed as
+part of the base "QNX Neutrino Core" runtime component. When
+modified or configured to operate on target hardware, the QNX Neutrino
+Core components provide a microkernel operating system with
+advanced memory protection, distributed processing, symmetric
+multiprocessing, a dynamically upgradeable architecture, and industry-leading
+real-time performance.
+
+Other more specialized QNX middleware products (e.g., QNX Aviage
+HMI Suite 2.0, QNX Aviage Multimedia Suite and QNX Aviage Acoustic
+Processing Kit; collectively, "QNX Middleware") are available as
+separately licensed products. For the purpose of this License, the QNX
+Neutrino Core components, and any runtime components of the QNX
+Middleware products that you have licensed, will be collectively referred
+to as the "QNX Runtime Components" (as further defined below).
+QSS also offers a related set of award winning software development
+tools known as the QNX (R) Momentics (R) Tool Suite ("QNX
+Momentics Tools"). Developers use the QNX Momentics Tools to modify
+and configure QNX Runtime Components and to develop applications to
+run on the QNX Neutrino RTOS. The QNX Momentics Tools include
+compilers, debuggers, libraries, header files, utilities, sample code, test
+suites, performance optimization tools, etc., within an integrated
+development environment based on the open Eclipse IDE framework.
+The QNX Middleware products may also come with supplementary
+development tool components, which for the purpose of this License will
+be considered part of the QNX Momentics Tools to the extent you have
+licensed those products. Collectively, the QNX Runtime Components
+and the QNX Momentics Tools are referred to as the "QNX Product
+Portfolio" throughout this License.
+
+More detailed QNX Product Portfolio information is available in the QNX
+License Guide published at http://licensing.qnx.com/license-guide/
+("License Guide", which is hereby incorporated into this License), a copy
+of which can be found in the file system installation of the Software. The
+License Guide provides important version-specific information about the
+nature and scope of license rights granted (or not granted) to you
+hereunder. For that reason the License Guide should be carefully
+reviewed. Please contact licensing@qnx.com if you have any questions.
+
+The QNX Momentics Tools and QNX Neutrino Core components
+(collectively, the "Software Development Platform" or "SDP") are initially
+delivered together and are licensed for development purposes under
+this License on either a named-user or floating-license basis. QNX
+Middleware products are delivered separately and are licensed for
+development purposes under this License (see Schedule B), on a
+project-wide basis. Development licenses for each component of the
+QNX Product Portfolio are available on either a perpetual (paid-up
+license) or time limited (subscription) basis. These and other important
+details about your license rights in the Software are specified in the
+"Development License Certificate(s)" that QSS sent you when you
+purchased your Software license(s). Your License Certificate(s) is an
+important document to define and authenticate your rights under this
+License. Please contact licensing@qnx.com if you have lost or
+misplaced it.
+
+QNX Neutrino RTOS developers typically use their QNX Momentics
+Tools and a subset of the QNX Runtime Components to build an
+embedded computing system or device ("Target System") by:
+(i)	developing the necessary code to make the QNX Neutrino
+	RTOS operational on the Target System (i.e., a board support
+	package ("BSP") comprising initial program load ("IPL"), start-up
+	and drivers - various parts of which may be available from QSS
+	in binary form for supported processors and peripherals or,
+	alternatively, which may be developed from scratch or derived
+	from QSS-supplied sample source code); and
+(ii)	integrating QNX Runtime Component object code programs,
+	libraries and utilities with files the developers have generated
+	using their QNX Momentics Tools in order to define the
+	system's operational constraints, to tailor its functionality and, if
+	equipped with a graphical user interface, to create its
+	appearance, in order to meet the Target System's design
+	requirements.
+
+Ultimately you will choose a subset of QNX Runtime Components
+("Runtime Configuration") to include in your Target System. Over the
+Target System's life cycle you may elect to upgrade hardware platforms
+(requiring a repetition of step (i) above) and/or update software
+components (e.g., to adopt QNX Runtime Component updates - see
+Schedule A, or to introduce new QNX Runtime Components) in order to
+enhance the Target System's reliability, performance and functionality.
+So it is possible that your Target System's Runtime Configuration may
+change over time.
+
+This License allows you to commercially develop Target Systems using
+the QNX Product Portfolio components you have licensed from QSS, as
+described in your License Certificate(s). It can also be used to distribute
+Runtime Configurations in or for your Target System (see Schedule C).
+You can invoke these optional distribution term and conditions by
+purchasing the appropriate Runtime License Certificates from QSS, or
+from an authorized QNX distributor. Each Runtime License Certificate
+expressly authorizes the distribution of a specified number of copies of a
+specified Runtime Configuration in or for Target Systems. Additional
+Runtime License Certificates can be purchased as required. Contact an
+authorized QNX sales representative for more information (see
+http://www.qnx.com/company/contact/).
+
+Certain components of the QNX Product Portfolio are available from
+QSS under the terms and conditions of the Apache License, Version 2.0
+("Apache License"), the Eclipse Public License, or other open source
+licenses. All of the open source components in the QNX Product
+Portfolio, and the licenses to which they are subject, are identified in the
+License Guide and the corresponding Third Party License Terms List
+available at http://licensing.qnx.com/third-party-terms/ ("Third Party
+Terms List", which is hereby incorporated into this License), a copy of
+which has also been included in the Software installation media. You will
+also find a separate file in the file system after installation of the
+Software that provides a binary-file-specific mapping of applicable open
+source license terms. This mapping file is still a work in progress and
+should not be relied upon at this stage as it is incomplete. Updated
+versions will be published as they become available. Contact
+licensing@qnx.com if you have questions or require additional
+information.
+
+
+1.  DEFINITIONS.
+
+"Commercially Released Software" means Software in binary form that
+	QSS has formally released together (or that QSS has verified as
+	compatible, as specified in Documentation) and has identified in
+	the License Guide as fully supported. It includes patch Updates
+	to such Software that are made available to you by QSS to
+	address errors: (i) pursuant to Section 15.4 (Remedy for Breach
+	of Limited Warranty of Performance) or during your subscription
+	to maintenance and support services pursuant to Schedule A
+	("Standard Support"), or (ii) pursuant to a Priority Support
+	Agreement or equivalent custom support engagement with
+	QSS.
+
+"Development License Certificate" means the original copy of a QSS-issued
+	document, provided to you by QSS or by one of its
+	authorized distributors, that: (i) describes the QNX Product
+	Portfolio components licensed to you for development purposes
+	under this License, (ii) identifies the term of this License, and
+	(iii) contains a specific "License Key" or "Floating License Key"
+	that unlocks those component(s) during installation on a
+	Development Seat. Development License Certificates may also
+	include additional terms and conditions, which are hereby
+	incorporated into this License, that are specific to its QNX
+	Product Portfolio components. Development License
+	Certificates may be provided in electronic form and will be
+	considered as part of the "Documentation" for the purpose of
+	this License.
+
+"Development Seat" means a named user's workstation (i.e., their
+	desktop, laptop and/or one other computer) used by that
+	developer to perform software development for Target Systems
+	using the QNX Momentics Tools. Named users are identified by
+	their email addresses.
+
+"Experimental Software" means all Software other than Commercially
+	Released Software, including but not limited to: (i) experimental,
+	alpha, beta, demo, trial, unsupported, or other components
+	made available to you on an early access basis as described in
+	Section 15.2 (Availability and Use of Experimental Software), at
+	the QNX developer portal hosted by QSS ("Foundry27"), as part
+	of the QNX Product Portfolio in components that are identified
+	as experimental, alpha, beta, demo, trial or unsupported
+	components in the License Guide, or otherwise so identified and
+	made available by QSS for use under this License; (ii)
+	deliverables made available to you by QSS for use under this
+	License pursuant to an Engineering Service Agreement or
+	equivalent custom engineering engagement; (iii) derivative
+	works you create or obtain from the QNX developer community,
+	whether from Foundry27 or otherwise; (iv) other software you
+	receive from third parties; or (v) combinations of Commercially
+	Released Software with other software components (including
+	but not limited to components from other versions or releases,
+	or components intended for use on other hardware platforms).
+
+"Licensee" (or "you") means the individual who or entity that accepted
+	and agreed to be bound by the terms and conditions of this
+	License.
+
+"Project" means a team of developers at one or more sites working
+	cooperatively to develop a single product, or a set of product
+	variants that: (i) use the same Runtime Configuration(s) and
+	substantially the same application software stack, and (ii) deliver
+	substantially the same end user feature set. A project for the
+	development of a standard platform will initially be considered a
+	single Project; however, each customer (internal or otherwise)
+	that adopts the platform for further development will be
+	considered a separate Project.
+
+"QNX Runtime Components" means components of the Software that
+	are intended to be integrated into and distributed as an integral
+	part of a Target System, as described in the License Guide or
+	the Documentation.
+
+"Software" means computer code (in whatever form), and its associated
+	developer documentation, reference specifications - e.g. POSIX,
+	read-me files, installation notes, and release notes that are
+	provided in or for the Software (separately referred to as
+	"Documentation"), included in any component of the QNX
+	Product Portfolio made available to you by QSS or an
+	authorized QNX	distributor, with a corresponding Development
+	License Certificate,  for use under this License. It includes: (i)
+	Software updates and patches made available to you pursuant
+	to Section 15.4 (Remedy for Breach of Limited Warranty of
+	Performance) or during your subscription to Standard Support,
+	(ii) Software patches made available to you by QSS for use
+	under this License pursuant to a Priority Support Agreement or
+	equivalent custom support engagement, (iii) experimental,
+	alpha, beta, demo, trial, unsupported or other components
+	made available to you by QSS on an early access basis as
+	described in Section 15.2 (Availability and Use of Experimental
+	Software), at Foundry27, as part of the QNX Product Portfolio in
+	components that are identified as experimental, alpha, beta,
+	demo, trial or unsupported components in the License Guide, or
+	otherwise so identified and made available by QSS for use
+	under this License, (iv) deliverables made available to you by
+	QSS for use under this License pursuant to an Engineering
+	Service Agreement or equivalent custom engineering
+	engagement, and (v) any QSS-specific Improvements, if any, as
+	defined in Section 11 (Feedback).
+
+"Target System" means any hardware or software product for
+	embedded devices into which QNX Runtime Components have
+	been wholly or partially integrated that: (i) significantly enhances
+	the function and value of the Software, and (ii) has substantially
+	different principal purposes than those of the Software and of
+	other components of the QNX Product Portfolio.
+
+"Update" means new versions of Software components that provide
+	error orrections ("Patch Releases"), functional enhancements
+	and/or erformance improvements, and are included in QSS-issued
+	update, maintenance, service pack or patch releases to
+	Commercially Released Software. Updates do not include any:
+	(i) major Software releases (e.g., QNX 4 to QNX 6); (ii)
+	unlicensed QNX Product Portfolio components or technologies
+	(e.g., use of Experimental Software versions will not entitle you
+	to subsequently adopt corresponding Commercially Released
+	Software versions if you have not paid the associated
+	commercial development license fees (if any)); (iii) new software
+	features that are only offered by QSS as extra-cost
+	development or runtime distribution option (e.g., as extra-cost
+	options to licensed Software, or as a separate royalty-bearing
+	QNX Runtime Components); or (iv) features that were formerly
+	offered by QSS in separate royalty-bearing QNX Runtime
+	Components but that are now bundled into a single QNX
+	Runtime Component that has a greater list price.
+
+
+2.  DEVELOPMENT LICENSE GRANT AND CONSIDERATION.  Subject to your
+payment when due of all applicable license fees
+(including but not limited to renewal fees for any subscription-based
+licenses) specified on QSS's (or its distributor's) invoice for the QNX
+Product Portfolio component development license(s) you have
+purchased ("Invoice", which is hereby incorporated into this License),
+and subject to the terms and conditions of this License, QSS hereby
+grants to Licensee (you) a limited, non-exclusive, personal,
+non-sublicensable and non-transferable (except as contemplated in Section
+22 (Assignment)) license for the specific activities and purposes
+authorized in Sections 3 (Authorized Development Activities) and 4
+(Authorized Purposes) below:
+
+2.1	under copyrights owned or sub-licensable by QSS, to copy the
+	Software and to create derivative works of the Software made
+	available by to you by QSS in source code form ("Source
+	Code"), and, subject to the requirements of Section 4.2, to
+	distribute such derivative works to third parties; and
+
+2.2	under patent claims owned or sub-licensable by QSS, and that
+	are embodied in the Software as delivered by QSS, to make
+	and use the Software and derivative works of the Source Code,
+	and, subject to the requirements of Section 4.2, to distribute
+	derivative works of the Source Code to third parties.
+
+Certain features of the Software may require additional patent or
+copyright rights not included in this License. For Commercially Released
+Software such cases are noted in the License Guide, and include
+features of the optional QNX Middleware Products and features
+obtained from other software vendors or hardware vendors. QSS only
+licenses you the patent and copyright rights that it owns or that it can
+sublicense under the terms and conditions of this License without
+payment of additional royalties. It is Licensee's (your) responsibility to
+identify and secure any other license rights necessary to make, use,
+import or sell any product or system that contains or uses any Software
+that QSS has identified as requiring additional patent or copyright rights.
+
+
+3.  AUTHORIZED DEVELOPMENT ACTIVITIES.  The Software is
+licensed only for the specific development activities below when used for
+purposes listed in Section 4 (Authorized Purposes):
+
+3.1	installing the Software on and following normal backup and
+	archiving practices for one developer's Development Seat per
+	License Key. If you have licensed one or more Floating License
+	Keys then you are authorized to install the Software on multiple
+	Development Seats within a single business division, provided
+	that each Floating License Key is only used by one developer at
+	a time. You will be required to use Floating License Key
+	management software (supplied by QSS) for host development
+	platforms for which such software is available. If your Floating
+	License Key was originally issued for QNX Product Portfolio
+	components released prior to Version 6.5 (June, 2010), and you
+	are entering into this License in order to update your Software,
+	you may elect to adopt the Floating License Key terms and
+	conditions of this License in place of your original QNX
+	development license terms and conditions, provided and for so
+	long as you pay to QSS annual  Standard Support fees at the
+	rate that applies to Development Seats for the current version of
+	the Software with Floating License Keys; and
+
+3.2	using the Software on an authorized Development Seat in order
+	to create, compile, link, install and use QNX Runtime
+	Components, derivative works of Source Code, and new or
+	existing applications or modules; and
+
+3.3	installing and using QNX Runtime Components, or software
+	created pursuant to Section 3.2, on up to five (5) Target
+	Systems per License Key or Floating License Key in order to
+	develop, test, maintain or demonstrate Target Systems.
+	Additional QNX	Runtime Component licenses for Target
+	Systems may be obtained from QSS or its authorized
+	distributors pursuant to the terms and conditions of Schedule C
+	by purchasing the required Runtime License Certificate(s).
+
+
+4.  AUTHORIZED PURPOSES.  The Software is licensed only for the
+specific purposes below:
+
+4.1	using the Software to develop, test and maintain Target
+	Systems or applications or modules that extend the QNX
+	Product Portfolio components that you have licensed. This
+	includes determining the suitability of QNX Runtime
+	Components for use in Target Systems; conducting exploratory
+	development or proof-of-concept prototyping of Target Systems;
+	extending hardware or peripheral support for QNX Runtime
+	Components; developing new applications for or porting existing
+	applications to the QNX Neutrino RTOS or QNX Momentics
+	Tools; participating in projects at Foundry27; and demonstrating
+	and promoting your Target Systems to others, provided that you
+	do not leave copies with third parties. It does not include your
+	use of the Software in a Target System as an end user (QNX
+	Runtime Component licenses for Target Systems may be
+	obtained from QSS or its authorized distributors pursuant to the
+	terms and conditions of Schedule C by purchasing the required
+	Runtime License Certificate(s)); and
+
+4.2	distributing your derivative works of QNX Runtime Components
+	In any form to third parties at Foundry27 for the sole purpose of
+	enabling other Foundry27 members to adopt your modifications,
+	provided that you license your derivative works free of charge,
+	under terms and conditions consistent with this License, and
+	exclusively for use in substitution for a corresponding number of
+	QSS-licensed copies of the unmodified QNX Runtime
+	Components. This includes but is not limited to disclosing or
+	distributing your derivative works of any confidential Source
+	Code only under confidentiality terms and conditions that are at
+	least as protective of the underlying Source Code as the terms
+	and conditions of this License. FOR GREATER CERTAINTY,
+	THIS LICENSE DOES NOT AUTHORIZE YOU
+	TO DISTRIBUTE ANY PART OF THE QNX
+	PRODUCT PORTFOLIO, OR ANY QNX RUNTIME
+	COMPONENTS THEREOF, AS PART OF YOUR
+	DERIVATIVE WORKS (EXCEPT TO THE EXTENT
+	THAT QSS OR ITS CONTRIBUTORS HAVE
+	EXPRESSLY LICENSED THAT PORTION OF THE
+	SOFTWARE TO YOU UNDER AN OPEN SOURCE
+	LICENSE) UNLESS YOUR LICENSEE ALREADY
+	HAS ITS OWN LICENSE FOR THE UNDERLYING
+	SOFTWARE FROM QSS FOR EACH COPY TO BE
+	SUBSTITUTED. QNX Runtime Component licenses for
+	Software underlying your derivative works may be obtained from
+	QSS or its authorized distributors pursuant to the terms and
+	conditions of Schedule C by purchasing the required Runtime
+	License Certificate(s); and
+
+4.3	using the Software to work with other authorized and licensed
+	QNX Product Portfolio developers to facilitate teamwork in
+	academic development labs or in group projects, including
+	community projects at Foundry27; and
+
+4.4	using the Software to undertake other activities authorized by
+	QSS in writing through Foundry27, at
+	http://licensing.qnx.com/csla-faq/ or by email from
+	licensing@qnx.com.
+
+ANY COMPONENTS OF QNX MIDDLEWARE
+PRODUCTS THAT ARE MADE AVAILABLE TO
+YOU AT FOUNDRY27 ARE ONLY AUTHORIZED
+FOR USE UNDER THE HYBRID SOFTWARE
+MODEL FOR NON-COMMERCIAL PURPOSES
+UNLESS YOU HAVE OR UNTIL YOU OBTAIN
+THE APPROPRIATE COMMERCIAL LICENSE(S)
+(SEE SCHEDULE A BELOW).
+
+
+5.  DEPLOYMENT OF SOFTWARE AND AUDITS OF SOFTWARE USE.
+
+5.1	You may deploy the Software to your developers (including to
+	employees of your contractors), who have been assigned
+	Development Seats (and License Keys or Floating License
+	Keys) but only to the extent and for so long as they provide
+	software development services on your behalf. You may also
+	re-deploy that Software from one developer to another as
+	developers and projects change within your organization. In
+	either case you (Licensee) always remain responsible to QSS
+	for the full performance of the terms and conditions of this
+	License, including but not limited to limiting the number of
+	copies installed and used per License Key (or Floating License
+	Key) pursuant to Section 3 (Authorized Development Activities).
+	If a developer's Development Seat (and License Key) is re-deployed
+	pursuant to this Section, then thereafter the re-deployed
+	Development Seat (and License Key) or any other
+	Development Seat (and License Key) you have
+	licensed may not be re-deployed to such former licensed
+	developer for a period of six (6) months.
+
+5.2	In order to install and/or activate the Software certain
+	machine-specific information as well as the licensed developer's email
+	address ("Licensed User Information") is sent to QSS at the time
+	of activation and/or periodically thereafter. This Licensed User
+	Information may include but is not limited to software
+	Identification numbers, MAC addresses, UUIDs, IP addresses,
+	Identification numbers set by manufacturers of your hardware
+	and/or identification numbers related to your host operating
+	system. Except for the licensed developer's email address, QSS does
+	not collect any personally identifiable information during
+	activation. QSS may collect Licensed User Information at any
+	time and may use Licensed User Information for the purposes of
+	verifying compliance with the terms and conditions of this
+	License, enforcing any reporting or audit-related provisions in
+	this License (including but not limited to those in Sections 5.3
+	and 5.4), and verifying compliance with the terms and conditions
+	of any other agreements between you and QSS relating to
+	software provided by QSS, but QSS will otherwise treat such
+	Licensed User Information as your Confidential Information
+	pursuant to Section 14 (Confidential Information).
+
+5.3	QSS may require you from time to time, upon at least thirty (30)
+	days written notice, to provide a written report, that includes: (i)
+	the email address of the current named user for each
+	Development Seat; (ii) the physical and computer address(es)
+	where the Software is or has been deployed; (iii) a description of
+	the Software, the version, projects and number of licenses for
+	which updates have been applied; (iv) certification that the
+	components of the QNX Product Portfolio you have licensed
+	have been installed and used (or used concurrently in the case
+	of Floating License Keys) only on the authorized number of
+	Development Seats and Target Systems, and have been used
+	only for authorized projects and by licensed divisions; (v)
+	certification that Updates have only been used on Development
+	Seats in accordance with Standard Support entitlements, and
+	(vi) confirmation that Software copies have been destroyed in
+	accordance with Section 18.3 (Implications of Termination) upon
+	the expiration or termination of any of your license rights, or in
+	accordance with Section 5.1 upon re-deployment of that
+	Software. You (or an authorized signatory if you are a legal
+	entity) agree to sign the reports to confirm their completeness
+	and accuracy. QSS may also require you (or an authorized
+	signatory if you are a legal entity) to complete and return a
+	compliance certificate on an annual basis.
+
+5.4	You will maintain for a period of six (6) years after the end of the
+	year to which they relate, accurate records regarding all
+	activities relating to this License. QSS reserves the right to audit
+	your books and records (or have an independent third party
+	audit), upon at least twenty (20) days prior written notice and at
+	its expense, to determine your compliance with the terms and
+	conditions of this License, including but not limited to the
+	information called for in Section 5.3 (i)-(iv), and in Section B-4
+	and C-12 of the Schedules. The audit will be conducted under
+	the confidentiality provisions of Section 14 (Confidential
+	Information).
+
+5.5	Audits will not occur and reports will not be requested more than
+	once each year unless discrepancies are discovered or unless
+	QSS presents reasonable evidence (including but not limited to
+	evidence based on Licensed User Information or based on the
+	response or a non-response to the requirement set forth under
+	Section 5.3) that you are not complying with the terms and
+	conditions of this License. If an audit or report reveals use of the
+	Software by you outside the terms and conditions of this
+	License, you agree to correct any payment errors immediately
+	by an adjustment payment, which will include interest on the
+	overdue amount at a rate equal to fifteen percent (15%) per
+	annum compounded monthly or the highest rate permitted by
+	law, whichever is lower, of the outstanding payment from the
+	date due until the date paid.  You will also reimburse QSS for all
+	reasonable costs and expenses related to such audit or report,
+	in addition to any other liabilities you may incur as a result of
+	such non-compliance.
+
+
+6.  MARKING OF SOFTWARE AND DERIVATIVE WORKS.  You must
+document Software source code to identify and date any changes you
+make to the Software to create your derivative works. You must include
+in the source code, and in any notice in an executable version or related
+documentation in which you describe the origin or ownership of your
+software, a prominent statement that your work is derived, directly or
+indirectly, from software provided by QSS. You may not remove from
+the Software source code any previous copyright, patent, trademark,
+licensing, or other attribution notices placed there by QSS or other
+contributors to that Software.
+
+
+7.  PROHIBITED ACTIVITIES.  You may not and will not authorize
+others to:
+
+7.1	Decompile, disassemble, decrypt, extract, unbundle, translate,
+	or otherwise attempt or assist others to reverse engineer any
+	part of the Software except as permitted by an open source
+	license applying to a specific part of the Software, or except to
+	the extent that QSS is expressly precluded by law from
+	prohibiting these activities. Except for published source code
+	files that are expressly identified by QSS as open source
+	software, the Software IS NOT OPEN SOURCE; or
+
+7.2	Alter, remove, or cover any trademark, logo, proprietary or
+	licensing notices, labels, or marks in or on any part of the
+	Software. You agree to exercise reasonable efforts to ensure
+	that all whole or partial copies of the Software bear the same
+	notices, labels, and marks contained in or on the original
+	Software; or
+
+7.3	Allow shared use of: (i) Software on Development Seats, (ii)
+	License Keys or Floating License Keys (except as expressly
+	allowed in Section 3.1), or (iii) Standard Support services or
+	entitlements, including but not limited to sharing Updates with
+	developers who are using Development Seats for which the
+	required Standard Support fees have not been paid; or
+
+7.4	Disclose or distribute Development License Certificates,
+	Runtime License Certificates, License Keys or Floating License
+	Keys to any others (except as expressly allowed in Sections 3.1
+	and 5.1), use unauthorized License Keys or Floating License
+	Keys, or circumvent the key activation or key management
+	Mechanisms contained in the Software or at Foundry27. You
+	agree to treat License Keys and Floating License Keys as QSS
+	Confidential Information pursuant to Section 14 (Confidential
+	Information); or
+
+7.5	Directly or indirectly export, import, or transmit the Software to
+	any country in contravention of the laws of that country, or the
+	laws of Canada or the United States. Without restricting the
+	foregoing, you may not download or transfer the Software to: (i)
+	any country prohibited by United States and/or Canadian laws
+	and regulations;  (ii) any person or entity prohibited from
+	receiving United States and/or Canadian exports (including but
+	not limited to those involved with missile technology or nuclear,
+	chemical or biological weapons and those on US government
+	restricted persons/entities lists - see
+	http://www.bis.doc.gov/complianceandenforcement/liststocheck.htm);
+	or (iii) any country which requires an import or use permit for
+	encryption technology. You (Licensee) represent and warrant to
+	QSS that you are not in or a resident of one of the restricted
+	countries, and that you are not one of the restricted individuals or
+	entities referred to above. You understand that the import or export
+	of the Software may be regulated by some governments due to the
+	Software's encryption capabilities. You accept sole responsibility to
+	ensure that your use of the Software complies with the law; or
+
+7.6	Use the Software in any application in which death, personal injury,
+	or severe physical or property damage is a foreseeable
+	consequence of Software use or failure (collectively, "High-Risk
+	Applications") including but not limited to the operation of nuclear
+	facilities, mass transit systems, aircraft navigation, flight control
+	or communications systems, air traffic control systems, weapon
+	systems, and life-support machines. QSS EXPRESSLY DISCLAIMS
+	ANY EXPRESS OR IMPLIED WARRANTY OR
+	CONDITION OF FITNESS FOR HIGH-RISK
+	APPLICATIONS; or
+
+7.7	Use the Software to pursue any formal qualification, certification,
+	or designation for the Software unless it is for a specific end user
+	device or unless QSS has provided its express written consent.
+
+
+8.  PRESERVATION OF RIGHTS.  You agree not to directly or indirectly
+grant, or purport to grant, to any third party any rights or immunities under
+QSS's or its licensors' intellectual property rights in the Software that will
+subject such intellectual property to an open source license or scheme in
+which there is or could be interpreted to be a requirement that as a condition
+of use, modification and/or distribution, the Software be: (i) disclosed or
+distributed in source code form; (ii) licensed for the purpose of making
+derivative works; or (iii) redistributable at no charge.
+
+
+9.  THIRD PARTY SOFTWARE.  Components of the QNX Product Portfolio
+contain elements of third-party software that are licensed to QSS (and are
+therefore provided to you) for limited purposes and under terms and
+conditions that differ from those of this License. Such licenses include but
+are not limited to:
+
+	(i)   the Eclipse Public License ("EPL"), GNU Public License ("GPL"),
+	Lesser GNU Public License ("LGPL"), Mozilla Public License
+	("MPL"), and other open source licenses;
+	(ii)  third party licenses that impose restrictions on use, copying,
+	authorized purposes, etc. and/or supplemental obligations.
+	Examples of affected products include but are not limited to: board
+	support packages or individual device drivers that are limited to use
+	with specific hardware manufacturers' products, and components of
+	the QNX Aviage HMI Suite 2.0 and of the QNX Aviage Multimedia
+	Suite; and/or
+	(iii)  third party licenses that impose restrictions that limit use
+	of the Software to use solely for demonstration and internal
+	evaluation/trial purposes.
+
+Those third party license terms, and any notices required to be provided by
+those third party licensors, are set out for: (1) Commercially Released
+Software in the License Guide and the corresponding Third Party Terms
+List, and (2) Experimental Software at the applicable download site, in or
+with the agreement it was provided under, or in the corresponding source
+code. You are solely responsible for ensuring that limited-use software is not
+used outside of the limits stated. Updated License Guides and Third Party
+Terms List may be issued for each new version of the Software. You are
+solely responsible for reviewing and complying with new versions if you
+adopt Software updates. You are also responsible for reviewing the source
+code and corresponding documentation for any third party derivative works
+of QNX Runtime Components that you elect to adopt in substitution for
+unmodified QSS-licensed copies (see Section 4.2) for any supplementary
+terms and conditions that apply to the third party's modifications to the
+underlying Software). You acknowledge and agree that QSS can disclose to
+its third party licensors that you have received a copy of their technology.
+
+
+10.  OWNERSHIP AND RESERVATION OF RIGHTS. The Software is
+protected by intellectual property laws including but not limited to copyright
+laws, both locally and internationally. The Software is licensed to you on the
+terms and conditions set forth in this License and is not sold. QSS and its
+licensors retain all rights, title and interests in and to the Software
+(including but not limited to any elements of the Software embodied in
+derivative works you create) and reserve all rights in the Software not
+expressly licensed by this License including but not limited to copyrights
+and patent rights. Subject to all underlying rights of QSS and its licensors
+in the Software, and to the terms and conditions of this License, all other
+rights, title and interests in and to any derivative works of the Software
+and other application software that you may develop pursuant to this License
+will be retained by you. No trademarks or service marks of QSS or its
+licensors are licensed by this License, and you understand and agree that
+QSS trademarks or service mark may not be applied to your goods or services
+without the express written permission of QSS.
+
+
+11.  FEEDBACK. QSS welcomes suggestions, comments or other feedback
+about its products (e.g., regarding their utility, reliability, or
+performance) and your user experience with the Software, as well as any
+bug-fixes, features, functionality or enhancements you would like to see in
+future versions (collectively "Feedback"). You agree that all Feedback is and
+will be given entirely voluntarily and, even if designated as confidential,
+will not create any confidentiality obligations for QSS. You agree not to:
+(i) provide any Feedback that you know or have reason to believe is subject
+to any third party intellectual property rights or would disclose third party
+confidential information, or (ii) disclose to QSS as Feedback any of your
+intellectual property rights or confidential information you intend to keep
+or license to QSS. In the absence of a separate written agreement between the
+parties, and in order for QSS to incorporate Feedback that you provide, you
+(Licensee) hereby agree to: (A) assign (and do hereby assign) to QSS all
+rights, title and interests (if any) in and to any QSS-specific Improvements
+(as defined below) included in or derived by or on behalf of QSS from your
+Feedback, including but not limited to any associated intellectual property,
+and (B) obtain (or confirm you have obtained) written waivers of all moral
+rights (if any) in such QSS-specific Improvements in favor of QSS, its
+licensees, licensors, successor and assigns. In this Section "QSS-specific
+Improvements" means any work-arounds, bug-fixes, features, functionality,
+enhancements or other suggested improvements to the Software, or to other
+QNX Product Portfolio components, that you provide.
+
+
+12.  U.S. GOVERNMENT RIGHTS. If you are a U.S. government or
+quasi-government entity, then you should be aware that the Software is a
+"commercial item", as that term is defined in 48 C.F.R. 2.101 (Oct. 1995),
+consisting of "commercial computer software" and "commercial computer
+software documentation", as such terms are used in 48 C.F.R. 12.1212
+(Sept. 1995). Consistent with 48 C.F.R. 12.1212 and 48 C.F.R. 227.7202-1
+through 227.7202-4 (June 1995), all such customers acquire the Software
+with only those rights set forth herein. Use, duplication, or disclosure by
+the U.S. government is subject to restrictions as provided in DFARS 227.7202-
+1(a) and 227.7202-3(a) (1995), DFARS 252.227-7013 (c)(1)(ii) (OCT 1988),
+FAR 12.212(a)(1995), FAR 52.227-19, or FAR 52.227-14 (ALT III), as
+applicable. QNX Software Systems Co. is the licensor.
+
+
+13.  SUPPORT. Support from QSS is available at extra cost under the terms
+and conditions of Schedule A (Standard Support) or pursuant to a separate
+Priority Support Agreement with QSS (see
+http://licensing.qnx.com/services/).
+
+
+14.  CONFIDENTIAL INFORMATION.
+
+14.1	"Confidential Information" means any information disclosed by one
+	party ("Discloser") to the other party ("Recipient"), for the purpose
+	of performing obligations or exercising rights under this License (the
+	"Purpose"), in a document or file clearly marked "Confidential" (or
+	equivalent) or otherwise in any manner or form, provided it is clearly
+	identified at disclosure as confidential and, within thirty (30) days
+	of disclosure, is summarized and delivered to Recipient in a document
+	marked "Confidential" (or equivalent). Confidential Information does
+	not include information: (i) available to the public other than by
+	reason of Recipient's breach of this License; (ii) rightfully received
+	by Recipient from a third party without disclosure or use
+	restrictions; (iii) independently developed by or on behalf of
+	Recipient without access to Discloser's Confidential Information;
+	(iv) previously known to Recipient other than by reason of a prior
+	confidential disclosure by or on behalf of Discloser; or (v)
+	hereinafter disclosed by Discloser to a third party without
+	disclosure restrictions.
+
+14.2	CONFIDENTIAL SOFTWARE. QSS hereby declares, and you
+	(Licensee) agree, that unless or until the Software has been
+	disclosed in source code at a public page of the Foundry27 web site
+	at http://community.qnx.com, or otherwise falls within one or more of
+	the exceptions in Section 14.1(i)-(vi), the Software source code will
+	be deemed to be Confidential Information of QSS and may not be
+	disclosed to any third party except as expressly authorized herein.
+
+14.3	USE AND DISCLOSURE RESTRICTIONS. Recipient will: (i) use
+	Discloser's Confidential Information only as necessary to achieve
+	the Purpose; and (ii) disclose Discloser's Confidential Information
+	only to persons who have a need to know to achieve the Purpose,
+	and who are employees of Recipient, or of Recipient's affiliates, or
+	of Recipient's or Recipient's affiliates' consultants or professional
+	advisors, provided that all such recipients are bound by law or are
+	subject to agreements that provide obligations at least as protective
+	of the Confidential Information as the provisions of this Section 14.
+	In the event Recipient is required to disclose Confidential
+	Information in connection with any legal, judicial or administrative
+	proceedings or government investigation or otherwise required by
+	law, then Recipient will promptly notify Discloser and allow a
+	reasonable time for Discloser to seek a protective or other court or
+	administrative order from the appropriate court or government
+	agency. Thereafter, such information may be disclosed to the extent
+	required by law and subject to any protective order or other court or
+	administrative order which may then apply.
+
+14.4	RECIPIENT'S DUTY OF CARE. Recipient will protect Discloser's
+	Confidential Information by using the same degree of care as
+	Recipient uses to protect its own confidential information of like
+	nature, but no less than reasonable care, to prevent the
+	unauthorized dissemination or publication and unauthorized use of
+	the Confidential Information. Recipient will only make copies of the
+	Confidential Information as necessary to achieve the Purpose.
+	Recipient will reproduce Discloser's proprietary rights notices on all
+	copies in the same manner in which such notices were set forth in or
+	on the original. The mingling of Confidential Information with
+	information that falls within one or more of the exceptions in this
+	Section 14 will not impair the status of, or the obligations of
+	confidence and non-use respecting, the confidential parts.
+
+14.5	DURATION OF OBLIGATIONS. Each Recipient's duty to protect
+	Confidential Information disclosed to it will survive termination of
+	this License but will end (except in the case of Software source code
+	for which Recipient's duty to protect is perpetual) on the third
+	anniversary of the date of termination of this License. All
+	Confidential Information furnished by Discloser to Recipient, and all
+	copies thereof, which are in the possession or control of Recipient or
+	anyone to whom it has disclosed such Confidential Information will
+	be and remain the property of Discloser and will be promptly
+	returned to Discloser or destroyed on termination of this License.
+	Recipient may retain one copy of Discloser's Confidential
+	Information in the confidential, restricted access files of its Legal
+	department for use only to prove compliance with the terms and
+	conditions of this License. This Section 14 will survive termination
+	of the License.
+
+
+15.  LIMITED WARRANTIES.
+
+15.1	BACKGROUND. The QNX Runtime Components comprise parts of
+	a general purpose modular real-time operating system. You will
+	select a subset of these modules for use in a unique hardware and
+	software environment to implement certain desired functionality and
+	performance. Ultimately, you may find that you cannot achieve your
+	desired results. While QSS is committed to providing a versatile and
+	reliable product, it does not warrant that the Software will function
+	in accordance with its documentation in every combination of
+	hardware platform, software environment and software
+	configuration. You acknowledge that errors are likely to be
+	encountered when the Software is used in your particular
+	application. You therefore accept responsibility for satisfying
+	yourself that the Software is suitable for your intended use. This
+	includes conducting rigorous testing of the Software, in combination
+	with your derivative works and value-added software application(s),
+	on your target hardware platform prior to its initial release and
+	prior to the release of any related software or hardware modifications
+	or enhancements. QSS offers Standard Support, custom support plans
+	and custom engineering services , subject to separate agreements,
+	to help developers identify and solve particular Software
+	implementation and integration issues.
+
+15.2	AVAILABILITY AND USE OF EXPERIMENTAL SOFTWARE. QSS
+	makes both Commercially Released Software and Experimental
+	Software available to you primarily at the "myQNX.com" download
+	center and/or at the Foundry27 web site (although other delivery
+	mechanisms may be used from time to time). The myQNX.com
+	download center is QSS's on-line source for Commercially Released
+	Software updates. Foundry27 is where QSS and other Foundry27
+	project leads post their Experimental Software, and where the QNX
+	developer community shares other useful code.
+
+	For example, QSS-led projects on Foundry27 post experimental,
+	alpha and beta milestone builds for components that will be included
+	in upcoming commercial releases; whereas, Software updates that
+	include the commercially released versions of the Project's
+	components are made available from the myQNX.com download
+	center. Experimental Software from QSS, including but not limited to
+	unsupported BSPs, drivers and sample source code, as well as trial
+	tool and runtime components, are usually made available on
+	Foundry27. However, if third-party distribution restrictions prohibit
+	such postings, then QSS may have to offer certain Experimental
+	Software as myQNX downloads. You acknowledge that you must
+	always review associated release notes and download site warnings
+	to confirm the release status of Foundry27 and myQNX.com
+	downloads.
+
+	QSS offers you access to experimental milestone builds in order to
+	give QNX developers the earliest possible access to the latest QNX
+	Product Portfolio technology and bug-fixes. Other Experimental
+	Software is offered as a means of accelerating your development by
+	leveraging source or binary code that has been written by others.
+	Many developers will migrate during their development cycle from
+	QSS's Experimental Software releases to corresponding
+	Commercial Released Software as it becomes available. Others
+	may decide to ship Experimental Software, after thoroughly testing
+	the stability of such code and/or assessing the maturity of any
+	milestone builds.
+
+	EXPERIMENTAL SOFTWARE MAY HAVE
+	KNOWN DEFICIENCIES, MAY NOT HAVE
+	BEEN FULLY OPTIMIZED AND TESTED,
+	MAY NOT BE SUPPORTED BY QSS AND
+	MAY BE UNRELIABLE. EXPERIMENTAL
+	SOFTWARE IS MADE AVAILABLE TO YOU
+	BY STRICTLY ON AN "AS IS" BASIS, WITHOUT
+	WARRANTIES OR CONDITIONS OF ANY
+	KIND. IN NO EVENT WILL QSS (OR ITS
+	LICENSORS) BE LIABLE UNDER ANY
+	CAUSE OF ACTION WHATSOEVER FOR
+	DAMAGES RESULTING FROM THE USE OF
+	OR INABILITY TO USE ANY EXPERIMENTAL
+	SOFTWARE.
+
+	Starting with version 6.4 of the Software, QSS now provides the
+	ability (as described in Documentation) to confirm whether your binary
+	files are Commercially Released Software or Experimental Software
+	(which includes any binary files that you compiled from QSS-supplied
+	source code). This information will help you assess the suitability of
+	any code you are considering for use in your project.
+
+15.3	LIMITED WARRANTY OF PERFORMANCE FOR COMMERCIALLY
+	RELEASED SOFTWARE.  QSS warrants to you for a period of ninety (90)
+	days from the date of the initial Invoice issued to you for the QNX
+	Momentics Tools or for the particular QNX Runtime Component, as the
+	case may be, that the Commercially Released Software therein will be
+	Error Free. "Error Free" means that the Software, when used in
+	accordance with the associated Documentation on one or more of the
+	applicable "Reference Platforms" identified in the License Guide,
+	materially behaves the way the Documentation says it should. Software
+	will be presumed to be Error Free unless the error or problem can be
+	reproduced on a Reference Platform and the error or problem does not
+	result from modifications to, or incorrect or improper use of, the
+	Software.
+
+15.4	REMEDY FOR BREACH OF LIMITED WARRANTY OF PERFORMANCE.
+	Your sole remedy and QSS's sole obligation for any breach of the
+	warranty of Section 15.3 (Limited Warranty of Performance for
+	Commercially Released Software) will be, at QSS's option, either:
+	(i) to provide you with a free explanation, workaround, patch or
+	update that allows the Software to be used Error Free; or (ii) to
+	terminate this License pursuant to Section 18 (Term, Subscription
+	Renewal & Termination) and, upon confirmation that you have complied
+	with your obligations under this License, to provide you with a refund
+	of the license fees (if any) that you paid to QSS pursuant to this
+	License.
+
+15.5	MEDIA WARRANTY AND REMEDY. QSS warrants to you for a period of
+	ninety (90) days from the date of the initial Invoice issued to you
+	for the QNX Momentics Tools or for the particular QNX Runtime
+	Component, as the case may be, that any tangible media that QSS used
+	to deliver the Software will be free from defects in material and
+	workmanship under normal use. QSS is not responsible for media defects
+	that result from accident or abuse. Your sole remedy for any breach of
+	this media warranty will be to receive replacement media.
+
+15.6	LIMITED WARRANTY OF PROVENANCE, INDEMNITY, AND
+	EXCLUSIONS FROM INDEMNITY. Subject to the exceptions noted
+	below, or in Sections 9 (Third Party Software) or 17 (Multimedia
+	Content), QSS warrants to you that: (i) QSS is the author of the
+	Commercially Released Software (or has a license from the author) and
+	has the right to deliver the Commercially Released Software to you,
+	and (ii) as delivered, the Commercially Released Software is not known
+	to infringe any third party intellectual property rights.
+
+	In support of the limited warranty of this Section 15.6, QSS offers to
+	defend you against any third party copyright or patent infringement or
+	trade secret misappropriation claims, and to indemnify and hold you
+	harmless from any damages finally awarded in any third party action
+	against you for said claims, based upon your use or distribution of
+	the Commercially Released Software under the terms and conditions of
+	this License, provided that you give QSS prompt notice, as well as all
+	authority, information, and assistance (at QSS's expense) necessary or
+	desirable to defend such claims.
+
+	Expressly excluded from this indemnity are assertions of:
+
+	(A) copyright infringement or trade secret misappropriation based upon
+	the use, reproduction, performance or distribution of components of:
+	(1) Experimental Software, or (2) Software identified as Type III in
+	the License Guide, or otherwise by QSS in the course of making the
+	Software available to you, for which QSS has no contractual basis to
+	extend indemnity from its third party suppliers, or (3) Software that
+	have been modified; and
+
+	(B) patent infringement based upon the making, using, importing or
+	selling of components of: (1) Experimental Software, or (2) Software
+	that have been modified, or (3) Software identified as Type II or Type
+	III in the License Guide, for which QSS has no contractual basis to
+	extend indemnity from its third party suppliers, or (4) Software
+	identified in the License Guide, or otherwise by QSS in the course of
+	making the Software available to you, as requiring additional patent
+	rights not included in this License, or (5) Software in combination
+	with other software or hardware, or (6) Software that infringe patents
+	that are essential to satisfy any published and industry recognized
+	standards/recommendations, including but not limited to
+	standards/recommendations of ITU, IEEE, ETSI, ISO, MPEG, CSS, DVD,
+	JPEG, DivX, Dolby, AVC/H.264, ATM Forum, Frame Relay Forum, SMPTE,
+	ATSE, GSM, IETF, etc.
+
+15.7	REMEDY AND LIMITATION OF DAMAGES FOR INDEMNIFIED CLAIMS.
+	With respect to any finding of breach of the warranty in Section 15.6
+	(Limited Warranty of Provenance, Indemnity and Exclusions from
+	Indemnity), or if QSS reasonably believes that one or more of the
+	indemnified acts in Section 15.6 have occurred or may occur, QSS will,
+	at its sole expense and option: (i) procure for you the right to
+	continue using the infringing Software; (ii) replace the infringing
+	Software with non-infringing software of comparable function;
+	(iii) modify the infringing Software to be non-infringing; or (iv) if
+	none of the foregoing alternatives is reasonably available to QSS,
+	terminate your right to the Software, but only to the extent necessary
+	to avoid or mitigate damages. You will have the right to terminate all
+	of your rights if you determine such partial termination renders your
+	remaining rights ineffective. Upon such full or partial termination,
+	QSS will refund to you, pro-rata to the extent of such termination,
+	the license fees paid by you pursuant to this License that are
+	associated with the terminated rights.
+	THIS SECTION 15.7 STATES YOUR EXCLUSIVE
+	REMEDIES FOR INFRINGEMENT AND
+	MISAPPROPRIATION BY THE SOFTWARE.
+
+15.8	NO OTHER WARRANTIES.
+
+	EXCEPT AS EXPRESSLY PROVIDED IN
+	THIS SECTION 15, TO THE MAXIMUM
+	EXTENT PERMITTED BY APPLICABLE
+	LAW, THE SOFTWARE LICENSED AND
+	ANY SERVICES PROVIDED UNDER THIS
+	QNX COMMERCIAL SOFTWARE LICENSE
+	AGREEMENT ARE PROVIDED "AS IS" AND
+	WITHOUT WARRANTIES OR CONDITIONS
+	OF ANY KIND, INCLUDING BUT NOT LIMITED
+	TO ANY IMPLIED WARRANTIES AND
+	CONDITIONS OF MERCHANTABILITY, FITNESS
+	FOR A PARTICULAR PURPOSE, AND
+	NON-INFRINGEMENT. SUBJECT TO THE
+	LIMITED WARRANTY IN SECTION 15.3,
+	QSS DOES NOT WARRANT AND NOTHING
+	IN THIS LICENSE IMPLIES ANY WARRANTY
+	THAT THE OPERATION OF THE SOFTWARE
+	OR ACCESS TO SERVICES WILL BE
+	UNINTERRUPTED OR ERROR FREE, OR
+	THAT ANY ERRORS FOUND WILL BE CORRECTED.
+
+15.9	SURVIVAL. This Section 15 will survive termination and will apply
+	notwithstanding the failure of essential purpose of any limited
+	remedy.
+
+
+16.  LIMITATION OF LIABILITY.
+
+TO THE MAXIMUM EXTENT PERMITTED BY
+APPLICABLE LAW, IN NO EVENT WILL QSS,
+OR ITS AFFILIATES, OR THEIR OFFICERS,
+EMPLOYEES, AGENTS, SUPPLIERS,
+DISTRIBUTORS, OR LICENSORS (COLLECTIVELY
+"QSS AND ITS REPRESENTATIVES") BE LIABLE
+TO LICENSEE OR TO ANY THIRD PARTY FOR
+ANY INDIRECT, INCIDENTAL, SPECIAL,
+CONSEQUENTIAL OR PUNITIVE DAMAGES
+WHATSOEVER INCLUDING BUT NOT LIMITED
+TO LOST REVENUE, LOST OR DAMAGED DATA,
+OR OTHER COMMERCIAL OR ECONOMIC LOSS,
+ARISING OUT OF OR RELATING TO ANY USE
+OR INABILITY TO USE THE SOFTWARE OR
+SERVICES, EVEN IF QSS HAS BEEN ADVISED
+OF THE POSSIBILITY OF SUCH DAMAGE OR CLAIM.
+
+TO THE MAXIMUM EXTENT PERMITTED BY
+APPLICABLE LAW, IN NO EVENT WILL THE
+AGGREGATE LIABILITY TO YOU OF QSS AND
+ITS REPRESENTATIVES FOR ANY DAMAGES
+ARISING OUT OF OR RELATING TO THIS LICENSE,
+WHETHER IN CONTRACT, TORT, OR OTHERWISE,
+EXCEED THE TOTAL FEES YOU HAVE PAID TO
+QSS FOR USE OF THE SOFTWARE AND FOR
+SERVICES IN THE 12 MONTHS PRECEDING THE
+CLAIM. THIS SECTION 16 WILL SURVIVE
+TERMINATION AND WILL APPLY NOTWITHSTANDING
+THE FAILURE OF ESSENTIAL PURPOSE OF ANY
+LIMITED REMEDY.
+
+YOU ACKNOWLEDGE AND AGREE THAT
+THE DISCLAIMERS, EXCLUSIONS AND
+LIMITATIONS SET FORTH IN THIS LICENSE
+CONSTITUTE AN ESSENTIAL ELEMENT OF
+THIS LICENSE IN THE ABSENCE OF WHICH:
+(A) THE FEES AND OTHER TERMS IN THIS
+LICENSE WOULD BE SUBSTANTIALLY
+DIFFERENT; AND (B) QSS'S ABILITY TO
+OFFER AND YOUR ABILITY TO PURCHASE
+YOUR SOFTWARE AND SERVICES OR ANY
+PORTION THEREOF UNDER THIS LICENSE
+WOULD BE IMPAIRED.
+
+17.  MULTIMEDIA CONTENT.  Certain QNX Runtime Components may enable
+Target Systems to produce or reproduce (including but not limited to by
+ripping), copy, perform and/or display multimedia content (e.g., audio,
+images, video). The required intellectual property license rights necessary to
+use or offer devices with such capabilities will vary, depending on factors
+such as the intended use of the device, the types of content involved, the
+markets in which the device is used or sold, etc. You are solely responsible
+for determining all such requirements and making all of the arrangements
+(e.g., obtaining licenses, paying copyright collectives' fees, limiting the
+device functionality in some markets, etc.) necessary to make, use, import,
+distribute and/or sell your Target Systems, and/or to offer related services
+(to the extent permitted by the terms and conditions of this License), in all
+of your direct or indirect markets. The provisions of Section 15.6
+(Limited Warranty of Provenance, Indemnity, and Exclusions from Indemnity) do
+not extend to infringement caused by producing, reproducing, copying,
+performing or displaying any multimedia content. Further, you agree to
+indemnify and hold QSS and its Representatives harmless from any damages, and
+any costs and expenses (including but not limited to reasonable attorney's
+fees) incurred, in any third-party action against any one or more of QSS and
+its Representatives based on intellectual property infringement caused by
+making, using, importing, distributing and/or selling your Target Systems,
+and/or offering related services, in any of your direct or indirect markets
+("Claims"), other than Claims based solely on infringement claims for which
+QSS remains responsible under Section 15.6.
+
+
+18.  TERM, SUBSCRIPTION RENEWAL & TERMINATION.
+
+18.1	TERM, SUBSCRIPTION RENEWAL. The term of this License for paid-up
+	Software licenses will continue until terminated. The term of this
+	License for Software subscription licenses and Standard Support
+	subscriptions will end when the subscription term ends. You can renew
+	Software and Standard Support subscriptions by issuing purchase orders
+	to QSS for the renewal at least thirty (30) days prior to the expiry
+	date.
+
+18.2	TERMINATION.  This License will terminate immediately for
+	subscription-based licenses or services upon the expiration of your
+	License Key or Floating License Key or your failure to pay any
+	optional renewal fees when due. QSS may terminate this License upon
+	fifteen (15) days advanced written notice of a material breach if the
+	breach has not been cured within the notice period, with the
+	exception of payment or breach of confidentiality provisions, in which
+	case termination will be immediate. All subscription fees are
+	non-refundable. Termination is without prejudice to any right or
+	remedy that may have accrued or be accruing to either party prior to
+	termination.
+
+18.3	IMPLICATIONS OF TERMINATION.  Upon termination, you will
+	immediately destroy the original and all whole or partial copies of
+	the Software, License Keys, Floating License Keys and Development
+	License Certificates used under this License that are in your
+	possession or control.
+	Termination will not relieve you from your obligation to pay QSS any
+	and all fees or other amounts due under this License at any time or
+	for any period. Any pre-payment of Software royalties or license fees
+	is non-refundable. If either Party terminates this License for any
+	reason all copies of Runtime Configurations distributed pursuant to
+	Schedule C (Runtime Distribution Addendum) prior to termination in
+	accordance with the terms of this License will continue; however, all
+	of your license rights, and those of your subcontractors and
+	distributors, will immediately cease upon termination. The provisions
+	of this License that are expressed or by their sense and context are
+	intended to survive the termination of this License will survive,
+	including but not limited to Sections 1 (Definitions), 5 (Deployment
+	of Software and Audits of Software Use), 7 (Prohibited Activities),
+	8 (Preservation of Rights), 9 (Third Party Software), 10 (Ownership
+	and Reservation of Rights), 11 (Feedback), 12 (US Government Rights),
+	14 (Confidential Information), 15 (Limited Warranties),
+	16 (Limitation of Liability), 17 (Multimedia Content), 18 (Term,
+	Subscription Renewal & Termination), 20 (Governing Law),
+	21 (Arbitration), 22 (Assignment), 24 (Whole Agreement),
+	25 (Interpretation), B-4, C-3 (Third-Party License Supplements),
+	C-4 (High Risk), C-5 (Subcontractors & Distributors),
+	C-8 (Target System Support), C-9 (Compliance with Laws),
+	C-10 (Preservation of Rights), C-11 (Indemnity), and C-12.
+	Termination is without prejudice to any right or remedy that may
+	have accrued, or be accruing to either Party prior to termination.
+
+
+19.  DEFENSIVE TERMINATION FOR PATENT INFRINGEMENT ACTION. This
+License will terminate as of the date you institute patent litigation
+(including but not limited to a cross-claim or counterclaim in a lawsuit) in
+any jurisdiction against any entity alleging that the Software infringes or
+contributes to the infringement of a patent.
+
+
+20.  GOVERNING LAW. This License will be governed by and construed in
+accordance with the laws in force in the Province of Ontario, Canada, without
+regard to the conflicts of laws provisions thereof. The parties hereby
+irrevocably waive: (i) the provisions of the United Nations Convention on
+Contracts for the International Sale of Goods, and (ii) any right to a trial
+by jury regarding the resolution of any dispute between the parties hereto
+arising out of or in connection with this License.
+
+
+21.  ARBITRATION. It is the intention of the parties to settle any dispute
+relating to this License; however, if the parties cannot settle any such
+dispute themselves, then such dispute will be arbitrated and finally settled
+under the provisions of the Arbitration Act of Ontario and the National
+Arbitration Rules of the ADR Institute of Canada, Inc. The place of
+arbitration will be Ottawa, Ontario, Canada. The language of the arbitration
+will be English. The decision of the arbitrator will be final and binding on
+the parties. The prevailing party will be entitled to recover its costs and
+expenses from the arbitration, including but not limited to reasonable
+attorney's fees. All information pertaining to any dispute that relates to
+this License will be considered Confidential Information for the purpose of
+Section 14 (Confidential Information).
+
+
+22.  ASSIGNMENT. Subject to the export restrictions in Section 7.4, you may
+assign this QNX Commercial Software License Agreement to a third party who has
+provided QSS with prior written acknowledgement of its acceptance of the
+License terms and conditions (the "Assignee"). In such a case you must
+transfer the corresponding License Keys, Floating License Keys, Development
+License Certificates and Runtime License Certificates to the Assignee and
+destroy all whole or partial copies of the assigned Software that are in your
+possession or control. You may not separately assign or transfer License Keys,
+Floating License Keys, Development License Certificates or Runtime License
+Certificates. Expressly excluded from this assignment permission is QNX
+Middleware products, the License for which you may only assign in conjunction
+with a change of ownership, merger, acquisition, sale or transfer of all or
+substantially all of your business or assets relating to the project for which
+the QNX Middleware products are specifically licensed. Any other attempted
+assignment or delegation in violation of the foregoing will be void and of no
+effect. This License will inure to the benefit of and be binding upon the
+parties and their respective successors and permitted assigns.
+
+
+23.  EXECUTION AND ACCEPTANCE. Nothing but this License (or any other
+written agreement between you and QSS) authorizes you to undertake any of the
+activities described in this License, and doing so in contravention of these
+terms and conditions is breach of contract and/or copyright or patent
+infringement. When you enter your License Key or Floating License Key to
+unlock the Software this License will be displayed for your review and
+acceptance. Choosing "I ACCEPT" during that process constitutes your execution
+and acceptance of this License.
+
+
+24.  WHOLE AGREEMENT. This License, including but not limited to the License
+Guide and Third Party Terms List, the Invoice accompanying the Software, the
+corresponding Development License Certificate(s), the Standard Support
+Addendum (Schedule A), the QNX Middleware Product Addendum (Schedule B),
+the Runtime License Addendum (Schedule C) and any Runtime License
+Certificates constitutes the entire agreement between the parties pertaining
+to this subject matter and supersedes any prior or contemporaneous agreement,
+representation, statement, negotiation, undertaking dealing with the same
+subject matter. The provisions of this QNX Commercial Software License
+Agreement will prevail in the event of a conflict between any of its
+provisions and the License Guide or Third Party Terms List, or any
+inconsistent or additional terms or conditions of any related purchase orders
+or invoices. No amendment, modification or waiver of any part of this License
+will be binding unless in a written document that expressly refers to this
+License and that is signed by both parties. The divisions and headings in this
+License have been included for convenience only and will not affect its
+construction or interpretation.
+
+
+25.  INTERPRETATION.  The divisions and headings in this Agreement have
+been included for convenience only and will not affect its construction or
+interpretation. Any provision of this Agreement that is prohibited or
+unenforceable in any jurisdiction will, as to such jurisdiction, be
+ineffective to the extent of such prohibition or unenforceability without
+invalidating the remaining provisions hereof or affecting the validity or
+enforceability of such provision in any other jurisdiction.
+
+
+26.  CUSTOMER EXPERIENCE. QSS may contact you to ask about your
+impressions of the Software, the QNX Product Portfolio and any services you
+may have purchased. You are not obligated to provide any answers, but we hope
+you will give us the opportunity to address any shortcomings you perceive by
+providing your feedback.
+
+
+27.  LANGUAGE. This License has been drafted in the English language at the
+express request of the parties.  Les parties conviennent que la présente
+convention et tous les documents s'y rattachant soient rédigés en anglais.
+
+
+
+(c) 2010 QNX Software Systems GmbH & Co. KG. All rights reserved. QNX,
+Momentics, Neutrino, Aviage, Photon, Photon microGUI and Foundry27 are
+trademarks of QNX Software Systems GmbH & Co. KG, which are registered
+trademarks and/or used in certain jurisdictions, and are used under license by
+QNX Software Systems Co.
+
+CSLA_v006_June15-10
+
+_________________________________________________________________
+
+SCHEDULE A: STANDARD SUPPORT ADDENDUM
+_________________________________________________________________
+
+
+A-0.   BACKGROUND. This Schedule A provides the terms and conditions upon
+which QSS will provide you with the maintenance and support services described
+below ("Standard Support") for QNX Product Portfolio components you have
+licensed under this License. This "Standard Support Addendum" is incorporated
+into the QNX Commercial Software License Agreement. All defined terms in the
+License will have the same meanings in this Standard Support Addendum.
+
+A-1.  ELIGIBLE SOFTWARE. Your Standard Support subscription applies to the
+Software, subject to your payment when due of all applicable Standard Support
+subscription fees specified on your Software Invoice (or on any corresponding
+subscription commencement or renewal invoice(s)). Standard Support
+subscription fees are included in the annual fees for Software licensed under
+this License on a subscription basis.
+
+A-2.  STANDARD SUPPORT SERVICES. During your Standard Support
+subscription QSS will provide you with "Help-Desk Services" for the current
+version of the Commercially Released Software by delivering person-to-person
+telephone-, email-, or web-based assistance with: (i) installation and
+configuration issues;  (ii) understanding the functionality and behavior of
+specific parts; (iii) isolating problems you encounter by verifying the
+Software, when used in accordance with the associated Documentation on one or
+more of the applicable "Reference Platforms" identified in the License Guide,
+does not behave the way the Documentation says it should ("Error"); and
+(iv) providing you with patches or work-arounds for known Errors; and
+(v) submitting problem reports for confirmed Errors that do not have current
+solutions. You may report and track your issues at Tech Support on Foundry27.
+Help Desk Services are for your support and are not to be used for the benefit
+of other commercial QNX developers who have chosen not to subscribe to
+Standard Support. However, QSS reserves the right to publish information
+(including but not limited to work-arounds and fixes) relating to any issues
+you report for the benefit of the QNX development community, provided it
+does not include any details that would identify you or your customers.
+
+A-3.  SOFTWARE UPDATES. During your Standard Support subscription, QSS
+will provide you with any commercially released Medial (6.x) and Minor (6.x.x)
+Software updates, as well as any intervening maintenance releases (including
+but not limited to service packs and patch releases) (collectively, "Updates")
+for use under this License. Updates do not include Major Software updates
+(e.g., QNX 4 to QNX 6) or access to unlicensed products or technologies. You
+may only use Updates under this License that are released during your
+subscription to Standard Support. You may only use such Updates in association
+with your authorized Development Seat and licensed Target Systems. You may not
+share your Updates with anyone else, unless they are entitled to use them
+under their own QSS license.
+
+A-4.  STANDARD SUPPORT SUBSCRIPTION TERM. Each subscription is valid
+for Standard Support services for one Development Seat for one year. Your
+subscription will end on the anniversary of the Invoice date unless you first
+renew your subscription by delivering a purchase order to QSS for the Standard
+Support fee for the Software for the next subscription year. All subscription
+fees are due in advance and are non-refundable. QSS reserves the right to
+withhold Standard Support if you have not paid your subscription fees.
+
+See the QNX Standard Support User's Guide
+(http://licensing.qnx.com/standard-support/) for further information. Other
+support and custom engineering services are also available from QSS
+(see http://licensing.qnx.com/services/).
+
+_________________________________________________________________
+
+SCHEDULE B: QNX MIDDLEWARE PRODUCT ADDENDUM
+_________________________________________________________________
+
+
+B-0.  BACKGROUND.  This Schedule B, together with the other terms and
+conditions of the QNX Commercial Software License Agreement, provides the
+terms and conditions upon which QSS authorizes you to use QNX Middleware
+products for commercial development purposes, provided that you first purchase
+a corresponding development license. This "QNX Middleware Product Addendum" is
+incorporated into the QNX Commercial Software License Agreement. All defined
+terms in the License will have the same meanings in this QNX Middleware
+Product Addendum. The provisions of this Schedule B will prevail in the event
+of a conflict between any of its provisions and other parts of this License.
+
+B-1. QNX MIDDLEWARE SOFTWARE.  Your commercial license only extends to
+the specific QNX Middleware product(s) listed on the Invoice for the
+corresponding development license you have purchased ("QNX Middleware
+Software", and part of the "Software" for the purpose of the License), which
+are further described in a matching Development License Certificate and in the
+License Guide that accompanies the Software. QNX Middleware Software is
+licensed on a Project-specific basis and requires a Development License
+Certificate in order to be activated. Multi-Project Development License
+Certificates may be available (contact an authorized QNX sales representative
+for more information - see http://www.qnx.com/company/contact/). If your QNX
+Middleware Software was delivered with an earlier version of this License,
+then you may elect to adopt the terms and conditions of this License instead
+(i.e., to facilitate distribution of associated QNX Runtime Components under
+Schedule C, not to gain some update rights that you would not otherwise be
+entitled to), in which case your License Certificate for the QNX Middleware
+Software will be deemed to be a "Development License Certificate" for the
+purpose of this License.
+
+B-2. DEVELOPMENT LICENSE GRANT AND CONSIDERATION.  Subject to your
+payment when due of all applicable license fees (including but not limited to
+renewal fees for any subscription-based Project licenses) specified on the
+Invoice for the QNX Middleware product development license you have purchased
+("QNX Middleware Invoice"), and subject to the terms and conditions of this
+License, QSS hereby grants to Licensee (you) a limited, non-exclusive,
+personal, non-sublicensable and non-transferable (except as contemplated in
+Section 22 (Assignment)) license on the same terms and conditions specified in
+the License except as modified by Section B-3 (Project License).
+
+B-3.  PROJECT LICENSE.  Your QNX Middleware Software license is specific to a
+single Project and may not be transferred or reassigned to other projects. You
+may share your licensed QNX Middleware Software with your developers
+(including with employees of your contractors) who have been assigned
+Development Seats (and License Keys or Floating License Keys) in accordance
+with the License, but only to the extent and for so long as they provide
+software development services on your behalf for the licensed Project. Your
+QNX Middleware Software license ends when the Project for which it was
+purchased ends (or at the end of any subscription period in the case of
+subscription-based licenses).
+
+B-4.  QSS may request reports and conduct audits pursuant to the provisions of
+Sections 5.3-5.5 of this License in order to confirm compliance with the terms
+and conditions of this License. If you have licensed QNX Middleware Software
+for more than one Project, you must identify all Projects in all reports and
+audits requested pursuant to Section 5 (Deployment of Software and Audits of
+Software Use) of this License.
+
+
+_________________________________________________________________
+
+SCHEDULE C: RUNTIME DISTRIBUTION ADDENDUM
+_________________________________________________________________
+
+
+C-0.  BACKGROUND. This Schedule C, together with the other terms and
+conditions of QNX Commercial Software License Agreement, provides the terms
+and conditions upon which QSS authorizes you to distribute copies of certain
+QNX Runtime Components as part of your Target System, provided that you first
+purchase corresponding Runtime License Certificate(s) (as defined below) for
+the number of copies of the Runtime Configuration you require. This "Runtime
+Distribution Addendum" is incorporated into the QNX Commercial Software
+License Agreement. All defined terms in the License will have the same
+meanings in this Runtime Distribution Addendum. The provisions of this
+Schedule C will prevail in the event of a conflict between any of its
+provisions and other parts of this License.
+
+C-1.  DEFINITIONS.  The following defined terms are added to this Addendum
+and will have the same meanings throughout the License.
+
+"EULA" means a properly completed version of the QNX End User License
+	Agreement provided in Appendix I (Form of QNX Pass-through EULA for
+	Target Systems) of this Runtime Distribution Addendum.
+
+"Invoice" will include for the purpose of this Addendum any invoice issued by
+	QSS (or its distributor) for Runtime License Certificates you have
+	purchased.
+
+"Runtime Configuration" means a specific set of QNX Runtime Components
+	identified in a Runtime License Certificate (as further described in
+	the License Guide).
+
+"Runtime License Certificate" means the original copy of a QSS-issued and
+	serialized document that is provided to you by QSS or by one of its
+	authorized distributors and that authorizes the creation of a specific
+	number of copies of the Runtime Configuration identified therein.
+	Runtime License Certificates may be provided in electronic form and
+	will be considered as part of the "Documentation" for the purpose of
+	this License.
+
+
+C-2.  DISTRIBUTION LICENSE GRANT AND CONSIDERATION.  Subject to your
+payment when due of all applicable license fees (including but not limited to
+renewal fees for any subscription-based distribution licenses) specified on
+the Invoice for the Runtime License Certificate(s) you have purchased
+("Runtime License Certificate Invoice"), and subject to the terms and
+conditions of this License, QSS hereby grants to Licensee (you) a limited,
+non-exclusive, personal, non-sublicenseable and non-transferable (except as
+contemplated in Section 22 (Assignment)) license for the following specific
+activities and purposes:
+
+C-2.1	To reproduce, as an integral part of Target Systems, up to the
+	aggregate total number of copies of Runtime Configurations authorized
+	by Runtime License Certificate(s) you have purchased from QSS or its
+	authorized distributor(s) for the purpose of manufacturing and
+	distributing Target Systems (Note that some Target Systems may require
+	more than one Runtime Configuration license - e.g.,  Target Systems
+	may contain multiple processors, each running a separate copy of the
+	same Runtime Configuration or different Runtime Configurations).
+
+C-2.2	To reproduce, as part of the Target System backup media (if any), to
+	be shipped with the Target System, a second copy of the Runtime
+	Configuration for each copy authorized under Section C-2.1 solely for
+	use for Target System back-up purposes (i.e., not for productive use,
+	such as in redundant systems).
+
+C-2.3	To distribute copies of the Runtime Configuration made under Sections
+	C 2.1 and C-2.2 to end users as part of and only for use in
+	association with your Target System under the terms and conditions of
+	the EULA.
+
+C-2.4	To adopt and reproduce (as provided in Sections C-2.1 and  C-2.2) and
+	to distribute (as provided in C-2.3 or pursuant to secure downloads
+	only to authorized end users for use in licensed Target System) copies
+	of: (i) Patch Releases, solely for the purpose of adopting Error
+	corrections for use in new and existing Target Systems; and
+	(ii) Updates, solely for use in new and existing Target Systems,
+	provided that you have maintained a continuous subscription
+	throughout your project to QSS support services under Schedule A for
+	each active Development Seat used for Target System development,
+	testing, maintenance, support and enhancement.
+
+YOUR SOFTWARE DISTRIBUTION RIGHTS
+UNDER THIS SCHEDULE ARE LIMITED TO
+THE NUMBER OF COPIES OF RUNTIME
+CONFIGURATION SOFTWARE COMPONENTS
+AUTHORIZED BY RUNTIME LICENSE
+CERTIFICATES YOU HAVE PREPURCHASED
+DIRECTLY FROM QSS OR ITS AUTHORIZED
+DISTRIBUTOR.
+
+C-3.  THIRD-PARTY LICENSE SUPPLEMENTS.  Certain QNX Runtime
+Components have additional distribution terms and conditions due to
+pass-through requirements imposed by: (a) third party proprietary
+technologies that they contain, which terms and conditions are reproduced on
+the Runtime License Certificate (copies of which may be obtained at
+http://licensing.qnx.com); and (b) open source software contributions that
+they contain (see Section 9 (Third Party Software) for details). Those terms
+and conditions are hereby incorporated into this License, as applicable.
+
+C-4.  HIGH RISK.  You may not use, or authorize others to use, any part of the
+Software in any application in which the failure of the Software could lead to
+death, personal injury or severe physical or property damage (collectively,
+"High-Risk Applications"), including but not limited to the operation of
+nuclear facilities, mass transit systems, aircraft navigation or aircraft
+communication systems, air traffic control, weapon systems and direct life
+support machines. QSS expressly disclaims any express or implied warranty or
+condition of fitness for High-Risk Applications.
+
+C-5.  SUBCONTRACTORS & DISTRIBUTORS. Provided that you will remain
+responsible to QSS at all times for the full performance of and compliance
+with all terms and conditions of this QNX Commercial Software License
+Agreement, including but not limited to those of this Schedule C, you may:
+(i) sublicense your rights under Section C-1.1, C-1.2 and C-1.4 to
+subcontractors who have been retained by you to manufacture Target Systems on
+your behalf, and (ii) sublicense your rights under Section C-1.3 to third
+party distributors in your indirect Target System distribution channel.
+
+C-6.  EULA.  You must ensure that end users are presented with a properly
+completed version of the EULA, as provided in Exhibit 1 of this Addendum, in a
+manner that follows the formalities necessary to make the terms and conditions
+enforceable under local laws for the countries in which the end users
+accepting the EULA reside.
+
+C-7.  LICENSE STICKERS.  Optional license stickers are available from QSS
+when ordering Runtime License Certificates (one serialized license sticker for
+each Runtime Configuration copy authorized by the Runtime License Certificate)
+to affix to Target Systems to facilitate the tracking and identification of
+deployed copies of QNX Runtime Components.
+
+C-8.  TARGET SYSTEM SUPPORT.  You are responsible for all Target System
+design, development, testing, distribution, support, maintenance and updating.
+QSS offers Standard Support (see Schedule A) and other Software support and
+custom engineering services (see http://licensing.qnx.com/services/).
+
+C-9.  COMPLIANCE WITH LAWS.  You will comply with all applicable laws, rules
+and regulations and obtain all permits, licenses and authorizations or
+certificates that may be required in connection with its activities pursuant
+to this License. This includes any laws, regulations, orders or other
+restrictions on the export of the Software from Canada and the USA that may be
+imposed from time to time by the Canadian or United States Governments. You
+will not import, export or re-export, directly or indirectly, the Software or
+information pertaining thereto to any country for which either such government
+or any agency thereof requires a license or governmental approval at the time
+of import, export or re-export without first obtaining such license or
+approval.
+
+C-10.  PRESERVATION OF RIGHTS. When distributing Target Systems and
+associated Runtime Components to any agency, department or unit of any
+government or quasi-government authority you will take all actions and
+precautions consistent with applicable laws and regulations specifically
+governing licensing to such entities to preserve and protect all ownership and
+other rights of QSS and its licensors in the Software.
+
+C-11.  INDEMNITY.  You will indemnify and hold QSS harmless from any
+damages finally awarded, and any costs and expenses (including but not limited
+to reasonable attorney's fees) incurred, in any third-party action against
+QSS, its Affiliates, or their distributors or suppliers, based on bodily
+injury, property damage or any other injury, damage, or claim arising out of
+the distribution, use or inability to use the Target System, provided QSS
+promptly notifies you and gives you complete information and reasonable
+assistance (at your expense). This Section C-11 will not apply to any claims
+under Section 15.6 (Limited Warranty of Provenance, Indemnity, and Exclusions
+from Indemnity) that QSS is obliged to defend, or to other allegations that
+the Software infringes third party rights, or to any final award of a court of
+competent jurisdiction based on a finding of gross negligence or willful
+misconduct of QSS.
+
+C-12.  You will maintain for a period of six (6) years after the end of the
+year to which they relate accurate records regarding all of your direct and
+indirect copying and distribution activities conducted pursuant to this
+Schedule. QSS may request reports and conduct audits pursuant to the
+provisions of Sections 5.3-5.5 of this License in order to confirm the number
+of copies of Software created (by Target System), the number of Target Systems
+shipped, and compliance with the terms and conditions of this License. If you
+have purchased Runtime License Certificates for more than one Runtime
+Configuration, you must also identify copies by Runtime Configuration in all
+reports and audits requested pursuant to Section 5 (Deployment of Software and
+Audits of Software Use) of this License.
+
+
+_________________________________________________________________
+
+APPENDIX I TO SCHEDULE C: FORM OF QNX PASS-THROUGH EULA FOR
+TARGET SYSTEMS
+_________________________________________________________________
+
+
+
+Copyright 2010, QNX Software Systems GmbH & Co. KG. All Rights Reserved.
+
+The product you have purchased ("Product") contains QNX software (Runtime
+Configuration No. [Insert applicable Runtime Configuration Number]; "QNX
+Software") which is distributed by or on behalf of the Product manufacturer
+("Manufacturer") under license from QNX Software Systems Co. ("QSS"). You may
+only use the QNX Software in the Product and in compliance with the license
+terms below.
+
+Subject to the terms and conditions of this License, QSS hereby grants you a
+limited, non-exclusive, non-transferable license to use the QNX Software in
+the Product for the purpose intended by the Manufacturer. If permitted by the
+Manufacturer, or by applicable law, you may make one backup copy of the QNX
+Software as part of the Product software. QSS and its licensors reserve all
+license rights not expressly granted herein, and retain all right, title and
+interest in and to all copies of the QNX Software, including but not limited
+to all intellectual property rights therein. Unless required by applicable law
+you may not reproduce, distribute or transfer, or de-compile, disassemble or
+otherwise attempt to unbundle, reverse engineer, modify or create derivative
+works of, the QNX Software. You agree: (1) not to remove, cover or alter any
+proprietary notices, labels or marks in or on the QNX Software, and to ensure
+that all copies bear any notice contained on the original; and (2) not to
+export the Product or the QNX Software in contravention of applicable export
+control laws.
+
+TO THE MAXIMUM EXTENT PERMITTED
+BY APPLICABLE LAW, QSS AND ITS
+LICENSORS PROVIDE THE QNX SOFTWARE
+ON AN "AS IS" BASIS, WITHOUT
+WARRANTIES OR CONDITIONS OF ANY
+KIND, EITHER EXPRESS OR IMPLIED
+INCLUDING BUT NOT LIMITED TO ANY
+WARRANTIES OR CONDITIONS OF TITLE,
+NON-INFRINGEMENT, MERCHANTABILITY
+OR FITNESS FOR A PARTICULAR
+PURPOSE. ANY WARRANTIES OR OTHER
+PROVISIONS OFFERED BY THE
+MANUFACTURER OR ITS DISTRIBUTOR(S)
+THAT DIFFER FROM THIS LICENSE
+ARE OFFERED BY THE MANUFACTURER
+OR ITS DISTRIBUTOR(S) ALONE AND
+NOT BY QSS, ITS AFFILIATES OR THEIR
+LICENSORS. YOU ASSUME ANY RISKS
+ASSOCIATED WITH YOUR USE OF THE
+QNX SOFTWARE UNDER THIS LICENSE.
+
+TO THE MAXIMUM EXTENT PERMITTED
+BY APPLICABLE LAW, IN NO EVENT WILL
+QSS, ITS AFFILIATES OR THEIR LICENSORS
+BE LIABLE TO YOU UNDER ANY LEGAL
+THEORY, WHETHER IN TORT (INCLUDING
+BUT NOT LIMITED TO NEGLIGENCE),
+CONTRACT OR OTHERWISE, FOR DAMAGES,
+INCLUDING BUT NOT LIMITED TO ANY
+DIRECT, INDIRECT, SPECIAL, INCIDENTAL,
+OR CONSEQUENTIAL DAMAGES OF ANY
+CHARACTER ARISING AS A RESULT OF
+THIS LICENSE OR OUT OF THE USE OR
+INABILITY TO USE THE PRODUCT (INCLUDING
+BUT NOT LIMITED TO DAMAGES FOR LOSS
+OF GOODWILL, WORK STOPPAGE, PRODUCT
+FAILURE OR MALFUNCTION, OR ANY AND
+ALL OTHER COMMERCIAL DAMAGES OR
+LOSSES), EVEN IF QSS, ITS AFFILIATES OR
+THEIR LICENSORS HAVE BEEN ADVISED
+OF THE POSSIBILITY OF SUCH DAMAGES.
+
+For more information on the QNX Software, including but not limited to any
+open source software license terms (and available source code) as well as
+copyright attributions applicable to the Runtime Configuration indicated
+above, please contact the Manufacturer or contact QSSC at 175 Terence Matthews
+Crescent, Kanata, Ontario, Canada K2M 1W8 (email: licensing@qnx.com,
+ph: +1-613-591-0931, fax: +1-613-591-3579).
+
+

@@ -1,0 +1,4501 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<index>
+ <entry keyword="abwspace.cfg">
+  <topic href="api/respluginfullcreatef_t.html#id7" title="Arguments:"/>
+ </entry>
+ <entry keyword="allocating">
+  <entry keyword="image resources">
+   <topic href="api/alloc_image.html#id7" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="anchors">
+  <topic href="lifewidg.html#AllWidgets" title="All widgets"/>
+  <topic href="overview.html#id13" title="Class hierarchy"/>
+  <entry keyword="container widgets">
+   <topic href="superclass.html#id74" title="Initialization method"/>
+   <entry keyword="invalidating">
+    <topic href="superclass.html#id114" title="Functions"/>
+   </entry>
+  </entry>
+  <entry keyword="Extent method">
+   <topic href="anatomy.html#id90" title="Extent method"/>
+   <topic href="superclass.html#id76" title="Extent method"/>
+  </entry>
+  <entry keyword="PtAnchorDeregister()">
+   <topic href="libs/ptanchorderegister.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="PtAnchorRegister()">
+   <topic href="libs/ptanchorregister.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="PtAnchorWidget()">
+   <topic href="libs/ptanchorwidget.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="PtApplyAnchors()">
+   <topic href="libs/ptapplyanchors.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="PtCalcAnchorOffsets()">
+   <topic href="libs/ptcalcanchoroffsets.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="PtSetExtentFromArea()">
+   <topic href="libs/ptsetextentfromarea.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="PtSuperClassExtent()">
+   <topic href="libs/ptsuperclassextent.html#id7" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="attributes">
+ </entry>
+ <entry keyword="basic widgets">
+  <topic href="overview.html#id15" title="Basic widgets"/>
+  <entry keyword="See also PtBasic"/>
+ </entry>
+ <entry keyword="behavior">
+  <entry keyword="defining in widget class">
+   <topic href="overview.html#DESIGN" title="Design considerations"/>
+  </entry>
+  <entry keyword="inheriting from superclass">
+   <topic href="overview.html#DESIGN" title="Design considerations"/>
+  </entry>
+ </entry>
+ <entry keyword="blocking input">
+  <entry keyword="in PhAB plugins">
+   <topic href="api/respluginblockf_t.html#id5" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="Calc Opaque Rect method">
+  <topic href="anatomy.html#CalcOpaqueRectMethod" title="Calc Opaque Rect method"/>
+  <topic href="libs/ptsuperclasscalcopaque.html#id7" title="Description:"/>
+  <entry keyword="inheriting">
+   <topic href="lifewidg.html#id15" title="Processing methods"/>
+  </entry>
+  <entry keyword="PtBasic">
+   <topic href="anatomy.html#CalcOpaqueRectMethod" title="Calc Opaque Rect method"/>
+   <topic href="superclass.html#id57" title="Calc Opaque Rect method"/>
+   <topic href="anatomy.html#id40" title="PtBasic class resource additions"/>
+   <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+  </entry>
+  <entry keyword="PtCompound">
+   <topic href="superclass.html#id143" title="Calc Opaque Rect method"/>
+  </entry>
+  <entry keyword="PtContainer">
+   <topic href="superclass.html#id92" title="Calc Opaque Rect method"/>
+  </entry>
+  <entry keyword="PtGauge">
+   <topic href="superclass.html#id368" title="Calc Opaque Rect method"/>
+  </entry>
+  <entry keyword="PtGenList">
+   <topic href="superclass.html#id178" title="Calc Opaque Rect method"/>
+  </entry>
+  <entry keyword="PtGenTree">
+   <topic href="superclass.html#id243" title="Calc Opaque Rect method"/>
+  </entry>
+  <entry keyword="PtGraphic">
+   <topic href="superclass.html#id335" title="Calc Opaque Rect method"/>
+  </entry>
+  <entry keyword="PtLabel">
+   <topic href="superclass.html#id302" title="Calc Opaque Rect method"/>
+  </entry>
+ </entry>
+ <entry keyword="callbacks">
+  <topic href="overview.html#DESIGN" title="Design considerations"/>
+  <topic href="bind.html#ListOfCallbacks" title="List of callbacks (c=, k=, e=)"/>
+  <entry keyword="balloon">
+   <topic href="superclass.html#id290" title="Connection method"/>
+   <topic href="superclass.html#id308" title="Functions"/>
+   <topic href="superclass.html#id166" title="Realization method"/>
+   <topic href="superclass.html#id170" title="Unrealization method"/>
+   <topic href="superclass.html#id296" title="Unrealization method"/>
+  </entry>
+  <entry keyword="class-level">
+   <entry keyword="See methods"/>
+  </entry>
+  <entry keyword="common">
+   <topic href="anatomy.html#ACTIONS" title="Widget actions"/>
+  </entry>
+  <entry keyword="describing in PhAB">
+   <topic href="bind.html#WidgetDescriptionTable" title="Creating a widget description table"/>
+   <topic href="bind.html#ListOfCallbacks" title="List of callbacks (c=, k=, e=)"/>
+  </entry>
+  <entry keyword="freeing">
+   <topic href="libs/ptdestroycallbacklist.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="hotkey">
+   <topic href="superclass.html#id16" title="Connection method"/>
+   <topic href="superclass.html#id28" title="Functions"/>
+   <topic href="bind.html#ListOfCallbacks" title="List of callbacks (c=, k=, e=)"/>
+   <topic href="superclass.html#id20" title="Unrealization method"/>
+   <topic href="superclass.html#id24" title="Widget actions"/>
+   <entry keyword="freeing">
+    <topic href="libs/ptdestroyhotkeycallbacks.html#id7" title="Description:"/>
+   </entry>
+  </entry>
+  <entry keyword="inheriting">
+   <topic href="bind.html#InheritedResources" title="Inherited resources and callbacks (i=, n=)"/>
+  </entry>
+  <entry keyword="invoking">
+   <topic href="libs/ptgetcallbacklist.html#id7" title="Description:"/>
+   <topic href="libs/ptinvokecallbacklist.html#id7" title="Description:"/>
+   <topic href="libs/ptinvokecallbacktype.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="Pt_ARG_IS_CALLBACK">
+   <topic href="anatomy.html#ArgValueAndLenMembers" title="arg_value and arg_len members"/>
+  </entry>
+  <entry keyword="Pt_ARG_IS_CALLBACK_LIST">
+   <topic href="anatomy.html#ArgValueAndLenMembers" title="arg_value and arg_len members"/>
+   <topic href="anatomy.html#id25" title="Callback resources"/>
+   <topic href="superclass.html#id22" title="Destruction method"/>
+  </entry>
+  <entry keyword="Pt_CB_ACTIVATE">
+   <topic href="anatomy.html#ACTIONS" title="Widget actions"/>
+   <topic href="superclass.html#id59" title="Widget actions"/>
+  </entry>
+  <entry keyword="Pt_CB_ARM">
+   <topic href="superclass.html#id53" title="Got Focus method"/>
+   <topic href="anatomy.html#ACTIONS" title="Widget actions"/>
+   <topic href="superclass.html#id59" title="Widget actions"/>
+  </entry>
+  <entry keyword="Pt_CB_DISARM">
+   <topic href="superclass.html#id55" title="Lost Focus method"/>
+   <topic href="anatomy.html#ACTIONS" title="Widget actions"/>
+   <topic href="superclass.html#id59" title="Widget actions"/>
+  </entry>
+  <entry keyword="Pt_CB_DIVIDER_DRAG">
+   <topic href="superclass.html#id182" title="Child Realized method"/>
+  </entry>
+  <entry keyword="Pt_CB_FILTER">
+   <topic href="superclass.html#id24" title="Widget actions"/>
+  </entry>
+  <entry keyword="Pt_CB_GEN_TREE_INPUT">
+   <topic href="superclass.html#id267" title="List Key method"/>
+   <topic href="superclass.html#id265" title="List Mouse method"/>
+  </entry>
+  <entry keyword="Pt_CB_GOT_FOCUS">
+   <topic href="superclass.html#id53" title="Got Focus method"/>
+  </entry>
+  <entry keyword="Pt_CB_LOST_FOCUS">
+   <topic href="superclass.html#id55" title="Lost Focus method"/>
+  </entry>
+  <entry keyword="Pt_CB_MENU">
+   <topic href="superclass.html#id59" title="Widget actions"/>
+  </entry>
+  <entry keyword="Pt_CB_REALIZED">
+   <topic href="anatomy.html#RealizationMethod" title="Realization method"/>
+  </entry>
+  <entry keyword="Pt_CB_REPEAT">
+   <topic href="superclass.html#id59" title="Widget actions"/>
+  </entry>
+  <entry keyword="Pt_CB_RESCALE">
+   <topic href="superclass.html#id341" title="Functions"/>
+  </entry>
+  <entry keyword="Pt_CB_SCROLL_MOVE">
+   <topic href="superclass.html#id214" title="Functions"/>
+  </entry>
+  <entry keyword="Pt_CB_SCROLLED_X">
+   <topic href="anatomy.html#COMPOUNDANATOMY" title="Compound widget anatomy"/>
+  </entry>
+  <entry keyword="Pt_CB_UNREALIZED">
+   <topic href="superclass.html#id20" title="Unrealization method"/>
+  </entry>
+  <entry keyword="raw">
+   <topic href="libs/ptsuperclassrawevent.html#id7" title="Description:"/>
+   <topic href="superclass.html#id114" title="Functions"/>
+   <topic href="bind.html#ListOfCallbacks" title="List of callbacks (c=, k=, e=)"/>
+   <topic href="anatomy.html#id58" title="Raw callback list"/>
+   <topic href="anatomy.html#ACTIONS" title="Widget actions"/>
+   <topic href="superclass.html#id210" title="Widget actions"/>
+   <topic href="superclass.html#id59" title="Widget actions"/>
+   <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+   <topic href="anatomy.html#id37" title="Widget class structure description"/>
+   <entry keyword="freeing">
+    <topic href="libs/ptdestroyrawcallbacks.html#id7" title="Description:"/>
+   </entry>
+   <entry keyword="PtBasic">
+    <topic href="superclass.html#id59" title="Widget actions"/>
+   </entry>
+   <entry keyword="PtCompound">
+    <topic href="superclass.html#id145" title="Widget actions"/>
+   </entry>
+   <entry keyword="PtContainer">
+    <topic href="superclass.html#id110" title="Widget actions"/>
+   </entry>
+   <entry keyword="PtGauge">
+    <topic href="superclass.html#id370" title="Widget actions"/>
+   </entry>
+   <entry keyword="PtGenTree">
+    <topic href="superclass.html#id273" title="Widget actions"/>
+   </entry>
+   <entry keyword="PtGraphic">
+    <topic href="superclass.html#id337" title="Widget actions"/>
+   </entry>
+   <entry keyword="PtLabel">
+    <topic href="superclass.html#id304" title="Widget actions"/>
+   </entry>
+   <entry keyword="PtWidget">
+    <topic href="superclass.html#id24" title="Widget actions"/>
+   </entry>
+  </entry>
+  <entry keyword="resize">
+   <topic href="superclass.html#id76" title="Extent method"/>
+   <entry keyword="invoking">
+    <topic href="libs/ptinvokeresizecallbacks.html#id7" title="Description:"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="canvas">
+  <entry keyword="resizing">
+   <topic href="libs/ptresizecanvas.html#id7" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="canvas, calculating">
+  <topic href="libs/ptchildboundingbox.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="chaining">
+ </entry>
+ <entry keyword="changes">
+  <entry keyword="applygin">
+   <entry keyword="PhAB plugins">
+    <topic href="api/apply.html#id7" title="Description:"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="child redirector function">
+  <topic href="overview.html#id17" title="Container widgets"/>
+ </entry>
+ <entry keyword="child-constraint methods">
+  <topic href="lifewidg.html#id38" title="Child constraints"/>
+  <entry keyword="Child Created">
+   <topic href="anatomy.html#id63" title="Child Created method"/>
+   <topic href="libs/ptsuperclasschildcreated.html#id7" title="Description:"/>
+   <entry keyword="PtContainer">
+    <topic href="superclass.html#id94" title="Child Created method"/>
+   </entry>
+   <entry keyword="PtGenList">
+    <topic href="superclass.html#id180" title="Child Created method"/>
+   </entry>
+   <entry keyword="PtGenTree">
+    <topic href="superclass.html#id245" title="Child Created method"/>
+   </entry>
+   <entry keyword="PtGroup">
+    <topic href="anatomy.html#id63" title="Child Created method"/>
+   </entry>
+  </entry>
+  <entry keyword="Child Destroyed">
+   <topic href="anatomy.html#id75" title="Child Destroyed method"/>
+   <topic href="libs/ptsuperclasschilddestroyed.html#id7" title="Description:"/>
+   <entry keyword="PtContainer">
+    <topic href="superclass.html#id100" title="Child Destroyed method"/>
+   </entry>
+   <entry keyword="PtGenList">
+    <topic href="superclass.html#id188" title="Child Destroyed method"/>
+   </entry>
+   <entry keyword="PtGenTree">
+    <topic href="superclass.html#id253" title="Child Destroyed method"/>
+   </entry>
+  </entry>
+  <entry keyword="Child Getting Focus">
+   <topic href="anatomy.html#id81" title="Child Getting Focus method"/>
+   <topic href="libs/ptsuperclasschildgettingfocus.html#id7" title="Description:"/>
+   <entry keyword="PtContainer">
+    <topic href="superclass.html#id106" title="Child Getting Focus method"/>
+   </entry>
+   <entry keyword="PtGenList">
+    <topic href="superclass.html#id194" title="Child Getting Focus method"/>
+   </entry>
+   <entry keyword="PtGenTree">
+    <topic href="superclass.html#id259" title="Child Getting Focus method"/>
+   </entry>
+  </entry>
+  <entry keyword="Child Getting Resources">
+   <topic href="anatomy.html#id79" title="Child Getting Resource method"/>
+   <topic href="libs/ptsuperclasschildgettingresources.html#id7" title="Description:"/>
+   <entry keyword="PtContainer">
+    <topic href="superclass.html#id104" title="Child Getting Resources method"/>
+   </entry>
+   <entry keyword="PtGenList">
+    <topic href="superclass.html#id192" title="Child Getting Resources method"/>
+   </entry>
+   <entry keyword="PtGenTree">
+    <topic href="superclass.html#id257" title="Child Getting Resources method"/>
+   </entry>
+  </entry>
+  <entry keyword="Child Losing Focus">
+   <topic href="anatomy.html#id83" title="Child Losing Focus method"/>
+   <topic href="libs/ptsuperclasschildlosingfocus.html#id7" title="Description:"/>
+   <entry keyword="PtContainer">
+    <topic href="superclass.html#id108" title="Child Losing Focus method"/>
+   </entry>
+   <entry keyword="PtGenList">
+    <topic href="superclass.html#id196" title="Child Losing Focus method"/>
+   </entry>
+   <entry keyword="PtGenTree">
+    <topic href="superclass.html#id261" title="Child Losing Focus method"/>
+   </entry>
+  </entry>
+  <entry keyword="Child Moved Resized">
+   <topic href="libs/ptsuperclasschildmovedresized.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="Child Moved/Resized">
+   <topic href="anatomy.html#id69" title="Child Moved/Resized method"/>
+   <entry keyword="PtContainer">
+    <topic href="superclass.html#id98" title="Child Moved/Resized method"/>
+   </entry>
+   <entry keyword="PtGenList">
+    <topic href="superclass.html#id184" title="Child Moved/Resized method"/>
+   </entry>
+   <entry keyword="PtGenTree">
+    <topic href="superclass.html#id249" title="Child Moved/Resized method"/>
+   </entry>
+  </entry>
+  <entry keyword="Child Realized">
+   <topic href="anatomy.html#id67" title="Child Realized method"/>
+   <topic href="libs/ptsuperclasschildrealized.html#id7" title="Description:"/>
+   <entry keyword="PtContainer">
+    <topic href="superclass.html#id96" title="Child Realized/Unrealized method"/>
+   </entry>
+   <entry keyword="PtGenList">
+    <topic href="superclass.html#id182" title="Child Realized method"/>
+   </entry>
+   <entry keyword="PtGenTree">
+    <topic href="superclass.html#id247" title="Child Realized method"/>
+   </entry>
+  </entry>
+  <entry keyword="Child Realizing">
+   <topic href="anatomy.html#id65" title="Child Realizing method"/>
+  </entry>
+  <entry keyword="Child Redirection">
+   <topic href="anatomy.html#ContainerRedirectorFunction" title="Child Redirection method"/>
+  </entry>
+  <entry keyword="Child Setting Resources">
+   <topic href="anatomy.html#id77" title="Child Setting Resource method"/>
+   <topic href="libs/ptsuperclasschildsettingresources.html#id7" title="Description:"/>
+   <entry keyword="PtContainer">
+    <topic href="superclass.html#id102" title="Child Setting Resources method"/>
+   </entry>
+   <entry keyword="PtGenList">
+    <topic href="superclass.html#id190" title="Child Setting Resources method"/>
+   </entry>
+   <entry keyword="PtGenTree">
+    <topic href="superclass.html#id255" title="Child Setting Resources method"/>
+   </entry>
+  </entry>
+  <entry keyword="Child Unrealized">
+   <topic href="anatomy.html#id73" title="Child Unrealized method"/>
+   <topic href="libs/ptsuperclasschildunrealized.html#id7" title="Description:"/>
+   <entry keyword="PtContainer">
+    <topic href="superclass.html#id96" title="Child Realized/Unrealized method"/>
+   </entry>
+   <entry keyword="PtGenList">
+    <topic href="superclass.html#id186" title="Child Unrealized method"/>
+   </entry>
+   <entry keyword="PtGenTree">
+    <topic href="superclass.html#id251" title="Child Unrealized method"/>
+   </entry>
+  </entry>
+  <entry keyword="Child Unrealizing">
+   <topic href="anatomy.html#id71" title="Child Unrealizing method"/>
+  </entry>
+ </entry>
+ <entry keyword="child-redirector function">
+  <topic href="lifewidg.html#id40" title="Child redirection"/>
+  <topic href="anatomy.html#ContainerRedirectorFunction" title="Child Redirection method"/>
+  <topic href="anatomy.html#CompoundRedirection" title="Compound redirection"/>
+  <entry keyword="PtMenuBar">
+   <topic href="anatomy.html#ContainerRedirectorFunction" title="Child Redirection method"/>
+  </entry>
+ </entry>
+ <entry keyword="children">
+  <entry keyword="anchoring">
+   <topic href="overview.html#id13" title="Class hierarchy"/>
+   <topic href="superclass.html#id76" title="Extent method"/>
+  </entry>
+  <entry keyword="blocking resources">
+   <topic href="overview.html#id17" title="Container widgets"/>
+  </entry>
+  <entry keyword="bounding box">
+   <topic href="libs/ptchildboundingbox.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="redirecting parentage">
+   <topic href="overview.html#id19" title="Compound widgets"/>
+  </entry>
+ </entry>
+ <entry keyword="class">
+  <entry keyword="creation function">
+   <topic href="lifewidg.html#id7" title="Creating and initializing the widget class"/>
+   <entry keyword="constraint methods">
+    <topic href="anatomy.html#id88" title="Defaults method"/>
+   </entry>
+   <entry keyword="example">
+    <topic href="anatomy.html#Examples" title="Examples"/>
+   </entry>
+   <entry keyword="exporting subordinate widgets">
+    <topic href="anatomy.html#CompoundDefaultsMethod" title="Defaults method"/>
+    <topic href="lifewidg.html#id43" title="Exporting subordinate widgets"/>
+   </entry>
+   <entry keyword="initializing class structure">
+    <topic href="overview.html#WidgetSourceFile" title="Widget source file"/>
+   </entry>
+   <entry keyword="PtComboBox">
+    <topic href="anatomy.html#COMPOUNDANATOMY" title="Compound widget anatomy"/>
+   </entry>
+   <entry keyword="PtTimer">
+    <topic href="anatomy.html#id58" title="Raw callback list"/>
+   </entry>
+   <entry keyword="setting up event-handling">
+    <topic href="overview.html#DESIGN" title="Design considerations"/>
+   </entry>
+   <entry keyword="ShadowedBox">
+    <topic href="lifewidg.html#id7" title="Creating and initializing the widget class"/>
+    <topic href="libs/ptcreatewidgetclass.html#id11" title="Examples:"/>
+   </entry>
+  </entry>
+  <entry keyword="defining behavior of">
+   <topic href="overview.html#DESIGN" title="Design considerations"/>
+  </entry>
+  <entry keyword="hierarchy">
+   <topic href="overview.html#id13" title="Class hierarchy"/>
+  </entry>
+  <entry keyword="pointer">
+   <topic href="overview.html#id7" title="Instance structure members"/>
+  </entry>
+  <entry keyword="resource table">
+   <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+  </entry>
+  <entry keyword="structure">
+   <entry keyword="example">
+    <topic href="overview.html#id10" title="Class structure members"/>
+   </entry>
+   <entry keyword="initializing">
+    <topic href="overview.html#WidgetSourceFile" title="Widget source file"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="class-level callbacks">
+ </entry>
+ <entry keyword="clipping">
+  <topic href="libs/ptattemptresize.html#id7" title="Description:"/>
+  <topic href="libs/ptresizecanvas.html#id7" title="Description:"/>
+  <topic href="anatomy.html#DrawMethod" title="Draw method"/>
+  <topic href="anatomy.html#ExtentMethod" title="Extent method"/>
+  <topic href="superclass.html#PTCONTAINER" title="PtContainer"/>
+  <entry keyword="balloon">
+   <topic href="superclass.html#id308" title="Functions"/>
+  </entry>
+  <entry keyword="disjoint widgets">
+   <topic href="anatomy.html#id37" title="Widget class structure description"/>
+  </entry>
+  <entry keyword="PtClipAdd()">
+   <topic href="libs/ptclipadd.html#id7" title="Description:"/>
+   <topic href="lifewidg.html#id25" title="Draw method"/>
+  </entry>
+  <entry keyword="PtClipRemove()">
+   <topic href="libs/ptclipremove.html#id5" title="Description:"/>
+   <topic href="lifewidg.html#id25" title="Draw method"/>
+  </entry>
+  <entry keyword="PtGenList">
+   <topic href="list.html#WidgetInstanceStructure" title="Widget instance structure"/>
+  </entry>
+ </entry>
+ <entry keyword="closing">
+  <entry keyword="PhAB">
+   <entry keyword="plugins">
+    <topic href="api/closing.html#id7" title="Description:"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="common">
+  <entry keyword="structure">
+   <entry keyword="for PhAB plugins">
+    <topic href="api/phabresexportcommon_t.html#id5" title="Description:"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="common structure">
+  <entry keyword="for PhAB plugins">
+   <topic href="api/resplugincommon_t.html#id5" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="Common User Access (CUA)">
+  <topic href="anatomy.html#id88" title="Defaults method"/>
+ </entry>
+ <entry keyword="comparing values">
+  <entry keyword="in PhAB plugins">
+   <topic href="api/cmp.html#id7" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="compound widgets">
+  <topic href="anatomy.html#COMPOUNDANATOMY" title="Compound widget anatomy"/>
+  <topic href="lifewidg.html#COMPOUND" title="Compound widgets"/>
+  <topic href="overview.html#id19" title="Compound widgets"/>
+  <topic href="anatomy.html#id105" title="Destruction method"/>
+  <topic href="superclass.html#PTCOMPOUND" title="PtCompound"/>
+  <entry keyword="blocking resources">
+   <topic href="anatomy.html#COMPOUNDANATOMY" title="Compound widget anatomy"/>
+  </entry>
+  <entry keyword="Defaults method">
+   <topic href="lifewidg.html#id43" title="Exporting subordinate widgets"/>
+  </entry>
+  <entry keyword="exporting subordinate widgets">
+   <topic href="anatomy.html#COMPOUNDANATOMY" title="Compound widget anatomy"/>
+   <topic href="lifewidg.html#COMPOUND" title="Compound widgets"/>
+   <topic href="overview.html#id19" title="Compound widgets"/>
+   <topic href="lifewidg.html#id43" title="Exporting subordinate widgets"/>
+  </entry>
+  <entry keyword="Get Resources method">
+   <topic href="anatomy.html#GetResourcesMethod" title="Get Resources method"/>
+  </entry>
+  <entry keyword="PtCompoundRedirect()">
+   <topic href="libs/ptcompoundredirect.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="Realization method">
+   <topic href="anatomy.html#RealizationMethod" title="Realization method"/>
+  </entry>
+  <entry keyword=" sample PtSampCompound widget">
+   <topic href="lifewidg.html#id43" title="Exporting subordinate widgets"/>
+  </entry>
+  <entry keyword="Set Resources method">
+   <topic href="anatomy.html#SetResourcesMethod" title="Set Resources method"/>
+  </entry>
+ </entry>
+ <entry keyword="Connection method">
+  <topic href="anatomy.html#ConnectionMethod" title="Connection method"/>
+  <topic href="lifewidg.html#id13" title="Realizing a widget instance"/>
+  <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+  <topic href="anatomy.html#id37" title="Widget class structure description"/>
+  <entry keyword="chaining">
+   <topic href="lifewidg.html#id15" title="Processing methods"/>
+  </entry>
+  <entry keyword="PtBasic">
+   <topic href="superclass.html#id43" title="Connection method"/>
+  </entry>
+  <entry keyword="PtCompound">
+   <topic href="superclass.html#id129" title="Connection method"/>
+  </entry>
+  <entry keyword="PtContainer">
+   <topic href="superclass.html#id78" title="Connection method"/>
+  </entry>
+  <entry keyword="PtGauge">
+   <topic href="superclass.html#id354" title="Connection method"/>
+  </entry>
+  <entry keyword="PtGenList">
+   <topic href="superclass.html#id164" title="Connection method"/>
+  </entry>
+  <entry keyword="PtGenTree">
+   <topic href="superclass.html#id229" title="Connection method"/>
+  </entry>
+  <entry keyword="PtGraphic">
+   <topic href="superclass.html#id321" title="Connection method"/>
+  </entry>
+  <entry keyword="PtLabel">
+   <topic href="superclass.html#id290" title="Connection method"/>
+  </entry>
+  <entry keyword="PtMenu">
+   <topic href="anatomy.html#ConnectionMethod" title="Connection method"/>
+  </entry>
+  <entry keyword="PtSuperClassConnect()">
+   <topic href="libs/ptsuperclassconnect.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="PtSuperClassConnectFrom()">
+   <topic href="libs/ptsuperclassconnect.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="PtWidget">
+   <topic href="anatomy.html#ConnectionMethod" title="Connection method"/>
+   <topic href="superclass.html#id16" title="Connection method"/>
+  </entry>
+  <entry keyword="ShadowedBox">
+   <topic href="lifewidg.html#id21" title="Connection method"/>
+  </entry>
+ </entry>
+ <entry keyword="container widgets">
+  <topic href="anatomy.html#CONTAINERANATOMY" title="Container widget anatomy"/>
+  <topic href="lifewidg.html#CONTAINER" title="Container widgets"/>
+  <topic href="overview.html#id17" title="Container widgets"/>
+  <topic href="superclass.html#PTCONTAINER" title="PtContainer"/>
+  <topic href="anatomy.html#id92" title="Realization method"/>
+  <entry keyword="balloons">
+   <topic href="anatomy.html#InitializationMethod" title="Initialization method"/>
+  </entry>
+  <entry keyword="child-constraint methods">
+   <topic href="lifewidg.html#id38" title="Child constraints"/>
+  </entry>
+  <entry keyword="child-redirector function">
+   <topic href="anatomy.html#ContainerRedirectorFunction" title="Child Redirection method"/>
+  </entry>
+  <entry keyword="controlling children">
+   <topic href="overview.html#id17" title="Container widgets"/>
+  </entry>
+  <entry keyword="exporting subordinate widgets">
+   <topic href="anatomy.html#COMPOUNDANATOMY" title="Compound widget anatomy"/>
+  </entry>
+  <entry keyword="Extent method">
+   <topic href="lifewidg.html#CONTAINER" title="Container widgets"/>
+  </entry>
+  <entry keyword="Pt_CONSUME_EVENTS">
+   <topic href="superclass.html#id63" title="Functions"/>
+  </entry>
+  <entry keyword="Pt_CONTAINER">
+   <topic href="anatomy.html#id37" title="Widget class structure description"/>
+  </entry>
+  <entry keyword="redirector function">
+   <topic href="lifewidg.html#id40" title="Child redirection"/>
+  </entry>
+ </entry>
+ <entry keyword="conventions">
+  <entry keyword="typographical">
+   <topic href="about.html#id3" title="Typographical conventions"/>
+  </entry>
+ </entry>
+ <entry keyword="creating windows">
+  <entry keyword="in PhAB plugins">
+   <topic href="api/create_window.html#id7" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="CUA (Common User Access)">
+  <topic href="anatomy.html#id88" title="Defaults method"/>
+ </entry>
+ <entry keyword="Defaults method">
+  <topic href="anatomy.html#COMPOUNDANATOMY" title="Compound widget anatomy"/>
+  <topic href="anatomy.html#DefaultsMethod" title="Defaults method"/>
+  <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+  <topic href="anatomy.html#id37" title="Widget class structure description"/>
+  <entry keyword="chaining">
+   <topic href="lifewidg.html#id15" title="Processing methods"/>
+  </entry>
+  <entry keyword="compound widgets">
+   <topic href="lifewidg.html#id43" title="Exporting subordinate widgets"/>
+  </entry>
+  <entry keyword="PtBasic">
+   <topic href="superclass.html#id37" title="Defaults method"/>
+  </entry>
+  <entry keyword="PtComboBox">
+   <topic href="anatomy.html#COMPOUNDANATOMY" title="Compound widget anatomy"/>
+   <topic href="anatomy.html#CompoundDefaultsMethod" title="Defaults method"/>
+  </entry>
+  <entry keyword="PtCompound">
+   <topic href="anatomy.html#CompoundDefaultsMethod" title="Defaults method"/>
+   <topic href="superclass.html#id123" title="Defaults method"/>
+  </entry>
+  <entry keyword="PtContainer">
+   <topic href="anatomy.html#ContainerRedirectorFunction" title="Child Redirection method"/>
+   <topic href="anatomy.html#id88" title="Defaults method"/>
+   <topic href="superclass.html#id72" title="Defaults method"/>
+  </entry>
+  <entry keyword="PtGauge">
+   <topic href="superclass.html#id348" title="Defaults method"/>
+  </entry>
+  <entry keyword="PtGenList">
+   <topic href="superclass.html#id158" title="Defaults method"/>
+  </entry>
+  <entry keyword="PtGenTree">
+   <topic href="superclass.html#id223" title="Defaults method"/>
+  </entry>
+  <entry keyword="PtGraphic">
+   <topic href="superclass.html#id315" title="Defaults method"/>
+  </entry>
+  <entry keyword="PtLabel">
+   <topic href="superclass.html#id284" title="Defaults method"/>
+  </entry>
+  <entry keyword="PtWidget">
+   <topic href="superclass.html#id10" title="Defaults method"/>
+  </entry>
+  <entry keyword="ShadowedBox">
+   <topic href="overview.html#id10" title="Class structure members"/>
+   <topic href="anatomy.html#id40" title="PtBasic class resource additions"/>
+   <topic href="lifewidg.html#id9" title="Setting default values"/>
+  </entry>
+ </entry>
+ <entry keyword="destroying">
+  <entry keyword="PhAB plugins">
+   <topic href="api/resplugindestroyf_t.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="windows">
+   <entry keyword="in PhAB plugins">
+    <topic href="api/destroy.html#id7" title="Description:"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="Destruction method">
+  <topic href="anatomy.html#ArgValueAndLenMembers" title="arg_value and arg_len members"/>
+  <topic href="anatomy.html#DestructionMethod" title="Destruction method"/>
+  <topic href="lifewidg.html#id33" title="Destruction method"/>
+  <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+  <topic href="anatomy.html#id37" title="Widget class structure description"/>
+  <entry keyword="chaining">
+   <topic href="lifewidg.html#id15" title="Processing methods"/>
+  </entry>
+  <entry keyword="PtBasic">
+   <topic href="superclass.html#id51" title="Destruction method"/>
+  </entry>
+  <entry keyword="PtButton">
+   <topic href="anatomy.html#DestructionMethod" title="Destruction method"/>
+  </entry>
+  <entry keyword="PtCompound">
+   <topic href="anatomy.html#id105" title="Destruction method"/>
+   <topic href="superclass.html#id137" title="Destruction method"/>
+  </entry>
+  <entry keyword="PtContainer">
+   <topic href="superclass.html#id86" title="Destruction method"/>
+  </entry>
+  <entry keyword="PtGauge">
+   <topic href="superclass.html#id362" title="Destruction method"/>
+  </entry>
+  <entry keyword="PtGenList">
+   <topic href="superclass.html#id172" title="Destruction method"/>
+  </entry>
+  <entry keyword="PtGenTree">
+   <topic href="superclass.html#id237" title="Destruction method"/>
+  </entry>
+  <entry keyword="PtGraphic">
+   <topic href="superclass.html#id329" title="Destruction method"/>
+  </entry>
+  <entry keyword="PtWidget">
+   <topic href="superclass.html#id22" title="Destruction method"/>
+  </entry>
+ </entry>
+ <entry keyword="disabling">
+  <entry keyword="resource editors">
+   <topic href="api/resplugindisablef_t.html#id5" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="Draw method">
+  <topic href="anatomy.html#CLASSMETHODS" title="Class methods"/>
+  <topic href="libs/ptattemptresize.html#id7" title="Description:"/>
+  <topic href="libs/ptresizecanvas.html#id7" title="Description:"/>
+  <topic href="libs/ptsuperclassdraw.html#id7" title="Description:"/>
+  <topic href="anatomy.html#DrawMethod" title="Draw method"/>
+  <topic href="anatomy.html#ExtentMethod" title="Extent method"/>
+  <topic href="misc_tips.html" title="Miscellaneous Widget-Building Tips"/>
+  <topic href="lifewidg.html#id13" title="Realizing a widget instance"/>
+  <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+  <entry keyword="inheriting">
+   <topic href="lifewidg.html#id15" title="Processing methods"/>
+  </entry>
+  <entry keyword="list widgets">
+   <topic href="list.html#OVERVIEW" title="Overview"/>
+   <topic href="list.html#WidgetInstanceStructure" title="Widget instance structure"/>
+  </entry>
+  <entry keyword="PtBasic">
+   <topic href="superclass.html#id47" title="Draw method"/>
+  </entry>
+  <entry keyword="PtButton">
+   <topic href="anatomy.html#DrawMethod" title="Draw method"/>
+  </entry>
+  <entry keyword="PtCompound">
+   <topic href="superclass.html#id133" title="Draw method"/>
+  </entry>
+  <entry keyword="PtContainer">
+   <topic href="superclass.html#id82" title="Draw method"/>
+  </entry>
+  <entry keyword="PtGauge">
+   <topic href="superclass.html#id358" title="Draw method"/>
+  </entry>
+  <entry keyword="PtGenList">
+   <topic href="superclass.html#id168" title="Draw method"/>
+  </entry>
+  <entry keyword="PtGenTree">
+   <topic href="superclass.html#id233" title="Draw method"/>
+  </entry>
+  <entry keyword="PtGraphic">
+   <topic href="superclass.html#id325" title="Draw method"/>
+  </entry>
+  <entry keyword="PtLabel">
+   <topic href="superclass.html#id294" title="Draw method"/>
+  </entry>
+  <entry keyword="repairing damage">
+   <topic href="lifewidg.html#id27" title="After realizing a widget"/>
+  </entry>
+  <entry keyword="ShadowedBox">
+   <topic href="lifewidg.html#id25" title="Draw method"/>
+   <topic href="anatomy.html#id40" title="PtBasic class resource additions"/>
+  </entry>
+  <entry keyword="using the Pg library safely">
+   <topic href="anatomy.html#UsingPgLibrary" title="Using the Pg library safely"/>
+  </entry>
+ </entry>
+ <entry keyword="duplicating">
+  <entry keyword="values">
+   <entry keyword="in PhAB plugins">
+    <topic href="api/dup.html#id7" title="Description:"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="environment variables">
+  <entry keyword="LD_LIBRARY_PATH">
+   <topic href="bind.html#SharedObject" title="Creating a shared object"/>
+  </entry>
+ </entry>
+ <entry keyword="events">
+  <entry keyword="Connection method">
+   <topic href="superclass.html#id16" title="Connection method"/>
+  </entry>
+  <entry keyword="consuming">
+   <topic href="superclass.html#id63" title="Functions"/>
+  </entry>
+  <entry keyword="expose">
+   <topic href="anatomy.html#id37" title="Widget class structure description"/>
+  </entry>
+  <entry keyword="focusing">
+   <topic href="superclass.html#id24" title="Widget actions"/>
+  </entry>
+  <entry keyword="handling in widget class">
+   <topic href="overview.html#DESIGN" title="Design considerations"/>
+  </entry>
+  <entry keyword="mask">
+   <topic href="superclass.html#id24" title="Widget actions"/>
+  </entry>
+  <entry keyword="Ph_EV_BOUNDARY">
+   <topic href="superclass.html#id28" title="Functions"/>
+   <topic href="anatomy.html#ACTIONS" title="Widget actions"/>
+  </entry>
+  <entry keyword="Ph_EV_BUT_PRESS">
+   <topic href="anatomy.html#ACTIONS" title="Widget actions"/>
+   <topic href="superclass.html#id24" title="Widget actions"/>
+   <topic href="superclass.html#id59" title="Widget actions"/>
+  </entry>
+  <entry keyword="Ph_EV_BUT_RELEASE">
+   <topic href="anatomy.html#ACTIONS" title="Widget actions"/>
+   <topic href="superclass.html#id24" title="Widget actions"/>
+   <topic href="superclass.html#id59" title="Widget actions"/>
+  </entry>
+  <entry keyword="Ph_EV_BUT_REPEAT">
+   <topic href="anatomy.html#ACTIONS" title="Widget actions"/>
+   <topic href="superclass.html#id24" title="Widget actions"/>
+   <topic href="superclass.html#id59" title="Widget actions"/>
+  </entry>
+  <entry keyword="Ph_EV_KEY">
+   <topic href="superclass.html#id24" title="Widget actions"/>
+  </entry>
+  <entry keyword="Pt_CB_FILTER">
+   <topic href="superclass.html#id24" title="Widget actions"/>
+  </entry>
+  <entry keyword="Pt_CB_RAW">
+   <topic href="anatomy.html#ACTIONS" title="Widget actions"/>
+  </entry>
+  <entry keyword="Pt_CONSUME_EVENTS">
+   <topic href="superclass.html#id63" title="Functions"/>
+  </entry>
+  <entry keyword="Pt_SET_RAW_CALLBACKS">
+   <topic href="superclass.html#id59" title="Widget actions"/>
+  </entry>
+  <entry keyword="PtEventHandler()">
+   <topic href="superclass.html#id24" title="Widget actions"/>
+  </entry>
+  <entry keyword="PtGenList">
+   <topic href="list.html#KeyMethod" title="List Key method"/>
+   <topic href="list.html#MouseMethod" title="List Mouse method"/>
+   <topic href="superclass.html#id210" title="Widget actions"/>
+  </entry>
+  <entry keyword="PtSuperClassRawEvent()">
+   <topic href="libs/ptsuperclassrawevent.html#id7" title="Description:"/>
+   <topic href="superclass.html#id59" title="Widget actions"/>
+  </entry>
+  <entry keyword="PtSuperClassRawEventFrom()">
+   <topic href="libs/ptsuperclassrawevent.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="raw callbacks">
+   <topic href="bind.html#ListOfCallbacks" title="List of callbacks (c=, k=, e=)"/>
+   <topic href="anatomy.html#id58" title="Raw callback list"/>
+   <topic href="anatomy.html#ACTIONS" title="Widget actions"/>
+   <topic href="superclass.html#id24" title="Widget actions"/>
+   <topic href="superclass.html#id59" title="Widget actions"/>
+   <topic href="anatomy.html#id37" title="Widget class structure description"/>
+  </entry>
+ </entry>
+ <entry keyword="Extent method">
+  <topic href="libs/ptmoveresizewidget.html#id7" title="Description:"/>
+  <topic href="libs/ptsuperclassextent.html#id7" title="Description:"/>
+  <topic href="anatomy.html#ExtentMethod" title="Extent method"/>
+  <topic href="misc_tips.html" title="Miscellaneous Widget-Building Tips"/>
+  <topic href="anatomy.html#ModfMember" title="mod_f member"/>
+  <topic href="lifewidg.html#id13" title="Realizing a widget instance"/>
+  <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+  <entry keyword="container widgets">
+   <topic href="lifewidg.html#CONTAINER" title="Container widgets"/>
+  </entry>
+  <entry keyword="inheriting">
+   <topic href="lifewidg.html#id15" title="Processing methods"/>
+  </entry>
+  <entry keyword="PtBasic">
+   <topic href="superclass.html#id41" title="Extent method"/>
+  </entry>
+  <entry keyword="PtCompound">
+   <topic href="superclass.html#id127" title="Extent method"/>
+   <topic href="superclass.html#id162" title="Extent method"/>
+  </entry>
+  <entry keyword="PtContainer">
+   <topic href="anatomy.html#id90" title="Extent method"/>
+   <topic href="superclass.html#id76" title="Extent method"/>
+  </entry>
+  <entry keyword="PtDivider">
+   <topic href="superclass.html#id162" title="Extent method"/>
+  </entry>
+  <entry keyword="PtGauge">
+   <topic href="superclass.html#id352" title="Extent method"/>
+  </entry>
+  <entry keyword="PtGenList">
+   <topic href="superclass.html#id162" title="Extent method"/>
+  </entry>
+  <entry keyword="PtGenTree">
+   <topic href="superclass.html#id227" title="Extent method"/>
+  </entry>
+  <entry keyword="PtGraphic">
+   <topic href="superclass.html#id319" title="Extent method"/>
+  </entry>
+  <entry keyword="PtLabel">
+   <topic href="superclass.html#id288" title="Extent method"/>
+  </entry>
+  <entry keyword="PtWidget">
+   <topic href="superclass.html#id14" title="Extent method"/>
+  </entry>
+  <entry keyword="ShadowedBox">
+   <topic href="lifewidg.html#id19" title="Extent method"/>
+  </entry>
+ </entry>
+ <entry keyword="focus">
+  <topic href="superclass.html#id47" title="Draw method"/>
+  <entry keyword="Common User Access (CUA)">
+   <topic href="anatomy.html#id88" title="Defaults method"/>
+  </entry>
+  <entry keyword="getting">
+   <topic href="lifewidg.html#id38" title="Child constraints"/>
+   <topic href="anatomy.html#id81" title="Child Getting Focus method"/>
+   <topic href="anatomy.html#id61" title="Child-constraint support"/>
+   <topic href="anatomy.html#GotFocusMethod" title="Got Focus method"/>
+   <topic href="superclass.html#id53" title="Got Focus method"/>
+   <topic href="lifewidg.html#id15" title="Processing methods"/>
+   <topic href="anatomy.html#id40" title="PtBasic class resource additions"/>
+   <topic href="superclass.html#id24" title="Widget actions"/>
+   <entry keyword="preventing">
+    <topic href="anatomy.html#id88" title="Defaults method"/>
+   </entry>
+   <entry keyword="PtGenList">
+    <topic href="superclass.html#id174" title="Got Focus method"/>
+   </entry>
+  </entry>
+  <entry keyword="losing">
+   <topic href="lifewidg.html#id38" title="Child constraints"/>
+   <topic href="anatomy.html#id83" title="Child Losing Focus method"/>
+   <topic href="anatomy.html#id61" title="Child-constraint support"/>
+   <topic href="anatomy.html#LostFocusMethod" title="Lost Focus method"/>
+   <topic href="superclass.html#id55" title="Lost Focus method"/>
+   <topic href="lifewidg.html#id15" title="Processing methods"/>
+   <topic href="anatomy.html#id40" title="PtBasic class resource additions"/>
+   <entry keyword="PtGenList">
+    <topic href="superclass.html#id176" title="Lost Focus method"/>
+   </entry>
+  </entry>
+  <entry keyword="Ph_DIRECTED_FOCUS">
+   <topic href="superclass.html#id24" title="Widget actions"/>
+  </entry>
+  <entry keyword="Ph_EV_KEY">
+   <topic href="superclass.html#id24" title="Widget actions"/>
+  </entry>
+  <entry keyword="Pt_CHILD_GETTING_FOCUS">
+   <topic href="anatomy.html#id81" title="Child Getting Focus method"/>
+  </entry>
+  <entry keyword="Pt_CHILD_LOSING_FOCUS">
+   <topic href="anatomy.html#id83" title="Child Losing Focus method"/>
+  </entry>
+  <entry keyword="Pt_DAMAGE_ON_FOCUS">
+   <topic href="anatomy.html#GotFocusMethod" title="Got Focus method"/>
+  </entry>
+  <entry keyword="Pt_FOCUS_RENDER">
+   <topic href="superclass.html#id174" title="Got Focus method"/>
+  </entry>
+  <entry keyword="Pt_GEN_LIST_NO_AUTOFOCUS">
+   <topic href="list.html#WidgetInstanceStructure" title="Widget instance structure"/>
+  </entry>
+  <entry keyword="Pt_GETS_FOCUS">
+   <topic href="superclass.html#id214" title="Functions"/>
+   <topic href="superclass.html#id24" title="Widget actions"/>
+  </entry>
+  <entry keyword="Pt_LIST_SCROLLBAR_GETS_FOCUS">
+   <topic href="superclass.html#id214" title="Functions"/>
+  </entry>
+  <entry keyword="Pt_SELECTION_MODE_NOFOCUS">
+   <topic href="superclass.html#id174" title="Got Focus method"/>
+   <topic href="list.html#WidgetInstanceStructure" title="Widget instance structure"/>
+  </entry>
+  <entry keyword="PtBasic">
+   <topic href="overview.html#SUBCLASSING" title="Subclassing widgets"/>
+  </entry>
+  <entry keyword="PtSuperClassChildGettingFocus()">
+   <topic href="libs/ptsuperclasschildgettingfocus.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="PtSuperClassChildLosingFocus()">
+   <topic href="libs/ptsuperclasschildlosingfocus.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="PtSuperClassGotFocus()">
+   <topic href="libs/ptsuperclassgotfocus.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="PtSuperClassLostFocus()">
+   <topic href="libs/ptsuperclasslostfocus.html#id7" title="Description:"/>
+   <topic href="anatomy.html#GotFocusMethod" title="Got Focus method"/>
+   <topic href="anatomy.html#LostFocusMethod" title="Lost Focus method"/>
+  </entry>
+ </entry>
+ <entry keyword="freeing">
+  <entry keyword="images">
+   <entry keyword="in PhAB plugins">
+    <topic href="api/free_image.html#id7" title="Description:"/>
+   </entry>
+  </entry>
+  <entry keyword="memory">
+   <entry keyword="in PhAB plugins">
+    <topic href="api/free_mem.html#id7" title="Description:"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="freeing memory">
+  <entry keyword="in PhAB plugins">
+   <topic href="api/free.html#id7" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="frugal editor">
+  <entry keyword="functions">
+   <topic href="api/phabresexportfrugal_t.html#id5" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="frugal editors">
+  <entry keyword="base structure">
+   <topic href="api/respluginfulleditor_t.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="creating">
+   <topic href="api/respluginfrugalcreatef_t.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="structure">
+   <topic href="api/respluginfrugaleditor_t.html#id5" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="full editor">
+  <entry keyword="functions">
+   <topic href="api/phabresexportfull_t.html#id5" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="full editors">
+  <entry keyword="creating">
+   <topic href="api/respluginfullcreatef_t.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="window area">
+   <topic href="api/resplugingetareaf_t.html#id5" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="Get Resources method">
+  <topic href="anatomy.html#GetResourcesMethod" title="Get Resources method"/>
+  <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+  <topic href="anatomy.html#id37" title="Widget class structure description"/>
+  <entry keyword="inheriting">
+   <topic href="lifewidg.html#id15" title="Processing methods"/>
+  </entry>
+  <entry keyword="PtCompound">
+   <topic href="anatomy.html#id103" title="Get Resources and Set Resources methods"/>
+  </entry>
+  <entry keyword="PtFindResource()">
+   <topic href="libs/ptfindresource.html#id7" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="Got Focus method">
+  <topic href="libs/ptsuperclassgotfocus.html#id7" title="Description:"/>
+  <topic href="anatomy.html#GotFocusMethod" title="Got Focus method"/>
+  <entry keyword="inheriting">
+   <topic href="lifewidg.html#id15" title="Processing methods"/>
+  </entry>
+  <entry keyword="PtBasic">
+   <topic href="superclass.html#id53" title="Got Focus method"/>
+   <topic href="anatomy.html#id40" title="PtBasic class resource additions"/>
+   <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+  </entry>
+  <entry keyword="PtButton">
+   <topic href="anatomy.html#GotFocusMethod" title="Got Focus method"/>
+  </entry>
+  <entry keyword="PtCompound">
+   <topic href="superclass.html#id139" title="Got Focus method"/>
+  </entry>
+  <entry keyword="PtContainer">
+   <topic href="superclass.html#id88" title="Got Focus method"/>
+  </entry>
+  <entry keyword="PtGauge">
+   <topic href="superclass.html#id364" title="Got Focus method"/>
+  </entry>
+  <entry keyword="PtGenTree">
+   <topic href="superclass.html#id239" title="Got Focus method"/>
+  </entry>
+  <entry keyword="PtGraphic">
+   <topic href="superclass.html#id331" title="Got Focus method"/>
+  </entry>
+  <entry keyword="PtLabel">
+   <topic href="superclass.html#id298" title="Got focus method"/>
+  </entry>
+ </entry>
+ <entry keyword="handles">
+  <entry keyword="in PhAB plugins">
+   <topic href="api/get_res.html#id7" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="header file">
+  <entry keyword="example code">
+   <topic href="overview.html#WidgetHeaderFile" title="Widget header file"/>
+  </entry>
+ </entry>
+ <entry keyword="hotkey callbacks">
+  <topic href="superclass.html#id16" title="Connection method"/>
+  <topic href="superclass.html#id28" title="Functions"/>
+  <topic href="bind.html#ListOfCallbacks" title="List of callbacks (c=, k=, e=)"/>
+  <topic href="superclass.html#id20" title="Unrealization method"/>
+  <topic href="superclass.html#id24" title="Widget actions"/>
+  <entry keyword="freeing">
+   <topic href="libs/ptdestroyhotkeycallbacks.html#id7" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="image resources">
+  <entry keyword="allocating">
+   <topic href="api/alloc_image.html#id7" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="indicating changes">
+  <entry keyword="in PhAB plugins">
+   <topic href="api/respluginanychangesf_t.html#id5" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="Initialization method">
+  <topic href="anatomy.html#InitializationMethod" title="Initialization method"/>
+  <topic href="lifewidg.html#id13" title="Realizing a widget instance"/>
+  <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+  <topic href="anatomy.html#id37" title="Widget class structure description"/>
+  <entry keyword="chaining">
+   <topic href="lifewidg.html#id15" title="Processing methods"/>
+  </entry>
+  <entry keyword="PtBasic">
+   <topic href="superclass.html#id39" title="Initialization method"/>
+  </entry>
+  <entry keyword="PtCompound">
+   <topic href="superclass.html#id125" title="Initialization method"/>
+  </entry>
+  <entry keyword="PtContainer">
+   <topic href="superclass.html#id74" title="Initialization method"/>
+  </entry>
+  <entry keyword="PtGauge">
+   <topic href="superclass.html#id350" title="Initialization method"/>
+  </entry>
+  <entry keyword="PtGenList">
+   <topic href="superclass.html#id160" title="Initialization method"/>
+  </entry>
+  <entry keyword="PtGenTree">
+   <topic href="superclass.html#id225" title="Initialization method"/>
+  </entry>
+  <entry keyword="PtGraphic">
+   <topic href="superclass.html#id317" title="Initialization method"/>
+  </entry>
+  <entry keyword="PtLabel">
+   <topic href="superclass.html#id286" title="Initialization method"/>
+  </entry>
+  <entry keyword="PtWidget">
+   <topic href="superclass.html#id12" title="Initialization method"/>
+  </entry>
+  <entry keyword="ShadowedBox">
+   <topic href="lifewidg.html#id17" title="Initialization method"/>
+  </entry>
+ </entry>
+ <entry keyword="instance structure">
+  <entry keyword="example">
+   <topic href="overview.html#WidgetHeaderFile" title="Widget header file"/>
+  </entry>
+  <entry keyword="setting/getting members">
+   <topic href="overview.html#id7" title="Instance structure members"/>
+  </entry>
+ </entry>
+ <entry keyword="LD_LIBRARY_PATH">
+  <topic href="bind.html#SharedObject" title="Creating a shared object"/>
+ </entry>
+ <entry keyword="List Attributes method">
+  <entry keyword="list widgets">
+   <topic href="list.html#AttrMethod" title="List Attributes method"/>
+  </entry>
+  <entry keyword="PtGenList">
+   <topic href="superclass.html#id208" title="List Attributes method"/>
+  </entry>
+ </entry>
+ <entry keyword="List Draw method">
+  <entry keyword="list widgets">
+   <topic href="list.html#DrawMethod" title="List Draw method"/>
+   <topic href="list.html#OVERVIEW" title="Overview"/>
+   <topic href="list.html#WidgetInstanceStructure" title="Widget instance structure"/>
+  </entry>
+  <entry keyword="PtGenList">
+   <topic href="superclass.html#id198" title="List Draw method"/>
+  </entry>
+  <entry keyword="PtGenTree">
+   <topic href="superclass.html#id263" title="List Draw method"/>
+   <topic href="tree.html#OVERVIEW" title="Overview"/>
+   <topic href="tree.html#DrawMethod" title="Tree Draw Item method"/>
+  </entry>
+  <entry keyword="PtSuperClassGenListDraw()">
+   <topic href="libs/ptsuperclassgenlistdraw.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="tree widgets">
+   <topic href="tree.html#OVERVIEW" title="Overview"/>
+  </entry>
+ </entry>
+ <entry keyword="List Inflate method">
+  <entry keyword="list widgets">
+   <topic href="list.html#InflateMethod" title="List Inflate method"/>
+  </entry>
+  <entry keyword="PtGenList">
+   <topic href="superclass.html#id206" title="List Inflate method"/>
+  </entry>
+  <entry keyword="PtSuperClassGenListInflate()">
+   <topic href="libs/ptsuperclassgenlistinflate.html#id7" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="List Key method">
+  <entry keyword="list widgets">
+   <topic href="list.html#KeyMethod" title="List Key method"/>
+   <topic href="list.html#OVERVIEW" title="Overview"/>
+  </entry>
+  <entry keyword="PtGenList">
+   <topic href="superclass.html#id202" title="List Key method"/>
+  </entry>
+  <entry keyword="PtGenTree">
+   <topic href="superclass.html#id267" title="List Key method"/>
+  </entry>
+  <entry keyword="PtSuperClassGenListKey()">
+   <topic href="libs/ptsuperclassgenlistkey.html#id7" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="List Mouse method">
+  <entry keyword="list widgets">
+   <topic href="list.html#MouseMethod" title="List Mouse method"/>
+   <topic href="list.html#OVERVIEW" title="Overview"/>
+  </entry>
+  <entry keyword="PtGenList">
+   <topic href="superclass.html#id200" title="List Mouse method"/>
+  </entry>
+  <entry keyword="PtGenTree">
+   <topic href="superclass.html#id265" title="List Mouse method"/>
+  </entry>
+  <entry keyword="PtSuperClassGenListMouse()">
+   <topic href="libs/ptsuperclassgenlistmouse.html#id7" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="List Select method">
+  <entry keyword="list widgets">
+   <topic href="list.html#SelectMethod" title="List Select method"/>
+  </entry>
+  <entry keyword="PtGenList">
+   <topic href="superclass.html#id204" title="List Select method"/>
+  </entry>
+  <entry keyword="PtSuperClassGenListSelect()">
+   <topic href="libs/ptsuperclassgenlistselect.html#id7" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="list widgets">
+  <topic href="list.html#CONVENIENCE" title="Convenience functions"/>
+  <topic href="list.html#OVERVIEW" title="Overview"/>
+  <entry keyword="methods">
+   <entry keyword="Attributes">
+    <topic href="list.html#AttrMethod" title="List Attributes method"/>
+   </entry>
+   <entry keyword="Draw">
+    <topic href="list.html#OVERVIEW" title="Overview"/>
+    <topic href="list.html#WidgetInstanceStructure" title="Widget instance structure"/>
+   </entry>
+   <entry keyword="List Draw">
+    <topic href="list.html#DrawMethod" title="List Draw method"/>
+    <topic href="list.html#OVERVIEW" title="Overview"/>
+    <topic href="list.html#WidgetInstanceStructure" title="Widget instance structure"/>
+   </entry>
+   <entry keyword="List Inflate">
+    <topic href="list.html#InflateMethod" title="List Inflate method"/>
+   </entry>
+   <entry keyword="List Key">
+    <topic href="list.html#KeyMethod" title="List Key method"/>
+    <topic href="list.html#OVERVIEW" title="Overview"/>
+   </entry>
+   <entry keyword="List Mouse">
+    <topic href="list.html#MouseMethod" title="List Mouse method"/>
+    <topic href="list.html#OVERVIEW" title="Overview"/>
+   </entry>
+   <entry keyword="List Select">
+    <topic href="list.html#SelectMethod" title="List Select method"/>
+   </entry>
+  </entry>
+  <entry keyword="See also PtGenList"/>
+ </entry>
+ <entry keyword="loading">
+  <entry keyword="PhAB plugins">
+   <topic href="api/respluginloadingf_t.html#id5" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="Lost Focus method">
+  <topic href="libs/ptsuperclasslostfocus.html#id7" title="Description:"/>
+  <topic href="anatomy.html#LostFocusMethod" title="Lost Focus method"/>
+  <entry keyword="inheriting">
+   <topic href="lifewidg.html#id15" title="Processing methods"/>
+  </entry>
+  <entry keyword="PtBasic">
+   <topic href="anatomy.html#LostFocusMethod" title="Lost Focus method"/>
+   <topic href="superclass.html#id55" title="Lost Focus method"/>
+   <topic href="anatomy.html#id40" title="PtBasic class resource additions"/>
+   <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+  </entry>
+  <entry keyword="PtCompound">
+   <topic href="superclass.html#id141" title="Lost Focus method"/>
+  </entry>
+  <entry keyword="PtContainer">
+   <topic href="superclass.html#id90" title="Lost Focus method"/>
+  </entry>
+  <entry keyword="PtGauge">
+   <topic href="superclass.html#id366" title="Lost Focus method"/>
+  </entry>
+  <entry keyword="PtGenTree">
+   <topic href="superclass.html#id241" title="Lost Focus method"/>
+  </entry>
+  <entry keyword="PtGraphic">
+   <topic href="superclass.html#id333" title="Lost Focus method"/>
+  </entry>
+  <entry keyword="PtLabel">
+   <topic href="superclass.html#id300" title="Lost Focus method"/>
+  </entry>
+ </entry>
+ <entry keyword="memory">
+  <entry keyword="allocating">
+   <entry keyword="in PhAB plugins">
+    <topic href="api/alloc_mem.html#id7" title="Description:"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="message">
+  <entry keyword="windows">
+   <entry keyword="in PhAB plugins">
+    <topic href="api/message.html#id7" title="Description:"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="methods">
+  <topic href="overview.html#QUICKLOOK" title="A quick look at a widget"/>
+  <topic href="overview.html#id10" title="Class structure members"/>
+  <entry keyword="Calc Opaque Rect">
+   <topic href="anatomy.html#CalcOpaqueRectMethod" title="Calc Opaque Rect method"/>
+   <topic href="libs/ptsuperclasscalcopaque.html#id7" title="Description:"/>
+   <entry keyword="inheriting">
+    <topic href="lifewidg.html#id15" title="Processing methods"/>
+   </entry>
+   <entry keyword="PtBasic">
+    <topic href="anatomy.html#CalcOpaqueRectMethod" title="Calc Opaque Rect method"/>
+    <topic href="superclass.html#id57" title="Calc Opaque Rect method"/>
+    <topic href="anatomy.html#id40" title="PtBasic class resource additions"/>
+    <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+   </entry>
+   <entry keyword="PtCompound">
+    <topic href="superclass.html#id143" title="Calc Opaque Rect method"/>
+   </entry>
+   <entry keyword="PtContainer">
+    <topic href="superclass.html#id92" title="Calc Opaque Rect method"/>
+   </entry>
+   <entry keyword="PtGauge">
+    <topic href="superclass.html#id368" title="Calc Opaque Rect method"/>
+   </entry>
+   <entry keyword="PtGenList">
+    <topic href="superclass.html#id178" title="Calc Opaque Rect method"/>
+   </entry>
+   <entry keyword="PtGenTree">
+    <topic href="superclass.html#id243" title="Calc Opaque Rect method"/>
+   </entry>
+   <entry keyword="PtGraphic">
+    <topic href="superclass.html#id335" title="Calc Opaque Rect method"/>
+   </entry>
+   <entry keyword="PtLabel">
+    <topic href="superclass.html#id302" title="Calc Opaque Rect method"/>
+   </entry>
+  </entry>
+  <entry keyword="chaining">
+   <topic href="lifewidg.html#id15" title="Processing methods"/>
+   <entry keyword="stopping">
+    <topic href="lifewidg.html#id15" title="Processing methods"/>
+   </entry>
+  </entry>
+  <entry keyword="child-constraint">
+   <entry keyword="See child-constraint methods"/>
+  </entry>
+  <entry keyword="Connection">
+   <topic href="anatomy.html#ConnectionMethod" title="Connection method"/>
+   <topic href="lifewidg.html#id13" title="Realizing a widget instance"/>
+   <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+   <topic href="anatomy.html#id37" title="Widget class structure description"/>
+   <entry keyword="chaining">
+    <topic href="lifewidg.html#id15" title="Processing methods"/>
+   </entry>
+   <entry keyword="PtBasic">
+    <topic href="superclass.html#id43" title="Connection method"/>
+   </entry>
+   <entry keyword="PtCompound">
+    <topic href="superclass.html#id129" title="Connection method"/>
+   </entry>
+   <entry keyword="PtContainer">
+    <topic href="superclass.html#id78" title="Connection method"/>
+   </entry>
+   <entry keyword="PtGauge">
+    <topic href="superclass.html#id354" title="Connection method"/>
+   </entry>
+   <entry keyword="PtGenList">
+    <topic href="superclass.html#id164" title="Connection method"/>
+   </entry>
+   <entry keyword="PtGenTree">
+    <topic href="superclass.html#id229" title="Connection method"/>
+   </entry>
+   <entry keyword="PtGraphic">
+    <topic href="superclass.html#id321" title="Connection method"/>
+   </entry>
+   <entry keyword="PtLabel">
+    <topic href="superclass.html#id290" title="Connection method"/>
+   </entry>
+   <entry keyword="PtMenu">
+    <topic href="anatomy.html#ConnectionMethod" title="Connection method"/>
+   </entry>
+   <entry keyword="PtSuperClassConnect()">
+    <topic href="libs/ptsuperclassconnect.html#id7" title="Description:"/>
+   </entry>
+   <entry keyword="PtSuperClassConnectFrom()">
+    <topic href="libs/ptsuperclassconnect.html#id7" title="Description:"/>
+   </entry>
+   <entry keyword="PtWidget">
+    <topic href="anatomy.html#ConnectionMethod" title="Connection method"/>
+    <topic href="superclass.html#id16" title="Connection method"/>
+   </entry>
+   <entry keyword="ShadowedBox">
+    <topic href="lifewidg.html#id21" title="Connection method"/>
+   </entry>
+  </entry>
+  <entry keyword="Defaults">
+   <topic href="anatomy.html#COMPOUNDANATOMY" title="Compound widget anatomy"/>
+   <topic href="anatomy.html#DefaultsMethod" title="Defaults method"/>
+   <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+   <topic href="anatomy.html#id37" title="Widget class structure description"/>
+   <entry keyword="chaining">
+    <topic href="lifewidg.html#id15" title="Processing methods"/>
+   </entry>
+   <entry keyword="compound widgets">
+    <topic href="lifewidg.html#id43" title="Exporting subordinate widgets"/>
+   </entry>
+   <entry keyword="PtBasic">
+    <topic href="superclass.html#id37" title="Defaults method"/>
+   </entry>
+   <entry keyword="PtComboBox">
+    <topic href="anatomy.html#COMPOUNDANATOMY" title="Compound widget anatomy"/>
+    <topic href="anatomy.html#CompoundDefaultsMethod" title="Defaults method"/>
+   </entry>
+   <entry keyword="PtCompound">
+    <topic href="anatomy.html#CompoundDefaultsMethod" title="Defaults method"/>
+    <topic href="superclass.html#id123" title="Defaults method"/>
+   </entry>
+   <entry keyword="PtContainer">
+    <topic href="anatomy.html#ContainerRedirectorFunction" title="Child Redirection method"/>
+    <topic href="anatomy.html#id88" title="Defaults method"/>
+    <topic href="superclass.html#id72" title="Defaults method"/>
+   </entry>
+   <entry keyword="PtGauge">
+    <topic href="superclass.html#id348" title="Defaults method"/>
+   </entry>
+   <entry keyword="PtGenList">
+    <topic href="superclass.html#id158" title="Defaults method"/>
+   </entry>
+   <entry keyword="PtGenTree">
+    <topic href="superclass.html#id223" title="Defaults method"/>
+   </entry>
+   <entry keyword="PtGraphic">
+    <topic href="superclass.html#id315" title="Defaults method"/>
+   </entry>
+   <entry keyword="PtLabel">
+    <topic href="superclass.html#id284" title="Defaults method"/>
+   </entry>
+   <entry keyword="PtWidget">
+    <topic href="superclass.html#id10" title="Defaults method"/>
+   </entry>
+   <entry keyword="ShadowedBox">
+    <topic href="overview.html#id10" title="Class structure members"/>
+    <topic href="anatomy.html#id40" title="PtBasic class resource additions"/>
+    <topic href="lifewidg.html#id9" title="Setting default values"/>
+   </entry>
+  </entry>
+  <entry keyword="Destruction">
+   <topic href="anatomy.html#ArgValueAndLenMembers" title="arg_value and arg_len members"/>
+   <topic href="anatomy.html#DestructionMethod" title="Destruction method"/>
+   <topic href="lifewidg.html#id33" title="Destruction method"/>
+   <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+   <topic href="anatomy.html#id37" title="Widget class structure description"/>
+   <entry keyword="chaining">
+    <topic href="lifewidg.html#id15" title="Processing methods"/>
+   </entry>
+   <entry keyword="PtBasic">
+    <topic href="superclass.html#id51" title="Destruction method"/>
+   </entry>
+   <entry keyword="PtButton">
+    <topic href="anatomy.html#DestructionMethod" title="Destruction method"/>
+   </entry>
+   <entry keyword="PtCompound">
+    <topic href="anatomy.html#id105" title="Destruction method"/>
+    <topic href="superclass.html#id137" title="Destruction method"/>
+   </entry>
+   <entry keyword="PtContainer">
+    <topic href="superclass.html#id86" title="Destruction method"/>
+   </entry>
+   <entry keyword="PtGauge">
+    <topic href="superclass.html#id362" title="Destruction method"/>
+   </entry>
+   <entry keyword="PtGenList">
+    <topic href="superclass.html#id172" title="Destruction method"/>
+   </entry>
+   <entry keyword="PtGenTree">
+    <topic href="superclass.html#id237" title="Destruction method"/>
+   </entry>
+   <entry keyword="PtGraphic">
+    <topic href="superclass.html#id329" title="Destruction method"/>
+   </entry>
+   <entry keyword="PtWidget">
+    <topic href="superclass.html#id22" title="Destruction method"/>
+   </entry>
+  </entry>
+  <entry keyword="Draw">
+   <topic href="anatomy.html#CLASSMETHODS" title="Class methods"/>
+   <topic href="libs/ptattemptresize.html#id7" title="Description:"/>
+   <topic href="libs/ptresizecanvas.html#id7" title="Description:"/>
+   <topic href="libs/ptsuperclassdraw.html#id7" title="Description:"/>
+   <topic href="anatomy.html#DrawMethod" title="Draw method"/>
+   <topic href="anatomy.html#ExtentMethod" title="Extent method"/>
+   <topic href="misc_tips.html" title="Miscellaneous Widget-Building Tips"/>
+   <topic href="lifewidg.html#id13" title="Realizing a widget instance"/>
+   <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+   <entry keyword="inheriting">
+    <topic href="lifewidg.html#id15" title="Processing methods"/>
+   </entry>
+   <entry keyword="list widgets">
+    <topic href="list.html#OVERVIEW" title="Overview"/>
+    <topic href="list.html#WidgetInstanceStructure" title="Widget instance structure"/>
+   </entry>
+   <entry keyword="PtBasic">
+    <topic href="superclass.html#id47" title="Draw method"/>
+   </entry>
+   <entry keyword="PtButton">
+    <topic href="anatomy.html#DrawMethod" title="Draw method"/>
+   </entry>
+   <entry keyword="PtCompound">
+    <topic href="superclass.html#id133" title="Draw method"/>
+   </entry>
+   <entry keyword="PtContainer">
+    <topic href="superclass.html#id82" title="Draw method"/>
+   </entry>
+   <entry keyword="PtGauge">
+    <topic href="superclass.html#id358" title="Draw method"/>
+   </entry>
+   <entry keyword="PtGenList">
+    <topic href="superclass.html#id168" title="Draw method"/>
+   </entry>
+   <entry keyword="PtGenTree">
+    <topic href="superclass.html#id233" title="Draw method"/>
+   </entry>
+   <entry keyword="PtGraphic">
+    <topic href="superclass.html#id325" title="Draw method"/>
+   </entry>
+   <entry keyword="PtLabel">
+    <topic href="superclass.html#id294" title="Draw method"/>
+   </entry>
+   <entry keyword="repairing damage">
+    <topic href="lifewidg.html#id27" title="After realizing a widget"/>
+   </entry>
+   <entry keyword="ShadowedBox">
+    <topic href="lifewidg.html#id25" title="Draw method"/>
+    <topic href="anatomy.html#id40" title="PtBasic class resource additions"/>
+   </entry>
+   <entry keyword="using the Pg library safely">
+    <topic href="anatomy.html#UsingPgLibrary" title="Using the Pg library safely"/>
+   </entry>
+  </entry>
+  <entry keyword="Extent">
+   <topic href="lifewidg.html#CONTAINER" title="Container widgets"/>
+   <topic href="libs/ptmoveresizewidget.html#id7" title="Description:"/>
+   <topic href="libs/ptsuperclassextent.html#id7" title="Description:"/>
+   <topic href="anatomy.html#ExtentMethod" title="Extent method"/>
+   <topic href="misc_tips.html" title="Miscellaneous Widget-Building Tips"/>
+   <topic href="anatomy.html#ModfMember" title="mod_f member"/>
+   <topic href="lifewidg.html#id13" title="Realizing a widget instance"/>
+   <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+   <entry keyword="inheriting">
+    <topic href="lifewidg.html#id15" title="Processing methods"/>
+   </entry>
+   <entry keyword="PtBasic">
+    <topic href="superclass.html#id41" title="Extent method"/>
+   </entry>
+   <entry keyword="PtCompound">
+    <topic href="superclass.html#id127" title="Extent method"/>
+    <topic href="superclass.html#id162" title="Extent method"/>
+   </entry>
+   <entry keyword="PtContainer">
+    <topic href="libs/ptsuperclassextent.html#id7" title="Description:"/>
+    <topic href="anatomy.html#id90" title="Extent method"/>
+    <topic href="superclass.html#id76" title="Extent method"/>
+   </entry>
+   <entry keyword="PtDivider">
+    <topic href="superclass.html#id162" title="Extent method"/>
+   </entry>
+   <entry keyword="PtGauge">
+    <topic href="superclass.html#id352" title="Extent method"/>
+   </entry>
+   <entry keyword="PtGenList">
+    <topic href="superclass.html#id162" title="Extent method"/>
+   </entry>
+   <entry keyword="PtGenTree">
+    <topic href="superclass.html#id227" title="Extent method"/>
+   </entry>
+   <entry keyword="PtGraphic">
+    <topic href="libs/ptsuperclassextent.html#id7" title="Description:"/>
+    <topic href="superclass.html#id319" title="Extent method"/>
+   </entry>
+   <entry keyword="PtLabel">
+    <topic href="libs/ptsuperclassextent.html#id7" title="Description:"/>
+    <topic href="superclass.html#id288" title="Extent method"/>
+   </entry>
+   <entry keyword="PtWidget">
+    <topic href="superclass.html#id14" title="Extent method"/>
+   </entry>
+   <entry keyword="ShadowedBox">
+    <topic href="lifewidg.html#id19" title="Extent method"/>
+   </entry>
+  </entry>
+  <entry keyword="Get Resources">
+   <topic href="anatomy.html#GetResourcesMethod" title="Get Resources method"/>
+   <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+   <topic href="anatomy.html#id37" title="Widget class structure description"/>
+   <entry keyword="inheriting">
+    <topic href="lifewidg.html#id15" title="Processing methods"/>
+   </entry>
+   <entry keyword="PtCompound">
+    <topic href="anatomy.html#id103" title="Get Resources and Set Resources methods"/>
+   </entry>
+   <entry keyword="PtFindResource()">
+    <topic href="libs/ptfindresource.html#id7" title="Description:"/>
+   </entry>
+  </entry>
+  <entry keyword="Got Focus">
+   <topic href="libs/ptsuperclassgotfocus.html#id7" title="Description:"/>
+   <topic href="anatomy.html#GotFocusMethod" title="Got Focus method"/>
+   <entry keyword="inheriting">
+    <topic href="lifewidg.html#id15" title="Processing methods"/>
+   </entry>
+   <entry keyword="PtBasic">
+    <topic href="superclass.html#id53" title="Got Focus method"/>
+    <topic href="anatomy.html#id40" title="PtBasic class resource additions"/>
+    <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+   </entry>
+   <entry keyword="PtButton">
+    <topic href="anatomy.html#GotFocusMethod" title="Got Focus method"/>
+   </entry>
+   <entry keyword="PtCompound">
+    <topic href="superclass.html#id139" title="Got Focus method"/>
+   </entry>
+   <entry keyword="PtContainer">
+    <topic href="superclass.html#id88" title="Got Focus method"/>
+   </entry>
+   <entry keyword="PtGauge">
+    <topic href="superclass.html#id364" title="Got Focus method"/>
+   </entry>
+   <entry keyword="PtGenList">
+    <topic href="superclass.html#id174" title="Got Focus method"/>
+   </entry>
+   <entry keyword="PtGenTree">
+    <topic href="superclass.html#id239" title="Got Focus method"/>
+   </entry>
+   <entry keyword="PtGraphic">
+    <topic href="superclass.html#id331" title="Got Focus method"/>
+   </entry>
+   <entry keyword="PtLabel">
+    <topic href="superclass.html#id298" title="Got focus method"/>
+   </entry>
+  </entry>
+  <entry keyword="inheriting">
+   <topic href="lifewidg.html#id15" title="Processing methods"/>
+  </entry>
+  <entry keyword="Initialization">
+   <topic href="anatomy.html#InitializationMethod" title="Initialization method"/>
+   <topic href="lifewidg.html#id13" title="Realizing a widget instance"/>
+   <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+   <topic href="anatomy.html#id37" title="Widget class structure description"/>
+   <entry keyword="chaining">
+    <topic href="lifewidg.html#id15" title="Processing methods"/>
+   </entry>
+   <entry keyword="PtBasic">
+    <topic href="superclass.html#id39" title="Initialization method"/>
+   </entry>
+   <entry keyword="PtCompound">
+    <topic href="superclass.html#id125" title="Initialization method"/>
+   </entry>
+   <entry keyword="PtContainer">
+    <topic href="superclass.html#id74" title="Initialization method"/>
+   </entry>
+   <entry keyword="PtGauge">
+    <topic href="superclass.html#id350" title="Initialization method"/>
+   </entry>
+   <entry keyword="PtGenList">
+    <topic href="superclass.html#id160" title="Initialization method"/>
+   </entry>
+   <entry keyword="PtGenTree">
+    <topic href="superclass.html#id225" title="Initialization method"/>
+   </entry>
+   <entry keyword="PtGraphic">
+    <topic href="superclass.html#id317" title="Initialization method"/>
+   </entry>
+   <entry keyword="PtLabel">
+    <topic href="superclass.html#id286" title="Initialization method"/>
+   </entry>
+   <entry keyword="PtWidget">
+    <topic href="superclass.html#id12" title="Initialization method"/>
+   </entry>
+   <entry keyword="ShadowedBox">
+    <topic href="lifewidg.html#id17" title="Initialization method"/>
+   </entry>
+  </entry>
+  <entry keyword="List Attributes">
+   <entry keyword="list widgets">
+    <topic href="list.html#AttrMethod" title="List Attributes method"/>
+   </entry>
+   <entry keyword="PtGenList">
+    <topic href="superclass.html#id208" title="List Attributes method"/>
+   </entry>
+  </entry>
+  <entry keyword="List Draw">
+   <entry keyword="list widgets">
+    <topic href="list.html#DrawMethod" title="List Draw method"/>
+    <topic href="list.html#OVERVIEW" title="Overview"/>
+    <topic href="list.html#WidgetInstanceStructure" title="Widget instance structure"/>
+   </entry>
+   <entry keyword="PtGenList">
+    <topic href="superclass.html#id198" title="List Draw method"/>
+   </entry>
+   <entry keyword="PtGenTree">
+    <topic href="superclass.html#id263" title="List Draw method"/>
+    <topic href="tree.html#OVERVIEW" title="Overview"/>
+    <topic href="tree.html#DrawMethod" title="Tree Draw Item method"/>
+   </entry>
+   <entry keyword="PtSuperClassGenListDraw()">
+    <topic href="libs/ptsuperclassgenlistdraw.html#id7" title="Description:"/>
+   </entry>
+   <entry keyword="tree widgets">
+    <topic href="tree.html#OVERVIEW" title="Overview"/>
+   </entry>
+  </entry>
+  <entry keyword="List Inflate">
+   <entry keyword="list widgets">
+    <topic href="list.html#InflateMethod" title="List Inflate method"/>
+   </entry>
+   <entry keyword="PtGenList">
+    <topic href="superclass.html#id206" title="List Inflate method"/>
+   </entry>
+   <entry keyword="PtSuperClassGenListInflate()">
+    <topic href="libs/ptsuperclassgenlistinflate.html#id7" title="Description:"/>
+   </entry>
+  </entry>
+  <entry keyword="List Key">
+   <entry keyword="list widgets">
+    <topic href="list.html#KeyMethod" title="List Key method"/>
+    <topic href="list.html#OVERVIEW" title="Overview"/>
+   </entry>
+   <entry keyword="PtGenList">
+    <topic href="superclass.html#id202" title="List Key method"/>
+   </entry>
+   <entry keyword="PtGenTree">
+    <topic href="superclass.html#id267" title="List Key method"/>
+   </entry>
+   <entry keyword="PtSuperClassGenListKey()">
+    <topic href="libs/ptsuperclassgenlistkey.html#id7" title="Description:"/>
+   </entry>
+  </entry>
+  <entry keyword="List Mouse">
+   <entry keyword="list widgets">
+    <topic href="list.html#MouseMethod" title="List Mouse method"/>
+    <topic href="list.html#OVERVIEW" title="Overview"/>
+   </entry>
+   <entry keyword="PtGenList">
+    <topic href="superclass.html#id200" title="List Mouse method"/>
+   </entry>
+   <entry keyword="PtGenTree">
+    <topic href="superclass.html#id265" title="List Mouse method"/>
+   </entry>
+   <entry keyword="PtSuperClassGenListMouse()">
+    <topic href="libs/ptsuperclassgenlistmouse.html#id7" title="Description:"/>
+   </entry>
+  </entry>
+  <entry keyword="List Select">
+   <entry keyword="list widgets">
+    <topic href="list.html#SelectMethod" title="List Select method"/>
+   </entry>
+   <entry keyword="PtGenList">
+    <topic href="superclass.html#id204" title="List Select method"/>
+   </entry>
+   <entry keyword="PtSuperClassGenListSelect()">
+    <topic href="libs/ptsuperclassgenlistselect.html#id7" title="Description:"/>
+   </entry>
+  </entry>
+  <entry keyword="Lost Focus">
+   <topic href="libs/ptsuperclasslostfocus.html#id7" title="Description:"/>
+   <topic href="anatomy.html#LostFocusMethod" title="Lost Focus method"/>
+   <entry keyword="inheriting">
+    <topic href="lifewidg.html#id15" title="Processing methods"/>
+   </entry>
+   <entry keyword="PtBasic">
+    <topic href="anatomy.html#LostFocusMethod" title="Lost Focus method"/>
+    <topic href="superclass.html#id55" title="Lost Focus method"/>
+    <topic href="anatomy.html#id40" title="PtBasic class resource additions"/>
+    <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+   </entry>
+   <entry keyword="PtCompound">
+    <topic href="superclass.html#id141" title="Lost Focus method"/>
+   </entry>
+   <entry keyword="PtContainer">
+    <topic href="superclass.html#id90" title="Lost Focus method"/>
+   </entry>
+   <entry keyword="PtGauge">
+    <topic href="superclass.html#id366" title="Lost Focus method"/>
+   </entry>
+   <entry keyword="PtGenList">
+    <topic href="superclass.html#id176" title="Lost Focus method"/>
+   </entry>
+   <entry keyword="PtGenTree">
+    <topic href="superclass.html#id241" title="Lost Focus method"/>
+   </entry>
+   <entry keyword="PtGraphic">
+    <topic href="superclass.html#id333" title="Lost Focus method"/>
+   </entry>
+   <entry keyword="PtLabel">
+    <topic href="superclass.html#id300" title="Lost Focus method"/>
+   </entry>
+  </entry>
+  <entry keyword="processing">
+   <topic href="lifewidg.html#id15" title="Processing methods"/>
+  </entry>
+  <entry keyword="Realization">
+   <topic href="libs/ptsuperclassrealized.html#id7" title="Description:"/>
+   <topic href="anatomy.html#RealizationMethod" title="Realization method"/>
+   <topic href="lifewidg.html#id13" title="Realizing a widget instance"/>
+   <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+   <topic href="anatomy.html#id37" title="Widget class structure description"/>
+   <entry keyword="inheriting">
+    <topic href="lifewidg.html#id15" title="Processing methods"/>
+   </entry>
+   <entry keyword="PtBasic">
+    <topic href="superclass.html#id45" title="Realization method"/>
+   </entry>
+   <entry keyword="PtComboBox">
+    <topic href="anatomy.html#id101" title="Realization method"/>
+   </entry>
+   <entry keyword="PtCompound">
+    <topic href="anatomy.html#id101" title="Realization method"/>
+    <topic href="superclass.html#id131" title="Realization method"/>
+   </entry>
+   <entry keyword="PtContainer">
+    <topic href="anatomy.html#id92" title="Realization method"/>
+    <topic href="superclass.html#id80" title="Realization method"/>
+   </entry>
+   <entry keyword="PtGauge">
+    <topic href="superclass.html#id356" title="Realization method"/>
+   </entry>
+   <entry keyword="PtGenList">
+    <topic href="superclass.html#id166" title="Realization method"/>
+   </entry>
+   <entry keyword="PtGenTree">
+    <topic href="superclass.html#id231" title="Realization method"/>
+   </entry>
+   <entry keyword="PtGraphic">
+    <topic href="superclass.html#id323" title="Realization method"/>
+   </entry>
+   <entry keyword="PtLabel">
+    <topic href="superclass.html#id292" title="Realization method"/>
+   </entry>
+   <entry keyword="PtWidget">
+    <topic href="superclass.html#id18" title="Realization method"/>
+   </entry>
+   <entry keyword="ShadowedBox">
+    <topic href="lifewidg.html#id23" title="Realization method"/>
+   </entry>
+  </entry>
+  <entry keyword="Set Resources">
+   <topic href="anatomy.html#SetResourcesMethod" title="Set Resources method"/>
+   <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+   <entry keyword="inheriting">
+    <topic href="lifewidg.html#id15" title="Processing methods"/>
+   </entry>
+   <entry keyword="PtCompound">
+    <topic href="anatomy.html#id103" title="Get Resources and Set Resources methods"/>
+   </entry>
+   <entry keyword="PtFindResource()">
+    <topic href="libs/ptfindresource.html#id7" title="Description:"/>
+   </entry>
+  </entry>
+  <entry keyword="Tree Draw Item">
+   <entry keyword="PtGenTree">
+    <topic href="superclass.html#id269" title="Tree Draw Item method"/>
+   </entry>
+   <entry keyword="PtSuperClassGenTreeDrawItem()">
+    <topic href="libs/ptsuperclassgentreedrawitem.html#id7" title="Description:"/>
+   </entry>
+   <entry keyword="tree widgets">
+    <topic href="tree.html#OVERVIEW" title="Overview"/>
+    <topic href="tree.html#DrawMethod" title="Tree Draw Item method"/>
+   </entry>
+  </entry>
+  <entry keyword="Tree Item State">
+   <entry keyword="PtGenTree">
+    <topic href="superclass.html#id271" title="Tree Item State method"/>
+   </entry>
+   <entry keyword="PtSuperClassGenTreeItemState()">
+    <topic href="libs/ptsuperclassgentreeitemstate.html#id7" title="Description:"/>
+   </entry>
+   <entry keyword="tree widgets">
+    <topic href="tree.html#TreeItemStateMethod" title="Tree Item State method"/>
+   </entry>
+  </entry>
+  <entry keyword="Unrealization">
+   <topic href="anatomy.html#UnrealizationMethod" title="Unrealization method"/>
+   <topic href="lifewidg.html#id31" title="Unrealization method"/>
+   <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+   <topic href="anatomy.html#id37" title="Widget class structure description"/>
+   <entry keyword="chaining">
+    <topic href="lifewidg.html#id15" title="Processing methods"/>
+   </entry>
+   <entry keyword="PtBasic">
+    <topic href="superclass.html#id49" title="Unrealization method"/>
+   </entry>
+   <entry keyword="PtCompound">
+    <topic href="superclass.html#id135" title="Unrealization method"/>
+   </entry>
+   <entry keyword="PtContainer">
+    <topic href="superclass.html#id84" title="Unrealization method"/>
+   </entry>
+   <entry keyword="PtGauge">
+    <topic href="superclass.html#id360" title="Unrealization method"/>
+   </entry>
+   <entry keyword="PtGenList">
+    <topic href="superclass.html#id170" title="Unrealization method"/>
+   </entry>
+   <entry keyword="PtGenTree">
+    <topic href="superclass.html#id235" title="Unrealization method"/>
+   </entry>
+   <entry keyword="PtGraphic">
+    <topic href="superclass.html#id327" title="Unrealization method"/>
+   </entry>
+   <entry keyword="PtLabel">
+    <topic href="anatomy.html#UnrealizationMethod" title="Unrealization method"/>
+    <topic href="superclass.html#id296" title="Unrealization method"/>
+   </entry>
+   <entry keyword="PtWidget">
+    <topic href="anatomy.html#UnrealizationMethod" title="Unrealization method"/>
+    <topic href="superclass.html#id20" title="Unrealization method"/>
+   </entry>
+   <entry keyword="ShadowedBox">
+    <topic href="lifewidg.html#id31" title="Unrealization method"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="pathname delimiter in QNX documentation">
+  <topic href="about.html#WINDOWSNOTE" title="Note to Windows users"/>
+ </entry>
+ <entry keyword="Pg... functions">
+  <topic href="misc_tips.html" title="Miscellaneous Widget-Building Tips"/>
+ </entry>
+ <entry keyword="Pg_BITMAP_BACKFILL">
+  <topic href="superclass.html#id302" title="Calc Opaque Rect method"/>
+ </entry>
+ <entry keyword="Pg_TRANSPARENT">
+  <topic href="superclass.html#id43" title="Connection method"/>
+ </entry>
+ <entry keyword="PgFlush()">
+  <topic href="misc_tips.html" title="Miscellaneous Widget-Building Tips"/>
+ </entry>
+ <entry keyword="PgSetClipping()">
+  <topic href="anatomy.html#UsingPgLibrary" title="Using the Pg library safely"/>
+ </entry>
+ <entry keyword="PgSetDrawMode()">
+  <topic href="anatomy.html#UsingPgLibrary" title="Using the Pg library safely"/>
+ </entry>
+ <entry keyword="PgSetFillColor()">
+  <topic href="anatomy.html#UsingPgLibrary" title="Using the Pg library safely"/>
+ </entry>
+ <entry keyword="PgSetFillDither()">
+  <topic href="anatomy.html#UsingPgLibrary" title="Using the Pg library safely"/>
+ </entry>
+ <entry keyword="PgSetFillTransPat()">
+  <topic href="anatomy.html#UsingPgLibrary" title="Using the Pg library safely"/>
+ </entry>
+ <entry keyword="PgSetFillXORColor()">
+  <topic href="anatomy.html#UsingPgLibrary" title="Using the Pg library safely"/>
+ </entry>
+ <entry keyword="PgSetMultiClip()">
+  <topic href="anatomy.html#UsingPgLibrary" title="Using the Pg library safely"/>
+ </entry>
+ <entry keyword="PgSetPalette()">
+  <topic href="anatomy.html#UsingPgLibrary" title="Using the Pg library safely"/>
+ </entry>
+ <entry keyword="PgSetPlaneMask()">
+  <topic href="anatomy.html#UsingPgLibrary" title="Using the Pg library safely"/>
+ </entry>
+ <entry keyword="PgSetRegion()">
+  <topic href="misc_tips.html" title="Miscellaneous Widget-Building Tips"/>
+  <topic href="anatomy.html#UsingPgLibrary" title="Using the Pg library safely"/>
+ </entry>
+ <entry keyword="PgSetStrokeCap()">
+  <topic href="anatomy.html#UsingPgLibrary" title="Using the Pg library safely"/>
+ </entry>
+ <entry keyword="PgSetStrokeColor()">
+  <topic href="anatomy.html#UsingPgLibrary" title="Using the Pg library safely"/>
+ </entry>
+ <entry keyword="PgSetStrokeDash()">
+  <topic href="anatomy.html#UsingPgLibrary" title="Using the Pg library safely"/>
+ </entry>
+ <entry keyword="PgSetStrokeDither()">
+  <topic href="anatomy.html#UsingPgLibrary" title="Using the Pg library safely"/>
+ </entry>
+ <entry keyword="PgSetStrokeJoin()">
+  <topic href="anatomy.html#UsingPgLibrary" title="Using the Pg library safely"/>
+ </entry>
+ <entry keyword="PgSetStrokeTransPat()">
+  <topic href="anatomy.html#UsingPgLibrary" title="Using the Pg library safely"/>
+ </entry>
+ <entry keyword="PgSetStrokeWidth()">
+  <topic href="anatomy.html#UsingPgLibrary" title="Using the Pg library safely"/>
+ </entry>
+ <entry keyword="PgSetStrokeXORColor()">
+  <topic href="anatomy.html#UsingPgLibrary" title="Using the Pg library safely"/>
+ </entry>
+ <entry keyword="PgSetTextColor()">
+  <topic href="anatomy.html#UsingPgLibrary" title="Using the Pg library safely"/>
+ </entry>
+ <entry keyword="PgSetTextTransPat()">
+  <topic href="anatomy.html#UsingPgLibrary" title="Using the Pg library safely"/>
+ </entry>
+ <entry keyword="PgSetTextXORColor()">
+  <topic href="anatomy.html#UsingPgLibrary" title="Using the Pg library safely"/>
+ </entry>
+ <entry keyword="PgSetTranslation()">
+  <topic href="anatomy.html#UsingPgLibrary" title="Using the Pg library safely"/>
+ </entry>
+ <entry keyword="PgSetUnderline()">
+  <topic href="anatomy.html#UsingPgLibrary" title="Using the Pg library safely"/>
+ </entry>
+ <entry keyword="PgSetUserClip()">
+  <topic href="anatomy.html#UsingPgLibrary" title="Using the Pg library safely"/>
+ </entry>
+ <entry keyword="Ph_DIRECTED_FOCUS">
+  <topic href="superclass.html#id24" title="Widget actions"/>
+ </entry>
+ <entry keyword="Ph_EV_BOUNDARY">
+  <topic href="superclass.html#id28" title="Functions"/>
+  <topic href="anatomy.html#ACTIONS" title="Widget actions"/>
+  <topic href="superclass.html#id59" title="Widget actions"/>
+ </entry>
+ <entry keyword="Ph_EV_BUT_PRESS">
+  <topic href="anatomy.html#ACTIONS" title="Widget actions"/>
+  <topic href="superclass.html#id210" title="Widget actions"/>
+  <topic href="superclass.html#id24" title="Widget actions"/>
+  <topic href="superclass.html#id59" title="Widget actions"/>
+ </entry>
+ <entry keyword="Ph_EV_BUT_RELEASE">
+  <topic href="anatomy.html#ACTIONS" title="Widget actions"/>
+  <topic href="superclass.html#id210" title="Widget actions"/>
+  <topic href="superclass.html#id24" title="Widget actions"/>
+  <topic href="superclass.html#id59" title="Widget actions"/>
+ </entry>
+ <entry keyword="Ph_EV_BUT_REPEAT">
+  <topic href="anatomy.html#ACTIONS" title="Widget actions"/>
+  <topic href="superclass.html#id210" title="Widget actions"/>
+  <topic href="superclass.html#id24" title="Widget actions"/>
+  <topic href="superclass.html#id59" title="Widget actions"/>
+ </entry>
+ <entry keyword="Ph_EV_KEY">
+  <topic href="superclass.html#id210" title="Widget actions"/>
+  <topic href="superclass.html#id24" title="Widget actions"/>
+ </entry>
+ <entry keyword="Ph_EV_PTR_MOTION_BUTTON">
+  <topic href="superclass.html#id210" title="Widget actions"/>
+ </entry>
+ <entry keyword="Ph_REGION_CURSOR">
+  <topic href="superclass.html#id28" title="Functions"/>
+ </entry>
+ <entry keyword="PhAB">
+  <entry keyword="plugins">
+   <entry keyword="allocating memory">
+    <topic href="api/alloc_mem.html#id7" title="Description:"/>
+   </entry>
+   <entry keyword="answering changes">
+    <topic href="api/answer_changes.html#id7" title="Description:"/>
+   </entry>
+   <entry keyword="appying changes">
+    <topic href="api/apply.html#id7" title="Description:"/>
+   </entry>
+   <entry keyword="base structure">
+    <topic href="api/resplugin_t.html#id5" title="Description:"/>
+   </entry>
+   <entry keyword="blocking input">
+    <topic href="api/respluginblockf_t.html#id5" title="Description:"/>
+   </entry>
+   <entry keyword="closing">
+    <topic href="api/closing.html#id7" title="Description:"/>
+   </entry>
+   <entry keyword="common structure">
+    <topic href="api/phabresexportcommon_t.html#id5" title="Description:"/>
+    <topic href="api/resplugincommon_t.html#id5" title="Description:"/>
+   </entry>
+   <entry keyword="destroying windows">
+    <topic href="api/destroy.html#id7" title="Description:"/>
+   </entry>
+   <entry keyword="disabling">
+    <topic href="api/resplugindisablef_t.html#id5" title="Description:"/>
+   </entry>
+   <entry keyword="duplicating values">
+    <topic href="api/dup.html#id7" title="Description:"/>
+   </entry>
+   <entry keyword="freeing images">
+    <topic href="api/free_image.html#id7" title="Description:"/>
+   </entry>
+   <entry keyword="freeing memory">
+    <topic href="api/free_mem.html#id7" title="Description:"/>
+   </entry>
+   <entry keyword="frugal editor functions">
+    <topic href="api/phabresexportfrugal_t.html#id5" title="Description:"/>
+   </entry>
+   <entry keyword="full editor functions">
+    <topic href="api/phabresexportfull_t.html#id5" title="Description:"/>
+   </entry>
+   <entry keyword="handles">
+    <topic href="api/get_res.html#id7" title="Description:"/>
+   </entry>
+   <entry keyword="indicating changes">
+    <topic href="api/respluginanychangesf_t.html#id5" title="Description:"/>
+   </entry>
+   <entry keyword="messages">
+    <topic href="api/message.html#id7" title="Description:"/>
+   </entry>
+   <entry keyword="opening full editor">
+    <topic href="api/open.html#id7" title="Description:"/>
+   </entry>
+   <entry keyword="releasing resources">
+    <topic href="api/resplugindestroyf_t.html#id5" title="Description:"/>
+   </entry>
+   <entry keyword="window area">
+    <topic href="api/get_area.html#id7" title="Description:"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="PhAB plugins">
+  <entry keyword="creating windows">
+   <topic href="api/create_window.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="freeing memory">
+   <topic href="api/free.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="frugal editors">
+   <topic href="api/respluginfrugalcreatef_t.html#id5" title="Description:"/>
+   <topic href="api/respluginfrugaleditor_t.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="full editors">
+   <topic href="api/respluginfullcreatef_t.html#id5" title="Description:"/>
+   <topic href="api/respluginfulleditor_t.html#id5" title="Description:"/>
+   <entry keyword="window area">
+    <topic href="api/resplugingetareaf_t.html#id5" title="Description:"/>
+   </entry>
+  </entry>
+  <entry keyword="loading">
+   <topic href="api/respluginloadingf_t.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="resource editors">
+   <entry keyword="getting changes">
+    <topic href="api/resplugingetchangesf_t.html#id5" title="Description:"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="PhAB, adding custom widgets">
+  <topic href="overview.html#SUBCLASSING" title="Subclassing widgets"/>
+  <topic href="bind.html#DesignConsiderations" title="Widget design considerations"/>
+ </entry>
+ <entry keyword="Photon library">
+  <entry keyword="API functions">
+   <topic href="libs.html" title="Widget Building Library API"/>
+  </entry>
+  <entry keyword="widget superclasses">
+   <topic href="overview.html#TYPES" title="Types of widgets"/>
+  </entry>
+ </entry>
+ <entry keyword="PhRegionChange()">
+  <topic href="superclass.html#id16" title="Connection method"/>
+  <topic href="superclass.html#id28" title="Functions"/>
+ </entry>
+ <entry keyword="PhRegionOpen()">
+  <topic href="superclass.html#id16" title="Connection method"/>
+ </entry>
+ <entry keyword="Pt_ANCHORS_INVALID">
+  <topic href="superclass.html#id114" title="Functions"/>
+ </entry>
+ <entry keyword="Pt_ANCHORS_LOCKED">
+  <topic href="superclass.html#id114" title="Functions"/>
+ </entry>
+ <entry keyword="Pt_ARG_BALLOON_TEXT">
+  <topic href="superclass.html#id308" title="Functions"/>
+ </entry>
+ <entry keyword="Pt_ARG_DATA">
+  <topic href="anatomy.html#CompoundDefaultsMethod" title="Defaults method"/>
+ </entry>
+ <entry keyword="Pt_ARG_DIM">
+  <topic href="superclass.html#id14" title="Extent method"/>
+  <topic href="bind.html#ListOfResources" title="List of resources (r=)"/>
+ </entry>
+ <entry keyword="Pt_ARG_DIVIDER_OFFSET">
+  <topic href="superclass.html#id184" title="Child Moved/Resized method"/>
+  <topic href="superclass.html#id182" title="Child Realized method"/>
+  <topic href="superclass.html#id214" title="Functions"/>
+ </entry>
+ <entry keyword="Pt_ARG_DIVIDER_SIZES">
+  <topic href="superclass.html#id182" title="Child Realized method"/>
+ </entry>
+ <entry keyword="Pt_ARG_FLAGS">
+  <topic href="anatomy.html#CalcOpaqueRectMethod" title="Calc Opaque Rect method"/>
+  <topic href="superclass.html#id57" title="Calc Opaque Rect method"/>
+  <topic href="superclass.html#id63" title="Functions"/>
+  <topic href="misc_tips.html" title="Miscellaneous Widget-Building Tips"/>
+ </entry>
+ <entry keyword="Pt_ARG_IS_ALLOC">
+  <topic href="anatomy.html#id21" title="Alloc resources"/>
+  <topic href="anatomy.html#ArgValueAndLenMembers" title="arg_value and arg_len members"/>
+  <topic href="superclass.html#id22" title="Destruction method"/>
+ </entry>
+ <entry keyword="Pt_ARG_IS_ARRAY">
+  <topic href="anatomy.html#ArgValueAndLenMembers" title="arg_value and arg_len members"/>
+  <topic href="anatomy.html#id29" title="Array resources"/>
+  <topic href="superclass.html#id22" title="Destruction method"/>
+ </entry>
+ <entry keyword="Pt_ARG_IS_BOOLEAN">
+  <topic href="anatomy.html#ArgValueAndLenMembers" title="arg_value and arg_len members"/>
+  <topic href="anatomy.html#id27" title="Boolean resources"/>
+ </entry>
+ <entry keyword="Pt_ARG_IS_CALLBACK">
+  <topic href="anatomy.html#ArgValueAndLenMembers" title="arg_value and arg_len members"/>
+ </entry>
+ <entry keyword="Pt_ARG_IS_CALLBACK_LIST">
+  <topic href="anatomy.html#ArgValueAndLenMembers" title="arg_value and arg_len members"/>
+  <topic href="anatomy.html#id25" title="Callback resources"/>
+  <topic href="superclass.html#id22" title="Destruction method"/>
+ </entry>
+ <entry keyword="Pt_ARG_IS_FLAGS">
+  <topic href="anatomy.html#ArgValueAndLenMembers" title="arg_value and arg_len members"/>
+  <topic href="anatomy.html#id13" title="Flags resources"/>
+ </entry>
+ <entry keyword="Pt_ARG_IS_IMAGE">
+  <topic href="anatomy.html#ArgValueAndLenMembers" title="arg_value and arg_len members"/>
+  <topic href="anatomy.html#id31" title="Image resources"/>
+ </entry>
+ <entry keyword="Pt_ARG_IS_LINK">
+  <topic href="anatomy.html#ArgValueAndLenMembers" title="arg_value and arg_len members"/>
+  <topic href="superclass.html#id22" title="Destruction method"/>
+  <topic href="anatomy.html#id23" title="Link resources"/>
+ </entry>
+ <entry keyword="Pt_ARG_IS_NUMBER">
+  <topic href="anatomy.html#ArgValueAndLenMembers" title="arg_value and arg_len members"/>
+  <topic href="anatomy.html#id29" title="Array resources"/>
+  <topic href="anatomy.html#id11" title="Scalar resources"/>
+ </entry>
+ <entry keyword="Pt_ARG_IS_POINTER">
+  <topic href="anatomy.html#ArgValueAndLenMembers" title="arg_value and arg_len members"/>
+  <topic href="anatomy.html#id19" title="Pointer resources"/>
+ </entry>
+ <entry keyword="Pt_ARG_IS_STRING">
+  <topic href="anatomy.html#ArgValueAndLenMembers" title="arg_value and arg_len members"/>
+  <topic href="superclass.html#id22" title="Destruction method"/>
+  <topic href="anatomy.html#id15" title="String resources"/>
+ </entry>
+ <entry keyword="Pt_ARG_IS_STRUCT">
+  <topic href="anatomy.html#ArgValueAndLenMembers" title="arg_value and arg_len members"/>
+  <topic href="anatomy.html#id17" title="Struct resources"/>
+ </entry>
+ <entry keyword="Pt_ARG_LIST_COLUMN_POS">
+  <topic href="superclass.html#id182" title="Child Realized method"/>
+ </entry>
+ <entry keyword="Pt_ARG_LIST_FLAGS">
+  <topic href="superclass.html#id214" title="Functions"/>
+ </entry>
+ <entry keyword="Pt_ARG_POS">
+  <topic href="superclass.html#id14" title="Extent method"/>
+  <topic href="bind.html#ListOfResources" title="List of resources (r=)"/>
+ </entry>
+ <entry keyword="Pt_ARG_TOP_ITEM_POS">
+  <topic href="list.html#ItemStructure" title="Item structure"/>
+ </entry>
+ <entry keyword="Pt_AUTO_EXTENT">
+  <topic href="superclass.html#id114" title="Functions"/>
+ </entry>
+ <entry keyword="Pt_AUTOHIGHLIGHT">
+  <topic href="superclass.html#id28" title="Functions"/>
+  <topic href="superclass.html#id53" title="Got Focus method"/>
+  <topic href="superclass.html#id55" title="Lost Focus method"/>
+  <topic href="superclass.html#id59" title="Widget actions"/>
+ </entry>
+ <entry keyword="Pt_BALLOON_AS_REQUIRED">
+  <topic href="superclass.html#id308" title="Functions"/>
+ </entry>
+ <entry keyword="Pt_BASIC">
+  <topic href="anatomy.html#id37" title="Widget class structure description"/>
+ </entry>
+ <entry keyword="Pt_BITMAP">
+  <topic href="superclass.html#id302" title="Calc Opaque Rect method"/>
+ </entry>
+ <entry keyword="Pt_BLIT">
+  <topic href="libs/ptmoveresizewidget.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="Pt_BLIT_FORCE">
+  <topic href="libs/ptmoveresizewidget.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="Pt_BLOCK_CUA_FOCUS">
+  <topic href="anatomy.html#id88" title="Defaults method"/>
+ </entry>
+ <entry keyword="Pt_CALLBACKS_ACTIVE">
+  <topic href="superclass.html#id182" title="Child Realized method"/>
+ </entry>
+ <entry keyword="Pt_CB_ACTIVATE">
+  <topic href="anatomy.html#ACTIONS" title="Widget actions"/>
+  <topic href="superclass.html#id59" title="Widget actions"/>
+ </entry>
+ <entry keyword="Pt_CB_ARM">
+  <topic href="superclass.html#id53" title="Got Focus method"/>
+  <topic href="anatomy.html#ACTIONS" title="Widget actions"/>
+  <topic href="superclass.html#id59" title="Widget actions"/>
+ </entry>
+ <entry keyword="Pt_CB_DISARM">
+  <topic href="superclass.html#id55" title="Lost Focus method"/>
+  <topic href="anatomy.html#ACTIONS" title="Widget actions"/>
+  <topic href="superclass.html#id59" title="Widget actions"/>
+ </entry>
+ <entry keyword="Pt_CB_DIVIDER_DRAG">
+  <topic href="superclass.html#id182" title="Child Realized method"/>
+ </entry>
+ <entry keyword="Pt_CB_FILTER">
+  <topic href="superclass.html#id24" title="Widget actions"/>
+ </entry>
+ <entry keyword="Pt_CB_GEN_TREE_INPUT">
+  <topic href="superclass.html#id267" title="List Key method"/>
+  <topic href="superclass.html#id265" title="List Mouse method"/>
+ </entry>
+ <entry keyword="Pt_CB_GOT_FOCUS">
+  <topic href="superclass.html#id53" title="Got Focus method"/>
+ </entry>
+ <entry keyword="Pt_CB_LOST_FOCUS">
+  <topic href="superclass.html#id55" title="Lost Focus method"/>
+ </entry>
+ <entry keyword="Pt_CB_MENU">
+  <topic href="superclass.html#id59" title="Widget actions"/>
+ </entry>
+ <entry keyword="Pt_CB_RAW">
+  <topic href="anatomy.html#ACTIONS" title="Widget actions"/>
+ </entry>
+ <entry keyword="Pt_CB_REALIZED">
+  <topic href="anatomy.html#RealizationMethod" title="Realization method"/>
+ </entry>
+ <entry keyword="Pt_CB_REPEAT">
+  <topic href="superclass.html#id59" title="Widget actions"/>
+ </entry>
+ <entry keyword="Pt_CB_RESCALE">
+  <topic href="superclass.html#id341" title="Functions"/>
+ </entry>
+ <entry keyword="Pt_CB_SCROLL_MOVE">
+  <topic href="superclass.html#id214" title="Functions"/>
+ </entry>
+ <entry keyword="Pt_CB_SCROLLED_X">
+  <topic href="anatomy.html#COMPOUNDANATOMY" title="Compound widget anatomy"/>
+ </entry>
+ <entry keyword="Pt_CB_UNREALIZED">
+  <topic href="superclass.html#id20" title="Unrealization method"/>
+ </entry>
+ <entry keyword="Pt_CHANGE_CANVAS">
+  <topic href="anatomy.html#ModfMember" title="mod_f member"/>
+ </entry>
+ <entry keyword="Pt_CHANGE_CANVAS_REDRAW">
+  <topic href="anatomy.html#ModfMember" title="mod_f member"/>
+ </entry>
+ <entry keyword="Pt_CHANGE_INTERIOR">
+  <topic href="anatomy.html#ModfMember" title="mod_f member"/>
+ </entry>
+ <entry keyword="Pt_CHANGE_INVISIBLE">
+  <topic href="anatomy.html#ModfMember" title="mod_f member"/>
+ </entry>
+ <entry keyword="Pt_CHANGE_PREVENT">
+  <topic href="anatomy.html#ModfMember" title="mod_f member"/>
+ </entry>
+ <entry keyword="Pt_CHANGE_REDRAW">
+  <topic href="anatomy.html#ModfMember" title="mod_f member"/>
+ </entry>
+ <entry keyword="Pt_CHANGE_RESIZE">
+  <topic href="anatomy.html#ExtentMethod" title="Extent method"/>
+  <topic href="anatomy.html#ModfMember" title="mod_f member"/>
+ </entry>
+ <entry keyword="Pt_CHANGE_RESIZE_REDRAW">
+  <topic href="anatomy.html#ExtentMethod" title="Extent method"/>
+  <topic href="anatomy.html#ModfMember" title="mod_f member"/>
+ </entry>
+ <entry keyword="Pt_CHILD_CREATED">
+  <topic href="anatomy.html#id63" title="Child Created method"/>
+ </entry>
+ <entry keyword="Pt_CHILD_DESTROYED">
+  <topic href="anatomy.html#id75" title="Child Destroyed method"/>
+ </entry>
+ <entry keyword="Pt_CHILD_GETTING_FOCUS">
+  <topic href="anatomy.html#id81" title="Child Getting Focus method"/>
+ </entry>
+ <entry keyword="Pt_CHILD_GETTING_RESOURCE">
+  <topic href="anatomy.html#id79" title="Child Getting Resource method"/>
+ </entry>
+ <entry keyword="Pt_CHILD_LOSING_FOCUS">
+  <topic href="anatomy.html#id83" title="Child Losing Focus method"/>
+ </entry>
+ <entry keyword="Pt_CHILD_MOVED_RESIZED">
+  <topic href="anatomy.html#id69" title="Child Moved/Resized method"/>
+ </entry>
+ <entry keyword="Pt_CHILD_REALIZED">
+  <topic href="anatomy.html#id67" title="Child Realized method"/>
+ </entry>
+ <entry keyword="Pt_CHILD_REALIZING">
+  <topic href="anatomy.html#id65" title="Child Realizing method"/>
+ </entry>
+ <entry keyword="Pt_CHILD_REDIRECTOR">
+  <topic href="anatomy.html#ContainerRedirectorFunction" title="Child Redirection method"/>
+ </entry>
+ <entry keyword="Pt_CHILD_SETTING_RESOURCE">
+  <topic href="anatomy.html#id77" title="Child Setting Resource method"/>
+ </entry>
+ <entry keyword="Pt_CHILD_UNREALIZED">
+  <topic href="anatomy.html#id73" title="Child Unrealized method"/>
+ </entry>
+ <entry keyword="Pt_CHILD_UNREALIZING">
+  <topic href="anatomy.html#id71" title="Child Unrealizing method"/>
+ </entry>
+ <entry keyword="Pt_CONSUME_EVENTS">
+  <topic href="superclass.html#id63" title="Functions"/>
+ </entry>
+ <entry keyword="Pt_CONTAINER">
+  <topic href="anatomy.html#id37" title="Widget class structure description"/>
+ </entry>
+ <entry keyword="Pt_CONTAINER_CONSTRAINT_BITS">
+  <topic href="anatomy.html#id88" title="Defaults method"/>
+ </entry>
+ <entry keyword="Pt_DAMAGE_ON_FOCUS">
+  <topic href="anatomy.html#GotFocusMethod" title="Got Focus method"/>
+  <topic href="superclass.html#id53" title="Got Focus method"/>
+  <topic href="superclass.html#id55" title="Lost Focus method"/>
+ </entry>
+ <entry keyword="Pt_DELAY_REALIZE">
+  <topic href="anatomy.html#id92" title="Realization method"/>
+ </entry>
+ <entry keyword="Pt_DISJOINT">
+  <topic href="anatomy.html#id37" title="Widget class structure description"/>
+ </entry>
+ <entry keyword="Pt_END">
+  <topic href="anatomy.html#id58" title="Raw callback list"/>
+ </entry>
+ <entry keyword="Pt_ETCH_HIGHLIGHT">
+  <topic href="superclass.html#id28" title="Functions"/>
+ </entry>
+ <entry keyword="Pt_FOCUS_RENDER">
+  <topic href="superclass.html#id174" title="Got Focus method"/>
+  <topic href="superclass.html#id53" title="Got Focus method"/>
+  <topic href="superclass.html#id55" title="Lost Focus method"/>
+ </entry>
+ <entry keyword="Pt_FORCE_SYNC">
+  <topic href="anatomy.html#id37" title="Widget class structure description"/>
+ </entry>
+ <entry keyword="Pt_FORCE_UNREALIZE">
+  <topic href="anatomy.html#id37" title="Widget class structure description"/>
+ </entry>
+ <entry keyword="Pt_GEN_LIST_FULL_WIDTH">
+  <topic href="list.html#WidgetInstanceStructure" title="Widget instance structure"/>
+ </entry>
+ <entry keyword="Pt_GEN_LIST_ITEM_BACKGROUND">
+  <topic href="list.html#WidgetInstanceStructure" title="Widget instance structure"/>
+ </entry>
+ <entry keyword="Pt_GEN_LIST_NO_AUTOFOCUS">
+  <topic href="list.html#WidgetInstanceStructure" title="Widget instance structure"/>
+ </entry>
+ <entry keyword="Pt_GEN_LIST_NO_BACKGROUND">
+  <topic href="list.html#WidgetInstanceStructure" title="Widget instance structure"/>
+ </entry>
+ <entry keyword="Pt_GEN_LIST_NO_CLIPPING">
+  <topic href="list.html#WidgetInstanceStructure" title="Widget instance structure"/>
+ </entry>
+ <entry keyword="Pt_GEN_LIST_SHOW_DAMAGED">
+  <topic href="tree.html#OVERVIEW" title="Overview"/>
+  <topic href="list.html#WidgetInstanceStructure" title="Widget instance structure"/>
+ </entry>
+ <entry keyword="Pt_GETS_FOCUS">
+  <topic href="superclass.html#id214" title="Functions"/>
+  <topic href="superclass.html#id24" title="Widget actions"/>
+ </entry>
+ <entry keyword="Pt_GHOST">
+  <topic href="superclass.html#id63" title="Functions"/>
+ </entry>
+ <entry keyword="Pt_HALT">
+  <topic href="anatomy.html#id58" title="Raw callback list"/>
+ </entry>
+ <entry keyword="Pt_HIGHLIGHTED">
+  <topic href="superclass.html#id47" title="Draw method"/>
+  <topic href="superclass.html#id28" title="Functions"/>
+ </entry>
+ <entry keyword="Pt_IGNORE_CONSTRAINTS">
+  <topic href="anatomy.html#id61" title="Child-constraint support"/>
+ </entry>
+ <entry keyword="Pt_IMAGE">
+  <topic href="superclass.html#id302" title="Calc Opaque Rect method"/>
+ </entry>
+ <entry keyword="Pt_LIST_BALLOONS_IN_COLUMNS">
+  <topic href="list.html#WidgetInstanceStructure" title="Widget instance structure"/>
+ </entry>
+ <entry keyword="Pt_LIST_ITEM_ABOVE">
+  <topic href="list.html#ItemStructure" title="Item structure"/>
+ </entry>
+ <entry keyword="Pt_LIST_ITEM_BELOW">
+  <topic href="list.html#ItemStructure" title="Item structure"/>
+ </entry>
+ <entry keyword="Pt_LIST_ITEM_CURRENT">
+  <topic href="list.html#ItemStructure" title="Item structure"/>
+ </entry>
+ <entry keyword="Pt_LIST_ITEM_DAMAGED">
+  <topic href="list.html#ItemStructure" title="Item structure"/>
+  <topic href="superclass.html#id263" title="List Draw method"/>
+ </entry>
+ <entry keyword="Pt_LIST_ITEM_SELECTED">
+  <topic href="list.html#ItemStructure" title="Item structure"/>
+ </entry>
+ <entry keyword="Pt_LIST_ITEM_USED_FLAGS">
+  <topic href="list.html#ItemStructure" title="Item structure"/>
+ </entry>
+ <entry keyword="Pt_LIST_NON_SELECT">
+  <topic href="superclass.html#id214" title="Functions"/>
+ </entry>
+ <entry keyword="Pt_LIST_SCROLLBAR_GETS_FOCUS">
+  <topic href="superclass.html#id214" title="Functions"/>
+ </entry>
+ <entry keyword="Pt_LIST_SNAP">
+  <topic href="superclass.html#id162" title="Extent method"/>
+ </entry>
+ <entry keyword="Pt_NO_INHERITED_RESOURCES">
+  <topic href="anatomy.html#id37" title="Widget class structure description"/>
+ </entry>
+ <entry keyword="Pt_OCCLUSIVE">
+  <topic href="anatomy.html#id37" title="Widget class structure description"/>
+ </entry>
+ <entry keyword="Pt_OPAQUE">
+  <topic href="anatomy.html#CalcOpaqueRectMethod" title="Calc Opaque Rect method"/>
+  <topic href="superclass.html#id302" title="Calc Opaque Rect method"/>
+  <topic href="superclass.html#id57" title="Calc Opaque Rect method"/>
+  <topic href="superclass.html#id43" title="Connection method"/>
+  <topic href="libs/ptsuperclasscalcopaque.html#id7" title="Description:"/>
+  <topic href="superclass.html#id41" title="Extent method"/>
+ </entry>
+ <entry keyword="Pt_PROCREATED">
+  <topic href="anatomy.html#CompoundDefaultsMethod" title="Defaults method"/>
+ </entry>
+ <entry keyword="Pt_QUERY_PREVENT">
+  <topic href="anatomy.html#Examples" title="Examples"/>
+  <topic href="anatomy.html#QueryfMember" title="query_f member"/>
+ </entry>
+ <entry keyword="Pt_RECTANGULAR">
+  <topic href="anatomy.html#CalcOpaqueRectMethod" title="Calc Opaque Rect method"/>
+  <topic href="superclass.html#id57" title="Calc Opaque Rect method"/>
+  <topic href="superclass.html#id6" title="Class flags"/>
+  <topic href="anatomy.html#id37" title="Widget class structure description"/>
+ </entry>
+ <entry keyword="Pt_RESOURCE()">
+  <topic href="anatomy.html#id4" title="Resource manifests"/>
+ </entry>
+ <entry keyword="Pt_SELECT_NOREDRAW">
+  <topic href="superclass.html#id28" title="Functions"/>
+ </entry>
+ <entry keyword="Pt_SELECTION_FLAGS">
+  <topic href="list.html#WidgetInstanceStructure" title="Widget instance structure"/>
+ </entry>
+ <entry keyword="Pt_SELECTION_MODE">
+  <topic href="list.html#WidgetInstanceStructure" title="Widget instance structure"/>
+ </entry>
+ <entry keyword="Pt_SELECTION_MODE_AUTO">
+  <topic href="superclass.html#id174" title="Got Focus method"/>
+  <topic href="list.html#WidgetInstanceStructure" title="Widget instance structure"/>
+ </entry>
+ <entry keyword="Pt_SELECTION_MODE_MULTIPLE">
+  <topic href="list.html#WidgetInstanceStructure" title="Widget instance structure"/>
+ </entry>
+ <entry keyword="Pt_SELECTION_MODE_NOCLEAR">
+  <topic href="list.html#WidgetInstanceStructure" title="Widget instance structure"/>
+ </entry>
+ <entry keyword="Pt_SELECTION_MODE_NOFOCUS">
+  <topic href="superclass.html#id174" title="Got Focus method"/>
+  <topic href="list.html#WidgetInstanceStructure" title="Widget instance structure"/>
+ </entry>
+ <entry keyword="Pt_SELECTION_MODE_NOMOVE">
+  <topic href="list.html#WidgetInstanceStructure" title="Widget instance structure"/>
+ </entry>
+ <entry keyword="Pt_SELECTION_MODE_NONE">
+  <topic href="list.html#WidgetInstanceStructure" title="Widget instance structure"/>
+ </entry>
+ <entry keyword="Pt_SELECTION_MODE_NOREST">
+  <topic href="list.html#WidgetInstanceStructure" title="Widget instance structure"/>
+ </entry>
+ <entry keyword="Pt_SELECTION_MODE_NOSCROLL">
+  <topic href="list.html#WidgetInstanceStructure" title="Widget instance structure"/>
+ </entry>
+ <entry keyword="Pt_SELECTION_MODE_RANGE">
+  <topic href="list.html#SelectMethod" title="List Select method"/>
+  <topic href="list.html#WidgetInstanceStructure" title="Widget instance structure"/>
+ </entry>
+ <entry keyword="Pt_SELECTION_MODE_SINGLE">
+  <topic href="list.html#WidgetInstanceStructure" title="Widget instance structure"/>
+ </entry>
+ <entry keyword="Pt_SELECTION_MODE_TOGGLE">
+  <topic href="list.html#WidgetInstanceStructure" title="Widget instance structure"/>
+ </entry>
+ <entry keyword="Pt_SET">
+  <topic href="superclass.html#id47" title="Draw method"/>
+  <topic href="superclass.html#id28" title="Functions"/>
+  <topic href="anatomy.html#ACTIONS" title="Widget actions"/>
+  <topic href="superclass.html#id59" title="Widget actions"/>
+ </entry>
+ <entry keyword="Pt_SET_BLOCKED_RESOURCES">
+  <topic href="superclass.html#id119" title="Class extensions"/>
+  <topic href="anatomy.html#COMPOUNDANATOMY" title="Compound widget anatomy"/>
+ </entry>
+ <entry keyword="Pt_SET_CALC_OPAQUE_F">
+  <topic href="anatomy.html#id40" title="PtBasic class resource additions"/>
+ </entry>
+ <entry keyword="Pt_SET_CHILD_CREATED_F">
+  <topic href="anatomy.html#id61" title="Child-constraint support"/>
+ </entry>
+ <entry keyword="Pt_SET_CHILD_DESTROYED_F">
+  <topic href="anatomy.html#id61" title="Child-constraint support"/>
+ </entry>
+ <entry keyword="Pt_SET_CHILD_GETTING_FOCUS_F">
+  <topic href="anatomy.html#id61" title="Child-constraint support"/>
+ </entry>
+ <entry keyword="Pt_SET_CHILD_GETTINGRESOURCE_F">
+  <topic href="anatomy.html#id61" title="Child-constraint support"/>
+ </entry>
+ <entry keyword="Pt_SET_CHILD_LOSING_FOCUS_F">
+  <topic href="anatomy.html#id61" title="Child-constraint support"/>
+ </entry>
+ <entry keyword="Pt_SET_CHILD_MOVED_RESIZED_F">
+  <topic href="anatomy.html#id61" title="Child-constraint support"/>
+ </entry>
+ <entry keyword="Pt_SET_CHILD_REALIZED_F">
+  <topic href="anatomy.html#id61" title="Child-constraint support"/>
+ </entry>
+ <entry keyword="Pt_SET_CHILD_REALIZING_F">
+  <topic href="anatomy.html#id61" title="Child-constraint support"/>
+ </entry>
+ <entry keyword="Pt_SET_CHILD_REDIRECT_F">
+  <topic href="anatomy.html#id61" title="Child-constraint support"/>
+ </entry>
+ <entry keyword="Pt_SET_CHILD_SETTINGRESOURCE_F">
+  <topic href="anatomy.html#id61" title="Child-constraint support"/>
+ </entry>
+ <entry keyword="Pt_SET_CHILD_UNREALIZED_F">
+  <topic href="anatomy.html#id61" title="Child-constraint support"/>
+  <topic href="superclass.html#id20" title="Unrealization method"/>
+ </entry>
+ <entry keyword="Pt_SET_CHILD_UNREALIZING_F">
+  <topic href="anatomy.html#id61" title="Child-constraint support"/>
+ </entry>
+ <entry keyword="Pt_SET_CONNECT_F">
+  <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+ </entry>
+ <entry keyword="Pt_SET_DESCRIPTION">
+  <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+ </entry>
+ <entry keyword="Pt_SET_DESTROY_F">
+  <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+ </entry>
+ <entry keyword="Pt_SET_DFLTS_F">
+  <topic href="anatomy.html#id40" title="PtBasic class resource additions"/>
+  <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+ </entry>
+ <entry keyword="Pt_SET_DRAW_F">
+  <topic href="anatomy.html#id40" title="PtBasic class resource additions"/>
+  <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+ </entry>
+ <entry keyword="Pt_SET_EXTENT_F">
+  <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+ </entry>
+ <entry keyword="Pt_SET_FLAGS">
+  <topic href="anatomy.html#id40" title="PtBasic class resource additions"/>
+  <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+ </entry>
+ <entry keyword="Pt_SET_GETRESOURCES_F">
+  <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+ </entry>
+ <entry keyword="Pt_SET_GOT_FOCUS_F">
+  <topic href="anatomy.html#id40" title="PtBasic class resource additions"/>
+ </entry>
+ <entry keyword="Pt_SET_INIT_F">
+  <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+ </entry>
+ <entry keyword="Pt_SET_LOST_FOCUS_F">
+  <topic href="anatomy.html#id40" title="PtBasic class resource additions"/>
+ </entry>
+ <entry keyword="Pt_SET_NUM_BLOCKED_RESOURCES">
+  <topic href="superclass.html#id119" title="Class extensions"/>
+  <topic href="anatomy.html#COMPOUNDANATOMY" title="Compound widget anatomy"/>
+ </entry>
+ <entry keyword="Pt_SET_NUM_RESOURCES">
+  <topic href="anatomy.html#id40" title="PtBasic class resource additions"/>
+  <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+ </entry>
+ <entry keyword="Pt_SET_NUM_SUBORDINATES">
+  <topic href="superclass.html#id119" title="Class extensions"/>
+  <topic href="anatomy.html#COMPOUNDANATOMY" title="Compound widget anatomy"/>
+  <topic href="anatomy.html#CompoundDefaultsMethod" title="Defaults method"/>
+ </entry>
+ <entry keyword="Pt_SET_RAW_CALLBACKS">
+  <topic href="anatomy.html#ACTIONS" title="Widget actions"/>
+  <topic href="superclass.html#id210" title="Widget actions"/>
+  <topic href="superclass.html#id59" title="Widget actions"/>
+  <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+ </entry>
+ <entry keyword="Pt_SET_REALIZED_F">
+  <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+ </entry>
+ <entry keyword="Pt_SET_RESOURCES">
+  <topic href="anatomy.html#id40" title="PtBasic class resource additions"/>
+  <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+ </entry>
+ <entry keyword="Pt_SET_SETRESOURCES_F">
+  <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+ </entry>
+ <entry keyword="Pt_SET_STATE_LEN">
+  <topic href="anatomy.html#id40" title="PtBasic class resource additions"/>
+  <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+ </entry>
+ <entry keyword="Pt_SET_SUBORDINATES">
+  <topic href="superclass.html#id119" title="Class extensions"/>
+  <topic href="anatomy.html#COMPOUNDANATOMY" title="Compound widget anatomy"/>
+  <topic href="anatomy.html#CompoundDefaultsMethod" title="Defaults method"/>
+ </entry>
+ <entry keyword="Pt_SET_UNREALIZE_F">
+  <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+ </entry>
+ <entry keyword="Pt_SET_VERSION">
+  <topic href="anatomy.html#id40" title="PtBasic class resource additions"/>
+  <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+ </entry>
+ <entry keyword="Pt_SHOW_BALLOON">
+  <topic href="superclass.html#id290" title="Connection method"/>
+  <topic href="superclass.html#id308" title="Functions"/>
+  <topic href="superclass.html#id296" title="Unrealization method"/>
+ </entry>
+ <entry keyword="Pt_TEXT_IMAGE">
+  <topic href="superclass.html#id288" title="Extent method"/>
+ </entry>
+ <entry keyword="Pt_TREE_COLLAPSING">
+  <topic href="libs/ptsuperclassgentreeitemstate.html#id5" title="Arguments:"/>
+  <topic href="tree.html#TreeItemStateMethod" title="Tree Item State method"/>
+ </entry>
+ <entry keyword="Pt_TREE_EXPANDING">
+  <topic href="libs/ptsuperclassgentreeitemstate.html#id5" title="Arguments:"/>
+  <topic href="tree.html#TreeItemStateMethod" title="Tree Item State method"/>
+ </entry>
+ <entry keyword="Pt_TREE_ITEM_EXPANDABLE">
+  <topic href="tree.html#ItemStructure" title="Item structure"/>
+ </entry>
+ <entry keyword="Pt_TREE_ITEM_EXPANDED">
+  <topic href="tree.html#ItemStructure" title="Item structure"/>
+  <topic href="tree.html#TreeItemStateMethod" title="Tree Item State method"/>
+ </entry>
+ <entry keyword="Pt_TREE_TO_RIGHT">
+  <topic href="superclass.html#id277" title="Functions"/>
+ </entry>
+ <entry keyword="Pt_UCLIP">
+  <topic href="libs/ptattemptresize.html#id7" title="Description:"/>
+  <topic href="libs/ptresizecanvas.html#id7" title="Description:"/>
+  <topic href="anatomy.html#DrawMethod" title="Draw method"/>
+  <topic href="anatomy.html#ExtentMethod" title="Extent method"/>
+ </entry>
+ <entry keyword="Pt_USER()">
+  <topic href="anatomy.html#id4" title="Resource manifests"/>
+ </entry>
+ <entry keyword="Pt_WIDGET_RESIZE">
+  <topic href="superclass.html#id308" title="Functions"/>
+  <topic href="misc_tips.html" title="Miscellaneous Widget-Building Tips"/>
+ </entry>
+ <entry keyword="Pt_Z_STRING">
+  <topic href="superclass.html#id302" title="Calc Opaque Rect method"/>
+  <topic href="superclass.html#id288" title="Extent method"/>
+ </entry>
+ <entry keyword="PtAddWidgetData()">
+  <topic href="libs/ptaddwidgetdata.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtAnchorDeregister()">
+  <topic href="libs/ptanchorderegister.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtAnchorRegister()">
+  <topic href="libs/ptanchorregister.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtAnchorWidget()">
+  <topic href="lifewidg.html#AllWidgets" title="All widgets"/>
+  <topic href="libs/ptanchorwidget.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtApplyAnchors()">
+  <topic href="lifewidg.html#AllWidgets" title="All widgets"/>
+  <topic href="libs/ptapplyanchors.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtArc">
+  <entry keyword="Pt_UCLIP">
+   <topic href="anatomy.html#DrawMethod" title="Draw method"/>
+  </entry>
+ </entry>
+ <entry keyword="PtAttemptResize()">
+  <topic href="libs/ptattemptresize.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtBasic">
+  <topic href="superclass.html#PTBASIC" title="PtBasic"/>
+  <entry keyword="additional resources">
+   <topic href="anatomy.html#id40" title="PtBasic class resource additions"/>
+  </entry>
+  <entry keyword="methods">
+   <topic href="anatomy.html#CLASSMETHODS" title="Class methods"/>
+   <entry keyword="Calc Opaque Rect">
+    <topic href="anatomy.html#CalcOpaqueRectMethod" title="Calc Opaque Rect method"/>
+    <topic href="superclass.html#id57" title="Calc Opaque Rect method"/>
+    <topic href="anatomy.html#id40" title="PtBasic class resource additions"/>
+    <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+   </entry>
+   <entry keyword="Connection">
+    <topic href="superclass.html#id43" title="Connection method"/>
+   </entry>
+   <entry keyword="Defaults">
+    <topic href="superclass.html#id37" title="Defaults method"/>
+   </entry>
+   <entry keyword="Destruction">
+    <topic href="superclass.html#id51" title="Destruction method"/>
+   </entry>
+   <entry keyword="Draw">
+    <topic href="superclass.html#id47" title="Draw method"/>
+   </entry>
+   <entry keyword="Extent">
+    <topic href="superclass.html#id41" title="Extent method"/>
+   </entry>
+   <entry keyword="Got Focus">
+    <topic href="anatomy.html#GotFocusMethod" title="Got Focus method"/>
+    <topic href="superclass.html#id53" title="Got Focus method"/>
+    <topic href="anatomy.html#id40" title="PtBasic class resource additions"/>
+    <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+   </entry>
+   <entry keyword="Initialization">
+    <topic href="superclass.html#id39" title="Initialization method"/>
+   </entry>
+   <entry keyword="Lost Focus">
+    <topic href="anatomy.html#LostFocusMethod" title="Lost Focus method"/>
+    <topic href="superclass.html#id55" title="Lost Focus method"/>
+    <topic href="anatomy.html#id40" title="PtBasic class resource additions"/>
+    <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+   </entry>
+   <entry keyword="Realization">
+    <topic href="superclass.html#id45" title="Realization method"/>
+   </entry>
+   <entry keyword="Unrealization">
+    <topic href="superclass.html#id49" title="Unrealization method"/>
+   </entry>
+  </entry>
+  <entry keyword="Pt_DAMAGE_ON_FOCUS">
+   <topic href="anatomy.html#GotFocusMethod" title="Got Focus method"/>
+  </entry>
+  <entry keyword="subclassing">
+   <topic href="overview.html#SUBCLASSING" title="Subclassing widgets"/>
+  </entry>
+  <entry keyword="widget actions">
+   <topic href="superclass.html#id59" title="Widget actions"/>
+  </entry>
+ </entry>
+ <entry keyword="PtBkgdHandlerProcess()">
+  <topic href="misc_tips.html" title="Miscellaneous Widget-Building Tips"/>
+ </entry>
+ <entry keyword="PtButton">
+  <entry keyword="methods">
+   <entry keyword="Draw">
+    <topic href="anatomy.html#DrawMethod" title="Draw method"/>
+   </entry>
+  </entry>
+  <entry keyword="widget actions">
+   <topic href="anatomy.html#ACTIONS" title="Widget actions"/>
+  </entry>
+ </entry>
+ <entry keyword="PtCalcAnchorOffsets()">
+  <topic href="libs/ptcalcanchoroffsets.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtCalcCanvas()">
+  <topic href="anatomy.html#ExtentMethod" title="Extent method"/>
+ </entry>
+ <entry keyword="PtCalcRegion()">
+  <topic href="libs/ptcalcregion.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtChildBoundingBox()">
+  <topic href="libs/ptchildboundingbox.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtClipAdd()">
+  <topic href="libs/ptclipadd.html#id7" title="Description:"/>
+  <topic href="anatomy.html#DrawMethod" title="Draw method"/>
+  <topic href="lifewidg.html#id25" title="Draw method"/>
+ </entry>
+ <entry keyword="PtClippAdd()">
+  <topic href="anatomy.html#UsingPgLibrary" title="Using the Pg library safely"/>
+ </entry>
+ <entry keyword="PtClipRemove()">
+  <topic href="libs/ptclipremove.html#id5" title="Description:"/>
+  <topic href="anatomy.html#DrawMethod" title="Draw method"/>
+  <topic href="lifewidg.html#id25" title="Draw method"/>
+  <topic href="anatomy.html#UsingPgLibrary" title="Using the Pg library safely"/>
+ </entry>
+ <entry keyword="PtComboBox">
+  <entry keyword="class-creation function">
+   <topic href="anatomy.html#COMPOUNDANATOMY" title="Compound widget anatomy"/>
+  </entry>
+  <entry keyword="exported subordinate children">
+   <topic href="lifewidg.html#COMPOUND" title="Compound widgets"/>
+  </entry>
+  <entry keyword="methods">
+   <entry keyword="Defaults">
+    <topic href="anatomy.html#COMPOUNDANATOMY" title="Compound widget anatomy"/>
+    <topic href="anatomy.html#CompoundDefaultsMethod" title="Defaults method"/>
+   </entry>
+   <entry keyword="Realization">
+    <topic href="anatomy.html#id101" title="Realization method"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="PtCompound">
+  <topic href="superclass.html#PTCOMPOUND" title="PtCompound"/>
+  <entry keyword="methods">
+   <entry keyword="Calc Opaque Rect">
+    <topic href="superclass.html#id143" title="Calc Opaque Rect method"/>
+   </entry>
+   <entry keyword="Connection">
+    <topic href="superclass.html#id129" title="Connection method"/>
+   </entry>
+   <entry keyword="Defaults">
+    <topic href="anatomy.html#CompoundDefaultsMethod" title="Defaults method"/>
+    <topic href="superclass.html#id123" title="Defaults method"/>
+   </entry>
+   <entry keyword="Destruction">
+    <topic href="anatomy.html#id105" title="Destruction method"/>
+    <topic href="superclass.html#id137" title="Destruction method"/>
+   </entry>
+   <entry keyword="Draw">
+    <topic href="superclass.html#id133" title="Draw method"/>
+   </entry>
+   <entry keyword="Extent">
+    <topic href="superclass.html#id127" title="Extent method"/>
+    <topic href="superclass.html#id162" title="Extent method"/>
+   </entry>
+   <entry keyword="Get Resources">
+    <topic href="anatomy.html#id103" title="Get Resources and Set Resources methods"/>
+   </entry>
+   <entry keyword="Got Focus">
+    <topic href="superclass.html#id139" title="Got Focus method"/>
+   </entry>
+   <entry keyword="Initialization">
+    <topic href="superclass.html#id125" title="Initialization method"/>
+   </entry>
+   <entry keyword="Lost Focus">
+    <topic href="superclass.html#id141" title="Lost Focus method"/>
+   </entry>
+   <entry keyword="Realization">
+    <topic href="anatomy.html#id101" title="Realization method"/>
+    <topic href="superclass.html#id131" title="Realization method"/>
+   </entry>
+   <entry keyword="Set Resources">
+    <topic href="anatomy.html#id103" title="Get Resources and Set Resources methods"/>
+   </entry>
+   <entry keyword="Unrealization">
+    <topic href="superclass.html#id135" title="Unrealization method"/>
+   </entry>
+  </entry>
+  <entry keyword="widget actions">
+   <topic href="superclass.html#id145" title="Widget actions"/>
+  </entry>
+ </entry>
+ <entry keyword="PtCompoundRedirect()">
+  <topic href="superclass.html#id180" title="Child Created method"/>
+  <topic href="anatomy.html#ContainerRedirectorFunction" title="Child Redirection method"/>
+  <topic href="anatomy.html#CompoundRedirection" title="Compound redirection"/>
+  <topic href="libs/ptcompoundredirect.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtContainer">
+  <topic href="anatomy.html#CONTAINERANATOMY" title="Container widget anatomy"/>
+  <topic href="superclass.html#PTCONTAINER" title="PtContainer"/>
+  <topic href="anatomy.html#id92" title="Realization method"/>
+  <entry keyword="initializing">
+   <topic href="anatomy.html#InitializationMethod" title="Initialization method"/>
+  </entry>
+  <entry keyword="methods">
+   <entry keyword="Calc Opaque Rect">
+    <topic href="superclass.html#id92" title="Calc Opaque Rect method"/>
+   </entry>
+   <entry keyword="Connection">
+    <topic href="superclass.html#id78" title="Connection method"/>
+   </entry>
+   <entry keyword="Defaults">
+    <topic href="anatomy.html#ContainerRedirectorFunction" title="Child Redirection method"/>
+    <topic href="anatomy.html#id88" title="Defaults method"/>
+    <topic href="superclass.html#id72" title="Defaults method"/>
+   </entry>
+   <entry keyword="Destruction">
+    <topic href="superclass.html#id86" title="Destruction method"/>
+   </entry>
+   <entry keyword="Draw">
+    <topic href="superclass.html#id82" title="Draw method"/>
+   </entry>
+   <entry keyword="Extent">
+    <topic href="anatomy.html#id90" title="Extent method"/>
+    <topic href="superclass.html#id76" title="Extent method"/>
+   </entry>
+   <entry keyword="Got Focus">
+    <topic href="superclass.html#id88" title="Got Focus method"/>
+   </entry>
+   <entry keyword="Initialization">
+    <topic href="superclass.html#id74" title="Initialization method"/>
+   </entry>
+   <entry keyword="Lost Focus">
+    <topic href="superclass.html#id90" title="Lost Focus method"/>
+   </entry>
+   <entry keyword="Realization">
+    <topic href="anatomy.html#id92" title="Realization method"/>
+    <topic href="superclass.html#id80" title="Realization method"/>
+   </entry>
+   <entry keyword="Unrealization">
+    <topic href="superclass.html#id84" title="Unrealization method"/>
+   </entry>
+   <entry keyword="See also child-constraint methods"/>
+  </entry>
+  <entry keyword="widget actions">
+   <topic href="superclass.html#id110" title="Widget actions"/>
+  </entry>
+ </entry>
+ <entry keyword="PtContainerHit()">
+  <topic href="superclass.html#id24" title="Widget actions"/>
+ </entry>
+ <entry keyword="PtCoreChangeRegion()">
+  <topic href="libs/ptcorechangeregion.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtCreateWidget()">
+  <topic href="lifewidg.html#BASIC" title="Basic widgets"/>
+  <topic href="lifewidg.html#id7" title="Creating and initializing the widget class"/>
+  <topic href="anatomy.html#DefaultsMethod" title="Defaults method"/>
+  <topic href="lifewidg.html#id5" title="Instantiating the widget"/>
+  <topic href="lifewidg.html#id11" title="Setting application resources"/>
+ </entry>
+ <entry keyword="PtCreateWidgetClass()">
+  <topic href="lifewidg.html#id7" title="Creating and initializing the widget class"/>
+  <topic href="libs/ptcreatewidgetclass.html#id7" title="Description:"/>
+  <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+ </entry>
+ <entry keyword="PtDamageExposed()">
+  <topic href="libs/ptdamageexposed.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtDamageWidget()">
+  <topic href="superclass.html#id28" title="Functions"/>
+  <topic href="misc_tips.html" title="Miscellaneous Widget-Building Tips"/>
+ </entry>
+ <entry keyword="PtDestroyCallbackList()">
+  <topic href="libs/ptdestroycallbacklist.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtDestroyHotkeyCallbacks()">
+  <topic href="libs/ptdestroyhotkeycallbacks.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtDestroyRawCallbacks()">
+  <topic href="libs/ptdestroyrawcallbacks.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtDivider">
+  <entry keyword="methods">
+   <entry keyword="Extent">
+    <topic href="superclass.html#id162" title="Extent method"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="PtEventHandler()">
+  <topic href="superclass.html#id24" title="Widget actions"/>
+ </entry>
+ <entry keyword="PtExtentWidget()">
+  <topic href="superclass.html#id162" title="Extent method"/>
+  <topic href="misc_tips.html" title="Miscellaneous Widget-Building Tips"/>
+ </entry>
+ <entry keyword="PtFindNextWidgetData()">
+  <topic href="libs/ptfindnextwidgetdata.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtFindResource()">
+  <topic href="libs/ptfindresource.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtFindWidgetData()">
+  <topic href="libs/ptfindwidgetdata.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtGauge">
+  <topic href="superclass.html#PTGAUGE" title="PtGauge"/>
+  <entry keyword="methods">
+   <entry keyword="Calc Opaque Rect">
+    <topic href="superclass.html#id368" title="Calc Opaque Rect method"/>
+   </entry>
+   <entry keyword="Connection">
+    <topic href="superclass.html#id354" title="Connection method"/>
+   </entry>
+   <entry keyword="Defaults">
+    <topic href="superclass.html#id348" title="Defaults method"/>
+   </entry>
+   <entry keyword="Destruction">
+    <topic href="superclass.html#id362" title="Destruction method"/>
+   </entry>
+   <entry keyword="Draw">
+    <topic href="superclass.html#id358" title="Draw method"/>
+   </entry>
+   <entry keyword="Extent">
+    <topic href="superclass.html#id352" title="Extent method"/>
+   </entry>
+   <entry keyword="Got Focus">
+    <topic href="superclass.html#id364" title="Got Focus method"/>
+   </entry>
+   <entry keyword="Initialization">
+    <topic href="superclass.html#id350" title="Initialization method"/>
+   </entry>
+   <entry keyword="Lost Focus">
+    <topic href="superclass.html#id366" title="Lost Focus method"/>
+   </entry>
+   <entry keyword="Realization">
+    <topic href="superclass.html#id356" title="Realization method"/>
+   </entry>
+   <entry keyword="Unrealization">
+    <topic href="superclass.html#id360" title="Unrealization method"/>
+   </entry>
+  </entry>
+  <entry keyword="widget actions">
+   <topic href="superclass.html#id370" title="Widget actions"/>
+  </entry>
+ </entry>
+ <entry keyword="PtGenList">
+  <topic href="list.html#CONVENIENCE" title="Convenience functions"/>
+  <topic href="list.html#OVERVIEW" title="Overview"/>
+  <topic href="superclass.html#PTGENLIST" title="PtGenList"/>
+  <entry keyword="methods">
+   <entry keyword="Calc Opaque Rect">
+    <topic href="superclass.html#id178" title="Calc Opaque Rect method"/>
+   </entry>
+   <entry keyword="Connection">
+    <topic href="superclass.html#id164" title="Connection method"/>
+   </entry>
+   <entry keyword="Defaults">
+    <topic href="superclass.html#id158" title="Defaults method"/>
+   </entry>
+   <entry keyword="Destruction">
+    <topic href="superclass.html#id172" title="Destruction method"/>
+   </entry>
+   <entry keyword="Draw">
+    <topic href="superclass.html#id168" title="Draw method"/>
+   </entry>
+   <entry keyword="Extent">
+    <topic href="superclass.html#id162" title="Extent method"/>
+   </entry>
+   <entry keyword="Got Focus">
+    <topic href="superclass.html#id174" title="Got Focus method"/>
+   </entry>
+   <entry keyword="Initialization">
+    <topic href="superclass.html#id160" title="Initialization method"/>
+   </entry>
+   <entry keyword="List Attributes method">
+    <topic href="superclass.html#id208" title="List Attributes method"/>
+   </entry>
+   <entry keyword="List Draw method">
+    <topic href="superclass.html#id198" title="List Draw method"/>
+   </entry>
+   <entry keyword="List Inflate method">
+    <topic href="superclass.html#id206" title="List Inflate method"/>
+   </entry>
+   <entry keyword="List Key method">
+    <topic href="superclass.html#id202" title="List Key method"/>
+   </entry>
+   <entry keyword="List Mouse method">
+    <topic href="superclass.html#id200" title="List Mouse method"/>
+   </entry>
+   <entry keyword="List Select method">
+    <topic href="superclass.html#id204" title="List Select method"/>
+   </entry>
+   <entry keyword="Lost Focus">
+    <topic href="superclass.html#id176" title="Lost Focus method"/>
+   </entry>
+   <entry keyword="Realization">
+    <topic href="superclass.html#id166" title="Realization method"/>
+   </entry>
+   <entry keyword="Unrealization">
+    <topic href="superclass.html#id170" title="Unrealization method"/>
+   </entry>
+  </entry>
+  <entry keyword="widget actions">
+   <topic href="superclass.html#id210" title="Widget actions"/>
+  </entry>
+ </entry>
+ <entry keyword="PtGenListAddItems()">
+  <topic href="list.html#ItemStructure" title="Item structure"/>
+ </entry>
+ <entry keyword="PtGenListCreateTextBalloon()">
+  <topic href="list.html#InflateMethod" title="List Inflate method"/>
+ </entry>
+ <entry keyword="PtGenListDamageItem()">
+  <topic href="list.html#ItemStructure" title="Item structure"/>
+ </entry>
+ <entry keyword="PtGenListGoto()">
+  <topic href="list.html#ItemStructure" title="Item structure"/>
+ </entry>
+ <entry keyword="PtGenListLockItem()">
+  <topic href="list.html#ItemStructure" title="Item structure"/>
+ </entry>
+ <entry keyword="PtGenListSelect()">
+  <topic href="list.html#ItemStructure" title="Item structure"/>
+ </entry>
+ <entry keyword="PtGenListSetColumnBalloon()">
+  <topic href="list.html#InflateMethod" title="List Inflate method"/>
+ </entry>
+ <entry keyword="PtGenListSetGflags()">
+  <topic href="list.html#WidgetInstanceStructure" title="Widget instance structure"/>
+ </entry>
+ <entry keyword="PtGenListShow()">
+  <topic href="list.html#ItemStructure" title="Item structure"/>
+ </entry>
+ <entry keyword="PtGenListUnlockItem()">
+  <topic href="list.html#ItemStructure" title="Item structure"/>
+ </entry>
+ <entry keyword="PtGenListUnselect()">
+  <topic href="list.html#ItemStructure" title="Item structure"/>
+ </entry>
+ <entry keyword="PtGenTree">
+  <topic href="tree.html#CONVENIENCE" title="Convenience functions"/>
+  <topic href="tree.html#OVERVIEW" title="Overview"/>
+  <topic href="superclass.html#PTGENTREE" title="PtGenTree"/>
+  <entry keyword="methods">
+   <entry keyword="Calc Opaque Rect">
+    <topic href="superclass.html#id243" title="Calc Opaque Rect method"/>
+   </entry>
+   <entry keyword="Connection">
+    <topic href="superclass.html#id229" title="Connection method"/>
+   </entry>
+   <entry keyword="Defaults">
+    <topic href="superclass.html#id223" title="Defaults method"/>
+   </entry>
+   <entry keyword="Destruction">
+    <topic href="superclass.html#id237" title="Destruction method"/>
+   </entry>
+   <entry keyword="Draw">
+    <topic href="superclass.html#id233" title="Draw method"/>
+   </entry>
+   <entry keyword="Extent">
+    <topic href="superclass.html#id227" title="Extent method"/>
+   </entry>
+   <entry keyword="Got Focus">
+    <topic href="superclass.html#id239" title="Got Focus method"/>
+   </entry>
+   <entry keyword="Initialization">
+    <topic href="superclass.html#id225" title="Initialization method"/>
+   </entry>
+   <entry keyword="List Draw">
+    <topic href="superclass.html#id263" title="List Draw method"/>
+    <topic href="tree.html#OVERVIEW" title="Overview"/>
+    <topic href="tree.html#DrawMethod" title="Tree Draw Item method"/>
+   </entry>
+   <entry keyword="List Key">
+    <topic href="superclass.html#id267" title="List Key method"/>
+   </entry>
+   <entry keyword="List Mouse">
+    <topic href="superclass.html#id265" title="List Mouse method"/>
+   </entry>
+   <entry keyword="Lost Focus">
+    <topic href="superclass.html#id241" title="Lost Focus method"/>
+   </entry>
+   <entry keyword="Realization">
+    <topic href="superclass.html#id231" title="Realization method"/>
+   </entry>
+   <entry keyword="Tree Draw Item">
+    <topic href="superclass.html#id269" title="Tree Draw Item method"/>
+   </entry>
+   <entry keyword="Tree Item State">
+    <topic href="superclass.html#id271" title="Tree Item State method"/>
+   </entry>
+   <entry keyword="Unrealization">
+    <topic href="superclass.html#id235" title="Unrealization method"/>
+   </entry>
+  </entry>
+  <entry keyword="widget actions">
+   <topic href="superclass.html#id273" title="Widget actions"/>
+  </entry>
+ </entry>
+ <entry keyword="PtGenTreeAddFirst()">
+  <topic href="tree.html#ItemStructure" title="Item structure"/>
+ </entry>
+ <entry keyword="PtGenTreeCollapse()">
+  <topic href="superclass.html#id267" title="List Key method"/>
+  <topic href="superclass.html#id265" title="List Mouse method"/>
+  <topic href="tree.html#TreeItemStateMethod" title="Tree Item State method"/>
+ </entry>
+ <entry keyword="PtGenTreeExpand()">
+  <topic href="superclass.html#id267" title="List Key method"/>
+  <topic href="superclass.html#id265" title="List Mouse method"/>
+  <topic href="tree.html#TreeItemStateMethod" title="Tree Item State method"/>
+ </entry>
+ <entry keyword="PtGenTreeItem_t">
+  <topic href="tree.html#ItemStructure" title="Item structure"/>
+ </entry>
+ <entry keyword="PtGetResources()">
+  <topic href="anatomy.html#QueryfMember" title="query_f member"/>
+  <topic href="anatomy.html#id37" title="Widget class structure description"/>
+ </entry>
+ <entry keyword="PtGetStruct()">
+  <topic href="libs/ptgetstruct.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtGraphic">
+  <topic href="superclass.html#PTGRAPHIC" title="PtGraphic"/>
+  <entry keyword="methods">
+   <entry keyword="Calc Opaque Rect">
+    <topic href="superclass.html#id335" title="Calc Opaque Rect method"/>
+   </entry>
+   <entry keyword="Connection">
+    <topic href="superclass.html#id321" title="Connection method"/>
+   </entry>
+   <entry keyword="Defaults">
+    <topic href="superclass.html#id315" title="Defaults method"/>
+   </entry>
+   <entry keyword="Destruction">
+    <topic href="superclass.html#id329" title="Destruction method"/>
+   </entry>
+   <entry keyword="Draw">
+    <topic href="superclass.html#id325" title="Draw method"/>
+   </entry>
+   <entry keyword="Extent">
+    <topic href="superclass.html#id319" title="Extent method"/>
+   </entry>
+   <entry keyword="Got Focus">
+    <topic href="superclass.html#id331" title="Got Focus method"/>
+   </entry>
+   <entry keyword="Initialization">
+    <topic href="superclass.html#id317" title="Initialization method"/>
+   </entry>
+   <entry keyword="Lost Focus">
+    <topic href="superclass.html#id333" title="Lost Focus method"/>
+   </entry>
+   <entry keyword="Realization">
+    <topic href="superclass.html#id323" title="Realization method"/>
+   </entry>
+   <entry keyword="Unrealization">
+    <topic href="superclass.html#id327" title="Unrealization method"/>
+   </entry>
+  </entry>
+  <entry keyword="widget actions">
+   <topic href="superclass.html#id337" title="Widget actions"/>
+  </entry>
+ </entry>
+ <entry keyword="PtGroup">
+  <entry keyword="methods">
+   <entry keyword="Child Created">
+    <topic href="anatomy.html#id63" title="Child Created method"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="PtInvokeCallbackList()">
+  <topic href="libs/ptgetcallbacklist.html#id7" title="Description:"/>
+  <topic href="libs/ptinvokecallbacklist.html#id7" title="Description:"/>
+  <topic href="superclass.html#id53" title="Got Focus method"/>
+  <topic href="superclass.html#id55" title="Lost Focus method"/>
+ </entry>
+ <entry keyword="PtInvokeCallbackType()">
+  <topic href="libs/ptinvokecallbacktype.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtInvokeResizeCallbacks()">
+  <topic href="libs/ptinvokeresizecallbacks.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtLabel">
+  <topic href="superclass.html#PTLABEL" title="PtLabel"/>
+  <entry keyword="methods">
+   <entry keyword="Calc Opaque Rect">
+    <topic href="superclass.html#id302" title="Calc Opaque Rect method"/>
+   </entry>
+   <entry keyword="Connection">
+    <topic href="superclass.html#id290" title="Connection method"/>
+   </entry>
+   <entry keyword="Defaults">
+    <topic href="superclass.html#id284" title="Defaults method"/>
+   </entry>
+   <entry keyword="Destruction">
+    <topic href="anatomy.html#DestructionMethod" title="Destruction method"/>
+   </entry>
+   <entry keyword="Draw">
+    <topic href="superclass.html#id294" title="Draw method"/>
+   </entry>
+   <entry keyword="Extent">
+    <topic href="superclass.html#id288" title="Extent method"/>
+   </entry>
+   <entry keyword="Got Focus">
+    <topic href="superclass.html#id298" title="Got focus method"/>
+   </entry>
+   <entry keyword="Initialization">
+    <topic href="superclass.html#id286" title="Initialization method"/>
+   </entry>
+   <entry keyword="Lost Focus">
+    <topic href="superclass.html#id300" title="Lost Focus method"/>
+   </entry>
+   <entry keyword="Realization">
+    <topic href="superclass.html#id292" title="Realization method"/>
+   </entry>
+   <entry keyword="Unrealization">
+    <topic href="anatomy.html#UnrealizationMethod" title="Unrealization method"/>
+    <topic href="superclass.html#id296" title="Unrealization method"/>
+   </entry>
+  </entry>
+  <entry keyword="widget actions">
+   <topic href="superclass.html#id304" title="Widget actions"/>
+  </entry>
+ </entry>
+ <entry keyword="PtMenu">
+  <entry keyword="methods">
+   <entry keyword="Connection">
+    <topic href="anatomy.html#ConnectionMethod" title="Connection method"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="PtMenuBar">
+  <entry keyword="child-redirector function">
+   <topic href="anatomy.html#ContainerRedirectorFunction" title="Child Redirection method"/>
+  </entry>
+ </entry>
+ <entry keyword="PtModifyFlags()">
+  <topic href="superclass.html#id28" title="Functions"/>
+ </entry>
+ <entry keyword="PtMoveResizeWidget()">
+  <topic href="libs/ptmoveresizewidget.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtPrintSel">
+  <entry keyword="unexported subordinate children">
+   <topic href="anatomy.html#InitializationMethod" title="Initialization method"/>
+  </entry>
+ </entry>
+ <entry keyword="PtRealizeWidget()">
+  <topic href="anatomy.html#ConnectionMethod" title="Connection method"/>
+  <topic href="anatomy.html#ExtentMethod" title="Extent method"/>
+  <topic href="anatomy.html#InitializationMethod" title="Initialization method"/>
+  <topic href="misc_tips.html" title="Miscellaneous Widget-Building Tips"/>
+ </entry>
+ <entry keyword="PtRemoveWidgetData()">
+  <topic href="libs/ptremovewidgetdata.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtResizeCanvas()">
+  <topic href="anatomy.html#ExtentMethod" title="Extent method"/>
+ </entry>
+ <entry keyword="PtResizePolicy()">
+  <topic href="libs/ptresizepolicy.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtResourceRec_t">
+  <topic href="anatomy.html#PtResourceRectStructure" title="PtResourceRec_t resource records"/>
+ </entry>
+ <entry keyword="PtSampCompound">
+  <entry keyword="redirecting children">
+   <topic href="anatomy.html#CompoundRedirection" title="Compound redirection"/>
+  </entry>
+  <entry keyword="redirecting resources">
+   <topic href="anatomy.html#COMPOUNDANATOMY" title="Compound widget anatomy"/>
+  </entry>
+ </entry>
+ <entry keyword="PtSetArg()">
+  <topic href="anatomy.html#QueryfMember" title="query_f member"/>
+ </entry>
+ <entry keyword="PtSetExtentFromArea()">
+  <topic href="libs/ptsetextentfromarea.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtSetResources()">
+  <topic href="superclass.html#id16" title="Connection method"/>
+  <topic href="misc_tips.html" title="Miscellaneous Widget-Building Tips"/>
+  <topic href="anatomy.html#ModfMember" title="mod_f member"/>
+  <topic href="anatomy.html#id37" title="Widget class structure description"/>
+ </entry>
+ <entry keyword="PtSetStruct()">
+  <topic href="libs/ptsetstruct.html#id7" title="Description:"/>
+  <topic href="libs/ptsetvalue.html#id7" title="Description:"/>
+  <topic href="superclass.html#id28" title="Functions"/>
+ </entry>
+ <entry keyword="PtSetValue()">
+  <topic href="libs/ptsetstruct.html#id7" title="Description:"/>
+  <topic href="libs/ptsetvalue.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtSuperClassCalcOpaque()">
+  <topic href="superclass.html#id302" title="Calc Opaque Rect method"/>
+  <topic href="libs/ptsuperclasscalcopaque.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtSuperClassChildCreated()">
+  <topic href="libs/ptsuperclasschildcreated.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtSuperClassChildDestroyed()">
+  <topic href="libs/ptsuperclasschilddestroyed.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtSuperClassChildGettingFocus()">
+  <topic href="libs/ptsuperclasschildgettingfocus.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtSuperClassChildGettingResources()">
+  <topic href="libs/ptsuperclasschildgettingresources.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtSuperClassChildLosingFocus()">
+  <topic href="libs/ptsuperclasschildlosingfocus.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtSuperClassChildMovedResized()">
+  <topic href="libs/ptsuperclasschildmovedresized.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtSuperClassChildRealized()">
+  <topic href="libs/ptsuperclasschildrealized.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtSuperClassChildSettingResources()">
+  <topic href="libs/ptsuperclasschildsettingresources.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtSuperClassChildUnrealized()">
+  <topic href="libs/ptsuperclasschildunrealized.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtSuperClassConnect()">
+  <topic href="libs/ptsuperclassconnect.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtSuperClassConnectFrom()">
+  <topic href="libs/ptsuperclassconnect.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtSuperClassDraw()">
+  <topic href="libs/ptsuperclassdraw.html#id7" title="Description:"/>
+  <topic href="lifewidg.html#id25" title="Draw method"/>
+  <topic href="superclass.html#id294" title="Draw method"/>
+ </entry>
+ <entry keyword="PtSuperClassExtent()">
+  <topic href="libs/ptsuperclassextent.html#id7" title="Description:"/>
+  <topic href="superclass.html#id162" title="Extent method"/>
+  <topic href="superclass.html#id41" title="Extent method"/>
+  <topic href="superclass.html#id76" title="Extent method"/>
+ </entry>
+ <entry keyword="PtSuperClassGenListDraw()">
+  <topic href="libs/ptsuperclassgenlistdraw.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtSuperClassGenListInflate()">
+  <topic href="libs/ptsuperclassgenlistinflate.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtSuperClassGenListKey()">
+  <topic href="libs/ptsuperclassgenlistkey.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtSuperClassGenListMouse()">
+  <topic href="libs/ptsuperclassgenlistmouse.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtSuperClassGenListSelect()">
+  <topic href="libs/ptsuperclassgenlistselect.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtSuperClassGenTreeDrawItem()">
+  <topic href="libs/ptsuperclassgentreedrawitem.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtSuperClassGenTreeItemState()">
+  <topic href="libs/ptsuperclassgentreeitemstate.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtSuperClassGetResources()">
+  <topic href="libs/ptsuperclassgetresources.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtSuperClassGotFocus()">
+  <topic href="libs/ptsuperclassgotfocus.html#id7" title="Description:"/>
+  <topic href="superclass.html#id174" title="Got Focus method"/>
+ </entry>
+ <entry keyword="PtSuperClassInit()">
+  <topic href="libs/ptsuperclassinit.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtSuperClassInitFrom()">
+  <topic href="libs/ptsuperclassinit.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtSuperClassLostFocus()">
+  <topic href="libs/ptsuperclasslostfocus.html#id7" title="Description:"/>
+  <topic href="anatomy.html#GotFocusMethod" title="Got Focus method"/>
+  <topic href="anatomy.html#LostFocusMethod" title="Lost Focus method"/>
+  <topic href="superclass.html#id176" title="Lost Focus method"/>
+ </entry>
+ <entry keyword="PtSuperClassRawEvent()">
+  <topic href="libs/ptsuperclassrawevent.html#id7" title="Description:"/>
+  <topic href="superclass.html#id210" title="Widget actions"/>
+  <topic href="superclass.html#id59" title="Widget actions"/>
+ </entry>
+ <entry keyword="PtSuperClassRawEventFrom()">
+  <topic href="libs/ptsuperclassrawevent.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtSuperClassRealized()">
+  <topic href="libs/ptsuperclassrealized.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtSuperClassSetResources()">
+  <topic href="libs/ptsetstruct.html#id7" title="Description:"/>
+  <topic href="libs/ptsetvalue.html#id7" title="Description:"/>
+  <topic href="libs/ptsuperclasssetresources.html#id7" title="Description:"/>
+  <topic href="superclass.html#id63" title="Functions"/>
+ </entry>
+ <entry keyword="PtTimer">
+  <entry keyword="widget actions">
+   <topic href="anatomy.html#id58" title="Raw callback list"/>
+  </entry>
+ </entry>
+ <entry keyword="PtUpdate()">
+  <topic href="superclass.html#id28" title="Functions"/>
+ </entry>
+ <entry keyword="PtUpdateVisibility()">
+  <topic href="libs/ptupdatevisibility.html#id7" title="Description:"/>
+  <topic href="superclass.html#id63" title="Functions"/>
+ </entry>
+ <entry keyword="PtValidParent()">
+  <topic href="anatomy.html#CompoundRedirection" title="Compound redirection"/>
+ </entry>
+ <entry keyword="PtWidget">
+  <topic href="anatomy.html#ExtentMethod" title="Extent method"/>
+  <topic href="superclass.html#PTWIDGET" title="PtWidget"/>
+  <entry keyword="extending">
+   <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+  </entry>
+  <entry keyword="methods">
+   <topic href="anatomy.html#CLASSMETHODS" title="Class methods"/>
+   <entry keyword="Connection">
+    <topic href="anatomy.html#ConnectionMethod" title="Connection method"/>
+    <topic href="superclass.html#id16" title="Connection method"/>
+   </entry>
+   <entry keyword="Defaults">
+    <topic href="superclass.html#id10" title="Defaults method"/>
+   </entry>
+   <entry keyword="Destruction">
+    <topic href="superclass.html#id22" title="Destruction method"/>
+   </entry>
+   <entry keyword="Extent">
+    <topic href="superclass.html#id14" title="Extent method"/>
+   </entry>
+   <entry keyword="Initialization">
+    <topic href="superclass.html#id12" title="Initialization method"/>
+   </entry>
+   <entry keyword="Realization">
+    <topic href="superclass.html#id18" title="Realization method"/>
+   </entry>
+   <entry keyword="Unrealization">
+    <topic href="anatomy.html#UnrealizationMethod" title="Unrealization method"/>
+    <topic href="superclass.html#id20" title="Unrealization method"/>
+   </entry>
+  </entry>
+  <entry keyword="widget actions">
+   <topic href="superclass.html#id24" title="Widget actions"/>
+  </entry>
+ </entry>
+ <entry keyword="PtWidgetAbove()">
+  <topic href="libs/ptwidgetabove.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="PtWidgetOffset()">
+  <topic href="anatomy.html#DrawMethod" title="Draw method"/>
+ </entry>
+ <entry keyword="raw callbacks">
+  <topic href="libs/ptsuperclassrawevent.html#id7" title="Description:"/>
+  <topic href="superclass.html#id114" title="Functions"/>
+  <topic href="bind.html#ListOfCallbacks" title="List of callbacks (c=, k=, e=)"/>
+  <topic href="anatomy.html#id58" title="Raw callback list"/>
+  <topic href="anatomy.html#ACTIONS" title="Widget actions"/>
+  <topic href="superclass.html#id210" title="Widget actions"/>
+  <topic href="superclass.html#id59" title="Widget actions"/>
+  <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+  <topic href="anatomy.html#id37" title="Widget class structure description"/>
+  <entry keyword="freeing">
+   <topic href="libs/ptdestroyrawcallbacks.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="PtBasic">
+   <topic href="superclass.html#id59" title="Widget actions"/>
+  </entry>
+  <entry keyword="PtCompound">
+   <topic href="superclass.html#id145" title="Widget actions"/>
+  </entry>
+  <entry keyword="PtContainer">
+   <topic href="superclass.html#id110" title="Widget actions"/>
+  </entry>
+  <entry keyword="PtGauge">
+   <topic href="superclass.html#id370" title="Widget actions"/>
+  </entry>
+  <entry keyword="PtGenTree">
+   <topic href="superclass.html#id273" title="Widget actions"/>
+  </entry>
+  <entry keyword="PtGraphic">
+   <topic href="superclass.html#id337" title="Widget actions"/>
+  </entry>
+  <entry keyword="PtLabel">
+   <topic href="superclass.html#id304" title="Widget actions"/>
+  </entry>
+  <entry keyword="PtWidget">
+   <topic href="superclass.html#id24" title="Widget actions"/>
+  </entry>
+ </entry>
+ <entry keyword="Realization method">
+  <topic href="libs/ptsuperclassrealized.html#id7" title="Description:"/>
+  <topic href="anatomy.html#RealizationMethod" title="Realization method"/>
+  <topic href="lifewidg.html#id13" title="Realizing a widget instance"/>
+  <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+  <topic href="anatomy.html#id37" title="Widget class structure description"/>
+  <entry keyword="inheriting">
+   <topic href="lifewidg.html#id15" title="Processing methods"/>
+  </entry>
+  <entry keyword="PtBasic">
+   <topic href="superclass.html#id45" title="Realization method"/>
+  </entry>
+  <entry keyword="PtComboBox">
+   <topic href="anatomy.html#id101" title="Realization method"/>
+  </entry>
+  <entry keyword="PtCompound">
+   <topic href="anatomy.html#id101" title="Realization method"/>
+   <topic href="superclass.html#id131" title="Realization method"/>
+  </entry>
+  <entry keyword="PtContainer">
+   <topic href="anatomy.html#id92" title="Realization method"/>
+   <topic href="superclass.html#id80" title="Realization method"/>
+  </entry>
+  <entry keyword="PtGauge">
+   <topic href="superclass.html#id356" title="Realization method"/>
+  </entry>
+  <entry keyword="PtGenList">
+   <topic href="superclass.html#id166" title="Realization method"/>
+  </entry>
+  <entry keyword="PtGenTree">
+   <topic href="superclass.html#id231" title="Realization method"/>
+  </entry>
+  <entry keyword="PtGraphic">
+   <topic href="superclass.html#id323" title="Realization method"/>
+  </entry>
+  <entry keyword="PtLabel">
+   <topic href="superclass.html#id292" title="Realization method"/>
+  </entry>
+  <entry keyword="PtWidget">
+   <topic href="superclass.html#id18" title="Realization method"/>
+  </entry>
+  <entry keyword="ShadowedBox">
+   <topic href="lifewidg.html#id23" title="Realization method"/>
+  </entry>
+ </entry>
+ <entry keyword="redirection function">
+  <entry keyword="resource">
+   <topic href="anatomy.html#COMPOUNDANATOMY" title="Compound widget anatomy"/>
+  </entry>
+ </entry>
+ <entry keyword="redirector function">
+  <entry keyword="child">
+   <topic href="lifewidg.html#id40" title="Child redirection"/>
+   <topic href="anatomy.html#ContainerRedirectorFunction" title="Child Redirection method"/>
+   <topic href="anatomy.html#CompoundRedirection" title="Compound redirection"/>
+   <topic href="overview.html#id17" title="Container widgets"/>
+   <entry keyword="PtMenuBar">
+    <topic href="anatomy.html#ContainerRedirectorFunction" title="Child Redirection method"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="regions, determining if required">
+  <topic href="libs/ptcalcregion.html#id7" title="Description:"/>
+  <topic href="libs/ptcorechangeregion.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="resize callbacks">
+  <topic href="superclass.html#id76" title="Extent method"/>
+  <entry keyword="invoking">
+   <topic href="libs/ptinvokeresizecallbacks.html#id7" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="resource">
+  <entry keyword="editor">
+   <entry keyword="open function">
+    <topic href="api/open.html#id7" title="Description:"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="resource editors">
+  <entry keyword="base structure">
+   <topic href="api/resplugin_t.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="bringing to front">
+   <topic href="api/resplugintofrontf_t.html#id5" title="Description:"/>
+   <topic href="api/to_front.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="comparing values">
+   <topic href="api/cmp.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="getting changes">
+   <topic href="api/resplugingetchangesf_t.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="setting data">
+   <topic href="api/respluginsetdataf_t.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="state">
+   <entry keyword="setting">
+    <topic href="api/set_state.html#id7" title="Description:"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="resource-redirector function">
+  <topic href="anatomy.html#COMPOUNDANATOMY" title="Compound widget anatomy"/>
+ </entry>
+ <entry keyword="resources">
+  <entry keyword="blocking">
+   <topic href="anatomy.html#id95" title="Blocking resources"/>
+   <topic href="superclass.html#id119" title="Class extensions"/>
+   <topic href="anatomy.html#COMPOUNDANATOMY" title="Compound widget anatomy"/>
+   <topic href="lifewidg.html#COMPOUND" title="Compound widgets"/>
+   <entry keyword="children">
+    <topic href="overview.html#id17" title="Container widgets"/>
+   </entry>
+   <entry keyword="exported subordinates">
+    <topic href="overview.html#id19" title="Compound widgets"/>
+   </entry>
+  </entry>
+  <entry keyword="causing damage">
+   <topic href="lifewidg.html#id27" title="After realizing a widget"/>
+  </entry>
+  <entry keyword="Child Getting Resource method">
+   <topic href="anatomy.html#id79" title="Child Getting Resource method"/>
+  </entry>
+  <entry keyword="Child Setting Resource method">
+   <topic href="anatomy.html#id77" title="Child Setting Resource method"/>
+  </entry>
+  <entry keyword="class resource table">
+   <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+  </entry>
+  <entry keyword="default values in PhAB">
+   <topic href="bind.html#DefaultValues" title="Default values (d=)"/>
+  </entry>
+  <entry keyword="defining">
+   <topic href="lifewidg.html#id7" title="Creating and initializing the widget class"/>
+   <topic href="anatomy.html#DEFINERESEOURCES" title="Defining resources"/>
+   <topic href="overview.html#DESIGN" title="Design considerations"/>
+  </entry>
+  <entry keyword="describing in PhAB">
+   <topic href="bind.html#WidgetDescriptionTable" title="Creating a widget description table"/>
+   <topic href="bind.html#ListOfResources" title="List of resources (r=)"/>
+  </entry>
+  <entry keyword="editing in PhAB">
+   <topic href="bind.html#DisplayingCustomWidget" title="Displaying your custom widget"/>
+   <topic href="bind.html#SingleValueResources" title="Single-value resources"/>
+  </entry>
+  <entry keyword="freeing">
+   <topic href="anatomy.html#DestructionMethod" title="Destruction method"/>
+   <topic href="superclass.html#id22" title="Destruction method"/>
+  </entry>
+  <entry keyword="freeing memory">
+   <topic href="anatomy.html#ArgValueAndLenMembers" title="arg_value and arg_len members"/>
+  </entry>
+  <entry keyword="Get Resources method">
+   <topic href="anatomy.html#GetResourcesMethod" title="Get Resources method"/>
+  </entry>
+  <entry keyword="getting">
+   <topic href="anatomy.html#COMPOUNDANATOMY" title="Compound widget anatomy"/>
+  </entry>
+  <entry keyword="inheriting">
+   <topic href="overview.html#DESIGN" title="Design considerations"/>
+   <topic href="bind.html#InheritedResources" title="Inherited resources and callbacks (i=, n=)"/>
+  </entry>
+  <entry keyword="manifests">
+   <topic href="anatomy.html#id4" title="Resource manifests"/>
+  </entry>
+  <entry keyword="numbers">
+   <topic href="anatomy.html#id4" title="Resource manifests"/>
+  </entry>
+  <entry keyword="Pt_NO_INHERITED_RESOURCES">
+   <topic href="anatomy.html#id37" title="Widget class structure description"/>
+  </entry>
+  <entry keyword="PtBasic">
+   <topic href="superclass.html#id61" title="Resource definitions"/>
+  </entry>
+  <entry keyword="PtContainer">
+   <topic href="superclass.html#id112" title="Resource definitions"/>
+  </entry>
+  <entry keyword="PtCreateWidget()">
+   <topic href="lifewidg.html#id11" title="Setting application resources"/>
+  </entry>
+  <entry keyword="PtFindResource()">
+   <topic href="libs/ptfindresource.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="PtGauge">
+   <topic href="superclass.html#id372" title="Resource definitions"/>
+  </entry>
+  <entry keyword="PtGenList">
+   <topic href="superclass.html#id212" title="Resource definitions"/>
+  </entry>
+  <entry keyword="PtGenTree">
+   <topic href="superclass.html#id275" title="Resource definitions"/>
+  </entry>
+  <entry keyword="PtGetStruct()">
+   <topic href="libs/ptgetstruct.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="PtGraphic">
+   <topic href="superclass.html#id339" title="Resource definitions"/>
+  </entry>
+  <entry keyword="PtLabel">
+   <topic href="superclass.html#id306" title="Resource definitions"/>
+  </entry>
+  <entry keyword="PtSetStruct()">
+   <topic href="libs/ptsetstruct.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="PtSetValue()">
+   <topic href="libs/ptsetvalue.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="PtSuperClassChildGettingResources()">
+   <topic href="libs/ptsuperclasschildgettingresources.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="PtSuperClassChildSettingResources()">
+   <topic href="libs/ptsuperclasschildsettingresources.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="PtSuperClassGetResources()">
+   <topic href="libs/ptsuperclassgetresources.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="PtSuperClassSetResources()">
+   <topic href="libs/ptsuperclasssetresources.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="records">
+   <topic href="anatomy.html#PtResourceRectStructure" title="PtResourceRec_t resource records"/>
+  </entry>
+  <entry keyword="Set Resources method">
+   <topic href="anatomy.html#id103" title="Get Resources and Set Resources methods"/>
+   <topic href="anatomy.html#SetResourcesMethod" title="Set Resources method"/>
+  </entry>
+  <entry keyword="types">
+   <topic href="anatomy.html#ArgValueAndLenMembers" title="arg_value and arg_len members"/>
+  </entry>
+ </entry>
+ <entry keyword="RESPLUGIN_ACTION_APPLY">
+  <topic href="api/create_window.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="RESPLUGIN_ACTION_CLOSE">
+  <topic href="api/create_window.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="RESPLUGIN_ACTION_DEFAULT">
+  <topic href="api/create_window.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="RESPLUGIN_CHANGES">
+  <topic href="api/answer_changes.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="RESPLUGIN_FIXED_SIZE">
+  <topic href="api/create_window.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="RESPLUGIN_NO_CHANGES">
+  <topic href="api/answer_changes.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="RESPLUGIN_STATE_BLOCKED">
+  <topic href="api/set_state.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="RESPLUGIN_STATE_DISABLED">
+  <topic href="api/set_state.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="RESPLUGIN_STATE_MATCH_DEFAULT">
+  <topic href="api/set_state.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="RESPLUGIN_STATE_MATCH_DEFAULT_MASTER">
+  <topic href="api/set_state.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="RESPLUGIN_STATE_MATCH_MASTER">
+  <topic href="api/set_state.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="RESPLUGIN_STATE_NO_MATCH">
+  <topic href="api/set_state.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="RESPLUGIN_STATE_UNBLOCKED">
+  <topic href="api/set_state.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="Set Resources method">
+  <topic href="anatomy.html#SetResourcesMethod" title="Set Resources method"/>
+  <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+  <entry keyword="inheriting">
+   <topic href="lifewidg.html#id15" title="Processing methods"/>
+  </entry>
+  <entry keyword="PtCompound">
+   <topic href="anatomy.html#id103" title="Get Resources and Set Resources methods"/>
+  </entry>
+  <entry keyword="PtFindResource()">
+   <topic href="libs/ptfindresource.html#id7" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="setting">
+  <entry keyword="resource editor data">
+   <topic href="api/respluginsetdataf_t.html#id5" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="setting states">
+  <entry keyword="resource editors">
+   <topic href="api/set_state.html#id7" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="ShadowedBox">
+  <entry keyword="class resource table">
+   <topic href="anatomy.html#id40" title="PtBasic class resource additions"/>
+  </entry>
+  <entry keyword="class structure">
+   <topic href="overview.html#id10" title="Class structure members"/>
+  </entry>
+  <entry keyword="class-creation function">
+   <topic href="lifewidg.html#id7" title="Creating and initializing the widget class"/>
+   <topic href="libs/ptcreatewidgetclass.html#id11" title="Examples:"/>
+  </entry>
+  <entry keyword="defined">
+   <topic href="overview.html#QUICKLOOK" title="A quick look at a widget"/>
+   <topic href="overview.html#id10" title="Class structure members"/>
+  </entry>
+  <entry keyword="life cycle">
+   <topic href="lifewidg.html" title="Life Cycle of a Widget"/>
+  </entry>
+  <entry keyword="methods">
+   <entry keyword="chaining">
+    <topic href="lifewidg.html#id15" title="Processing methods"/>
+   </entry>
+   <entry keyword="Connection">
+    <topic href="lifewidg.html#id21" title="Connection method"/>
+   </entry>
+   <entry keyword="Defaults">
+    <topic href="overview.html#id10" title="Class structure members"/>
+    <topic href="anatomy.html#id40" title="PtBasic class resource additions"/>
+    <topic href="lifewidg.html#id9" title="Setting default values"/>
+   </entry>
+   <entry keyword="Draw">
+    <topic href="lifewidg.html#id25" title="Draw method"/>
+    <topic href="anatomy.html#id40" title="PtBasic class resource additions"/>
+   </entry>
+   <entry keyword="Extent">
+    <topic href="lifewidg.html#id19" title="Extent method"/>
+   </entry>
+   <entry keyword="inheriting">
+    <topic href="lifewidg.html#id15" title="Processing methods"/>
+   </entry>
+   <entry keyword="Initialization">
+    <topic href="lifewidg.html#id17" title="Initialization method"/>
+   </entry>
+   <entry keyword="Realization">
+    <topic href="lifewidg.html#id23" title="Realization method"/>
+   </entry>
+   <entry keyword="Unrealization">
+    <topic href="lifewidg.html#id31" title="Unrealization method"/>
+   </entry>
+  </entry>
+  <entry keyword="resource declarations">
+   <topic href="anatomy.html#Examples" title="Examples"/>
+  </entry>
+ </entry>
+ <entry keyword="shared object, creating">
+  <topic href="bind.html#SharedObject" title="Creating a shared object"/>
+ </entry>
+ <entry keyword="source file">
+  <topic href="overview.html#WidgetSourceFile" title="Widget source file"/>
+  <entry keyword="sample code">
+   <topic href="overview.html#id10" title="Class structure members"/>
+  </entry>
+ </entry>
+ <entry keyword="structures">
+  <entry keyword="class">
+   <topic href="overview.html#id10" title="Class structure members"/>
+  </entry>
+  <entry keyword="instance">
+   <topic href="overview.html#id7" title="Instance structure members"/>
+  </entry>
+ </entry>
+ <entry keyword="subordinate widgets">
+  <entry keyword="blocking resources">
+   <topic href="lifewidg.html#COMPOUND" title="Compound widgets"/>
+   <topic href="overview.html#id19" title="Compound widgets"/>
+  </entry>
+  <entry keyword="exported">
+   <topic href="anatomy.html#COMPOUNDANATOMY" title="Compound widget anatomy"/>
+   <topic href="lifewidg.html#COMPOUND" title="Compound widgets"/>
+   <topic href="overview.html#id19" title="Compound widgets"/>
+   <topic href="superclass.html#PTCOMPOUND" title="PtCompound"/>
+   <entry keyword="blocking resources">
+    <topic href="anatomy.html#id95" title="Blocking resources"/>
+   </entry>
+   <entry keyword="creating">
+    <topic href="anatomy.html#CompoundDefaultsMethod" title="Defaults method"/>
+   </entry>
+   <entry keyword="distinguishing resources">
+    <topic href="anatomy.html#COMPOUNDANATOMY" title="Compound widget anatomy"/>
+   </entry>
+   <entry keyword="identifying">
+    <topic href="lifewidg.html#id43" title="Exporting subordinate widgets"/>
+   </entry>
+  </entry>
+  <entry keyword="Pt_ARG_DATA">
+   <topic href="anatomy.html#CompoundDefaultsMethod" title="Defaults method"/>
+  </entry>
+  <entry keyword="Pt_PROCREATED">
+   <topic href="anatomy.html#CompoundDefaultsMethod" title="Defaults method"/>
+  </entry>
+  <entry keyword="Pt_SET_NUM_SUBORDINATES">
+   <topic href="superclass.html#id119" title="Class extensions"/>
+   <topic href="anatomy.html#CompoundDefaultsMethod" title="Defaults method"/>
+  </entry>
+  <entry keyword="Pt_SET_SUBORDINATES">
+   <topic href="superclass.html#id119" title="Class extensions"/>
+   <topic href="anatomy.html#CompoundDefaultsMethod" title="Defaults method"/>
+  </entry>
+  <entry keyword="PtValidParent()">
+   <topic href="anatomy.html#CompoundRedirection" title="Compound redirection"/>
+  </entry>
+  <entry keyword="realizing">
+   <topic href="anatomy.html#id101" title="Realization method"/>
+  </entry>
+  <entry keyword="setting resources">
+   <topic href="misc_tips.html" title="Miscellaneous Widget-Building Tips"/>
+  </entry>
+  <entry keyword="unexported">
+   <topic href="anatomy.html#InitializationMethod" title="Initialization method"/>
+  </entry>
+ </entry>
+ <entry keyword="support">
+  <topic href="about.html#id7" title="Technical support"/>
+ </entry>
+ <entry keyword="support, technical">
+  <topic href="about.html#id7" title="Technical support"/>
+ </entry>
+ <entry keyword="technical support">
+  <topic href="about.html#id7" title="Technical support"/>
+ </entry>
+ <entry keyword="tips for building widgets">
+  <topic href="misc_tips.html" title="Miscellaneous Widget-Building Tips"/>
+ </entry>
+ <entry keyword="to front">
+  <entry keyword="resource editors">
+   <topic href="api/resplugintofrontf_t.html#id5" title="Description:"/>
+   <topic href="api/to_front.html#id7" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="Tree Draw Item method">
+  <entry keyword="PtGenTree">
+   <topic href="superclass.html#id269" title="Tree Draw Item method"/>
+  </entry>
+  <entry keyword="PtSuperClassGenTreeDrawItem()">
+   <topic href="libs/ptsuperclassgentreedrawitem.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="tree widgets">
+   <topic href="tree.html#OVERVIEW" title="Overview"/>
+   <topic href="tree.html#DrawMethod" title="Tree Draw Item method"/>
+  </entry>
+ </entry>
+ <entry keyword="Tree Item State method">
+  <entry keyword="PtGenTree">
+   <topic href="superclass.html#id271" title="Tree Item State method"/>
+  </entry>
+  <entry keyword="PtSuperClassGenTreeItemState()">
+   <topic href="libs/ptsuperclassgentreeitemstate.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="tree widgets">
+   <topic href="tree.html#TreeItemStateMethod" title="Tree Item State method"/>
+  </entry>
+ </entry>
+ <entry keyword="tree widgets">
+  <topic href="tree.html#CONVENIENCE" title="Convenience functions"/>
+  <topic href="tree.html#OVERVIEW" title="Overview"/>
+  <entry keyword="methods">
+   <entry keyword="List Draw">
+    <topic href="tree.html#OVERVIEW" title="Overview"/>
+   </entry>
+   <entry keyword="Tree Draw Item">
+    <topic href="tree.html#OVERVIEW" title="Overview"/>
+    <topic href="tree.html#DrawMethod" title="Tree Draw Item method"/>
+   </entry>
+   <entry keyword="Tree Item State">
+    <topic href="tree.html#TreeItemStateMethod" title="Tree Item State method"/>
+   </entry>
+  </entry>
+  <entry keyword="See also PtGenTree"/>
+ </entry>
+ <entry keyword="typographical conventions">
+  <topic href="about.html#id3" title="Typographical conventions"/>
+ </entry>
+ <entry keyword="Unrealization method">
+  <topic href="anatomy.html#UnrealizationMethod" title="Unrealization method"/>
+  <topic href="lifewidg.html#id31" title="Unrealization method"/>
+  <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+  <topic href="anatomy.html#id37" title="Widget class structure description"/>
+  <entry keyword="chaining">
+   <topic href="lifewidg.html#id15" title="Processing methods"/>
+  </entry>
+  <entry keyword="PtBasic">
+   <topic href="superclass.html#id49" title="Unrealization method"/>
+  </entry>
+  <entry keyword="PtCompound">
+   <topic href="superclass.html#id135" title="Unrealization method"/>
+  </entry>
+  <entry keyword="PtContainer">
+   <topic href="superclass.html#id84" title="Unrealization method"/>
+  </entry>
+  <entry keyword="PtGauge">
+   <topic href="superclass.html#id360" title="Unrealization method"/>
+  </entry>
+  <entry keyword="PtGenList">
+   <topic href="superclass.html#id170" title="Unrealization method"/>
+  </entry>
+  <entry keyword="PtGenTree">
+   <topic href="superclass.html#id235" title="Unrealization method"/>
+  </entry>
+  <entry keyword="PtGraphic">
+   <topic href="superclass.html#id327" title="Unrealization method"/>
+  </entry>
+  <entry keyword="PtLabel">
+   <topic href="anatomy.html#UnrealizationMethod" title="Unrealization method"/>
+   <topic href="superclass.html#id296" title="Unrealization method"/>
+  </entry>
+  <entry keyword="PtWidget">
+   <topic href="anatomy.html#UnrealizationMethod" title="Unrealization method"/>
+   <topic href="superclass.html#id20" title="Unrealization method"/>
+  </entry>
+  <entry keyword="ShadowedBox">
+   <topic href="lifewidg.html#id31" title="Unrealization method"/>
+  </entry>
+ </entry>
+ <entry keyword="widgets">
+  <entry keyword="actions">
+   <topic href="anatomy.html#ACTIONS" title="Widget actions"/>
+   <topic href="anatomy.html#id37" title="Widget class structure description"/>
+  </entry>
+  <entry keyword="adding to PhAB">
+   <topic href="bind.html#DesignConsiderations" title="Widget design considerations"/>
+  </entry>
+  <entry keyword="anchoring">
+   <topic href="lifewidg.html#AllWidgets" title="All widgets"/>
+   <topic href="overview.html#id13" title="Class hierarchy"/>
+  </entry>
+  <entry keyword="basic">
+   <topic href="overview.html#id15" title="Basic widgets"/>
+  </entry>
+  <entry keyword="canvas">
+   <entry keyword="resizing">
+    <topic href="libs/ptresizecanvas.html#id7" title="Description:"/>
+   </entry>
+  </entry>
+  <entry keyword="canvas, calculating">
+   <topic href="libs/ptchildboundingbox.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="categories">
+   <topic href="overview.html#TYPES" title="Types of widgets"/>
+  </entry>
+  <entry keyword="children">
+   <entry keyword="bounding box">
+    <topic href="libs/ptchildboundingbox.html#id7" title="Description:"/>
+   </entry>
+  </entry>
+  <entry keyword="classes">
+   <entry keyword="defining">
+    <topic href="anatomy.html#DEFINECLASS" title="Defining the widget class"/>
+    <topic href="anatomy.html#id40" title="PtBasic class resource additions"/>
+   </entry>
+   <entry keyword="description">
+    <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+   </entry>
+   <entry keyword="methods">
+    <topic href="anatomy.html#CalcOpaqueRectMethod" title="Calc Opaque Rect method"/>
+    <topic href="anatomy.html#CLASSMETHODS" title="Class methods"/>
+   </entry>
+  </entry>
+  <entry keyword="compound">
+   <topic href="overview.html#id19" title="Compound widgets"/>
+  </entry>
+  <entry keyword="container">
+   <topic href="overview.html#id17" title="Container widgets"/>
+  </entry>
+  <entry keyword="damaging">
+   <topic href="libs/ptdamageexposed.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="data chain">
+   <topic href="libs/ptaddwidgetdata.html#id7" title="Description:"/>
+   <topic href="libs/ptfindnextwidgetdata.html#id7" title="Description:"/>
+   <topic href="libs/ptfindwidgetdata.html#id7" title="Description:"/>
+   <topic href="libs/ptremovewidgetdata.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="description table">
+   <topic href="bind.html#WidgetDescriptionTable" title="Creating a widget description table"/>
+  </entry>
+  <entry keyword="designing">
+   <topic href="overview.html#DESIGN" title="Design considerations"/>
+  </entry>
+  <entry keyword="extent, synchronizing">
+   <topic href="libs/ptmoveresizewidget.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="handling events">
+   <topic href="anatomy.html#ACTIONS" title="Widget actions"/>
+   <topic href="anatomy.html#id37" title="Widget class structure description"/>
+  </entry>
+  <entry keyword="instantiating">
+   <topic href="lifewidg.html#id5" title="Instantiating the widget"/>
+  </entry>
+  <entry keyword="life cycle">
+   <topic href="lifewidg.html" title="Life Cycle of a Widget"/>
+  </entry>
+  <entry keyword="main components">
+   <topic href="overview.html#QUICKLOOK" title="A quick look at a widget"/>
+  </entry>
+  <entry keyword="managing children">
+   <topic href="overview.html#id17" title="Container widgets"/>
+  </entry>
+  <entry keyword="reasons to customize">
+   <topic href="overview.html" title="Overview"/>
+  </entry>
+  <entry keyword="redirecting">
+   <topic href="overview.html#id19" title="Compound widgets"/>
+  </entry>
+  <entry keyword="region, determining if required">
+   <topic href="libs/ptcalcregion.html#id7" title="Description:"/>
+   <topic href="libs/ptcorechangeregion.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="repairing damage">
+   <topic href="lifewidg.html#id27" title="After realizing a widget"/>
+  </entry>
+  <entry keyword="resiing, attempting">
+   <topic href="libs/ptattemptresize.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="resizing policy">
+   <topic href="libs/ptresizepolicy.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="resources">
+   <entry keyword="blocking">
+    <topic href="anatomy.html#id95" title="Blocking resources"/>
+    <topic href="superclass.html#id119" title="Class extensions"/>
+    <topic href="anatomy.html#COMPOUNDANATOMY" title="Compound widget anatomy"/>
+    <topic href="lifewidg.html#COMPOUND" title="Compound widgets"/>
+    <topic href="overview.html#id19" title="Compound widgets"/>
+    <topic href="overview.html#id17" title="Container widgets"/>
+   </entry>
+   <entry keyword="causing damage">
+    <topic href="lifewidg.html#id27" title="After realizing a widget"/>
+   </entry>
+   <entry keyword="Child Getting Resource method">
+    <topic href="anatomy.html#id79" title="Child Getting Resource method"/>
+   </entry>
+   <entry keyword="Child Setting Resource method">
+    <topic href="anatomy.html#id77" title="Child Setting Resource method"/>
+   </entry>
+   <entry keyword="class resource table">
+    <topic href="anatomy.html#WidgetClassResource" title="Widget class resource table"/>
+   </entry>
+   <entry keyword="default values in PhAB">
+    <topic href="bind.html#DefaultValues" title="Default values (d=)"/>
+   </entry>
+   <entry keyword="defining">
+    <topic href="lifewidg.html#id7" title="Creating and initializing the widget class"/>
+    <topic href="anatomy.html#DEFINERESEOURCES" title="Defining resources"/>
+    <topic href="overview.html#DESIGN" title="Design considerations"/>
+   </entry>
+   <entry keyword="describing in PhAB">
+    <topic href="bind.html#WidgetDescriptionTable" title="Creating a widget description table"/>
+    <topic href="bind.html#ListOfResources" title="List of resources (r=)"/>
+   </entry>
+   <entry keyword="editing in PhAB">
+    <topic href="bind.html#DisplayingCustomWidget" title="Displaying your custom widget"/>
+    <topic href="bind.html#SingleValueResources" title="Single-value resources"/>
+   </entry>
+   <entry keyword="freeing">
+    <topic href="anatomy.html#DestructionMethod" title="Destruction method"/>
+    <topic href="superclass.html#id22" title="Destruction method"/>
+   </entry>
+   <entry keyword="freeing memory">
+    <topic href="anatomy.html#ArgValueAndLenMembers" title="arg_value and arg_len members"/>
+   </entry>
+   <entry keyword="Get Resources method">
+    <topic href="anatomy.html#id103" title="Get Resources and Set Resources methods"/>
+    <topic href="anatomy.html#GetResourcesMethod" title="Get Resources method"/>
+   </entry>
+   <entry keyword="getting">
+    <topic href="anatomy.html#COMPOUNDANATOMY" title="Compound widget anatomy"/>
+   </entry>
+   <entry keyword="inheriting">
+    <topic href="overview.html#DESIGN" title="Design considerations"/>
+    <topic href="bind.html#InheritedResources" title="Inherited resources and callbacks (i=, n=)"/>
+   </entry>
+   <entry keyword="manifests">
+    <topic href="anatomy.html#id4" title="Resource manifests"/>
+   </entry>
+   <entry keyword="numbers">
+    <topic href="anatomy.html#id4" title="Resource manifests"/>
+   </entry>
+   <entry keyword="Pt_NO_INHERITED_RESOURCES">
+    <topic href="anatomy.html#id37" title="Widget class structure description"/>
+   </entry>
+   <entry keyword="PtBasic">
+    <topic href="superclass.html#id61" title="Resource definitions"/>
+   </entry>
+   <entry keyword="PtContainer">
+    <topic href="superclass.html#id112" title="Resource definitions"/>
+   </entry>
+   <entry keyword="PtCreateWidget()">
+    <topic href="lifewidg.html#id11" title="Setting application resources"/>
+   </entry>
+   <entry keyword="PtFindResource()">
+    <topic href="libs/ptfindresource.html#id7" title="Description:"/>
+   </entry>
+   <entry keyword="PtGauge">
+    <topic href="superclass.html#id372" title="Resource definitions"/>
+   </entry>
+   <entry keyword="PtGenList">
+    <topic href="superclass.html#id212" title="Resource definitions"/>
+   </entry>
+   <entry keyword="PtGenTree">
+    <topic href="superclass.html#id275" title="Resource definitions"/>
+   </entry>
+   <entry keyword="PtGetStruct()">
+    <topic href="libs/ptgetstruct.html#id7" title="Description:"/>
+   </entry>
+   <entry keyword="PtGraphic">
+    <topic href="superclass.html#id339" title="Resource definitions"/>
+   </entry>
+   <entry keyword="PtLabel">
+    <topic href="superclass.html#id306" title="Resource definitions"/>
+   </entry>
+   <entry keyword="PtSetStruct()">
+    <topic href="libs/ptsetstruct.html#id7" title="Description:"/>
+   </entry>
+   <entry keyword="PtSetValue()">
+    <topic href="libs/ptsetvalue.html#id7" title="Description:"/>
+   </entry>
+   <entry keyword="PtSuperClassChildGettingResources()">
+    <topic href="libs/ptsuperclasschildgettingresources.html#id7" title="Description:"/>
+   </entry>
+   <entry keyword="PtSuperClassChildSettingResources()">
+    <topic href="libs/ptsuperclasschildsettingresources.html#id7" title="Description:"/>
+   </entry>
+   <entry keyword="PtSuperClassGetResources()">
+    <topic href="libs/ptsuperclassgetresources.html#id7" title="Description:"/>
+   </entry>
+   <entry keyword="PtSuperClassSetResources()">
+    <topic href="libs/ptsuperclasssetresources.html#id7" title="Description:"/>
+   </entry>
+   <entry keyword="records">
+    <topic href="anatomy.html#PtResourceRectStructure" title="PtResourceRec_t resource records"/>
+   </entry>
+   <entry keyword="Set Resources method">
+    <topic href="anatomy.html#id103" title="Get Resources and Set Resources methods"/>
+    <topic href="anatomy.html#SetResourcesMethod" title="Set Resources method"/>
+   </entry>
+  </entry>
+  <entry keyword="subclassing">
+   <topic href="overview.html#SUBCLASSING" title="Subclassing widgets"/>
+   <entry keyword="PtBasic">
+    <topic href="overview.html#SUBCLASSING" title="Subclassing widgets"/>
+   </entry>
+   <entry keyword="PtCompound">
+    <topic href="overview.html#id19" title="Compound widgets"/>
+   </entry>
+   <entry keyword="PtContainer">
+    <topic href="overview.html#id17" title="Container widgets"/>
+   </entry>
+   <entry keyword="PtGenList">
+    <topic href="superclass.html#PTGENLIST" title="PtGenList"/>
+   </entry>
+   <entry keyword="PtWidget">
+    <topic href="overview.html#id13" title="Class hierarchy"/>
+   </entry>
+  </entry>
+  <entry keyword="superclass types">
+   <topic href="overview.html#TYPES" title="Types of widgets"/>
+  </entry>
+  <entry keyword="tips for building">
+   <topic href="misc_tips.html" title="Miscellaneous Widget-Building Tips"/>
+  </entry>
+  <entry keyword="visibility, change in">
+   <topic href="libs/ptupdatevisibility.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="widget in front of">
+   <topic href="libs/ptwidgetabove.html#id7" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="window">
+  <entry keyword="area">
+   <entry keyword="in PhAB plugins">
+    <topic href="api/get_area.html#id7" title="Description:"/>
+   </entry>
+  </entry>
+ </entry>
+</index>

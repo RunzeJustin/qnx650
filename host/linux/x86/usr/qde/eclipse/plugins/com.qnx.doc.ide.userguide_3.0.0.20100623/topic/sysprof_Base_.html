@@ -1,0 +1,224 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Analyzing Your System with Kernel Tracing" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_INTRO_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_GETSTART_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_TARGET_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_WIZARD_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_AddressTranslationsSysProf_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_WIZOPTS_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_CAPTURE_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_INTERPRET_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_System_profiler_editor_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_SysProf_TimelineView_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_Timeline_colors_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_zooming.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_profile_filtering_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_Raw_event_data_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_Trace_event_log_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_Properties_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_tracking_down_events.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_Trace_searc_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_BookmarksX_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_Views_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_General_statistics_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_Event_owner_statistics_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_Clientserver_cpu_statistics_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_Sysprof_overview_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_Condition_statistics_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_Thread_Call_Stack_View.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_determine_thread_state_behav.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_Thread_state_snapshot_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_Why_running_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_anal_multiproc_sys.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_Cpu_migration_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_anal_sys_with_AP.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_Sysprof_partitions_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_USESYSPROFFUNCINST_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_ImportPartOfKEVFile_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_Use_cases_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_High_CPU_usage_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_Isolating_client_load_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_Interrupt_latency_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_Events_of_interest_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="AnalyzingYourSystemwithKernelTracing" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Analyzing Your System with Kernel Tracing</title>
+   </head>
+   <body id="AnalyzingYourSystemwithKernelTracing"><a name="AnalyzingYourSystemwithKernelTracing" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Analyzing Your System with Kernel Tracing</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         <p>The instrumented kernel can gather a variety of events,
+            including:
+            
+         </p>
+         
+         <br clear="none" /><ul>
+            <li>kernel calls</li>
+            <li>process manager activities</li>
+            <li>interrupts</li>
+            <li>scheduler changes</li>
+            <li>context switches</li>
+            <li>user-defined trace data</li>
+         </ul>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <ul class="ullinks">
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_INTRO_.html" shape="rect">Introducing the QNX System Profiler</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_GETSTART_.html" shape="rect">Before you begin</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_TARGET_.html" shape="rect">Configuring a target for system profiling</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_WIZARD_.html" shape="rect">Launching the Log Configuration dialog</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_AddressTranslationsSysProf_.html" shape="rect">Address translation</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_WIZOPTS_.html" shape="rect">Configuring your kernel event trace</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_CAPTURE_.html" shape="rect">Capturing instrumentation data in event log files</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_INTERPRET_.html" shape="rect">Viewing and interpreting the captured data</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_System_profiler_editor_.html" shape="rect">System Profiler editor</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_SysProf_TimelineView_.html" shape="rect">Timeline view</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_Timeline_colors_.html" shape="rect">Timeline State Colors view</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_zooming.html" shape="rect">Zooming</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_profile_filtering_.html" shape="rect">Filtering profile data</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_Raw_event_data_.html" shape="rect">Raw Event Data view</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_Trace_event_log_.html" shape="rect">Trace Event Log view</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_Properties_.html" shape="rect">Properties view</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_tracking_down_events.html" shape="rect">Tracking down events</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_Trace_searc_.html" shape="rect">Trace Search</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_BookmarksX_.html" shape="rect">Bookmarks view</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_Views_.html" shape="rect">Gathering statistics from trace data</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_General_statistics_.html" shape="rect">General Statistics view</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_Event_owner_statistics_.html" shape="rect">Event Owner Statistics view</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_Clientserver_cpu_statistics_.html" shape="rect">Client/Server CPU Statistics view</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_Sysprof_overview_.html" shape="rect">Overview view</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_Condition_statistics_.html" shape="rect">Condition Statistics view</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_Thread_Call_Stack_View.html" shape="rect">Thread Call Stack view</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_determine_thread_state_behav.html" shape="rect">Determining thread state behavior</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_Thread_state_snapshot_.html" shape="rect">Thread State Snapshot view</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_Why_running_.html" shape="rect">Why Running? view</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_anal_multiproc_sys.html" shape="rect">Analyzing multiprocessor systems</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_Cpu_migration_.html" shape="rect">CPU Migration pane</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_anal_sys_with_AP.html" shape="rect">Analyzing systems with AP scheduling</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_Sysprof_partitions_.html" shape="rect">Partition Summary pane</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_USESYSPROFFUNCINST_.html" shape="rect">Using Function Instrumentation mode with the System Profiler</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_ImportPartOfKEVFile_.html" shape="rect">Importing part of a kernel trace into the Application Profiler</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_Use_cases_.html" shape="rect">System Profiler use cases</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_High_CPU_usage_.html" shape="rect">Locating sources of high CPU usage</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_Isolating_client_load_.html" shape="rect">Mapping and isolating client CPU load from server CPU load</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_Interrupt_latency_.html" shape="rect">Examining interrupt latency</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_Events_of_interest_.html" shape="rect">Locating Events of Interest</a></strong><br clear="none" />
+               
+            </li>
+         </ul>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

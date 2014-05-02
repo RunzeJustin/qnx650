@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Getting Started with QNX Neutrino: A Guide for Realtime Programmers">
+      <topic label="About This Guide" href="about.html">
+          <topic label="What you'll find in this guide" href="about.html#In_this_guide"/>
+          <topic label="Typographical conventions" href="about.html#Typographical_conventions">
+            <topic label="Note to Windows users" href="about.html#WINDOWSNOTE"/>
+            <topic label="Navigation buttons" href="about.html#Navigation"/>
+          </topic>
+          <topic label="Technical support" href="about.html#Support"/>
+      </topic>
+      <topic label="Foreword to the First Edition by Peter van der Veen" href="forward.html"/>
+      <topic label="Preface to the First Edition by Rob Krten" href="preface.html">
+            <topic label="A little history" href="preface.html#id3"/>
+          <topic label="Who this book is for" href="preface.html#id5"/>
+          <topic label="What's in this book?" href="preface.html#id7">
+            <topic label="Processes and Threads" href="preface.html#id9"/>
+            <topic label="Message Passing" href="preface.html#id11"/>
+            <topic label="Clocks, Timers, and Getting a Kick Every So Often" href="preface.html#id13"/>
+            <topic label="Interrupts" href="preface.html#id15"/>
+            <topic label="Resource Managers" href="preface.html#id17"/>
+            <topic label="QNX 4 to QNX Neutrino" href="preface.html#id19"/>
+            <topic label="Calling 911" href="preface.html#id21"/>
+            <topic label="Glossary" href="preface.html#id23"/>
+            <topic label="Other references" href="preface.html#id25"/>
+          </topic>
+          <topic label="About Rob Krten" href="preface.html#Krten"/>
+          <topic label="Acknowledgments" href="preface.html#id28"/>
+      </topic>
+      <topic label="Processes and Threads" href="s1_procs.html">
+          <topic label="Process and thread fundamentals" href="s1_procs.html#Fundamentals">
+            <topic label="A process as a house" href="s1_procs.html#id4"/>
+            <topic label="The occupants as threads" href="s1_procs.html#id6">
+              <topic label="Single threaded" href="s1_procs.html#id8"/>
+              <topic label="Multi threaded" href="s1_procs.html#id10"/>
+            </topic>
+            <topic label="Back to processes and threads" href="s1_procs.html#id12"/>
+            <topic label="Mutual exclusion" href="s1_procs.html#mutex"/>
+            <topic label="Priorities" href="s1_procs.html#id15"/>
+            <topic label="Semaphores" href="s1_procs.html#semaphore">
+              <topic label="A semaphore with a count of 1" href="s1_procs.html#id18"/>
+              <topic label="A semaphore with a count greater than 1" href="s1_procs.html#id20"/>
+            </topic>
+            <topic label="A semaphore as a mutex" href="s1_procs.html#id22"/>
+          </topic>
+          <topic label="The kernel's role" href="s1_procs.html#Kernel_role">
+            <topic label="Single CPU" href="s1_procs.html#id25"/>
+            <topic label="Multiple CPU (SMP)" href="s1_procs.html#id27"/>
+            <topic label="The kernel as arbiter" href="s1_procs.html#id29">
+              <topic label="Prioritization" href="s1_procs.html#id31"/>
+              <topic label="Scheduling policies" href="s1_procs.html#id33"/>
+              <topic label="FIFO" href="s1_procs.html#id35"/>
+              <topic label="Round Robin" href="s1_procs.html#id37"/>
+              <topic label="The rules" href="s1_procs.html#id39"/>
+            </topic>
+            <topic label="Kernel states" href="s1_procs.html#kstate">
+              <topic label="RUNNING" href="s1_procs.html#id42"/>
+              <topic label="READY" href="s1_procs.html#id44"/>
+              <topic label="The blocked states" href="s1_procs.html#id46"/>
+              <topic label="Kernel states, the complete list" href="s1_procs.html#id48"/>
+            </topic>
+          </topic>
+          <topic label="Threads and processes" href="s1_procs.html#Threads_and_processes">
+            <topic label="Why processes?" href="s1_procs.html#id51"/>
+            <topic label="Starting a process" href="s1_procs.html#id53">
+              <topic label="Starting a process from the command line" href="s1_procs.html#id55"/>
+              <topic label="Starting a process from within a program" href="s1_procs.html#id57">
+                <topic label="Starting a process with the system call" href="s1_procs.html#id59"/>
+                <topic label="Starting a process with the exec and spawn calls" href="s1_procs.html#id61"/>
+                <topic label="Starting a process with the fork call" href="s1_procs.html#id63"/>
+                <topic label="Starting a process with the vfork call" href="s1_procs.html#id65"/>
+                <topic label="Process creation and threads" href="s1_procs.html#id67"/>
+                <topic label="So what should you use?" href="s1_procs.html#id69"/>
+              </topic>
+            </topic>
+            <topic label="Starting a thread" href="s1_procs.html#id71">
+              <topic label="The thread attributes structure" href="s1_procs.html#thread_attr">
+                <topic label="Thread attribute administration" href="s1_procs.html#id74"/>
+                <topic label="The flags thread attribute" href="s1_procs.html#id76"/>
+                <topic label="The stack thread attributes" href="s1_procs.html#id78"/>
+                <topic label="The scheduling thread attributes" href="s1_procs.html#id80"/>
+              </topic>
+              <topic label="A few examples" href="s1_procs.html#id82"/>
+              <topic label="Where a thread is a good idea" href="s1_procs.html#where"/>
+              <topic label="Threads in mathematical operations" href="s1_procs.html#parallel">
+                <topic label="Coding for SMP or single processor" href="s1_procs.html#codingeither"/>
+                <topic label="Synchronizing to the termination of a thread" href="s1_procs.html#sync2term"/>
+                <topic label="Joining" href="s1_procs.html#id88"/>
+                <topic label="Using a barrier" href="s1_procs.html#barriers"/>
+                <topic label="Multiple threads on a single CPU" href="s1_procs.html#id91"/>
+                <topic label="Things to watch out for when using SMP" href="s1_procs.html#smpbeware"/>
+              </topic>
+              <topic label="Threads in independent situations" href="s1_procs.html#independent">
+                <topic label="Multiple processes" href="s1_procs.html#id95"/>
+                <topic label="Multiple processes with shared memory" href="s1_procs.html#id97"/>
+                <topic label="Multiple threads" href="s1_procs.html#id99"/>
+                <topic label="Comparisons" href="s1_procs.html#id101"/>
+              </topic>
+            </topic>
+          </topic>
+          <topic label="More on synchronization" href="s1_procs.html#More_synchronization">
+            <topic label="Readers/writer locks" href="s1_procs.html#rwlocks"/>
+            <topic label="Sleepon locks" href="s1_procs.html#sleepon"/>
+            <topic label="Condition variables" href="s1_procs.html#condvar">
+              <topic label="Signal versus broadcast" href="s1_procs.html#id107"/>
+              <topic label="Sleepons versus condvars" href="s1_procs.html#id109"/>
+            </topic>
+            <topic label="Additional Neutrino services" href="s1_procs.html#ntoext"/>
+            <topic label="Pools of threads" href="s1_procs.html#tpool">
+              <topic label="Controlling the number of threads" href="s1_procs.html#Number_of_threads"/>
+              <topic label="The thread pool functions" href="s1_procs.html#id114"/>
+            </topic>
+          </topic>
+          <topic label="Scheduling and the real world" href="s1_procs.html#sched_real_world">
+            <topic label="Rescheduling --- hardware interrupts" href="s1_procs.html#id117"/>
+            <topic label="Rescheduling --- kernel calls" href="s1_procs.html#id119"/>
+            <topic label="Rescheduling --- exceptions" href="s1_procs.html#id121"/>
+            <topic label="Summary" href="s1_procs.html#id123"/>
+          </topic>
+      </topic>
+      <topic label="Message Passing" href="s1_msg.html">
+          <topic label="Messaging fundamentals" href="s1_msg.html#Fundamentals">
+            <topic label="A small microkernel and message passing" href="s1_msg.html#id4"/>
+          </topic>
+          <topic label="Message passing and client/server" href="s1_msg.html#mpcs"/>
+          <topic label="Network-distributed message passing" href="s1_msg.html#Network_distributed"/>
+          <topic label="What it means for you" href="s1_msg.html#What_it_means">
+            <topic label="The philosophy of Neutrino" href="s1_msg.html#id9"/>
+          </topic>
+          <topic label="Multiple threads" href="s1_msg.html#Multiple_threads">
+            <topic label="Server/subserver" href="s1_msg.html#id12"/>
+            <topic label="Some examples" href="s1_msg.html#id14">
+              <topic label="Send-driven (client/server)" href="s1_msg.html#id16"/>
+              <topic label="Reply-driven (server/subserver)" href="s1_msg.html#id18"/>
+              <topic label="An important subtlety" href="s1_msg.html#id20"/>
+              <topic label="Multi-threaded server" href="s1_msg.html#id22"/>
+            </topic>
+          </topic>
+          <topic label="Using message passing" href="s1_msg.html#Using">
+            <topic label="Architecture &amp; structure" href="s1_msg.html#id25"/>
+            <topic label="The client" href="s1_msg.html#id27">
+              <topic label="Establishing a connection" href="s1_msg.html#id29"/>
+              <topic label="Sending messages" href="s1_msg.html#sampcli"/>
+            </topic>
+            <topic label="The server" href="s1_msg.html#the_server">
+              <topic label="Creating the channel" href="s1_msg.html#id33"/>
+              <topic label="Message handling" href="s1_msg.html#id35"/>
+              <topic label="Server framework" href="s1_msg.html#id37"/>
+            </topic>
+            <topic label="The send-hierarchy" href="s1_msg.html#sendhierarchy"/>
+            <topic label="Receive IDs, channels, and other parameters" href="s1_msg.html#id40">
+              <topic label="More about channels" href="s1_msg.html#id42"/>
+              <topic label="Who sent the message?" href="s1_msg.html#msginfo"/>
+              <topic label="The receive ID (a.k.a. the client cookie)" href="s1_msg.html#id45"/>
+              <topic label="Replying to the client" href="s1_msg.html#id47"/>
+              <topic label="Not replying to the client" href="s1_msg.html#id49"/>
+              <topic label="Replying with no data, or an errno" href="s1_msg.html#id51"/>
+              <topic label="Finding the server's ND/PID/CHID" href="s1_msg.html#find77"/>
+              <topic label="What about priorities?" href="s1_msg.html#id54"/>
+              <topic label="Reading and writing data" href="s1_msg.html#id56"/>
+            </topic>
+            <topic label="Multipart messages" href="s1_msg.html#id58">
+              <topic label="What about the other versions?" href="s1_msg.html#id60"/>
+              <topic label="Implementation" href="s1_msg.html#id62"/>
+            </topic>
+          </topic>
+          <topic label="Pulses" href="s1_msg.html#Pulses">
+            <topic label="Receiving a pulse message" href="s1_msg.html#id65">
+              <topic label="What's in a pulse?" href="s1_msg.html#id67"/>
+              <topic label="The MsgReceivePulse function" href="s1_msg.html#id69"/>
+            </topic>
+            <topic label="The MsgDeliverEvent function" href="s1_msg.html#id71"/>
+            <topic label="Channel flags" href="s1_msg.html#chanflags">
+              <topic label="_NTO_CHF_UNBLOCK" href="s1_msg.html#ntochfunblock">
+                <topic label="Synchronization problem" href="s1_msg.html#id75"/>
+                <topic label="Using the _NTO_MI_UNBLOCK_REQ" href="s1_msg.html#nto_mi_unblock_req"/>
+              </topic>
+            </topic>
+          </topic>
+          <topic label="Message passing over a network" href="s1_msg.html#network_msg">
+            <topic label="Networked message passing differences" href="s1_msg.html#netdiff">
+              <topic label="Longer delays" href="s1_msg.html#id80"/>
+              <topic label="Impact on ConnectAttach" href="s1_msg.html#id82"/>
+              <topic label="Impact on MsgDeliverEvent" href="s1_msg.html#id84"/>
+              <topic label="Impact on MsgReply, MsgRead, and MsgWrite" href="s1_msg.html#id86"/>
+              <topic label="Impact on MsgReceive" href="s1_msg.html#id88"/>
+            </topic>
+            <topic label="Some notes on NDs" href="s1_msg.html#ndnotes"/>
+          </topic>
+          <topic label="Priority inheritance" href="s1_msg.html#prio_interitance">
+            <topic label="So what's the trick?" href="s1_msg.html#id92"/>
+            <topic label="Summary" href="s1_msg.html#id94"/>
+          </topic>
+      </topic>
+      <topic label="Clocks, Timers, and Getting a Kick Every So Often" href="s1_timer.html">
+          <topic label="Clocks and timers" href="s1_timer.html#Clocks">
+            <topic label="Operating periodically" href="s1_timer.html#id4"/>
+            <topic label="Clock interrupt sources" href="s1_timer.html#clock_int_src"/>
+            <topic label="Base timing resolution" href="s1_timer.html#id7">
+              <topic label="Getting more precision" href="s1_timer.html#id9"/>
+            </topic>
+            <topic label="Timing jitter" href="s1_timer.html#id11"/>
+            <topic label="Types of timers" href="s1_timer.html#id13"/>
+            <topic label="Notification schemes" href="s1_timer.html#id15">
+              <topic label="How to fill in the struct sigevent" href="s1_timer.html#how_sigev">
+                <topic label="Pulse notification" href="s1_timer.html#id18"/>
+                <topic label="Signal notification" href="s1_timer.html#id20"/>
+                <topic label="Thread notification" href="s1_timer.html#sigev_thread"/>
+                <topic label="General tricks for notification" href="s1_timer.html#id23"/>
+              </topic>
+              <topic label="Pulse notification" href="s1_timer.html#id25"/>
+              <topic label="Signal notification" href="s1_timer.html#id27"/>
+            </topic>
+          </topic>
+          <topic label="Using timers" href="s1_timer.html#using">
+            <topic label="Creating a timer" href="s1_timer.html#id30"/>
+            <topic label="Signal, pulse, or thread?" href="s1_timer.html#id32"/>
+            <topic label="What kind of timer?" href="s1_timer.html#id34"/>
+            <topic label="A server with periodic pulses" href="s1_timer.html#id36">
+              <topic label="Server-maintained timeouts" href="s1_timer.html#server_timeouts">
+                <topic label="Declarations" href="s1_timer.html#Declarations"/>
+                <topic label="main" href="s1_timer.html#main"/>
+                <topic label="setupPulseAndTimer" href="s1_timer.html#setupPulseAndTimer"/>
+                <topic label="gotAPulse" href="s1_timer.html#gotAPulse"/>
+                <topic label="gotAMessage" href="s1_timer.html#gotAMessage"/>
+              </topic>
+              <topic label="Notes" href="s1_timer.html#notes"/>
+              <topic label="Periodic server maintenance cycles" href="s1_timer.html#id45"/>
+            </topic>
+            <topic label="Timers delivering signals" href="s1_timer.html#id47"/>
+            <topic label="Timers creating threads" href="s1_timer.html#id49"/>
+            <topic label="Getting and setting the realtime clock and more" href="s1_timer.html#getsetrtclock">
+              <topic label="Getting and setting" href="s1_timer.html#id52"/>
+              <topic label="Adjusting the timebase" href="s1_timer.html#id54"/>
+              <topic label="An accurate timestamp" href="s1_timer.html#id56"/>
+            </topic>
+          </topic>
+          <topic label="Advanced topics" href="s1_timer.html#Advanced">
+            <topic label="Other clock sources" href="s1_timer.html#otherclock">
+              <topic label="CLOCK_MONOTONIC" href="s1_timer.html#id60"/>
+              <topic label="So what does CLOCK_SOFTTIME do?" href="s1_timer.html#id62"/>
+              <topic label="Using different clock sources" href="s1_timer.html#id64"/>
+            </topic>
+            <topic label="Kernel timeouts" href="s1_timer.html#kto">
+              <topic label="Kernel timeouts with pthread_join" href="s1_timer.html#Thread_Join"/>
+              <topic label="Kernel timeouts with message passing" href="s1_timer.html#id68"/>
+            </topic>
+            <topic label="Summary" href="s1_timer.html#id70"/>
+          </topic>
+      </topic>
+      <topic label="Interrupts" href="s1_inter.html">
+          <topic label="Neutrino and interrupts" href="s1_inter.html#Introduction">
+            <topic label="Interrupt service routine" href="s1_inter.html#id4">
+              <topic label="Clearing the interrupt source" href="s1_inter.html#id6"/>
+              <topic label="Telling a thread to do something" href="s1_inter.html#id8"/>
+            </topic>
+            <topic label="Level-sensitivity versus edge-sensitivity" href="s1_inter.html#id10"/>
+          </topic>
+          <topic label="Writing interrupt handlers" href="s1_inter.html#Writing_handlers">
+            <topic label="Attaching an interrupt handler" href="s1_inter.html#id13">
+              <topic label="Attaching with InterruptAttachEvent" href="s1_inter.html#id15"/>
+              <topic label="Attaching with InterruptAttach" href="s1_inter.html#id17"/>
+            </topic>
+            <topic label="Now that you've attached an interrupt" href="s1_inter.html#id19"/>
+            <topic label="Detaching an interrupt handler" href="s1_inter.html#id21"/>
+            <topic label="The flags parameter" href="s1_inter.html#id23"/>
+            <topic label="The interrupt service routine" href="s1_inter.html#id25">
+              <topic label="Using InterruptAttach" href="s1_inter.html#id27"/>
+              <topic label="Using InterruptAttachEvent" href="s1_inter.html#id29"/>
+              <topic label="InterruptAttach versus InterruptAttachEvent" href="s1_inter.html#id31"/>
+              <topic label="The trade-offs" href="s1_inter.html#id33"/>
+            </topic>
+            <topic label="ISR functions" href="s1_inter.html#id35"/>
+          </topic>
+          <topic label="Summary" href="s1_inter.html#Summary"/>
+      </topic>
+      <topic label="Resource Managers" href="s1_resmgr.html">
+          <topic label="What is a resource manager?" href="s1_resmgr.html#What_is">
+            <topic label="Examples of resource managers" href="s1_resmgr.html#id4">
+              <topic label="Serial port" href="s1_resmgr.html#id6"/>
+              <topic label="Filesystem" href="s1_resmgr.html#id8"/>
+            </topic>
+            <topic label="Characteristics of resource managers" href="s1_resmgr.html#id10"/>
+          </topic>
+          <topic label="The client's view" href="s1_resmgr.html#Client_view">
+            <topic label="Finding the server" href="s1_resmgr.html#id13"/>
+            <topic label="Finding the process manager" href="s1_resmgr.html#id15"/>
+            <topic label="Handling directories" href="s1_resmgr.html#id17"/>
+            <topic label="Union'd filesystems" href="s1_resmgr.html#id19"/>
+            <topic label="Client summary" href="s1_resmgr.html#id21"/>
+          </topic>
+          <topic label="The resource manager's view" href="s1_resmgr.html#Resmgr_view">
+            <topic label="Registering a pathname" href="s1_resmgr.html#id24"/>
+            <topic label="Handling messages" href="s1_resmgr.html#id26">
+              <topic label="Connect messages" href="s1_resmgr.html#id28"/>
+              <topic label="I/O messages" href="s1_resmgr.html#id30"/>
+              <topic label="Three groups, really" href="s1_resmgr.html#id32"/>
+            </topic>
+          </topic>
+          <topic label="The resource manager library" href="s1_resmgr.html#the_resource_manager_library">
+            <topic label="The library really does what we just talked about" href="s1_resmgr.html#libisreal"/>
+            <topic label="Behind the scenes at the library" href="s1_resmgr.html#id36">
+              <topic label="The base layer" href="s1_resmgr.html#id38"/>
+              <topic label="The POSIX layer" href="s1_resmgr.html#id40"/>
+            </topic>
+          </topic>
+          <topic label="Writing a resource manager" href="s1_resmgr.html#Writing">
+            <topic label="Data structures" href="s1_resmgr.html#datastruct">
+              <topic label="resmgr_attr_t control structure" href="s1_resmgr.html#resmgr_attr">
+                <topic label="The other_func message handler" href="s1_resmgr.html#id45"/>
+                <topic label="The data structure sizing parameters" href="s1_resmgr.html#dsize"/>
+                <topic label="The flags parameter" href="s1_resmgr.html#id48"/>
+              </topic>
+              <topic label="resmgr_connect_funcs_t connect table" href="s1_resmgr.html#resmgr_connect"/>
+              <topic label="resmgr_io_funcs_t I/O table" href="s1_resmgr.html#resmgr_io"/>
+              <topic label="The resmgr_context_t internal context block" href="s1_resmgr.html#resmgr_context"/>
+            </topic>
+            <topic label="Resource manager structure" href="s1_resmgr.html#structure">
+              <topic label="The resmgr_attach function and its parameters" href="s1_resmgr.html#resmgr_attach"/>
+              <topic label="Putting in your own functions" href="s1_resmgr.html#your_functions"/>
+              <topic label="The general flow of a resource manager" href="s1_resmgr.html#general_flow"/>
+              <topic label="Messages that should be connect messages but aren't" href="s1_resmgr.html#should_be_connect"/>
+              <topic label="Combine messages" href="s1_resmgr.html#combine_messages"/>
+            </topic>
+            <topic label="POSIX-layer data structures" href="s1_resmgr.html#posixdata">
+              <topic label="The iofunc_ocb_t OCB structure" href="s1_resmgr.html#iofunc_ocb">
+                <topic label="The strange case of the offset member" href="s1_resmgr.html#strange_offset"/>
+              </topic>
+              <topic label="The iofunc_attr_t attributes structure" href="s1_resmgr.html#iofunc_attr"/>
+              <topic label="The iofunc_mount_t mount structure" href="s1_resmgr.html#iofunc_mount">
+                <topic label="Of device numbers, inodes, and our friend rdev" href="s1_resmgr.html#dev_inode_rdev"/>
+              </topic>
+            </topic>
+          </topic>
+          <topic label="Handler routines" href="s1_resmgr.html#routines">
+            <topic label="General notes" href="s1_resmgr.html#general">
+              <topic label="Locking, unlocking, and combine message handling" href="s1_resmgr.html#id67"/>
+            </topic>
+            <topic label="Connect functions notes" href="s1_resmgr.html#cnotes">
+              <topic label="Internal use part" href="s1_resmgr.html#id70"/>
+              <topic label="End-user parameter part" href="s1_resmgr.html#id72"/>
+            </topic>
+          </topic>
+          <topic label="Alphabetical listing of connect and I/O functions" href="s1_resmgr.html#alphalist">
+            <topic label="io_chmod" href="s1_resmgr.html#io_chmod"/>
+            <topic label="io_chown" href="s1_resmgr.html#io_chown"/>
+            <topic label="io_close_dup" href="s1_resmgr.html#io_close_dup"/>
+            <topic label="io_close_ocb" href="s1_resmgr.html#io_close_ocb"/>
+            <topic label="io_devctl" href="s1_resmgr.html#io_devctl"/>
+            <topic label="io_dup" href="s1_resmgr.html#io_dup"/>
+            <topic label="io_fdinfo" href="s1_resmgr.html#io_fdinfo"/>
+            <topic label="io_link" href="s1_resmgr.html#io_link"/>
+            <topic label="io_lock" href="s1_resmgr.html#io_lock"/>
+            <topic label="io_lock_ocb" href="s1_resmgr.html#io_lock_ocb"/>
+            <topic label="io_lseek" href="s1_resmgr.html#io_lseek"/>
+            <topic label="io_mknod" href="s1_resmgr.html#io_mknod"/>
+            <topic label="io_mmap" href="s1_resmgr.html#io_mmap"/>
+            <topic label="io_mount" href="s1_resmgr.html#io_mount"/>
+            <topic label="io_msg" href="s1_resmgr.html#io_msg"/>
+            <topic label="io_notify" href="s1_resmgr.html#io_notify"/>
+            <topic label="io_open" href="s1_resmgr.html#io_open"/>
+            <topic label="io_openfd" href="s1_resmgr.html#io_openfd"/>
+            <topic label="io_pathconf" href="s1_resmgr.html#io_pathconf"/>
+            <topic label="io_power" href="s1_resmgr.html#io_power"/>
+            <topic label="io_read" href="s1_resmgr.html#io_read"/>
+            <topic label="io_readlink" href="s1_resmgr.html#io_readlink"/>
+            <topic label="io_rename" href="s1_resmgr.html#io_rename"/>
+            <topic label="io_shutdown" href="s1_resmgr.html#io_shutdown"/>
+            <topic label="io_space" href="s1_resmgr.html#io_space"/>
+            <topic label="io_stat" href="s1_resmgr.html#io_stat"/>
+            <topic label="io_sync" href="s1_resmgr.html#io_sync"/>
+            <topic label="io_unblock [CONNECT]" href="s1_resmgr.html#io_unblock_Connect"/>
+            <topic label="io_unblock [I/O]" href="s1_resmgr.html#io_unblock_IO"/>
+            <topic label="io_unlink" href="s1_resmgr.html#io_unlink"/>
+            <topic label="io_unlock_ocb" href="s1_resmgr.html#io_unlock_ocb"/>
+            <topic label="io_utime" href="s1_resmgr.html#io_utime"/>
+            <topic label="io_write" href="s1_resmgr.html#io_write"/>
+          </topic>
+          <topic label="Examples" href="s1_resmgr.html#examples">
+            <topic label="The basic skeleton of a resource manager" href="s1_resmgr.html#skeleton">
+              <topic label="Step 1" href="s1_resmgr.html#id110"/>
+              <topic label="Step 2" href="s1_resmgr.html#id112"/>
+              <topic label="Step 3" href="s1_resmgr.html#id114"/>
+            </topic>
+            <topic label="A simple io_read example" href="s1_resmgr.html#read_simple">
+              <topic label="Data area size considerations" href="s1_resmgr.html#dataareasize"/>
+              <topic label="Handling of EOF case" href="s1_resmgr.html#handleeof"/>
+              <topic label="Maintenance of context information" href="s1_resmgr.html#maintcontext"/>
+              <topic label="Updating POSIX information" href="s1_resmgr.html#updatestate"/>
+              <topic label="The code" href="s1_resmgr.html#id121"/>
+              <topic label="Step 1" href="s1_resmgr.html#id123"/>
+              <topic label="Step 2" href="s1_resmgr.html#id125"/>
+              <topic label="Steps 3 &amp; 4" href="s1_resmgr.html#id127"/>
+              <topic label="Step 5" href="s1_resmgr.html#id129"/>
+              <topic label="Step 6" href="s1_resmgr.html#id131"/>
+              <topic label="Step 7" href="s1_resmgr.html#id133"/>
+              <topic label="Step 8" href="s1_resmgr.html#id135"/>
+              <topic label="Step 9" href="s1_resmgr.html#id137"/>
+              <topic label="Effective use of other messaging functions" href="s1_resmgr.html#id139"/>
+            </topic>
+            <topic label="A simple io_write example" href="s1_resmgr.html#write_simple">
+              <topic label="Step 1" href="s1_resmgr.html#id142"/>
+              <topic label="Step 2" href="s1_resmgr.html#id144"/>
+              <topic label="Step 3" href="s1_resmgr.html#id146"/>
+              <topic label="Step 4" href="s1_resmgr.html#id148"/>
+              <topic label="Step 5" href="s1_resmgr.html#id150"/>
+              <topic label="Step 6" href="s1_resmgr.html#id152"/>
+              <topic label="Step 7" href="s1_resmgr.html#id154"/>
+              <topic label="Step 8" href="s1_resmgr.html#id156"/>
+            </topic>
+            <topic label="A simple io_devctl example" href="s1_resmgr.html#devctl_simple">
+              <topic label="Step 1" href="s1_resmgr.html#id159"/>
+              <topic label="Step 2" href="s1_resmgr.html#id161"/>
+              <topic label="Step 3" href="s1_resmgr.html#id163"/>
+              <topic label="Step 4" href="s1_resmgr.html#id165"/>
+            </topic>
+            <topic label="An io_devctl example that deals with data" href="s1_resmgr.html#devctl_simple2">
+              <topic label="Step 1" href="s1_resmgr.html#id168"/>
+              <topic label="Step 2" href="s1_resmgr.html#id170"/>
+              <topic label="Step 3" href="s1_resmgr.html#id172"/>
+              <topic label="Step 4" href="s1_resmgr.html#id174"/>
+              <topic label="Step 5" href="s1_resmgr.html#id176"/>
+              <topic label="Important note" href="s1_resmgr.html#id178"/>
+            </topic>
+          </topic>
+          <topic label="Advanced topics" href="s1_resmgr.html#Advanced">
+            <topic label="Extending the OCB" href="s1_resmgr.html#extocb">
+              <topic label="OCB monitor" href="s1_resmgr.html#id182"/>
+              <topic label="More efficient allocation" href="s1_resmgr.html#id184"/>
+            </topic>
+            <topic label="Extending the attributes structure" href="s1_resmgr.html#extattr"/>
+            <topic label="Blocking within the resource manager" href="s1_resmgr.html#blocking_in_resmgr"/>
+            <topic label="Returning directory entries" href="s1_resmgr.html#returning_dirents">
+              <topic label="Generally speaking ..." href="s1_resmgr.html#id189"/>
+              <topic label="The struct dirent structure and friends" href="s1_resmgr.html#id191">
+                <topic label="Offsets" href="s1_resmgr.html#id193"/>
+                <topic label="Contents" href="s1_resmgr.html#id195"/>
+              </topic>
+              <topic label="Example" href="s1_resmgr.html#read_complex">
+                <topic label="main and declarations" href="s1_resmgr.html#rc_main"/>
+                <topic label="my_open" href="s1_resmgr.html#rc_my_open"/>
+                <topic label="my_read" href="s1_resmgr.html#rc_my_read"/>
+                <topic label="my_read_dir" href="s1_resmgr.html#rc_my_read_dir"/>
+                <topic label="my_read_file" href="s1_resmgr.html#rc_my_read_file"/>
+                <topic label="dirent_size" href="s1_resmgr.html#rc_dirent_size"/>
+                <topic label="dirent_fill" href="s1_resmgr.html#rc_dirent_fill"/>
+              </topic>
+            </topic>
+          </topic>
+          <topic label="Summary" href="s1_resmgr.html#Summary"/>
+      </topic>
+      <topic label="QNX 4 to Neutrino" href="s3_qnx2nto.html">
+          <topic label="QNX 4 and Neutrino" href="s3_qnx2nto.html#Introduction">
+            <topic label="Similarities" href="s3_qnx2nto.html#id4"/>
+            <topic label="Improvements" href="s3_qnx2nto.html#id6">
+              <topic label="Embeddability" href="s3_qnx2nto.html#id8"/>
+              <topic label="Thread support" href="s3_qnx2nto.html#id10"/>
+              <topic label="Message passing" href="s3_qnx2nto.html#id12">
+                <topic label="Pulses and events" href="s3_qnx2nto.html#id14"/>
+              </topic>
+              <topic label="Device driver model" href="s3_qnx2nto.html#id16"/>
+              <topic label="MIPS, PPC, SH4, and ARM support" href="s3_qnx2nto.html#id18"/>
+              <topic label="SMP support" href="s3_qnx2nto.html#id20"/>
+            </topic>
+          </topic>
+          <topic label="Porting philosophy" href="s3_qnx2nto.html#Porting_philosophy">
+            <topic label="Message passing considerations" href="s3_qnx2nto.html#pp-mp">
+              <topic label="Client/server using the global namespace" href="s3_qnx2nto.html#id24">
+                <topic label="Translating messages to standard file-descriptor-based POSIX calls" href="s3_qnx2nto.html#id26"/>
+                <topic label="Translating messages to devctl or _IO_MSG" href="s3_qnx2nto.html#devctl"/>
+              </topic>
+              <topic label="Client/Server using an I/O manager" href="s3_qnx2nto.html#id29"/>
+              <topic label="Proxies" href="s3_qnx2nto.html#pp-proxy">
+                <topic label="Proxies for their IDs" href="s3_qnx2nto.html#proxyid"/>
+                <topic label="Proxies for their contents" href="s3_qnx2nto.html#pp-proxy_msg"/>
+              </topic>
+            </topic>
+            <topic label="Interrupt service routines" href="s3_qnx2nto.html#pp-isr"/>
+          </topic>
+          <topic label="Summary" href="s3_qnx2nto.html#Summary"/>
+      </topic>
+      <topic label="Calling 911" href="s3_help.html">
+          <topic label="Seeking professional help" href="s3_help.html#id3">
+            <topic label="So you've got a problem..." href="s3_help.html#id5">
+              <topic label="RTFM" href="s3_help.html#id7">
+                <topic label="Building Embedded Systems" href="s3_help.html#id9"/>
+                <topic label="Library Reference" href="s3_help.html#id11"/>
+                <topic label="System Architecture" href="s3_help.html#id13"/>
+                <topic label="Technotes" href="s3_help.html#id15"/>
+                <topic label="User's Guide" href="s3_help.html#id17"/>
+                <topic label="Utilities Reference" href="s3_help.html#id19"/>
+                <topic label="Programmer's Guide" href="s3_help.html#id21"/>
+              </topic>
+              <topic label="Contact technical support" href="s3_help.html#id23"/>
+              <topic label="Describe the problem" href="s3_help.html#id25"/>
+              <topic label="Precise information" href="s3_help.html#id27"/>
+              <topic label="Versions" href="s3_help.html#id29"/>
+              <topic label="If you're using a beta..." href="s3_help.html#id31"/>
+              <topic label="Reproduce the problem" href="s3_help.html#id33"/>
+              <topic label="Narrow it down" href="s3_help.html#id35"/>
+            </topic>
+            <topic label="Training" href="s3_help.html#id37"/>
+          </topic>
+      </topic>
+      <topic label="Sample Programs" href="examples.html">
+          <topic label="atoz.c" href="examples.html#atoz.c"/>
+          <topic label="time1.c" href="examples.html#time1.c"/>
+          <topic label="tp1.c" href="examples.html#tp1.c"/>
+          <topic label="tt1.c" href="examples.html#tt1.c"/>
+      </topic>
+      <topic label="Glossary" href="s3_glossary.html"/>
+</toc>

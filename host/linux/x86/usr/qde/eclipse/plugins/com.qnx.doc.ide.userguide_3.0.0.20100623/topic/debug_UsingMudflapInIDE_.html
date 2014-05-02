@@ -1,0 +1,295 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Using Mudflap" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Base_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_TestForMemLeaks_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_MEMANALREVEAL_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_MudflapConfigure_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_MudflapOptionsIDE_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_MudflapViolationsView_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_MudflapInterpret_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="UsingMudflap" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Using Mudflap</title>
+   </head>
+   <body id="UsingMudflap"><a name="UsingMudflap" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Using Mudflap</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>Mudflap provides runtime pointer checking capability to the GNU C/C++ compiler (gcc). It adds runtime error checking for pointers
+            that are typically the cause for many programming errors in C and C++. Since Mudflap is included with the compiler, it doesn't
+            require any additional tools in the tool chain, and it can be easily added to a build by specifying the necessary GCC options
+            (see <a href="debug_MudflapConfigure_.html" shape="rect">Configuring Mudflap to find errors</a>.) 
+         </p>
+         
+         
+         <p>Mudflap instruments all of the risky pointer and array dereferencing operations, some standard library string/heap functions,
+            and some other associated constructs with range and validity tests. Instrumented modules will detect buffer overflows, invalid
+            heap use, and some other classes of C/C++ programming errors. The instrumentation relies on a separate runtime library (<span class="filepath">libmudflap</span>), which will be linked into a program when the compile option (<span class="option">-fmudflapth</span>) and linker option (<span class="option">-f mudflapth -lmudflapth</span>) are provided for the build. 
+         </p>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> 
+            
+            <p>If your binary is instrumented with Mudflap, you can't run Memory Analysis on it because there will be a conflict (trying
+               to overload the same functions), and it will cause the program to crash.
+            </p>
+            
+            
+            <p>For QNX and Managed projects that have multithreaded applications, you'll need to use the <span class="option">-fmudflapth</span> option for the compiler, and <span class="option">-fmudflapth -lmudflapth</span> for the linker.
+            </p>
+            
+            
+         </div>
+         
+         
+         <p>
+            <strong>Prerequisites</strong>
+            
+         </p>
+         
+         
+         <p>The use of Mudflap requires GCC with Mudflap support. This means that you'll need GCC 4.x with the Mudflap enabled flag, and
+            you'll need to set appropriate configuration settings (see <a href="debug_MudflapConfigure_.html" shape="rect">Configuring Mudflap to find errors</a>.) Once configured, the IDE adds options to the Makefile: <span class="option">-fmudflapth</span> to <var class="varname">LD_SEARCH_FLAGS</var> and <span class="option">-fmudflapth </span> to <var class="varname">CFLAGS1</var>. 
+         </p>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> Since Mudflap slows down your application, ensure that you disable Mudflap during your final compilation.
+         </div>
+         
+         
+         <p>
+            <strong>Why use Mudflap?</strong>
+            
+         </p>
+         
+         
+         <p>Many runtime errors in C and C++ are caused by pointer errors. The most common reason for this type of error is that you've
+            incorrectly initialized or calculated a pointer value and attempted to use this invalid pointer to reference some data. Since
+            all pointer errors might not be identified and dealt with at runtime, you might encounter a situation where you go over by
+            one byte (off-by-one error), which might run over some stack space, or write into the memory space of another variable. You
+            don't always detect these types of errors because in your testing, they don't typically cause anything to crash, or they don't
+            overwrite anything significant. An off-by-one error might become an off-by-1000 error, and could result in a buffer overflow
+            or a bad pointer dereference, which may crash your program, or provide a window of opportunity for code injection. 
+         </p>
+         
+         
+         <p>
+            <strong>How Mudflap works in the IDE</strong>
+            
+         </p>
+         
+         
+         <p>Mudflap adds another pass to GCCs compiler sequence to add instrumentation code to the resulting binary that encapsulates
+            potentially dangerous pointer operations. In addition, Mudflap keeps a database of memory objects to evaluate any pointer
+            operation against a known list of valid objects. At runtime, if any of these instrumented pointer operations is invalid or
+            causes a failure, then a violation is emitted to the <tt>stderr</tt> output for the process. The violation specifies where the error occurred in the code, as well as what objects where involved.
+            
+         </p>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> 
+            
+            <p>You don't have to use Telnet or a serial terminal window to obtain output from Mudflap. Although it is available from the
+               Command line, you can choose to monitor the <tt>stdout</tt> or use it directly from within the IDE.
+            </p>
+            
+            
+            <p>The IDE also includes a build integration that let's you select Mudflap as one of the build variant build options.</p>
+            
+            
+         </div>
+         
+         
+         <p>The IDE includes a QNX launch tool that enables you to parse Mudflap errors (such as buffer overflow on the stack or heap,
+            or of a pointer, all the way to the target), and the errors display similar to that of the Memory Analysis Tool. For example,
+            during the Mudflap launch, the IDE creates a Mudflap session, and then you can select an item to view the errors in the source
+            code. 
+         </p>
+         
+         
+         <p>For example, if you specify the following code: </p>
+         
+         <pre class="codeblock" xml:space="preserve">#include &lt;stdlib.h&gt;
+#include &lt;stdio.h&gt;
+                              
+void funcLeaks(void);
+char funcError(void);
+                              
+int main(int argc, char *argv[]) {
+   char charR;
+                              
+   funcLeaks();                             
+   charR = funcError();                             
+   return EXIT_SUCCESS;
+}
+                              
+void funcLeaks() {
+   float *ptrFloat = (float*)malloc(333 * sizeof(float));                             
+   if (ptrFloat==NULL) {
+     // memory could not be allocated
+     }
+    else {
+     // do something with memory but don't 
+     // forget to free and NULL the pointer
+     }
+}
+                              
+char funcError() {
+   char charA[10];
+   int i;
+                              
+for(i=0; i&lt;10; i++)
+      charA[i] = 'A';                                 
+  return charA[11];
+}                                                      </pre>
+         
+         <p>The example code will generate the following output in the Console view: </p>
+         
+         <pre class="codeblock" xml:space="preserve">*******
+mudflap violation 1 (check/read): time=1255022555.391940 ptr=0x8047e72 size=12
+         pc=0xb8207c0b location=`C:/worksp_IDE47/z_x/z_x.c:35:2 (funcError)' thread=1
+         libmudflapth.so.0(__mfu_check+0x599) [0xb8207b8d]
+         libmudflapth.so.0(__mf_check+0x3e) [0xb8207c06]
+         z_x_g(funcError+0x10c) [0x804922d]
+         z_x_g(main+0xe) [0x80490fa]
+Nearby object 1: checked region begins 0B into and ends 2B after
+         mudflap object 0x80d5910: name=`C:/worksp_IDE47/z_x/z_x.c:29:7 (funcError) charA'
+         bounds=[0x8047e72,0x8047e7b] size=10 area=stack check=3r/1w liveness=4
+         alloc time=1255022555.391940 pc=0xb82073d7 thread=1
+         number of nearby objects: 1
+Leaked object 1:
+         mudflap object 0x80d5290: name=`malloc region'
+         bounds=[0x80d5248,0x80d525b] size=20 area=heap check=0r/0w liveness=0
+         alloc time=1255022555.387941 pc=0xb82073d7 thread=1
+         libmudflapth.so.0(__mf_register+0x3e) [0xb82073d2]
+         libmudflapth.so.0(__real_malloc+0xb9) [0xb8208b51]
+         libc.so.3(atexit+0x19) [0xb032ae29]
+         libc.so.3(dlopen+0x15f3) [0xb0343fe3]
+Leaked object 2:
+         mudflap object 0x80d53c8: name=`malloc region'
+         bounds=[0x80d5380,0x80d5393] size=20 area=heap check=0r/0w liveness=0
+         alloc time=1255022555.388941 pc=0xb82073d7 thread=1
+         libmudflapth.so.0(__mf_register+0x3e) [0xb82073d2]
+         libmudflapth.so.0(__real_malloc+0xb9) [0xb8208b51]
+         libc.so.3(atexit+0x19) [0xb032ae29]
+         z_x_g(_start+0x42) [0x804902a]
+Leaked object 3:
+         mudflap object 0x80d5498: name=`malloc region'
+         bounds=[0x80d5450,0x80d5463] size=20 area=heap check=0r/0w liveness=0
+         alloc time=1255022555.389941 pc=0xb82073d7 thread=1
+         libmudflapth.so.0(__mf_register+0x3e) [0xb82073d2]
+         libmudflapth.so.0(__real_malloc+0xb9) [0xb8208b51]
+         libc.so.3(atexit+0x19) [0xb032ae29]
+         z_x_g(_start+0x61) [0x8049049]
+Leaked object 4:
+         mudflap object 0x80d52f8: name=`malloc region'
+         bounds=[0x80dc038,0x80dc237] size=512 area=heap check=0r/0w liveness=0
+         alloc time=1255022555.388941 pc=0xb82073d7 thread=1
+         libmudflapth.so.0(__mf_register+0x3e) [0xb82073d2]
+         libmudflapth.so.0(__real_malloc+0xb9) [0xb8208b51]
+         libc.so.3(pthread_key_create+0xc9) [0xb0320549]
+         libc.so.3(dlopen+0x1610) [0xb0344000]
+Leaked object 5:
+         mudflap object 0x80d58a8: name=`malloc region'
+         bounds=[0x80e1688,0x80e1bbb] size=1332 area=heap check=0r/0w liveness=0
+         alloc time=1255022555.391940 pc=0xb82073d7 thread=1
+         libmudflapth.so.0(__mf_register+0x3e) [0xb82073d2]
+         libmudflapth.so.0(__real_malloc+0xb9) [0xb8208b51]
+         z_x_g(funcLeaks+0xd) [0x8049117]
+         z_x_g(main+0x9) [0x80490f5]
+         number of leaked objects: 5
+         
+Process 81942 (z_x_g) exited status=0.</pre>
+         
+         <p>The IDE will populate the Mudflap Violations view with the contents of Mudflap log file (specified in the Launch Configuration).
+            It provides you with additional information about the violation(s) that Mudflap detected, from which you can select an item
+            to view the error in the source code. 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/ic2Fdebug_UsingMudflapInIDE_.xml_d61250e130.jpg" alt="Options tab - Build with Mudflap" /></span>
+            
+         </p>
+         
+         
+         <p>The top level of the main view shows the errors, and if you expand a particular violation, you'll receive information about
+            nearby objects, a backtrace, similar errors, as well as other useful detailed information. 
+         </p>
+         
+         
+         <p>For detailed information about the results generated by Mudflap output, see <a href="debug_MudflapViolationsView_.html" shape="rect">Mudflap Violations view</a>. 
+         </p>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <ul class="ullinks">
+            <li class="ulchildlink"><strong><a href="../topic/debug_MudflapConfigure_.html" shape="rect">Configuring Mudflap to find errors</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_MudflapOptionsIDE_.html" shape="rect">Options for Mudflap</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_MudflapViolationsView_.html" shape="rect">Mudflap Violations view</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/debug_MudflapInterpret_.html" shape="rect">Interpreting Mudflap output</a></strong><br clear="none" />
+               
+            </li>
+         </ul>
+         
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/memory_Base_.html" shape="rect">Finding memory errors and leaks</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/memory_MEMANALREVEAL_.html" shape="rect">Using Memory Analysis tooling</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/memory_TestForMemLeaks_.html" shape="rect">Testing an application for memory leaks using the System Information Tool</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

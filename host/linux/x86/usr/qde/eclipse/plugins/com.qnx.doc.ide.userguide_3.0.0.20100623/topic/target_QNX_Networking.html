@@ -1,0 +1,170 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="QNX Networking" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/target_usingpppfordebug_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/target_Verify_Serial_Connection.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/target_Prep_Sys_For_Windows_Target.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/target_Linking_System_To_QNXNeutrino.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/target_Verify_Network_Connection.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="IDEQNXNetworking" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>QNX Networking</title>
+   </head>
+   <body id="IDEQNXNetworking"><a name="IDEQNXNetworking" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">QNX Networking</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>
+            <strong>QNX Networking</strong>
+            
+         </p>
+         
+         
+         <p>QNX Neutrino implements the TCP/IP stack in an executable module called <a href="../../com.qnx.doc.neutrino_utilities/i/io-pkt.html" shape="rect"><span class="cmdname">io-pkt</span></a>. The versions of <span class="cmdname">io-pkt</span> are:
+         </p>
+         
+         <br clear="none" /><ul>
+            <li>
+               <span class="cmdname">io-pkt-v4</span>
+               
+            </li>
+            <li>
+               <span class="cmdname">io-pkt-v4-hc</span>
+               
+            </li>
+            <li><span class="cmdname">io-pkt-v6-hc</span> — Note that the <span class="cmdname">io-pkt-v6-hc</span> version implements TCP/IP version 6, and won't be discussed in the example below. 
+            </li>
+         </ul>
+         
+         
+         <p>The <span class="cmdname">io-pkt-v4-hc</span> version is full-featured, while <span class="cmdname">io-pkt-v4</span> eliminates some functionality for environments that have insufficient RAM. However, both <tt>v4</tt> versions support PPP. 
+         </p>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> Multipoint PPP is supported only in <span class="cmdname">io-pkt-v4-hc</span>, but the example below doesn't require multipoint PPP.
+         </div>
+         
+         
+         <p>You can start the TCP/IP stack on your embedded system without a network driver as: </p>
+         
+         <pre class="codeblock" xml:space="preserve">io-pkt-v4 &amp; </pre>
+         
+         <p>Or</p>
+         
+         <pre class="codeblock" xml:space="preserve">io-pkt-v4-hc &amp;</pre>
+         
+         <p>You might notice that <span class="option">-ptcpip</span> is appended to <span class="cmdname">io-pkt</span> in sample scripts, but <tt>io-pkt</tt> functions the same with or without this postfix. 
+         </p>
+         
+         
+         <p>Additionally, you will typically see <span class="option">-d</span><var class="varname">name</var> included in scripts. This command starts a particular network driver on the stack; however, in the example below, we don't
+            use network hardware, so we can start <tt>io-pkt</tt> without a driver. 
+         </p>
+         
+         
+         <p>In addition to your selected <span class="cmdname">io-pkt</span> binary, you should include the following binaries in your image (<span class="filepath">.ifs</span>):
+         </p>
+         
+         <br clear="none" /><ul>
+            <li>Required binaries: pppd. Note that -pppd needs to have the <span class="cmdname">setuid</span> (set user ID) bit set in its permissions. 
+            </li>
+            <li>Suggested binaries: <span class="cmdname">stty</span>, <span class="cmdname">ifconfig</span>, <span class="cmdname">ping</span>, <span class="cmdname">qconn</span>, <span class="cmdname">telnetd</span>, and <span class="cmdname">ftpd</span>.
+            </li>
+         </ul>
+         
+         
+         <p>Additionally, you must create a directory named <span class="filepath">/etc/ppp</span>, and a file named <span class="filepath">/etc/ppp/chap-secrets</span>. Include the following code in the <span class="filepath">chap-secrets</span> file: 
+         </p>
+         
+         <pre class="codeblock" xml:space="preserve">#localhost root "foobar" * 
+*          *    "foobar" *</pre>
+         
+         <p>The purpose of the last line of code allows any user from any host to log in with the password foobar. </p>
+         
+         
+         <p>Now, you can start PPPD for debugging purposes from a console using the command: </p>
+         
+         <pre class="codeblock" xml:space="preserve">pppd debug nodetach crtscts auth +chap 10.0.0.1:10.0.0.2 \
+netmask 255.255.255.0 /dev/ser1 115200</pre>
+         
+         <p>Or, from a startup script using this command: </p>
+         
+         <pre class="codeblock" xml:space="preserve">pppd persist crtscts auth +chap 10.0.0.1:10.0.0.2 \
+netmask 255.255.255.0 /dev/ser1 115200</pre>
+         
+         <p>For the previous command, we are specifying the network that will be established. The embedded system will be 10.0.0.1 and
+            the other end of the link will be 10.0.0.2; it is a class C network, specified by <span class="cmdname">netmask</span>. 
+         </p>
+         
+         
+         <p>In addition, the auth +chap options indicate that the other end will be authenticated with <tt>CHAP</tt> (which is supported by Windows networking). The system will reference the <span class="filepath">chap-secrets</span> file you created earlier to match the specified password. 
+         </p>
+         
+         
+         <p>Without the persist option in the command, the connection will terminate after a timeout, or after one successful connection.
+            
+         </p>
+         
+         
+         <p>Use the <span class="cmdname">debug nodetach</span> command to view the diagnostic output on the terminal where you started PPPD. You can also use <tt>Control+C</tt> to stop PPPD in this mode. 
+         </p>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/target_usingpppfordebug_.html" shape="rect">Networking QNX Neutrino using PPP</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/target_Prep_Sys_For_Windows_Target.html" shape="rect">Preparing an embedded system for a Windows target</a></div>
+            
+            <div><a href="../topic/target_Verify_Network_Connection.html" shape="rect">Verifying a network connection</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/target_Verify_Serial_Connection.html" shape="rect">Verifying a serial connection</a></div>
+            
+            <div><a href="../topic/target_Linking_System_To_QNXNeutrino.html" shape="rect">Linking an embedded system running QNX Neutrino to a Windows network connection</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Dinkum Documentation" topic="bookset.html"> 
+    <anchor id="1_bookset" />
+    <anchor id="2_bookset" />
+    <anchor id="3_bookset" />
+    <topic label="Dinkum C++ Library" href="../com.qnx.doc.dinkum_en_cpp/index.html" >
+        <link toc="../com.qnx.doc.dinkum_en_cpp/toc.xml" />
+    </topic>
+    <anchor id="1_c++" />
+    <anchor id="2_c++" />
+    <anchor id="3_c++" />
+    <topic label="Dinkum C99 Library" href="../com.qnx.doc.dinkum_en_c99/index.html" >
+        <link toc="../com.qnx.doc.dinkum_en_c99/toc.xml" />
+    </topic>
+    <anchor id="1_c99" />
+    <anchor id="2_c99" />
+    <anchor id="3_c99" />
+    <topic label="Dinkum EC++ Library" href="../com.qnx.doc.dinkum_en_ecpp/index.html" >
+        <link toc="../com.qnx.doc.dinkum_en_ecpp/toc.xml" />
+    </topic>
+    <anchor id="1_ec++" />
+    <anchor id="2_ec++" />
+    <anchor id="3_ec++" />
+</toc>

@@ -1,0 +1,8 @@
+#!/bin/sh
+#ifdef __USAGE
+#%C
+#      Install script for documentation packages.
+#endif
+
+rm -f /var/help/*
+

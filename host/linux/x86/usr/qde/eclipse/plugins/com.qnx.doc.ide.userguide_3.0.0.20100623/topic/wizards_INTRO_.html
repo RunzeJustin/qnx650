@@ -1,0 +1,313 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Introduction" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_Base_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizard_wizard_properties.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_Make_Builder_Tab.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_Error_Parser_Tab.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_c_tabs_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Introduction" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Introduction</title>
+   </head>
+   <body id="Introduction"><a name="Introduction" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Introduction</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>In the New Project dialog, the wizards are categorized according to the nature of the project. If you expand <span class="uicontrol">C</span>, you'll see all projects that have a C nature; expand <span class="uicontrol">QNX</span>, and you'll see all the projects with a QNX nature: 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/e2Ftemp2Ftopic2Fwizards_INTRO_.xml_d202499e27.jpg" alt="Common wizards dialog" /></span>
+            
+         </p>
+         
+         
+         <p>Notice the overlap: the C Project wizard appears in both <span class="uicontrol">C</span> and <span class="uicontrol">QNX</span>.
+         </p>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> In the C/C++ perspective, you can also access the QNX C/C++ Projects wizards via the New C/C++ Project button: 
+            <p>
+               <span><img src="../images/e2Ftemp2Ftopic2Fwizards_INTRO_.xml_d202499e47.jpg" alt="New C/C++ Project Wizards Menu" /></span>
+               
+            </p>
+            
+         </div>
+         
+         
+         <p>Besides the nature-specific wizards, the IDE also has simple wizards that deal with the very basic elements of projects: Project,
+            Folder, and File. These elements have no natures associated with them. You can access these wizards by selecting <span class="menucascade">
+               <span class="uicontrol">File</span>
+               &gt; <span class="uicontrol">New</span>
+               &gt; <span class="uicontrol">Other…</span>
+               &gt; <span class="uicontrol">General</span>
+               </span>. 
+            
+            
+         </p>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> Although a project may seem to be nothing other than a directory in your workspace, the IDE attaches special meaning to a
+            project — it won't automatically recognize as a project any directory you happen to create in your <span class="filepath">workspace</span>. 
+            <p>Once you've created a project in the IDE, you can bring new folders and files into your project folder, even if they were
+               created outside of the IDE (e.g. using Windows Explorer). 
+               
+            </p>
+            
+         </div>
+         
+         
+         <p>To have the IDE recognize folders and files:</p>
+         
+         <br clear="none" /><ol>
+            <li>In the Project Explorer view, right-click and select <span class="uicontrol">Refresh</span>.
+            </li>
+         </ol>
+         
+         
+         <p>If you select a QNX C/C++ project, the first panel in the wizard looks like this:</p>
+         
+         
+         <p>
+            <span><img src="../images/e2Ftemp2Ftopic2Fwizards_INTRO_.xml_d202499e117.jpg" alt="New Project wizard: QNX C/C++ Project" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>The first panel in the New Project wizard for a QNX C/C++ project.</p>
+            
+            
+         </div>
+         
+         
+         <p>
+            <strong>Field descriptions</strong>
+            
+         </p>
+         
+         
+         <dl>
+            <dt class="dlterm">
+               <span class="uicontrol">Project name</span>
+               
+            </dt>
+            <dd>Name for the QNX project. Although the wizard allows it, don't use any of the following characters in your project name: <cite>| ! $ ( " ) &amp; ` : ; \ ' * ? [ ] # ~ = % &lt; &gt; { }</cite> as they may cause problems later.
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Use Default Location</span>
+               
+            </dt>
+            <dd>Use the current default workspace location to create the new project. If you don't want to use the default location for the
+               project, ensure that the <span class="uicontrol">Use Default Location</span> option is deselected, and specify where the resources reside in the filesystem (if they don't reside in your workspace).
+               The <span class="uicontrol">Location</span> field is required and must specify a valid location for the project when the <span class="uicontrol">Use Default Location</span> is not selected.
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Type</span>
+               
+            </dt>
+            <dd>Specifies the type for the QNX project: <br clear="none" /><ul>
+                  <li><span class="uicontrol">Application</span>
+                     — A standalone executable. 
+                  </li>
+                  <li><span class="uicontrol">Static library (libxx.a)</span>
+                     — Archive of binary objects (i.e. <span class="filepath">*.o</span>) that are directly linked against an executable. 
+                  </li>
+                  <li><span class="uicontrol">Shared library (libxx.so,libxxS.a)</span>
+                     — Combines binary objects together and joins them so that they are relocatable and can be shared by many processes. 
+                  </li>
+                  <li><span class="uicontrol">Static+Static shared library (libxx.a,libxxS.a)</span>
+                     — From one set of sources, creates a static library <span class="filepath">libxxx.a</span> and a static library <span class="filepath">libxxS.a</span> for shared objects (the same as <span class="uicontrol">Static library</span>, but it uses position-independent code - PIC). Use this type if you want a library that will later be linked into a shared
+                     object. The System Builder uses these types of libraries to create new shared libraries that contain only the symbols that
+                     are absolutely required by a specific set of programs. 
+                  </li>
+                  <li><span class="uicontrol">Shared library without export (xx.dll)</span>
+                     — A shared library that you aren't going to link with another application. Instead, it's intended to be manually opened at
+                     runtime using the <tt>dlopen()</tt> function, and you can use the <tt>dlsym()</tt> function to look up other specific functions. 
+                     <p>
+                        <span><img src="../images/e2Ftemp2Ftopic2Fwizards_INTRO_.xml_d202499e231.jpg" alt="Project type field" /></span>
+                        
+                     </p>
+                     
+                     <p>If you're building a library, see <a href="wizards_LinkerExtraLib_.html" shape="rect">Extra libraries</a> and <a href="wizards_LinkerExtraPaths_.html" shape="rect">Extra library paths</a>. 
+                     </p>
+                     
+                  </li>
+               </ul>
+               
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Generate default file</span>
+               
+            </dt>
+            <dd>Generate the default files associated with a project. If you want to check out source from version control, for a QNX project,
+               make sure that you deselect the <span class="uicontrol">Generate default file</span> option.
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Add project to working sets</span>
+               
+            </dt>
+            <dd>Set this project to belong to a working set, meaning that you want to group all related 
+               projects together as a set. Select this option, and then click 
+               <span class="uicontrol">Select</span> to either choose an existing working set, or create a new 
+               working set. For more information about working sets, see the 
+               <cite>Workbench User Guide</cite>. 
+            </dd>
+         </dl>
+         
+         
+         <p>If you select a C/C++ project, the first panel in the wizard looks like this:</p>
+         
+         
+         <p>
+            <span><img src="../images/e2Ftemp2Ftopic2Fwizards_INTRO_.xml_d202499e291.jpg" alt="New Project wizard: C++ Project" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>The first panel in the New Project wizard for a C++ project.</p>
+            
+            
+         </div>
+         
+         
+         <p>
+            <strong>Field descriptions</strong>
+            
+         </p>
+         
+         
+         <dl>
+            <dt class="dlterm">
+               <span class="uicontrol">Project name</span>
+               
+            </dt>
+            <dd>Name for the QNX project. Although the wizard allows it, don't use any of the following characters in your project name: <cite>| ! $ ( " ) &amp; ` : ; \ ' * ? [ ] # ~ = % &lt; &gt; { }</cite> as they may cause problems later.
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Use Default Location</span>
+               
+            </dt>
+            <dd>Use the current default workspace location to create the new project. If you don't want to use the default location for the
+               project, ensure that the <span class="uicontrol">Use Default Location</span> option is deselected, and specify where the resources reside in the filesystem (if they don't reside in your workspace).
+               The <span class="uicontrol">Location</span> field is required and must specify a valid location for the project when the <span class="uicontrol">Use Default Location</span> is not selected.
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Project type</span>
+               
+            </dt>
+            <dd>Specifies the type for the QNX project: <br clear="none" /><ul>
+                  <li><span class="uicontrol">Executable</span>
+                     — Provides an executable application. This project type folder contains three templates: <br clear="none" /><ul>
+                        <li><span class="uicontrol">Empty Project</span>
+                           — A single-source project folder that doesn't contain any files. 
+                        </li>
+                        <li><span class="uicontrol">Hello World C++ Project</span>
+                           — A simple C++ application with <tt>main()</tt>. 
+                        </li>
+                     </ul>
+                     
+                     <p>After specifying an <span class="uicontrol">Executable</span> template, the workbench creates a project with only the metadata files required for your project type, and automatically
+                        creates a makefile for you. You can modify these source files, and provide them for the project's target. 
+                     </p>
+                     
+                  </li>
+                  <li><span class="uicontrol">Shared Library</span>
+                     — An executable module compiled and linked separately. For more information about this type, see <a href="wizards_c_.html" shape="rect">Creating a C/C++ project</a>. 
+                  </li>
+                  <li><span class="uicontrol">Static Library</span>
+                     — A collection of object files that you can link into another application (<span class="filepath">libxx.a</span>). For more information about this type, see <a href="wizards_c_.html" shape="rect">Creating a C/C++ project</a>. 
+                  </li>
+                  <li><span class="uicontrol">Makefile Project</span>
+                     — Creates an empty project without any metadata files. For more information about this type, see <a href="wizards_c_.html" shape="rect">Creating a C/C++ project</a>. 
+                  </li>
+               </ul>
+               
+               <div class="note"><span class="notetitle">Note:</span> 
+                  
+                  <p>When you create a shared library, it's name is recorded in a special dynamic section. You can display the information in this
+                     section to see a <tt>SONAME</tt> record. For example, you can use the following: 
+                  </p>
+                  
+                  <pre class="codeblock" xml:space="preserve">ntoarm-readelf -d <var class="varname">libname</var>.so</pre>
+                  
+                  <p>When you link against this library, your application will look for that name. </p>
+                  
+                  
+                  <p>When you perform a <tt>make install</tt>, the <span class="filepath">.so</span> is copied to <span class="filepath">.so.1</span>, and a <span class="filepath">.so</span> symbolic link is created to point to it. You'll also notice that <span class="filepath">.so</span> will get the right version. If you install a <span class="filepath">.so.2</span> (where the <span class="filepath">.so</span> points to it), your old version <tt>1</tt> clients can still run.
+                  </p>
+                  
+                  
+               </div>
+               
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Toolchain</span>
+               
+            </dt>
+            <dd>Select a required toolchain from the <span class="uicontrol">Toolchain</span> list. A toolchain represents the specific tools (such as a compiler, linker, and assembler) used to build your project. Additional
+               tools, such as a debugger, can also be associated with a toolchain. Depending on the compilers installed on your system, there
+               might be several toolchains available to select from. 
+            </dd>
+         </dl>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/wizards_Base_.html" shape="rect">Project and Wizard Properties Reference</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/wizard_wizard_properties.html" shape="rect">Wizard properties</a></div>
+            
+            <div><a href="../topic/wizards_Make_Builder_Tab.html" shape="rect">Make Builder tab</a></div>
+            
+            <div><a href="../topic/wizards_Error_Parser_Tab.html" shape="rect">Error Parsers tab</a></div>
+            
+            <div><a href="../topic/wizards_c_tabs_.html" shape="rect">Project properties</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cheatsheet title="Creating a Target connection"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="cheatsheet"
+  xsi:schemaLocation="cheatsheet contentFile.xsd">
+  <intro href="/com.qnx.doc.ide.userguide/topic/target_Base_.html">
+    <description>
+      This will take you through the steps of configuring your target agent connection in the
+      IDE.
+    </description>
+  </intro>
+  <item href="/org.eclipse.platform.doc.user/reference/ref-cheatsheets.htm" title="Cheat Sheet introduction">
+  <description>If you need information about how to work with cheat sheets,
+   click on the  button with the question mark on the right. 
+   To see the contents of the next instruction,
+   you must complete all tasks by 
+   clicking on "Click to Complete", or by performing the 
+   auto-complete command.</description>
+  </item>
+  <item title="Prepare target machine" href="/com.qnx.doc.ide.userguide/topic/target_connect_.html">
+    <description>
+      Before you can connect IDE to a target, you have to make sure
+      the <b>qconn</b>
+      process is running on the target. Click the help button (with question mark) to get more information about how to
+      prepare your target.
+    </description>
+  </item>
+  <item title="Open the Target Navigator View">
+    <description>
+      The configuration of target connections and the state of those connections is most easily
+      accessed from the "Target Navigator" view. Open this view using the
+      <b>Window->Show View->Other</b>
+      menu item, explore
+      <b>QNX Targets</b>
+      and then select the
+      <b>QNX Target Navigator</b>
+      view.
+    </description>
+    <command
+      serialization="org.eclipse.ui.views.showView(org.eclipse.ui.views.showView.viewId=com.qnx.tools.ide.target.internal.ui.targetview)"
+      confirm="true" />
+  </item>
+  <item title="Open New Target Dialog" dialog="true">
+    <description>
+      Open the "New QNX Target" wizard. Right click in the "Target Navigator" view and select
+      <b>New QNX Target...</b>
+      menu item.
+    </description>
+    <action pluginId="com.qnx.tools.ide.target.qconn.ui"
+      class="com.qnx.tools.ide.target.qconn.ui.NewTargetAction" confirm="true" />
+  </item>
+  <item title="Input Target Information" dialog="false">
+    <description>
+      Input the connection information into the dialog.
+      <br />
+      <b>Target Name</b>
+      is the name used for the target project created in the workspace, for example
+      "my-test-x86-target".
+      <br />
+      <b>Hostname or IP</b>
+      is the network address of the target system, for example "192.168.0.1". 
+      <br />
+      Click "Finish".
+    </description>
+    <onCompletion>
+      Your target is now configured and should be displayed in the IDE "Target Navigator" view.
+    </onCompletion>
+  </item>
+  <item title="Quick look at the target">
+    <description>
+      You can now expand the target folder in the "Target Navigator" view to see what processes are
+      running on your target.
+    </description>
+    <onCompletion>
+      Now, you can debug your applications and run different QNX tools from the IDE.
+    </onCompletion>
+  </item>
+</cheatsheet>

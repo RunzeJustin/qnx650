@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="链 形 菜 单 管 理 器 的 使 用 与 设 置 方 法">
+      <topic label="Using the Photon Chinese Supplement" href="about.html">
+          <topic label="Chinese fonts" href="about.html#Fonts"/>
+          <topic label="Chinese input method (cpim)" href="about.html#InputMethod"/>
+      </topic>
+</toc>

@@ -1,0 +1,201 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Managing Memory Analysis sessions: The Session view" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Memory_Analysis_Procedures.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Using_Memory_Analysis.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_analyzing_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_MEMANALEDIT_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_ImpMemanalysisdata_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_ExmpMemanalysisdata_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Connect_To_Session.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Delete_A_Session.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Disconnect_From_Session.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Exporting_Trace_data.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Filter_Session_Info.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Import_Session_Info.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Show_Info_About_Session.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Rename_Session.html" />
+      <meta name="DC.Relation" scheme="URI" content="memory_Selecting_Data.html" />
+      <meta name="DC.Relation" scheme="URI" content="memory_Controlling_the_View.html" />
+      <meta name="DC.Relation" scheme="URI" content="memory_Controlling_the_Overvew.html" />
+      <meta name="DC.Relation" scheme="URI" content="memory_Controlling_the_Details.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Memory_SessionView" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Managing Memory Analysis sessions: The Session view</title>
+   </head>
+   <body id="Memory_SessionView"><a name="Memory_SessionView" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Managing Memory Analysis sessions: The Session view</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>The Session view lets you manage your memory analysis sessions, which keep historical data. Session elements allow you to
+            quickly filter data by this element, for example by file or by <var class="varname">tid</var>. Double-clicking on a session opens the Memory Analysis editor for this session.
+            
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/ic2Fmemory_session_view_info.xml_d133296e30.jpg" alt="Session view" /></span>
+            
+         </p>
+         
+         
+         <p>The view lists all of the memory analysis sessions that you've created in your workspace while running programs with the Memory
+            Analysis tool active. Each session is identified by a name, date stamp, and an icon that indicates its current state. 
+         </p>
+         
+         
+         <p>The icons indicate:
+            
+         </p>
+         
+         
+         <dl>
+            <dt class="dlterm">
+               <span><img src="../images/ic2Fmemory_session_view_info.xml_d133296e54.jpg" alt="[Connected]" /></span>
+               
+            </dt>
+            <dd> This memory analysis session is open and can be viewed in the Memory Analysis editor. </dd>
+            <dt class="dlterm">
+               <span><img src="../images/ic2Fmemory_session_view_info.xml_d133296e69.jpg" alt="[Disconnected]" /></span>
+               
+            </dt>
+            <dd>This session is closed and cannot currently be viewed. </dd>
+            <dt class="dlterm">
+               <span><img src="../images/ic2Fmemory_session_view_info.xml_d133296e84.jpg" alt="[Running]" /></span>
+               
+            </dt>
+            <dd>This session is still running on the target; you can select the session and view its incoming traces. You also can change
+               settings dynamically and run leak detection or dump memory usage statistics from IDE. 
+            </dd>
+            <dt class="dlterm">
+               <span><img src="../images/ic2Fmemory_session_view_info.xml_d133296e99.jpg" alt="[Indexing]" /></span>
+               
+            </dt>
+            <dd>The traces and events are being indexed. This icon appears only if you stop the memory analysis session or your process terminates.
+               If your process terminates, the running icon may still be shown while the database is registering the events and traces; when
+               this is done, the indexing icon appears. Wait until indexing is finished, or the information might be incomplete. 
+            </dd>
+         </dl>
+         
+         
+         <div class="p">Right-clicking on an open session (<span><img src="../images/ic2Fmemory_session_view_info.xml_d133296e114.jpg" alt="[Connected]" /></span>) shows a menu with several options: <br clear="none" /><ul>
+               <li>View</li>
+               <li>Close</li>
+               <li>Delete</li>
+               <li>Rename...</li>
+               <li>Properties...</li>
+               <li>Import...</li>
+               <li>Export...</li>
+            </ul>
+            
+         </div>
+         
+         
+         <div class="p">Right-clicking on a closed session (<span><img src="../images/ic2Fmemory_session_view_info.xml_d133296e147.jpg" alt="[Disconnected]" /></span>) shows a menu with several options: <br clear="none" /><ul>
+               <li>Open</li>
+               <li>Delete</li>
+               <li>Rename...</li>
+               <li>Properties...</li>
+               <li>Import...</li>
+               <li>Export...</li>
+            </ul>
+            
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <ul class="ullinks">
+            <li class="ulchildlink"><strong><a href="../topic/memory_Connect_To_Session.html" shape="rect">Opening a session</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/memory_Delete_A_Session.html" shape="rect">Deleting a session</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/memory_Disconnect_From_Session.html" shape="rect">Closing a session</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/memory_Exporting_Trace_data.html" shape="rect">Exporting session data</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/memory_Filter_Session_Info.html" shape="rect">Filtering information for a session</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/memory_Import_Session_Info.html" shape="rect">Importing session information</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/memory_Show_Info_About_Session.html" shape="rect">Showing information about a session</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/memory_Rename_Session.html" shape="rect">Renaming a session</a></strong><br clear="none" />
+               
+            </li>
+         </ul>
+         
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/memory_Memory_Analysis_Procedures.html" shape="rect">The Memory Analysis tool</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/memory_Using_Memory_Analysis.html" shape="rect">Advanced topics</a></div>
+            
+            <div><a href="../topic/memory_analyzing_.html" shape="rect">Launching your program with Memory Analysis</a></div>
+            
+            <div><a href="../topic/memory_MEMANALEDIT_.html" shape="rect">Viewing Memory Analysis data</a></div>
+            
+            <div><a href="../topic/memory_ExmpMemanalysisdata_.html" shape="rect">Exporting memory analysis data</a></div>
+            
+            <div><a href="memory_Selecting_Data.html" shape="rect">Selecting data</a></div>
+            
+            <div><a href="memory_Controlling_the_View.html" shape="rect">Controlling the page layout</a></div>
+            
+            <div><a href="memory_Controlling_the_Overvew.html" shape="rect">Controlling the overview</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/memory_ImpMemanalysisdata_.html" shape="rect">Importing memory analysis data</a></div>
+            
+            <div><a href="memory_Controlling_the_Details.html" shape="rect">Controlling the detail pane</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

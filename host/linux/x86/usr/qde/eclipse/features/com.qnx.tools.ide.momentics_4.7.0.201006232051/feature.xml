@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.qnx.tools.ide.momentics"
+      label="%featureName"
+      version="4.7.0.201006232051"
+      provider-name="%providerName"
+      plugin="com.qnx.tools.ide.momentics">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <url>
+      <update label="QNX Momentics Update Site" url="https://www.qnx.com/account/updates/ide/4.7/"/>
+      <discovery label="QNX Momentics Update Site" url="https://www.qnx.com/account/updates/ide/4.7/"/>
+   </url>
+
+   <includes
+         id="org.eclipse.platform"
+         version="3.5.2.R35x_v20100210-0800-9hEiFzmFst-TiEn9hNYgDWg1XN8ulH_JvCNGB"/>
+
+   <includes
+         id="com.qnx.tools.ide.cdt"
+         version="6.0.2.201004122116"/>
+
+   <includes
+         id="com.qnx.tools.ide"
+         version="4.7.0.201006232051"/>
+
+   <includes
+         id="com.qnx.tools.ide.qde"
+         version="4.7.0.201006232051"/>
+
+   <includes
+         id="com.qnx.tools.ide.terminal"
+         version="4.7.0.201006232051"/>
+
+   <includes
+         id="com.qnx.tools.ide.sysinfo"
+         version="4.7.0.201006232051"/>
+
+   <includes
+         id="com.qnx.tools.ide.SystemProfiler"
+         version="4.7.0.201006232051"/>
+
+   <includes
+         id="com.qnx.tools.ide.builder"
+         version="4.7.0.201006232051"/>
+
+   <includes
+         id="com.qnx.tools.ide.coverage"
+         version="4.7.0.201006232051"/>
+
+   <includes
+         id="com.qnx.tools.ide.mat"
+         version="4.7.0.201006232051"/>
+
+   <includes
+         id="com.qnx.tools.ide.updater"
+         version="4.7.0.201006232051"/>
+
+   <includes
+         id="com.qnx.tools.ide.profiler2"
+         version="4.7.0.201006232051"/>
+
+   <includes
+         id="com.qnx.tools.ide.mudflap"
+         version="4.7.0.201006232051"/>
+
+   <includes
+         id="com.qnx.tools.ide.doc.ide.users.guide"
+         version="3.0.0.20100623"/>
+
+   <requires>
+      <import feature="org.eclipse.cvs" version="1.1.100" match="compatible"/>
+      <import feature="org.eclipse.team.svn" version="0.7.8" match="compatible"/>
+      <import feature="org.polarion.eclipse.team.svn.connector" version="2.2.0" match="compatible"/>
+      <import feature="org.polarion.eclipse.team.svn.connector.svnkit16" version="2.2.0" match="compatible"/>
+   </requires>
+
+   <plugin
+         id="com.qnx.tools.ide.momentics"
+         download-size="0"
+         install-size="0"
+         version="4.7.0.201006232051"
+         unpack="false"/>
+
+   <plugin
+         id="com.qnx.doc.homepage"
+         download-size="0"
+         install-size="0"
+         version="4.7.0.201006232051"/>
+
+   <plugin
+         id="com.qnx.tools.ide.momentics.examples"
+         download-size="0"
+         install-size="0"
+         version="4.7.0.201006232051"/>
+
+</feature>

@@ -1,0 +1,305 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Tracking heap usage" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Base_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_INTRO_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_SYSINFOPERSP_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Logging_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Views_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Target_navigator_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_System_summary_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Process_information_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Memory_information_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Signal_information_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_System_blocking_graph_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Connection_information_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_System_resources_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Aps_view_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Views_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_DeltaHistory_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_DeffDeltas_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_AllocDeltas_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_DeallocDeltas_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_OutstAllocDeltas_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Trackingheapusage" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Tracking heap usage</title>
+   </head>
+   <body id="Trackingheapusage"><a name="Trackingheapusage" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Tracking heap usage</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>The following views in the QNX System Information perspective are especially useful for examining the memory of your target
+            system: 
+            
+            
+         </p>
+         
+         <br clear="none" /><ul>
+            <li>Malloc Information view</li>
+            <li>
+               <a href="memory_Base_.html" shape="rect">Finding memory errors and leaks</a>
+               
+            </li>
+         </ul>
+         
+         
+         <p>
+            <strong>Malloc Information view</strong>
+            
+         </p>
+         
+         
+         <p>The Malloc Information view shows statistical information from the general-purpose, process-level memory allocator: 
+            
+            
+            
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/sysinfo_Malloc_information_.xml_d167321e64.jpg" alt="Malloc Information view" /></span>
+            
+         </p>
+         
+         
+         <p>When you select a process in the Target Navigator view, the IDE queries the target system and retrieves the allocator's statistics.
+            The IDE gathers statistics for the number of bytes that are allocated, in use, as well as overhead. 
+         </p>
+         
+         
+         <p>The view includes the following panes: </p>
+         
+         
+         <p>
+            <strong>Total Heap</strong>
+            
+         </p>
+         
+         
+         <div class="p">The Total Heap pane shows your total heap memory, which is the sum of the following states of memory: 
+            
+            
+            <br clear="none" /><ul>
+               <li>used (dark blue)</li>
+               <li>overhead (turquoise)</li>
+               <li>free (lavender)</li>
+            </ul>
+            
+         </div>
+         
+         
+         <p>The <span class="uicontrol">Total Heap</span> number in the Malloc Information view is an accurate number that the IDE gets from the <tt>libmalloc</tt> library; however, the heap size number in the Memory Information view and System Resource view is an estimated number. To
+            get the actual heap size allocated by a process, see the Malloc Information view. To get an overview about what the memory
+            allocation pattern looks like for a process, see the Memory Information view. 
+         </p>
+         
+         
+         <p>The bar chart shows the relative size of each heap. </p>
+         
+         
+         <p>
+            <strong>Calls Made</strong>
+            
+         </p>
+         
+         
+         <p>The Calls Made pane shows the number of times a process has allocated, freed, or reallocated memory by calling <a href="../../com.qnx.doc.neutrino_lib_ref/m/malloc.html" shape="rect">
+               <tt>malloc</tt>
+               </a>, <a href="../../com.qnx.doc.neutrino_lib_ref/f/free.html" shape="rect">
+               <tt>free</tt>
+               </a>, and <a href="../../com.qnx.doc.neutrino_lib_ref/r/realloc.html" shape="rect">
+               <tt>realloc</tt>
+               </a> functions. (See the Neutrino <cite>Library Reference</cite>.) 
+            
+            
+         </p>
+         
+         
+         <p>
+            <strong>Core Requests</strong>
+            
+         </p>
+         
+         
+         <p>The Core Requests pane shows the number of allocations that the system allocator automatically made to accommodate the needs
+            of the program you selected in the Target Navigator view. The system allocator typically dispenses memory in increments of
+            4 KB (one page). 
+            
+            
+         </p>
+         
+         
+         <p>The number of allocations never equals the number of deallocations, because when the program starts, it allocates memory that
+            isn't released until it terminates. 
+         </p>
+         
+         
+         <p>
+            <strong>Distribution</strong>
+            
+         </p>
+         
+         
+         <p>The Distribution pane shows a distribution of the memory allocation sizes. The pane includes the following columns: 
+            
+            
+         </p>
+         
+         
+         <div class="p">
+            
+            <dl>
+               <dt class="dlterm">Byte Range</dt>
+               <dd>The size range of the memory blocks. </dd>
+               <dt class="dlterm">Allocations</dt>
+               <dd>The total number of calls that allocate memory. </dd>
+               <dt class="dlterm">Deallocations</dt>
+               <dd>The total number of calls that free memory. </dd>
+               <dt class="dlterm">Outstanding</dt>
+               <dd>The remaining number of allocated blocks. The value is equal to the number of allocated blocks minus the number of deallocated
+                  blocks. 
+               </dd>
+               <dt class="dlterm">% Returned</dt>
+               <dd>The ratio of freed blocks to allocated blocks, expressed as a percentage. The value is calculated as the number of deallocations
+                  divided by the number of allocations. 
+               </dd>
+               <dt class="dlterm">Usage (min/max)</dt>
+               <dd>The calculated minimum and maximum memory usage for a byte range. The values are calculated by multiplying the number of allocated
+                  blocks by the minimum and maximum sizes of the range. For example, if the 65–128 byte range had two blocks allocated, the
+                  usage would be <cite>130/160</cite>. You should use these values for estimated memory usage only; the actual memory usage usually lies somewhere in between.
+                  
+               </dd>
+            </dl>
+            
+            
+         </div>
+         
+         
+         <p>
+            <strong>History</strong>
+            
+         </p>
+         
+         
+         <p>The History pane shows a chronology of the heap usage shown in the Total Heap pane. The pane automatically rescales as the
+            selected process increases its total heap. 
+            
+            
+         </p>
+         
+         
+         <p>The History pane updates the data every second, with a granularity of 1 KB. Thus, two 512-byte allocations made over several
+            seconds trigger one update.
+         </p>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> You can choose to hide or show the Distribution and History panes: <br clear="none" /><ol>
+               <li>In the Malloc Information view's title bar, click the dropdown menu button (
+                  <p>
+                     <span><img src="../images/sysinfo_Malloc_information_.xml_d167321e293.jpg" alt="Icon: Dropdown Menu" /></span>
+                     
+                  </p>
+                  ), followed by <span class="uicontrol">Show</span>.
+               </li>
+               <li>Click the pane you want shown.</li>
+            </ol>
+            
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <ul class="ullinks">
+            <li class="ulchildlink"><strong><a href="../topic/memory_DeltaHistory_.html" shape="rect">Observing changes in memory usage (allocations and deallocations)</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/memory_DeffDeltas_.html" shape="rect">Outstanding allocations</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/memory_AllocDeltas_.html" shape="rect">Allocation deltas</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/memory_DeallocDeltas_.html" shape="rect">Deallocation deltas</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/memory_OutstAllocDeltas_.html" shape="rect">Outstanding allocation deltas</a></strong><br clear="none" />
+               
+            </li>
+         </ul>
+         
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/sysinfo_Base_.html" shape="rect">Getting System Information</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/sysinfo_INTRO_.html" shape="rect">Introduction</a></div>
+            
+            <div><a href="../topic/sysinfo_SYSINFOPERSP_.html" shape="rect">What the System Information perspective reveals</a></div>
+            
+            <div><a href="../topic/sysinfo_Views_.html" shape="rect">Associated views</a></div>
+            
+            <div><a href="../topic/sysinfo_Target_navigator_.html" shape="rect">Controlling your system information session</a></div>
+            
+            <div><a href="../topic/sysinfo_System_summary_.html" shape="rect">Examining your target system's attributes</a></div>
+            
+            <div><a href="../topic/sysinfo_Process_information_.html" shape="rect">Watching your processes</a></div>
+            
+            <div><a href="../topic/sysinfo_Memory_information_.html" shape="rect">Examining your target system's memory (inspecting virtual address space)</a></div>
+            
+            <div><a href="../topic/sysinfo_Signal_information_.html" shape="rect">Examining process signals</a></div>
+            
+            <div><a href="../topic/sysinfo_System_blocking_graph_.html" shape="rect">Getting channel information</a></div>
+            
+            <div><a href="../topic/sysinfo_Connection_information_.html" shape="rect">Tracking file descriptors</a></div>
+            
+            <div><a href="../topic/sysinfo_System_resources_.html" shape="rect">Tracking resource usage</a></div>
+            
+            <div><a href="../topic/sysinfo_Aps_view_.html" shape="rect">Tracking the use of adaptive partitioning</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/sysinfo_Logging_.html" shape="rect">Logging system information</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

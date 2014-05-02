@@ -1,0 +1,21 @@
+%C - mmsync Command Line Client
+Executing commands:
+%C [-e] <mmsync_dev> [<command> [<command args>]]
+
+Options:
+    -e      Event listen mode.
+
+Commands:
+     command                  arguments
+    ------------             -----------
+    sync_start               <db> <mountpoint> <syncpath> <options>
+    sync_suspend             <op_id> [flags]
+    sync_resume              <op_id> [flags]
+    sync_cancel              <op_id> [flags]
+    sync_status_get_byid     <op_id> [flags]
+    sync_status_get_bydbname <db_name> [flags]
+    sync_status_get
+    sync_status_get_dbname   <op_id> [flags]
+    sync_debug_set           <verbose> <debug>
+    sync_debug_get
+    sync_control             <op_id> <extended_options> [flags]

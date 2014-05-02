@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-Name: %pluginName
+Bundle-Vendor: %providerName
+Bundle-ManifestVersion: 2
+Bundle-Localization: plugin
+Bundle-SymbolicName: com.qnx.doc.homepage;singleton:=true
+Bundle-Version: 4.7.0.201006232051
+
+

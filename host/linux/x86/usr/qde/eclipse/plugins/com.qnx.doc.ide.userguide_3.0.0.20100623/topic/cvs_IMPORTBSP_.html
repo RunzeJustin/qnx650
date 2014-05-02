@@ -1,0 +1,373 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Importing a BSP or other QNX source packages" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/cvs_Base_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/cvs_SVNANDIDE_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/cvs_CVSANDIDE_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/cvs_SourceControlIntro_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/cvs_Project_Files_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/cvs_Using_Cor_Eclipse_Docs.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/cvs_IMPORT_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/cvs_CONTAINERS_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/cvs_export_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/cvs_The_QNX_BSP_Perspective.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/cvs_BSPDownloadFromFoundry_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/cvs_checkout_BSP_From_SVN.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="ImportingaBSPorotherQNXsourcepackages" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Importing a BSP or other QNX source packages</title>
+   </head>
+   <body id="ImportingaBSPorotherQNXsourcepackages"><a name="ImportingaBSPorotherQNXsourcepackages" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Importing a BSP or other QNX source packages</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>QNX BSPs and other source packages (e.g. DDKs) are distributed as <span class="filepath">.zip</span> archives. The IDE lets you import these packages into the IDE: 
+            
+            
+         </p>
+         
+         
+         
+         <div class="tablenoborder">
+            <table cellpadding="4" cellspacing="0" summary="" frame="border" border="1" rules="all">
+               <thead align="left">
+                  <tr>
+                     <th class="cellrowborder" valign="top" id="d33730e38" rowspan="1" colspan="1">When you import a:</th>
+                     <th class="cellrowborder" valign="top" id="d33730e41" rowspan="1" colspan="1">The IDE creates a:</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td class="cellrowborder" valign="top" headers="d33730e38 d33730e41" rowspan="1" colspan="1">QNX BSP source package</td>
+                     <td class="cellrowborder" valign="top" headers="d33730e38 d33730e41" rowspan="1" colspan="1">System Builder project and a C or C++ project</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" headers="d33730e38 d33730e41" rowspan="1" colspan="1">BSP source package from Foundry27</td>
+                     <td class="cellrowborder" valign="top" headers="d33730e38 d33730e41" rowspan="1" colspan="1">System Builder project (see <a href="cvs_BSPDownloadFromFoundry_.html" shape="rect">Importing a BSP package from Foundry27</a>) 
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" headers="d33730e38 d33730e41" rowspan="1" colspan="1">QNX C/C++ source package</td>
+                     <td class="cellrowborder" valign="top" headers="d33730e38 d33730e41" rowspan="1" colspan="1">C or C++ application or library project</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </div>
+         
+         
+         <p>
+            <strong>Step 1: Use <span class="menucascade">
+                  <span class="uicontrol">File</span>
+                  &gt; <span class="uicontrol">Import…</span>
+                  </span></strong>
+            
+         </p>
+         
+         
+         <p>You import a QNX source archive using the standard Eclipse import dialog: </p>
+         
+         
+         <p>
+            <span><img src="../images/e2Ftemp2Ftopic2Fcvs_IMPORTBSP_.xml_d33730e101.jpg" alt="Import BSP" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>The Import wizard.</p>
+            
+            
+         </div>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> If you're importing a source package or BSP, select <span class="uicontrol">QNX Source Package and BSP</span>. 
+            
+            
+            
+         </div>
+         
+         
+         <p>You can choose to import either a QNX BSP or a source package. Although a BSP is, in fact, a package that contains source
+            code, the two types are structured differently and generate different types of projects. If you try to import a BSP archive
+            as a QNX Source Package, the IDE won't create a System Builder project. 
+         </p>
+         
+         
+         <p>
+            <strong>Step 2: Select a method to use for import</strong>
+            
+         </p>
+         
+         
+         <p>Select the method that you want to use to import the package or BSP: from a local file archive, or from a SVN repository on
+            Foundry27. 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/e2Ftemp2Ftopic2Fcvs_IMPORTBSP_.xml_d33730e154.jpg" alt="Select the method used to import the source package" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>Selecting the method to use to import the source package.</p>
+            
+            
+         </div>
+         
+         
+         <p>If you select a package archive file, you'll need to specify a name in the <span class="uicontrol">File Name</span> field, or click <span class="uicontrol">Browse</span> to locate and select a file. After you choose the archive file type, by default the wizard presents you with a list of the
+            packages on your host: 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/e2Ftemp2Ftopic2Fcvs_IMPORTBSP_.xml_d33730e179.jpg" alt="Select BSP" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>Choosing a package to import.</p>
+            
+            
+         </div>
+         
+         
+         <p>Notice that as you highlight a package in the list, the IDE shows a description for that package. </p>
+         
+         
+         <p>If you select a file from a SVN repository on Foundry27, you'll need to select a package: </p>
+         
+         
+         <p>
+            <span><img src="../images/e2Ftemp2Ftopic2Fcvs_IMPORTBSP_.xml_d33730e201.jpg" alt="Select BSP" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>Choosing a package to import from Foundry27.</p>
+            
+            
+         </div>
+         
+         
+         <p>To add more packages to the list, click the <span class="uicontrol">Select Package. . .</span> button, and then select the <span class="filepath">.zip</span> source archive you want to add.
+         </p>
+         
+         
+         <p>
+            <strong>Step 3: Select the source projects</strong>
+            
+         </p>
+         
+         
+         <p>Each source package contains several components (or <dfn class="term">projects</dfn>, in IDE terms). For the package you selected, the wizard gives you a list of each source project contained in the archive.
+            
+         </p>
+         
+         
+         <p>You can decide to import only certain parts of the source package; simply uncheck the entries you don't want (they're all
+            selected by default). Again, as you highlight a component, you'll see its description in the bottom pane. 
+         </p>
+         
+         
+         <p>
+            <strong>Step 4: Select a working set</strong>
+            
+         </p>
+         
+         
+         <p>The last page of the import wizard lets you name your source projects. You can specify: 
+            
+         </p>
+         
+         <br clear="none" /><ul>
+            <li>Working Set Name — to group all related imported projects together as a set.</li>
+            <li>Project Name Prefix — for BSPs, this becomes the name of the System Builder project; for other source projects, this prefix
+               lets you import the same source several times without any conflicts.
+            </li>
+         </ul>
+         
+         
+         <p>To specify settings for the project being created, do the following tasks:</p>
+         
+         <br clear="none" /><ul>
+            <li>Optional: To change the destination directory for the projects, enter a new path in the <span class="uicontrol">Directory for Projects</span> field, or click <span class="uicontrol">Browse…</span> to select one. The default is your IDE workspace. 
+            </li>
+            <li>Optional: In the <span class="uicontrol">Project Prefix</span> field, type a prefix name that you'd like to use for the project other than the default one specified. This is prepended
+               to the name of each project imported from the BSP. 
+            </li>
+            <li>Optional: If this project is to belong to a working set (meaning that you want to group all related imported projects together
+               as a set), select the <span class="uicontrol">Add project to working sets</span> option, and then select the name of the working set to use for the BSP.
+            </li>
+         </ul>
+         
+         
+         <p>If this is the first time you perform a checkout from Foundry27, the <span class="uicontrol">SVN New Repository Wizard</span> is displayed.
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/e2Ftemp2Ftopic2Fcvs_IMPORTBSP_.xml_d33730e298.jpg" alt="Importing from Foundry27 for the first time" /></span>
+            
+         </p>
+         
+         
+         <p>You'll need to specify your user ID and password that correspond to your Foundry27 account. In addition, you'll need to be
+            successfully authenticated before you can proceed to the next panel in the wizard.
+         </p>
+         
+         
+         <p>Click <span class="uicontrol">Finish</span> to begin importing the package.
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/e2Ftemp2Ftopic2Fcvs_IMPORTBSP_.xml_d33730e316.jpg" alt="Imported BSP package from Foundry27" /></span>
+            
+         </p>
+         
+         
+         <p>The IDE sets up the required project properties (compiler options, build targets, and so on) so that the projects are able
+            to build after the checkout process. In addition, the IDE maintains the source tree layout (to preserve the current status
+            of the checked out source), sets up prebuilt and staging areas for the project, when necessary, and also creates the BSP project.
+            
+         </p>
+         
+         
+         <p>If you plan to import a BSP into the IDE, remember to give each project a different name.</p>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> 
+            
+            <p>If you import dual-endian BSPs, the wizard shows this informational message:</p>
+            
+            
+            <p>
+               <span><img src="../images/e2Ftemp2Ftopic2Fcvs_IMPORTBSP_.xml_d33730e337.jpg" alt="BSP import message" /></span>
+               
+            </p>
+            
+            
+            <p>If you add build variants, you need to copy the CPU-specific files to the new variant's build directories.</p>
+            
+            
+         </div>
+         
+         
+         <p>
+            <strong>Step 5: Build</strong>
+            
+         </p>
+         
+         
+         <p>When you finish with the wizard, it creates all the projects and brings in the source from the archive. After the checkout
+            of the source package completes, right-click on the BSP project and select <span class="uicontrol">Build</span>; the <span class="filepath">src</span> project will be auto-built by the BSP project. The IDE will build all of the source under one project. Because the IDE creates
+            a dependency between the <span class="filepath">BSP</span> project and the <span class="filepath">src</span> project, you don't need to build the <span class="filepath">src</span> project; only the BSP project.
+         </p>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> 
+            
+            <p>If you answer <span class="uicontrol">Yes</span>, the IDE begins the build process, which may take several minutes (depending on how much source you've imported).
+            </p>
+            
+            
+            <p>Both the source project and the System Builder project build a bootable IFS image.</p>
+            
+            
+         </div>
+         
+         
+         <p>If you decide not to build now, you can always do a <span class="uicontrol">Rebuild All</span> from the main toolbar's <span class="uicontrol">Project</span> menu at a later time. 
+         </p>
+         
+         
+         <p>If you didn't import all the components from a BSP package, you can bring in the rest of them by selecting the System Builder
+            project and opening the import wizard (right-click the project, and then select <span class="uicontrol">Import…</span>). The IDE detects your selection and then extends the existing BSP (rather than making a new one). 
+         </p>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <ul class="ullinks">
+            <li class="ulchildlink"><strong><a href="../topic/cvs_The_QNX_BSP_Perspective.html" shape="rect">QNX BSP perspective</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/cvs_BSPDownloadFromFoundry_.html" shape="rect">Importing a BSP package from Foundry27</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/cvs_checkout_BSP_From_SVN.html" shape="rect">Checking out BSP packages directly from the SVN Repositories view</a></strong><br clear="none" />
+               
+            </li>
+         </ul>
+         
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/cvs_Base_.html" shape="rect">Managing Source Code</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/cvs_SVNANDIDE_.html" shape="rect">SVN and the IDE</a></div>
+            
+            <div><a href="../topic/cvs_CVSANDIDE_.html" shape="rect">CVS and the IDE</a></div>
+            
+            <div><a href="../topic/cvs_SourceControlIntro_.html" shape="rect">Local history feature</a></div>
+            
+            <div><a href="../topic/cvs_Project_Files_.html" shape="rect">Project files (.project and .cproject)</a></div>
+            
+            <div><a href="../topic/cvs_Using_Cor_Eclipse_Docs.html" shape="rect">Using the core Eclipse source control documentation in the IDE</a></div>
+            
+            <div><a href="../topic/cvs_IMPORT_.html" shape="rect">Importing existing source code into the IDE</a></div>
+            
+            <div><a href="../topic/cvs_CONTAINERS_.html" shape="rect">Using container projects</a></div>
+            
+            <div><a href="../topic/cvs_export_.html" shape="rect">Exporting projects</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

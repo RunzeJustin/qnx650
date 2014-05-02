@@ -1,0 +1,326 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Locating Events of Interest" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_Use_cases_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="LocatingEventsofInterest" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Locating Events of Interest</title>
+   </head>
+   <body id="LocatingEventsofInterest"><a name="LocatingEventsofInterest" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Locating Events of Interest</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>Trace event log files contain a wealth of information, but unfortunately that information is often buried deep in among thousands,
+            if not millions, of other events. The System Profiler tooling helps provide tools to reduce and remove some of this noise
+            to help you focus on the areas of a log that are important to you.
+            
+            
+         </p>
+         
+         
+         <p>
+            <strong>Requirements</strong>
+            
+         </p>
+         
+         
+         <p>There are no specific requirements for this use case, but some of the topics may not apply, depending on the types of events
+            that have been captured. 
+         </p>
+         
+         
+         <p>
+            <strong>Procedure</strong>
+            
+         </p>
+         
+         
+         <p>We'll walk through some of the tools available to help you to reduce and filter the data contained in a trace event file.
+            Where this information is most useful is during investigations involving the Timeline editor pane. The timeline displays information
+            with a very fine granularity and is often the display that users turn to in order to single step through the execution flow
+            of an activity of interest. To open the Timeline editor pane, select <span class="menucascade">
+               <span class="uicontrol">System Profiler</span>
+               &gt; <span class="uicontrol">Display</span>
+               &gt; <span class="uicontrol">Switch Pane</span>
+               &gt; <span class="uicontrol">Timeline</span>
+               </span>. 
+         </p>
+         
+         
+         <p>
+            <strong>Timeline editor pane filters</strong>
+            
+         </p>
+         
+         
+         <p>The first level of data reduction is to use the Filters view to remove information that isn't significant for the tracing
+            of the problem you're interested in. By using filters in conjunction with zooming and searching capabilities, you can quickly
+            reduce the overall data set. 
+         </p>
+         
+         
+         <p>The Filters view is synchronized with the active System Profiler editor; you can display it via the menu <span class="menucascade">
+               <span class="uicontrol">Window</span>
+               &gt; <span class="uicontrol">Show View</span>
+               &gt; <span class="uicontrol">Other…</span>
+               &gt; <span class="uicontrol">Filters</span>
+               </span> or by right-clicking <span class="uicontrol">Filters…</span> in the Timeline editor pane. 
+            
+            
+            
+         </p>
+         
+         
+         <p>This view provides you with the following types of filtering: </p>
+         
+         <br clear="none" /><ul>
+            <li>The Owners tab shows a list of event owners/sources, letting you select or unselect event owners to be displayed. Unselecting
+               an event owner in the list removes that owner from the Timeline editor pane. 
+               <p>
+                  <span><img src="../images/sysprof_Events_of_interest_.xml_d174559e113.jpg" alt="System Profiler: Filter owners" /></span>
+                  
+               </p>
+               
+            </li>
+            <li>The Events tab is similar to the Owners tab, but it provides filtering capabilities for individual trace events rather than
+               for the owners of those events. 
+               <p>
+                  <span><img src="../images/sysprof_Events_of_interest_.xml_d174559e124.jpg" alt="System Profiler: Filter events" /></span>
+                  
+               </p>
+               
+               <p>For information about types of events, see <a href="../../com.qnx.doc.instr_en_instr/events.html#Classes" shape="rect">Classes and events</a> in the chapter Events and the Kernel in the <cite>System Analysis Toolkit</cite>.
+               </p>
+               
+            </li>
+            <li>The Partitions tab provides filtering capabilities that only show data related to the partitions that you specify. 
+               <p>
+                  <span><img src="../images/sysprof_Events_of_interest_.xml_d174559e143.jpg" alt="System Profiler: Filter partitions" /></span>
+                  
+               </p>
+               
+            </li>
+         </ul>
+         
+         
+         <p>Select the context menu in the Filters view to access additional filter options. Select <span class="uicontrol">Configure Filters…</span> from the Filters view menu to configure the filters for System Profiler. 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/sysprof_Events_of_interest_.xml_d174559e160.jpg" alt="System Profiler: Configure filters" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>Configuring filters for System Profiler.</p>
+            
+            
+         </div>
+         
+         
+         <p>The Configure System Profiler Filters dialog provides a listing of preconfigured filters that are available for use. These
+            filters are often based on more sophisticated criteria for determining if events, event owners, or partitions are to be displayed.
+            
+         </p>
+         
+         
+         <p>
+            <strong>Trace event log filter synchronization</strong>
+            
+         </p>
+         
+         
+         <p>By default, the Trace Event Log view presents a display that uses the same filters as the currently active editor. However,
+            there are times when it's useful to be able to temporarily unfilter the Trace Event Log view display to see the raw content
+            of the log file. You can accomplish this by toggling the editor's Synchronize button on the Trace Event Log view display:
+            
+            
+            
+            
+            
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/sysprof_Events_of_interest_.xml_d174559e205.jpg" alt="System Profiler: Trace Event sync" /></span>
+            
+         </p>
+         
+         
+         <p>
+            <strong>Timeline find</strong>
+            
+         </p>
+         
+         
+         <p>There are times when you're looking at an event stream and want to quickly navigate through it. One mechanism for doing this
+            is to move to the next or previous event, using the toolbar commands (Next, Previous, Next Event In Selection, Previous Event
+            In Selection). 
+         </p>
+         
+         
+         <p>Another, more flexible, alternative is to use the Find functionality of the Timeline editor pane. Selecting <span class="menucascade">
+               <span class="uicontrol">Edit</span>
+               &gt; <span class="uicontrol">Find/Replace</span>
+               </span> opens a dialog similar to the one found in many text editors: 
+         </p>
+         
+         
+         <p>The dialog supports searching a restricted set of event owners (based on the selection made in the Timeline editor pane) as
+            well as searching forwards and backwards through the log file. This is convenient when you know specifically what type of
+            event you're looking for in a sequence of events (e.g. the next RUNNING state for a thread). 
+         </p>
+         
+         
+         <p>The Find dialog moves the selection marker in the Timeline editor pane to the appropriate event. </p>
+         
+         
+         <p>
+            <strong>Trace Search</strong>
+            
+         </p>
+         
+         
+         <p>If you need to generate a collection of events matching a particular condition, or you need to construct a more complicated
+            expression (perhaps including event data) in order to find the events you're looking for, you need the power of trace event
+            conditions and the Trace Search tool. 
+         </p>
+         
+         
+         <p>The Trace Search tool is invoked via the menu item <span class="menucascade">
+               <span class="uicontrol">Search</span>
+               &gt; <span class="uicontrol">Search</span>
+               </span>. Opening this up presents a dialog similar to the following: 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/sysprof_Events_of_interest_.xml_d174559e264.jpg" alt="System Profiler: Search dialog" /></span>
+            
+         </p>
+         
+         
+         <p>Searching is based on trace conditions. Trace conditions describe a selection criterion for matching an event and can be based
+            on anything that an event provides (ownership, data payload, and so on). 
+         </p>
+         
+         
+         <p>To add a condition that will locate all of the <tt>MsgSend()</tt> calls that may have been made for write system calls: 
+         </p>
+         
+         <br clear="none" /><ol>
+            <li>Add a new condition via the <span class="uicontrol">Add</span> button in the search dialog. This brings up a new condition dialog that you can fill in with the <tt>MsgSendv()</tt> kernel call and the <tt>write()</tt> function entry to match. When matching string values (such as function names), the matching is done based on a regular-expression
+               match. 
+               <p>
+                  <span><img src="../images/sysprof_Events_of_interest_.xml_d174559e295.jpg" alt="System Profiler: Trace Condition wizard" /></span>
+                  
+               </p>
+               
+            </li>
+            <li>Once you've defined the condition, it shows up in the Defined Conditions table shown in the Trace Search panel. You can combine
+               individual conditions to form Boolean expressions if required. 
+               <p>
+                  <span><img src="../images/sysprof_Events_of_interest_.xml_d174559e306.jpg" alt="System Profiler: Defined conditions" /></span>
+                  
+               </p>
+               
+            </li>
+            <li>Specifying the newly created condition in the Search Expression drop-down and selecting Search automatically opens up the
+               Search Results view. If the Timeline editor pane is open, double-clicking on a search result (assuming that the result isn't
+               filtered) moves the timeline selection directly to that event: 
+               <p>
+                  <span><img src="../images/sysprof_Events_of_interest_.xml_d174559e317.jpg" alt="System Profiler: Search results" /></span>
+                  
+               </p>
+               
+            </li>
+         </ol>
+         
+         
+         <p>Search results are also marked in the timeline to help show the event distribution over the period of the log file: </p>
+         
+         
+         <p>
+            <span><img src="../images/sysprof_Events_of_interest_.xml_d174559e331.jpg" alt="System Profiler: search results on the timeline" /></span>
+            
+         </p>
+         
+         
+         <p>
+            <strong>Exporting filtered log files with <span class="uicontrol">Save As</span></strong>
+            
+         </p>
+         
+         
+         <p>Often the kernel event files that are captured are large and contain a significant amount of nonessential data for the problem
+            at hand. Of course, this is generally only determined after the fact, once you've performed some basic analysis. 
+            
+            
+            
+            
+         </p>
+         
+         
+         <p>You can use the <span class="menucascade">
+               <span class="uicontrol">File</span>
+               &gt; <span class="uicontrol">Save As</span>
+               </span> menu command to create a new log file that's based on the current log file in the System Profiler editor. 
+         </p>
+         
+         
+         <p>You can restrict the new log file to just the selected area (if you've made a selection), and you can also use the current
+            filter settings (event and event owner) to reduce the amount of additional data that's stored in the log file. 
+         </p>
+         
+         
+         <p>The new log file contains the same attribute information as the original log file (including the system version, system boot
+            time, number of CPUs, and so on). Any event owners, such as interrupts, processes, and threads, which are referenced by events
+            in the new log file, are synthetically created with timestamps matching the start time(s) of the new log file. 
+         </p>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/sysprof_Use_cases_.html" shape="rect">System Profiler use cases</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

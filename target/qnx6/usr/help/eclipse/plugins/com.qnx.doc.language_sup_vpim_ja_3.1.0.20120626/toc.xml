@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Photon 日本語サプリメント 2.0">
+    <topic label="本書について" href="about.html"/>
+    <topic label="日本語入力ツール・バーと入力の手順" href="intro.html">
+      <topic label="日本語入力ツール・バー" href="intro.html">
+        <topic label="モード・ステータス・ボタン" href="intro.html"/>
+        <topic label="ヘルプ･ボタン" href="intro.html"/>
+        <topic label="変換位置設定ボタン" href="intro.html"/>
+        <topic label="クローズ･ボタン" href="intro.html"/>
+      </topic>
+      <topic label="日本語入力の手順" href="intro.html">
+          <topic label="読みを入力する" href="intro.html"/>
+          <topic label="入力文字を変換する" href="intro.html"/>
+          <topic label="文字を確定する" href="intro.html"/>
+      </topic>
+    </topic>
+    <topic label="基本操作" href="basics.html">
+      <topic label="入力環境" href="basics.html">
+        <topic label="入力環境の設定" href="basics.html"/>
+        <topic label="キー・コードで入力環境を設定する" href="basics.html">
+          <topic label="入力方式の設定" href="basics.html"/>
+          <topic label="入力モードの設定" href="basics.html"/>
+          <topic label="入力文字サイズの設定" href="basics.html"/>
+        </topic>
+        <topic label="モード・ステータス・ボタンで入力環境を設定する" href="basics.html"/>
+      </topic>
+      <topic label="文字の編集" href="basics.html">
+        <topic label="カーソルを移動する" href="basics.html"/>
+        <topic label="文字を削除する" href="basics.html">
+          <topic label="カーソルの前の文字を削除する" href="basics.html"/>
+          <topic label="カーソル位置の文字を削除する" href="basics.html"/>
+          <topic label="入力文字を取り消す" href="basics.html"/>
+        </topic>
+        <topic label="スペース文字の入力" href="basics.html"/>
+      </topic>
+    </topic>
+    <topic label="変換" href="conversion.html">
+      <topic label="漢字に変換する" href="conversion.html">
+        <topic label="複数の変換候補を表示する" href="conversion.html"/>
+        <topic label="入力文字を確定する" href="conversion.html">
+          <topic label="変換候補を確定する" href="conversion.html"/>
+          <topic label="同音語リストの変換候補を確定する" href="conversion.html"/>
+          <topic label="入力文字を強制的に確定する" href="conversion.html"/>
+        </topic>
+      </topic>
+      <topic label="ひらがなに変換する" href="conversion.html"/>
+      <topic label="カタカナに変換する" href="conversion.html"/>
+      <topic label="英数字に変換する" href="conversion.html"/>
+      <topic label="半角に変換する" href="conversion.html"/>
+      <topic label="注目文節を変更する" href="conversion.html">
+        <topic label="注目文節とは" href="conversion.html"/>
+        <topic label="注目文節を移動する" href="conversion.html"/>
+        <topic label="注目文節の長さを変更する" href="conversion.html"/>
+      </topic>
+      <topic label="文字コードから変換する" href="conversion.html"/>
+      <topic label="単語登録" href="conversion.html">
+            <topic label="例：" href="conversion.html"/>
+      </topic>
+    </topic>
+    <topic label="動作モード・オプション" href="option.html">
+      <topic label="動作モード・オプション・パネル" href="option.html"/>
+      <topic label="入力環境オプション" href="option.html"/>
+      <topic label="変換オプション" href="option.html">
+        <topic label="変換方式" href="option.html"/>
+        <topic label="コード体系" href="option.html"/>
+        <topic label="複合語優先変換" href="option.html"/>
+        <topic label="句読点変換" href="option.html"/>
+      </topic>
+      <topic label="カーソル・オプション" href="option.html"/>
+      <topic label="その他のオプション" href="option.html">
+        <topic label="学習機能" href="option.html"/>
+        <topic label="表計算ソフト入力" href="option.html"/>
+      </topic>
+    </topic>
+    <topic label="付録A: Photonエディタについて" href="app_a.html">
+        <topic label="日本語のファイルを作成する" href="app_a.html"/>
+    </topic>
+    <topic label="付録B:VJEキー・ストローク一覧" href="app_b.html"/>
+    <topic label="付録C: ローマ字入力の規則" href="app_c.html"/>
+    <topic label="付録D:ローマ字／かな対応表" href="app_d.html"/>
+</toc>

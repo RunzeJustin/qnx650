@@ -1,0 +1,90 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Process Properties pane" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Process_information_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Thread_Details_pane.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Environment_Details_Pane.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="ProcessPropertiesPane" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Process Properties pane</title>
+   </head>
+   <body id="ProcessPropertiesPane"><a name="ProcessPropertiesPane" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Process Properties pane</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>The Process Properties pane shows the process's startup arguments, and the values of the
+            process's IDs: real user, effective user, real group, and effective group. 
+            
+            
+            
+            
+         </p>
+         
+         
+         <p>The process arguments are the arguments that were used to start your selected process as
+            they were passed to your process, but not necessarily as you typed them. For example, if
+            you type <tt>ws *.c</tt>, the pane might show <cite>ws cursor.c io.c my.c phditto.c
+               swaprelay.c</cite>, since the shell expands the <cite>*.c</cite> before launching
+            the program. 
+            
+         </p>
+         
+         
+         <p>The process ID values determine which permissions are used for your program. For example,
+            if you start a process as <em>root</em>, but use the <a href="../../com.qnx.doc.neutrino_lib_ref/s/seteuid.html" shape="rect"><tt>seteuid</tt></a> and <a href="../../com.qnx.doc.neutrino_lib_ref/s/setegid.html" shape="rect"><tt>setegid</tt></a> functions to run the program as the
+            user <em>jsmith</em>, the program runs with <em>jsmith</em>'s permissions. By default, all
+            programs launched from the IDE run as <em>root</em>. 
+            
+         </p>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/sysinfo_Process_information_.html" shape="rect">Watching your processes</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/sysinfo_Thread_Details_pane.html" shape="rect">Thread Details pane</a></div>
+            
+            <div><a href="../topic/sysinfo_Environment_Details_Pane.html" shape="rect">Environment Variables pane</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

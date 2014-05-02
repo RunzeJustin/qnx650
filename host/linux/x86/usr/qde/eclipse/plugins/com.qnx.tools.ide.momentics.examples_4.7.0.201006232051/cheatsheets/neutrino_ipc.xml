@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cheatsheet title="Neutrino Interprocess Communications"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="cheatsheet"
+  xsi:schemaLocation="cheatsheet contentFile.xsd">
+  <intro href="/com.qnx.doc.neutrino_sys_arch/ipc.html">
+    <description>
+      Welcome to the "Neutrino Interprocess Communications" tutorial.
+      Click the following link to start.
+    </description>
+  </intro>
+  <item href="/org.eclipse.platform.doc.user/reference/ref-cheatsheets.htm" title="Cheat Sheet introduction">
+  <description>If you need information about how to work with cheat sheets,
+   click on the button with the question mark on the right. 
+   To see the contents of the next instruction,
+   you must complete all tasks by 
+   clicking on "Click to Complete", or by performing the 
+   auto-complete command.</description>
+  </item>
+  <item title="Messages and Pulses" dialog="true" skip="true">
+    <description>Create and run the sample project that demonstrates messages and pulses:</description>
+    <subitem
+      label='Select "File-&gt;New-&gt;Example..." from the main menu, expand the "QNX Neutrino Examples" category, and then select "QNX Example Neutrino IPC and Shmem Project".'>
+      <command
+        serialization="org.eclipse.ui.newWizard(newWizardId=com.qnx.tools.ide.momentics.examples.wizards.7)"
+        confirm="true" />
+    </subitem>
+    <subitem label='Do not change the project name from "NeutrinoIPC", just click "Finish".' />
+    <subitem
+      label='Right-click on the "NeutrinoIPC" project in the "Project Explorer" view, and then select "Build Project".'>
+    </subitem>
+    <subitem label='Open the "pulse_server.c" file and read its comments.'>
+      <command
+        serialization="org.eclipse.ui.navigate.openResource(filePath=/NeutrinoIPC/pulse_server.c)"
+        confirm="true" />
+    </subitem>
+    <subitem label='Open the "pulse_client.c" file and read its comments.'>
+      <command
+        serialization="org.eclipse.ui.navigate.openResource(filePath=/NeutrinoIPC/pulse_client.c)"
+        confirm="true" />
+    </subitem>
+    <subitem label='Expand the "Binaries" folder for the project.'></subitem>
+    <subitem label='Right-click on the "pulse_server" binary and select "Run As->C/C++ QNX Application".'></subitem>
+    <subitem label='Select a target from the main tab, and then click "Run".'></subitem>
+    <subitem label='Run "pulse_client" using the same steps.'></subitem>
+    <subitem label='Switch to the "System Information" perspective to see the processes running.'>
+      <command confirm="true"
+        serialization="org.eclipse.ui.perspectives.showPerspective(org.eclipse.ui.perspectives.showPerspective.perspectiveId=com.qnx.tools.ide.sysinfo.perspective)" />
+    </subitem>
+    <subitem
+      label='Stop the server by sending a "SIGTERM" signal. Right-click on the server process in the "Target Navigator" view, and then select "Deliver Signal...", and then click "Ok".'>
+    </subitem>
+    <subitem label="Kill the client process the same way."></subitem>
+  </item>
+  <item title="Shared Memory (shmem)">
+     <description>Create and run the sample project that demonstrates shared memory between processes:</description>
+    <subitem
+      label='Select "File-&gt;New-&gt;Example..." from the main menu, expand the "QNX Neutrino Examples" category, and select "QNX Example Neutrino IPC and Shmem Project".'>
+      <command
+        serialization="org.eclipse.ui.newWizard(newWizardId=com.qnx.tools.ide.momentics.examples.wizards.7)"
+        confirm="true" />
+    </subitem>
+    <subitem label='Do not change the project name "NeutrinoIPC", just click "Finish".' />
+    <subitem
+      label='Right-click on the "NeutrinoIPC" project in the "Project Explorer" view, and then select "Build Project".'>
+    </subitem>
+    <subitem label='Open the "shmemcreator.c" file and read its comments.'>
+      <command
+        serialization="org.eclipse.ui.navigate.openResource(filePath=/NeutrinoIPC/shmemcreator.c)"
+        confirm="true" />
+    </subitem>
+    <subitem label='Open the "shmemuser.c" file and read its comments.'>
+      <command
+        serialization="org.eclipse.ui.navigate.openResource(filePath=/NeutrinoIPC/shmemuser.c)"
+        confirm="true" />
+    </subitem>
+    <subitem label='Expand the "Binaries" folder for the project.'></subitem>
+    <subitem label='Right-click on "shmemcreator", and then select "Run As->C/C++ QNX Application".'></subitem>
+    <subitem label='Select a target from the "Main" tab, and then click "Run".'></subitem>
+    <subitem label='Run "shmemuser" using same steps as above.'></subitem>
+    <subitem label='Inspect the "Console" view.'/>
+  </item>
+  <item title="Signals">
+     <description>Create and run the sample project that demonstrates signal handling:</description>
+    <subitem
+      label='Select "File-&gt;New-&gt;Example..." from the main menu, expand the "QNX Neutrino Examples" category, and select "QNX Example Neutrino IPC and Shmem Project".'>
+      <command
+        serialization="org.eclipse.ui.newWizard(newWizardId=com.qnx.tools.ide.momentics.examples.wizards.7)"
+        confirm="true" />
+    </subitem>
+    <subitem label='Do not change project name "NeutrinoIPC", just click "Finish".' />
+    <subitem
+      label='Right-click on the "NeutrinoIPC" project in the "Project Explorer" view and select "Build Project".'>
+    </subitem>
+    <subitem label='Open the "sigsleeper.c" file and read its comments.'>
+      <command
+        serialization="org.eclipse.ui.navigate.openResource(filePath=/NeutrinoIPC/sigsleeper.c)"
+        confirm="true" />
+    </subitem>
+
+    <subitem label='Expand the "Binaries" folder.'></subitem>
+    <subitem label='Right-click on "sigsleeper" and select "Run As->C/C++ QNX Application".'></subitem>
+    <subitem label='Select a target in the "Main" tab, and then click "Run".'></subitem>
+    <subitem label='Open the "Target Navigator" view by selecting "Window->Show View->Other...->QNX Targets/ QNX Target Navigator".'>
+        <command
+      serialization="org.eclipse.ui.views.showView(org.eclipse.ui.views.showView.viewId=com.qnx.tools.ide.target.internal.ui.targetview)"
+      confirm="true" />
+    </subitem>
+        <subitem
+      label='Send a "SIGTERM" signal to "sigsleeper". Right-click on a process in the "Target Navigator" view, select "Deliver Signal...", and then click "Ok".'>
+    </subitem>
+    <subitem label='Inspect the "Console" view. You will notice that the process indicates that it cannot finish the operation.'/>
+    <subitem label='The fixed file is "sigsleeper_fixed.c". Open and inspect its context.'>
+      <command
+        serialization="org.eclipse.ui.navigate.openResource(filePath=/NeutrinoIPC/sigsleeper.c)"
+        confirm="true" />
+    </subitem>
+    <subitem label='Repeat the steps for running the "sigsleeper_fixed" executable, and inspect its results.'></subitem>
+    <onCompletion>The end.</onCompletion>
+  </item>
+</cheatsheet>

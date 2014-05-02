@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Universal Serial Bus (USB) Devices">
+      <topic label="About the USB DDK" href="about.html">
+          <topic label="What you'll find in this guide" href="about.html#In_this_guide"/>
+          <topic label="Assumptions" href="about.html#Assumptions"/>
+          <topic label="Building DDKs" href="about.html#about"/>
+          <topic label="Typographical conventions" href="about.html#Typographical_conventions">
+            <topic label="Note to Windows users" href="about.html#WINDOWSNOTE"/>
+            <topic label="Navigation buttons" href="about.html#Navigation"/>
+          </topic>
+          <topic label="Technical support" href="about.html#Support"/>
+      </topic>
+      <topic label="Before You Begin" href="beforeyoubegin.html">
+          <topic label="System requirements" href="beforeyoubegin.html#REQUIRE">
+            <topic label="For QNX Neutrino" href="beforeyoubegin.html#id4"/>
+            <topic label="For QNX_4" href="beforeyoubegin.html#id6"/>
+          </topic>
+          <topic label="USB devices supported" href="beforeyoubegin.html#DEVICES"/>
+          <topic label="Known limitations" href="beforeyoubegin.html#LIMITS">
+            <topic label="EHCI" href="beforeyoubegin.html#id10"/>
+            <topic label="Photon and text mode" href="beforeyoubegin.html#id12"/>
+          </topic>
+      </topic>
+      <topic label="Overview" href="overview.html">
+          <topic label="The USB stack and library" href="overview.html#STACKANDLIB">
+            <topic label="Host Controller Interface (HCI) types" href="overview.html#HCITYPES"/>
+            <topic label="Data buffers" href="overview.html#DATATRANSFERS"/>
+            <topic label="USB enumerator" href="overview.html#ENUMERATOR"/>
+          </topic>
+          <topic label="How a class driver works" href="overview.html#HOWITWORKS"/>
+      </topic>
+      <topic label="USB Utilities" href="utils.html"/>
+      <topic label="USB Library Reference" href="api.html">
+          <topic label="Functions arranged by category" href="api.html#Categories">
+            <topic label="Connection functions" href="api.html#CONNECT"/>
+            <topic label="Memory-management functions" href="api.html#MEM"/>
+            <topic label="I/O functions" href="api.html#IO"/>
+            <topic label="Pipe-management functions" href="api.html#PIPE"/>
+            <topic label="Configuration and interface functions" href="api.html#CONFIG"/>
+            <topic label="Miscellaneous and convenience functions" href="api.html#MISC"/>
+          </topic>
+          <topic label="usbd_abort_pipe" href="usbd_abort_pipe.html">
+            <topic label="Description:" href="usbd_abort_pipe.html#id9"/>
+          </topic>
+          <topic label="usbd_alloc" href="usbd_alloc.html">
+            <topic label="Description:" href="usbd_alloc.html#id9"/>
+          </topic>
+          <topic label="usbd_alloc_urb" href="usbd_alloc_urb.html">
+            <topic label="Description:" href="usbd_alloc_urb.html#id9"/>
+          </topic>
+          <topic label="usbd_args_lookup" href="usbd_args_lookup.html">
+            <topic label="Description:" href="usbd_args_lookup.html#id9"/>
+          </topic>
+          <topic label="usbd_attach" href="usbd_attach.html">
+            <topic label="Description:" href="usbd_attach.html#id9">
+              <topic label="Looping" href="usbd_attach.html#id11"/>
+            </topic>
+          </topic>
+          <topic label="usbd_close_pipe" href="usbd_close_pipe.html">
+            <topic label="Description:" href="usbd_close_pipe.html#id9"/>
+          </topic>
+          <topic label="usbd_configuration_descriptor" href="usbd_configuration_descriptor.html">
+            <topic label="Description:" href="usbd_configuration_descriptor.html#id9"/>
+          </topic>
+          <topic label="usbd_connect" href="usbd_connect.html">
+            <topic label="Description:" href="usbd_connect.html#id9">
+              <topic label="Data structures" href="usbd_connect.html#id11"/>
+            </topic>
+            <topic label="Examples:" href="usbd_connect.html#id15"/>
+          </topic>
+          <topic label="usbd_descriptor" href="usbd_descriptor.html">
+            <topic label="Description:" href="usbd_descriptor.html#id9"/>
+          </topic>
+          <topic label="usbd_detach" href="usbd_detach.html">
+            <topic label="Description:" href="usbd_detach.html#id9"/>
+          </topic>
+          <topic label="usbd_device_descriptor" href="usbd_device_descriptor.html">
+            <topic label="Description:" href="usbd_device_descriptor.html#id9"/>
+          </topic>
+          <topic label="usbd_device_extra" href="usbd_device_extra.html">
+            <topic label="Description:" href="usbd_device_extra.html#id9"/>
+          </topic>
+          <topic label="usbd_device_lookup" href="usbd_device_lookup.html">
+            <topic label="Description:" href="usbd_device_lookup.html#id9"/>
+          </topic>
+          <topic label="usbd_disconnect" href="usbd_disconnect.html">
+            <topic label="Description:" href="usbd_disconnect.html#id9"/>
+          </topic>
+          <topic label="usbd_endpoint_descriptor" href="usbd_endpoint_descriptor.html">
+            <topic label="Description:" href="usbd_endpoint_descriptor.html#id9"/>
+          </topic>
+          <topic label="usbd_feature" href="usbd_feature.html">
+            <topic label="Description:" href="usbd_feature.html#id9"/>
+          </topic>
+          <topic label="usbd_free" href="usbd_free.html">
+            <topic label="Description:" href="usbd_free.html#id9"/>
+          </topic>
+          <topic label="usbd_free_urb" href="usbd_free_urb.html">
+            <topic label="Description:" href="usbd_free_urb.html#id9"/>
+          </topic>
+          <topic label="usbd_get_frame" href="usbd_get_frame.html">
+            <topic label="Description:" href="usbd_get_frame.html#id9"/>
+          </topic>
+          <topic label="usbd_hcd_ext_info, usbd_hcd_info" href="usbd_hcd_info.html">
+            <topic label="Description:" href="usbd_hcd_info.html#id9"/>
+          </topic>
+          <topic label="usbd_hub_descriptor" href="usbd_hub_descriptor.html">
+            <topic label="Description:" href="usbd_hub_descriptor.html#id9"/>
+          </topic>
+          <topic label="usbd_interface_descriptor" href="usbd_interface_descriptor.html">
+            <topic label="Description:" href="usbd_interface_descriptor.html#id9"/>
+          </topic>
+          <topic label="usbd_io" href="usbd_io.html">
+            <topic label="Description:" href="usbd_io.html#id9"/>
+          </topic>
+          <topic label="usbd_languages_descriptor" href="usbd_languages_descriptor.html">
+            <topic label="Description:" href="usbd_languages_descriptor.html#id9"/>
+          </topic>
+          <topic label="usbd_mphys" href="usbd_mphys.html">
+            <topic label="Description:" href="usbd_mphys.html#id9"/>
+          </topic>
+          <topic label="usbd_open_pipe" href="usbd_open_pipe.html">
+            <topic label="Description:" href="usbd_open_pipe.html#id9"/>
+          </topic>
+          <topic label="usbd_parse_descriptors" href="usbd_parse_descriptors.html">
+            <topic label="Description:" href="usbd_parse_descriptors.html#id9"/>
+          </topic>
+          <topic label="usbd_pipe_device" href="usbd_pipe_device.html">
+            <topic label="Description:" href="usbd_pipe_device.html#id9"/>
+          </topic>
+          <topic label="usbd_pipe_endpoint" href="usbd_pipe_endpoint.html">
+            <topic label="Description:" href="usbd_pipe_endpoint.html#id9"/>
+          </topic>
+          <topic label="usbd_reset_device" href="usbd_reset_device.html">
+            <topic label="Description:" href="usbd_reset_device.html#id9"/>
+          </topic>
+          <topic label="usbd_reset_pipe" href="usbd_reset_pipe.html">
+            <topic label="Description:" href="usbd_reset_pipe.html#id9"/>
+          </topic>
+          <topic label="usbd_select_config" href="usbd_select_config.html">
+            <topic label="Description:" href="usbd_select_config.html#id9"/>
+          </topic>
+          <topic label="usbd_select_interface" href="usbd_select_interface.html">
+            <topic label="Description:" href="usbd_select_interface.html#id9"/>
+          </topic>
+          <topic label="usbd_setup_bulk" href="usbd_setup_bulk.html">
+            <topic label="Description:" href="usbd_setup_bulk.html#id9"/>
+          </topic>
+          <topic label="usbd_setup_control" href="usbd_setup_control.html">
+            <topic label="Description:" href="usbd_setup_control.html#id9"/>
+          </topic>
+          <topic label="usbd_setup_interrupt" href="usbd_setup_interrupt.html">
+            <topic label="Description:" href="usbd_setup_interrupt.html#id9"/>
+          </topic>
+          <topic label="usbd_setup_isochronous" href="usbd_setup_isochronous.html">
+            <topic label="Description:" href="usbd_setup_isochronous.html#id9"/>
+          </topic>
+          <topic label="usbd_setup_vendor" href="usbd_setup_vendor.html">
+            <topic label="Description:" href="usbd_setup_vendor.html#id9"/>
+          </topic>
+          <topic label="usbd_status" href="usbd_status.html">
+            <topic label="Description:" href="usbd_status.html#id9"/>
+          </topic>
+          <topic label="usbd_string" href="usbd_string.html">
+            <topic label="Description:" href="usbd_string.html#id9"/>
+          </topic>
+          <topic label="usbd_topology, usbd_topology_ext" href="usbd_topology.html">
+            <topic label="Description:" href="usbd_topology.html#id9"/>
+          </topic>
+          <topic label="usbd_urb_status" href="usbd_urb_status.html">
+            <topic label="Description:" href="usbd_urb_status.html#id9">
+              <topic label="Completion status" href="usbd_urb_status.html#id11"/>
+            </topic>
+          </topic>
+      </topic>
+</toc>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="The QNX Neutrino Cookbook: Recipes for Programmers">
+      <topic label="About This Guide" href="about.html">
+          <topic label="What you'll find in this guide" href="about.html#In_this_guide"/>
+          <topic label="Typographical conventions" href="about.html#Typographical_conventions">
+            <topic label="Note to Windows users" href="about.html#WINDOWSNOTE"/>
+            <topic label="Navigation buttons" href="about.html#Navigation"/>
+          </topic>
+          <topic label="Technical support" href="about.html#Support"/>
+      </topic>
+      <topic label="Foreword to the First Edition by Brian Stecher" href="foreword.html"/>
+      <topic label="Preface to the First Edition by Rob Krten" href="preface.html">
+            <topic label="What's in this book?" href="preface.html#In_this_book"/>
+            <topic label="Philosophy" href="preface.html#Philosophy">
+              <topic label="The Basics" href="preface.html#Basics"/>
+              <topic label="High Availability" href="preface.html#High_availability"/>
+              <topic label="Design Philosophy" href="preface.html#Design"/>
+            </topic>
+            <topic label="Recipes" href="preface.html#Recipes">
+              <topic label="Web-Counter Resource Manager" href="preface.html#Web_counter"/>
+              <topic label="ADIOS --- Analog / Digital I/O Server" href="preface.html#ADIOS"/>
+              <topic label="RAM-disk Filesystem Manager" href="preface.html#RAM_disk"/>
+              <topic label="The tar Filesystem Manager" href="preface.html#tar"/>
+            </topic>
+            <topic label="References" href="preface.html#References">
+              <topic label="Filesystems" href="preface.html#References_filesystems"/>
+              <topic label="The /proc filesystem" href="preface.html#References_proc_fs"/>
+              <topic label="Sample Programs" href="preface.html#References_CDROM"/>
+              <topic label="Glossary" href="preface.html#Glossary"/>
+            </topic>
+            <topic label="What's not in this book?" href="preface.html#Not_in_this_book"/>
+            <topic label="Other references" href="preface.html#Other_references"/>
+            <topic label="Thanks!" href="preface.html#Thanks">
+              <topic label="Century Aluminum" href="preface.html#Century_Aluminum"/>
+            </topic>
+      </topic>
+      <topic label="The Basics" href="s1_basics.html">
+          <topic label="The basics" href="s1_basics.html#Overview"/>
+          <topic label="In the beginning..." href="s1_basics.html#Beginning">
+            <topic label="The main function" href="s1_basics.html#main_function"/>
+            <topic label="Command-line processing --- optproc" href="s1_basics.html#optproc"/>
+            <topic label="Common globals" href="s1_basics.html#Global_variables"/>
+            <topic label="Usage messages" href="s1_basics.html#Usage_messages"/>
+          </topic>
+          <topic label="Threaded resource managers" href="s1_basics.html#threaded_resource_managers"/>
+      </topic>
+      <topic label="High Availability" href="s1_ha.html">
+          <topic label="Terminology" href="s1_ha.html#Terminology"/>
+          <topic label="Lies, damn lies, and statistics" href="s1_ha.html#Lies"/>
+          <topic label="Increasing availability" href="s1_ha.html#Increasing_availability">
+            <topic label="Increasing the MTBF" href="s1_ha.html#Increasing_MTBF"/>
+            <topic label="Decreasing the MTTR" href="s1_ha.html#Decreasing_MTTR"/>
+            <topic label="Parallel versus serial" href="s1_ha.html#Parallel_vs_serial">
+              <topic label="Series calculations" href="s1_ha.html#Series_calculations"/>
+              <topic label="Parallel calculations" href="s1_ha.html#Parallel_calculations"/>
+              <topic label="Aggregate calculations" href="s1_ha.html#Aggregate_calculations"/>
+            </topic>
+          </topic>
+          <topic label="Failure modes and recovery models" href="s1_ha.html#Failure_and_recovery">
+            <topic label="Cascade failures" href="s1_ha.html#Cascade_failures">
+              <topic label="System startup and HA" href="s1_ha.html#System_startup"/>
+            </topic>
+            <topic label="Overlords, or Big Brother is watching you" href="s1_ha.html#Overlords"/>
+            <topic label="Cold, warm, and hot standby" href="s1_ha.html#Standby">
+              <topic label="Achieving cold standby" href="s1_ha.html#Cold_standby"/>
+              <topic label="Achieving warm standby" href="s1_ha.html#Warm_standby"/>
+              <topic label="Achieving hot standby" href="s1_ha.html#Hot_standby"/>
+              <topic label="Problems" href="s1_ha.html#Synchronization_problems"/>
+            </topic>
+            <topic label="Detecting failure" href="s1_ha.html#Detecting_failure">
+              <topic label="Obituaries" href="s1_ha.html#Obituaries"/>
+            </topic>
+            <topic label="Graceful fail-over" href="s1_ha.html#Failover"/>
+            <topic label="Using shadows" href="s1_ha.html#Using_shadows"/>
+            <topic label="In-service upgrades" href="s1_ha.html#In_service_upgrades"/>
+            <topic label="Policies" href="s1_ha.html#Policies"/>
+          </topic>
+          <topic label="Implementing HA" href="s1_ha.html#Implementing_HA"/>
+          <topic label="RK drones on about his home systems again" href="s1_ha.html#RK_drones"/>
+          <topic label="Other HA systems" href="s1_ha.html#Other_HA_systems"/>
+      </topic>
+      <topic label="Design Philosophy" href="s1_dd.html">
+          <topic label="Decoupling design in a message-passing environment" href="s1_dd.html#Decoupling">
+            <topic label="Door-lock actuators" href="s1_dd.html#Door_lock"/>
+            <topic label="At this point..." href="s1_dd.html#At_this_point"/>
+          </topic>
+          <topic label="Managing message flow" href="s1_dd.html#Message_flow">
+            <topic label="Swipe-card readers" href="s1_dd.html#Swipe_card">
+              <topic label="Control program sends to the swipe-card reader" href="s1_dd.html#Control_to_reader"/>
+              <topic label="Swipe-card reader sends to control program" href="s1_dd.html#Reader_to_control"/>
+              <topic label="Using a keypad challenge --- control program sends to the swipe-card reader" href="s1_dd.html#Keypad_control_to_reader"/>
+              <topic label="Using a keypad challenge --- swipe-card reader sends to control program" href="s1_dd.html#Keypad_reader_to_control"/>
+            </topic>
+          </topic>
+          <topic label="Scalability" href="s1_dd.html#Scalability">
+            <topic label="Distributed processing" href="s1_dd.html#Distributed_processing"/>
+          </topic>
+          <topic label="Summary" href="s1_dd.html#Summary"/>
+      </topic>
+      <topic label="Web Counter Resource Manager" href="s2_web.html">
+          <topic label="Requirements" href="s2_web.html#Requirements">
+              <topic label="Using the web counter resource manager" href="s2_web.html#Using_resmgr"/>
+          </topic>
+          <topic label="Design" href="s2_web.html#Design">
+              <topic label="Generating the graphical image" href="s2_web.html#Generating_image"/>
+          </topic>
+          <topic label="The code --- phase 1" href="s2_web.html#Code_phase_1">
+            <topic label="Operation" href="s2_web.html#Operation">
+              <topic label="Generating the graphical image" href="s2_web.html#Operation_generating_image"/>
+            </topic>
+            <topic label="Step-by-step code walkthrough" href="s2_web.html#Walkthrough">
+              <topic label="Include files and data structures" href="s2_web.html#Files_and_structures"/>
+              <topic label="Source files" href="s2_web.html#Source_files"/>
+              <topic label="The code" href="s2_web.html#Execution">
+                <topic label="The execute_resmgr function" href="s2_web.html#execute_resmgr_phase1"/>
+                <topic label="The io_open function" href="s2_web.html#io_open"/>
+                <topic label="The io_read function" href="s2_web.html#io_read_phase1"/>
+                <topic label="The io_close_ocb function" href="s2_web.html#io_close_ocb_phase1"/>
+                <topic label="The render_7segment function" href="s2_web.html#render_7segment"/>
+                <topic label="The encode_image function" href="s2_web.html#encode_image"/>
+              </topic>
+            </topic>
+          </topic>
+          <topic label="The code --- phase 2" href="s2_web.html#Code_phase_2">
+            <topic label="Persistent count file" href="s2_web.html#Persistent_count"/>
+            <topic label="Font selection" href="s2_web.html#Font_selection"/>
+            <topic label="Plain text rendering" href="s2_web.html#Plain_text"/>
+            <topic label="Writing to the resource" href="s2_web.html#Writing_to_resource">
+              <topic label="Adding the io_write handler" href="s2_web.html#Adding_io_write"/>
+              <topic label="The io_write function" href="s2_web.html#io_write"/>
+              <topic label="The io_close_ocb function" href="s2_web.html#io_close_ocb_phase2"/>
+            </topic>
+          </topic>
+          <topic label="The code --- phase 3" href="s2_web.html#Code_phase_3">
+            <topic label="Filename processing tricks" href="s2_web.html#Filename_processing"/>
+            <topic label="Changes" href="s2_web.html#Changes">
+              <topic label="Globals" href="s2_web.html#Globals"/>
+              <topic label="The new-and-improved execute_resmgr" href="s2_web.html#execute_resmgr_phase3"/>
+              <topic label="Option processing" href="s2_web.html#Options"/>
+              <topic label="Handling io_read" href="s2_web.html#io_read_phase3">
+                <topic label="Operating on a file" href="s2_web.html#Operating_on_a_file"/>
+                <topic label="Operating on a directory" href="s2_web.html#Operating_on_a_directory"/>
+                <topic label="The persistent counter file" href="s2_web.html#Persistent_counter_file"/>
+              </topic>
+            </topic>
+          </topic>
+          <topic label="Enhancements" href="s2_web.html#Enhancements"/>
+          <topic label="References" href="s2_web.html#References">
+            <topic label="Header files" href="s2_web.html#References_header_files"/>
+            <topic label="Functions" href="s2_web.html#References_functions"/>
+            <topic label="Books" href="s2_web.html#References_books"/>
+          </topic>
+      </topic>
+      <topic label="ADIOS --- Analog/Digital I/O Server" href="s2_adios.html">
+          <topic label="Requirements" href="s2_adios.html#Requirements"/>
+          <topic label="Design" href="s2_adios.html#Design">
+              <topic label="Driver Design" href="s2_adios.html#Driver_design">
+                <topic label="DIO-144" href="s2_adios.html#DIO-144"/>
+                <topic label="ISO-813" href="s2_adios.html#ISO-813"/>
+                <topic label="PCL-711" href="s2_adios.html#PCL-711"/>
+              </topic>
+              <topic label="Shared Memory Design" href="s2_adios.html#Shared_memory_design"/>
+              <topic label="Tags database design" href="s2_adios.html#Tags_database_design"/>
+          </topic>
+          <topic label="The Driver Code" href="s2_adios.html#Driver_code">
+            <topic label="Theory of operation" href="s2_adios.html#Theory_of_operation"/>
+            <topic label="Code walkthrough" href="s2_adios.html#Code_walkthrough">
+              <topic label="main and friends" href="s2_adios.html#main_function"/>
+              <topic label="The resource manager modules" href="s2_adios.html#resmgr_modules"/>
+              <topic label="The card interface modules" href="s2_adios.html#Card_interface">
+                <topic label="Card configuration" href="s2_adios.html#Card_configuration"/>
+                <topic label="Analog input" href="s2_adios.html#Analog_input"/>
+                <topic label="Analog output" href="s2_adios.html#Analog_output"/>
+                <topic label="Digital input" href="s2_adios.html#Digial_input"/>
+                <topic label="Digital output" href="s2_adios.html#Digital_output"/>
+              </topic>
+            </topic>
+          </topic>
+          <topic label="The ADIOS server code" href="s2_adios.html#ADIOS_server">
+            <topic label="The usual stuff" href="s2_adios.html#ADIOS_main_function"/>
+            <topic label="The shared memory region" href="s2_adios.html#ADIOS_shared_memory">
+              <topic label="Calculating the sizes of data structures" href="s2_adios.html#Structure_sizes"/>
+              <topic label="Open and check the shared memory" href="s2_adios.html#Opening_shared_memory"/>
+              <topic label="Truncate and map shared memory" href="s2_adios.html#Mapping_shared_memory"/>
+            </topic>
+            <topic label="Acquiring data" href="s2_adios.html#Acquiring_data"/>
+          </topic>
+          <topic label="The showsamp and tag utilities" href="s2_adios.html#Utilities">
+            <topic label="The showsamp utility" href="s2_adios.html#showsamp_utility"/>
+            <topic label="The tag utility" href="s2_adios.html#tag_utility"/>
+          </topic>
+          <topic label="References" href="s2_adios.html#References">
+            <topic label="Header files" href="s2_adios.html#References_header_files"/>
+            <topic label="Functions" href="s2_adios.html#References_functions"/>
+          </topic>
+      </topic>
+      <topic label="RAM-disk Filesystem" href="s2_ramdisk.html">
+          <topic label="Requirements" href="s2_ramdisk.html#Requirements">
+            <topic label="Connect functions" href="s2_ramdisk.html#Connect_functions"/>
+            <topic label="I/O functions" href="s2_ramdisk.html#IO_functions"/>
+            <topic label="Missing functions" href="s2_ramdisk.html#Missing_functions"/>
+          </topic>
+          <topic label="Design" href="s2_ramdisk.html#Design"/>
+          <topic label="The code" href="s2_ramdisk.html#Code">
+            <topic label="The extended attributes structure" href="s2_ramdisk.html#Extended_attributes"/>
+            <topic label="The io_read function" href="s2_ramdisk.html#io_read"/>
+            <topic label="The io_write function" href="s2_ramdisk.html#io_write"/>
+            <topic label="The c_open function" href="s2_ramdisk.html#c_open">
+              <topic label="Finding the target" href="s2_ramdisk.html#Finding_target">
+                <topic label="The pathwalk function" href="s2_ramdisk.html#pathwalk"/>
+                <topic label="The connect_msg_to_attr function" href="s2_ramdisk.html#connect_msg_to_attr"/>
+              </topic>
+              <topic label="Fun with symlinks" href="s2_ramdisk.html#Symlinks"/>
+              <topic label="Analyze the mode flag" href="s2_ramdisk.html#mode_flag"/>
+              <topic label="Bind the OCB and attributes structure" href="s2_ramdisk.html#Binding_OCB"/>
+              <topic label="Finally, the c_open code walkthrough" href="s2_ramdisk.html#c_open_walkthrough"/>
+              <topic label="Walkthrough" href="s2_ramdisk.html#Walkthrough"/>
+              <topic label="The redirect_symlink function" href="s2_ramdisk.html#redirect_symlink"/>
+            </topic>
+            <topic label="The c_readlink function" href="s2_ramdisk.html#c_readlink"/>
+            <topic label="The c_link function" href="s2_ramdisk.html#c_link"/>
+            <topic label="The c_rename function" href="s2_ramdisk.html#c_rename"/>
+            <topic label="The c_mknod function" href="s2_ramdisk.html#c_mknod"/>
+            <topic label="The c_unlink function" href="s2_ramdisk.html#c_unlink"/>
+            <topic label="The io_close_ocb function" href="s2_ramdisk.html#io_close_ocb"/>
+            <topic label="The io_devctl function" href="s2_ramdisk.html#io_devctl">
+              <topic label="Mounting options" href="s2_ramdisk.html#Mounting_options"/>
+              <topic label="Filesystem statistics" href="s2_ramdisk.html#Filesystem_stats"/>
+            </topic>
+            <topic label="The c_mount function" href="s2_ramdisk.html#c_mount"/>
+          </topic>
+          <topic label="References" href="s2_ramdisk.html#References">
+            <topic label="Header files" href="s2_ramdisk.html#References_header_files"/>
+            <topic label="Functions" href="s2_ramdisk.html#References_functions"/>
+          </topic>
+      </topic>
+      <topic label="TAR Filesystem" href="s2_tarfs.html">
+          <topic label="Requirements" href="s2_tarfs.html#Requirements"/>
+          <topic label="Design" href="s2_tarfs.html#Design">
+            <topic label="Creating a .tar file" href="s2_tarfs.html#Creating_tar_files"/>
+          </topic>
+          <topic label="The code" href="s2_tarfs.html#Code">
+            <topic label="The structures" href="s2_tarfs.html#Structures"/>
+            <topic label="The functions" href="s2_tarfs.html#Functions">
+              <topic label="The c_mount function" href="s2_tarfs.html#c_mount"/>
+              <topic label="The analyze_tar_file function" href="s2_tarfs.html#analyze_tar_file"/>
+              <topic label="The add_tar_entry function" href="s2_tarfs.html#add_tar_entry"/>
+              <topic label="The io_read function and related utilities" href="s2_tarfs.html#io_read"/>
+            </topic>
+            <topic label="The mount helper program" href="s2_tarfs.html#Mount_helper"/>
+          </topic>
+          <topic label="Variations on a theme" href="s2_tarfs.html#Variations">
+            <topic label="Virtual filesystem for USENET news (VFNews)" href="s2_tarfs.html#USENET">
+              <topic label="How does USENET news work?" href="s2_tarfs.html#How_news_works"/>
+              <topic label="So why is this a problem?" href="s2_tarfs.html#Why_a_problem"/>
+              <topic label="How can this possibly be made better?" href="s2_tarfs.html#How_to_improve"/>
+              <topic label="Operation" href="s2_tarfs.html#Operation"/>
+            </topic>
+            <topic label="Strange and unusual filesystems" href="s2_tarfs.html#Unusual_filesystems">
+              <topic label="Indexed filesystem" href="s2_tarfs.html#Indexed_filesystem"/>
+              <topic label="Executing commands" href="s2_tarfs.html#Executing_commands"/>
+            </topic>
+            <topic label="Secure filesystem" href="s2_tarfs.html#Secure_filesystem"/>
+            <topic label="Line-based filesystem" href="s2_tarfs.html#Line_based_filesystem"/>
+          </topic>
+          <topic label="References" href="s2_tarfs.html#References">
+            <topic label="Header files" href="s2_tarfs.html#References_header_files"/>
+            <topic label="Functions" href="s2_tarfs.html#References_functions"/>
+            <topic label="Books" href="s2_tarfs.html#References_books"/>
+          </topic>
+      </topic>
+      <topic label="Filesystems" href="s3_fsys.html">
+          <topic label="What is a filesystem?" href="s3_fsys.html#Overview">
+            <topic label="Hierarchical arrangement" href="s3_fsys.html#Hierarchy"/>
+            <topic label="Data elements" href="s3_fsys.html#Data_elements"/>
+            <topic label="The mount point and the root" href="s3_fsys.html#Mountpoints"/>
+          </topic>
+          <topic label="What does a filesystem do?" href="s3_fsys.html#What_filesystems_do"/>
+          <topic label="Filesystems and Neutrino" href="s3_fsys.html#Filesystems_and_Neutrino"/>
+          <topic label="How does a filesystem work?" href="s3_fsys.html#How_filesystems_work">
+            <topic label="Mount point management" href="s3_fsys.html#Mountpoint_management">
+              <topic label="Unnamed mount registration" href="s3_fsys.html#Unnamed_mount_registration"/>
+              <topic label="Special device registration" href="s3_fsys.html#Special_device_registration"/>
+              <topic label="Mount point registration" href="s3_fsys.html#Mountpoint_registration"/>
+            </topic>
+            <topic label="Pathname resolution" href="s3_fsys.html#Pathname_resolution"/>
+            <topic label="Directory management" href="s3_fsys.html#Directory_management"/>
+            <topic label="Data element content management" href="s3_fsys.html#Date_element_content"/>
+          </topic>
+          <topic label="References" href="s3_fsys.html#References">
+            <topic label="Chapters in this book" href="s3_fsys.html#References_chapters"/>
+            <topic label="Books" href="s3_fsys.html#References_books"/>
+          </topic>
+      </topic>
+      <topic label="The /proc Filesystem" href="s3_procfs.html">
+          <topic label="The /proc/boot directory" href="s3_procfs.html#proc_boot"/>
+          <topic label="The /proc/mount directory" href="s3_procfs.html#proc_mount"/>
+          <topic label="The /proc by-process-ID directories" href="s3_procfs.html#pid_directories">
+              <topic label="Operations on the as entry" href="s3_procfs.html#Operations">
+                <topic label="Discontiguous address space" href="s3_procfs.html#Discontiguous_addr_space"/>
+                <topic label="Someone else's virtual address space" href="s3_procfs.html#Other_addr_space"/>
+              </topic>
+              <topic label="Finding a particular process" href="s3_procfs.html#Finding_processes">
+                <topic label="Iterating through the list of processes" href="s3_procfs.html#Iterating_through_processes"/>
+              </topic>
+              <topic label="Finding out information about the process" href="s3_procfs.html#Finding_process_information"/>
+              <topic label="DCMD_PROC_INFO" href="s3_procfs.html#DCMD_PROC_INFO">
+                <topic label="Process information" href="s3_procfs.html#Process_info"/>
+                <topic label="Memory information" href="s3_procfs.html#Memory_info"/>
+                <topic label="Signal information" href="s3_procfs.html#Signal_info"/>
+                <topic label="CPU usage information" href="s3_procfs.html#CPU_usage"/>
+                <topic label="Miscellaneous" href="s3_procfs.html#Miscellaneous"/>
+              </topic>
+              <topic label="DCMD_PROC_MAPINFO and DCMD_PROC_PAGEDATA" href="s3_procfs.html#DCMD_PROC_MAPINFO"/>
+              <topic label="DCMD_PROC_TIMERS" href="s3_procfs.html#DCMD_PROC_TIMERS"/>
+              <topic label="DCMD_PROC_IRQS" href="s3_procfs.html#DCMD_PROC_IRQS"/>
+              <topic label="Finding out information about the threads" href="s3_procfs.html#Finding_thread_information">
+                <topic label="The DCMD_PROC_TIDSTATUS command" href="s3_procfs.html#DCMD_PROC_TIDSTATUS"/>
+                <topic label="Blocked thread information" href="s3_procfs.html#Block_thread_info"/>
+                <topic label="The DCMD_PROC_GETGREG and DCMD_PROC_GETFPREG commands" href="s3_procfs.html#DCMD_PROC_GETGREG"/>
+              </topic>
+          </topic>
+          <topic label="References" href="s3_procfs.html#References">
+            <topic label="Header files" href="s3_procfs.html#References_header_files"/>
+            <topic label="Functions" href="s3_procfs.html#References_functions"/>
+            <topic label="Utilities" href="s3_procfs.html#References_utilities"/>
+          </topic>
+      </topic>
+      <topic label="Sample Programs" href="s3_cdrom.html">
+          <topic label="Web-Counter resource manager" href="s3_cdrom.html#Web_counter"/>
+          <topic label="ADIOS --- Analog / Digital I/O Server" href="s3_cdrom.html#ADIOS"/>
+          <topic label="RAM-disk and tar filesystem managers" href="s3_cdrom.html#RAM_disk"/>
+          <topic label="The /proc filesystem" href="s3_cdrom.html#proc_fs"/>
+      </topic>
+      <topic label="Glossary" href="s3_glossary.html"/>
+</toc>

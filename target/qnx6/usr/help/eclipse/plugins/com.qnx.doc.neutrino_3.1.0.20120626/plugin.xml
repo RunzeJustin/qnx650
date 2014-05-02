@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin id="com.qnx.doc.neutrino"
+    name="QNX Neutrino Realtime Operating System"
+    version="3.1.0.20120626"
+    provider-name="QNX Software Systems Limited">
+
+    <extension point="org.eclipse.help.toc">
+      <toc file="toc.xml" primary="true" />
+      <index path="index"/>
+   </extension>
+
+    <extension point="org.eclipse.help.toc">
+      <toc file="../com.qnx.doc.neutrino_addon/toc.xml" />
+      <toc file="../com.qnx.doc.neutrino_audio/toc.xml" />
+      <toc file="../com.qnx.doc.neutrino_building/toc.xml" />
+      <toc file="../com.qnx.doc.neutrino_cookbook/toc.xml" />
+      <toc file="../com.qnx.doc.neutrino_getting_started/toc.xml" />
+      <toc file="../com.qnx.doc.neutrino_lib_ref/toc.xml" />
+      <toc file="../com.qnx.doc.neutrino_pps/toc.xml" />
+      <toc file="../com.qnx.doc.neutrino_prog/toc.xml" />
+      <toc file="../com.qnx.doc.neutrino_qed_manual/toc.xml" />
+      <toc file="../com.qnx.doc.neutrino_resmgr/toc.xml" />
+      <toc file="../com.qnx.doc.neutrino_sys_arch/toc.xml" />
+      <toc file="../com.qnx.doc.neutrino_technotes/toc.xml" />
+      <toc file="../com.qnx.doc.neutrino_user_guide/toc.xml" />
+      <toc file="../com.qnx.doc.neutrino_utilities/toc.xml" />
+   </extension>
+</plugin>

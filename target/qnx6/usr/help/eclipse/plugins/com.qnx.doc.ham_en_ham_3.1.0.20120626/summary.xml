@@ -1,0 +1,266 @@
+<function_summary>
+<function
+   name="ham_action_control"
+   summary="Perform control operations on an action object in a HAM"
+   synopsis="#include &lt;ha/ham.h&gt;\n int ham_action_control( ham_action_t *ahdl, int command, unsigned flags);\n"
+/>
+<function
+   name="ham_action_execute"
+   summary="Add an execute action to a condition"
+   synopsis="#include &lt;ha/ham.h&gt;\n ham_action_t *ham_action_execute( ham_condition_t *chdl, const char *aname, const char *path, unsigned flags);\n"
+/>
+<function
+   name="ham_action_fail_execute"
+   summary="Add an execute action to an action, that will be executed 
+if the corresponding action fails"
+   synopsis="#include &lt;ha/ham.h&gt;\n int ham_action_fail_execute( ham_action_t *ahdl, const char *aname, const char *path, unsigned flags);\n"
+/>
+<function
+   name="ham_action_fail_log"
+   summary="Insert a log message into the activity log of a HAM"
+   synopsis="#include &lt;ha/ham.h&gt;\n int ham_action_fail_log( ham_action_t *ahdl, const char *aname, const char *msg, unsigned attachprefix, int verbosity, unsigned flags);\n"
+/>
+<function
+   name="ham_action_fail_notify_pulse, ham_action_fail_notify_pulse_node"
+   summary="Add a notify pulse action to a an action, that will be executed
+if the corresponding action fails"
+   synopsis="#include &lt;ha/ham.h&gt;\n int ham_action_fail_notify_pulse( ham_action_t *ahdl, const char *aname, int nd, pid_t topid, int chid, int pulsecode, int value, unsigned flags);\n int ham_action_fail_notify_pulse_node( ham_action_t *ahdl, const char *aname, const char *nodename, pid_t topid, int chid, int pulsecode, int value, unsigned flags);\n"
+/>
+<function
+   name="ham_action_fail_notify_signal, ham_action_fail_notify_signal_node"
+   summary="Add a notify signal action to a an action, that will be executed
+if the corresponding action fails"
+   synopsis="#include &lt;ha/ham.h&gt;\n int ham_action_fail_notify_signal( ham_action_t *ahdl, const char *aname, int nd, pid_t topid, int signum, int code, int value, unsigned flags);\n int ham_action_fail_notify_signal_node( ham_action_t *ahdl, const char *aname, const char *nodename, pid_t topid, int signum, int code, int value, unsigned flags);\n"
+/>
+<function
+   name="ham_action_fail_waitfor"
+   summary="Add a waitfor action to an action, that will be executed
+if the corresponding action fails"
+   synopsis="#include &lt;ha/ham.h&gt;\n int ham_action_fail_waitfor( ham_action_t *ahdl, const char *aname, const char *path, int delay, unsigned flags);\n"
+/>
+<function
+   name="ham_action_handle, ham_action_handle_node"
+   summary="Get a handle to an action in a condition in an entity"
+   synopsis="#include &lt;ha/ham.h&gt;\n ham_action_t *ham_action_handle(int nd, const char *ename, const char *cname, const char *aname, unsigned flags);\n ham_action_t *ham_action_handle_node(int nd, const char *nodename, const char *ename, const char *cname, const char *aname, unsigned flags);\n"
+/>
+<function
+   name="ham_action_handle_free"
+   summary="Free a previously obtained handle to an action in a condition in an entity"
+   synopsis="#include &lt;ha/ham.h&gt;\n int ham_action_handle_free(ham_action_t *ahdl);\n"
+/>
+<function
+   name="ham_action_heartbeat_healthy"
+   summary="Reset a heartbeat's state to healthy"
+   synopsis="#include &lt;ha/ham.h&gt;\n ham_action_t *ham_action_heartbeat_healthy( ham_condition_t *chdl, const char *aname, unsigned flags)"
+/>
+<function
+   name="ham_action_log"
+   summary="Insert a log message into the activity log of the HAM"
+   synopsis="#include &lt;ha/ham.h&gt;\n ham_action_t *ham_action_log( ham_condition_t *chdl, const char *aname, const char *msg, unsigned attachprefix, int verbosity, unsigned flags);\n"
+/>
+<function
+   name="ham_action_notify_pulse, ham_action_notify_pulse_node"
+   summary="Add a notify-pulse action to a condition"
+   synopsis="#include &lt;ha/ham.h&gt;\n ham_action_t *ham_action_notify_pulse( ham_condition_t *chdl, const char *aname, int nd, pid_t topid, int chid, int pulsecode, int value, unsigned flags);\n ham_action_t *ham_action_notify_pulse_node( ham_condition_t *chdl, const char *aname, const char *nodename, pid_t topid, int chid, int pulsecode, int value, unsigned flags);\n"
+/>
+<function
+   name="ham_action_notify_signal, ham_action_notify_signal_node"
+   summary="Add a notify-signal action to a condition"
+   synopsis="#include &lt;ha/ham.h&gt;\n ham_action_t *ham_action_notify_signal( ham_condition_t *chdl, const char *aname, int nd, pid_t topid, int signum, int code, int value, unsigned flags);\n ham_action_t *ham_action_notify_signal_node( ham_condition_t *chdl, const char *aname, const char *nodename, pid_t topid, int signum, int code, int value, unsigned flags);\n"
+/>
+<function
+   name="ham_action_remove"
+   summary="Remove an action from a condition"
+   synopsis="#include &lt;ha/ham.h&gt;\n int ham_action_remove( ham_action_t *ahdl, unsigned flags);\n"
+/>
+<function
+   name="ham_action_restart"
+   summary="Add a restart action to a condition"
+   synopsis="#include &lt;ha/ham.h&gt;\n ham_action_t *ham_action_restart( ham_condition_t *chdl, const char *aname, const char *path, unsigned flags);\n"
+/>
+<function
+   name="ham_action_waitfor"
+   summary="Add a waitfor action to a condition"
+   synopsis="#include &lt;ha/ham.h&gt;\n ham_action_t *ham_action_waitfor( ham_condition_t *chdl, const char *aname, const char *path, int delay, unsigned flags);\n"
+/>
+<function
+   name="ham_attach, ham_attach_node"
+   summary="Attach an entity"
+   synopsis="#include &lt;ha/ham.h&gt;\n ham_entity_t *ham_attach( const char *ename, int nd, pid_t pid, const char *line, unsigned flags );\n ham_entity_t *ham_attach_node( const char *ename, const char *nodename, pid_t pid, const char *line, unsigned flags );\n"
+/>
+<function
+   name="ham_attach_self"
+   summary="Attach an application as a self-attached entity"
+   synopsis="#include &lt;ha/ham.h&gt;\n ham_entity_t *ham_attach_self( const char *ename, _Uint64t hp, int hpdl, int hpdh, unsigned flags );\n"
+/>
+<function
+   name="ham_condition"
+   summary="Set up a condition to be triggered when a certain event occurs"
+   synopsis="#include &lt;ha/ham.h&gt;\n ham_condition_t *ham_condition(ham_entity_t *ehdl, int type, const char *cname, unsigned flags);\n"
+/>
+<function
+   name="ham_entity_control"
+   summary="Perform control operations on an entity object in a HAM"
+   synopsis="#include &lt;ha/ham.h&gt;\n int ham_entity_control( ham_entity_t *ehdl, int command, unsigned flags);\n"
+/>
+<function
+   name="ham_condition_handle, ham_condition_handle_node"
+   summary="Get a handle to a condition in an entity"
+   synopsis="#include &lt;ha/ham.h&gt;\n ham_condition_t *ham_condition_handle( int nd, const char *ename, const char *cname, unsigned flags );\n ham_condition_t *ham_condition_handle_node( const char *nodename, const char *ename, const char *cname, unsigned flags );\n"
+/>
+<function
+   name="ham_condition_handle_free"
+   summary="Free a previously obtained handle to a condition in an entity"
+   synopsis="#include &lt;ha/ham.h&gt;\n int ham_condition_handle_free( ham_condition_t *chdl );\n"
+/>
+<function
+   name="ham_condition_raise"
+   summary="Attach a condition associated with a condition raise condition"
+   synopsis="#include &lt;ha/ham.h&gt;\n ham_condition_t *ham_condition_raise( ham_entity_t *ehdl, const char *cname, unsigned rtype, unsigned rclass, unsigned rseverity, unsigned flags );\n"
+/>
+<function
+   name="ham_condition_remove"
+   summary="Remove a condition from an entity"
+   synopsis="#include &lt;ha/ham.h&gt;\n int ham_condition_remove( ham_condition_t *chdl, unsigned flags );\n"
+/>
+<function
+   name="ham_condition_state"
+   summary="Attach a condition associated with a state transition"
+   synopsis="#include &lt;ha/ham.h&gt;\n ham_condition_t *ham_condition_state( ham_entity_t *ehdl, const char *cname, unsigned fromstate, unsigned tostate, unsigned flags );\n"
+/>
+<function
+   name="ham_connect, ham_connect_nd, ham_connect_node"
+   summary="Connect to the HAM"
+   synopsis="#include &lt;ha/ham.h&gt;\n int ham_connect( unsigned flags);\n int ham_connect_nd( int nd, unsigned flags);\n int ham_connect_node( const char *nodename, unsigned flags);\n"
+/>
+<function
+   name="ham_detach"
+   summary="Detach an entity from the HAM"
+   synopsis="#include &lt;ha/ham.h&gt;\n int ham_detach( ham_entity_t *ehdl, unsigned flags );\n"
+/>
+<function
+   name="ham_detach_name, ham_detach_name_node"
+   summary="Detach an entity from the HAM, using an entity name"
+   synopsis="#include &lt;ha/ham.h&gt;\n int ham_detach_name( int nd, const char *ename, unsigned flags);\n int ham_detach_name_node( const char *nodename, const char *ename, unsigned flags);\n"
+/>
+<function
+   name="ham_detach_self"
+   summary="Detach a self-attached entity from the HAM"
+   synopsis="#include &lt;ha/ham.h&gt;\n int ham_detach_self( ham_entity_t *ehdl unsigned flags );\n"
+/>
+<function
+   name="ham_disconnect, ham_disconnect_nd, ham_disconnect_node"
+   summary="Disconnect from the HAM"
+   synopsis="#include &lt;ha/ham.h&gt;\n int ham_disconnect( unsigned flags);\n int ham_disconnect_nd( int nd, unsigned flags);\n int ham_disconnect_node( const char *nodename, unsigned flags);\n"
+/>
+<function
+   name="ham_entity, ham_entity_node"
+   summary="Create entity placeholder objects in a HAM"
+   synopsis="#include &lt;ha/ham.h&gt;\n ham_entity_t *ham_entity( const char *ename, int nd, unsigned flags);\n ham_entity_t *ham_entity_node( const char *ename, const char *nodename, unsigned flags);\n"
+/>
+<function
+   name="ham_entity_condition_raise"
+   summary="Used by an entity to raise a condition"
+   synopsis="#include &lt;ha/ham.h&gt;\n int ham_entity_condition_raise( ham_entity_t *ehdl, unsigned rtype, unsigned rclass, unsigned rseverity, unsigned flags );\n"
+/>
+<function
+   name="ham_entity_condition_state"
+   summary="Used by an entity to notify the HAM of a state transition"
+   synopsis="#include &lt;ha/ham.h&gt;\n int ham_entity_condition_state( ham_entity_t *ehdl, unsigned tostate, unsigned flags );\n"
+/>
+<function
+   name="ham_entity_control"
+   summary="Perform control operations on an entity object in a HAM"
+   synopsis="#include &lt;ha/ham.h&gt;\n int ham_entity_control( ham_entity_t *ehdl, int command, unsigned flags);\n"
+/>
+<function
+   name="ham_entity_handle, ham_entity_handle_node"
+   summary="Get a handle to an entity"
+   synopsis="#include &lt;ha/ham.h&gt;\n ham_entity_t *ham_entity_handle( int nd, const char *ename, unsigned flags );\n ham_entity_t *ham_entity_handle_node( const char *nodename, const char *ename, unsigned flags );\n"
+/>
+<function
+   name="ham_entity_handle_free"
+   summary="Free a previously obtained handle to an entity"
+   synopsis="#include &lt;ha/ham.h&gt;\n int ham_entity_handle_free( ham_entity_t *ehdl );\n"
+/>
+<function
+   name="ham_heartbeat"
+   summary="Send a heartbeat to the HAM"
+   synopsis="#include &lt;ha/ham.h&gt;\n int ham_heartbeat( void );\n"
+/>
+<function
+   name="ham_stop, ham_stop_nd, ham_stop_node"
+   summary="Stop the HAM"
+   synopsis="#include &lt;ha/ham.h&gt;\n int ham_stop( void );\n int ham_stop_nd( int nd);\n int ham_stop_node( const char *nodename);\n"
+/>
+<function
+   name="ham__verbose"
+   summary="Modify the verbosity of a HAM"
+   synopsis="#include &lt;ha/ham.h&gt;\n int ham_verbose( const char *nodename, int op, int value);\n"
+/>
+<function
+   name="ha_attach"
+   summary="Attach a recovery function to a connection to make it HA-aware"
+   synopsis="#include &lt;ha/cover.h&gt;\n int ha_attach(int coid, RFp rfn, void *rhdl, unsigned flags);\n"
+/>
+<function
+   name="ha_close"
+   summary="Detach an attached HA file descriptor, then close it"
+   synopsis="#include &lt;ha/unistd.h&gt;\n int ha_close(int fd);\n"
+/>
+<function
+   name="ha_connection_ctrl"
+   summary="Control the operation of a HA-aware connection"
+   synopsis="#include &lt;ha/cover.h&gt;\n int ha_connection_ctrl( int coid, int command, void *args );\n"
+/>
+<function
+   name="ha_ConnectAttach, ha_ConnectAttach_r"
+   summary="Create a connection and attach it to the HA lib"
+   synopsis="#include &lt;ha/neutrino.h&gt;\n int ha_ConnectAttach(_Uint32t *nd, pid_t pid, int chid, unsigned index, unsigned flags, RFp rfn, void *rhdl, unsigned haflags);\n int ha_ConnectAttach_r(_Uint32t *nd, pid_t pid, int chid, unsigned index, unsigned flags, RFp rfn, void *rhdl, unsigned haflags);\n"
+/>
+<function
+   name="ha_ConnectDetach, ha_ConnectDetach_r"
+   summary="Detach an attached file descriptor, then close the connection"
+   synopsis="#include &lt;ha/neutrino.h&gt;\n int ha_ConnectDetach(int coid);\n int ha_ConnectDetach_r(int coid);\n"
+/>
+<function
+   name="ha_creat, ha_creat64"
+   summary="Create a connection and attach it to the HA lib"
+   synopsis="#include &lt;ha/fcntl.h&gt;\n int ha_creat(const char *path, mode_t mode, RFp rfn, void *rhdl, unsigned haflags);\n int ha_creat64(const char *path, mode_t mode, RFp rfn, void *rhdl, unsigned haflags);\n"
+/>
+<function
+   name="ha_detach"
+   summary="Detach a previously attached connection"
+   synopsis="#include &lt;ha/cover.h&gt;\n int ha_attach(int coid)"
+/>
+<function
+   name="ha_dup"
+   summary="Duplicate an HA connection"
+   synopsis="#include &lt;ha/unistd.h&gt;\n int ha_dup(int oldfd);\n"
+/>
+<function
+   name="ha_fclose"
+   summary="Detach an attached HA file descriptor for a file stream, then close it"
+   synopsis="#include &lt;ha/stdio.h&gt;\n int ha_fclose(FILE *stp);\n"
+/>
+<function
+   name="ha_fopen"
+   summary="Open a file stream and attach it to the HA lib"
+   synopsis="#include &lt;ha/stdio.h&gt;\n FILE *ha_fopen( const char *path, const char *mode, RFp rfn, void *rhdl, unsigned haflags);\n"
+/>
+<function
+   name="ha_open, ha_open64"
+   summary="Open a connection and attach it to the HA lib"
+   synopsis="#include &lt;ha/fcntl.h&gt;\n int ha_open(const char *path, int oflag, RFp rfn, void *rhdl, unsigned haflags, ...);\n int ha_open64(const char *path, int oflag, RFp rfn, void *rhdl, unsigned haflags, ...);\n"
+/>
+<function
+   name="ha_ReConnectAttach"
+   summary="Reopen a connection while performing recovery"
+   synopsis="#include &lt;ha/neutrino.h&gt;\n int ha_ReConnectAttach(int oldcoid, _Uint32t nd, pid_t pid, int chid, unsigned index, unsigned flags);\n"
+/>
+<function
+   name="ha_reopen"
+   summary="Reopen a connection while performing recovery"
+   synopsis="#include &lt;ha/fcntl.h&gt;\n int ha_reopen(int oldfd, const char *path, int oflag, ...);\n"
+/>
+</function_summary>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Graphics Devices">
+      <topic label="About the Graphics DDK" href="about.html">
+          <topic label="What you'll find in this guide" href="about.html#In_this_guide"/>
+          <topic label="Assumptions" href="about.html#Assumptions"/>
+          <topic label="Typographical conventions" href="about.html#Typographical_conventions">
+            <topic label="Note to Windows users" href="about.html#WINDOWSNOTE"/>
+            <topic label="Navigation buttons" href="about.html#Navigation"/>
+          </topic>
+          <topic label="Technical support" href="about.html#Support"/>
+      </topic>
+      <topic label="Introduction to Graphics Drivers" href="introduction.html">
+          <topic label="Graphics drivers" href="introduction.html#GraphicsDrivers">
+            <topic label="GF-Based graphics system" href="introduction.html#gf"/>
+            <topic label="Photon-based graphics system" href="introduction.html#photon"/>
+          </topic>
+      </topic>
+      <topic label="Writing a Graphics Driver" href="writing.html">
+          <topic label="Overview" href="writing.html#Overview">
+            <topic label="Getting the source code" href="writing.html#Getting_source"/>
+            <topic label="Sample drivers" href="writing.html#SampleDrivers"/>
+            <topic label="The modules" href="writing.html#Modules"/>
+            <topic label="Modeswitching and enumeration" href="writing.html#Modeswitching"/>
+            <topic label="2D drawing" href="writing.html#2DDrawing"/>
+            <topic label="Graphics memory manager" href="writing.html#GraphicsMemory">
+              <topic label="Layer control" href="writing.html#Layers"/>
+              <topic label="Viewports" href="writing.html#Viewports"/>
+            </topic>
+          </topic>
+          <topic label="Binding your driver to the graphics framework" href="writing.html#binding_to_framework">
+            <topic label="Address spaces and calling rules" href="writing.html#address_space"/>
+          </topic>
+          <topic label="Calling sequence" href="writing.html#CallingSequence"/>
+          <topic label="Conventions" href="writing.html#conventions">
+            <topic label="Colors" href="writing.html#Colors"/>
+            <topic label="Coordinate system" href="writing.html#Coordinates">
+              <topic label="Order" href="writing.html#CoordinateOrder"/>
+              <topic label="Inclusiveness" href="writing.html#Inclusiveness"/>
+            </topic>
+            <topic label="Core vs. context 2D functions" href="writing.html#CoreVsContext"/>
+            <topic label="Context information" href="writing.html#ContextInformation"/>
+            <topic label="Supplying draw functions and software fallback" href="writing.html#DrawFunctions"/>
+            <topic label="Clipping" href="writing.html#clipping"/>
+            <topic label="Patterns" href="writing.html#patdef"/>
+            <topic label="Pixel formats" href="writing.html#pixel_format">
+              <topic label="Byte order" href="writing.html#id26"/>
+            </topic>
+            <topic label="Pixel formats for layers" href="writing.html#pixel_formats_for_layers"/>
+          </topic>
+      </topic>
+      <topic label="Updating a Graphics Driver" href="updating.html">
+            <topic label="In this chapter..." href="updating.html#id3"/>
+          <topic label="Overview" href="updating.html#Overview"/>
+          <topic label="API changes" href="updating.html#changes"/>
+      </topic>
+      <topic label="Debugging a Graphics Driver" href="debug.html">
+            <topic label="In this chapter..." href="debug.html#id3"/>
+          <topic label="Overview" href="debug.html#id5"/>
+          <topic label="The setup" href="debug.html#SETUP"/>
+          <topic label="Compiling shared objects" href="debug.html#COMPILING">
+            <topic label="Shipping modified libs with your product" href="debug.html#id9"/>
+            <topic label="Setting the LD_LIBRARY_PATH environment variable" href="debug.html#id11"/>
+            <topic label="The display.conf file" href="debug.html#id13"/>
+          </topic>
+          <topic label="Making a debug version of a driver" href="debug.html#DEBUGVER"/>
+          <topic label="Running the debug driver and setting a breakpoint" href="debug.html#RUNDEBUG"/>
+      </topic>
+      <topic label="Graphics Driver API" href="api.html">
+          <topic label="devg_get_contextfuncs" href="devg_get_contextfuncs.html">
+            <topic label="Description:" href="devg_get_contextfuncs.html#id5"/>
+          </topic>
+          <topic label="devg_get_corefuncs" href="devg_get_corefuncs.html">
+            <topic label="Description:" href="devg_get_corefuncs.html#id5"/>
+          </topic>
+          <topic label="devg_get_memfuncs" href="devg_get_memfuncs.html">
+            <topic label="Description:" href="devg_get_memfuncs.html#id5"/>
+          </topic>
+          <topic label="devg_get_miscfuncs" href="devg_get_miscfuncs.html">
+            <topic label="Description:" href="devg_get_miscfuncs.html#id5"/>
+          </topic>
+          <topic label="devg_get_modefuncs" href="devg_get_modefuncs.html">
+            <topic label="Description:" href="devg_get_modefuncs.html#id5"/>
+          </topic>
+          <topic label="devg_get_rendfuncs" href="devg_get_rendfuncs.html">
+            <topic label="Description:" href="devg_get_rendfuncs.html#id5"/>
+          </topic>
+          <topic label="devg_get_vcapfuncs" href="devg_get_vcapfuncs.html">
+            <topic label="Description:" href="devg_get_vcapfuncs.html#id7"/>
+          </topic>
+          <topic label="disp_2d_caps_t" href="disp_2d_caps_t.html">
+            <topic label="Description:" href="disp_2d_caps_t.html#id5"/>
+          </topic>
+          <topic label="disp_adapter_t" href="disp_adapter_t.html">
+            <topic label="Description:" href="disp_adapter_t.html#id5">
+              <topic label="Callbacks" href="disp_adapter_t.html#callbacks"/>
+            </topic>
+          </topic>
+          <topic label="DISP_ADD_FUNC" href="disp_add_func.html">
+            <topic label="Description:" href="disp_add_func.html#id5"/>
+            <topic label="Examples:" href="disp_add_func.html#id7"/>
+          </topic>
+          <topic label="disp_crtc_settings_t" href="disp_crtc_settings_t.html">
+            <topic label="Description:" href="disp_crtc_settings_t.html#id5"/>
+          </topic>
+          <topic label="disp_draw_context_t" href="disp_draw_context_t.html">
+            <topic label="Description:" href="disp_draw_context_t.html#id5">
+              <topic label="Chroma mode bits" href="disp_draw_context_t.html#chroma_mode_bits"/>
+              <topic label="Alpha mode bits (alpha_mode)" href="disp_draw_context_t.html#alpha_mode_bits"/>
+              <topic label="Alpha mode blending (source) operation" href="disp_draw_context_t.html#alpha_mode_blending_src_bits"/>
+              <topic label="Alpha mode blending (destination) operation" href="disp_draw_context_t.html#alpha_mode_blending_dst_bits"/>
+            </topic>
+          </topic>
+          <topic label="disp_draw_contextfuncs_t" href="disp_draw_contextfuncs_t.html">
+            <topic label="Description:" href="disp_draw_contextfuncs_t.html#id5">
+              <topic label="draw_span" href="disp_draw_contextfuncs_t.html#ddc_draw_span"/>
+              <topic label="draw_span_list" href="disp_draw_contextfuncs_t.html#ddc_draw_span_list"/>
+              <topic label="draw_rect" href="disp_draw_contextfuncs_t.html#ddc_draw_rect"/>
+              <topic label="blit" href="disp_draw_contextfuncs_t.html#ddc_blit"/>
+              <topic label="update_general" href="disp_draw_contextfuncs_t.html#ddc_update_general"/>
+              <topic label="update_color" href="disp_draw_contextfuncs_t.html#ddc_update_color"/>
+              <topic label="update_rop3" href="disp_draw_contextfuncs_t.html#ddc_update_rop3"/>
+              <topic label="update_chroma" href="disp_draw_contextfuncs_t.html#ddc_update_chroma"/>
+              <topic label="update_alpha" href="disp_draw_contextfuncs_t.html#ddc_update_alpha"/>
+              <topic label="scaled_blit" href="disp_draw_contextfuncs_t.html#ddc_scaled_blit"/>
+              <topic label="update_planemask" href="disp_draw_contextfuncs_t.html#ddc_update_planemask"/>
+              <topic label="draw_line" href="disp_draw_contextfuncs_t.html#ddc_draw_line"/>
+              <topic label="fill_poly" href="disp_draw_contextfuncs_t.html#ddc_fill_poly"/>
+              <topic label="draw_polyline" href="disp_draw_contextfuncs_t.html#ddc_draw_polyline"/>
+              <topic label="update_line" href="disp_draw_contextfuncs_t.html#ddc_update_line"/>
+              <topic label="blend_pixels" href="disp_draw_contextfuncs_t.html#ddc_blend_pixels"/>
+            </topic>
+          </topic>
+          <topic label="disp_draw_corefuncs_t" href="disp_draw_corefuncs_t.html">
+            <topic label="Description:" href="disp_draw_corefuncs_t.html#id5">
+              <topic label="wait_idle" href="disp_draw_corefuncs_t.html#wait_idle"/>
+              <topic label="draw_span" href="disp_draw_corefuncs_t.html#draw_span"/>
+              <topic label="draw_span_list" href="disp_draw_corefuncs_t.html#draw_span_list"/>
+              <topic label="draw_solid_rect" href="disp_draw_corefuncs_t.html#draw_solid_rect"/>
+              <topic label="draw_line_pat8x1" href="disp_draw_corefuncs_t.html#draw_line_pat8x1"/>
+              <topic label="draw_line_trans8x1" href="disp_draw_corefuncs_t.html#draw_line_trans8x1"/>
+              <topic label="draw_rect_pat8x8" href="disp_draw_corefuncs_t.html#draw_rect_pat8x8"/>
+              <topic label="draw_rect_trans8x8" href="disp_draw_corefuncs_t.html#draw_rect_trans8x8"/>
+              <topic label="blit1" href="disp_draw_corefuncs_t.html#blit1"/>
+              <topic label="blit2" href="disp_draw_corefuncs_t.html#blit2"/>
+              <topic label="draw_bitmap" href="disp_draw_corefuncs_t.html#draw_bitmap"/>
+              <topic label="update_draw_surface" href="disp_draw_corefuncs_t.html#update_draw_surface"/>
+              <topic label="update_pattern" href="disp_draw_corefuncs_t.html#update_pattern"/>
+              <topic label="scaled_blit" href="disp_draw_corefuncs_t.html#scaled_blit"/>
+              <topic label="draw_line" href="disp_draw_corefuncs_t.html#draw_line"/>
+              <topic label="fill_poly" href="disp_draw_corefuncs_t.html#fill_poly"/>
+              <topic label="get_bresenham_params" href="disp_draw_corefuncs_t.html#get_bresenham_params"/>
+              <topic label="update_transform" href="disp_draw_corefuncs_t.html#update_transform"/>
+              <topic label="update_clipping" href="disp_draw_corefuncs_t.html#update_clipping"/>
+            </topic>
+          </topic>
+          <topic label="disp_draw_miscfuncs_t" href="disp_draw_miscfuncs_t.html">
+            <topic label="Description:" href="disp_draw_miscfuncs_t.html#id5">
+              <topic label="init" href="disp_draw_miscfuncs_t.html#ddm_init"/>
+              <topic label="fini" href="disp_draw_miscfuncs_t.html#ddm_fini"/>
+              <topic label="module_info" href="disp_draw_miscfuncs_t.html#ddm_module_info"/>
+              <topic label="set_palette" href="disp_draw_miscfuncs_t.html#ddm_set_palette"/>
+              <topic label="flushrect" href="disp_draw_miscfuncs_t.html#ddm_flushrect"/>
+              <topic label="get_2d_caps" href="disp_draw_miscfuncs_t.html#ddm_get_2d_caps"/>
+              <topic label="get_corefuncs_sw" href="disp_draw_miscfuncs_t.html#ddm_get_corefuncs_sw"/>
+              <topic label="get_contextfuncs_sw" href="disp_draw_miscfuncs_t.html#ddm_get_contextfuncs_sw"/>
+              <topic label="end_of_draw" href="disp_draw_miscfuncs_t.html#ddm_end_of_draw"/>
+              <topic label="attach_external" href="disp_draw_miscfuncs_t.html#ddm_attach_external"/>
+              <topic label="detach_external" href="disp_draw_miscfuncs_t.html#ddm_detach_external"/>
+              <topic label="recover" href="disp_draw_miscfuncs_t.html#ddm_recover"/>
+              <topic label="wait_idle" href="disp_draw_miscfuncs_t.html#ddm_wait_idle"/>
+            </topic>
+          </topic>
+          <topic label="disp_layer_query_t" href="disp_layer_query_t.html">
+            <topic label="Description:" href="disp_layer_query_t.html#id5"/>
+          </topic>
+          <topic label="disp_memfuncs_t" href="disp_memfuncs_t.html">
+            <topic label="Description:" href="disp_memfuncs_t.html#id5">
+              <topic label="init" href="disp_memfuncs_t.html#mm_init"/>
+              <topic label="fini" href="disp_memfuncs_t.html#mm_fini"/>
+              <topic label="module_info" href="disp_memfuncs_t.html#mm_module_info"/>
+              <topic label="reset" href="disp_memfuncs_t.html#mm_reset"/>
+              <topic label="alloc_surface" href="disp_memfuncs_t.html#mm_alloc_surface"/>
+              <topic label="alloc_layer_surface" href="disp_memfuncs_t.html#mm_alloc_layer_surface"/>
+              <topic label="free_surface" href="disp_memfuncs_t.html#mm_free_surface"/>
+              <topic label="mem_avail" href="disp_memfuncs_t.html#mm_mem_avail"/>
+              <topic label="query_apertures" href="disp_memfuncs_t.html#mm_query_apertures"/>
+              <topic label="query_surface" href="disp_memfuncs_t.html#mm_query_surface"/>
+              <topic label="get_alloc_info" href="disp_memfuncs_t.html#mm_get_alloc_info"/>
+              <topic label="get_alloc_layer_info" href="disp_memfuncs_t.html#mm_get_alloc_layer_info"/>
+            </topic>
+          </topic>
+          <topic label="disp_mode_info_t" href="disp_mode_info_t.html">
+            <topic label="Description:" href="disp_mode_info_t.html#id5"/>
+          </topic>
+          <topic label="disp_modefuncs_t" href="disp_modefuncs_t.html">
+            <topic label="Description:" href="disp_modefuncs_t.html#id5">
+              <topic label="init" href="disp_modefuncs_t.html#dm_init"/>
+              <topic label="fini" href="disp_modefuncs_t.html#dm_fini"/>
+              <topic label="module_info" href="disp_modefuncs_t.html#dm_module_info"/>
+              <topic label="get_modeinfo" href="disp_modefuncs_t.html#dm_get_modeinfo"/>
+              <topic label="get_modelist" href="disp_modefuncs_t.html#dm_get_modelist"/>
+              <topic label="set_mode" href="disp_modefuncs_t.html#dm_set_mode"/>
+              <topic label="wait_vsync" href="disp_modefuncs_t.html#dm_wait_vsync"/>
+              <topic label="set_dpms_mode" href="disp_modefuncs_t.html#dm_set_dpms_mode"/>
+              <topic label="set_display_offset" href="disp_modefuncs_t.html#dm_set_display_offset"/>
+              <topic label="set_palette" href="disp_modefuncs_t.html#dm_set_palette"/>
+              <topic label="layer_query" href="disp_modefuncs_t.html#dm_layer_query"/>
+              <topic label="layer_enable" href="disp_modefuncs_t.html#dm_layer_enable"/>
+              <topic label="layer_disable" href="disp_modefuncs_t.html#dm_layer_disable"/>
+              <topic label="layer_set_surface" href="disp_modefuncs_t.html#dm_layer_set_surface"/>
+              <topic label="layer_set_source_viewport" href="disp_modefuncs_t.html#dm_layer_set_source_viewport"/>
+              <topic label="layer_set_dest_viewport" href="disp_modefuncs_t.html#dm_layer_set_dest_viewport"/>
+              <topic label="layer_set_blending" href="disp_modefuncs_t.html#dm_layer_set_blending"/>
+              <topic label="layer_set_chromakey" href="disp_modefuncs_t.html#dm_layer_set_chromakey"/>
+              <topic label="layer_set_brightness" href="disp_modefuncs_t.html#dm_layer_set_brightness"/>
+              <topic label="layer_set_saturation" href="disp_modefuncs_t.html#dm_layer_set_saturation"/>
+              <topic label="layer_set_contrast" href="disp_modefuncs_t.html#dm_layer_set_contrast"/>
+              <topic label="layer_set_hue" href="disp_modefuncs_t.html#dm_layer_set_hue"/>
+              <topic label="layer_set_alpha_map" href="disp_modefuncs_t.html#layer_set_alpha_map"/>
+              <topic label="layer_set_flags" href="disp_modefuncs_t.html#dm_layer_set_flags"/>
+              <topic label="layer_update_begin" href="disp_modefuncs_t.html#dm_layer_update_begin"/>
+              <topic label="layer_update_end" href="disp_modefuncs_t.html#dm_layer_update_end"/>
+              <topic label="layer_reset" href="disp_modefuncs_t.html#dm_layer_reset"/>
+              <topic label="layer_set_order" href="disp_modefuncs_t.html#dm_layer_set_order"/>
+              <topic label="set_hw_cursor" href="disp_modefuncs_t.html#dm_set_hw_cursor"/>
+              <topic label="enable_hw_cursor" href="disp_modefuncs_t.html#dm_enable_hw_cursor"/>
+              <topic label="disable_hw_cursor" href="disp_modefuncs_t.html#dm_disable_hw_cursor"/>
+              <topic label="set_hw_cursor_pos" href="disp_modefuncs_t.html#dm_set_hw_cursor_pos"/>
+              <topic label="i2c_read" href="disp_modefuncs_t.html#dm_i2c_read"/>
+              <topic label="i2c_write" href="disp_modefuncs_t.html#dm_i2c_write"/>
+              <topic label="i2c_writeread" href="disp_modefuncs_t.html#dm_i2c_writeread"/>
+            </topic>
+          </topic>
+          <topic label="disp_module_info_t" href="disp_module_info_t.html">
+            <topic label="Description:" href="disp_module_info_t.html#id5"/>
+          </topic>
+          <topic label="disp_surface_t" href="disp_surface_t.html">
+            <topic label="Description:" href="disp_surface_t.html#id5">
+              <topic label="Relationship of stride, height, and width" href="disp_surface_t.html#disp_surface_t-sizing"/>
+              <topic label="flags" href="disp_surface_t.html#disp_surface_t-flags"/>
+            </topic>
+          </topic>
+          <topic label="disp_vcap_props_t" href="disp_vcap_props_t.html">
+            <topic label="Description:" href="disp_vcap_props_t.html#id5"/>
+          </topic>
+          <topic label="disp_vcapfuncs_t" href="disp_vcapfuncs_t.html">
+            <topic label="Description:" href="disp_vcapfuncs_t.html#id5">
+              <topic label="init" href="disp_vcapfuncs_t.html#vc_init"/>
+              <topic label="fini" href="disp_vcapfuncs_t.html#vc_fini"/>
+              <topic label="module_info" href="disp_vcapfuncs_t.html#vc_module_info"/>
+              <topic label="set_props" href="disp_vcapfuncs_t.html#vc_set_props"/>
+              <topic label="set_adjustments" href="disp_vcapfuncs_t.html#vc_set_adjustments"/>
+              <topic label="bind_layer" href="disp_vcapfuncs_t.html#vc_bind_layer"/>
+              <topic label="set_enabled" href="disp_vcapfuncs_t.html#vc_set_enabled"/>
+              <topic label="wait_vsync" href="disp_vcapfuncs_t.html#vc_wait_vsync"/>
+            </topic>
+          </topic>
+      </topic>
+      <topic label="Libraries" href="libraries.html">
+          <topic label="DISPUTIL library --- utility functions" href="libraries.html#DISPUTIL">
+            <topic label="Miscellaneous display driver functions" href="libraries.html#miscutil">
+              <topic label="disp_register_adapter" href="libraries.html#disp_register_adapter"/>
+              <topic label="disp_unregister_adapter" href="libraries.html#disp_unregister_adapter"/>
+              <topic label="disp_crtc_calc" href="libraries.html#disp_crtc_calc"/>
+              <topic label="disp_mode_get_entry" href="libraries.html#disp_mode_get_entry"/>
+              <topic label="disp_acquire_vga_resources" href="libraries.html#disp_acquire_vga_resources"/>
+              <topic label="disp_release_vga_resources" href="libraries.html#disp_release_vga_resources"/>
+              <topic label="disp_perror" href="libraries.html#disp_perror"/>
+              <topic label="disp_printf" href="libraries.html#disp_printf"/>
+              <topic label="disp_usecspin" href="libraries.html#disp_usecspin"/>
+              <topic label="disp_delay" href="libraries.html#disp_delay"/>
+              <topic label="disp_get_rom_image" href="libraries.html#disp_get_rom_image"/>
+              <topic label="disp_vga_save_state" href="libraries.html#disp_vga_save_state"/>
+              <topic label="disp_vga_restore_state" href="libraries.html#disp_vga_restore_state"/>
+              <topic label="disp_vga_state_t" href="libraries.html#disp_vga_state_t"/>
+            </topic>
+            <topic label="PCI configuration access functions" href="libraries.html#pciaccess">
+              <topic label="disp_pci_init" href="libraries.html#disp_pci_init"/>
+              <topic label="disp_pci_shutdown" href="libraries.html#disp_pci_shutdown"/>
+              <topic label="disp_pci_read_config" href="libraries.html#disp_pci_read_config"/>
+              <topic label="disp_pci_write_config" href="libraries.html#disp_pci_write_config"/>
+              <topic label="disp_pci_dev_find" href="libraries.html#disp_pci_dev_find"/>
+              <topic label="disp_pci_dev_read_config" href="libraries.html#disp_pci_dev_read_config"/>
+              <topic label="disp_pci_dev_write_config" href="libraries.html#disp_pci_dev_write_config"/>
+              <topic label="disp_pci_info" href="libraries.html#disp_pci_info"/>
+            </topic>
+            <topic label="Memory manager functions" href="libraries.html#memmgr">
+              <topic label="disp_mmap_device_memory" href="libraries.html#disp_mmap_device_memory"/>
+              <topic label="disp_mmap_device_io" href="libraries.html#disp_mmap_device_io"/>
+              <topic label="disp_munmap_device_memory" href="libraries.html#disp_munmap_device_memory"/>
+              <topic label="disp_munmap_device_io" href="libraries.html#disp_munmap_device_io"/>
+              <topic label="disp_phys_addr" href="libraries.html#disp_phys_addr"/>
+              <topic label="disp_getmem" href="libraries.html#disp_getmem"/>
+              <topic label="disp_freemem" href="libraries.html#disp_freemem"/>
+            </topic>
+            <topic label="Video memory management functions" href="libraries.html#videomemory">
+              <topic label="disp_vm_create_pool" href="libraries.html#disp_vm_create_pool"/>
+              <topic label="disp_vm_destroy_pool" href="libraries.html#disp_vm_destroy_pool"/>
+              <topic label="disp_vm_alloc_surface" href="libraries.html#disp_vm_alloc_surface"/>
+              <topic label="disp_vm_free_surface" href="libraries.html#disp_vm_free_surface"/>
+              <topic label="disp_vm_mem_avail" href="libraries.html#disp_vm_mem_avail"/>
+              <topic label="disp_vm_alloc_surface_external" href="libraries.html#disp_vm_alloc_surface_external"/>
+              <topic label="disp_vm_free_surface_external" href="libraries.html#disp_vm_free_surface_external"/>
+            </topic>
+            <topic label="Video BIOS services (x86 only)" href="libraries.html#VBIOS_services">
+              <topic label="vbios_register" href="libraries.html#vbios_register"/>
+              <topic label="vbios_unregister" href="libraries.html#vbios_unregister"/>
+              <topic label="vbios_int" href="libraries.html#vbios_int"/>
+              <topic label="vbios_call" href="libraries.html#vbios_call"/>
+              <topic label="vbios_dowarmboot" href="libraries.html#vbios_dowarmboot"/>
+              <topic label="vbios_get_realptr" href="libraries.html#vbios_get_realptr"/>
+              <topic label="vbios_context_t" href="libraries.html#vbios_context_t"/>
+            </topic>
+          </topic>
+          <topic label="FFB library --- 2D software fallback routines" href="libraries.html#graphics_helpers">
+              <topic label="ffb_get_corefuncs" href="libraries.html#ffb_get_corefuncs"/>
+              <topic label="ffb_get_contextfuncs" href="libraries.html#ffb_get_contextfuncs"/>
+              <topic label="ffb_color_translate" href="libraries.html#ffb_color_translate"/>
+          </topic>
+      </topic>
+      <topic label="Glossary" href="glossary.html"/>
+</toc>

@@ -1,0 +1,121 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Scenarios for creating a project for the first time" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_UnderstandingIDEProjects_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_TheIDEProjectModel_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_SupportedProjectTypes_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_CheckingOutPartialSourceTree_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_IDE_SharingProjects_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_IDE_CheckingOutExistingProjects_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_IDE_ProjectBuildProperties_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Creatingaprojectforthefirsttime" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Scenarios for creating a project for the first time</title>
+   </head>
+   <body id="Creatingaprojectforthefirsttime"><a name="Creatingaprojectforthefirsttime" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Scenarios for creating a project for the first time</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>Let's consider scenarios that can occur when you are creating a project for the first time (compared to checking out an existing
+            project, see <a href="devel_IDE_CheckingOutExistingProjects_.html" shape="rect">Checking out existing projects</a>.) When creating a new IDE project, you have to determine what you'd like to do:
+         </p>
+         
+         <br clear="none" /><ul>
+            <li>Option #1: This is a new project and you want to create all of the source in the IDE </li>
+            <li>Option #2: The source and structure currently exist in the file system, and you want to attach an IDE project to it </li>
+            <li>Option #3: The project source and structure already exists in version control</li>
+         </ul>
+         
+         
+         <p>To create a project for the first time:</p>
+         
+         <br clear="none" /><ul>
+            <li>Option #1: For a new project, select one of the project types described above (use <span class="menucascade">
+                  <span class="uicontrol">File</span>
+                  &gt; <span class="uicontrol">New…</span>
+                  </span>, and then select <span class="uicontrol">C /C++</span>, and then determine the type of project you want to create: <br clear="none" /><ul>
+                  <li>For a QNX Project, select <span class="uicontrol">QNX C Project</span> (or for C++, select <span class="uicontrol">QNX C++ project</span>), click <span class="uicontrol">Next</span>, select the build variant(s) (i.e. for <span class="uicontrol">x86</span>, <span class="uicontrol">Debug</span> and <span class="uicontrol">Release</span>), and then click <span class="uicontrol">Finish</span>. 
+                  </li>
+                  <li>For a <tt>Makefile</tt>, select <span class="uicontrol">C Project</span> (or for C++, select <span class="uicontrol">C++ Project</span>), click <span class="uicontrol">Next</span>, select <span class="uicontrol">Makefile</span> on the left, select a QNX Toolchain on the right, and then click <span class="uicontrol">Finish</span>. 
+                  </li>
+                  <li>For a managed project, select <span class="uicontrol">C Project</span> (or for C++, select "<span class="uicontrol">C++ Project</span>"). Select one the projects types or templates on the left, except <tt>Makefile</tt>. Select a QNX Toolchain on the right. Click <span class="uicontrol">Finish</span>. 
+                  </li>
+               </ul>
+               
+            </li>
+            <li>Option #2: To attach to an existing folder, select one of the project types described above for your project, open the corresponding
+               wizard as described in the steps for Option #1, but don't proceed further. The first page of the wizard presents you with
+               the option to use a default location or to select one yourself. Deselect <span class="uicontrol">Use default location</span>. Select the location of your existing project using the <span class="uicontrol">Browse</span> button. Follow the wizard as in #1. Alternatively, you a create project in the default location, but later attach the other
+               directory using linked folders (see Example 4 below). 
+            </li>
+            <li>Option #3: If you want to check out source from version control, select one of the project types described above for your
+               project. If the entire project is in one directory in your version control system, you can use the <span class="uicontrol">Check Out As…</span> option from SVN or CVS plugins to perform the check out. Use <span class="uicontrol">Check out as a project configured using New Project Wizard</span> option, and then select the wizard for the project type you require. For a QNX project, make sure that you deselect the <span class="uicontrol">Generate default file</span> option. 
+               <p>If you want to perform a partial check out of the source, see <a href="devel_CheckingOutPartialSourceTree_.html" shape="rect">Checking out a partial source tree</a>.
+               </p>
+               
+            </li>
+         </ul>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/devel_UnderstandingIDEProjects_.html" shape="rect">Understanding projects in the IDE</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/devel_TheIDEProjectModel_.html" shape="rect">The IDE project model</a></div>
+            
+            <div><a href="../topic/devel_SupportedProjectTypes_.html" shape="rect">Supported project types in the IDE</a></div>
+            
+            <div><a href="../topic/devel_IDE_SharingProjects_.html" shape="rect">Sharing projects</a></div>
+            
+            <div><a href="../topic/devel_IDE_ProjectBuildProperties_.html" shape="rect">Setting build properties for a project</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/devel_CheckingOutPartialSourceTree_.html" shape="rect">Checking out a partial source tree</a></div>
+            
+            <div><a href="../topic/devel_IDE_CheckingOutExistingProjects_.html" shape="rect">Checking out existing projects</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

@@ -1,0 +1,3059 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<index>
+ <entry keyword="/proc">
+  <topic href="s3_procfs.html" title="The /proc Filesystem"/>
+  <entry keyword="and DCMD_GETFPREG">
+   <topic href="s3_procfs.html#Finding_thread_information" title="Finding out information about the threads"/>
+  </entry>
+  <entry keyword="and DCMD_GETGREG">
+   <topic href="s3_procfs.html#Finding_thread_information" title="Finding out information about the threads"/>
+  </entry>
+  <entry keyword="and DCMD_PROC_INFO">
+   <topic href="s3_procfs.html#Finding_process_information" title="Finding out information about the process"/>
+  </entry>
+  <entry keyword="and DCMD_PROC_IRQS">
+   <topic href="s3_procfs.html#DCMD_PROC_IRQS" title="DCMD_PROC_IRQS"/>
+   <topic href="s3_procfs.html#Finding_process_information" title="Finding out information about the process"/>
+  </entry>
+  <entry keyword="and DCMD_PROC_MAPDEBUG_BASE">
+   <topic href="s3_procfs.html#Finding_process_information" title="Finding out information about the process"/>
+  </entry>
+  <entry keyword="and DCMD_PROC_MAPINFO">
+   <topic href="s3_procfs.html#DCMD_PROC_MAPINFO" title="DCMD_PROC_MAPINFO and DCMD_PROC_PAGEDATA"/>
+   <topic href="s3_procfs.html#Finding_process_information" title="Finding out information about the process"/>
+  </entry>
+  <entry keyword="and DCMD_PROC_PAGEDATA">
+   <topic href="s3_procfs.html#DCMD_PROC_MAPINFO" title="DCMD_PROC_MAPINFO and DCMD_PROC_PAGEDATA"/>
+   <topic href="s3_procfs.html#Finding_process_information" title="Finding out information about the process"/>
+  </entry>
+  <entry keyword="and DCMD_PROC_TIDSTATUS">
+   <topic href="s3_procfs.html#Finding_thread_information" title="Finding out information about the threads"/>
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="and DCMD_PROC_TIMERS">
+   <topic href="s3_procfs.html#Finding_process_information" title="Finding out information about the process"/>
+  </entry>
+  <entry keyword="and debug_thread_t">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="and interrupts">
+   <topic href="s3_procfs.html#DCMD_PROC_IRQS" title="DCMD_PROC_IRQS"/>
+  </entry>
+  <entry keyword="and procfs_mapinfo">
+   <topic href="s3_procfs.html#DCMD_PROC_MAPINFO" title="DCMD_PROC_MAPINFO and DCMD_PROC_PAGEDATA"/>
+  </entry>
+  <entry keyword="and timers">
+   <topic href="s3_procfs.html#DCMD_PROC_TIMERS" title="DCMD_PROC_TIMERS"/>
+  </entry>
+  <entry keyword="as file">
+   <topic href="s3_procfs.html#pid_directories" title="The /proc by-process-ID directories"/>
+   <entry keyword="lseek()">
+    <topic href="s3_procfs.html#Operations" title="Operations on the as entry"/>
+   </entry>
+   <entry keyword="read()">
+    <topic href="s3_procfs.html#Operations" title="Operations on the as entry"/>
+   </entry>
+   <entry keyword="write()">
+    <topic href="s3_procfs.html#Operations" title="Operations on the as entry"/>
+   </entry>
+  </entry>
+  <entry keyword="CPU usage information">
+   <topic href="s3_procfs.html#CPU_usage" title="CPU usage information"/>
+  </entry>
+  <entry keyword="debug_process_t">
+   <topic href="s3_procfs.html#DCMD_PROC_INFO" title="DCMD_PROC_INFO"/>
+  </entry>
+  <entry keyword="devctl() access">
+   <topic href="s3_procfs.html#Other_addr_space" title="Someone else's virtual address space"/>
+  </entry>
+  <entry keyword="fetching thread floating-point registers">
+   <topic href="s3_procfs.html#DCMD_PROC_GETGREG" title="The DCMD_PROC_GETGREG and DCMD_PROC_GETFPREG commands"/>
+  </entry>
+  <entry keyword="fetching thread general registers">
+   <topic href="s3_procfs.html#DCMD_PROC_GETGREG" title="The DCMD_PROC_GETGREG and DCMD_PROC_GETFPREG commands"/>
+  </entry>
+  <entry keyword="finding thread information">
+   <topic href="s3_procfs.html#Finding_thread_information" title="Finding out information about the threads"/>
+  </entry>
+  <entry keyword="group ID information">
+   <topic href="s3_procfs.html#Process_info" title="Process information"/>
+  </entry>
+  <entry keyword="interrupt area">
+   <topic href="s3_procfs.html#DCMD_PROC_IRQS" title="DCMD_PROC_IRQS"/>
+  </entry>
+  <entry keyword="interrupt event">
+   <topic href="s3_procfs.html#DCMD_PROC_IRQS" title="DCMD_PROC_IRQS"/>
+  </entry>
+  <entry keyword="interrupt flags">
+   <topic href="s3_procfs.html#DCMD_PROC_IRQS" title="DCMD_PROC_IRQS"/>
+  </entry>
+  <entry keyword="interrupt handler">
+   <topic href="s3_procfs.html#DCMD_PROC_IRQS" title="DCMD_PROC_IRQS"/>
+  </entry>
+  <entry keyword="interrupt ID">
+   <topic href="s3_procfs.html#DCMD_PROC_IRQS" title="DCMD_PROC_IRQS"/>
+  </entry>
+  <entry keyword="interrupt level">
+   <topic href="s3_procfs.html#DCMD_PROC_IRQS" title="DCMD_PROC_IRQS"/>
+  </entry>
+  <entry keyword="interrupt mask count">
+   <topic href="s3_procfs.html#DCMD_PROC_IRQS" title="DCMD_PROC_IRQS"/>
+  </entry>
+  <entry keyword="interrupt process ID">
+   <topic href="s3_procfs.html#DCMD_PROC_IRQS" title="DCMD_PROC_IRQS"/>
+  </entry>
+  <entry keyword="interrupt thread ID">
+   <topic href="s3_procfs.html#DCMD_PROC_IRQS" title="DCMD_PROC_IRQS"/>
+  </entry>
+  <entry keyword="interrupt vector">
+   <topic href="s3_procfs.html#DCMD_PROC_IRQS" title="DCMD_PROC_IRQS"/>
+  </entry>
+  <entry keyword="iterating through threads in process">
+   <topic href="s3_procfs.html#Finding_thread_information" title="Finding out information about the threads"/>
+  </entry>
+  <entry keyword="lazy-map paging information">
+   <topic href="s3_procfs.html#Block_thread_info" title="Blocked thread information"/>
+  </entry>
+  <entry keyword="non-numeric entries">
+   <topic href="s3_procfs.html#Iterating_through_processes" title="Iterating through the list of processes"/>
+  </entry>
+  <entry keyword="number of threads in a process">
+   <topic href="s3_procfs.html#Process_info" title="Process information"/>
+  </entry>
+  <entry keyword="process connected channels">
+   <topic href="s3_procfs.html#Miscellaneous" title="Miscellaneous"/>
+  </entry>
+  <entry keyword="process connected file descriptors">
+   <topic href="s3_procfs.html#Miscellaneous" title="Miscellaneous"/>
+  </entry>
+  <entry keyword="process default thread priority">
+   <topic href="s3_procfs.html#Process_info" title="Process information"/>
+  </entry>
+  <entry keyword="process group information">
+   <topic href="s3_procfs.html#Process_info" title="Process information"/>
+  </entry>
+  <entry keyword="process hierarchy information">
+   <topic href="s3_procfs.html#Process_info" title="Process information"/>
+  </entry>
+  <entry keyword="process ID">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="process memory region information">
+   <topic href="s3_procfs.html#DCMD_PROC_MAPINFO" title="DCMD_PROC_MAPINFO and DCMD_PROC_PAGEDATA"/>
+  </entry>
+  <entry keyword="process number of timers">
+   <topic href="s3_procfs.html#Miscellaneous" title="Miscellaneous"/>
+  </entry>
+  <entry keyword="process signals ignored">
+   <topic href="s3_procfs.html#Signal_info" title="Signal information"/>
+  </entry>
+  <entry keyword="process signals pending">
+   <topic href="s3_procfs.html#Signal_info" title="Signal information"/>
+  </entry>
+  <entry keyword="process signals queued">
+   <topic href="s3_procfs.html#Signal_info" title="Signal information"/>
+  </entry>
+  <entry keyword="process umask information">
+   <topic href="s3_procfs.html#Miscellaneous" title="Miscellaneous"/>
+  </entry>
+  <entry keyword="searching for a process">
+   <topic href="s3_procfs.html#Finding_processes" title="Finding a particular process"/>
+   <topic href="s3_procfs.html#Iterating_through_processes" title="Iterating through the list of processes"/>
+  </entry>
+  <entry keyword="session ID information">
+   <topic href="s3_procfs.html#Process_info" title="Process information"/>
+  </entry>
+  <entry keyword="stack information">
+   <topic href="s3_procfs.html#Block_thread_info" title="Blocked thread information"/>
+  </entry>
+  <entry keyword="stack location">
+   <topic href="s3_procfs.html#Memory_info" title="Memory information"/>
+  </entry>
+  <entry keyword="stack size">
+   <topic href="s3_procfs.html#Memory_info" title="Memory information"/>
+  </entry>
+  <entry keyword="struct sigevent">
+   <topic href="s3_procfs.html#DCMD_PROC_TIMERS" title="DCMD_PROC_TIMERS"/>
+  </entry>
+  <entry keyword="thread blocked state information">
+   <topic href="s3_procfs.html#Block_thread_info" title="Blocked thread information"/>
+  </entry>
+  <entry keyword="thread blocking reason">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="thread channel ID information">
+   <topic href="s3_procfs.html#Block_thread_info" title="Blocked thread information"/>
+  </entry>
+  <entry keyword="thread CPU time">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="thread current system call">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="thread flags">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="thread ID">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="thread instruction pointer">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="thread kernel call timeout flags">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="thread last channel ID used">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="thread last CPU number">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="thread local storage (TLS) area">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="thread message passing information">
+   <topic href="s3_procfs.html#Block_thread_info" title="Blocked thread information"/>
+  </entry>
+  <entry keyword="thread policy">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="thread priority">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="thread signal information">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="thread signals blocked">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="thread signals pending">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="thread stack base">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="thread stack pointer">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="thread stack size">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="thread start time">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="thread state">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="thread STATE_JOIN information">
+   <topic href="s3_procfs.html#Block_thread_info" title="Blocked thread information"/>
+  </entry>
+  <entry keyword="thread STATE_RECEIVE information">
+   <topic href="s3_procfs.html#Block_thread_info" title="Blocked thread information"/>
+  </entry>
+  <entry keyword="thread STATE_REPLY information">
+   <topic href="s3_procfs.html#Block_thread_info" title="Blocked thread information"/>
+  </entry>
+  <entry keyword="thread STATE_SEND information">
+   <topic href="s3_procfs.html#Block_thread_info" title="Blocked thread information"/>
+  </entry>
+  <entry keyword="thread STATE_STACK information">
+   <topic href="s3_procfs.html#Block_thread_info" title="Blocked thread information"/>
+  </entry>
+  <entry keyword="thread STATE_WAITPAGE information">
+   <topic href="s3_procfs.html#Block_thread_info" title="Blocked thread information"/>
+  </entry>
+  <entry keyword="thread synchronization information">
+   <topic href="s3_procfs.html#Block_thread_info" title="Blocked thread information"/>
+  </entry>
+  <entry keyword="timer and associated thread ID">
+   <topic href="s3_procfs.html#DCMD_PROC_TIMERS" title="DCMD_PROC_TIMERS"/>
+  </entry>
+  <entry keyword="timer clock ID">
+   <topic href="s3_procfs.html#DCMD_PROC_TIMERS" title="DCMD_PROC_TIMERS"/>
+  </entry>
+  <entry keyword="timer event">
+   <topic href="s3_procfs.html#DCMD_PROC_TIMERS" title="DCMD_PROC_TIMERS"/>
+  </entry>
+  <entry keyword="timer firing time">
+   <topic href="s3_procfs.html#DCMD_PROC_TIMERS" title="DCMD_PROC_TIMERS"/>
+  </entry>
+  <entry keyword="timer flags">
+   <topic href="s3_procfs.html#DCMD_PROC_TIMERS" title="DCMD_PROC_TIMERS"/>
+  </entry>
+  <entry keyword="timer notification type">
+   <topic href="s3_procfs.html#DCMD_PROC_TIMERS" title="DCMD_PROC_TIMERS"/>
+  </entry>
+  <entry keyword="timer overruns">
+   <topic href="s3_procfs.html#DCMD_PROC_TIMERS" title="DCMD_PROC_TIMERS"/>
+  </entry>
+  <entry keyword="timer remaining time">
+   <topic href="s3_procfs.html#DCMD_PROC_TIMERS" title="DCMD_PROC_TIMERS"/>
+  </entry>
+  <entry keyword="user ID information">
+   <topic href="s3_procfs.html#Process_info" title="Process information"/>
+  </entry>
+ </entry>
+ <entry keyword="/proc/boot">
+  <topic href="s3_procfs.html#pid_directories" title="The /proc by-process-ID directories"/>
+  <topic href="s3_procfs.html" title="The /proc Filesystem"/>
+  <topic href="s3_procfs.html#proc_boot" title="The /proc/boot directory"/>
+ </entry>
+ <entry keyword="/proc/dumper">
+  <topic href="s3_procfs.html#pid_directories" title="The /proc by-process-ID directories"/>
+ </entry>
+ <entry keyword="/proc/mount">
+  <topic href="s3_procfs.html" title="The /proc Filesystem"/>
+  <topic href="s3_procfs.html#proc_mount" title="The /proc/mount directory"/>
+  <entry keyword="channel ID">
+   <topic href="s3_procfs.html#proc_mount" title="The /proc/mount directory"/>
+  </entry>
+  <entry keyword="file type">
+   <topic href="s3_procfs.html#proc_mount" title="The /proc/mount directory"/>
+  </entry>
+  <entry keyword="Handle">
+   <topic href="s3_procfs.html#proc_mount" title="The /proc/mount directory"/>
+  </entry>
+  <entry keyword="node ID">
+   <topic href="s3_procfs.html#proc_mount" title="The /proc/mount directory"/>
+  </entry>
+  <entry keyword="process ID">
+   <topic href="s3_procfs.html#pid_directories" title="The /proc by-process-ID directories"/>
+   <topic href="s3_procfs.html#proc_mount" title="The /proc/mount directory"/>
+  </entry>
+ </entry>
+ <entry keyword="/proc/self">
+  <topic href="s3_procfs.html#pid_directories" title="The /proc by-process-ID directories"/>
+ </entry>
+ <entry keyword="/var/spool/news">
+  <topic href="s2_tarfs.html#How_to_improve" title="How can this possibly be made better?"/>
+  <topic href="s2_tarfs.html#Operation" title="Operation"/>
+ </entry>
+ <entry keyword="sys/*.h">
+ </entry>
+ <entry keyword="ADIOS">
+  <entry keyword="and the DCMD_GET_CONFIG command">
+   <topic href="s2_adios.html#ADIOS_main_function" title="The usual stuff"/>
+  </entry>
+  <entry keyword="and ThreadCtl()">
+   <topic href="s2_adios.html#main_function" title="main() and friends"/>
+  </entry>
+  <entry keyword="big picture">
+   <topic href="s2_adios.html#Requirements" title="Requirements"/>
+  </entry>
+  <entry keyword="calculating the transfer size">
+   <topic href="s2_adios.html#Acquiring_data" title="Acquiring data"/>
+  </entry>
+  <entry keyword="Card Information Structure (CIS)">
+   <topic href="s2_adios.html#showsamp_utility" title="The showsamp utility"/>
+   <topic href="s2_adios.html#tag_utility" title="The tag utility"/>
+  </entry>
+  <entry keyword="commands">
+   <topic href="s2_adios.html#Driver_design" title="Driver Design"/>
+  </entry>
+  <entry keyword="configuration file">
+   <topic href="s2_adios.html#Requirements" title="Requirements"/>
+   <topic href="s2_adios.html#Tags_database_design" title="Tags database design"/>
+  </entry>
+  <entry keyword="configuration file parsing">
+   <topic href="s2_adios.html#ADIOS_main_function" title="The usual stuff"/>
+   <topic href="s2_adios.html#Theory_of_operation" title="Theory of operation"/>
+  </entry>
+  <entry keyword="data acquisition overview">
+   <topic href="s2_adios.html#Acquiring_data" title="Acquiring data"/>
+  </entry>
+  <entry keyword="DCMD_GET_ADIS command">
+   <topic href="s2_adios.html#Acquiring_data" title="Acquiring data"/>
+   <topic href="s2_adios.html#resmgr_modules" title="The resource manager modules"/>
+  </entry>
+  <entry keyword="DCMD_GET_CONFIG command">
+   <topic href="s2_adios.html#resmgr_modules" title="The resource manager modules"/>
+  </entry>
+  <entry keyword="DCMD_SET_CPAO command">
+   <topic href="s2_adios.html#resmgr_modules" title="The resource manager modules"/>
+  </entry>
+  <entry keyword="DCMD_SET_CPBDO command">
+   <topic href="s2_adios.html#resmgr_modules" title="The resource manager modules"/>
+  </entry>
+  <entry keyword="devctl()">
+   <topic href="s2_adios.html#Driver_design" title="Driver Design"/>
+  </entry>
+  <entry keyword="device naming">
+   <topic href="s2_adios.html#Driver_design" title="Driver Design"/>
+   <topic href="s2_adios.html#main_function" title="main() and friends"/>
+  </entry>
+  <entry keyword="driver configuration">
+   <topic href="s2_adios.html#ADIOS_main_function" title="The usual stuff"/>
+  </entry>
+  <entry keyword="extended attributes structure">
+   <topic href="s2_adios.html#main_function" title="main() and friends"/>
+  </entry>
+  <entry keyword="filling shared memory">
+   <topic href="s2_adios.html#Mapping_shared_memory" title="Truncate and map shared memory"/>
+  </entry>
+  <entry keyword="library function adios_set_tag_raw()">
+   <topic href="s2_adios.html#tag_utility" title="The tag utility"/>
+  </entry>
+  <entry keyword="library function adios_set_tag_span()">
+   <topic href="s2_adios.html#tag_utility" title="The tag utility"/>
+  </entry>
+  <entry keyword="mapping the shared memory region">
+   <topic href="s2_adios.html#Mapping_shared_memory" title="Truncate and map shared memory"/>
+  </entry>
+  <entry keyword="measuring acquisition time">
+   <topic href="s2_adios.html#Acquiring_data" title="Acquiring data"/>
+  </entry>
+  <entry keyword="opening the shared memory region">
+   <topic href="s2_adios.html#Opening_shared_memory" title="Open and check the shared memory"/>
+  </entry>
+  <entry keyword="parser">
+   <topic href="s2_adios.html#Requirements" title="Requirements"/>
+  </entry>
+  <entry keyword="project definition">
+   <topic href="s2_adios.html#Requirements" title="Requirements"/>
+  </entry>
+  <entry keyword="requirements">
+   <topic href="s2_adios.html#ADIOS_server" title="The ADIOS server code"/>
+  </entry>
+  <entry keyword="setting size of shared memory">
+   <topic href="s2_adios.html#Mapping_shared_memory" title="Truncate and map shared memory"/>
+  </entry>
+  <entry keyword="shared memory">
+   <topic href="s2_adios.html#Requirements" title="Requirements"/>
+  </entry>
+  <entry keyword="shared memory adios_data_header_t">
+   <topic href="s2_adios.html#Structure_sizes" title="Calculating the sizes of data structures"/>
+  </entry>
+  <entry keyword="shared memory big picture">
+   <topic href="s2_adios.html#Structure_sizes" title="Calculating the sizes of data structures"/>
+  </entry>
+  <entry keyword="shared memory design">
+   <topic href="s2_adios.html#Shared_memory_design" title="Shared Memory Design"/>
+  </entry>
+  <entry keyword="shared memory layout">
+   <topic href="s2_adios.html#Shared_memory_design" title="Shared Memory Design"/>
+  </entry>
+  <entry keyword="shared memory size">
+   <topic href="s2_adios.html#Structure_sizes" title="Calculating the sizes of data structures"/>
+  </entry>
+  <entry keyword="showsamp output example">
+   <topic href="s2_adios.html#showsamp_utility" title="The showsamp utility"/>
+  </entry>
+  <entry keyword="showsamp utility">
+   <topic href="s2_adios.html#Utilities" title="The showsamp and tag utilities"/>
+  </entry>
+  <entry keyword="tag requirements">
+   <topic href="s2_adios.html#Tags_database_design" title="Tags database design"/>
+   <topic href="s2_adios.html#tag_utility" title="The tag utility"/>
+  </entry>
+  <entry keyword="tag utility">
+   <topic href="s2_adios.html#Utilities" title="The showsamp and tag utilities"/>
+  </entry>
+  <entry keyword="theory of operation">
+   <topic href="s2_adios.html#Theory_of_operation" title="Theory of operation"/>
+  </entry>
+  <entry keyword="timing of acquisition">
+   <topic href="s2_adios.html#Acquiring_data" title="Acquiring data"/>
+  </entry>
+ </entry>
+ <entry keyword="AES encryption">
+  <topic href="s2_tarfs.html#Secure_filesystem" title="Secure filesystem"/>
+ </entry>
+ <entry keyword="analog I/O">
+  <topic href="s2_adios.html#Requirements" title="Requirements"/>
+  <entry keyword="gain settings">
+   <topic href="s2_adios.html#main_function" title="main() and friends"/>
+  </entry>
+  <entry keyword="on ISO-813 card">
+   <topic href="s2_adios.html#main_function" title="main() and friends"/>
+  </entry>
+  <entry keyword="on PCL-711">
+   <topic href="s2_adios.html#main_function" title="main() and friends"/>
+  </entry>
+  <entry keyword="PCL-711 analog output">
+   <topic href="s2_adios.html#Analog_output" title="Analog output"/>
+  </entry>
+  <entry keyword="reading a channel">
+   <topic href="s2_adios.html#Analog_input" title="Analog input"/>
+  </entry>
+  <entry keyword="setting the gain">
+   <topic href="s2_adios.html#Analog_input" title="Analog input"/>
+  </entry>
+ </entry>
+ <entry keyword="attributes structure">
+  <entry keyword="and data content">
+   <topic href="s3_fsys.html#Date_element_content" title="Data element content management"/>
+  </entry>
+  <entry keyword="and object name">
+   <topic href="s2_ramdisk.html#Extended_attributes" title="The extended attributes structure"/>
+  </entry>
+  <entry keyword="and pathname resolution">
+   <topic href="s3_fsys.html#Pathname_resolution" title="Pathname resolution"/>
+  </entry>
+  <entry keyword="and thread synchronization">
+   <topic href="s1_basics.html#threaded_resource_managers" title="Threaded resource managers"/>
+  </entry>
+  <entry keyword="caching">
+   <topic href="s3_fsys.html#Directory_management" title="Directory management"/>
+  </entry>
+  <entry keyword="demultiplexing extended fields">
+   <topic href="s2_ramdisk.html#Extended_attributes" title="The extended attributes structure"/>
+  </entry>
+  <entry keyword="extended for pcl711">
+   <topic href="s2_adios.html#main_function" title="main() and friends"/>
+  </entry>
+  <entry keyword="extending for file systems">
+   <topic href="s3_fsys.html#Filesystems_and_Neutrino" title="Filesystems and Neutrino"/>
+  </entry>
+  <entry keyword="extensions for Web Counter">
+   <topic href="s2_web.html#execute_resmgr_phase1" title="The execute_resmgr() function"/>
+  </entry>
+  <entry keyword="finding based on pathname">
+   <topic href="s2_ramdisk.html#connect_msg_to_attr" title="The connect_msg_to_attr() function"/>
+  </entry>
+  <entry keyword="for data storage">
+   <topic href="s2_ramdisk.html#Extended_attributes" title="The extended attributes structure"/>
+  </entry>
+  <entry keyword="implementation of directories">
+   <topic href="s3_fsys.html#Directory_management" title="Directory management"/>
+  </entry>
+  <entry keyword="initializing as directory">
+   <topic href="s2_web.html#execute_resmgr_phase3" title="The new-and-improved execute_resmgr()"/>
+  </entry>
+  <entry keyword="initializing as file">
+   <topic href="s2_web.html#execute_resmgr_phase3" title="The new-and-improved execute_resmgr()"/>
+  </entry>
+  <entry keyword="inode">
+   <topic href="s2_web.html#execute_resmgr_phase3" title="The new-and-improved execute_resmgr()"/>
+  </entry>
+  <entry keyword="inode as index into array of">
+   <topic href="s2_web.html#execute_resmgr_phase3" title="The new-and-improved execute_resmgr()"/>
+  </entry>
+  <entry keyword="maintaining hardware shadow of registers in extension">
+   <topic href="s2_adios.html#Digital_output" title="Digital output"/>
+  </entry>
+  <entry keyword="nbytes member">
+   <topic href="s2_web.html#execute_resmgr_phase1" title="The execute_resmgr() function"/>
+  </entry>
+  <entry keyword="pcl711&#x0027;s gain value">
+   <topic href="s2_adios.html#Analog_input" title="Analog input"/>
+  </entry>
+  <entry keyword="pcl711&#x0027;s pcl711_t">
+   <topic href="s2_adios.html#Analog_input" title="Analog input"/>
+  </entry>
+  <entry keyword="RAM disk">
+   <topic href="s2_ramdisk.html#Extended_attributes" title="The extended attributes structure"/>
+  </entry>
+  <entry keyword="RAM-disk directory">
+   <topic href="s2_ramdisk.html#Extended_attributes" title="The extended attributes structure"/>
+  </entry>
+  <entry keyword="RAM-disk file">
+   <topic href="s2_ramdisk.html#Extended_attributes" title="The extended attributes structure"/>
+  </entry>
+  <entry keyword="RAM-disk symlink">
+   <topic href="s2_ramdisk.html#Extended_attributes" title="The extended attributes structure"/>
+  </entry>
+  <entry keyword="storing directory entries">
+   <topic href="s2_ramdisk.html#Extended_attributes" title="The extended attributes structure"/>
+  </entry>
+  <entry keyword="tar filesystem">
+   <topic href="s2_tarfs.html#Structures" title="The structures"/>
+  </entry>
+  <entry keyword="using inode as index into array of">
+   <topic href="s2_web.html#Operating_on_a_file" title="Operating on a file"/>
+  </entry>
+  <entry keyword="using mode to tell file vs directory apart">
+   <topic href="s2_web.html#io_read_phase3" title="Handling io_read()"/>
+  </entry>
+  <entry keyword="Web Counter directory">
+   <topic href="s2_web.html#Globals" title="Globals"/>
+  </entry>
+  <entry keyword="Web Counter GIF file">
+   <topic href="s2_web.html#Globals" title="Globals"/>
+   <topic href="s2_web.html#Plain_text" title="Plain text rendering"/>
+  </entry>
+  <entry keyword="Web Counter text file">
+   <topic href="s2_web.html#Globals" title="Globals"/>
+   <topic href="s2_web.html#Plain_text" title="Plain text rendering"/>
+  </entry>
+ </entry>
+ <entry keyword="availability">
+ </entry>
+ <entry keyword="books">
+   <topic href="s2_tarfs.html#References_books" title="Books"/>
+   <topic href="preface.html#Other_references" title="Other references"/>
+   <topic href="preface.html#Other_references" title="Other references"/>
+   <topic href="preface.html" title="Preface to the First Edition by Rob Krten"/>
+   <topic href="preface.html#Other_references" title="Other references"/>
+   <topic href="preface.html" title="Preface to the First Edition by Rob Krten"/>
+ </entry>
+ <entry keyword="bugs">
+  <entry keyword="cost to fix">
+   <topic href="s1_ha.html#Increasing_MTBF" title="Increasing the MTBF"/>
+  </entry>
+  <entry keyword="cost to test for">
+   <topic href="s1_ha.html#Increasing_MTBF" title="Increasing the MTBF"/>
+  </entry>
+  <entry keyword="deadlock">
+   <topic href="s1_dd.html#Swipe_card" title="Swipe-card readers"/>
+  </entry>
+  <entry keyword="different sets by different teams">
+   <topic href="s1_ha.html#Synchronization_problems" title="Problems"/>
+  </entry>
+  <entry keyword="discovery rate model">
+   <topic href="s1_ha.html#Increasing_MTBF" title="Increasing the MTBF"/>
+  </entry>
+  <entry keyword="eliminating all">
+   <topic href="s1_ha.html#Increasing_MTBF" title="Increasing the MTBF"/>
+  </entry>
+  <entry keyword="recovering from">
+   <topic href="s1_ha.html" title="High Availability"/>
+  </entry>
+  <entry keyword="restarting">
+   <topic href="s1_ha.html" title="High Availability"/>
+  </entry>
+  <entry keyword="upgrading software">
+   <topic href="s1_ha.html" title="High Availability"/>
+  </entry>
+ </entry>
+ <entry keyword="Century Aluminum">
+  <topic href="s2_adios.html" title="ADIOS — Analog/Digital I/O Server"/>
+ </entry>
+ <entry keyword="channel ID">
+  <entry keyword="under /proc/mount">
+   <topic href="s3_procfs.html#proc_mount" title="The /proc/mount directory"/>
+  </entry>
+ </entry>
+ <entry keyword="code walkthrough">
+  <entry keyword="pcl711&#x0027;s pcl711_read_analog()">
+   <topic href="s2_adios.html#Analog_input" title="Analog input"/>
+  </entry>
+  <entry keyword="RAM disk&#x0027;s c_open()">
+   <topic href="s2_ramdisk.html#Walkthrough" title="Walkthrough"/>
+  </entry>
+  <entry keyword="RAM disk&#x0027;s cfs_c_link()">
+   <topic href="s2_ramdisk.html#c_link" title="The c_link() function"/>
+  </entry>
+  <entry keyword="RAM disk&#x0027;s cfs_c_mount()">
+   <topic href="s2_ramdisk.html#c_mount" title="The c_mount() function"/>
+  </entry>
+  <entry keyword="RAM disk&#x0027;s cfs_c_readlink()">
+   <topic href="s2_ramdisk.html#c_readlink" title="The c_readlink() function"/>
+  </entry>
+  <entry keyword="RAM disk&#x0027;s cfs_c_rename()">
+   <topic href="s2_ramdisk.html#c_rename" title="The c_rename() function"/>
+  </entry>
+  <entry keyword="RAM disk&#x0027;s cfs_io_write()">
+   <topic href="s2_ramdisk.html#io_write" title="The io_write() function"/>
+  </entry>
+  <entry keyword="RAM disk&#x0027;s connect_msg_to_attr()">
+   <topic href="s2_ramdisk.html#connect_msg_to_attr" title="The connect_msg_to_attr() function"/>
+  </entry>
+  <entry keyword="RAM disk&#x0027;s pathwalk() function">
+   <topic href="s2_ramdisk.html#pathwalk" title="The pathwalk() function"/>
+  </entry>
+  <entry keyword="RAM disk&#x0027;s ramdisk_io_read_dir()">
+   <topic href="s2_ramdisk.html#io_read" title="The io_read() function"/>
+  </entry>
+  <entry keyword="RAM disk&#x0027;s ramdisk_io_read_file()">
+   <topic href="s2_ramdisk.html#io_read" title="The io_read() function"/>
+  </entry>
+  <entry keyword="RAM disk&#x0027;s ramdisk_io_write()">
+   <topic href="s2_ramdisk.html#io_write" title="The io_write() function"/>
+  </entry>
+  <entry keyword="RAM disk&#x0027;s redirect_symlink()">
+   <topic href="s2_ramdisk.html#redirect_symlink" title="The redirect_symlink() function"/>
+  </entry>
+  <entry keyword="RAM disk&#x0027;s release_attr()">
+   <topic href="s2_ramdisk.html#io_close_ocb" title="The io_close_ocb() function"/>
+  </entry>
+  <entry keyword="tar filesystem add_tar_entry()">
+   <topic href="s2_tarfs.html#add_tar_entry" title="The add_tar_entry() function"/>
+  </entry>
+  <entry keyword="tar filesystem analyze_tar_file()">
+   <topic href="s2_tarfs.html#analyze_tar_file" title="The analyze_tar_file() function"/>
+  </entry>
+  <entry keyword="tar filesystem c_mount()">
+   <topic href="s2_tarfs.html#c_mount" title="The c_mount() function"/>
+  </entry>
+  <entry keyword="tar filesystem tarfs_io_read_file()">
+   <topic href="s2_tarfs.html#io_read" title="The io_read() function and related utilities"/>
+  </entry>
+  <entry keyword="using inode as index into attributes structure array">
+   <topic href="s2_web.html#Operating_on_a_file" title="Operating on a file"/>
+  </entry>
+  <entry keyword="Web Counter&#x0027;s io_read()">
+   <topic href="s2_web.html#io_read_phase1" title="The io_read() function"/>
+  </entry>
+  <entry keyword="Web Counter&#x0027;s io_read_dir()">
+   <topic href="s2_web.html#Operating_on_a_directory" title="Operating on a directory"/>
+  </entry>
+  <entry keyword="Web Counter&#x0027;s io_write()">
+   <topic href="s2_web.html#io_write" title="The io_write() function"/>
+  </entry>
+ </entry>
+ <entry keyword="command line">
+   <topic href="s1_basics.html#optproc" title="Command-line processing — optproc()"/>
+   <topic href="s1_basics.html#optproc" title="Command-line processing — optproc()"/>
+  <entry keyword="and POSIX">
+   <topic href="s1_basics.html#optproc" title="Command-line processing — optproc()"/>
+  </entry>
+  <entry keyword="final option sanity check">
+   <topic href="s1_basics.html#optproc" title="Command-line processing — optproc()"/>
+  </entry>
+  <entry keyword="flags">
+   <topic href="s1_basics.html#optproc" title="Command-line processing — optproc()"/>
+  </entry>
+  <entry keyword="optd">
+   <topic href="s1_basics.html#optproc" title="Command-line processing — optproc()"/>
+  </entry>
+  <entry keyword="optproc()">
+   <topic href="s1_basics.html#optproc" title="Command-line processing — optproc()"/>
+  </entry>
+  <entry keyword="optv">
+   <topic href="s1_basics.html#optproc" title="Command-line processing — optproc()"/>
+  </entry>
+  <entry keyword="processing">
+   <topic href="s1_basics.html#optproc" title="Command-line processing — optproc()"/>
+   <topic href="s1_basics.html#Beginning" title="In the beginning…"/>
+   <topic href="s1_basics.html#main_function" title="The main() function"/>
+  </entry>
+  <entry keyword="valued options">
+   <topic href="s1_basics.html#optproc" title="Command-line processing — optproc()"/>
+  </entry>
+ </entry>
+ <entry keyword="common">
+  <entry keyword="code reuse">
+   <topic href="s1_basics.html#main_function" title="The main() function"/>
+  </entry>
+  <entry keyword="coding practices">
+   <topic href="s1_basics.html#main_function" title="The main() function"/>
+  </entry>
+  <entry keyword="command-line option ">
+   <topic href="s1_basics.html#optproc" title="Command-line processing — optproc()"/>
+  </entry>
+  <entry keyword="command-line option ">
+   <topic href="s1_basics.html#optproc" title="Command-line processing — optproc()"/>
+  </entry>
+  <entry keyword="command-line option optd">
+   <topic href="s1_basics.html#optproc" title="Command-line processing — optproc()"/>
+  </entry>
+  <entry keyword="command-line option optv">
+   <topic href="s1_basics.html#optproc" title="Command-line processing — optproc()"/>
+  </entry>
+  <entry keyword="final option sanity check">
+   <topic href="s1_basics.html#optproc" title="Command-line processing — optproc()"/>
+  </entry>
+  <entry keyword="global variable blankname">
+   <topic href="s1_basics.html#Global_variables" title="Common globals"/>
+  </entry>
+  <entry keyword="global variable progname">
+   <topic href="s1_basics.html#Global_variables" title="Common globals"/>
+  </entry>
+  <entry keyword="global variable version">
+   <topic href="s1_basics.html#Global_variables" title="Common globals"/>
+  </entry>
+  <entry keyword="main.c">
+   <topic href="s1_basics.html#Beginning" title="In the beginning…"/>
+   <topic href="s1_basics.html#main_function" title="The main() function"/>
+  </entry>
+  <entry keyword="Makefile">
+   <topic href="s1_basics.html#Beginning" title="In the beginning…"/>
+  </entry>
+  <entry keyword="optproc()">
+   <topic href="s1_basics.html#optproc" title="Command-line processing — optproc()"/>
+  </entry>
+  <entry keyword="resource manager framework">
+   <topic href="s1_basics.html#Beginning" title="In the beginning…"/>
+  </entry>
+  <entry keyword="scripts">
+   <topic href="s1_basics.html#Beginning" title="In the beginning…"/>
+   <topic href="s1_basics.html#Usage_messages" title="Usage messages"/>
+  </entry>
+  <entry keyword="usage message">
+   <topic href="s1_basics.html#Beginning" title="In the beginning…"/>
+   <topic href="s1_basics.html#Usage_messages" title="Usage messages"/>
+  </entry>
+ </entry>
+ <entry keyword="continuous availability">
+ </entry>
+ <entry keyword="conventions">
+  <entry keyword="typographical">
+   <topic href="about.html#Typographical_conventions" title="Typographical conventions"/>
+  </entry>
+ </entry>
+ <entry keyword="data acquisition">
+  <entry keyword="measuring acquisition time">
+   <topic href="s2_adios.html#Acquiring_data" title="Acquiring data"/>
+  </entry>
+  <entry keyword="See DIO-144, ISO-813, PCL-711, and ADIOS"/>
+ </entry>
+ <entry keyword="design">
+  <entry keyword="modularity">
+   <topic href="s1_dd.html#Decoupling" title="Decoupling design in a message-passing environment"/>
+  </entry>
+  <entry keyword="structure of">
+   <topic href="s1_dd.html#Decoupling" title="Decoupling design in a message-passing environment"/>
+  </entry>
+ </entry>
+ <entry keyword="digital I/O">
+  <topic href="s2_adios.html#Requirements" title="Requirements"/>
+  <entry keyword="on DIO-144">
+   <topic href="s2_adios.html#main_function" title="main() and friends"/>
+  </entry>
+  <entry keyword="on PCL-711">
+   <topic href="s2_adios.html#main_function" title="main() and friends"/>
+  </entry>
+  <entry keyword="PCL-711 input">
+   <topic href="s2_adios.html#Digial_input" title="Digital input"/>
+  </entry>
+  <entry keyword="PCL-711 output">
+   <topic href="s2_adios.html#Digital_output" title="Digital output"/>
+  </entry>
+  <entry keyword="shadow register">
+   <topic href="s2_adios.html#Digital_output" title="Digital output"/>
+   <topic href="s2_adios.html#main_function" title="main() and friends"/>
+  </entry>
+ </entry>
+ <entry keyword="DIO-144">
+  <entry keyword="big picture">
+   <topic href="s2_adios.html#main_function" title="main() and friends"/>
+  </entry>
+  <entry keyword="card configuration">
+   <topic href="s2_adios.html#DIO-144" title="DIO-144"/>
+  </entry>
+  <entry keyword="card features">
+   <topic href="s2_adios.html#DIO-144" title="DIO-144"/>
+  </entry>
+  <entry keyword="channel assignments">
+   <topic href="s2_adios.html#main_function" title="main() and friends"/>
+  </entry>
+  <entry keyword="io_devctl() handler">
+   <topic href="s2_adios.html#resmgr_modules" title="The resource manager modules"/>
+  </entry>
+ </entry>
+ <entry keyword="example">
+  <entry keyword="accessing /proc&#x0027;s as file">
+   <topic href="s3_procfs.html#Iterating_through_processes" title="Iterating through the list of processes"/>
+  </entry>
+  <entry keyword="ADIOS configuration file">
+   <topic href="s2_adios.html#Tags_database_design" title="Tags database design"/>
+  </entry>
+  <entry keyword="adios&#x0027;s create_shmem()">
+   <topic href="s2_adios.html#Structure_sizes" title="Calculating the sizes of data structures"/>
+   <topic href="s2_adios.html#Opening_shared_memory" title="Open and check the shared memory"/>
+   <topic href="s2_adios.html#Mapping_shared_memory" title="Truncate and map shared memory"/>
+  </entry>
+  <entry keyword="adios&#x0027;s daq_thread()">
+   <topic href="s2_adios.html#Acquiring_data" title="Acquiring data"/>
+  </entry>
+  <entry keyword="c_mount() function (tar filesystem)">
+   <topic href="s2_tarfs.html#c_mount" title="The c_mount() function"/>
+  </entry>
+  <entry keyword="DCMD_PROC_CURTHREAD">
+   <topic href="s3_procfs.html#DCMD_PROC_GETGREG" title="The DCMD_PROC_GETGREG and DCMD_PROC_GETFPREG commands"/>
+  </entry>
+  <entry keyword="DCMD_PROC_GETGREG">
+   <topic href="s3_procfs.html#DCMD_PROC_GETGREG" title="The DCMD_PROC_GETGREG and DCMD_PROC_GETFPREG commands"/>
+  </entry>
+  <entry keyword="DCMD_PROC_INFO">
+   <topic href="s3_procfs.html#DCMD_PROC_INFO" title="DCMD_PROC_INFO"/>
+  </entry>
+  <entry keyword="DCMD_PROC_IRQS">
+   <topic href="s3_procfs.html#DCMD_PROC_IRQS" title="DCMD_PROC_IRQS"/>
+  </entry>
+  <entry keyword="DCMD_PROC_MAPDEBUG_BASE">
+   <topic href="s3_procfs.html#Iterating_through_processes" title="Iterating through the list of processes"/>
+  </entry>
+  <entry keyword="DCMD_PROC_PAGEDATA">
+   <topic href="s3_procfs.html#DCMD_PROC_MAPINFO" title="DCMD_PROC_MAPINFO and DCMD_PROC_PAGEDATA"/>
+  </entry>
+  <entry keyword="DCMD_PROC_TIDSTATUS">
+   <topic href="s3_procfs.html#Finding_thread_information" title="Finding out information about the threads"/>
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="DCMD_PROC_TIMERS">
+   <topic href="s3_procfs.html#DCMD_PROC_TIMERS" title="DCMD_PROC_TIMERS"/>
+  </entry>
+  <entry keyword="debug_greg_t">
+   <topic href="s3_procfs.html#DCMD_PROC_GETGREG" title="The DCMD_PROC_GETGREG and DCMD_PROC_GETFPREG commands"/>
+  </entry>
+  <entry keyword="debug_irq_t">
+   <topic href="s3_procfs.html#DCMD_PROC_IRQS" title="DCMD_PROC_IRQS"/>
+  </entry>
+  <entry keyword="debug_timer_t">
+   <topic href="s3_procfs.html#DCMD_PROC_TIMERS" title="DCMD_PROC_TIMERS"/>
+  </entry>
+  <entry keyword="devctl()">
+   <topic href="s3_procfs.html#DCMD_PROC_MAPINFO" title="DCMD_PROC_MAPINFO and DCMD_PROC_PAGEDATA"/>
+   <topic href="s3_procfs.html#DCMD_PROC_TIMERS" title="DCMD_PROC_TIMERS"/>
+   <topic href="s3_procfs.html#Iterating_through_processes" title="Iterating through the list of processes"/>
+   <entry keyword="DCMD_PROC_CURTHREAD">
+    <topic href="s3_procfs.html#DCMD_PROC_GETGREG" title="The DCMD_PROC_GETGREG and DCMD_PROC_GETFPREG commands"/>
+   </entry>
+   <entry keyword="DCMD_PROC_GETGREG">
+    <topic href="s3_procfs.html#DCMD_PROC_GETGREG" title="The DCMD_PROC_GETGREG and DCMD_PROC_GETFPREG commands"/>
+   </entry>
+   <entry keyword="DCMD_PROC_INFO">
+    <topic href="s3_procfs.html#DCMD_PROC_INFO" title="DCMD_PROC_INFO"/>
+   </entry>
+   <entry keyword="DCMD_PROC_TIDSTATUS">
+    <topic href="s3_procfs.html#Finding_thread_information" title="Finding out information about the threads"/>
+   </entry>
+  </entry>
+  <entry keyword="getting thread information">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="memory region info for pipe">
+   <topic href="s3_procfs.html#DCMD_PROC_MAPINFO" title="DCMD_PROC_MAPINFO and DCMD_PROC_PAGEDATA"/>
+  </entry>
+  <entry keyword="number of timers in a process">
+   <topic href="s3_procfs.html#DCMD_PROC_TIMERS" title="DCMD_PROC_TIMERS"/>
+  </entry>
+  <entry keyword="opendir()">
+   <topic href="s3_procfs.html#Iterating_through_processes" title="Iterating through the list of processes"/>
+  </entry>
+  <entry keyword="pcl711&#x0027;s install_cards_from_database()">
+   <topic href="s2_adios.html#main_function" title="main() and friends"/>
+  </entry>
+  <entry keyword="pcl711&#x0027;s optproc()">
+   <topic href="s2_adios.html#main_function" title="main() and friends"/>
+  </entry>
+  <entry keyword="pcl711&#x0027;s pcl711_read_analog()">
+   <topic href="s2_adios.html#Analog_input" title="Analog input"/>
+  </entry>
+  <entry keyword="pcl711&#x0027;s pcl711_read_digital_bit()">
+   <topic href="s2_adios.html#Digial_input" title="Digital input"/>
+  </entry>
+  <entry keyword="pcl711&#x0027;s pcl711_set_gain()">
+   <topic href="s2_adios.html#Analog_input" title="Analog input"/>
+  </entry>
+  <entry keyword="pcl711&#x0027;s pcl711_write_analog()">
+   <topic href="s2_adios.html#Analog_output" title="Analog output"/>
+  </entry>
+  <entry keyword="pcl711&#x0027;s pcl711_write_digital_bit()">
+   <topic href="s2_adios.html#Digital_output" title="Digital output"/>
+  </entry>
+  <entry keyword="procfs_debuginfo">
+   <topic href="s3_procfs.html#Iterating_through_processes" title="Iterating through the list of processes"/>
+  </entry>
+  <entry keyword="procfs_mapinfo">
+   <topic href="s3_procfs.html#DCMD_PROC_MAPINFO" title="DCMD_PROC_MAPINFO and DCMD_PROC_PAGEDATA"/>
+  </entry>
+  <entry keyword="RAM disk&#x0027;s c_open()">
+   <topic href="s2_ramdisk.html#c_open_walkthrough" title="Finally, the c_open() code walkthrough"/>
+  </entry>
+  <entry keyword="RAM disk&#x0027;s c_unlink()">
+   <topic href="s2_ramdisk.html#c_unlink" title="The c_unlink() function"/>
+  </entry>
+  <entry keyword="RAM disk&#x0027;s cfs_block_fill_statvfs()">
+   <topic href="s2_ramdisk.html#Filesystem_stats" title="Filesystem statistics"/>
+  </entry>
+  <entry keyword="RAM disk&#x0027;s cfs_c_link()">
+   <topic href="s2_ramdisk.html#c_link" title="The c_link() function"/>
+  </entry>
+  <entry keyword="RAM disk&#x0027;s cfs_c_mount()">
+   <topic href="s2_ramdisk.html#c_mount" title="The c_mount() function"/>
+  </entry>
+  <entry keyword="RAM disk&#x0027;s cfs_c_readlink()">
+   <topic href="s2_ramdisk.html#c_readlink" title="The c_readlink() function"/>
+  </entry>
+  <entry keyword="RAM disk&#x0027;s cfs_c_rename()">
+   <topic href="s2_ramdisk.html#c_rename" title="The c_rename() function"/>
+  </entry>
+  <entry keyword="RAM disk&#x0027;s cfs_io_close_ocb()">
+   <topic href="s2_ramdisk.html#io_close_ocb" title="The io_close_ocb() function"/>
+  </entry>
+  <entry keyword="RAM disk&#x0027;s cfs_io_write()">
+   <topic href="s2_ramdisk.html#io_write" title="The io_write() function"/>
+  </entry>
+  <entry keyword="RAM disk&#x0027;s cfs_rmnod()">
+   <topic href="s2_ramdisk.html#c_unlink" title="The c_unlink() function"/>
+  </entry>
+  <entry keyword="RAM disk&#x0027;s connect_msg_to_attr()">
+   <topic href="s2_ramdisk.html#connect_msg_to_attr" title="The connect_msg_to_attr() function"/>
+  </entry>
+  <entry keyword="RAM disk&#x0027;s io_read()">
+   <topic href="s2_ramdisk.html#io_read" title="The io_read() function"/>
+  </entry>
+  <entry keyword="RAM disk&#x0027;s pathwalk() function">
+   <topic href="s2_ramdisk.html#pathwalk" title="The pathwalk() function"/>
+  </entry>
+  <entry keyword="RAM disk&#x0027;s ramdisk_io_read_dir()">
+   <topic href="s2_ramdisk.html#io_read" title="The io_read() function"/>
+  </entry>
+  <entry keyword="RAM disk&#x0027;s ramdisk_io_read_file()">
+   <topic href="s2_ramdisk.html#io_read" title="The io_read() function"/>
+  </entry>
+  <entry keyword="RAM disk&#x0027;s ramdisk_io_write()">
+   <topic href="s2_ramdisk.html#io_write" title="The io_write() function"/>
+  </entry>
+  <entry keyword="RAM disk&#x0027;s redirect_symlink()">
+   <topic href="s2_ramdisk.html#redirect_symlink" title="The redirect_symlink() function"/>
+  </entry>
+  <entry keyword="RAM disk&#x0027;s release_attr()">
+   <topic href="s2_ramdisk.html#io_close_ocb" title="The io_close_ocb() function"/>
+  </entry>
+  <entry keyword="readdir()">
+   <topic href="s3_procfs.html#Iterating_through_processes" title="Iterating through the list of processes"/>
+  </entry>
+  <entry keyword="retrieving memory region info">
+   <topic href="s3_procfs.html#DCMD_PROC_MAPINFO" title="DCMD_PROC_MAPINFO and DCMD_PROC_PAGEDATA"/>
+  </entry>
+  <entry keyword="searching /proc">
+   <topic href="s3_procfs.html#Iterating_through_processes" title="Iterating through the list of processes"/>
+  </entry>
+  <entry keyword="searching /proc by name">
+   <topic href="s3_procfs.html#Iterating_through_processes" title="Iterating through the list of processes"/>
+  </entry>
+  <entry keyword="security system">
+   <topic href="s1_dd.html#Decoupling" title="Decoupling design in a message-passing environment"/>
+  </entry>
+  <entry keyword="showsamp output example">
+   <topic href="s2_adios.html#showsamp_utility" title="The showsamp utility"/>
+  </entry>
+  <entry keyword="showsamp&#x0027;s do_data_set()">
+   <topic href="s2_adios.html#showsamp_utility" title="The showsamp utility"/>
+  </entry>
+  <entry keyword="struct dirent">
+   <topic href="s3_procfs.html#Iterating_through_processes" title="Iterating through the list of processes"/>
+  </entry>
+  <entry keyword="tag output example">
+   <topic href="s2_adios.html#tag_utility" title="The tag utility"/>
+  </entry>
+  <entry keyword="tag&#x0027;s display_list()">
+   <topic href="s2_adios.html#tag_utility" title="The tag utility"/>
+  </entry>
+  <entry keyword="tar filesystem&#x0027;s add_tar_entry()">
+   <topic href="s2_tarfs.html#add_tar_entry" title="The add_tar_entry() function"/>
+  </entry>
+  <entry keyword="tar filesystem&#x0027;s analyze_tar_file()">
+   <topic href="s2_tarfs.html#analyze_tar_file" title="The analyze_tar_file() function"/>
+  </entry>
+  <entry keyword="tar filesystem&#x0027;s tarfs_io_read_file()">
+   <topic href="s2_tarfs.html#io_read" title="The io_read() function and related utilities"/>
+  </entry>
+  <entry keyword="using inode as index into attributes structure array">
+   <topic href="s2_web.html#Operating_on_a_file" title="Operating on a file"/>
+  </entry>
+  <entry keyword="Web Counter invocation">
+   <topic href="s2_web.html#Using_resmgr" title="Using the web counter resource manager"/>
+  </entry>
+  <entry keyword="Web Counter&#x0027;s dirent_fill()">
+   <topic href="s2_web.html#Operating_on_a_directory" title="Operating on a directory"/>
+  </entry>
+  <entry keyword="Web Counter&#x0027;s dirent_size()">
+   <topic href="s2_web.html#Operating_on_a_directory" title="Operating on a directory"/>
+  </entry>
+  <entry keyword="Web Counter&#x0027;s encode_image()">
+   <topic href="s2_web.html#encode_image" title="The encode_image() function"/>
+  </entry>
+  <entry keyword="Web Counter&#x0027;s io_close_ocb()">
+   <topic href="s2_web.html#io_close_ocb_phase1" title="The io_close_ocb() function"/>
+   <topic href="s2_web.html#io_close_ocb_phase2" title="The io_close_ocb() function"/>
+  </entry>
+  <entry keyword="Web Counter&#x0027;s io_open()">
+   <topic href="s2_web.html#io_open" title="The io_open() function"/>
+  </entry>
+  <entry keyword="Web Counter&#x0027;s io_read()">
+   <topic href="s2_web.html#io_read_phase1" title="The io_read() function"/>
+  </entry>
+  <entry keyword="Web Counter&#x0027;s io_read_dir()">
+   <topic href="s2_web.html#Operating_on_a_directory" title="Operating on a directory"/>
+  </entry>
+  <entry keyword="Web Counter&#x0027;s io_write()">
+   <topic href="s2_web.html#io_write" title="The io_write() function"/>
+  </entry>
+  <entry keyword="Web Counter&#x0027;s render_7segment()">
+   <topic href="s2_web.html#render_7segment" title="The render_7segment() function"/>
+  </entry>
+ </entry>
+ <entry keyword="fail-over">
+ </entry>
+ <entry keyword="fault tolerance">
+ </entry>
+ <entry keyword="file type">
+  <entry keyword="under /proc/mount">
+   <topic href="s3_procfs.html#proc_mount" title="The /proc/mount directory"/>
+  </entry>
+ </entry>
+ <entry keyword="filesystem">
+  <entry keyword="abuses of">
+   <topic href="s2_tarfs.html#Executing_commands" title="Executing commands"/>
+   <topic href="s2_tarfs.html#Unusual_filesystems" title="Strange and unusual filesystems"/>
+  </entry>
+  <entry keyword="adding more blocks">
+   <topic href="s2_ramdisk.html#io_write" title="The io_write() function"/>
+  </entry>
+  <entry keyword="and data content">
+   <topic href="s3_fsys.html#Date_element_content" title="Data element content management"/>
+  </entry>
+  <entry keyword="and DCMD_FSYS_STATVFS">
+   <topic href="s2_ramdisk.html#Filesystem_stats" title="Filesystem statistics"/>
+  </entry>
+  <entry keyword="and devctl()">
+   <topic href="s2_ramdisk.html#io_devctl" title="The io_devctl() function"/>
+  </entry>
+  <entry keyword="and dynamic HTML content">
+   <topic href="s2_tarfs.html#Line_based_filesystem" title="Line-based filesystem"/>
+  </entry>
+  <entry keyword="and extended attributes structures">
+   <topic href="s3_fsys.html#Filesystems_and_Neutrino" title="Filesystems and Neutrino"/>
+  </entry>
+  <entry keyword="and io_read()">
+   <topic href="s3_fsys.html#Date_element_content" title="Data element content management"/>
+   <topic href="s3_fsys.html#Directory_management" title="Directory management"/>
+  </entry>
+  <entry keyword="and io_write()">
+   <topic href="s3_fsys.html#Date_element_content" title="Data element content management"/>
+  </entry>
+  <entry keyword="and mkdir()">
+   <topic href="s2_ramdisk.html#c_mknod" title="The c_mknod() function"/>
+  </entry>
+  <entry keyword="and mv">
+   <topic href="s3_fsys.html#Directory_management" title="Directory management"/>
+  </entry>
+  <entry keyword="and readdir()">
+   <topic href="s2_tarfs.html#Creating_tar_files" title="Creating a .tar file"/>
+   <topic href="s3_fsys.html#Directory_management" title="Directory management"/>
+  </entry>
+  <entry keyword="and rename">
+   <topic href="s3_fsys.html#Directory_management" title="Directory management"/>
+  </entry>
+  <entry keyword="and resource managers">
+   <topic href="s3_fsys.html#Filesystems_and_Neutrino" title="Filesystems and Neutrino"/>
+  </entry>
+  <entry keyword="and symlinks">
+   <topic href="s3_fsys.html#Pathname_resolution" title="Pathname resolution"/>
+  </entry>
+  <entry keyword="basing behavior on client">
+   <topic href="s2_tarfs.html#Executing_commands" title="Executing commands"/>
+  </entry>
+  <entry keyword="CD-ROM">
+   <topic href="s3_fsys.html#Mountpoint_management" title="Mount point management"/>
+   <topic href="s3_fsys.html#Special_device_registration" title="Special device registration"/>
+   <topic href="s3_fsys.html#Mountpoints" title="The mount point and the root"/>
+  </entry>
+  <entry keyword="client-sensitive contents">
+   <topic href="s2_web.html#execute_resmgr_phase1" title="The execute_resmgr() function"/>
+  </entry>
+  <entry keyword="closing a file">
+   <topic href="s2_ramdisk.html#io_close_ocb" title="The io_close_ocb() function"/>
+  </entry>
+  <entry keyword="comparing tar filesystem and USENET News">
+   <topic href="s2_tarfs.html#Operation" title="Operation"/>
+  </entry>
+  <entry keyword="comparison of tar and RAM disk">
+   <topic href="s2_tarfs.html#Creating_tar_files" title="Creating a .tar file"/>
+   <topic href="s2_tarfs.html#Code" title="The code"/>
+  </entry>
+  <entry keyword="creating a directory">
+   <topic href="s2_ramdisk.html#c_mknod" title="The c_mknod() function"/>
+  </entry>
+  <entry keyword="creating a link">
+   <topic href="s2_ramdisk.html#c_link" title="The c_link() function"/>
+  </entry>
+  <entry keyword="creating a symbolic link">
+   <topic href="s2_tarfs.html#add_tar_entry" title="The add_tar_entry() function"/>
+  </entry>
+  <entry keyword="definition">
+   <topic href="s3_fsys.html" title="Filesystems"/>
+  </entry>
+  <entry keyword="dereference on access">
+   <topic href="s2_tarfs.html#Executing_commands" title="Executing commands"/>
+  </entry>
+  <entry keyword="directory management">
+   <topic href="s3_fsys.html#Directory_management" title="Directory management"/>
+  </entry>
+  <entry keyword="encrypted">
+   <topic href="s2_tarfs.html#Secure_filesystem" title="Secure filesystem"/>
+  </entry>
+  <entry keyword="execute on access">
+   <topic href="s2_tarfs.html#Executing_commands" title="Executing commands"/>
+  </entry>
+  <entry keyword="EXT2">
+   <topic href="s3_fsys.html#Mountpoints" title="The mount point and the root"/>
+  </entry>
+  <entry keyword="for USENET news">
+   <topic href="s2_tarfs.html#USENET" title="Virtual filesystem for USENET news (VFNews)"/>
+  </entry>
+  <entry keyword="handling read()">
+   <topic href="s2_ramdisk.html#io_read" title="The io_read() function"/>
+  </entry>
+  <entry keyword="handling readdir()">
+   <topic href="s2_ramdisk.html#io_read" title="The io_read() function"/>
+  </entry>
+  <entry keyword="handling write()">
+   <topic href="s2_ramdisk.html#io_write" title="The io_write() function"/>
+  </entry>
+  <entry keyword="indexed">
+   <topic href="s2_tarfs.html#Indexed_filesystem" title="Indexed filesystem"/>
+  </entry>
+  <entry keyword="inode">
+   <topic href="s2_ramdisk.html#c_mount" title="The c_mount() function"/>
+  </entry>
+  <entry keyword="line-based">
+   <topic href="s2_tarfs.html#Line_based_filesystem" title="Line-based filesystem"/>
+  </entry>
+  <entry keyword="mount message">
+   <topic href="s3_fsys.html#Special_device_registration" title="Special device registration"/>
+  </entry>
+  <entry keyword="mount point">
+   <topic href="s2_tarfs.html#Creating_tar_files" title="Creating a .tar file"/>
+   <topic href="s3_fsys.html#Filesystems_and_Neutrino" title="Filesystems and Neutrino"/>
+  </entry>
+  <entry keyword="mount point management">
+   <topic href="s3_fsys.html#Mountpoint_management" title="Mount point management"/>
+  </entry>
+  <entry keyword="MS-DOS">
+   <topic href="s3_fsys.html#Mountpoints" title="The mount point and the root"/>
+   <topic href="s3_fsys.html#Overview" title="What is a filesystem?"/>
+  </entry>
+  <entry keyword="network">
+   <topic href="s3_fsys.html#Mountpoints" title="The mount point and the root"/>
+  </entry>
+  <entry keyword="on-media representation">
+   <topic href="s3_fsys.html#Filesystems_and_Neutrino" title="Filesystems and Neutrino"/>
+  </entry>
+  <entry keyword="operations">
+   <topic href="s3_fsys.html#How_filesystems_work" title="How does a filesystem work?"/>
+  </entry>
+  <entry keyword="pathname components">
+   <topic href="s3_fsys.html#Hierarchy" title="Hierarchical arrangement"/>
+  </entry>
+  <entry keyword="pathname length">
+   <topic href="s3_fsys.html#Hierarchy" title="Hierarchical arrangement"/>
+  </entry>
+  <entry keyword="pathname resolution">
+   <topic href="s3_fsys.html#Pathname_resolution" title="Pathname resolution"/>
+  </entry>
+  <entry keyword="pathname resolution (RAM disk)">
+   <topic href="s2_ramdisk.html#c_open" title="The c_open() function"/>
+  </entry>
+  <entry keyword="permissions checks">
+   <topic href="s2_ramdisk.html#Finding_target" title="Finding the target"/>
+  </entry>
+  <entry keyword="pipe on access">
+   <topic href="s2_tarfs.html#Executing_commands" title="Executing commands"/>
+  </entry>
+  <entry keyword="QNX 2">
+   <topic href="s3_fsys.html#Mountpoints" title="The mount point and the root"/>
+  </entry>
+  <entry keyword="RAM-disk">
+   <topic href="s2_ramdisk.html#Requirements" title="Requirements"/>
+  </entry>
+  <entry keyword="Read-only">
+   <topic href="s2_tarfs.html#Creating_tar_files" title="Creating a .tar file"/>
+   <topic href="s3_fsys.html#What_filesystems_do" title="What does a filesystem do?"/>
+  </entry>
+  <entry keyword="registering mount point">
+   <topic href="s3_fsys.html#Mountpoint_registration" title="Mount point registration"/>
+  </entry>
+  <entry keyword="relation to attributes structure">
+   <topic href="s3_fsys.html#Filesystems_and_Neutrino" title="Filesystems and Neutrino"/>
+  </entry>
+  <entry keyword="removing an entry">
+   <topic href="s2_ramdisk.html#c_unlink" title="The c_unlink() function"/>
+  </entry>
+  <entry keyword="rename">
+   <topic href="s2_ramdisk.html#c_rename" title="The c_rename() function"/>
+  </entry>
+  <entry keyword="returning contents of symbolic link">
+   <topic href="s2_ramdisk.html#c_readlink" title="The c_readlink() function"/>
+  </entry>
+  <entry keyword="returning data to client">
+   <topic href="s2_tarfs.html#io_read" title="The io_read() function and related utilities"/>
+  </entry>
+  <entry keyword="secure">
+   <topic href="s2_tarfs.html#Secure_filesystem" title="Secure filesystem"/>
+  </entry>
+  <entry keyword="sparse files">
+   <topic href="s2_ramdisk.html#Extended_attributes" title="The extended attributes structure"/>
+  </entry>
+  <entry keyword="symbolic link handling">
+   <topic href="s2_ramdisk.html#Finding_target" title="Finding the target"/>
+  </entry>
+  <entry keyword="symbolic link redirection">
+   <topic href="s2_ramdisk.html#Symlinks" title="Fun with symlinks"/>
+   <topic href="s2_ramdisk.html#redirect_symlink" title="The redirect_symlink() function"/>
+  </entry>
+  <entry keyword="symbolic link resolution">
+   <topic href="s2_ramdisk.html#Symlinks" title="Fun with symlinks"/>
+   <topic href="s2_ramdisk.html#connect_msg_to_attr" title="The connect_msg_to_attr() function"/>
+  </entry>
+  <entry keyword="tar">
+   <topic href="s2_tarfs.html" title="TAR Filesystem"/>
+  </entry>
+  <entry keyword="trimming client&#x0027;s request">
+   <topic href="s2_ramdisk.html#io_write" title="The io_write() function"/>
+  </entry>
+  <entry keyword="USENET News">
+   <topic href="s2_tarfs.html#Operation" title="Operation"/>
+  </entry>
+  <entry keyword="using for load-sharing">
+   <topic href="s2_tarfs.html#Executing_commands" title="Executing commands"/>
+  </entry>
+  <entry keyword="VAX/VMS">
+   <topic href="s3_fsys.html#Hierarchy" title="Hierarchical arrangement"/>
+  </entry>
+  <entry keyword="virtual">
+   <topic href="s3_fsys.html#How_filesystems_work" title="How does a filesystem work?"/>
+   <topic href="s2_tarfs.html#Operation" title="Operation"/>
+   <topic href="s2_tarfs.html" title="TAR Filesystem"/>
+   <topic href="s3_fsys.html#What_filesystems_do" title="What does a filesystem do?"/>
+   <entry keyword="/proc">
+    <topic href="s3_procfs.html" title="The /proc Filesystem"/>
+   </entry>
+   <entry keyword="image">
+    <topic href="s3_procfs.html#proc_boot" title="The /proc/boot directory"/>
+   </entry>
+  </entry>
+  <entry keyword="virtual contents">
+   <topic href="s2_web.html#execute_resmgr_phase1" title="The execute_resmgr() function"/>
+  </entry>
+ </entry>
+ <entry keyword="GNU">
+  <entry keyword="tar format">
+   <topic href="s2_tarfs.html#Requirements" title="Requirements"/>
+  </entry>
+ </entry>
+ <entry keyword="handle">
+  <entry keyword="under /proc/mount">
+   <topic href="s3_procfs.html#proc_mount" title="The /proc/mount directory"/>
+  </entry>
+ </entry>
+ <entry keyword="hard link">
+  <entry keyword="and attributes structure">
+   <topic href="s2_ramdisk.html#Extended_attributes" title="The extended attributes structure"/>
+  </entry>
+ </entry>
+ <entry keyword="high availability">
+  <entry keyword="active server">
+   <topic href="s3_procfs.html#proc_mount" title="The /proc/mount directory"/>
+  </entry>
+  <entry keyword="and standby servers">
+   <topic href="s1_ha.html#Standby" title="Cold, warm, and hot standby"/>
+  </entry>
+  <entry keyword="and system startup">
+   <topic href="s1_ha.html#System_startup" title="System startup and HA"/>
+  </entry>
+  <entry keyword="arranging for obituaries">
+   <topic href="s1_ha.html#Obituaries" title="Obituaries"/>
+  </entry>
+  <entry keyword="availability definition">
+   <topic href="s1_ha.html#Terminology" title="Terminology"/>
+  </entry>
+  <entry keyword="availability formula">
+   <topic href="s1_ha.html#Terminology" title="Terminology"/>
+  </entry>
+  <entry keyword="Big Brother definition">
+   <topic href="s1_ha.html#Overlords" title="Overlords, or Big Brother is watching you"/>
+  </entry>
+  <entry keyword="cascade failure definition">
+   <topic href="s1_ha.html#Cascade_failures" title="Cascade failures"/>
+  </entry>
+  <entry keyword="cascade failure prevention">
+   <topic href="s1_ha.html#Cascade_failures" title="Cascade failures"/>
+  </entry>
+  <entry keyword="client and failover">
+   <topic href="s1_ha.html#Failover" title="Graceful fail-over"/>
+  </entry>
+  <entry keyword="client and failover tasks">
+   <topic href="s1_ha.html#Failover" title="Graceful fail-over"/>
+  </entry>
+  <entry keyword="cold standby">
+   <topic href="s1_ha.html#Cold_standby" title="Achieving cold standby"/>
+   <topic href="s1_ha.html#Standby" title="Cold, warm, and hot standby"/>
+  </entry>
+  <entry keyword="cold standby definition">
+   <topic href="s1_ha.html#Standby" title="Cold, warm, and hot standby"/>
+  </entry>
+  <entry keyword="comparison of cold, warm, and hot standby">
+   <topic href="s1_ha.html#Standby" title="Cold, warm, and hot standby"/>
+  </entry>
+  <entry keyword="complexity of hot standby">
+   <topic href="s1_ha.html#Hot_standby" title="Achieving hot standby"/>
+  </entry>
+  <entry keyword="continuous availability definition">
+   <topic href="s1_ha.html#Terminology" title="Terminology"/>
+  </entry>
+  <entry keyword="decreasing MTTR">
+   <topic href="s1_ha.html#Standby" title="Cold, warm, and hot standby"/>
+   <topic href="s1_ha.html#Decreasing_MTTR" title="Decreasing the MTTR"/>
+  </entry>
+  <entry keyword="definition">
+   <topic href="s1_ha.html" title="High Availability"/>
+  </entry>
+  <entry keyword="design goals">
+   <topic href="s1_ha.html#Decreasing_MTTR" title="Decreasing the MTTR"/>
+  </entry>
+  <entry keyword="detecting failure">
+   <topic href="s1_ha.html#Detecting_failure" title="Detecting failure"/>
+  </entry>
+  <entry keyword="example using web servers">
+   <topic href="s1_ha.html#Parallel_calculations" title="Parallel calculations"/>
+  </entry>
+  <entry keyword="exponential back-off policy">
+   <topic href="s1_ha.html#Policies" title="Policies"/>
+  </entry>
+  <entry keyword="failover definition">
+   <topic href="s1_ha.html#Failover" title="Graceful fail-over"/>
+  </entry>
+  <entry keyword="failover example">
+   <topic href="s1_ha.html#Failover" title="Graceful fail-over"/>
+  </entry>
+  <entry keyword="failure modes">
+   <topic href="s1_ha.html#Failure_and_recovery" title="Failure modes and recovery models"/>
+  </entry>
+  <entry keyword="fault tolerance definition">
+   <topic href="s1_ha.html#Failover" title="Graceful fail-over"/>
+  </entry>
+  <entry keyword="formula for aggregate components">
+   <topic href="s1_ha.html#Aggregate_calculations" title="Aggregate calculations"/>
+  </entry>
+  <entry keyword="formula for more than two components">
+   <topic href="s1_ha.html#Parallel_calculations" title="Parallel calculations"/>
+  </entry>
+  <entry keyword="hot standby">
+   <topic href="s1_ha.html#Hot_standby" title="Achieving hot standby"/>
+   <topic href="s1_ha.html#Standby" title="Cold, warm, and hot standby"/>
+  </entry>
+  <entry keyword="hot standby definition">
+   <topic href="s1_ha.html#Standby" title="Cold, warm, and hot standby"/>
+  </entry>
+  <entry keyword="hot standby example">
+   <topic href="s1_ha.html#Hot_standby" title="Achieving hot standby"/>
+  </entry>
+  <entry keyword="in-service downgrade">
+   <topic href="s1_ha.html#Policies" title="Policies"/>
+  </entry>
+  <entry keyword="in-service upgrade as a failover mode">
+   <topic href="s1_ha.html#In_service_upgrades" title="In-service upgrades"/>
+  </entry>
+  <entry keyword="in-service upgrade definition">
+   <topic href="s1_ha.html#In_service_upgrades" title="In-service upgrades"/>
+  </entry>
+  <entry keyword="increasing availability">
+   <topic href="s1_ha.html#Increasing_availability" title="Increasing availability"/>
+  </entry>
+  <entry keyword="increasing MTBF">
+   <topic href="s1_ha.html#Increasing_MTBF" title="Increasing the MTBF"/>
+  </entry>
+  <entry keyword="monitoring health of process">
+   <topic href="s1_ha.html#Hot_standby" title="Achieving hot standby"/>
+  </entry>
+  <entry keyword="monitoring system sanity">
+   <topic href="s1_ha.html#Overlords" title="Overlords, or Big Brother is watching you"/>
+  </entry>
+  <entry keyword="monitoring the overlord">
+   <topic href="s1_ha.html#Overlords" title="Overlords, or Big Brother is watching you"/>
+  </entry>
+  <entry keyword="MTBF definition">
+   <topic href="s1_ha.html#Terminology" title="Terminology"/>
+  </entry>
+  <entry keyword="MTTR definition">
+   <topic href="s1_ha.html#Terminology" title="Terminology"/>
+  </entry>
+  <entry keyword="obituaries in case of failure">
+   <topic href="s1_ha.html#Detecting_failure" title="Detecting failure"/>
+  </entry>
+  <entry keyword="obituaries with primary and standby servers">
+   <topic href="s1_ha.html#Obituaries" title="Obituaries"/>
+  </entry>
+  <entry keyword="overlord and cold standby">
+   <topic href="s1_ha.html#Cold_standby" title="Achieving cold standby"/>
+  </entry>
+  <entry keyword="overlord and failover">
+   <topic href="s1_ha.html#Failover" title="Graceful fail-over"/>
+  </entry>
+  <entry keyword="overlord and warm standby">
+   <topic href="s1_ha.html#Warm_standby" title="Achieving warm standby"/>
+  </entry>
+  <entry keyword="overlord definition">
+   <topic href="s1_ha.html#Overlords" title="Overlords, or Big Brother is watching you"/>
+  </entry>
+  <entry keyword="overlord responsibilities">
+   <topic href="s1_ha.html#Detecting_failure" title="Detecting failure"/>
+  </entry>
+  <entry keyword="overlord&#x0027;s role in in-service upgrades">
+   <topic href="s1_ha.html#In_service_upgrades" title="In-service upgrades"/>
+  </entry>
+  <entry keyword="parallel component availability formula">
+   <topic href="s1_ha.html#Parallel_calculations" title="Parallel calculations"/>
+  </entry>
+  <entry keyword="parallel components">
+   <topic href="s1_ha.html#Parallel_vs_serial" title="Parallel versus serial"/>
+  </entry>
+  <entry keyword="parallel components in hardware">
+   <topic href="s1_ha.html#Parallel_calculations" title="Parallel calculations"/>
+  </entry>
+  <entry keyword="parallel components in software">
+   <topic href="s1_ha.html#Parallel_calculations" title="Parallel calculations"/>
+  </entry>
+  <entry keyword="pathname space shadows">
+   <topic href="s1_ha.html#Using_shadows" title="Using shadows"/>
+  </entry>
+  <entry keyword="perceptions about">
+   <topic href="s1_ha.html#Lies" title="Lies, damn lies, and statistics"/>
+   <topic href="s1_ha.html#Series_calculations" title="Series calculations"/>
+  </entry>
+  <entry keyword="policy definition">
+   <topic href="s1_ha.html#Policies" title="Policies"/>
+  </entry>
+  <entry keyword="polling for failure">
+   <topic href="s1_ha.html#Detecting_failure" title="Detecting failure"/>
+  </entry>
+  <entry keyword="primary process definition">
+   <topic href="s1_ha.html#Warm_standby" title="Achieving warm standby"/>
+  </entry>
+  <entry keyword="primary/standby architecture">
+   <topic href="s1_ha.html#Obituaries" title="Obituaries"/>
+  </entry>
+  <entry keyword="problems with synchronization">
+   <topic href="s1_ha.html#Synchronization_problems" title="Problems"/>
+  </entry>
+  <entry keyword="process restart policy">
+   <topic href="s1_ha.html#Policies" title="Policies"/>
+  </entry>
+  <entry keyword="recover models">
+   <topic href="s1_ha.html#Failure_and_recovery" title="Failure modes and recovery models"/>
+  </entry>
+  <entry keyword="redundancy">
+   <topic href="s1_ha.html#Parallel_calculations" title="Parallel calculations"/>
+  </entry>
+  <entry keyword="requirements for">
+   <topic href="s1_ha.html#Lies" title="Lies, damn lies, and statistics"/>
+  </entry>
+  <entry keyword="restarting failed components">
+   <topic href="s1_ha.html#Overlords" title="Overlords, or Big Brother is watching you"/>
+  </entry>
+  <entry keyword="secondary as client of primary">
+   <topic href="s1_ha.html#Obituaries" title="Obituaries"/>
+  </entry>
+  <entry keyword="secondary as server for primary">
+   <topic href="s1_ha.html#Obituaries" title="Obituaries"/>
+  </entry>
+  <entry keyword="serial component availability formula">
+   <topic href="s1_ha.html#Series_calculations" title="Series calculations"/>
+  </entry>
+  <entry keyword="serial components">
+   <topic href="s1_ha.html#Parallel_vs_serial" title="Parallel versus serial"/>
+  </entry>
+  <entry keyword="serial port">
+   <topic href="s3_procfs.html#proc_mount" title="The /proc/mount directory"/>
+  </entry>
+  <entry keyword="simple overlord script example">
+   <topic href="s1_ha.html#RK_drones" title="RK drones on about his home systems again"/>
+  </entry>
+  <entry keyword="standby as pathname space shadow">
+   <topic href="s1_ha.html#Using_shadows" title="Using shadows"/>
+  </entry>
+  <entry keyword="standby process definition">
+   <topic href="s1_ha.html#Warm_standby" title="Achieving warm standby"/>
+  </entry>
+  <entry keyword="standby server">
+   <topic href="s3_procfs.html#proc_mount" title="The /proc/mount directory"/>
+  </entry>
+  <entry keyword="synchronizing standby with primary">
+   <topic href="s1_ha.html#Hot_standby" title="Achieving hot standby"/>
+  </entry>
+  <entry keyword="table of availabilities">
+   <topic href="s1_ha.html#Lies" title="Lies, damn lies, and statistics"/>
+  </entry>
+  <entry keyword="unavailability definition">
+   <topic href="s1_ha.html#Series_calculations" title="Series calculations"/>
+  </entry>
+  <entry keyword="understanding availability">
+   <topic href="s1_ha.html#Lies" title="Lies, damn lies, and statistics"/>
+  </entry>
+  <entry keyword="warm standby">
+   <topic href="s1_ha.html#Warm_standby" title="Achieving warm standby"/>
+   <topic href="s1_ha.html#Standby" title="Cold, warm, and hot standby"/>
+  </entry>
+  <entry keyword="warm standby definition">
+   <topic href="s1_ha.html#Standby" title="Cold, warm, and hot standby"/>
+  </entry>
+ </entry>
+ <entry keyword="I/O port">
+  <entry keyword="accessing">
+   <topic href="s2_adios.html#main_function" title="main() and friends"/>
+  </entry>
+  <entry keyword="base address">
+   <topic href="s2_adios.html#main_function" title="main() and friends"/>
+  </entry>
+ </entry>
+ <entry keyword="interrupt">
+  <entry keyword="area">
+   <topic href="s3_procfs.html#DCMD_PROC_IRQS" title="DCMD_PROC_IRQS"/>
+  </entry>
+  <entry keyword="event">
+   <topic href="s3_procfs.html#DCMD_PROC_IRQS" title="DCMD_PROC_IRQS"/>
+  </entry>
+  <entry keyword="flags">
+   <topic href="s3_procfs.html#DCMD_PROC_IRQS" title="DCMD_PROC_IRQS"/>
+  </entry>
+  <entry keyword="handler">
+   <topic href="s3_procfs.html#DCMD_PROC_IRQS" title="DCMD_PROC_IRQS"/>
+  </entry>
+  <entry keyword="information from /proc">
+   <topic href="s3_procfs.html#DCMD_PROC_IRQS" title="DCMD_PROC_IRQS"/>
+  </entry>
+  <entry keyword="interrupt ID">
+   <topic href="s3_procfs.html#DCMD_PROC_IRQS" title="DCMD_PROC_IRQS"/>
+  </entry>
+  <entry keyword="level">
+   <topic href="s3_procfs.html#DCMD_PROC_IRQS" title="DCMD_PROC_IRQS"/>
+  </entry>
+  <entry keyword="mask count">
+   <topic href="s3_procfs.html#DCMD_PROC_IRQS" title="DCMD_PROC_IRQS"/>
+  </entry>
+  <entry keyword="process ID">
+   <topic href="s3_procfs.html#DCMD_PROC_IRQS" title="DCMD_PROC_IRQS"/>
+  </entry>
+  <entry keyword="thread ID">
+   <topic href="s3_procfs.html#DCMD_PROC_IRQS" title="DCMD_PROC_IRQS"/>
+  </entry>
+  <entry keyword="vector">
+   <topic href="s3_procfs.html#DCMD_PROC_IRQS" title="DCMD_PROC_IRQS"/>
+  </entry>
+ </entry>
+ <entry keyword="ISO-813">
+  <entry keyword="big picture">
+   <topic href="s2_adios.html#main_function" title="main() and friends"/>
+  </entry>
+  <entry keyword="card configuration">
+   <topic href="s2_adios.html#ISO-813" title="ISO-813"/>
+  </entry>
+  <entry keyword="card features">
+   <topic href="s2_adios.html#ISO-813" title="ISO-813"/>
+  </entry>
+  <entry keyword="channel assignments">
+   <topic href="s2_adios.html#main_function" title="main() and friends"/>
+  </entry>
+  <entry keyword="io_devctl() handler">
+   <topic href="s2_adios.html#resmgr_modules" title="The resource manager modules"/>
+  </entry>
+  <entry keyword="jumpers">
+   <topic href="s2_adios.html#PCL-711" title="PCL-711"/>
+  </entry>
+ </entry>
+ <entry keyword="library">
+  <entry keyword="zlib">
+   <topic href="s2_tarfs.html" title="TAR Filesystem"/>
+  </entry>
+ </entry>
+ <entry keyword="limits">
+  <entry keyword="open file descriptors">
+   <topic href="s2_tarfs.html#io_read" title="The io_read() function and related utilities"/>
+  </entry>
+ </entry>
+ <entry keyword="magnetic tape">
+  <topic href="s2_tarfs.html#Design" title="Design"/>
+ </entry>
+ <entry keyword="memory">
+  <entry keyword="code region">
+   <topic href="s3_procfs.html#DCMD_PROC_MAPINFO" title="DCMD_PROC_MAPINFO and DCMD_PROC_PAGEDATA"/>
+  </entry>
+  <entry keyword="data region">
+   <topic href="s3_procfs.html#DCMD_PROC_MAPINFO" title="DCMD_PROC_MAPINFO and DCMD_PROC_PAGEDATA"/>
+  </entry>
+  <entry keyword="regions in a process">
+   <topic href="s3_procfs.html#DCMD_PROC_MAPINFO" title="DCMD_PROC_MAPINFO and DCMD_PROC_PAGEDATA"/>
+  </entry>
+  <entry keyword="stack guard-page region">
+   <topic href="s3_procfs.html#DCMD_PROC_MAPINFO" title="DCMD_PROC_MAPINFO and DCMD_PROC_PAGEDATA"/>
+  </entry>
+  <entry keyword="stack region">
+   <topic href="s3_procfs.html#DCMD_PROC_MAPINFO" title="DCMD_PROC_MAPINFO and DCMD_PROC_PAGEDATA"/>
+  </entry>
+ </entry>
+ <entry keyword="message passing">
+  <entry keyword="and blocking">
+   <topic href="s1_dd.html#Swipe_card" title="Swipe-card readers"/>
+  </entry>
+  <entry keyword="and scalability">
+   <topic href="s1_dd.html#Scalability" title="Scalability"/>
+  </entry>
+  <entry keyword="blocking">
+   <topic href="s1_dd.html#Swipe_card" title="Swipe-card readers"/>
+  </entry>
+  <entry keyword="data sink">
+   <topic href="s1_dd.html#Swipe_card" title="Swipe-card readers"/>
+  </entry>
+  <entry keyword="data source">
+   <topic href="s1_dd.html#Swipe_card" title="Swipe-card readers"/>
+  </entry>
+  <entry keyword="deadlock">
+   <topic href="s1_dd.html#Swipe_card" title="Swipe-card readers"/>
+  </entry>
+  <entry keyword="pulse">
+   <topic href="s1_dd.html#Swipe_card" title="Swipe-card readers"/>
+  </entry>
+  <entry keyword="pulse and send hierarchy">
+   <topic href="s1_dd.html#Swipe_card" title="Swipe-card readers"/>
+  </entry>
+  <entry keyword="send hierarchy">
+   <topic href="s1_dd.html#Message_flow" title="Managing message flow"/>
+   <topic href="s1_dd.html#Swipe_card" title="Swipe-card readers"/>
+  </entry>
+  <entry keyword="trade off vs pulse">
+   <topic href="s1_dd.html#Swipe_card" title="Swipe-card readers"/>
+  </entry>
+  <entry keyword="vs pulse for data">
+   <topic href="s1_dd.html#Keypad_reader_to_control" title="Using a keypad challenge — swipe-card reader sends to control program"/>
+  </entry>
+ </entry>
+ <entry keyword="mount point">
+  <entry keyword="and _FTYPE_ANY">
+   <topic href="s3_fsys.html#Mountpoint_registration" title="Mount point registration"/>
+  </entry>
+  <entry keyword="and _FTYPE_MOUNT">
+   <topic href="s3_fsys.html#Unnamed_mount_registration" title="Unnamed mount registration"/>
+  </entry>
+  <entry keyword="and _RESMGR_FLAG_DIR">
+   <topic href="s3_fsys.html#Mountpoint_registration" title="Mount point registration"/>
+   <topic href="s3_fsys.html#Unnamed_mount_registration" title="Unnamed mount registration"/>
+  </entry>
+  <entry keyword="and _RESMGR_FLAG_FTYPEONLY">
+   <topic href="s3_fsys.html#Unnamed_mount_registration" title="Unnamed mount registration"/>
+  </entry>
+  <entry keyword="and mount command">
+   <topic href="s3_fsys.html#Unnamed_mount_registration" title="Unnamed mount registration"/>
+  </entry>
+  <entry keyword="and resmgr_attach()">
+   <topic href="s3_fsys.html#Mountpoint_management" title="Mount point management"/>
+   <topic href="s3_fsys.html#Mountpoint_registration" title="Mount point registration"/>
+  </entry>
+  <entry keyword="as root of file system">
+   <topic href="s3_fsys.html#Mountpoint_management" title="Mount point management"/>
+  </entry>
+  <entry keyword="definition">
+   <topic href="s3_fsys.html#Filesystems_and_Neutrino" title="Filesystems and Neutrino"/>
+  </entry>
+  <entry keyword="management of">
+   <topic href="s3_fsys.html#How_filesystems_work" title="How does a filesystem work?"/>
+   <topic href="s3_fsys.html#Mountpoint_management" title="Mount point management"/>
+  </entry>
+  <entry keyword="mount message">
+   <topic href="s3_fsys.html#Special_device_registration" title="Special device registration"/>
+  </entry>
+  <entry keyword="RAM disk, management of">
+   <topic href="s2_ramdisk.html#c_mount" title="The c_mount() function"/>
+  </entry>
+  <entry keyword="registration of">
+   <topic href="s3_fsys.html#Mountpoint_management" title="Mount point management"/>
+   <topic href="s3_fsys.html#Mountpoint_registration" title="Mount point registration"/>
+  </entry>
+  <entry keyword="special device">
+   <topic href="s3_fsys.html#Mountpoint_management" title="Mount point management"/>
+   <topic href="s3_fsys.html#Special_device_registration" title="Special device registration"/>
+  </entry>
+  <entry keyword="tar filesystem">
+   <topic href="s2_tarfs.html#Creating_tar_files" title="Creating a .tar file"/>
+   <topic href="s2_tarfs.html#c_mount" title="The c_mount() function"/>
+  </entry>
+  <entry keyword="tar filesystem mount helper">
+   <topic href="s2_tarfs.html#Mount_helper" title="The mount helper program"/>
+  </entry>
+  <entry keyword="unnamed">
+   <topic href="s3_fsys.html#Mountpoint_management" title="Mount point management"/>
+  </entry>
+ </entry>
+ <entry keyword="MTBF">
+ </entry>
+ <entry keyword="MTTR">
+ </entry>
+ <entry keyword="node ID">
+  <entry keyword="under /proc/mount">
+   <topic href="s3_procfs.html#proc_mount" title="The /proc/mount directory"/>
+  </entry>
+ </entry>
+ <entry keyword="OCB">
+  <entry keyword="extensions for Web Counter">
+   <topic href="s2_web.html#execute_resmgr_phase1" title="The execute_resmgr() function"/>
+  </entry>
+  <entry keyword="ioflag member">
+   <topic href="s2_web.html#io_close_ocb_phase2" title="The io_close_ocb() function"/>
+  </entry>
+  <entry keyword="Web Counter extension for font">
+   <topic href="s2_web.html#Font_selection" title="Font selection"/>
+  </entry>
+ </entry>
+ <entry keyword="open() flag">
+  <entry keyword="O_CREAT">
+   <topic href="s2_ramdisk.html#mode_flag" title="Analyze the mode flag"/>
+  </entry>
+  <entry keyword="O_EXCL">
+   <topic href="s2_ramdisk.html#mode_flag" title="Analyze the mode flag"/>
+  </entry>
+  <entry keyword="O_RDWR">
+   <topic href="s2_ramdisk.html#mode_flag" title="Analyze the mode flag"/>
+  </entry>
+  <entry keyword="O_TRUNC">
+   <topic href="s2_ramdisk.html#mode_flag" title="Analyze the mode flag"/>
+  </entry>
+  <entry keyword="O_WRONLY">
+   <topic href="s2_ramdisk.html#mode_flag" title="Analyze the mode flag"/>
+  </entry>
+ </entry>
+ <entry keyword="pathname">
+  <entry keyword="and attributes structure">
+   <topic href="s3_fsys.html#Pathname_resolution" title="Pathname resolution"/>
+  </entry>
+  <entry keyword="and symlink resolution">
+   <topic href="s3_fsys.html#Pathname_resolution" title="Pathname resolution"/>
+  </entry>
+  <entry keyword="component verification">
+   <topic href="s3_fsys.html#Pathname_resolution" title="Pathname resolution"/>
+  </entry>
+  <entry keyword="prefix">
+   <topic href="s3_procfs.html#proc_mount" title="The /proc/mount directory"/>
+  </entry>
+  <entry keyword="registering same name">
+   <topic href="s3_procfs.html#proc_mount" title="The /proc/mount directory"/>
+  </entry>
+  <entry keyword="resolution">
+   <topic href="s3_fsys.html#Pathname_resolution" title="Pathname resolution"/>
+  </entry>
+  <entry keyword="resolution of">
+   <topic href="s3_fsys.html#How_filesystems_work" title="How does a filesystem work?"/>
+  </entry>
+  <entry keyword="resolution, determining ordering">
+   <topic href="s3_procfs.html#proc_mount" title="The /proc/mount directory"/>
+  </entry>
+  <entry keyword="shadows within">
+   <topic href="s1_ha.html#Using_shadows" title="Using shadows"/>
+  </entry>
+ </entry>
+ <entry keyword="pathname delimiter in QNX documentation">
+  <topic href="about.html#WINDOWSNOTE" title="Note to Windows users"/>
+ </entry>
+ <entry keyword="PCL-711">
+  <entry keyword="big picture">
+   <topic href="s2_adios.html#main_function" title="main() and friends"/>
+  </entry>
+  <entry keyword="card configuration">
+   <topic href="s2_adios.html#PCL-711" title="PCL-711"/>
+  </entry>
+  <entry keyword="card features">
+   <topic href="s2_adios.html#PCL-711" title="PCL-711"/>
+  </entry>
+  <entry keyword="channel assignments">
+   <topic href="s2_adios.html#main_function" title="main() and friends"/>
+  </entry>
+  <entry keyword="configuration file processing">
+   <topic href="s2_adios.html#main_function" title="main() and friends"/>
+  </entry>
+  <entry keyword="devctl()">
+   <entry keyword="DCMD_GET_ADIS">
+    <topic href="s2_adios.html#resmgr_modules" title="The resource manager modules"/>
+   </entry>
+   <entry keyword="DCMD_GET_CONFIG">
+    <topic href="s2_adios.html#resmgr_modules" title="The resource manager modules"/>
+   </entry>
+   <entry keyword="DCMD_SET_CPAO">
+    <topic href="s2_adios.html#resmgr_modules" title="The resource manager modules"/>
+   </entry>
+   <entry keyword="DCMD_SET_CPBDO">
+    <topic href="s2_adios.html#resmgr_modules" title="The resource manager modules"/>
+   </entry>
+  </entry>
+  <entry keyword="digital input">
+   <topic href="s2_adios.html#Digial_input" title="Digital input"/>
+  </entry>
+  <entry keyword="digital output">
+   <topic href="s2_adios.html#Digital_output" title="Digital output"/>
+  </entry>
+  <entry keyword="extended attributes structure">
+   <topic href="s2_adios.html#Analog_input" title="Analog input"/>
+   <topic href="s2_adios.html#main_function" title="main() and friends"/>
+  </entry>
+  <entry keyword="gain settings">
+   <topic href="s2_adios.html#main_function" title="main() and friends"/>
+   <topic href="s2_adios.html#Tags_database_design" title="Tags database design"/>
+  </entry>
+  <entry keyword="io_devctl() handler">
+   <topic href="s2_adios.html#resmgr_modules" title="The resource manager modules"/>
+  </entry>
+  <entry keyword="jumpers">
+   <topic href="s2_adios.html#PCL-711" title="PCL-711"/>
+  </entry>
+  <entry keyword="pcl711_read_analog()">
+   <topic href="s2_adios.html#Analog_input" title="Analog input"/>
+  </entry>
+  <entry keyword="reading an analog input">
+   <topic href="s2_adios.html#Analog_input" title="Analog input"/>
+  </entry>
+  <entry keyword="registering the mount point">
+   <topic href="s2_adios.html#main_function" title="main() and friends"/>
+  </entry>
+  <entry keyword="sample configuration">
+   <topic href="s2_adios.html#Tags_database_design" title="Tags database design"/>
+  </entry>
+  <entry keyword="setting the gain">
+   <topic href="s2_adios.html#Analog_input" title="Analog input"/>
+  </entry>
+ </entry>
+ <entry keyword="pidin">
+  <entry keyword="and memory">
+   <topic href="s3_procfs.html#pid_directories" title="The /proc by-process-ID directories"/>
+  </entry>
+  <entry keyword="output for pipe">
+   <topic href="s3_procfs.html#pid_directories" title="The /proc by-process-ID directories"/>
+  </entry>
+  <entry keyword="showing threads">
+   <topic href="s3_procfs.html#pid_directories" title="The /proc by-process-ID directories"/>
+  </entry>
+ </entry>
+ <entry keyword="polling">
+  <entry keyword="calibration via nanospin_calibrate()">
+   <topic href="s2_adios.html#Analog_input" title="Analog input"/>
+  </entry>
+  <entry keyword="to prevent bus saturation">
+   <topic href="s2_adios.html#Analog_input" title="Analog input"/>
+  </entry>
+  <entry keyword="via nanospin()">
+   <topic href="s2_adios.html#Analog_input" title="Analog input"/>
+  </entry>
+ </entry>
+ <entry keyword="POSIX">
+  <entry keyword="tar format">
+   <topic href="s2_tarfs.html#Requirements" title="Requirements"/>
+  </entry>
+ </entry>
+ <entry keyword="process">
+  <entry keyword="and abstraction">
+   <topic href="s1_dd.html#At_this_point" title="At this point…"/>
+  </entry>
+  <entry keyword="and scalability">
+   <topic href="s1_dd.html#Decoupling" title="Decoupling design in a message-passing environment"/>
+  </entry>
+  <entry keyword="and send hierarchy">
+   <topic href="s1_dd.html#Swipe_card" title="Swipe-card readers"/>
+  </entry>
+  <entry keyword="as building block">
+   <topic href="s1_dd.html#Decoupling" title="Decoupling design in a message-passing environment"/>
+  </entry>
+  <entry keyword="CPU usage">
+   <topic href="s3_procfs.html#CPU_usage" title="CPU usage information"/>
+  </entry>
+  <entry keyword="data sink">
+   <topic href="s1_dd.html#Swipe_card" title="Swipe-card readers"/>
+  </entry>
+  <entry keyword="data source">
+   <topic href="s1_dd.html#Swipe_card" title="Swipe-card readers"/>
+  </entry>
+  <entry keyword="default thread priority">
+   <topic href="s3_procfs.html#Process_info" title="Process information"/>
+  </entry>
+  <entry keyword="detecting reuse of IDs">
+   <topic href="s3_procfs.html#CPU_usage" title="CPU usage information"/>
+  </entry>
+  <entry keyword="directory under /proc">
+   <topic href="s3_procfs.html" title="The /proc Filesystem"/>
+  </entry>
+  <entry keyword="finding all">
+   <topic href="s3_procfs.html#Iterating_through_processes" title="Iterating through the list of processes"/>
+  </entry>
+  <entry keyword="finding by name">
+   <topic href="s3_procfs.html#Finding_processes" title="Finding a particular process"/>
+   <topic href="s3_procfs.html#Iterating_through_processes" title="Iterating through the list of processes"/>
+  </entry>
+  <entry keyword="finding in /proc">
+   <topic href="s3_procfs.html#Finding_processes" title="Finding a particular process"/>
+   <topic href="s3_procfs.html#Iterating_through_processes" title="Iterating through the list of processes"/>
+  </entry>
+  <entry keyword="flags">
+   <topic href="s3_procfs.html#Miscellaneous" title="Miscellaneous"/>
+  </entry>
+  <entry keyword="getting ID from /proc">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="granularity">
+   <topic href="s1_dd.html#Decoupling" title="Decoupling design in a message-passing environment"/>
+  </entry>
+  <entry keyword="group ID information">
+   <topic href="s3_procfs.html#Process_info" title="Process information"/>
+  </entry>
+  <entry keyword="hierarchy information">
+   <topic href="s3_procfs.html#Process_info" title="Process information"/>
+  </entry>
+  <entry keyword="ID under /proc/mount">
+   <topic href="s3_procfs.html#pid_directories" title="The /proc by-process-ID directories"/>
+   <topic href="s3_procfs.html#proc_mount" title="The /proc/mount directory"/>
+  </entry>
+  <entry keyword="isolating hierarchically">
+   <topic href="s1_dd.html#Decoupling" title="Decoupling design in a message-passing environment"/>
+  </entry>
+  <entry keyword="memory region information">
+   <topic href="s3_procfs.html#DCMD_PROC_MAPINFO" title="DCMD_PROC_MAPINFO and DCMD_PROC_PAGEDATA"/>
+  </entry>
+  <entry keyword="memory regions">
+   <topic href="s3_procfs.html#DCMD_PROC_MAPINFO" title="DCMD_PROC_MAPINFO and DCMD_PROC_PAGEDATA"/>
+  </entry>
+  <entry keyword="number of connected channels">
+   <topic href="s3_procfs.html#Miscellaneous" title="Miscellaneous"/>
+  </entry>
+  <entry keyword="number of connected file descriptors">
+   <topic href="s3_procfs.html#Miscellaneous" title="Miscellaneous"/>
+  </entry>
+  <entry keyword="number of interrupt handlers">
+   <topic href="s3_procfs.html#DCMD_PROC_IRQS" title="DCMD_PROC_IRQS"/>
+  </entry>
+  <entry keyword="number of threads">
+   <topic href="s3_procfs.html#Process_info" title="Process information"/>
+  </entry>
+  <entry keyword="number of timers">
+   <topic href="s3_procfs.html#DCMD_PROC_TIMERS" title="DCMD_PROC_TIMERS"/>
+   <topic href="s3_procfs.html#Miscellaneous" title="Miscellaneous"/>
+  </entry>
+  <entry keyword="process group information">
+   <topic href="s3_procfs.html#Process_info" title="Process information"/>
+  </entry>
+  <entry keyword="session ID information">
+   <topic href="s3_procfs.html#Process_info" title="Process information"/>
+  </entry>
+  <entry keyword="signals ignored">
+   <topic href="s3_procfs.html#Signal_info" title="Signal information"/>
+  </entry>
+  <entry keyword="signals pending">
+   <topic href="s3_procfs.html#Signal_info" title="Signal information"/>
+  </entry>
+  <entry keyword="signals queued">
+   <topic href="s3_procfs.html#Signal_info" title="Signal information"/>
+  </entry>
+  <entry keyword="stack location">
+   <topic href="s3_procfs.html#Memory_info" title="Memory information"/>
+  </entry>
+  <entry keyword="stack size">
+   <topic href="s3_procfs.html#Memory_info" title="Memory information"/>
+  </entry>
+  <entry keyword="umask">
+   <topic href="s3_procfs.html#Miscellaneous" title="Miscellaneous"/>
+  </entry>
+  <entry keyword="user ID information">
+   <topic href="s3_procfs.html#Process_info" title="Process information"/>
+  </entry>
+  <entry keyword="virtual address space">
+   <topic href="s3_procfs.html#Operations" title="Operations on the as entry"/>
+   <entry keyword="gaps">
+    <topic href="s3_procfs.html#Discontiguous_addr_space" title="Discontiguous address space"/>
+   </entry>
+   <entry keyword="mapping">
+    <topic href="s3_procfs.html#Other_addr_space" title="Someone else's virtual address space"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="procnto">
+  <entry keyword=" option">
+   <topic href="s2_tarfs.html#io_read" title="The io_read() function and related utilities"/>
+  </entry>
+ </entry>
+ <entry keyword="pulse">
+  <entry keyword="trade off vs message passing">
+   <topic href="s1_dd.html#Swipe_card" title="Swipe-card readers"/>
+  </entry>
+  <entry keyword="used for unblocking resource manager">
+   <topic href="s1_basics.html#threaded_resource_managers" title="Threaded resource managers"/>
+  </entry>
+  <entry keyword="vs message passing for data">
+   <topic href="s1_dd.html#Keypad_reader_to_control" title="Using a keypad challenge — swipe-card reader sends to control program"/>
+  </entry>
+ </entry>
+ <entry keyword="RAM disk">
+  <entry keyword="and close()">
+   <topic href="s2_ramdisk.html#io_close_ocb" title="The io_close_ocb() function"/>
+  </entry>
+  <entry keyword="and DCMD_FSYS_STATVFS">
+   <topic href="s2_ramdisk.html#Filesystem_stats" title="Filesystem statistics"/>
+  </entry>
+  <entry keyword="and devctl()">
+   <topic href="s2_ramdisk.html#io_devctl" title="The io_devctl() function"/>
+  </entry>
+  <entry keyword="and iov_t">
+   <topic href="s2_ramdisk.html#io_read" title="The io_read() function"/>
+  </entry>
+  <entry keyword="and O_CREAT">
+   <topic href="s2_ramdisk.html#mode_flag" title="Analyze the mode flag"/>
+  </entry>
+  <entry keyword="and O_EXCL">
+   <topic href="s2_ramdisk.html#mode_flag" title="Analyze the mode flag"/>
+  </entry>
+  <entry keyword="and O_RDWR">
+   <topic href="s2_ramdisk.html#mode_flag" title="Analyze the mode flag"/>
+  </entry>
+  <entry keyword="and O_TRUNC">
+   <topic href="s2_ramdisk.html#mode_flag" title="Analyze the mode flag"/>
+  </entry>
+  <entry keyword="and O_WRONLY">
+   <topic href="s2_ramdisk.html#mode_flag" title="Analyze the mode flag"/>
+  </entry>
+  <entry keyword="attributes structure">
+   <topic href="s2_ramdisk.html#Extended_attributes" title="The extended attributes structure"/>
+  </entry>
+  <entry keyword="binding OCB">
+   <topic href="s2_ramdisk.html#Binding_OCB" title="Bind the OCB and attributes structure"/>
+  </entry>
+  <entry keyword="block access cases">
+   <topic href="s2_ramdisk.html#io_read" title="The io_read() function"/>
+  </entry>
+  <entry keyword="closing a file">
+   <topic href="s2_ramdisk.html#io_close_ocb" title="The io_close_ocb() function"/>
+  </entry>
+  <entry keyword="connect functions">
+   <topic href="s2_ramdisk.html#Connect_functions" title="Connect functions"/>
+  </entry>
+  <entry keyword="creating a directory">
+   <topic href="s2_ramdisk.html#c_mknod" title="The c_mknod() function"/>
+  </entry>
+  <entry keyword="creating a link">
+   <topic href="s2_ramdisk.html#c_link" title="The c_link() function"/>
+  </entry>
+  <entry keyword="creating target">
+   <topic href="s2_ramdisk.html#mode_flag" title="Analyze the mode flag"/>
+  </entry>
+  <entry keyword="deleting a file">
+   <topic href="s2_ramdisk.html#io_close_ocb" title="The io_close_ocb() function"/>
+  </entry>
+  <entry keyword="demultiplexing extended attributes structure">
+   <topic href="s2_ramdisk.html#Extended_attributes" title="The extended attributes structure"/>
+  </entry>
+  <entry keyword="development path">
+   <topic href="s2_ramdisk.html#Design" title="Design"/>
+  </entry>
+  <entry keyword="directory entry structure">
+   <topic href="s2_ramdisk.html#Extended_attributes" title="The extended attributes structure"/>
+  </entry>
+  <entry keyword="file vs directory read">
+   <topic href="s2_ramdisk.html#io_read" title="The io_read() function"/>
+  </entry>
+  <entry keyword="hard links">
+   <topic href="s2_ramdisk.html#Extended_attributes" title="The extended attributes structure"/>
+  </entry>
+  <entry keyword="I/O functions">
+   <topic href="s2_ramdisk.html#IO_functions" title="I/O functions"/>
+  </entry>
+  <entry keyword="inode">
+   <topic href="s2_ramdisk.html#c_mount" title="The c_mount() function"/>
+  </entry>
+  <entry keyword="io_write() function">
+   <topic href="s2_ramdisk.html#io_write" title="The io_write() function"/>
+  </entry>
+  <entry keyword="mount point management">
+   <topic href="s2_ramdisk.html#c_mount" title="The c_mount() function"/>
+  </entry>
+  <entry keyword="pathname resolution">
+   <topic href="s2_ramdisk.html#c_open" title="The c_open() function"/>
+  </entry>
+  <entry keyword="pathname to attributes structure conversion">
+   <topic href="s2_ramdisk.html#connect_msg_to_attr" title="The connect_msg_to_attr() function"/>
+  </entry>
+  <entry keyword="permissions checks">
+   <topic href="s2_ramdisk.html#Finding_target" title="Finding the target"/>
+  </entry>
+  <entry keyword="reading block data">
+   <topic href="s2_ramdisk.html#io_read" title="The io_read() function"/>
+  </entry>
+  <entry keyword="removing an entry">
+   <topic href="s2_ramdisk.html#c_unlink" title="The c_unlink() function"/>
+  </entry>
+  <entry keyword="rename">
+   <topic href="s2_ramdisk.html#c_rename" title="The c_rename() function"/>
+  </entry>
+  <entry keyword="requirements">
+   <topic href="s2_ramdisk.html#Requirements" title="Requirements"/>
+  </entry>
+  <entry keyword="returning contents of symbolic link">
+   <topic href="s2_ramdisk.html#c_readlink" title="The c_readlink() function"/>
+  </entry>
+  <entry keyword="root directory">
+   <topic href="s2_ramdisk.html#Extended_attributes" title="The extended attributes structure"/>
+  </entry>
+  <entry keyword="storing data">
+   <topic href="s2_ramdisk.html#io_read" title="The io_read() function"/>
+  </entry>
+  <entry keyword="storing data in attributes structure">
+   <topic href="s2_ramdisk.html#Extended_attributes" title="The extended attributes structure"/>
+  </entry>
+  <entry keyword="storing symbolic link data">
+   <topic href="s2_ramdisk.html#Extended_attributes" title="The extended attributes structure"/>
+  </entry>
+  <entry keyword="symbolic link handling">
+   <topic href="s2_ramdisk.html#Finding_target" title="Finding the target"/>
+  </entry>
+  <entry keyword="symbolic link redirection">
+   <topic href="s2_ramdisk.html#Symlinks" title="Fun with symlinks"/>
+   <topic href="s2_ramdisk.html#redirect_symlink" title="The redirect_symlink() function"/>
+  </entry>
+  <entry keyword="symbolic link resolution">
+   <topic href="s2_ramdisk.html#Symlinks" title="Fun with symlinks"/>
+   <topic href="s2_ramdisk.html#connect_msg_to_attr" title="The connect_msg_to_attr() function"/>
+  </entry>
+  <entry keyword="truncating target">
+   <topic href="s2_ramdisk.html#mode_flag" title="Analyze the mode flag"/>
+  </entry>
+ </entry>
+ <entry keyword="resource manager">
+  <entry keyword="and complexity due to multi-threaded">
+   <topic href="s1_basics.html#threaded_resource_managers" title="Threaded resource managers"/>
+  </entry>
+  <entry keyword="and complexity due to unblock pulses">
+   <topic href="s1_basics.html#threaded_resource_managers" title="Threaded resource managers"/>
+  </entry>
+  <entry keyword="and filesystems">
+   <topic href="s3_fsys.html" title="Filesystems"/>
+   <topic href="s3_fsys.html#Filesystems_and_Neutrino" title="Filesystems and Neutrino"/>
+  </entry>
+  <entry keyword="and thread synchronization">
+   <topic href="s1_basics.html#threaded_resource_managers" title="Threaded resource managers"/>
+  </entry>
+  <entry keyword="and threads">
+   <topic href="s1_basics.html#threaded_resource_managers" title="Threaded resource managers"/>
+  </entry>
+  <entry keyword="and trailing data">
+   <topic href="s2_web.html#io_write" title="The io_write() function"/>
+  </entry>
+  <entry keyword="arranging for obituaries">
+   <topic href="s1_ha.html#Obituaries" title="Obituaries"/>
+  </entry>
+  <entry keyword="filename processing tricks">
+   <topic href="s2_web.html#Filename_processing" title="Filename processing tricks"/>
+  </entry>
+  <entry keyword="framework">
+   <topic href="s2_web.html#Design" title="Design"/>
+  </entry>
+  <entry keyword="meaning of offset in readdir()">
+   <topic href="s2_web.html#Operating_on_a_directory" title="Operating on a directory"/>
+  </entry>
+  <entry keyword="mount point">
+   <topic href="s2_web.html#Filename_processing" title="Filename processing tricks"/>
+  </entry>
+  <entry keyword="multiple mounts versus directory">
+   <topic href="s2_web.html#Code_phase_3" title="The code — phase 3"/>
+  </entry>
+  <entry keyword="obituary via close()">
+   <topic href="s1_ha.html#Obituaries" title="Obituaries"/>
+  </entry>
+  <entry keyword="pathname resolution">
+   <topic href="s2_web.html#Filename_processing" title="Filename processing tricks"/>
+  </entry>
+  <entry keyword="placing commands in the filename">
+   <topic href="s2_web.html#Filename_processing" title="Filename processing tricks"/>
+  </entry>
+  <entry keyword="speeding up directory searching">
+   <topic href="s2_web.html#Filename_processing" title="Filename processing tricks"/>
+  </entry>
+ </entry>
+ <entry keyword="Rijndael encryption">
+  <topic href="s2_tarfs.html#Secure_filesystem" title="Secure filesystem"/>
+ </entry>
+ <entry keyword="scalability">
+  <entry keyword="analyzing a system">
+   <topic href="s1_dd.html#Decoupling" title="Decoupling design in a message-passing environment"/>
+  </entry>
+  <entry keyword="and “one central location”">
+   <topic href="s1_dd.html#Door_lock" title="Door-lock actuators"/>
+  </entry>
+  <entry keyword="and blocking">
+   <topic href="s1_dd.html#Swipe_card" title="Swipe-card readers"/>
+  </entry>
+  <entry keyword="and communications overhead">
+   <topic href="s1_dd.html#Decoupling" title="Decoupling design in a message-passing environment"/>
+  </entry>
+  <entry keyword="and CPU capacity">
+   <topic href="s1_dd.html#Scalability" title="Scalability"/>
+  </entry>
+  <entry keyword="and design decoupling">
+   <topic href="s1_dd.html#Decoupling" title="Decoupling design in a message-passing environment"/>
+  </entry>
+  <entry keyword="and distributed processing">
+   <topic href="s1_dd.html#Distributed_processing" title="Distributed processing"/>
+  </entry>
+  <entry keyword="and driver&#x0027;s license">
+   <topic href="s1_dd.html#Distributed_processing" title="Distributed processing"/>
+  </entry>
+  <entry keyword="and functional clustering">
+   <topic href="s1_dd.html#Door_lock" title="Door-lock actuators"/>
+  </entry>
+  <entry keyword="and message flow">
+   <topic href="s1_dd.html#Message_flow" title="Managing message flow"/>
+  </entry>
+  <entry keyword="and network traffic">
+   <topic href="s1_dd.html#Scalability" title="Scalability"/>
+   <topic href="s1_dd.html#Swipe_card" title="Swipe-card readers"/>
+  </entry>
+  <entry keyword="and polling">
+   <topic href="s1_dd.html#Swipe_card" title="Swipe-card readers"/>
+  </entry>
+  <entry keyword="and threads">
+   <topic href="s1_dd.html#Swipe_card" title="Swipe-card readers"/>
+  </entry>
+  <entry keyword="and timer">
+   <topic href="s1_dd.html#Door_lock" title="Door-lock actuators"/>
+  </entry>
+  <entry keyword="and trade shows">
+   <topic href="s1_dd.html#Distributed_processing" title="Distributed processing"/>
+  </entry>
+  <entry keyword="distributing work over a network">
+   <topic href="s1_dd.html#Scalability" title="Scalability"/>
+  </entry>
+  <entry keyword="in security system">
+   <topic href="s1_dd.html#Scalability" title="Scalability"/>
+  </entry>
+  <entry keyword="of control program">
+   <topic href="s1_dd.html#Door_lock" title="Door-lock actuators"/>
+  </entry>
+  <entry keyword="reducing the problem into sub-problems">
+   <topic href="s1_dd.html#Scalability" title="Scalability"/>
+  </entry>
+  <entry keyword="zone controllers">
+   <topic href="s1_dd.html#Scalability" title="Scalability"/>
+  </entry>
+ </entry>
+ <entry keyword="security system">
+  <entry keyword="and deadlock">
+   <topic href="s1_dd.html#Swipe_card" title="Swipe-card readers"/>
+  </entry>
+  <entry keyword="and distributed processing">
+   <topic href="s1_dd.html#Distributed_processing" title="Distributed processing"/>
+  </entry>
+  <entry keyword="and door timer">
+   <topic href="s1_dd.html#Door_lock" title="Door-lock actuators"/>
+  </entry>
+  <entry keyword="and functional clustering">
+   <topic href="s1_dd.html#Door_lock" title="Door-lock actuators"/>
+  </entry>
+  <entry keyword="and message flow">
+   <topic href="s1_dd.html#Message_flow" title="Managing message flow"/>
+  </entry>
+  <entry keyword="and network traffic">
+   <topic href="s1_dd.html#Swipe_card" title="Swipe-card readers"/>
+  </entry>
+  <entry keyword="and polling">
+   <topic href="s1_dd.html#Swipe_card" title="Swipe-card readers"/>
+  </entry>
+  <entry keyword="and send hierarchy">
+   <topic href="s1_dd.html#Swipe_card" title="Swipe-card readers"/>
+  </entry>
+  <entry keyword="bottlenecks">
+   <topic href="s1_dd.html#Decoupling" title="Decoupling design in a message-passing environment"/>
+  </entry>
+  <entry keyword="control program">
+   <topic href="s1_dd.html#Door_lock" title="Door-lock actuators"/>
+  </entry>
+  <entry keyword="control program requirements">
+   <topic href="s1_dd.html#Decoupling" title="Decoupling design in a message-passing environment"/>
+  </entry>
+  <entry keyword="control program sending to swipe-card reader">
+   <topic href="s1_dd.html#Control_to_reader" title="Control program sends to the swipe-card reader"/>
+   <topic href="s1_dd.html#Keypad_control_to_reader" title="Using a keypad challenge — control program sends to the swipe-card reader"/>
+  </entry>
+  <entry keyword="control program using a pulse">
+   <topic href="s1_dd.html#Swipe_card" title="Swipe-card readers"/>
+  </entry>
+  <entry keyword="data sink">
+   <topic href="s1_dd.html#Swipe_card" title="Swipe-card readers"/>
+  </entry>
+  <entry keyword="data source">
+   <topic href="s1_dd.html#Swipe_card" title="Swipe-card readers"/>
+  </entry>
+  <entry keyword="distributability">
+   <topic href="s1_dd.html#Decoupling" title="Decoupling design in a message-passing environment"/>
+  </entry>
+  <entry keyword="door-lock actuator requirements">
+   <topic href="s1_dd.html#Decoupling" title="Decoupling design in a message-passing environment"/>
+  </entry>
+  <entry keyword="door-lock actuators requirements">
+   <topic href="s1_dd.html#Door_lock" title="Door-lock actuators"/>
+  </entry>
+  <entry keyword="hardware overview">
+   <topic href="s1_dd.html#Decoupling" title="Decoupling design in a message-passing environment"/>
+  </entry>
+  <entry keyword="hiding implementation behind a common interface">
+   <topic href="s1_dd.html#Door_lock" title="Door-lock actuators"/>
+  </entry>
+  <entry keyword="high-level architecture">
+   <topic href="s1_dd.html#Decoupling" title="Decoupling design in a message-passing environment"/>
+  </entry>
+  <entry keyword="message vs pulse trade offs">
+   <topic href="s1_dd.html#Swipe_card" title="Swipe-card readers"/>
+  </entry>
+  <entry keyword="meta door-lock driver">
+   <topic href="s1_dd.html#Door_lock" title="Door-lock actuators"/>
+  </entry>
+  <entry keyword="requirements">
+   <topic href="s1_dd.html#Decoupling" title="Decoupling design in a message-passing environment"/>
+  </entry>
+  <entry keyword="scalability">
+   <topic href="s1_dd.html#Decoupling" title="Decoupling design in a message-passing environment"/>
+   <topic href="s1_dd.html#Scalability" title="Scalability"/>
+  </entry>
+  <entry keyword="setting the LED color">
+   <topic href="s1_dd.html#Reader_to_control" title="Swipe-card reader sends to control program"/>
+   <topic href="s1_dd.html#Swipe_card" title="Swipe-card readers"/>
+  </entry>
+  <entry keyword="swipe-card reader requirements">
+   <topic href="s1_dd.html#Decoupling" title="Decoupling design in a message-passing environment"/>
+   <topic href="s1_dd.html#Swipe_card" title="Swipe-card readers"/>
+  </entry>
+  <entry keyword="swipe-card reader sending to control program">
+   <topic href="s1_dd.html#Reader_to_control" title="Swipe-card reader sends to control program"/>
+   <topic href="s1_dd.html#Keypad_reader_to_control" title="Using a keypad challenge — swipe-card reader sends to control program"/>
+  </entry>
+  <entry keyword="swipe-card reader using a pulse">
+   <topic href="s1_dd.html#Swipe_card" title="Swipe-card readers"/>
+  </entry>
+  <entry keyword="transaction analysis">
+   <topic href="s1_dd.html#Keypad_reader_to_control" title="Using a keypad challenge — swipe-card reader sends to control program"/>
+  </entry>
+  <entry keyword="unreadability">
+   <topic href="s1_dd.html#Decoupling" title="Decoupling design in a message-passing environment"/>
+  </entry>
+  <entry keyword="upgradability">
+   <topic href="s1_dd.html#Door_lock" title="Door-lock actuators"/>
+  </entry>
+  <entry keyword="zone controllers">
+   <topic href="s1_dd.html#Scalability" title="Scalability"/>
+  </entry>
+ </entry>
+ <entry keyword="shared memory">
+  <entry keyword="ADIOS adios_data_header_t">
+   <topic href="s2_adios.html#Structure_sizes" title="Calculating the sizes of data structures"/>
+  </entry>
+  <entry keyword="ADIOS steps to set up">
+   <topic href="s2_adios.html#ADIOS_shared_memory" title="The shared memory region"/>
+  </entry>
+  <entry keyword="and ftruncate()">
+   <topic href="s2_adios.html#Mapping_shared_memory" title="Truncate and map shared memory"/>
+  </entry>
+  <entry keyword="and mmap()">
+   <topic href="s2_adios.html#Opening_shared_memory" title="Open and check the shared memory"/>
+   <topic href="s2_adios.html#Mapping_shared_memory" title="Truncate and map shared memory"/>
+  </entry>
+  <entry keyword="and munmap()">
+   <topic href="s2_adios.html#Opening_shared_memory" title="Open and check the shared memory"/>
+  </entry>
+  <entry keyword="and pointers">
+   <topic href="s2_adios.html#Acquiring_data" title="Acquiring data"/>
+   <topic href="s2_adios.html#Mapping_shared_memory" title="Truncate and map shared memory"/>
+  </entry>
+  <entry keyword="and shm_open()">
+   <topic href="s2_adios.html#Opening_shared_memory" title="Open and check the shared memory"/>
+  </entry>
+  <entry keyword="and shm_unlink()">
+   <topic href="s2_adios.html#Opening_shared_memory" title="Open and check the shared memory"/>
+  </entry>
+  <entry keyword="example of getting data">
+   <topic href="s2_adios.html#showsamp_utility" title="The showsamp utility"/>
+  </entry>
+  <entry keyword="head and tail access">
+   <topic href="s2_adios.html#showsamp_utility" title="The showsamp utility"/>
+  </entry>
+  <entry keyword="head and tail maintenance">
+   <topic href="s2_adios.html#Acquiring_data" title="Acquiring data"/>
+  </entry>
+  <entry keyword="in ADIOS">
+   <topic href="s2_adios.html#Shared_memory_design" title="Shared Memory Design"/>
+  </entry>
+  <entry keyword="mmap()&#x0027;s MAP_SHARED">
+   <topic href="s2_adios.html#Mapping_shared_memory" title="Truncate and map shared memory"/>
+  </entry>
+  <entry keyword="mmap()&#x0027;s PROT_READ">
+   <topic href="s2_adios.html#Mapping_shared_memory" title="Truncate and map shared memory"/>
+  </entry>
+  <entry keyword="mmap()&#x0027;s PROT_WRITE">
+   <topic href="s2_adios.html#Mapping_shared_memory" title="Truncate and map shared memory"/>
+  </entry>
+  <entry keyword="set up by ADIOS">
+   <topic href="s2_adios.html#ADIOS_shared_memory" title="The shared memory region"/>
+  </entry>
+  <entry keyword="setting the size">
+   <topic href="s2_adios.html#Mapping_shared_memory" title="Truncate and map shared memory"/>
+  </entry>
+  <entry keyword="synchronization">
+   <topic href="s2_adios.html#Acquiring_data" title="Acquiring data"/>
+  </entry>
+ </entry>
+ <entry keyword="signal">
+  <entry keyword="blocked (thread)">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="ignored (process)">
+   <topic href="s3_procfs.html#Signal_info" title="Signal information"/>
+  </entry>
+  <entry keyword="information (thread)">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="pending (process)">
+   <topic href="s3_procfs.html#Signal_info" title="Signal information"/>
+  </entry>
+  <entry keyword="pending (thread)">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="queued (process)">
+   <topic href="s3_procfs.html#Signal_info" title="Signal information"/>
+  </entry>
+ </entry>
+ <entry keyword="support, technical">
+  <topic href="about.html#Support" title="Technical support"/>
+ </entry>
+ <entry keyword="symbolic link">
+  <entry keyword="absolute pathname">
+   <topic href="s2_ramdisk.html#redirect_symlink" title="The redirect_symlink() function"/>
+  </entry>
+  <entry keyword="and pathname resolution">
+   <topic href="s2_ramdisk.html#connect_msg_to_attr" title="The connect_msg_to_attr() function"/>
+  </entry>
+  <entry keyword="and RAM disk">
+   <topic href="s2_ramdisk.html#connect_msg_to_attr" title="The connect_msg_to_attr() function"/>
+  </entry>
+  <entry keyword="and symlink()">
+   <topic href="s2_ramdisk.html#c_link" title="The c_link() function"/>
+  </entry>
+  <entry keyword="as stored in RAM disk">
+   <topic href="s2_ramdisk.html#Extended_attributes" title="The extended attributes structure"/>
+  </entry>
+  <entry keyword="creating">
+   <topic href="s2_ramdisk.html#c_link" title="The c_link() function"/>
+  </entry>
+  <entry keyword="differences from hard link">
+   <topic href="s2_ramdisk.html#c_link" title="The c_link() function"/>
+  </entry>
+  <entry keyword="in RAM disk attributes structure">
+   <topic href="s2_ramdisk.html#Extended_attributes" title="The extended attributes structure"/>
+  </entry>
+  <entry keyword="in RAM-disk filesystem">
+   <topic href="s2_ramdisk.html#Finding_target" title="Finding the target"/>
+  </entry>
+  <entry keyword="redirection">
+   <topic href="s2_ramdisk.html#redirect_symlink" title="The redirect_symlink() function"/>
+  </entry>
+  <entry keyword="redirection of">
+   <topic href="s2_ramdisk.html#Symlinks" title="Fun with symlinks"/>
+  </entry>
+  <entry keyword="relative pathname">
+   <topic href="s2_ramdisk.html#redirect_symlink" title="The redirect_symlink() function"/>
+  </entry>
+  <entry keyword="resolution of">
+   <topic href="s2_ramdisk.html#Symlinks" title="Fun with symlinks"/>
+  </entry>
+  <entry keyword="resolving">
+   <topic href="s2_ramdisk.html#redirect_symlink" title="The redirect_symlink() function"/>
+  </entry>
+  <entry keyword="returning contents of">
+   <topic href="s2_ramdisk.html#c_readlink" title="The c_readlink() function"/>
+  </entry>
+  <entry keyword="used with indexed filesystem">
+   <topic href="s2_tarfs.html#Indexed_filesystem" title="Indexed filesystem"/>
+  </entry>
+ </entry>
+ <entry keyword="Tag">
+  <entry keyword="ain keyword">
+   <topic href="s2_adios.html#Tags_database_design" title="Tags database design"/>
+  </entry>
+  <entry keyword="database">
+   <topic href="s2_adios.html#Tags_database_design" title="Tags database design"/>
+  </entry>
+  <entry keyword="din keyword">
+   <topic href="s2_adios.html#Tags_database_design" title="Tags database design"/>
+  </entry>
+  <entry keyword="dout keyword">
+   <topic href="s2_adios.html#Tags_database_design" title="Tags database design"/>
+  </entry>
+  <entry keyword="gain keyword">
+   <topic href="s2_adios.html#Tags_database_design" title="Tags database design"/>
+  </entry>
+  <entry keyword="grammar">
+   <topic href="s2_adios.html#Tags_database_design" title="Tags database design"/>
+  </entry>
+  <entry keyword="negative keyword">
+   <topic href="s2_adios.html#Tags_database_design" title="Tags database design"/>
+  </entry>
+  <entry keyword="positive keyword">
+   <topic href="s2_adios.html#Tags_database_design" title="Tags database design"/>
+  </entry>
+  <entry keyword="span keyword">
+   <topic href="s2_adios.html#Tags_database_design" title="Tags database design"/>
+  </entry>
+ </entry>
+ <entry keyword="tar">
+  <entry keyword="ASCII octal data">
+   <topic href="s2_tarfs.html#Creating_tar_files" title="Creating a .tar file"/>
+  </entry>
+  <entry keyword="block-oriented format">
+   <topic href="s2_tarfs.html#Creating_tar_files" title="Creating a .tar file"/>
+  </entry>
+  <entry keyword="definition of fields">
+   <topic href="s2_tarfs.html#Creating_tar_files" title="Creating a .tar file"/>
+  </entry>
+  <entry keyword="format">
+   <topic href="s2_tarfs.html#Design" title="Design"/>
+  </entry>
+  <entry keyword="GNU format">
+   <topic href="s2_tarfs.html#Requirements" title="Requirements"/>
+  </entry>
+  <entry keyword="header">
+   <topic href="s2_tarfs.html#Creating_tar_files" title="Creating a .tar file"/>
+  </entry>
+  <entry keyword="intermediate directories">
+   <topic href="s2_tarfs.html#Creating_tar_files" title="Creating a .tar file"/>
+  </entry>
+  <entry keyword="POSIX format">
+   <topic href="s2_tarfs.html#Requirements" title="Requirements"/>
+  </entry>
+  <entry keyword="subdirectories">
+   <topic href="s2_tarfs.html#Creating_tar_files" title="Creating a .tar file"/>
+  </entry>
+ </entry>
+ <entry keyword="tar filesystem">
+  <entry keyword="attributes structure">
+   <topic href="s2_tarfs.html#Structures" title="The structures"/>
+  </entry>
+  <entry keyword="c_mount()">
+   <topic href="s2_tarfs.html#c_mount" title="The c_mount() function"/>
+  </entry>
+  <entry keyword="mount helper">
+   <topic href="s2_tarfs.html#Mount_helper" title="The mount helper program"/>
+  </entry>
+  <entry keyword="mount point">
+   <topic href="s2_tarfs.html#c_mount" title="The c_mount() function"/>
+  </entry>
+ </entry>
+ <entry keyword="technical support">
+  <topic href="about.html#Support" title="Technical support"/>
+ </entry>
+ <entry keyword="thread">
+  <entry keyword="and scalability">
+   <topic href="s1_dd.html#Swipe_card" title="Swipe-card readers"/>
+  </entry>
+  <entry keyword="as blocking agent">
+   <topic href="s1_dd.html#Swipe_card" title="Swipe-card readers"/>
+  </entry>
+  <entry keyword="blocked state information">
+   <topic href="s3_procfs.html#Block_thread_info" title="Blocked thread information"/>
+  </entry>
+  <entry keyword="blocking reason from /proc">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="channel ID information">
+   <topic href="s3_procfs.html#Block_thread_info" title="Blocked thread information"/>
+  </entry>
+  <entry keyword="complexity in multi-thread resource managers">
+   <topic href="s1_basics.html#threaded_resource_managers" title="Threaded resource managers"/>
+  </entry>
+  <entry keyword="CPU time">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="current system call from /proc">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="default priority">
+   <topic href="s3_procfs.html#Process_info" title="Process information"/>
+  </entry>
+  <entry keyword="detecting reuse of IDs">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="flags from /proc">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="floating-point registers via /proc">
+   <topic href="s3_procfs.html#DCMD_PROC_GETGREG" title="The DCMD_PROC_GETGREG and DCMD_PROC_GETFPREG commands"/>
+  </entry>
+  <entry keyword="general registers via /proc">
+   <topic href="s3_procfs.html#DCMD_PROC_GETGREG" title="The DCMD_PROC_GETGREG and DCMD_PROC_GETFPREG commands"/>
+  </entry>
+  <entry keyword="getting ID from /proc">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="information from /proc">
+   <topic href="s3_procfs.html#Finding_thread_information" title="Finding out information about the threads"/>
+  </entry>
+  <entry keyword="instruction pointer from /proc">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="iterating through all in process">
+   <topic href="s3_procfs.html#Finding_thread_information" title="Finding out information about the threads"/>
+  </entry>
+  <entry keyword="kernel call timeout flags from /proc">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="last channel ID used from /proc">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="last CPU number from /proc">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="lazy-map paging information">
+   <topic href="s3_procfs.html#Block_thread_info" title="Blocked thread information"/>
+  </entry>
+  <entry keyword="local storage area (TLS) from /proc">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="message passing information">
+   <topic href="s3_procfs.html#Block_thread_info" title="Blocked thread information"/>
+  </entry>
+  <entry keyword="number in a process">
+   <topic href="s3_procfs.html#Process_info" title="Process information"/>
+  </entry>
+  <entry keyword="policy from /proc">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="priority from /proc">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="signal information">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="signals blocked">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="signals pending">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="single vs multiple in resource manager">
+   <topic href="s1_basics.html#threaded_resource_managers" title="Threaded resource managers"/>
+  </entry>
+  <entry keyword="stack base from /proc">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="stack information">
+   <topic href="s3_procfs.html#Block_thread_info" title="Blocked thread information"/>
+  </entry>
+  <entry keyword="stack pointer from /proc">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="stack size from /proc">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="start time">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="state from /proc">
+   <topic href="s3_procfs.html#DCMD_PROC_TIDSTATUS" title="The DCMD_PROC_TIDSTATUS command"/>
+  </entry>
+  <entry keyword="STATE_JOIN information">
+   <topic href="s3_procfs.html#Block_thread_info" title="Blocked thread information"/>
+  </entry>
+  <entry keyword="STATE_RECEIVE information">
+   <topic href="s3_procfs.html#Block_thread_info" title="Blocked thread information"/>
+  </entry>
+  <entry keyword="STATE_REPLY information">
+   <topic href="s3_procfs.html#Block_thread_info" title="Blocked thread information"/>
+  </entry>
+  <entry keyword="STATE_SEND information">
+   <topic href="s3_procfs.html#Block_thread_info" title="Blocked thread information"/>
+  </entry>
+  <entry keyword="STATE_STACK information">
+   <topic href="s3_procfs.html#Block_thread_info" title="Blocked thread information"/>
+  </entry>
+  <entry keyword="STATE_WAITPAGE information">
+   <topic href="s3_procfs.html#Block_thread_info" title="Blocked thread information"/>
+  </entry>
+  <entry keyword="synchronization in resource manager library">
+   <topic href="s1_basics.html#threaded_resource_managers" title="Threaded resource managers"/>
+  </entry>
+  <entry keyword="synchronization information">
+   <topic href="s3_procfs.html#Block_thread_info" title="Blocked thread information"/>
+  </entry>
+ </entry>
+ <entry keyword="timer">
+  <entry keyword="associated thread ID">
+   <topic href="s3_procfs.html#DCMD_PROC_TIMERS" title="DCMD_PROC_TIMERS"/>
+  </entry>
+  <entry keyword="clock ID">
+   <topic href="s3_procfs.html#DCMD_PROC_TIMERS" title="DCMD_PROC_TIMERS"/>
+  </entry>
+  <entry keyword="event">
+   <topic href="s3_procfs.html#DCMD_PROC_TIMERS" title="DCMD_PROC_TIMERS"/>
+  </entry>
+  <entry keyword="firing time">
+   <topic href="s3_procfs.html#DCMD_PROC_TIMERS" title="DCMD_PROC_TIMERS"/>
+  </entry>
+  <entry keyword="flags">
+   <topic href="s3_procfs.html#DCMD_PROC_TIMERS" title="DCMD_PROC_TIMERS"/>
+  </entry>
+  <entry keyword="information from /proc">
+   <topic href="s3_procfs.html#DCMD_PROC_TIMERS" title="DCMD_PROC_TIMERS"/>
+  </entry>
+  <entry keyword="notification type">
+   <topic href="s3_procfs.html#DCMD_PROC_TIMERS" title="DCMD_PROC_TIMERS"/>
+  </entry>
+  <entry keyword="overruns">
+   <topic href="s3_procfs.html#DCMD_PROC_TIMERS" title="DCMD_PROC_TIMERS"/>
+  </entry>
+  <entry keyword="remaining time">
+   <topic href="s3_procfs.html#DCMD_PROC_TIMERS" title="DCMD_PROC_TIMERS"/>
+  </entry>
+ </entry>
+ <entry keyword="typographical conventions">
+  <topic href="about.html#Typographical_conventions" title="Typographical conventions"/>
+ </entry>
+ <entry keyword="usage message">
+  <topic href="s1_basics.html#Beginning" title="In the beginning…"/>
+  <entry keyword="definition">
+   <topic href="s1_basics.html#Usage_messages" title="Usage messages"/>
+  </entry>
+ </entry>
+ <entry keyword="USENET news">
+  <entry keyword="cnews">
+   <topic href="s2_tarfs.html#How_news_works" title="How does USENET news work?"/>
+  </entry>
+  <entry keyword="content of expiry-ordered file">
+   <topic href="s2_tarfs.html#Operation" title="Operation"/>
+  </entry>
+  <entry keyword="Dr. Dobb&#x0027;s Journal">
+   <topic href="s2_tarfs.html#References" title="References"/>
+  </entry>
+  <entry keyword="expiry-ordered files">
+   <topic href="s2_tarfs.html#Operation" title="Operation"/>
+  </entry>
+  <entry keyword="filesystem for">
+   <topic href="s2_tarfs.html#USENET" title="Virtual filesystem for USENET news (VFNews)"/>
+  </entry>
+  <entry keyword="improving on">
+   <topic href="s2_tarfs.html#How_to_improve" title="How can this possibly be made better?"/>
+  </entry>
+  <entry keyword="NNTP">
+   <topic href="s2_tarfs.html#How_news_works" title="How does USENET news work?"/>
+  </entry>
+  <entry keyword="operation">
+   <topic href="s2_tarfs.html#How_news_works" title="How does USENET news work?"/>
+  </entry>
+  <entry keyword="problems with">
+   <topic href="s2_tarfs.html#Why_a_problem" title="So why is this a problem?"/>
+  </entry>
+  <entry keyword="UUCP">
+   <topic href="s2_tarfs.html#How_news_works" title="How does USENET news work?"/>
+  </entry>
+  <entry keyword="virtual filesystem">
+   <topic href="s2_tarfs.html#Operation" title="Operation"/>
+  </entry>
+ </entry>
+ <entry keyword="VFNews">
+  <topic href="s2_tarfs.html#USENET" title="Virtual filesystem for USENET news (VFNews)"/>
+ </entry>
+ <entry keyword="Web Counter">
+  <entry keyword="7-segment LED engine">
+   <topic href="s2_web.html#Source_files" title="Source files"/>
+  </entry>
+  <entry keyword="8x8 font engine">
+   <topic href="s2_web.html#Font_selection" title="Font selection"/>
+  </entry>
+  <entry keyword="ability to write to resource">
+   <topic href="s2_web.html#Code_phase_2" title="The code — phase 2"/>
+  </entry>
+  <entry keyword="accumulating characters">
+   <topic href="s2_web.html#Adding_io_write" title="Adding the io_write() handler"/>
+  </entry>
+  <entry keyword="adding a second pathname">
+   <topic href="s2_web.html#Plain_text" title="Plain text rendering"/>
+  </entry>
+  <entry keyword="adding io_write()">
+   <topic href="s2_web.html#Adding_io_write" title="Adding the io_write() handler"/>
+  </entry>
+  <entry keyword="and multiple clients">
+   <topic href="s2_web.html#execute_resmgr_phase1" title="The execute_resmgr() function"/>
+  </entry>
+  <entry keyword="changes from phase 2 to phase 3">
+   <topic href="s2_web.html#Code_phase_3" title="The code — phase 3"/>
+  </entry>
+  <entry keyword="changes to support directories">
+   <topic href="s2_web.html#Changes" title="Changes"/>
+  </entry>
+  <entry keyword="changing the count">
+   <topic href="s2_web.html#Code_phase_2" title="The code — phase 2"/>
+  </entry>
+  <entry keyword="converting ASCII to a count">
+   <topic href="s2_web.html#io_close_ocb_phase2" title="The io_close_ocb() function"/>
+  </entry>
+  <entry keyword="determining end of file">
+   <topic href="s2_web.html#execute_resmgr_phase1" title="The execute_resmgr() function"/>
+  </entry>
+  <entry keyword="determining the size of the resource">
+   <topic href="s2_web.html#execute_resmgr_phase1" title="The execute_resmgr() function"/>
+  </entry>
+  <entry keyword="determining when data is written">
+   <topic href="s2_web.html#Adding_io_write" title="Adding the io_write() handler"/>
+  </entry>
+  <entry keyword="directory versus file in io_read()">
+   <topic href="s2_web.html#io_read_phase3" title="Handling io_read()"/>
+  </entry>
+  <entry keyword="execut_resmgr() changes">
+   <topic href="s2_web.html#Plain_text" title="Plain text rendering"/>
+  </entry>
+  <entry keyword="execute_resmgr() changes">
+   <topic href="s2_web.html#Adding_io_write" title="Adding the io_write() handler"/>
+   <topic href="s2_web.html#Plain_text" title="Plain text rendering"/>
+   <topic href="s2_web.html#execute_resmgr_phase3" title="The new-and-improved execute_resmgr()"/>
+  </entry>
+  <entry keyword="extended attributes structure">
+   <topic href="s2_web.html#execute_resmgr_phase1" title="The execute_resmgr() function"/>
+  </entry>
+  <entry keyword="extended OCB">
+   <topic href="s2_web.html#execute_resmgr_phase1" title="The execute_resmgr() function"/>
+  </entry>
+  <entry keyword="filename processing tricks">
+   <topic href="s2_web.html#Filename_processing" title="Filename processing tricks"/>
+  </entry>
+  <entry keyword="first bug">
+   <topic href="s2_web.html#execute_resmgr_phase1" title="The execute_resmgr() function"/>
+  </entry>
+  <entry keyword="font selection">
+   <topic href="s2_web.html#Font_selection" title="Font selection"/>
+  </entry>
+  <entry keyword="font-selection">
+   <topic href="s2_web.html#Code_phase_2" title="The code — phase 2"/>
+  </entry>
+  <entry keyword="GIF encoder (not included)">
+   <topic href="s2_web.html#Code_phase_1" title="The code — phase 1"/>
+  </entry>
+  <entry keyword="handling client&#x0027;s write()">
+   <topic href="s2_web.html#Code_phase_2" title="The code — phase 2"/>
+  </entry>
+  <entry keyword="include files">
+   <topic href="s2_web.html#Walkthrough" title="Step-by-step code walkthrough"/>
+  </entry>
+  <entry keyword="inode numbering">
+   <topic href="s2_web.html#execute_resmgr_phase3" title="The new-and-improved execute_resmgr()"/>
+  </entry>
+  <entry keyword="io_close_ocb()">
+   <topic href="s2_web.html#Operation" title="Operation"/>
+   <topic href="s2_web.html#execute_resmgr_phase1" title="The execute_resmgr() function"/>
+  </entry>
+  <entry keyword="io_close_ocb() changes">
+   <topic href="s2_web.html#io_close_ocb_phase2" title="The io_close_ocb() function"/>
+  </entry>
+  <entry keyword="io_open()">
+   <topic href="s2_web.html#Operation" title="Operation"/>
+  </entry>
+  <entry keyword="io_read()">
+   <topic href="s2_web.html#Operation" title="Operation"/>
+   <topic href="s2_web.html#execute_resmgr_phase1" title="The execute_resmgr() function"/>
+  </entry>
+  <entry keyword="io_read() changes">
+   <topic href="s2_web.html#io_read_phase3" title="Handling io_read()"/>
+  </entry>
+  <entry keyword="io_read() modification">
+   <topic href="s2_web.html#Font_selection" title="Font selection"/>
+  </entry>
+  <entry keyword="io_read_file()">
+   <topic href="s2_web.html#Operating_on_a_file" title="Operating on a file"/>
+  </entry>
+  <entry keyword="managing directories">
+   <topic href="s2_web.html#Operating_on_a_directory" title="Operating on a directory"/>
+   <topic href="s2_web.html#Code_phase_3" title="The code — phase 3"/>
+  </entry>
+  <entry keyword="my_attr_t">
+   <topic href="s2_web.html#execute_resmgr_phase1" title="The execute_resmgr() function"/>
+  </entry>
+  <entry keyword="my_ocb_t">
+   <topic href="s2_web.html#Font_selection" title="Font selection"/>
+   <topic href="s2_web.html#execute_resmgr_phase1" title="The execute_resmgr() function"/>
+  </entry>
+  <entry keyword="OCB extension for font">
+   <topic href="s2_web.html#Font_selection" title="Font selection"/>
+  </entry>
+  <entry keyword="option processing changes">
+   <topic href="s2_web.html#Options" title="Option processing"/>
+  </entry>
+  <entry keyword="persistent count file">
+   <topic href="s2_web.html#Options" title="Option processing"/>
+   <topic href="s2_web.html#Persistent_count" title="Persistent count file"/>
+   <topic href="s2_web.html#Code_phase_2" title="The code — phase 2"/>
+   <topic href="s2_web.html#Code_phase_3" title="The code — phase 3"/>
+   <topic href="s2_web.html#Persistent_counter_file" title="The persistent counter file"/>
+  </entry>
+  <entry keyword="persistent count file changes">
+   <topic href="s2_web.html#Filename_processing" title="Filename processing tricks"/>
+  </entry>
+  <entry keyword="phase 2 requirements">
+   <topic href="s2_web.html#Code_phase_2" title="The code — phase 2"/>
+  </entry>
+  <entry keyword="phase 3 code">
+   <topic href="s2_web.html#Code_phase_3" title="The code — phase 3"/>
+  </entry>
+  <entry keyword="placing commands in the filename">
+   <topic href="s2_web.html#Filename_processing" title="Filename processing tricks"/>
+  </entry>
+  <entry keyword="plain text rendering">
+   <topic href="s2_web.html#Plain_text" title="Plain text rendering"/>
+   <topic href="s2_web.html#Code_phase_2" title="The code — phase 2"/>
+  </entry>
+  <entry keyword="premature end of file">
+   <topic href="s2_web.html#execute_resmgr_phase1" title="The execute_resmgr() function"/>
+  </entry>
+  <entry keyword="read_file() changes">
+   <topic href="s2_web.html#Persistent_counter_file" title="The persistent counter file"/>
+  </entry>
+  <entry keyword="registering the pathname">
+   <topic href="s2_web.html#execute_resmgr_phase3" title="The new-and-improved execute_resmgr()"/>
+  </entry>
+  <entry keyword="registering the second pathname">
+   <topic href="s2_web.html#Plain_text" title="Plain text rendering"/>
+  </entry>
+  <entry keyword="requirements">
+   <topic href="s2_web.html#Requirements" title="Requirements"/>
+  </entry>
+  <entry keyword="resmgr_attach()">
+   <topic href="s2_web.html#Plain_text" title="Plain text rendering"/>
+  </entry>
+  <entry keyword="second bug">
+   <topic href="s2_web.html#execute_resmgr_phase1" title="The execute_resmgr() function"/>
+  </entry>
+  <entry keyword="source files">
+   <topic href="s2_web.html#Source_files" title="Source files"/>
+  </entry>
+  <entry keyword="theory of operation">
+   <topic href="s2_web.html#Operation" title="Operation"/>
+  </entry>
+  <entry keyword="using inode to index attributes structure">
+   <topic href="s2_web.html#execute_resmgr_phase3" title="The new-and-improved execute_resmgr()"/>
+  </entry>
+  <entry keyword="write_file() changes">
+   <topic href="s2_web.html#Persistent_counter_file" title="The persistent counter file"/>
+  </entry>
+  <entry keyword="writing to">
+   <topic href="s2_web.html#Writing_to_resource" title="Writing to the resource"/>
+  </entry>
+ </entry>
+ <entry keyword="weird stuff">
+  <entry keyword="are we there yet?">
+   <topic href="s1_dd.html#Swipe_card" title="Swipe-card readers"/>
+  </entry>
+  <entry keyword="boolean typecast operator">
+   <topic href="s2_adios.html#Digial_input" title="Digital input"/>
+  </entry>
+  <entry keyword="dying a horrible death after a fire drill">
+   <topic href="s1_dd.html#Scalability" title="Scalability"/>
+  </entry>
+  <entry keyword="how to get yourself fired">
+   <topic href="s1_ha.html#In_service_upgrades" title="In-service upgrades"/>
+  </entry>
+  <entry keyword="infinite money">
+   <topic href="s1_ha.html#Synchronization_problems" title="Problems"/>
+  </entry>
+  <entry keyword="infinite time">
+   <topic href="s1_ha.html#Synchronization_problems" title="Problems"/>
+  </entry>
+  <entry keyword="laziness">
+   <topic href="s2_web.html#Persistent_counter_file" title="The persistent counter file"/>
+  </entry>
+  <entry keyword="lies, damn lies, and statistics">
+   <topic href="s1_ha.html#Lies" title="Lies, damn lies, and statistics"/>
+  </entry>
+  <entry keyword="Microsoft not inventing something">
+   <topic href="s3_fsys.html#Hierarchy" title="Hierarchical arrangement"/>
+  </entry>
+  <entry keyword="only failing during a demo">
+   <topic href="s1_dd.html#Swipe_card" title="Swipe-card readers"/>
+  </entry>
+  <entry keyword="power blackout of August 14, 2003">
+   <topic href="s1_ha.html#Parallel_calculations" title="Parallel calculations"/>
+  </entry>
+  <entry keyword="RK drones on about his home systems again">
+   <topic href="s1_ha.html#RK_drones" title="RK drones on about his home systems again"/>
+  </entry>
+  <entry keyword="VAX/VMS directory names">
+   <topic href="s3_fsys.html#Hierarchy" title="Hierarchical arrangement"/>
+  </entry>
+ </entry>
+</index>

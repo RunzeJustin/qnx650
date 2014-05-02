@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-Name: %pluginName
+Bundle-Activator: com.qnx.tools.ide.momentics.examples.Activator
+Bundle-Vendor: %providerName
+Bundle-ManifestVersion: 2
+Bundle-Localization: plugin
+Bundle-SymbolicName: com.qnx.tools.ide.momentics.examples;singleton:=t
+ rue
+Export-Package: com.qnx.tools.ide.momentics.examples,com.qnx.tools.ide
+ .momentics.examples.wizards
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.co
+ re.resources,org.eclipse.ui.ide,org.eclipse.cdt.core,org.eclipse.ui.c
+ heatsheets,org.eclipse.ui.intro;resolution:=optional
+Bundle-Version: 4.7.0.201006232051
+Eclipse-LazyStart: true
+
+

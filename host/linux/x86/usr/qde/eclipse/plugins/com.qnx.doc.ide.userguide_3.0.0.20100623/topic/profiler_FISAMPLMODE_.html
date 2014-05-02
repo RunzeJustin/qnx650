@@ -1,0 +1,234 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Using Sampling and Call Count instrumentation mode" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROUSECASES_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_USEAPPPROFUNCINST_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_FISINGAPP_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_FISYSPROF_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFCreateSessFromIDELnch_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFCreateSessByImpData_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFSingleThreadedApp_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFaRunProcess_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFUsingPostmortemProf_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFPsotMortemProfiling_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFRunningFromTermCmdLine_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFTakeSnapshot_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROCompResults_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="UsingSamplingandCallCountinstrumentationmode" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Using Sampling and Call Count instrumentation mode</title>
+   </head>
+   <body id="UsingSamplingandCallCountinstrumentationmode"><a name="UsingSamplingandCallCountinstrumentationmode" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Using Sampling and Call Count instrumentation mode</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>Sampling mode provides you with profiling information for your project at a specific time interval (the Application Profiler
+            takes samples from processes at given rate). The information is recorded into a sample that you can use for comparison purposes.
+            
+         </p>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> 
+            
+            <p>When you use sampling mode to obtain only data, you'll notice the following:</p>
+            
+            <br clear="none" /><ul>
+               <li>To use basic sampling, you're not required to recompile your application.</li>
+               <li>This mode won't provide you with you precise function times, but you can use the data for comparison purposes.</li>
+               <li>The profile will run and gather sample data for a long period of time.</li>
+            </ul>
+            
+            
+         </div>
+         
+         
+         <p>
+            <strong>Launching from the IDE</strong>
+            
+         </p>
+         
+         
+         <p>To prepare your binary for Call Count instrumentation: </p>
+         
+         <br clear="none" /><ol>
+            <li>Optional: Depending on your type of project, do one of the following to prepare your binary: <br clear="none" /><ul>
+                  <li>For a QNX C/C++ project: <br clear="none" /><ol type="a">
+                        <li>In the Project Explorer view, right-click your project and select <span class="uicontrol">Properties</span>. 
+                        </li>
+                        <li>In the left pane, select <span class="uicontrol">QNX C/C++ project</span>. 
+                        </li>
+                        <li>In the right pane, select the <span class="uicontrol">Options</span> tab. 
+                        </li>
+                        <li>Select <span class="uicontrol">Build for Profiling (Call Count Instrumentation)</span>. 
+                           <p>
+                              <span><img src="../images/topic2Fprofiler_FISAMPLMODE_.xml_d147518e77.jpg" alt="Properties for a project: Options tab" /></span>
+                              
+                           </p>
+                           
+                        </li>
+                     </ol>
+                     
+                  </li>
+                  <li>For a managed project: <br clear="none" /><ol type="a">
+                        <li>Right-click on a project and select <span class="uicontrol">Properties</span>. 
+                        </li>
+                        <li>From the menu, select <span class="menucascade">
+                              <span class="uicontrol">C/C++ Build</span>
+                              &gt; <span class="uicontrol">Settings</span>
+                              &gt; <span class="uicontrol">Tools settings</span>
+                              </span>. 
+                        </li>
+                        <li>From the list on the right for your compiler (i.e. <span class="uicontrol">QCC Compiler</span>), select an item from the list and select <span class="uicontrol">Output Control</span>. 
+                        </li>
+                        <li>Select the <span class="uicontrol">Enable call count profiling (<span class="option">-p</span>)</span> option. 
+                        </li>
+                        <li>From the list on the right for your linker (i.e. QCC Linker), select an item from the list, then select <span class="uicontrol">Output Control</span>. 
+                        </li>
+                        <li>Select the <span class="uicontrol">Build for Profiling (Call Count) (<span class="option">-p</span>)</span> option. 
+                        </li>
+                     </ol>
+                     
+                  </li>
+                  <li>For a <span class="filepath">Makefile</span>: 
+                     <p>To build a C/C++ project for profiling, compile and link using the <span class="option">-p</span> option. For example, your <span class="filepath">Makefile</span> might have a line like this: 
+                        
+                     </p>
+                     <pre class="codeblock" xml:space="preserve">CFLAGS=-p CXXFLAGS=-p LDFLAGS=-p </pre>
+                     </li>
+               </ul>
+               
+            </li>
+            <li>Create a launch configuration for your application, add click the <span class="uicontrol">Tools</span> tab. 
+            </li>
+            <li>Select <span class="uicontrol">Application Profiler</span> and click <span class="uicontrol">OK</span>. 
+            </li>
+            <li>From the <span class="uicontrol">Application Profiler</span> tab, select <span class="uicontrol">Sampling and Call Count Instrumentation</span>. 
+            </li>
+            <li>Select the <span class="uicontrol">Single Application</span> option. 
+            </li>
+            <li>Select the <span class="uicontrol">Switch to this tool's perspective on launch</span> checkbox. 
+            </li>
+            <li>Run the configuration to begin the profiling process.</li>
+         </ol>
+         
+         
+         <p>Now, your application is launched, as well as the Application Profiler tool. The Application Profiler perspective opens and
+            the Execution Time view shows data from the current session; the view is automatically refreshed. 
+         </p>
+         
+         
+         <p>To customize your Execution Time view if you're running in this mode:</p>
+         
+         <br clear="none" /><ol>
+            <li>In the Execution Time view, select <span class="menucascade">
+                  <span class="uicontrol">Tools</span>
+                  &gt; <span class="uicontrol">Preferences</span>
+                  </span> from the menu. 
+            </li>
+            <li>Deselect the following columns because they aren't applicable: <br clear="none" /><ul>
+                  <li>
+                     <span class="uicontrol">Deep Time</span>
+                     
+                  </li>
+                  <li>
+                     <span class="uicontrol">Average</span>
+                     
+                  </li>
+                  <li>
+                     <span class="uicontrol">Max</span>
+                     
+                  </li>
+                  <li>
+                     <span class="uicontrol">Min</span>
+                     
+                  </li>
+               </ul>
+               
+            </li>
+            <li>Deselect the option <span class="uicontrol">Show percent in the Name column</span>. 
+            </li>
+            <li>Deselect the option <span class="uicontrol">Show own time as a node</span>. 
+            </li>
+            <li>Click <span class="uicontrol">OK</span>. 
+            </li>
+            <li>Click the <span class="uicontrol">Show Table</span> button. This is the recommended mode to start the Sampling and Call Count mode. 
+            </li>
+            <li>Click the <span class="uicontrol">Shallow Time</span> column to sort by time.
+            </li>
+         </ol>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/profiler_PROUSECASES_.html" shape="rect">Using the Application Profiler</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/profiler_USEAPPPROFUNCINST_.html" shape="rect">Using Function Instrumentation with the Application Profiler</a></div>
+            
+            <div><a href="../topic/profiler_FISINGAPP_.html" shape="rect">Using Function Instrumentation mode for a single application</a></div>
+            
+            <div><a href="../topic/profiler_FISYSPROF_.html" shape="rect">Using Function Instrumentation in the System Profiler</a></div>
+            
+            <div><a href="../topic/profiler_PROCompResults_.html" shape="rect">Comparing profiles</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/profiler_PROFCreateSessFromIDELnch_.html" shape="rect">Creating an Application Profiler session</a></div>
+            
+            <div><a href="../topic/profiler_PROFCreateSessByImpData_.html" shape="rect">Creating a profiler session by importing profiler data</a></div>
+            
+            <div><a href="../topic/profiler_PROFSingleThreadedApp_.html" shape="rect">Profiling a single-threaded application</a></div>
+            
+            <div><a href="../topic/profiler_PROFaRunProcess_.html" shape="rect">Profiling a running process for an existing project</a></div>
+            
+            <div><a href="../topic/profiler_PROFUsingPostmortemProf_.html" shape="rect">Using postmortem profiling for Call Count and Sampling</a></div>
+            
+            <div><a href="../topic/profiler_PROFPsotMortemProfiling_.html" shape="rect">Postmortem profiling</a></div>
+            
+            <div><a href="../topic/profiler_PROFRunningFromTermCmdLine_.html" shape="rect">Running an instrumented binary with profiling from a command prompt (Function Instrumentation mode)</a></div>
+            
+            <div><a href="../topic/profiler_PROFTakeSnapshot_.html" shape="rect">Taking a snapshot of a profiling session</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

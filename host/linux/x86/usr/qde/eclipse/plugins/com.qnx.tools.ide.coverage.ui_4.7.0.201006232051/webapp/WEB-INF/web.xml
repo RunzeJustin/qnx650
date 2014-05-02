@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN"
+    "http://java.sun.com/j2se/dtds/web-app_2.2.dtd">
+
+<web-app>
+	<display-name>QNX Code Coverage report servlet</display-name>
+    <servlet>
+        <servlet-name>coverage-report</servlet-name>
+        <servlet-class>com.qnx.tools.ide.coverage.internal.ui.servlet.CoverageReportServlet</servlet-class>
+		<init-param>
+			<param-name>default-xsl</param-name>
+			<param-value>/WEB-INF/xslt/cov-html.xslt</param-value>
+		</init-param>
+		<init-param>
+			<param-name>xml-xsl</param-name>
+			<param-value>/WEB-INF/xslt/xml.xslt</param-value>
+		</init-param>
+		<init-param>
+			<param-name>debug</param-name>
+			<param-value>false</param-value>
+		</init-param>
+    </servlet>    
+	<servlet-mapping>
+		<servlet-name>coverage-report</servlet-name>
+		<url-pattern>/coverage</url-pattern>
+	</servlet-mapping>
+</web-app>

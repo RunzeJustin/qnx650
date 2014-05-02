@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin id="com.qnx.doc.photon"
+    name="QNX Photon microGUI Windowing System"
+    version="3.1.0.20120626"
+    provider-name="QNX Software Systems Limited">
+
+    <extension point="org.eclipse.help.toc">
+      <toc file="toc.xml" primary="true" />
+      <index path="index"/>
+   </extension>
+
+    <extension point="org.eclipse.help.toc">
+      <toc file="../com.qnx.doc.photon_prog_guide/toc.xml" />
+      <toc file="../com.qnx.doc.photon_lib_ref/toc.xml" />
+      <toc file="../com.qnx.doc.photon_widget_ref/toc.xml" />
+      <toc file="../com.qnx.doc.photon_wid_build/toc.xml" />
+   </extension>
+</plugin>

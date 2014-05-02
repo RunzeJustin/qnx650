@@ -1,0 +1,5 @@
+# These files are relative to QNX_BASE/flexlm
+bin/lmutil
+bin/lmgrd
+bin/qnxlm
+doc/enduser.pdf

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="QNX Photon microGUI Multilingual Input" topic="bookset.html"> 
+    <anchor id="1_bookset" />
+    <anchor id="2_bookset" />
+    <anchor id="3_bookset" />
+    <topic label="链 形 菜 单 管 理 器 的 使 用 与 设 置 方 法" href="../com.qnx.doc.language_sup_cpim_ch/about.html" >
+        <link toc="../com.qnx.doc.language_sup_cpim_ch/toc.xml" />
+    </topic>
+    <anchor id="1_cpim_ch" />
+    <anchor id="2_cpim_ch" />
+    <anchor id="3_cpim_ch" />
+    <topic label="Photon Chinese Input Method (English)" href="../com.qnx.doc.language_sup_cpim_en/about.html" >
+        <link toc="../com.qnx.doc.language_sup_cpim_en/toc.xml" />
+    </topic>
+    <anchor id="1_cpim_en" />
+    <anchor id="2_cpim_en" />
+    <anchor id="3_cpim_en" />
+    <topic label="Photon 日本語サプリメント 2.0" href="../com.qnx.doc.language_sup_vpim_ja/about.html" >
+        <link toc="../com.qnx.doc.language_sup_vpim_ja/toc.xml" />
+    </topic>
+    <anchor id="1_vpim_ja" />
+    <anchor id="2_vpim_ja" />
+    <anchor id="3_vpim_ja" />
+    <topic label="Photon Japanese Input Method (English)" href="../com.qnx.doc.language_sup_vpim_en/about.html" >
+        <link toc="../com.qnx.doc.language_sup_vpim_en/toc.xml" />
+    </topic>
+    <anchor id="1_vpim_en" />
+    <anchor id="2_vpim_en" />
+    <anchor id="3_vpim_en" />
+    <topic label="한글 입력기 (kpim)" href="../com.qnx.doc.language_sup_kpim_ko/about.html" >
+        <link toc="../com.qnx.doc.language_sup_kpim_ko/toc.xml" />
+    </topic>
+    <anchor id="1_kpim_ko" />
+    <anchor id="2_kpim_ko" />
+    <anchor id="3_kpim_ko" />
+    <topic label="Photon Korean Input Method (English)" href="../com.qnx.doc.language_sup_kpim_en/kpim.html" >
+        <link toc="../com.qnx.doc.language_sup_kpim_en/toc.xml" />
+    </topic>
+    <anchor id="1_kpim_en" />
+    <anchor id="2_kpim_en" />
+    <anchor id="3_kpim_en" />
+</toc>

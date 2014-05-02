@@ -1,0 +1,49 @@
+bitstreamsbgothichkunis,0@gothhk_u.ffs,Bitstream SB Gothic HK Uni,0,,0020-FFED,p,134x132,642K
+bitstreamsbgothicjpunis,0@gothjp_u.ffs,Bitstream SB Gothic JP Uni,0,,0020-FFE5,p,134x132,260K
+bitstreamsbgothickrunis,0@gothkr_u.ffs,Bitstream SB Gothic KR Uni,0,,0020-FFE6,p,134x132,383K
+bitstreamsbgothicscunis,0@gothsc_u.ffs,Bitstream SB Gothic SC Uni,0,,0020-FFE5,p,134x132,250K
+bitstreamsbgothictcunis,0@gothtc_u.ffs,Bitstream SB Gothic TC Uni,0,,0020-FFE5,p,134x132,463K
+courier10bts,0@tt0419m_.ttf,Courier10 BT,0,,0020-F002,f,79x153,94K
+courier10btsb,0@tt0583m_.ttf,Courier10 BT,0,B,0020-F002,f,79x157,92K
+courier10btsbi,0@tt0611m_.ttf,Courier10 BT,0,BI,0020-F002,f,79x157,120K
+courier10btsi,0@tt0582m_.ttf,Courier10 BT,0,I,0020-F002,f,79x154,113K
+dutch801rmbts,0@tt0011m_.ttf,Dutch801 Rm BT,0,,0020-F002,p,200x159,211K
+dutch801rmbtsb,0@tt0013m_.ttf,Dutch801 Rm BT,0,B,0020-F002,p,184x154,201K
+dutch801rmbtsbi,0@tt0014m_.ttf,Dutch801 Rm BT,0,BI,0020-F002,p,160x156,95K
+dutch801rmbtsi,0@tt0012m_.ttf,Dutch801 Rm BT,0,I,0020-F002,p,178x156,102K
+honminchobts,0@TT5200M_.TTF,HonMincho BT,0,,0020-FFE5,p,131x131,6286K
+pcs08,.phf,PC Serif,8,,0000-00FF,Nf,8x8,12K
+pcs10,.phf,PC Serif,10,,0000-00FF,Nf,8x10,12K
+pcs12,.phf,PC Serif,12,,0000-00FF,Nf,8x12,13K
+pcs14,.phf,PC Serif,14,,0000-00FF,Nf,8x14,13K
+pcs16,.phf,PC Serif,16,,0000-00FF,Nf,8x16,14K
+pcss08,.phf,PC Sanserif,8,,0000-00FF,Nf,8x8,12K
+pcss10,.phf,PC Sanserif,10,,0000-00FF,Nf,8x10,12K
+pcss12,.phf,PC Sanserif,12,,0000-00FF,Nf,8x11,12K
+pcss14,.phf,PC Sanserif,14,,0000-00FF,Nf,8x14,13K
+pcss16,.phf,PC Sanserif,16,,0000-00FF,Nf,8x16,14K
+pcterm12,.phf,PC Terminal,12,,0000-00FF,Nf,6x12,13K
+pcterm14,.phf,PC Terminal,14,,0000-00FF,Nf,8x14,13K
+pcterm20,.phf,PC Terminal,20,,0000-00FF,Nf,10x20,18K
+phcursor,.phf,Photon Cursor,0,,E900-E921,Np,32x31,3K
+primasansbts,0@tt2001m_.ttf,PrimaSans BT,0,,0020-F002,p,192x170,162K
+primasansbtsb,0@tt2003m_.ttf,PrimaSans BT,0,B,0020-F002,p,204x170,146K
+primasansbtsbi,0@tt2004m_.ttf,PrimaSans BT,0,BI,0020-F002,p,192x170,81K
+primasansbtsi,0@tt2002m_.ttf,PrimaSans BT,0,I,0020-F002,p,178x170,77K
+primasansmonobts,0@tt2009m_.ttf,PrimaSansMono BT,0,,0020-F002,f,79x170,109K
+primasansmonobtsb,0@tt2011m_.ttf,PrimaSansMono BT,0,B,0020-F002,f,79x170,58K
+squaregothicmdbts,0@TT5500M_.TTF,SquareGothicMd BT,0,,0020-FFE5,p,131x131,4917K
+swis721bts,0@tt0003m_.ttf,Swis721 BT,0,,0020-F002,p,171x156,148K
+swis721btsb,0@tt0005m_.ttf,Swis721 BT,0,B,0020-F002,p,175x156,139K
+swis721btsbi,0@tt0006m_.ttf,Swis721 BT,0,BI,0020-F002,p,168x156,81K
+swis721btsi,0@tt0004m_.ttf,Swis721 BT,0,I,0020-F002,p,167x156,90K
+symb08,.phf,Symbol,8,,0020-00FE,Np,10x11,10K
+symb10,.phf,Symbol,10,,0020-00FE,Np,12x14,10K
+symb12,.phf,Symbol,12,,0020-00FE,Np,15x16,10K
+symb14,.phf,Symbol,14,,0020-00FE,Np,17x19,11K
+symb18,.phf,Symbol,18,,0020-00FE,Np,21x24,12K
+symb24,.phf,Symbol,24,,0020-00FE,Np,27x32,14K
+symbolsetbts,0@tt3012z_.ttf,Symbol Set BT,0,,F020-F0FE,pS,137x148,63K
+tech14,.phf,Technical,14,,0020-00FE,Nf,9x15,10K
+tech14b,.phf,Technical,14,B,0020-00FE,Nf,9x15,10K
+webs,0@web.ttf,Web,0,,0020-2122,p,132x131,7K

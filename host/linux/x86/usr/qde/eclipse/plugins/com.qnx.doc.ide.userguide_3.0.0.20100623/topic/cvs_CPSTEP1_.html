@@ -1,0 +1,168 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="task" />
+      <meta name="DC.Title" content="Step 1: Creating a project for your source code" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/cvs_Projects_Within_Projects.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Step1CreateProject" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Step 1: Creating a project for your source code</title>
+   </head>
+   <body id="Step1CreateProject"><a name="Step1CreateProject" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Step 1: Creating a project for your source code</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <div class="p"> You need to create a project that will contain your source code and related files. The project will have an associated builder
+            that incrementally compiles source files.
+         </div>
+         
+         
+         <div class="section">
+            
+            <p>To create a project for your source code:</p>
+            
+            
+         </div>
+         
+         
+         <ol>
+            <li class="stepexpand">
+               <span>In your workspace, you create a single project that reflects all the components that reside in your existing source tree by
+                  selecting <span class="menucascade">
+                     <span class="uicontrol">File</span>
+                     &gt; <span class="uicontrol">New</span>
+                     &gt; <span class="uicontrol">Project…</span>
+                     </span>. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Select the type of project you want to create. For example, expand <span class="uicontrol">C++</span> and select <span class="uicontrol">C++ Project</span>, then click <span class="uicontrol">Next</span>.</span>
+               
+               
+               <p>
+                  <span><img src="../images/ide2Ftemp2Ftopic2Fcvs_CPSTEP1_.xml_d30031e59.jpg" alt="New Project wizard" /></span>
+                  
+               </p>
+               
+               
+               <p>By default, the C/C++ Development Tools (CDT) filters the Toolchain and Project types that show in the resulting lists based
+                  on the language support for the project type you select. 
+               </p>
+               
+               
+               
+            </li>
+            <li class="stepexpand">
+               <span>Name your project (e.g. <kbd class="userinput">EntireSourceProjectA</kbd>). </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>To tell the IDE where the resources reside in the filesystem (since they don't reside in your workspace), disable the <span class="uicontrol">Use Default Location</span> option. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>In the <span class="uicontrol">Location</span> field, type the path to your source (or click <span class="uicontrol">Browse…</span>).</span>
+               Next, you want to select a template for your project from the following: <br clear="none" /><ul>
+                  <li>Executable — Provides an executable application. This project type folder contains three templates. <br clear="none" /><ul>
+                        <li><span class="uicontrol">Empty Project</span>
+                           — a single source project folder that doesn't contain any files. 
+                        </li>
+                        <li><span class="uicontrol">Hello World C++ Project</span>
+                           — a simple C++ application with <tt>main()</tt>. 
+                        </li>
+                     </ul>
+                     
+                     <p>After specifying a template, the workbench creates a project with only the metadata files required for your project type.
+                        Now, you can modify these source files, as required, and provide the source files for the project's target. Note that for
+                        an <span class="uicontrol">Executable</span> project type, a <span class="filepath">makefile</span> is automatically created for you. 
+                     </p>
+                     
+                  </li>
+                  <li><span class="uicontrol">Shared Library</span>
+                     — An executable module compiled and linked separately. 
+                  </li>
+                  <li><span class="uicontrol">Static Library</span>
+                     — A collection of object files that you can link into another application (<span class="filepath">lib<var class="varname">xx</var>.a</span>). 
+                  </li>
+                  <li><span class="uicontrol">Makefile Project</span>
+                     — Creates an empty project without any metadata files. 
+                     <p>By default, the Toolchain and template types that are currently shown in the lists are based on the language support for the
+                        project type that you selected. 
+                     </p>
+                     
+                  </li>
+               </ul>
+               
+               
+            </li>
+            <li class="stepexpand">
+               <span>From the <span class="uicontrol">Project types</span> list, expand <span class="uicontrol">Executable</span> and select a project type. For example, an <span class="uicontrol">Empty Project</span> provides you with a simple application.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Select the <span class="uicontrol">QNX QCC</span> toolchain from the <span class="uicontrol">Toolchain</span> list. </span>
+               
+               
+               <p>
+                  <span><img src="../images/ide2Ftemp2Ftopic2Fcvs_CPSTEP1_.xml_d30031e186.jpg" alt="Select a template for a project type" /></span>
+                  
+               </p>
+               
+               
+               
+            </li>
+            <li class="stepexpand">
+               <span>Click <span class="uicontrol">Finish</span>. If a message box prompts you to change perspectives, click <span class="uicontrol">Yes</span>. You should now have a project that looks something like this in the corresponding Projects view: </span>
+               
+               
+               <p>
+                  <span><img src="../images/ide2Ftemp2Ftopic2Fcvs_CPSTEP1_.xml_d30031e210.jpg" alt="Entire source project example" /></span>
+                  
+               </p>
+               
+               
+               
+            </li>
+         </ol>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/cvs_Projects_Within_Projects.html" shape="rect">Projects within projects</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

@@ -1,0 +1,112 @@
+<function_summary>
+<function
+   name="devctrl"
+   summary="Allow for the configuration of a module by an external source"
+   synopsis="static int devctrl( inout_module_t *pModule, int event, void *ptr );\n"
+/>
+<function
+   name="init"
+   summary="Initialize a module's private data"
+   synopsis="static int init( input_module_t *pModule );\n"
+/>
+<function
+   name="input"
+   summary="Pass data to a higher-layer module"
+   synopsis="static int input( input_module_t *pModule, int num, void *ptr );\n"
+/>
+<function
+   name="output"
+   summary="Pass data to a lower-layer module"
+   synopsis="static int output( input_module_t *pModule, void *ptr, int num );\n"
+/>
+<function
+   name="parm"
+   summary="Process the command-line arguments to the module"
+   synopsis="static int parm( message_context_t *pContext, int opt, void *optarg );\n"
+/>
+<function
+   name="pulse"
+   summary="Process data gathered by the interrupt handler"
+   synopsis="static int pulse( message_context_t *pContext, int code, unsigned flags, void *data );\n"
+/>
+<function
+   name="reset"
+   summary="Reset the module to its initial state"
+   synopsis="static int reset( input_module_t *pModule );\n"
+/>
+<function
+   name="shutdown"
+   summary="Clean up when the input manager terminates"
+   synopsis="static int shutdown( message_context_t *pContext, int delay );\n"
+/>
+<function
+   name="begin"
+   summary="Initialize resource manager and activate driver bus line"
+   synopsis="int begin( int argc, char *argv[]);\n"
+/>
+<function
+   name="buff_append"
+   summary="Append bytes to circular buffer"
+   synopsis="int buff_append( buffer_t *bptr, char *dptr, int n );\n"
+/>
+<function
+   name="buff_create"
+   summary="Create a circular buffer"
+   synopsis="struct buffer *buff_create( unsigned size, unsigned rsize );\n"
+/>
+<function
+   name="buff_delete"
+   summary="Delete bytes from the circular buffer"
+   synopsis="int buff_delete( buffer_t *bptr, char *dptr, int n );\n"
+/>
+<function
+   name="buff_flush"
+   summary="Clear the circular buffer"
+   synopsis="int buff_flush( buffer_t *bptr );\n"
+/>
+<function
+   name="buff_getc"
+   summary="Get a character from the circular buffer"
+   synopsis="int buff_getc( buffer_t *bptr );\n"
+/>
+<function
+   name="buff_putc"
+   summary="Place a character on the circular buffer"
+   synopsis="int buff_putc( buffer_t *bptr, char c );\n"
+/>
+<function
+   name="buff_waiting"
+   summary="Determine the number of bytes stored in the circular buffer"
+   synopsis="int buff_waiting( buffer_t *bptr );\n"
+/>
+<function
+   name="clk_get"
+   summary="Get the time from the OS Process Manager"
+   synopsis="void clk_get( struct timespec *tspec );\n"
+/>
+<function
+   name="devi_enqueue_packet"
+   summary="Dispatch a completed packet"
+   synopsis="int devi_enqueue_packet( input_module_t *module, char *dptr, unsigned size ) ;"
+/>
+<function
+   name="devi_register_interrupt"
+   summary="Attach to an interrupt"
+   synopsis="int devi_register_interrupt( int intr, int prio, int *pc, input_module_t *module, struct sigevent *evp, unsigned flags );\n"
+/>
+<function
+   name="devi_register_pulse"
+   summary="Associate a pulse code with a function"
+   synopsis="int devi_register_pulse( input_module_t *module, int code, int (*func)(message_context_t *, int, unsigned, void *));\n"
+/>
+<function
+   name="devi_register_timer"
+   summary="Create a timer"
+   synopsis="timer_t devi_register_timer( input_module_t *module, int prio, int *pc, struct sigevent *evp );\n"
+/>
+<function
+   name="devi_request_iorange"
+   summary="Map device registers into memory"
+   synopsis="uintptr_t devi_request_iorange( unsigned start, unsigned len, unsigned flags );\n"
+/>
+</function_summary>

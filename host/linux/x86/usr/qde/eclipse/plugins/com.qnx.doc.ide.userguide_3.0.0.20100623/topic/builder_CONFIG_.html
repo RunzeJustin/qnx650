@@ -1,0 +1,210 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Configuring your QNX System Builder projects" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_Base_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_INTRO_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_Boot_script_files_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_OVER_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_CREATE_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_CREATEFLASH_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_BUILDOS_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_XFER_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_Optimizing_Your_System.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_HOSTANDTARGET_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/cvs_Export_mkifs.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_MANAGEIMAGES_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_Determining_Shared_Lib_And_DLL.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_Adding_Files_To_Image.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_Deleting_Files.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_Adding_Directories.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_Deleting_Directories.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_IMAGEPROPS_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_prop_image_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_prop_image_dirs_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_prog_image_gen_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_prop_image_sys_ifs_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_prop_image_sys_efs_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_prop_item_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_Item_Properties_general.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_prop_image_combine_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_prop_item_mem.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_prop_item_per_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_PROJECTPROPS_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_Search_Paths.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_Managing_Your_Search_Paths.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_Path_Variables.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="ConfiguringyourQNXSystemBuilderprojects" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Configuring your QNX System Builder projects</title>
+   </head>
+   <body id="ConfiguringyourQNXSystemBuilderprojects"><a name="ConfiguringyourQNXSystemBuilderprojects" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Configuring your QNX System Builder projects</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>In order to use the QNX System Builder to produce your final embedded system, you'll likely need to: 
+            
+         </p>
+         
+         <br clear="none" /><ul>
+            <li>add and remove <a href="builder_MANAGEIMAGES_.html" shape="rect">Managing your images</a></li>
+            <li>configure the <a href="builder_IMAGEPROPS_.html" shape="rect">Configuring image properties</a> of an image and its items
+            </li>
+            <li>configure the <a href="builder_PROJECTPROPS_.html" shape="rect">Configuring project properties</a> itself
+            </li>
+         </ul>
+         
+         
+         <p>As mentioned earlier, every QNX System Builder project has a <span class="filepath">project.bld</span> file that contains information about your image's boot script, all the files in your image, and the properties of those files.
+            
+         </p>
+         
+         
+         <p>If you double-click the <span class="filepath">project.bld</span>, you'll see your project's components in the Images and Filesystem panes in the editor area, as well as a Properties view:
+            
+            
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/2Ftemp2Ftopic2Fbuilder_CONFIG_.xml_d5339e62.jpg" alt="Builder editor and properties" /></span>
+            
+         </p>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <ul class="ullinks">
+            <li class="ulchildlink"><strong><a href="../topic/builder_MANAGEIMAGES_.html" shape="rect">Managing your images</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/builder_Determining_Shared_Lib_And_DLL.html" shape="rect">Determining the shared libraries and DLLs are required for an executable</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/builder_Adding_Files_To_Image.html" shape="rect">Adding files to your image</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/builder_Deleting_Files.html" shape="rect">Deleting files</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/builder_Adding_Directories.html" shape="rect">Adding directories</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/builder_Deleting_Directories.html" shape="rect">Deleting directories</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/builder_IMAGEPROPS_.html" shape="rect">Configuring image properties</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/builder_prop_image_.html" shape="rect">Image properties</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/builder_prop_image_dirs_.html" shape="rect">Directories</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/builder_prog_image_gen_.html" shape="rect">General</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/builder_prop_image_sys_ifs_.html" shape="rect">System (.ifs)</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/builder_prop_image_sys_efs_.html" shape="rect">System (.efs)</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/builder_prop_item_.html" shape="rect">Item properties</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/builder_Item_Properties_general.html" shape="rect">General</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/builder_prop_image_combine_.html" shape="rect">Combine</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/builder_prop_item_mem.html" shape="rect">Memory</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/builder_prop_item_per_.html" shape="rect">Permissions</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/builder_PROJECTPROPS_.html" shape="rect">Configuring project properties</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/builder_Search_Paths.html" shape="rect">Search Paths</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/builder_Managing_Your_Search_Paths.html" shape="rect">Managing your search paths</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/builder_Path_Variables.html" shape="rect">Search path variables</a></strong><br clear="none" />
+               
+            </li>
+         </ul>
+         
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/builder_Base_.html" shape="rect">Building OS and Flash Images</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/builder_INTRO_.html" shape="rect">Introducing the QNX System Builder</a></div>
+            
+            <div><a href="../topic/builder_Boot_script_files_.html" shape="rect">Boot script files</a></div>
+            
+            <div><a href="../topic/builder_OVER_.html" shape="rect">Overview of images</a></div>
+            
+            <div><a href="../topic/builder_XFER_.html" shape="rect">Downloading an image to your target</a></div>
+            
+            <div><a href="../topic/builder_Optimizing_Your_System.html" shape="rect">Optimizing your system</a></div>
+            
+            <div><a href="../topic/builder_HOSTANDTARGET_.html" shape="rect">Moving files between the host and target</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/builder_CREATE_.html" shape="rect">Creating a new QNX System Builder project for an OS image</a></div>
+            
+            <div><a href="../topic/builder_CREATEFLASH_.html" shape="rect">Creating a project for a flash filesystem image (an .efs file)</a></div>
+            
+            <div><a href="../topic/builder_BUILDOS_.html" shape="rect">Building an OS image</a></div>
+            
+            <div><a href="../topic/cvs_Export_mkifs.html" shape="rect">Exporting a System Builder project to a Mkxfs build file(s)</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

@@ -1,0 +1,141 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Build steps tab" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_Settings_Panel.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="WizardsSettingsBuildStepsTab" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Build steps tab</title>
+   </head>
+   <body id="WizardsSettingsBuildStepsTab"><a name="WizardsSettingsBuildStepsTab" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Build steps tab</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>This tab lets you customize the selected build configuration. It allows you to set user-defined build command steps as well
+            as defining a descriptive message in the build output, immediately before and after normal build processing executes. 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/c2Fwizards_OptBuildStepsTab_.xml_d207054e17.jpg" alt="Build steps tab" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>Customizing the build configuration on the Build steps tab.</p>
+            
+            
+         </div>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> 
+            
+            <p>To ensure reasonable custom build step behavior, sensible input must be provided when specifying custom build step information.
+               Custom build steps are not verified for correctness and are passed exactly as entered into the build stream. 
+            </p>
+            
+            
+            <p>In the descriptive text, below, the term "main build" is defined as the sequence of commands to execute when a build is invoked,
+               not including pre-build or post-build steps.
+            </p>
+            
+            
+         </div>
+         
+         
+         <dl>
+            <dt class="dlterm">
+               <span class="uicontrol">Configuration</span>
+               
+            </dt>
+            <dd>Refer to the "Builder settings tab" section for more information about the <span class="uicontrol">Configuration</span> field. 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Pre-build Steps</span>
+               
+            </dt>
+            <dd>Identifies any steps that must occur before the build takes place. Note that the pre-build step is not executed if the state
+               of the main build is up to date; otherwise it is executed. An attempt to execute the main build will occur regardless of the
+               success or failure of the pre-build step. 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Command</span>
+               
+            </dt>
+            <dd>Specifies one or more commands to execute immediately before the execution of the build. Use semicolons to separate multiple
+               commands. 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Description</span>
+               
+            </dt>
+            <dd>Specifies optional descriptive text associated with the pre-build step that is shown in the build output immediately before
+               the execution of the pre-build step command (or commands). 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Post-build steps</span>
+               
+            </dt>
+            <dd>Identifies any steps that must occur after the build takes place. Note that the post-build step is not executed if the state
+               of the main build is determined to be up to date. It will be executed only if the main-build has executed successfully. 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Command</span>
+               
+            </dt>
+            <dd>Specifies one or more commands to execute immediately after the execution of the build. Use semicolons to separate multiple
+               commands. 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Description</span>
+               
+            </dt>
+            <dd>Specifies any optional descriptive text associated with the post-build step that is shown in the build output immediately
+               after the execution of the post-build step command (or commands). 
+            </dd>
+         </dl>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/wizards_Settings_Panel.html" shape="rect">Settings panel</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

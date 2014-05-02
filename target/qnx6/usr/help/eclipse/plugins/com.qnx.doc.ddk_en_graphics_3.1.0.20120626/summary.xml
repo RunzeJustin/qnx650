@@ -1,0 +1,42 @@
+<function_summary>
+<function
+   name="devg_get_contextfuncs"
+   summary="Get a table of your driver's context 2D drawing functions"
+   synopsis="int devg_get_contextfuncs ( disp_adapter_t *ctx, disp_draw_contextfuncs_t *fns, int tabsize);\n"
+/>
+<function
+   name="devg_get_corefuncs"
+   summary="Get a table of your driver's core 2D drawing functions"
+   synopsis="int devg_get_corefuncs (disp_adapter_t *ctx, unsigned pixel_format, disp_draw_corefuncs_t *fns, int tabsize);\n"
+/>
+<function
+   name="devg_get_memfuncs"
+   summary="Get a table of your driver's video memory management functions"
+   synopsis="int devg_get_memfuncs (disp_adapter_t *ctx, disp_memfuncs_t *funcs, int tabsize);\n"
+/>
+<function
+   name="devg_get_miscfuncs"
+   summary="Get a table of your driver's miscellaneous 2D drawing functions"
+   synopsis="int devg_get_miscfuncs (disp_adapter_t *ctx, disp_draw_miscfuncs_t *fns, int tabsize);\n"
+/>
+<function
+   name="devg_get_modefuncs"
+   summary="Get a table of your driver's display control functions"
+   synopsis="int devg_get_modefuncs (disp_adapter_t *ctx, disp_modefuncs_t *fns, int tabsize);\n"
+/>
+<function
+   name="devg_get_rendfuncs"
+   summary="Get a table of your driver's 3D rendering functions"
+   synopsis="int devg_get_rendfuncs (disp_adapter_t *ctx, disp_draw_3dfuncs_t *funcs, int tabsize);\n"
+/>
+<function
+   name="devg_get_vcapfuncs"
+   summary="Get a table of your driver's video capture functions"
+   synopsis="int devg_get_vcapfuncs (disp_adapter_t *ctx, disp_vcapfuncs_t *funcs, int tabsize);\n"
+/>
+<function
+   name="DISP_ADD_FUNC"
+   summary="Add an entry to a function table"
+   synopsis="#include &lt;graphics/display.h&gt;\n #define DISP_ADD_FUNC(tabletype, table, entry, func, limit) &#8230;"
+/>
+</function_summary>

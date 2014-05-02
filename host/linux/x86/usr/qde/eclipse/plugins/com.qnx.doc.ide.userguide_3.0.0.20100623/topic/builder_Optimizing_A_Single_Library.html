@@ -1,0 +1,103 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="task" />
+      <meta name="DC.Title" content="Optimizing a single library" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_Optimizing_Your_System.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_DIET_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_Restoring_A_Slimmed_Down_Library.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="OptimizingASingleLibrary" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Optimizing a single library</title>
+   </head>
+   <body id="OptimizingASingleLibrary"><a name="OptimizingASingleLibrary" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Optimizing a single library</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <div class="p">
+            <p>Optimizing a single library doesn't reduce the library as effectively as optimizing
+               <em>all</em> libraries simultaneously, because the System Optimizer accounts for
+               dependencies. 
+            </p>
+            
+            
+            <p>To reduce a library such as <span class="filepath">libc</span> using the Dietician, you must
+               iteratively optimize each individual library in your project between two and five times
+               (depending on the number of dependency levels). 
+            </p>
+            
+            
+            <p>You can reduce a single library to its optimum size if it has no dependencies. </p>
+            
+         </div>
+         
+         
+         <div class="section"> To optimize a single library in an image: </div>
+         
+         
+         <ol>
+            <li><span> If your project isn't already open, double-click its
+                  <span class="filepath">project.bld</span> file in the System Builder
+                  Projects view. </span></li>
+            <li><span> In the QNX System Builder editor, expand the <span class="uicontrol">Shared
+                     Libraries</span> list and select the library you want to optimize. </span></li>
+            <li><span> In the toolbar, click the <span class="uicontrol">Optimize System</span> button (<span><img src="../images/Optimizing_A_Single_Library.xml_d11876e53.jpg" alt="Icon: Optimize System" /></span>). </span></li>
+            <li><span> In the <span class="uicontrol">System Optimizer</span>, select the <span class="uicontrol">Apply diet(s)
+                     system wide</span> option. </span></li>
+            <li><span> Click <span class="uicontrol">Next</span>. In the next few pages, the Dietician shows the
+                  unnecessary libraries, any additional needed libraries, and the libraries that can
+                  be optimized. </span></li>
+            <li><span> Click <span class="uicontrol">Finish</span>. The Dietician removes unused libraries, adds
+                  the additional required libraries, and generates new, reduced libraries. Reduced
+                  libraries are added to your project's
+                  <span class="filepath">Reductions</span>/<var class="varname">image_name</var> directory. </span></li>
+         </ol>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/builder_Optimizing_Your_System.html" shape="rect">Optimizing your system</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/builder_DIET_.html" shape="rect">Optimizing all libraries in your image</a></div>
+            
+            <div><a href="../topic/builder_Restoring_A_Slimmed_Down_Library.html" shape="rect">Restoring a slimmed-down library</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

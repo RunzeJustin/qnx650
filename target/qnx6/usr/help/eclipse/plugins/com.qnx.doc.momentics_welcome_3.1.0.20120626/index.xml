@@ -1,0 +1,887 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<index>
+  <topic href="help.html#id4" title="QNX Software Development Platform"/>
+  <topic href="help.html#SUPPORTPLANS" title="Support plans"/>
+  <topic href="start.html#UPGRADE" title="Upgrading your software"/>
+ <entry keyword="account center (myQNX)">
+  <topic href="start.html#UPGRADE" title="Upgrading your software"/>
+ </entry>
+ <entry keyword="Acoustic Processing">
+  <topic href="whatis.html#Middleware" title="QNX Aviage middleware"/>
+ </entry>
+ <entry keyword="Adaptive Partitioning ">
+  <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+ </entry>
+  <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+ <entry keyword="Adobe Flash">
+  <topic href="whatis.html#Middleware" title="QNX Aviage middleware"/>
+ </entry>
+ <entry keyword="Advanced Graphics ">
+  <topic href="help.html#id12" title="Advanced Graphics"/>
+ </entry>
+ <entry keyword="AMP (asymmetric multiprocessing)">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="architecture, system">
+  <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+ </entry>
+ <entry keyword="audio">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+  <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+ <entry keyword="Aviage middleware">
+  <topic href="whatis.html#Middleware" title="QNX Aviage middleware"/>
+ </entry>
+ <entry keyword="BMP (bound multiprocessing)">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="BSPs (Board Support Packages)">
+  <topic href="whatis.html#Additional" title="Additional components"/>
+  <topic href="start.html#INSTMAP" title="How QNX Momentics is organized"/>
+  <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+  <topic href="help.html#URL" title="Visit http://www.qnx.com"/>
+  <topic href="whatis.html#NOBIOS" title="x86 non-BIOS target"/>
+ </entry>
+ <entry keyword="buildfiles">
+  <topic href="start.html#INSTMAP" title="How QNX Momentics is organized"/>
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+  <topic href="help.html#id10" title="Photon microGUI"/>
+  <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+ <entry keyword="Butenhof, David R.">
+  <topic href="help.html#id29" title="On POSIX"/>
+ </entry>
+ <entry keyword="C functions">
+  <topic href="help.html#id14" title="Dinkum C and C++"/>
+  <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+ </entry>
+ <entry keyword="C++">
+  <topic href="help.html#id14" title="Dinkum C and C++"/>
+ </entry>
+ <entry keyword="CD-ROMs">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="channels">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="Chinese characters">
+  <topic href="help.html#id10" title="Photon microGUI"/>
+ </entry>
+ <entry keyword="CIFS (Common Interface File System)">
+  <topic href="start.html#NTOPLUS" title="Mixing a self-hosted machine with other hosts"/>
+ </entry>
+ <entry keyword="coexistence of multiple versions of QNX Momentics">
+  <topic href="start.html#Coexistence" title="Can different versions of QNX Momentics coexist?"/>
+ </entry>
+ <entry keyword="Collins-Sussman, Ben">
+  <topic href="start.html#Managing_source" title="Managing source code"/>
+ </entry>
+ <entry keyword="command-line utilities">
+  <topic href="help.html#id23" title="During development (on your host)"/>
+  <topic href="start.html#INSTMAP" title="How QNX Momentics is organized"/>
+  <entry keyword="documentation">
+   <topic href="help.html#id6" title="QNX Momentics Tool Suite"/>
+   <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+  </entry>
+  <entry keyword="usage messages for">
+   <topic href="help.html#USE" title="Getting quick help with the use command"/>
+  </entry>
+ </entry>
+ <entry keyword="community website">
+  <topic href="help.html#URL" title="Visit http://www.qnx.com"/>
+ </entry>
+ <entry keyword="compiling">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="Composition Manager ">
+  <topic href="help.html#id12" title="Advanced Graphics"/>
+ </entry>
+ <entry keyword="compression">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="configuration files">
+  <topic href="start.html#INSTMAP" title="How QNX Momentics is organized"/>
+  <entry keyword="documentation">
+   <topic href="help.html#id6" title="QNX Momentics Tool Suite"/>
+   <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+  </entry>
+ </entry>
+ <entry keyword="conventions">
+  <entry keyword="typographical">
+   <topic href="about.html#Typographical_conventions" title="Typographical conventions"/>
+  </entry>
+ </entry>
+ <entry keyword="Core Networking ">
+  <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+ </entry>
+ <entry keyword="custom engineering">
+  <topic href="help.html#CE" title="Custom engineering and consulting"/>
+ </entry>
+ <entry keyword="CVS (Concurrent Versions System)">
+  <topic href="start.html#Managing_source" title="Managing source code"/>
+ </entry>
+ <entry keyword="data servers">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="data types">
+  <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+ </entry>
+ <entry keyword="DDKs (Driver Development Kits)">
+  <topic href="whatis.html#Additional" title="Additional components"/>
+  <topic href="start.html#INSTMAP" title="How QNX Momentics is organized"/>
+  <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+ </entry>
+ <entry keyword="debugger">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="desktop">
+  <topic href="start.html#Desktop" title="What's on my desktop?"/>
+ </entry>
+ <entry keyword="development hosts">
+  <topic href="whatis.html#INTRO" title="Choice, tools, source, and help"/>
+ </entry>
+ <entry keyword="device drivers">
+  <topic href="start.html#INSTMAP" title="How QNX Momentics is organized"/>
+  <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="Dinkum">
+  <topic href="help.html#id14" title="Dinkum C and C++"/>
+ </entry>
+ <entry keyword="distributed processing">
+  <topic href="start.html#NTOPLUS" title="Mixing a self-hosted machine with other hosts"/>
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="distributors">
+  <topic href="help.html#URL" title="Visit http://www.qnx.com"/>
+ </entry>
+ <entry keyword="documentation">
+  <entry keyword="HTML">
+   <topic href="help.html#ROADMAP" title="Overview of the documentation"/>
+  </entry>
+  <entry keyword="knowing which to read first">
+   <topic href="help.html#ORDER" title="What should I read first?"/>
+  </entry>
+  <entry keyword="overview of">
+   <topic href="help.html#ROADMAP" title="Overview of the documentation"/>
+  </entry>
+  <entry keyword="PDF">
+   <topic href="help.html#ROADMAP" title="Overview of the documentation"/>
+  </entry>
+  <entry keyword="printed">
+   <topic href="help.html#ROADMAP" title="Overview of the documentation"/>
+  </entry>
+  <entry keyword="roadmap">
+   <topic href="help.html#FEATURES" title="Where key features are documented"/>
+  </entry>
+  <entry keyword="via the Photon Helpviewer">
+   <topic href="help.html#id19" title="The Photon Helpviewer"/>
+  </entry>
+  <entry keyword="within the IDE">
+   <topic href="help.html#id17" title="Within the IDE"/>
+  </entry>
+ </entry>
+ <entry keyword="DOS filesystems">
+  <topic href="start.html#NTOPLUS" title="Mixing a self-hosted machine with other hosts"/>
+ </entry>
+ <entry keyword="Driver Development Kits (DDKs)">
+  <topic href="whatis.html#Additional" title="Additional components"/>
+  <topic href="start.html#INSTMAP" title="How QNX Momentics is organized"/>
+  <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+ </entry>
+ <entry keyword="Eclipse consortium">
+  <topic href="help.html#URL" title="Visit http://www.qnx.com"/>
+ </entry>
+ <entry keyword="editors">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="embedded systems">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="endian-ness">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="environment variables">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+  <entry keyword="MAKEFLAGS">
+   <topic href="start.html#INSTMAP" title="How QNX Momentics is organized"/>
+  </entry>
+  <entry keyword="QNX_CONFIGURATION">
+   <topic href="start.html#Coexistence" title="Can different versions of QNX Momentics coexist?"/>
+   <topic href="start.html#INSTMAP" title="How QNX Momentics is organized"/>
+  </entry>
+  <entry keyword="QNX_HOST">
+   <topic href="start.html#INSTMAP" title="How QNX Momentics is organized"/>
+  </entry>
+  <entry keyword="QNX_TARGET">
+   <topic href="start.html#INSTMAP" title="How QNX Momentics is organized"/>
+  </entry>
+ </entry>
+ <entry keyword="environment, configuring">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="evaluation copy, upgrading">
+  <topic href="start.html#UPGRADE" title="Upgrading your software"/>
+ </entry>
+ <entry keyword="event handling">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="execute in place (XIP)">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="Fenner, B.">
+  <topic href="help.html#id31" title="On TCP/IP"/>
+ </entry>
+ <entry keyword="files">
+  <entry keyword="configuration">
+   <topic href="start.html#INSTMAP" title="How QNX Momentics is organized"/>
+   <topic href="help.html#id6" title="QNX Momentics Tool Suite"/>
+   <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+  </entry>
+  <entry keyword="handling">
+   <topic href="help.html#FEATURES" title="Where key features are documented"/>
+  </entry>
+  <entry keyword="timestamps">
+   <topic href="help.html#FEATURES" title="Where key features are documented"/>
+  </entry>
+ </entry>
+ <entry keyword="filesystems">
+  <topic href="start.html#INSTMAP" title="How QNX Momentics is organized"/>
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+  <entry keyword="mounting DOS and Linux">
+   <topic href="start.html#NTOPLUS" title="Mixing a self-hosted machine with other hosts"/>
+  </entry>
+ </entry>
+ <entry keyword="Fitzpatrick, Brian W.">
+  <topic href="start.html#Managing_source" title="Managing source code"/>
+ </entry>
+ <entry keyword="fonts">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="forums">
+  <topic href="help.html#URL" title="Visit http://www.qnx.com"/>
+ </entry>
+ <entry keyword="Foundry27">
+  <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+  <topic href="help.html#URL" title="Visit http://www.qnx.com"/>
+ </entry>
+ <entry keyword="functions, C">
+  <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+ </entry>
+ <entry keyword="Gallmeister, Bill O.">
+  <topic href="help.html#id29" title="On POSIX"/>
+ </entry>
+  <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+ <entry keyword="graphics">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="GUI">
+  <topic href="start.html#INSTMAP" title="How QNX Momentics is organized"/>
+  <entry keyword="developing">
+   <topic href="help.html#id10" title="Photon microGUI"/>
+  </entry>
+  <entry keyword="See also Photon"/>
+ </entry>
+ <entry keyword="HAM (High Availability Manager)">
+  <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+ </entry>
+ <entry keyword="hardware">
+  <entry keyword="connecting">
+   <topic href="help.html#FEATURES" title="Where key features are documented"/>
+  </entry>
+  <entry keyword="supported">
+   <topic href="help.html#URL" title="Visit http://www.qnx.com"/>
+  </entry>
+ </entry>
+ <entry keyword="header files">
+  <topic href="start.html#INSTMAP" title="How QNX Momentics is organized"/>
+ </entry>
+ <entry keyword="help">
+  <entry keyword="via the Photon Helpviewer">
+   <topic href="help.html#id19" title="The Photon Helpviewer"/>
+  </entry>
+  <entry keyword="within the IDE">
+   <topic href="help.html#id17" title="Within the IDE"/>
+  </entry>
+ </entry>
+ <entry keyword="Helpviewer (Photon)">
+  <topic href="help.html#id19" title="The Photon Helpviewer"/>
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="HID (human input devices)">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="High Availability Framework ">
+  <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+ </entry>
+ <entry keyword="HMI Suite">
+  <topic href="whatis.html#Middleware" title="QNX Aviage middleware"/>
+ </entry>
+ <entry keyword="hosts">
+  <entry keyword="choice of">
+   <topic href="whatis.html#INTRO" title="Choice, tools, source, and help"/>
+  </entry>
+  <entry keyword="development on">
+   <topic href="whatis.html#WELCOME" title="Welcome to the QNX Software Development Platform"/>
+  </entry>
+  <entry keyword="host-related components">
+   <topic href="start.html#INSTMAP" title="How QNX Momentics is organized"/>
+  </entry>
+ </entry>
+ <entry keyword="hover help">
+  <topic href="help.html#HOVER" title="Hover help in the IDE"/>
+ </entry>
+ <entry keyword="how-to guides">
+  <topic href="help.html#id23" title="During development (on your host)"/>
+ </entry>
+ <entry keyword="Hunt, Craig">
+  <topic href="help.html#id31" title="On TCP/IP"/>
+ </entry>
+ <entry keyword="I/O management">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="IDE (Integrated Development Environment)">
+  <topic href="whatis.html#PARTS" title="QNX Momentics at a glance"/>
+  <entry keyword="Help system">
+   <topic href="help.html#id17" title="Within the IDE"/>
+  </entry>
+  <entry keyword="starting">
+   <topic href="start.html#Desktop" title="What's on my desktop?"/>
+  </entry>
+   <topic href="help.html#id6" title="QNX Momentics Tool Suite"/>
+  <entry keyword="workspace directory">
+   <topic href="start.html#INSTMAP" title="How QNX Momentics is organized"/>
+  </entry>
+ </entry>
+ <entry keyword="images (graphical)">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="images (OS)">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="index in online documentation">
+  <topic href="help.html#INDEX" title="Keyword indexes"/>
+ </entry>
+ <entry keyword="Instant Device Activation ">
+  <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+ </entry>
+ <entry keyword="instrumented kernel">
+  <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="international characters">
+  <topic href="help.html#id10" title="Photon microGUI"/>
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="interrupt handling">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="io-pkt*">
+  <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="IPC (interprocess communication)">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="IPL (initial program loader)">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="Japanese characters">
+  <topic href="help.html#id10" title="Photon microGUI"/>
+ </entry>
+ <entry keyword="kernel">
+  <entry keyword="calls">
+   <topic href="help.html#FEATURES" title="Where key features are documented"/>
+  </entry>
+  <entry keyword="instrumented">
+   <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+   <topic href="help.html#FEATURES" title="Where key features are documented"/>
+  </entry>
+ </entry>
+ <entry keyword="keyboards">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="Korean characters">
+  <topic href="help.html#id10" title="Photon microGUI"/>
+ </entry>
+ <entry keyword="Krten, Robert">
+  <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+ </entry>
+ <entry keyword="libraries">
+  <topic href="start.html#INSTMAP" title="How QNX Momentics is organized"/>
+  <topic href="whatis.html#PARTS" title="QNX Momentics at a glance"/>
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+  <entry keyword="Photon">
+   <topic href="help.html#id10" title="Photon microGUI"/>
+  </entry>
+  <entry keyword="QNX Neutrino">
+   <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+  </entry>
+ <entry keyword="licenses">
+  <topic href="whatis.html#LICENSE" title="A word about licensing"/>
+  <topic href="start.html#INSTMAP" title="How QNX Momentics is organized"/>
+ </entry>
+ <entry keyword="linker">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="Linux">
+  <entry keyword="development hosts">
+   <topic href="whatis.html#INTRO" title="Choice, tools, source, and help"/>
+  </entry>
+  <entry keyword="filesystems">
+   <topic href="start.html#NTOPLUS" title="Mixing a self-hosted machine with other hosts"/>
+  </entry>
+ </entry>
+ <entry keyword="Makefile structure">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="MAKEFLAGS">
+  <topic href="start.html#INSTMAP" title="How QNX Momentics is organized"/>
+ </entry>
+ <entry keyword="man command">
+  <topic href="help.html#USE" title="Getting quick help with the use command"/>
+ </entry>
+ <entry keyword="memory management">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="menus">
+  <topic href="start.html#Desktop" title="What's on my desktop?"/>
+ </entry>
+ <entry keyword="message passing">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="message queues">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="Microsoft VirtualPC">
+  <topic href="whatis.html#X86" title="x86 (PC) target"/>
+ </entry>
+ <entry keyword="middleware, QNX Aviage">
+  <topic href="whatis.html#Middleware" title="QNX Aviage middleware"/>
+ </entry>
+ <entry keyword="mkifs">
+  <topic href="whatis.html#PARTS" title="QNX Momentics at a glance"/>
+ </entry>
+ <entry keyword="Multicore Processing ">
+  <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+ </entry>
+ <entry keyword="multicore systems">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="multilingual input">
+  <topic href="help.html#id10" title="Photon microGUI"/>
+ </entry>
+ <entry keyword="Multimedia Suite">
+  <topic href="whatis.html#Middleware" title="QNX Aviage middleware"/>
+ </entry>
+ <entry keyword="myQNX account center">
+  <topic href="start.html#UPGRADE" title="Upgrading your software"/>
+ </entry>
+ <entry keyword="network drivers">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="networking">
+  <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+ </entry>
+ <entry keyword="networking, transparent (native)">
+  <topic href="start.html#NTOPLUS" title="Mixing a self-hosted machine with other hosts"/>
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="NFS (Network File System)">
+  <topic href="start.html#NTOPLUS" title="Mixing a self-hosted machine with other hosts"/>
+ </entry>
+ <entry keyword="pathname delimiter in QNX documentation">
+  <topic href="about.html#WINDOWSNOTE" title="Note to Windows users"/>
+ </entry>
+ <entry keyword="PDF documents">
+  <topic href="help.html#ROADMAP" title="Overview of the documentation"/>
+ </entry>
+ <entry keyword="permissions">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="Persistent Publish/Subscribe (PPS)">
+  <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+ </entry>
+ <entry keyword="Phindows">
+  <topic href="help.html#id6" title="QNX Momentics Tool Suite"/>
+ </entry>
+ <entry keyword="Photon">
+   <topic href="help.html#id10" title="Photon microGUI"/>
+  <entry keyword="Helpviewer">
+   <topic href="help.html#id19" title="The Photon Helpviewer"/>
+  </entry>
+   <topic href="help.html#id10" title="Photon microGUI"/>
+  <entry keyword="multilingual input">
+   <topic href="help.html#id10" title="Photon microGUI"/>
+  </entry>
+   <topic href="help.html#id10" title="Photon microGUI"/>
+   <topic href="help.html#id10" title="Photon microGUI"/>
+  <entry keyword="Windows, accessing from">
+   <topic href="help.html#id6" title="QNX Momentics Tool Suite"/>
+  </entry>
+ </entry>
+ <entry keyword="Pilato, C. Michael">
+  <topic href="start.html#Managing_source" title="Managing source code"/>
+ </entry>
+ <entry keyword="platform-specific issues">
+  <topic href="whatis.html#id12" title="Platform-related issues"/>
+ </entry>
+ <entry keyword="Player (VMware)">
+  <topic href="whatis.html#X86" title="x86 (PC) target"/>
+ </entry>
+ <entry keyword="POSIX">
+  <entry keyword="documents available online">
+   <topic href="help.html#id29" title="On POSIX"/>
+  </entry>
+  <entry keyword="link to site for up-to-date status">
+   <topic href="help.html#id29" title="On POSIX"/>
+  </entry>
+ </entry>
+  <topic href="help.html#id29" title="On POSIX"/>
+ <entry keyword="PPS (Persistent Publish/Subscribe)">
+  <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+ </entry>
+ <entry keyword="process manager">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="processes">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="professional services">
+  <topic href="help.html#CE" title="Custom engineering and consulting"/>
+ </entry>
+ <entry keyword="profiler">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+  <entry keyword="Photon">
+   <topic href="help.html#id10" title="Photon microGUI"/>
+  </entry>
+  <entry keyword="QNX Neutrino">
+   <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+  </entry>
+  <topic href="help.html#id29" title="On POSIX"/>
+ <entry keyword="pulses">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="qcc">
+  <topic href="whatis.html#PARTS" title="QNX Momentics at a glance"/>
+ </entry>
+ <entry keyword="qconfig">
+  <topic href="start.html#qconfig" title="qconfig utility for non-Windows hosts"/>
+ </entry>
+ <entry keyword="qconn">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="qde">
+  <topic href="start.html#Desktop" title="What's on my desktop?"/>
+ </entry>
+ <entry keyword="Qnet">
+  <topic href="start.html#NTOPLUS" title="Mixing a self-hosted machine with other hosts"/>
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="QNX Aviage middleware">
+  <topic href="whatis.html#Middleware" title="QNX Aviage middleware"/>
+ </entry>
+ <entry keyword="QNX Momentics">
+  <entry keyword="about">
+   <topic href="whatis.html#WELCOME" title="Welcome to the QNX Software Development Platform"/>
+  </entry>
+  <entry keyword="coexistence of multiple versions">
+   <topic href="start.html#Coexistence" title="Can different versions of QNX Momentics coexist?"/>
+  </entry>
+  <entry keyword="features of">
+   <topic href="whatis.html#INTRO" title="Choice, tools, source, and help"/>
+  </entry>
+  <entry keyword="parts of">
+   <topic href="whatis.html#PARTS" title="QNX Momentics at a glance"/>
+  </entry>
+ </entry>
+ <entry keyword="QNX Neutrino">
+   <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+  <entry keyword="getting started with">
+   <topic href="help.html#id4" title="QNX Software Development Platform"/>
+  </entry>
+   <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+   <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+  <entry keyword="self-hosted">
+   <topic href="whatis.html#INTRO" title="Choice, tools, source, and help"/>
+   <topic href="start.html#NTOSOLO" title="Running QNX Neutrino self-hosted"/>
+  </entry>
+   <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+   <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+   <topic href="help.html#id25" title="At runtime (on your target)"/>
+   <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+   <topic href="help.html#id6" title="QNX Momentics Tool Suite"/>
+   <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+ </entry>
+  <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+ <entry keyword="QNX Software Development Platform">
+  <entry keyword="about">
+   <topic href="whatis.html#WELCOME" title="Welcome to the QNX Software Development Platform"/>
+  </entry>
+  <entry keyword="evaluation copy, upgrading">
+   <topic href="start.html#UPGRADE" title="Upgrading your software"/>
+  </entry>
+  <entry keyword="upgrading">
+   <topic href="start.html#UPGRADE" title="Upgrading your software"/>
+  </entry>
+ </entry>
+ <entry keyword="QNX Software Systems website">
+  <topic href="help.html#URL" title="Visit http://www.qnx.com"/>
+ </entry>
+ <entry keyword="QNX_CONFIGURATION">
+  <topic href="start.html#Coexistence" title="Can different versions of QNX Momentics coexist?"/>
+  <topic href="start.html#INSTMAP" title="How QNX Momentics is organized"/>
+ </entry>
+ <entry keyword="QNX_HOST">
+  <topic href="start.html#INSTMAP" title="How QNX Momentics is organized"/>
+ </entry>
+ <entry keyword="QNX_TARGET">
+  <topic href="start.html#INSTMAP" title="How QNX Momentics is organized"/>
+ </entry>
+ <entry keyword="QoS (Quality of Service)">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="QWinCfg">
+  <topic href="start.html#QWinCfg" title="QWinCfg for Windows hosts"/>
+ </entry>
+ <entry keyword="RAM disk">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="realtime scheduling">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="reference books">
+  <topic href="help.html#id23" title="During development (on your host)"/>
+ </entry>
+ <entry keyword="resellers">
+  <topic href="help.html#URL" title="Visit http://www.qnx.com"/>
+ </entry>
+ <entry keyword="resource management">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="resource managers">
+  <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+ </entry>
+ <entry keyword="Restricted Content Application Form">
+  <topic href="help.html#URL" title="Visit http://www.qnx.com"/>
+ </entry>
+ <entry keyword="Rudoff, A.">
+  <topic href="help.html#id31" title="On TCP/IP"/>
+ </entry>
+ <entry keyword="runtime">
+  <entry keyword="directory structure">
+   <topic href="start.html#INSTMAP" title="How QNX Momentics is organized"/>
+  </entry>
+  <entry keyword="documentation">
+   <topic href="help.html#id25" title="At runtime (on your target)"/>
+  </entry>
+ </entry>
+ <entry keyword="SAT (System Analysis Toolkit)">
+  <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+ </entry>
+ <entry keyword="scheduling">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="self-hosted development">
+  <topic href="whatis.html#INTRO" title="Choice, tools, source, and help"/>
+  <topic href="start.html#NTOSOLO" title="Running QNX Neutrino self-hosted"/>
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+  <entry keyword="documentation">
+   <topic href="help.html#id19" title="The Photon Helpviewer"/>
+  </entry>
+ </entry>
+ <entry keyword="signal handling">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="slinger">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="SMP (symmetric multiprocessing)">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="software">
+  <entry keyword="developing">
+   <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+  </entry>
+  <entry keyword="managing">
+   <topic href="start.html#Managing_source" title="Managing source code"/>
+   <topic href="help.html#FEATURES" title="Where key features are documented"/>
+  </entry>
+  <entry keyword="updates">
+   <topic href="start.html#UPGRADE" title="Upgrading your software"/>
+  </entry>
+ </entry>
+ <entry keyword="source code">
+  <topic href="whatis.html#INTRO" title="Choice, tools, source, and help"/>
+  <topic href="help.html#URL" title="Visit http://www.qnx.com"/>
+ </entry>
+ <entry keyword="startup programs">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="Stevens, W. R.">
+  <topic href="help.html#id31" title="On TCP/IP"/>
+ </entry>
+ <entry keyword="support plans">
+  <topic href="help.html#SUPPORTPLANS" title="Support plans"/>
+ </entry>
+ <entry keyword="synchronization">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="system">
+  <entry keyword="administration">
+   <topic href="help.html#id25" title="At runtime (on your target)"/>
+  </entry>
+  <entry keyword="header files">
+   <topic href="start.html#INSTMAP" title="How QNX Momentics is organized"/>
+  </entry>
+  <entry keyword="information">
+   <topic href="help.html#FEATURES" title="Where key features are documented"/>
+  </entry>
+ </entry>
+ <entry keyword="System Analysis Toolkit ">
+  <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+ </entry>
+  <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+ <entry keyword="targets">
+  <entry keyword="agent (qconn)">
+   <topic href="help.html#FEATURES" title="Where key features are documented"/>
+  </entry>
+  <entry keyword="developing for">
+   <topic href="whatis.html#INTRO" title="Choice, tools, source, and help"/>
+   <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+   <topic href="start.html#TARGET" title="Running QNX Neutrino on a target machine"/>
+  </entry>
+  <entry keyword="running on">
+   <topic href="whatis.html#SCENARIOS" title="Getting started  you have your target"/>
+   <topic href="whatis.html#WELCOME" title="Welcome to the QNX Software Development Platform"/>
+  </entry>
+  <entry keyword="target-related components">
+   <topic href="start.html#INSTMAP" title="How QNX Momentics is organized"/>
+  </entry>
+ </entry>
+ <entry keyword="TCP/IP">
+  <topic href="start.html#NTOPLUS" title="Mixing a self-hosted machine with other hosts"/>
+ </entry>
+  <topic href="help.html#id31" title="On TCP/IP"/>
+  <topic href="help.html#id31" title="On TCP/IP"/>
+  <topic href="help.html#id31" title="On TCP/IP"/>
+  <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+ <entry keyword="technical support">
+  <topic href="help.html#SUPPORTPLANS" title="Support plans"/>
+  <entry keyword="public forums">
+   <topic href="help.html#URL" title="Visit http://www.qnx.com"/>
+  </entry>
+ </entry>
+ <entry keyword="Technology Development Kits (TDKs)">
+ </entry>
+ <entry keyword="threads">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="time">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="timers">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="timestamps">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="tools">
+  <topic href="whatis.html#INTRO" title="Choice, tools, source, and help"/>
+ </entry>
+ <entry keyword="training">
+  <topic href="help.html#TRAINING" title="Training"/>
+ </entry>
+ <entry keyword="transparent distributed processing">
+  <topic href="start.html#NTOPLUS" title="Mixing a self-hosted machine with other hosts"/>
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="tutorials">
+  <topic href="help.html#id4" title="QNX Software Development Platform"/>
+ </entry>
+ <entry keyword="typographical conventions">
+  <topic href="about.html#Typographical_conventions" title="Typographical conventions"/>
+ </entry>
+ <entry keyword="Unicode">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+  <topic href="help.html#id31" title="On TCP/IP"/>
+  <topic href="help.html#id31" title="On TCP/IP"/>
+ <entry keyword="USB (Universal Serial Bus)">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="use command">
+  <topic href="help.html#USE" title="Getting quick help with the use command"/>
+ </entry>
+  <entry keyword="IDE">
+   <topic href="help.html#id6" title="QNX Momentics Tool Suite"/>
+  </entry>
+  <entry keyword="QNX Neutrino">
+   <topic href="help.html#id25" title="At runtime (on your target)"/>
+   <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+  </entry>
+ <entry keyword="utilities">
+  <topic href="help.html#id23" title="During development (on your host)"/>
+  <topic href="start.html#INSTMAP" title="How QNX Momentics is organized"/>
+ </entry>
+  <topic href="help.html#id6" title="QNX Momentics Tool Suite"/>
+  <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+ <entry keyword="version control">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+  <topic href="start.html#Managing_source" title="Managing source code"/>
+ <entry keyword="Virtio">
+  <topic href="whatis.html#NOBIOS" title="x86 non-BIOS target"/>
+ </entry>
+ <entry keyword="virtual machine">
+  <topic href="whatis.html#X86" title="x86 (PC) target"/>
+ </entry>
+ <entry keyword="VirtualPC">
+  <topic href="whatis.html#X86" title="x86 (PC) target"/>
+ </entry>
+ <entry keyword="VMware">
+  <topic href="whatis.html#X86" title="x86 (PC) target"/>
+ </entry>
+ <entry keyword="Web Browser Engine ">
+  <topic href="help.html#id12" title="Advanced Graphics"/>
+ </entry>
+ <entry keyword="web browsers">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="web server (slinger)">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+ <entry keyword="websites">
+  <entry keyword="Eclipse consortium">
+   <topic href="help.html#URL" title="Visit http://www.qnx.com"/>
+  </entry>
+  <entry keyword="Foundry27">
+   <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+   <topic href="help.html#URL" title="Visit http://www.qnx.com"/>
+  </entry>
+  <entry keyword="QNX Software Systems">
+   <topic href="help.html#URL" title="Visit http://www.qnx.com"/>
+  </entry>
+ </entry>
+  <topic href="help.html#id10" title="Photon microGUI"/>
+ <entry keyword="Windows">
+  <entry keyword="accessing Photon from">
+   <topic href="help.html#id6" title="QNX Momentics Tool Suite"/>
+  </entry>
+  <entry keyword="development hosts">
+   <topic href="whatis.html#INTRO" title="Choice, tools, source, and help"/>
+  </entry>
+ </entry>
+ <entry keyword="workspace directory">
+  <topic href="start.html#INSTMAP" title="How QNX Momentics is organized"/>
+ </entry>
+ <entry keyword="Workstation (VMware)">
+  <topic href="whatis.html#X86" title="x86 (PC) target"/>
+ </entry>
+  <topic href="help.html#id8" title="QNX Neutrino Realtime Operating System"/>
+ <entry keyword="XIP (execute in place)">
+  <topic href="help.html#FEATURES" title="Where key features are documented"/>
+ </entry>
+</index>

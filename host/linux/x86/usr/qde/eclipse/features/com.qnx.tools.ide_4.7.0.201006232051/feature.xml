@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.qnx.tools.ide"
+      label="%featureName"
+      version="4.7.0.201006232051"
+      provider-name="%providerName"
+      image="qnxide.gif"
+      application="org.eclipse.ui.ide.workbench">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import feature="org.eclipse.platform" version="3.3.0"/>
+   </requires>
+
+   <plugin
+         id="com.qnx.tools.ide"
+         download-size="0"
+         install-size="0"
+         version="4.7.0.201006232051"
+         unpack="false"/>
+
+   <plugin
+         id="com.qnx.tools.ide.core"
+         download-size="0"
+         install-size="0"
+         version="4.7.0.201006232051"
+         unpack="false"/>
+
+   <plugin
+         id="com.qnx.tools.ide.target.core"
+         download-size="0"
+         install-size="0"
+         version="4.7.0.201006232051"
+         unpack="false"/>
+
+   <plugin
+         id="com.qnx.tools.ide.target.ui"
+         download-size="0"
+         install-size="0"
+         version="4.7.0.201006232051"
+         unpack="false"/>
+
+   <plugin
+         id="com.qnx.tools.ide.ui"
+         download-size="0"
+         install-size="0"
+         version="4.7.0.201006232051"
+         unpack="false"/>
+
+  <plugin
+         id="com.qnx.tools.ide.equinox.transforms"
+         download-size="0"
+         install-size="0"
+         version="4.7.0.201006232051"
+         unpack="false"/>
+
+   <plugin
+         id="com.qnx.tools.utils.ui"
+         download-size="0"
+         install-size="0"
+         version="4.7.0.201006232051"
+         unpack="false"/>
+
+   <plugin
+         id="com.qnx.tools.utils"
+         download-size="0"
+         install-size="0"
+         version="4.7.0.201006232051"
+         unpack="false"/>
+
+   <plugin
+         id="com.qnx.tools.ide.target.qconn.core"
+         download-size="0"
+         install-size="0"
+         version="4.7.0.201006232051"
+         unpack="false"/>
+
+   <plugin
+         id="com.qnx.tools.ide.target.qconn.ui"
+         download-size="0"
+         install-size="0"
+         version="4.7.0.201006232051"
+         unpack="false"/>
+
+   <plugin
+         id="com.qnx.tools.utils.ui.chart"
+         download-size="0"
+         install-size="0"
+         version="4.7.0.201006232051"
+         unpack="false"/>
+
+   <plugin
+         id="com.qnx.tools.license"
+         download-size="0"
+         install-size="0"
+         version="4.7.0.201006232051"
+         unpack="false"/>
+
+   <plugin
+         id="com.qnx.tools.ide.tftp"
+         download-size="0"
+         install-size="0"
+         version="4.7.0.201006232051"/>
+
+</feature>

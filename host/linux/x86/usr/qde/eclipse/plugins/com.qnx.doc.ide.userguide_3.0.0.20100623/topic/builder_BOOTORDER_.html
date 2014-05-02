@@ -1,0 +1,274 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Components of an image, in order of booting" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_OVER_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_IMAGES_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_PROJECTS_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_START_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Thecomponentsofanimageinorderofbooting" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Components of an image, in order of booting</title>
+   </head>
+   <body id="Thecomponentsofanimageinorderofbooting"><a name="Thecomponentsofanimageinorderofbooting" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Components of an image, in order of booting</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>Neutrino supports a wide variety of CPUs and hardware configurations. Some boards require
+            more effort than others to embed the OS. For example, x86-based machines usually have a BIOS,
+            which greatly simplifies your job, while other platforms require that you create a complete
+            IPL. Embedded systems can range from a tiny memory-constrained handheld computer that boots
+            from flash, to an industrial robot that boots through a network, to a multicore system with
+            lots of memory that boots from a hard disk. 
+            
+            
+            
+         </p>
+         
+         
+         <p>Whatever your particular platform or configuration, the QNX System Builder helps simplify the
+            process of building images and transferring them from your host to your target. 
+         </p>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> For a complete description of OS and flash images, see the <a href="../../com.qnx.doc.neutrino_building/about.html" shape="rect"> Building
+               Embedded Systems</a> guide. 
+         </div>
+         
+         
+         <p>The goal of the boot process is to get the system into a state that lets your program run.
+            Initially, the system might not recognize disks, memory, or other hardware, so each section of
+            code needs to perform whatever setup is needed in order to run the subsequent section: 
+         </p>
+         
+         <br clear="none" /><ol>
+            <li>The IPL initializes the hardware, makes the OS image accessible, and then jumps into it.
+               
+               
+            </li>
+            <li>The startup code performs further initializations, and then loads and transfers control to
+               the microkernel/process manager (<span class="cmdname">procnto</span>), the core runtime component of the QNX
+               Neutrino OS. 
+               
+               
+            </li>
+            <li>The <span class="cmdname">procnto</span> module then runs the boot script, which performs any final setup
+               required and runs your programs. 
+            </li>
+         </ol>
+         
+         
+         <p>
+            <span><img src="../images/mp2Ftopic2Fbuilder_BOOTORDER_.xml_d3027e76.jpg" alt="Introduction: QNX System Builder; boot order" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>Typical boot order.</p>
+            
+            
+         </div>
+         
+         
+         <p>At reset, a typical processor has only a minimal configuration that lets code be executed
+            from a known linearly addressable device (e.g. flash, ROM). When your system first powers on,
+            it automatically runs the IPL code at a specific address called the <dfn class="term">reset vector</dfn>. 
+         </p>
+         
+         
+         <p>
+            <strong>IPL</strong>
+            
+         </p>
+         
+         
+         <p>When the IPL loads, the system memory usually isn't fully accessible. It's up to the IPL to
+            configure the memory controller, but the method depends on the hardware — some
+            boards need more initialization than others. 
+            
+         </p>
+         
+         
+         <p>When the memory is accessible, the IPL scans the flash memory for the image filesystem, which
+            contains the startup code (described in the next section). The IPL loads the startup header
+            and startup code into RAM, and then jumps to the startup code. 
+         </p>
+         
+         
+         <p>The IPL is usually board-specific (it contains some assembly code) and is as small as
+            possible. 
+         </p>
+         
+         
+         <p>
+            <strong>Startup</strong>
+            
+         </p>
+         
+         
+         <p>The startup code initializes the hardware by setting up interrupt controllers, cache
+            controllers, and base timers. The code detects system resources such as the processor(s), and
+            puts information about these resources into a centrally accessible area called the
+            <dfn class="term">system page</dfn>. The code can also copy and decompress the image filesystem
+            components, if necessary. Finally, the startup code passes control, in virtual memory mode, to
+            the <span class="cmdname">proncto</span> module. 
+            
+         </p>
+         
+         
+         <p>The startup code is board-specific and is generally much larger than the IPL. Although a
+            larger <span class="cmdname">proncto</span> module could do the setup, we separate the startup code so that
+            <span class="cmdname">proncto</span> can be board-independent. Once the startup code sets up the hardware, the
+            system can reuse a part of the memory used by startup because the code won't be needed again. 
+         </p>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> If you're creating your own startup variant, its name must start with <tt>startup</tt> or
+            the QNX System Builder perspective won't recognize it. 
+            
+            
+            
+         </div>
+         
+         
+         <p>
+            <strong>The <span class="cmdname">proncto</span> module</strong>
+            
+         </p>
+         
+         
+         <p>The <span class="cmdname">proncto</span> module is the core runtime component of the QNX Neutrino OS. It consists
+            of the microkernel, the process manager, and some initialization code that sets up the
+            microkernel and creates the process-manager threads. The <span class="cmdname">proncto</span> module is a required
+            component of all bootable images. 
+            
+         </p>
+         
+         
+         <p>The process manager handles (among other things) processes, memory, and the image filesystem.
+            The process manager lets other processes see the image filesystem's contents. Once the
+            <span class="cmdname">proncto</span> module is running, the operating system is essentially up and running. One
+            of the process manager's threads runs the boot script. 
+         </p>
+         
+         
+         <p>Several variants of <span class="cmdname">proncto</span> are available (e.g. <tt>procnto-400</tt> for PowerPC 400
+            series, <tt>procnto-smp</tt> for x86 multicore machines, etc.). 
+            
+         </p>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> If you're creating your own <span class="cmdname">proncto</span> variant, its name must start with
+            <span class="cmdname">procnto-</span> or the QNX System Builder perspective won't recognize it. 
+            
+         </div>
+         
+         
+         <p>For more information, see the <cite>System Architecture Guide</cite>, as well as <a href="../../com.qnx.doc.neutrino_utilities/p/procnto.html" shape="rect">
+               <span class="cmdname">proncto</span>
+               </a> in the <cite>Utilities Reference</cite>
+            
+         </p>
+         
+         
+         <p>
+            <strong>Boot script</strong>
+            
+         </p>
+         
+         
+         <p> If you want your system to load any drivers or to run
+            your program automatically after powering up, you should run those utilities and programs from
+            the boot script. For example, you might have the boot script: 
+         </p>
+         
+         <br clear="none" /><ul>
+            <li>run a <a href="../../com.qnx.doc.neutrino_utilities/utils-d.html" shape="rect">
+                  <tt>devf</tt>
+                  </a> driver to access a flash filesystem image, and then run your program from that flash
+               filesystem 
+            </li>
+            <li>create adaptive partitions, run programs in them, and set their parameters: 
+               
+               
+               
+               
+               <pre class="codeblock" xml:space="preserve"># Create an adaptive partition using the thread scheduler 
+# named "Wickedeo" with a budget 
+# of 20%: sched_aps Wickedeo 20 
+# Start qconn in the Debugging partition: 
+
+[sched_aps=Debugging]/usr/sbin/qconn 
+
+# Use the recommended security level for the partitions: 
+
+ap modify -s recommended </pre>
+               
+               <p>For more information about these
+                  commands, see <a href="../../com.qnx.doc.adaptive_partitioning_en_user_guide/about.html" shape="rect">Adaptive Partitioning</a>
+                  <cite>User's Guide</cite>.
+               </p>
+               
+            </li>
+         </ul>
+         
+         
+         <p>When you build your image, the boot script is converted from text to a tokenized form and
+            saved as <span class="filepath">/proc/boot/.script</span>. The process manager runs this tokenized
+            script. 
+         </p>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/builder_OVER_.html" shape="rect">Overview of images</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/builder_IMAGES_.html" shape="rect">Types of images you can create</a></div>
+            
+            <div><a href="../topic/builder_PROJECTS_.html" shape="rect">Project layout</a></div>
+            
+            <div><a href="../topic/builder_START_.html" shape="rect">Workflow of image creation</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

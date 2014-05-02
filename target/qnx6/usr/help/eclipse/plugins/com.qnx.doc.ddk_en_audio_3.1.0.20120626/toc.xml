@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Audio Devices">
+      <topic label="About the Audio DDK" href="about.html">
+          <topic label="What you'll find in this guide" href="about.html#In_this_guide"/>
+          <topic label="Supported features" href="about.html#features"/>
+          <topic label="Assumptions" href="about.html#assumptions"/>
+          <topic label="Building DDKs" href="about.html#about"/>
+          <topic label="Typographical conventions" href="about.html#Typographical_conventions">
+            <topic label="Note to Windows users" href="about.html#WINDOWSNOTE"/>
+            <topic label="Navigation buttons" href="about.html#Navigation"/>
+          </topic>
+          <topic label="Technical support" href="about.html#Support"/>
+      </topic>
+      <topic label="Evaluating Your Card" href="evaluation.html"/>
+      <topic label="Organization of a Driver" href="architecture.html">
+          <topic label="The QNX audio system and driver" href="architecture.html#AudioSystem"/>
+          <topic label="DDK source code" href="architecture.html#DDKSource"/>
+          <topic label="Writing an Audio HW DLL" href="architecture.html#AudioHWDLL">
+            <topic label="Opaque data types" href="architecture.html#OpaqueDataTypes"/>
+            <topic label="Custom data types" href="architecture.html#CustomDataTypes"/>
+            <topic label="ctrl_init" href="architecture.html#ctrl_init"/>
+            <topic label="ctrl_destroy" href="architecture.html#ctrl_destroy"/>
+            <topic label="Debugging an audio driver" href="architecture.html#Debugging"/>
+          </topic>
+      </topic>
+      <topic label="Handling Analog Audio Data" href="analogmixer.html">
+          <topic label="Writing an analog mixer" href="analogmixer.html#WritingMixer">
+            <topic label="Mixer elements and routes" href="analogmixer.html#MixerElements">
+              <topic label="Supported element types" href="analogmixer.html#id5"/>
+            </topic>
+            <topic label="Mixer groups" href="analogmixer.html#MixerGroups">
+              <topic label="Designing mixer groups" href="analogmixer.html#id8"/>
+            </topic>
+            <topic label="Coding the mixer" href="analogmixer.html#id10">
+              <topic label="Initialization" href="analogmixer.html#CustomMixerInit"/>
+              <topic label="Building the mixer" href="analogmixer.html#id13"/>
+            </topic>
+          </topic>
+          <topic label="Using a standard mixer DLL" href="analogmixer.html#StandardDLL">
+            <topic label="Initialization" href="analogmixer.html#StandardMixerInit"/>
+            <topic label="Testing the code" href="analogmixer.html#id17"/>
+          </topic>
+      </topic>
+      <topic label="Handling PCM Audio Data" href="pcm.html">
+            <topic label="In this chapter..." href="pcm.html#id3"/>
+          <topic label="What's a PCM device?" href="pcm.html#PCMDevice"/>
+          <topic label="Creating a PCM device" href="pcm.html#Creating">
+            <topic label="ado_pcm_create" href="pcm.html#id7"/>
+            <topic label="How does the PCM stream operate?" href="pcm.html#pcm-stream"/>
+          </topic>
+      </topic>
+      <topic label="API Reference" href="api-ref.html">
+          <topic label="ado_attach_interrupt" href="api-ref/ado_attach_interrupt.html">
+            <topic label="Description:" href="api-ref/ado_attach_interrupt.html#id7"/>
+          </topic>
+          <topic label="ado_calloc" href="api-ref/ado_calloc.html">
+            <topic label="Description:" href="api-ref/ado_calloc.html#id7"/>
+          </topic>
+          <topic label="ado_card_set_longname" href="api-ref/ado_card_set_longname.html">
+            <topic label="Description:" href="api-ref/ado_card_set_longname.html#id7"/>
+          </topic>
+          <topic label="ado_card_set_shortname" href="api-ref/ado_card_set_shortname.html">
+            <topic label="Description:" href="api-ref/ado_card_set_shortname.html#id7"/>
+          </topic>
+          <topic label="ado_debug" href="api-ref/ado_debug.html">
+            <topic label="Description:" href="api-ref/ado_debug.html#id7"/>
+          </topic>
+          <topic label="ado_device_mmap" href="api-ref/ado_device_mmap.html">
+            <topic label="Description:" href="api-ref/ado_device_mmap.html#id7"/>
+          </topic>
+          <topic label="ado_device_munmap" href="api-ref/ado_device_munmap.html">
+            <topic label="Description:" href="api-ref/ado_device_munmap.html#id7"/>
+          </topic>
+          <topic label="ado_error" href="api-ref/ado_error.html">
+            <topic label="Description:" href="api-ref/ado_error.html#id7"/>
+          </topic>
+          <topic label="ado_free" href="api-ref/ado_free.html">
+            <topic label="Description:" href="api-ref/ado_free.html#id7"/>
+          </topic>
+          <topic label="ado_malloc" href="api-ref/ado_malloc.html">
+            <topic label="Description:" href="api-ref/ado_malloc.html#id7"/>
+          </topic>
+          <topic label="ado_memory_dump" href="api-ref/ado_memory_dump.html">
+            <topic label="Description:" href="api-ref/ado_memory_dump.html#id5"/>
+          </topic>
+          <topic label="ado_mixer_capture_group_create" href="api-ref/ado_mixer_capture_group_create.html">
+            <topic label="Description:" href="api-ref/ado_mixer_capture_group_create.html#id7"/>
+          </topic>
+          <topic label="ado_mixer_create" href="api-ref/ado_mixer_create.html">
+            <topic label="Description:" href="api-ref/ado_mixer_create.html#id7"/>
+          </topic>
+          <topic label="ado_mixer_dll" href="api-ref/ado_mixer_dll.html">
+            <topic label="Description:" href="api-ref/ado_mixer_dll.html#id7"/>
+          </topic>
+          <topic label="ado_mixer_element_accu1" href="api-ref/ado_mixer_element_accu1.html">
+            <topic label="Description:" href="api-ref/ado_mixer_element_accu1.html#id7"/>
+          </topic>
+          <topic label="ado_mixer_element_accu2" href="api-ref/ado_mixer_element_accu2.html">
+            <topic label="Description:" href="api-ref/ado_mixer_element_accu2.html#id7"/>
+          </topic>
+          <topic label="ado_mixer_element_accu3" href="api-ref/ado_mixer_element_accu3.html">
+            <topic label="Description:" href="api-ref/ado_mixer_element_accu3.html#id7"/>
+          </topic>
+          <topic label="ado_mixer_element_io" href="api-ref/ado_mixer_element_io.html">
+            <topic label="Description:" href="api-ref/ado_mixer_element_io.html#id7"/>
+          </topic>
+          <topic label="ado_mixer_element_mux1" href="api-ref/ado_mixer_element_mux1.html">
+            <topic label="Description:" href="api-ref/ado_mixer_element_mux1.html#id7"/>
+          </topic>
+          <topic label="ado_mixer_element_mux2" href="api-ref/ado_mixer_element_mux2.html">
+            <topic label="Description:" href="api-ref/ado_mixer_element_mux2.html#id7"/>
+          </topic>
+          <topic label="ado_mixer_element_notify" href="api-ref/ado_mixer_element_notify.html">
+            <topic label="Description:" href="api-ref/ado_mixer_element_notify.html#id7"/>
+          </topic>
+          <topic label="ado_mixer_element_pcm1" href="api-ref/ado_mixer_element_pcm1.html">
+            <topic label="Description:" href="api-ref/ado_mixer_element_pcm1.html#id7"/>
+          </topic>
+          <topic label="ado_mixer_element_pcm2" href="api-ref/ado_mixer_element_pcm2.html">
+            <topic label="Description:" href="api-ref/ado_mixer_element_pcm2.html#id7"/>
+          </topic>
+          <topic label="ado_mixer_element_route_add" href="api-ref/ado_mixer_element_route_add.html">
+            <topic label="Description:" href="api-ref/ado_mixer_element_route_add.html#id7"/>
+          </topic>
+          <topic label="ado_mixer_element_sw1" href="api-ref/ado_mixer_element_sw1.html">
+            <topic label="Description:" href="api-ref/ado_mixer_element_sw1.html#id7"/>
+          </topic>
+          <topic label="ado_mixer_element_sw2" href="api-ref/ado_mixer_element_sw2.html">
+            <topic label="Description:" href="api-ref/ado_mixer_element_sw2.html#id7"/>
+          </topic>
+          <topic label="ado_mixer_element_sw3" href="api-ref/ado_mixer_element_sw3.html">
+            <topic label="Description:" href="api-ref/ado_mixer_element_sw3.html#id7"/>
+          </topic>
+          <topic label="ado_mixer_element_vol_range_max" href="api-ref/ado_mixer_element_vol_range_max.html">
+            <topic label="Description:" href="api-ref/ado_mixer_element_vol_range_max.html#id7"/>
+          </topic>
+          <topic label="ado_mixer_element_vol_range_min" href="api-ref/ado_mixer_element_vol_range_min.html">
+            <topic label="Description:" href="api-ref/ado_mixer_element_vol_range_min.html#id7"/>
+          </topic>
+          <topic label="ado_mixer_element_volume1" href="api-ref/ado_mixer_element_volume1.html">
+            <topic label="Description:" href="api-ref/ado_mixer_element_volume1.html#id7"/>
+          </topic>
+          <topic label="ado_mixer_find_element" href="api-ref/ado_mixer_find_element.html">
+            <topic label="Description:" href="api-ref/ado_mixer_find_element.html#id7"/>
+          </topic>
+          <topic label="ado_mixer_find_group" href="api-ref/ado_mixer_find_group.html">
+            <topic label="Description:" href="api-ref/ado_mixer_find_group.html#id7"/>
+          </topic>
+          <topic label="ado_mixer_get_context" href="api-ref/ado_mixer_get_context.html">
+            <topic label="Description:" href="api-ref/ado_mixer_get_context.html#id7"/>
+          </topic>
+          <topic label="ado_mixer_get_element_instance_data" href="api-ref/ado_mixer_get_element_inst_data.html">
+            <topic label="Description:" href="api-ref/ado_mixer_get_element_inst_data.html#id7"/>
+          </topic>
+          <topic label="ado_mixer_lock" href="api-ref/ado_mixer_lock.html">
+            <topic label="Description:" href="api-ref/ado_mixer_lock.html#id7"/>
+          </topic>
+          <topic label="ado_mixer_playback_group_create" href="api-ref/ado_mixer_playback_group_create.html">
+            <topic label="Description:" href="api-ref/ado_mixer_playback_group_create.html#id7"/>
+          </topic>
+          <topic label="ado_mixer_set_destroy_func" href="api-ref/ado_mixer_set_destroy_func.html">
+            <topic label="Description:" href="api-ref/ado_mixer_set_destroy_func.html#id7"/>
+          </topic>
+          <topic label="ado_mixer_set_name" href="api-ref/ado_mixer_set_name.html">
+            <topic label="Description:" href="api-ref/ado_mixer_set_name.html#id7"/>
+          </topic>
+          <topic label="ado_mixer_set_reset_func" href="api-ref/ado_mixer_set_reset_func.html">
+            <topic label="Description:" href="api-ref/ado_mixer_set_reset_func.html#id7"/>
+          </topic>
+          <topic label="ado_mixer_switch_new" href="api-ref/ado_mixer_switch_new.html">
+            <topic label="Description:" href="api-ref/ado_mixer_switch_new.html#id7"/>
+          </topic>
+          <topic label="ado_mixer_unlock" href="api-ref/ado_mixer_unlock.html">
+            <topic label="Description:" href="api-ref/ado_mixer_unlock.html#id7"/>
+          </topic>
+          <topic label="ado_mutex_destroy" href="api-ref/ado_mutex_destroy.html">
+            <topic label="Description:" href="api-ref/ado_mutex_destroy.html#id7"/>
+          </topic>
+          <topic label="ado_mutex_init" href="api-ref/ado_mutex_init.html">
+            <topic label="Description:" href="api-ref/ado_mutex_init.html#id7"/>
+          </topic>
+          <topic label="ado_mutex_lock" href="api-ref/ado_mutex_lock.html">
+            <topic label="Description:" href="api-ref/ado_mutex_lock.html#id7"/>
+          </topic>
+          <topic label="ado_mutex_unlock" href="api-ref/ado_mutex_unlock.html">
+            <topic label="Description:" href="api-ref/ado_mutex_unlock.html#id7"/>
+          </topic>
+          <topic label="ado_pci" href="api-ref/ado_pci.html">
+            <topic label="Description:" href="api-ref/ado_pci.html#id5"/>
+          </topic>
+          <topic label="ado_pci_device" href="api-ref/ado_pci_device.html">
+            <topic label="Description:" href="api-ref/ado_pci_device.html#id7"/>
+          </topic>
+          <topic label="ado_pci_release" href="api-ref/ado_pci_release.html">
+            <topic label="Description:" href="api-ref/ado_pci_release.html#id7"/>
+          </topic>
+          <topic label="ado_pcm_cap_t" href="api-ref/ado_pcm_cap_t.html">
+            <topic label="Description:" href="api-ref/ado_pcm_cap_t.html#id5"/>
+          </topic>
+          <topic label="ado_pcm_config_t" href="api-ref/ado_pcm_config_t.html">
+            <topic label="Description:" href="api-ref/ado_pcm_config_t.html#id5"/>
+          </topic>
+          <topic label="ado_pcm_chn_mixer" href="api-ref/ado_pcm_chn_mixer.html">
+            <topic label="Description:" href="api-ref/ado_pcm_chn_mixer.html#id7"/>
+          </topic>
+          <topic label="ado_pcm_create" href="api-ref/ado_pcm_create.html">
+            <topic label="Description:" href="api-ref/ado_pcm_create.html#id7"/>
+          </topic>
+          <topic label="ado_pcm_dma_int_size" href="api-ref/ado_pcm_dma_int_size.html">
+            <topic label="Description:" href="api-ref/ado_pcm_dma_int_size.html#id7"/>
+          </topic>
+          <topic label="ado_pcm_format_bit_width" href="api-ref/ado_pcm_format_bit_width.html">
+            <topic label="Description:" href="api-ref/ado_pcm_format_bit_width.html#id7"/>
+          </topic>
+          <topic label="ado_pcm_hw_t" href="api-ref/ado_pcm_hw_t.html">
+            <topic label="Description:" href="api-ref/ado_pcm_hw_t.html#id5">
+              <topic label="aquire" href="api-ref/ado_pcm_hw_t.html#AcquireCallback"/>
+              <topic label="release" href="api-ref/ado_pcm_hw_t.html#ReleaseCallback"/>
+              <topic label="prepare" href="api-ref/ado_pcm_hw_t.html#PrepareCallback"/>
+              <topic label="trigger" href="api-ref/ado_pcm_hw_t.html#TriggerCallback"/>
+              <topic label="position" href="api-ref/ado_pcm_hw_t.html#PositionCallback"/>
+              <topic label="reconstitute" href="api-ref/ado_pcm_hw_t.html#ReconstituteCallback"/>
+              <topic label="capabilities" href="api-ref/ado_pcm_hw_t.html#CapabilitiesCallback"/>
+            </topic>
+          </topic>
+          <topic label="ado_pcm_subchn_caps" href="api-ref/ado_pcm_subchn_caps.html">
+            <topic label="Description:" href="api-ref/ado_pcm_subchn_caps.html#id7"/>
+          </topic>
+          <topic label="ado_pcm_subchn_is_channel" href="api-ref/ado_pcm_subchn_is_channel.html">
+            <topic label="Description:" href="api-ref/ado_pcm_subchn_is_channel.html#id7"/>
+          </topic>
+          <topic label="ado_pcm_subchn_mixer" href="api-ref/ado_pcm_subchn_mixer.html">
+            <topic label="Description:" href="api-ref/ado_pcm_subchn_mixer.html#id7"/>
+          </topic>
+          <topic label="ado_pcm_subchn_mixer_create" href="api-ref/ado_pcm_subchn_mixer_create.html">
+            <topic label="Description:" href="api-ref/ado_pcm_subchn_mixer_create.html#id7">
+              <topic label="ado_pcm_subchn_mixer_config_t structure" href="api-ref/ado_pcm_subchn_mixer_create.html#id9"/>
+            </topic>
+            <topic label="Examples:" href="api-ref/ado_pcm_subchn_mixer_create.html#id13"/>
+          </topic>
+          <topic label="ado_pcm_subchn_mixer_destroy" href="api-ref/ado_pcm_subchn_mixer_destroy.html">
+            <topic label="Description:" href="api-ref/ado_pcm_subchn_mixer_destroy.html#id7"/>
+          </topic>
+          <topic label="ado_pcm_sw_mix" href="api-ref/ado_pcm_sw_mix.html">
+            <topic label="Description:" href="api-ref/ado_pcm_sw_mix.html#id7"/>
+          </topic>
+          <topic label="ado_realloc" href="api-ref/ado_realloc.html">
+            <topic label="Description:" href="api-ref/ado_realloc.html#id7"/>
+          </topic>
+          <topic label="ado_rwlock_destroy" href="api-ref/ado_rwlock_destroy.html">
+            <topic label="Description:" href="api-ref/ado_rwlock_destroy.html#id7"/>
+          </topic>
+          <topic label="ado_rwlock_init" href="api-ref/ado_rwlock_init.html">
+            <topic label="Description:" href="api-ref/ado_rwlock_init.html#id7"/>
+          </topic>
+          <topic label="ado_rwlock_rdlock" href="api-ref/ado_rwlock_rdlock.html">
+            <topic label="Description:" href="api-ref/ado_rwlock_rdlock.html#id7"/>
+          </topic>
+          <topic label="ado_rwlock_unlock" href="api-ref/ado_rwlock_unlock.html">
+            <topic label="Description:" href="api-ref/ado_rwlock_unlock.html#id7"/>
+          </topic>
+          <topic label="ado_rwlock_wrlock" href="api-ref/ado_rwlock_wrlock.html">
+            <topic label="Description:" href="api-ref/ado_rwlock_wrlock.html#id7"/>
+          </topic>
+          <topic label="ado_shm_alloc" href="api-ref/ado_shm_alloc.html">
+            <topic label="Description:" href="api-ref/ado_shm_alloc.html#id7"/>
+          </topic>
+          <topic label="ado_shm_free" href="api-ref/ado_shm_free.html">
+            <topic label="Description:" href="api-ref/ado_shm_free.html#id7"/>
+          </topic>
+          <topic label="ado_shm_mmap" href="api-ref/ado_shm_mmap.html">
+            <topic label="Description:" href="api-ref/ado_shm_mmap.html#id7"/>
+          </topic>
+          <topic label="ado_strdup" href="api-ref/ado_strdup.html">
+            <topic label="Description:" href="api-ref/ado_strdup.html#id7"/>
+          </topic>
+          <topic label="dma_interrupt" href="api-ref/dma_interrupt.html">
+            <topic label="Description:" href="api-ref/dma_interrupt.html#id7"/>
+          </topic>
+      </topic>
+      <topic label="Supported Codecs" href="codecs.html">
+          <topic label="Audio Codec 97 (AC97)" href="codecs.html#ac97">
+            <topic label="DLL Name" href="codecs.html#id4"/>
+            <topic label="Header File" href="codecs.html#id6"/>
+            <topic label="Parameter Structure" href="codecs.html#id8"/>
+            <topic label="Supported Device Controls" href="codecs.html#id10"/>
+            <topic label="References" href="codecs.html#id12"/>
+          </topic>
+          <topic label="AK4531" href="codecs.html#ak4531">
+            <topic label="DLL Name" href="codecs.html#id15"/>
+            <topic label="Header File" href="codecs.html#id17"/>
+            <topic label="Parameter Structure" href="codecs.html#id19"/>
+            <topic label="Supported Device Controls" href="codecs.html#id21"/>
+            <topic label="Reference" href="codecs.html#id23"/>
+          </topic>
+      </topic>
+      <topic label="Sample Mixer Source" href="mixer-example.html"/>
+      <topic label="Glossary" href="glossary.html"/>
+</toc>

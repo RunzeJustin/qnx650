@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.qnx.tools.ide.updater"
+      label="%featureName"
+      version="4.7.0.201006232051"
+      provider-name="%providerName"
+      plugin="com.qnx.tools.ide.updater">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import feature="com.qnx.tools.ide" version="4.6.0"/>
+   </requires>
+
+   <plugin
+         id="com.qnx.tools.ide.updater"
+         download-size="0"
+         install-size="0"
+         version="4.7.0.201006232051"/>
+
+</feature>

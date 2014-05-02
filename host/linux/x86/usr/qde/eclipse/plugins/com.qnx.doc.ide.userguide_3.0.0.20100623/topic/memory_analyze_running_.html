@@ -1,0 +1,118 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="task" />
+      <meta name="DC.Title" content="Analyzing a running program" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Using_Memory_Analysis.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Analyzing_shared_objects_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_GUI_Options_AndEnVars.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Analyzingarunningprogram" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Analyzing a running program</title>
+   </head>
+   <body id="Analyzingarunningprogram"><a name="Analyzingarunningprogram" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Analyzing a running program</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <div class="p"> Once the program is running, you can attach the Memory Analysis perspective and
+            gather your data. For more information, see <a href="memory_attach_debug_malloc_.html" shape="rect">Attaching to a running process</a> in this chapter. 
+            <div class="note"><span class="notetitle">Note:</span> If a program uses <em>fork</em>(), the control thread of the
+               Memory Analysis tool must be disabled. <em>fork</em>() works only with single threaded
+               programs. 
+            </div>
+            
+         </div>
+         
+         
+         <div class="section">To disable the control thread option for memory analysis:</div>
+         
+         
+         <ol>
+            <li>
+               <span>From an existing launch configuration, select the <span class="uicontrol">Tools</span>
+                  tab.</span>
+               
+            </li>
+            <li>
+               <span>If the Memory Analysis tool is not currently enabled, select <span class="uicontrol">Add/Delete Tool</span>, select <span class="uicontrol">Memory Analysis</span>,
+                  then click <span class="uicontrol">OK</span>.</span>
+               
+            </li>
+            <li>
+               <span>Expand <span class="uicontrol">Advanced Settings</span>.</span>
+               
+            </li>
+            <li>
+               <span>Disable the <span class="uicontrol">Create control thread</span> option if it is
+                  currently enabled.</span>
+               
+            </li>
+            <li>
+               <span>Click <span class="uicontrol">Apply</span>.</span>
+               
+            </li>
+            <li>
+               <span>Click <span class="uicontrol">Run</span>.</span>
+               
+            </li>
+         </ol>
+         
+         
+         <div class="section">
+            
+            <div class="note"><span class="notetitle">Note:</span> For information about the <span class="uicontrol">Create control thread</span> option, see
+               <a href="memory_Analyzing_shared_objects_.html" shape="rect">Memory analysis of shared objects</a> in this chapter.
+            </div>
+            
+            
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/memory_Using_Memory_Analysis.html" shape="rect">Advanced topics</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/memory_Analyzing_shared_objects_.html" shape="rect">Memory analysis of shared objects</a></div>
+            
+            <div><a href="../topic/memory_GUI_Options_AndEnVars.html" shape="rect">GUI interface options and environment variables for the Memory Analysis Tool</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cheatsheet title="System Information" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="cheatsheet" xsi:schemaLocation="cheatsheet contentFile.xsd">
+  <intro href="/com.qnx.doc.ide.userguide/topic/sysinfo_Base_.html">
+    <description>
+      Welcome to the "System Information" tutorial. 
+      It will help you to get acquainted with the "System
+      Information" perspective.
+    </description>
+  </intro>
+  <item href="/org.eclipse.platform.doc.user/reference/ref-cheatsheets.htm" title="Cheat Sheet introduction">
+  <description>If you need information about how to work with cheat sheets,
+   click on the  button with the question mark on the right. 
+   To see the contents of the next instruction,
+   you must complete all tasks by 
+   clicking on "Click to Complete", or by performing the 
+   auto-complete command.</description>
+  </item>
+  <item title="Open Perspective"
+    href="/com.qnx.doc.ide.userguide/topic/sysinfo_Target_navigator_.html">
+    <description>
+      Switch to the "System Information" perspective. Open "Window->Open Perspective->Other..->QNX
+      System Information" from main menu. Click on "Click to Perform" to automatically open the
+      perspective.
+    </description>
+    <command confirm="true"
+      serialization="org.eclipse.ui.perspectives.showPerspective(org.eclipse.ui.perspectives.showPerspective.perspectiveId=com.qnx.tools.ide.sysinfo.perspective)" />
+  </item>
+  <item title="Create Target" skip="true" dialog="true"
+    href="/com.qnx.doc.ide.userguide/topic/target_connect_ip_.html">
+    <description>
+      If a target project does not already
+      exist, you can create one in the "Target Navigator" view by
+      right clicking on the canvas and selecting "New QNX Target..." menu. 
+      In the dialog, enter the name
+      of the target (any name) and IP address or host name of the target machine.
+    </description>
+  </item>
+  <item title="System Summary"
+    href="/com.qnx.doc.ide.userguide/topic/sysinfo_System_summary_.html">
+    <description>
+      Switch to the "System Summary" view. It represents the process information on currently running
+      processes. Select a target in the "Target Navigator" view to see the processes data.
+    </description>
+  </item>
+  <item title="Process Information view"
+    href="/com.qnx.doc.ide.userguide/topic/sysinfo_Process_information_.html">
+    <description>
+      Switch to the "Process Information" view. Select the "qconn" process in the "Target Navigator" -
+      "Process Information" updates. Holding Ctrl key select the "procnto" process.
+    </description>
+    <command
+      serialization="org.eclipse.ui.views.showView(org.eclipse.ui.views.showView.viewId=com.qnx.tools.ide.sysinfo.internal.ui.processview)"
+      confirm="true" />
+  </item>
+  <item title="Memory Information view"
+    href="/com.qnx.doc.ide.userguide/topic/sysinfo_Memory_information_.html">
+    <description>
+      The Memory Information view displays the memory used by the process you select in the Target
+      Navigator view. Switch to the "Memory Information" view. Select the "qconn" process in the "Target
+      Navigator" - view updates.
+    </description>
+    <command
+      serialization="org.eclipse.ui.views.showView(org.eclipse.ui.views.showView.viewId=com.qnx.tools.ide.sysinfo.internal.ui.memview)"
+      confirm="true" />
+  </item>
+  <item title="System Blocking Graph"
+    href="/com.qnx.doc.ide.userguide/topic/sysinfo_System_blocking_graph_.html">
+    <description>
+      The System Blocking Graph view presents a color-coded display of all the active channels in
+      the system, and illustrates the interaction of the threads with those channels. The Memory
+      Information view displays the memory used by the process you select in the Target Navigator
+      view.
+    </description>
+    <subitem label='Open the view by selecting "Window->Show View->System Blocking Graph".'>
+      <command
+        serialization="org.eclipse.ui.views.showView(org.eclipse.ui.views.showView.viewId=com.qnx.tools.ide.sysinfo.internal.ui.blockedview)"
+        confirm="true" />
+    </subitem>
+    <subitem label='Select a "qconn" process to see a graph.'></subitem>
+  </item>
+  <item title="System Resources"
+    href="/com.qnx.doc.ide.userguide/topic/sysinfo_System_resources_.html">
+    <description>
+      The System Resources view shows various types of information about your system's processes.
+    </description>
+    <subitem label="Open view">
+      <command
+        serialization="org.eclipse.ui.views.showView(org.eclipse.ui.views.showView.viewId=com.qnx.tools.ide.sysinfo.internal.ui.usageview)"
+        confirm="true" />
+    </subitem>
+    <subitem label='Select the "System Uptime" mode by clicking drop down button (v) in the top right corner of the "System Resources" view.'>
+   
+    </subitem>
+    <subitem label="Click the &quot;Highlight&quot; button (looks like a yellow marker) in the view's toolbar to highlight changes to the display since the last update."></subitem>
+  </item>
+</cheatsheet>

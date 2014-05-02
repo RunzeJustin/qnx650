@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Photon Japanese Input Method (English)">
+    <topic label="Japanese Input Method (VPIM)" href="about.html">
+      <topic label="VJE Toolbar and Japanese Input" href="intro.html"/>
+      <topic label="Basic VJE Operations" href="basics.html"/>
+      <topic label="Conversion" href="conversion.html"/>
+      <topic label="Mode Options" href="option.html"/>
+      <topic label="Appendix A: About the Photon Editor" href="app_a.html"/>
+      <topic label="Appendix B: VJE Keystrokes Summary" href="app_b.html"/>
+      <topic label="Appendix C: Notes on Roman Input" href="app_c.html"/>
+      <topic label="Appendix D: Kana Chart for Roman Input" href="app_d.html"/>
+    </topic>
+</toc>

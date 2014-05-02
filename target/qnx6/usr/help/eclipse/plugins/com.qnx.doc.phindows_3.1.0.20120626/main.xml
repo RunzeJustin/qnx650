@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="QNX Momentics Phindows Connectivity Tool User's Guide"
+     topic="topic/coverpage.html">
+   <topic label="How to Use This Guide" href="topic/about.html"/>
+   <topic label="Getting started with Phindows" href="topic/con_getstarted.html">
+      <topic label="Starting Phindows" href="topic/about_Starting.html"/>
+      <topic label="Configuring Phindows for TCP/IP use" href="topic/config_TCPIP.html"/>
+      <topic label="Data-compression options" href="topic/con_datacompression.html"/>
+      <topic label="Data-caching options" href="topic/con_datacaching.html"/>
+      <topic label="Using Windows fonts" href="topic/task_usingwindowsfonts.html"/>
+      <topic label="Using snapshot or PgReadScreen()" href="topic/con_snapshot.html"/>
+   </topic>
+   <topic label="Using the command-line options" href="topic/con_commandline.html">
+      <topic label="Command-line options" href="topic/con_Options_.html"/>
+      <topic label="Dittoing remote QNX Photon sessions" href="topic/con_dittoing.html"/>
+      <topic label="Connecting to a remote Photon session" href="topic/task_connecting.html"/>
+      <topic label="Starting Photon sessions on other QNX nodes"
+             href="topic/task_startingothernodes.html"/>
+      <topic label="Spanning a single Photon session across multiple screens"
+             href="topic/con_spanning.html"/>
+      <topic label="Sharing a Photon session (workgroup computing)"
+             href="topic/con_sharing.html"/>
+      <topic label="Enabling offscreen context support" href="topic/con_offscreen.html"/>
+      <topic label="Using predefined Photon services" href="topic/con_predefined.html"/>
+   </topic>
+   <topic label="Configuring Phindows" href="topic/con_config.html">
+      <topic label="Configuring Phindows environment variables" href="topic/con_envars.html"/>
+      <topic label="Setting up an embedded target" href="topic/con_embedded.html"/>
+   </topic>
+</toc>

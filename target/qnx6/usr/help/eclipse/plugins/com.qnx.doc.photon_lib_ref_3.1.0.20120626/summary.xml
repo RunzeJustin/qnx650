@@ -1,0 +1,3674 @@
+<function_summary>
+<function
+   name="AbGetABW"
+   summary="Return the widget's instance pointer"
+   synopsis="PtWidget_t *AbGetABW( int wgt_name );\n"
+/>
+<function
+   name="AlClearTranslation"
+   summary="Clear all the translations in a language or message database"
+   synopsis="#include &lt;photon/Al.h&gt;\n void AlClearTranslation( AlDataBase_t *db );\n"
+/>
+<function
+   name="AlCloseDBase"
+   summary="Close a language or message database"
+   synopsis="#include &lt;photon/Al.h&gt;\n void AlCloseDBase( AlDataBase_t *db );\n"
+/>
+<function
+   name="AlGetEntry"
+   summary="Get an entry from a language or message database"
+   synopsis="#include &lt;photon/Al.h&gt;\n const AlTextEntry_t *AlGetEntry( AlDataBase_t const *db, unsigned n );\n"
+/>
+<function
+   name="AlGetSize"
+   summary="Get the number of records in a language or message database"
+   synopsis="#include &lt;photon/Al.h&gt;\n unsigned AlGetSize( AlDataBase_t const *db );\n"
+/>
+<function
+   name="AlOpenDBase"
+   summary="Load a language or message database"
+   synopsis="#include &lt;photon/Al.h&gt;\n AlDataBase_t *AlOpenDBase( const char *path );\n"
+/>
+<function
+   name="AlReadTranslation"
+   summary="Read a translation file into a database"
+   synopsis="#include &lt;photon/Al.h&gt;\n int AlReadTranslation( AlDataBase_t *db, const char *path );\n"
+/>
+<function
+   name="AlSaveTranslation"
+   summary="Save translations from a language or message database"
+   synopsis="#include &lt;photon/Al.h&gt;\n int AlSaveTranslation( AlDataBase_t const *db, const char *path );\n"
+/>
+<function
+   name="AlSetEntry"
+   summary="Set the translated string for a database entry"
+   synopsis="#include &lt;photon/Al.h&gt;\n int AlSetEntry( AlDataBase_t *db, unsigned n, const char *string );\n"
+/>
+<function
+   name="ApAddClass"
+   summary="Indicate the widgets likely to be encountered in a widget database"
+   synopsis="#include &lt;Ap.h&gt;\n int ApAddClass( char const * class_name_string, PtWidgetClassRef_t * const *wgt_class);\n"
+/>
+<function
+   name="ApAddContext"
+   summary="Add a PhAB context so you can use a PhAB application as a DLL"
+   synopsis="#include &lt;Ap.h&gt;\n int ApAddContext( ApContext_t *context, const char *exe_path );\n"
+/>
+<function
+   name="ApAppendTranslation"
+   summary="Append external translation files to an application's translation list"
+   synopsis="#include &lt;Ap.h&gt;\n int ApAppendTranslation( char const *filename, char const *lang_extension );\n"
+/>
+<function
+   name="ApCloseDBase"
+   summary="Close a widget database"
+   synopsis="#include &lt;Ap.h&gt;\n int ApCloseDBase( ApDBase_t *db );\n"
+/>
+<function
+   name="ApCloseMessageDB"
+   summary="Close a message database"
+   synopsis="void ApCloseMessageDB( ApMsgDBase_t *db );\n"
+/>
+<function
+   name="ApCopyDBWidget"
+   summary="Copy a widget from a PhAB widget database"
+   synopsis="#include &lt;Ap.h&gt;\n int ApCopyDBWidget( ApDBase_t const *from_dbase, char const *from_name, ApDBase_t *to_dbase, char const *to_name );\n"
+/>
+<function
+   name="ApCreateDBWidget"
+   summary="Create a widget by copying it from a PhAB widget database, specifying a parent"
+   synopsis="#include &lt;Ap.h&gt;\n PtWidget_t *ApCreateDBWidget( ApDBase_t const *db, char const *wgt_name, PtWidget_t *parent, PhPoint_t const *pos, int nargs, PtArg_t const *args );\n"
+/>
+<function
+   name="ApCreateDBWidgetFamily"
+   summary="Create a widget family by copying it from a PhAB widget database, specifying a parent"
+   synopsis="#include &lt;Ap.h&gt;\n PtWidget_t *ApCreateDBWidgetFamily( ApDBase_t const *db, char const *wgt_name, PtWidget_t *parent, PhPoint_t const *pos, int nargs, PtArg_t const *args );\n"
+/>
+<function
+   name="ApCreateModule"
+   summary="Create an instance of a module that was built with PhAB"
+   synopsis="#include &lt;Ap.h&gt;\n PtWidget_t * ApCreateModule( ApEventLink_t const *link_callback, PtWidget_t *widget, PtCallbackInfo_t *cbinfo );\n"
+/>
+<function
+   name="ApCreateWidget"
+   summary="Create a widget by copying it from a PhAB widget database"
+   synopsis="#include &lt;Ap.h&gt;\n PtWidget_t *ApCreateWidget( ApDBase_t const *db, char const *wgt_name, int x, int y, int nargs, PtArg_t const *args );\n"
+/>
+<function
+   name="ApCreateWidgetFamily"
+   summary="Create a widget family by copying it from a PhAB widget database"
+   synopsis="#include &lt;Ap.h&gt;\n PtWidget_t *ApCreateWidgetFamily( ApDBase_t const *db, char const *wgt_name, int x, int y, int nargs, PtArg_t const *args );\n"
+/>
+<function
+   name="ApDeleteDBWidget"
+   summary="Remove widgets from a widget database"
+   synopsis="#include &lt;Ap.h&gt;\n int ApDeleteDBWidget( ApDBase_t *db, char const *wgt_name );\n"
+/>
+<function
+   name="ApError"
+   summary="Display an error message dialog"
+   synopsis="#include &lt;Ap.h&gt;\n void ApError( PtWidget_t *widget, int errnum, char const *app_prefix, char const *error_message, char const *location );\n"
+/>
+<function
+   name="ApGetDBWidgetInfo"
+   summary="Get information about a widget in a widget database"
+   synopsis="ApDBWidgetInfo_t *ApGetDBWidgetInfo( ApDBase_t const *dbase, unsigned index, ApDBWidgetInfo_t *info );\n"
+/>
+<function
+   name="ApGetImageRes"
+   summary="Extract the image data from a widget in a widget database"
+   synopsis="#include &lt;Ap.h&gt;\n PhImage_t *ApGetImageRes( ApDBase_t const *dbase, char const *wgt_name );\n"
+/>
+<function
+   name="ApGetInstance"
+   summary="Get the module link instance pointer for a widget"
+   synopsis="#include &lt;Ap.h&gt;\n PtWidget_t *ApGetInstance( PtWidget_t *widget );\n"
+/>
+<function
+   name="ApGetItemText"
+   summary="Get the text for a menu item"
+   synopsis="#include &lt;Ap.h&gt;\n char * ApGetItemText( ApMenuLink_t *menu, int item_name);\n"
+/>
+<function
+   name="ApGetMessage"
+   summary="Get a message from a message database"
+   synopsis="char *ApGetMessage( ApMsgDBase_t *db, const char *tag );\n"
+/>
+<function
+   name="ApGetTextRes"
+   summary="Get a translated text string from a widget database"
+   synopsis="#include &lt;Ap.h&gt;\n char *ApGetTextRes( ApDBase_t const *db, char const *name );\n"
+/>
+<function
+   name="ApGetWidgetPtr"
+   summary="Get the instance pointer for a widget in a given module"
+   synopsis="#include &lt;Ap.h&gt;\n PtWidget_t *ApGetWidgetPtr( PtWidget_t *link_instance, int wgt_name );\n"
+/>
+<function
+   name="ApInitialize"
+   summary="Initialize an application given a set of options"
+   synopsis="#include &lt;Ap.h&gt;\n int ApInitialize( int argc, char *argv[], ApContext_t *context );\n"
+/>
+<function
+   name="ApInstanceName"
+   summary="Return the widget's instance name string"
+   synopsis="#include &lt;Ap.h&gt;\n char * ApInstanceName( PtWidget_t *widget );\n"
+/>
+<function
+   name="ApLoadMessageDB"
+   summary="Load a message database"
+   synopsis="ApMsgDBase_t *ApLoadMessageDB( ApMsgDBase_t *db, const char *name );\n"
+/>
+<function
+   name="ApLinkWindow"
+   summary="Open a window"
+   synopsis="#include &lt;Ap.h&gt;\n PtWidget_t ApLinkWindow( PtWidget_t *widget, ApEventLink_t const *l, PtCallbackInfo_t *cbinfo );\n"
+/>
+<function
+   name="ApModalWait"
+   summary="Process Photon events until a given widget is destroyed"
+   synopsis="int ApModalWait( PtWidget_t *widget, unsigned flags );\n"
+/>
+<function
+   name="ApModifyItemAccel"
+   summary="Modify the keyboard shortcut for a menu item"
+   synopsis="int ApModifyItemAccel( ApMenuLink_t *menu, int item_no, const char *new_text, int new_flags );\n"
+/>
+<function
+   name="ApModifyItemState"
+   summary="Modify the state of menu items"
+   synopsis="#include &lt;Ap.h&gt;\n int ApModifyItemState( ApMenuLink_t *menu, int state, int item_no, item_no, ..., NULL );\n"
+/>
+<function
+   name="ApModifyItemText"
+   summary="Modify the text for a menu item"
+   synopsis="#include &lt;Ap.h&gt;\n int ApModifyItemText( ApMenuLink_t *menu, int item_num, char const *new_text );\n"
+/>
+<function
+   name="ApModuleFunction"
+   summary="Specify the setup function for a PhAB internal link callback"
+   synopsis="#include &lt;Ap.h&gt;\n void ApModuleFunction( ApEventLink_t *link_callback, int (* function)(), int realize_flags );\n"
+/>
+<function
+   name="ApModuleLocation"
+   summary="Specify the module location for a PhAB internal link"
+   synopsis="#include &lt;Ap.h&gt;\n void ApModuleLocation( ApEventLink_t *link_callback, int loc_type, int x_offset, int y_offset );\n"
+/>
+<function
+   name="ApModuleParent"
+   summary="Specify the parent for a window or dialog module"
+   synopsis="#include &lt;Ap.h&gt;\n void ApModuleParent( ApEventLink_t *link_callback, int parent, PtWidget_t *widget );\n"
+/>
+<function
+   name="ApName"
+   summary="Return a PhAB name value for the specified widget"
+   synopsis="#include &lt;Ap.h&gt;\n int ApName( PtWidget_t *widget );\n"
+/>
+<function
+   name="ApOpenDBase"
+   summary="Open a module as a widget database"
+   synopsis="#include &lt;Ap.h&gt;\n ApDBase_t *ApOpenDBase( ApEventLink_t const *link_callback );\n"
+/>
+<function
+   name="ApOpenDBaseFile"
+   summary="Open an external module file as a widget database"
+   synopsis="#include &lt;Ap.h&gt;\n ApDBase_t *ApOpenDBaseFile( char const *path );\n"
+/>
+<function
+   name="ApRemoveClass"
+   summary="Remove a widget class"
+   synopsis="#include &lt;Ap.h&gt;\n int ApRemoveClass( char const * class_name_string, PtWidgetClassRef_t * const *wgt_class);\n"
+/>
+<function
+   name="ApRemoveContext"
+   summary="Remove the PhAB context from a PhAB application that you're using as a DLL"
+   synopsis="int ApRemoveContext( ApContext_t *context );\n"
+/>
+<function
+   name="ApResClose"
+   summary="Close the file of module resource records"
+   synopsis="void ApResClose ( void );\n"
+/>
+<function
+   name="ApSaveDBaseFile"
+   summary="Save a widget database as an external file"
+   synopsis="#include &lt;Ap.h&gt;\n int ApSaveDBaseFile( ApDBase_t const *db, char const *path );\n"
+/>
+<function
+   name="ApSetContext"
+   summary="Set the PhAB context"
+   synopsis="#include &lt;Ap.h&gt;\n ApContext_t *ApSetContext( ApContext_t *context );\n"
+/>
+<function
+   name="ApSetTranslation"
+   summary="Change the current translation to another language"
+   synopsis="#include &lt;Ap.h&gt;\n int ApSetTranslation( char const *lang_ext );\n"
+/>
+<function
+   name="ApWidget"
+   summary="Determine the widget that initiated a link callback"
+   synopsis="#include &lt;Ap.h&gt;\n PtWidget_t *ApWidget( PtCallbackInfo_t *cbinfo );\n"
+/>
+<function
+   name="PdCreateDirectContext"
+   summary="Create a direct-mode context"
+   synopsis="PdDirectContext_t *PdCreateDirectContext( void );\n"
+/>
+<function
+   name="PdCreateOffscreenContext"
+   summary="Create an offscreen context"
+   synopsis="PdOffscreenContext_t *PdCreateOffscreenContext( unsigned long ImageType, unsigned short width, unsigned short height, unsigned long flags );\n"
+/>
+<function
+   name="PdCreateOffscreenContextGF"
+   summary="Create a GF offscreen context"
+   synopsis="PdOffscreenContext_t *PdCreateOffscreenContextGF( gf_surface_t surface);\n"
+/>
+<function
+   name="PdCreateOffscreenLock"
+   summary="Create a lock for an offscreen context"
+   synopsis="int PdCreateOffscreenLock( PdOffscreenContext_t *osc, PdOSCCreateLockParams_t *params );\n"
+/>
+<function
+   name="PdDestroyOffscreenLock"
+   summary="Destroy a lock for an offscreen context"
+   synopsis="int PdDestroyOffscreenLock( PdOffscreenContext_t *osc );\n"
+/>
+<function
+   name="PdDirectStart"
+   summary="Enter direct mode"
+   synopsis="PhDrawContext_t *PdDirectStart( PdDirectContext_t *DirectContext );\n"
+/>
+<function
+   name="PdDirectStop"
+   summary="Leave direct mode"
+   synopsis="PhDrawContext_t *PdDirectStop( PdDirectContext_t *DirectContext );\n"
+/>
+<function
+   name="PdDupOffscreenContext"
+   summary="Duplicate an offscreen context"
+   synopsis="PdOffscreenContext_t * PdDupOffscreenContext( PdOffscreenContext_t *context, unsigned long flags );\n"
+/>
+<function
+   name="PdGetDevices"
+   summary="Get region IDs for the currently available draw devices"
+   synopsis="int PdGetDevices( PhRid_t *rid_array, uint32_t max_rids );\n"
+/>
+<function
+   name="PdGetOffscreenContextPtr"
+   summary="Create a shared memory object reference to an offscreen context"
+   synopsis="void *PdGetOffscreenContextPtr( PdOffscreenContext_t *osc );\n"
+/>
+<function
+   name="PdGetOffscreenSurface"
+   summary="Get an offscreen surface handle"
+   synopsis="PgSurface_t *PtGetOffscreenSurface( PdOffscreenContext_t *osc );\n"
+/>
+<function
+   name="PdIsOffscreenLocked"
+   summary="Determine whether or not an offscreen context is locked"
+   synopsis="int PdIsOffscreenLocked( PdOffscreenContext_t *osc );\n"
+/>
+<function
+   name="PdLockOffscreen"
+   summary="Lock an offscreen context"
+   synopsis="int PdLockOffscreen( PdOffscreenContext_t *osc, PdOSCLockParams_t *params );\n"
+/>
+<function
+   name="PdReleaseDirectContext"
+   summary="Leave direct mode and release the direct-mode context"
+   synopsis="void PdReleaseDirectContext( PdDirectContext_t *DirectContext );\n"
+/>
+<function
+   name="PdSetOffscreenTranslation"
+   summary="Set the translation for an offscreen context"
+   synopsis="int PdSetOffscreenTranslation( PdOffscreenContext_t *osc, PhPoint_t *trans );\n"
+/>
+<function
+   name="PdSetTargetDevice"
+   summary="Set the target device"
+   synopsis="PhRid_t PdSetTargetDevice ( const void *dc, PhRid_t device_rid );\n"
+/>
+<function
+   name="PdUnlockOffscreen"
+   summary="Unlock an offscreen context"
+   synopsis="int PdUnlockOffscreen( PdOffscreenContext_t *osc );\n"
+/>
+<function
+   name="PfAllocDetailsCx"
+   summary="Retrieve render buffer details"
+   synopsis="#include &lt;font_api.h&gt;\n int PfAllocDetailsCx( struct _Pf_ctrl * context, char const ** name, long * size );\n"
+/>
+<function
+   name="PfAllocRenderCx"
+   summary="Allocate, or reallocate, a render buffer"
+   synopsis="#include &lt;font_api.h&gt;\n int PfAllocRenderCx( struct _Pf_ctrl * context, long size );\n"
+/>
+<function
+   name="PfAssignDllCx"
+   summary="Assign a context to a local font server"
+   synopsis="#include &lt;font_api.h&gt;\n int PfAssignDllCx( struct _Pf_ctrl * context, fontdll_t dll );\n"
+/>
+<function
+   name="PfAttach, PfAttachCx"
+   summary="Attach to a font server"
+   synopsis="#include &lt;photon/Pf.h&gt;\n struct _Pf_ctrl *PfAttach( const char *device, long size );\n #include &lt;font_api.h&gt;\n struct _Pf_ctrl* PfAttachCx( const char *device, long size );\n"
+/>
+<function
+   name="PfAttachDllCx"
+   summary="Attach to a local font server"
+   synopsis="#include &lt;font_api.h&gt;\n struct _Pf_ctrl* PfAttachDllCx( fontdll_t dll, long size );\n"
+/>
+<function
+   name="PfAttachLocalDll"
+   summary="Load a local font DLL"
+   synopsis="#include &lt;font_api.h&gt;\n fontdll_t PfAttachLocalDll( char const * options, char const * schema );\n"
+/>
+<function
+   name="PfAttachServerDll"
+   summary="Load a font server"
+   synopsis="#include &lt;font_api.h&gt;\n int PfAttachServerDll( fontdll_t dll, int prio, char const *device );\n"
+/>
+<function
+   name="PfAttachSleuthMonitorDll"
+   summary="Start a fontsleuth monitor"
+   synopsis="#include &lt;font_api.h&gt;\n int PfAttachSleuthMonitorDll (fontdll_t dll, int prio );\n"
+/>
+<function
+   name="PfConvertFontID, PfConvertFontIDCx"
+   summary="Convert a font ID to a font name for backwards compatibility"
+   synopsis="#include &lt;photon/Pf.h&gt;\n char *PfConvertFontID( FontID *ptsID );\n #include &lt;font_api.h&gt;\n char* PfConvertFontIDCx( struct _Pf_ctrl * context, FontID * ptsID, char * szTag );\n"
+/>
+<function
+   name="PfConvertPixelsToPointSizeCx"
+   summary="Convert pixel height to point size"
+   synopsis="#include &lt;font_api.h&gt;\n FontID* PfConvertPixelsToPointSizeCx( struct _Pf_ctrl * context, char const * description, int flags, uint32_t pixel_height );\n"
+/>
+<function
+   name="PfDecomposeStemToID, PfDecomposeStemToIDCx"
+   summary="Convert a stem name into a font ID"
+   synopsis="#include &lt;photon/Pf.h&gt;\n FontID * PfDecomposeStemToID( char const *pkszStem );\n #include &lt;font_api.h&gt;\n FontID* PfDecomposeStemToIDCx( struct _Pf_ctrl * context, char const * pkszStem );\n"
+/>
+<function
+   name="PfDefaultContext"
+   summary="Return the default font context"
+   synopsis="#include &lt;photon/Pf.h&gt;\n _Pf_ctrl PfDefaultContext ( void );\n"
+/>
+<function
+   name="PfDetach, PfDetachCx"
+   summary="Detach from font server"
+   synopsis="#include &lt;photon/Pf.h&gt;\n void PfDetach( struct _Pf_ctrl *pf );\n #include &lt;font_api.h&gt;\n void PfDetachCx( struct _Pf_ctrl * pf );\n"
+/>
+<function
+   name="PfDetachLocalDll"
+   summary="Unload a local server"
+   synopsis="#include &lt;font_api.h&gt;\n int PfDetachLocalDll( fontdll_t dll );\n"
+/>
+<function
+   name="PfDynamicFontIDCx"
+   summary="Retrieve a dynamic font ID"
+   synopsis="#include &lt;font_api.h&gt;\n long PfDynamicFontIDCx( struct _Pf_ctrl * context, char const * path );\n"
+/>
+<function
+   name="PfDynamicLoad, PfDynamicLoadCx"
+   summary="Dynamically load a font"
+   synopsis="#include &lt;photon/Pf.h&gt;\n long PfDynamicLoad( char const *pkcFontFile, char *pszDescription );\n #include &lt;photon/Pf.h&gt;\n long PfDynamicLoadCx( struct _Pf_ctrl * context, char const * pkcFontFile, FontDescription pszDescription );\n"
+/>
+<function
+   name="PfDynamicUnload, PfDynamicUnloadCx"
+   summary="Unload a dynamically loaded font"
+   synopsis="#include &lt;photon/Pf.h&gt;\n long PfDynamicUnload( long lDynamicFontID );\n #include &lt;font_api.h&gt;\n long PfDynamicUnloadCx( struct _Pf_ctrl * context, long lDynamicFontID );\n"
+/>
+<function
+   name="PfExtent"
+   summary="Calculate the extent rectangle of a text string"
+   synopsis="#include &lt;photon/Pf.h&gt;\n int PfExtent( PhRect_t *extent, PhPoint_t const *pos, const char *font, long adata, long bdata, const char *str, int len, int flags, PhRect_t const *clip );\n"
+/>
+<function
+   name="PfExtentCx "
+   summary="Calculate the extent rectangle of a text string given a font context"
+   synopsis="#include &lt;font_api.h&gt;\n int PfExtentCx( struct _Pf_ctrl *context, pf_rect_t *extent, pf_point_t const *pos, const char *font, long adata, long bdata, const char *str, int len, int flags, pf_rect_t const *clip );\n"
+/>
+<function
+   name="PfExtent16dot16"
+   summary="Calculate the 16.16 fixed point extent rectangle of a text string"
+   synopsis="#include &lt;photon/Pf.h&gt;\n int PfExtent16dot16( PhRect16dot16_t *extent, PhPoint16dot16_t const *pos, const char *font, long adata, long bdata, const char *str, int len, int flags, PhRect_t const *clip );\n"
+/>
+<function
+   name="PfExtent16dot16Cx"
+   summary="Calculate the 16.16 fixed point extent rectangle of a text string"
+   synopsis="#include &lt;font_api.h&gt;\n int PfExtent16dot16Cx( struct _Pf_ctrl *context, pf_rect_16dot16_t *extent, pf_point_16dot16_t const *pos, const char *font, long adata, long bdata, const char *str, int len, int flags, pf_rect_t const *clip );\n"
+/>
+<function
+   name="PfExtentComponents, PfExtentComponentsCx"
+   summary="Calculate the extent of a text string and invoke a callback"
+   synopsis="#include &lt;photon/Pf.h&gt;\n PhRect_t *PfExtentComponents( PhRect_t *extent, PhPoint_t const *pos, const char *font, const char *str, int len, void (*func)(PhRect_t *, const char *, const char *, int) );\n #include &lt;font_api.h&gt;\n pf_rect_t* PfExtentComponentsCx( struct _Pf_ctrl *context, pf_rect_t *extent, pf_point_t const *pos, const char *font, const char *string, int len, void(*func) (pf_rect_t const *, const char *, const char *, int) );\n"
+/>
+<function
+   name="PfExtentFractTextCharPositions"
+   summary="Calculate individual character positions, using fractional scaling"
+   synopsis="#include &lt;photon/Pf.h&gt;\n int PfExtentFractTextCharPositions( PhRect_t * ptsExtent, PhPoint_t * ptsPos, char * psz, const char * pckFont, int32_t * piIndices, int32_t * piPenPositions, int32_t iArrayLen, uint32_t ulFlags, int32_t iBytes, uint32_t uiExtentLen, PhRect_t const * pktsClip, uint32_t uiXscale, uint32_t uiYscale );\n"
+/>
+<function
+   name="PfExtentText"
+   summary="Calculate the extent rectangle of a text string"
+   synopsis="#include &lt;photon/Pf.h&gt;\n PhRect_t *PfExtentText( PhRect_t *extent, PhPoint_t const *pos, const char *font, const char *str, int len);\n"
+/>
+<function
+   name="PfExtentTextCharPositions, PfExtentTextCharPositionsCx"
+   summary="Calculate individual character positions"
+   synopsis="#include &lt;photon/Pf.h&gt;\n int PfExtentTextCharPositions( PhRect_t * ptsExtent, PhPoint_t * ptsPos, char * psz, const char * pckFont, int32_t * piIndices, int32_t * piPenPositions, int32_t iArrayLen, uint32_t ulFlags, int32_t iBytes, uint32_t uiExtentLen, PhRect_t const * pktsClip );\n #include &lt;photon/Pf.h&gt;\n int PfExtentTextCharPositionsCx( struct _Pf_ctrl *context, PhRect_t *ptsExtent, PhPoint_t *ptsPos, char *psz, const char *pckFont, long adata, long bdata, int32_t *piIndices, int32_t *piPenPositions, int32_t iArrayLen, uint32_t ulFlags, int32_t iBytes, uint32_t uiExtentLen, PhRect_t const *pktsClip );\n"
+/>
+<function
+   name="PfExtentTextToRect"
+   summary="Calculate the extent of a string, up to a given rectangle"
+   synopsis="#include &lt;photon/Pf.h&gt;\n int PfExtentTextToRect(PhRect_t *ptsExtent, char *pkszFont, PhRect_t *ptsRect, char const *pkszString, int iLen );\n"
+/>
+<function
+   name="PfExtentWideText"
+   summary="Calculate the extent rectangle of a wide-character string"
+   synopsis="#include &lt;photon/Pf.h&gt;\n PhRect_t *PfExtentWideText( PhRect_t *extent, PhPoint_t const *pos, const char *font, const uint16_t *str, int len);\n"
+/>
+<function
+   name="PfFindFont, PfFindFontCx"
+   summary="Generate an ID for a font"
+   synopsis="#include &lt;photon/Pf.h&gt;\n FontID * PfFindFont( char const * pkcDescription, uint32_t kulFlags, uint32_t kulSize );\n #include &lt;font_api.h&gt;\n FontID* PfFindFontCx ( struct _Pf_ctrl * context, char const * pkcDescription, uint32_t const kulFlags, uint32_t const kulSize );\n"
+/>
+<function
+   name="PfFontBaseStem, PfFontBaseStemCx"
+   summary="Get the base stem associated with a given font ID"
+   synopsis="#include &lt;photon/Pf.h&gt;\n char const * PfFontBaseStem( FontID *ptsID );\n #include &lt;font_api.h&gt;\n char const* PfFontBaseStemCx( struct _Pf_ctrl * context, FontID * ptsID );\n"
+/>
+<function
+   name="PfFontDescription, PfFontDescriptionCx"
+   summary="Get the foundry name of a font"
+   synopsis="#include &lt;photon/Pf.h&gt;\n char const *PfFontDescription( FontID *ptsID );\n #include &lt;font_api.h&gt;\n char const* PfFontDescriptionCx( struct _Pf_ctrl * context, FontID * ptsID );\n"
+/>
+<function
+   name="PfFontFlags, PfFontFlagsCx"
+   summary="Get the flags for a font"
+   synopsis="#include &lt;photon/Pf.h&gt;\n uint32_t PfFontFlags( FontID *ptsID );\n #include &lt;font_api.h&gt;\n uint32_t PfFontFlagsCx( struct _Pf_ctrl * context, FontID * ptsID );\n"
+/>
+<function
+   name="PfFontSize, PfFontSizeCx"
+   summary="Get the point size of a font"
+   synopsis="#include &lt;photon/Pf.h&gt;\n uint32_t PfFontSize( FontID * ptsID );\n #include &lt;font_api.h&gt;\n uint32_t PfFontSizeCx( struct _Pf_ctrl * context, FontID * ptsID );\n"
+/>
+<function
+   name="PfFontTypeCx"
+   summary="Retrieve the font type description"
+   synopsis="#include &lt;font_api.h&gt;\n int PfFontTypeCx( struct _Pf_ctrl * context, char const * font, char * pcBuffer, int iBufferLen );\n"
+/>
+<function
+   name="PfFractionalExtentText"
+   summary="Calculate the extent rectangle of a text string, using fractional scaling"
+   synopsis="#include &lt;photon/Pf.h&gt;\n PhRect_t *PfFractionalExtentText( PhRect_t *extent, PhPoint_t const *pos, const char *font, long xsize, long ysize, const char *str, int len );\n"
+/>
+<function
+   name="PfFreeFont, PfFreeFontCx"
+   summary="Release resources associated with a font"
+   synopsis="#include &lt;photon/Pf.h&gt;\n long PfFreeFont( FontID *ptsID );\n #include &lt;font_api.h&gt;\n long PfFreeFontCx( struct _Pf_ctrl * context, FontID * ptsID );\n"
+/>
+<function
+   name="PfGenerateFontName, PfGenerateFontNameCx"
+   summary="Generate a font name"
+   synopsis="#include &lt;photon/Pf.h&gt;\n char * PfGenerateFontName( char const * pkcDescription, uint32_t kuiFlags, uint32_t kuiSize, char * pcBuff );\n #include &lt;font_api.h&gt;\n char * PfGenerateFontNameCx( struct _Pf_ctrl *context, char const * pkcDescription, uint32_t kuiFlags, uint32_t kuiSize, char * pcBuff );\n"
+/>
+<function
+   name="PfGetGlyphIndexCx"
+   summary="Get a glyph index"
+   synopsis="#include &lt;font_api.h&gt;\n int PfGetGlyphIndexCx( struct _Pf_ctrl * context, wchar_tglyph, FontID * font, uint32_t * pIndex );\n"
+/>
+<function
+   name="PfGetOutline, PfGetOutlineCx"
+   summary="Get individual point information for a glyph outline"
+   synopsis="#include &lt;photon/Pf.h&gt;\n long PfGetOutline( char const *pkucFont, unsigned long ulSymbol, PHFONT_METRICS *ptsMetrics, PhPoint_t **pptsPoints, int **ppiLoops );\n #include &lt;font_api.h&gt;\n long PfGetOutlineCx( struct _Pf_ctrl *context, char const *pkucFont, unsigned long ulSymbol, PHFONT_METRICS *ptsMetrics, PhPoint_t **pptsPoints, int **ppiLoops );\n"
+/>
+<function
+   name="PfGlyph, PfGlyphCx"
+   summary="Obtain the metrics and/or bitmap for the specified character"
+   synopsis="#include &lt;photon/Pf.h&gt;\n int PfGlyph( const char *font, long symbol, FontRender *metrics, unsigned char *bitmap, int size, FontName fontused);\n #include &lt;font_api.h&gt;\n int PfGlyphCx( struct _Pf_ctrl *context, const char *font, long symbol, FontRender *metrics, unsigned char *bitmap, int size, FontName fontused);\n"
+/>
+<function
+   name="PfLoadFont, PfLoadFontCx"
+   summary="Preload a font within the font server"
+   synopsis="#include &lt;photon/Pf.h&gt;\n int PfLoadFont( const char *font, unsigned flags, FontName fontused );\n #include &lt;font_api.h&gt;\n int PfLoadFontCx( struct _Pf_ctrl * context, const char * font, unsigned flags, FontName fontused );\n"
+/>
+<function
+   name="PfLoadMetrics, PfLoadMetricsCx"
+   summary="Load metric information for the given font"
+   synopsis="#include &lt;photon/Pf.h&gt;\n int PfLoadMetrics( const char *font );\n #include &lt;font_api.h&gt;\n int PfLoadMetricsCx( struct _Pf_ctrl * context, const char * font );\n"
+/>
+<function
+   name="PfQueryFontInfo, PfQueryFontInfoCx"
+   summary="Get information about a font"
+   synopsis="#include &lt;photon/Pf.h&gt;\n int PfQueryFontInfo( const char *font, FontQueryInfo *info );\n #include &lt;font_api.h&gt;\n int PfQueryFontInfoCx( struct _Pf_ctrl *context, const char *font, FontQueryInfo *info );\n"
+/>
+<function
+   name="PfQueryFonts, PfQueryFontsCx"
+   summary="Construct a list of installed fonts"
+   synopsis="#include &lt;photon/Pf.h&gt;\n int PfQueryFonts( long symbol, unsigned flags, FontDetails list[], int n );\n #include &lt;font_api.h&gt;\n int PfQueryFontsCx( struct _Pf_ctrl *context, long symbol, unsigned flags, FontDetails list[], int n );\n"
+/>
+<function
+   name="PfRender, PfRenderCx"
+   summary="Render a string via a user callback function"
+   synopsis="#include &lt;photon/Pf.h&gt;\n int PfRender( void *ctx, const char *font, long adata, long bdata, const char *str, int len, int flags, PhPoint_t const *pos, PhRect_t const *clip, void (*func) ( void *, const PhPoint_t *pos, const FontRender *));\n #include &lt;font_api.h&gt;\n int PfRenderCx( struct _Pf_ctrl *context, void *ctx, const char *font, long adata, long bdata, const char *str, int len, int flags, PhPoint_t const *pos, PhRect_t const *clip, void (*func) ( void *, const PhPoint_t *pos, const FontRender *));\n"
+/>
+<function
+   name="PfRestartServerDll"
+   summary="Restart a local server"
+   synopsis="#include &lt;font_api.h&gt;\n int PfRestartServerDll( fontdll_t dll );\n"
+/>
+<function
+   name="PfSetOptionsDll"
+   summary="Set active font DLL context options"
+   synopsis="#include &lt;font_api.h&gt;\n int PfSetOptionsDll( fontdll_t dll, char const * options, char const * schema );\n"
+/>
+<function
+   name="PfSetRenderingDPICx"
+   summary="Set rendering DPI"
+   synopsis="int PfSetRenderingDPICx( struct _Pf_ctrl * context, uint32_t res_x, uint32_t res_y );\n"
+/>
+<function
+   name="PfTextWidthBytes"
+   summary="Calculate the width of a char string of multibyte UTF-8 characters"
+   synopsis="#include &lt;photon/Pf.h&gt;\n int PfTextWidthBytes( const char *font, const char *str, int len );\n"
+/>
+<function
+   name="PfTextWidthChars"
+   summary="Calculate the width of a char string of multibyte UTF-8 characters"
+   synopsis="#include &lt;photon/Pf.h&gt;\n int PfTextWidthChars( const char *font, const char *str, int len );\n"
+/>
+<function
+   name="PfUnloadMetrics"
+   summary="Unload metric information for the given font"
+   synopsis="#include &lt;photon/Pf.h&gt;\n int PfUnloadMetrics( const char *font );\n"
+/>
+<function
+   name="PfWaitOnServerDll"
+   summary="Wait on server"
+   synopsis="#include &lt;font_api.h&gt;\n int PfWaitOnServerDll( fontdll_t dll );\n"
+/>
+<function
+   name="PfWideTextWidthBytes"
+   summary="Calculate the width of a uint16_t string of Unicode characters"
+   synopsis="#include &lt;photon/Pf.h&gt;\n int PfWideTextWidthBytes( const char *font, const uint16_t *str, int len );\n"
+/>
+<function
+   name="PfWideTextWidthChars"
+   summary="Calculate the width of a uint16_t string of Unicode characters"
+   synopsis="#include &lt;photon/Pf.h&gt;\n int PfWideTextWidthChars( const char *font, const uint16_t *str, int len );\n"
+/>
+<function
+   name="PgAlphaOff, PgAlphaOffCx"
+   summary="Turn alpha blending operations off"
+   synopsis="void PgAlphaOff( void );\n void PgAlphaOffCx(PhGC_t *gc);\n"
+/>
+<function
+   name="PgAlphaOn, PgAlphaOnCx "
+   summary="Turn alpha blending operations on"
+   synopsis="void PgAlphaOn( void );\n void PgAlphaOnCx(PhGC_t *gc);\n"
+/>
+<function
+   name="PgAlphaValue"
+   summary="Extract the alpha component from a color value"
+   synopsis="int PgAlphaValue( PgColor_t color );\n"
+/>
+<function
+   name="PgARGB"
+   summary="Convert alpha, red, green, and blue values to composite color format"
+   synopsis="PgColor_t PgARGB( int A, int R, int G, int B );\n"
+/>
+<function
+   name="PgBackgroundShadings"
+   summary="Calculate top and bottom shading colors"
+   synopsis="void PgBackgroundShadings( PgColor_t bg, PgColor_t *ts, PgColor_t *bs);\n"
+/>
+<function
+   name="PgBevelBox, PgBevelBoxCx"
+   summary="Draw a beveled box with gradients"
+   synopsis="int PgBevelBox( PhPoint_t *ul, PhPoint_t *lr, PgColor_t light_color, PgColor_t flat_color, PgColor_t dark_color, short depth, short width, PgColor_t outline_color, PgColor_t inline_color, int flags );\n int PgBevelBoxCx( void * dc, PhPoint_t *ul, PhPoint_t *lr, PgColor_t light_color, PgColor_t flat_color, PgColor_t dark_color, short depth, short width, PgColor_t outline_color, PgColor_t inline_color, int flags );\n"
+/>
+<function
+   name="PgBlit, PgBlitCx"
+   summary="Blit an area"
+   synopsis="int PgBlit( const PhRect_t *rect, const PhPoint_t *offset );\n int PgBlitCx( void dc, const PhRect_t *rect, const PhPoint_t *offset );\n"
+/>
+<function
+   name="PgBlueValue"
+   summary="Extract the blue component from a color value"
+   synopsis="int PgBlueValue( PgColor_t color );\n"
+/>
+<function
+   name="PgCalcColorContrast"
+   summary="Compute light and dark colors to use for a gradient"
+   synopsis="void PgCalcColorContrast( PgColor_t flat_color, int contrast, PgColor_t *light, PgColor_t *dark );\n"
+/>
+<function
+   name="PgChromaOff, PgChromaOffCx"
+   summary="Turn chroma key operations off"
+   synopsis="void PgChromaOff( void );\n void PgChromaOffCx(PhGC_t *gc);\n"
+/>
+<function
+   name="PgChromaOn, PgChromaOnCx"
+   summary="Turn chroma key operations on"
+   synopsis="void PgChromaOn( void );\n void PgChromaOnCx(PhGC_t *gc);\n"
+/>
+<function
+   name="PgClearDrawBuffer, PgClearDrawBufferCx"
+   summary="Reset the current draw buffer"
+   synopsis="void PgClearDrawBuffer( void );\n void PgClearDrawBufferCx(void *dc);\n"
+/>
+<function
+   name="PgClearTranslation, PgClearTranslationCx"
+   summary="Restore the current translation to the default"
+   synopsis="void PgClearTranslation( void );\n void PgClearTranslationCx(PhGC_t *gc);\n"
+/>
+<function
+   name="PgCMY"
+   summary="Convert cyan, magenta, and yellow values to composite color format"
+   synopsis="PgColor_t PgCMY( int C, int M, int Y );\n"
+/>
+<function
+   name="PgColorMatch"
+   summary="Query for best color matches"
+   synopsis="int PgColorMatch(int n, PgColor_t const *in, PgColor_t *out);\n"
+/>
+<function
+   name="PgConfigScalerChannel"
+   summary="Configure a video overlay scaler channel"
+   synopsis="int PgConfigScalerChannel( PgVideoChannel_t *channel, PgScalerProps_t *props );\n"
+/>
+<function
+   name="PgContextBlit, PgContextBlitCx"
+   summary="Copy data from a rectangle in one context to another context"
+   synopsis="void PgContextBlit( PdOffscreenContext_t *src, PhRect_t *src_rect, PdOffscreenContext_t *dst, PhRect_t *dst_rect );\n void PgContextBlitCx( void *dc, PdOffscreenContext_t *src, PhRect_t *src_rect, PdOffscreenContext_t *dst, PhRect_t *dst_rect );\n"
+/>
+<function
+   name="PgContextBlitArea, PgContextBlitAreaCx"
+   summary="Copy data from an area in one context to another context"
+   synopsis="void PgContextBlitArea( PdOffscreenContext_t *src, PhArea_t *src_area, PdOffscreenContext_t *dst, PhArea_t *dst_area );\n void PgContextBlitAreaCx( void *dc, PdOffscreenContext_t *src, PhArea_t *src_area, PdOffscreenContext_t *dst, PhArea_t *dst_area );\n"
+/>
+<function
+   name="PgContrastBevelBox, PgContrastBevelBoxCx"
+   summary="Draw a beveled box with gradients and a given level of contrast"
+   synopsis="int PgContrastBevelBox( PhPoint_t *ul, PhPoint_t *lr, PgColor_t flat_color, int contrast, short depth, short width, PgColor_t outline_color, PgColor_t inline_color, int flags );\n int PgContrastBevelBoxCx( void *dc, PhPoint_t *ul, PhPoint_t *lr, PgColor_t flat_color, int contrast, short depth, short width, PgColor_t outline_color, PgColor_t inline_color, int flags );\n"
+/>
+<function
+   name="PgCreateDriverRegion"
+   summary="Create a region that's owned by the graphics driver"
+   synopsis="PhRid_t PgCreateDriverRegion( PdOffscreenContext_t *osc, PhPoint_t *origin, PhRect_t *rect, PhRid_t parent );\n"
+/>
+<function
+   name="PgCreateGC"
+   summary="Allocate a graphics context"
+   synopsis="PhGC_t *PgCreateGC( int unused );\n"
+/>
+<function
+   name="PgCreateLayerSurface"
+   summary="Create an offscreen context that a layer can display"
+   synopsis="PdOffscreenContext_t *PgCreateLayerSurface( int layer, int surface_index, int format_index, unsigned short width, unsigned short height, unsigned long flags);\n"
+/>
+<function
+   name="PgCreateVideoChannel"
+   summary="Create a channel for video streaming"
+   synopsis="PgVideoChannel_t * PgCreateVideoChannel( unsigned type, unsigned flags );\n"
+/>
+<function
+   name="PgDefaultAlpha"
+   summary="Reset the alpha attribute to its default value"
+   synopsis="void PgDefaultAlpha(PhGC_t * GC);\n"
+/>
+<function
+   name="PgDefaultChroma"
+   summary="Reset the chroma attribute to its default value"
+   synopsis="void PgDefaultChroma( PhGC_t *GC );\n"
+/>
+<function
+   name="PgDefaultFill"
+   summary="Reset the fill attribute to its default value"
+   synopsis="void PgDefaultFill( PhGC_t *GC );\n"
+/>
+<function
+   name="PgDefaultGC"
+   summary="Reset all graphics context attributes to their default system values"
+   synopsis="void PgDefaultGC( PhGC_t *GC );\n"
+/>
+<function
+   name="PgDefaultMode"
+   summary="Reset draw mode and plane mask to their default values"
+   synopsis="void PgDefaultMode( PhGC_t *GC );\n"
+/>
+<function
+   name="PgDefaultStroke"
+   summary="Reset stroke attribute to its system default"
+   synopsis="void PgDefaultStroke( PhGC_t *GC );\n"
+/>
+<function
+   name="PgDefaultText"
+   summary="Reset text attribute to its system default"
+   synopsis="void PgDefaultText( PhGC_t *GC );\n"
+/>
+<function
+   name="PgDestroyGC"
+   summary="Release the resources of a graphics context"
+   synopsis="void PgDestroyGC( PhGC_t *GC );\n"
+/>
+<function
+   name="PgDestroyVideoChannel"
+   summary="Destroy resources associated with a video channel"
+   synopsis="void PgDestroyVideoChannel( PgVideoChannel_t *channel );\n"
+/>
+<function
+   name="PgDrawArc, PgDrawArcCx"
+   summary="Draw an arc, pie, or chord"
+   synopsis="int PgDrawArc( PhPoint_t const *center, PhPoint_t const *radii, unsigned int start, unsigned int end, int flags );\n int PgDrawArcCx( void *dc, PhPoint_t const *center, PhPoint_t const *radii, unsigned int start, unsigned int end, int flags );\n"
+/>
+<function
+   name="PgDrawArrow, PgDrawArrowCx"
+   summary="Draw an arrow that fits inside a given rectangle"
+   synopsis="void PgDrawArrow( PhRect_t const *rect, short margin, PgColor_t color, int direction );\n void PgDrawArrowCx( void *dc, PhRect_t const *rect, short margin, PgColor_t color, int direction );\n"
+/>
+<function
+   name="PgDrawBevelBox, PgDrawIBevelBox,
+PgDrawBevelBoxCx, PgDrawIBevelBoxCx"
+   summary="Draw a beveled box"
+   synopsis="int PgDrawBevelBox( PhRect_t const *rect, PgColor_t secondary, short width, int flags );\n int PgDrawIBevelBox( int x1, int y1, int x2, int y2, PgColor_t secondary, short width, int flags );\n int PgDrawBevelBoxCx( void *dc, PhRect_t const *rect, PgColor_t secondary, short width, int flags );\n int PgDrawIBevelBoxCx( void *dc, int x1, int y1, int x2, int y2, PgColor_t secondary, short width, int flags );\n"
+/>
+<function
+   name="PgDrawBeveled, PgDrawBeveledCx"
+   summary="Draw a beveled rectangle or arrow"
+   synopsis="int PgDrawBeveled( PhRect_t const *rect, PhPoint_t const *radii, PgColor_t secondary, short width, int flags );\n int PgDrawBeveledCx( void *dc; PhRect_t const *rect, PhPoint_t const *radii, PgColor_t secondary, short width, int flags );\n"
+/>
+<function
+   name="PgDrawBezier, PgDrawBezierv,
+PgDrawBezierCx, PgDrawBezierCxv"
+   summary="Draw a stroked and/or filled b&#233;zier"
+   synopsis="int PgDrawBezier( PhPoint_t const *ptr, int num, PhPoint_t const *pos, int flags );\n int PgDrawBezierv( PhPoint_t const *ptr, int num, PhPoint_t const *pos, int flags );\n int PgDrawBezierCx( void *dc, PhPoint_t const *ptr, int num, PhPoint_t const *pos, int flags );\n int PgDrawBezierCxv( void *dc, PhPoint_t const *ptr, int num, PhPoint_t const *pos, int flags );\n"
+/>
+<function
+   name="PgDrawBitmap, PgDrawBitmapv,
+PgDrawBitmapCx, PgDrawBitmapCxv"
+   summary="Draw a bitmap"
+   synopsis="int PgDrawBitmap( void const *ptr, int flags, PhPoint_t const *pos, PhPoint_t const *size, int bpl, long tag );\n int PgDrawBitmapv( void const *ptr, int flags, PhPoint_t const *pos, PhPoint_t const *size, int bpl, long tag );\n int PgDrawBitmapCx( void *dc, void const *ptr, int flags, PhPoint_t const *pos, PhPoint_t const *size, int bpl, long tag );\n int PgDrawBitmapCxv( void *dc, void const *ptr, int flags, PhPoint_t const *pos, PhPoint_t const *size, int bpl, long tag );\n"
+/>
+<function
+   name="PgDrawEllipse, PgDrawEllipseCx"
+   summary="Draw an ellipse"
+   synopsis="int PgDrawEllipse( PhPoint_t const *center, PhPoint_t const *radii, unsigned int flags );\n int PgDrawEllipseCx( void *dc, PhPoint_t const *center, PhPoint_t const *radii, unsigned int flags );\n"
+/>
+<function
+   name="PgDrawGradient, PgDrawGradientCx"
+   summary="Ask the graphics driver to render a gradient"
+   synopsis="int PgDrawGradient( PhPoint_t *ul, PhPoint_t *lr, unsigned long gradient_type, unsigned long transition_type, unsigned long num_color_pts, PgColor_t color1, PgColor_t color2, PgColor_t color3, PgColor_t color4, unsigned long table_size, unsigned char *transition_table );\n int PgDrawGradientCx( void *dc, PhPoint_t *ul, PhPoint_t *lr, unsigned long gradient_type, unsigned long transition_type, unsigned long num_color_pts, PgColor_t color1, PgColor_t color2, PgColor_t color3, PgColor_t color4, unsigned long table_size, unsigned char *transition_table );\n"
+/>
+<function
+   name="PgDrawGradientBevelBox, PgDrawGradientBevelBoxCx"
+   summary="Draw a beveled box with gradients and two flat colors"
+   synopsis="int PgDrawGradientBevelBox( PhPoint_t *ul, PhPoint_t *lr, PgColor_t light_color, PgColor_t ul_flat_color, PgColor_t lr_flat_color, PgColor_t dark_color, short depth, short width, PgColor_t outline_color, PgColor_t inline_color, int flags );\n int PgDrawGradientBevelBoxCx( void *dc, PhPoint_t *ul, PhPoint_t *lr, PgColor_t light_color, PgColor_t ul_flat_color, PgColor_t lr_flat_color, PgColor_t dark_color, short depth, short width, PgColor_t outline_color, PgColor_t inline_color, int flags );\n"
+/>
+<function
+   name="PgDrawGrid, PgDrawGridCx"
+   summary="Draw a grid"
+   synopsis="int PgDrawGrid( PhRect_t const *r, PhPoint_t const *g );\n int PgDrawGridCx( void *dc, PhRect_t const *r, PhPoint_t const *g );\n"
+/>
+<function
+   name="PgDrawImage, PgDrawImagev,
+PgDrawImageCx, PgDrawImageCxv"
+   summary="Draw an image"
+   synopsis="int PgDrawImage( void const *ptr, int type, PhPoint_t const *pos, PhDim_t const *size, int bpl, long tag );\n int PgDrawImagev( void const *ptr, int type, PhPoint_t const *pos, PhDim_t const *size, int bpl, long tag );\n int PgDrawImageCx( void *dc, void const *ptr, int type, PhPoint_t const *pos, PhDim_t const *size, int bpl, long tag );\n int PgDrawImageCxv( void *dc, void const *ptr, int type, PhPoint_t const *pos, PhDim_t const *size, int bpl, long tag );\n"
+/>
+<function
+   name="PgDrawLine, PgDrawILine,
+PgDrawLineCx, PgDrawILineCx"
+   summary="Draw a single line"
+   synopsis="int PgDrawLine( PhPoint_t const *p1, PhPoint_t const *p2 );\n int PgDrawILine( int x1, int y1, int x2, int y2 );\n int PgDrawLineCx( void *dc, PhPoint_t const *p1, PhPoint_t const *p2 );\n int PgDrawILineCx( void *dc, int x1, int y1, int x2, int y2 );\n"
+/>
+<function
+   name="PgDrawMultiTextArea, PgDrawMultiTextAreaCx"
+   summary="Draw multiline text in an area"
+   synopsis="int PgDrawMultiTextArea( char *text, int len, PhRect_t *canvas, int text_flags, int canvas_flags, int linespacing );\n int PgDrawMultiTextAreaCx( void *dc, char *text, int len, PhRect_t *canvas, int text_flags, int canvas_flags, int linespacing );\n"
+/>
+<function
+   name="PgDrawPhImage, PgDrawPhImagev,
+PgDrawPhImageCx, PgDrawPhImageCxv"
+   summary="Draw an image that's contained in a PhImage_t structure"
+   synopsis="int PgDrawPhImage( PhPoint_t const *pos, PhImage_t const *image, int flags );\n int PgDrawPhImagev( PhPoint_t const *pos, PhImage_t const *image, int flags );\n int PgDrawPhImageCx( void *dc, PhPoint_t const *pos, PhImage_t const *image, int flags );\n int PgDrawPhImageCxv( void *dc, PhPoint_t const *pos, PhImage_t const *image, int flags );\n"
+/>
+<function
+   name="PgDrawPhImageRectv, PgDrawPhImageRectCxv"
+   summary="Draw part of an image that's contained in a PhImage_t structure"
+   synopsis="int PgDrawPhImageRectv( PhPoint_t const *pos, PhImage_t const *image, PhRect_t const *rect, int flags );\n int PgDrawPhImageRectCxv( void *dc, PhPoint_t const *pos, PhImage_t const *image, PhRect_t const *rect, int flags );\n"
+/>
+<function
+   name="PgDrawPixel, PgDrawIPixel,
+PgDrawPixelCx, PgDrawIPixelCx"
+   summary="Draw a point"
+   synopsis="int PgDrawPixel( PhPoint_t const *pt );\n int PgDrawIPixel( int x, int y );\n int PgDrawPixelCx( void *dc, PhPoint_t const *pt );\n int PgDrawIPixelCx( void *dc, int x, int y );\n"
+/>
+<function
+   name="PgDrawPixelArray, PgDrawPixelArrayv,
+PgDrawPixelArrayCx, PgDrawPixelArrayCxv"
+   summary="Draw multiple points"
+   synopsis="int PgDrawPixelArray( PhPoint_t const *ptr, int num, PhPoint_t const *pos );\n int PgDrawPixelArrayv( PhPoint_t const *ptr, int num, PhPoint_t const *pos );\n int PgDrawPixelArrayCx( void *dc, PhPoint_t const *ptr, int num, PhPoint_t const *pos );\n int PgDrawPixelArrayCxv( void *dc, PhPoint_t const *ptr, int num, PhPoint_t const *pos );\n"
+/>
+<function
+   name="PgDrawPolygon, PgDrawPolygonv,
+PgDrawPolygonCx, PgDrawPolygonCxv"
+   summary="Draw a stroked and/or filled polygon"
+   synopsis="int PgDrawPolygon( PhPoint_t const *ptr, int num, PhPoint_t const *pos, int flags );\n int PgDrawPolygonv( PhPoint_t const *ptr, int num, PhPoint_t const *pos, int flags );\n int PgDrawPolygonCx( void *dc, PhPoint_t const *ptr, int num, PhPoint_t const *pos, int flags );\n int PgDrawPolygonCxv( void *dc, PhPoint_t const *ptr, int num, PhPoint_t const *pos, int flags );\n"
+/>
+<function
+   name="PgDrawRect, PgDrawIRect,
+PgDrawRectCx, PgDrawIRectCx"
+   summary="Draw a rectangle"
+   synopsis="int PgDrawRect( PhRect_t const *rect, unsigned int flags );\n int PgDrawIRect( int ulx, int uly, int lrx, int lry, unsigned int flags );\n int PgDrawRectCx( void *dc, PhRect_t const *rect, unsigned int flags );\n int PgDrawIRectCx( void *dc, int ulx, int uly, int lrx, int lry, unsigned int flags );\n"
+/>
+<function
+   name="PgDrawRepBitmap, PgDrawRepBitmapv,
+PgDrawRepBitmapCx, PgDrawRepBitmapCxv"
+   summary="Draw a bitmap several times"
+   synopsis="int PgDrawRepBitmap( void const *ptr, int flags, PhPoint_t const *pos, PhPoint_t const *size, int bpl, PhPoint_t const *rep, PhPoint_t const *space, long tag );\n int PgDrawRepBitmapv( void const *ptr, int flags, PhPoint_t const *pos, PhPoint_t const *size, int bpl, PhPoint_t const *rep, PhPoint_t const *space, long tag );\n int PgDrawRepBitmapCx( void *dc, void const *ptr, int flags, PhPoint_t const *pos, PhPoint_t const *size, int bpl, PhPoint_t const *rep, PhPoint_t const *space, long tag );\n int PgDrawRepBitmapCxv( void *dc, void const *ptr, int flags, PhPoint_t const *pos, PhPoint_t const *size, int bpl, PhPoint_t const *rep, PhPoint_t const *space, long tag );\n"
+/>
+<function
+   name="PgDrawRepImage, PgDrawRepImagev,
+PgDrawRepImageCx, PgDrawRepImageCxv"
+   summary="Draw an image several times"
+   synopsis="int PgDrawRepImage( void const *ptr, int flag, PhPoint_t const *pos, PhPoint_t const *area, int bpl, PhPoint_t const *rep, PhPoint_t const *space, long tag );\n int PgDrawRepImagev( void const *ptr, int flag, PhPoint_t const *pos, PhPoint_t const *area, int bpl, PhPoint_t const *rep, PhPoint_t const *space, long tag );\n int PgDrawRepImageCx( void *dc, void const *ptr, int flag, PhPoint_t const *pos, PhPoint_t const *area, int bpl, PhPoint_t const *rep, PhPoint_t const *space, long tag );\n int PgDrawRepImageCxv( void *dc, void const *ptr, int flag, PhPoint_t const *pos, PhPoint_t const *area, int bpl, PhPoint_t const *rep, PhPoint_t const *space, long tag );\n"
+/>
+<function
+   name="PgDrawRepPhImage*"
+   summary="Repeatedly draw an image stored in a PhImage_t structure"
+   synopsis="int PgDrawRepPhImage( PhImage_t const *image, int flags, PhPoint_t const *pos, PhPoint_t const *rep, PhPoint_t const *space );\n int PgDrawRepPhImagev( PhImage_t const *image, int flags, PhPoint_t const *pos, PhPoint_t const *rep, PhPoint_t const *space );\n int PgDrawRepPhImageCx( void *dc, PhImage_t const *image, int flags, PhPoint_t const *pos, PhPoint_t const *rep, PhPoint_t const *space );\n int PgDrawRepPhImageCxv( void *dc, PhImage_t const *image, int flags, PhPoint_t const *pos, PhPoint_t const *rep, PhPoint_t const *space );\n"
+/>
+<function
+   name="PgDrawRoundRect, PgDrawRoundRectCx"
+   summary="Draw a rounded rectangle"
+   synopsis="int PgDrawRoundRect( PhRect_t const *rect, PhPoint_t const *radii, unsigned flags );\n int PgDrawRoundRectCx( void *dc, PhRect_t const *rect, PhPoint_t const *radii, unsigned flags );\n"
+/>
+<function
+   name="PgDrawSpan, PgDrawSpanv,
+PgDrawSpanCx, PgDrawSpanCxv"
+   summary="Draw a list of spans"
+   synopsis="int PgDrawSpan( PgSpan_t const *ptr, int num, PhPoint_t const *pos, int flags );\n int PgDrawSpanv( PgSpan_t const *ptr, int num, PhPoint_t const *pos, int flags );\n int PgDrawSpanCx( void *dc, PgSpan_t const *ptr, int num, PhPoint_t const *pos, int flags );\n int PgDrawSpanCxv( void *dc, PgSpan_t const *ptr, int num, PhPoint_t const *pos, int flags );\n"
+/>
+<function
+   name="PgDrawString, PgDrawStringv,
+PgDrawStringCx, PgDrawStringCxv"
+   summary="Draw a string of characters"
+   synopsis="int PgDrawString( char const *ptr, PhPoint_t const *pos );\n int PgDrawStringv( char const *ptr, PhPoint_t const *pos );\n int PgDrawStringCx( void *dc, char const *ptr, PhPoint_t const *pos );\n int PgDrawStringCxv( void *dc, char const *ptr, PhPoint_t const *pos );\n"
+/>
+<function
+   name="PgDrawText*, PgDrawTextChars*"
+   summary="Draw text"
+   synopsis="int PgDrawText( char const *ptr, int len, PhPoint_t const *pos, int flags );\n int PgDrawTextv( char const *ptr, int len, PhPoint_t const *pos, int flags );\n int PgDrawTextChars( char const *ptr, int len, PhPoint_t const *pos, int flags );\n int PgDrawTextCx( void *dc, char const *ptr, int len, PhPoint_t const *pos, int flags );\n int PgDrawTextvCx( void *dc, char const *ptr, int len, PhPoint_t const *pos, int flags );\n int PgDrawTextCharsCx( void *dc, char const *ptr, int len, PhPoint_t const *pos, int flags );\n"
+/>
+<function
+   name="PgDrawTextArea, PgDrawTextAreaCx"
+   summary="Draw text within an area"
+   synopsis="int PgDrawTextArea( char const *ptr, int len, PhRect_t const *rect, int flags );\n int PgDrawTextAreaCx( void *dc, char const *ptr, int len, PhRect_t const *rect, int flags );\n"
+/>
+<function
+   name="PgDrawTImage, PgDrawTImagev,
+PgDrawTImageCx, PgDrawTImageCxv"
+   summary="Draw an image with a transparency mask"
+   synopsis="int PgDrawTImage( void const *ptr, int type, PhPoint_t const *pos, PhDim_t const *size, int bpl, long tag, void const *TransPtr, int TransBPL );\n int PgDrawTImagev( void const *ptr, int type, PhPoint_t const *pos, PhDim_t const *size, int bpl, long tag, void const *TransPtr, int TransBPL );\n int PgDrawTImageCx( void *dc, void const *ptr, int type, PhPoint_t const *pos, PhDim_t const *size, int bpl, long tag, void const *TransPtr, int TransBPL );\n int PgDrawTImageCxv( void *dc, void const *ptr, int type, PhPoint_t const *pos, PhDim_t const *size, int bpl, long tag, void const *TransPtr, int TransBPL );\n"
+/>
+<function
+   name="PgDrawTrend, PgDrawTrendv,
+PgDrawTrendCx, PgDrawTrendCxv"
+   summary="Draw a trend graph"
+   synopsis="int PgDrawTrend( short const *ptr, PhPoint_t const *pos, int num, int delta, int buflen, int bufoff, unsigned flags );\n int PgDrawTrendv( short const *ptr, PhPoint_t const *pos, int num, int delta, int buflen, int bufoff, unsigned flags );\n int PgDrawTrendCx( void *dc, short const *ptr, PhPoint_t const *pos, int num, int delta, int buflen, int bufoff, unsigned flags );\n int PgDrawTrendCxv( void *dc, short const *ptr, PhPoint_t const *pos, int num, int delta, int buflen, int bufoff, unsigned flags );\n"
+/>
+<function
+   name="PgExtentMultiText"
+   summary="Calculate the extent of a multiline text string"
+   synopsis="PhRect_t *PgExtentMultiText( PhRect_t *extent, PhPoint_t *pos, char *font, char *str, unsigned n, int linespacing );\n"
+/>
+<function
+   name="PgExtentText"
+   summary="Calculate the extent of a string of text"
+   synopsis="PhRect_t *PgExtentText( PhRect_t *extent, PhPoint_t const *pos, char const *font, char const *str, unsigned n );\n"
+/>
+<function
+   name="PgFlush, PgFFlush,
+PgFlushCx, PgFFlushCx"
+   summary="Explicitly flush the current draw buffer"
+   synopsis="int PgFlush( void );\n int PgFFlush( unsigned int flags );\n int PgFlushCx( void *dc );\n int PgFFlushCx( void *dc, unsigned int flags );\n"
+/>
+<function
+   name="PgGetColorModel, PgGetColorModelCx"
+   summary="Get the current color model"
+   synopsis="PgColorModel_t * PgGetColorModel( void );\n PgColorModel_t * PgGetColorModelCx (PhGC_t *gc);\n"
+/>
+<function
+   name="PgGetGC, PgGetGCCx"
+   summary="Get current graphics context"
+   synopsis="PhGC_t *PgGetGC( void );\n PhGC_t *PgGetGCCx(void *dc);\n"
+/>
+<function
+   name="PgGetGraphicsHWCaps"
+   summary="Determine the hardware capabilities"
+   synopsis="int PgGetGraphicsHWCaps (PgHWCaps_t *caps );\n"
+/>
+<function
+   name="PgGetLayerCaps"
+   summary="Query the capabilities of a layer"
+   synopsis="int PgGetLayerCaps( int layer, int format_index, PgLayerCaps_t *const caps );\n"
+/>
+<function
+   name="PgGetOverlayChromaColor"
+   summary="Return the color used for video overlay chroma-key operations"
+   synopsis="PgColor_t PgGetOverlayChromaColor( void );\n"
+/>
+<function
+   name="PgGetPalette"
+   summary="Query for current color palette"
+   synopsis="int PgGetPalette( PgColor_t *palette );\n"
+/>
+<function
+   name="PgGetRegion, PgGetRegionCx"
+   summary="Get the ID of the region that emits draw events"
+   synopsis="PhRid_t PgGetRegion( void );\n PhRid_t PgGetRegionCx( void *dc );\n"
+/>
+<function
+   name="PgGetScalerCapabilities"
+   summary="Get the capabilities of a video overlay scaler"
+   synopsis="int PgGetScalerCapabilities( PgVideoChannel_t *channel, int format_index, PgScalerCaps_t *vcaps );\n"
+/>
+<function
+   name="PgGetSurfaceGFSid"
+   summary="Returns the GF surface id for a given surface"
+   synopsis="int PgGetSurfaceGFSid ( PgSurface_t * surf, uint32_t * sid );\n"
+/>
+<function
+   name="PgGetVideoMode"
+   summary="Get the current video mode"
+   synopsis="int PgGetVideoMode( PgDisplaySettings_t *settings );\n"
+/>
+<function
+   name="PgGetVideoModeInfo"
+   summary="Get information about a video mode"
+   synopsis="int PgGetVideoModeInfo( unsigned short mode_number, PgVideoModeInfo_t *mode_info );\n"
+/>
+<function
+   name="PgGetVideoModeList"
+   summary="Query a graphics driver for a list of its supported video modes"
+   synopsis="int PgGetVideoModeList( PgVideoModes_t *mode_list );\n"
+/>
+<function
+   name="PgGray"
+   summary="Generate the RGB value for a shade of gray"
+   synopsis="PgColor_t PgGray( int level );\n"
+/>
+<function
+   name="PgGrayValue"
+   summary="Extract color brightness"
+   synopsis="int PgGrayValue( PgColor_t color );\n"
+/>
+<function
+   name="PgGreenValue"
+   summary="Extract the green component from a color value"
+   synopsis="int PgGreenValue( PgColor_t color );\n"
+/>
+<function
+   name="PgHSV"
+   summary="Convert hue, saturation, and value to composite color format"
+   synopsis="PgColor_t PgHSV( unsigned H, int S, int V );\n"
+/>
+<function
+   name="PgHSV2RGB"
+   summary="Convert HSV colors to RGB"
+   synopsis="PgColor_t PgHSV2RGB( PgColorHSV_t hsv_color );\n"
+/>
+<function
+   name="PgLockLayer"
+   summary="Lock a layer for exclusive use by an application"
+   synopsis="int PgLockLayer( int layer );\n"
+/>
+<function
+   name="PgMultiBlit, PgMultiBlitCx"
+   summary="Blit a multi-rectangular area"
+   synopsis="int PgMultiBlit( unsigned short nrects, const PhRect_t rects[], const PhPoint_t *offset );\n int PgMultiBlitCx( void *dc, unsigned short nrects, const PhRect_t rects[], const PhPoint_t *offset );\n"
+/>
+<function
+   name="PgNextVideoFrame"
+   summary="Get the index of the next video buffer to fill"
+   synopsis="int PgNextVideoFrame( PgVideoChannel_t *channel );\n"
+/>
+<function
+   name="PgPHookRegister"
+   summary="Load a Photon hook module"
+   synopsis="int PgPHookRegister( char const *phook );\n"
+/>
+<function
+   name="PgReadScreen"
+   summary="Read an image from the screen"
+   synopsis="PhImage_t *PgReadScreen( PhRect_t *rect, void *buffer );\n"
+/>
+<function
+   name="PgReadScreenSize"
+   summary="Determine the memory requirements for reading an image from the screen"
+   synopsis="unsigned long PgReadScreenSize( PhRect_t *rect );\n"
+/>
+<function
+   name="PgRedValue"
+   summary="Extract the red component from a color value"
+   synopsis="int PgRedValue( PgColor_t color );\n"
+/>
+<function
+   name="PgRGB"
+   summary="Convert red, green, and blue values to composite color format"
+   synopsis="PgColor_t PgRGB( int R, int G, int B );\n"
+/>
+<function
+   name="PgRGB2HSV"
+   summary="Convert RGB colors to HSV"
+   synopsis="PgColorHSV_t PgRGB2HSV( PgColor_t rgb_color );\n"
+/>
+<function
+   name="PgSetAlpha, PgSetAlphaCx"
+   summary="Set the parameters for alpha blending in detail"
+   synopsis="void PgSetAlpha( unsigned long const alpha_op, PgMap_t const * const src_alpha_map, PgGradient_t const * const src_alpha_gradient, char unsigned const src_global_alpha, char unsigned const dst_global_alpha );\n void PgSetAlphaCx( PhGC_t *gc, unsigned long const alpha_op, PgMap_t const * const src_alpha_map, PgGradient_t const * const src_alpha_gradient, char unsigned const src_global_alpha, char unsigned const dst_global_alpha );\n"
+/>
+<function
+   name="PgSetAlphaBlend, PgSetAlphaBlendCx"
+   summary="Set the parameters for alpha blending simply"
+   synopsis="void PgSetAlphaBlend( PgMap_t const * const src_alpha_map, unsigned char const src_alpha_value );\n void PgSetAlphaBlendCx( PhGC_t *gc, PgMap_t const * const src_alpha_map, unsigned char const src_alpha_value );\n"
+/>
+<function
+   name="PgSetChroma, PgSetChromaCx"
+   summary="Set the chroma color and operation"
+   synopsis="void PgSetChroma( PgColor_t ChromaColor, unsigned long ChromaOp );\n void PgSetChromaCx( PhGC_t *gc, PgColor_t ChromaColor, unsigned long ChromaOp );\n"
+/>
+<function
+   name="PgSetClipping, PgSetClippingCx"
+   summary="Limit the extent of drawing"
+   synopsis="void PgSetClipping( unsigned short n, PhRect_t const *rects );\n void PgSetClippingCx( PhGC_t *gc, unsigned short n, PhRect_t const *rects );\n"
+/>
+<function
+   name="PgSetColorModel, PgSetColorModelCx"
+   summary="Set the current color model"
+   synopsis="const PgColorModel_t * PgSetColorModel( PgColorModel_t const * model );\n const PgColorModel_t * PgSetColorModelCx( PhGC_t *gc, PgColorModel_t const * model );\n"
+/>
+<function
+   name="PgSetControlFlagGCCx"
+   summary="This function sets new flag(s) and returns old flag(s)"
+   synopsis="unsigned long PgSetControlFlagGCCx( PhGC_t * GC, unsigned long flags);\n"
+/>
+<function
+   name="PgSetDPMSMode"
+   summary="Set the display power-saving mode"
+   synopsis="int PgSetDPMSMode (int mode );\n"
+/>
+<function
+   name="PgSetDrawBufferSize, PgSetDrawBufferSizeCx"
+   summary="Resize a draw buffer"
+   synopsis="int PgSetDrawBufferSize( unsigned short cmd_buf_len );\n int PgSetDrawBufferSizeCx( void *dc, unsigned short cmd_buf_len );\n"
+/>
+<function
+   name="PgSetDrawMode, PgSetDrawModeCx"
+   summary="Set draw mode"
+   synopsis="int PgSetDrawMode( int mode );\n int PgSetDrawModeCx( PhGC_t *gc, int mode );\n"
+/>
+<function
+   name="PgSetFillColor, PgSetFillColorCx"
+   summary="Set the fill color"
+   synopsis="PgColor_t PgSetFillColor( PgColor_t color );\n PgColor_t PgSetFillColorCx( PhGC_t *gc, PgColor_t color );\n"
+/>
+<function
+   name="PgSetFillDither, PgSetFillDitherCx"
+   summary="Set the dither pattern and colors for fills"
+   synopsis="void PgSetFillDither( PgColor_t c1, PgColor_t c0, PgPattern_t pat );\n void PgSetFillDitherCx( PhGC_t *gc, PgColor_t c1, PgColor_t c0, PgPattern_t pat );\n"
+/>
+<function
+   name="PgSetFillTransPat, PgSetFillTransPatCx"
+   summary="Set the draw transparency for fills"
+   synopsis="void PgSetFillTransPat( PgPattern_t pat );\n void PgSetFillTransPatCx( PhGC_t *gc, PgPattern_t pat );\n"
+/>
+<function
+   name="PgSetFillXORColor, PgSetFillXORColorCx"
+   summary="Set the fill color for XOR drawing"
+   synopsis="void PgSetFillXORColor( PgColor_t frgd, PgColor_t bkgd );\n void PgSetFillXORColorCx( PhGC_t *gc, PgColor_t frgd, PgColor_t bkgd );\n"
+/>
+<function
+   name="PgSetFont, PgSetFontCx"
+   summary="Set the text font"
+   synopsis="void PgSetFont( char const *ff );\n void PgSetFontCx( PhGC_t *gc, char const *ff );\n"
+/>
+<function
+   name="PgSetGC, PgSetGCCx"
+   summary="Set current graphics context"
+   synopsis="PhGC_t *PgSetGC( PhGC_t *GC );\n PhGC_t *PgSetGCCx( void *dc, PhGC_t *GC );\n"
+/>
+<function
+   name="PgSetLayerArg"
+   summary="Configure a layer argument"
+   synopsis="int PgSetLayerArg( int layer, int arg, void *data, int data_len );\n"
+/>
+<function
+   name="PgSetLayerSurface"
+   summary="Tell a layer to fetch image data from a specified surface"
+   synopsis="int PgSetLayerSurface( int layer, int surface_index, PdOffscreenContext_t *surface );\n"
+/>
+<function
+   name="PgSetMultiClip, PgSetMultiClipCx"
+   summary="Set a list of rectangles to clip drawing"
+   synopsis="int PgSetMultiClip( int num, PhRect_t const *clip_list );\n int PgSetMultiClipCx( PhGC_t *gc, int num, PhRect_t const *clip_list );\n"
+/>
+<function
+   name="PgSetPalette, PgSetPaletteCx"
+   summary="Set the color palette"
+   synopsis="int PgSetPalette( PgColor_t const *palette, long palette_id, short first_color, short num_colors, int flags, long tag );\n int PgSetPaletteCx( PhGC_t *gc, PgColor_t const *palette, long palette_id, short first_color, short num_colors, int flags, long tag );\n"
+/>
+<function
+   name="PgSetPlaneMask, PgSetPlaneMaskCx"
+   summary="Protect video memory from being modified"
+   synopsis="unsigned long PgSetPlaneMask( unsigned long mask);\n unsigned long PgSetPlaneMaskCx( PhGC_t *gc, unsigned long mask);\n"
+/>
+<function
+   name="PgSetRegion, PgSetRegionCx"
+   summary="Specify which region will emit draw events"
+   synopsis="void PgSetRegion( PhRid_t rid );\n void PgSetRegionCx( void *dc, PhRid_t rid );\n"
+/>
+<function
+   name="PgSetStrokeCap, PgSetStrokeCapCx"
+   summary="Set what the ends of lines look like"
+   synopsis="int PgSetStrokeCap( int cap );\n int PgSetStrokeCapCx( PhGC_t *gc, int cap );\n"
+/>
+<function
+   name="PgSetStrokeColor, PgSetStrokeColorCx"
+   summary="Set the stroke color"
+   synopsis="PgColor_t PgSetStrokeColor( PgColor_t color );\n PgColor_t PgSetStrokeColorCx( PhGC_t *gc, PgColor_t color );\n"
+/>
+<function
+   name="PgSetStrokeDash, PgSetStrokeDashCx"
+   summary="Set dashed lines"
+   synopsis="void PgSetStrokeDash( unsigned char const *DashList, int ListLen, long DashScale );\n void PgSetStrokeDashCx( PhGC_t *gc, unsigned char const *DashList, int ListLen, long DashScale );\n"
+/>
+<function
+   name="PgSetStrokeDither, PgSetStrokeDitherCx"
+   summary="Set the stroke dither pattern"
+   synopsis="void PgSetStrokeDither( PgColor_t c1, PgColor_t c0, PgPattern_t pat );\n void PgSetStrokeDitherCx( PhGC_t *gc, PgColor_t c1, PgColor_t c0, PgPattern_t pat );\n"
+/>
+<function
+   name="PgSetStrokeJoin, PgSetStrokeJoinCx"
+   summary="Set how lines are joined"
+   synopsis="int PgSetStrokeJoin( int join );\n int PgSetStrokeJoinCx( PhGC_t *gc, int join );\n"
+/>
+<function
+   name="PgSetStrokeTransPat, PgSetStrokeTransPatCx"
+   summary="Set the draw transparency for strokes"
+   synopsis="void PgSetStrokeTransPat( PgPattern_t pat );\n void PgSetStrokeTransPatCx( PhGC_t *gc, PgPattern_t pat );\n"
+/>
+<function
+   name="PgSetStrokeWidth, PgSetStrokeFWidth,
+PgSetStrokeWidthCx, PgSetStrokeFWidthCx"
+   summary="Set line thickness"
+   synopsis="int PgSetStrokeWidth( int width );\n long PgSetStrokeFWidth( long width );\n int PgSetStrokeWidthCx( PhGC_t *gc, int width );\n long PgSetStrokeFWidthCx( PhGC_t *gc, long width );\n"
+/>
+<function
+   name="PgSetStrokeXORColor, PgSetStrokeXORColorCx"
+   summary="Set the stroke color for XOR drawing"
+   synopsis="void PgSetStrokeXORColor( PgColor_t frgd, PgColor_t bkgd );\n void PgSetStrokeXORColorCx( PhGC_t *gc, PgColor_t frgd, PgColor_t bkgd );\n"
+/>
+<function
+   name="PgSetTextColor, PgSetTextColorCx"
+   summary="Set the text and bitmap color"
+   synopsis="PgColor_t PgSetTextColor( PgColor_t color );\n PgColor_t PgSetTextColorCx( PhGC_t *gc, PgColor_t color );\n"
+/>
+<function
+   name="PgSetTextDither, PgSetTextDitherCx"
+   summary="Set the dither pattern for text and bitmap"
+   synopsis="void PgSetTextDither( PgColor_t c1, PgColor_t c0, PgPattern_t pat );\n void PgSetTextDitherCx( PhGC_t *gc, PgColor_t c1, PgColor_t c0, PgPattern_t pat );\n"
+/>
+<function
+   name="PgSetTextTransPat, PgSetTextTransPatCx"
+   summary="Set the draw transparency for text and bitmaps"
+   synopsis="void PgSetTextTransPat( PgPattern_t pat );\n void PgSetTextTransPatCx( PhGC_t *gc, PgPattern_t pat );\n"
+/>
+<function
+   name="PgSetTextXORColor, PgSetTextXORColorCx"
+   summary="Set the text and bitmap color for XOR drawing"
+   synopsis="void PgSetTextXORColor( PgColor_t frgd, PgColor_t bkgd );\n void PgSetTextXORColorCx( PhGC_t *gc, PgColor_t frgd, PgColor_t bkgd );\n"
+/>
+<function
+   name="PgSetTranslation, PgSetTranslationCx"
+   summary="Translate draw commands horizontally and vertically"
+   synopsis="void PgSetTranslation ( PhPoint_t const *translation, int flags );\n void PgSetTranslationCx ( PhGC_t *gc, PhPoint_t const *translation, int flags );\n"
+/>
+<function
+   name="PgSetUnderline, PgSetUnderlineCx"
+   summary="Set colors for underlining text"
+   synopsis="void PgSetUnderline( PgColor_t c1, PgColor_t c2, int flags );\n void PgSetUnderlineCx( PhGC_t *gc, PgColor_t c1, PgColor_t c2, int flags );\n"
+/>
+<function
+   name="PgSetUserClip, PgSetUserClipAbsolute,
+PgSetUserClipCx, PgSetUserClipAbsoluteCx"
+   summary="Restrict subsequent draws"
+   synopsis="void PgSetUserClip( PhRect_t const *ClipRect );\n void PgSetUserClipAbsolute( PhRect_t const *ClipRect );\n void PgSetUserClipCx( PhGC_t *gc, PhRect_t const *ClipRect );\n void PgSetUserClipAbsoluteCx( PhGC_t *gc, PhRect_t const *ClipRect );\n"
+/>
+<function
+   name="PgSetVideoMode"
+   summary="Set the current video mode"
+   synopsis="int PgSetVideoMode( PgDisplaySettings_t *settings );\n"
+/>
+<function
+   name="PgShmemAttach"
+   summary="Record a shared memory reference"
+   synopsis="int PgShmemAttach( char const *name, unsigned long size, void *addr );\n"
+/>
+<function
+   name="PgShmemCleanup"
+   summary="Remove shared memory references"
+   synopsis="void PgShmemCleanup();\n"
+/>
+<function
+   name="PgShmemCreate"
+   summary="Create a block of shared memory"
+   synopsis="void *PgShmemCreate( unsigned long size, char const *name );\n"
+/>
+<function
+   name="PgShmemDestroy"
+   summary="Remove a block of shared memory"
+   synopsis="int PgShmemDestroy( void *addr );\n"
+/>
+<function
+   name="PgShmemDetach"
+   summary="Remove a shared memory reference"
+   synopsis="int PgShmemDetach( void *addr );\n"
+/>
+<function
+   name="PgSyncFlush, PgSyncFlushCx"
+   summary="Flushes and processes the draw stream"
+   synopsis="int PgSyncFlush( void );\n int PgSyncFlushCx( void *dc );\n"
+/>
+<function
+   name="PgSwapDisplay, PgSwapDisplayCx"
+   summary="Point the CRT of the video display at a given context"
+   synopsis="int PgSwapDisplay( PdOffscreenContext_t *osc, unsigned long flags );\n int PgSwapDisplayCx( PhGC_t *gc, PdOffscreenContext_t *osc, unsigned long flags );\n"
+/>
+<function
+   name="PgUnlockLayer"
+   summary="Unlock a layer"
+   synopsis="int PgUnlockLayer( int layer );\n"
+/>
+<function
+   name="PgWaitDrawComplete"
+   summary="Wait until all emitted draw streams have been processed"
+   synopsis="void PgWaitDrawComplete( void );\n"
+/>
+<function
+   name="PgWaitHWIdle"
+   summary="Wait until the video driver is idle"
+   synopsis="int PgWaitHWIdle( void );\n"
+/>
+<function
+   name="PgWaitVSync, PgWaitVSyncCx"
+   summary="Wait for vertical synchronization"
+   synopsis="void PgWaitVSync( void );\n void PgWaitVSyncCx( void *dc );\n"
+/>
+<function
+   name="PhAddMergeTiles"
+   summary="Merge two list tiles, eliminating overlap"
+   synopsis="PhTile_t * PhAddMergeTiles( PhTile_t *tiles, PhTile_t *add_tiles, int *added );\n"
+/>
+<function
+   name="PhAllocPackType"
+   summary="Allocate a buffer and pack transport data into it"
+   synopsis="char * PhAllocPackType( char unsigned *type, char unsigned *desc, int unsigned grouping_num, int unsigned handle, int unsigned transport, char *packing_type, char unsigned *data, int unsigned len, int *size );\n"
+/>
+<function
+   name="PhAreaToRect"
+   summary="Convert an area into a rectangle"
+   synopsis="void PhAreaToRect( PhArea_t const *area, PhRect_t *rect );\n"
+/>
+<function
+   name="PhAttach"
+   summary="Open a communications channel"
+   synopsis="struct _Ph_ctrl * PhAttach( char const *name, PhChannelParms_t const *parms );\n"
+/>
+<function
+   name="PhBlit"
+   summary="Blit an area within a region"
+   synopsis="int PhBlit( PhRid_t rid, const PhRect_t *rect, const PhPoint_t *offset );\n"
+/>
+<function
+   name="PhCancelDrag"
+   summary="Cancel a drag operation"
+   synopsis="int PhCancelDrag( PhRid_t rid, unsigned input_group, unsigned flags );\n"
+/>
+<function
+   name="PhChannelAttach"
+   summary="Create or use a Neutrino channel"
+   synopsis="int PhChannelAttach( int channel, int connection, struct sigevent const *event );\n"
+/>
+<function
+   name="PhClipboardCopyString"
+   summary="Copy string-only data to the clipboard"
+   synopsis="int PhClipboardCopyString( unsigned short ig, const char *string );\n"
+/>
+<function
+   name="PhClipboardPasteString"
+   summary="Paste string-only data from the clipboard"
+   synopsis="char *PhClipboardPasteString( unsigned short ig );\n"
+/>
+<function
+   name="PhClipboardRead"
+   summary="Copy data from the clipboard"
+   synopsis="typedef char PhClipType[8]; PhClipboardHdr *PhClipboardRead(unsigned short ig, PhClipType type);\n"
+/>
+<function
+   name="PhClipboardWrite"
+   summary="Copy data to the clipboard"
+   synopsis="int32_t PhClipboardWrite(unsigned short ig, uint32_t n, PhClipboardHdr const clip[]);\n"
+/>
+<function
+   name="PhClipTilings"
+   summary="Clip one list of tiles from another"
+   synopsis="PhTile_t *PhClipTilings( PhTile_t *tiles, PhTile_t const * const clip_tiles, PhTile_t **intersection );\n"
+/>
+<function
+   name="PhCoalesceTiles"
+   summary="Combine a list of tiles"
+   synopsis="PhTile_t * PhCoalesceTiles( PhTile_t *tiles );\n"
+/>
+<function
+   name="PhCopyTiles"
+   summary="Copy a list of tiles"
+   synopsis="PhTile_t * PhCopyTiles( PhTile_t const * const tile );\n"
+/>
+<function
+   name="PhCreateImage"
+   summary="Create a new PhImage_t structure"
+   synopsis="PhImage_t *PhCreateImage( PhImage_t *buffer, short width, short height, int type, PgColor_t const *palette, int ncolors, int shmem );\n"
+/>
+<function
+   name="PhCreateTransportCtrl"
+   summary="Allocate a PhTransportCtrl_t structure"
+   synopsis="PhTransportCtrl_t *PhCreateTransportCtrl( );\n"
+/>
+<function
+   name="PhDCCreate"
+   summary="Create and initialize a new draw context"
+   synopsis="PhDrawContext_t *PhDCCreate( int type, long flags, int (*flush)(int Subtype), int (*modify)(PhDrawContext_t *dc, int acquire, void *data ) );\n"
+/>
+<function
+   name="PhDCGetCurrent"
+   summary="Get the current draw context"
+   synopsis="PhDrawContext_t *PhDCGetCurrent( void );\n"
+/>
+<function
+   name="PhDCRelease"
+   summary="Release a draw context"
+   synopsis="int PhDCRelease( PhDrawContext_t *dc );\n"
+/>
+<function
+   name="PhDCSetCurrent"
+   summary="Set the currently active draw context"
+   synopsis="PhDrawContext_t *PhDCSetCurrent( void *draw_context );\n"
+/>
+<function
+   name="PhDetach"
+   summary="Free all resources consumed by a Photon channel"
+   synopsis="int PhDetach( struct _Ph_ctrl *Ph );\n"
+/>
+<function
+   name="PhDeTranslateRect"
+   summary="Detranslate a rectangle (subtract offset)"
+   synopsis="PhRect_t *PhDeTranslateRect( PhRect_t *rect, PhPoint_t const *delta );\n"
+/>
+<function
+   name="PhDeTranslateTiles"
+   summary="Subtract x and y offsets from the vertices of a list of tiles"
+   synopsis="PhTile_t * PhDeTranslateTiles( PhTile_t *tile, PhPoint_t const *point_subtract );\n"
+/>
+<function
+   name="PhEmit"
+   summary="Emit an event"
+   synopsis="int PhEmit( PhEvent_t const *event, PhRect_t const *rects, void const *data );\n"
+/>
+<function
+   name="PhEmitmx"
+   summary="Emit an event when the event-specific data isn't contiguous in memory"
+   synopsis="int PhEmitmx( PhEvent_t const *event, PhRect_t const *rects, int mxparts, iov_t *mx );\n"
+/>
+<function
+   name="PhEventArm"
+   summary="Arm the currently attached Photon channel"
+   synopsis="int PhEventArm( void );\n"
+/>
+<function
+   name="PhEventEmit"
+   summary="Emit an event"
+   synopsis="int PhEventEmit( PhEvent_t const *event, PhRect_t const *rects, void const *data );\n"
+/>
+<function
+   name="PhEventEmitmx"
+   summary="Emit an event when the event-specific data isn't contiguous in memory"
+   synopsis="int PhEventEmitmx( PhEvent_t const *event, PhRect_t const *rects, int mxparts, iov_t *mx );\n"
+/>
+<function
+   name="PhEventNext"
+   summary="Provide synchronous event notification"
+   synopsis="int PhEventNext( void *buffer, unsigned size );\n"
+/>
+<function
+   name="PhEventPeek"
+   summary="Check to see if an event is pending"
+   synopsis="int PhEventPeek( void *buffer, unsigned size );\n"
+/>
+<function
+   name="PhEventRead"
+   summary="Provide asynchronous event notification"
+   synopsis="int PhEventRead( int rcvid, void *buffer, unsigned size );\n"
+/>
+<function
+   name="PhFindTransportType"
+   summary="Find a transport type in the transport registry"
+   synopsis="PhTransportRegEntry_t * PhFindTransportType( char *packing_type );\n"
+/>
+<function
+   name="PhFreeTiles"
+   summary="Return a list of tiles to the internal tile pool"
+   synopsis="void PhFreeTiles( PhTile_t * tile);\n"
+/>
+<function
+   name="PhFreeTransportType"
+   summary="Free data associated with a transport registry entry"
+   synopsis="int PhFreeTransportType( void *data, char *packing_type );\n"
+/>
+<function
+   name="PhGetAllTransportHdrs"
+   summary="Extract all the headers from a buffer of packed transport data"
+   synopsis="PhTransportHdr_t * PhGetAllTransportHdrs( char *buffer, int unsigned buffer_size );\n"
+/>
+<function
+   name="PhGetConnectId"
+   summary="Get the connection ID of the calling process"
+   synopsis="PhConnectId_t PhGetConnectId( void );\n"
+/>
+<function
+   name="PhGetConnectInfo"
+   summary="Get information about a Photon channel"
+   synopsis="PhConnectId_t PhGetConnectInfo( PhConnectId_t coid, PhConnectInfo_t *buf);\n"
+/>
+<function
+   name="PhGetData"
+   summary="Get data for an event"
+   synopsis="void *PhGetData( PhEvent_t const *event );\n"
+/>
+<function
+   name="PhGetMsgSize"
+   summary="Get message size"
+   synopsis="unsigned PhGetMsgSize( PhEvent_t const *event_buf );\n"
+/>
+<function
+   name="PhGetNextInlineData"
+   summary="Get the data for the next entry in a linked list of transport data"
+   synopsis="void * PhGetNextInlineData( PhTransportCtrl_t *ctrl, PhTransportLink_t *current, PhTransportLink_t **new_link );\n"
+/>
+<function
+   name="PhGetNextTransportHdr"
+   summary="Get the next header from a buffer of packed transport data"
+   synopsis="PhTransportHdr_t * PhGetNextTransportHdr( PhTransportHdr_t *last_hdr, PhTransportHdr_t *trans_hdr );\n"
+/>
+<function
+   name="PhGetRects"
+   summary="Get an event's rectangle set"
+   synopsis="PhRect_t *PhGetRects( PhEvent_t const *event );\n"
+/>
+<function
+   name="PhGetTile"
+   summary="Retrieve a tile from the internal tile pool"
+   synopsis="PhTile_t *PhGetTile( void );\n"
+/>
+<function
+   name="PhGetTransportHdr"
+   summary="Extract the header from a buffer of packed transport data"
+   synopsis="PhTransportHdr_t *PhGetTransportHdr( PhTransportHdr_t *hdr, char *buffer );\n"
+/>
+<function
+   name="PhGetTransportVectors"
+   summary="Build an I/O vector of data to be transported"
+   synopsis="iov_t * PhGetTransportVectors( PhTransportCtrl_t *trans_ctrl, int num_hdr_vectors, int unsigned *num_vectors, int unsigned *size );\n"
+/>
+<function
+   name="PhInitDrag"
+   summary="Initiate a drag operation"
+   synopsis="int PhInitDrag( PhRid_t rid, unsigned flags, const PhRect_t *rect, const PhRect_t *boundary, unsigned int input_group, const PhDim_t *min, const PhDim_t *max, const PhDim_t *step, const PhPoint_t *ptrpos, const PhCursorDescription_t *cursor );\n"
+/>
+<function
+   name="PhInputGroup"
+   summary="Determine the input group associated with an event"
+   synopsis="int PhInputGroup( PhEvent_t *event );\n"
+/>
+<function
+   name="PhIntersectTilings"
+   summary="Determine the intersection of two lists of tiles"
+   synopsis="PhTile_t *PhIntersectTilings( PhTile_t const * const tile1, PhTile_t const * const tile2, unsigned short *num_intersect_tiles );\n"
+/>
+<function
+   name="PhKeyToMb"
+   summary="Get the UTF-8 value of a key event"
+   synopsis="int PhKeyToMb( char *buffer, PhKeyEvent_t const *keyevent );\n"
+/>
+<function
+   name="PhLibVersion"
+   summary="Get the version number of the Photon libraries"
+   synopsis="unsigned PhLibVersion( void );\n"
+/>
+<function
+   name="PhLinkTransportData"
+   summary="Add transport data to a linked list"
+   synopsis="PhTransportLink_t * PhLinkTransportData( PhTransportLink_t **first_link, PhTransportLink_t **last_link, char const * const data, int unsigned const size, iov_t *iovs, int unsigned const niovs );\n"
+/>
+<function
+   name="PhLocateTransHdr"
+   summary="Look for specific data in a linked list of transport headers"
+   synopsis="int PhLocateTransHdr( PhTransportHdr_t **hdr_list, PhTransLoc_t *desired_data, PhTransportHdr_t *found );\n"
+/>
+<function
+   name="PhMakeGhostBitmap"
+   summary="Create a ghost bitmap for an image"
+   synopsis="int PhMakeGhostBitmap( PhImage_t *image );\n"
+/>
+<function
+   name="PhMakeTransBitmap"
+   summary="Create a transparency mask for an image"
+   synopsis="int PhMakeTransBitmap( PhImage_t *image, PgColor_t trans_color );\n"
+/>
+<function
+   name="PhMakeTransparent"
+   summary="Make a given color transparent in an image, using chroma if possible"
+   synopsis="int PhMakeTransparent( PhImage_t *image, PgColor_t trans_color );\n"
+/>
+<function
+   name="PhMallocUnpack"
+   summary="Unpack transport data, using a custom memory-allocation function"
+   synopsis="char * PhMallocUnpack( PhTransportHdr_t *hdr, void **ret_struct, TransportMalloc_t *ymalloc, void *ymalloc_cb_data );\n"
+/>
+<function
+   name="PhMergeTiles"
+   summary="Remove all overlap from a list of tiles"
+   synopsis="PhTile_t * PhMergeTiles( PhTile_t *tiles );\n"
+/>
+<function
+   name="PhMoveCursorAbs"
+   summary="Move cursor to absolute position"
+   synopsis="void PhMoveCursorAbs( int input_group, int x, int y );\n"
+/>
+<function
+   name="PhMoveCursorRel"
+   summary="Move cursor to relative position"
+   synopsis="void PhMoveCursorRel( int input_group, int x, int y );\n"
+/>
+<function
+   name="PhMultiBlit"
+   summary="Blit a multi-rectangular area within a region"
+   synopsis="int PhMultiBlit( PhRid_t rid, unsigned short nrects, const PhRect_t rects[], const PhPoint_t *offset );\n"
+/>
+<function
+   name="PhPackEntry"
+   summary="Pack transport data, given a transport registry entry"
+   synopsis="char * PhPackEntry( char *buffer, PhTransportRegEntry_t *regent, char const * const type, char const * const desc, int unsigned const grouping_num, int unsigned const handle, int unsigned const request_transport, int unsigned const inlined_transport, char const * const data, int unsigned const size, int unsigned *tot_size, iov_t *iovs, int unsigned *niovs, int unsigned *iovsize );\n"
+/>
+<function
+   name="PhPackType"
+   summary="Pack transport data, given the type of data"
+   synopsis="char * PhPackType( char *buffer, char const * const type, char const * const desc, int unsigned const grouping_num, int unsigned const handle, int unsigned const request_transport, int unsigned const inlined_transport, char const * const packing_type, void const * const data, int unsigned const size, int unsigned *tot_size, iov_t *iovs, int unsigned *niovs, int unsigned *iovsize );\n"
+/>
+<function
+   name="PhQueryCursor"
+   summary="Collect cursor information"
+   synopsis="int PhQueryCursor( unsigned short ig, PhCursorInfo_t *buf );\n"
+/>
+<function
+   name="PhQueryRids"
+   summary="Get a list of regions"
+   synopsis="int PhQueryRids( unsigned flags, PhRid_t rid, unsigned input_group, unsigned type, unsigned sense, PhRid_t emitter, const PhRect_t *rect, PhRid_t rids[], int num );\n"
+/>
+<function
+   name="PhQuerySystemInfo"
+   summary="Query the system for information about a given region"
+   synopsis="PhSysInfo_t * PhQuerySystemInfo( PhRid_t rid, PhRect_t const *rect, PhSysInfo_t *sysinfo );\n"
+/>
+<function
+   name="PhReattach"
+   summary="Change the current Photon channel"
+   synopsis="struct _Ph_ctrl *PhReattach( struct _Ph_ctrl *Ph );\n"
+/>
+<function
+   name="PhRectIntersect"
+   summary="Find the intersection of two rectangles"
+   synopsis="int PhRectIntersect( PhRect_t *rect1, PhRect_t const *rect2 );\n"
+/>
+<function
+   name="PhRectsToTiles"
+   summary="Create a list of tiles from an array of rectangles"
+   synopsis="PhTile_t * PhRectsToTiles( PhRect_t *rects, int num_rects );\n"
+/>
+<function
+   name="PhRectToArea"
+   summary="Convert a rectangle into an area"
+   synopsis="void PhRectToArea( PhRect_t const *rect, PhArea_t *area);\n"
+/>
+<function
+   name="PhRectUnion"
+   summary="Determine a bounding box for two rectangles"
+   synopsis="int PhRectUnion( PhRect_t *rect1, PhRect_t const *rect2 );\n"
+/>
+<function
+   name="PhRegionChange"
+   summary="Change the definition of a region"
+   synopsis="int PhRegionChange( unsigned long fields, unsigned long flags, PhRegion_t const *info, PhRect_t const *rect, void const *data );\n"
+/>
+<function
+   name="PhRegionClose"
+   summary="Remove a region"
+   synopsis="int PhRegionClose( PhRid_t rid );\n"
+/>
+<function
+   name="PhRegionDataFindType"
+   summary="Find a data type within a region's data"
+   synopsis="PhRegionDataHdr_t * PhRegionDataFindType( PhRegion_t const *region, PhRegionDataHdr_t const *data, short type);\n"
+/>
+<function
+   name="PhRegionInfo"
+   summary="Retrieve information about a region"
+   synopsis="int PhRegionInfo( PhRid_t rid, PhRegion_t *region, PhRect_t rects[], unsigned nrect, void *data, unsigned data_len );\n"
+/>
+<function
+   name="PhRegionOpen"
+   summary="Open a region"
+   synopsis="PhRid_t PhRegionOpen( unsigned fields, PhRegion_t const *info, PhRect_t const *rect, void const *data );\n"
+/>
+<function
+   name="PhRegionQuery"
+   summary="Retrieve information about a region"
+   synopsis="int PhRegionQuery( PhRid_t rid, PhRegion_t *region, PhRect_t *rect, void *data, unsigned data_len );\n"
+/>
+<function
+   name="PhRegisterTransportType"
+   summary="Add a new transport type to the transport registry"
+   synopsis="int PhRegisterTransportType( PhTransportRegEntry_t *ref );\n"
+/>
+<function
+   name="PhReleaseImage"
+   summary="Release the allocated members of an image"
+   synopsis="void PhReleaseImage( PhImage_t *image );\n"
+/>
+<function
+   name="PhReleaseTransportCtrl"
+   summary="Free a PhTransportCtrl_t structure"
+   synopsis="void PhReleaseTransportCtrl( PhTransportCtrl_t *ctrl );\n"
+/>
+<function
+   name="PhReleaseTransportHdrs"
+   summary="Free a linked list of headers for packed transport data"
+   synopsis="void PhReleaseTransportHdrs( PhTransportHdr_t *hdrs );\n"
+/>
+<function
+   name="PhSortTiles"
+   summary="Sort a list of tiles"
+   synopsis="PhTile_t * PhSortTiles( PhTile_t *tiles );\n"
+/>
+<function
+   name="PhTilesBoundingRect"
+   summary="Calculate the bounding box from a list of tiles"
+   synopsis="void PhTilesBoundingRect( const PhTile_t *tiles, PhRect_t *r );\n"
+/>
+<function
+   name="PhTilesToRects"
+   summary="Create an array of rectangles from a list of tiles"
+   synopsis="PhRect_t * PhTilesToRects( PhTile_t *tiles, int *num_rects );\n"
+/>
+<function
+   name="PhTimerArm"
+   summary="Arm a timer event"
+   synopsis="int PhTimerArm ( PhRid_t rid, long handle, unsigned msec );\n"
+/>
+<function
+   name="PhTo8859_1"
+   summary="Get the ISO8859-1 value of a key event"
+   synopsis="int PhTo8859_1( PhKeyEvent_t const *keyevent );\n"
+/>
+<function
+   name="PhTranslateRect"
+   summary="Translate a rectangle (add offset)"
+   synopsis="PhRect_t *PhTranslateRect( PhRect_t *rect, PhPoint_t const *delta );\n"
+/>
+<function
+   name="PhTranslateTiles"
+   summary="Add x and y offsets to the vertices of a list of tiles"
+   synopsis="PhTile_t * PhTranslateTiles( PhTile_t *tile, PhPoint_t const *point_add );\n"
+/>
+<function
+   name="PhTransportFindLink"
+   summary="Search a linked list of transport data for some specific data"
+   synopsis="PhTransportLink_t *PhTransportFindLink( PhTransportLink_t *link_list, void *data );\n"
+/>
+<function
+   name="PhTransportType"
+   summary="Pack data into a PhTransportCtrl_t structure"
+   synopsis="PhTransportLink_t * PhTransportType( PhTransportCtrl_t *ctrl, char const * const type, char const * const desc, int unsigned const grouping_num, int unsigned const handle, int unsigned inlined_transport, char *packing_type, void *vdata, int unsigned len, int unsigned const flags );\n"
+/>
+<function
+   name="PhUnlinkTransportHdr"
+   summary="Remove an entry from a linked list of transport headers"
+   synopsis="PhTransportHdr_t * PhUnlinkTransportHdr( PhTransportHdr_t *hdr_list, PhTransportHdr_t *victim );\n"
+/>
+<function
+   name="PhUnpack"
+   summary="Unpack transport data"
+   synopsis="char * PhUnpack( PhTransportHdr_t *hdr, void **ret_struct );\n"
+/>
+<function
+   name="PhWindowChange"
+   summary="Modify the attributes of a window's region"
+   synopsis="int PhWindowChange( unsigned fields, unsigned flags, const PhRegion_t *region, const PhRect_t *rect, const PhWindowInfo_t *win_info );\n"
+/>
+<function
+   name="PhWindowClose"
+   summary="Close a window"
+   synopsis="int PhWindowClose( PhRid_t window_rid );\n"
+/>
+<function
+   name="PhWindowOpen"
+   summary="Create a window region"
+   synopsis="PhRid_t PhWindowOpen( unsigned fields, const PhRegion_t *region, const PhRect_t *rect, const PhWindowInfo_t *win_info );\n"
+/>
+<function
+   name="PhWindowQueryVisible"
+   summary="Query a visible extent"
+   synopsis="int PhWindowQueryVisible( unsigned flag, PhRid_t rid, unsigned input_group, PhRect_t *rect );\n"
+/>
+<function
+   name="PiConvertImage"
+   summary="Convert an image from one type to another"
+   synopsis="PhImage_t *PiConvertImage( PhImage_t *image, PhRect_t const *bounds, int type, int flags )"
+/>
+<function
+   name="PiCropImage"
+   summary="Crop an image to the specified boundary"
+   synopsis="PhImage_t *PiCropImage( PhImage_t *image, PhRect_t const *bounds, int flags );\n"
+/>
+<function
+   name="PiDuplicateImage"
+   summary="Duplicate an image"
+   synopsis="PhImage_t *PiDuplicateImage( PhImage_t *image, int flags );\n"
+/>
+<function
+   name="PiFlipImage"
+   summary="Flip all or part of an image"
+   synopsis="PhImage_t *PiFlipImage( PhImage_t *image, PhRect_t const *bounds, int flags );\n"
+/>
+<function
+   name="PiGetPixel"
+   summary="Retrieve the value of a pixel within an image"
+   synopsis="int PiGetPixel( PhImage_t const *image, unsigned short x, unsigned short y, unsigned long *value );\n"
+/>
+<function
+   name="PiGetPixelFromData"
+   summary="Retrieve a value from a run of pixels"
+   synopsis="int PiGetPixelFromData( char const *data, int type, unsigned short pixel, unsigned long *value );\n"
+/>
+<function
+   name="PiGetPixelRGB"
+   summary="Retrieve the RGB value of a pixel within an image"
+   synopsis="int PiGetPixelRGB( PhImage_t const *image, unsigned short x, unsigned short y, PgColor_t *value );\n"
+/>
+<function
+   name="PiInitImage"
+   summary="Initialize a Photon image"
+   synopsis="PhImage_t *PiInitImage( PhImage_t *oldImage, PhRect_t const *oldRect, PhRect_t *newRect, int newType, int flags, int colors )"
+/>
+<function
+   name="PiResizeImage"
+   summary="Resize an image to the specified size"
+   synopsis="PhImage_t *PiResizeImage( PhImage_t *image, PhRect_t const *bounds, short w, short h, int flags )"
+/>
+<function
+   name="PiSetPixel"
+   summary="Alter the value of a pixel within an image"
+   synopsis="int PiSetPixel( PhImage_t *image, unsigned short x, unsigned short y, unsigned long value );\n"
+/>
+<function
+   name="PiSetPixelInData"
+   summary="Set the value of a pixel in a run of pixels"
+   synopsis="int PiSetPixelInData( char *data, int type, unsigned short pixel, unsigned long value );\n"
+/>
+<function
+   name="PmMemCreateMC"
+   summary="Create a memory context"
+   synopsis="#include &lt;photon/PhRender.h&gt;\n PmMemoryContext_t * PmMemCreateMC( PhImage_t *mc_image, PhDim_t *dim, PhPoint_t *translation );\n"
+/>
+<function
+   name="PmMemFlush"
+   summary="Flush a memory context to its bitmap"
+   synopsis="#include &lt;photon/PhRender.h&gt;\n int PmMemFlush( PmMemoryContext_t *mc, PhImage_t *image );\n"
+/>
+<function
+   name="PmMemReleaseMC"
+   summary="Release a memory context"
+   synopsis="#include &lt;photon/PhRender.h&gt;\n void PmMemReleaseMC( PmMemoryContext_t *mc );\n"
+/>
+<function
+   name="PmMemSetChunkSize"
+   summary="Set the increment for growing a memory context's draw buffer"
+   synopsis="#include &lt;photon/PhRender.h&gt;\n void PmMemSetChunkSize( PmMemoryContext_t *mc, int size );\n"
+/>
+<function
+   name="PmMemSetMaxBufSize"
+   summary="Set the maximum size of a memory context's draw buffer"
+   synopsis="#include &lt;photon/PhRender.h&gt;\n void PmMemSetMaxBufSize( PmMemoryContext_t *mc, int size );\n"
+/>
+<function
+   name="PmMemSetType"
+   summary="Set the type of a memory context"
+   synopsis="#include &lt;photon/PhRender.h&gt;\n void PmMemSetType( PmMemoryContext_t *mc, int type );\n"
+/>
+<function
+   name="PmMemStart"
+   summary="Make a memory context active"
+   synopsis="#include &lt;photon/PhRender.h&gt;\n PhDrawContext_t * PmMemStart( PmMemoryContext_t *mc );\n"
+/>
+<function
+   name="PmMemStop"
+   summary="Deactivate a memory context"
+   synopsis="#include &lt;photon/PhRender.h&gt;\n PhDrawContext_t * PmMemStop( PmMemoryContext_t *mc );\n"
+/>
+<function
+   name="PpContinueJob"
+   summary="Continue a suspended print job"
+   synopsis="PhDrawContext_t *PpContinueJob( PpPrintContext_t *pc );\n"
+/>
+<function
+   name="PpCreatePC"
+   summary="Create a print context"
+   synopsis="PpPrintContext_t *PpCreatePC( void );\n"
+/>
+<function
+   name="PpEndJob"
+   summary="End a print job"
+   synopsis="int PpEndJob( PpPrintContext_t *pc );\n"
+/>
+<function
+   name="PpFreePrinterList"
+   summary="Free a list of available printers"
+   synopsis="void PpFreePrinterList( char **list );\n"
+/>
+<function
+   name="PpGetCanvas"
+   summary="Get the size of the current drawing area of a print context"
+   synopsis="PhDim_t PpGetCanvas( PpPrintContext_t *pc );\n"
+/>
+<function
+   name="PpGetPC"
+   summary="Extract data from a print context"
+   synopsis="void * PpGetPC( PpPrintContext_t *pc, int member, const void ** const data);\n"
+/>
+<function
+   name="PpLoadDefaultPrinter"
+   summary="Initialize a print context with information for the default printer"
+   synopsis="int PpLoadDefaultPrinter( PpPrintContext_t *pc );\n"
+/>
+<function
+   name="PpLoadPrinter"
+   summary="Initialize a print context with information for a given printer"
+   synopsis="int PpLoadPrinter( PpPrintContext_t *pc, char const *name );\n"
+/>
+<function
+   name="PpLoadPrinterList"
+   summary="Load a list of available printers"
+   synopsis="char **PpLoadPrinterList( void );\n"
+/>
+<function
+   name="PpPrintNewPage"
+   summary="Place a page break in the draw stream for a Print Context"
+   synopsis="int PpPrintNewPage( PpPrintContext_t *pc );\n"
+/>
+<function
+   name="PpPrintWidget"
+   summary="Print a widget"
+   synopsis="void PpPrintWidget( PpPrintContext_t *pc, PtWidget_t *widget, PhPoint_t const *trans, PhRect_t const *clip_rect, unsigned long resize );\n"
+/>
+<function
+   name="PpReleasePC"
+   summary="Release a print context"
+   synopsis="void PpReleasePC( PpPrintContext_t *pc );\n"
+/>
+<function
+   name="PpSetCanvas"
+   summary="Set the size of the drawing area for a print context"
+   synopsis="PhDim_t PpSetCanvas( PpPrintContext_t *pc, PhDim_t size );\n"
+/>
+<function
+   name="PpSetPC"
+   summary="Modify the attributes of a print context"
+   synopsis="int PpSetPC( PpPrintContext_t *pc, int member, void const * const data, int lock );\n"
+/>
+<function
+   name="PpStartJob"
+   summary="Start a print job"
+   synopsis="int PpStartJob( PpPrintContext_t *pc );\n"
+/>
+<function
+   name="PpSuspendJob"
+   summary="Suspend a print job"
+   synopsis="void PpSuspendJob( PpPrintContext_t *pc );\n"
+/>
+<function
+   name="PtAddCallback"
+   summary="Add a single callback entry to a callback list"
+   synopsis="void PtAddCallback( PtWidget_t *widget, unsigned long callback_type, PtCallbackF_t *callback, void *data );\n"
+/>
+<function
+   name="PtAddCallbacks"
+   summary="Add several callback entries to a callback list"
+   synopsis="void PtAddCallbacks( PtWidget_t *widget, unsigned long callback_type, PtCallback_t const *callback_defs, unsigned int num_callbacks );\n"
+/>
+<function
+   name="PtAddClassStyle"
+   summary="Add a style to a widget class"
+   synopsis="int PtAddClassStyle( PtWidgetClassRef_t * const ref, PtWidgetClassStyle_t *style );\n"
+/>
+<function
+   name="PtAddData"
+   summary="Add data to the provided data chain"
+   synopsis="int PtAddData( PtDataHdr_t **ptr, long type, long subtype, void *data, long len, PtDataRemoveF_t *remove );\n"
+/>
+<function
+   name="PtAddEventHandler"
+   summary="Add a single Pt_CB_RAW entry to a widget"
+   synopsis="void PtAddEventHandler( PtWidget_t *widget, unsigned long event_mask, PtCallbackF_t *callback, void *data );\n"
+/>
+<function
+   name="PtAddEventHandlers"
+   summary="Add several Pt_CB_RAW entries to a widget"
+   synopsis="void PtAddEventHandlers( PtWidget_t *widget, PtRawCallback_t const *callback_defs, unsigned int num_handlers );\n"
+/>
+<function
+   name="PtAddFilterCallback"
+   summary="Add a single Pt_CB_FILTER callback to a widget"
+   synopsis="void PtAddFilterCallback( PtWidget_t *widget, unsigned long event_mask, PtCallbackF_t *callback, void *data );\n"
+/>
+<function
+   name="PtAddFilterCallbacks"
+   summary="Add several Pt_CB_FILTER entries to a widget"
+   synopsis="void PtAddFilterCallbacks( PtWidget_t *widget, PtRawCallback_t const *callback_defs, unsigned int num_handlers );\n"
+/>
+<function
+   name="PtAddHotkeyHandler"
+   summary="Add a single hotkey handler entry to a widget"
+   synopsis="void PtAddHotkeyHandler( PtWidget_t *widget, unsigned key_sym_cap, unsigned key_mods, short flags, void *data, PtCallbackF_t *callback );\n"
+/>
+<function
+   name="PtAddResponseType"
+   summary="Add data to the response chain"
+   synopsis="PhTransportLink_t * PtAddResponseType( PtTransportCtrl_t *ctrl, PtRequestables_t *requestable, char *type, char *desc, int unsigned transport, char *packing_type, void *vdata, int unsigned vdata_size, int unsigned const flags );\n"
+/>
+<function
+   name="PtAlert"
+   summary="Display a message and request a response"
+   synopsis="int PtAlert( PtWidget_t *parent, PhPoint_t const *location, char const *title, PhImage_t const *image, char const *message, char const *msgFont, int btnCount, char const **buttons, char const **btnFonts, int defBtn, int escBtn, int flags );\n"
+/>
+<function
+   name="PtAllowExit"
+   summary="Allow a Photon application to exit"
+   synopsis="void PtAllowExit( void );\n"
+/>
+<function
+   name="PtAppAddCallback"
+   summary="Add a callback to an application's callback list"
+   synopsis="void PtAppAddCallback( unsigned long cb_type, int (*func)(void*,PtCallbackInfo_t*), void *data );\n"
+/>
+<function
+   name="PtAppAddEventHandler"
+   summary="Add an event handler to an application's callback list"
+   synopsis="void PtAppAddEventHandler( unsigned long event_mask, int (*func)(void *,PtCallbackInfo_t *), void *data);\n"
+/>
+<function
+   name="PtAppAddFd, PtAppAddFdPri"
+   summary="Install a file-descriptor function"
+   synopsis="int PtAppAddFd( PtAppContext_t app, int fd, unsigned mode, PtFdProc_t fun, void *data);\n int PtAppAddFdPri( PtAppContext_t app, int fd, unsigned mode, PtFdProc_t fun, void *data, int priority);\n"
+/>
+<function
+   name="PtAddFilterCallback"
+   summary="Add a filter callback to an application's callback list"
+   synopsis="void PtAddFilterCallback( unsigned long event_mask, int (*func)(void *,PtCallbackInfo_t *), void *data);\n"
+/>
+<function
+   name="PtAppAddHotkeyHandler"
+   summary="Add a hotkey callback to an application's callback list"
+   synopsis="void PtAppAddHotkeyHandler( unsigned key_sym_cap, unsigned key_mods, short flags, void *data, int (*event_f)(void *,PtCallbackInfo_t *));\n"
+/>
+<function
+   name="PtAppAddInput"
+   summary="Add an input processing function"
+   synopsis="PtInputId_t *PtAppAddInput( PtAppContext_t app_context, pid_t pid, PtInputCallbackProc_t input_func, void *data );\n"
+/>
+<function
+   name="PtAppAddInputRemote"
+   summary="Add an input processing function for a remote node"
+   synopsis="int PtAppAddInputRemote( PtAppContext_t app_context, int nd, pid_t pid, PtInputCallbackProc_t input_func, void *data );\n"
+/>
+<function
+   name="PtAppAddSignalProc"
+   summary="Add Photon signalling to a context"
+   synopsis="int PtAppAddSignalProc( PtAppContext_t app, sigset_t const *set, PtSignalProc_t func, void *data);\n"
+/>
+<function
+   name="PtAppAddWorkProc"
+   summary="Add a WorkProc (background) function"
+   synopsis="PtWorkProcId_t *PtAppAddWorkProc( PtAppContext_t app_context, PtWorkProc_t work_func, void *data );\n"
+/>
+<function
+   name="PtAppCreatePulse"
+   summary="Create a Photon pulse"
+   synopsis="pid_t PtAppCreatePulse( PtAppContext_t app, int priority );\n"
+/>
+<function
+   name="PtAppDeletePulse"
+   summary="Delete a Photon pulse"
+   synopsis="int PtAppDeletePulse( PtAppContext_t app, pid_t pulse_pid );\n"
+/>
+<function
+   name="PtAppGetResource"
+   summary="Retrieve one resource value for an application"
+   synopsis="#define PtAppGetResources(type, value, len)"
+/>
+<function
+   name="PtAppGetResources"
+   summary="Retrieve one or more resource values for an application"
+   synopsis="int PtAppGetResources(int n_args, PtArg_t *args)"
+/>
+<function
+   name="PtAppInit"
+   summary="Initialize an application and create the main window"
+   synopsis="PtWidget_t *PtAppInit( PtAppContext_t *app_context, int *argc, char **argv, int num_args, PtArg_t const *args );\n"
+/>
+<function
+   name="PtAppPulseTrigger"
+   summary="Deliver a Photon pulse to yourself"
+   synopsis="int PtAppPulseTrigger( PtAppContext_t app, pid_t pulse );\n"
+/>
+<function
+   name="PtAppRemoveCallback"
+   summary="Remove a callback from an application's callback list"
+   synopsis="void PtAppRemoveCallback(unsigned long cb_type, int (*func)(void*,PtCallbackInfo_t*), void *data)"
+/>
+<function
+   name="PtAppRemoveEventHandler"
+   summary="Remove an event handler from an application's event callback
+list"
+   synopsis="void PtAppRemoveEventHandler( unsigned long event_mask, int (*func)(void *,PtCallbackInfo_t *), void *data);\n"
+/>
+<function
+   name="PtAppRemoveFd"
+   summary="Remove a file-descriptor function"
+   synopsis="int PtAppRemoveFd( PtAppContext_t app, int fd );\n"
+/>
+<function
+   name="PtAppRemoveFilterCallback"
+   summary="Remove a callback from an application's filter callback
+list"
+   synopsis="void PtAppRemoveFilterCallback( unsigned long event_mask, int (*func)(void *,PtCallbackInfo_t *), void *data);\n"
+/>
+<function
+   name="PtAppRemoveHotkeyHandler"
+   summary="Remove a hotkey handler from an application's hotkey callback
+list"
+   synopsis="void PtAppRemoveHotkeyHandler( unsigned key_sym_cap, unsigned key_mods, short flags, void *data, int (*event_f)(void *,PtCallbackInfo_t *));\n"
+/>
+<function
+   name="PtAppRemoveInput"
+   summary="Remove an input processing entry"
+   synopsis="void PtAppRemoveInput( PtAppContext_t app_context, PtInputId_t *input_id );\n"
+/>
+<function
+   name="PtAppRemoveSignal"
+   summary="Remove specific signal handling from a context"
+   synopsis="int PtAppRemoveSignal( PtAppContext_t app, sigset_t const *set, PtSignalProc_t proc, void *data );\n"
+/>
+<function
+   name="PtAppRemoveWorkProc"
+   summary="Remove a WorkProc processing function"
+   synopsis="void PtAppRemoveWorkProc( PtAppContext_t app_context, PtWorkProcId_t *WorkProc_id );\n"
+/>
+<function
+   name="PtAppSetFdMode"
+   summary="Change the mode that's of interest to an FD handler"
+   synopsis="int PtAppSetFdMode( PtAppContext_t app, int fd, unsigned mode );\n"
+/>
+<function
+   name="PtAppSetResource"
+   summary="Set a single application callback resource"
+   synopsis="#define PtAppSetResource( type, value, len ) ..."
+/>
+<function
+   name="PtAppSetResources"
+   summary="Set application-level resources"
+   synopsis="int PtAppSetResources(int n_args, PtArg_t const *args);\n"
+/>
+<function
+   name="Pt_ARG"
+   summary="Macro for creating statically initialized argument lists"
+   synopsis="#define Pt_ARG( type, value, len ) { ... }"
+/>
+<function
+   name="PtBkgdHandlerProcess"
+   summary="Process all outstanding Photon events"
+   synopsis="void PtBkgdHandlerProcess( void );\n"
+/>
+<function
+   name="PtBlit"
+   summary="Blit an area within a widget"
+   synopsis="int PtBlit( PtWidget_t *widget, PhRect_t const *source, PhPoint_t const *delta );\n"
+/>
+<function
+   name="PtBlockAllWindows"
+   summary="Block all windows except the one with a given widget"
+   synopsis="PtBlockedList_t *PtBlockAllWindows( PtWidget_t *skip, unsigned short cursor, PgColor_t cursor_color );\n"
+/>
+<function
+   name="PtBlockWindow"
+   summary="Block a given window"
+   synopsis="PtBlockedList_t *PtBlockWindow( PtWidget_t *window, unsigned short cursor, PgColor_t cursor_color );\n"
+/>
+<function
+   name="PtCalcAbsPosition"
+   summary="Calculate the position of a widget based on a position and another widget"
+   synopsis="int PtCalcAbsPosition( PtWidget_t *reference, PhPoint_t const *pos, PhDim_t const *dim, PhPoint_t *new_pos );\n"
+/>
+<function
+   name="PtCalcCanvas"
+   summary="Calculate the drawable canvas for a widget"
+   synopsis="PhRect_t *PtCalcCanvas( PtWidget_t *widget, PhRect_t *canvas_rect);\n"
+/>
+<function
+   name="PtCalcSurface"
+   summary="Force a control surface to calculate its geometry"
+   synopsis="void PtCalcSurface( PtWidget_t *widget, PtSurface_t *surface );\n"
+/>
+<function
+   name="PtCalcSurfaceByAction"
+   summary="Force all control surfaces associated with an action to calculate their geometry"
+   synopsis="void PtCalcSurfaceByAction( PtWidget_t *widget, PtWidgetClassRef_t const *cref, unsigned short action_id );\n"
+/>
+<function
+   name="PtCalcSurfaceById"
+   summary="Force the control surface with a given ID to calculate its geometry"
+   synopsis="PtSurface_t *PtCalcSurfaceById( PtWidget_t *widget, unsigned char surface_id );\n"
+/>
+<function
+   name="PtCancelDnd"
+   summary="Cancel a drag-and-drop operation"
+   synopsis="int PtCancelDnd( PhRid_t rid, unsigned flags, PhPoint_t const *pos, unsigned ig, unsigned long handle );\n"
+/>
+<function
+   name="PtChannelCreate"
+   summary="Make sure the widget library is using a channel"
+   synopsis="int PtChannelCreate( void );\n"
+/>
+<function
+   name="PtCheckSurfaces"
+   summary="Match an event with the control surfaces belonging to a widget"
+   synopsis="int PtCheckSurfaces( PtWidget_t *widget, PhPoint_t *point, PhEvent_t *event );\n"
+/>
+<function
+   name="PtChildType"
+   summary="Determine the relationship between two widgets"
+   synopsis="int PtChildType( PtWidget_t *parent, PtWidget_t *child );\n"
+/>
+<function
+   name="PtClearWidget"
+   summary="Destroy all widgets within a container"
+   synopsis="int PtClearWidget(PtWidget_t *widget);\n"
+/>
+<function
+   name="PtClipAdd"
+   summary="Add a clipping rectangle to the stack"
+   synopsis="int PtClipAdd( PtWidget_t *widget, PhRect_t *rect );\n"
+/>
+<function
+   name="PtClippedBlit"
+   summary="Blit areas within a widget, with clipping"
+   synopsis="int PtClippedBlit( PtWidget_t *widget, PhTile_t const *src, PhPoint_t const *delta, PhTile_t const *clip );\n"
+/>
+<function
+   name="PtClipRemove"
+   summary="Take a clipping rectangle off the stack"
+   synopsis="int PtClipRemove();\n"
+/>
+<function
+   name="PtCondTimedWait"
+   summary="Block a thread on a conditional variable, with a time limit"
+   synopsis="int PtCondTimedWait( pthread_cond_t *cond, const struct timespec *abstime );\n"
+/>
+<function
+   name="PtCondWait"
+   summary="Block a thread on a conditional variable"
+   synopsis="int PtCondWait( pthread_cond_t *cond );\n"
+/>
+<function
+   name="PtConnectionAddEventHandlers"
+   summary="Add a set of server event handlers to a client connection object"
+   synopsis="int PtConnectionAddEventHandlers( PtConnectionClient_t *connection, PtConnectionEventHandler_t const *handlers, unsigned nhandlers );\n"
+/>
+<function
+   name="PtConnectionAddMsgHandlers"
+   summary="Add a set of message handlers to a server connection object"
+   synopsis="int PtConnectionAddMsgHandlers( PtConnectionServer_t *connection, PtConnectionMsgHandler_t const handlers[], unsigned nhandlers );\n"
+/>
+<function
+   name="PtConnectionClientDestroy"
+   summary="Destroy a client connection object"
+   synopsis="void PtConnectionClientDestroy( PtConnectionClient_t *connection );\n"
+/>
+<function
+   name="PtConnectionClientGetUserData"
+   summary="Get the client's user data pointer from a connection object"
+   synopsis="void *PtConnectionClientGetUserData( PtConnectionClient_t *connection );\n"
+/>
+<function
+   name="PtConnectionClientSetError"
+   summary="Set the error-handler function for the client-side of a connection"
+   synopsis="PtConnectionClientErrorFunc_t * PtConnectionClientSetError( PtConnectionClient_t *connection, PtConnectionClientErrorFunc_t *func );\n"
+/>
+<function
+   name="PtConnectionClientSetUserData"
+   summary="Set the client's user data pointer in a connection object"
+   synopsis="void PtConnectionClientSetUserData( PtConnectionClient_t *connection, void *data );\n"
+/>
+<function
+   name="PtConnectionFindId"
+   summary="Find the connector with a given ID"
+   synopsis="PtConnectionClient_t *PtConnectionFindId( PhConnectorId_t id, int subtype, unsigned flags );\n"
+/>
+<function
+   name="PtConnectionFindName"
+   summary="Find the connector with a given name"
+   synopsis="PtConnectionClient_t *PtConnectionFindName( const char *name, int subtype, unsigned flags );\n"
+/>
+<function
+   name="PtConnectionFlush"
+   summary="Send all pending notifications to the client"
+   synopsis="int PtConnectionFlush( PtConnectionServer_t *connection );\n"
+/>
+<function
+   name="PtConnectionNotify"
+   summary="Send a notification event to the client"
+   synopsis="int PtConnectionNotify( PtConnectionServer_t *connection, unsigned long type, void const *message, unsigned length, unsigned flags );\n"
+/>
+<function
+   name="PtConnectionReply, PtConnectionReplymx"
+   summary="Reply to a message from a client"
+   synopsis="int PtConnectionReply( PtConnectionServer_t *connection, int len, void const *buf );\n int PtConnectionReplymx( PtConnectionServer_t *connection, int rparts, iov_t *riov );\n"
+/>
+<function
+   name="PtConnectionResizeEventBuffer"
+   summary="Resize the buffer used to store notifications"
+   synopsis="int PtConnectionResizeEventBuffer( PtConnectionServer_t *connection, unsigned length );\n"
+/>
+<function
+   name="PtConnectionSend, PtConnectionSendmx"
+   summary="Send a message to a server"
+   synopsis="int PtConnectionSend( PtConnectionClient_t *connection, unsigned long type, const void *smsg, void *rmsg, unsigned snbytes, unsigned rnbytes );\n int PtConnectionSendmx( PtConnectionClient_t *connection, unsigned long type, int sparts, iov_t *siov, int rparts, iov_t *riov );\n"
+/>
+<function
+   name="PtConnectionServerDestroy"
+   summary="Destroy a server connection object"
+   synopsis="void PtConnectionServerDestroy( PtConnectionServer_t *connection );\n"
+/>
+<function
+   name="PtConnectionServerGetUserData"
+   summary="Get the server's user data pointer from a connection object"
+   synopsis="void *PtConnectionServerGetUserData( PtConnectionServer_t *connection );\n"
+/>
+<function
+   name="PtConnectionServerSetError"
+   summary="Set the error-handler function for the server-side of a connection"
+   synopsis="PtConnectionServerErrorFunc_t * PtConnectionServerSetError( PtConnectionServer_t *connection, PtConnectionServerErrorFunc_t *func );\n"
+/>
+<function
+   name="PtConnectionServerSetUserData"
+   summary="Set the server's user data pointer in a connection object"
+   synopsis="void PtConnectionServerSetUserData( PtConnectionServer_t *connection, void *data );\n"
+/>
+<function
+   name="PtConnectionTmpName"
+   summary="Create a temporary name for a server"
+   synopsis="char *PtConnectionTmpName( char name[32] );\n"
+/>
+<function
+   name="PtConnectionWaitForName"
+   summary="Try to connect to the server with a given name"
+   synopsis="typedef int PtConnectionWaitFunc_t( PtConnectionClient_t *connection, void *user_data, unsigned n );\n int PtConnectionWaitForName( const char *name, int subtype, unsigned flags, PtConnectionWaitFunc_t *cb, void *usrdata );\n"
+/>
+<function
+   name="PtConnectorCreate"
+   summary="Create a connector"
+   synopsis="PtConnector_t *PtConnectorCreate( const char *name, PtConnectorCallbackFunc_t *cb, void *data );\n"
+/>
+<function
+   name="PtConnectorDestroy"
+   summary="Destroy a connector"
+   synopsis="int PtConnectorDestroy( PtConnector_t *connector );\n"
+/>
+<function
+   name="PtConnectorGetId"
+   summary="Get the ID of a connector"
+   synopsis="PhConnectorId_t PtConnectorGetId( PtConnector_t const *connector );\n"
+/>
+<function
+   name="PtConsoleSwitch"
+   summary="Switch to another virtual console"
+   synopsis="int PtConsoleSwitch( int console );\n"
+/>
+<function
+   name="PtContainerBox"
+   summary="Find the next widget in an area"
+   synopsis="PtWidget_t * PtContainerBox( PtWidget_t *container, PtWidget_t *start, PhRect_t const *rect );\n"
+/>
+<function
+   name="PtContainerFindFocus"
+   summary="Find the currently focused widget in the same disjoint widget as a widget"
+   synopsis="PtWidget_t *PtContainerFindFocus( PtWidget_t *family_member );\n"
+/>
+<function
+   name="PtContainerFocusNext"
+   summary="Give focus to the next Pt_GETS_FOCUS widget"
+   synopsis="PtWidget_t *PtContainerFocusNext( PtWidget_t *widget, PhEvent_t *event );\n"
+/>
+<function
+   name="PtContainerFocusPrev"
+   summary="Give focus to the previous Pt_GETS_FOCUS widget"
+   synopsis="PtWidget_t *PtContainerFocusPrev( PtWidget_t *widget, PhEvent_t *event );\n"
+/>
+<function
+   name="PtContainerGiveFocus"
+   summary="Give focus to a widget"
+   synopsis="PtWidget_t *PtContainerGiveFocus( PtWidget_t *widget, PhEvent_t *event );\n"
+/>
+<function
+   name="PtContainerHit"
+   summary="Find the nth widget in an area"
+   synopsis="PtWidget_t *PtContainerHit( PtWidget_t *container, unsigned n, PhRect_t const *rect );\n"
+/>
+<function
+   name="PtContainerHold"
+   summary="Prevent repairs to a container widget and its children"
+   synopsis="int PtContainerHold( PtWidget_t *container_widget );\n"
+/>
+<function
+   name="PtContainerNullFocus"
+   summary="Nullify the focus of a widget"
+   synopsis="PtWidget_t *PtContainerNullFocus( PtWidget_t *widget, PhEvent_t *event );\n"
+/>
+<function
+   name="PtContainerRelease"
+   summary="Decrement the flux count for a container, potentially damaging the container"
+   synopsis="int PtContainerRelease( PtWidget_t *container_widget );\n"
+/>
+<function
+   name="PtCRC"
+   summary="Calculate a CRC for a block of data"
+   synopsis="long PtCRC( const char *buffer, int nbytes );\n"
+/>
+<function
+   name="PtCRCValue"
+   summary="Calculate a running CRC checksum"
+   synopsis="long PtCRCValue( long crc32val, unsigned char next_val );\n"
+/>
+<function
+   name="PtCreateActionSurface"
+   summary="Create a control surface within a widget, bound to a widget action"
+   synopsis="PtSurface_t *PtCreateActionSurface( PtWidget_t *widget, unsigned char surface_id, PtWidgetClassRef_t const *cref, unsigned short compound_action_id, unsigned short flags, unsigned short npoints, PhPoint_t *points, PtSurfaceDraw_f draw_f, PtSurfaceCalc_f calc_points_f );\n"
+/>
+<function
+   name="PtCreateClassStyle"
+   summary="Create a class style"
+   synopsis="PtWidgetClassStyle_t *PtCreateClassStyle( char *name );\n"
+/>
+<function
+   name="PtCreateSurface"
+   summary="Create a regular control surface within a widget"
+   synopsis="PtSurface_t PtCreateSurface( PtWidget_t *widget, unsigned char surface_id, unsigned short flags, unsigned short npoints, PhPoint_t *points, long event_mask, PtSurfaceCallback_f event_f, PtSurfaceDraw_f draw_f, PtSurfaceCalc_f calc_points_f );\n"
+/>
+<function
+   name="PtCreateTransportCtrl"
+   summary="Create a transport control structure for use with Drag and Drop"
+   synopsis="PtTransportCtrl_t *PtCreateTransportCtrl();\n"
+/>
+<function
+   name="PtCreateWidget"
+   summary="Create a widget"
+   synopsis="PtWidget_t *PtCreateWidget( PtWidgetClassRef_t *class, PtWidget_t *parent, unsigned n_args, PtArg_t const *args );\n"
+/>
+<function
+   name="PtDamageExtent"
+   summary="Mark an area of a widget as damaged so that it will be redrawn"
+   synopsis="int PtDamageExtent( PtWidget_t *widget, PhRect_t const *extent );\n"
+/>
+<function
+   name="PtDamageSurface, PtDamageSurfaceById"
+   summary="Mark a control surface as damaged so that it will be redrawn"
+   synopsis="void PtDamageSurface( PtWidget_t *widget, PtSurface_t *surface );\n void PtDamageSurfaceById( PtWidget_t *widget, unsigned char surface_id );\n"
+/>
+<function
+   name="PtDamageSurfaceByAction"
+   summary="Damage all surfaces that are associated with an action"
+   synopsis="void PtDamageSurfaceByAction( PtWidget_t *widget, PtWidgetClassRef_t const *cref, unsigned short action_id );\n"
+/>
+<function
+   name="PtDamageWidget"
+   summary="Mark a widget as damaged so it will be redrawn"
+   synopsis="int PtDamageWidget( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtDestroyAllSurfaces"
+   summary="Destroy all of a widget's control surfaces"
+   synopsis="void PtDestroyAllSurfaces( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtDestroySurface"
+   summary="Destroy a control surface"
+   synopsis="void PtDestroySurface( PtWidget_t *widget, PtSurface_t *surface );\n"
+/>
+<function
+   name="PtDestroySurfaceById"
+   summary="Destroy the control surface with a given ID"
+   synopsis="int PtDestroySurfaceById( PtWidget_t *widget, unsigned char surface_id );\n"
+/>
+<function
+   name="PtDestroyWidget"
+   summary="Remove a widget from the widget family hierarchy"
+   synopsis="int PtDestroyWidget( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtDisableSurface, PtDisableSurfaceById"
+   summary="Disable a control surface"
+   synopsis="void PtDisableSurface( PtWidget_t *widget, PtSurface_t *surface, unsigned long flags );\n void PtDisableSurfaceById( PtWidget_t *widget, unsigned char surface_id, unsigned long flags );\n"
+/>
+<function
+   name="PtDisableSurfaceByAction"
+   summary="Disable all control surfaces associated with an action"
+   synopsis="void PtDisableSurfaceByAction( PtWidget_t *widget, PtWidgetClassRef_t const *cref, unsigned short action_id, unsigned long flags );\n"
+/>
+<function
+   name="PtDndSelect"
+   summary="Select drag-and-drop data"
+   synopsis="int PtDndSelect( PtWidget_t *widget, PtDndFetch_t *data_array, int unsigned array_size, PhCursorDescription_t *accept_cursor, PhCursorDescription_t *reject_cursor, PtCallbackInfo_t *cbinfo );\n"
+/>
+<function
+   name="PtDupClassStyle"
+   summary="Get a copy of a widget class style"
+   synopsis="PtWidgetClassStyle_t * PtDupClassStyle( PtWidgetClassRef_t * const ref, char const * const name, char const * const new_name );\n"
+/>
+<function
+   name="PtEnableSurface, PtEnableSurfaceById"
+   summary="Enable a control surface"
+   synopsis="void PtEnableSurface( PtWidget_t *widget, PtSurface_t *surface, unsigned long flags );\n void PtEnableSurfaceById( PtWidget_t *widget, unsigned char surface_id, unsigned long flags );\n"
+/>
+<function
+   name="PtEnableSurfaceByAction"
+   summary="Enable all control surfaces associated with an action"
+   synopsis="void PtEnableSurfaceByAction( PtWidget_t *widget, PtWidgetClassRef_t const *cref, unsigned short action_id, unsigned long flags );\n"
+/>
+<function
+   name="PtEndFlux"
+   summary="Decrement the flux count for a container"
+   synopsis="int PtEndFlux( PtWidget_t *container );\n"
+/>
+<function
+   name="PtEnter"
+   summary="Lock the Photon library for use by a single thread"
+   synopsis="int PtEnter( int flags );\n"
+/>
+<function
+   name="PtEventHandler"
+   summary="Determine the widgets involved in an event"
+   synopsis="int PtEventHandler( PhEvent_t *event );\n"
+/>
+<function
+   name="PtExit"
+   summary="Exit a Photon program"
+   synopsis="void PtExit( int return_code );\n"
+/>
+<function
+   name="PtExtentWidget"
+   summary="Force a widget to calculate its extent"
+   synopsis="PtWidget_t *PtExtentWidget( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtExtentWidgetFamily"
+   summary="Force a widget and its children to calculate their extents"
+   synopsis="int PtExtentWidgetFamily( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtFepCmd"
+   summary="Control a Front-End Processor (FEP) from an application"
+   synopsis="int PtFepCmd( PtWidget_t *widget, long cmd, long sub_cmd, char const *data );\n"
+/>
+<function
+   name="PtFileSelection"
+   summary="Create a file-selector dialog"
+   synopsis="int PtFileSelection( PtWidget_t *parent, PhPoint_t const *pos, char const *title, char const *root_dir, char const *file_spec, char const *btn1, char const *btn2, char const *format, PtFileSelectionInfo_t *info, int flags );\n"
+/>
+<function
+   name="PtFindChildClass"
+   summary="Find the first descendant that matches the specified class"
+   synopsis="PtWidget_t *PtFindChildClass( PtWidgetClassRef_t *class, PtWidget_t *widget );\n"
+/>
+<function
+   name="PtFindChildClassMember"
+   summary="Find the first descendant that's a subclass of the specified class"
+   synopsis="PtWidget_t *PtFindChildClassMember( PtWidgetClassRef_t *class, PtWidget_t *widget );\n"
+/>
+<function
+   name="PtFindClassStyle"
+   summary="Find the style with a given name"
+   synopsis="PtWidgetClassStyle_t *PtFindClassStyle( PtWidgetClassRef_t *ref, char *name );\n"
+/>
+<function
+   name="PtFindContainer"
+   summary="Return the nearest container parent"
+   synopsis="PtWidget_t *PtFindContainer( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtFindData"
+   summary="Find the first data block of a given type and subtype"
+   synopsis="void * PtFindData( PtDataHdr **ptr, long type, long subtype, long *len, PtDataHdr_t **_node );\n"
+/>
+<function
+   name="PtFindDisjoint"
+   summary="Return the nearest disjoint parent widget"
+   synopsis="PtWidget_t *PtFindDisjoint( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtFindFocusChild"
+   summary="Find the closest focusable child widget"
+   synopsis="PtWidget_t *PtFindFocusChild( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtFindFocusNextFrom"
+   summary="Find the next widget that can get focus"
+   synopsis="PtWidget_t *PtFindFocusNextFrom( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtFindFocusPrevFrom"
+   summary="Find the previous widget that can get focus"
+   synopsis="PtWidget_t *PtFindFocusPrevFrom( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtFindGuardian"
+   summary="Find the widget responsible for another widget's actions"
+   synopsis="PtWidget_t *PtFindGuardian( PtWidget_t *child, int superior_only );\n"
+/>
+<function
+   name="PtFindNextData"
+   summary="Find the next data block of a given type and subtype"
+   synopsis="void * PtFindNextData( PtDataHdr_t **ptr, PtDataHdr_t *data, long type, long subtype, long *len, PtDataHdr_t **_node );\n"
+/>
+<function
+   name="PtFindSurface"
+   summary="Find the control surface with a given ID"
+   synopsis="PtSurface_t *PtFindSurface( PtWidget_t *widget, unsigned char surface_id );\n"
+/>
+<function
+   name="PtFindSurfaceByAction"
+   summary="Find the control surface associated with a given action"
+   synopsis="PtSurface_t *PtFindSurfaceByAction( PtWidget_t *widget, PtWidgetClassRef_t const *cref, unsigned short action_id, PtSurface_t const *surface );\n"
+/>
+<function
+   name="PtFlush"
+   summary="Immediately repair widget damage"
+   synopsis="int PtFlush( void );\n"
+/>
+<function
+   name="PtFontSelection"
+   summary="Display a modal dialog for selecting a font"
+   synopsis="char *PtFontSelection( PtWidget_t *parent, const PhPoint_t *pos, const char *title, const char *font, long symbol, unsigned flags, const char *sample);\n"
+/>
+<function
+   name="PtForwardWindowEvent"
+   summary="Forward a window event to the window with a given region ID"
+   synopsis="int PtForwardWindowEvent( PhWindowEvent_t const *window_event );\n"
+/>
+<function
+   name="PtForwardWindowTaskEvent"
+   summary="Forward a window event to the task with a given Photon connection ID"
+   synopsis="int PtForwardWindowTaskEvent( PhConnectId_t task, PhWindowEvent_t const *evt);\n"
+/>
+<function
+   name="PtGetAbsPosition"
+   summary="Get the absolute position of a widget"
+   synopsis="void PtGetAbsPosition( PtWidget_t *widget, short *x, short *y );\n"
+/>
+<function
+   name="PtGetControlFlags"
+   summary="Get the flags from the _Pt_ control structure"
+   synopsis="int PtGetControlFlags( void );\n"
+/>
+<function
+   name="PtGetDndFetchIndex"
+   summary="Search for an entry in the data_array for an incoming drag-and-drop event."
+   synopsis="int PtGetDndFetchIndex( const PtDndCallbackInfo_t * cbinfo, const PtDndFetch_t * data_array, unsigned array_size);\n"
+/>
+<function
+   name="PtGetParent"
+   summary="Find the nearest parent widget that matches the specified class"
+   synopsis="PtWidget_t *PtGetParent( PtWidget_t *widget, PtWidgetClassRef_t *parent_class );\n"
+/>
+<function
+   name="PtGetParentWidget"
+   summary="Return the current default widget parent"
+   synopsis="PtWidget_t *PtGetParentWidget( void );\n"
+/>
+<function
+   name="PtGetRcvidPid"
+   summary="Get the PID from a RCVID"
+   synopsis="pid_t PtGetRcvidPid( int rcvid );\n"
+/>
+<function
+   name="PtGetRcvidPidNd"
+   summary="Get the PID and ND from a RCVID"
+   synopsis="pid_t PtGetRcvidPid( int rcvid, int *nd );\n"
+/>
+<function
+   name="PtGetResource"
+   summary="Retrieve one resource value for a widget"
+   synopsis="#define PtGetResource( widget, type, value, len ) &#8230;"
+/>
+<function
+   name="PtGetResources"
+   summary="Retrieve one or more resource values for a widget"
+   synopsis="int PtGetResources( PtWidget_t *widget, int n_args, PtArg_t *args );\n"
+/>
+<function
+   name="PtGetStyleMember"
+   summary="Get a member of a style"
+   synopsis="void *PtGetStyleMember( PtWidgetClassStyle_t *style, int manifest );\n"
+/>
+<function
+   name="PtGetWidgetStyle"
+   summary="Get the style that a widget is currently using"
+   synopsis="PtWidgetClassStyle_t *PtGetWidgetStyle( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtGiveFocus"
+   summary="Give focus to a widget"
+   synopsis="PtWidget_t *PtGiveFocus( PtWidget_t *widget, PhEvent_t *event );\n"
+/>
+<function
+   name="PtGlobalFocusNext"
+   summary="Give focus to next widget"
+   synopsis="PtWidget_t *PtGlobalFocusNext( PtWidget_t *widget, PhEvent_t *event );\n"
+/>
+<function
+   name="PtGlobalFocusNextContainer"
+   summary="Give focus to another container's widget"
+   synopsis="PtWidget_t *PtGlobalFocusNextContainer( PtWidget_t *widget, PhEvent_t *event );\n"
+/>
+<function
+   name="PtGlobalFocusNextFrom"
+   summary="Give focus to the next widget behind the specified widget"
+   synopsis="PtWidget_t *PtGlobalFocusNextFrom( PtWidget_t *widget, PhEvent_t *event );\n"
+/>
+<function
+   name="PtGlobalFocusPrev"
+   summary="Give focus to the previous widget"
+   synopsis="PtWidget_t *PtGlobalFocusPrev( PtWidget_t *widget, PhEvent_t *event );\n"
+/>
+<function
+   name="PtGlobalFocusPrevContainer"
+   summary="Give focus to a widget in the previous container"
+   synopsis="PtWidget_t *PtGlobalFocusPrevContainer( PtWidget_t *widget, PhEvent_t *event );\n"
+/>
+<function
+   name="PtGlobalFocusPrevFrom"
+   summary="Give focus to widget previous to the specified widget"
+   synopsis="PtWidget_t *PtGlobalFocusPrevFrom( PtWidget_t *widget, PhEvent_t *event );\n"
+/>
+<function
+   name="PtHelpQuit"
+   summary="Exit the Helpviewer"
+   synopsis="void PtHelpQuit( void );\n"
+/>
+<function
+   name="PtHelpSearch"
+   summary="Search the help information"
+   synopsis="int PtHelpSearch( char *string, int mode, int scope, int method );\n"
+/>
+<function
+   name="PtHelpTopic"
+   summary="Display help information identified by a topic path"
+   synopsis="int PtHelpTopic( char *topic );\n"
+/>
+<function
+   name="PtHelpTopicRoot"
+   summary="Specify the root of help topic paths"
+   synopsis="void PtHelpTopicRoot( char *topic );\n"
+/>
+<function
+   name="PtHelpTopicTree"
+   summary="Load a new help topic tree"
+   synopsis="int PtHelpTopicTree( char *file );\n"
+/>
+<function
+   name="PtHelpUrl"
+   summary="Display help information identified by a URL"
+   synopsis="int PtHelpUrl( char *url );\n"
+/>
+<function
+   name="PtHelpUrlRoot"
+   summary="Specify a partial URL for help information"
+   synopsis="void PtHelpUrlRoot( char *url );\n"
+/>
+<function
+   name="PtHideSurface, PtHideSurfaceById"
+   summary="Hide a control surface"
+   synopsis="int PtHideSurface( PtWidget_t *widget, PtSurface_t *surface );\n int PtHideSurfaceById( PtWidget_t *widget, unsigned char surface_id );\n"
+/>
+<function
+   name="PtHideSurfaceByAction"
+   summary="Hide all control surfaces associated with an action"
+   synopsis="int PtHideSurfaceByAction( PtWidget_t *widget, PtWidgetClassRef_t const *cref, unsigned short action_id );\n"
+/>
+<function
+   name="PtHit"
+   summary="Identify a widget in the specified container"
+   synopsis="PtWidget_t *PtHit( PtWidget_t *container, unsigned n, PhRect_t const *rect );\n"
+/>
+<function
+   name="PtHold"
+   summary="Increment the hold count to prevent the visible repair of all widgets"
+   synopsis="int PtHold( void );\n"
+/>
+<function
+   name="PtInflateBalloon"
+   summary="Create a balloon widget"
+   synopsis="PtWidget_t *PtInflateBalloon( PtWidget_t *win, PtWidget_t *me, int position, char const *string, char const *font, PgColor_t fill, PgColor_t text_color );\n"
+/>
+<function
+   name="PtInit"
+   summary="Initialize the widget library"
+   synopsis="int PtInit( char const *name );\n"
+/>
+<function
+   name="PtInitDnd"
+   summary="Initiate a drag-and-drop operation"
+   synopsis="int PtInitDnd( PtTransportCtrl_t *ctrl, PtWidget_t *widget, PhEvent_t *event, PhDndCursors_t *cursors, int unsigned flags );\n"
+/>
+<function
+   name="PtInsertSurface, PtInsertSurfaceById"
+   summary="Insert a control surface in front of or behind another"
+   synopsis="int PtInsertSurface( PtWidget_t *widget, PtSurface_t *surface, unsigned char brother_id, int behind );\n int PtInsertSurfaceById( PtWidget_t *widget, unsigned char surface_id, unsigned char brother_id, int behind );\n"
+/>
+<function
+   name="PtIsFluxing"
+   summary="Determine whether a container or its family is in flux"
+   synopsis="int PtIsFluxing( PtWidget_t *container );\n"
+/>
+<function
+   name="PtIsFocused"
+   summary="Determine to what degree a widget is focused"
+   synopsis="int PtIsFocused( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtLeave"
+   summary="Unlock the Photon library for use by other threads"
+   synopsis="int PtLeave( int flags );\n"
+/>
+<function
+   name="PtMainLoop"
+   summary="Implement an application main loop"
+   synopsis="void PtMainLoop( void );\n"
+/>
+<function
+   name="PtMakeModal"
+   summary="Block all of an application's windows, except the one containing a given widget"
+   synopsis="void PtMakeModal( PtWidget_t *widget, unsigned short cursor, PgColor_t cursor_color );\n"
+/>
+<function
+   name="PtMessageBox"
+   summary="Pop up a message box"
+   synopsis="int PtMessageBox( PtWidget_t *parent, char const *title, char const *question, char const *font, char const *btn );\n"
+/>
+<function
+   name="PtModalBlock"
+   summary="Start a modal loop"
+   synopsis="void *PtModalBlock( PtModalCtrl_t *ctrl, unsigned flags );\n"
+/>
+<function
+   name="PtModalEnd"
+   summary="Terminate modal-window processing"
+   synopsis="void PtModalEnd( void );\n"
+/>
+<function
+   name="PtModalStart"
+   summary="Initiate modal-window processing"
+   synopsis="void PtModalStart ( void );\n"
+/>
+<function
+   name="PtModalUnblock"
+   summary="Stop a modal loop"
+   synopsis="int PtModalUnblock( PtModalCtrl_t *ctrl, void *result );\n"
+/>
+<function
+   name="PtNextTopLevelWidget"
+   summary="Get a pointer to the next top-level widget"
+   synopsis="PtWidget_t * PtNextTopLevelWidget( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtNotice"
+   summary="Display a message and wait for acknowledgment"
+   synopsis="void PtNotice( PtWidget_t *parent, PhPoint_t const *location, char const *title, PhImage_t const *image, char const *message, char const *msgFont, char const *btnText, char const *btnFont, int flags );\n"
+/>
+<function
+   name="PtPassword"
+   summary="Prompt for a password"
+   synopsis="int PtPassword( PtWidget_t *parent, PhPoint_t const *location, char const *title, PhImage_t const *image, char const *message, char const *msg_font, char const **buttons, char const **btn_fonts, char const *text_font, int (*validate_f)(void *,char const *), void *validate_data, char const *echo, int flags );\n"
+/>
+<function
+   name="PtPositionMenu"
+   summary="Set a menu's position"
+   synopsis="void PtPositionMenu( PtWidget_t *menu, PhEvent_t *event );\n"
+/>
+<function
+   name="PtPreventExit"
+   summary="Prevent a Photon application from exiting"
+   synopsis="void PtPreventExit( void );\n"
+/>
+<function
+   name="PtPrintPropSelect"
+   summary="Change the printing options for a selected printer via a modal dialog"
+   synopsis="int PtPrintPropSelect( PtWidget_t *parent, char const *title, PtPrintPropSelectionInfo_t *info );\n"
+/>
+<function
+   name="PtPrintSelect"
+   summary="Display a custom modal dialog for selecting print options"
+   synopsis="int PtPrintSelect( PtWidget_t *parent, const char *title, PtPrintSelectionInfo_t *info );\n"
+/>
+<function
+   name="PtPrintSelection"
+   summary="Display a modal dialog for selecting print options"
+   synopsis="int PtPrintSelection( PtWidget_t *parent, PhPoint_t const *pos, const char *title, PpPrintContext_t *context, unsigned flags);\n"
+/>
+<function
+   name="PtProcessEvent"
+   summary="Standard Photon event-handling function"
+   synopsis="void PtProcessEvent( void );\n"
+/>
+<function
+   name="PtPrompt"
+   summary="Display a message and get textual input from the user"
+   synopsis="int PtPrompt( PtWidget_t *parent, PhPoint_t const *location, char const *title, PhImage_t const *image, char const *message, char const *msgFont, int btnCount, char const **buttons, char const **btnFonts, int defBtn, int escBtn, short textLength, char *text, char const *textFont, PhDim_t const *text_dim, int flags );\n"
+/>
+<function
+   name="PtPulseArm"
+   summary="Arm a Photon pulse for delivery"
+   synopsis="int PtPulseArm( PtAppContext_t app, pid_t pulse, struct sigevent *msg );\n"
+/>
+<function
+   name="PtQuerySystemInfo"
+   summary="Query the system for information"
+   synopsis="PhSysInfo_t * PtQuerySystemInfo( PtWidget_t *widget, PhSysInfo_t *sys_ptr );\n"
+/>
+<function
+   name="PtQuitMainLoop"
+   summary="Cause PtMainLoop in the calling thread to return"
+   synopsis="int PtQuitMainLoop( void );\n"
+/>
+<function
+   name="PtRealizeWidget"
+   summary="Make a widget and its children visible and possibly interactive"
+   synopsis="int PtRealizeWidget( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtReattach"
+   summary="Send an application to another Photon server"
+   synopsis="int PtReattach( char *device );\n"
+/>
+<function
+   name="PtRelease"
+   summary="Decrement the hold count, potentially permitting all widgets to be repaired"
+   synopsis="int PtRelease( void );\n"
+/>
+<function
+   name="PtReleaseTransportCtrl"
+   summary="Release a transport control structure used with drag and drop"
+   synopsis="void PtReleaseTransportCtrl( PtTransportCtrl_t *ctrl );\n"
+/>
+<function
+   name="PtRemoveCallback"
+   summary="Remove a single callback entry from a callback list"
+   synopsis="void PtRemoveCallback( PtWidget_t *widget, unsigned long callback_type, PtCallbackF_t *callback, void *data );\n"
+/>
+<function
+   name="PtRemoveCallbacks"
+   summary="Remove several callback entries from a callback list"
+   synopsis="void PtRemoveCallbacks( PtWidget_t *widget, unsigned long callback_type, PtCallback_t const *callback_defs, unsigned int num_callbacks );\n"
+/>
+<function
+   name="PtRemoveData"
+   summary="Remove a link from a data chain"
+   synopsis="int PtRemoveData( PtDataHdr_t **ptr, long type, long subtype );\n"
+/>
+<function
+   name="PtRemoveEventHandler"
+   summary="Remove a single Pt_CB_RAW entry from a widget"
+   synopsis="void PtRemoveEventHandler( PtWidget_t *widget, unsigned long event_mask, PtCallbackF_t *callback, void *data );\n"
+/>
+<function
+   name="PtRemoveEventHandlers"
+   summary="Remove several Pt_CB_RAW entries from a widget"
+   synopsis="void PtRemoveEventHandlers( PtWidget_t *widget, PtRawCallback_t const *callback_defs, int num_handlers );\n"
+/>
+<function
+   name="PtRemoveFilterCallback"
+   summary="Remove a single Pt_CB_FILTER entry from a widget"
+   synopsis="void PtRemoveFilterCallback( PtWidget_t *widget, unsigned long event_mask, PtCallbackF_t *callback, void *data );\n"
+/>
+<function
+   name="PtRemoveFilterCallbacks"
+   summary="Remove several Pt_CB_FILTER entries from a widget"
+   synopsis="void PtRemoveFilterCallbacks( PtWidget_t *widget, PtRawCallback_t const *callback_defs, int num_handlers );\n"
+/>
+<function
+   name="PtRemoveHotkeyHandler"
+   summary="Remove a single hotkey handler entry from a widget"
+   synopsis="void PtRemoveHotkeyHandler( PtWidget_t *widget, unsigned key_sym_cap, unsigned key_mods, short flags, void *data, PtCallbackF_t *callback );\n"
+/>
+<function
+   name="PtReparentWidget"
+   summary="Reparent a widget to a new container"
+   synopsis="int PtReparentWidget( PtWidget_t *widget, PtWidget_t *parent );\n"
+/>
+<function
+   name="PtReRealizeWidget"
+   summary="Force a widget to unrealize and then rerealize itself"
+   synopsis="int PtReRealizeWidget( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtResizeEventMsg"
+   summary="Resize the event buffer"
+   synopsis="int PtResizeEventMsg( PtAppContext_t app, int msg_size );\n"
+/>
+<function
+   name="PtSendEventToWidget"
+   summary="Give an event to a widget"
+   synopsis="int PtSendEventToWidget( PtWidget_t *widget, PhEvent_t *event );\n"
+/>
+<function
+   name="PtSetAreaFromCanvas"
+   summary="Calculate an area based on the canvas and borders of a widget"
+   synopsis="PhArea_t * PtSetAreaFromCanvas( PtWidget_t *widget, PhRect_t const *canvas_rect, PhArea_t *area);\n"
+/>
+<function
+   name="PtSetArg"
+   summary="Build argument lists for widgets"
+   synopsis="PtSetArg( PtArg_t *arg, long type, long value, long len );\n"
+/>
+<function
+   name="PtSetClassStyleMethods"
+   summary="Set multiple members of a style from an array"
+   synopsis="int PtSetClassStyleMethods( PtWidgetClassStyle_t *style, int num_methods, PtStyleMethods_t *meth_array );\n"
+/>
+<function
+   name="PtSetParentWidget"
+   summary="Set the current parent widget"
+   synopsis="PtWidget_t *PtSetParentWidget( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtSetResource"
+   summary="Set one resource for a widget"
+   synopsis="#define PtSetResource( widget, type, value, len ) &#8230;"
+/>
+<function
+   name="PtSetResources"
+   summary="Set one or more resources for a widget"
+   synopsis="int PtSetResources( PtWidget_t *widget, int n_args, PtArg_t const *args );\n"
+/>
+<function
+   name="PtSetStyleMember"
+   summary="Set a member of a style"
+   synopsis="int PtSetStyleMember( PtWidgetClassStyle_t *style, int manifest, void *value );\n"
+/>
+<function
+   name="PtSetStyleMembers"
+   summary="Set multiple members of a style from a variable-length argument list"
+   synopsis="int PtSetStyleMembers ( PtWidgetClassStyle_t *style, ... );\n"
+/>
+<function
+   name="PtSetWidgetStyle"
+   summary="Set the current style for a widget"
+   synopsis="int PtSetWidgetStyle( PtWidget_t *widget, char *name );\n"
+/>
+<function
+   name="PtShowSurface, PtShowSurfaceById"
+   summary="Show a hidden control surface"
+   synopsis="int PtShowSurface( PtWidget_t *widget, PtSurface_t *surface );\n int PtShowSurfaceById( PtWidget_t *widget, unsigned char surface_id );\n"
+/>
+<function
+   name="PtShowSurfaceByAction"
+   summary="Show all hidden control surfaces associated with an action"
+   synopsis="int PtShowSurfaceByAction( PtWidget_t *widget, PtWidgetClassRef_t const *cref, unsigned short action_id);\n"
+/>
+<function
+   name="PtSpawn"
+   summary="Spawn a new process"
+   synopsis="pid_t PtSpawn( const char *cmd, const char * const *argv, const char * const *env, const PtSpawnOptions_t *opt, PtSpawnCbF_t *cb, void *data, PtSpawnCbId_t **csp );\n"
+/>
+<function
+   name="PtSpawnDeleteCallback"
+   summary="Remove a child-termination callback"
+   synopsis="void PtSpawnDeleteCallback( PtSpawnCbId_t *cs );\n"
+/>
+<function
+   name="PtSpawnSetCallback"
+   summary="Change the callback in a PtSpawn control structure"
+   synopsis="void PtSpawnSetCallback( PtSpawnCbId_t *cs, PtSpawnCbF_t *cb, void *data );\n"
+/>
+<function
+   name="PtSpawnWait"
+   summary="Spawn a process and wait for its termination"
+   synopsis="int PtSpawnWait( const char *cmd, const char **argv, const char **env, const PtSpawnOptions_t *opt, pid_t *pidp );\n"
+/>
+<function
+   name="PtStartFlux"
+   summary="Prevent repairs to a container widget and its children"
+   synopsis="int PtStartFlux( PtWidget_t *container );\n"
+/>
+<function
+   name="PtSurfaceActionId"
+   summary="Get the action ID for a surface"
+   synopsis="int PtSurfaceActionId( PtSurface_t *surface);\n"
+/>
+<function
+   name="PtSurfaceAddData, PtSurfaceAddDataById"
+   summary="Add data to a control surface"
+   synopsis="int PtSurfaceAddData( PtWidget_t *widget, PtSurface_t *surface, void *data, long len );\n int PtSurfaceAddDataById( PtWidget_t *widget, unsigned char surface_id, void *data, long len );\n"
+/>
+<function
+   name="PtSurfaceBrotherBehind"
+   summary="Get the control surface behind a given one"
+   synopsis="PtSurface_t *PtSurfaceBrotherBehind( PtWidget_t *widget, PtSurface_t *surface );\n"
+/>
+<function
+   name="PtSurfaceBrotherInFront"
+   summary="Get the control surface in front of a given one"
+   synopsis="PtSurface_t *PtSurfaceBrotherInFront( PtWidget_t *widget, PtSurface_t *surface );\n"
+/>
+<function
+   name="PtSurfaceCalcBoundingBox, PtSurfaceCalcBoundingBoxById"
+   summary="Calculate the bounding box for a control surface"
+   synopsis="PhRect_t *PtSurfaceCalcBoundingBox( PtSurface_t *surface );\n PhRect_t *PtSurfaceCalcBoundingBoxById( PtWidget_t *widget, unsigned char surface_id );\n"
+/>
+<function
+   name="PtSurfaceExtent, PtSurfaceExtentById"
+   summary="Calculate the extent of a control surface"
+   synopsis="PhRect_t *PtSurfaceExtent( PtWidget_t *widget, PtSurface_t const *surface, PhRect_t *extent );\n PhRect_t *PtSurfaceExtentById( PtWidget_t *widget, unsigned char surface_id, PhRect_t *extent );\n"
+/>
+<function
+   name="PtSurfaceGetData"
+   summary="Get data associated with a control surface"
+   synopsis="void *PtSurfaceGetData( PtWidget_t *widget, PtSurface_t *surface );\n void *PtSurfaceGetDataById( PtWidget_t *widget, unsigned char surface_id );\n"
+/>
+<function
+   name="PtSurfaceHit"
+   summary="Find the control surface hit by a given point"
+   synopsis="PtSurface_t *PtSurfaceHit( PtWidget_t *widget, PhPoint_t const *point, unsigned long event_mask, PtSurface_t const *surface );\n"
+/>
+<function
+   name="PtSurfaceId"
+   summary="Get the ID of a control surface"
+   synopsis="unsigned char PtSurfaceId( PtSurface_t *surface);\n"
+/>
+<function
+   name="PtSurfaceInBack"
+   summary="Get the backmost control surface belonging to a widget"
+   synopsis="PtSurface_t *PtSurfaceInBack( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtSurfaceInFront"
+   summary="Get the frontmost control surface belonging to a widget"
+   synopsis="PtSurface_t *PtSurfaceInFront( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtSurfaceIsDisabled"
+   summary="Determine if a control surface is disabled"
+   synopsis="int PtSurfaceIsDisabled( PtSurface_t *surface);\n"
+/>
+<function
+   name="PtSurfaceIsEnabled"
+   summary="Determine if a control surface is enabled"
+   synopsis="int PtSurfaceIsEnabled( PtSurface_t *surface);\n"
+/>
+<function
+   name="PtSurfaceIsHidden"
+   summary="Determine if a control surface is hidden"
+   synopsis="int PtSurfaceIsHidden( PtSurface_t *surface);\n"
+/>
+<function
+   name="PtSurfaceIsShown"
+   summary="Determine if a control surface is shown"
+   synopsis="int PtSurfaceIsShown( PtSurface_t *surface);\n"
+/>
+<function
+   name="PtSurfaceRect, PtSurfaceRectById"
+   summary="Get the bounding box of a control surface"
+   synopsis="PhRect_t *PtSurfaceRect( PtSurface_t *surface, PhRect_t *rect );\n PhRect_t *PtSurfaceRectById( PtWidget_t *widget, unsigned char surface_id, PhRect_t *rect );\n"
+/>
+<function
+   name="PtSurfaceRemoveData, PtSurfaceRemoveDataById"
+   summary="Remove data from a control surface"
+   synopsis="int PtSurfaceRemoveData( PtWidget_t *widget, PtSurface_t *surface );\n int PtSurfaceRemoveDataById( PtWidget_t *widget, unsigned char surface_id );\n"
+/>
+<function
+   name="PtSurfaceTestPoint"
+   summary="Test whether or not a point is inside a control surface"
+   synopsis="int PtSurfaceTestPoint( PtSurface_t const *surface, PhPoint_t const *point );\n"
+/>
+<function
+   name="PtSurfaceToBack, PtSurfaceToBackById"
+   summary="Move a control surface behind all other control surfaces belonging to a widget"
+   synopsis="int PtSurfaceToBack( PtWidget_t *widget, PtSurface_t *surface );\n int PtSurfaceToBackById( PtWidget_t *widget, unsigned char surface_id );\n"
+/>
+<function
+   name="PtSurfaceToFront, PtSurfaceToFrontById"
+   summary="Move a control surface in front of all other control surfaces belonging to a widget"
+   synopsis="int PtSurfaceToFront( PtWidget_t *widget, PtSurface_t *surface );\n int PtSurfaceToFrontById( PtWidget_t *widget, unsigned char surface_id );\n"
+/>
+<function
+   name="PtSyncWidget"
+   summary="Synchronize widget"
+   synopsis="int PtSyncWidget( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtTimerArm"
+   summary="Arm a timer event on a widget"
+   synopsis="int PtTimerArm( PtWidget_t *widget, unsigned msec );\n"
+/>
+<function
+   name="PtTransportRequestable"
+   summary="Add an entry for requestable data to the drag-and-drop data"
+   synopsis="PtRequestables_t * PtTransportRequestable( PtTransportCtrl_t *ctrl, char const * const type, char const * const desc, int unsigned const flags, int unsigned transport, PtTransportReqDataCB_t *rq_callback, void *rq_callback_data );\n"
+/>
+<function
+   name="PtTransportType"
+   summary="Pack transport data"
+   synopsis="int PtTransportType( PtTransportCtrl_t *ctrl, char const * const type, char const * const desc, int unsigned const grouping_num, int unsigned inlined_transport, char *packing_type, void *vdata, int unsigned len, int unsigned const flags );\n"
+/>
+<function
+   name="PtUnblockWindows"
+   summary="Unblock a set of previously blocked windows"
+   synopsis="void PtUnblockWindows( PtBlockedList_t *bl );\n"
+/>
+<function
+   name="PtUnlinkData"
+   summary="Remove the provided data link from the data chain"
+   synopsis="int PtUnlinkData( PtDataHdr_t **ptr, PtDataHdr_t *node );\n"
+/>
+<function
+   name="PtUnrealizeWidget"
+   summary="Unrealize a widget"
+   synopsis="int PtUnrealizeWidget( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtUpdate"
+   summary="Decrement the hold count"
+   synopsis="int PtUpdate( void );\n"
+/>
+<function
+   name="PtValidParent"
+   summary="Identify a valid parent for the specified widget"
+   synopsis="PtWidget_t * PtValidParent( PtWidget_t *widget_parent, PtWidgetClassRef_t *class_ref );\n"
+/>
+<function
+   name="PtWidgetActiveSurface"
+   summary="Get a widget's currently active control surface"
+   synopsis="unsigned char PtWidgetActiveSurface( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtWidgetArea"
+   summary="Retrieve a copy of a widget's area"
+   synopsis="PhArea_t * PtWidgetArea( PtWidget_t *widget, PhArea_t *area );\n"
+/>
+<function
+   name="PtWidgetBrotherBehind"
+   summary="Get the brother behind a widget"
+   synopsis="PtWidget_t *PtWidgetBrotherBehind( PtWidget_t *widget);\n"
+/>
+<function
+   name="PtWidgetBrotherInFront"
+   summary="Get the brother in front of a widget"
+   synopsis="PtWidget_t *PtWidgetBrotherInFront( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtWidgetChildBack"
+   summary="Get the child that's farthest back in a container"
+   synopsis="PtWidget_t *PtWidgetChildBack( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtWidgetChildFront"
+   summary="Get the child at the very front of a container"
+   synopsis="PtWidget_t *PtWidgetChildFront( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtWidgetClass"
+   summary="Return the class of a widget"
+   synopsis="PtWidgetClassRef_t *PtWidgetClass( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtWidgetClassFlags"
+   summary="Retrieve a widget's class structure flags"
+   synopsis="unsigned long PtWidgetClassFlags( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtWidgetDim"
+   summary="Retrieve a copy of a widget's dimension"
+   synopsis="PhDim_t * PtWidgetDim( PtWidget_t *widget, PhDim_t *dim );\n"
+/>
+<function
+   name="PtWidgetExtent"
+   summary="Get a widget's extent"
+   synopsis="PhRect_t *PtWidgetExtent( PtWidget_t *widget, PhRect_t *extent );\n"
+/>
+<function
+   name="PtWidgetFamily"
+   summary="Traverse the widget hierarchy from back to front"
+   synopsis="PtWidget_t *PtWidgetFamily( PtWidget_t *root, PtWidget_t *current );\n"
+/>
+<function
+   name="PtWidgetFlags"
+   summary="Retrieve a widget's flags"
+   synopsis="long PtWidgetFlags( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtWidgetHelpHit"
+   summary="Find the first widget at a given position that has a help topic"
+   synopsis="PtWidget_t * PtWidgetHelpHit( PtWidget_t *container, PhPoint_t const *pos );\n"
+/>
+<function
+   name="PtWidgetInsert"
+   summary="Insert a widget in the widget family hierarchy"
+   synopsis="int PtWidgetInsert ( PtWidget_t *widget, PtWidget_t *new_sibling, int behind );\n"
+/>
+<function
+   name="PtWidgetIsClass"
+   summary="Determine whether a widget is a specific class type"
+   synopsis="int PtWidgetIsClass( PtWidget_t *widget, PtWidgetClassRef_t *class );\n"
+/>
+<function
+   name="PtWidgetIsClassMember"
+   summary="Determine whether a widget belongs to a specified class"
+   synopsis="int PtWidgetIsClassMember( PtWidget_t *widget, PtWidgetClassRef_t *class );\n"
+/>
+<function
+   name="PtWidgetIsRealized"
+   summary="Determine whether or not a widget is realized"
+   synopsis="int PtWidgetIsRealized ( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtWidgetMinimumSize"
+   summary="Determine the minimum permissible size of a widget"
+   synopsis="PhDim_t *PtWidgetMinimumSize( PtWidget_t const *widget, PhDim_t *dim );\n"
+/>
+<function
+   name="PtWidgetOffset"
+   summary="Find the offset of a widget's origin"
+   synopsis="PhPoint_t *PtWidgetOffset( PtWidget_t *widget, PhPoint_t *offset );\n"
+/>
+<function
+   name="PtWidgetParent"
+   summary="Get a widget's parent"
+   synopsis="PtWidget_t *PtWidgetParent( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtWidgetPreferredSize"
+   summary="Retrieve the preferred size of a widget"
+   synopsis="PhDim_t *PtWidgetPreferredSize( PtWidget_t const *widget, PhDim_t *dim );\n"
+/>
+<function
+   name="PtWidgetRid"
+   summary="Get a widget's region ID"
+   synopsis="PhRid_t PtWidgetRid( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtWidgetSkip"
+   summary="Skip to a widget in the next hierarchy"
+   synopsis="PtWidget_t * PtWidgetSkip( PtWidget_t *root, PtWidget_t *widget );\n"
+/>
+<function
+   name="PtWidgetToBack"
+   summary="Move a widget behind all its brothers"
+   synopsis="int PtWidgetToBack( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtWidgetToFront"
+   summary="Move a widget in front of all its brothers"
+   synopsis="int PtWidgetToFront( PtWidget_t *widget );\n"
+/>
+<function
+   name="PtWidgetTree"
+   summary="Walk the widget tree from front to back"
+   synopsis="int PtWidgetTree( PtWidget_t *root, PtWidget_t **cur, int D );\n"
+/>
+<function
+   name="PtWidgetTreeTraverse"
+   summary="Walk the widget family hierarchy from front to back"
+   synopsis="int PtWidgetTreeTraverse( PtWidget_t *root, PtWidget_t **current, int direction, int (*skip_f)( PtWidget_t *widget, void *data ), void *data );\n"
+/>
+<function
+   name="PtWidgetVisibleExtent"
+   summary="Calculate the visible portion of a widget"
+   synopsis="int PtWidgetVisibleExtent ( PtWidget_t *widget, PhRect_t *rect );\n"
+/>
+<function
+   name="PtWindowConsoleSwitch"
+   summary="Switch to the console a given window's displayed on"
+   synopsis="int PtWindowConsoleSwitch( PhRid_t rid );\n"
+/>
+<function
+   name="PtWindowGetFrameSize"
+   summary="Determine the size of a window's frame"
+   synopsis="int PtWindowGetFrameSize( PtWidget_t *window, PhRect_t *rect );\n"
+/>
+<function
+   name="PxConfigClose, PxConfigCloseCx"
+   summary="Close a configuration file"
+   synopsis="#include &lt;photon/PxProto.h&gt;\n int PxConfigClose( void );\n int PxConfigCloseCx(PxCfgContext_t *cx);\n"
+/>
+<function
+   name="PxConfigDeleteEntry, PxConfigDeleteEntryCx"
+   summary="Delete an entry from a configuration file"
+   synopsis="#include &lt;photon/PxProto.h&gt;\n int PxConfigDeleteEntry( const char *section, const char *entry );\n int PxConfigDeleteEntryCx( PxCfgContext_t *cx, const char *section, const char *entry );\n"
+/>
+<function
+   name="PxConfigDeleteSection, PxConfigDeleteSectionCx"
+   summary="Delete a section from a configuration file"
+   synopsis="#include &lt;photon/PxProto.h&gt;\n int PxConfigDeleteSection( const char *section);\n int PxConfigDeleteSectionCx( PxCfgContext_t *cx, const char *section);\n"
+/>
+<function
+   name="PxConfigFirstSection, PxConfigFirstSectionCx"
+   summary="Seek the beginning of the first section of a configuration file"
+   synopsis="#include &lt;photon/PxProto.h&gt;\n const char *PxConfigFirstSection( void );\n const char *PxConfigFirstSectionCx(PxCfgContext_t *cx);\n"
+/>
+<function
+   name="PxConfigForceEmptySection, PxConfigForceEmptySectionCx"
+   summary="Create an empty section in a configuration file"
+   synopsis="#include &lt;photon/PxProto.h&gt;\n int PxConfigForceEmptySection( const char *section );\n int PxConfigForceEmptySectionCx( PxCfgContext_t *cx, const char *section );\n"
+/>
+<function
+   name="PxConfigNextEntry, PxConfigNextEntryCx"
+   summary="Get the next entry in the current section"
+   synopsis="#include &lt;photon/PxProto.h&gt;\n const char *PxConfigNextEntry( const char **value );\n const char *PxConfigNextEntryCx( PxCfgContext_t *cx, const char **value );\n"
+/>
+<function
+   name="PxConfigNextSection, PxConfigNextSectionCx"
+   summary="Seek the beginning of the next section of a configuration file"
+   synopsis="#include &lt;photon/PxProto.h&gt;\n const char *PxConfigNextSection( void );\n const char *PxConfigNextSectionCx(PxCfgContext_t *cx);\n"
+/>
+<function
+   name="PxConfigNextString, PxConfigNextStringCx"
+   summary="Get the next entry in the current section"
+   synopsis="#include &lt;photon/PxProto.h&gt;\n const char *PxConfigNextString( char *value, size_t maxlen );\n const char *PxConfigNextStringCx( PxCfgContext_t *cx, char *value, size_t maxlen );\n"
+/>
+<function
+   name="PxConfigOpen, PxConfigOpenCx"
+   summary="Open a configuration file"
+   synopsis="#include &lt;photon/PxProto.h&gt;\n int PxConfigOpen( const char *cfgfile, int mode);\n PxCfgContext_t *PxConfigOpenCx(const char *cfgfile, int mode);\n"
+/>
+<function
+   name="PxConfigReadBool, PxConfigReadBoolCx"
+   summary="Read a Boolean value from a configuration file"
+   synopsis="#include &lt;photon/PxProto.h&gt;\n int PxConfigReadBool( const char *section, const char *entry, int dflt, int *value);\n int PxConfigReadBoolCx( PxCfgContext_t *cx, const char *section, const char *entry, int dflt, int *value);\n"
+/>
+<function
+   name="PxConfigReadChar, PxConfigReadCharCx"
+   summary="Read a character parameter from a configuration file"
+   synopsis="#include &lt;photon/PxProto.h&gt;\n int PxConfigReadChar( const char *section, const char *entry, char dflt, char *value );\n int PxConfigReadCharCx( PxCfgContext_t *cx, const char *section, const char *entry, char dflt, char *value );\n"
+/>
+<function
+   name="PxConfigReadDouble, PxConfigReadDoubleCx"
+   summary="Read a double-precision float parameter from a configuration file"
+   synopsis="#include &lt;photon/PxProto.h&gt;\n int PxConfigReadDouble( const char *section, const char *entry, double dflt, double *value );\n int PxConfigReadDoubleCx( PxCfgContext_t *cx, const char *section, const char *entry, double dflt, double *value );\n"
+/>
+<function
+   name="PxConfigReadInt, PxConfigReadIntCx"
+   summary="Read an integer parameter from a configuration file"
+   synopsis="#include &lt;photon/PxProto.h&gt;\n int PxConfigReadInt( const char *section, const char *entry, int dflt, int *value );\n int PxConfigReadIntCx( PxCfgContext_t *cx, const char *section, const char *entry, int dflt, int *value );\n"
+/>
+<function
+   name="PxConfigReadLLong, PxConfigReadLLongCx"
+   summary="Read a long integer parameter from a configuration file"
+   synopsis="#include &lt;photon/PxProto.h&gt;\n int PxConfigReadLLong( const char *section, const char *entry, long long dflt, long long *value );\n int PxConfigReadLLongCx( PxCfgContext_t *cx, const char *section, const char *entry, long long dflt, long long *value );\n"
+/>
+<function
+   name="PxConfigReadLong, PxConfigReadLongCx"
+   summary="Read a long integer parameter from a configuration file"
+   synopsis="#include &lt;photon/PxProto.h&gt;\n int PxConfigReadLong( const char *section, const char *entry, long dflt, long *value );\n int PxConfigReadLongCx( PxCfgContext_t *cx, const char *section, const char *entry, long dflt, long *value );\n"
+/>
+<function
+   name="PxConfigReadShort, PxConfigReadShortCx"
+   summary="Read a short integer parameter from a configuration file"
+   synopsis="#include &lt;photon/PxProto.h&gt;\n int PxConfigReadShort( const char *section, const char *entry, short dflt, short *value );\n int PxConfigReadShortCx( PxCfgContext_t *cx, const char *section, const char *entry, short dflt, short *value );\n"
+/>
+<function
+   name="PxConfigReadString, PxConfigReadStringCx"
+   summary="Read a string parameter from a configuration file"
+   synopsis="#include &lt;photon/PxProto.h&gt;\n int PxConfigReadString( const char *section, const char *entry, const char *dflt, char *value, short maxlen );\n int PxConfigReadStringCx( PxCfgContext_t *cx, const char *section, const char *entry, const char *dflt, char *value, short maxlen );\n"
+/>
+<function
+   name="PxConfigSection, PxConfigSectionCx"
+   summary="Seek the start of a given section in a configuration file"
+   synopsis="#include &lt;photon/PxProto.h&gt;\n int PxConfigSection( const char *section );\n int PxConfigSectionCx(PxCfgContext_t *cx, char const *section);\n"
+/>
+<function
+   name="PxConfigWriteBool, PxConfigWriteBoolCx"
+   summary="Write a Boolean parameter in a configuration file"
+   synopsis="#include &lt;photon/PxProto.h&gt;\n int PxConfigWriteBool( const char *section, const char *entry, int format, int value );\n int PxConfigWriteBoolCx( PxCfgContext_t *cx, const char *section, const char *entry, int format, int value );\n"
+/>
+<function
+   name="PxConfigWriteChar"
+   summary="Write a character parameter in a configuration file"
+   synopsis="#include &lt;photon/PxProto.h&gt;\n int PxConfigWriteChar( const char *section, const char *entry, int format, char value);\n int PxConfigWriteCharCx( PxCfgContext_t *cx, const char *section, const char *entry, int format, char value);\n"
+/>
+<function
+   name="PxConfigWriteDouble, PxConfigWriteDoubleCx"
+   summary="Write an integer parameter in a configuration file"
+   synopsis="#include &lt;photon/PxProto.h&gt;\n int PxConfigWriteDouble( const char *section, const char *entry, int format, int value );\n int PxConfigWriteDoubleCx( PxCfgContext_t *cx, const char *section, const char *entry, int format, int value );\n"
+/>
+<function
+   name="PxConfigWriteInt, PxConfigWriteIntCx"
+   summary="Write an integer parameter in a configuration file"
+   synopsis="#include &lt;photon/PxProto.h&gt;\n int PxConfigWriteInt( const char *section, const char *entry, int format, int value );\n int PxConfigWriteIntCx( PxCfgContext_t *cx, const char *section, const char *entry, int format, int value );\n"
+/>
+<function
+   name="PxConfigWriteLLong, PxConfigWriteLLongCx"
+   summary="Write a 64-bit long long integer parameter in a configuration file"
+   synopsis="#include &lt;photon/PxProto.h&gt;\n int PxConfigWriteLLong( const char *section, const char *entry, int format, long long value );\n int PxConfigWriteLLongCx( PxCfgContext_t *cx, const char *section, const char *entry, int format, long long value );\n"
+/>
+<function
+   name="PxConfigWriteLong, PxConfigWriteLongCx"
+   summary="Write a long integer parameter in a configuration file"
+   synopsis="#include &lt;photon/PxProto.h&gt;\n int PxConfigWriteLong( const char *section, const char *entry, int format, long value );\n int PxConfigWriteLongCx( PxCfgContext_t *cx, const char *section, const char *entry, int format, long value );\n"
+/>
+<function
+   name="PxConfigWriteShort, PxConfigWriteShortCx"
+   summary="Write a short integer parameter in a configuration file"
+   synopsis="#include &lt;photon/PxProto.h&gt;\n int PxConfigWriteShort( const char *section, const char *entry, int format, short value );\n int PxConfigWriteShortCx( PxCfgContext_t *cx, const char *section, const char *entry, int format, short value );\n"
+/>
+<function
+   name="PxConfigWriteString, PxConfigWriteStringCx"
+   summary="Write a string parameter in a configuration file"
+   synopsis="#include &lt;photon/PxProto.h&gt;\n int PxConfigWriteString( const char *section, const char *entry, int format, const char *value );\n int PxConfigWriteStringCx( PxCfgContext_t *cx, const char *section, const char *entry, int format, const char *value );\n"
+/>
+<function
+   name="PxGetImageExtensions"
+   summary="Query supported image types "
+   synopsis="#include &lt;photon/PxImage.h&gt;\n int PxGetImageExtensions(char *extlist, int len, char const *prefix);\n"
+/>
+<function
+   name="PxLoadImage"
+   summary="Read or query a graphic file"
+   synopsis="#include &lt;photon/PxImage.h&gt;\n PhImage_t * PxLoadImage( char *filename, PxMethods_t *methods );\n"
+/>
+<function
+   name="PxRotateImage"
+   summary="Rotate an image"
+   synopsis="#include &lt;photon/PxImage.h&gt;\n int PxRotateImage( PhImage_t const *src, PhImage_t *dst, unsigned angle, PxMethods_t const *methods );\n"
+/>
+<function
+   name="PxTerminalBuildCharsets"
+   summary="Create character set tables based on translation tables"
+   synopsis="#include &lt;photon/PxTerminal.h&gt;\n PtTerminalCharsets_t *PxTerminalBuildCharsets( PxTerminalCsNames_t const *names );\n"
+/>
+<function
+   name="PxTerminalLoadCharsets"
+   summary="Load character-set information from a file"
+   synopsis="#include &lt;photon/PxTerminal.h&gt;\n PtTerminalCharsets_t *PxTerminalLoadCharsets( const char *filename, PxTerminalCsNames_t *names );\n"
+/>
+<function
+   name="PxTerminalSaveCharsets"
+   summary="Save character-set information in a file"
+   synopsis="#include &lt;photon/PxTerminal.h&gt;\n int PxTerminalSaveCharsets( PtTerminalCharsets_t *charsets, PxTerminalCsNames_t *names, const char *filename );\n"
+/>
+<function
+   name="PxTerminate"
+   summary="Terminate a PxLoadImage call"
+   synopsis="#include &lt;photon/PxImage.h&gt;\n void PxTerminate( PhImage_t *image );\n"
+/>
+<function
+   name="PxTranslateFromUTF"
+   summary="Translate characters from UTF-8"
+   synopsis="#include &lt;photon/PxProto.h&gt;\n int PxTranslateFromUTF( struct PxTransCtrl *ctrl, const char *src, int maxsrc, int *srctaken, char *dst, int maxdst, int *dstmade);\n"
+/>
+<function
+   name="PxTranslateList"
+   summary="Create a list of all supported character translations"
+   synopsis="#include &lt;photon/PxProto.h&gt;\n int PxTranslateList( PtWidget_t *widget, char const *none );\n"
+/>
+<function
+   name="PxTranslateSet"
+   summary="Install a new character set translation"
+   synopsis="#include &lt;photon/PxProto.h&gt;\n struct PxTransCtrl *PxTranslateSet( struct PxTransCtrl *ctrl, const char *charset);\n"
+/>
+<function
+   name="PxTranslateStateFromUTF"
+   summary="Translate characters from UTF-8, using an internal state buffer"
+   synopsis="#include &lt;photon/PxProto.h&gt;\n int PxTranslateStateFromUTF( struct PxTransCtrl *ctrl, const char *src, int maxsrc, int *consumed, char *dst, int maxdst );\n"
+/>
+<function
+   name="PxTranslateStateToUTF"
+   summary="Translate characters to UTF-8, using an internal state buffer"
+   synopsis="#include &lt;photon/PxProto.h&gt;\n int PxTranslateStateToUTF( struct PxTransCtrl *ctrl, const char *src, int maxsrc, int *consumed, char *dst, int maxdst );\n"
+/>
+<function
+   name="PxTranslateToUTF"
+   summary="Translate characters to UTF-8"
+   synopsis="#include &lt;photon/PxProto.h&gt;\n int PxTranslateToUTF( struct PxTransCtrl *ctrl, const char *src, int maxsrc, int *srctaken, char *dst, int maxdst, int *dstmade);\n"
+/>
+<function
+   name="PxTranslateUnknown"
+   summary="Control how unknown encodings are handled"
+   synopsis="#include &lt;photon/PxProto.h&gt;\n int PxTranslateUnknown( struct PxTransCtrl *ctrl, uint16_t to, uint16_t from );\n"
+/>
+<function
+   name="RtTimerCreate"
+   summary="Create a realtime timer"
+   synopsis="#include &lt;photon/realtime/RtTimer.h&gt;\n RtTimer_t *RtTimerCreate( clockid_t clock_id, int prio, RtTimerCbF_t *cb, void *data );\n"
+/>
+<function
+   name="RtTimerDelete"
+   summary="Delete a realtime timer"
+   synopsis="#include &lt;photon/realtime/RtTimer.h&gt;\n void RtTimerDelete( RtTimer_t *timer );\n"
+/>
+<function
+   name="RtTimerGetTime"
+   summary="Get the time remaining on a realtime timer"
+   synopsis="#include &lt;photon/realtime/RtTimer.h&gt;\n int RtTimerGetTime( RtTimer_t *timer, struct itimerspec *value );\n"
+/>
+<function
+   name="RtTimerSetTime"
+   summary="Set the expiration time for a realtime timer"
+   synopsis="#include &lt;photon/realtime/RtTimer.h&gt;\n int RtTimerSetTime( RtTimer_t *timer, int flags, struct itimerspec *value, struct itimerspec *ovalue );\n"
+/>
+<function
+   name="utf8len"
+   summary="Count the bytes in a UTF-8 character"
+   synopsis="#include &lt;utf8.h&gt;\n int utf8len( const char *s, size_t n );\n"
+/>
+<function
+   name="utf8strblen"
+   summary="Find the number of UTF-8 characters in part of a string"
+   synopsis="#include &lt;utf8.h&gt;\n int utf8strblen( char const *text, int max_bytes, int *bytes );\n"
+/>
+<function
+   name="utf8strchr"
+   summary="Search for a UTF-8 character in a string"
+   synopsis="#include &lt;utf8.h&gt;\n char * utf8strchr( char const *string, char const *mbchar, int *count );\n"
+/>
+<function
+   name="utf8strichr"
+   summary="Search for a UTF-8 character in a string, ignoring case"
+   synopsis="char *utf8strichr( char const *string, char const *mbchar, int *count );\n"
+/>
+<function
+   name="utf8strirchr"
+   summary="Search backwards for a UTF-8 character in a string, ignoring case"
+   synopsis="char *utf8strirchr( char const *string_base, char const *start_char, char const *mbchar, int *count );\n"
+/>
+<function
+   name="utf8strlen"
+   summary="Find the length of a UTF-8 character string"
+   synopsis="#include &lt;utf8.h&gt;\n int utf8strlen( char const *text, int *bytes );\n"
+/>
+<function
+   name="utf8strnchr"
+   summary="Search for a UTF-8 character in part of a string"
+   synopsis="#include &lt;utf8.h&gt;\n char * utf8strnchr( char const *string, char const *mbchar, int num, int *count );\n"
+/>
+<function
+   name="utf8strncmp"
+   summary="Compare part of a UTF-8 character string"
+   synopsis="#include &lt;utf8.h&gt;\n int utf8strncmp( char const *str1, char const *str2, int len );\n"
+/>
+<function
+   name="utf8strndup"
+   summary="Create a copy of part of a UTF-8 character string"
+   synopsis="char *utf8strndup( char const *text, int count, int *bytes );\n"
+/>
+<function
+   name="utf8strnichr"
+   summary="Search for a UTF-8 character in part of a string, ignoring case"
+   synopsis="char *utf8strnichr( char const *string, char const *mbchar, int num, int *count );\n"
+/>
+<function
+   name="utf8strnlen"
+   summary="Find the number of bytes used by a UTF-8 character string"
+   synopsis="#include &lt;utf8.h&gt;\n int utf8strnlen( char const *text, int max_len, int *num );\n"
+/>
+<function
+   name="utf8strrchr"
+   summary="Search backwards for a UTF-8 character in a string"
+   synopsis="#include &lt;utf8.h&gt;\n char *utf8strrchr( char const *string_base, char const *start_char, char const *mbchar, int *count );\n"
+/>
+<function
+   name="utf8towc"
+   summary="Convert a UTF-8 character to a wide-character code"
+   synopsis="int utf8towc( wchar_t *pwc, const char *s, size_t n );\n"
+/>
+<function
+   name="wctolower"
+   summary="Return the lowercase equivalent of a wide character"
+   synopsis="wchar_t wctolower( wchar_t wc );\n"
+/>
+<function
+   name="wctoutf8"
+   summary="Convert a wide-character code into a UTF-8 character"
+   synopsis="int wctoutf8( char *s, wchar_t wc );\n"
+/>
+</function_summary>

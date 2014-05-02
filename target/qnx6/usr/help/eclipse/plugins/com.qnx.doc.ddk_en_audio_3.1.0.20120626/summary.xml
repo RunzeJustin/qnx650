@@ -1,0 +1,342 @@
+<function_summary>
+<function
+   name="ado_attach_interrupt"
+   summary="Attach a handler function to an interrupt"
+   synopsis="#include &lt;audio_driver.h&gt;\n int32_t ado_attach_interrupt ( ado_card_t *card, int32_t irq, void (*handler) ( HW_CONTEXT_T *hw_context, int32_t irqnum ), HW_CONTEXT_T *hw_context );\n"
+/>
+<function
+   name="ado_calloc"
+   summary="Allocate space for an array"
+   synopsis="#include &lt;audio_driver.h&gt;\n void *ado_calloc( size_t n, size_t size );\n"
+/>
+<function
+   name="ado_card_set_longname"
+   summary="Create a name that identifies an instance of the audio hardware"
+   synopsis="#include &lt;audio_driver.h&gt;\n void ado_card_set_longname( ado_card_t *card, char *name, uint32_t addr );\n"
+/>
+<function
+   name="ado_card_set_shortname"
+   summary="Create a name that identifies the type of the audio hardware"
+   synopsis="#include &lt;audio_driver.h&gt;\n void ado_card_set_shortname( ado_card_t *card, char *name );\n"
+/>
+<function
+   name="ado_debug"
+   summary="Send a debugging string to slogger for logging"
+   synopsis="#include &lt;audio_driver.h&gt;\n void ado_debug( uint32_t lvl, char *format, ... );\n"
+/>
+<function
+   name="ado_device_mmap"
+   summary="Map a region of physical memory"
+   synopsis="#include &lt;audio_driver.h&gt;\n void *ado_device_mmap ( unsigned long addr, unsigned long size );\n"
+/>
+<function
+   name="ado_device_munmap"
+   summary="Release a virtual memory region"
+   synopsis="#include &lt;audio_driver.h&gt;\n int ado_device_munmap( void *addr, unsigned long size );\n"
+/>
+<function
+   name="ado_error"
+   summary="Send an error string to slogger for logging"
+   synopsis="#include &lt;audio_driver.h&gt;\n void ado_error( char *format, ... );\n"
+/>
+<function
+   name="ado_free"
+   summary="Deallocate a block of memory"
+   synopsis="#include &lt;audio_driver.h&gt;\n void ado_free( void *ptr );\n"
+/>
+<function
+   name="ado_malloc"
+   summary="Allocate memory"
+   synopsis="#include &lt;audio_driver.h&gt;\n void *ado_malloc( size_t size );\n"
+/>
+<function
+   name="ado_memory_dump"
+   summary="Show all memory currently in use by the ado_* family of allocation functions"
+   synopsis="#include &lt;audio_driver.h&gt;\n void ado_memory_dump( void );\n"
+/>
+<function
+   name="ado_mixer_capture_group_create"
+   summary="Create a capture group"
+   synopsis="#include &lt;audio_driver.h&gt;\n ado_mixer_dgroup_t *ado_mixer_capture_group_create ( ado_mixer_t *mixer, char *name, uint32_t channels, ado_mixer_delement_t *vol_elem, ado_mixer_delement_t *mute_elem, ado_mixer_delement_t *cap_elem, ado_mixer_delement_t *mux_in_elem );\n"
+/>
+<function
+   name="ado_mixer_create"
+   summary="Allocate a new mixer structure, then attach it"
+   synopsis="#include &lt;audio_driver.h&gt;\n int32_t ado_mixer_create ( ado_card_t *card, char *id, ado_mixer_t **rmixer, MIXER_CONTEXT_T *context );\n"
+/>
+<function
+   name="ado_mixer_dll"
+   summary="Load the specified standard mixer DLL"
+   synopsis="#include &lt;audio_driver.h&gt;\n int32_t ado_mixer_dll( ado_card_t *card, char *mixer_dll, uint32_t version, void *params, void *callbacks, ado_mixer_t **rmixer );\n"
+/>
+<function
+   name="ado_mixer_element_accu1"
+   summary="Create an accumulator (type 1) element"
+   synopsis="#include &lt;audio_driver.h&gt;\n ado_mixer_delement_t *ado_mixer_element_accu1 ( ado_mixer_t *mixer, char *name, int32_t attenuation );\n"
+/>
+<function
+   name="ado_mixer_element_accu2"
+   summary="Create an accumulator (type 2) element"
+   synopsis="#include &lt;audio_driver.h&gt;\n ado_mixer_delement_t *ado_mixer_element_accu2( ado_mixer_t *mixer, char *name, int32_t attenuation );\n"
+/>
+<function
+   name="ado_mixer_element_accu3"
+   summary="Create an accumulator (type 3) element"
+   synopsis="#include &lt;audio_driver.h&gt;\n ado_mixer_delement_t * ado_mixer_element_accu3 ( ado_mixer_t *mixer, char *name, uint32_t number_of_voices, struct snd_mixer_element_accu3_range *ranges, ado_mixer_delement_control_accu3_t *control, void *instance_data, void (*instance_free) (void *data) );\n"
+/>
+<function
+   name="ado_mixer_element_io"
+   summary="Create an input/output element"
+   synopsis="#include &lt;audio_driver.h&gt;\n ado_mixer_delement_t *ado_mixer_element_io ( ado_mixer_t *mixer, char *name, int32_t type, uint32_t attrib, uint32_t number_of_voices, snd_mixer_voice_t *voices );\n"
+/>
+<function
+   name="ado_mixer_element_mux1"
+   summary="Create a multiplexer (type 1) element"
+   synopsis="#include &lt;audio_driver.h&gt;\n ado_mixer_delement_t *ado_mixer_element_mux1 ( ado_mixer_t *mixer, char *name, uint32_t attrib, uint32_t number_of_voices, ado_mixer_delement_control_mux1_t *control, void *instance_data, void (*instance_free) (void *data) );\n"
+/>
+<function
+   name="ado_mixer_element_mux2"
+   summary="Create a multiplexer (type 2) element"
+   synopsis="#include &lt;audio_driver.h&gt;\n ado_mixer_delement_t *ado_mixer_element_mux2 ( ado_mixer_t *mixer, char *name, uint32_t attrib, ado_mixer_delement_control_mux2_t *control, void *instance_data, void (*instance_free) (void *data) );\n"
+/>
+<function
+   name="ado_mixer_element_notify"
+   summary="Notify the upper driver levels that there's been a change in an element"
+   synopsis="#include &lt;audio_driver.h&gt;\n void ado_mixer_element_notify ( ado_mixer_t *mixer, ado_mixer_delement_t *delement, uint32_t cmd, ado_ocb_t *ocb );\n"
+/>
+<function
+   name="ado_mixer_element_pcm1"
+   summary="Create a PCM (type 1) element"
+   synopsis="#include &lt;audio_driver.h&gt;\n ado_mixer_delement_t *ado_mixer_element_pcm1 ( ado_mixer_t *mixer, char *name, int32_t type, uint32_t number_of_devices, int32_t *devices );\n"
+/>
+<function
+   name="ado_mixer_element_pcm2"
+   summary="Create a PCM (type 2) element"
+   synopsis="#include &lt;audio_driver.h&gt;\n ado_mixer_delement_t *ado_mixer_element_pcm2 ( ado_mixer_t *mixer, char *name, uint32_t type, int32_t device, int32_t subdevice );\n"
+/>
+<function
+   name="ado_mixer_element_route_add"
+   summary="Indicate an ordered relationship between two mixer elements"
+   synopsis="#include &lt;audio_driver.h&gt;\n int32_t ado_mixer_element_route_add ( ado_mixer_t *mixer, ado_mixer_delement_t *elem_before, ado_mixer_delement_t *elem );\n"
+/>
+<function
+   name="ado_mixer_element_sw1"
+   summary="Create a switch (type 1) element"
+   synopsis="#include &lt;audio_driver.h&gt;\n ado_mixer_delement_t *ado_mixer_element_sw1 ( ado_mixer_t *mixer, char *name, uint32_t number_of_switches, ado_mixer_delement_control_sw1_t *control, void *instance_data, void (*instance_free) (void *data) );\n"
+/>
+<function
+   name="ado_mixer_element_sw2"
+   summary="Create a switch (type 2) element"
+   synopsis="#include &lt;audio_driver.h&gt;\n ado_mixer_delement_t *ado_mixer_element_sw2 ( ado_mixer_t *mixer, char *name, ado_mixer_delement_control_sw2_t *control, void *instance_data, void (*instance_free) (void *data) );\n"
+/>
+<function
+   name="ado_mixer_element_sw3"
+   summary="Create a switch (type 3) element"
+   synopsis="#include &lt;audio_driver.h&gt;\n ado_mixer_delement_t *ado_mixer_element_sw3 ( ado_mixer_t *mixer, char *name, uint32_t type, uint32_t number_of_voices, snd_mixer_voice_t *voices, ado_mixer_delement_control_sw3_t *control, void *instance_data, void (*instance_free) (void *data) );\n"
+/>
+<function
+   name="ado_mixer_element_vol_range_max"
+   summary="Read the maximum volume setting of the mixer volume element"
+   synopsis="#include &lt;audio_driver.h&gt;\n int32_t ado_mixer_element_vol_range_max( ado_mixer_delement_t *delement );\n"
+/>
+<function
+   name="ado_mixer_element_vol_range_min"
+   summary="Read the minimum volume setting of the mixer volume element"
+   synopsis="#include &lt;audio_driver.h&gt;\n int32_t ado_mixer_element_vol_range_min( ado_mixer_delement_t *delement );\n"
+/>
+<function
+   name="ado_mixer_element_volume1"
+   summary="Create a volume (type 1) element"
+   synopsis="#include &lt;audio_driver.h&gt;\n ado_mixer_delement_t *ado_mixer_element_volume1 ( ado_mixer_t *mixer, char *name, uint32_t number_of_voices, struct snd_mixer_element_volume1_range *ranges, ado_mixer_delement_control_volume1_t *control, void *instance_data, void (*instance_free) (void *data) );\n"
+/>
+<function
+   name="ado_mixer_find_element"
+   summary="Search a mixer for an element"
+   synopsis="#include &lt;audio_driver.h&gt;\n ado_mixer_delement_t *ado_mixer_find_element ( ado_mixer_t *mixer, int32_t type, int8_t *name, int32_t index );\n"
+/>
+<function
+   name="ado_mixer_find_group"
+   summary="Search a mixer for a group"
+   synopsis="#include &lt;audio_driver.h&gt;\n ado_mixer_dgroup_t *ado_mixer_find_group ( ado_mixer_t *mixer, int8_t *name, int32_t index );\n"
+/>
+<function
+   name="ado_mixer_get_context"
+   summary="Get a pointer to a mixer's context structure"
+   synopsis="#include &lt;audio_driver.h&gt;\n MIXER_CONTEXT_T *ado_mixer_get_context ( ado_mixer_t *mixer );\n"
+/>
+<function
+   name="ado_mixer_get_element_instance_data"
+   summary="Access a mixer element's instance data"
+   synopsis="#include &lt;audio_driver.h&gt;\n void *ado_mixer_get_element_instance_data( ado_mixer_delement_t *delement );\n"
+/>
+<function
+   name="ado_mixer_lock"
+   summary="Limit access to the mixer"
+   synopsis="#include &lt;audio_driver.h&gt;\n int32_t ado_mixer_lock( ado_mixer_t *mixer );\n"
+/>
+<function
+   name="ado_mixer_playback_group_create"
+   summary="Create a playback group"
+   synopsis="#include &lt;audio_driver.h&gt;\n ado_mixer_dgroup_t *ado_mixer_playback_group_create ( ado_mixer_t *mixer, char *name, uint32_t channels, ado_mixer_delement_t *vol_elem, ado_mixer_delement_t *mute_elem );\n"
+/>
+<function
+   name="ado_mixer_set_destroy_func"
+   summary="Attach a function to the mixer to be called when the mixer is destroyed"
+   synopsis="#include &lt;audio_driver.h&gt;\n void ado_mixer_set_destroy_func ( ado_mixer_t *mixer, ado_mixer_destroy_t *destroy );\n"
+/>
+<function
+   name="ado_mixer_set_name"
+   summary="Attach the character string name to the mixer"
+   synopsis="#include &lt;audio_driver.h&gt;\n void ado_mixer_set_name( ado_mixer_t *mixer, char *name );\n"
+/>
+<function
+   name="ado_mixer_set_reset_func"
+   summary="Attach a function to the mixer to be called when a hardware reset of the mixer occurs"
+   synopsis="#include &lt;audio_driver.h&gt;\n void ado_mixer_set_reset_func ( ado_mixer_t *mixer, ado_mixer_reset_t *reset );\n"
+/>
+<function
+   name="ado_mixer_switch_new"
+   summary="Create a new mixer switch"
+   synopsis="#include &lt;audio_driver.h&gt;\n ado_dswitch_t *ado_mixer_switch_new ( ado_mixer_t *mixer, char *name, uint32_t type, uint32_t subtype, int32_t (*read) ( MIXER_CONTEXT_T *context, ado_dswitch_t *dswitch, snd_switch_t *cswitch, void *instance_data ), int32_t (*write) ( MIXER_CONTEXT_T *context, ado_dswitch_t *dswitch, snd_switch_t *cswitch, void *instance_data ), void *instance_data, void (*instance_free) (void *data) );\n"
+/>
+<function
+   name="ado_mixer_unlock"
+   summary="Unlock the attribute structure"
+   synopsis="#include &lt;audio_driver.h&gt;\n int32_t ado_mixer_unlock( ado_mixer_t *mixer );\n"
+/>
+<function
+   name="ado_mutex_destroy"
+   summary="Destroy a mutex"
+   synopsis="#include &lt;audio_driver.h&gt;\n #define ado_mutex_destroy( mutex );\n"
+/>
+<function
+   name="ado_mutex_init"
+   summary="Initialize a mutex"
+   synopsis="#include &lt;audio_driver.h&gt;\n #define ado_mutex_init( mutex )"
+/>
+<function
+   name="ado_mutex_lock"
+   summary="Lock a mutex"
+   synopsis="#include &lt;audio_driver.h&gt;\n #define ado_mutex_lock( mutex )"
+/>
+<function
+   name="ado_mutex_unlock"
+   summary="Unlock a mutex"
+   synopsis="#include &lt;audio_driver.h&gt;\n #define ado_mutex_unlock( mutex )"
+/>
+<function
+   name="ado_pci_device"
+   summary="Try to connect to a specified PCI card"
+   synopsis="#include &lt;audio_driver.h&gt;\n struct ado_pci *ado_pci_device( int32_t vendor, int32_t device, char *options );\n"
+/>
+<function
+   name="ado_pci_release"
+   summary="Detach from a given PCI card"
+   synopsis="void ado_pci_release( struct ado_pci *pci );\n"
+/>
+<function
+   name="ado_pcm_chn_mixer"
+   summary="Logically associate a mixer element and group with a PCM device"
+   synopsis="#include &lt;audio_driver.h&gt;\n void ado_pcm_chn_mixer( ado_pcm_t *pcm, enum pcm_chn_type type, ado_mixer_t *mixer, ado_mixer_delement_t *delement, ado_mixer_dgroup_t *dgroup );\n"
+/>
+<function
+   name="ado_pcm_create"
+   summary="Create a PCM audio device"
+   synopsis="#include &lt;audio_driver.h&gt;\n int32_t ado_pcm_create ( ado_card_t *card, char *name, uint32_t flags, char *id, uint32_t play_subchns, ado_pcm_cap_t *play_cap, ado_pcm_hw_t *play_hw, uint32_t cap_subchns, ado_pcm_cap_t *cap_cap, ado_pcm_hw_t *cap_hw, ado_pcm_t **rpcm );\n"
+/>
+<function
+   name="ado_pcm_dma_int_size"
+   summary="Obtain the fragment size of a PCM channel"
+   synopsis="#include &lt;audio_driver.h&gt;\n uint32_t ado_pcm_dma_int_size ( ado_pcm_config_t *config );\n"
+/>
+<function
+   name="ado_pcm_format_bit_width"
+   summary="Obtain the sample width, in bits, for a given format"
+   synopsis="#include &lt;audio_driver.h&gt;\n size_t ado_pcm_format_bit_width( int format );\n"
+/>
+<function
+   name="ado_pcm_subchn_caps"
+   summary="Get a pointer to the capabilities structure for a subchannel"
+   synopsis="#include &lt;audio_driver.h&gt;\n ado_pcm_cap_t *ado_pcm_subchn_caps ( ado_pcm_subchn_t *subchn );\n"
+/>
+<function
+   name="ado_pcm_subchn_is_channel"
+   summary="Check if a channel is a subchannel of a PCM device"
+   synopsis="#include &lt;audio_driver.h&gt;\n int32_t ado_pcm_subchn_is_channel ( ado_pcm_subchn_t *subchn, ado_pcm_t *pcm, enum pcm_chn_type chn_type );\n"
+/>
+<function
+   name="ado_pcm_subchn_mixer"
+   summary="Logically associate a mixer element and group with a PCM subchannel device"
+   synopsis="#include &lt;audio_driver.h&gt;\n void ado_pcm_subchn_mixer ( ado_pcm_subchn_t *subchn, ado_mixer_t *mixer, ado_mixer_delement_t *delement, ado_mixer_dgroup_t *dgroup );\n"
+/>
+<function
+   name="ado_pcm_subchn_mixer_create"
+   summary="Create a PCM subchannel mixer"
+   synopsis="#include &lt;audio_driver.h&gt;\n ado_pcm_subchn_mixer_t *ado_pcm_subchn_mixer_create ( ado_pcm_subchn_t *subchn, ado_mixer_t *mixer, ado_pcm_subchn_mixer_config_t *config );\n"
+/>
+<function
+   name="ado_pcm_subchn_mixer_destroy"
+   summary="Destroy a PCM subchannel mixer"
+   synopsis="#include &lt;audio_driver.h&gt;\n void ado_pcm_subchn_mixer_destroy( ado_pcm_subchn_mixer_t *sc_mixer );\n"
+/>
+<function
+   name="ado_pcm_sw_mix"
+   summary="Provide a mechanism for an audio chip to support multiple simultaneous streams"
+   synopsis="#include &lt;audio_driver.h&gt;\n int32_t ado_pcm_sw_mix ( ado_card_t *card, ado_pcm_t *pcm, ado_mixer_t *mixer );\n"
+/>
+<function
+   name="ado_realloc"
+   summary="Allocate, reallocate, or free a block of memory"
+   synopsis="#include &lt;audio_driver.h&gt;\n void *ado_realloc( void *ptr, size_t size);\n"
+/>
+<function
+   name="ado_rwlock_destroy"
+   summary="Destroy a read-write lock"
+   synopsis="#include &lt;audio_driver.h&gt;\n ado_rwlock_destroy( pthread_rwlock_t *rwl )"
+/>
+<function
+   name="ado_rwlock_init"
+   summary="Initialize a read-write lock"
+   synopsis="#include &lt;audio_driver.h&gt;\n int ado_rwlock_init( pthread_rwlock_t *rwl);\n"
+/>
+<function
+   name="ado_rwlock_rdlock"
+   summary="Acquire a shared read lock on a read-write lock"
+   synopsis="#include &lt;audio_driver.h&gt;\n ado_rwlock_rdlock( pthread_rwlock_t *rwl);\n"
+/>
+<function
+   name="ado_rwlock_unlock"
+   summary="Unlock a read-write lock"
+   synopsis="#include &lt;audio_driver.h&gt;\n int ado_rwlock_unlock( pthread_rwlock_t *rwl );\n"
+/>
+<function
+   name="ado_rwlock_wrlock"
+   summary="Acquire an exclusive write lock on a read-write lock"
+   synopsis="#include &lt;audio_driver.h&gt;\n int ado_rwlock_wrlock( pthread_rwlock_t *rwl );\n"
+/>
+<function
+   name="ado_shm_alloc"
+   summary="Allocate shared memory"
+   synopsis="#include &lt;audio_driver.h&gt;\n void *ado_shm_alloc( size_t size, char *name, int32_t flags, off64_t *phys_addr );\n"
+/>
+<function
+   name="ado_shm_free"
+   summary="Release memory and unlink shared memory"
+   synopsis="#include &lt;audio_driver.h&gt;\n void ado_shm_free( void *ptr, size_t size, char *name );\n"
+/>
+<function
+   name="ado_shm_mmap"
+   summary="Map a shared memory region into the Audio HW DLL's address space"
+   synopsis="#include &lt;audio_driver.h&gt;\n void *ado_shm_mmap( off64_t phys_addr, size_t size, char *name );\n"
+/>
+<function
+   name="ado_strdup"
+   summary="Create a duplicate of a string"
+   synopsis="#include &lt;audio_driver.h&gt;\n char *ado_strdup_debug( const char *src );\n"
+/>
+<function
+   name="dma_interrupt"
+   summary="Signal that the current fragment of a subchannel has been completed by the DMA engine"
+   synopsis="#include &lt;audio_driver.h&gt;\n void dma_interrupt( ado_pcm_subchn_t *subchn );\n"
+/>
+</function_summary>

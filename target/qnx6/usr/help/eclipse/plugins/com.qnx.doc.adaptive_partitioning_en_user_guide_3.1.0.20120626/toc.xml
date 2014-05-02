@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="User's Guide">
+      <topic label="About This Guide" href="about.html">
+          <topic label="What you'll find in this guide" href="about.html#In_this_guide"/>
+          <topic label="Typographical conventions" href="about.html#Typographical_conventions">
+            <topic label="Note to Windows users" href="about.html#WINDOWSNOTE"/>
+            <topic label="Navigation buttons" href="about.html#Navigation"/>
+          </topic>
+          <topic label="Technical support" href="about.html#Support"/>
+      </topic>
+      <topic label="What is Adaptive Partitioning?" href="ap_overview.html">
+          <topic label="What are partitions and what is adaptive partitioning?" href="ap_overview.html#Partitions">
+            <topic label="Because adaptive partitions are not boxes what are they?" href="ap_overview.html#id4"/>
+          </topic>
+          <topic label="System and user requirements" href="ap_overview.html#System_requirements"/>
+          <topic label="The thread scheduler" href="ap_overview.html#Scheduler"/>
+      </topic>
+      <topic label="Controlling Resources Using the Thread Scheduler" href="apsmp_intro.html">
+          <topic label="Overview" href="apsmp_intro.html#IntrAPSAM"/>
+      </topic>
+      <topic label="Quickstart: Adaptive Partitioning Thread Scheduler" href="quickstart.html"/>
+      <topic label="Using the Thread Scheduler" href="aps_details.html">
+          <topic label="Introduction" href="aps_details.html#Introduction"/>
+          <topic label="Keeping track of CPU time" href="aps_details.html#Keeping_track"/>
+          <topic label="How is CPU time divided between partitions?" href="aps_details.html#Divided">
+            <topic label="Underload" href="aps_details.html#S_Underload"/>
+            <topic label="Free time" href="aps_details.html#S_FreeTime"/>
+            <topic label="Full Load" href="aps_details.html#S_FullLoad"/>
+            <topic label="Summary of scheduling behavior" href="aps_details.html#Scheduling_summary"/>
+          </topic>
+          <topic label="Partition inheritance" href="aps_details.html#Inheritance">
+            <topic label="What about any threads or processes that the server creates? Which partition do they run in?" href="aps_details.html#id11"/>
+          </topic>
+          <topic label="Critical threads" href="aps_details.html#Critical_threads">
+            <topic label="Bankruptcy" href="aps_details.html#Bankruptcy"/>
+          </topic>
+          <topic label="Adaptive partitioning thread scheduler and other thread schedulers" href="aps_details.html#Other_schedulers">
+            <topic label="A caveat about FIFO scheduling" href="aps_details.html#FIFO_caveat"/>
+          </topic>
+          <topic label="Using the thread scheduler and multicore together" href="aps_details.html#Multicore">
+            <topic label="Scheduler partitions and BMP" href="aps_details.html#Scheduler_partitions_and_BMP"/>
+          </topic>
+      </topic>
+      <topic label="Setting Up and Using the Adaptive Partitioning Thread Scheduler" href="set_use_ap.html">
+          <topic label="Building an image" href="set_use_ap.html#buldimage"/>
+          <topic label="Creating scheduler partitions" href="set_use_ap.html#crtepart">
+            <topic label="In a buildfile" href="set_use_ap.html#id5"/>
+            <topic label="From the command line" href="set_use_ap.html#id7"/>
+            <topic label="From a program" href="set_use_ap.html#id9"/>
+          </topic>
+          <topic label="Launching a process in a partition" href="set_use_ap.html#launchprpart">
+            <topic label="In a buildfile" href="set_use_ap.html#id12"/>
+            <topic label="From the command line" href="set_use_ap.html#id14"/>
+            <topic label="From a program" href="set_use_ap.html#id16"/>
+          </topic>
+          <topic label="Viewing partition use" href="set_use_ap.html#viewparuse"/>
+      </topic>
+      <topic label="Considerations for the Thread Scheduler" href="system.html">
+          <topic label="Determining the number of scheduler partitions and their contents" href="system.html#Number_and_contents"/>
+          <topic label="Choosing the percentage of CPU for each partition" href="system.html#Percentages">
+            <topic label="Setting budgets to zero" href="system.html#Zero_budget">
+              <topic label="When is it useful to set the budget of a partition to zero?" href="system.html#id6"/>
+            </topic>
+            <topic label="Setting budgets for resource managers" href="system.html#Resmgrs"/>
+          </topic>
+          <topic label="Choosing the window size" href="system.html#Window_size">
+            <topic label="Accuracy" href="system.html#Accuracy"/>
+            <topic label="Delays compared to priority scheduling" href="system.html#Delays">
+              <topic label="Case 1" href="system.html#id12"/>
+              <topic label="Case 2" href="system.html#id14"/>
+              <topic label="Approximating the delays" href="system.html#id16"/>
+            </topic>
+          </topic>
+          <topic label="Practical limits" href="system.html#Practical_limits"/>
+          <topic label="Uncontrolled interactions between scheduler partitions" href="system.html#Interactions"/>
+      </topic>
+      <topic label="Security for Scheduler Partitions" href="security.html">
+          <topic label="Managing security for the thread scheduler" href="security.html#SecurityAPS">
+            <topic label="Security and critical threads" href="security.html#Security_critical"/>
+          </topic>
+      </topic>
+      <topic label="Testing and Debugging" href="debugging.html">
+          <topic label="Instrumented kernel trace events" href="debugging.html#Tracing"/>
+          <topic label="Using the QNX IDE (trace events)" href="debugging.html#IDE"/>
+          <topic label="Using other methods" href="debugging.html#Other"/>
+          <topic label="Emergency access to the system" href="debugging.html#Access"/>
+      </topic>
+      <topic label="Frequently Asked Questions: Adaptive Partitioning Thread Scheduler" href="faq_ap.html">
+          <topic label="Scheduling behavior" href="faq_ap.html#SCH_BEH">
+            <topic label="How does the thread scheduler guarantee a partition's minimum CPU budget?" href="faq_ap.html#id4"/>
+            <topic label="When does the scheduler guarantee that a partition gets its budget?" href="faq_ap.html#id6"/>
+            <topic label="Does a 100-ms window mean a CPU time-averaging occurs only once in every 100 ms?" href="faq_ap.html#id8"/>
+            <topic label="How often does the algorithm enforce partition budgets?" href="faq_ap.html#id10"/>
+            <topic label="What system assumptions does the design of thread scheduler make?" href="faq_ap.html#id12"/>
+            <topic label="When does the thread scheduler calculate percentage CPU usage?" href="faq_ap.html#id14"/>
+            <topic label="How often does the thread scheduler compute CPU usage?" href="faq_ap.html#id16"/>
+            <topic label="When is the scheduler's behavior realtime?" href="faq_ap.html#id18"/>
+            <topic label="What is free-time mode?" href="faq_ap.html#id20"/>
+            <topic label="What is free time?" href="faq_ap.html#id22"/>
+            <topic label="Do you have to repay free time?" href="faq_ap.html#id24"/>
+            <topic label="How does the thread scheduler behave on HyperThreaded (HT) processors?" href="faq_ap.html#id26"/>
+            <topic label="How long can a round-robin thread run with the thread scheduler?" href="faq_ap.html#id28"/>
+            <topic label="How long can a FIFO thread run with the thread scheduler?" href="faq_ap.html#id30"/>
+            <topic label="How long can a sporadic (SS) thread run with the thread scheduler?" href="faq_ap.html#id32"/>
+            <topic label="How often does the thread scheduler algorithm run?" href="faq_ap.html#id34"/>
+            <topic label="How often does the thread scheduler enforce budgets?" href="faq_ap.html#id36"/>
+            <topic label="How do power-saving modes affect scheduling?" href="faq_ap.html#id38"/>
+            <topic label="How does changing the clock period (using ClockPeriod) affect scheduling?" href="faq_ap.html#id40"/>
+          </topic>
+          <topic label="Microbilling" href="faq_ap.html#MILLING">
+            <topic label="How does microbilling work?" href="faq_ap.html#id43"/>
+            <topic label="How often does thread scheduler microbill?" href="faq_ap.html#id45"/>
+            <topic label="How does ClockCycles work?" href="faq_ap.html#id47"/>
+            <topic label="How accurate is microbilling?" href="faq_ap.html#id49"/>
+            <topic label="How accurate is ClockCycles?" href="faq_ap.html#id51"/>
+            <topic label="What is the resolution of thread timing?" href="faq_ap.html#id53"/>
+          </topic>
+          <topic label="Averaging window" href="faq_ap.html#AV_WDOW">
+            <topic label="How does the averaging window work?" href="faq_ap.html#id56"/>
+            <topic label="What is the window-rotation algorithm?" href="faq_ap.html#id58"/>
+            <topic label="Can I change the window size?" href="faq_ap.html#id60"/>
+            <topic label="How does changing the window size affect scheduling?" href="faq_ap.html#id62"/>
+            <topic label="How do maximum latencies relate to the averaging window size?" href="faq_ap.html#id64"/>
+          </topic>
+          <topic label="Scheduling algorithm" href="faq_ap.html#SCH_AGRHM">
+            <topic label="How does the thread scheduler pick a thread to run?" href="faq_ap.html#id67"/>
+            <topic label="How does the scheduling algorithm work?" href="faq_ap.html#HowSchedAlgWorks"/>
+            <topic label="How does the scheduler find the highest-priority thread in a partition?" href="faq_ap.html#id70"/>
+            <topic label="How are RFFs (relative fraction free) computed?" href="faq_ap.html#id72"/>
+            <topic label="How does the scheduler algorithm avoid division and floating-point mathematics?" href="faq_ap.html#id74"/>
+            <topic label="How does the scheduler algorithm determine if a thread that's allowed to run as critical, should actually run as critical?" href="faq_ap.html#id76"/>
+            <topic label="How does the scheduler algorithm decide when to bill critical time?" href="faq_ap.html#id78"/>
+            <topic label="What are the algorithm's size limitations?" href="faq_ap.html#id80"/>
+            <topic label="What are the algorithm's accuracy limitations?" href="faq_ap.html#id82"/>
+            <topic label="When is the scheduling algorithm approximated?" href="faq_ap.html#id84"/>
+          </topic>
+          <topic label="Overhead" href="faq_ap.html#OVERLD">
+            <topic label="Which partition is the overhead associated with scheduling charged to?" href="faq_ap.html#id87"/>
+            <topic label="Which partition is the overhead for processing interrupts charged to?" href="faq_ap.html#id89"/>
+            <topic label="What is the CPU overhead with the thread scheduler?" href="faq_ap.html#id91"/>
+            <topic label="What is the memory overhead with the thread scheduler?" href="faq_ap.html#id93"/>
+            <topic label="What factors increase the overhead for the thread scheduler?" href="faq_ap.html#id95"/>
+          </topic>
+          <topic label="Critical threads and bankruptcy" href="faq_ap.html#CRI_THR">
+            <topic label="How does the scheduler mark a thread as critical?" href="faq_ap.html#id98"/>
+            <topic label="How does the thread scheduler know that a thread is critical?" href="faq_ap.html#id100"/>
+            <topic label="Do critical threads expose security?" href="faq_ap.html#id102"/>
+            <topic label="When does the scheduler check for bankruptcy?" href="faq_ap.html#id104"/>
+            <topic label="How does the scheduler detect bankruptcy?" href="faq_ap.html#id106"/>
+          </topic>
+          <topic label="Inheritance" href="faq_ap.html#INHRTA">
+            <topic label="What is partition inheritance?" href="faq_ap.html#id109"/>
+            <topic label="When does partition inheritance occur?" href="faq_ap.html#id111"/>
+            <topic label="How does mutex partition and inheritance work?" href="faq_ap.html#id113"/>
+            <topic label="How fast is partition inheritance?" href="faq_ap.html#id115"/>
+            <topic label="Why is partition inheritance for message passing secure?" href="faq_ap.html#id117"/>
+          </topic>
+          <topic label="Budgets" href="faq_ap.html#BUDTS">
+            <topic label="Can I change the budgets dynamically?" href="faq_ap.html#id120"/>
+            <topic label="How does a budget change affect scheduling?" href="faq_ap.html#id122"/>
+            <topic label="How quickly does a budget change take effect?" href="faq_ap.html#id124"/>
+            <topic label="When does a change in budgets take effect?" href="faq_ap.html#id126"/>
+            <topic label="What is a partition with zero budget?" href="faq_ap.html#id128"/>
+            <topic label="How does the scheduler guarantee that the sum of all partitions' budgets is 100%?" href="faq_ap.html#id130"/>
+            <topic label="How does the scheduler prevent an untrusted thread from increasing its partition's budget?" href="faq_ap.html#id132"/>
+            <topic label="How can I cheat to exceed my partition's budget?" href="faq_ap.html#id134"/>
+          </topic>
+          <topic label="Joining a partition" href="faq_ap.html#JNG_PRTN">
+            <topic label="How does joining a thread to a partition work?" href="faq_ap.html#id137"/>
+            <topic label="How fast is joining a thread to a partition?" href="faq_ap.html#id139"/>
+          </topic>
+          <topic label="QNX system considerations" href="faq_ap.html#QNX_BEHVR">
+            <topic label="Why doesn't Neutrino allow a partition to be deleted?" href="faq_ap.html#id142"/>
+            <topic label="How does the thread scheduler plug into procnto?" href="faq_ap.html#id144"/>
+            <topic label="Is the classic scheduler still present when the thread scheduler is active?" href="faq_ap.html#id146"/>
+            <topic label="Does the thread scheduler inhibit I/O interrupts?" href="faq_ap.html#id148"/>
+            <topic label="Is there a performance limitation on how often I can call SchedCtl(SCHED_APS_PARTITION_STATS,...) to get statistics?" href="faq_ap.html#id150"/>
+          </topic>
+      </topic>
+      <topic label="Glossary" href="glossary.html"/>
+</toc>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Photon Korean Input Method (English)">
+      <topic label="Korean input method (kpim)" href="kpim.html">
+            <topic label="Activating/Deactivating kpim" href="kpim.html#id3"/>
+            <topic label="Editing" href="kpim.html#id5"/>
+            <topic label="Other features" href="kpim.html#id7"/>
+      </topic>
+</toc>

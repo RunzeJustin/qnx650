@@ -1,0 +1,458 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="System Profiler editor" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_INTERPRET_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_profile_filtering_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_Raw_event_data_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_Trace_event_log_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_Properties_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_SysProf_TimelineView_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_Timeline_colors_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_zooming.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="SystemProfilereditor" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>System Profiler editor</title>
+   </head>
+   <body id="SystemProfilereditor"><a name="SystemProfilereditor" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">System Profiler editor</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>
+            The System Profiler editor is the center of all of the analysis activity. It provides different visualization options for
+            the event data in the log files: 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/rof_System_profiler_editor_.xml_d178540e26.jpg" alt="System Profiler editor" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>The System Profiler editor.</p>
+            
+            
+         </div>
+         
+         
+         <p>The System Profiler editor panes include the following: </p>
+         
+         
+         <dl>
+            <dt class="dlterm">Summary pane (the default)</dt>
+            <dd>Shows a summary of the activity in the system, accounting for how much time is spent processing interrupts, running system-level
+               or kernel-level code, running user code, or being idle. 
+               <p>The IDE generates an overview of the CPU and trace event activity over the period of the log file. This overview contains
+                  the same information displayed in the System Profiler <a href="sysprof_Sysprof_overview_.html" shape="rect">Overview view</a>.
+               </p>
+               
+               <p>The process activity (amount of time spent RUNNING or READY, number of kernel calls) displayed in the Summary pane contains
+                  the same information as can be extracted by drilling down for a particular time range of the event log using the <a href="sysprof_General_statistics_.html" shape="rect">General Statistics view</a>.
+               </p>
+               
+            </dd>
+            <dt class="dlterm">CPU Activity pane</dt>
+            <dd>Shows the CPU activity associated with a particular thread or process. For a thread, CPU activity is defined as the amount
+               of runtime for that thread. For a process, CPU activity is the amount of runtime for all of the process's threads combined.
+               
+            </dd>
+            <dt class="dlterm">CPU Migration pane</dt>
+            <dd>Show the potential performance problems that are associated with multiple-CPU systems. </dd>
+            <dt class="dlterm">CPU Usage pane</dt>
+            <dd>Show the percent of CPU usage associated with all event owners. CPU usage is the amount of runtime that event owners get.
+               CPU usage can also be displayed as a time instead of a percentage. 
+            </dd>
+            <dt class="dlterm">Inter CPU Communication pane</dt>
+            <dd>Show CPU communication analysis for multi-core systems. </dd>
+            <dt class="dlterm">Partition Summary pane</dt>
+            <dd>Show adaptive partition usage and summary information. </dd>
+            <dt class="dlterm">Timeline pane</dt>
+            <dd>Show events associated with their particular owners (i.e. processes, threads, and interrupts) along with the state of those
+               particular owners (where it makes sense to do so). 
+            </dd>
+         </dl>
+         
+         
+         <p>The <span class="uicontrol">Summary</span> pane is on by default. To choose one of the other types, right-click in the editor, then select <span class="menucascade">
+               <span class="uicontrol">Display</span>
+               &gt; <span class="uicontrol">Switch Pane</span>
+               </span>, or click this icon:<span><img src="../images/rof_System_profiler_editor_.xml_d178540e136.jpg" alt="Switch to the next display type" /></span>
+            
+         </p>
+         
+         
+         <p>You can choose a specific display type from the dropdown menu associated with this menu item or icon. </p>
+         
+         
+         <p>For the <span class="uicontrol">CPU Activity</span> pane is not customizable. The CPU Usage pane is configurable (the graph types are line and area) by selecting <span class="menucascade">
+               <span class="uicontrol">Window</span>
+               &gt; <span class="uicontrol">Preferences</span>
+               &gt; <span class="uicontrol">QNX</span>
+               &gt; <span class="uicontrol">System Profiler</span>
+               &gt; <span class="uicontrol">CPU Usage</span>
+               </span>. 
+         </p>
+         
+         
+         <p>3D versions of each chart are also available.</p>
+         
+         
+         <p>Each of these visualizations is available as a pane in a stack of panes. Additionally, the visualization panes can be split
+            — you can look at the different sections of the same log file and do comparative analysis. 
+         </p>
+         
+         
+         <p>All panes of the same stack share the same display information. A new pane inherits the display information from the previous
+            pane, but becomes independent after it's created. 
+         </p>
+         
+         
+         <p>To split the display, right-click in the editor, then select <span class="menucascade">
+               <span class="uicontrol">Display</span>
+               &gt; <span class="uicontrol">Split Display</span>
+               </span>, or click this icon:<span><img src="../images/rof_System_profiler_editor_.xml_d178540e191.jpg" alt="Split display" /></span>
+            
+         </p>
+         
+         
+         <p>You can lock two panes to each other. From the <span class="uicontrol">Split Display</span> submenu, choose the graph you want to display in the new pane, or click this icon:<span><img src="../images/rof_System_profiler_editor_.xml_d178540e203.jpg" alt="Toggle Lock" /></span>
+            
+         </p>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> You can have a maximum of four panes displayed at once.
+         </div>
+         
+         
+         <p>For the Timeline pane, a number of different features are available from within the editor: </p>
+         
+         
+         <dl>
+            <dt class="dlterm">Event owner selection</dt>
+            <dd>If you click on event owners, they're selected in the editor. These selected event owners can then be used by other components
+               of the IDE (such as <span class="uicontrol">Find</span>). 
+               <p>If an owner has children (e.g. a parent process with threads), you'll see a plus sign beside the parent's name. To see a parent's
+                  children, click the plus sign.
+               </p>
+               
+            </dd>
+            <dt class="dlterm">Find</dt>
+            <dd>Pressing <tt>Ctrl</tt>
+               <tt>F</tt> (or selecting <span class="menucascade">
+                  <span class="uicontrol">Edit</span>
+                  &gt; <span class="uicontrol">Find/Replace</span>
+                  </span>) opens a dialog that lets you quickly move from event to event. This is particularly useful when following the flow of activity
+               for a particular event owner or when looking for particular events. The <span class="uicontrol">Class</span> and <span class="uicontrol">Code</span> fields are filled with the values from the currently selected event in the Timeline pane. 
+            </dd>
+            <dt class="dlterm">Bookmarks</dt>
+            <dd>You can place bookmarks in the timeline editor just as you would to annotate text files. To add a bookmark, click the Bookmark
+               icon in the toolbar (<span><img src="../images/rof_System_profiler_editor_.xml_d178540e269.jpg" alt="Add bookmark" /></span>), or right-click in the editor and choose <span class="uicontrol">Bookmark</span> from the menu.
+               
+               
+               <p>These bookmarks show up in the Bookmarks view and can represent a range of time or a single particular event instance.</p>
+               
+               <p>
+                  <span><img src="../images/rof_System_profiler_editor_.xml_d178540e292.jpg" alt="Bookmarks view" /></span>
+                  
+               </p>
+               
+            </dd>
+            <dt class="dlterm">Cursor tracking</dt>
+            <dd>The information from the System Profiler editor is also made available to other components in the IDE such as the <a href="sysprof_Trace_event_log_.html" shape="rect">Trace Event Log view</a> and the <a href="sysprof_General_statistics_.html" shape="rect">General Statistics view</a>. These views can synchronize with the cursor, event owner selections, and time ranges, and can adjusts their content accordingly.
+               
+            </dd>
+            <dt class="dlterm">IPC representation</dt>
+            <dd>The flow of interprocess communication (e.g. messages, pulses) is represented by a vertical arrow between the two elements.
+               
+               <p>You can toggle IPC tracing on/off by clicking this button in the toolbar:</p>
+               
+               <p>
+                  <span><img src="../images/rof_System_profiler_editor_.xml_d178540e334.jpg" alt="IPC tracing button" /></span>
+                  
+               </p>
+               
+               <p>By default, this displays the IPC trace arrows for all event owners. You can choose to display only the arrows for the selected
+                  owners by choosing <span class="uicontrol">Selection</span> from the button's dropdown menu. 
+               </p>
+               
+            </dd>
+            <dt class="dlterm">Display Event Labels</dt>
+            <dd>The <span class="uicontrol">Display Event Labels</span> button in the toolbar (
+               <p>
+                  <span><img src="../images/rof_System_profiler_editor_.xml_d178540e360.jpg" alt="Display Event Labels" /></span>
+                  
+               </p>
+               ) lets you display labels in the timeline; open the button's dropdown menu and select the type of labels you want to display:
+               <br clear="none" /><ul>
+                  <li>Priority Labels — display the thread's priority</li>
+                  <li>State Labels — display the thread's state as a label</li>
+                  <li>State Icons — display the thread's state as an icon above the thread</li>
+                  <li>IPC Labels — add text boxes to the IPC lines to indicate which thread or process you're communicating with</li>
+                  <li>Event Labels — display labels for kernel events, including I/O and memory events</li>
+               </ul>
+               
+               <p>If you haven't expanded a process in the display, the labels for all of its threads are displayed. By default, no labels are
+                  displayed. 
+               </p>
+               
+            </dd>
+         </dl>
+         
+         
+         <p>
+            <span><img src="../images/rof_System_profiler_editor_.xml_d178540e391.jpg" alt="Display Event Labels" /></span>
+            
+         </p>
+         
+         
+         <p>
+            <strong>Types of selection</strong>
+            
+         </p>
+         
+         
+         <p>For the Timeline pane, within the editor you can select either of the following: 
+            
+         </p>
+         
+         <br clear="none" /><ul>
+            <li>an owner (e.g. a process or thread)</li>
+            <li>a point in time</li>
+         </ul>
+         
+         
+         <p>
+            <strong>Owners</strong>
+            
+         </p>
+         
+         
+         <p>To select a single owner, simply click the owner's name. To unselect an owner, press and hold the <tt>Ctrl</tt> key, then click each selected owner's name. 
+         </p>
+         
+         
+         <p>To select multiple owners, press and hold the <tt>Ctrl</tt> key, then click each owner's name. 
+         </p>
+         
+         
+         <p>
+            <strong>Time</strong>
+            
+         </p>
+         
+         
+         <p>To select a point in time, click an event on the timeline. </p>
+         
+         
+         <p>To select a range, click the start point on the timeline, then drag and release at the end point. </p>
+         
+         
+         <p>Or, select the start point, then hold down the <tt>Shift</tt> key and select the end point. 
+         </p>
+         
+         
+         <p>
+            <strong>Scrolling</strong>
+            
+         </p>
+         
+         
+         <p>You can use these keys to scroll through time: 
+            
+         </p>
+         
+         
+         <table cellpadding="4" cellspacing="0" summary="" border="1" class="simpletableborder">
+            <tr>
+               <th valign="bottom" align="left" id="d178540e476" rowspan="1" colspan="1">To move:</th>
+               <th valign="bottom" align="left" id="d178540e479" rowspan="1" colspan="1">Use this key:</th>
+            </tr>
+            <tr>
+               <td valign="top" headers="d178540e476" rowspan="1" colspan="1">The selection to the left by one event</td>
+               <td valign="top" headers="d178540e479" rowspan="1" colspan="1">
+                  <tt>Ctrl</tt>
+                  <tt>←</tt>
+                  
+               </td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d178540e476" rowspan="1" colspan="1">The selection to the right by one event</td>
+               <td valign="top" headers="d178540e479" rowspan="1" colspan="1">
+                  <tt>Ctrl</tt>
+                  <tt>→</tt>
+                  
+               </td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d178540e476" rowspan="1" colspan="1">The display to the left </td>
+               <td valign="top" headers="d178540e479" rowspan="1" colspan="1">
+                  <tt>←</tt>
+                  
+               </td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d178540e476" rowspan="1" colspan="1">The display to the right </td>
+               <td valign="top" headers="d178540e479" rowspan="1" colspan="1">
+                  <tt>→</tt>
+                  
+               </td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d178540e476" rowspan="1" colspan="1">The selection for the current owner to the left by one event </td>
+               <td valign="top" headers="d178540e479" rowspan="1" colspan="1">
+                  <tt>Ctrl</tt>
+                  <tt>Shift</tt>
+                  <tt>←</tt>
+                  
+               </td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d178540e476" rowspan="1" colspan="1">The selection for the current owner to the right by one event </td>
+               <td valign="top" headers="d178540e479" rowspan="1" colspan="1">
+                  <tt>Ctrl</tt>
+                  <tt>Shift</tt>
+                  <tt>→</tt>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         
+         <p>You can use these keys to scroll through the owners: </p>
+         
+         
+         <table cellpadding="4" cellspacing="0" summary="" border="1" class="simpletableborder">
+            <tr>
+               <th valign="bottom" align="left" id="d178540e582" rowspan="1" colspan="1">To move the display:</th>
+               <th valign="bottom" align="left" id="d178540e585" rowspan="1" colspan="1">Use this key:</th>
+            </tr>
+            <tr>
+               <td valign="top" headers="d178540e582" rowspan="1" colspan="1">Up by one owner</td>
+               <td valign="top" headers="d178540e585" rowspan="1" colspan="1">↑</td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d178540e582" rowspan="1" colspan="1">Down by one owner</td>
+               <td valign="top" headers="d178540e585" rowspan="1" colspan="1">↓</td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d178540e582" rowspan="1" colspan="1">Up by one page (horizontal scrollbar thumb size)</td>
+               <td valign="top" headers="d178540e585" rowspan="1" colspan="1">
+                  <tt>Page Up</tt>
+                  
+               </td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d178540e582" rowspan="1" colspan="1">Down by one page (horizontal scrollbar thumb size)</td>
+               <td valign="top" headers="d178540e585" rowspan="1" colspan="1">
+                  <tt>Page Down</tt>
+                  
+               </td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d178540e582" rowspan="1" colspan="1">To the top of the owner list</td>
+               <td valign="top" headers="d178540e585" rowspan="1" colspan="1">
+                  <tt>Home</tt>
+                  
+               </td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d178540e582" rowspan="1" colspan="1">To the bottom of the owner list</td>
+               <td valign="top" headers="d178540e585" rowspan="1" colspan="1">
+                  <tt>End</tt>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         
+         <p>
+            <strong>Hovering</strong>
+            
+         </p>
+         
+         
+         <p>When you pause your mouse pointer over an owner or an event, you'll see relevant information (e.g. PID, timestamps, etc.).
+            
+         </p>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> By default the preferences only show the name. You can change this preference setting (to display the name, ID, or both)
+            on the System Profiler preference page (<span class="menucascade">
+               <span class="uicontrol">Window</span>
+               &gt; <span class="uicontrol">Preferences</span>
+               &gt; <span class="uicontrol">QNX</span>
+               &gt; <span class="uicontrol">System Profiler</span>
+               &gt; <span class="uicontrol">Event Owner Label Format</span>
+               </span>). 
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <ul class="ullinks">
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_SysProf_TimelineView_.html" shape="rect">Timeline view</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_Timeline_colors_.html" shape="rect">Timeline State Colors view</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/sysprof_zooming.html" shape="rect">Zooming</a></strong><br clear="none" />
+               
+            </li>
+         </ul>
+         
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/sysprof_INTERPRET_.html" shape="rect">Viewing and interpreting the captured data</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/sysprof_profile_filtering_.html" shape="rect">Filtering profile data</a></div>
+            
+            <div><a href="../topic/sysprof_Raw_event_data_.html" shape="rect">Raw Event Data view</a></div>
+            
+            <div><a href="../topic/sysprof_Trace_event_log_.html" shape="rect">Trace Event Log view</a></div>
+            
+            <div><a href="../topic/sysprof_Properties_.html" shape="rect">Properties view</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

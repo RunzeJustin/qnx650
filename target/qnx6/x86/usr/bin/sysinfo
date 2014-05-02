@@ -1,0 +1,725 @@
+# $QNXLicenseC:
+# Copyright 2007, 2008 QNX Software Systems.
+#
+# Licensed under the Apache License, Version 2.0 (the "License"). You
+# may not reproduce, modify or distribute this software except in
+# compliance with the License. You may obtain a copy of the License
+# at: http://www.apache.org/licenses/LICENSE-2.0
+# 
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" basis,
+# WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+# 
+# This file may contain contributions from others, either as
+# contributors under the License or as licensors under other terms.
+# Please review this entire file for other proprietary rights or license
+# notices, as well as the QNX Development Suite License Guide at
+# http://licensing.qnx.com/license-guide/ for other information.
+# $
+
+#!/bin/ksh
+#ifdef __USAGE
+#%C    - Gathers system information for trouble shooting purposes. 
+#
+#%C [-l] [-F <target/directory>] [-P <priority>] [-D <delay>] [-s] [-A]/[-a][-f][-g][-h][-m][-n][-p][-u]
+#
+#Where:
+#    -l             Logging mode (loops gathering data in a cycled mode)
+#    -s             Prompt Supression
+#    -F <dir>       Target directory for output files (default is /tmp).
+#    -D <delay>     Delay in seconds between cycles in logging mode.
+#    -P <priority>  Priority at which the data will be gathered, range 0-254 (default is 10). 
+#
+#    -A             Fetch All information
+#    -a             Fetch Audio information
+#    -f             Fetch File system information
+#    -g             Fetch Graphics information
+#    -h             Fetch HID information
+#    -m             Fetch Modem information
+#    -n             Fetch Network information
+#    -p             Fetch PCCard information
+#    -u             Fetch USB information
+#
+#
+#%C will grab system information based on the parameters passed to it.  Then gather
+#the output, store the output in a sysinfo.tar.gz file located in the target directory
+#specified by -F (default is /tmp).
+#
+# E.g. sysinfo -a -g -h
+#
+# will fetch all system information that pertains to audio, graphics and
+# HID and place it into the target directory (default /tmp)
+#
+#%C offers a logging mode, which will run at the specified priority (default 10)
+#and log general system info to the target directory.  It will log the files in
+#a ring mode such that it keeps the last four entries, so that there is some system
+#history for a problem that is being tracked.  This is good for systems that are
+#rebooting due to an error on the system and a running log of what happened on the
+#system last could give some hint as to what went wrong. 
+#endif
+
+
+set_prio() {
+  slay -P $1 -m pid $$
+  echo "Priority is now $1"
+}
+
+usb_prompt() {
+echo ''
+echo ''
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+echo '++                     USB info grabbing script                       ++'
+echo '++                                                                    ++'
+echo '++   This script is going to execute several commands on your         ++'
+echo '++   system, then package the output from each into a tar ball        ++'
+echo '++   that you will then send to the support rep who requested it.     ++'
+echo '++                                                                    ++'
+echo '++   Please ensure that the device you are having problems with is    ++'
+echo '++   connected to your system when you are going to run the script.   ++'
+echo '++                                                                    ++'
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+echo ''
+echo ''
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+echo '++                                                                    ++'
+echo '++   If you are having problesm with USB:                             ++'
+echo '++                                                                    ++'
+echo '++   ENSURE THAT THE USB DEVICE THAT YOU ARE HAVING PROBLEMS WITH     ++'
+echo '++   IS IN THE SYSTEM.                                                ++'
+echo '++                                                                    ++'
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+echo ''
+echo ''
+echo ''
+
+  read a?"Press Enter to contine."
+echo ''
+echo ''
+}
+
+hid_prompt() {
+echo ''
+echo ''
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+echo '++                     HID info grabbing script                       ++'
+echo '++                                                                    ++'
+echo '++   This script is going to execute several commands on your         ++'
+echo '++   system, then package the output from each into a tar ball        ++'
+echo '++   that you will then send to the support rep who requested it.     ++'
+echo '++                                                                    ++'
+echo '++   Please ensure that the device you are having problems with is    ++'
+echo '++   connected to your system when you are going to run the script.   ++'
+echo '++                                                                    ++'
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+echo ''
+echo ''
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+echo '++                                                                    ++'
+echo '++   If you are having problesm with HID:                             ++'
+echo '++                                                                    ++'
+echo '++   ENSURE THAT THE USB DEVICE THAT YOU ARE HAVING PROBLEMS WITH     ++'
+echo '++   IS IN THE SYSTEM.                                                ++'
+echo '++                                                                    ++'
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+echo ''
+echo ''
+echo ''
+
+  read a?"Press Enter to contine."
+echo ''
+echo ''
+}
+
+
+fsys_prompt() {
+echo ''
+echo ''
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+echo '++                 Filesystem info grabbing script                    ++'
+echo '++                                                                    ++'
+echo '++   This script is going to execute several commands on your         ++'
+echo '++   system, then package the output from each into a tar ball        ++'
+echo '++   that you will then send to the support rep who requested it.     ++'
+echo '++                                                                    ++'
+echo '++   Please ensure that the device you are having problems with is    ++'
+echo '++   connected to your system when you are going to run the script.   ++'
+echo '++                                                                    ++'
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+echo ''
+echo ''
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+echo '++                                                                    ++'
+echo '++   If you are having problesm with FILESYSTEMS:                     ++'
+echo '++                                                                    ++'
+echo '++   ENSURE THAT THE DISK/CARD THAT YOU ARE HAVING PROBLEMS WITH      ++'
+echo '++   IS IN THE SYSTEM.                                                ++'
+echo '++                                                                    ++'
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+echo ''
+echo ''
+echo ''
+
+  read a?"Press Enter to contine."
+echo ''
+echo ''
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+echo '++         REMEMBER TO SEND IN A DESCRIPTION OF THE FOLLOWING         ++'
+echo '++                                                                    ++'
+echo '++   1. Make and Model of the controller                              ++'
+echo '++   2. Make and Model of the devices attached to the controller      ++'
+echo '++   3. Layout of the SCSI/EIDE Bus                                   ++'
+echo '++   4. Settings from the SCSI/EIDE BIOS                              ++'
+echo '++                                                                    ++'
+echo '++      Without this information, the problem will take that much     ++'
+echo '++      longer to solve :)                                            ++'
+echo '++                                                                    ++'
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+echo ''
+echo ''
+echo ''
+
+  read a?"Press Enter to contine."
+echo ''
+echo ''
+}
+
+audio_prompt() {
+echo ''
+echo ''
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+echo '++                    Audio info grabbing script                      ++'
+echo '++                                                                    ++'
+echo '++   This script is going to execute several commands on your         ++'
+echo '++   system, then package the output from each into a tar ball        ++'
+echo '++   that you will then send to the support rep who requested it.     ++'
+echo '++                                                                    ++'
+echo '++   Please ensure that the device you are having problems with is    ++'
+echo '++   connected to your system when you are going to run the script.   ++'
+echo '++                                                                    ++'
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+echo ''
+echo ''
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+echo '++                                                                    ++'
+echo '++   ENSURE THAT THE AUDIO CARD THAT YOU ARE HAVING PROBLEMS WITH     ++'
+echo '++   IS IN THE SYSTEM.                                                ++'
+echo '++                                                                    ++'
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+echo ''
+echo ''
+echo ''
+
+  read a?"Press Enter to contine."
+echo ''
+echo ''
+}
+
+net_prompt() {
+echo ''
+echo ''
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+echo '++                  Network info grabbing script                      ++'
+echo '++                                                                    ++'
+echo '++   This script is going to execute several commands on your         ++'
+echo '++   system, then package the output from each into a tar ball        ++'
+echo '++   that you will then send to the support rep who requested it.     ++'
+echo '++                                                                    ++'
+echo '++   Please ensure that the device you are having problems with is    ++'
+echo '++   connected to your system when you are going to run the script.   ++'
+echo '++                                                                    ++'
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+echo ''
+echo ''
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+echo '++                                                                    ++'
+echo '++   If you are having problesm with NETWORKING:                      ++'
+echo '++                                                                    ++'
+echo '++   ENSURE THAT THE NETWORK CARD THAT YOU ARE HAVING PROBLEMS WITH   ++'
+echo '++   IS IN THE SYSTEM.                                                ++'
+echo '++                                                                    ++'
+echo '++   Also provide a layout of your network and a diagram for ease     ++'
+echo '++   of understanding.                                                ++'
+echo '++                                                                    ++'
+echo '++                                                                    ++'
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+echo ''
+echo ''
+echo ''
+
+  read a?"Press Enter to contine."
+echo ''
+echo ''
+}
+
+graphics_prompt() {
+echo ''
+echo ''
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+echo '++                   Graphics info grabbing script                    ++'
+echo '++                                                                    ++'
+echo '++   This script is going to execute several commands on your         ++'
+echo '++   system, then package the output from each into a tar ball        ++'
+echo '++   that you will then send to the support rep who requested it.     ++'
+echo '++                                                                    ++'
+echo '++   Please ensure that the device you are having problems with is    ++'
+echo '++   connected to your system when you are going to run the script.   ++'
+echo '++                                                                    ++'
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+echo ''
+echo ''
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+echo '++                                                                    ++'
+echo '++   If you are having problesm with VIDEO:                           ++'
+echo '++                                                                    ++'
+echo '++   ENSURE THAT THE VIDEO CARD THAT YOU ARE HAVING PROBLEMS WITH     ++'
+echo '++   IS IN THE SYSTEM.                                                ++'
+echo '++                                                                    ++'
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+echo ''
+echo ''
+echo ''
+
+  read a?"Press Enter to contine."
+echo ''
+echo ''
+
+
+  if test -e /dev/photon
+  then
+  echo ''
+  echo ''
+  echo '===================================================='
+  echo '                      ERROR                         '
+  echo '              ***Photon is running!***              '
+  echo '===================================================='
+  echo ''
+  echo 'Could not obtain the graphics information.'
+  echo 'Exit Photon and re-run the script.'
+  echo ''
+	exit
+	fi
+}
+
+modem_prompt() {
+echo ''
+echo ''
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+echo '++                    Modem info grabbing script                      ++'
+echo '++                                                                    ++'
+echo '++   This script is going to execute several commands on your         ++'
+echo '++   system, then package the output from each into a tar ball        ++'
+echo '++   that you will then send to the support rep who requested it.     ++'
+echo '++                                                                    ++'
+echo '++   Please ensure that the device you are having problems with is    ++'
+echo '++   connected to your system when you are going to run the script.   ++'
+echo '++                                                                    ++'
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+echo ''
+echo ''
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+echo '++                                                                    ++'
+echo '++   If you are having problesm with a MODEM:                         ++'
+echo '++                                                                    ++'
+echo '++   ENSURE THAT THE MODEM THAT YOU ARE HAVING PROBLEMS WITH          ++'
+echo '++   IS IN THE SYSTEM.                                                ++'
+echo '++                                                                    ++'
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+echo ''
+echo ''
+echo ''
+
+  read a?"Press Enter to contine."
+echo ''
+echo ''
+}
+
+pccard_prompt() {
+echo ''
+echo ''
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+echo '++                   PCCard info grabbing script                      ++'
+echo '++                                                                    ++'
+echo '++   This script is going to execute several commands on your         ++'
+echo '++   system, then package the output from each into a tar ball        ++'
+echo '++   that you will then send to the support rep who requested it.     ++'
+echo '++                                                                    ++'
+echo '++   Please ensure that the device you are having problems with is    ++'
+echo '++   connected to your system when you are going to run the script.   ++'
+echo '++                                                                    ++'
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+echo ''
+echo ''
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+echo '++                                                                    ++'
+echo '++   If you are having problesm with PCCARDs:                         ++'
+echo '++                                                                    ++'
+echo '++   ENSURE THAT THE PCCARD THAT YOU ARE HAVING PROBLEMS WITH         ++'
+echo '++   IS IN THE SYSTEM.                                                ++'
+echo '++                                                                    ++'
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+echo ''
+echo ''
+echo ''
+
+  read a?"Press Enter to contine."
+echo ''
+echo ''
+}
+
+get_general_info() {
+	echo 'getting pidin'
+	(/bin/pidin 1>> ${target}/pidin.nfo$1) 2>> ${target}/pidin.nfo$1
+
+	echo 'getting driver arguments'
+	(/bin/pidin ar 1>> ${target}/pidinarg.nfo$1) 2>> ${target}/pidinarg.nfo$1
+
+	echo 'getting loaded shared objects'
+	(/bin/pidin mem 1>> ${target}/pidinmem.nfo$1) 2>> ${target}/pidinmem.nfo$1
+
+	echo 'getting system information'
+	(/bin/pidin info 1>> ${target}/pidininfo.nfo$1) 2>> ${target}/pidininfo.nfo$1
+
+	echo 'getting pci info'
+	(/usr/sbin/pci -vvvvvv 1>> ${target}/pci.nfo$1) 2>> ${target}/pci.nfo$1
+
+	echo 'getting version information'
+	(/usr/bin/qconfig 1>> ${target}/qconfig.nfo$1) 2>> ${target}/qconfig.nfo$1
+	(/bin/uname -a 1>> ${target}/uname.nfo$1) 2>> ${target}/uname.nfo$1
+
+	echo 'getting sloginfo data'
+	(/bin/sloginfo 1>> ${target}/sloginfo.nfo$1) 2>> ${target}/sloginfo.nfo$1
+}
+
+get_usb_info() {
+	echo 'getting shared object info'
+	/bin/ls -l /lib/dll/devu* > ${target}/devu.nfo$1 2> /dev/null
+
+	echo 'getting usb utility info'
+	(/sbin/usb -vvv 1>> ${target}/usbinfo.nfo$1) 2>> ${target}/usbinfo.nfo$1
+}
+
+get_hid_info() {
+	echo 'getting shared object info'
+	/bin/ls -l /lib/dll/devh* > ${target}/devh.nfo$1 2> /dev/null
+
+	echo 'getting hidview utility info'
+	(/sbin/hidview -R 1>> ${target}/hidview.nfo$1) 2>> ${target}/hidview.nfo$1
+
+	get_usb_info $1
+}
+
+get_fsys_info() {
+	echo 'getting shared object info'
+	/bin/ls -l /sbin/devb* > ${target}/devb.nfo$1 2> /dev/null
+}
+
+get_audio_info() {
+	echo 'getting shared object info'
+	(/bin/ls -l /lib/dll/deva* 1>> ${target}/deva.nfo$1) 2>> ${target}/deva.nfo$1
+}
+
+get_graphics_info() {
+	echo 'getting show_vesa info'
+	(/usr/bin/show_vesa 1>> ${target}/vesa.nfo$1) 2>> ${target}/vesa.nfo$1
+
+	echo 'getting traplist'
+	cp /etc/system/config/graphics-traplist ${target}/traplist.nfo$1
+
+	echo 'getting mode list'
+	cp /etc/system/config/graphics-modes ${target}/modes.nfo$1
+
+	echo 'checking enum file'
+	cp /etc/system/enum/devices/graphics ${target}/enum.nfo$1
+
+	echo 'checking for driver dlls'
+	ls -l /lib/dll/devg-* > ${target}/dlls.nfo$1  2> /dev/null
+
+	echo 'checking for libffb'
+	ls -l /usr/lib/libffb.so.2 > ${target}/ffb.nfo$1  2> /dev/null
+
+	echo 'checking for libdisputil'
+	ls -l /usr/lib/libdisputil.so.2 > ${target}/disp.nfo$1  2> /dev/null
+
+	echo 'checking for io-graphics'
+	ls -l /usr/photon/bin/io-graphics > ${target}/io.nfo$1  2> /dev/null
+
+	echo 'getting crttrap information'
+	/usr/bin/crttrap -VVV trap 2> ${target}/crttrap.nfo$1
+
+	echo 'Restoring video settings'
+	cp ${target}/modes.nfo$1 /etc/system/config/graphics-modes
+}
+
+get_net_info() {
+	echo 'getting shared object info'
+	(/bin/ls -l /lib/dll/devn* 1>> ${target}/devn.nfo$1) 2>> ${target}/devn.nfo$1
+
+	echo 'getting nicinfo data'
+	(/usr/sbin/nicinfo 1>> ${target}/nicinfo.nfo$1) 2>> ${target}/nicinfo.nfo$1
+
+	echo 'gettings qnet stats'
+	(/bin/cat /proc/qnetstats > ${target}/qnetstats.nfo$1) 2>> ${target}/qnetstats.nfo$1
+
+	echo 'getting ifconfig data'
+	(/sbin/ifconfig en0 1>> ${target}/ifconfigen0.nfo$1) 2>> ${target}/ifconfigen0.nfo$1
+	(/sbin/ifconfig en1 1>> ${target}/ifconfigen1.nfo$1) 2>> ${target}/ifconfigen1.nfo$1
+
+	echo 'getting netstat info'
+	(/usr/sbin/netstat -an 1>> ${target}/netstat_an.nfo$1) 2>> ${target}/netstat_an.nfo$1
+	(/usr/sbin/netstat -rn 1>> ${target}/netstat_rn.nfo$1) 2>> ${target}/netstat_rn.nfo$1
+}
+
+get_modem_info() {
+	echo 'getting dev dir info'
+	/bin/ls /dev > ${target}/dev_dir.nfo$1
+
+	echo 'getting stty info'
+	(/bin/stty < /dev/ser1 1>> ${target}/stty_ser1.nfo$1) 2>> ${target}/sloginfo.nfo$1
+	(/bin/stty < /dev/ser2 1>> ${target}/stty_ser2.nfo$1) 2>> ${target}/sloginfo.nfo$1
+}
+
+get_pccard_info() {
+	echo 'getting pin info'
+	(/sbin/pin 1>> ${target}/pin.nfo$1) 2>> ${target}/pin.nfo$1
+
+	echo 'getting pin config info'
+	(/sbin/pin con 1>> ${target}/pinconfig.nfo$1) 2>> ${target}/pinconfig.nfo$1
+
+	echo 'getting pin resource info'
+	(/sbin/pin re 1>> ${target}/pinresource.nfo$1) 2>> ${target}/pinresource.nfo$1
+
+	echo 'getting pin status info'
+	(/sbin/pin status 1>> ${target}/pinstatus.nfo$1) 2>> ${target}/pinstatus.nfo$1
+
+	echo 'getting pin cis info'
+	(/sbin/pin cis 1>> ${target}/pincis.nfo$1) 2>> ${target}/pincis.nfo$1
+
+	echo 'getting shared object info'
+	/bin/ls -l /sbin/devp* > ${target}/devp.nfo$1 2> /dev/null
+}
+
+logging_mode() {
+	while true; do
+	{
+		integer i=0
+
+		while ((i <= 5));
+		do
+			grab_data $i
+			sleep $time_delay
+			(( i = i + 1));
+		done
+	}
+	done
+}
+
+grab_data() {
+	# Get the Generic info first
+	get_general_info $1	
+
+	# Grab the individual bits of data
+	if $graphics; then
+		if $prompt; then
+			graphics_prompt
+		fi
+		get_graphics_info $1
+	fi
+	if $usb; then
+		if $prompt; then
+			usb_prompt
+		fi
+		get_usb_info $1
+	fi
+	if $audio; then
+		if $prompt; then
+			audio_prompt
+		fi
+		get_audio_info $1
+	fi
+	if $fsys; then
+		if $prompt; then
+			fsys_prompt
+		fi
+		get_fsys_info $1
+	fi
+	if $net; then
+		if $prompt; then
+			net_prompt
+		fi
+		get_net_info $1
+	fi
+	if $modem; then
+		if $prompt; then
+			modem_prompt
+		fi
+		get_modem_info $1
+	fi
+	if $pccard; then
+		if $prompt; then
+			pccard_prompt
+		fi
+		get_pccard_info $1
+	fi
+	if $hid; then
+		if $prompt; then
+			hid_prompt
+		fi
+		get_hid_info $1
+	fi
+
+	prompt=false
+}
+
+gather_files() {
+	# make a list of all the files in the directory
+	# and then compress the files in to one
+
+	for x in $( ls ${target}/*.nfo* )
+		do
+		ls $x >> ${target}/files.list
+	done
+
+	pax -wvf ${target}/sysinfo.tar $(cat ${target}/files.list)
+	gzip -9 ${target}/sysinfo.tar
+	cksum ${target}/sysinfo.tar.gz
+
+	echo ''
+	echo ''
+	echo 'Please send the sysinfo.tar.gz file to the support rep who requested it.'
+	echo ''
+	echo ''
+
+	# remove unnecessary files
+
+	rm ${target}/*.nfo*
+	rm ${target}/files.list
+}
+
+
+integer_check() {
+# This works for some reason even though it shouldn't... Yeaaah.
+  new_val=$1
+  let newval+=0
+
+  echo $new_val
+
+  if test $newval -eq $1; then
+    echo 'Argument must be an integer!'
+		exit
+  fi
+}
+
+check_uid() {
+	if test `id -u` != '0'; then
+		echo ''
+		echo ''
+		echo ''
+		echo ''
+		echo ''
+		echo ''
+		echo ''
+		echo '===================================================='
+		echo '                      ERROR                         '
+		echo '         ***You must run this as ROOT!***           '
+		echo '===================================================='
+		echo ''
+		echo ''
+		echo ''
+		echo ''
+		echo ''
+		echo ''
+		echo ''
+		echo ''
+		exit
+	fi
+}
+
+# Init variables
+target=/tmp
+time_delay=5
+graphics=false
+audio=false
+fsys=false
+modem=false
+net=false
+usb=false
+pccard=false
+hid=false
+loggingmode=false
+prompt=true
+
+check_uid
+
+while getopts gafmnphuAD:lF:P:pT:s opt $*; do
+  case $opt in
+    g)
+      graphics=true
+      ;;
+    a)
+      audio=true
+      ;;
+    f)
+      fsys=true
+      ;;
+    m)
+      modem=true
+      ;;
+    n)
+      net=true
+      ;;
+    p)
+      pccard=true
+      ;;
+    u)
+      usb=true
+      ;;
+		h)
+			hid=true
+			;;
+    l)
+      loggingmode=true
+			prompt=false
+      ;;
+    F)
+      target=${OPTARG}
+
+			if test ! -e $target || test ! -d $target; then
+				echo 'Directory ' $target 'does not exist'
+				exit
+			fi
+      ;;
+    D)
+			integer_check $OPTARG
+      time_delay=$OPTARG
+      ;;
+		P)
+			integer_check $OPTARG
+			set_prio $OPTARG 
+			;;
+		s)
+			prompt=false
+			;;
+		A)
+			graphics=true
+			audio=true
+			fsys=true
+			modem=true
+			hid=true
+			net=true
+			pccard=true
+			usb=true
+			;;
+  esac
+done
+
+if $loggingmode; then
+	echo ''
+	echo 'Starting in logging_mode with a delay of '$time_delay 'seconds, between each iteration.'
+	echo ''
+	logging_mode
+else
+	grab_data
+fi
+
+gather_files
+

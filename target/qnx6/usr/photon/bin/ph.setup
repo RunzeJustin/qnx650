@@ -1,0 +1,32 @@
+#!/bin/ksh
+#set +x
+#ifdef __USAGE
+#Setup the Photon Environment
+#
+#This script will install the Photon shared library
+#and font server
+#
+#endif
+#export PHOTON_PATH=${PHOTON_PATH:-$package_root/photon}
+export PHOTON_PATH=${PHOTON_PATH:-/usr/photon}
+export PHOTON=/dev/photon
+export PATH=/usr/bin/photon:$PATH
+export PHFONT=${PHFONT:-/dev/phfont}
+
+# start the Photon font server
+if test ! $PHFONT -ef $PHFONT; then 
+   phfont $PHFONTOPTS &
+
+   typeset -i i=0
+   while test ! $PHFONT -ef $PHFONT -a $i -lt 5; do
+       sleep 1
+       let i=i+1
+   done
+   unset i
+ 
+   if test ! $PHFONT -ef $PHFONT; then
+       print "Unable to start font server"
+       print "Please confirm that Photon installed properly"
+       exit 1
+   fi
+fi

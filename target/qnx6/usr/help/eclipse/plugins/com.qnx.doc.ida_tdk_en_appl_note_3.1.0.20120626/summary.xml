@@ -1,0 +1,7 @@
+<function_summary>
+<function
+   name="mdriver_add"
+   summary="Register the minidriver with the system"
+   synopsis="int mdriver_add(char *name, int interrupt, int (*handler)(int state, void *data), paddr32_t data_paddr, unsigned data_size)"
+/>
+</function_summary>

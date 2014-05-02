@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+	id="com.qnx.tools.ide.doc.qnx.neutrino.advanced.runtime.module"
+	label="%featureName"
+	version="3.1.0.20120626"
+	provider-name="%providerName"
+	plugin="com.qnx.tools.ide.doc.qnx.neutrino.advanced.runtime.module">
+
+	<description>
+		%description
+	</description>
+
+	<copyright>
+		%copyright
+	</copyright>
+
+	<license url="%licenseURL">
+		%license
+	</license>
+
+	<plugin
+		id="com.qnx.doc.adaptive_partitioning_en"
+		version="3.1.0.20120626"
+		download-size="0"
+		install-size="0"
+		unpack="true"/>
+	<plugin
+		id="com.qnx.doc.adaptive_partitioning_en_user_guide"
+		version="3.1.0.20120626"
+		download-size="0"
+		install-size="0"
+		unpack="true"/>
+	<plugin
+		id="com.qnx.doc.ida_tdk_en"
+		version="3.1.0.20120626"
+		download-size="0"
+		install-size="0"
+		unpack="true"/>
+	<plugin
+		id="com.qnx.doc.ida_tdk_en_appl_note"
+		version="3.1.0.20120626"
+		download-size="0"
+		install-size="0"
+		unpack="true"/>
+	<plugin
+		id="com.qnx.doc.multicore_en"
+		version="3.1.0.20120626"
+		download-size="0"
+		install-size="0"
+		unpack="true"/>
+	<plugin
+		id="com.qnx.doc.multicore_en_user_guide"
+		version="3.1.0.20120626"
+		download-size="0"
+		install-size="0"
+		unpack="true"/>
+</feature>

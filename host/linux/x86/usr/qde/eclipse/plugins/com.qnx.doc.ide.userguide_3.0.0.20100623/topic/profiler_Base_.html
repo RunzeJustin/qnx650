@@ -1,0 +1,317 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Profiling an Application" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_INTRO_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_TypeStatisticalProf_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_TypeFunctionalProf_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_InstProfCallCount_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_TypePostmortemProf_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFILING_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_build_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_Build_With_Profiling_Enabled.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_profile_running_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_profile_already_running_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_profile_postmortem_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_AppProfileReference_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_CONTROLLING_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_UNDERSTANDING_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_APPSESSVIEW_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_APPPROFSESSBTNS_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_FeatPauseResume_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_TakeSnapshot.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_Create_Sample_Session.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_Export_Profiler_Session.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_IDE_DEBUGSESSTAB_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_Exit_Enter_time_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_ExecTimVwFieldDescriptions_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_Interpret_Tree_Mode.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFEXTIMEVWBTNS_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_profcontextnavmenu_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_Take_Snapshort_And_Watch_Difference.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_Show_Threads_Tree_View.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_Show_Table_Mode.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_Show_Calls.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_Show_Reverse_Calls.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_Show_Call_Graphs.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_Show_Source.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_FeatCloning_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_FeatViewHist_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_FeatGroup_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_FeatSetPref_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_FeatCopyClip_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_FeatFilter_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_FeatSearch_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_APPPROFEDITPANE_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROUSECASES_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_USEAPPPROFUNCINST_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_FISAMPLMODE_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_FISINGAPP_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_FISYSPROF_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFCreateSessFromIDELnch_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFCreateSessByImpData_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFSingleThreadedApp_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFaRunProcess_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFUsingPostmortemProf_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFPsotMortemProfiling_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFRunningFromTermCmdLine_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFTakeSnapshot_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROCompResults_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="ProfilinganApplication" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Profiling an Application</title>
+   </head>
+   <body id="ProfilinganApplication"><a name="ProfilinganApplication" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Profiling an Application</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>The QNX Application Profiler perspective lets you examine the overall performance of programs, no matter how large or complex,
+            without following the source one line at a time. Where a debugger helps you find errors in your code, the QNX Application
+            Profiler helps you pinpoint inefficient areas of your code that could run more efficiently. 
+            
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/e2Ftemp2Ftopic2Fprofiler_Base_.xml_d144545e20.jpg" alt="QNX Application Profiler perspective" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>The QNX Application Profiler perspective.</p>
+            
+            
+         </div>
+         
+         
+         <p>By default, the Application Profiler perspective includes these main views: </p>
+         
+         <br clear="none" /><ul>
+            <li>
+               <a href="profiler_APPSESSVIEW_.html" shape="rect">Profiler Sessions view</a>
+               
+            </li>
+            <li>
+               <a href="profiler_APPPROFEDITPANE_.html" shape="rect">Annotated source editor</a>
+               
+            </li>
+            <li>
+               <a href="profiler_IDE_DEBUGSESSTAB_.html" shape="rect">Debug view</a>
+               
+            </li>
+            <li>
+               <a href="sysprof_Properties_.html" shape="rect">Properties view</a>
+               
+            </li>
+            <li>
+               <a href="profiler_Exit_Enter_time_.html" shape="rect">Execution Time view</a>
+               
+            </li>
+         </ul>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <ul class="ullinks">
+            <li class="ulchildlink"><strong><a href="../topic/profiler_INTRO_.html" shape="rect">Types of profiling</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_TypeStatisticalProf_.html" shape="rect">Statistical sample profiling (sampling)</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_TypeFunctionalProf_.html" shape="rect">Function Instrumentation profiling</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_InstProfCallCount_.html" shape="rect">Sampling and Call Count instrumentation profiling</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_TypePostmortemProf_.html" shape="rect">Postmortem profiling for Call Count and Function Instrumentation profiling</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_PROFILING_.html" shape="rect">Profiling your programs</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_build_.html" shape="rect">Building a program for profiling</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_Build_With_Profiling_Enabled.html" shape="rect">Building with profiling enabled</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_profile_running_.html" shape="rect">Running and profiling a process</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_profile_already_running_.html" shape="rect">Profiling a running process</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_profile_postmortem_.html" shape="rect">Postmortem profiling for Call Count and sampling</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_AppProfileReference_.html" shape="rect">Application Profiler tab</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_CONTROLLING_.html" shape="rect">Controlling your profiling sessions</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_UNDERSTANDING_.html" shape="rect">Understanding your profiling data</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_APPSESSVIEW_.html" shape="rect">Profiler Sessions view</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_APPPROFSESSBTNS_.html" shape="rect">Toolbar options</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_FeatPauseResume_.html" shape="rect">Pausing and resuming a profiling session</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_TakeSnapshot.html" shape="rect">Taking a snapshot of a profile session</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_Create_Sample_Session.html" shape="rect">Creating a sample profile session</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_Export_Profiler_Session.html" shape="rect">Exporting a profiler session</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_IDE_DEBUGSESSTAB_.html" shape="rect">Debug view</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_Exit_Enter_time_.html" shape="rect">Execution Time view</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_ExecTimVwFieldDescriptions_.html" shape="rect">Column descriptions</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_Interpret_Tree_Mode.html" shape="rect">Interpreting Tree mode column information by profiling type</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_PROFEXTIMEVWBTNS_.html" shape="rect">Toolbar options</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_profcontextnavmenu_.html" shape="rect">Context menu navigation options</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_Take_Snapshort_And_Watch_Difference.html" shape="rect">Take Snapshot and Watch Difference</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_Show_Threads_Tree_View.html" shape="rect">Show Threads Tree</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_Show_Table_Mode.html" shape="rect">Show Table mode</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_Show_Calls.html" shape="rect">Show Calls</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_Show_Reverse_Calls.html" shape="rect">Show Reverse Calls</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_Show_Call_Graphs.html" shape="rect">Show Call Graphs</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_Show_Source.html" shape="rect">Show Source</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_FeatCloning_.html" shape="rect">Duplicating the view</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_FeatViewHist_.html" shape="rect">Viewing history</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_FeatGroup_.html" shape="rect">Grouping</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_FeatSetPref_.html" shape="rect">Setting preferences</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_FeatCopyClip_.html" shape="rect">Copying to the clipboard</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_FeatFilter_.html" shape="rect">Filtering</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_FeatSearch_.html" shape="rect">Searching</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_APPPROFEDITPANE_.html" shape="rect">Annotated source editor</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_PROUSECASES_.html" shape="rect">Using the Application Profiler</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_USEAPPPROFUNCINST_.html" shape="rect">Using Function Instrumentation with the Application Profiler</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_FISAMPLMODE_.html" shape="rect">Using Sampling and Call Count instrumentation mode</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_FISINGAPP_.html" shape="rect">Using Function Instrumentation mode for a single application</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_FISYSPROF_.html" shape="rect">Using Function Instrumentation in the System Profiler</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_PROFCreateSessFromIDELnch_.html" shape="rect">Creating an Application Profiler session</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_PROFCreateSessByImpData_.html" shape="rect">Creating a profiler session by importing profiler data</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_PROFSingleThreadedApp_.html" shape="rect">Profiling a single-threaded application</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_PROFaRunProcess_.html" shape="rect">Profiling a running process for an existing project</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_PROFUsingPostmortemProf_.html" shape="rect">Using postmortem profiling for Call Count and Sampling</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_PROFPsotMortemProfiling_.html" shape="rect">Postmortem profiling</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_PROFRunningFromTermCmdLine_.html" shape="rect">Running an instrumented binary with profiling from a command prompt (Function Instrumentation mode)</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_PROFTakeSnapshot_.html" shape="rect">Taking a snapshot of a profiling session</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/profiler_PROCompResults_.html" shape="rect">Comparing profiles</a></strong><br clear="none" />
+               
+            </li>
+         </ul>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

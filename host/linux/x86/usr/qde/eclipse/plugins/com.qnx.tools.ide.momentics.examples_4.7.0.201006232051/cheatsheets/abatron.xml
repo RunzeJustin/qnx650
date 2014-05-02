@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cheatsheet title="Abatron Cheat Sheet">
+<intro href="/com.qnx.doc.ide.userguide/topic/debug_JTAGAbtron_.html">
+      <description>
+         This cheat sheet will walk you through the process of installing, configuring, and using the Abatron BDI2000 JTAG Debugger with a QNX Neutrino kernel image.
+      </description>
+   </intro>
+   <item title="Hardware Check" dialog="true" skip="false" href="/com.qnx.doc.ide.userguide/topic/debug_JTAGAbtronPrerequisites_.html">
+      <description>
+         First, verify that you have all of the necessary hardware. This includes: <br/><br/>
+
+• Abatron BDI2000 JTAG device<br/>
+• An appropriate JTAG debug cable for your target architecture<br/>
+• An ethernet cable<br/>
+• A switch to your local network<br/>
+      </description>
+   </item>
+   <item title="Software Check" dialog="true" skip="false" href="/com.qnx.doc.ide.userguide/topic/debug_JTAGAbtronPrerequisites_.html">
+      <description>
+         Verify that you have all of the necessary software. This includes: <br/><br/>
+
+• Abatron BDI2000 Firmware appropriate for your target architecture<br/>
+• QNX Momentics IDE<br/><br/>
+      </description>
+   </item>
+   <item title="Connecting the Abatron BDI2000 to your host" dialog="true" skip="false" href="/com.qnx.doc.ide.userguide/topic/debug_JTAGAbtronConnectToHost_.html">
+      <description>
+         In this step, we will physically connect the Abatron BDI2000 to your host machine.
+      </description>
+      <subitem label="Connect one end of an Ethernet cable into the RJ45 jack of the BDI2000, and the other end into a network switch connected to your LAN." skip="false">
+      </subitem>
+      <subitem label="Connect one (female) end of a serial cable into the serial port of the BDI2000, and the other end into a COM port on the host machine." skip="false">
+      </subitem>
+      <subitem label="Do NOT connect a JTAG debug cable into the BDI2000. The debugger should not be connected to the target until after the firmware has been updated to that architecture." skip="false">
+      </subitem>
+      <subitem label="Connect the provided power adapter to the BDI2000, and plug it in. At this point, the BDI2000 should visibly power on." skip="false">
+      </subitem>
+   </item>
+   <item title="Update Abatron Firmware" dialog="true" skip="false" href="/com.qnx.doc.ide.userguide/topic/debug_JTAGAbtronFirmwareUpdate_.html">
+      <description>
+         In this step, we will update the internal firmware of the Abatron BDI2000 to deal with the target architecture of your choice.
+      </description>
+      <subitem label="You should have been provided with a directory containing a variety of .cfg files, .def files, a tftpsrv.exe executable, and a B20COPGD.EXE setup program. If not, contact Abatron for a BDI setup kit for your target architecture." skip="false">
+      </subitem>
+      <subitem label="Execute the B20COPGD.EXE setup file. A window should appear. From its menu bar, select &quot;Setup -&gt; BDI2000&quot;." skip="false">
+      </subitem>
+      <subitem label="In the &quot;Channel&quot; section of the Setup dialog, set the &quot;Port&quot; to the COM port on your host machine which is connected to the BDI2000. Set the &quot;Speed&quot; to the highest allowed value (115200). Click &quot;Connect&quot;. After a few seconds, the status text at the bottom of the dialog should say &quot;Connection passed&quot;. If it says &quot;Cannot connect to the BDI loader!&quot; ensure that the serial cable is securely connected to the COM port, the BDI2000 is powered on, and that no other application is currently using the serial port." skip="false">
+      </subitem>
+      <subitem label="In the &quot;BDI2000 Firmare/Logic&quot; section of the dialog, press the &quot;Update&quot; button if it is enabled. After a few minutes, the status text at the bottom of the dialog should notify you that the firmware has been successfully updated. If the &quot;Update&quot; button was never enabled, then the BDI2000 already contained the latest version of the firmware for your target architecture, and this step can be skipped." skip="false">
+      </subitem>
+      <subitem label="In the &quot;Configuration&quot; section of the dialog, set the &quot;BDI IP Address&quot; field to the IP address assigned to the MAC address of your BDI2000 device. Contact your network administrator if you need help with this step." skip="false">
+      </subitem>
+      <subitem label="In the &quot;Configuration&quot; section of the dialog, fill in the IP address of your host machine in the &quot;Config - Host IP Address&quot; field. You can use Windows&apos; &quot;ipconfig&quot; tool or Linux&apos;s and Neutrino&apos;s &quot;ifconfig&quot; tool to obtain this value." skip="false">
+      </subitem>
+      <subitem label="In the &quot;Configuration&quot; section of the dialog, fill in the &quot;Configuration file&quot; field with the full path to the .cfg file in the BDI2000 setup directory corresponding to your particular target hardware architecture. For instance, for an MPC8349EQS target board, use the full path to the &quot;mpc8349e.cfg&quot; file. If your target board does not have a corresponding .cfg file, contact Abatron to provide you with the latest files for your hardware." skip="false">
+      </subitem>
+      <subitem label="Click &quot;Transmit&quot; at the bottom of the dialog. After a few seconds you should receive the message &quot;Transmit passed&quot;. You can now exit the BDI2000 setup utility completely." skip="false">
+      </subitem>
+   </item>
+   <item title="Connecting the Abatron BDI2000 to your target" dialog="true" skip="false" href="/com.qnx.doc.ide.userguide/topic/debug_JTAGAbtronConnectToTarget_.html">
+      <description>
+         In this step, we will physically connect the Abatron BDI2000 to your target board.
+      </description>
+      <subitem label="Unplug the BDI2000. It should be powered off as we connect it to the target board." skip="false">
+      </subitem>
+      <subitem label="You may remove the serial cable from the BDI2000 and your host machine. It is only used for the firmware update, and no longer needed." skip="false">
+      </subitem>
+      <subitem label="You can at this point, if you wish, connect a serial cable to your target board instead." skip="true">
+      </subitem>
+      <subitem label="Connect one end of the JTAG debugger cable into the BDI2000, and the other into the JTAG port of your target machine. The JTAG port may also be labelled &quot;COP&quot; or &quot;RISCWATCH&quot; depending on the hardware." skip="false">
+      </subitem>
+      <subitem label="Run the &quot;tftpsrv.exe&quot; file in the BDI setup directory prior to plugging the BDI2000 back in. The TFTP server is responsible for passing the register definition files (.def) to the BDI2000 every time it powers on." skip="false">
+      </subitem>
+      <subitem label="Plug the BDI2000 back in." skip="false">
+      </subitem>
+      <subitem label="Open a terminal window and type &quot;telnet BDI_IP_ADDRESS&quot;, where BDI_IP_ADDRESS is the IP address assigned to the device during the previous step. You should be greeted with a listing of all the possible monitor commands." skip="false">
+      </subitem>
+      <subitem label="If you chose to connect a serial board to your target hardware previously, you can now open a console connection to your hardware and type &quot;reset run&quot; into the telnet session with the BDI2000. You should see your target board booting up on the console." skip="true">
+      </subitem>
+   </item>
+   <item title="Building a System Image" dialog="true" skip="false" href="/com.qnx.doc.ide.userguide/topic/debug_JTAGAbtronBuildImage_.html">
+      <description>
+         In this step, we will use the Momentics IDE to build an image file that can be loaded onto the target board, and debugged by the BDI2000.
+      </description>
+      <subitem label="Download a BSP (Board Support Package) corresponding to your target hardware. You can find BSPs for a wide variety of architectures from the QNX Foundry27 BSP Directory at http://community.qnx.com/sf/wiki/do/viewPage/projects.bsp/wiki/BSPAndDrivers . Make sure you download a version of the BSP installer appropriate for your host machine as well." skip="false">
+      </subitem>
+      <subitem label="Install the BSP downloaded in the previous step." skip="false">
+      </subitem>
+      <subitem label="Launch the QNX Momentics IDE and switch to the &quot;System Builder&quot; perspective." skip="false">
+      </subitem>
+      <subitem label="In the &quot;System Builder Projects&quot; view, right-click and select &quot;Import&quot;. Choose &quot;QNX -&gt; QNX Board Support Package&quot; as an import source." skip="false">
+         <command serialization="org.eclipse.ui.file.import" confirm="false">
+         </command>
+      </subitem>
+      <subitem label="Select the recently-installed BSP as the package to import, and click &quot;Finish&quot;. If you are asked whether you would like to build the project now, select &quot;Yes.&quot; Wait for the build to finish before proceeding. It may take several minutes." skip="false">
+      </subitem>
+      <subitem label="Open the project.bld file from the System Builder Projects view, and from the new view that appears, select the image that corresponds to your board. In the Properties view on the right, ensure that the &quot;Create startup sym file?&quot; property is set to Yes, and that the &quot;Boot file&quot; type is set to &quot;elf&quot;. Also, make note of the &quot;Image Address&quot; value, as it will be needed later." skip="false">
+      </subitem>
+      <subitem label="Open the Project Explorer view. There will be a project whose name ends in &quot;-src&quot;. This project contains the BSP source. Right-click that project and select &quot;Properties&quot;. From the menu on the left, select &quot;C/C++ Build&quot;, and go to the &quot;Builder Settings&quot; tab. Uncheck the &quot;Use default build command&quot; box; in the &quot;Build command&quot; field add the following options after the &quot;make&quot; command: DEBUG=-g OPTIMIZATION_TYPE=NONE. Press &quot;OK&quot; and when asked if you would like to rebuild the C++ project, click &quot;Yes&quot; and wait for the build to finish." skip="false">
+      </subitem>
+      <subitem label="Return to the System Builder Projects view and rebuild the image by right-clicking on the project and selecting &quot;Build Project&quot;. In the Console view, you will see some output. Scroll up and find a line that looks like:  &quot;200280  10188   202244      --- startup-mpc8349e-qs.sym&quot;   (the exact numerical values and filename will differ, but it will be the only line ending in &quot;.sym&quot;). Note the first and third numerical values on this line, as they will be needed later on." skip="false">
+      </subitem>
+      <subitem label="In the System Builder Projects view, there should be an &quot;Images&quot; directory. Expand it. It should contain a .elf file and a .sym file. If so, we now have the Neutrino image ready to be  uploaded and debugged." skip="false">
+      </subitem>
+   </item>
+   <item title="Creating a Launch Configuration" dialog="true" skip="false" href="/com.qnx.doc.ide.userguide/topic/debug_JTAGAbtronCreateLaunchConfig_.html">
+      <description>
+         In this step, we will create a debug configuration in the Momentics IDE that will allow us to easily upload the image into the target board&apos;s RAM and debug it through the JTAG pins.
+      </description>
+      <subitem label="In the Images directory in the System Builder Projects view, right-click on the .elf file and select &quot;Debug-&gt;Open Debug Dialog...&quot;" skip="false">
+      </subitem>
+      <subitem label="Create a new instance of the &quot;GDB Hardware Debugging&quot; debug configuration. In the &quot;Main&quot; tab, fill in the name of the -libstartup project as the Project, and select the .elf file as the C/C++ Application." skip="false">
+      </subitem>
+      <subitem label="Switch to the &quot;Debugger&quot; tab." skip="false">
+      </subitem>
+      <subitem label="Change the &quot;GDB Command:&quot; field to the path to a gdb debugger appropriate for your target architecture (for instance, ntoppc-gdb.exe)." skip="false">
+      </subitem>
+      <subitem label="Check the &quot;Use remote target&quot; checkbox, ensure that the &quot;JTAG Device&quot; combo box is set to &quot;Abatron BDI2000&quot;, and verify the &quot;Host name or IP address&quot; textbox to the IP address assigned to the BDI2000. The port number, unless you have manually changed it, is 2001." skip="false">
+      </subitem>
+      <subitem label="Switch to the &quot;Startup&quot; tab." skip="false">
+      </subitem>
+      <subitem label="Check the &quot;Reset and Delay (seconds):&quot; checkbox, enter an integer representing the number of seconds to wait  between resetting the target board and halting it to send the image. You should give it enough time to bring up all the hardware. 3 seconds is a safe bet here." skip="false">
+      </subitem>
+      <subitem label="Check the &quot;Halt&quot; checkbox to stop the target in order to start sending image." skip="false">
+      </subitem>
+      <subitem label="If there are any monitor commands you would like to execute before sending image to the target, input those commands in the textbox, seperated those commands by newlines, making sure to prefix them with the keyword &quot;monitor&quot; and a space. You do not need to add commands to restart or halt the board here, as that is done automatically." skip="true">
+      </subitem>
+      <subitem label="Check the &quot;Load image&quot; checkbox, and browse to the location of the .elf file in the textbox below. In the image offset field, enter the number previously noted in the Properties view of the System Builder project." skip="false">
+      </subitem>
+      <subitem label="Check the &quot;Load symbols&quot; checkbox, and browse to the location of the .sym file in the textbox below. In the symbol offset field, enter the value in the first column in the console output noted earlier." skip="false">
+      </subitem>
+      <subitem label="Check the &quot;Set program counter at (hex)&quot; checkbox and enter the value in the third column of the console output noted earlier." skip="false">
+      </subitem>
+      <subitem label="Check the &quot;Set breakpoint at:&quot; checkbox and enter the name of the function you want to set the initial break point, for example _main" skip="false">
+      </subitem>
+      <subitem label="Check the &quot;Resume:&quot; checkbox" skip="false">
+      </subitem>
+      <subitem label="In the &quot;Run Commands&quot; textbox, enter any GDB commands you would like to have automatically executed after the image and symbols have been successfully uploaded to the target. For example, you can have the &quot;si&quot; command at the end of this box in order to start stepping." skip="false">
+      </subitem>
+      <subitem label="We are now done configuring the debug configuration. You may click &quot;Apply&quot; and begin debugging." skip="false">
+      </subitem>
+   </item>
+   <item title="Debugging Startup" dialog="true" skip="false" href="/com.qnx.doc.ide.userguide/topic/debug_JTAGAbtronDebugStartup_.html">
+      <description>
+         In this step, we will be debugging the startup binary of the Neutrino image using the Momentics&apos; Debug perspective.
+      </description>
+      <subitem label="The previous step should have automatically opened the Debug perspective. If it has not, switch to it now." skip="true">
+      </subitem>
+      <subitem label="The first thing you will notice is that the target board has been automatically restarted. After waiting a certain number of seconds as specified in the &quot;Reset and Delay (seconds):&quot; checkbox in the Startup tab of the debug configuration, Momentics will begin uploading the image to the target through the JTAG pins." skip="false">
+      </subitem>
+      <subitem label="Once the image has been succesfully uploaded, startup will commence until it hits a breakpoint." skip="false">
+      </subitem>
+      <subitem label="Once it hits a breakpoint, you will see several things at once. In the top-left portion of the debug perspective, you will see a stack trace for the current location of the code. It will appear to be shallower than the stack traces one usually sees, because our code is not running in a complicated environment, but rather directly on the hardware.  To the right you will see a Registers view, which can be expanded to display all of the processor registers on the target board, and their contents over time. While stepping, register rows will change color to indicate a changed value. You can also select the &quot;variables&quot; tab here to view the value of local and global variables for which symbols exist.  Under these you will see the code view and disassembly view. The disassembly view will incorporate the source code into its display, allowing you to easily see which machine instructions correspond to which lines of code." skip="false">
+      </subitem>
+      <subitem label="In either the code view or the disassembly view, you can set and remove breakpoints by double-clicking on the margin. You can use the step and continue tools at the top of the screen to resume execution." skip="false">
+      </subitem>
+   </item>
+   <item title="Finishing Up" dialog="true" skip="false">
+      <description>
+         Once you have completed your debugging session, you should remove all breakpoints and click the &quot;Continue&quot; button to let startup finish booting up. A quick look at the serial console will show a fully-booted Neutrino image.
+
+
+Congratulations! You have succesfully debugged your program using the Abatron BDI2000 JTAG Debugger!
+      </description>
+   </item>
+</cheatsheet>

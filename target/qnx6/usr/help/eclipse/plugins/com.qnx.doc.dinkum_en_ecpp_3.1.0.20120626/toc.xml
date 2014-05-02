@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Dinkum EC++ Library">
+          <topic label="Dinkum EC++ Library" href="index.html">
+            <topic label="Table of Contents" href="index.html#Table of Contents"/>
+          </topic>
+          <topic label="&lt;complex&gt;" href="complex.html">
+            <topic label="abs" href="complex.html#abs"/>
+            <topic label="arg" href="complex.html#arg"/>
+            <topic label="complex" href="complex.html#complex">
+              <topic label="complex::complex" href="complex.html#complex::complex"/>
+              <topic label="complex::imag" href="complex.html#complex::imag"/>
+              <topic label="complex::operator*=" href="complex.html#complex::operator*="/>
+              <topic label="complex::operator+=" href="complex.html#complex::operator+="/>
+              <topic label="complex::operator-=" href="complex.html#complex::operator-="/>
+              <topic label="complex::operator/=" href="complex.html#complex::operator/="/>
+              <topic label="complex::operator=" href="complex.html#complex::operator="/>
+              <topic label="complex::real" href="complex.html#complex::real"/>
+              <topic label="complex::value_type" href="complex.html#complex::value_type"/>
+            </topic>
+            <topic label="conj" href="complex.html#conj"/>
+            <topic label="cos" href="complex.html#cos"/>
+            <topic label="cosh" href="complex.html#cosh"/>
+            <topic label="double_complex" href="complex.html#double_complex"/>
+            <topic label="exp" href="complex.html#exp"/>
+            <topic label="float_complex" href="complex.html#float_complex"/>
+            <topic label="imag" href="complex.html#imag"/>
+            <topic label="log" href="complex.html#log"/>
+            <topic label="log10" href="complex.html#log10"/>
+            <topic label="norm" href="complex.html#norm"/>
+            <topic label="operator!=" href="complex.html#operator!="/>
+            <topic label="operator*" href="complex.html#operator*"/>
+            <topic label="operator+" href="complex.html#operator+"/>
+            <topic label="operator-" href="complex.html#operator-"/>
+            <topic label="operator/" href="complex.html#operator/"/>
+            <topic label="operator&lt;&lt;" href="complex.html#operatorLTLT"/>
+            <topic label="operator==" href="complex.html#operator=="/>
+            <topic label="operator&gt;&gt;" href="complex.html#operatorGTGT"/>
+            <topic label="polar" href="complex.html#polar"/>
+            <topic label="pow" href="complex.html#pow"/>
+            <topic label="real" href="complex.html#real"/>
+            <topic label="sin" href="complex.html#sin"/>
+            <topic label="sinh" href="complex.html#sinh"/>
+            <topic label="sqrt" href="complex.html#sqrt"/>
+            <topic label="__STD_COMPLEX" href="complex.html#__STD_COMPLEX"/>
+            <topic label="tan" href="complex.html#tan"/>
+            <topic label="tanh" href="complex.html#tanh"/>
+          </topic>
+          <topic label="&lt;exception&gt;" href="exceptio.html">
+            <topic label="bad_exception" href="exceptio.html#bad_exception"/>
+            <topic label="exception" href="exceptio.html#exception"/>
+            <topic label="set_terminate" href="exceptio.html#set_terminate"/>
+            <topic label="set_unexpected" href="exceptio.html#set_unexpected"/>
+            <topic label="terminate" href="exceptio.html#terminate"/>
+            <topic label="terminate_handler" href="exceptio.html#terminate_handler"/>
+            <topic label="uncaught_exception" href="exceptio.html#uncaught_exception"/>
+            <topic label="unexpected" href="exceptio.html#unexpected"/>
+            <topic label="unexpected_handler" href="exceptio.html#unexpected_handler"/>
+          </topic>
+          <topic label="&lt;fstream&gt;" href="fstream.html">
+            <topic label="filebuf" href="fstream.html#filebuf">
+              <topic label="filebuf::filebuf" href="fstream.html#filebuf::filebuf"/>
+              <topic label="filebuf::char_type" href="fstream.html#filebuf::char_type"/>
+              <topic label="filebuf::close" href="fstream.html#filebuf::close"/>
+              <topic label="filebuf::int_type" href="fstream.html#filebuf::int_type"/>
+              <topic label="filebuf::is_open" href="fstream.html#filebuf::is_open"/>
+              <topic label="filebuf::off_type" href="fstream.html#filebuf::off_type"/>
+              <topic label="filebuf::open" href="fstream.html#filebuf::open"/>
+              <topic label="filebuf::overflow" href="fstream.html#filebuf::overflow"/>
+              <topic label="filebuf::pbackfail" href="fstream.html#filebuf::pbackfail"/>
+              <topic label="filebuf::pos_type" href="fstream.html#filebuf::pos_type"/>
+              <topic label="filebuf::seekoff" href="fstream.html#filebuf::seekoff"/>
+              <topic label="filebuf::seekpos" href="fstream.html#filebuf::seekpos"/>
+              <topic label="filebuf::setbuf" href="fstream.html#filebuf::setbuf"/>
+              <topic label="filebuf::sync" href="fstream.html#filebuf::sync"/>
+              <topic label="filebuf::traits_type" href="fstream.html#filebuf::traits_type"/>
+              <topic label="filebuf::underflow" href="fstream.html#filebuf::underflow"/>
+            </topic>
+            <topic label="ifstream" href="fstream.html#ifstream">
+              <topic label="ifstream::ifstream" href="fstream.html#ifstream::ifstream"/>
+              <topic label="ifstream::close" href="fstream.html#ifstream::close"/>
+              <topic label="ifstream::is_open" href="fstream.html#ifstream::is_open"/>
+              <topic label="ifstream::open" href="fstream.html#ifstream::open"/>
+              <topic label="ifstream::rdbuf" href="fstream.html#ifstream::rdbuf"/>
+            </topic>
+            <topic label="ofstream" href="fstream.html#ofstream">
+              <topic label="ofstream::ofstream" href="fstream.html#ofstream::ofstream"/>
+              <topic label="ofstream::close" href="fstream.html#ofstream::close"/>
+              <topic label="ofstream::is_open" href="fstream.html#ofstream::is_open"/>
+              <topic label="ofstream::open" href="fstream.html#ofstream::open"/>
+              <topic label="ofstream::rdbuf" href="fstream.html#ofstream::rdbuf"/>
+            </topic>
+          </topic>
+          <topic label="&lt;iomanip&gt;" href="iomanip.html">
+            <topic label="resetiosflags" href="iomanip.html#resetiosflags"/>
+            <topic label="setbase" href="iomanip.html#setbase"/>
+            <topic label="setfill" href="iomanip.html#setfill"/>
+            <topic label="setiosflags" href="iomanip.html#setiosflags"/>
+            <topic label="setprecision" href="iomanip.html#setprecision"/>
+            <topic label="setw" href="iomanip.html#setw"/>
+          </topic>
+          <topic label="&lt;ios&gt;" href="ios.html">
+            <topic label="ios" href="ios.html#ios">
+              <topic label="ios::bad" href="ios.html#ios::bad"/>
+              <topic label="ios::ios" href="ios.html#ios::ios"/>
+              <topic label="ios::char_type" href="ios.html#ios::char_type"/>
+              <topic label="ios::clear" href="ios.html#ios::clear"/>
+              <topic label="ios::copyfmt" href="ios.html#ios::copyfmt"/>
+              <topic label="ios::eof" href="ios.html#ios::eof"/>
+              <topic label="ios::exceptions" href="ios.html#ios::exceptions"/>
+              <topic label="ios::fail" href="ios.html#ios::fail"/>
+              <topic label="ios::fill" href="ios.html#ios::fill"/>
+              <topic label="ios::good" href="ios.html#ios::good"/>
+              <topic label="ios::imbue" href="ios.html#ios::imbue"/>
+              <topic label="ios::init" href="ios.html#ios::init"/>
+              <topic label="ios::int_type" href="ios.html#ios::int_type"/>
+              <topic label="ios::narrow" href="ios.html#ios::narrow"/>
+              <topic label="ios::off_type" href="ios.html#ios::off_type"/>
+              <topic label="ios::operator void *" href="ios.html#ios::operator void *"/>
+              <topic label="ios::operator!" href="ios.html#ios::operator!"/>
+              <topic label="ios::pos_type" href="ios.html#ios::pos_type"/>
+              <topic label="ios::rdbuf" href="ios.html#ios::rdbuf"/>
+              <topic label="ios::rdstate" href="ios.html#ios::rdstate"/>
+              <topic label="ios::setstate" href="ios.html#ios::setstate"/>
+              <topic label="ios::tie" href="ios.html#ios::tie"/>
+              <topic label="ios::traits_type" href="ios.html#ios::traits_type"/>
+              <topic label="ios::widen" href="ios.html#ios::widen"/>
+            </topic>
+            <topic label="boolalpha" href="ios.html#boolalpha"/>
+            <topic label="dec" href="ios.html#dec"/>
+            <topic label="fixed" href="ios.html#fixed"/>
+            <topic label="fpos" href="ios.html#fpos">
+              <topic label="fpos::fpos" href="ios.html#fpos::fpos"/>
+              <topic label="fpos::operator!=" href="ios.html#fpos::operator!="/>
+              <topic label="fpos::operator+" href="ios.html#fpos::operator+"/>
+              <topic label="fpos::operator+=" href="ios.html#fpos::operator+="/>
+              <topic label="fpos::operator-" href="ios.html#fpos::operator-"/>
+              <topic label="fpos::operator-=" href="ios.html#fpos::operator-="/>
+              <topic label="fpos::operator==" href="ios.html#fpos::operator=="/>
+              <topic label="fpos::operator streamoff" href="ios.html#fpos::operator streamoff"/>
+              <topic label="fpos::state" href="ios.html#fpos::state"/>
+            </topic>
+            <topic label="hex" href="ios.html#hex"/>
+            <topic label="internal" href="ios.html#internal"/>
+            <topic label="ios_base" href="ios.html#ios_base">
+              <topic label="ios_base::event" href="ios.html#ios_base::event"/>
+              <topic label="ios_base::failure" href="ios.html#ios_base::failure"/>
+              <topic label="ios_base::flags" href="ios.html#ios_base::flags"/>
+              <topic label="ios_base::fmtflags" href="ios.html#ios_base::fmtflags"/>
+              <topic label="ios_base::getloc" href="ios.html#ios_base::getloc"/>
+              <topic label="ios_base::imbue" href="ios.html#ios_base::imbue"/>
+              <topic label="ios_base::Init" href="ios.html#ios_base::Init"/>
+              <topic label="ios_base::ios_base" href="ios.html#ios_base::ios_base"/>
+              <topic label="ios_base::iostate" href="ios.html#ios_base::iostate"/>
+              <topic label="ios_base::iword" href="ios.html#ios_base::iword"/>
+              <topic label="ios_base::openmode" href="ios.html#ios_base::openmode"/>
+              <topic label="ios_base::operator=" href="ios.html#ios_base::operator="/>
+              <topic label="ios_base::precision" href="ios.html#ios_base::precision"/>
+              <topic label="ios_base::pword" href="ios.html#ios_base::pword"/>
+              <topic label="ios_base::seekdir" href="ios.html#ios_base::seekdir"/>
+              <topic label="ios_base::setf" href="ios.html#ios_base::setf"/>
+              <topic label="ios_base::streamoff" href="ios.html#ios_base::streamoff"/>
+              <topic label="ios_base::streampos" href="ios.html#ios_base::streampos"/>
+              <topic label="ios_base::sync_with_stdio" href="ios.html#ios_base::sync_with_stdio"/>
+              <topic label="ios_base::unsetf" href="ios.html#ios_base::unsetf"/>
+              <topic label="ios_base::width" href="ios.html#ios_base::width"/>
+              <topic label="ios_base::xalloc" href="ios.html#ios_base::xalloc"/>
+            </topic>
+            <topic label="left" href="ios.html#left"/>
+            <topic label="locale" href="ios.html#locale"/>
+            <topic label="mbstate_t" href="ios.html#mbstate_t"/>
+            <topic label="noboolalpha" href="ios.html#noboolalpha"/>
+            <topic label="noshowbase" href="ios.html#noshowbase"/>
+            <topic label="noshowpoint" href="ios.html#noshowpoint"/>
+            <topic label="noshowpos" href="ios.html#noshowpos"/>
+            <topic label="noskipws" href="ios.html#noskipws"/>
+            <topic label="nounitbuf" href="ios.html#nounitbuf"/>
+            <topic label="nouppercase" href="ios.html#nouppercase"/>
+            <topic label="oct" href="ios.html#oct"/>
+            <topic label="right" href="ios.html#right"/>
+            <topic label="scientific" href="ios.html#scientific"/>
+            <topic label="showbase" href="ios.html#showbase"/>
+            <topic label="showpoint" href="ios.html#showpoint"/>
+            <topic label="showpos" href="ios.html#showpos"/>
+            <topic label="skipws" href="ios.html#skipws"/>
+            <topic label="streamoff" href="ios.html#streamoff"/>
+            <topic label="streampos" href="ios.html#streampos"/>
+            <topic label="streamsize" href="ios.html#streamsize"/>
+            <topic label="unitbuf" href="ios.html#unitbuf"/>
+            <topic label="uppercase" href="ios.html#uppercase"/>
+          </topic>
+          <topic label="&lt;iosfwd&gt;" href="iosfwd.html"/>
+          <topic label="&lt;iostream&gt;" href="iostream.html">
+            <topic label="cin" href="iostream.html#cin"/>
+            <topic label="cout" href="iostream.html#cout"/>
+          </topic>
+          <topic label="&lt;istream&gt;" href="istream.html">
+            <topic label="istream" href="istream.html#istream">
+              <topic label="istream::istream" href="istream.html#istream::istream"/>
+              <topic label="istream::gcount" href="istream.html#istream::gcount"/>
+              <topic label="istream::get" href="istream.html#istream::get"/>
+              <topic label="istream::getline" href="istream.html#istream::getline"/>
+              <topic label="istream::ignore" href="istream.html#istream::ignore"/>
+              <topic label="istream::operator&gt;&gt;" href="istream.html#istream::operatorGTGT"/>
+              <topic label="istream::peek" href="istream.html#istream::peek"/>
+              <topic label="istream::putback" href="istream.html#istream::putback"/>
+              <topic label="istream::read" href="istream.html#istream::read"/>
+              <topic label="istream::readsome" href="istream.html#istream::readsome"/>
+              <topic label="istream::seekg" href="istream.html#istream::seekg"/>
+              <topic label="istream::sentry" href="istream.html#istream::sentry"/>
+              <topic label="istream::sync" href="istream.html#istream::sync"/>
+              <topic label="istream::tellg" href="istream.html#istream::tellg"/>
+              <topic label="istream::unget" href="istream.html#istream::unget"/>
+            </topic>
+            <topic label="operator&gt;&gt;" href="istream.html#operatorGTGT"/>
+            <topic label="ws" href="istream.html#ws"/>
+          </topic>
+          <topic label="&lt;new&gt;" href="new.html">
+            <topic label="bad_alloc" href="new.html#bad_alloc"/>
+            <topic label="new_handler" href="new.html#new_handler"/>
+            <topic label="nothrow" href="new.html#nothrow"/>
+            <topic label="nothrow_t" href="new.html#nothrow_t"/>
+            <topic label="operator delete" href="new.html#operator delete"/>
+            <topic label="operator delete[]" href="new.html#operator delete[]"/>
+            <topic label="operator new" href="new.html#operator new"/>
+            <topic label="operator new[]" href="new.html#operator new[]"/>
+            <topic label="set_new_handler" href="new.html#set_new_handler"/>
+          </topic>
+          <topic label="&lt;ostream&gt;" href="ostream.html">
+            <topic label="ostream" href="ostream.html#ostream">
+              <topic label="ostream::ostream" href="ostream.html#ostream::ostream"/>
+              <topic label="ostream::flush" href="ostream.html#ostream::flush"/>
+              <topic label="ostream::operator&lt;&lt;" href="ostream.html#ostream::operatorLTLT"/>
+              <topic label="ostream::put" href="ostream.html#ostream::put"/>
+              <topic label="ostream::seekp" href="ostream.html#ostream::seekp"/>
+              <topic label="ostream::sentry" href="ostream.html#ostream::sentry"/>
+              <topic label="ostream::tellp" href="ostream.html#ostream::tellp"/>
+              <topic label="ostream::write" href="ostream.html#ostream::write"/>
+            </topic>
+            <topic label="endl" href="ostream.html#endl"/>
+            <topic label="ends" href="ostream.html#ends"/>
+            <topic label="flush" href="ostream.html#flush"/>
+            <topic label="operator&lt;&lt;" href="ostream.html#operatorLTLT"/>
+          </topic>
+          <topic label="&lt;sstream&gt;" href="sstream.html">
+            <topic label="stringbuf" href="sstream.html#stringbuf">
+              <topic label="stringbuf::allocator_type" href="sstream.html#stringbuf::allocator_type"/>
+              <topic label="stringbuf::stringbuf" href="sstream.html#stringbuf::stringbuf"/>
+              <topic label="stringbuf::char_type" href="sstream.html#stringbuf::char_type"/>
+              <topic label="stringbuf::int_type" href="sstream.html#stringbuf::int_type"/>
+              <topic label="stringbuf::off_type" href="sstream.html#stringbuf::off_type"/>
+              <topic label="stringbuf::overflow" href="sstream.html#stringbuf::overflow"/>
+              <topic label="stringbuf::pbackfail" href="sstream.html#stringbuf::pbackfail"/>
+              <topic label="stringbuf::pos_type" href="sstream.html#stringbuf::pos_type"/>
+              <topic label="stringbuf::seekoff" href="sstream.html#stringbuf::seekoff"/>
+              <topic label="stringbuf::seekpos" href="sstream.html#stringbuf::seekpos"/>
+              <topic label="stringbuf::str" href="sstream.html#stringbuf::str"/>
+              <topic label="stringbuf::traits_type" href="sstream.html#stringbuf::traits_type"/>
+              <topic label="stringbuf::underflow" href="sstream.html#stringbuf::underflow"/>
+            </topic>
+            <topic label="istringstream" href="sstream.html#istringstream">
+              <topic label="istringstream::allocator_type" href="sstream.html#istringstream::allocator_type"/>
+              <topic label="istringstream::istringstream" href="sstream.html#istringstream::istringstream"/>
+              <topic label="istringstream::rdbuf" href="sstream.html#istringstream::rdbuf"/>
+              <topic label="istringstream::str" href="sstream.html#istringstream::str"/>
+            </topic>
+            <topic label="ostringstream" href="sstream.html#ostringstream">
+              <topic label="ostringstream::allocator_type" href="sstream.html#ostringstream::allocator_type"/>
+              <topic label="ostringstream::ostringstream" href="sstream.html#ostringstream::ostringstream"/>
+              <topic label="ostringstream::rdbuf" href="sstream.html#ostringstream::rdbuf"/>
+              <topic label="ostringstream::str" href="sstream.html#ostringstream::str"/>
+            </topic>
+          </topic>
+          <topic label="&lt;stdexcept&gt;" href="stdexcep.html">
+            <topic label="domain_error" href="stdexcep.html#domain_error"/>
+            <topic label="invalid_argument" href="stdexcep.html#invalid_argument"/>
+            <topic label="length_error" href="stdexcep.html#length_error"/>
+            <topic label="logic_error" href="stdexcep.html#logic_error"/>
+            <topic label="out_of_range" href="stdexcep.html#out_of_range"/>
+            <topic label="overflow_error" href="stdexcep.html#overflow_error"/>
+            <topic label="range_error" href="stdexcep.html#range_error"/>
+            <topic label="runtime_error" href="stdexcep.html#runtime_error"/>
+            <topic label="underflow_error" href="stdexcep.html#underflow_error"/>
+          </topic>
+          <topic label="&lt;streambuf&gt;" href="streambu.html">
+            <topic label="streambuf" href="streambu.html#streambuf">
+              <topic label="streambuf::streambuf" href="streambu.html#streambuf::streambuf"/>
+              <topic label="streambuf::char_type" href="streambu.html#streambuf::char_type"/>
+              <topic label="streambuf::eback" href="streambu.html#streambuf::eback"/>
+              <topic label="streambuf::egptr" href="streambu.html#streambuf::egptr"/>
+              <topic label="streambuf::epptr" href="streambu.html#streambuf::epptr"/>
+              <topic label="streambuf::gbump" href="streambu.html#streambuf::gbump"/>
+              <topic label="streambuf::getloc" href="streambu.html#streambuf::getloc"/>
+              <topic label="streambuf::gptr" href="streambu.html#streambuf::gptr"/>
+              <topic label="streambuf::imbue" href="streambu.html#streambuf::imbue"/>
+              <topic label="streambuf::in_avail" href="streambu.html#streambuf::in_avail"/>
+              <topic label="streambuf::int_type" href="streambu.html#streambuf::int_type"/>
+              <topic label="streambuf::off_type" href="streambu.html#streambuf::off_type"/>
+              <topic label="streambuf::overflow" href="streambu.html#streambuf::overflow"/>
+              <topic label="streambuf::pbackfail" href="streambu.html#streambuf::pbackfail"/>
+              <topic label="streambuf::pbase" href="streambu.html#streambuf::pbase"/>
+              <topic label="streambuf::pbump" href="streambu.html#streambuf::pbump"/>
+              <topic label="streambuf::pos_type" href="streambu.html#streambuf::pos_type"/>
+              <topic label="streambuf::pptr" href="streambu.html#streambuf::pptr"/>
+              <topic label="streambuf::pubimbue" href="streambu.html#streambuf::pubimbue"/>
+              <topic label="streambuf::pubseekoff" href="streambu.html#streambuf::pubseekoff"/>
+              <topic label="streambuf::pubseekpos" href="streambu.html#streambuf::pubseekpos"/>
+              <topic label="streambuf::pubsetbuf" href="streambu.html#streambuf::pubsetbuf"/>
+              <topic label="streambuf::pubsync" href="streambu.html#streambuf::pubsync"/>
+              <topic label="streambuf::sbumpc" href="streambu.html#streambuf::sbumpc"/>
+              <topic label="streambuf::seekoff" href="streambu.html#streambuf::seekoff"/>
+              <topic label="streambuf::seekpos" href="streambu.html#streambuf::seekpos"/>
+              <topic label="streambuf::setbuf" href="streambu.html#streambuf::setbuf"/>
+              <topic label="streambuf::setg" href="streambu.html#streambuf::setg"/>
+              <topic label="streambuf::setp" href="streambu.html#streambuf::setp"/>
+              <topic label="streambuf::sgetc" href="streambu.html#streambuf::sgetc"/>
+              <topic label="streambuf::sgetn" href="streambu.html#streambuf::sgetn"/>
+              <topic label="streambuf::showmanyc" href="streambu.html#streambuf::showmanyc"/>
+              <topic label="streambuf::snextc" href="streambu.html#streambuf::snextc"/>
+              <topic label="streambuf::sputbackc" href="streambu.html#streambuf::sputbackc"/>
+              <topic label="streambuf::sputc" href="streambu.html#streambuf::sputc"/>
+              <topic label="streambuf::sputn" href="streambu.html#streambuf::sputn"/>
+              <topic label="streambuf::stossc" href="streambu.html#streambuf::stossc"/>
+              <topic label="streambuf::sungetc" href="streambu.html#streambuf::sungetc"/>
+              <topic label="streambuf::sync" href="streambu.html#streambuf::sync"/>
+              <topic label="streambuf::traits_type" href="streambu.html#streambuf::traits_type"/>
+              <topic label="streambuf::uflow" href="streambu.html#streambuf::uflow"/>
+              <topic label="streambuf::underflow" href="streambu.html#streambuf::underflow"/>
+              <topic label="streambuf::xsgetn" href="streambu.html#streambuf::xsgetn"/>
+              <topic label="streambuf::xsputn" href="streambu.html#streambuf::xsputn"/>
+            </topic>
+          </topic>
+          <topic label="&lt;string&gt;" href="string2.html">
+            <topic label="string" href="string2.html#string">
+              <topic label="string::allocator_type" href="string2.html#string::allocator_type"/>
+              <topic label="string::append" href="string2.html#string::append"/>
+              <topic label="string::assign" href="string2.html#string::assign"/>
+              <topic label="string::at" href="string2.html#string::at"/>
+              <topic label="string::string" href="string2.html#string::string"/>
+              <topic label="string::begin" href="string2.html#string::begin"/>
+              <topic label="string::c_str" href="string2.html#string::c_str"/>
+              <topic label="string::capacity" href="string2.html#string::capacity"/>
+              <topic label="string::clear" href="string2.html#string::clear"/>
+              <topic label="string::compare" href="string2.html#string::compare"/>
+              <topic label="string::const_iterator" href="string2.html#string::const_iterator"/>
+              <topic label="string::const_pointer" href="string2.html#string::const_pointer"/>
+              <topic label="string::const_reference" href="string2.html#string::const_reference"/>
+              <topic label="string::const_reverse_iterator" href="string2.html#string::const_reverse_iterator"/>
+              <topic label="string::copy" href="string2.html#string::copy"/>
+              <topic label="string::data" href="string2.html#string::data"/>
+              <topic label="string::difference_type" href="string2.html#string::difference_type"/>
+              <topic label="string::empty" href="string2.html#string::empty"/>
+              <topic label="string::end" href="string2.html#string::end"/>
+              <topic label="string::erase" href="string2.html#string::erase"/>
+              <topic label="string::find" href="string2.html#string::find"/>
+              <topic label="string::find_first_not_of" href="string2.html#string::find_first_not_of"/>
+              <topic label="string::find_first_of" href="string2.html#string::find_first_of"/>
+              <topic label="string::find_last_not_of" href="string2.html#string::find_last_not_of"/>
+              <topic label="string::find_last_of" href="string2.html#string::find_last_of"/>
+              <topic label="string::get_allocator" href="string2.html#string::get_allocator"/>
+              <topic label="string::insert" href="string2.html#string::insert"/>
+              <topic label="string::iterator" href="string2.html#string::iterator"/>
+              <topic label="string::length" href="string2.html#string::length"/>
+              <topic label="string::max_size" href="string2.html#string::max_size"/>
+              <topic label="string::npos" href="string2.html#string::npos"/>
+              <topic label="string::operator+=" href="string2.html#string::operator+="/>
+              <topic label="string::operator=" href="string2.html#string::operator="/>
+              <topic label="string::operator[]" href="string2.html#string::operator[]"/>
+              <topic label="string::pointer" href="string2.html#string::pointer"/>
+              <topic label="string::push_back" href="string2.html#string::push_back"/>
+              <topic label="string::rbegin" href="string2.html#string::rbegin"/>
+              <topic label="string::reference" href="string2.html#string::reference"/>
+              <topic label="string::rend" href="string2.html#string::rend"/>
+              <topic label="string::replace" href="string2.html#string::replace"/>
+              <topic label="string::reserve" href="string2.html#string::reserve"/>
+              <topic label="string::resize" href="string2.html#string::resize"/>
+              <topic label="string::reverse_iterator" href="string2.html#string::reverse_iterator"/>
+              <topic label="string::rfind" href="string2.html#string::rfind"/>
+              <topic label="string::size" href="string2.html#string::size"/>
+              <topic label="string::size_type" href="string2.html#string::size_type"/>
+              <topic label="string::substr" href="string2.html#string::substr"/>
+              <topic label="string::swap" href="string2.html#string::swap"/>
+              <topic label="string::traits_type" href="string2.html#string::traits_type"/>
+              <topic label="string::value_type" href="string2.html#string::value_type"/>
+            </topic>
+            <topic label="char_allocator" href="string2.html#char_allocator">
+              <topic label="char_allocator::operator==" href="string2.html#char_allocator::operator=="/>
+            </topic>
+            <topic label="char_traits" href="string2.html#char_traits">
+              <topic label="char_traits::assign" href="string2.html#char_traits::assign"/>
+              <topic label="char_traits::char_type" href="string2.html#char_traits::char_type"/>
+              <topic label="char_traits::compare" href="string2.html#char_traits::compare"/>
+              <topic label="char_traits::copy" href="string2.html#char_traits::copy"/>
+              <topic label="char_traits::eof" href="string2.html#char_traits::eof"/>
+              <topic label="char_traits::eq" href="string2.html#char_traits::eq"/>
+              <topic label="char_traits::eq_int_type" href="string2.html#char_traits::eq_int_type"/>
+              <topic label="char_traits::find" href="string2.html#char_traits::find"/>
+              <topic label="char_traits::int_type" href="string2.html#char_traits::int_type"/>
+              <topic label="char_traits::length" href="string2.html#char_traits::length"/>
+              <topic label="char_traits::lt" href="string2.html#char_traits::lt"/>
+              <topic label="char_traits::move" href="string2.html#char_traits::move"/>
+              <topic label="char_traits::not_eof" href="string2.html#char_traits::not_eof"/>
+              <topic label="char_traits::off_type" href="string2.html#char_traits::off_type"/>
+              <topic label="char_traits::pos_type" href="string2.html#char_traits::pos_type"/>
+              <topic label="char_traits::state_type" href="string2.html#char_traits::state_type"/>
+              <topic label="char_traits::to_char_type" href="string2.html#char_traits::to_char_type"/>
+              <topic label="char_traits::to_int_type" href="string2.html#char_traits::to_int_type"/>
+            </topic>
+            <topic label="getline" href="string2.html#getline"/>
+            <topic label="operator+" href="string2.html#operator+"/>
+            <topic label="operator!=" href="string2.html#operator!="/>
+            <topic label="operator==" href="string2.html#operator=="/>
+            <topic label="operator&lt;" href="string2.html#operatorLT"/>
+            <topic label="operator&lt;&lt;" href="string2.html#operatorLTLT"/>
+            <topic label="operator&lt;=" href="string2.html#operatorLT="/>
+            <topic label="operator&gt;" href="string2.html#operatorGT"/>
+            <topic label="operator&gt;=" href="string2.html#operatorGT="/>
+            <topic label="operator&gt;&gt;" href="string2.html#operatorGTGT"/>
+            <topic label="swap" href="string2.html#swap"/>
+          </topic>
+          <topic label="&lt;strstream&gt;" href="strstrea.html">
+            <topic label="strstreambuf" href="strstrea.html#strstreambuf">
+              <topic label="strstreambuf::freeze" href="strstrea.html#strstreambuf::freeze"/>
+              <topic label="strstreambuf::pcount" href="strstrea.html#strstreambuf::pcount"/>
+              <topic label="strstreambuf::overflow" href="strstrea.html#strstreambuf::overflow"/>
+              <topic label="strstreambuf::pbackfail" href="strstrea.html#strstreambuf::pbackfail"/>
+              <topic label="strstreambuf::seekoff" href="strstrea.html#strstreambuf::seekoff"/>
+              <topic label="strstreambuf::seekpos" href="strstrea.html#strstreambuf::seekpos"/>
+              <topic label="strstreambuf::str" href="strstrea.html#strstreambuf::str"/>
+              <topic label="strstreambuf::strstreambuf" href="strstrea.html#strstreambuf::strstreambuf"/>
+              <topic label="strstreambuf::underflow" href="strstrea.html#strstreambuf::underflow"/>
+            </topic>
+            <topic label="istrstream" href="strstrea.html#istrstream">
+              <topic label="istrstream::istrstream" href="strstrea.html#istrstream::istrstream"/>
+              <topic label="istrstream::rdbuf" href="strstrea.html#istrstream::rdbuf"/>
+              <topic label="istrstream::str" href="strstrea.html#istrstream::str"/>
+            </topic>
+            <topic label="ostrstream" href="strstrea.html#ostrstream">
+              <topic label="ostrstream::freeze" href="strstrea.html#ostrstream::freeze"/>
+              <topic label="ostrstream::ostrstream" href="strstrea.html#ostrstream::ostrstream"/>
+              <topic label="ostrstream::pcount" href="strstrea.html#ostrstream::pcount"/>
+              <topic label="ostrstream::rdbuf" href="strstrea.html#ostrstream::rdbuf"/>
+              <topic label="ostrstream::str" href="strstrea.html#ostrstream::str"/>
+            </topic>
+          </topic>
+          <topic label="&lt;cassert&gt;" href="cassert.html"/>
+          <topic label="&lt;cctype&gt;" href="cctype.html"/>
+          <topic label="&lt;cerrno&gt;" href="cerrno.html"/>
+          <topic label="&lt;cfloat&gt;" href="cfloat.html"/>
+          <topic label="&lt;climits&gt;" href="climits.html"/>
+          <topic label="&lt;clocale&gt;" href="clocale.html"/>
+          <topic label="&lt;cmath&gt;" href="cmath.html"/>
+          <topic label="&lt;csetjmp&gt;" href="csetjmp.html"/>
+          <topic label="&lt;csignal&gt;" href="csignal.html"/>
+          <topic label="&lt;cstdarg&gt;" href="cstdarg.html"/>
+          <topic label="&lt;cstddef&gt;" href="cstddef.html"/>
+          <topic label="&lt;cstdio&gt;" href="cstdio.html"/>
+          <topic label="&lt;cstdlib&gt;" href="cstdlib.html"/>
+          <topic label="&lt;cstring&gt;" href="cstring.html"/>
+          <topic label="&lt;ctime&gt;" href="ctime.html"/>
+          <topic label="&lt;assert.h&gt;" href="assert.html">
+            <topic label="assert" href="assert.html#assert"/>
+          </topic>
+          <topic label="&lt;ctype.h&gt;" href="ctype.html">
+            <topic label="isalnum" href="ctype.html#isalnum"/>
+            <topic label="isalpha" href="ctype.html#isalpha"/>
+            <topic label="iscntrl" href="ctype.html#iscntrl"/>
+            <topic label="isdigit" href="ctype.html#isdigit"/>
+            <topic label="isgraph" href="ctype.html#isgraph"/>
+            <topic label="islower" href="ctype.html#islower"/>
+            <topic label="isprint" href="ctype.html#isprint"/>
+            <topic label="ispunct" href="ctype.html#ispunct"/>
+            <topic label="isspace" href="ctype.html#isspace"/>
+            <topic label="isupper" href="ctype.html#isupper"/>
+            <topic label="isxdigit" href="ctype.html#isxdigit"/>
+            <topic label="tolower" href="ctype.html#tolower"/>
+            <topic label="toupper" href="ctype.html#toupper"/>
+          </topic>
+          <topic label="&lt;errno.h&gt;" href="errno.html">
+            <topic label="EDOM" href="errno.html#EDOM"/>
+            <topic label="EILSEQ" href="errno.html#EILSEQ"/>
+            <topic label="ERANGE" href="errno.html#ERANGE"/>
+            <topic label="errno" href="errno.html#errno"/>
+          </topic>
+          <topic label="&lt;float.h&gt;" href="float.html">
+            <topic label="DBL_DIG" href="float.html#DBL_DIG"/>
+            <topic label="DBL_EPSILON" href="float.html#DBL_EPSILON"/>
+            <topic label="DBL_MANT_DIG" href="float.html#DBL_MANT_DIG"/>
+            <topic label="DBL_MAX" href="float.html#DBL_MAX"/>
+            <topic label="DBL_MAX_10_EXP" href="float.html#DBL_MAX_10_EXP"/>
+            <topic label="DBL_MAX_EXP" href="float.html#DBL_MAX_EXP"/>
+            <topic label="DBL_MIN" href="float.html#DBL_MIN"/>
+            <topic label="DBL_MIN_10_EXP" href="float.html#DBL_MIN_10_EXP"/>
+            <topic label="DBL_MIN_EXP" href="float.html#DBL_MIN_EXP"/>
+            <topic label="FLT_DIG" href="float.html#FLT_DIG"/>
+            <topic label="FLT_EPSILON" href="float.html#FLT_EPSILON"/>
+            <topic label="FLT_MANT_DIG" href="float.html#FLT_MANT_DIG"/>
+            <topic label="FLT_MAX" href="float.html#FLT_MAX"/>
+            <topic label="FLT_MAX_10_EXP" href="float.html#FLT_MAX_10_EXP"/>
+            <topic label="FLT_MAX_EXP" href="float.html#FLT_MAX_EXP"/>
+            <topic label="FLT_MIN" href="float.html#FLT_MIN"/>
+            <topic label="FLT_MIN_10_EXP" href="float.html#FLT_MIN_10_EXP"/>
+            <topic label="FLT_MIN_EXP" href="float.html#FLT_MIN_EXP"/>
+            <topic label="FLT_RADIX" href="float.html#FLT_RADIX"/>
+            <topic label="FLT_ROUNDS" href="float.html#FLT_ROUNDS"/>
+            <topic label="LDBL_DIG" href="float.html#LDBL_DIG"/>
+            <topic label="LDBL_EPSILON" href="float.html#LDBL_EPSILON"/>
+            <topic label="LDBL_MANT_DIG" href="float.html#LDBL_MANT_DIG"/>
+            <topic label="LDBL_MAX" href="float.html#LDBL_MAX"/>
+            <topic label="LDBL_MAX_10_EXP" href="float.html#LDBL_MAX_10_EXP"/>
+            <topic label="LDBL_MAX_EXP" href="float.html#LDBL_MAX_EXP"/>
+            <topic label="LDBL_MIN" href="float.html#LDBL_MIN"/>
+            <topic label="LDBL_MIN_10_EXP" href="float.html#LDBL_MIN_10_EXP"/>
+            <topic label="LDBL_MIN_EXP" href="float.html#LDBL_MIN_EXP"/>
+          </topic>
+          <topic label="&lt;limits.h&gt;" href="limits.html">
+            <topic label="CHAR_BIT" href="limits.html#CHAR_BIT"/>
+            <topic label="CHAR_MAX" href="limits.html#CHAR_MAX"/>
+            <topic label="CHAR_MIN" href="limits.html#CHAR_MIN"/>
+            <topic label="INT_MAX" href="limits.html#INT_MAX"/>
+            <topic label="INT_MIN" href="limits.html#INT_MIN"/>
+            <topic label="LONG_MAX" href="limits.html#LONG_MAX"/>
+            <topic label="LONG_MIN" href="limits.html#LONG_MIN"/>
+            <topic label="MB_LEN_MAX" href="limits.html#MB_LEN_MAX"/>
+            <topic label="SCHAR_MAX" href="limits.html#SCHAR_MAX"/>
+            <topic label="SCHAR_MIN" href="limits.html#SCHAR_MIN"/>
+            <topic label="SHRT_MAX" href="limits.html#SHRT_MAX"/>
+            <topic label="SHRT_MIN" href="limits.html#SHRT_MIN"/>
+            <topic label="UCHAR_MAX" href="limits.html#UCHAR_MAX"/>
+            <topic label="UINT_MAX" href="limits.html#UINT_MAX"/>
+            <topic label="ULONG_MAX" href="limits.html#ULONG_MAX"/>
+            <topic label="USHRT_MAX" href="limits.html#USHRT_MAX"/>
+          </topic>
+          <topic label="&lt;locale.h&gt;" href="locale.html">
+            <topic label="LC_ALL" href="locale.html#LC_ALL"/>
+            <topic label="LC_COLLATE" href="locale.html#LC_COLLATE"/>
+            <topic label="LC_CTYPE" href="locale.html#LC_CTYPE"/>
+            <topic label="LC_MONETARY" href="locale.html#LC_MONETARY"/>
+            <topic label="LC_NUMERIC" href="locale.html#LC_NUMERIC"/>
+            <topic label="LC_TIME" href="locale.html#LC_TIME"/>
+            <topic label="lconv" href="locale.html#lconv"/>
+            <topic label="localeconv" href="locale.html#localeconv"/>
+            <topic label="NULL" href="locale.html#NULL"/>
+            <topic label="setlocale" href="locale.html#setlocale"/>
+          </topic>
+          <topic label="&lt;math.h&gt;" href="math.html">
+            <topic label="HUGE_VAL" href="math.html#HUGE_VAL"/>
+          </topic>
+          <topic label="&lt;setjmp.h&gt;" href="setjmp.html">
+            <topic label="jmp_buf" href="setjmp.html#jmp_buf"/>
+            <topic label="longjmp" href="setjmp.html#longjmp"/>
+            <topic label="setjmp" href="setjmp.html#setjmp"/>
+          </topic>
+          <topic label="&lt;signal.h&gt;" href="signal.html">
+            <topic label="raise" href="signal.html#raise"/>
+            <topic label="sig_atomic_t" href="signal.html#sig_atomic_t"/>
+            <topic label="SIGABRT" href="signal.html#SIGABRT"/>
+            <topic label="SIGFPE" href="signal.html#SIGFPE"/>
+            <topic label="SIGILL" href="signal.html#SIGILL"/>
+            <topic label="SIGINT" href="signal.html#SIGINT"/>
+            <topic label="signal" href="signal.html#signal"/>
+            <topic label="SIGSEGV" href="signal.html#SIGSEGV"/>
+            <topic label="SIGTERM" href="signal.html#SIGTERM"/>
+            <topic label="SIG_DFL" href="signal.html#SIG_DFL"/>
+            <topic label="SIG_ERR" href="signal.html#SIG_ERR"/>
+            <topic label="SIG_IGN" href="signal.html#SIG_IGN"/>
+          </topic>
+          <topic label="&lt;stdarg.h&gt;" href="stdarg.html">
+            <topic label="va_arg" href="stdarg.html#va_arg"/>
+            <topic label="va_end" href="stdarg.html#va_end"/>
+            <topic label="va_list" href="stdarg.html#va_list"/>
+            <topic label="va_start" href="stdarg.html#va_start"/>
+          </topic>
+          <topic label="&lt;stddef.h&gt;" href="stddef.html">
+            <topic label="NULL" href="stddef.html#NULL"/>
+            <topic label="offsetof" href="stddef.html#offsetof"/>
+            <topic label="ptrdiff_t" href="stddef.html#ptrdiff_t"/>
+            <topic label="size_t" href="stddef.html#size_t"/>
+            <topic label="wchar_t" href="stddef.html#wchar_t"/>
+          </topic>
+          <topic label="&lt;stdio.h&gt;" href="stdio.html">
+            <topic label="BUFSIZ" href="stdio.html#BUFSIZ"/>
+            <topic label="clearerr" href="stdio.html#clearerr"/>
+            <topic label="EOF" href="stdio.html#EOF"/>
+            <topic label="fclose" href="stdio.html#fclose"/>
+            <topic label="feof" href="stdio.html#feof"/>
+            <topic label="ferror" href="stdio.html#ferror"/>
+            <topic label="fflush" href="stdio.html#fflush"/>
+            <topic label="fgetc" href="stdio.html#fgetc"/>
+            <topic label="fgetpos" href="stdio.html#fgetpos"/>
+            <topic label="fgets" href="stdio.html#fgets"/>
+            <topic label="FILE" href="stdio.html#FILE"/>
+            <topic label="FILENAME_MAX" href="stdio.html#FILENAME_MAX"/>
+            <topic label="fopen" href="stdio.html#fopen"/>
+            <topic label="FOPEN_MAX" href="stdio.html#FOPEN_MAX"/>
+            <topic label="fpos_t" href="stdio.html#fpos_t"/>
+            <topic label="fprintf" href="stdio.html#fprintf"/>
+            <topic label="fputc" href="stdio.html#fputc"/>
+            <topic label="fputs" href="stdio.html#fputs"/>
+            <topic label="fread" href="stdio.html#fread"/>
+            <topic label="freopen" href="stdio.html#freopen"/>
+            <topic label="fscanf" href="stdio.html#fscanf"/>
+            <topic label="fseek" href="stdio.html#fseek"/>
+            <topic label="fsetpos" href="stdio.html#fsetpos"/>
+            <topic label="ftell" href="stdio.html#ftell"/>
+            <topic label="fwrite" href="stdio.html#fwrite"/>
+            <topic label="getc" href="stdio.html#getc"/>
+            <topic label="getchar" href="stdio.html#getchar"/>
+            <topic label="gets" href="stdio.html#gets"/>
+            <topic label="_IOFBF" href="stdio.html#_IOFBF"/>
+            <topic label="_IOLBF" href="stdio.html#_IOLBF"/>
+            <topic label="_IONBF" href="stdio.html#_IONBF"/>
+            <topic label="L_tmpnam" href="stdio.html#L_tmpnam"/>
+            <topic label="NULL" href="stdio.html#NULL"/>
+            <topic label="perror" href="stdio.html#perror"/>
+            <topic label="printf" href="stdio.html#printf"/>
+            <topic label="putc" href="stdio.html#putc"/>
+            <topic label="putchar" href="stdio.html#putchar"/>
+            <topic label="puts" href="stdio.html#puts"/>
+            <topic label="remove" href="stdio.html#remove"/>
+            <topic label="rename" href="stdio.html#rename"/>
+            <topic label="rewind" href="stdio.html#rewind"/>
+            <topic label="scanf" href="stdio.html#scanf"/>
+            <topic label="SEEK_CUR" href="stdio.html#SEEK_CUR"/>
+            <topic label="SEEK_END" href="stdio.html#SEEK_END"/>
+            <topic label="SEEK_SET" href="stdio.html#SEEK_SET"/>
+            <topic label="setbuf" href="stdio.html#setbuf"/>
+            <topic label="setvbuf" href="stdio.html#setvbuf"/>
+            <topic label="size_t" href="stdio.html#size_t"/>
+            <topic label="sprintf" href="stdio.html#sprintf"/>
+            <topic label="sscanf" href="stdio.html#sscanf"/>
+            <topic label="stderr" href="stdio.html#stderr"/>
+            <topic label="stdin" href="stdio.html#stdin"/>
+            <topic label="stdout" href="stdio.html#stdout"/>
+            <topic label="tmpfile" href="stdio.html#tmpfile"/>
+            <topic label="TMP_MAX" href="stdio.html#TMP_MAX"/>
+            <topic label="tmpnam" href="stdio.html#tmpnam"/>
+            <topic label="ungetc" href="stdio.html#ungetc"/>
+            <topic label="vfprintf" href="stdio.html#vfprintf"/>
+            <topic label="vprintf" href="stdio.html#vprintf"/>
+            <topic label="vsprintf" href="stdio.html#vsprintf"/>
+          </topic>
+          <topic label="&lt;stdlib.h&gt;" href="stdlib.html">
+            <topic label="abort" href="stdlib.html#abort"/>
+            <topic label="abs" href="stdlib.html#abs"/>
+            <topic label="atexit" href="stdlib.html#atexit"/>
+            <topic label="atof" href="stdlib.html#atof"/>
+            <topic label="atoi" href="stdlib.html#atoi"/>
+            <topic label="atol" href="stdlib.html#atol"/>
+            <topic label="bsearch" href="stdlib.html#bsearch"/>
+            <topic label="calloc" href="stdlib.html#calloc"/>
+            <topic label="div" href="stdlib.html#div"/>
+            <topic label="div_t" href="stdlib.html#div_t"/>
+            <topic label="exit" href="stdlib.html#exit"/>
+            <topic label="EXIT_FAILURE" href="stdlib.html#EXIT_FAILURE"/>
+            <topic label="EXIT_SUCCESS" href="stdlib.html#EXIT_SUCCESS"/>
+            <topic label="free" href="stdlib.html#free"/>
+            <topic label="getenv" href="stdlib.html#getenv"/>
+            <topic label="labs" href="stdlib.html#labs"/>
+            <topic label="ldiv" href="stdlib.html#ldiv"/>
+            <topic label="ldiv_t" href="stdlib.html#ldiv_t"/>
+            <topic label="malloc" href="stdlib.html#malloc"/>
+            <topic label="MB_CUR_MAX" href="stdlib.html#MB_CUR_MAX"/>
+            <topic label="mblen" href="stdlib.html#mblen"/>
+            <topic label="mbstowcs" href="stdlib.html#mbstowcs"/>
+            <topic label="mbtowc" href="stdlib.html#mbtowc"/>
+            <topic label="NULL" href="stdlib.html#NULL"/>
+            <topic label="qsort" href="stdlib.html#qsort"/>
+            <topic label="rand" href="stdlib.html#rand"/>
+            <topic label="RAND_MAX" href="stdlib.html#RAND_MAX"/>
+            <topic label="realloc" href="stdlib.html#realloc"/>
+            <topic label="size_t" href="stdlib.html#size_t"/>
+            <topic label="srand" href="stdlib.html#srand"/>
+            <topic label="strtod" href="stdlib.html#strtod"/>
+            <topic label="strtol" href="stdlib.html#strtol"/>
+            <topic label="strtoul" href="stdlib.html#strtoul"/>
+            <topic label="system" href="stdlib.html#system"/>
+            <topic label="wchar_t" href="stdlib.html#wchar_t"/>
+            <topic label="wcstombs" href="stdlib.html#wcstombs"/>
+            <topic label="wctomb" href="stdlib.html#wctomb"/>
+          </topic>
+          <topic label="&lt;string.h&gt;" href="string.html">
+            <topic label="memchr" href="string.html#memchr"/>
+            <topic label="memcmp" href="string.html#memcmp"/>
+            <topic label="memcpy" href="string.html#memcpy"/>
+            <topic label="memmove" href="string.html#memmove"/>
+            <topic label="memset" href="string.html#memset"/>
+            <topic label="NULL" href="string.html#NULL"/>
+            <topic label="size_t" href="string.html#size_t"/>
+            <topic label="strcat" href="string.html#strcat"/>
+            <topic label="strchr" href="string.html#strchr"/>
+            <topic label="strcmp" href="string.html#strcmp"/>
+            <topic label="strcoll" href="string.html#strcoll"/>
+            <topic label="strcpy" href="string.html#strcpy"/>
+            <topic label="strcspn" href="string.html#strcspn"/>
+            <topic label="strerror" href="string.html#strerror"/>
+            <topic label="strlen" href="string.html#strlen"/>
+            <topic label="strncat" href="string.html#strncat"/>
+            <topic label="strncmp" href="string.html#strncmp"/>
+            <topic label="strncpy" href="string.html#strncpy"/>
+            <topic label="strpbrk" href="string.html#strpbrk"/>
+            <topic label="strrchr" href="string.html#strrchr"/>
+            <topic label="strspn" href="string.html#strspn"/>
+            <topic label="strstr" href="string.html#strstr"/>
+            <topic label="strtok" href="string.html#strtok"/>
+            <topic label="strxfrm" href="string.html#strxfrm"/>
+          </topic>
+          <topic label="&lt;time.h&gt;" href="time.html">
+            <topic label="asctime" href="time.html#asctime"/>
+            <topic label="clock" href="time.html#clock"/>
+            <topic label="CLOCKS_PER_SEC" href="time.html#CLOCKS_PER_SEC"/>
+            <topic label="clock_t" href="time.html#clock_t"/>
+            <topic label="ctime" href="time.html#ctime"/>
+            <topic label="difftime" href="time.html#difftime"/>
+            <topic label="gmtime" href="time.html#gmtime"/>
+            <topic label="localtime" href="time.html#localtime"/>
+            <topic label="mktime" href="time.html#mktime"/>
+            <topic label="NULL" href="time.html#NULL"/>
+            <topic label="size_t" href="time.html#size_t"/>
+            <topic label="strftime" href="time.html#strftime"/>
+            <topic label="time" href="time.html#time"/>
+            <topic label="time_t" href="time.html#time_t"/>
+            <topic label="tm" href="time.html#tm"/>
+          </topic>
+          <topic label="&lt;fstream.h&gt;" href="fstream2.html"/>
+          <topic label="&lt;iomanip.h&gt;" href="iomanip2.html"/>
+          <topic label="&lt;iostream.h&gt;" href="iostrea2.html"/>
+          <topic label="&lt;new.h&gt;" href="new2.html"/>
+          <topic label="C++ Library Overview" href="lib_cpp.html">
+            <topic label="Using C++ Library Headers" href="lib_cpp.html#Using C++ Library Headers"/>
+            <topic label="C++ Library Conventions" href="lib_cpp.html#C++ Library Conventions"/>
+            <topic label="Iostreams Conventions" href="lib_cpp.html#iostreams"/>
+            <topic label="Exceptions" href="lib_cpp.html#Exceptions"/>
+          </topic>
+          <topic label="C Library Overview" href="lib_over.html">
+            <topic label="Using Standard C Headers" href="lib_over.html#Using Standard C Headers"/>
+            <topic label="C Library Conventions" href="lib_over.html#C Library Conventions"/>
+          </topic>
+          <topic label="Characters" href="charset.html">
+            <topic label="Character Sets" href="charset.html#Character Sets"/>
+            <topic label="Escape Sequences" href="charset.html#Escape Sequences"/>
+            <topic label="Trigraphs" href="charset.html#Trigraphs"/>
+            <topic label="Multibyte Characters" href="charset.html#Multibyte Characters"/>
+          </topic>
+          <topic label="Files and Streams" href="lib_file.html">
+            <topic label="Text and Binary Streams" href="lib_file.html#Text and Binary Streams"/>
+            <topic label="Controlling Streams" href="lib_file.html#Controlling Streams"/>
+            <topic label="Stream States" href="lib_file.html#Stream States"/>
+          </topic>
+          <topic label="Formatted Output" href="lib_prin.html">
+            <topic label="Print Formats" href="lib_prin.html#Print Formats"/>
+            <topic label="Print Functions" href="lib_prin.html#Print Functions"/>
+          </topic>
+          <topic label="Formatted Input" href="lib_scan.html">
+            <topic label="Scan Formats" href="lib_scan.html#Scan Formats"/>
+            <topic label="Scan Functions" href="lib_scan.html#Scan Functions"/>
+            <topic label="Scan Conversion Specifiers" href="lib_scan.html#Scan Conversion Specifiers"/>
+          </topic>
+          <topic label="Preprocessing" href="preproc.html"/>
+          <topic label="Expressions" href="express.html"/>
+          <topic label="Functions" href="function.html"/>
+          <topic label="Index" href="_index.html"/>
+</toc>

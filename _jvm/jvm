@@ -1,0 +1,63 @@
+JVM_HOME: /opt/qnx650/_jvm
+DESC:  Sun Microsystems Java Runtime Environment (JRE) 1.5 for Linux
+JVM_EXE:  bin/java
+PLATFORM_HINT:
+  JDK_HOME
+  JAVAHOME
+  JAVA_HOME
+/:
+CLASSPATH:  "-cp "
+CLASSPATH_SEPARATOR:  :
+SYSTEM:  -D
+SYSTEM_SEPARATOR:  =
+VERBOSE:  -verbose
+VERBOSE_GC:  -verbose:gc
+VERBOSE_CLASS:  -verbose:class
+VERBOSE_JNI:  -verbose:jni
+VERSION:  -version
+BOOT_CLASSPATH:  -Xbootclasspath:
+NO_CLASS_GC:  -Xnoclassgc
+INIT_JAVA_HEAP:  -Xms
+MAX_JAVA_HEAP:  -Xmx
+REDUCE_OS_SIGNALS:  -Xrs
+CHECK_JNI:  -Xcheck:jni
+RUNHPROF_HELP:  -Xrunhprof:help
+RUNHPROF_OPTION:  -Xrunhprof
+DEBUG:  -Xdebug
+JVM_PROPERTIES:
+  java.vendor=Sun...
+  java.version=1.5...
+/:
+PATH_HINT:
+  /usr/*[jJ][rR][eE]*1*5*
+  /opt/*[jJ][rR][eE]*1*5*
+  /usr/*[jJ][dD][kK]*1*5*/jre
+  /opt/*[jJ][dD][kK]*1*5*/jre
+  /usr/*[jJ][aA][vV][aA]*1*5*
+  /opt/*[jJ][aA][vV][aA]*1*5*
+  /usr/*[jJ][sS][Ee]*
+  /usr/*[jJ][sS][Ee]*/jre
+  /usr/*[jJ][rR][Ee]*
+  /opt/*[jJ][sS][Ee]*
+  /opt/*[jJ][sS][Ee]*/jre
+  /opt/*[jJ][rR][Ee]*
+  /usr/*[jJ][dD][kK]*/jre
+  /opt/*[jJ][dD][kK]*/jre
+  /usr/*[jJ][dD][kK]*
+  /opt/*[jJ][dD][kK]*
+  /usr/*[jJ][rR][eE]*
+  /opt/*[jJ][rR][eE]*
+  /usr/*[jJ][aA][vV][aA]*
+  /opt/*[jJ][aA][vV][aA]*
+  /usr/*[jJ][aA][vV][aA]*/*[jJ]*
+  /opt/*[jJ][aA][vV][aA]*/*[jJ]*
+  /opt/*[jJ]*
+  /usr/*[jJ]*
+  /usr/jre1.5.0
+  /usr/local/jre1.5.0
+  /usr/java/jre1.5.0
+  /opt/jre1.5
+  /opt/jre1.5.0
+/:
+JVM_FILE:  /tmp/isjwFd8HW/jvm
+JVM_TEMP:  1

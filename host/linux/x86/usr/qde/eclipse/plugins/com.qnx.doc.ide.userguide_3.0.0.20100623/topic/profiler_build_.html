@@ -1,0 +1,219 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Building a program for profiling" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFILING_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_profile_running_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_profile_already_running_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_profile_postmortem_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_AppProfileReference_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_Build_With_Profiling_Enabled.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Buildingaprogramforprofiling" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Building a program for profiling</title>
+   </head>
+   <body id="Buildingaprogramforprofiling"><a name="Buildingaprogramforprofiling" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Building a program for profiling</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>Although you can profile any program, you'll get the most useful results by profiling
+            executables built for debugging and profiling. The debug information lets the IDE
+            correlate executable code and individual lines of source; the profiling information
+            reports call graph data or precise function time measurements. 
+            
+         </p>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> 
+            
+            <p>Sampling and Call Count profiling is handled by functions in
+               <span class="filepath">libc</span>; Function Instrumentation profiling is handled by
+               functions in <span class="filepath">libprofilingS.a</span>; occasionally check our website
+               for any updates to these libraries. 
+            </p>
+            
+            
+         </div>
+         
+         
+         <p>
+            <strong>Profiling features associated with build variants</strong>
+            
+         </p>
+         
+         
+         <p>This table shows the Application Profiling features supported with the various profiling
+            modes: 
+         </p>
+         
+         
+         <table cellpadding="4" cellspacing="0" summary="" border="1" class="simpletableborder">
+            <tr>
+               <th valign="bottom" align="left" id="d162414e45" rowspan="1" colspan="1">Feature</th>
+               <th valign="bottom" align="left" id="d162414e48" rowspan="1" colspan="1">Sampling</th>
+               <th valign="bottom" align="left" id="d162414e51" rowspan="1" colspan="1">Sampling and Call Count</th>
+               <th valign="bottom" align="left" id="d162414e54" rowspan="1" colspan="1">Function-Instrumentation</th>
+            </tr>
+            <tr>
+               <td valign="top" headers="d162414e45" rowspan="1" colspan="1">Own Function Time</td>
+               <td valign="top" headers="d162414e48" rowspan="1" colspan="1">Yes</td>
+               <td valign="top" headers="d162414e51" rowspan="1" colspan="1">Yes</td>
+               <td valign="top" headers="d162414e54" rowspan="1" colspan="1">Yes</td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d162414e45" rowspan="1" colspan="1">Thread Time</td>
+               <td valign="top" headers="d162414e48" rowspan="1" colspan="1">Yes</td>
+               <td valign="top" headers="d162414e51" rowspan="1" colspan="1">Yes</td>
+               <td valign="top" headers="d162414e54" rowspan="1" colspan="1">Yes</td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d162414e45" rowspan="1" colspan="1">Start/Stop Profiling</td>
+               <td valign="top" headers="d162414e48" rowspan="1" colspan="1">Yes</td>
+               <td valign="top" headers="d162414e51" rowspan="1" colspan="1">Yes</td>
+               <td valign="top" headers="d162414e54" rowspan="1" colspan="1">Yes</td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d162414e45" rowspan="1" colspan="1">Source Location (if compiled with debug)</td>
+               <td valign="top" headers="d162414e48" rowspan="1" colspan="1">Yes</td>
+               <td valign="top" headers="d162414e51" rowspan="1" colspan="1">Yes</td>
+               <td valign="top" headers="d162414e54" rowspan="1" colspan="1">Yes</td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d162414e45" rowspan="1" colspan="1">Line level editor annotations</td>
+               <td valign="top" headers="d162414e48" rowspan="1" colspan="1">Yes</td>
+               <td valign="top" headers="d162414e51" rowspan="1" colspan="1">Yes</td>
+               <td valign="top" headers="d162414e54" rowspan="1" colspan="1">No</td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d162414e45" rowspan="1" colspan="1">Function calls editor annotations</td>
+               <td valign="top" headers="d162414e48" rowspan="1" colspan="1">No</td>
+               <td valign="top" headers="d162414e51" rowspan="1" colspan="1">No</td>
+               <td valign="top" headers="d162414e54" rowspan="1" colspan="1">Yes</td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d162414e45" rowspan="1" colspan="1">Thread tree mode</td>
+               <td valign="top" headers="d162414e48" rowspan="1" colspan="1">Yes</td>
+               <td valign="top" headers="d162414e51" rowspan="1" colspan="1">Yes</td>
+               <td valign="top" headers="d162414e54" rowspan="1" colspan="1">Yes</td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d162414e45" rowspan="1" colspan="1">Table mode</td>
+               <td valign="top" headers="d162414e48" rowspan="1" colspan="1">Yes</td>
+               <td valign="top" headers="d162414e51" rowspan="1" colspan="1">Yes</td>
+               <td valign="top" headers="d162414e54" rowspan="1" colspan="1">Yes</td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d162414e45" rowspan="1" colspan="1">Call graph mode</td>
+               <td valign="top" headers="d162414e48" rowspan="1" colspan="1">No</td>
+               <td valign="top" headers="d162414e51" rowspan="1" colspan="1">Yes</td>
+               <td valign="top" headers="d162414e54" rowspan="1" colspan="1">Yes</td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d162414e45" rowspan="1" colspan="1">Who calls/Who called</td>
+               <td valign="top" headers="d162414e48" rowspan="1" colspan="1">No</td>
+               <td valign="top" headers="d162414e51" rowspan="1" colspan="1">Yes</td>
+               <td valign="top" headers="d162414e54" rowspan="1" colspan="1">Yes</td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d162414e45" rowspan="1" colspan="1">Calls Count</td>
+               <td valign="top" headers="d162414e48" rowspan="1" colspan="1">No</td>
+               <td valign="top" headers="d162414e51" rowspan="1" colspan="1">Yes</td>
+               <td valign="top" headers="d162414e54" rowspan="1" colspan="1">Yes</td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d162414e45" rowspan="1" colspan="1">No recompile</td>
+               <td valign="top" headers="d162414e48" rowspan="1" colspan="1">Yes</td>
+               <td valign="top" headers="d162414e51" rowspan="1" colspan="1">No</td>
+               <td valign="top" headers="d162414e54" rowspan="1" colspan="1">No</td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d162414e45" rowspan="1" colspan="1">Function backtrace</td>
+               <td valign="top" headers="d162414e48" rowspan="1" colspan="1">No</td>
+               <td valign="top" headers="d162414e51" rowspan="1" colspan="1">No</td>
+               <td valign="top" headers="d162414e54" rowspan="1" colspan="1">Yes</td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d162414e45" rowspan="1" colspan="1">Deep Function time (own + descendants)</td>
+               <td valign="top" headers="d162414e48" rowspan="1" colspan="1">No</td>
+               <td valign="top" headers="d162414e51" rowspan="1" colspan="1">No</td>
+               <td valign="top" headers="d162414e54" rowspan="1" colspan="1">Yes</td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d162414e45" rowspan="1" colspan="1">Timed stack tree</td>
+               <td valign="top" headers="d162414e48" rowspan="1" colspan="1">No</td>
+               <td valign="top" headers="d162414e51" rowspan="1" colspan="1">No</td>
+               <td valign="top" headers="d162414e54" rowspan="1" colspan="1">Yes</td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d162414e45" rowspan="1" colspan="1">Max/Min Time</td>
+               <td valign="top" headers="d162414e48" rowspan="1" colspan="1">No</td>
+               <td valign="top" headers="d162414e51" rowspan="1" colspan="1">No</td>
+               <td valign="top" headers="d162414e54" rowspan="1" colspan="1">Yes</td>
+            </tr>
+         </table>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <ul class="ullinks">
+            <li class="ulchildlink"><strong><a href="../topic/profiler_Build_With_Profiling_Enabled.html" shape="rect">Building with profiling enabled</a></strong><br clear="none" />
+               
+            </li>
+         </ul>
+         
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/profiler_PROFILING_.html" shape="rect">Profiling your programs</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/profiler_profile_postmortem_.html" shape="rect">Postmortem profiling for Call Count and sampling</a></div>
+            
+            <div><a href="../topic/profiler_AppProfileReference_.html" shape="rect">Application Profiler tab</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/profiler_profile_running_.html" shape="rect">Running and profiling a process</a></div>
+            
+            <div><a href="../topic/profiler_profile_already_running_.html" shape="rect">Profiling a running process</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

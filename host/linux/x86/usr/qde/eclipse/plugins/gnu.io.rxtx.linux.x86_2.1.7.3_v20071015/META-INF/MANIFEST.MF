@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-Name: %fragmentName
+Created-By: 1.5.0_12-b04 (Sun Microsystems Inc.)
+Ant-Version: Apache Ant 1.7.0
+Bundle-ManifestVersion: 2
+Bundle-Vendor: %providerName
+Fragment-Host: gnu.io.rxtx
+Bundle-Localization: fragment
+Bundle-SymbolicName: gnu.io.rxtx.linux.x86
+Eclipse-PlatformFilter: (& (osgi.os=linux) (osgi.arch=x86))
+Bundle-Version: 2.1.7.3_v20071015
+
+

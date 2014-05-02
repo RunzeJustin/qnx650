@@ -1,0 +1,186 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Getting channel information" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Base_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_INTRO_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_SYSINFOPERSP_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Logging_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Views_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Target_navigator_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_System_summary_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Process_information_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Memory_information_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Malloc_information_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Signal_information_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Connection_information_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_System_resources_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Aps_view_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Views_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Gettingchannelinformation" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Getting channel information</title>
+   </head>
+   <body id="Gettingchannelinformation"><a name="Gettingchannelinformation" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Getting channel information</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         
+         <p>The System Blocking Graph view presents a
+            color-coded display of all the active channels in the system
+            and illustrates the interaction of threads with those
+            channels.
+            
+            
+            
+            
+            
+            
+         </p>
+         
+         
+         <p>Interaction with resource objects are such that a thread can
+            be blocked waiting for access to the resource or waiting for
+            servicing (i.e. the thread is SEND-blocked on a channel).
+            
+         </p>
+         
+         
+         <p>The thread could also be blocked waiting for a resource to
+            be released back to the thread or waiting for servicing to
+            terminate (i.e. the thread is REPLY-blocked).
+            
+         </p>
+         
+         
+         <p>Clients in such conditions are shown on the left side of the
+            graph, and the resource under examination is in the middle.
+            Threads that are waiting to service a request or are active
+            owners of a resource, or are actively servicing a request,
+            are shown on the right side of the graph:
+            
+            
+         </p>
+         
+         
+         <p><span><img src="../images/info_System_blocking_graph_.xml_d169879e45.jpg" alt="System Blocking Graph" /></span></p>
+         
+         
+         
+         
+         <p>In terms of classical QNX terminology, you
+            can think of the items in the legend at the top of the graph
+            like this:
+            
+            
+         </p>
+         
+         
+         
+         <div class="tablenoborder">
+            <table cellpadding="4" cellspacing="0" summary="" frame="border" border="1" rules="all">
+               <thead align="left">
+                  <tr>
+                     <th class="cellrowborder" valign="top" id="d169879e59" rowspan="1" colspan="1">Legend item</th>
+                     <th class="cellrowborder" valign="top" id="d169879e62" rowspan="1" colspan="1">Thread state</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td class="cellrowborder" valign="top" headers="d169879e59 d169879e62" rowspan="1" colspan="1">Servicing request</td>
+                     <td class="cellrowborder" valign="top" headers="d169879e59 d169879e62" rowspan="1" colspan="1"><em>Not</em> RECEIVE-blocked (e.g. RUNNING, blocked on a mutex, etc.)
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" headers="d169879e59 d169879e62" rowspan="1" colspan="1">Waiting for request</td>
+                     <td class="cellrowborder" valign="top" headers="d169879e59 d169879e62" rowspan="1" colspan="1">RECEIVE-blocked</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" headers="d169879e59 d169879e62" rowspan="1" colspan="1">Waiting for reply</td>
+                     <td class="cellrowborder" valign="top" headers="d169879e59 d169879e62" rowspan="1" colspan="1">REPLY-blocked</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" headers="d169879e59 d169879e62" rowspan="1" colspan="1">Waiting for service</td>
+                     <td class="cellrowborder" valign="top" headers="d169879e59 d169879e62" rowspan="1" colspan="1">SEND-blocked</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/sysinfo_Base_.html" shape="rect">Getting System Information</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/sysinfo_INTRO_.html" shape="rect">Introduction</a></div>
+            
+            <div><a href="../topic/sysinfo_SYSINFOPERSP_.html" shape="rect">What the System Information perspective reveals</a></div>
+            
+            <div><a href="../topic/sysinfo_Views_.html" shape="rect">Associated views</a></div>
+            
+            <div><a href="../topic/sysinfo_Target_navigator_.html" shape="rect">Controlling your system information session</a></div>
+            
+            <div><a href="../topic/sysinfo_System_summary_.html" shape="rect">Examining your target system's attributes</a></div>
+            
+            <div><a href="../topic/sysinfo_Process_information_.html" shape="rect">Watching your processes</a></div>
+            
+            <div><a href="../topic/sysinfo_Memory_information_.html" shape="rect">Examining your target system's memory (inspecting virtual address space)</a></div>
+            
+            <div><a href="../topic/sysinfo_Malloc_information_.html" shape="rect">Tracking heap usage</a></div>
+            
+            <div><a href="../topic/sysinfo_Signal_information_.html" shape="rect">Examining process signals</a></div>
+            
+            <div><a href="../topic/sysinfo_Connection_information_.html" shape="rect">Tracking file descriptors</a></div>
+            
+            <div><a href="../topic/sysinfo_System_resources_.html" shape="rect">Tracking resource usage</a></div>
+            
+            <div><a href="../topic/sysinfo_Aps_view_.html" shape="rect">Tracking the use of adaptive partitioning</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/sysinfo_Logging_.html" shape="rect">Logging system information</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<plugin id="com.qnx.doc.language_sup_kpim_en"
+    name="Photon Korean Input Method (English)"
+    version="3.1.0.20120626"
+    provider-name="QNX Software Systems Limited" >
+
+    <extension point="org.eclipse.help.toc">
+      <toc file="toc.xml" />
+      <index path="index"/>
+   </extension>
+
+   <extension point="com.qnx.tools.ide.qde.ui.qdeSummary">
+      <summary file="summary.xml" />
+   </extension>
+
+</plugin>

@@ -1,0 +1,42 @@
+A(EGLint, GetError, (void), ())
+#ifndef _EGL_OVERRIDES
+A(EGLDisplay, GetDisplay, (EGLNativeDisplayType display_id), (display_id))
+#endif
+A(EGLBoolean, Initialize, (EGLDisplay dpy, EGLint *major, EGLint *minor), (dpy, major, minor))
+#ifndef _EGL_OVERRIDES
+A(EGLBoolean, Terminate, (EGLDisplay dpy), (dpy))
+#endif
+A(const char *, QueryString, (EGLDisplay dpy, EGLint name), (dpy, name))
+A(EGLBoolean, GetConfigs, (EGLDisplay dpy, EGLConfig *configs, EGLint config_size, EGLint *num_config), (dpy, configs, config_size, num_config))
+A(EGLBoolean, ChooseConfig, (EGLDisplay dpy, const EGLint *attrib_list, EGLConfig *configs, EGLint config_size, EGLint *num_config), (dpy, attrib_list, configs, config_size, num_config))
+A(EGLBoolean, GetConfigAttrib, (EGLDisplay dpy, EGLConfig config, EGLint attribute, EGLint *value), (dpy, config, attribute, value))
+A(EGLSurface, CreateWindowSurface, (EGLDisplay dpy, EGLConfig config, EGLNativeWindowType win, const EGLint *attrib_list), (dpy, config, win, attrib_list))
+A(EGLSurface, CreatePbufferSurface, (EGLDisplay dpy, EGLConfig config, const EGLint *attrib_list), (dpy, config, attrib_list))
+A(EGLSurface, CreatePixmapSurface, (EGLDisplay dpy, EGLConfig config, EGLNativePixmapType pixmap, const EGLint *attrib_list), (dpy, config, pixmap, attrib_list))
+A(EGLBoolean, DestroySurface, (EGLDisplay dpy, EGLSurface surface), (dpy, surface))
+A(EGLBoolean, QuerySurface, (EGLDisplay dpy, EGLSurface surface, EGLint attribute, EGLint *value), (dpy, surface, attribute, value))
+A(EGLBoolean, BindAPI, (EGLenum api), (api))
+A(EGLenum, QueryAPI, (void), ())
+A(EGLBoolean, WaitClient, (void), ())
+#ifndef _EGL_OVERRIDES
+A(EGLBoolean, ReleaseThread, (void), ())
+#endif
+A(EGLSurface, CreatePbufferFromClientBuffer, (EGLDisplay dpy, EGLenum buftype, EGLClientBuffer buffer, EGLConfig config, const EGLint *attrib_list), (dpy, buftype, buffer, config, attrib_list))
+A(EGLBoolean, SurfaceAttrib, (EGLDisplay dpy, EGLSurface surface, EGLint attribute, EGLint value), (dpy, surface, attribute, value))
+A(EGLBoolean, BindTexImage, (EGLDisplay dpy, EGLSurface surface, EGLint buffer), (dpy, surface, buffer))
+A(EGLBoolean, ReleaseTexImage, (EGLDisplay dpy, EGLSurface surface, EGLint buffer), (dpy, surface, buffer))
+A(EGLBoolean, SwapInterval, (EGLDisplay dpy, EGLint interval), (dpy, interval))
+A(EGLContext, CreateContext, (EGLDisplay dpy, EGLConfig config, EGLContext share_context, const EGLint *attrib_list), (dpy, config, share_context, attrib_list))
+A(EGLBoolean, DestroyContext, (EGLDisplay dpy, EGLContext ctx), (dpy, ctx))
+#ifndef _EGL_OVERRIDES
+A(EGLBoolean, MakeCurrent, (EGLDisplay dpy, EGLSurface draw, EGLSurface read, EGLContext ctx), (dpy, draw, read, ctx))
+#endif
+A(EGLContext, GetCurrentContext, (void), ())
+A(EGLSurface, GetCurrentSurface, (EGLint readdraw), (readdraw))
+A(EGLDisplay, GetCurrentDisplay, (void), ())
+A(EGLBoolean, QueryContext, (EGLDisplay dpy, EGLContext ctx, EGLint attribute, EGLint *value), (dpy, ctx, attribute, value))
+A(EGLBoolean, WaitGL, (void), ())
+A(EGLBoolean, WaitNative, (EGLint engine), (engine))
+A(EGLBoolean, SwapBuffers, (EGLDisplay dpy, EGLSurface surface), (dpy, surface))
+A(EGLBoolean, CopyBuffers, (EGLDisplay dpy, EGLSurface surface, EGLNativePixmapType target), (dpy, surface, target))
+A(__eglMustCastToProperFunctionPointerType, GetProcAddress, (const char *procname), (procname))

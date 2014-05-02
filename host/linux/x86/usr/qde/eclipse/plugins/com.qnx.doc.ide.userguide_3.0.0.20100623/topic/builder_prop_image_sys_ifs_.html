@@ -1,0 +1,168 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="System (.ifs)" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_prop_image_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="ImagePropertiesSystemIFS" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>System (.ifs)</title>
+   </head>
+   <body id="ImagePropertiesSystemIFS"><a name="ImagePropertiesSystemIFS" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">System (<span class="filepath">.ifs</span>)
+      </h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         
+         <dl>
+            <dt class="dlterm">
+               <span class="uicontrol">Auto Link Shared Libs?</span>
+               
+            </dt>
+            <dd>If Yes, shared libraries referenced by the image's binaries are automatically included
+               in the image. 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Create startup sym file?</span>
+               
+            </dt>
+            <dd>If <span class="uicontrol">Yes</span>, include the system startup code. The default is
+               <span class="uicontrol">No</span>. 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Create proc sym file</span>
+               
+            </dt>
+            <dd>If <span class="uicontrol">Yes</span>, include debugging symbol files for <span class="cmdname">proncto</span>. The
+               default is <span class="uicontrol">No</span>. 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Procnto</span>
+               
+            </dt>
+            <dd>Which <span class="filepath">procnto</span> binary to use (e.g. <span class="filepath">procnto-600</span>,
+               <span class="filepath">procnto-600-smp</span>, etc.). 
+               
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Procnto Arguments</span>
+               
+            </dt>
+            <dd>Command-line arguments for <span class="filepath">procnto</span>. 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Procnto $PATH</span>
+               
+            </dt>
+            <dd>Path(s) where <span class="filepath">procnto</span> should look for executables. Separate the
+               paths with a colon (<cite>:</cite>). 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Procnto $LD_LIBRARY_PATH</span>
+               
+            </dt>
+            <dd>Path(s) where <span class="filepath">procnto</span> should look for shared libraries. Separate
+               the paths with a colon (<cite>:</cite>). 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Image Address</span>
+               
+            </dt>
+            <dd>The base address where the image is copied to at boot time. For execute-in-place (XIP),
+               set this to the same location as your image file on flash memory and specify the
+               read/write memory address with the <span class="uicontrol">RAM Address</span> value, described
+               below. 
+               
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Use APS?</span>
+               
+            </dt>
+            <dd>If Yes, the System Builder adds the <span class="filepath">aps</span> module to the invocation of
+               <span class="cmdname">proncto</span> in the OS image. You need this module if you want to use adaptive
+               partitioning on the target system. 
+               
+               
+               <p>To create partitions and run programs in them at boot time, add the appropriate
+                  commands to the image's <span class="filepath">.bsh</span> file. For more information, see
+                  <a href="builder_Boot_script_files_.html" shape="rect">Boot script files</a> earlier in this chapter.
+                  
+               </p>
+               
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Startup</span>
+               
+            </dt>
+            <dd>Which startup binary to use (e.g. <span class="filepath">startup-bios</span>,
+               <span class="filepath">startup-rpx-lite</span>, etc.). 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Startup Arguments</span>
+               
+            </dt>
+            <dd>Command-line arguments for the startup program. </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Boot File</span>
+               
+            </dt>
+            <dd>The image filter that the QNX System Builder uses (e.g. <span class="uicontrol">srec</span>,
+               <span class="uicontrol">elf</span>) to perform further processing on the image file. For
+               example, <span class="uicontrol">srec</span> converts the image to the Motorola S-Record format.
+               (For more about image filters, see <a href="../../com.qnx.doc.neutrino_utilities/m/mkifs.html" shape="rect">
+                  <span class="cmdname">mkifs</span>
+                  </a> in the <cite>Utilities Reference</cite>.) 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">RAM Address</span>
+               
+            </dt>
+            <dd>The location of your read/write memory. For XIP, set the address; otherwise, set the
+               value to <span class="uicontrol">Default</span>. (Note that <span class="uicontrol">RAM Address</span> is
+               the ram attribute in the <a href="../../com.qnx.doc.neutrino_utilities/m/mkifs.html" shape="rect">
+                  <span class="cmdname">mkifs</span>
+                  </a> utility.) 
+            </dd>
+         </dl>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/builder_prop_image_.html" shape="rect">Image properties</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

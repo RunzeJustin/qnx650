@@ -1,0 +1,120 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Boot script files" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_Base_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_INTRO_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_OVER_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_CREATE_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_CREATEFLASH_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_BUILDOS_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_XFER_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_CONFIG_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_Optimizing_Your_System.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_HOSTANDTARGET_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/cvs_Export_mkifs.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Bootscriptfiles" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Boot script files</title>
+   </head>
+   <body id="Bootscriptfiles"><a name="Bootscriptfiles" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Boot script files</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>All QNX BSPs ship with a <dfn class="term">buildfile</dfn>, which is a type of control file that gives instructions to the <span class="cmdname">mkifs</span> command-line utility to generate an OS image. The buildfile specifies the particular startup program, environment variables,
+            drivers, etc. to use for creating the image. The <dfn class="term">boot script</dfn> portion of a buildfile contains the sequence of commands that the Process Manager executes when your completed image starts
+            up on the target. 
+            
+            
+         </p>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> For details about the components and grammar of buildfiles, see the section <a href="../../com.qnx.doc.neutrino_building/building_nto.html#CONFIG" shape="rect">Configuring an OS image</a> in the chapter Making an OS Image in <cite>Building Embedded Systems</cite>, as well as the entry for <a href="../../com.qnx.doc.neutrino_utilities/m/mkifs.html" shape="rect">
+               <span class="cmdname">mkifs</span>
+               </a> in the <cite>Utilities Reference</cite>.
+         </div>
+         
+         
+         <p>The QNX System Builder perspective provides a convenient graphical alternative to the text-based buildfile method. While it
+            hides most of the gruesome details from you, the QNX System Builder perspective also lets you see and work with things such
+            as boot scripts. 
+            
+            
+         </p>
+         
+         
+         <p>The QNX System Builder perspective stores the boot script for your project in a <span class="filepath">.bsh</span> file. If you double-click a <span class="filepath">.bsh</span> file in the System Builder Projects view, you'll see its contents in the editor. 
+            
+            
+         </p>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/builder_Base_.html" shape="rect">Building OS and Flash Images</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/builder_INTRO_.html" shape="rect">Introducing the QNX System Builder</a></div>
+            
+            <div><a href="../topic/builder_OVER_.html" shape="rect">Overview of images</a></div>
+            
+            <div><a href="../topic/builder_XFER_.html" shape="rect">Downloading an image to your target</a></div>
+            
+            <div><a href="../topic/builder_CONFIG_.html" shape="rect">Configuring your QNX System Builder projects</a></div>
+            
+            <div><a href="../topic/builder_Optimizing_Your_System.html" shape="rect">Optimizing your system</a></div>
+            
+            <div><a href="../topic/builder_HOSTANDTARGET_.html" shape="rect">Moving files between the host and target</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/builder_CREATE_.html" shape="rect">Creating a new QNX System Builder project for an OS image</a></div>
+            
+            <div><a href="../topic/builder_CREATEFLASH_.html" shape="rect">Creating a project for a flash filesystem image (an .efs file)</a></div>
+            
+            <div><a href="../topic/builder_BUILDOS_.html" shape="rect">Building an OS image</a></div>
+            
+            <div><a href="../topic/cvs_Export_mkifs.html" shape="rect">Exporting a System Builder project to a Mkxfs build file(s)</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

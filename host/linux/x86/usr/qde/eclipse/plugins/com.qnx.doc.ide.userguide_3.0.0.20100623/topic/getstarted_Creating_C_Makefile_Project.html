@@ -1,0 +1,183 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="task" />
+      <meta name="DC.Title" content="Creating a C Makefile project" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/getstarted_CPSTEP1_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/getstarted_Creating_Basic_Project.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_c_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/creating_make.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/creating_make_2.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_target_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_convert_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_importing_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/getstarted_Rename_Project.html" />
+      <meta name="DC.Relation" scheme="URI" content="wizards_c_creating_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="CreatingCMakefileProject" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Creating a C Makefile project</title>
+   </head>
+   <body id="CreatingCMakefileProject"><a name="CreatingCMakefileProject" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Creating a C Makefile project</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <div class="p">The working directory of the <span class="cmdname">make</span> should be the root folder of the project.
+            
+         </div>
+         
+         
+         <div class="section">
+            
+            <p>To create a C Makefile project:</p>
+            
+            
+         </div>
+         
+         
+         <ol>
+            <li class="stepexpand">
+               <span>Select <span class="menucascade">
+                     <span class="uicontrol">File</span>
+                     &gt; <span class="uicontrol">New</span>
+                     &gt; <span class="uicontrol">Project</span>
+                     </span>, select <span class="menucascade">
+                     <span class="uicontrol">C</span>
+                     &gt; <span class="uicontrol">C Project</span>
+                     </span>, and then click <span class="uicontrol">Next</span>. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>In the <span class="uicontrol">Project name</span> field, type a name for your project.
+                  </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>In the <span class="uicontrol">Project Types</span> area, expand
+                  <span class="uicontrol">Makefile</span> and select <span class="uicontrol">Empty
+                     project</span>. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>In the <span class="uicontrol">Toolchain</span> list, select <span class="uicontrol">QNX
+                     QCC</span>. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Click <span class="uicontrol">Finish</span>.</span>
+               Next, you'll change the project properties.
+               
+            </li>
+            <li class="stepexpand">
+               <span>In the Target Navigator view, select the new project you created, right-click and
+                  select <span class="uicontrol">Properties</span>. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>On the left, select <span class="uicontrol">C/C++ Build</span>. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>On the right, select the <span class="uicontrol">Builder settings</span> tab and
+                  deselect the option <span class="uicontrol">Use default build command</span>. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>In the <span class="uicontrol">make</span> field, add the command line (without the
+                  target to build) that calls your <span class="cmdname">make</span> (e.g. <samp class="codeph">c:\make\make -f
+                     makefile.mak -k</samp>). </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Click the <span class="uicontrol">Behavior</span> tab, then add your targets for
+                  running an incremental build, the clean build, and the compile build. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Ensure that the option <span class="uicontrol">Build (Incremental Build)</span> is
+                  selected; otherwise, the build can't be started. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Specify any other desirable options for properties on the other panels. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Click <span class="uicontrol">OK</span>. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>When everything is properly configured, from the toolbar menu select <span class="menucascade">
+                     <span class="uicontrol">Project</span>
+                     &gt; <span class="uicontrol">Build Project</span>
+                     </span> to run the <span class="cmdname">make</span> project.</span>
+               
+            </li>
+         </ol>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/getstarted_CPSTEP1_.html" shape="rect">Creating a project</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/wizards_c_.html" shape="rect">Creating a C/C++ project</a></div>
+            
+            <div><a href="../topic/wizards_convert_.html" shape="rect">Converting projects</a></div>
+            
+            <div><a href="wizards_c_creating_.html" shape="rect">How to create a C/C++ project</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/getstarted_Creating_Basic_Project.html" shape="rect">Creating a simple project</a></div>
+            
+            <div><a href="../topic/creating_make.html" shape="rect">Creating a make project</a></div>
+            
+            <div><a href="../topic/creating_make_2.html" shape="rect">Creating a make project that can be launched outside the IDE</a></div>
+            
+            <div><a href="../topic/wizards_target_.html" shape="rect">Creating a target system project</a></div>
+            
+            <div><a href="../topic/wizards_importing_.html" shape="rect">Importing projects</a></div>
+            
+            <div><a href="../topic/getstarted_Rename_Project.html" shape="rect">Renaming a project</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cheatsheet title="Application Profiling">
+  <intro href="/com.qnx.doc.ide.userguide/topic/profiler_Base_.html">
+    <description>
+         Welcome to the "Application Profiling" tutorial.
+It will help you to create a simple project, you'll run it using the Sampling profiling method, and then you'll analyze it to identify where time is spent inside this application.
+
+Click the following link to begin.
+      </description>
+  </intro>
+  <item title="Cheat Sheet Introduction" dialog="true" skip="false" href="/org.eclipse.platform.doc.user/reference/ref-cheatsheets.htm">
+    <description>
+         If you need information about how to work with cheat sheets,
+   click the button with the question mark to the right. 
+   To see the contents of the next instruction,
+   you must complete all of the tasks by 
+   clicking "Click to Complete", or by performing the 
+   auto-complete command.
+      </description>
+  </item>
+  <item title="Create Example Project" dialog="true" skip="true">
+    <description>
+      If you previously created an example project for the "ApplicationProfiling" project, skip this step.<br />
+  To create the example project for this task, perform the following steps:
+      </description>
+    <subitem label="Select &quot;File-&gt;New-&gt;Project...&quot; from the main menu, expand the &quot;Examples-&gt;QNX IDE Examples&quot; category within the resulting &quot;New Project&quot; dialog, and select &quot;QNX Example Project - Call Count and Sampling Profiling&quot;" skip="false">
+      <command serialization="org.eclipse.ui.newWizard(newWizardId=com.qnx.tools.ide.momentics.examples.wizards.4)" confirm="true"></command>
+    </subitem>
+    <subitem label="Do not change the default project name, and click &quot;Finish&quot;." skip="false"></subitem>
+    <onCompletion>
+         You have created the "ApplicationProfiling" project.
+      </onCompletion>
+  </item>
+  <item title="Set profiling options for the project" dialog="true" skip="false" href="/com.qnx.doc.ide.userguide/topic/profiler_build_.html">
+    <description>
+         To profile your application, you must set specific flags for the compiler and linker before you can build your project. These instructions are for compiling your project using Call Count intrumentation.
+      </description>
+    <subitem label="Expand the ApplicationProfiling project and open the &quot;Makefile&quot; by double-clicking on it in the &quot;Project Explorer&quot; view." skip="false">
+      <command serialization="org.eclipse.ui.navigate.openResource(filePath=/ApplicationProfiling/Makefile)" confirm="true"></command>
+    </subitem>
+    <subitem label="Check that the complier options have the following flags set: &quot;-p&quot;" skip="false"></subitem>
+    <subitem label="Check that the linker options have the following flags set: &quot;-p&quot;" skip="false"></subitem>
+  </item>
+  <item title="Build the project" dialog="true" skip="false" href="/org.eclipse.cdt.doc.user/tasks/cdt_t_manualbuild.htm">
+    <description>
+         Right-click on the "ApplicationProfiling" project in the "Project Explorer" 
+ view, and select "Build Project" from dropdown menu.
+      </description>
+    <onCompletion>
+         You must have the "quick" executable file in the "Binaries" folder.
+      </onCompletion>
+  </item>
+  <item title="Run the application on the target" dialog="true" skip="false" href="/com.qnx.doc.ide.userguide/topic/profiler_profile_running_.html">
+    <description>
+         Create a launch configuration for "quick", and then launch the application on the target:
+      </description>
+    <subitem label="Right-click on the &quot;quick&quot; executable in the &quot;Binaries&quot; folder, and select &quot;Run as-&gt;C/C++ QNX Application Dialog...&quot;." skip="false"></subitem>
+    <subitem label="Select the target on which program would run on the &quot;Main&quot; tab. If there is no targets add a target using &quot;Add New Target...&quot; button first." skip="false"></subitem>
+    <subitem label="Switch to the &quot;Tools&quot; tab." skip="false"></subitem>
+    <subitem label="Click &quot;Add/Delete Tool...&quot;." skip="false"></subitem>
+    <subitem label="Select the &quot;Application Profiler&quot; checkbox and click &quot;Ok&quot;." skip="false"></subitem>
+    <subitem label="On the Application Profiler tab, select the &quot;Sampling and Call Count Instrumentation&quot; option." skip="false"></subitem>
+    <subitem label="Select the &quot;Switch to this tool&apos;s perspective on launch&quot; checkbox." skip="false"></subitem>
+    <subitem label="Click the &quot;Run&quot; button to run the application." skip="false"></subitem>
+    <onCompletion>
+         You have launched the application.
+      </onCompletion>
+  </item>
+  <item title="Inspect the profiling statistics" dialog="true" skip="false" href="/com.qnx.doc.ide.userguide/topic/profiler_Exit_Enter_time_.html">
+    <description>
+         You must be switched to the QNX Application Profiler perspective.
+Inspect profiling statistics:
+      </description>
+    <subitem label="The &quot;Execution Time&quot; view should be opened now. Click the &quot;Show Table&quot; button to change to table mode. Inspect the &quot;Execution Time&quot; view to see the percentage of time and other information for each function." skip="false"></subitem>
+    <subitem label="The Deep Time column for this mode is not needed. You can hide it by reducing it's width to 0 by dragging the header separator for this column." skip="true"></subitem>
+    <subitem label="The Shallow Time column shows times and percent values. Make this column wider to see the percent text." skip="true"></subitem>
+    <subitem label="Click the &quot;Shallow Time&quot; column header to sort it by time. Click again to reverse the order." skip="true"></subitem>
+    <subitem label="In the &quot;Execution Time&quot; view, double-click on the &quot;q_sort&quot; function to open the annotated editor." skip="false"></subitem>
+    <subitem label="Right-click on the &quot;q_sort&quot; function and select &quot;Show Call Graph&quot;. Click on &quot;quickSort-&gt;q_sort&quot; to navigate up the call tree." skip="false"></subitem>
+    <subitem label="On the &quot;quickSort&quot; object, right-click and select &quot;Show Calls&quot;. You will change to the Tree view call graph mode for the root of quickSort function." skip="false"></subitem>
+  </item>
+  <item title="Analyze difference" dialog="true" skip="false">
+    <description>
+         In this step, you learn how to compare Application Profiler sessions.
+      </description>
+    <subitem label="You can modify the application code to &quot;optimize it&quot;. For example, open the quick.c file and change the value for NUM_ITEMS to be 10000. Save the file." skip="false">
+    <command serialization="org.eclipse.ui.navigate.openResource(filePath=/ApplicationProfiling/quick.c)" confirm="true"></command>
+    </subitem>
+    <subitem label="Recompile the code and re-launch using the launch configuration you created earlier.  Click the &quot;Run&quot; button from the main toolbar and select the &quot;quick&quot; launch configuration." skip="false"></subitem>
+    <subitem label="Select a previous and newer Application Profiler session (using Ctrl+Click). Right-click and select Compare." skip="false"></subitem>
+    <subitem label="Click the &quot;Show Table&quot; button to change to table mode. To only view functions that belong to the application, open the &quot;Filters&quot; dialog. To do that click on the &quot;triangle&quot; menu from the view, and select &quot;Filters...&quot;. Select &quot;quick&quot; in the components tree, and then click &quot;OK&quot;." skip="false"></subitem>
+    <subitem label="Inspect the differences." skip="false"></subitem>
+  </item>
+</cheatsheet>

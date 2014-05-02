@@ -1,0 +1,110 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="task" />
+      <meta name="DC.Title" content="Step 4: Building the component project in the linked folder" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/cvs_Projects_Within_Projects.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Step4BuildingComponentProject" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Step 4: Building the component project in the linked folder</title>
+   </head>
+   <body id="Step4BuildingComponentProject"><a name="Step4BuildingComponentProject" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Step 4: Building the component project in the linked folder</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <div class="p">Now, you'll need to tell the IDE to build <span class="filepath">Project_ComponentA</span> in the <span class="filepath">ComponentA</span> linked folder that you just created in your workspace. 
+         </div>
+         
+         
+         <div class="section">
+            
+            <p>To build the component project in the linked folder:</p>
+            
+            
+         </div>
+         
+         
+         <ol>
+            <li class="stepexpand">
+               <span>In the Project Explorer view, right-click <span class="filepath">Project_ComponentA</span>, and then select <span class="uicontrol">Properties</span> from the context menu. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Select <span class="uicontrol">C/C++ Build</span> on the left.</span>
+               
+               
+               <p>
+                  <span><img src="../images/ide2Ftemp2Ftopic2Fcvs_CPSTEP4_.xml_d31078e53.jpg" alt="Make Builder properties" /></span>
+                  
+               </p>
+               
+               
+               
+            </li>
+            <li class="stepexpand">
+               <span>In the <span class="uicontrol">Builder settings</span> tab, set the build directory to <span class="filepath">ComponentA</span> in your workspace. </span>
+               
+            </li>
+         </ol>
+         
+         
+         <div class="section">
+            
+            <p>Now, when you start to build <span class="filepath">Project_ComponentA</span>, the IDE builds it in the <span class="filepath">ComponentA</span> folder in your workspace (even though the source actually resides in a folder outside your workspace). 
+            </p>
+            
+            
+            <div class="cautiontitle">CAUTION:</div>
+            <div class="caution">Linked resources let you <em>overlap</em> files in your workspace, so files from one project can appear in another project. If you change a file or other resource
+               in one location. For example, if you delete a file in a linked folder, it's deleted and it will no longer be shown in any
+               of the locations in which it previously appeared. 
+               <p>Special rules apply when working with linked resources. If you delete a linked resource from your project, the corresponding
+                  resource in the filesystem also isn't deleted because this deletes only the link. But if you delete <em>child</em> resources of linked folders, those child resources are deleted from the filesystem.
+               </p>
+               
+            </div>
+            
+            
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/cvs_Projects_Within_Projects.html" shape="rect">Projects within projects</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

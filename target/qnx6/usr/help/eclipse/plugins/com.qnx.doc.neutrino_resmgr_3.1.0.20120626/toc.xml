@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Writing a Resource Manager">
+      <topic label="About This Guide" href="about.html">
+          <topic label="What you'll find in this guide" href="about.html#In_this_guide"/>
+          <topic label="Typographical conventions" href="about.html#Typographical_conventions">
+            <topic label="Note to Windows users" href="about.html#WINDOWSNOTE"/>
+            <topic label="Navigation buttons" href="about.html#Navigation"/>
+          </topic>
+          <topic label="Technical support" href="about.html#Support"/>
+      </topic>
+      <topic label="Overview" href="overview.html">
+          <topic label="What is a resource manager?" href="overview.html#WHATISRESMGR"/>
+          <topic label="Why write a resource manager?" href="overview.html#WhyWrite"/>
+          <topic label="The types of resource managers" href="overview.html#RESMGRtypes">
+            <topic label="Device resource managers" href="overview.html#DEVICEresmgr"/>
+            <topic label="Filesystem resource managers" href="overview.html#FILESYSresmgr"/>
+          </topic>
+          <topic label="Communication via native IPC" href="overview.html#Native_IPC"/>
+          <topic label="Examples of resource managers" href="overview.html#Examples">
+            <topic label="Transparent Distributed Processing (Qnet) statistics" href="overview.html#Qnet_example"/>
+            <topic label="Robot arm" href="overview.html#Robot_example"/>
+            <topic label="GPS devices" href="overview.html#GPS_example"/>
+            <topic label="Database example" href="overview.html#Database_example"/>
+            <topic label="I2C (Inter-Integrated Circuit) driver" href="overview.html#I2C_example"/>
+          </topic>
+          <topic label="When not to use a resource manager" href="overview.html#No_resource_manager"/>
+      </topic>
+      <topic label="The Bones of a Resource Manager" href="skeleton.html">
+          <topic label="Under the covers" href="skeleton.html#UnderTheCovers">
+            <topic label="Under the client's covers" href="skeleton.html#ClientSide"/>
+            <topic label="Under the resource manager's covers" href="skeleton.html#ResMgrSide"/>
+          </topic>
+          <topic label="Layers in a resource manager" href="skeleton.html#RESMGR_layers">
+            <topic label="The iofunc layer" href="skeleton.html#iofunc_layer"/>
+            <topic label="The resmgr layer" href="skeleton.html#resmgr_layer"/>
+            <topic label="The dispatch layer" href="skeleton.html#dispatch_layer"/>
+            <topic label="The thread pool layer" href="skeleton.html#threadpool_layer"/>
+          </topic>
+          <topic label="Simple examples of device resource managers" href="skeleton.html#SIMPLE_EGS">
+            <topic label="Single-threaded device resource manager" href="skeleton.html#SIMPLE_ST_EG">
+              <topic label="Initialize the dispatch interface" href="skeleton.html#InitDispatchInterface"/>
+              <topic label="Initialize the resource manager attributes" href="skeleton.html#InitResMgrAttr"/>
+              <topic label="Initialize functions used to handle messages" href="skeleton.html#InitMsgFuncs"/>
+              <topic label="Initialize the attribute structure used by the device" href="skeleton.html#InitAttrStruct"/>
+              <topic label="Put a name into the namespace" href="skeleton.html#RegisterName"/>
+              <topic label="Allocate the context structure" href="skeleton.html#AllocateContextStruct"/>
+              <topic label="Start the resource manager message loop" href="skeleton.html#StartMsgLoop"/>
+            </topic>
+            <topic label="Multithreaded device resource manager" href="skeleton.html#SIMPLE_MT_EG">
+              <topic label="Define THREAD_POOL_PARAM_T" href="skeleton.html#DefineThreadPoolParamT"/>
+              <topic label="Initialize thread pool attributes" href="skeleton.html#InitThreadPoolAttr"/>
+              <topic label="Allocate a thread pool handle" href="skeleton.html#AllocThreadPoolHandle"/>
+              <topic label="Start the threads" href="skeleton.html#StartThreads"/>
+            </topic>
+            <topic label="Using MsgSend and MsgReply" href="skeleton.html#Message_eg">
+              <topic label="A bit of history" href="skeleton.html#History"/>
+              <topic label="The server" href="skeleton.html#Server"/>
+              <topic label="The client" href="skeleton.html#Client"/>
+            </topic>
+          </topic>
+      </topic>
+      <topic label="Fleshing Out the Skeleton" href="fleshing_out.html">
+          <topic label="Message types" href="fleshing_out.html#Message_types">
+            <topic label="Connect messages" href="fleshing_out.html#Connect_messages"/>
+            <topic label="I/O messages" href="fleshing_out.html#IO_messages"/>
+            <topic label="Default message handling" href="fleshing_out.html#Default_handling"/>
+            <topic label="open, dup, and close" href="fleshing_out.html#Open_dup_close"/>
+          </topic>
+          <topic label="Setting resource manager attributes" href="fleshing_out.html#Attributes"/>
+          <topic label="Ways of adding functionality to the resource manager" href="fleshing_out.html#Adding_functionality">
+            <topic label="Using the default functions" href="fleshing_out.html#UsingDefaultFuncs"/>
+            <topic label="Using the helper functions" href="fleshing_out.html#UsingHelperFuncs"/>
+            <topic label="Writing the entire function yourself" href="fleshing_out.html#WriteFuncYourself"/>
+          </topic>
+      </topic>
+      <topic label="POSIX-Layer Data Structures" href="structures.html">
+          <topic label="The iofunc_ocb_t (Open Control Block) structure" href="structures.html#OCB"/>
+          <topic label="The iofunc_attr_t (attribute) structure" href="structures.html#AttributeStructure"/>
+          <topic label="The optional iofunc_mount_t (mount) structure" href="structures.html#MountStructure"/>
+      </topic>
+      <topic label="Handling Read and Write Messages" href="read_write.html">
+          <topic label="Handling the _IO_READ message" href="read_write.html#HANDLING_READ_MSG">
+            <topic label="Sample code for handling _IO_READ messages" href="read_write.html#Sample_IO_READ"/>
+          </topic>
+          <topic label="Handling the _IO_WRITE message" href="read_write.html#HANDLING_WRITE_MSG">
+            <topic label="Sample code for handling _IO_WRITE messages" href="read_write.html#Sample_IO_WRITE"/>
+          </topic>
+          <topic label="Methods of returning and replying" href="read_write.html#RETURNandREPLY">
+            <topic label="Returning with an error" href="read_write.html#ReturnWithError"/>
+            <topic label="Returning using an IOV array that points to your data" href="read_write.html#ReturnUsingIOV"/>
+            <topic label="Returning with a single buffer containing data" href="read_write.html#ReturnSingleBuffer"/>
+            <topic label="Returning success but with no data" href="read_write.html#ReturnSuccess"/>
+            <topic label="Getting the resource manager library to do the reply" href="read_write.html#ReturnComesFromResMgr"/>
+            <topic label="Performing the reply in the server" href="read_write.html#PerformServerReply"/>
+            <topic label="Leaving the client blocked, replying later" href="read_write.html#Replying_later"/>
+            <topic label="Returning and telling the library to do the default action" href="read_write.html#ReturnComesFromLibrary"/>
+          </topic>
+          <topic label="Handling other read/write details" href="read_write.html#HANDLING_OTHER">
+            <topic label="Handling the xtype member" href="read_write.html#XTYPE">
+              <topic label="If you aren't expecting extended types (xtype)" href="read_write.html#Unexpected_extended_types"/>
+            </topic>
+            <topic label="Handling pread* and pwrite*" href="read_write.html#Handlingpread">
+              <topic label="Sample code for handling _IO_READ messages in pread*" href="read_write.html#pread_func"/>
+              <topic label="Sample code for handling _IO_WRITE messages in pwrite*" href="read_write.html#pwrite_func"/>
+            </topic>
+            <topic label="Handling readcond" href="read_write.html#Handlingreadcond"/>
+          </topic>
+          <topic label="Updating the time for reads and writes" href="read_write.html#UPDATINGTIME"/>
+      </topic>
+      <topic label="Combine Messages" href="combine.html">
+          <topic label="Where combine messages are used" href="combine.html#UsingCombineMsgs">
+            <topic label="Atomic operations" href="combine.html#id4">
+              <topic label="Using a mutex" href="combine.html#id6"/>
+              <topic label="Per-thread files" href="combine.html#id8"/>
+              <topic label="The readblock function" href="combine.html#id10"/>
+            </topic>
+            <topic label="Bandwidth considerations" href="combine.html#id12"/>
+          </topic>
+          <topic label="The library's combine-message handling" href="combine.html#CombineMsgHandling">
+            <topic label="Component responses" href="combine.html#ComponentResponses"/>
+            <topic label="Component data access" href="combine.html#ComponentDataAccess"/>
+            <topic label="Locking and unlocking the attribute structure" href="combine.html#LockingAttributeStructure"/>
+            <topic label="Connect message types" href="combine.html#ConnectMsgStyles"/>
+            <topic label="_IO_CONNECT_COMBINE_CLOSE" href="combine.html#IOConnectCombineClose"/>
+            <topic label="_IO_CONNECT_COMBINE" href="combine.html#IOConnectCombine"/>
+          </topic>
+      </topic>
+      <topic label="Extending the POSIX-Layer Data Structures" href="extend.html">
+          <topic label="Overview" href="extend.html#Overview"/>
+          <topic label="Extending the OCB and attribute structures" href="extend.html#ExtendingOCBstructures"/>
+          <topic label="Extending the mount structure" href="extend.html#ExtendingMountStructure"/>
+      </topic>
+      <topic label="Handling Other Messages" href="messages.html">
+          <topic label="Custom messages" href="messages.html#CUSTOM_MESSAGES"/>
+          <topic label="Handling devctl messages" href="messages.html#HANDLING_devctl">
+            <topic label="Sample code for handling _IO_DEVCTL messages" href="messages.html#Sample_IO_DEVCTL"/>
+          </topic>
+          <topic label="Handling ionotify and select" href="messages.html#HANDLING_ionotify">
+            <topic label="Sample code for handling _IO_NOTIFY messages" href="messages.html#Sample_IO_NOTIFY"/>
+          </topic>
+          <topic label="Handling out-of-band (_IO_MSG) messages" href="messages.html#HANDLING_io_msg"/>
+          <topic label="Handling private messages and pulses" href="messages.html#HANDLING_PRIVATE_MSG"/>
+          <topic label="Handling open, dup, and close messages" href="messages.html#HANDLING_open"/>
+          <topic label="Handling mount" href="messages.html#HANDLING_mount">
+            <topic label="mount function call" href="messages.html#mount_function"/>
+            <topic label="Mount in the resource manager" href="messages.html#Mount_resmgr"/>
+            <topic label="mount utility" href="messages.html#mount_utility"/>
+          </topic>
+          <topic label="Handling stat" href="messages.html#HANDLING_stat"/>
+          <topic label="Handling lseek" href="messages.html#HANDLING_lseek"/>
+      </topic>
+      <topic label="Signals, Timeouts, and Interrupts" href="signals.html">
+          <topic label="Handling client unblocking due to signals or timeouts" href="signals.html#HANDLING_UNBLOCKING"/>
+          <topic label="Handling interrupts" href="signals.html#HANDLING_INTERRUPTS">
+            <topic label="Sample code for handling interrupts" href="signals.html#Sample_interrupts"/>
+          </topic>
+      </topic>
+      <topic label="Multithreaded Resource Managers" href="multithread.html">
+          <topic label="Multithreaded resource manager example" href="multithread.html#MultiThreadResMgrEx"/>
+          <topic label="Thread pool attributes" href="multithread.html#THREADPOOLATTR"/>
+          <topic label="Thread pool functions" href="multithread.html#ThreadPoolFuncs"/>
+      </topic>
+      <topic label="Filesystem Resource Managers" href="fsystems.html">
+          <topic label="Considerations for filesystem resource managers" href="fsystems.html#Considerations"/>
+          <topic label="Taking over more than one device" href="fsystems.html#TakingOverMoreDevices"/>
+          <topic label="Handling directories" href="fsystems.html#HandlingDirs">
+            <topic label="Matching at or below a mountpoint" href="fsystems.html#MatchingMountpoint"/>
+            <topic label="The _IO_OPEN message for filesystems" href="fsystems.html#IO_msg"/>
+            <topic label="Returning directory entries from _IO_READ" href="fsystems.html#ReturnEntries">
+              <topic label="Returning information associated with a directory structure" href="fsystems.html#Returning_stat"/>
+            </topic>
+          </topic>
+      </topic>
+      <topic label="Glossary" href="glossary.html"/>
+</toc>

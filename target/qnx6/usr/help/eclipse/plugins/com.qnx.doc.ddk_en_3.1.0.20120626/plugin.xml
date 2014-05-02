@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin id="com.qnx.doc.ddk_en"
+    name="QNX Neutrino Driver Development Kits (DDKs)"
+    version="3.1.0.20120626"
+    provider-name="QNX Software Systems Limited">
+
+    <extension point="org.eclipse.help.toc">
+      <toc file="toc.xml" primary="true" />
+      <index path="index"/>
+   </extension>
+
+    <extension point="org.eclipse.help.toc">
+      <toc file="../com.qnx.doc.ddk_en_audio/toc.xml" />
+      <toc file="../com.qnx.doc.ddk_en_character/toc.xml" />
+      <toc file="../com.qnx.doc.ddk_en_graphics/toc.xml" />
+      <toc file="../com.qnx.doc.ddk_en_input/toc.xml" />
+      <toc file="../com.qnx.doc.ddk_en_usb/toc.xml" />
+   </extension>
+</plugin>

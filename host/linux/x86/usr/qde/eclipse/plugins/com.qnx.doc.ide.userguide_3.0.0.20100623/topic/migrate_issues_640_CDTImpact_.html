@@ -1,0 +1,134 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="CDT impact on the IDE" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_630sp2_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_642_General_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_640_migandco_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_640_compilers_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_Binary_Compatibility.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_640_installLoc_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_640_switch_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_640_reset_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_640_console_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_640_revert_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/creating_make.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/creating_make_2.html" />
+      <meta name="DC.Relation" scheme="URI" content="concepts_Considerations_for_project_development_.html" />
+      <meta name="DC.Relation" scheme="URI" content="wizards_c_.html" />
+      <meta name="DC.Relation" scheme="URI" content="getstarted_Creating_C_Makefile_Project.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="CDTimpactontheIDE" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>CDT impact on the IDE</title>
+   </head>
+   <body id="CDTimpactontheIDE"><a name="CDTimpactontheIDE" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">CDT impact on the IDE</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>In addition to the many fixes and enhancements to the QNX IDE plugins, this version of the QNX IDE Tool Suite includes the
+            features from the Eclipse 3.5 and CDT 6.0 integration.
+         </p>
+         
+         
+         <p>When you create a project, you need to be aware of the difference between managed and <span class="cmdname">make</span> projects. If you aren't using QNX projects, you'll have to select between the managed or the <span class="cmdname">make</span> project type. Once you select a C or C++ project type, the IDE launches the New Project wizard. In this wizard, you select
+            between a managed or <tt>Makefile</tt> project (the managed project includes templates for an executable, and for a static and shared library). For both managed
+            and <tt>Makefile</tt> projects, you can select a toolchain; however, with a <tt>Makefile</tt> project, you'll have to supply your own <span class="filepath">makefile</span>; a managed project can build using the internal builder.
+         </p>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> 
+            
+            <p>If you use <span class="cmdname">make</span> projects, you have to manually create a <tt>Makefile</tt> for that project type.
+            </p>
+            
+            
+            <p>When upgrading your older IDE 4.0.1 projects to IDE 4.7, all 4.0.1 projects should successfully upgrade except for <span class="cmdname">make</span> projects. For your <span class="cmdname">make</span> projects, you'll receive an error message. For information about creating this type of project, see <a href="creating_make.html" shape="rect">Creating a make project</a> and <a href="creating_make_2.html" shape="rect">Creating a make project that can be launched outside the IDE</a>.
+            </p>
+            
+            
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <ul class="ullinks">
+            <li class="ulchildlink"><strong><a href="../topic/creating_make.html" shape="rect">Creating a make project</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/creating_make_2.html" shape="rect">Creating a make project that can be launched outside the IDE</a></strong><br clear="none" />
+               
+            </li>
+         </ul>
+         
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/migrate_issues_630sp2_.html" shape="rect">Migration issues</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/migrate_issues_642_General_.html" shape="rect">General migration considerations</a></div>
+            
+            <div><a href="../topic/migrate_issues_640_migandco_.html" shape="rect">Coexistence</a></div>
+            
+            <div><a href="../topic/migrate_issues_640_compilers_.html" shape="rect">Compiler issues</a></div>
+            
+            <div><a href="../topic/migrate_Binary_Compatibility.html" shape="rect">Binary compatibility</a></div>
+            
+            <div><a href="../topic/migrate_issues_640_installLoc_.html" shape="rect">IDE location</a></div>
+            
+            <div><a href="../topic/migrate_issues_640_reset_.html" shape="rect">Missing features in context menus</a></div>
+            
+            <div><a href="../topic/migrate_issues_640_revert_.html" shape="rect">Reverting to an older version of the IDE</a></div>
+            
+            <div><a href="concepts_Considerations_for_project_development_.html" shape="rect">Considerations for project development</a></div>
+            
+            <div><a href="wizards_c_.html" shape="rect">Creating a C/C++ project</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/migrate_issues_640_switch_.html" shape="rect">Old launch configurations don't switch perspectives automatically</a></div>
+            
+            <div><a href="../topic/migrate_issues_640_console_.html" shape="rect">System Builder Console doesn't come to front</a></div>
+            
+            <div><a href="getstarted_Creating_C_Makefile_Project.html" shape="rect">Creating a C Makefile project</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

@@ -1,0 +1,359 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Changes made to IDE 4.7" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/whatsnew_In_IDE_4_7.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/whatsnew_EclipseAndCDT_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/whatsnew_CompilerTools47_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="ChangesToIDE47" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Changes made to IDE 4.7</title>
+   </head>
+   <body id="ChangesToIDE47"><a name="ChangesToIDE47" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Changes made to IDE 4.7</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <div class="p">The IDE includes the following updates for this release: <br clear="none" /><ul>
+               <li>
+                  <strong>Application Profiler:</strong>
+                  <br clear="none" /><ul>
+                     <li>The cheat sheet for the Application Profiler example was renamed from <span class="q">"QNX Example Application Profiling Project"</span> to <span class="q">"Call Count and Sampling Profiling"</span>, and a few other updates were made to the instructions to reflect changes made to the user interface. 
+                     </li>
+                  </ul>
+                  
+                  
+               </li>
+               <li>The <span class="uicontrol">Time</span> column was renamed to <span class="uicontrol">Deep Time</span> and the <span class="uicontrol">Own Time</span> column was renamed to <span class="uicontrol">Shallow Time</span> (see <a href="profiler_Interpret_Tree_Mode.html" shape="rect">Interpreting Tree mode column information by profiling type</a>. 
+               </li>
+               <li>
+                  <strong>Code Coverage:</strong>
+                  <br clear="none" /><ul>
+                     <li>Information was added to describe how to instrument a static library with code coverage enabled; you either have to instrument
+                        your binary with code coverage, or link with the code coverage library using the <span class="option">-lgcov</span> option (see <a href="coverage_How_Coverage_Works.html" shape="rect">How the coverage tool works</a>). 
+                        
+                     </li>
+                     <li>Many Code Coverage topics were changed with updated feature information (see <a href="coverage_Base_.html" shape="rect">Using Code Coverage</a>. 
+                     </li>
+                     <li>In the section <span class="q">"There are multiple ways to import a file"</span> in the topic <a href="coverage_IMPGCCCODE_.html" shape="rect">Importing gcc code coverage data from a project</a>, references to <span class="filepath">.da</span> were updated to <span class="filepath">.gcda</span> to reflect the <span class="cmdname">gcc</span> files that the IDE currently supports. 
+                     </li>
+                  </ul>
+                  
+                  
+               </li>
+               <li>
+                  <strong>Debugging:</strong>
+                  <br clear="none" /><ul>
+                     <li>By default, <span class="cmdname">pdebug</span> now sets <var class="varname">LD_BIND_NOW</var> to 1 to force the loading of all lazy-load dependencies. You can prevent <span class="cmdname">pdebug</span> from setting <span class="envar">LD_BIND_NOW</span> by specifying the new <span class="option">-l</span> (<span class="q">"el"</span>) option. For more information about lazy binding, see the <a href="../../com.qnx.doc.neutrino_prog/devel.html" shape="rect">../../com.qnx.doc.neutrino_prog/devel.html</a> chapter in the Neutrino <cite>Programmer's Guide</cite>.
+                     </li>
+                     <li>Updates were made to the JTAG Abatron architecture images and corresponding documentation for hardware and software configuration
+                        (see <a href="debug_JTAGDebugging_.html" shape="rect">Using JTAG debugging</a>, <a href="debug_JTAGAbtronConnectToHost_.html" shape="rect">Connecting the Abatron BDI2000 JTAG Debugger to your host</a>, <a href="debug_JTAGAbtronConnectToTarget_.html" shape="rect">Connecting the Abatron BDI2000 Debugger to your target</a>, and <a href="debug_JTAGAbtronBuildImage_.html" shape="rect">Building a system image</a> in the IDE <cite>User's Guide</cite>. 
+                     </li>
+                  </ul>
+                  
+                  
+               </li>
+               <li>
+                  <strong>Memory Analysis:</strong>
+                  <br clear="none" /><ul>
+                     <li>For the <em>mallopt()</em> function, we've renamed <tt>MALLOC_FILLAREA</tt> to <tt>MALLOC_CKBOUNDS</tt>, and we've added more information about the <tt>MALLOC_CKALLOC</tt>, <tt>MALLOC_DUMP_LEAKS</tt>, <tt>MALLOC_EVENTBTDEPTH</tt>, <tt>MALLOC_FREE_CHECK</tt>, <tt>MALLOC_START_TRACING</tt>, <tt>MALLOC_STATS</tt>, <tt>MALLOC_TRACEBTDEPTH</tt>, <tt>MALLOC_TRACEMAX</tt>, <tt>MALLOC_TRACEMIN</tt>, <tt>MALLOC_TRACING</tt>, and <tt>MALLOC_VERIFY_ON</tt> options (see <a href="../../com.qnx.doc.neutrino_lib_ref/m/mallopt.html" shape="rect">
+                           <tt>mallopt</tt>
+                           </a> in the Neutrino <cite>Library Reference</cite>). 
+                     </li>
+                     <li>The <a href="memory_Memory_Events_View.html" shape="rect">Memory Events</a>, Memory, <a href="memory_Memory_Backtrace.html" shape="rect">Memory Backtrace</a>, and <a href="memory_Memory_Problems_View.html" shape="rect">Memory Problems</a> views are now independent views that aren't included in the Sessions view. 
+                     </li>
+                     <li>The Trace Details and Statistics views have been removed. The functionality that these views provided is now available by
+                        using the filters on the <a href="memory_Memory_Events_View.html" shape="rect">Memory Events</a> view (to obtain the same data). 
+                     </li>
+                     <li>Although you can continue to use <span class="filepath">libmalloc_g.so</span>, use <span class="filepath">librcheck.so</span> to obtain memory statistics.
+                     </li>
+                     <li>More information was added to the documentation about timelines (see <a href="sysprof_SysProf_TimelineView_.html" shape="rect">Timeline view</a> in the IDE <cite>User's Guide</cite>). 
+                     </li>
+                     <li>The cheat sheet for Memory Analysis was renamed to <span class="q">"Memory Analysis Tooling"</span>, and the cheat sheet instructions were updated to reflect the changes made to the user interface. 
+                     </li>
+                     <li>In the documentation for the IDE <cite>User's Guide</cite>, the Finding Memory Errors chapter was renamed to <span class="q">"Analyzing Memory Usage and Finding Memory Errors."</span> In addition, the topics in this chapter were reordered and modified for technical accuracy; many of the topic titles were
+                        renamed as well. 
+                        
+                     </li>
+                     <li>Now, the Memory Analysis Tooling views support grouping and search (see <a href="memory_Memory_Problems_View.html" shape="rect">Memory Problems view</a> and <a href="memory_Memory_Events_View.html" shape="rect">Memory Events view</a>), column preferences (see <a href="memory_Memory_Problems_Preferences.html" shape="rect">Memory Problems Preferences</a> and <a href="memory_Memory_Event_Preferences.html" shape="rect">Memory Events Preferences</a>), and filtering (see <a href="memory_Memory_Problems_Filter.html" shape="rect">Memory Problems Filter</a> and <a href="memory_Memory_Event_Filter.html" shape="rect">Memory Events Filter</a>). 
+                     </li>
+                     <li>The instructions to import memory analysis data were improved (see <a href="memory_ImpMemanalysisdata_.html" shape="rect">Importing memory analysis data</a> and <a href="memory_File_trace_.html" shape="rect">Performing a postmortem memory analysis</a>). 
+                     </li>
+                     <li>You can now configure memory analysis settings for a running program from the <a href="memory_Settings_Tab_Options.html" shape="rect">Settings</a> tab (available from the <a href="memory_Memory_Analysis_Editor_Group.html" shape="rect">Memory Analysis editor</a>). 
+                     </li>
+                     <li>The documented steps to attach to a running process in order to analyze memory events and traces for a running process were
+                        updated (see <a href="memory_attach_debug_malloc_.html" shape="rect">Attaching to a running process</a>. 
+                     </li>
+                     <li>We've added a warning in the documentation regarding the use of Mudflap together with Memory Analysis. If your binary is instrumented
+                        with Mudflap, you can't run Memory Analysis on it because there'll be a conflict (trying to overload the same functions),
+                        and it will cause the program to crash (see <a href="debug_UsingMudflapInIDE_.html" shape="rect">Using Mudflap</a>). 
+                     </li>
+                  </ul>
+                  
+                  
+               </li>
+               <li>
+                  <strong>Migration:</strong>
+                  <br clear="none" /><ul>
+                     <li>We've updated our platform support for this release. For a target OS, the IDE is compatible with targets that run QNX Neutrino.
+                        For a host OS, you can now use the IDE with any of the following development hosts (we don't include the IDE on self-hosted
+                        QNX Neutrino systems): <br clear="none" /><ul>
+                           <li>Microsoft Windows 7 Professional 32- and 64-bit, Vista Business 32- and 64-bit, XP Professional SP3, or 2000 SP4</li>
+                           <li>Linux Red Hat Enterprise Linux 5.4 Desktop 32- and 64-bit, Red Hat Fedora 12, Ubuntu Workstation 9.10 32- and 64-bit, or openSUSE
+                              11.2
+                           </li>
+                        </ul>
+                        
+                        <p>You can also use the QNX Neutrino RTOS as a virtual machine on VMware Workstation 6.5 or 7.0, VMware Player 3.0, and Microsoft
+                           VirtualPC 2007. We provide a VMware image of a runtime installation of QNX Neutrino. If you intend to use the IDE on VMware,
+                           to ensure that VMware is supported for your host, search the compatibility guide located at <a href="http://www.vmware.com/resources/compatibility/search.php" target="_blank" shape="rect">
+                              <span class="filepath">http://www.vmware.com/resources/compatibility/search.php</span>
+                              </a>. 
+                        </p>
+                        
+                     </li>
+                     <li>A new topic called <a href="migrate_Binary_Compatibility.html" shape="rect">Binary compatibility</a> was created in the chapter Migrating from Earlier Releases to contain a summary of all binary compatibility issues.
+                     </li>
+                     <li>Various important migration topics were updated in the IDE <cite>User's Guide</cite>. For the latest migration information for this release, see these updated migration topics: <br clear="none" /><ul>
+                           <li>
+                              <a href="migrate_Base_.html" shape="rect">Migrating from Earlier Releases</a>
+                              
+                           </li>
+                           <li>
+                              <a href="migrate_issues_642_General_.html" shape="rect">General migration considerations</a>
+                              
+                           </li>
+                           <li>
+                              <a href="migrate_issues_640_migandco_.html" shape="rect">Coexistence</a>
+                              
+                           </li>
+                           <li>
+                              <a href="migrate_issues_640_compilers_.html" shape="rect">Compiler issues</a>
+                              
+                           </li>
+                           <li>
+                              <a href="migrate_Binary_Compatibility.html" shape="rect">Binary compatibility</a>
+                              
+                           </li>
+                           <li>
+                              <a href="migrate_issues_640_CDTImpact_.html" shape="rect">CDT impact on the IDE</a>
+                              
+                           </li>
+                           <li>
+                              <a href="migrate_issues_640_installLoc_.html" shape="rect">IDE location</a>
+                              
+                           </li>
+                           <li>
+                              <a href="migrate_issues_640_switch_.html" shape="rect">Old launch configurations don't switch perspectives automatically</a>
+                              
+                           </li>
+                           <li>
+                              <a href="migrate_issues_640_reset_.html" shape="rect">Missing features in context menus</a>
+                              
+                           </li>
+                           <li>
+                              <a href="migrate_issues_640_console_.html" shape="rect">System Builder Console doesn't come to front</a>
+                              
+                           </li>
+                           <li>
+                              <a href="migrate_issues_640_revert_.html" shape="rect">Reverting to an older version of the IDE</a>
+                              
+                           </li>
+                        </ul>
+                        
+                     </li>
+                     <li>The QNX Momentics Tool Suite lets you install and work with multiple versions of Neutrino (from 6.2.1 and later). Whether
+                        you're using the command line or the IDE, you can choose which version of the OS to build programs for. As a result, various
+                        migration topics in the documentation were also updated to help you with your migration tasks. 
+                        <div class="note"><span class="notetitle">Note:</span> Only versions of Momentics with different medial version numbers can coexist. For example, 6.3.2 can coexist with 6.2.1,
+                           but not with 6.3.0. However, 6.4.0 can coexist with 6.4.1 and 6.5.0. Coexistence with 6.2.1 is supported only on Windows hosts.
+                           For more information about migration and coexistence, see <a href="migrate_Base_.html" shape="rect">Migrating from Earlier Releases</a> .
+                        </div>
+                        
+                        
+                     </li>
+                     <li>Previously, if you start the IDE, it uses your current <span class="cmdname">qconfig</span> choice as the default version of the OS. Now, the IDE uses the last installed version of the QNX software that appears in
+                        the <span class="uicontrol">Select Install</span> list on the Global QNX Preferences page. For more information about coexistence and setting this option, see <a href="migrate_issues_640_migandco_.html" shape="rect">Coexistence</a>. 
+                     </li>
+                     <li>By default, IDE 4.7 now stores its files in the following locations: 
+                        
+                        <div class="tablenoborder">
+                           <table cellpadding="4" cellspacing="0" summary="" frame="border" border="1" rules="all">
+                              <thead align="left">
+                                 <tr>
+                                    <th class="cellrowborder" valign="top" id="d190810e498" rowspan="1" colspan="1">Type of file</th>
+                                    <th class="cellrowborder" valign="top" id="d190810e501" rowspan="1" colspan="1">Default location</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td class="cellrowborder" valign="top" headers="d190810e498 d190810e501" rowspan="1" colspan="1">Workspace folder</td>
+                                    <td class="cellrowborder" valign="top" headers="d190810e498 d190810e501" rowspan="1" colspan="1">
+                                       <span class="filepath">$HOME/ide-4.7-workspace</span>
+                                       
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="cellrowborder" valign="top" headers="d190810e498 d190810e501" rowspan="1" colspan="1"><span class="filepath">.metadata</span> folder (for personal settings)
+                                    </td>
+                                    <td class="cellrowborder" valign="top" headers="d190810e498 d190810e501" rowspan="1" colspan="1">
+                                       <span class="filepath">$HOME/ide-4.7-workspace/.metadata</span>
+                                       
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="cellrowborder" valign="top" headers="d190810e498 d190810e501" rowspan="1" colspan="1">Error log</td>
+                                    <td class="cellrowborder" valign="top" headers="d190810e498 d190810e501" rowspan="1" colspan="1">
+                                       <span class="filepath">$HOME/ide-4.7-workspace/.metadata/.log</span>
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           
+                        </div>
+                        
+                     </li>
+                  </ul>
+                  
+                  
+               </li>
+               <li>
+                  <strong>System Builder:</strong>
+                  <br clear="none" /><ul>
+                     <li>The feature to build a System Builder EFS Project type was temporarily removed from the IDE. However, the documentation was
+                        updated to include instructions about how to create an EFS project. You'll need to follow the workaround instructions found
+                        in <a href="builder_CREATE_.html" shape="rect">Creating a new QNX System Builder project for an OS image</a> in the IDE <cite>User's Guide</cite>. 
+                     </li>
+                  </ul>
+                  
+                  
+               </li>
+               <li>
+                  <strong>System Profiler:</strong>
+                  <br clear="none" /><ul>
+                     <li>A new Thread Call Stack view displays the current thread call stack at a given point in time for all instrumented threads.
+                        When you profile an application with function instrumentation, the profiler records function enter and function exit events,
+                        and uses events to determine the stack at any point in a program. For more information about this feature, see <a href="sysprof_Thread_Call_Stack_View.html" shape="rect">Thread Call Stack view</a>. 
+                     </li>
+                     <li>The instructions for the System Profiler cheat sheet were updated to reflect the changes made to the user interface. </li>
+                  </ul>
+                  
+                  
+               </li>
+               <li>
+                  <strong>General:</strong>
+                  <br clear="none" /><ul>
+                     <li>In the chapter Launch Configurations Reference in the IDE <cite>User's Guide</cite>, documentation was added to <a href="launch_lnch_diff_.html" shape="rect">Types of launch configurations</a> to describe the new Group Launch configuration (see <a href="launch_Launch_Group_Type.html" shape="rect">Launch Group type</a>), as well as some clarification made to the other launch configuration types. 
+                     </li>
+                     <li>Documentation was added to describe how to disable the default editor setting that automatically performs syntax annotation
+                        highlighting in the editor (see <a href="concepts_editor_disable_syntax_annotate.html" shape="rect">Disabling automatic syntax annotation highlighting</a>). 
+                     </li>
+                     <li>After installing, your desktop now includes an icon for the QNX Momentics IDE 4.7. </li>
+                     <li>Many reference links in the IDE <cite>User's Guide</cite> were updated to go to more specific places in the guide. 
+                     </li>
+                     <li>Created a new troubleshooting topic to answer some common IDE questions you might have (see <a href="getstarted_troubleshooting.html" shape="rect">Troubleshooting in the IDE</a>). 
+                     </li>
+                     <li>In the Developing C/C++ Programs chapter in the IDE <cite>User's Guide</cite>, the following changes were made: <br clear="none" /><ul>
+                           <li>Many of the topics were reordered (see <span class="q">"
+                                 <a href="devel_Base_.html" shape="rect">Developing C/C++ Programs</a>
+                                 "</span>.
+                           </li>
+                           <li>The <span class="uicontrol">Running projects</span> was renamed to <span class="uicontrol">Running binaries for a project</span> (see <a href="devel_RUN_.html" shape="rect">Running binaries for a project</a>. 
+                           </li>
+                        </ul>
+                        
+                     </li>
+                     <li>Added information about using the <span class="option">-configuration</span> option (to re-direct the configuration to the shared install area from the command line) to the topic <span class="q">"
+                           <a href="getstarted_Update_Using_UpdateManager.html" shape="rect">Updating the IDE using the Software Updates Manager</a>
+                           "</span> in the IDE <cite>User's Guide</cite>. 
+                     </li>
+                     <li>For PhAB projects, the following variant types aren't supported: ARM v7, MIPS, and PPC SPE. </li>
+                     <li>Documentation was added to describe the steps required to import a QNX BSP into the IDE (see <span class="q">"
+                           <a href="tutorials_TUT4_.html" shape="rect">Tutorial 4: Importing a QNX BSP into the IDE</a>
+                           "</span>. 
+                     </li>
+                     <li>An important reference link was added to the topic <span class="menucascade">
+                           <span class="uicontrol">QNX Momentics IDE User's Guide</span>
+                           &gt; <span class="uicontrol">Understanding and Analyzing Memory</span>
+                           &gt; <span class="uicontrol">Using memory analysis</span>
+                           &gt; <span class="uicontrol">Using a file to log the trace</span>
+                           </span> to the <a href="../../com.qnx.doc.neutrino_prog/hat.html" shape="rect">Heap Analysis: Making Memory Errors a Thing of the Past</a> chapter in the QNX Neutrino <cite>Programmer's Guide</cite> because it contains important information. 
+                     </li>
+                     <li>In the IDE <cite>User's Guide</cite>, the <a href="debug_UsingMudflapInIDE_.html" shape="rect">Using Mudflap</a> documentation was moved from <span class="menucascade">
+                           <span class="uicontrol">Debugging in the IDE</span>
+                           &gt; <span class="uicontrol">Using Mudflap</span>
+                           </span> to <span class="menucascade">
+                           <span class="uicontrol">Analyzing Memory Usage and Finding Errors</span>
+                           &gt; <span class="uicontrol">Finding memory errors and leaks</span>
+                           &gt; <span class="uicontrol">Using Mudflap</span>
+                           </span>. 
+                     </li>
+                     <li>Documentation was created to describe how to import a BSP into the IDE (see <a href="tutorials_TUT4_.html" shape="rect">Tutorial 4: Importing a QNX BSP into the IDE</a>). 
+                     </li>
+                     <li>The steps in the <a href="tutorials_TUT1_.html" shape="rect">Tutorial 1: Creating a C/C++ project</a> were updated to reflect the changes made to the user interface. 
+                     </li>
+                     <li>In the <a href="devel_Base_.html" shape="rect">Developing C/C++ Programs</a> chapter, various changes were made to some their names and to their order in the chapter. 
+                        
+                     </li>
+                     <li>A new chapter called <a href="wizards_Base_.html" shape="rect">Project and Wizard Properties Reference</a> was created. This chapter contains descriptions for the project and wizard reference pages.
+                     </li>
+                     <li>A new chapter called <a href="IDE_admin_Base_.html" shape="rect">IDE Administration</a> was created. This chapter contains valuable information about how to administer some of the key aspects of the IDE.
+                     </li>
+                  </ul>
+                  
+                  
+               </li>
+            </ul>
+            
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/whatsnew_In_IDE_4_7.html" shape="rect">What's New in IDE 4.7</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/whatsnew_EclipseAndCDT_.html" shape="rect">Eclipse 3.5 and CDT 6.0 integration</a></div>
+            
+            <div><a href="../topic/whatsnew_CompilerTools47_.html" shape="rect">Compiler and Tools</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Input Devices">
+      <topic label="About the Input DDK" href="about.html">
+          <topic label="What you'll find in this guide" href="about.html#In_this_guide"/>
+          <topic label="Building DDKs" href="about.html#about"/>
+          <topic label="Typographical conventions" href="about.html#Typographical_conventions">
+            <topic label="Note to Windows users" href="about.html#WINDOWSNOTE"/>
+            <topic label="Navigation buttons" href="about.html#Navigation"/>
+          </topic>
+          <topic label="Technical support" href="about.html#Support"/>
+      </topic>
+      <topic label="Overview" href="overview.html">
+            <topic label="In this chapter..." href="overview.html#id3"/>
+          <topic label="DDK source code" href="overview.html#DDKSource"/>
+          <topic label="Inside an input driver" href="overview.html#INSIDE">
+            <topic label="Types of event bus lines" href="overview.html#id7"/>
+          </topic>
+          <topic label="How modules are linked" href="overview.html#MODULES"/>
+          <topic label="Interface to the system" href="overview.html#INTERFACE"/>
+          <topic label="Source file organization for devi-*" href="overview.html#SRCORG"/>
+      </topic>
+      <topic label="Writing an Input Device Driver" href="write_driver.html">
+          <topic label="In this chapter..." href="write_driver.html#id3"/>
+          <topic label="Creating an input module" href="write_driver.html#INPUTMODULE">
+            <topic label="input_module_t data type" href="write_driver.html#id6">
+              <topic label="In the sample directory" href="write_driver.html#id8"/>
+            </topic>
+          </topic>
+          <topic label="Data format" href="write_driver.html#DATAFORMAT"/>
+          <topic label="Keyboard devices" href="write_driver.html#KBD"/>
+          <topic label="Absolute devices" href="write_driver.html#ABS">
+            <topic label="Calibration file format" href="write_driver.html#id13"/>
+          </topic>
+          <topic label="Relative devices" href="write_driver.html#REL"/>
+          <topic label="Callbacks in your module" href="write_driver.html#CALLBACKS">
+            <topic label="Which callbacks are required?" href="write_driver.html#id17"/>
+            <topic label="Callback sequence" href="write_driver.html#id19"/>
+          </topic>
+          <topic label="Writing a combination device/protocol module" href="write_driver.html#COMBOMODULE"/>
+          <topic label="A note about reentrancy" href="write_driver.html#REENTRANT"/>
+      </topic>
+      <topic label="Testing and Debugging Your Driver" href="test_debug.html">
+            <topic label="Debugging a keyboard/mouse driver" href="test_debug.html#id3">
+              <topic label="PS/2 mouse" href="test_debug.html#id5"/>
+              <topic label="Keyboard filter module" href="test_debug.html#id7"/>
+            </topic>
+      </topic>
+      <topic label="Module Functions" href="module_fns.html">
+          <topic label="devctrl" href="api/devctrl.html">
+            <topic label="Description:" href="api/devctrl.html#id5"/>
+          </topic>
+          <topic label="init" href="api/init.html">
+            <topic label="Description:" href="api/init.html#id5"/>
+            <topic label="Examples:" href="api/init.html#id9"/>
+          </topic>
+          <topic label="input" href="api/input.html">
+            <topic label="Description:" href="api/input.html#id5"/>
+            <topic label="Examples:" href="api/input.html#id9"/>
+          </topic>
+          <topic label="output" href="api/output.html">
+            <topic label="Description:" href="api/output.html#id5"/>
+            <topic label="Examples:" href="api/output.html#id9"/>
+          </topic>
+          <topic label="parm" href="api/parm.html">
+            <topic label="Description:" href="api/parm.html#id5"/>
+          </topic>
+          <topic label="pulse" href="api/pulse.html">
+            <topic label="Description:" href="api/pulse.html#id5"/>
+            <topic label="Examples:" href="api/pulse.html#id9"/>
+          </topic>
+          <topic label="reset" href="api/reset.html">
+            <topic label="Description:" href="api/reset.html#id5"/>
+            <topic label="Examples:" href="api/reset.html#id9"/>
+          </topic>
+          <topic label="shutdown" href="api/shutdown.html">
+            <topic label="Description:" href="api/shutdown.html#id5"/>
+            <topic label="Examples:" href="api/shutdown.html#id9"/>
+          </topic>
+      </topic>
+      <topic label="Input API Reference" href="api_reference.html">
+          <topic label="begin" href="api/begin.html">
+            <topic label="Description:" href="api/begin.html#id5"/>
+          </topic>
+          <topic label="buff_append" href="api/buff_append.html">
+            <topic label="Description:" href="api/buff_append.html#id5"/>
+          </topic>
+          <topic label="buff_create" href="api/buff_create.html">
+            <topic label="Description:" href="api/buff_create.html#id5"/>
+          </topic>
+          <topic label="buff_delete" href="api/buff_delete.html">
+            <topic label="Description:" href="api/buff_delete.html#id5"/>
+          </topic>
+          <topic label="buff_flush" href="api/buff_flush.html">
+            <topic label="Description:" href="api/buff_flush.html#id5"/>
+          </topic>
+          <topic label="buff_getc" href="api/buff_getc.html">
+            <topic label="Description:" href="api/buff_getc.html#id5"/>
+          </topic>
+          <topic label="buff_putc" href="api/buff_putc.html">
+            <topic label="Description:" href="api/buff_putc.html#id5"/>
+          </topic>
+          <topic label="buff_waiting" href="api/buff_waiting.html">
+            <topic label="Description:" href="api/buff_waiting.html#id5"/>
+          </topic>
+          <topic label="clk_get" href="api/clk_get.html">
+            <topic label="Description:" href="api/clk_get.html#id5"/>
+          </topic>
+          <topic label="devi_enqueue_packet" href="api/devi_enqueue_packet.html">
+            <topic label="Description:" href="api/devi_enqueue_packet.html#id5"/>
+          </topic>
+          <topic label="devi_register_interrupt" href="api/devi_register_interrupt.html">
+            <topic label="Description:" href="api/devi_register_interrupt.html#id5"/>
+          </topic>
+          <topic label="devi_register_pulse" href="api/devi_register_pulse.html">
+            <topic label="Description:" href="api/devi_register_pulse.html#id5"/>
+          </topic>
+          <topic label="devi_register_timer" href="api/devi_register_timer.html">
+            <topic label="Description:" href="api/devi_register_timer.html#id5"/>
+          </topic>
+          <topic label="devi_request_iorange" href="api/devi_request_iorange.html">
+            <topic label="Description:" href="api/devi_request_iorange.html#id5"/>
+          </topic>
+      </topic>
+</toc>

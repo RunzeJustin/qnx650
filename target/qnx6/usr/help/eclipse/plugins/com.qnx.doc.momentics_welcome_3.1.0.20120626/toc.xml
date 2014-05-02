@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Welcome to the QNX Software Development Platform">
+      <topic label="About This Guide" href="about.html">
+          <topic label="Typographical conventions" href="about.html#Typographical_conventions">
+            <topic label="Note to Windows users" href="about.html#WINDOWSNOTE"/>
+            <topic label="Navigation buttons" href="about.html#Navigation"/>
+          </topic>
+      </topic>
+      <topic label="What is the QNX Software Development Platform?" href="whatis.html">
+          <topic label="Welcome to the QNX Software Development Platform" href="whatis.html#WELCOME"/>
+          <topic label="Choice, tools, source, and help" href="whatis.html#INTRO"/>
+          <topic label="QNX Momentics at a glance" href="whatis.html#PARTS"/>
+          <topic label="Additional components" href="whatis.html#Additional"/>
+          <topic label="QNX Aviage middleware" href="whatis.html#Middleware"/>
+          <topic label="Getting started before you have your target" href="whatis.html#SCENARIOS">
+            <topic label="x86 (PC) target" href="whatis.html#X86"/>
+            <topic label="x86 non-BIOS target" href="whatis.html#NOBIOS"/>
+            <topic label="Any supported CPU family" href="whatis.html#ANYCPU">
+              <topic label="Platform-related issues" href="whatis.html#id12"/>
+            </topic>
+          </topic>
+          <topic label="A word about licensing" href="whatis.html#LICENSE"/>
+      </topic>
+      <topic label="Getting Started" href="start.html">
+          <topic label="How QNX Momentics is organized" href="start.html#INSTMAP"/>
+          <topic label="What's on my desktop?" href="start.html#Desktop"/>
+          <topic label="Upgrading your software" href="start.html#UPGRADE"/>
+          <topic label="Managing source code" href="start.html#Managing_source"/>
+          <topic label="Running QNX Neutrino self-hosted" href="start.html#NTOSOLO"/>
+          <topic label="Mixing a self-hosted machine with other hosts" href="start.html#NTOPLUS"/>
+          <topic label="Can different versions of QNX Momentics coexist?" href="start.html#Coexistence">
+            <topic label="QWinCfg for Windows hosts" href="start.html#QWinCfg"/>
+            <topic label="qconfig utility for non-Windows hosts" href="start.html#qconfig"/>
+            <topic label="Coexistence and the IDE" href="start.html#Coexistence_IDE"/>
+          </topic>
+          <topic label="Running QNX Neutrino on a target machine" href="start.html#TARGET"/>
+      </topic>
+      <topic label="How to Get Help" href="help.html">
+          <topic label="Overview of the documentation" href="help.html#ROADMAP">
+            <topic label="QNX Software Development Platform" href="help.html#id4"/>
+            <topic label="QNX Momentics Tool Suite" href="help.html#id6"/>
+            <topic label="QNX Neutrino Realtime Operating System" href="help.html#id8"/>
+            <topic label="Photon microGUI" href="help.html#id10"/>
+            <topic label="Advanced Graphics" href="help.html#id12"/>
+            <topic label="Dinkum C and C++" href="help.html#id14"/>
+          </topic>
+          <topic label="Viewing the documentation" href="help.html#Viewing">
+            <topic label="Within the IDE" href="help.html#id17"/>
+            <topic label="The Photon Helpviewer" href="help.html#id19"/>
+            <topic label="Keyword indexes" href="help.html#INDEX"/>
+          </topic>
+          <topic label="What should I read first?" href="help.html#ORDER">
+            <topic label="During development (on your host)" href="help.html#id23"/>
+            <topic label="At runtime (on your target)" href="help.html#id25"/>
+          </topic>
+          <topic label="Where key features are documented" href="help.html#FEATURES"/>
+          <topic label="Related reading" href="help.html#BIBLIO">
+            <topic label="On POSIX" href="help.html#id29"/>
+            <topic label="On TCP/IP" href="help.html#id31"/>
+          </topic>
+          <topic label="Getting quick help with the use command" href="help.html#USE"/>
+          <topic label="Hover help in the IDE" href="help.html#HOVER"/>
+          <topic label="Visit http://www.qnx.com" href="help.html#URL"/>
+          <topic label="Support plans" href="help.html#SUPPORTPLANS"/>
+          <topic label="Training" href="help.html#TRAINING"/>
+          <topic label="Custom engineering and consulting" href="help.html#CE"/>
+      </topic>
+      <topic label="Glossary" href="glossary.html"/>
+</toc>

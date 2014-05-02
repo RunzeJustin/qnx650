@@ -1,0 +1,192 @@
+<function_summary>
+<function
+   name="qdb_backup"
+   summary="Start a database backup"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n int qdb_backup( qdb_hdt_t *db, int scope );\n"
+/>
+<function
+   name="qdb_bkcancel"
+   summary="Cancel a database backup"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n int qdb_bkcancel( qdb_hdl_t *hdl, int *nactive );\n"
+/>
+<function
+   name="qdb_cell"
+   summary="Return a cell's data"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n void * qdb_cell( qdb_result_t *res, int row, int col );\n"
+/>
+<function
+   name="qdb_cell_length"
+   summary="Return the length of a cell's data"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n int qdb_cell_length( qdb_result_t *res, int row, int col );\n"
+/>
+<function
+   name="qdb_cell_type"
+   summary="Return a cell's datatype"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n int qdb_cell_type( qdb_result_t *res, int row, int col );\n"
+/>
+<function
+   name="qdb_collation"
+   summary="Change the runtime configuration of user-defined collation sequences"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n int qdb_collation( qdb_hdl_t *db, void *data, int nbytes, int reindex );\n"
+/>
+<function
+   name="qdb_column_decltype"
+   summary="Retrieve declared type for a column in a result set"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n const char *qdb_column_decltype(qdb_result_t *result, int col);\n"
+/>
+<function
+   name="qdb_column_index"
+   summary="Find a column by name"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n int qdb_column_index( qdb_result_t *result, const char *name );\n"
+/>
+<function
+   name="qdb_column_name"
+   summary="Return a column's name"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n const char * qdb_column_name( qdb_result_t *res, int col );\n"
+/>
+<function
+   name="qdb_columns"
+   summary="Return the number of columns in a result"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n int qdb_columns(qdb_result_t *res);\n"
+/>
+<function
+   name="qdb_connect"
+   summary="Connect to a database"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n qdb_hdl_t *qdb_connect( const char *dbname, int flags );\n"
+/>
+<function
+   name="qdb_data_source"
+   summary="Extract the data source for a specific database"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n int qdb_data_source( qdb_hdl_t *db, char *buffer, int buffer_length );\n"
+/>
+<function
+   name="qdb_disconnect"
+   summary="Disconnect from a database"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n int qdb_disconnect( qdb_hdt_t *hdl );\n"
+/>
+<function
+   name="qdb_freeresult"
+   summary="Free the result of an SQL statement"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n int qdb_freeresult(qdb_result_t *res);\n"
+/>
+<function
+   name="qdb_getdbsize"
+   summary="Return the size of a database"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n int qdb_getdbsize( qdb_hdt_t *hdl, int scope, uint32_t *page_size, uint32_t *total_pages, uint32_t *free_pages );\n"
+/>
+<function
+   name="qdb_geterrmsg"
+   summary="Return last error"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n const char * qdb_geterrmsg(qdb_hdl_t *hdl);\n"
+/>
+<function
+   name="qdb_getoption"
+   summary="Return the value for a database session option"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n int qdb_getoption( qdb_hdt_t *hdl, int option );\n"
+/>
+<function
+   name="qdb_getresult"
+   summary="Return the result of an SQL statement"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n qdb_result_t* qdb_getresult(qdb_hdt_t *hdl);\n"
+/>
+<function
+   name="qdb_gettransstate"
+   summary="Return the size of a database"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n int qdb_gettransstate(qdb_hdl_t *hdl);\n"
+/>
+<function
+   name="qdb_interrupt"
+   summary="Interrupt a long-running query"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n int qdb_interrupt(qdb_hdl_t *db);\n"
+/>
+<function
+   name="qdb_last_insert_rowid"
+   summary="Return the last inserted row primary key"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n uint64_t qdb_last_insert_rowid( qdb_hdt_t *hdl, qdb_result_t *result );\n"
+/>
+<function
+   name="qdb_mprintf"
+   summary="Print formatted output to a new string"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n char * qdb_mprintf( const char* fmt,... );\n"
+/>
+<function
+   name="qdb_parameters"
+   summary="Get or set database connection parameters"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n int qdb_parameters( qdb_hdl_t *db, int mask, int bits );\n"
+/>
+<function
+   name="qdb_printmsg"
+   summary="Print data from a query result"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n int qdb_printmsg( FILE *file, qdb_result_t *result, int format );\n"
+/>
+<function
+   name="qdb_query"
+   summary="Perform a database query"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n qdb_result_t *qdb_query( qdb_hdl_t *db, int size_hint, const char *fmt, ... );\n"
+/>
+<function
+   name="qdb_rollback"
+   summary="Start a transaction"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n int qdb_rollback(qdb_handle_t *hdl);\n"
+/>
+<function
+   name="qdb_rowchanges"
+   summary="Return the number of rows affected by a statement"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n uint64_t qdb_rowchanges( qdb_hdt_t *hdl qdb_result_t *result );\n"
+/>
+<function
+   name="qdb_rows"
+   summary="Return the number of rows in a result"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n int qdb_rows(qdb_result_t *res);\n"
+/>
+<function
+   name="qdb_setbusytimeout"
+   summary="Set the busy timeout delay for a database connection"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n int qdb_setbusytimeout( qdb_hdt_t *hdl, int timeout );\n"
+/>
+<function
+   name="qdb_setoption"
+   summary="Set an option for a database connection"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n int qdb_setoption( qdb_hdt_t *hdl, int option, int value );\n"
+/>
+<function
+   name="qdb_snprintf"
+   summary="Print formatted output to a string, up to a given maximum number of characters"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n char * qdb_snprintf( int n, char *buf, const char *format, ...);\n"
+/>
+<function
+   name="qdb_statement"
+   summary="Execute an SQL statement"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n int qdb_statement( qdb_hdt_t *hdl, const char *format, ... );\n"
+/>
+<function
+   name="qdb_stmt_decltypes"
+   summary="Retrieve declared column types for a prepared statement"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n int qdb_stmt_decltypes(qdb_hdl_t *db, int stmtid, char **buf, ssize_t bufsize, ssize_t *required_size);\n"
+/>
+<function
+   name="qdb_stmt_exec"
+   summary="Execute a precompiled statement"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n int qdb_stmt_exec( qdb_hdl_t *hdl, int stmtid, qdb_binding_t *bindings, uint8_t binding_count );\n"
+/>
+<function
+   name="qdb_stmt_free"
+   summary="Free a precompiled statement"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n int qdb_stmt_free( qdb_hdl_t *hdl, int stmtid )"
+/>
+<function
+   name="qdb_stmt_init"
+   summary="Initialize a precompiled statement"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n int qdb_stmt_init( qdb_hdl_t *hdl, const char *sql, uint32_t len)"
+/>
+<function
+   name="qdb_vacuum"
+   summary="Vacuum a database"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n int qdb_vacuum ( qdb_hdt_t *hdl, int scope );\n"
+/>
+<function
+   name="qdb_vmprintf"
+   summary="Print formatted output to a new string"
+   synopsis="#include &lt;qdb/qdb.h&gt;\n char * qdb_vmprintf( const char* fmt, va_list arg );\n"
+/>
+</function_summary>

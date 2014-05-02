@@ -1,0 +1,199 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Debug launch controls" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_control_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_IDE_DEBUGSESSTAB_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_GoToAddressDissassembly_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Debuglaunchcontrols" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Debug launch controls</title>
+   </head>
+   <body id="Debuglaunchcontrols"><a name="Debuglaunchcontrols" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Debug launch controls</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>In addition to controlling the individual stepping of your programs, you can also control the debug session itself (e.g. terminate
+            the session, stop the program, and so on) using the debug launch controls available in the Debug view (or in the view's right-click
+            menu). 
+            
+         </p>
+         
+         
+         <p>As with the other debug controls, these are context-sensitive; some are disabled depending on whether you've selected a thread,
+            a process, and so on, in the Debug view. 
+         </p>
+         
+         
+         
+         <div class="tablenoborder">
+            <table cellpadding="4" cellspacing="0" summary="" frame="border" border="1" rules="all">
+               <thead align="left">
+                  <tr>
+                     <th class="cellrowborder" valign="top" width="NaN%" id="d64067e39" rowspan="1" colspan="1">Action</th>
+                     <th class="cellrowborder" valign="top" width="NaN%" id="d64067e42" rowspan="1" colspan="1">Icon</th>
+                     <th class="cellrowborder" valign="top" width="NaN%" id="d64067e45" rowspan="1" colspan="1">Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d64067e39" rowspan="1" colspan="1">
+                        <span class="uicontrol">Terminate</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d64067e42" rowspan="1" colspan="1">
+                        
+                        <p>
+                           <span><img src="../images/topic2Fdebug_launchcontrols_.xml_d64067e64.jpg" alt="Icon: Terminate" /></span>
+                           
+                        </p>
+                        
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d64067e45" rowspan="1" colspan="1">Kill the selected process.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d64067e39" rowspan="1" colspan="1">
+                        <span class="uicontrol">Terminate &amp; Remove</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d64067e42" rowspan="1" colspan="1">
+                        
+                        <p>
+                           <span><img src="../images/topic2Fdebug_launchcontrols_.xml_d64067e88.jpg" alt="Icon: Terminate and Remove" /></span>
+                           
+                        </p>
+                        
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d64067e45" rowspan="1" colspan="1">Kill the selected process and remove it from the Debug view.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d64067e39" rowspan="1" colspan="1">
+                        <span class="uicontrol">Terminate All</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d64067e42" rowspan="1" colspan="1">
+                        
+                        <p>
+                           <span><img src="../images/topic2Fdebug_launchcontrols_.xml_d64067e112.jpg" alt="Icon: Terminate All" /></span>
+                           
+                        </p>
+                        
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d64067e45" rowspan="1" colspan="1">Kill all active processes in the Debug view.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d64067e39" rowspan="1" colspan="1">
+                        <span class="uicontrol">Disconnect</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d64067e42" rowspan="1" colspan="1">
+                        
+                        <p>
+                           <span><img src="../images/topic2Fdebug_launchcontrols_.xml_d64067e136.jpg" alt="Icon: Disconnect" /></span>
+                           
+                        </p>
+                        
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d64067e45" rowspan="1" colspan="1">Detach the debugger (i.e. <tt>gdb</tt>) from the selected process (useful for debugging attached processes).
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d64067e39" rowspan="1" colspan="1">
+                        <span class="uicontrol">Remove All Terminated Launches</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d64067e42" rowspan="1" colspan="1">
+                        
+                        <p>
+                           <span><img src="../images/topic2Fdebug_launchcontrols_.xml_d64067e163.jpg" alt="Icon: Remove All Terminated" /></span>
+                           
+                        </p>
+                        
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d64067e45" rowspan="1" colspan="1">Clear all the killed processes from the Debug view.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d64067e39" rowspan="1" colspan="1">
+                        <span class="uicontrol">Restart</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d64067e42" rowspan="1" colspan="1">
+                        
+                        <p>
+                           <span><img src="../images/topic2Fdebug_launchcontrols_.xml_d64067e188.jpg" alt="Icon: Restart" /></span>
+                           
+                        </p>
+                        
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d64067e45" rowspan="1" colspan="1">Restart the process.</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </div>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> The debugger keeps the project's files open while the program is running. Be sure to terminate the debug session before you
+            try to rebuild the project; otherwise, the build will fail.
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/debug_control_.html" shape="rect">Controlling your debug session</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/debug_IDE_DEBUGSESSTAB_.html" shape="rect">Debug view</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/debug_GoToAddressDissassembly_.html" shape="rect">Jumping to a memory address in the Disassembly view</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

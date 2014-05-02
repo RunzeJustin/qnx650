@@ -1,0 +1,143 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="task" />
+      <meta name="DC.Title" content="Using older toolchains with the IDE" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/IDE_admin_Base_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/getstarted_Update_Using_UpdateManager.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/IDE_Admin_Administrative_Mode.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/IDE_Admin_Install_New_Software.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/getstarted_Copy_QCONN_to_Target.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/getstarted_Update_QCONN_On_Dev_System.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="IDE_Admin_InstallPlugins" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Using older toolchains with the IDE</title>
+   </head>
+   <body id="IDE_Admin_InstallPlugins"><a name="IDE_Admin_InstallPlugins" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Using older toolchains with the IDE</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <div class="p">
+            
+            <p>You can upgrade the IDE and continue to use an older toolchain if required. For example, you can have a QNX Software Development
+               Platform version 6.5.0 installed on the same machine as QNX Momentics 6.4.1, 6.3.x and 6.2.x, and in most cases, the IDE installed
+               with version 6.5.0 should work with the toolchains from these earlier releases.
+            </p>
+            
+            
+         </div>
+         
+         
+         <div class="section">
+            
+            <p>To upgrade the IDE and use an older toolchain, do the following:
+               
+               
+               
+            </p>
+            
+            
+         </div>
+         
+         
+         <ol>
+            <li class="stepexpand">
+               <span>To change versions of the QNX Momentics Tool Suite for the IDE, use <span class="cmdname">QWinCfg</span> for Windows, or use <span class="cmdname">qconfig</span> for other hosts, to set the version of the QNX Momentics Tool Suite for the IDE you want to use.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Start the IDE.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Select <span class="menucascade">
+                     <span class="uicontrol">Window</span>
+                     &gt; <span class="uicontrol">Preferences</span>
+                     </span>, and then select <span class="uicontrol">QNX</span>. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Select <span class="uicontrol">Use Environment Variables</span> from the <span class="uicontrol">Select Install</span> list on the Global QNX Preferences page.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Click <span class="uicontrol">OK</span> for the changes to take effect.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Restart the IDE so that the changes made to the environment variables in Step 1 are recognized by the IDE.</span>
+               
+               
+               <div class="note"><span class="notetitle">Note:</span> When the IDE restarts, it always uses your current <span class="cmdname">qconfig</span> or <span class="cmdname">QWinCfg</span> setting as the default version of the operating system. 
+               </div>
+               
+               
+               
+            </li>
+         </ol>
+         
+         
+         <div class="section">
+            
+            <p>Once you specify the <span class="uicontrol">Use Environment Variables</span> option, when you start the IDE, it uses your current <span class="cmdname">qconfig</span> choice as the default version of the OS; if you haven't chosen a version, the IDE chooses an entry from the directory identified
+               by <span class="envar">QNX_CONFIGURATION</span> (the location of the <span class="cmdname">qconfig</span> configuration files.) If you want to override the IDE's choice, you can choose the appropriate build target. 
+            </p>
+            
+            
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/IDE_admin_Base_.html" shape="rect">IDE Administration</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/getstarted_Update_Using_UpdateManager.html" shape="rect">Updating the IDE using the Software Updates Manager</a></div>
+            
+            <div><a href="../topic/IDE_Admin_Administrative_Mode.html" shape="rect">Running the IDE in administrative mode</a></div>
+            
+            <div><a href="../topic/IDE_Admin_Install_New_Software.html" shape="rect">Installing new software</a></div>
+            
+            <div><a href="../topic/getstarted_Copy_QCONN_to_Target.html" shape="rect">Copying a new version of qconn to a target system</a></div>
+            
+            <div><a href="../topic/getstarted_Update_QCONN_On_Dev_System.html" shape="rect">Updating qconn on a development system</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

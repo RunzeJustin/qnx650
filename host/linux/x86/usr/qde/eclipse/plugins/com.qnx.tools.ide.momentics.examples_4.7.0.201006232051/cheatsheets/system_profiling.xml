@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cheatsheet title="System Profiling" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns="cheatsheet"
+  xsi:schemaLocation="cheatsheet contentFile.xsd">
+  <intro href="/com.qnx.doc.ide.userguide/topic/sysprof_INTRO_.html">
+    <description>
+      Welcome to the "System Profiling" tutorial. 
+      It will help you to create a sample project, run several processes on the target machine, and
+      analyze data that comes from kernel logging. Click the following link to start.
+    </description>
+  </intro>
+  <item href="/org.eclipse.platform.doc.user/reference/ref-cheatsheets.htm" title="Cheat Sheet introduction">
+  <description>If you need information about how to work with cheat sheets,
+   click on the button with the question mark on the right. 
+   To see the contents of the next instruction,
+   you must complete all tasks by 
+   clicking on "Click to Complete", or by performing the 
+   auto-complete command.</description>
+  </item>
+  <item title="Before you begin" href="/com.qnx.doc.ide.userguide/topic/sysprof_GETSTART_.html">
+    <description>
+      To capture instrumentation data for analysis, the instrumented kernel procnto*-instr must be running (i.e. your system might
+      be running procnto-smp-instr.) In this step, we check the target system and make sure it is running.
+    </description>
+    <subitem label='Switch to the "QNX System Profiler" perspective by selecting "Window->Open Perspective->Other...->QNX System Profiler", and then click "OK".'>
+      <command
+        serialization="org.eclipse.ui.perspectives.showPerspective(org.eclipse.ui.perspectives.showPerspective.perspectiveId=com.qnx.tools.ide.SystemProfiler.ui.perspective.traceperspective)"
+        confirm="true"  />
+    </subitem>
+    <subitem label='Expand your target in the "Target Navigator" view (bottom left).' />
+    <subitem label='Check what process is running: "procnto" or "procnto*-instr".' />
+    <subitem
+      label='If "procnto" is running, you cannot use your target for this exercise. Click on the question mark button opposite the "Before you begin" title above, follow the instructions to create an instrumented kernel, and then run it on the target.' /></item>
+  <item title="Create Sample Project" dialog="true" skip="true" >
+    <description>
+      If you previously created an example project, you can skip this step.
+      <br />
+      To create the example project for this task, perform the following steps:
+    </description>
+    <subitem
+      label='Select "File-&gt;New-&gt;Project..." from the main menu, expand the "Examples" category within the resulting "New Project" dialog box, and select "QNX IDE Examples->QNX Example Project - System Profiling".'>
+      <command serialization="org.eclipse.ui.newWizard(newWizardId=com.qnx.tools.ide.momentics.examples.wizards.1)" confirm="true"  />
+    </subitem>
+    <subitem label='Click "Next".' skip="false" />
+    <subitem label='Do not change the project name and click "Finish".' skip="false" />
+    <onCompletion>You have created the "SystemProfilerMissedDeadlines" project.</onCompletion>
+  </item>
+  <item title="Build the project" href="/org.eclipse.cdt.doc.user/tasks/cdt_t_manualbuild.htm">
+    <description>
+      Right-click on the &quot;SystemProfilerMissedDeadlines&quot; project in the &quot;Project Explorer&quot; view, and select &quot;Build
+      Project&quot; from drop-down menu.
+    </description>
+    <onCompletion>Now, you will have several executable files in the Binaries folder.</onCompletion>
+  </item>
+  <item title="Run the processes on the target" dialog="true">
+    <description>
+      For this exercise, you must run four executables on the target: "hw_server", "cpu_burner", "high_prio_client" and "low_prio_client".
+    </description>
+    <subitem
+      label="Right-click on the &quot;hw_server&quot; executable in the &quot;Binaries&quot; folder, and select &quot;Run As-&gt;C/C++ QNX Application&quot;." />
+    <subitem label="Select the target on which program would run on the &quot;Main&quot; tab." />
+    <subitem label="Click the &quot;Run&quot; button to run the application." />
+    <subitem label="Repeat the same steps to launch the other three executables." />
+  </item>
+  <item title="Start kernel logging" href="/com.qnx.doc.ide.userguide/topic/sysprof_TARGET_.html" dialog="true">
+    <description>To record kernel events:</description>
+    <subitem label='Switch to the "QNX System Profiler" perspective.'>
+      <command
+        serialization="org.eclipse.ui.perspectives.showPerspective(org.eclipse.ui.perspectives.showPerspective.perspectiveId=com.qnx.tools.ide.SystemProfiler.ui.perspective.traceperspective)"
+        confirm="true"  />
+    </subitem>
+    <subitem label='Right-click a target in the "Target Navigator" view, and then select "Log With...-&gt;Log Configurations...". Note that if the Console view hides the Cheat Sheet view, drag the Console view to another location.'>
+      <action class="com.qnx.tools.ide.target.internal.ui.actions.LogToolbarDropdownAction" pluginId="com.qnx.tools.ide.target.ui"
+        confirm="true"  />
+    </subitem>
+    <subitem label='Select "Kernel Event Trace".' />
+    <subitem label='Click the "New" button on top.' />
+    <subitem label='Enter the name of the logging configuration as "My Kernel Logging" in the "Main" tab.' />
+    <subitem label='Select a target.' />
+    <subitem
+      label='Click the "Browse Workspace..." button, and then select the "SystemProfilerMissedDeadlines" project to save the log.' />
+    <subitem label='Switch to the "Trace Settings" tab.' />
+    <subitem label='Change the "Period length" from "3.0" to "1.0" (seconds).' />
+    <subitem label='Click the "Log" button to finish and start the logging process.' />
+    <subitem label='In the next dialog, click "Yes" to confirm the log open.' />
+  </item>
+  <item title="Summary">
+    <description>Now, you should see the "Summary" page for the event log editor.</description>
+    <subitem label='Inspect the "System Activity" chart.' />
+    <subitem label='Inspect the "Process and Thread Activity" chart.' />
+    <subitem label='Expand one "qconn" process to see the thread activity statistics.' />
+  </item>
+  <item title="Timeline" href="/com.qnx.doc.ide.userguide/topic/sysprof_System_profiler_editor_.html">
+    <description>
+      Select "System Profiler->Display->Switch Pane->Timeline" to switch the editor state. Now you should see the timeline chart.
+    </description>
+    <subitem label='Right-click on the canvas and choose "Filters..."' />
+    <subitem label='If the "Filters" view appears on the same area as the cheat
+sheet, drag and drop it to the bottom area of the "System Profiler"
+perspective with the other views.' />
+    <subitem label='In the "Filters" view, deselect everything and select the four started processes:  "hw_server", "cpu_burner", "high_prio_client" and "low_prio_client".' />
+    <subitem label='Zoom in using the "+" button in the area where some activity is occurring.' />
+    <subitem
+      label='Click on the "+" sign beside each process to expand it and see the contained threads. Threads are represented as horizontal lines with different a thickness and color.' />
+    <subitem label='Move the mouse cursor over a thread lifeline. You should see a
+hover pop-up with thread information.' />
+    <subitem label='Look at the small vertical bars crossing the thread lines. These are events.' />
+    <subitem label='Click the "Toggle IPC Lines" button at the main toolbar. You should see vertical arrows representing IPC messaging.' />
+    <subitem label='Click on one of IPC arrows. You will see event highlighting in the "Trace Event Log" view.' />
+    <subitem label='Use the "Next Event" and "Previous Event" buttons to navigate in the "Trace Event Log" view.' />
+  </item>
+  <item title="Statistics" href="/com.qnx.doc.ide.userguide/topic/sysprof_General_statistics_.html">
+    <description>
+      There are many statistics views available:
+    </description>
+    <subitem label='Switch to the "General Statistics" view. Click the Refresh button.'>
+    <command serialization="org.eclipse.ui.views.showView(org.eclipse.ui.views.showView.viewId=com.qnx.tools.ide.SystemProfiler.views.GeneralStatsView)" confirm="true"/>
+    </subitem>
+    <subitem label='Switch to the "Event Owner Statistics" view. Click the Refresh button.'>
+     <command serialization="org.eclipse.ui.views.showView(org.eclipse.ui.views.showView.viewId=com.qnx.tools.ide.SystemProfiler.views.ElementStatsView)" confirm="true"/>
+    </subitem>
+    <subitem label='Switch the editor to show CPU Usage: "System Profiler->Display->Switch Pane->CPU Usage".'></subitem>
+    <subitem label='See the online help for other topics related to System Profiling.'></subitem>
+  </item>
+</cheatsheet>

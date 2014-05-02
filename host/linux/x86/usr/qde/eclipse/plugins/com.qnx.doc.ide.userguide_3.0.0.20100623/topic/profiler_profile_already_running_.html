@@ -1,0 +1,249 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="task" />
+      <meta name="DC.Title" content="Profiling a running process" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFILING_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_build_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_profile_running_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_profile_postmortem_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_AppProfileReference_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Profilingarunningprocess" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Profiling a running process</title>
+   </head>
+   <body id="Profilingarunningprocess"><a name="Profilingarunningprocess" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Profiling a running process</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <div class="p">
+            
+            <p>You can run a process on the target (without the IDE) and collect the profiling
+               information while it's running. In order to collect profiling information, you have
+               to modify the way you normally launch your application by adding environment
+               variables: 
+            </p>
+            
+            
+            <div class="note"><span class="notetitle">Note:</span> If you're launching using the IDE, you can specify the environment variables on
+               the <span class="uicontrol">Environment</span> tab in the launch configuration.
+            </div>
+            
+            <br clear="none" /><ul>
+               <li>For Sampling only — no modification is required. </li>
+               <li>For Sampling and Call Count — the application has to be instrumented
+                  with Call Count, and the environment variable <var class="varname">QCONN_PROFILER</var>
+                  has to be set to <span class="filepath">/dev/profiler</span>. For example:
+                  <pre class="codeblock" xml:space="preserve">QCONN_PROFILER=/dev/profiler ./appname</pre>
+                  </li>
+               <li>For a Call Count instrumented binary, the following environment variables affect
+                  application behavior at runtime: <br clear="none" /><ul>
+                     <li><var class="varname">PROFDIR</var>=<var class="varname">dir</var> — turn on
+                        data collection. Data is stored in a file
+                        <span class="filepath"><var class="varname">dir</var>/<var class="varname">processId</var>.<var class="varname">binaryName</var></span>.
+                        For example if you run <var class="varname">PROFDIR</var>=<span class="filepath">/tmp
+                           ./myapp</span>, the data would be available in the file named
+                        <span class="filepath">/tmp/12345.myapp</span>. Use this option for
+                        postmortem profiling. 
+                     </li>
+                     <li><var class="varname">QCONN_PROFILER</var>=<span class="filepath">/dev/profiler</span>
+                        — setting this variable to a fixed value causes data
+                        collection to be turn on, and data is then sent to the
+                        <span class="filepath">/dev/profiler</span> resource manager, which sends it
+                        to the IDE. Use this option when attaching to a process from the IDE.
+                        
+                     </li>
+                  </ul>
+                  
+               </li>
+               <li>For a Function Instrumented binary, the following environment variables affect
+                  application behavior: <br clear="none" /><ul>
+                     <li><var class="varname">QPROF_AUTO_START</var>=<tt>0</tt> — don't start
+                        profiling automatically; instead, wait for a signal. The default is 1
+                        (start). 
+                     </li>
+                     <li><var class="varname">QPROF_FILE</var>=<var class="varname">file</var> — enable
+                        the profiler data capture process and store output to the
+                        <span class="filepath">file/device</span>. By default, profiling is turned
+                        off. The <var class="varname">QPROF_FILE</var> variable should be set to
+                        <span class="filepath">/tmp/app.ptrace</span> (the path to the file or
+                        target; the same value must be used later when attaching). 
+                     </li>
+                     <li><var class="varname">QPROF_KERNEL_TRACE</var>=<tt>1</tt> — use kernel
+                        trace events instead of the profiler trace. 
+                     </li>
+                     <li><var class="varname">QPROF_SIG_STOP_PROFILING</var>=<var class="varname">signum</var>
+                        — install the stop profiling handler for the
+                        <var class="varname">signum</var> signal. By default, it isn't installed.
+                        The recommended value is <tt>15</tt>. 
+                     </li>
+                     <li><var class="varname">QPROF_SIG_CONT_PROFILING</var>=<var class="varname">signum</var>
+                        — install the resume profiling handler for the
+                        <var class="varname">signum</var> handler. By default, it isn't installed.
+                        The recommended value is <tt>16</tt>. 
+                     </li>
+                     <li><var class="varname">QPROF_HELP</var>=<tt>1</tt> — prints profiler
+                        help and exits the application. 
+                     </li>
+                  </ul>
+                  
+               </li>
+            </ul>
+            
+            
+            <div class="note"><span class="notetitle">Note:</span> When you profile a running process, you can't use the Console view in the IDE to
+               interact with this process. If your running process requires user input through the
+               Console view, use a shell to interact with the process.
+            </div>
+            
+            
+         </div>
+         
+         
+         <div class="section">To profile a process that's already running on your target:</div>
+         
+         
+         <ol>
+            <li class="stepexpand">
+               <span>While the application is running, open the Launch Configurations dialog by
+                  choosing <span class="menucascade">
+                     <span class="uicontrol">Run</span>
+                     &gt; <span class="uicontrol">Profile…</span>
+                     </span> from the menu. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Select <span class="uicontrol">C/C++ QNX Attach to Remote Process via QConn (IP)</span>
+                  from the list on the left. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Click the <span class="uicontrol">New</span> button to create a new attach-to-process
+                  configuration. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Configure things as you normally would for launching the application with
+                  debugging. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>On the <span class="uicontrol">Tools</span> tab, click <span class="uicontrol">Add/Delete
+                     Tool…</span>. The Tools Selection dialog is displayed. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Select the <span class="uicontrol">Application Profiler</span> tool, then click
+                  <span class="uicontrol">OK</span>. On the launcher, the <span class="uicontrol">Application
+                     Profiler</span> tab is displayed.</span>
+               
+               
+               <p>
+                  <span><img src="../images/er_profile_already_running_.xml_d163500e241.jpg" alt="Launcher; tools tab; Profiler" /></span>
+                  
+               </p>
+               
+               
+               <p>For descriptions about the options, see <a href="profiler_AppProfileReference_.html" shape="rect">Application Profiler tab</a>. 
+               </p>
+               
+               
+               
+            </li>
+            <li class="stepexpand">
+               <span>If you're using Function Instrumentation, make sure that the value in the
+                  <span class="uicontrol">Path on target for profiler trace</span> field matches the
+                  value of <var class="varname">QPROF_FILE</var> that you used to run the application.
+                  </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Select <span class="uicontrol">Switch to this tool's perspective on launch.</span>
+                  </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Optional: In the launcher, click the <span class="uicontrol">Shared Libraries</span>
+                  tab.</span>
+               The IDE doesn't know the location of your shared library paths, so you must
+               specify the directory containing any libraries that you wish to profile.
+               
+               
+            </li>
+            <li class="stepexpand">
+               <span>Click <span class="uicontrol">Apply</span>, and then click <span class="uicontrol">Run</span>.
+                  The Select Process dialog shows all of the currently running processes:</span>
+               
+               
+               <p>
+                  <span><img src="../images/er_profile_already_running_.xml_d163500e305.jpg" alt="Select Process dialog" /></span>
+                  
+               </p>
+               
+               
+               
+            </li>
+            <li class="stepexpand">
+               <span>Select the process you want to profile, and then click
+                  <span class="uicontrol">OK</span>.</span>
+               
+            </li>
+         </ol>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/profiler_PROFILING_.html" shape="rect">Profiling your programs</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/profiler_build_.html" shape="rect">Building a program for profiling</a></div>
+            
+            <div><a href="../topic/profiler_profile_postmortem_.html" shape="rect">Postmortem profiling for Call Count and sampling</a></div>
+            
+            <div><a href="../topic/profiler_AppProfileReference_.html" shape="rect">Application Profiler tab</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/profiler_profile_running_.html" shape="rect">Running and profiling a process</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

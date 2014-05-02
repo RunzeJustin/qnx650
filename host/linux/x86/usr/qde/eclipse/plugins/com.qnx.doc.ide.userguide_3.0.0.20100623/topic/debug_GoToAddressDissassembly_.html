@@ -1,0 +1,227 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="task" />
+      <meta name="DC.Title" content="Jumping to a memory address in the Disassembly view" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_control_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_IDE_DEBUGSESSTAB_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_launchcontrols_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="JumpingtoamemoryaddressintheDisassemblyview" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Jumping to a memory address in the Disassembly view</title>
+   </head>
+   <body id="JumpingtoamemoryaddressintheDisassemblyview"><a name="JumpingtoamemoryaddressintheDisassemblyview" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Jumping to a memory address in the Disassembly view</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <div class="p">In the Disassembly view, you can jump to any memory address to view the section of
+            disassembly, starting at a specified memory address (a hexadecimal or decimal value. The
+            IDE then queries the debugger for the disassembly for that memory address, and refreshes
+            the view to show a section of disassembly starting with that address. 
+         </div>
+         
+         
+         <div class="section">To jump to a memory address:</div>
+         
+         
+         <ol>
+            <li class="stepexpand">
+               <span>From the Disassembly view dropdown menu, select <span class="uicontrol">Go To
+                     Address</span>.</span>
+               
+               
+               <p>
+                  <span><img src="../images/ug_GoToAddressDissassembly_.xml_d43898e32.jpg" alt="Disassembly view: jumping to a memory address" /></span>
+                  
+               </p>
+               
+               
+               <p>The Enter Address dialog appears.</p>
+               
+               
+               <p>
+                  <span><img src="../images/ug_GoToAddressDissassembly_.xml_d43898e44.jpg" alt="Disassembly view: jumping to a memory address" /></span>
+                  
+               </p>
+               
+               
+               
+            </li>
+            <li class="stepexpand">
+               <span>Type a decimal or hexadecimal value of the memory address that you want to jump
+                  to, and click <span class="uicontrol">OK</span>. </span>
+               
+               
+               <p>This action takes the memory address and creates a new Disassembly (Go To
+                  Address) view with a section of disassembly starting with the specified
+                  address.
+               </p>
+               
+               
+               <p>
+                  <span><img src="../images/ug_GoToAddressDissassembly_.xml_d43898e68.jpg" alt="Disassembly (Got To Address) view" /></span>
+                  
+               </p>
+               
+               
+               
+            </li>
+         </ol>
+         
+         
+         <div class="section">
+            
+            <p>To use this feature, you'll need to do the following:</p>
+            
+            <br clear="none" /><ul>
+               <li>obtain the line number settings from <span class="menucascade">
+                     <span class="uicontrol">Window</span>
+                     &gt; <span class="uicontrol">Preferences</span>
+                     </span> to set the new disassembly block size 
+               </li>
+               <li>find the memory address of the function to specify the hexadecimal or decimal
+                  value to jump to 
+                  <p>The secondary Disassembly (Go To Address) view shows the
+                     result from the <span class="uicontrol">Goto Address</span> action, and the
+                     disassembly block in the view remains the same when you step through your
+                     debugging process. 
+                  </p>
+                  
+               </li>
+               <li>use the <span class="uicontrol">Up</span> and <span class="uicontrol">Down</span> arrows to add
+                  more of the disassembly block before or after the current page. Note that the
+                  incremented block size is set from using <span class="menucascade">
+                     <span class="uicontrol">Window</span>
+                     &gt; <span class="uicontrol">Preferences</span>
+                     </span>.
+               </li>
+            </ul>
+            
+            
+            <p>Besides the Debug view, you'll find several other useful views in the Debug
+               perspective: 
+            </p>
+            
+            
+            <table cellpadding="4" cellspacing="0" summary="" border="1" class="simpletableborder">
+               <tr>
+                  <th valign="bottom" align="left" id="d43898e135" rowspan="1" colspan="1">To:</th>
+                  <th valign="bottom" align="left" id="d43898e138" rowspan="1" colspan="1">Use this view:</th>
+               </tr>
+               <tr>
+                  <td valign="top" headers="d43898e135" rowspan="1" colspan="1">
+                     <a href="debug_view_variables_.html" shape="rect">Inspecting variables</a>
+                     
+                  </td>
+                  <td valign="top" headers="d43898e138" rowspan="1" colspan="1">Variables</td>
+               </tr>
+               <tr>
+                  <td valign="top" headers="d43898e135" rowspan="1" colspan="1">
+                     <a href="debug_view_breakpoints_.html" shape="rect">Using breakpoints and watchpoints</a>
+                     
+                  </td>
+                  <td valign="top" headers="d43898e138" rowspan="1" colspan="1">Breakpoints</td>
+               </tr>
+               <tr>
+                  <td valign="top" headers="d43898e135" rowspan="1" colspan="1">
+                     <a href="debug_view_expressions_.html" shape="rect">Evaluating your expressions</a>
+                     
+                  </td>
+                  <td valign="top" headers="d43898e138" rowspan="1" colspan="1">Expressions</td>
+               </tr>
+               <tr>
+                  <td valign="top" headers="d43898e135" rowspan="1" colspan="1">
+                     <a href="debug_view_registers_.html" shape="rect">Inspecting your registers</a>
+                     
+                  </td>
+                  <td valign="top" headers="d43898e138" rowspan="1" colspan="1">Registers</td>
+               </tr>
+               <tr>
+                  <td valign="top" headers="d43898e135" rowspan="1" colspan="1">
+                     <a href="debug_view_memory_.html" shape="rect">Inspecting a process's memory</a>
+                     
+                  </td>
+                  <td valign="top" headers="d43898e138" rowspan="1" colspan="1">Memory</td>
+               </tr>
+               <tr>
+                  <td valign="top" headers="d43898e135" rowspan="1" colspan="1">
+                     <a href="debug_view_sharedlibraries_.html" shape="rect">Inspecting shared-library usage</a>
+                     
+                  </td>
+                  <td valign="top" headers="d43898e138" rowspan="1" colspan="1">Modules</td>
+               </tr>
+               <tr>
+                  <td valign="top" headers="d43898e135" rowspan="1" colspan="1">
+                     <a href="debug_view_signals_.html" shape="rect">Monitoring signal handling</a>
+                     
+                  </td>
+                  <td valign="top" headers="d43898e138" rowspan="1" colspan="1">Signals</td>
+               </tr>
+               <tr>
+                  <td valign="top" headers="d43898e135" rowspan="1" colspan="1">
+                     <a href="debug_view_console_.html" shape="rect">Viewing your output</a>
+                     
+                  </td>
+                  <td valign="top" headers="d43898e138" rowspan="1" colspan="1">Console</td>
+               </tr>
+               <tr>
+                  <td valign="top" headers="d43898e135" rowspan="1" colspan="1">
+                     <a href="debug_view_console_gdb_.html" shape="rect">Interacting with GDB</a>
+                     
+                  </td>
+                  <td valign="top" headers="d43898e138" rowspan="1" colspan="1">Console</td>
+               </tr>
+            </table>
+            
+            
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/debug_control_.html" shape="rect">Controlling your debug session</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/debug_IDE_DEBUGSESSTAB_.html" shape="rect">Debug view</a></div>
+            
+            <div><a href="../topic/debug_launchcontrols_.html" shape="rect">Debug launch controls</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

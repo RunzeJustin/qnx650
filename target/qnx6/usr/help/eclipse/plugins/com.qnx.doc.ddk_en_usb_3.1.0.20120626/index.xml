@@ -1,0 +1,886 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<index>
+ <entry keyword="arguments, getting command-line">
+  <topic href="usbd_args_lookup.html" title="usbd_args_lookup"/>
+ </entry>
+ <entry keyword="assumptions">
+  <topic href="about.html#Assumptions" title="Assumptions"/>
+ </entry>
+ <entry keyword="bulk data transfers">
+  <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+  <topic href="usbd_setup_bulk.html" title="usbd_setup_bulk"/>
+ </entry>
+ <entry keyword="bus topology, getting information about">
+  <topic href="usbd_topology.html" title="usbd_topology, usbd_topology_ext"/>
+ </entry>
+ <entry keyword="callbacks">
+  <topic href="usbd_connect.html#id11" title="Data structures"/>
+  <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+  <topic href="usbd_attach.html#id11" title="Looping"/>
+ </entry>
+ <entry keyword="class drivers">
+  <entry keyword="hub">
+   <topic href="overview.html#STACKANDLIB" title="The USB stack and library"/>
+  </entry>
+  <entry keyword="library for">
+   <topic href="overview.html#STACKANDLIB" title="The USB stack and library"/>
+  </entry>
+  <entry keyword="printers">
+   <topic href="utils.html" title="USB Utilities"/>
+  </entry>
+  <entry keyword="shared memory">
+   <topic href="overview.html#DATATRANSFERS" title="Data buffers"/>
+  </entry>
+  <entry keyword="source code for">
+   <topic href="about.html#In_this_guide" title="What you'll find in this guide"/>
+  </entry>
+  <entry keyword="starting">
+   <topic href="overview.html#ENUMERATOR" title="USB enumerator"/>
+  </entry>
+  <entry keyword="supported devices">
+   <topic href="usbd_connect.html#id11" title="Data structures"/>
+  </entry>
+  <entry keyword="threads, protecting resources in">
+   <topic href="usbd_connect.html#id20" title="Caveats:"/>
+  </entry>
+  <entry keyword="typical operations">
+   <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+  </entry>
+ </entry>
+ <entry keyword="command-line arguments, getting">
+  <topic href="usbd_args_lookup.html" title="usbd_args_lookup"/>
+ </entry>
+ <entry keyword="configuration">
+  <entry keyword="descriptor, getting">
+   <topic href="usbd_configuration_descriptor.html" title="usbd_configuration_descriptor"/>
+  </entry>
+  <entry keyword="displaying">
+   <topic href="utils.html" title="USB Utilities"/>
+  </entry>
+  <entry keyword="functions">
+   <topic href="api.html#CONFIG" title="Configuration and interface functions"/>
+  </entry>
+  <entry keyword="selecting">
+   <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+   <topic href="usbd_select_config.html" title="usbd_select_config"/>
+  </entry>
+ </entry>
+ <entry keyword="connection functions">
+  <topic href="api.html#CONNECT" title="Connection functions"/>
+ </entry>
+ <entry keyword="control transfers">
+  <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+  <topic href="usbd_setup_control.html" title="usbd_setup_control"/>
+ </entry>
+ <entry keyword="conventions">
+  <entry keyword="typographical">
+   <topic href="about.html#Typographical_conventions" title="Typographical conventions"/>
+  </entry>
+ </entry>
+ <entry keyword="data buffers">
+  <topic href="overview.html#DATATRANSFERS" title="Data buffers"/>
+ </entry>
+ <entry keyword="data transfers">
+ </entry>
+ <entry keyword="DDK library">
+  <entry keyword="functions">
+   <topic href="api.html" title="USB Library Reference"/>
+  </entry>
+  <entry keyword="getting information about">
+   <topic href="usbd_hcd_info.html" title="usbd_hcd_ext_info, usbd_hcd_info"/>
+  </entry>
+ </entry>
+ <entry keyword="descriptors">
+  <entry keyword="configuration">
+   <topic href="usbd_configuration_descriptor.html" title="usbd_configuration_descriptor"/>
+  </entry>
+  <entry keyword="device">
+   <topic href="usbd_device_descriptor.html" title="usbd_device_descriptor"/>
+   <topic href="usbd_parse_descriptors.html" title="usbd_parse_descriptors"/>
+  </entry>
+  <entry keyword="endpoint">
+   <topic href="usbd_endpoint_descriptor.html" title="usbd_endpoint_descriptor"/>
+   <topic href="usbd_open_pipe.html" title="usbd_open_pipe"/>
+  </entry>
+  <entry keyword="getting and setting">
+   <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+   <topic href="usbd_descriptor.html" title="usbd_descriptor"/>
+  </entry>
+  <entry keyword="hub">
+   <topic href="usbd_hub_descriptor.html" title="usbd_hub_descriptor"/>
+  </entry>
+  <entry keyword="interface">
+   <topic href="usbd_interface_descriptor.html" title="usbd_interface_descriptor"/>
+  </entry>
+  <entry keyword="language">
+   <topic href="usbd_languages_descriptor.html" title="usbd_languages_descriptor"/>
+  </entry>
+  <entry keyword="string">
+   <topic href="usbd_string.html" title="usbd_string"/>
+  </entry>
+ </entry>
+ <entry keyword="devi-hirun">
+  <topic href="beforeyoubegin.html#id12" title="Photon and text mode"/>
+ </entry>
+ <entry keyword="devices">
+  <entry keyword="attaching to">
+   <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+   <topic href="usbd_attach.html" title="usbd_attach"/>
+  </entry>
+  <entry keyword="configuration">
+   <entry keyword="displaying">
+    <topic href="utils.html" title="USB Utilities"/>
+   </entry>
+   <entry keyword="selecting">
+    <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+    <topic href="usbd_select_config.html" title="usbd_select_config"/>
+   </entry>
+  </entry>
+  <entry keyword="descriptors">
+   <entry keyword="getting">
+    <topic href="usbd_device_descriptor.html" title="usbd_device_descriptor"/>
+   </entry>
+   <entry keyword="parsing">
+    <topic href="usbd_parse_descriptors.html" title="usbd_parse_descriptors"/>
+   </entry>
+  </entry>
+  <entry keyword="detaching from">
+   <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+   <topic href="usbd_detach.html" title="usbd_detach"/>
+  </entry>
+  <entry keyword="extra memory, getting a pointer to">
+   <topic href="usbd_device_extra.html" title="usbd_device_extra"/>
+  </entry>
+  <entry keyword="features, controlling">
+   <topic href="usbd_feature.html" title="usbd_feature"/>
+  </entry>
+  <entry keyword="frame number and length, getting">
+   <topic href="usbd_get_frame.html" title="usbd_get_frame"/>
+  </entry>
+  <entry keyword="handle, mapping instance identifier to">
+   <topic href="usbd_device_lookup.html" title="usbd_device_lookup"/>
+  </entry>
+  <entry keyword="hub descriptors, getting">
+   <topic href="usbd_hub_descriptor.html" title="usbd_hub_descriptor"/>
+  </entry>
+  <entry keyword="interface, selecting">
+   <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+   <topic href="usbd_select_interface.html" title="usbd_select_interface"/>
+  </entry>
+  <entry keyword="pipe, getting for associated">
+   <topic href="usbd_pipe_device.html" title="usbd_pipe_device"/>
+  </entry>
+  <entry keyword="resetting">
+   <topic href="usbd_reset_device.html" title="usbd_reset_device"/>
+  </entry>
+  <entry keyword="status of, getting">
+   <topic href="usbd_status.html" title="usbd_status"/>
+  </entry>
+  <entry keyword="string descriptors, getting">
+   <topic href="usbd_string.html" title="usbd_string"/>
+  </entry>
+  <entry keyword="supported">
+   <topic href="beforeyoubegin.html#DEVICES" title="USB devices supported"/>
+  </entry>
+ </entry>
+ <entry keyword="devu-ehci.so">
+  <topic href="overview.html#HCITYPES" title="Host Controller Interface (HCI) types"/>
+  <topic href="utils.html" title="USB Utilities"/>
+ </entry>
+ <entry keyword="devu-ohci.so">
+  <topic href="overview.html#HCITYPES" title="Host Controller Interface (HCI) types"/>
+  <topic href="utils.html" title="USB Utilities"/>
+ </entry>
+ <entry keyword="devu-prn">
+  <topic href="utils.html" title="USB Utilities"/>
+ </entry>
+ <entry keyword="devu-uhci.so">
+  <topic href="overview.html#HCITYPES" title="Host Controller Interface (HCI) types"/>
+  <topic href="utils.html" title="USB Utilities"/>
+ </entry>
+ <entry keyword="drivers">
+  <entry keyword="command-line arguments, getting">
+   <topic href="usbd_args_lookup.html" title="usbd_args_lookup"/>
+  </entry>
+  <entry keyword="language IDs, getting supported">
+   <topic href="usbd_languages_descriptor.html" title="usbd_languages_descriptor"/>
+  </entry>
+  <entry keyword="USB stack">
+   <entry keyword="connecting to">
+    <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+    <topic href="usbd_connect.html" title="usbd_connect"/>
+   </entry>
+   <entry keyword="disconnecting from">
+    <topic href="usbd_disconnect.html" title="usbd_disconnect"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="endpoint_descriptor_t">
+  <topic href="usbd_endpoint_descriptor.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="endpoints">
+  <entry keyword="clearing a stall condition on">
+   <topic href="usbd_reset_pipe.html" title="usbd_reset_pipe"/>
+  </entry>
+  <entry keyword="descriptors">
+   <entry keyword="getting">
+    <topic href="usbd_endpoint_descriptor.html" title="usbd_endpoint_descriptor"/>
+   </entry>
+   <entry keyword="initializing pipe described by">
+    <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+    <topic href="usbd_open_pipe.html" title="usbd_open_pipe"/>
+   </entry>
+  </entry>
+  <entry keyword="number, getting for a pipe">
+   <topic href="usbd_pipe_endpoint.html" title="usbd_pipe_endpoint"/>
+  </entry>
+ </entry>
+ <entry keyword="Enhanced Host Controller Interface (EHCI)">
+  <topic href="overview.html#HCITYPES" title="Host Controller Interface (HCI) types"/>
+ </entry>
+ <entry keyword="enumerator">
+  <topic href="overview.html#ENUMERATOR" title="USB enumerator"/>
+ </entry>
+ <entry keyword="features, controlling">
+  <topic href="usbd_feature.html" title="usbd_feature"/>
+ </entry>
+ <entry keyword="frame number and length, getting">
+  <topic href="usbd_get_frame.html" title="usbd_get_frame"/>
+ </entry>
+ <entry keyword="host controllers">
+  <entry keyword="getting information about">
+   <topic href="usbd_hcd_info.html" title="usbd_hcd_ext_info, usbd_hcd_info"/>
+  </entry>
+  <entry keyword="types">
+   <topic href="overview.html#HCITYPES" title="Host Controller Interface (HCI) types"/>
+  </entry>
+ </entry>
+ <entry keyword="hubs">
+  <entry keyword="class driver for included in stack">
+   <topic href="overview.html#STACKANDLIB" title="The USB stack and library"/>
+  </entry>
+  <entry keyword="descriptors, getting">
+   <topic href="usbd_hub_descriptor.html" title="usbd_hub_descriptor"/>
+  </entry>
+  <entry keyword="supported">
+   <topic href="beforeyoubegin.html#DEVICES" title="USB devices supported"/>
+  </entry>
+ </entry>
+ <entry keyword="I/O functions">
+  <topic href="api.html#IO" title="I/O functions"/>
+ </entry>
+ <entry keyword="Input">
+  <topic href="beforeyoubegin.html#id12" title="Photon and text mode"/>
+ </entry>
+ <entry keyword="insertion/removal">
+  <topic href="usbd_connect.html#id11" title="Data structures"/>
+  <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+  <topic href="usbd_attach.html#id11" title="Looping"/>
+ </entry>
+ <entry keyword="interfaces">
+  <entry keyword="descriptors, getting">
+   <topic href="usbd_interface_descriptor.html" title="usbd_interface_descriptor"/>
+  </entry>
+  <entry keyword="functions">
+   <topic href="api.html#CONFIG" title="Configuration and interface functions"/>
+  </entry>
+  <entry keyword="selecting">
+   <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+   <topic href="usbd_select_interface.html" title="usbd_select_interface"/>
+  </entry>
+ </entry>
+ <entry keyword="interrupt transfers">
+  <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+  <topic href="usbd_setup_interrupt.html" title="usbd_setup_interrupt"/>
+ </entry>
+ <entry keyword="io-pkt*">
+  <topic href="overview.html#ENUMERATOR" title="USB enumerator"/>
+ </entry>
+ <entry keyword="io-usb">
+  <topic href="utils.html" title="USB Utilities"/>
+ </entry>
+ <entry keyword="isochronous transfers">
+  <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+  <topic href="usbd_setup_isochronous.html" title="usbd_setup_isochronous"/>
+ </entry>
+ <entry keyword="keyboards">
+  <entry keyword="controller, don&#x0027;t reset">
+   <topic href="beforeyoubegin.html#id12" title="Photon and text mode"/>
+  </entry>
+  <entry keyword="supported">
+   <topic href="beforeyoubegin.html#DEVICES" title="USB devices supported"/>
+  </entry>
+ </entry>
+ <entry keyword="language IDs, getting supported">
+  <topic href="usbd_languages_descriptor.html" title="usbd_languages_descriptor"/>
+ </entry>
+ <entry keyword="library">
+  <entry keyword="about">
+   <topic href="overview.html#STACKANDLIB" title="The USB stack and library"/>
+  </entry>
+  <entry keyword="functions">
+   <topic href="api.html" title="USB Library Reference"/>
+  </entry>
+  <entry keyword="getting information about">
+   <topic href="usbd_hcd_info.html" title="usbd_hcd_ext_info, usbd_hcd_info"/>
+  </entry>
+ </entry>
+ <entry keyword="libusbdi">
+  <topic href="api.html" title="USB Library Reference"/>
+ </entry>
+ <entry keyword="limitations">
+  <topic href="beforeyoubegin.html#LIMITS" title="Known limitations"/>
+ </entry>
+ <entry keyword="looping, as alternate method of attaching">
+  <topic href="usbd_attach.html#id11" title="Looping"/>
+ </entry>
+ <entry keyword="memory">
+  <entry keyword="data transfers">
+   <entry keyword="allocating">
+    <topic href="usbd_alloc.html" title="usbd_alloc"/>
+   </entry>
+   <entry keyword="freeing">
+    <topic href="usbd_free.html" title="usbd_free"/>
+   </entry>
+   <entry keyword="getting physical address of">
+    <topic href="usbd_mphys.html" title="usbd_mphys"/>
+   </entry>
+  </entry>
+  <entry keyword="management functions">
+   <topic href="api.html#MEM" title="Memory-management functions"/>
+  </entry>
+ </entry>
+ <entry keyword="mice, supported">
+  <topic href="beforeyoubegin.html#DEVICES" title="USB devices supported"/>
+ </entry>
+ <entry keyword="mutexes">
+  <topic href="usbd_connect.html#id20" title="Caveats:"/>
+ </entry>
+ <entry keyword="Open Host Controller Interface (OHCI)">
+  <topic href="overview.html#HCITYPES" title="Host Controller Interface (HCI) types"/>
+ </entry>
+ <entry keyword="pathname delimiter in QNX documentation">
+  <topic href="about.html#WINDOWSNOTE" title="Note to Windows users"/>
+ </entry>
+ <entry keyword="Photon">
+  <topic href="beforeyoubegin.html#id12" title="Photon and text mode"/>
+ </entry>
+ <entry keyword="pipes">
+  <entry keyword="closing">
+   <topic href="usbd_close_pipe.html" title="usbd_close_pipe"/>
+  </entry>
+  <entry keyword="endpoint number, getting">
+   <topic href="usbd_pipe_endpoint.html" title="usbd_pipe_endpoint"/>
+  </entry>
+  <entry keyword="getting associated device">
+   <topic href="usbd_pipe_device.html" title="usbd_pipe_device"/>
+  </entry>
+  <entry keyword="initializing">
+   <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+   <topic href="usbd_open_pipe.html" title="usbd_open_pipe"/>
+  </entry>
+  <entry keyword="management functions">
+   <topic href="api.html#PIPE" title="Pipe-management functions"/>
+  </entry>
+  <entry keyword="not a UNIX term in this doc">
+   <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+  </entry>
+  <entry keyword="requests, aborting all">
+   <topic href="usbd_abort_pipe.html" title="usbd_abort_pipe"/>
+  </entry>
+  <entry keyword="resetting">
+   <topic href="usbd_reset_pipe.html" title="usbd_reset_pipe"/>
+  </entry>
+ </entry>
+ <entry keyword="printers">
+  <entry keyword="class driver for">
+   <topic href="utils.html" title="USB Utilities"/>
+  </entry>
+  <entry keyword="supported">
+   <topic href="beforeyoubegin.html#DEVICES" title="USB devices supported"/>
+  </entry>
+ </entry>
+ <entry keyword="request blocks">
+ </entry>
+ <entry keyword="server">
+  <topic href="utils.html" title="USB Utilities"/>
+ </entry>
+ <entry keyword="shared memory">
+  <topic href="overview.html#DATATRANSFERS" title="Data buffers"/>
+ </entry>
+ <entry keyword="stack">
+  <entry keyword="about">
+   <topic href="overview.html#STACKANDLIB" title="The USB stack and library"/>
+  </entry>
+  <entry keyword="drivers">
+   <entry keyword="connecting to">
+    <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+    <topic href="usbd_connect.html" title="usbd_connect"/>
+   </entry>
+   <entry keyword="disconnecting from">
+    <topic href="usbd_disconnect.html" title="usbd_disconnect"/>
+   </entry>
+  </entry>
+  <entry keyword="shared memory">
+   <topic href="overview.html#DATATRANSFERS" title="Data buffers"/>
+  </entry>
+  <entry keyword="URBs (USB Request Blocks), submitting">
+   <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+   <topic href="usbd_io.html" title="usbd_io"/>
+  </entry>
+ </entry>
+ <entry keyword="string descriptors, getting">
+  <topic href="usbd_string.html" title="usbd_string"/>
+ </entry>
+ <entry keyword="support, technical">
+  <topic href="about.html#Support" title="Technical support"/>
+ </entry>
+ <entry keyword="system requirements">
+  <topic href="beforeyoubegin.html#REQUIRE" title="System requirements"/>
+ </entry>
+ <entry keyword="technical support">
+  <topic href="about.html#Support" title="Technical support"/>
+ </entry>
+ <entry keyword="threads, protecting resources in">
+  <topic href="usbd_connect.html#id20" title="Caveats:"/>
+ </entry>
+ <entry keyword="transfers">
+  <entry keyword="bulk data">
+   <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+   <topic href="usbd_setup_bulk.html" title="usbd_setup_bulk"/>
+  </entry>
+  <entry keyword="control">
+   <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+   <topic href="usbd_setup_control.html" title="usbd_setup_control"/>
+  </entry>
+  <entry keyword="initiating">
+   <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+   <topic href="usbd_io.html" title="usbd_io"/>
+  </entry>
+  <entry keyword="interrupt">
+   <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+   <topic href="usbd_setup_interrupt.html" title="usbd_setup_interrupt"/>
+  </entry>
+  <entry keyword="isochronous">
+   <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+   <topic href="usbd_setup_isochronous.html" title="usbd_setup_isochronous"/>
+  </entry>
+  <entry keyword="vendor-specific">
+   <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+   <topic href="usbd_setup_vendor.html" title="usbd_setup_vendor"/>
+  </entry>
+ </entry>
+ <entry keyword="typographical conventions">
+  <topic href="about.html#Typographical_conventions" title="Typographical conventions"/>
+ </entry>
+ <entry keyword="Universal Host Controller Interface (UHCI)">
+  <topic href="overview.html#HCITYPES" title="Host Controller Interface (HCI) types"/>
+ </entry>
+ <entry keyword="URB_DIR_IN">
+  <topic href="usbd_setup_bulk.html#id5" title="Arguments:"/>
+  <topic href="usbd_setup_control.html#id5" title="Arguments:"/>
+  <topic href="usbd_setup_interrupt.html#id5" title="Arguments:"/>
+  <topic href="usbd_setup_isochronous.html#id5" title="Arguments:"/>
+  <topic href="usbd_setup_vendor.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="URB_DIR_NONE">
+  <topic href="usbd_setup_bulk.html#id5" title="Arguments:"/>
+  <topic href="usbd_setup_control.html#id5" title="Arguments:"/>
+  <topic href="usbd_setup_interrupt.html#id5" title="Arguments:"/>
+  <topic href="usbd_setup_isochronous.html#id5" title="Arguments:"/>
+  <topic href="usbd_setup_vendor.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="URB_DIR_OUT">
+  <topic href="usbd_setup_bulk.html#id5" title="Arguments:"/>
+  <topic href="usbd_setup_control.html#id5" title="Arguments:"/>
+  <topic href="usbd_setup_interrupt.html#id5" title="Arguments:"/>
+  <topic href="usbd_setup_isochronous.html#id5" title="Arguments:"/>
+  <topic href="usbd_setup_vendor.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="URB_ISOCH_ASAP">
+  <topic href="usbd_setup_isochronous.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="URB_SHORT_XFER_OK">
+  <topic href="usbd_setup_bulk.html#id5" title="Arguments:"/>
+  <topic href="usbd_setup_control.html#id5" title="Arguments:"/>
+  <topic href="usbd_setup_interrupt.html#id5" title="Arguments:"/>
+  <topic href="usbd_setup_isochronous.html#id5" title="Arguments:"/>
+  <topic href="usbd_setup_vendor.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="URBs (USB Request Blocks)">
+  <entry keyword="allocating">
+   <topic href="usbd_alloc_urb.html" title="usbd_alloc_urb"/>
+  </entry>
+  <entry keyword="freeing">
+   <topic href="usbd_free_urb.html" title="usbd_free_urb"/>
+  </entry>
+  <entry keyword="getting status of">
+   <topic href="usbd_urb_status.html" title="usbd_urb_status"/>
+  </entry>
+  <entry keyword="setting up">
+   <entry keyword="bulk data transfers">
+    <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+    <topic href="usbd_setup_bulk.html" title="usbd_setup_bulk"/>
+   </entry>
+   <entry keyword="control transfers">
+    <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+    <topic href="usbd_setup_control.html" title="usbd_setup_control"/>
+   </entry>
+   <entry keyword="interrupt transfers">
+    <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+    <topic href="usbd_setup_interrupt.html" title="usbd_setup_interrupt"/>
+   </entry>
+   <entry keyword="isochronous transfers">
+    <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+    <topic href="usbd_setup_isochronous.html" title="usbd_setup_isochronous"/>
+   </entry>
+   <entry keyword="vendor-specific transfers">
+    <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+    <topic href="usbd_setup_vendor.html" title="usbd_setup_vendor"/>
+   </entry>
+  </entry>
+  <entry keyword="submitting">
+   <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+   <topic href="usbd_io.html" title="usbd_io"/>
+  </entry>
+ </entry>
+ <entry keyword="usb">
+  <topic href="utils.html" title="USB Utilities"/>
+ </entry>
+ <entry keyword="USB">
+  <entry keyword="descriptors, getting and setting">
+   <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+   <topic href="usbd_descriptor.html" title="usbd_descriptor"/>
+  </entry>
+  <entry keyword="link to www.usb.org">
+   <topic href="about.html#Assumptions" title="Assumptions"/>
+  </entry>
+  <entry keyword="server">
+   <topic href="utils.html" title="USB Utilities"/>
+  </entry>
+  <entry keyword="Specification revision 2.0">
+   <topic href="about.html#Assumptions" title="Assumptions"/>
+  </entry>
+ </entry>
+ <entry keyword="USB_DESC_CONFIGURATION">
+  <topic href="usbd_descriptor.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="USB_DESC_DEVICE">
+  <topic href="usbd_descriptor.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="USB_DESC_HUB">
+  <topic href="usbd_descriptor.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="USB_DESC_STRING">
+  <topic href="usbd_descriptor.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="usb_port_attachment_t">
+  <topic href="usbd_topology.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="USB_RECIPIENT_DEVICE">
+  <topic href="usbd_descriptor.html#id5" title="Arguments:"/>
+  <topic href="usbd_feature.html#id5" title="Arguments:"/>
+  <topic href="usbd_setup_control.html#id5" title="Arguments:"/>
+  <topic href="usbd_setup_vendor.html#id5" title="Arguments:"/>
+  <topic href="usbd_status.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="USB_RECIPIENT_ENDPOINT">
+  <topic href="usbd_descriptor.html#id5" title="Arguments:"/>
+  <topic href="usbd_feature.html#id5" title="Arguments:"/>
+  <topic href="usbd_setup_control.html#id5" title="Arguments:"/>
+  <topic href="usbd_setup_vendor.html#id5" title="Arguments:"/>
+  <topic href="usbd_status.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="USB_RECIPIENT_INTERFACE">
+  <topic href="usbd_descriptor.html#id5" title="Arguments:"/>
+  <topic href="usbd_feature.html#id5" title="Arguments:"/>
+  <topic href="usbd_setup_control.html#id5" title="Arguments:"/>
+  <topic href="usbd_setup_vendor.html#id5" title="Arguments:"/>
+  <topic href="usbd_status.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="USB_RECIPIENT_OTHER">
+  <topic href="usbd_descriptor.html#id5" title="Arguments:"/>
+  <topic href="usbd_feature.html#id5" title="Arguments:"/>
+  <topic href="usbd_setup_control.html#id5" title="Arguments:"/>
+  <topic href="usbd_setup_vendor.html#id5" title="Arguments:"/>
+  <topic href="usbd_status.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="USB_TYPE_CLASS">
+  <topic href="usbd_descriptor.html#id5" title="Arguments:"/>
+  <topic href="usbd_feature.html#id5" title="Arguments:"/>
+  <topic href="usbd_setup_control.html#id5" title="Arguments:"/>
+  <topic href="usbd_setup_vendor.html#id5" title="Arguments:"/>
+  <topic href="usbd_status.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="USB_TYPE_STANDARD">
+  <topic href="usbd_descriptor.html#id5" title="Arguments:"/>
+  <topic href="usbd_feature.html#id5" title="Arguments:"/>
+  <topic href="usbd_setup_control.html#id5" title="Arguments:"/>
+  <topic href="usbd_setup_vendor.html#id5" title="Arguments:"/>
+  <topic href="usbd_status.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="USB_TYPE_VENDOR">
+  <topic href="usbd_descriptor.html#id5" title="Arguments:"/>
+  <topic href="usbd_feature.html#id5" title="Arguments:"/>
+  <topic href="usbd_setup_control.html#id5" title="Arguments:"/>
+  <topic href="usbd_setup_vendor.html#id5" title="Arguments:"/>
+  <topic href="usbd_status.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="USB_VERSION">
+  <topic href="usbd_connect.html#id11" title="Data structures"/>
+ </entry>
+ <entry keyword="usbd_abort_pipe()">
+  <topic href="usbd_abort_pipe.html" title="usbd_abort_pipe"/>
+ </entry>
+ <entry keyword="usbd_alloc()">
+  <topic href="usbd_alloc.html" title="usbd_alloc"/>
+ </entry>
+ <entry keyword="usbd_alloc_urb()">
+  <topic href="usbd_alloc_urb.html" title="usbd_alloc_urb"/>
+ </entry>
+ <entry keyword="usbd_args_lookup()">
+  <topic href="usbd_args_lookup.html" title="usbd_args_lookup"/>
+ </entry>
+ <entry keyword="usbd_attach()">
+  <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+  <topic href="usbd_attach.html" title="usbd_attach"/>
+ </entry>
+ <entry keyword="usbd_bus_topology_t">
+  <topic href="usbd_topology.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="usbd_close_pipe()">
+  <topic href="usbd_close_pipe.html" title="usbd_close_pipe"/>
+ </entry>
+ <entry keyword="usbd_configuration_descriptor()">
+  <topic href="usbd_configuration_descriptor.html" title="usbd_configuration_descriptor"/>
+ </entry>
+ <entry keyword="usbd_configuration_descriptor_t">
+  <topic href="usbd_configuration_descriptor.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="usbd_connect()">
+  <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+  <topic href="usbd_connect.html" title="usbd_connect"/>
+ </entry>
+ <entry keyword="usbd_connect_parm_t">
+  <topic href="usbd_connect.html#id11" title="Data structures"/>
+ </entry>
+ <entry keyword="USBD_CONNECT_WAIT">
+  <topic href="usbd_connect.html#id11" title="Data structures"/>
+ </entry>
+ <entry keyword="USBD_CONNECT_WILDCARD">
+  <topic href="usbd_connect.html#id11" title="Data structures"/>
+ </entry>
+ <entry keyword="usbd_desc_node">
+  <topic href="usbd_parse_descriptors.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="usbd_descriptor()">
+  <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+  <topic href="usbd_descriptor.html" title="usbd_descriptor"/>
+ </entry>
+ <entry keyword="usbd_detach()">
+  <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+  <topic href="usbd_detach.html" title="usbd_detach"/>
+ </entry>
+ <entry keyword="usbd_device">
+  <topic href="usbd_pipe_device.html#id11" title="Returns:"/>
+ </entry>
+ <entry keyword="usbd_device_descriptor()">
+  <topic href="usbd_device_descriptor.html" title="usbd_device_descriptor"/>
+ </entry>
+ <entry keyword="usbd_device_descriptor_t">
+  <topic href="usbd_device_descriptor.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="usbd_device_extra()">
+  <topic href="usbd_device_extra.html" title="usbd_device_extra"/>
+ </entry>
+ <entry keyword="usbd_device_ident_t">
+  <topic href="usbd_connect.html#id11" title="Data structures"/>
+ </entry>
+ <entry keyword="usbd_device_instance_t">
+  <topic href="usbd_attach.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="usbd_device_lookup()">
+  <topic href="usbd_device_lookup.html" title="usbd_device_lookup"/>
+ </entry>
+ <entry keyword="usbd_disconnect()">
+  <topic href="usbd_disconnect.html" title="usbd_disconnect"/>
+ </entry>
+ <entry keyword="usbd_endpoint_descriptor()">
+  <topic href="usbd_endpoint_descriptor.html" title="usbd_endpoint_descriptor"/>
+ </entry>
+ <entry keyword="usbd_feature()">
+  <topic href="usbd_feature.html" title="usbd_feature"/>
+ </entry>
+ <entry keyword="usbd_free()">
+  <topic href="usbd_free.html" title="usbd_free"/>
+ </entry>
+ <entry keyword="usbd_free_urb()">
+  <topic href="usbd_free_urb.html" title="usbd_free_urb"/>
+ </entry>
+ <entry keyword="usbd_funcs_t">
+  <topic href="usbd_connect.html#id11" title="Data structures"/>
+ </entry>
+ <entry keyword="usbd_get_frame()">
+  <topic href="usbd_get_frame.html" title="usbd_get_frame"/>
+ </entry>
+ <entry keyword="usbd_hcd_ext_info(), usbd_hcd_info()">
+  <topic href="usbd_hcd_info.html" title="usbd_hcd_ext_info, usbd_hcd_info"/>
+ </entry>
+ <entry keyword="usbd_hcd_info_t">
+  <topic href="usbd_hcd_info.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="usbd_hub_descriptor()">
+  <topic href="usbd_hub_descriptor.html" title="usbd_hub_descriptor"/>
+ </entry>
+ <entry keyword="usbd_hub_descriptor_t">
+  <topic href="usbd_hub_descriptor.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="usbd_interface_descriptor()">
+  <topic href="usbd_interface_descriptor.html" title="usbd_interface_descriptor"/>
+ </entry>
+ <entry keyword="usbd_interface_descriptor_t">
+  <topic href="usbd_interface_descriptor.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="usbd_io()">
+  <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+  <topic href="usbd_io.html" title="usbd_io"/>
+ </entry>
+ <entry keyword="usbd_languages_descriptor()">
+  <topic href="usbd_languages_descriptor.html" title="usbd_languages_descriptor"/>
+ </entry>
+ <entry keyword="usbd_mphys()">
+  <topic href="usbd_mphys.html" title="usbd_mphys"/>
+ </entry>
+ <entry keyword="usbd_open_pipe()">
+  <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+  <topic href="usbd_open_pipe.html" title="usbd_open_pipe"/>
+ </entry>
+ <entry keyword="usbd_parse_descriptors()">
+  <topic href="usbd_parse_descriptors.html" title="usbd_parse_descriptors"/>
+ </entry>
+ <entry keyword="usbd_pipe_device()">
+  <topic href="usbd_pipe_device.html" title="usbd_pipe_device"/>
+ </entry>
+ <entry keyword="usbd_pipe_endpoint()">
+  <topic href="usbd_pipe_endpoint.html" title="usbd_pipe_endpoint"/>
+ </entry>
+ <entry keyword="usbd_reset_device()">
+  <topic href="usbd_reset_device.html" title="usbd_reset_device"/>
+ </entry>
+ <entry keyword="usbd_reset_pipe()">
+  <topic href="usbd_reset_pipe.html" title="usbd_reset_pipe"/>
+ </entry>
+ <entry keyword="usbd_select_config()">
+  <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+  <topic href="usbd_select_config.html" title="usbd_select_config"/>
+ </entry>
+ <entry keyword="usbd_select_interface()">
+  <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+  <topic href="usbd_select_interface.html" title="usbd_select_interface"/>
+ </entry>
+ <entry keyword="usbd_setup_bulk()">
+  <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+  <topic href="usbd_setup_bulk.html" title="usbd_setup_bulk"/>
+ </entry>
+ <entry keyword="usbd_setup_control()">
+  <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+  <topic href="usbd_setup_control.html" title="usbd_setup_control"/>
+ </entry>
+ <entry keyword="usbd_setup_interrupt()">
+  <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+  <topic href="usbd_setup_interrupt.html" title="usbd_setup_interrupt"/>
+ </entry>
+ <entry keyword="usbd_setup_isochronous()">
+  <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+  <topic href="usbd_setup_isochronous.html" title="usbd_setup_isochronous"/>
+ </entry>
+ <entry keyword="usbd_setup_vendor()">
+  <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+  <topic href="usbd_setup_vendor.html" title="usbd_setup_vendor"/>
+ </entry>
+ <entry keyword="usbd_status()">
+  <topic href="usbd_status.html" title="usbd_status"/>
+ </entry>
+ <entry keyword="USBD_STATUS_ABORTED">
+  <topic href="usbd_urb_status.html#id11" title="Completion status"/>
+ </entry>
+ <entry keyword="USBD_STATUS_BAD_PID">
+  <topic href="usbd_urb_status.html#id11" title="Completion status"/>
+ </entry>
+ <entry keyword="USBD_STATUS_BITSTUFFING">
+  <topic href="usbd_urb_status.html#id11" title="Completion status"/>
+ </entry>
+ <entry keyword="USBD_STATUS_BUFFER_OVERRUN">
+  <topic href="usbd_urb_status.html#id11" title="Completion status"/>
+ </entry>
+ <entry keyword="USBD_STATUS_BUFFER_UNDERRUN">
+  <topic href="usbd_urb_status.html#id11" title="Completion status"/>
+ </entry>
+ <entry keyword="USBD_STATUS_CMP">
+  <topic href="usbd_urb_status.html#id11" title="Completion status"/>
+ </entry>
+ <entry keyword="USBD_STATUS_CMP_ERR">
+  <topic href="usbd_urb_status.html#id11" title="Completion status"/>
+ </entry>
+ <entry keyword="USBD_STATUS_CRC_ERR">
+  <topic href="usbd_urb_status.html#id11" title="Completion status"/>
+ </entry>
+ <entry keyword="USBD_STATUS_DATA_OVERRUN">
+  <topic href="usbd_urb_status.html#id11" title="Completion status"/>
+ </entry>
+ <entry keyword="USBD_STATUS_DATA_UNDERRUN">
+  <topic href="usbd_urb_status.html#id11" title="Completion status"/>
+ </entry>
+ <entry keyword="USBD_STATUS_DEV_NOANSWER">
+  <topic href="usbd_urb_status.html#id11" title="Completion status"/>
+ </entry>
+ <entry keyword="USBD_STATUS_INPROG">
+  <topic href="usbd_urb_status.html#id11" title="Completion status"/>
+ </entry>
+ <entry keyword="USBD_STATUS_NOT_ACCESSED">
+  <topic href="usbd_urb_status.html#id11" title="Completion status"/>
+ </entry>
+ <entry keyword="USBD_STATUS_PID_FAILURE">
+  <topic href="usbd_urb_status.html#id11" title="Completion status"/>
+ </entry>
+ <entry keyword="USBD_STATUS_STALL">
+  <topic href="usbd_urb_status.html#id11" title="Completion status"/>
+ </entry>
+ <entry keyword="USBD_STATUS_TIMEOUT">
+  <topic href="usbd_urb_status.html#id11" title="Completion status"/>
+ </entry>
+ <entry keyword="USBD_STATUS_TOGGLE_MISMATCH">
+  <topic href="usbd_urb_status.html#id11" title="Completion status"/>
+ </entry>
+ <entry keyword="usbd_string()">
+  <topic href="usbd_string.html" title="usbd_string"/>
+ </entry>
+ <entry keyword="usbd_string_descriptor_t">
+  <topic href="usbd_languages_descriptor.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="USBD_TIME_DEFAULT">
+  <topic href="usbd_io.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="USBD_TIME_INFINITY">
+  <topic href="usbd_io.html#id5" title="Arguments:"/>
+ </entry>
+ <entry keyword="usbd_topology(), usbd_topology_ext()">
+  <topic href="usbd_topology.html" title="usbd_topology, usbd_topology_ext"/>
+ </entry>
+ <entry keyword="usbd_urb_status()">
+  <topic href="usbd_urb_status.html" title="usbd_urb_status"/>
+ </entry>
+ <entry keyword="USBD_VERSION">
+  <topic href="usbd_connect.html#id11" title="Data structures"/>
+ </entry>
+ <entry keyword="_USBDI_NFUNCS">
+  <topic href="usbd_connect.html#id11" title="Data structures"/>
+ </entry>
+ <entry keyword="utilities">
+  <topic href="utils.html" title="USB Utilities"/>
+ </entry>
+ <entry keyword="vendor-specific transfers">
+  <topic href="overview.html#HOWITWORKS" title="How a class driver works"/>
+  <topic href="usbd_setup_vendor.html" title="usbd_setup_vendor"/>
+ </entry>
+</index>

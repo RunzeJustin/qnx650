@@ -1,0 +1,136 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="How the coverage tool works" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/coverage_Base_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/coverage_INTRO_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/coverage_START_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/coverage_IMPGCCCODE_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/coverage_VIEWS_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/coverage_SESSIONSCC_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/coverage_PROPERTIESCC_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/coverage_REPORTCC_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="CodeCoverage_HowITWorks" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>How the coverage tool works</title>
+   </head>
+   <body id="CodeCoverage_HowITWorks"><a name="CodeCoverage_HowITWorks" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">How the coverage tool works</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>
+            The IDE's code coverage tool works in conjunction with the compiler (<span class="cmdname">gcc</span>), the QNX C library (<span class="filepath">libc</span>), and optionally the remote target agent (<span class="cmdname">qconn</span>). When code coverage is enabled for an application, the compiler instruments the code so that at run time, each branch execution
+            to a basic block is counted. During the build, the IDE produces data files in order to recreate the program's flow graph and
+            to provide line locations of each block. 
+         </p>
+         
+         
+         <div class="cautiontitle">CAUTION:</div>
+         <div class="caution">Since the IDE creates secondary data files at compilation time, you must be careful when building your programs in a multitargeted
+            build environment, such as QNX Neutrino. 
+            <p>You must either: </p>
+            <br clear="none" /><ul>
+               <li>ensure that the last compiled binary is the one you're collecting coverage data on, 
+                  <p>or: </p>
+                  
+               </li>
+               <li>enable only <em>one</em> architecture and one variant (debug or release).
+               </li>
+            </ul>
+            
+            <p>Note also that the compiler's optimizations could produce unexpected results, so you should perform coverage tests on an unoptimized,
+               debug-enabled build.
+            </p>
+            
+         </div>
+         
+         
+         <p> When you build an application with the <span class="uicontrol">Build with Code Coverage</span> build option enabled and then launch it using a <span class="uicontrol">C/C++ QNX Qconn (IP)</span> launch configuration, the instrumented code linked into the process connects to <span class="cmdname">qconn</span>, allowing the coverage data to be read from the process's data space. However, if you launch a coverage-built process with
+            coverage <em>disabled</em> in the launch configuration, this causes the process to write the coverage information to a data file (<span class="filepath">.gcda</span>) at run time, rather than read it from the process's data space. Later, you can import the data into the IDE code coverage
+            tool. For information about importing <span class="cmdname">gcc</span> coverage data from a project, see <a href="coverage_IMPGCCCODE_.html" shape="rect">Importing gcc code coverage data from a project</a> later in this chapter.
+         </p>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> If you want to instrument a static library with code coverage, you must also instrument your binary with code coverage, or
+            link with the code coverage library using the following option in the linker command: <pre class="codeblock" xml:space="preserve">-lgcov</pre>
+            <p>This option will link in the ${<span class="envar">QNX_HOST</span>}<span class="filepath">/usr/lib/gcc/<var class="varname">target</var>/<var class="varname">version</var>/libcov.a</span> library. 
+            </p>
+            
+         </div>
+         
+         
+         <p>Once a coverage session has begun, you can immediately view the data. The QNX Code Coverage perspective contains a Code Coverage
+            Sessions view that lists previous as well as currently active sessions. You can explore each session and browse the corresponding
+            source files that have received coverage data. 
+         </p>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> Code Coverage might not work as expected because the code coverage data for C++ projects includes other functions that are
+            also in the source file, such as static initializer and global constructor functions. In addition, the files included by <tt>include</tt> statements aren't included in the overall coverage total; only those functions that are in the original source are included
+            for code coverage.
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/coverage_Base_.html" shape="rect">Using Code Coverage</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/coverage_INTRO_.html" shape="rect">Types of code coverage in the IDE</a></div>
+            
+            <div><a href="../topic/coverage_VIEWS_.html" shape="rect">Associated views</a></div>
+            
+            <div><a href="../topic/coverage_SESSIONSCC_.html" shape="rect">Code Coverage Sessions view</a></div>
+            
+            <div><a href="../topic/coverage_PROPERTIESCC_.html" shape="rect">Code Coverage Properties view</a></div>
+            
+            <div><a href="../topic/coverage_REPORTCC_.html" shape="rect">Code Coverage Report view</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/coverage_START_.html" shape="rect">Enabling code coverage</a></div>
+            
+            <div><a href="../topic/coverage_IMPGCCCODE_.html" shape="rect">Importing gcc code coverage data from a project</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

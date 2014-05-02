@@ -1,0 +1,345 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Memory Problems view" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_MEMANALEDIT_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Memory_Analysis_Editor_Group.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Memory_Events_View.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Memory_Backtrace.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_InspectMemAllocations_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Memory_detail_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Memory_Problems_Filter.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Memory_Problems_Preferences.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Viewing_Statistics_For_Memory_Problems.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="memory_Memory_Problems_View" />
+      <meta name="DC.Language" content="en" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Memory Problems view</title>
+   </head>
+   <body id="memory_Memory_Problems_View"><a name="memory_Memory_Problems_View" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Memory Problems view</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>Use this view to show any memory leaks and errors in your program found by memory analysis tooling. The following are some
+            of the problems that can appear in the Memory Problems view:
+         </p>
+         
+         <br clear="none" /><ul>
+            <li>heap memory is corrupted</li>
+            <li>an attempt to free a non-heap pointer</li>
+            <li>writing to previously freed memory</li>
+            <li>a memory leak of a specific size</li>
+         </ul>
+         
+         
+         <p>The following example shows some typical memory problems that you might encounter using the Memory Problems view.</p>
+         
+         
+         <p>
+            <span><img src="../images/memory_Memory_Problems_View.xml_d120985e35.jpg" alt="Memory Problems view" /></span>
+            
+         </p>
+         
+         
+         <p>For a description about the error message text, and for more information about the particular error, see <a href="memory_Error_Messages_During_Analysis_Tab.html" shape="rect">Summary of error messages for Memory Analysis</a>. For information about the general error categories, why the errors occur, and how to fix them, see <a href="memory_Memory_detail_.html" shape="rect">Interpreting errors during memory analysis</a> .
+         </p>
+         
+         
+         <p>To show the problems, click on session or session element (such as a thread, file, and so on) from the Session View (see <a href="memory_session_view_info.html" shape="rect">Managing Memory Analysis sessions: The Session view</a>), or activate the memory analysis editor (see <a href="memory_Memory_Analysis_Editor_Group.html" shape="rect">Memory Analysis editor</a>). 
+         </p>
+         
+         
+         <p>The Memory Problems view provides the following columns in the problems table (not all columns are present by default, you
+            can select columns using the view preferences): 
+         </p>
+         
+         
+         
+         <div class="tablenoborder">
+            <table cellpadding="4" cellspacing="0" summary="" frame="border" border="1" rules="all">
+               <thead align="left">
+                  <tr>
+                     <th class="cellrowborder" valign="top" width="NaN%" id="d120985e80" rowspan="1" colspan="1">Type</th>
+                     <th class="cellrowborder" valign="top" width="NaN%" id="d120985e83" rowspan="1" colspan="1">Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120985e80" rowspan="1" colspan="1">
+                        <span class="uicontrol">Severity</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120985e83" rowspan="1" colspan="1">LEAK or ERROR with corresponding icon.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120985e80" rowspan="1" colspan="1">
+                        <span class="uicontrol">Description</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120985e83" rowspan="1" colspan="1">An Error message.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120985e80" rowspan="1" colspan="1">
+                        <span class="uicontrol">Pointer</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120985e83" rowspan="1" colspan="1">A pointer is involved in the error or leak.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120985e80" rowspan="1" colspan="1">
+                        <span class="uicontrol">Tid</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120985e83" rowspan="1" colspan="1">The thread ID of the thread that was running in which and error was detected.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120985e80" rowspan="1" colspan="1">
+                        <span class="uicontrol">Pid</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120985e83" rowspan="1" colspan="1">The process ID.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120985e80" rowspan="1" colspan="1">
+                        <span class="uicontrol">Binary</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120985e83" rowspan="1" colspan="1">The binary for the top frame of a backtrace.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120985e80" rowspan="1" colspan="1">
+                        <span class="uicontrol">Location</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120985e83" rowspan="1" colspan="1">The source location (<var class="varname">file</var>:<var class="varname">line</var>) for the top frame of a backtrace.
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120985e80" rowspan="1" colspan="1">
+                        <span class="uicontrol">Timestamp</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120985e83" rowspan="1" colspan="1">The library timestamp (can be wrapped data).</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120985e80" rowspan="1" colspan="1">
+                        <span class="uicontrol">Event id</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120985e83" rowspan="1" colspan="1">A unique event ID, ordered by error occurrence.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120985e80" rowspan="1" colspan="1">
+                        <span class="uicontrol">Trap Function</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120985e83" rowspan="1" colspan="1">A function that was checked when an error is detected.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120985e80" rowspan="1" colspan="1">
+                        <span class="uicontrol">Alloc Kind (prev. Operation)</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120985e83" rowspan="1" colspan="1">A type of heap allocation involved in an error.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120985e80" rowspan="1" colspan="1">
+                        <span class="uicontrol">Count</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120985e83" rowspan="1" colspan="1">When grouped, it represents a count of the grouped errors.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120985e80" rowspan="1" colspan="1">
+                        <span class="uicontrol">State - "in use" - pointer is used, "freed"</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120985e83" rowspan="1" colspan="1">The pointer is freed.</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </div>
+         
+         
+         
+         <p>The Memory Analysis view provides the following functionality and features:</p>
+         
+         
+         <div class="p">
+            <br clear="none" /><ul>
+               <li>Double-click a particular problem in the list, and then the IDE highlights the corresponding source code line (if it exists).</li>
+               <li>Click a particular problem in the list, the problem is selected, and the IDE updates problem backtrace in <a href="memory_Memory_Backtrace.html" shape="rect">Memory Backtrace view</a>.
+               </li>
+               <li>Click on a column header, and then the IDE sorts the data by the column value.</li>
+               <li>Drag and drop columns by their header to rearrange the column order.</li>
+               <li>Press <span class="key">Ctrl-C</span> (or use your specific platform copy command). The IDE copies the text representation of the problem to the clipboard.
+               </li>
+               <li>Double-click the view header to maximize the view (or return to normal when currently maximized).</li>
+               <li>Right-click in the table to open the context menu. For a list of context menu items, see below.</li>
+            </ul>
+            
+            
+         </div>
+         
+         
+         <div class="p">
+            <strong>View action bar</strong>
+            <br clear="none" /><ul>
+               <li><span class="uicontrol">Remove Events</span> - remove (by filtering) the current events from the view. Enabled when running. 
+               </li>
+               <li><span class="uicontrol">Dump Leaks</span> - execute the <span class="cmdname">dump leaks</span> command (the application has to run the control thread). Enabled when running.
+               </li>
+               <li><span class="uicontrol">Open Filter Dialog</span> - open the Filter dialog (see description below).
+               </li>
+               <li><span class="uicontrol">Prevent Auto-Refresh</span> - don't perform a refresh automatically. Enabled when running.
+               </li>
+               <li><span class="uicontrol">Refresh</span> - force a refresh.
+               </li>
+               <li><span class="uicontrol">View Menu</span> - open the View menu (see description below).
+               </li>
+               <li><span class="uicontrol">Minimize</span> - minimize the view. 
+               </li>
+               <li><span class="uicontrol">Maximize</span> - maximize the view (or return to normal size when currently maximized).
+               </li>
+            </ul>
+            
+            
+         </div>
+         
+         
+         <div class="p">
+            <strong>Memory Problems view context menu </strong>
+            <br clear="none" /><ul>
+               <li>
+                  <span class="uicontrol">Filter…</span> - opens the traces filter. 
+               </li>
+               <li>
+                  <span class="uicontrol">Quick Filter</span>
+                  <br clear="none" /><ul>
+                     <li>
+                        <span class="uicontrol">Up to Event</span> - show all errors up to this current error (by time occurrence).
+                     </li>
+                     <li>
+                        <span class="uicontrol">From Event</span> - show only the errors from this current error (by time occurrence). 
+                     </li>
+                     <li>
+                        <span class="uicontrol">Same backtrace</span> - show only errors with the same backtrace. 
+                     </li>
+                     <li>
+                        <span class="uicontrol">Show All</span> - reset the filter. 
+                     </li>
+                  </ul>
+                  
+                  
+               </li>
+               <li>
+                  <span class="uicontrol">Group By</span>
+                  <br clear="none" /><ul>
+                     <li>
+                        <span class="uicontrol">None</span> - no grouping is done. 
+                     </li>
+                     <li>
+                        <span class="uicontrol">Type</span> - group by error type. 
+                     </li>
+                     <li>
+                        <span class="uicontrol">Backtrace</span> - group errors with the same backtrace under a single group. For group entries, the non-aggregated column shows a value for
+                        the first entry. 
+                     </li>
+                     <li>
+                        <span class="uicontrol">Thread</span> - group by thread ID. 
+                     </li>
+                     <li>
+                        <span class="uicontrol">Severity</span> - group by error severity. 
+                     </li>
+                  </ul>
+                  
+                  
+               </li>
+               <li>
+                  <span class="uicontrol">Show Backtrace</span> - activates the Memory Backtrace view and shows the current backtrace in the view. 
+               </li>
+               <li>
+                  <span class="uicontrol">Show Source</span> - show the context menu and double-click, then go to the selected event source location. 
+               </li>
+               <li>
+                  <span class="uicontrol">Preferences…</span> - open the view preferences dialog to set the column selection and order.<em></em>
+                  
+               </li>
+            </ul>
+            
+            
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <ul class="ullinks">
+            <li class="ulchildlink"><strong><a href="../topic/memory_Memory_Problems_Filter.html" shape="rect">Memory Problems Filter</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/memory_Memory_Problems_Preferences.html" shape="rect">Memory Problems Preferences</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/memory_Viewing_Statistics_For_Memory_Problems.html" shape="rect">Viewing statistics for memory problems</a></strong><br clear="none" />
+               
+            </li>
+         </ul>
+         
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/memory_MEMANALEDIT_.html" shape="rect">Viewing Memory Analysis data</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/memory_Memory_Analysis_Editor_Group.html" shape="rect">Memory Analysis editor</a></div>
+            
+            <div><a href="../topic/memory_Memory_Events_View.html" shape="rect">Memory Events view</a></div>
+            
+            <div><a href="../topic/memory_Memory_Backtrace.html" shape="rect">Memory Backtrace view</a></div>
+            
+            <div><a href="../topic/memory_Memory_detail_.html" shape="rect">Interpreting errors during memory analysis</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/memory_InspectMemAllocations_.html" shape="rect">Inspecting outstanding allocations</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

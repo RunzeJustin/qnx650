@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">QNX AOA Example</string>
+    <string name="label_1">Send Data:</string>
+    <string name="label_2">Received Data:</string>
+    <string name="label_3">Slide Bar:</string>
+    <string name="label_4">Colour:</string>
+    <string name="rb_red">Red</string>
+    <string name="rb_green">Green</string>
+    <string name="rb_yellow">Yellow</string>
+    <string name="rb_blue">Blue</string>
+    <string name="rb_none">None</string>
+</resources>

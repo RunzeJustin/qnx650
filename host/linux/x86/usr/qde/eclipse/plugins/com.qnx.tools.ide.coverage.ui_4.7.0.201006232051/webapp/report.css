@@ -1,0 +1,67 @@
+/* this centers the tables on the pages */
+body {text-align: left}
+
+/* headings */
+h1, h2, h3, h4 {font-family: Verdana, Arial, sans-serif}
+h4 {text-align: left; margin-bottom: 3; margin-top: 0; padding-top: 0}
+/* report banner */
+p.report {font-size: 15pt; text-align: center; color: #000000; background-color: #ffffff; margin-bottom: 0em; margin-top: 0em}
+
+/* session banner */
+p.session {color: #000000; background-color: #ffffff; margin-bottom: 0em; margin-top: 0em}
+
+/* nav banner */
+p.nav {color: #808080; background-color: #ffffff; margin-bottom: 2em}
+p.nav a:link {color: #8080cc}
+p.nav a:visited {color: #cc80cc}
+
+a:hover {text-decoration: underline}
+a.coverage-url {color: #000000; text-decoration: none}
+
+/* tables */
+/* separation between tables, 2em = 2 lines of text */
+table {margin-bottom: 0em; width: 100%}
+table.report { border: solid thick black}
+
+/* table cells */
+td,th {font-family: Verdana, Arial, sans-serif; font-size: 10pt;}
+
+/* background color for table column headers; that's two hex digits for R, G, B. 
+   #ffffe0 is 255 red, 255 green, 224 blue = pale yellow
+   common color constants will also work, e.g. white, black, red, yellow, blue, green */
+th.session, th.project, th.folder, th.file, th.function, th.coverage, th.sub-coverage, th.blank
+{
+	color: #000000; 
+	background-color: #ffffe0;
+	border: thin solid #c0c0c0 
+}
+
+th.seperator { background-color: #ffffff; height: 2px}
+
+/* table rows */
+tr.project {white-space: nowrap;color: #000000; background-color: #a0a0ff;border: thin solid #a0a0ff } 
+tr.folder {white-space: nowrap;color: #000000; background-color: #b0b0ff;border: thin solid #b0b0ff }
+tr.file {white-space: nowrap;color: #000000; background-color: #d0d0ff;border: thin solid #d0d0ff }
+tr.function {white-space: nowrap;color: #000000; background-color: #f0f0ff;border: thin solid #f0f0ff } 
+
+td.blank {white-space: nowrap;color: #000000; background-color: #f0f0ff;}
+
+td.coverage_bar {text-align: left; width: 100px; border: 1px solid #808080}
+td.project_num { width: 100px; text-align: right; border: 1px solid #808080}
+td.folder_num {width: 100px; text-align: right; border: 1px solid #808080}
+td.file_num { width: 100px; text-align: right; border: 1px solid #808080}
+td.function_num { width: 100px; text-align: right;border: 1px solid #808080}
+
+td.lineno, td.ulineno {width: 50px; text-align: right}
+
+/* source code */
+pre.source {margin-bottom: 0px}
+th.slinecoverage, th.sline, th.slineno {text-align: center; background-color: #ccccff; border: thin solid #c0c0c0; border-top: thin solid black}
+
+td.slinecoverage, td.slineno, td.cslineno, td.uslineno, td.mslineno {width: 50px; text-align: right;}
+
+td.sline, td.csline, td.usline, td.msline {text-align: left; font-family: "Courier New", Courier, monospace; font-size: 10pt; padding: 0 0 0 4px; border-top: none}
+
+td.cslineno, td.csline {background-color: #ccffcc}
+td.uslineno, td.usline {background-color: #ffcccc}
+td.mslineno, td.msline {background-color: #ffffa0}

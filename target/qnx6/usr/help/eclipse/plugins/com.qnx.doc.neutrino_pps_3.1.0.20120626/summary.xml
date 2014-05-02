@@ -1,0 +1,7 @@
+<function_summary>
+<function
+   name="ppsparse"
+   summary="Parse an object read from PPS"
+   synopsis="#include &lt;sys/pps.h&gt;\n extern pps_status_t ppsparse( char **ppsdata, const char * const *objnames, const char * const *attrnames, pps_attrib_t *info, int parse_flags );\n"
+/>
+</function_summary>

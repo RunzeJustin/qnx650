@@ -1,0 +1,288 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Examining interrupt latency" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_Use_cases_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Examininginterruptlatency" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Examining interrupt latency</title>
+   </head>
+   <body id="Examininginterruptlatency"><a name="Examininginterruptlatency" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Examining interrupt latency</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>There are several different types of interrupt latency that you can measure in a system:
+            
+         </p>
+         
+         <br clear="none" /><ul>
+            <li>the time from the HW signal generation to the start of software processing </li>
+            <li>the time it takes before a non-OS control function can be invoked in response to the interrupt </li>
+            <li>the time it takes for a user thread to be activated in response to this type of external event </li>
+         </ul>
+         
+         
+         <p>The System Profiler, as a type of software logic analyzer, helps you look at the timing of activities once the interrupt has
+            been acknowledged by the operating system. In order to accurately measure the time between the signal generation and the acknowledgment
+            of it, you need additional hardware tools. 
+         </p>
+         
+         
+         <p>
+            <strong>Requirements</strong>
+            
+         </p>
+         
+         
+         <p>To measure interrupt service time (the time taken for the operating system to acknowledge the interrupt, handle it, and return
+            to normal processing), you must log the Neutrino Interrupt Entry/Exit events. 
+         </p>
+         
+         
+         <p>If you're interested in the time from the operating system's acknowledgment to a service handling routine, then you also need
+            to capture the Interrupt Handler Entry/Exit events in the log file. 
+         </p>
+         
+         
+         <p>To properly gauge the latency in triggering a response in user code, you should also log the Neutrino thread READY and RUNNING
+            states, in addition to the communication PULSE events, since these are often used to trigger a user application's behavior
+            in response to an interrupt. 
+         </p>
+         
+         
+         <p>
+            <strong>Procedure</strong>
+            
+         </p>
+         
+         
+         <p>Interrupt activity is best viewed in the System Profiler editor using the Timeline editor pane. Open the target log file in
+            the System Profiler editor. Switch to the Timeline editor pane via the menu item <span class="menucascade">
+               <span class="uicontrol">System Profiler</span>
+               &gt; <span class="uicontrol">Display</span>
+               &gt; <span class="uicontrol">Switch Pane</span>
+               &gt; <span class="uicontrol">Timeline</span>
+               </span>.
+            
+            
+         </p>
+         
+         
+         <p>You should see a display that resembles the following. The details will of course be different, but the layout similar: </p>
+         
+         
+         <p>
+            <span><img src="../images/2Fsysprof_Interrupt_latency_.xml_d176744e94.jpg" alt="System Profiler: Timeline editor" /></span>
+            
+         </p>
+         
+         
+         <p>This display shows the various event owners/sources (interrupts, interrupt handlers, processes and threads) as a tree with
+            their associated events arranged horizontally as a timeline. 
+         </p>
+         
+         
+         <p>If you've logged Interrupt Handler Entry/Exit events, then you should be able to expand the interrupt entries to show the
+            various handlers (more than one handler can be attached to service an interrupt source), such as the following: 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/2Fsysprof_Interrupt_latency_.xml_d176744e110.jpg" alt="System Profiler: interrupt handlers" /></span>
+            
+         </p>
+         
+         
+         <p>Here you can see that the <tt>io-pkt</tt> process has attached to <cite>Interrupt 0x8c</cite> and that <span class="cmdname">proncto</span> has attached to <cite>Interrupt 0x800000000</cite>, which on this system is the timer interrupt firing once every millisecond or so. 
+         </p>
+         
+         
+         <p>You can determine how many interrupt events are occurring in this log file by using the General Statistics view. This view
+            is part of the default System Profiler perspective, and you can also access it via <span class="menucascade">
+               <span class="uicontrol">Window</span>
+               &gt; <span class="uicontrol">Show View</span>
+               &gt; <span class="uicontrol">Other…</span>
+               &gt; <span class="uicontrol">General Statistics</span>
+               </span>. 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/2Fsysprof_Interrupt_latency_.xml_d176744e152.jpg" alt="System Profiler: Refresh statistics" /></span>
+            
+         </p>
+         
+         
+         <p>If you use the refresh button, this view extracts the event statistics for the entire log file (default), or for only a selected
+            area if specified. This results in the following display: 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/2Fsysprof_Interrupt_latency_.xml_d176744e165.jpg" alt="System Profiler: entire log file" /></span>
+            
+         </p>
+         
+         
+         <p>This table provides a breakdown for all of the event sources, showing the number of raw events and also the maximum, minimum,
+            average, and total duration of the various Neutrino thread states in this log file. 
+         </p>
+         
+         
+         <p>If you're interested in only the events associated with the timer interrupt (<cite>Interrupt 0x80000000</cite>), you can select that event owner in the Timeline editor pane: 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/2Fsysprof_Interrupt_latency_.xml_d176744e183.jpg" alt="System Profiler: timer interrupt" /></span>
+            
+         </p>
+         
+         
+         <p>Next, uncheck the <span class="uicontrol">Show statistics for all elements</span> check box at the bottom of the General Statistics view: 
+         </p>
+         
+         
+         <p>The General Statistics view tables will show the content limited to just the selected event owners. </p>
+         
+         
+         <p>Using this technique, you can get an estimate of the rough order of magnitude of how many events you're looking at in a log
+            file, and in the case of interrupts, you can see some of the statistics about what the maximum, minimum, average, and total
+            times spent were. 
+         </p>
+         
+         
+         <p>This display also lets you drill down further into the results, by allowing navigation in the Timeline editor pane directly
+            to the maximum and minimum times, where you can look at the exact timing sequences. To do this, select one of the entries
+            in the States table, and then right-click or use the toolbar to jump to the appropriate selection. 
+         </p>
+         
+         
+         <p>In order to look at the timing sequence of an interrupt, you usually have to zoom in on the timeline a significant amount
+            to achieve an adequate level of visual detail, since interrupt processing is typically fast compared to the length of the
+            log files. If you zoom into an area where a networking interrupt is being processed, the Timeline editor pane will change
+            to look something like: 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/2Fsysprof_Interrupt_latency_.xml_d176744e211.jpg" alt="System Profiler: interrupt details" /></span>
+            
+         </p>
+         
+         
+         <p>At this level of granularity, it also helps to see the trace event log concurrently with the Timeline editor pane. This is
+            part of the standard System Profiler perspective, and you can access it using <span class="menucascade">
+               <span class="uicontrol">Window</span>
+               &gt; <span class="uicontrol">Show View</span>
+               &gt; <span class="uicontrol">Other…</span>
+               &gt; <span class="uicontrol">Trace Event Log</span>
+               </span>. The Trace Event Log and the Timeline editor pane are synchronized; when you change your cursor in the editor, the selection
+            in the Trace Event Log view also changes. 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/2Fsysprof_Interrupt_latency_.xml_d176744e239.jpg" alt="System Profiler: synchronizing" /></span>
+            
+         </p>
+         
+         
+         <p>The selection synchronization is shown here. In the Trace Event Log view, we've selected the <cite>Interrupt 0x8c</cite> Entry event through to the <cite>Interrupt 0x8c</cite> Exit event. This represents the start to end of the processing of the interrupt event. In the timeline display, this selection
+            is made and the timing measurement of 11.304 microseconds is displayed: 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/2Fsysprof_Interrupt_latency_.xml_d176744e257.jpg" alt="System Profiler: timing measurement" /></span>
+            
+         </p>
+         
+         
+         <p>So the total interrupt handling time from start to end of the operating system interrupt service routine, including the event
+            handler was 11.304 microseconds. If you want to just look at the handling time for interrupt handler attached by the <tt>io-pkt</tt> process, you can see that this time is only 8 microseconds. These times represent the earliest and latest points in time
+            that can be measured before entering/exiting control of the software. 
+         </p>
+         
+         
+         <p>You can also see in this example that the <tt>io-pkt</tt> interrupt handler is returning a pulse that's triggering something in the user's application (event 13515) and that an <tt>io-pkt</tt> thread is then scheduled to service that request. You can also measure this latency to determine how long it takes to go
+            from operating system awareness of the interrupt to eventual application processing, using the same selection technique: 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/2Fsysprof_Interrupt_latency_.xml_d176744e281.jpg" alt="System Profiler: interrupt latency" /></span>
+            
+         </p>
+         
+         
+         <p>There are many different choices in terms of what time ranges are of interest to measure. Here we've decided to measure from
+            the time that the operating system is aware of the interrupt (event 13511) through to the point at which the user process
+            has started to respond to the signal generated by the <tt>io-pkt</tt> interrupt handler. Since the interrupt handler communicates using a pulse (event 13515), then the earliest that the user
+            code can respond is when the <tt>MsgReceive()</tt> kernel call exits (event 13519) with the received pulse. In this case, we can see that the end-to-end latency from OS awareness
+            to the start of user processing (nonprivileged) is 46.304 microseconds: 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/2Fsysprof_Interrupt_latency_.xml_d176744e300.jpg" alt="System Profiler: timing measurement" /></span>
+            
+         </p>
+         
+         
+         <p>Alternate measurements that could be of interest and that you can easily examine include: </p>
+         
+         <br clear="none" /><ul>
+            <li>The time that it takes for the user process to be scheduled rather than the time for it to start processing. This would be
+               signified by a transition of one of the receiving process's (<tt>io-pkt</tt>) threads to a READY or RUNNING state (event 13516 for example). This time may be significantly different from the actual
+               start of processing time in busy systems with execution taking place with mixed priorities. 
+            </li>
+            <li>The time between the end of specific interrupt handler processing, and the awareness of the user process (either the scheduling
+               or the start of processing) of the interrupt's occurrence. This timing can be quite relevant when there are multiple interrupt-handling
+               routines sharing the interrupt that may skew the time before the interrupt handler starts its processing of the interrupt.
+               
+            </li>
+         </ul>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/sysprof_Use_cases_.html" shape="rect">System Profiler use cases</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

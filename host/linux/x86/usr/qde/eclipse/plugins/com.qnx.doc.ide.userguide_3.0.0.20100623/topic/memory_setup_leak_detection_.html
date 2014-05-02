@@ -1,0 +1,144 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="task" />
+      <meta name="DC.Title" content="Enabling leak detection" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Memory_Leaks.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Enable_Mem_Leak_Detect.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_interpret_leak_results_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="MemoryLeak_enableLeakDetection" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Enabling leak detection</title>
+   </head>
+   <body id="MemoryLeak_enableLeakDetection"><a name="MemoryLeak_enableLeakDetection" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Enabling leak detection</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <div class="p">To run leak a detection application and all user specific shared libraries, it should be compiled with debug information,
+            and the target should have <span class="filepath">librcheck.so</span> library installed.
+         </div>
+         
+         
+         <div class="section">
+            
+            <p>To enable leak detection, from the IDE: </p>
+            
+            
+         </div>
+         
+         
+         <ol>
+            <li class="stepexpand">
+               <span>From an existing launch configuration, select the <span class="uicontrol">Tools</span> tab. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Select <span class="uicontrol">Add/Delete Tool</span>. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Select <span class="uicontrol">Memory Analysis</span> and click <span class="uicontrol">OK</span>. </span>
+               
+               
+               <p>
+                  <span><img src="../images/emory_setup_leak_detection_.xml_d134085e63.jpg" alt="Memory Analysis Tool - Select Tool" /></span>
+                  
+               </p>
+               
+               
+               
+            </li>
+            <li class="stepexpand">
+               <span>On the <span class="uicontrol">Memory Analysis</span> tab, expand <span class="uicontrol">Memory Errors</span>.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>The easiest way to detect leaks is to specify a time interval for leak detection. For example, if you want to enable leak
+                  detection every minute, enter <span class="key">60000</span> (for 60 seconds) in the <span class="uicontrol">Perform leak check every (ms)</span> field.</span>
+               
+               <span><img src="../images/emory_setup_leak_detection_.xml_d134085e97.jpg" alt="Memory Analysis Tool - Error Settings" /></span>
+               
+               
+            </li>
+            <li class="stepexpand">
+               <span>On the <span class="uicontrol">Memory Analysis</span> tab, expand <span class="uicontrol">Memory Traces</span>  and ensure that tracing is enabled. If tracing isn't enabled, leaks would be detected, but wouldn't carry out the allocation
+                  backtrace, which makes it almost impossible to identify.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Select the <span class="uicontrol">Perform leak check when process exits</span> option if your application exists normally.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Select the <span class="uicontrol">Switch to this tool's perspective on launch'</span> option.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>After enabling Memory Analysis in a launch configuration, run that configuration. </span>
+               
+            </li>
+         </ol>
+         
+         
+         <div class="section">
+            
+            <p>There are a few other ways to enable memory analysis, including attaching to a running application or postmortem analysis.
+               For more information about these and other launch options, see <a href="memory_analyzing_.html" shape="rect">Launching your program with Memory Analysis</a>. 
+            </p>
+            
+            
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/memory_Memory_Leaks.html" shape="rect">Memory leaks</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/memory_interpret_leak_results_.html" shape="rect">Interpreting leaks</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/memory_Enable_Mem_Leak_Detect.html" shape="rect">Detecting leaks on demand during program execution</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

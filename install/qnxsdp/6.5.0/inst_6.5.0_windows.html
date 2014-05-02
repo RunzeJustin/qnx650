@@ -1,0 +1,729 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+
+<title>QNX&reg; Software Development Platform 6.5.0:
+Installation Note &#8212; Windows Hosts</title>
+
+<meta content="inst_6.5.0_windows.sgm Rev" name="IQ" />
+<meta name="description" content="QNX&reg; Software Development Platform 6.5.0: Installation Note &#8212; Windows Hosts" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="../../style.css" />
+<link rel="stylesheet" type="text/css" href="../../qnxdoc.css" />
+</head>
+<body bgcolor="#ffffff" text="#000000" class="notepage">
+
+<h1><a name="id1" id="id1">QNX<sup>&reg;</sup> Software Development Platform 6.5.0:
+Installation Note &#8212; Windows Hosts</a></h1>
+
+
+
+
+
+<p><b>Date of this edition:</b> June 30, 2010
+
+</p>
+<p><b>Target OS</b>: This development suite produces software that's
+compatible with targets that are running QNX<sup>&reg;</sup> Neutrino<sup>&reg;</sup> 6.5.0.
+
+</p>
+<p><b>Host OS</b>: You can install this package on
+Microsoft Windows 7 Professional 32- and 64-bit,
+Vista Business 32- and 64-bit, XP Professional SP3,
+or 2000 SP4.
+
+
+</p>
+
+<div class="caution"><hr class="caution" />
+<table class="caution">
+<tr><td class="cautionicon" valign="top"><img src="caution.gif" alt="Caution:" /></td>
+<td class="caution">If you installed an alpha version of this software, uninstall it before
+installing the production version.</td></tr>
+</table>
+<hr class="caution" /></div>
+
+
+
+<div class="note"><hr class="note" />
+<table class="note">
+<tr><td class="noteicon" valign="top"><img src="pointing.gif" alt="Note:" /></td>
+<td class="note"><ul>
+<li>We no longer support development for ARMBE targets, but we once again
+  support it for MIPS.
+
+</li>
+<li>If you've already installed an evaluation version of QNX SDP 6.5.0,
+  and you've purchased and received a commercial QNX license,
+  please go to 
+  <span class="quote">&#8220;<a href="#Commercial" class="xref">Commercializing your evaluation software</a>,&#8221;</span>
+  below. 
+
+</li>
+<li>This installer does a fresh installation of QNX SDP 6.5.0.
+  It can coexist with earlier versions of the
+  QNX Momentics<sup>&reg;</sup> development suite.
+
+</li>
+<li>For information about using BSPs with QNX SDP 6.5.0, see the
+  <a href="http://community.qnx.com/sf/wiki/do/viewPage/projects.bsp/wiki/SDP_6.4.0_BSP_Info" class="xref">BSP Migration Guide</a>
+  in the BSPs and Drivers project on Foundry27.
+
+</li>
+<li>For information about QNX SDP, including any host-specific issues, see
+  the release notes.
+  For the most up-to-date version of these notes, go to our website,
+  <a href="http://www.qnx.com" class="xref"><tt class="url">www.qnx.com</tt></a>,
+  log into your myQNX account, and then go to the Download Center.
+
+</li>
+</ul></td></tr>
+</table>
+<hr class="note" /></div>
+
+
+
+<h1 class="h1"><a name="id3" id="id3">Contents</a></h1>
+
+
+<ul>
+<li><a href="#New_licensing" class="xref">Licensing</a></li>
+<li><a href="#SystemReq" class="xref">System requirements</a></li>
+<li><a href="#Install" class="xref">Installing QNX SDP 6.5.0</a></li>
+<li><a href="#Activating" class="xref">Activating QNX SDP 6.5.0</a></li>
+<li><a href="#Notes" class="xref">Important notes</a></li>
+<li><a href="#Commercial" class="xref">Commercializing your evaluation software</a></li>
+<li><a href="#Uninstall" class="xref">Uninstalling QNX SDP 6.5.0</a></li>
+<li><a href="#Base_Directory" class="xref">Determining your base directory</a></li>
+<li><a href="#Docs" class="xref">Getting started with the docs</a></li>
+<li><a href="#TSPORT" class="xref">Technical support</a></li>
+</ul>
+
+<h1 class="h1"><a name="New_licensing" id="New_licensing">Licensing</a></h1>
+
+<p>QNX SDP 6.5.0 introduces a new licensing scheme:
+
+</p>
+<ul>
+<li>There are several QNX Development License streams that govern
+  how the QNX Software Development Platform can be used in different
+  situations.
+  The key on your license certificate will cause the appropriate
+  license agreement to be displayed when you install QNX SDP;
+  that development license governs your use of the product.
+
+</li>
+<li>6.5.0 doesn't accept license keys from earlier versions of QNX SDP.
+
+</li>
+<li>If you have a support plan for an earlier version of QNX SDP, you
+  can get a license key for 6.5.0 from our website; go to
+  <a href="http://www.qnx.com" class="xref"><tt class="url">http://www.qnx.com</tt></a>,
+  log into your myQNX account, and click <b class="ui">Upgrade to QNX SDP 6.5</b>.
+
+</li>
+<li>Some licensing is now for a specific user.
+  If your license key indicates that you have a <span class="quote">&#8220;named user&#8221;</span>
+  license, the activation requires that you provide an email address.
+
+</li>
+</ul>
+<p>Once you've installed the QNX Software Development Platform, you can find
+all the license agreements in 
+<i class="var">base_dir</i><tt class="fname">/install/qnxsdp/6.5.0</tt>,
+where <i class="var">base_dir</i> is where you installed SDP
+(see the output from the <tt class="cmd">qconfig</tt> command).
+
+</p>
+<p>For more information about license agreements, see the
+<b class="ui">Licensing</b> area of
+<a href="http://www.qnx.com" class="xref"><tt class="url">http://www.qnx.com</tt></a>,
+or email
+<a href="mailto:licensing@qnx.com" class="xref"><tt class="email">licensing@qnx.com</tt></a>.
+
+</p>
+
+<h1 class="h1"><a name="SystemReq" id="SystemReq">System requirements</a></h1>
+
+<p>Host OS:
+
+</p>
+<ul>
+<li>Windows 7</li>
+<li>Windows Vista</li>
+<li>Windows Vista 64-bit</li>
+<li>Windows XP SP2 or SP3</li>
+<li>Windows 2000 SP4</li>
+</ul>
+<table border="1" width="100%">
+
+<tr>
+<th>    </th>
+<th>Minimum
+    </th>
+<th>Recommended</th>
+</tr>
+
+<tr>
+<td>Processor
+    </td>
+<td>Pentium III, 700 MHz
+    </td>
+<td>Pentium 4,  2 GHz or more</td>
+</tr>
+
+<tr>
+<td>RAM
+    </td>
+<td>256 MB<sup>a</sup>
+    </td>
+<td>512 MB<sup>a</sup></td>
+</tr>
+
+<tr>
+<td>Disk space
+    </td>
+<td>2.5 GB<sup>a</sup>
+    </td>
+<td>3.4 GB<sup>a</sup></td>
+</tr>
+
+<tr>
+<td>Monitor
+    </td>
+<td>1024&#215;768
+    </td>
+<td>1280&#215;1024</td>
+</tr>
+
+</table>
+
+<p><sup>a</sup> Windows Vista requires an additional 512 MB of available RAM
+and disk space.
+
+</p>
+<p>The System Profiler in the IDE requires a minimum
+color depth of 16 bits.
+
+</p>
+
+<h2 class="h2"><a name="VMwareCompat" id="VMwareCompat">VMware compatibility</a></h2>
+
+<p>If you intend to use the QNX SDP on VMware, to ensure that VMware is supported 
+for your host, search the compatibility guide located at
+<a href="http://www.vmware.com/resources/compatibility/search.php" class="xref"> 
+<tt class="url">http://www.vmware.com/resources/compatibility/search.php</tt></a>.
+
+</p>
+
+<h1 class="h1"><a name="Install" id="Install">Installing QNX SDP 6.5.0</a></h1>
+
+
+<div class="note"><hr class="note" />
+<table class="note">
+<tr><td class="noteicon" valign="top"><img src="pointing.gif" alt="Note:" /></td>
+<td class="note">In order to install QNX SDP, the QNX license file must be writable by everyone.
+If the installer stops and warns you that this file isn't writable,
+you can make it so by right-clicking on
+<tt class="fname">C:\Program Files\QNX Software Systems\license</tt> and choosing
+Properties.
+Make sure that the <span class="quote">&#8220;Read-only&#8221;</span> attribute isn't checked,
+click <b class="ui">Apply</b>, and then click <b class="ui">OK</b>.
+(Ref# 62419) </td></tr>
+</table>
+<hr class="note" /></div>
+
+
+<p>To install this software:
+
+</p>
+<ol>
+
+<li>Boot into Windows and log in as the system administrator.
+
+</li>
+<li>If you're using Windows Vista or Windows 7, disable
+  User Account Control (UAC). (Ref# 77791).
+
+</li>
+<li>Log into your myQNX account on our website, and
+  then go to the  Download area.
+
+</li>
+<li>Download the QNX SDP 6.5.0 package,
+  <tt class="fname">qnxsdp-6.5.0-</tt><i class="var">nnnnnnnnnnnn</i><tt class="fname">-win32.exe</tt>,
+  where <i class="var">nnnnnnnnnnnn</i> is a build number.
+  The package is an executable (<tt class="fname">.exe</tt>) file.
+
+  
+<div class="note"><hr class="note" />
+<table class="note">
+<tr><td class="noteicon" valign="top"><img src="pointing.gif" alt="Note:" /></td>
+<td class="note">  Windows might insert a number in square brackets before the first
+  period in the filename (e.g.
+  <tt class="fname">qnxsdp-6[1].4.1-</tt><i class="var">nnnnnnnnnnnn</i><tt class="fname">-win32.exe</tt>)
+  These extra characters shouldn't cause any problems.
+  </td></tr>
+</table>
+<hr class="note" /></div>
+
+
+
+</li>
+<li>Verify that the checksum of the package matches the one given in
+  the Download area.
+
+</li>
+<li>Double-click the installer file in Windows Explorer or run it at
+the command line.
+
+
+<div class="note"><hr class="note" />
+<table class="note">
+<tr><td class="noteicon" valign="top"><img src="pointing.gif" alt="Note:" /></td>
+<td class="note">Windows XP may display a security warning when you install
+QNX SDP 6.5.0.
+You can verify the archive's checksum when you download the file from
+our website.</td></tr>
+</table>
+<hr class="note" /></div>
+
+
+
+</li>
+<li>Follow the instructions on your screen.
+  We recommend you use the default location for the software,
+  <tt class="fname">C:\QNX650</tt>.
+
+  <p>  The installer will ask if you wish to install a package of
+  GNU Public License programs, such as <tt class="cmd">tar</tt> and <tt class="cmd">sed</tt>.
+  We recommend that you do so for development machines.
+
+  </p><p>  If QNX Software Systems has a contract with you to support
+  server-based licenses (Automated License Management), 
+  you have a special license key that tells the software to enforce
+  these licenses.
+  In this case, the installer presents a panel where you can specify
+  the hostname or IP address of the server, and
+  the port on which the server is listening for connections.
+  If you're using the default port, you can leave the port blank. 
+
+</p></li>
+<li>Log out and back in again.
+  (Ref# 39631)
+
+</li>
+</ol>
+
+
+<div class="note"><hr class="note" />
+<table class="note">
+<tr><td class="noteicon" valign="top"><img src="pointing.gif" alt="Note:" /></td>
+<td class="note">Java's AWT and Swing aren't supported in 16 color mode; they require a
+minimum of 256 colors.
+If you get a message, <span class="quote">&#8220;Unable to run in graphical mode,&#8221;</span>
+run the installer in console mode, by typing this in a DOS prompt window:
+
+<pre class="cmdsamp">
+<i class="var">drive</i>:\qnxsdp-6.5.0-<i class="var">nnnnnnnnnnnn</i>-win32.exe -console</pre>
+
+
+<p>where <i class="var">drive</i> is the drive letter for your CD drive, and
+<i class="var">nnnnnnnnnnnn</i> is the appropriate build number.</p></td></tr>
+</table>
+<hr class="note" /></div>
+
+
+<p>Congratulations &#8212; you've completed the installation!
+Your desktop should now include an icon for starting the
+QNX Momentics IDE.
+You'll find a copy of the license agreements in
+<i class="var">base_dir</i><tt class="fname">/install/qnxsdp/6.5.0</tt>, where
+<i class="var">base_dir</i> is where you installed SDP (see
+<span class="quote">&#8220;<a href="#Base_Directory" class="xref">Determining your base directory</a>,&#8221;</span>
+below).
+
+</p>
+
+<div class="note"><hr class="note" />
+<table class="note">
+<tr><td class="noteicon" valign="top"><img src="pointing.gif" alt="Note:" /></td>
+<td class="note">If you install 6.5.0, and you then install 6.3.2, you need to move the
+cleanup utility <tt class="fname">QNXWinCleanup.exe</tt> from
+<tt class="fname">$QNX_HOST</tt> to <tt class="fname">C:\WINDOWS</tt>.
+(Ref# 56879)</td></tr>
+</table>
+<hr class="note" /></div>
+
+
+
+<h1 class="h1"><a name="Activating" id="Activating">Activating QNX SDP 6.5.0</a></h1>
+
+<p>QNX SDP 6.5.0 and certain related products require activation.
+If you don't activate the product within the specified timeframe, the 
+product will cease to function until you activate it.
+No personal data is transferred during the activation process.
+If your license key indicates that you have a <span class="quote">&#8220;named user&#8221;</span>
+license, the activation requires that you provide an email address.
+
+</p>
+
+<div class="note"><hr class="note" />
+<table class="note">
+<tr><td class="noteicon" valign="top"><img src="pointing.gif" alt="Note:" /></td>
+<td class="note">If you install QNX Software Development Platform 6.5.0 
+using a third-party windows explorer (e.g. Total Commander), the
+installer doesn't display the Activation window once the installation
+is complete.
+(Ref# 59359) 
+
+<p><b>Workaround:</b> Open the QNX SDP Activation dialog by selecting
+<span class="menu"><b class="ui">Programs</b>--&gt;<b class="ui">QNX Software Development Platform 6.5.0</b>--&gt;<b class="ui">License Management</b>--&gt;<b class="ui">Activate License</b></span>
+from the Start menu, or by entering the following at the command prompt:
+
+</p><pre class="cmdsamp">
+<i class="var">drive</i>:\Program Files\QNX Software Systems\bin\qnxactivate -a</pre>
+</td></tr>
+</table>
+<hr class="note" /></div>
+
+
+<p>If your development host is connected to the Internet, you
+can activate QNX SDP 6.5.0 automatically;
+if your machine isn't connected to the Internet, you must
+activate your software manually from a machine that is, by doing the
+following:
+
+</p>
+<ol>
+
+<li>In the QNX SDP Activation dialog, click Activate Manually.
+
+  <p>  The Manual Activation dialog appears with an activate-prompt key.
+  This dialog has a button that you can use to save the activate-prompt key
+  in a file,
+  <i class="var">drive</i><tt class="fname">:\Program Files\QNX Software Systems\license\activate_prompt_key.txt</tt>,
+  where <i class="var">drive</i> is the name of the drive where you installed
+  QNX SDP 6.5.0.
+  This can eliminate the need to retype the key, which can be error-prone.
+
+</p></li>
+<li>Transfer the activate-prompt key to the machine that's connected
+  to the Internet.
+
+</li>
+<li>Go to our website,
+  <a href="http://www.qnx.com/" class="xref"><tt class="url">www.qnx.com</tt></a>,
+  log into your myQNX account, and choose
+  <b class="ui">Manual Product Activation</b>.
+
+</li>
+<li>Enter the activate-prompt key into the form that appears, and then
+  click Generate Response Key.
+  This will return an activate-response key.
+
+</li>
+<li>Copy the activate-response key and paste it in a file.
+
+</li>
+<li>Transfer the file into
+  <i class="var">drive</i><tt class="fname">:\Program Files\QNX Software Systems\license\activate_response_key.txt</tt>
+  on your QNX SDP development host.
+
+</li>
+<li>If you closed the  QNX SDP Activation dialog, open it again
+  by selecting
+  <span class="menu"><b class="ui">Programs</b>--&gt;<b class="ui">QNX Software Development Platform 6.5.0</b>--&gt;<b class="ui">License Management</b>--&gt;<b class="ui">Activate License</b></span>
+  from the Start menu, or by entering the following at the command prompt:
+
+  <pre class="cmdsamp">
+  <i class="var">drive</i>:\Program Files\QNX Software Systems\bin\qnxactivate -a
+  </pre>
+
+
+</li>
+<li>Choose Activate Manually, and use the Load Response from File button
+  to load the activate-response key, and then click Activate.
+
+</li>
+</ol>
+
+<p>If you choose not to activate at the time of installation, you can activate 
+later by selecting
+<span class="menu"><b class="ui">Programs</b>--&gt;<b class="ui">QNX Software Development Platform 6.5.0</b>--&gt;<b class="ui">License Management</b>--&gt;<b class="ui">Activate License</b></span>
+from the Start menu, or by entering the following at the command prompt:
+
+</p>
+<pre class="cmdsamp">
+<i class="var">drive</i>:\Program Files\QNX Software Systems\bin\qnxactivate -a</pre>
+
+<p>where <i class="var">drive</i> is the name of the drive where you installed
+QNX SDP 6.5.0.
+
+</p>
+
+<h1 class="h1"><a name="Notes" id="Notes">Important notes</a></h1>
+
+<ul>
+<li>We provide the Korn shell (<tt class="cmd">ksh.exe</tt>), which
+you'll find under <b class="envar">${QNX_HOST}</b><tt class="fname">/usr/bin</tt> 
+(e.g. <tt class="fname">C:\QNX650\host\win32\x86\usr\bin</tt>). You
+may want to create desktop shortcuts for the executables you'll use often.
+
+</li>
+<li>On Windows, the QNX-provided <tt class="cmd">echo.exe</tt>
+interprets the Windows <tt class="lit">\</tt> separator as an escape
+character. As a result, environment variable settings won't
+work if you use <tt class="lit">\</tt> as a path separator; use
+<tt class="lit">/</tt> instead. (Ref# 19924)
+
+</li>
+<li>If your <b class="envar">PATH</b> contains quotation marks, <tt class="cmd">ln-w</tt>
+  doesn't work properly. (Ref# 20046)
+
+</li>
+</ul>
+
+<h1 class="h1"><a name="Commercial" id="Commercial">Commercializing your evaluation software</a></h1>
+
+<p>If you installed an evaluation copy of QNX SDP 6.5.0, and you've now
+received a commercial QNX license, do the following to add your 
+commercial license:
+
+</p>
+<ol>
+
+<li>Choose
+  <span class="menu"><b class="ui">Programs</b>--&gt;<b class="ui">QNX Software Development Platform 6.5.0</b>--&gt;<b class="ui">License Management</b>--&gt;<b class="ui">Add License</b></span>
+  from the Start menu, or enter the following at the command prompt:
+
+  <p>  <i class="var">base_directory</i><tt class="cmd">\install\qnxsdp\6.5.0\AddLicense.exe</tt>
+
+  </p><p>  where <i class="var">base_directory</i> is where you installed QNX SDP (see
+  <span class="quote">&#8220;<a href="#Base_Directory" class="xref">Determining your base directory</a>,&#8221;</span>
+  below).
+
+</p></li>
+<li>In the QNX SDP License Key Entry dialog, fill in the field with the 
+  license-key information.
+
+</li>
+<li>When you've finished entering the information, click <b class="ui">Add</b> to save
+  the license-key information and configure your QNX Momentics tools to use
+  this file. 
+
+</li>
+<li>After entering the license key, you'll be presented with the appropriate
+  license agreement.
+  You'll need to accept it in order to successfully add a license.
+
+</li>
+</ol>
+
+
+<h1 class="h1"><a name="Uninstall" id="Uninstall">Uninstalling QNX SDP 6.5.0</a></h1>
+
+
+<div class="note"><hr class="note" />
+<table class="note">
+<tr><td class="noteicon" valign="top"><img src="pointing.gif" alt="Note:" /></td>
+<td class="note">You should uninstall QNX products in the reverse order in which you
+installed them.
+To determine this order, open a <tt class="cmd">bash</tt> shell and use a command
+like this:
+
+<p><tt class="cmd">ls -lt `$QNX_HOST/usr/bin/find </tt><i class="var">base_directory</i><tt class="cmd"> -name "*uninstall*.exe"`</tt>
+
+</p><p>where <i class="var">base_directory</i> is where you installed the
+QNX Software Development Platform.</p></td></tr>
+</table>
+<hr class="note" /></div>
+
+
+<p>To uninstall QNX SDP 6.5.0, do the following:
+
+</p>
+<ol>
+
+<li>Log in as the system administrator.
+
+</li>
+<li>If you're using Windows Vista or Windows 7, disable
+  User Account Control (UAC). (Ref# 77791).
+
+</li>
+<li>Do one of the following:
+
+<ul>
+<li>Choose 
+  <span class="menu"><b class="ui">Programs</b>--&gt;<b class="ui">QNX Software Development Platform 6.5.0</b>--&gt;<b class="ui">Uninstall QNX Software Development Platform 6.5.0</b></span>
+  from the Start menu.
+
+<p>or:
+
+</p></li>
+<li>Choose <b class="ui">Add or Remove Programs</b> from the Control Panel.
+
+<p>or:
+
+</p></li>
+<li>On Windows Vista, choose <b class="ui">Programs and Features</b>, select
+  QNX Software Development Platform 6.5.0, and then click
+  <b class="ui">Uninstall/Change</b>.
+
+<p>or:
+
+</p></li>
+<li>Go to the directory that contains the <tt class="fname">QNX650</tt> folder and run
+  <tt class="cmd">QNX650\_uninstall\qnxsdp\6.5.0\uninstaller.exe</tt>.
+
+</li>
+</ul>
+
+</li>
+<li>When prompted, restart your machine.
+
+  
+<div class="caution"><hr class="caution" />
+<table class="caution">
+<tr><td class="cautionicon" valign="top"><img src="caution.gif" alt="Caution:" /></td>
+<td class="caution">  When you uninstall QNX SDP, Windows schedules the
+  uninstaller for removal the next time you restart your system.
+  If you don't restart your system, and you reinstall QNX SDP, its
+  uninstaller will be removed the next time you restart your system.
+  (Ref# 62183)
+  </td></tr>
+</table>
+<hr class="caution" /></div>
+
+
+
+</li>
+</ol>
+
+
+<div class="note"><hr class="note" />
+<table class="note">
+<tr><td class="noteicon" valign="top"><img src="pointing.gif" alt="Note:" /></td>
+<td class="note"><ul>
+<li>In some cases, if you uninstall QNX SDP 6.5.0, the Add or Remove Programs
+window still lists some BSPs, and DDKs.
+Press <span class="key" style="font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif; font-weight: bold;"><b>F5</b></span> while in Add or Remove Programs to refresh the list and
+show what's actually installed.
+
+</li>
+<li>If the uninstaller doesn't fully remove all the components, you can use
+the <tt class="cmd">QNXWinCleanup</tt> utility to cleanup your machine.
+You can find this utility and documentation for it in the
+<tt class="fname">Utilities</tt> directory on the DVD, or on our website.
+
+</li>
+</ul></td></tr>
+</table>
+<hr class="note" /></div>
+
+
+
+<h1 class="h1"><a name="Base_Directory" id="Base_Directory">Determining your base directory</a></h1>
+
+<p>To determine the base directory for QNX SDP 6.5.0, open a command shell
+and use the <tt class="cmd">qconfig</tt> command.
+For example:
+
+</p>
+<pre class="cmdsamp">
+C:\&gt;qconfig
+QNX Installations
+
+  Installation Name: QNX Software Development Platform 6.5.0
+            Version: 6.5.0
+     Base Directory: C:/QNX650/
+           QNX_HOST: C:/QNX650/host/win32/x86/
+         QNX_TARGET: C:/QNX650/target/qnx6/</pre>
+
+<p> 
+The base directory in this example is <tt class="fname">C:/QNX650/</tt>,
+but it could be different on your machine, depending on 
+where you installed QNX SDP 6.5.0.
+
+</p>
+
+<h1 class="h1"><a name="Docs" id="Docs">Getting started with the docs</a></h1>
+
+<p>After you've installed QNX SDP 6.5.0, you'll
+find an extensive set of HTML documentation:
+
+</p>
+<ul>
+<li>On Linux and Windows development hosts, you can read it in
+  the Integrated Development Environment's help system.
+  On Linux, use the <tt class="cmd">qde</tt> command to start the IDE; on
+  Windows, use the desktop icon.
+
+</li>
+<li>On self-hosted QNX Neutrino systems, you can read it
+in the Photon helpviewer, or you can
+use a web browser to display:
+
+<p><b class="envar">${QNX_TARGET}</b><tt class="fname">/usr/help/product/momentics/bookset.html</tt>
+
+</p></li>
+</ul>
+<p>The <span class="quote">&#8220;roadmap&#8221;</span> page contains links to the
+various HTML booksets that accompany the OS (e.g.
+<cite>System Architecture</cite>, QNX Neutrino <cite>Programmer's Guide</cite>,
+<cite>Library Reference</cite>, <cite>Utilities Reference</cite>, etc.).
+
+</p>
+
+<div class="note"><hr class="note" />
+<table class="note">
+<tr><td class="noteicon" valign="top"><img src="pointing.gif" alt="Note:" /></td>
+<td class="note">The online documentation also includes the installation and release notes.
+For the most up-to-date version of these notes, go to our website,
+<a href="http://www.qnx.com" class="xref"><tt class="url">www.qnx.com</tt></a>,
+log into your myQNX account, and then go to the Download Center.</td></tr>
+</table>
+<hr class="note" /></div>
+
+
+<p>You can install and work with multiple versions of QNX Neutrino.
+Whether you're using the command line or the IDE, you can choose which
+version of the OS to build programs for.
+For more information, see the IDE <cite>User's Guide</cite> or the
+QNX Neutrino <cite>Programmer's Guide</cite>.
+
+</p>
+
+<h1 class="h1"><a name="TSPORT" id="TSPORT">Technical support</a></h1>
+
+<p>
+
+To obtain technical support for any QNX product, visit the
+<b class="ui">Support</b> area
+on our website (<a href="http://www.qnx.com" class="xref"><tt class="url">www.qnx.com</tt></a>).
+You'll find a wide range of support options, including community forums.
+
+
+</p>
+
+</body>
+
+</html>
+
+
+<!-- Copyright 2010, QNX Software Systems GmbH & Co. KG., a subsidiary of     -->
+<!-- Research In Motion Limited. All rights reserved.                         -->
+<!-- Published under license by QNX Software Systems Co.                      -->
+
+<!-- QNX, Neutrino, Photon, Photon microGUI, Momentics, Aviage, and marks,    -->
+<!-- names, and logos are trademarks, registered in certain jurisdictions,    -->
+<!-- of QNX Software Systems GmbH & Co. KG. and are used under license by     -->
+<!-- QNX Software Systems Co. All other trademarks belong to their            -->
+<!-- respective owners.                                                       -->
+
+<!-- Document processed on June 30, 2010 (02:18:35 PM) -->
+
+
+

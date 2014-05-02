@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Programmer's Guide">
+      <topic label="About This Book" href="about.html">
+          <topic label="What you'll find in this guide" href="about.html#In_this_guide"/>
+          <topic label="Recommended reading" href="about.html#recread"/>
+          <topic label="Typographical conventions" href="about.html#Typographical_conventions">
+            <topic label="Note to Windows users" href="about.html#WINDOWSNOTE"/>
+            <topic label="Navigation buttons" href="about.html#Navigation"/>
+          </topic>
+          <topic label="Technical support" href="about.html#Support"/>
+      </topic>
+      <topic label="Compiling and Debugging" href="devel.html">
+          <topic label="Choosing the version of the OS" href="devel.html#OS_version"/>
+          <topic label="Making your code more portable" href="devel.html#PortableCode">
+            <topic label="Conforming to standards" href="devel.html#ConformingToStandards"/>
+            <topic label="Including QNX- or Neutrino-specific code" href="devel.html#Neutrino_specific"/>
+          </topic>
+          <topic label="Header files in /usr/include" href="devel.html#UsrNTOInclude"/>
+          <topic label="Self-hosted or cross-development" href="devel.html#SELFORCROSS">
+            <topic label="A simple example" href="devel.html#id9"/>
+            <topic label="Self-hosted" href="devel.html#id11"/>
+            <topic label="Cross-development with network filesystem" href="devel.html#id13"/>
+            <topic label="Cross-development with debugger" href="devel.html#id15">
+              <topic label="Download/upload facility" href="devel.html#id17"/>
+            </topic>
+            <topic label="Cross-development, deeply embedded" href="devel.html#id19">
+              <topic label="Step 1: Build a Neutrino system image." href="devel.html#id21"/>
+              <topic label="Step 2: Transfer the system image to the target." href="devel.html#id23"/>
+              <topic label="Step 3: Boot the target." href="devel.html#id25"/>
+            </topic>
+          </topic>
+          <topic label="Using libraries" href="devel.html#USINGLIB">
+            <topic label="Static linking" href="devel.html#id28"/>
+            <topic label="Dynamic linking" href="devel.html#id30"/>
+            <topic label="Runtime loading" href="devel.html#id32"/>
+            <topic label="Static and dynamic libraries" href="devel.html#id34">
+              <topic label="Static libraries" href="devel.html#id36"/>
+              <topic label="Dynamic libraries" href="devel.html#id38"/>
+              <topic label="dlopen" href="devel.html#id40"/>
+            </topic>
+            <topic label="Platform-specific library locations" href="devel.html#id42"/>
+          </topic>
+          <topic label="Linking your modules" href="devel.html#LINKINGYOUR">
+            <topic label="Creating shared objects" href="devel.html#id45">
+              <topic label="Specifying an internal name" href="devel.html#id47"/>
+            </topic>
+          </topic>
+          <topic label="Optimizing the runtime linker" href="devel.html#Optimizing_linker">
+            <topic label="Lazy binding" href="devel.html#Lazy_binding"/>
+            <topic label="RTLD_LAZY" href="devel.html#RTLD_LAZY"/>
+            <topic label="Lazy loading" href="devel.html#Lazy_loading"/>
+            <topic label="Diagnostics and debugging" href="devel.html#Linker_diagnostics"/>
+            <topic label="Environment variables" href="devel.html#Linker_envars"/>
+          </topic>
+          <topic label="Debugging" href="devel.html#DEBUG">
+            <topic label="Debugging in a self-hosted environment" href="devel.html#id56"/>
+            <topic label="Debugging in a cross-development environment" href="devel.html#id58"/>
+            <topic label="The GNU debugger (gdb)" href="devel.html#id60">
+              <topic label="Starting gdb" href="devel.html#id62"/>
+            </topic>
+            <topic label="The process-level debug agent" href="devel.html#id64">
+              <topic label="Serial connection" href="devel.html#id66"/>
+              <topic label="TCP/IP connection" href="devel.html#id68">
+                <topic label="TCP/IP static port connection" href="devel.html#id70"/>
+                <topic label="TCP/IP dynamic port connection" href="devel.html#Dynamic_port"/>
+                <topic label="Sample buildfile for dynamic port sessions" href="devel.html#Sample_buildfile"/>
+              </topic>
+            </topic>
+          </topic>
+          <topic label="A simple debug session" href="devel.html#id74">
+            <topic label="Configure the target" href="devel.html#id76"/>
+            <topic label="Compile for debugging" href="devel.html#id78"/>
+            <topic label="Start the debug session" href="devel.html#id80"/>
+            <topic label="Get help" href="devel.html#id82"/>
+            <topic label="Sample boot image" href="devel.html#id84"/>
+          </topic>
+          <topic label="Debugging using libmudflap" href="devel.html#ToolsGNUMudflap"/>
+      </topic>
+      <topic label="Programming Overview" href="overview.html">
+          <topic label="Process model" href="overview.html#PROCMODEL">
+            <topic label="An application as a set of processes" href="overview.html#id4"/>
+          </topic>
+          <topic label="Processes and threads" href="overview.html#PROCANDTHREAD">
+            <topic label="Some definitions" href="overview.html#id7"/>
+          </topic>
+          <topic label="Priorities and scheduling" href="overview.html#PRIOR">
+            <topic label="Priority range" href="overview.html#id10"/>
+            <topic label="BLOCKED and READY states" href="overview.html#id12"/>
+            <topic label="The ready queue" href="overview.html#id14"/>
+            <topic label="Suspending a running thread" href="overview.html#id16"/>
+            <topic label="When the thread is blocked" href="overview.html#id18"/>
+            <topic label="When the thread is preempted" href="overview.html#id20"/>
+            <topic label="When the thread yields" href="overview.html#id22"/>
+          </topic>
+          <topic label="Scheduling policies" href="overview.html#SCHEDS">
+            <topic label="FIFO scheduling" href="overview.html#FIFO_scheduling"/>
+            <topic label="Round-robin scheduling" href="overview.html#Round_robin_scheduling"/>
+            <topic label="Sporadic scheduling" href="overview.html#Sporadic_scheduling"/>
+          </topic>
+          <topic label="Why threads?" href="overview.html#WHYTHREADS"/>
+          <topic label="Summary" href="overview.html#SUMMARY"/>
+      </topic>
+      <topic label="Processes" href="process.html">
+          <topic label="Starting processes --- two methods" href="process.html#WAYSTOSTART"/>
+          <topic label="Process creation" href="process.html#PROCCREATION">
+            <topic label="Concurrency" href="process.html#id5"/>
+            <topic label="Using fork and forkpty" href="process.html#id7"/>
+            <topic label="Inheriting file descriptors" href="process.html#id9"/>
+          </topic>
+          <topic label="Process termination" href="process.html#PROCTERM">
+            <topic label="Normal process termination" href="process.html#PROCNORMTERM"/>
+            <topic label="Abnormal process termination" href="process.html#PROCABNORMTERM"/>
+            <topic label="Effect of parent termination" href="process.html#PROCPARENTTERM"/>
+          </topic>
+          <topic label="Detecting process termination" href="process.html#PROCDETECTTERM">
+            <topic label="Using the High Availability Framework" href="process.html#id16"/>
+            <topic label="Detecting termination from a starter process" href="process.html#id18"/>
+            <topic label="Sample parent process using wait" href="process.html#id20"/>
+            <topic label="Sample parent process using sigwaitinfo" href="process.html#id22"/>
+            <topic label="Detecting dumped processes" href="process.html#Detecting_dumped"/>
+            <topic label="Detecting the termination of daemons" href="process.html#id25"/>
+            <topic label="Detecting client termination" href="process.html#id27"/>
+          </topic>
+          <topic label="Controlling processes via the /proc filesystem" href="process.html#proc_filesystem">
+            <topic label="Establishing a connection" href="process.html#Establishing_connection"/>
+            <topic label="Reading and writing the process's address space" href="process.html#Address_space">
+              <topic label="Determining the offset" href="process.html#id32"/>
+              <topic label="Determining accessibility" href="process.html#id34"/>
+            </topic>
+            <topic label="Manipulating a process or thread" href="process.html#Manipulating">
+              <topic label="Selecting a thread for further operations" href="process.html#Select_thread"/>
+              <topic label="Starting/stopping processes and threads" href="process.html#Start_stop"/>
+              <topic label="Setting breakpoints" href="process.html#Breakpoints"/>
+              <topic label="Examining process and thread attributes" href="process.html#Examine_attributes"/>
+            </topic>
+            <topic label="Thread information" href="process.html#Thread_info"/>
+            <topic label="DCMD_PROC_BREAK" href="process.html#DCMD_PROC_BREAK"/>
+            <topic label="DCMD_PROC_CHANNELS" href="process.html#DCMD_PROC_CHANNELS"/>
+            <topic label="DCMD_PROC_CLEAR_FLAG" href="process.html#DCMD_PROC_CLEAR_FLAG"/>
+            <topic label="DCMD_PROC_CURTHREAD" href="process.html#DCMD_PROC_CURTHREAD"/>
+            <topic label="DCMD_PROC_EVENT" href="process.html#DCMD_PROC_EVENT"/>
+            <topic label="DCMD_PROC_FREEZETHREAD" href="process.html#DCMD_PROC_FREEZETHREAD"/>
+            <topic label="DCMD_PROC_GETALTREG" href="process.html#DCMD_PROC_GETALTREG"/>
+            <topic label="DCMD_PROC_GETFPREG" href="process.html#DCMD_PROC_GETFPREG"/>
+            <topic label="DCMD_PROC_GETGREG" href="process.html#DCMD_PROC_GETGREG"/>
+            <topic label="DCMD_PROC_GETREGSET" href="process.html#DCMD_PROC_GETREGSET"/>
+            <topic label="DCMD_PROC_GET_BREAKLIST" href="process.html#DCMD_PROC_GET_BREAKLIST"/>
+            <topic label="DCMD_PROC_INFO" href="process.html#DCMD_PROC_INFO"/>
+            <topic label="DCMD_PROC_IRQS" href="process.html#DCMD_PROC_IRQS"/>
+            <topic label="DCMD_PROC_MAPDEBUG" href="process.html#DCMD_PROC_MAPDEBUG"/>
+            <topic label="DCMD_PROC_MAPDEBUG_BASE" href="process.html#DCMD_PROC_MAPDEBUG_BASE"/>
+            <topic label="DCMD_PROC_MAPINFO" href="process.html#DCMD_PROC_MAPINFO"/>
+            <topic label="DCMD_PROC_PAGEDATA" href="process.html#DCMD_PROC_PAGEDATA"/>
+            <topic label="DCMD_PROC_RUN" href="process.html#DCMD_PROC_RUN"/>
+            <topic label="DCMD_PROC_SETALTREG" href="process.html#DCMD_PROC_SETALTREG"/>
+            <topic label="DCMD_PROC_SETFPREG" href="process.html#DCMD_PROC_SETFPREG"/>
+            <topic label="DCMD_PROC_SETGREG" href="process.html#DCMD_PROC_SETGREG"/>
+            <topic label="DCMD_PROC_SETREGSET" href="process.html#DCMD_PROC_SETREGSET"/>
+            <topic label="DCMD_PROC_SET_FLAG" href="process.html#DCMD_PROC_SET_FLAG"/>
+            <topic label="DCMD_PROC_SIGNAL" href="process.html#DCMD_PROC_SIGNAL"/>
+            <topic label="DCMD_PROC_STATUS" href="process.html#DCMD_PROC_STATUS"/>
+            <topic label="DCMD_PROC_STOP" href="process.html#DCMD_PROC_STOP"/>
+            <topic label="DCMD_PROC_SYSINFO" href="process.html#DCMD_PROC_SYSINFO"/>
+            <topic label="DCMD_PROC_THAWTHREAD" href="process.html#DCMD_PROC_THAWTHREAD"/>
+            <topic label="DCMD_PROC_THREADCTL" href="process.html#DCMD_PROC_THREADCTL"/>
+            <topic label="DCMD_PROC_TIDSTATUS" href="process.html#DCMD_PROC_TIDSTATUS"/>
+            <topic label="DCMD_PROC_TIMERS" href="process.html#DCMD_PROC_TIMERS"/>
+            <topic label="DCMD_PROC_WAITSTOP" href="process.html#DCMD_PROC_WAITSTOP"/>
+          </topic>
+      </topic>
+      <topic label="Tick, Tock: Understanding the Neutrino Microkernel's Concept of Time" href="timing.html">
+          <topic label="What's a tick?" href="timing.html#Tick"/>
+          <topic label="Oversleeping: errors in delays" href="timing.html#Delays">
+            <topic label="Delaying for a second: inaccurate code" href="timing.html#One_second_wrong"/>
+            <topic label="Timer quantization error" href="timing.html#Quantization"/>
+            <topic label="The tick and the hardware timer" href="timing.html#Input_clock"/>
+            <topic label="Delaying for a second: better code" href="timing.html#One_second_OK"/>
+          </topic>
+          <topic label="Another hiccup with hardware timers" href="timing.html#Hardware_timers">
+            <topic label="Where's the catch?" href="timing.html#Catch"/>
+          </topic>
+          <topic label="What time is it?" href="timing.html#Time_functions"/>
+      </topic>
+      <topic label="Transparent Distributed Processing Using Qnet" href="qnet.html">
+          <topic label="What is Qnet?" href="qnet.html#WQCDFY"/>
+          <topic label="Benefits of Qnet" href="qnet.html#UCOFQNET">
+            <topic label="What works best" href="qnet.html#What_works_best"/>
+            <topic label="What type of application is well-suited for Qnet?" href="qnet.html#Well_suited_applications"/>
+          </topic>
+          <topic label="How does it work?" href="qnet.html#HDSITWK"/>
+          <topic label="Locating services using GNS" href="qnet.html#LOCSERVICUSEGNS">
+              <topic label="Different modes of GNS" href="qnet.html#GNS_modes"/>
+              <topic label="Server" href="qnet.html#GNS_server"/>
+              <topic label="Client" href="qnet.html#GNS_client"/>
+              <topic label="Registering a service" href="qnet.html#Registering_with_GNS"/>
+              <topic label="GNS path namespace" href="qnet.html#GNS_path_namespace"/>
+              <topic label="Deploying the gns processes" href="qnet.html#Deploying_GNS"/>
+          </topic>
+          <topic label="Quality of Service (QoS) and multiple paths" href="qnet.html#QOSANDMULTIPATHS">
+              <topic label="QoS policies" href="qnet.html#QoS_policies"/>
+              <topic label="loadbalance" href="qnet.html#QoS_loadbalance"/>
+              <topic label="preferred" href="qnet.html#QoS_preferred"/>
+              <topic label="exclusive" href="qnet.html#QoS_exclusive"/>
+              <topic label="Specifying QoS policies" href="qnet.html#Specifying_QoS_policies"/>
+              <topic label="Symbolic links" href="qnet.html#Symbolic_links"/>
+          </topic>
+          <topic label="Designing a system using Qnet" href="qnet.html#HODESUSQNET">
+            <topic label="The product: a telecom box" href="qnet.html#Telecom_box"/>
+            <topic label="Developing your distributed system" href="qnet.html#Developing_distributed_systems"/>
+            <topic label="Configuring the data cards" href="qnet.html#Configuring_data_cards"/>
+            <topic label="Configuring the controller card" href="qnet.html#Configuring_controller_card"/>
+            <topic label="Enhancing reliability via multiple transport buses" href="qnet.html#Multiple_transport_buses"/>
+            <topic label="Redundancy and scalability using multiple controller cards" href="qnet.html#Redundancy_and_scalability">
+              <topic label="Redundancy" href="qnet.html#Redundancy"/>
+              <topic label="Scalability" href="qnet.html#Scalability"/>
+            </topic>
+          </topic>
+          <topic label="Autodiscovery vs static" href="qnet.html#AUTODISSAST"/>
+          <topic label="When should you use Qnet, TCP/IP, or NFS?" href="qnet.html#WHEQTCPNFS"/>
+          <topic label="Drivers for Qnet" href="qnet.html#WRDRIVQNET"/>
+      </topic>
+      <topic label="Writing an Interrupt Handler" href="inthandler.html">
+          <topic label="What's an interrupt?" href="inthandler.html#OVERVIEW"/>
+          <topic label="Interrupts on multicore systems" href="inthandler.html#Multicore"/>
+          <topic label="Attaching and detaching interrupts" href="inthandler.html#Attaching"/>
+          <topic label="Interrupt Service Routine (ISR)" href="inthandler.html#ISR">
+            <topic label="Determining the source of the interrupt" href="inthandler.html#id7">
+              <topic label="Edge-triggered IRQ" href="inthandler.html#id9"/>
+              <topic label="Level-sensitive IRQ" href="inthandler.html#id11"/>
+            </topic>
+            <topic label="Servicing the hardware" href="inthandler.html#id13">
+              <topic label="Safe functions" href="inthandler.html#id15"/>
+            </topic>
+            <topic label="Updating common data structures" href="inthandler.html#id17"/>
+            <topic label="Signalling the application code" href="inthandler.html#id19">
+              <topic label="Using InterruptAttach" href="inthandler.html#id21"/>
+              <topic label="Using InterruptAttachEvent" href="inthandler.html#id23"/>
+            </topic>
+          </topic>
+          <topic label="Running out of interrupt events" href="inthandler.html#Out_of_events"/>
+          <topic label="Problems with shared interrupts" href="inthandler.html#Shared_interrupts"/>
+          <topic label="Advanced topics" href="inthandler.html#ADVANCED">
+            <topic label="Interrupt environment" href="inthandler.html#id28"/>
+            <topic label="Ordering of shared interrupts" href="inthandler.html#id30"/>
+            <topic label="Interrupt latency" href="inthandler.html#id32"/>
+            <topic label="Atomic operations" href="inthandler.html#ATOMIC"/>
+          </topic>
+      </topic>
+      <topic label="Heap Analysis: Making Memory Errors a Thing of the Past" href="hat.html">
+          <topic label="Introduction" href="hat.html#Abstract"/>
+          <topic label="Dynamic memory management" href="hat.html#DynamicMemoryManagement">
+            <topic label="Arena allocations" href="hat.html#Arena_allocations"/>
+            <topic label="Small block configuration" href="hat.html#Small_block"/>
+          </topic>
+          <topic label="Heap corruption" href="hat.html#ProblemsWithHeapCorruption">
+              <topic label="Contiguous memory blocks" href="hat.html#Contiguous_blocks"/>
+              <topic label="Multithreaded programs" href="hat.html#MultithreadedPrograms"/>
+              <topic label="Allocation strategy" href="hat.html#AllocStrat"/>
+            <topic label="Common sources" href="hat.html#CommonErrors">
+              <topic label="Overrun and underrun errors" href="hat.html#OverrunErrors"/>
+              <topic label="Releasing memory" href="hat.html#FreeRequests"/>
+              <topic label="Using uninitialized or stale pointers" href="hat.html#StalePointers"/>
+            </topic>
+          </topic>
+          <topic label="Detecting and reporting errors" href="hat.html#DetectingAndReportingErrors">
+            <topic label="Using the malloc debug library" href="hat.html#Using_debug_library">
+              <topic label="What's checked?" href="hat.html#id17"/>
+              <topic label="Allocating memory" href="hat.html#id19"/>
+              <topic label="Reallocating memory" href="hat.html#id21"/>
+              <topic label="Releasing memory" href="hat.html#id23"/>
+            </topic>
+            <topic label="Controlling the level of checking" href="hat.html#CheckingLevel">
+              <topic label="Description of optional checks" href="hat.html#id26"/>
+              <topic label="Forcing verification" href="hat.html#id28"/>
+              <topic label="Specifying an error handler" href="hat.html#Error_handler"/>
+            </topic>
+            <topic label="Other environment variables" href="hat.html#Environment_variables"/>
+            <topic label="Caveats" href="hat.html#id32"/>
+          </topic>
+          <topic label="Manual checking (bounds checking)" href="hat.html#ManualChecking">
+            <topic label="Getting pointer information" href="hat.html#GettingPointerInformation"/>
+          </topic>
+          <topic label="Memory leaks" href="hat.html#MemoryLeaks">
+            <topic label="Tracing" href="hat.html#id37"/>
+            <topic label="Causing a trace and giving results" href="hat.html#id39"/>
+            <topic label="Analyzing dumps" href="hat.html#id41"/>
+          </topic>
+          <topic label="Compiler support" href="hat.html#CompilerSupport">
+            <topic label="C++ issues" href="hat.html#id44">
+              <topic label="Clean C" href="hat.html#id46"/>
+              <topic label="C++ example" href="hat.html#id48"/>
+            </topic>
+          </topic>
+      </topic>
+      <topic label="Freedom from Hardware and Platform Dependencies" href="freedom.html">
+          <topic label="Common problems" href="freedom.html#PROBS">
+            <topic label="I/O space vs memory-mapped" href="freedom.html#id4"/>
+            <topic label="Big-endian vs little-endian" href="freedom.html#id6">
+              <topic label="Typecast mangling" href="freedom.html#id8"/>
+              <topic label="Hardware access" href="freedom.html#id10"/>
+              <topic label="Network transparency" href="freedom.html#id12"/>
+            </topic>
+            <topic label="Alignment and structure packing" href="freedom.html#id14"/>
+            <topic label="Atomic operations" href="freedom.html#id16"/>
+          </topic>
+          <topic label="Solutions" href="freedom.html#SOLUT">
+            <topic label="Determining endianness" href="freedom.html#id19"/>
+            <topic label="Swapping data if required" href="freedom.html#id21">
+              <topic label="ENDIAN_LE16" href="freedom.html#ENDIAN_LE16"/>
+              <topic label="ENDIAN_LE32" href="freedom.html#ENDIAN_LE32"/>
+              <topic label="ENDIAN_LE64" href="freedom.html#ENDIAN_LE64"/>
+              <topic label="ENDIAN_BE16" href="freedom.html#ENDIAN_BE16"/>
+              <topic label="ENDIAN_BE32" href="freedom.html#ENDIAN_BE32"/>
+              <topic label="ENDIAN_BE64" href="freedom.html#ENDIAN_BE64"/>
+            </topic>
+            <topic label="Accessing unaligned data" href="freedom.html#id29">
+              <topic label="UNALIGNED_RET16" href="freedom.html#UNALIGNED_RET16"/>
+              <topic label="UNALIGNED_RET32" href="freedom.html#UNALIGNED_RET32"/>
+              <topic label="UNALIGNED_RET64" href="freedom.html#UNALIGNED_RET64"/>
+              <topic label="UNALIGNED_PUT16" href="freedom.html#UNALIGNED_PUT16"/>
+              <topic label="UNALIGNED_PUT32" href="freedom.html#UNALIGNED_PUT32"/>
+              <topic label="UNALIGNED_PUT64" href="freedom.html#UNALIGNED_PUT64"/>
+            </topic>
+            <topic label="Examples" href="freedom.html#id37">
+              <topic label="Mixed-endian accesses" href="freedom.html#id39"/>
+              <topic label="Accessing hardware with dual-ported memory" href="freedom.html#id41"/>
+            </topic>
+            <topic label="Accessing I/O ports" href="freedom.html#id43"/>
+          </topic>
+      </topic>
+      <topic label="Conventions for Recursive Makefiles and Directories" href="make_convent.html">
+          <topic label="Structure of a multiplatform source tree" href="make_convent.html#STRUCTURE">
+            <topic label="Makefile structure" href="make_convent.html#id4"/>
+            <topic label="The recurse.mk file" href="make_convent.html#id6"/>
+            <topic label="Macros" href="make_convent.html#id8">
+              <topic label="The EARLY_DIRS and LATE_DIRS macros" href="make_convent.html#id10"/>
+              <topic label="The LIST macro" href="make_convent.html#id12"/>
+              <topic label="The MAKEFILE macro" href="make_convent.html#id14"/>
+              <topic label="The CHECKFORCE macro" href="make_convent.html#id16"/>
+            </topic>
+            <topic label="Directory levels" href="make_convent.html#id18">
+              <topic label="Project level" href="make_convent.html#id20"/>
+              <topic label="Section level (optional)" href="make_convent.html#id22"/>
+              <topic label="OS level" href="make_convent.html#id24"/>
+              <topic label="CPU level" href="make_convent.html#id26"/>
+              <topic label="Variant level" href="make_convent.html#id28"/>
+            </topic>
+          </topic>
+          <topic label="Specifying options" href="make_convent.html#SPEC">
+            <topic label="The common.mk file" href="make_convent.html#COMMONMAN"/>
+            <topic label="The variant-level makefile" href="make_convent.html#id32"/>
+            <topic label="Recognized variant names" href="make_convent.html#DISTINGUISHEDGENTLEMAN"/>
+          </topic>
+          <topic label="Using the standard macros and include files" href="make_convent.html#USEMAC">
+            <topic label="The qconfig.mk include file" href="make_convent.html#qconfig.mk">
+              <topic label="Preset macros" href="make_convent.html#id37"/>
+              <topic label="Postset macros" href="make_convent.html#id39"/>
+              <topic label="qconfig.mk macros" href="make_convent.html#id41"/>
+            </topic>
+            <topic label="The qrules.mk include file" href="make_convent.html#qrules.mk"/>
+            <topic label="The qtargets.mk include file" href="make_convent.html#qtargets.mk"/>
+          </topic>
+          <topic label="Advanced topics" href="make_convent.html#ADVANCED">
+            <topic label="Collapsing unnecessary directory levels" href="make_convent.html#COLLAPSE"/>
+            <topic label="Performing partial builds" href="make_convent.html#PARTIAL"/>
+            <topic label="Performing parallel builds" href="make_convent.html#Parallel"/>
+            <topic label="More uses for LIST" href="make_convent.html#MORALIST"/>
+            <topic label="GNU configure" href="make_convent.html#GNU_configure">
+              <topic label="hook_preconfigure" href="make_convent.html#hook_preconfigure"/>
+              <topic label="hook_postconfigure" href="make_convent.html#hook_postconfigure"/>
+              <topic label="hook_premake" href="make_convent.html#hook_premake"/>
+              <topic label="hook_postmake" href="make_convent.html#hook_postmake"/>
+              <topic label="hook_pinfo" href="make_convent.html#hook_pinfo"/>
+            </topic>
+          </topic>
+          <topic label="Examples of creating Makefiles" href="make_convent.html#Examples">
+            <topic label="A single application" href="make_convent.html#Single_application"/>
+            <topic label="A library and an application" href="make_convent.html#Library_and_application"/>
+          </topic>
+      </topic>
+      <topic label="POSIX Conformance" href="posix_conformance.html">
+          <topic label="Conformance statement" href="posix_conformance.html#Conformance">
+            <topic label="System interfaces: general attributes" href="posix_conformance.html#Statement_Interfaces_general">
+              <topic label="Supported features" href="posix_conformance.html#Statement_Interfaces_features"/>
+              <topic label="Optional features" href="posix_conformance.html#Statement_Interfaces_optional"/>
+              <topic label="Float, standard I/O, and limit values" href="posix_conformance.html#Statement_float_values"/>
+              <topic label="Error conditions" href="posix_conformance.html#Statement_error_conditions"/>
+              <topic label="Mathematical interfaces" href="posix_conformance.html#Statement_math_interfaces"/>
+            </topic>
+            <topic label="File handling" href="posix_conformance.html#Statement_file_handling">
+              <topic label="Access control" href="posix_conformance.html#Statement_access_control"/>
+              <topic label="Files and directories" href="posix_conformance.html#Statement_files"/>
+            </topic>
+            <topic label="Internationalized system interfaces" href="posix_conformance.html#Statement_International">
+              <topic label="Coded character sets" href="posix_conformance.html#Statement_character_sets"/>
+            </topic>
+            <topic label="Threads" href="posix_conformance.html#Statement_threads">
+              <topic label="Cancellation points" href="posix_conformance.html#Statement_cancellation"/>
+            </topic>
+            <topic label="Realtime" href="posix_conformance.html#Statement_realtime">
+              <topic label="Prioritized I/O" href="posix_conformance.html#Statement_prioritized_IO"/>
+            </topic>
+            <topic label="Realtime threads" href="posix_conformance.html#Statement_realtime_threads">
+              <topic label="Scheduling policies" href="posix_conformance.html#Statement_scheduling_policies"/>
+              <topic label="Scheduling contention scope" href="posix_conformance.html#Statement_contention_scope"/>
+              <topic label="Default scheduling contention scope" href="posix_conformance.html#Statement_contention_default"/>
+              <topic label="Scheduling allocation domain" href="posix_conformance.html#Statement_scheduling_domain"/>
+            </topic>
+            <topic label="C-language compilation environment" href="posix_conformance.html#Statement_compilation"/>
+          </topic>
+          <topic label="POSIX Conformance Document (PCD)" href="posix_conformance.html#PCD">
+            <topic label="Base Definitions" href="posix_conformance.html#PCD_Base_definitions">
+              <topic label="3. Definitions" href="posix_conformance.html#PCD_Definitions">
+                <topic label="3.4. Additional File Access Control Mechanism" href="posix_conformance.html#PCD_File_access"/>
+                <topic label="3.12. Alternate File Access Control Mechanism" href="posix_conformance.html#PCD_Alternate_file_access"/>
+                <topic label="3.19. Appropriate Privileges" href="posix_conformance.html#PCD_Privileges"/>
+                <topic label="3.97. Clock Tick" href="posix_conformance.html#PCD_Clock_tick"/>
+                <topic label="3.159. Extended Security Controls" href="posix_conformance.html#PCD_Security"/>
+                <topic label="3.387. System Trace Event" href="posix_conformance.html#PCD_System_trace"/>
+                <topic label="3.409. Trace Generation Version" href="posix_conformance.html#PCD_Trace_generation"/>
+              </topic>
+              <topic label="4. General Concepts" href="posix_conformance.html#PCD_General_concepts">
+                <topic label="4.3. Extended Security Controls" href="posix_conformance.html#PCD_Concepts_security"/>
+                <topic label="4.9. Measurement of Execution Time" href="posix_conformance.html#PCD_Execution_time"/>
+                <topic label="4.11. Pathname Resolution" href="posix_conformance.html#PCD_Pathname"/>
+                <topic label="4.14. Seconds Since the Epoch" href="posix_conformance.html#PCD_Epoch"/>
+                <topic label="4.17. Tracing" href="posix_conformance.html#PCD_Concepts_tracing"/>
+                <topic label="4.18. Treatment of Error Conditions for Mathematical Functions" href="posix_conformance.html#PCD_Math_errors"/>
+              </topic>
+              <topic label="6. Character Set" href="posix_conformance.html#PCD_Character_sets">
+                <topic label="6.4. Character Set Description File" href="posix_conformance.html#PCD_Character_set_description"/>
+              </topic>
+              <topic label="7. Locale" href="posix_conformance.html#PCD_Locale">
+                <topic label="7.1. General" href="posix_conformance.html#PCD_Locale_general"/>
+                <topic label="7.2. POSIX Locale" href="posix_conformance.html#PCD_POSIX_locale"/>
+                <topic label="7.3. Locale Definition" href="posix_conformance.html#PCD_Locale_definition"/>
+              </topic>
+              <topic label="8. Environment Variables" href="posix_conformance.html#PCD_Environment">
+                <topic label="8.2. Internationalization Variables" href="posix_conformance.html#PCD_Internationalization"/>
+                <topic label="8.3. Other Environment Variables" href="posix_conformance.html#PCD_Other_environment"/>
+              </topic>
+              <topic label="13. Headers" href="posix_conformance.html#PCD_headers">
+                <topic label="fenv.h" href="posix_conformance.html#PCD_fenv.h"/>
+                <topic label="float.h" href="posix_conformance.html#PCD_float.h"/>
+                <topic label="limits.h" href="posix_conformance.html#PCD_limits.h"/>
+                <topic label="math.h" href="posix_conformance.html#PCD_math.h"/>
+                <topic label="signal.h" href="posix_conformance.html#PCD_signal.h"/>
+                <topic label="stdint.h" href="posix_conformance.html#PCD_stdint.h"/>
+                <topic label="sys/stat.h" href="posix_conformance.html#PCD_stat.h"/>
+                <topic label="time.h" href="posix_conformance.html#PCD_time.h"/>
+              </topic>
+            </topic>
+            <topic label="System Interfaces" href="posix_conformance.html#PCD_System_interfaces">
+              <topic label="2.3. Error Numbers" href="posix_conformance.html#PCD_Error_numbers"/>
+              <topic label="2.4. Signal Concepts" href="posix_conformance.html#PCD_Signal_concepts">
+                <topic label="2.4.2. Realtime Signal Generation and Delivery" href="posix_conformance.html#PCD_Signal_generation"/>
+                <topic label="2.4.3. Signal Actions" href="posix_conformance.html#PCD_Signal_actions"/>
+              </topic>
+              <topic label="2.5. Standard I/O Streams" href="posix_conformance.html#PCD_Standard_IO">
+                <topic label="2.5.1. Interaction of File Descriptors and Standard I/O Streams" href="posix_conformance.html#PCD_Interaction"/>
+              </topic>
+              <topic label="2.8. Realtime" href="posix_conformance.html#PCD_Realtime">
+                <topic label="2.8.3. Memory Management" href="posix_conformance.html#PCD_Memory_management"/>
+                <topic label="2.8.4. Processing Scheduling" href="posix_conformance.html#PCD_Scheduling"/>
+                <topic label="2.8.5. Clocks and Timers" href="posix_conformance.html#PCD_Clocks_timers"/>
+                <topic label="2.9.4. Thread Scheduling" href="posix_conformance.html#PCD_Thread_scheduling"/>
+              </topic>
+              <topic label="2.11. Tracing" href="posix_conformance.html#PCD_Tracing"/>
+              <topic label="3. System Interfaces" href="posix_conformance.html#PCD_Chapter_3">
+                <topic label="acos, acosf, and acosl" href="posix_conformance.html#PCD_acos"/>
+                <topic label="acosh, acoshf, acoshl" href="posix_conformance.html#PCD_acosh"/>
+                <topic label="asin, asinf, asinl" href="posix_conformance.html#PCD_asin"/>
+                <topic label="atan, atanf, atanhl" href="posix_conformance.html#PCD_atan"/>
+                <topic label="calloc" href="posix_conformance.html#PCD_calloc"/>
+                <topic label="clock_getres, clock_settime" href="posix_conformance.html#PCD_clock_getres"/>
+                <topic label="cos, cosf, cosl" href="posix_conformance.html#PCD_cos"/>
+                <topic label="erfc, erfcf, erfcl" href="posix_conformance.html#PCD_erfc"/>
+                <topic label="exp, expf, expl" href="posix_conformance.html#PCD_exp"/>
+                <topic label="exp2, exp2f, exp2l" href="posix_conformance.html#PCD_exp2"/>
+                <topic label="fclose" href="posix_conformance.html#PCD_fclose"/>
+                <topic label="fcntl" href="posix_conformance.html#PCD_fcntl"/>
+                <topic label="fdim, fdimf, fdiml" href="posix_conformance.html#PCD_fdim"/>
+                <topic label="fegetexceptflag" href="posix_conformance.html#PCD_fegetexceptflag"/>
+                <topic label="feraiseexcept" href="posix_conformance.html#PCD_feraiseexcept"/>
+                <topic label="fflush" href="posix_conformance.html#PCD_fflush"/>
+                <topic label="fgetc" href="posix_conformance.html#PCD_fgetc"/>
+                <topic label="fma, fmaf, fmal" href="posix_conformance.html#PCD_fma"/>
+                <topic label="fmod, fmodf, fmodl" href="posix_conformance.html#PCD_fmod"/>
+                <topic label="fpclassify" href="posix_conformance.html#PCD_fpclassify"/>
+                <topic label="fprintf" href="posix_conformance.html#PCD_fprintf"/>
+                <topic label="fputc" href="posix_conformance.html#PCD_fputc"/>
+                <topic label="freopen" href="posix_conformance.html#PCD_freopen"/>
+                <topic label="fscanf" href="posix_conformance.html#PCD_fscanf"/>
+                <topic label="fseeko" href="posix_conformance.html#PCD_fseeko"/>
+                <topic label="fsetpos" href="posix_conformance.html#PCD_fsetpos"/>
+                <topic label="fstat" href="posix_conformance.html#PCD_fstat"/>
+                <topic label="fsync" href="posix_conformance.html#PCD_fsync"/>
+                <topic label="kill" href="posix_conformance.html#PCD_kill"/>
+                <topic label="ldexp, ldexpf, ldexpl" href="posix_conformance.html#PCD_ldexp"/>
+                <topic label="log, logf, logl" href="posix_conformance.html#PCD_log"/>
+                <topic label="log10, log10f, log10l" href="posix_conformance.html#PCD_log10"/>
+                <topic label="log1p, log1pf, log1pl" href="posix_conformance.html#PCD_log1p"/>
+                <topic label="log2, log2f, log2l" href="posix_conformance.html#PCD_log2"/>
+                <topic label="lseek" href="posix_conformance.html#PCD_lseek"/>
+                <topic label="malloc" href="posix_conformance.html#PCD_malloc"/>
+                <topic label="mkdir" href="posix_conformance.html#PCD_mkdir"/>
+                <topic label="mlock" href="posix_conformance.html#PCD_mlock"/>
+                <topic label="mlockall, munlockall" href="posix_conformance.html#PCD_mlockall"/>
+                <topic label="mmap" href="posix_conformance.html#PCD_mmap"/>
+                <topic label="mq_open" href="posix_conformance.html#PCD_mq_open"/>
+                <topic label="mq_receive" href="posix_conformance.html#PCD_mq_receive"/>
+                <topic label="mq_setattr" href="posix_conformance.html#PCD_mq_setattr"/>
+                <topic label="open" href="posix_conformance.html#PCD_open"/>
+                <topic label="posix_trace_*" href="posix_conformance.html#PCD_posix_trace_*"/>
+                <topic label="pow, powf, powl" href="posix_conformance.html#PCD_pow"/>
+                <topic label="pthread_attr_destroy" href="posix_conformance.html#PCD_pthread_attr_destroy"/>
+                <topic label="pthread_condattr_destroy, pthread_condattr_init" href="posix_conformance.html#PCD_pthread_condattr_destroy"/>
+                <topic label="pthread_getschedparam, pthread_setschedparam" href="posix_conformance.html#PCD_pthread_getschedparam"/>
+                <topic label="pthread_rwlock_rdlock" href="posix_conformance.html#PCD_pthread_rwlock_rdlock"/>
+                <topic label="pthread_rwlock_unlock" href="posix_conformance.html#PCD_pthread_rwlock_unlock"/>
+                <topic label="pthread_rwlockattr_getpshared, pthread_rwlockattr_setpshared" href="posix_conformance.html#PCD_pthread_rwlockattr_getpshared"/>
+                <topic label="read" href="posix_conformance.html#PCD_read"/>
+                <topic label="remainder, remainderf, remainderl" href="posix_conformance.html#PCD_remainder"/>
+                <topic label="remquo, remquof, remquol" href="posix_conformance.html#PCD_remquo"/>
+                <topic label="rint, rintf, rintl" href="posix_conformance.html#PCD_rint"/>
+                <topic label="scalbln, scalblnf, scalblnl, scalbn, scalbnf, scalbnl" href="posix_conformance.html#PCD_scalbln"/>
+                <topic label="sem_open" href="posix_conformance.html#PCD_sem_open"/>
+                <topic label="setlocale" href="posix_conformance.html#PCD_setlocale"/>
+                <topic label="shm_open" href="posix_conformance.html#PCD_shm_open"/>
+                <topic label="sigaction" href="posix_conformance.html#PCD_sigaction"/>
+                <topic label="signal" href="posix_conformance.html#PCD_signal"/>
+                <topic label="sigwait" href="posix_conformance.html#PCD_sigwait"/>
+                <topic label="sin, sinf, sinl" href="posix_conformance.html#PCD_sin"/>
+                <topic label="sqrt, sqrtf, sqrtl" href="posix_conformance.html#PCD_sqrt"/>
+                <topic label="stat" href="posix_conformance.html#PCD_stat"/>
+                <topic label="strtod, strtof, strtold" href="posix_conformance.html#PCD_strtod"/>
+                <topic label="strtol, strtoll" href="posix_conformance.html#PCD_strtol"/>
+                <topic label="strtoul, strtoull" href="posix_conformance.html#PCD_strtoul"/>
+                <topic label="tan, tanf, tanl" href="posix_conformance.html#PCD_tan"/>
+                <topic label="tgamma, tgammaf, tgammal" href="posix_conformance.html#PCD_tgamma"/>
+                <topic label="timer_create" href="posix_conformance.html#PCD_timer_create"/>
+                <topic label="tmpnam" href="posix_conformance.html#PCD_tmpnam"/>
+                <topic label="tzset" href="posix_conformance.html#PCD_tzset"/>
+                <topic label="uname" href="posix_conformance.html#PCD_uname"/>
+                <topic label="write" href="posix_conformance.html#PCD_write"/>
+              </topic>
+            </topic>
+          </topic>
+          <topic label="Non-POSIX functions with POSIX-sounding names" href="posix_conformance.html#POSIX_sounding"/>
+      </topic>
+      <topic label="Using GDB" href="using_gdb.html">
+          <topic label="Neutrino-specific extensions" href="using_gdb.html#Neutrino_extensions"/>
+          <topic label="A quick overview of starting the debugger" href="using_gdb.html#Quick"/>
+          <topic label="GDB commands" href="using_gdb.html#GDBCommands">
+            <topic label="Command syntax" href="using_gdb.html#CommandSyntax"/>
+            <topic label="Command completion" href="using_gdb.html#CommandCompletion"/>
+            <topic label="Getting help" href="using_gdb.html#GettingHelp"/>
+          </topic>
+          <topic label="Running programs under GDB" href="using_gdb.html#RunningPrograms">
+            <topic label="Compiling for debugging" href="using_gdb.html#Compiling"/>
+            <topic label="Setting the target" href="using_gdb.html#SettingTarget"/>
+            <topic label="Starting your program" href="using_gdb.html#StartingProgram"/>
+            <topic label="Your program's arguments" href="using_gdb.html#ProgramArguments"/>
+            <topic label="Your program's environment" href="using_gdb.html#Environment"/>
+            <topic label="Your program's input and output" href="using_gdb.html#InputOutput"/>
+            <topic label="Debugging an already-running process" href="using_gdb.html#AlreadyRunning"/>
+            <topic label="Killing the process being debugged" href="using_gdb.html#KillingChild"/>
+            <topic label="Debugging programs with multiple threads" href="using_gdb.html#DebuggingMultithreads"/>
+            <topic label="Debugging programs with multiple processes" href="using_gdb.html#MultipleProcesses"/>
+          </topic>
+          <topic label="Stopping and continuing" href="using_gdb.html#StoppingContinuing">
+            <topic label="Breakpoints, watchpoints, and exceptions" href="using_gdb.html#Breakpoints">
+              <topic label="Setting breakpoints" href="using_gdb.html#SettingBreakpoints"/>
+              <topic label="Setting watchpoints" href="using_gdb.html#SettingWatchpoints"/>
+              <topic label="Breakpoints and exceptions" href="using_gdb.html#BreakpointsExceptions"/>
+              <topic label="Deleting breakpoints" href="using_gdb.html#DeletingBreakpoints"/>
+              <topic label="Disabling breakpoints" href="using_gdb.html#DisablingBreakpoints"/>
+              <topic label="Break conditions" href="using_gdb.html#BreakConditions"/>
+              <topic label="Breakpoint command lists" href="using_gdb.html#BreakpointCommandLists"/>
+              <topic label="Breakpoint menus" href="using_gdb.html#BreakpointMenus"/>
+            </topic>
+            <topic label="Continuing and stepping" href="using_gdb.html#ContinuingStepping"/>
+            <topic label="Signals" href="using_gdb.html#Signals"/>
+            <topic label="Stopping and starting multithreaded programs" href="using_gdb.html#StoppingMultithread"/>
+          </topic>
+          <topic label="Examining the stack" href="using_gdb.html#ExaminingStack">
+            <topic label="Stack frames" href="using_gdb.html#StackFrames"/>
+            <topic label="Backtraces" href="using_gdb.html#Backtraces"/>
+            <topic label="Selecting a frame" href="using_gdb.html#SelectingFrame"/>
+            <topic label="Information about a frame" href="using_gdb.html#FrameInformation"/>
+            <topic label="MIPS machines and the function stack" href="using_gdb.html#MIPSFunctionStack"/>
+          </topic>
+          <topic label="Examining source files" href="using_gdb.html#ExaminingSource">
+            <topic label="Printing source lines" href="using_gdb.html#PrintingSourceLines"/>
+            <topic label="Searching source files" href="using_gdb.html#SearchingSource"/>
+            <topic label="Specifying source directories" href="using_gdb.html#SourceDirectories"/>
+            <topic label="Source and machine code" href="using_gdb.html#SourceAndMachineCode"/>
+            <topic label="Shared libraries" href="using_gdb.html#SharedLibraries"/>
+          </topic>
+          <topic label="Examining data" href="using_gdb.html#ExaminingData">
+            <topic label="Expressions" href="using_gdb.html#Expressions"/>
+            <topic label="Program variables" href="using_gdb.html#ProgramVariables"/>
+            <topic label="Artificial arrays" href="using_gdb.html#ArtificialArrays"/>
+            <topic label="Output formats" href="using_gdb.html#OutputFormats"/>
+            <topic label="Examining memory" href="using_gdb.html#ExaminingMemory"/>
+            <topic label="Automatic display" href="using_gdb.html#AutomaticDisplay"/>
+            <topic label="Print settings" href="using_gdb.html#PrintSettings"/>
+            <topic label="Value history" href="using_gdb.html#ValueHistory"/>
+            <topic label="Convenience variables" href="using_gdb.html#ConvenienceVariables"/>
+            <topic label="Registers" href="using_gdb.html#Registers"/>
+            <topic label="Floating point hardware" href="using_gdb.html#FloatingPointHardware"/>
+          </topic>
+          <topic label="Examining the symbol table" href="using_gdb.html#SymbolTable"/>
+          <topic label="Altering execution" href="using_gdb.html#AlteringExecution">
+            <topic label="Assignment to variables" href="using_gdb.html#Assignment"/>
+            <topic label="Continuing at a different address" href="using_gdb.html#ContinuingAtDifferentAddress"/>
+            <topic label="Giving your program a signal" href="using_gdb.html#GivingSignal"/>
+            <topic label="Returning from a function" href="using_gdb.html#Returning"/>
+            <topic label="Calling program functions" href="using_gdb.html#CallingFunctions"/>
+            <topic label="Patching programs" href="using_gdb.html#PatchingPrograms"/>
+          </topic>
+      </topic>
+      <topic label="ARM Memory Management" href="arm_memory.html">
+          <topic label="ARM-specific restrictions and issues" href="arm_memory.html#ARM_restrictions">
+            <topic label="_NTO_TCTL_IO behavior" href="arm_memory.html#id4"/>
+            <topic label="Implications of the ARM Cache Architecture" href="arm_memory.html#id6"/>
+          </topic>
+          <topic label="ARM-specific features" href="arm_memory.html#ARM_features">
+            <topic label="shm_ctl behavior" href="arm_memory.html#id9"/>
+          </topic>
+      </topic>
+      <topic label="Advanced Qnet Topics" href="adv_qnet_topics.html">
+          <topic label="Low-level discussion of Qnet principles" href="adv_qnet_topics.html#Qnet_principles"/>
+          <topic label="Details of Qnet data communication" href="adv_qnet_topics.html#DETQNETDATCOM"/>
+          <topic label="Node descriptors" href="adv_qnet_topics.html#NDEDESCRIP">
+            <topic label="The sys/netmgr.h header file" href="adv_qnet_topics.html#id6">
+              <topic label="netmgr_strtond" href="adv_qnet_topics.html#netmgr_strtond"/>
+              <topic label="netmgr_ndtostr" href="adv_qnet_topics.html#netmgr_ndtostr"/>
+              <topic label="netmgr_remote_nd" href="adv_qnet_topics.html#netmgr_remote_nd"/>
+            </topic>
+          </topic>
+          <topic label="Booting over the network" href="adv_qnet_topics.html#BOOTNTWK">
+            <topic label="Overview" href="adv_qnet_topics.html#id12"/>
+            <topic label="Creating directory and setting up configuration files" href="adv_qnet_topics.html#id14"/>
+            <topic label="Building an OS image" href="adv_qnet_topics.html#id16"/>
+            <topic label="Booting the client" href="adv_qnet_topics.html#id18"/>
+            <topic label="Troubleshooting" href="adv_qnet_topics.html#id20"/>
+          </topic>
+          <topic label="What are the limitations ..." href="adv_qnet_topics.html#WHATWRWHATNT"/>
+      </topic>
+      <topic label="Glossary" href="glossary.html"/>
+</toc>

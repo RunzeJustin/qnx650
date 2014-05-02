@@ -1,0 +1,124 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="The IDE project model" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_UnderstandingIDEProjects_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_SupportedProjectTypes_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_IDE_ProjectCreation_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_CheckingOutPartialSourceTree_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_IDE_SharingProjects_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_IDE_CheckingOutExistingProjects_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_IDE_ProjectBuildProperties_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="TheIDEprojectmodel" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>The IDE project model</title>
+   </head>
+   <body id="TheIDEprojectmodel"><a name="TheIDEprojectmodel" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">The IDE project model</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>The QNX Momentics IDE is based on the open source Eclipse platform and the open source CDT project, which provide the essential
+            portion of the functionality for projects and builds. The IDE uses the concept of a workspace that is a user-specific, writable
+            directory on the local host. 
+         </p>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> 
+            
+            <p>Note that this directory itself should never be included as part of a revision control system shared between users, nor should
+               it be located on a shared drive (unless you're certain there will only ever be one user that uses it). 
+               
+            </p>
+            
+            
+            <p>The frequent and large-scale development cycles in workspace metadata may cause poor performance on network filesystems, particularly
+               with large workspaces.
+            </p>
+            
+            
+         </div>
+         
+         
+         <p>The IDE uses the concept of a project, which is a container for source and binaries, together with some configuration files
+            that is usually located in the workspace. This project can be shared between users using a version control system. Projects
+            themselves are flat; they cannot contain one another. However, there is a concept of a working set that lets you filter and
+            group projects if you have too many of them in a workspace. There is also special QNX Container project which allows you to
+            control/build sets of projects at the same time. 
+         </p>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> When you select a location for your workspace, as well as the names for your projects, be aware that these names can be used
+            in the build; <span class="cmdname">make</span> doesn't like directory and file names that contain spaces and non-standard characters. The IDE might accept these characters;
+            however, the build wouldn't work with such these names.
+         </div>
+         
+         
+         <p>For projects, you need to have a directory in the filesystem that contains the project root (source and build output), and
+            use the same directory to contain the project metadata. If you want to separate project metadata from the source directories,
+            you'll have to use linked folders. You have an option to include the project inside your workspace, or outside the workspace.
+            You can determine how to create the project directory; you can check out the top level from one location and subdirectories
+            from another location, and you can also use OS soft links, or some other means to create it. 
+         </p>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/devel_UnderstandingIDEProjects_.html" shape="rect">Understanding projects in the IDE</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/devel_SupportedProjectTypes_.html" shape="rect">Supported project types in the IDE</a></div>
+            
+            <div><a href="../topic/devel_IDE_ProjectCreation_.html" shape="rect">Scenarios for creating a project for the first time</a></div>
+            
+            <div><a href="../topic/devel_IDE_SharingProjects_.html" shape="rect">Sharing projects</a></div>
+            
+            <div><a href="../topic/devel_IDE_ProjectBuildProperties_.html" shape="rect">Setting build properties for a project</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/devel_CheckingOutPartialSourceTree_.html" shape="rect">Checking out a partial source tree</a></div>
+            
+            <div><a href="../topic/devel_IDE_CheckingOutExistingProjects_.html" shape="rect">Checking out existing projects</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

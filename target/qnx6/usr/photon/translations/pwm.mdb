@@ -1,0 +1,19 @@
+PhABLang114
+restore,0,window menu restore text,0,0,,0,Restore
+restore_hk,0,window menu restore hot key,0,0,,0,R
+move,0,sdfsdf,0,0,,0,Move
+move_hk,0,sdfsdf,0,0,,0,M
+size,0,sdfsdf,0,0,,0,Size
+size_hk,0,dsds,0,0,,0,S
+minimize,0,dsds,0,0,,0,Minimize
+minimize_hk,0,dsds,0,0,,0,n
+maximize,0,dsds,0,0,,0,Maximize
+maximize_hk,0,dsds,0,0,,0,x
+lower,0,dsds,0,0,,0,To Back
+lower_hk,0,dsds,0,0,,0,B
+close,0,dsds,0,0,,0,Close
+close_hk,0,dsds,0,0,,0,C
+shutdown_confirm,0,dsds,0,0,,0,Please confirm shutdown of Photon
+shutdown_yes,0,dsds,0,0,,0,Shutdown
+shutdown_no,0,dsds,0,0,,0,Never Mind
+shutdown_no_hk,0,dsds,0,0,,0,N

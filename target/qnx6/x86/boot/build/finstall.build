@@ -1,0 +1,106 @@
+#
+# The build file for QNX Neutrino booting on a PC
+#
+[virtual=x86,bios +compress] boot = {
+	# Reserve 64k of video memory to handle multiple video cards 
+	startup-bios -s64k
+
+	# PATH is the *safe* path for executables (confstr(_CS_PATH...))
+	# LD_LIBRARY_PATH is the *safe* path for libraries (confstr(_CS_LIBPATH))
+	#    i.e. This is the path searched for libs in setuid/setgid executables.
+	PATH=/proc/boot:/bin:/usr/bin LD_LIBRARY_PATH=/proc/boot:/lib:/usr/lib:/lib/dll procnto
+}
+
+[+script] startup-script = {
+	# To save memory make everyone use the libc in the boot image!
+	# For speed (less symbolic lookups) we point to libc.so.3 instead of libc.so
+	procmgr_symlink ../../proc/boot/libc.so.3 /usr/lib/ldqnx.so.2
+
+	# Default user programs to priorty 10, other scheduler (pri=10o)
+	# Run 'inflator' on the QFS file mount point (/) when run from CD is selected
+	# Tell "diskboot" to use DMA on IDE drives (-D1)
+	# Start 4 text consoles buy passing "-n4" to "devc-con" (-o)
+	# Disable access time to speed up installation
+	# By adding "-e" linux ext2 filesystem will be mounted as well.
+	[pri=10o] PATH=/proc/boot diskboot -i -D1 -odevc-con,-n4 -odevb-*,"blk noatime cd exe"
+}
+
+# Include the current "libc.so". It will be created as a real file using
+# its internal "SONAME", with "libc.so" being a symlink to it. The symlink
+# will point to the last "libc.so.*" so if an earlier libc is needed
+# (e.g. libc.so.1) add it before the this line.
+libc.so
+libhiddi.so
+libusbdi.so
+
+# Include all the files for the default filesystems
+libcam.so
+io-blk.so
+cam-disk.so
+fs-qnx4.so
+fs-qnx6.so
+fs-dos.so
+fs-ext2.so
+cam-cdrom.so
+fs-cd.so
+fs-udf.so
+fs-nt.so
+fs-mac.so
+
+# USB for console driver
+devu-ehci.so
+devu-ohci.so
+devu-uhci.so
+devh-usb.so
+devh-ps2ser.so
+
+[data=copy]
+seedres
+pci-bios
+devb-eide
+devb-umass
+devb-ram
+devb-ahci
+devb-mvSata
+devb-adpu320
+devb-aha8
+umass-enum
+[search=${QNX_TARGET}/etc] umass-enum.cfg
+io-usb
+io-hid
+diskboot
+slogger
+fesh
+devc-con
+devc-con-hid
+finstall
+mkqnx6fs
+cp
+
+# Required for finstall to write loaders
+dloader
+dinit
+ipl-diskpc1
+ipl-diskpc1-flop
+ipl-diskpc2
+ipl-diskpc2-flop
+
+inflator
+
+# This line is required so mkifs can spawn ldrel
+# (happens when driver update applied)
+[type=link] /bin/sh=/proc/boot/fesh
+
+
+# These files will be unlinked after the system has started
+# to release the memory back to the system. They are only
+# needed during boot. If needed later on, they will be loaded
+# from the boot device.
+unlink_list={
+/proc/boot/devb-*
+}
+
+licenseCommercial.txt
+licenseNonCommercial.txt
+licensePartner.txt
+

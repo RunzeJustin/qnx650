@@ -1,0 +1,122 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="task" />
+      <meta name="DC.Title" content="Verifying a serial connection" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/target_usingpppfordebug_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/target_Prep_Sys_For_Windows_Target.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/target_QNX_Networking.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/target_Linking_System_To_QNXNeutrino.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/target_Verify_Network_Connection.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="VeifyingYourSerialConnection" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Verifying a serial connection</title>
+   </head>
+   <body id="VeifyingYourSerialConnection"><a name="VeifyingYourSerialConnection" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Verifying a serial connection</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <div class="section">To verify that your serial connection functions properly:
+            
+         </div>
+         
+         
+         <ol>
+            <li class="stepexpand"><span>Open the Console view in the IDE and a command prompt window for Windows.</span>
+               
+               
+            </li>
+            <li class="stepexpand"><span>In the Console view, type the following command:</span>
+               <samp class="codeph">stty raw 115200 par=none bits=8 stopb=1 &lt;/dev/ser1</samp>
+               
+            </li>
+            <li class="stepexpand"><span>At a Windows command prompt, type the following command:</span>
+               <samp class="codeph">mode com1: baud=115200 parity=n data=8 stop=1</samp>
+               
+            </li>
+            <li class="stepexpand"><span>In the Console view, type the following command:</span>
+               <samp class="codeph">cat &lt;/dev/ser1</samp>
+               
+            </li>
+            <li class="stepexpand"><span>At the Windows command prompt, type the following command:</span>
+               <samp class="codeph">dir \*.* &gt;com1:</samp>
+               
+               In the Console view, you'll see a DOS directory listing.
+               
+               
+            </li>
+            <li class="stepexpand"><span>At the Windows command prompt, type the following command:</span>
+               <samp class="codeph">copy com1: con:</samp>
+               
+               
+            </li>
+            <li class="stepexpand"><span>In the Console view, type the following command:</span>
+               <samp class="codeph">ls /* &gt;/dev/ser1</samp>
+               
+               At the Windows command prompt, you'll see a QNX Neutrino directory listing.
+               
+            </li>
+         </ol>
+         
+         
+         <div class="section">Now, if you are successful, you were able to confirm that you have a working serial connection between <span class="filepath">/dev/ser1</span> and <tt>COM1</tt>.
+            
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/target_usingpppfordebug_.html" shape="rect">Networking QNX Neutrino using PPP</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/target_Prep_Sys_For_Windows_Target.html" shape="rect">Preparing an embedded system for a Windows target</a></div>
+            
+            <div><a href="../topic/target_QNX_Networking.html" shape="rect">QNX Networking</a></div>
+            
+            <div><a href="../topic/target_Verify_Network_Connection.html" shape="rect">Verifying a network connection</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/target_Linking_System_To_QNXNeutrino.html" shape="rect">Linking an embedded system running QNX Neutrino to a Windows network connection</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

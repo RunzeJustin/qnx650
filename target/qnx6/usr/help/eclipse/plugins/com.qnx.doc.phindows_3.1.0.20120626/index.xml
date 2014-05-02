@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<index>
+<entry keyword=" palette file ">
+<topic href="topic/task_startingothernodes.html#Startingothernodes" title="Starting Photon sessions on other QNX nodes"/>
+</entry>
+<entry keyword="Buffer size errors">
+<topic href="topic/task_usingwindowsfonts.html#UsingWindowsFonts" title="Using Windows fonts"/>
+</entry>
+<entry keyword="command-line options">
+<entry keyword="setting">
+<topic href="topic/con_Options_.html#Commandlineoptions" title="Command-line options"/>
+</entry>
+</entry>
+<entry keyword="Configuring TCP/IP">
+<topic href="topic/config_TCPIP.html#Config_TCPIP" title="Configuring Phindows for TCP/IP use"/>
+</entry>
+<entry keyword="Connecting to a remote session">
+<topic href="topic/task_connecting.html#Connecting" title="Connecting to a remote Photon session"/>
+</entry>
+<entry keyword="Data-caching">
+<entry keyword="options">
+<topic href="topic/con_datacaching.html#Datacaching" title="Data-caching options"/>
+</entry>
+</entry>
+<entry keyword="Data-compression">
+<entry keyword="options">
+<topic href="topic/con_datacompression.html#Datacompression" title="Data-compression options"/>
+</entry>
+</entry>
+<entry keyword="dittoing a remote session">
+<topic href="topic/con_dittoing.html#Dittoing" title="Dittoing remote QNX Photon sessions"/>
+</entry>
+<entry keyword="Environment variables">
+<entry keyword="DOUBLE_BUFFER_DELAY">
+<topic href="topic/con_envars.html#envars" title="Configuring Phindows environment variables"/>
+</entry>
+<entry keyword="HOMEDRIVE">
+<topic href="topic/con_envars.html#envars" title="Configuring Phindows environment variables"/>
+</entry>
+<entry keyword="PHINDOWS_CLOSE_PROMPT">
+<topic href="topic/con_envars.html#envars" title="Configuring Phindows environment variables"/>
+</entry>
+<entry keyword="setting">
+<topic href="topic/con_envars.html#envars" title="Configuring Phindows environment variables"/>
+</entry>
+<entry keyword="SYSTEMROOT">
+<topic href="topic/con_envars.html#envars" title="Configuring Phindows environment variables"/>
+</entry>
+</entry>
+<entry keyword="help">
+<topic href="topic/con_Options_.html#Commandlineoptions" title="Command-line options"/>
+</entry>
+<entry keyword="Offscreen context support">
+<entry keyword="disabling">
+<topic href="topic/con_offscreen.html#offscreen" title="Enabling offscreen context support"/>
+</entry>
+<entry keyword="enabling">
+<topic href="topic/con_offscreen.html#offscreen" title="Enabling offscreen context support"/>
+</entry>
+<entry keyword="limitations">
+<topic href="topic/con_offscreen.html#offscreen" title="Enabling offscreen context support"/>
+</entry>
+</entry>
+<entry keyword="PgReadScreen()">
+<entry keyword="using">
+<topic href="topic/con_snapshot.html#Datacaching" title="Using snapshot or PgReadScreen()"/>
+</entry>
+</entry>
+<entry keyword="predefined services">
+<entry keyword="creating shortcuts">
+<topic href="topic/con_predefined.html#predefined" title="Using predefined Photon services"/>
+</entry>
+</entry>
+<entry keyword="screen capture">
+<topic href="topic/con_snapshot.html#Datacaching" title="Using snapshot or PgReadScreen()"/>
+<entry keyword="See snapshot">
+<topic href="topic/con_snapshot.html#Datacaching" title="Using snapshot or PgReadScreen()"/>
+</entry>
+</entry>
+<entry keyword="Sharing a Photon session">
+<entry keyword="workgroup computing">
+<topic href="topic/con_sharing.html#Sharing" title="Sharing a Photon session (workgroup computing)"/>
+</entry>
+</entry>
+<entry keyword="snapshot">
+<entry keyword="using">
+<topic href="topic/con_snapshot.html#Datacaching" title="Using snapshot or PgReadScreen()"/>
+</entry>
+</entry>
+<entry keyword="Spanning over multiple screens">
+<entry keyword="configuring">
+<topic href="topic/con_spanning.html#Spanning" title="Spanning a single Photon session across multiple screens"/>
+</entry>
+</entry>
+<entry keyword="Starting">
+<topic href="topic/about_Starting.html#StartingPhindows" title="Starting Phindows"/>
+</entry>
+<entry keyword="Starting on another node">
+<topic href="topic/task_startingothernodes.html#Startingothernodes" title="Starting Photon sessions on other QNX nodes"/>
+</entry>
+<entry keyword="Windows fonts">
+<entry keyword="configuring">
+<topic href="topic/task_usingwindowsfonts.html#UsingWindowsFonts" title="Using Windows fonts"/>
+</entry>
+<entry keyword="using">
+<topic href="topic/task_usingwindowsfonts.html#UsingWindowsFonts" title="Using Windows fonts"/>
+</entry>
+</entry>
+</index>

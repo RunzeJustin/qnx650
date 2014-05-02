@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="QNX Neutrino Advanced Graphics" topic="bookset.html"> 
+    <anchor id="1_bookset" />
+    <anchor id="2_bookset" />
+    <anchor id="3_bookset" />
+    <topic label="Developer's Guide" href="../com.qnx.doc.gf_dev_guide/about.html" >
+        <link toc="../com.qnx.doc.gf_dev_guide/toc.xml" />
+    </topic>
+    <anchor id="1_devguide" />
+    <anchor id="2_devguide" />
+    <anchor id="3_devguide" />
+</toc>

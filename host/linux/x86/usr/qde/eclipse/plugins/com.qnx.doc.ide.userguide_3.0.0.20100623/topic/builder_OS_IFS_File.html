@@ -1,0 +1,110 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="OS image (.ifs file)" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_IMAGES_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="AnOSImageIFSFile" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>OS image (.ifs file)</title>
+   </head>
+   <body id="AnOSImageIFSFile"><a name="AnOSImageIFSFile" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">OS image (<span class="filepath">.ifs</span> file)
+      </h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>The OS image is a bootable image filesystem that contains the startup header, startup
+            code, <span class="cmdname">proncto</span>, your boot script, and any drivers needed to minimally configure
+            the operating system: 
+            
+            
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/p2Ftopic2Fbuilder_OS_IFS_File.xml_d11305e31.jpg" alt="Introduction: QNX System Builder; .ifs structure" /></span>
+            
+         </p>
+         
+         
+         <p>Generally, we recommend that you keep your OS image as small as possible to realize the
+            following benefits: 
+         </p>
+         
+         <br clear="none" /><ul>
+            <li>Memory conservation — When the system boots, the entire OS image gets
+               loaded into RAM. This image isn't unloaded from RAM, so extra programs and data
+               built into the image require more memory than if your system loaded and unloaded
+               them dynamically. 
+            </li>
+            <li>Faster boot time — Loading a large OS image into RAM can take longer to
+               boot the system, especially if the image must be loaded via a network or serial
+               connection. 
+            </li>
+            <li>Stability — Having a small OS image provides a more stable boot process.
+               The fewer components you have in your OS image, the lower the probability that it
+               fails to boot. The components that must go in your image (startup, <span class="cmdname">proncto</span>,
+               a flash driver or network components, and a few shared objects) change rarely, so
+               they're less subject to errors introduced during the development and maintenance
+               cycles.
+            </li>
+         </ul>
+         
+         
+         <p>If your embedded system has a hard drive or CompactFlash (which behaves like an IDE hard
+            drive), you can access the data on it by including a block-oriented filesystem driver
+            (e.g. <tt>devb-eide</tt>) in your OS image filesystem and calling the driver from your
+            boot script. For details on the driver, see <a href="../../com.qnx.doc.neutrino_utilities/d/devb-eide.html" shape="rect">
+               <tt>devb-eide</tt>
+               </a> in the <cite>Utilities Reference</cite>. 
+         </p>
+         
+         
+         <p>If your system has an onboard flash device, you can use it to store your OS image and
+            even boot the system directly from flash (if your board allows this — check
+            your hardware documentation). Note that an OS image is read-only; if you want to use the
+            flash for read/write storage, you'll need to import create a flash filesystem image
+            (<span class="filepath">.efs</span> file). 
+         </p>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/builder_IMAGES_.html" shape="rect">Types of images you can create</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

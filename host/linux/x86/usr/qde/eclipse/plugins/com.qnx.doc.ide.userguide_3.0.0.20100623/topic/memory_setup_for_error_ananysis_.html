@@ -1,0 +1,144 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="task" />
+      <meta name="DC.Title" content="Configuring the IDE for error analysis" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_MEMERR_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Memory_ConfigureErrorAnalysis" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Configuring the IDE for error analysis</title>
+   </head>
+   <body id="Memory_ConfigureErrorAnalysis"><a name="Memory_ConfigureErrorAnalysis" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Configuring the IDE for error analysis</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <div class="p">
+            
+            <div class="note"><span class="notetitle">Note:</span> If your binary is instrumented with Mudflap, you can't run Memory Analysis on it because there will be a conflict (trying
+               to overload the same functions), and it will cause the program to crash.
+            </div>
+            
+            
+         </div>
+         
+         
+         <div class="section">
+            
+            <p>To configure for error analysis:</p>
+            
+            
+         </div>
+         
+         
+         <ol>
+            <li class="stepexpand">
+               <span>Create a Run or Debug type of QNX Application launch configuration as you normally would, but don't click <span class="uicontrol">Run</span> or <span class="uicontrol">Debug</span>.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>In the <span class="uicontrol">Create, manage, and run configurations</span> dialog, click the <span class="uicontrol">Tools</span> tab.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Click <span class="uicontrol">Add/Delete Tool</span>.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>In the <span class="uicontrol">Tools Selection</span> dialog, check <span class="uicontrol">Memory Analysis</span>:</span>
+               
+               
+               <p>
+                  <span><img src="../images/y_setup_for_error_ananysis_.xml_d133730e74.jpg" alt="Adding a tool" /></span>
+                  
+               </p>
+               
+               
+               
+            </li>
+            <li class="stepexpand">
+               <span>Click <span class="uicontrol">OK</span>.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Click the <span class="uicontrol">Memory Analysis</span> tab.</span>
+               
+               
+               <p>
+                  <span><img src="../images/y_setup_for_error_ananysis_.xml_d133730e105.jpg" alt="Memory Analysis tool" /></span>
+                  
+               </p>
+               
+               
+               
+            </li>
+            <li class="stepexpand">
+               <span>To configure the Memory Analysis settings for your program, expand the groups to view the appropriate set of options. For
+                  more information about these settings, see <a href="memory_analyzing_.html" shape="rect">Launching your program with Memory Analysis</a>. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>If you want the IDE to automatically change to the QNX Memory Analysis perspective when you run or debug, check <span class="uicontrol">Switch to this tool's perspective on launch</span>. 
+                  </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Click <span class="uicontrol">Apply</span> to save your changes.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Click <span class="uicontrol">Run</span>, <span class="uicontrol">Debug</span>, or <span class="uicontrol">Profile</span>. </span>
+               The IDE starts your program and lets you analyze your program's memory.
+               
+            </li>
+         </ol>
+         
+         
+         <div class="section">
+            
+            <div class="note"><span class="notetitle">Note:</span> Don't run more than one Memory Analysis session on a given target at a time, because the results may not be accurate.
+            </div>
+            
+            
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/memory_MEMERR_.html" shape="rect">Memory errors</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

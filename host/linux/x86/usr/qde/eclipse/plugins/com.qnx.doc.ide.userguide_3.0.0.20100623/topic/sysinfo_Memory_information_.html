@@ -1,0 +1,272 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Examining your target system's memory (inspecting virtual address space)" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Base_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_INTRO_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_SYSINFOPERSP_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Logging_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Views_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Target_navigator_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_System_summary_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Process_information_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Malloc_information_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Signal_information_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_System_blocking_graph_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Connection_information_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_System_resources_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Aps_view_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Views_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Examiningyourtargetsystemsmemoryinspectingvirtualaddressspace" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Examining your target system's memory (inspecting virtual address space)</title>
+   </head>
+   <body id="Examiningyourtargetsystemsmemoryinspectingvirtualaddressspace"><a name="Examiningyourtargetsystemsmemoryinspectingvirtualaddressspace" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Examining your target system's memory (inspecting virtual address space)</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>The following views in the QNX System Information perspective are especially useful for examining the memory of your target
+            system: 
+            
+            
+         </p>
+         
+         <br clear="none" /><ul>
+            <li>
+               <a href="memory_Base_.html" shape="rect">Finding memory errors and leaks</a>
+               
+            </li>
+            <li>Virtual address space</li>
+         </ul>
+         
+         
+         <p>
+            <strong>Virtual address space</strong>
+            
+         </p>
+         
+         
+         <p>The Memory Information view shows the memory used by the process you select in the Target Navigator view: 
+            
+            
+            
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/sysinfo_Memory_information_.xml_d167901e64.jpg" alt="Memory Information view" /></span>
+            
+         </p>
+         
+         
+         <p>The view shows the following major categories of memory usage: 
+            
+         </p>
+         
+         <br clear="none" /><ul>
+            <li>Stack (red) <br clear="none" /><ul>
+                  <li>guard (light) </li>
+                  <li>unallocated (medium) </li>
+                  <li>allocated (dark) </li>
+               </ul>
+               
+            </li>
+            <li>Program (royal blue) <br clear="none" /><ul>
+                  <li>data (light) </li>
+                  <li>code (dark) </li>
+               </ul>
+               
+            </li>
+            <li>Heap (blue violet)</li>
+            <li>Objects (powder blue)</li>
+            <li>Shared Library (green) <br clear="none" /><ul>
+                  <li>data (light) </li>
+                  <li>code (dark) </li>
+               </ul>
+               
+            </li>
+            <li>Unused (white)</li>
+         </ul>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> If you don't specify the name of any special version of <span class="filepath">libc</span>, the System Information perspective in the IDE shows incorrect memory information because it can't find the correct <tt>malloc()</tt> information. To specify the name of any special version of <span class="filepath">libc</span> that you're using (e.g. <tt>QCONN_ALT_MALLOC=libspecialLib.so.2 qconn</tt>), when starting <span class="cmdname">qconn</span>, use the <var class="varname">QCONN_ALT_MALLOC</var> environment variable.
+         </div>
+         
+         
+         <p>The Process Memory pane shows the overall memory usage. To keep large sections of memory from visually overwhelming smaller
+            sections, the view scales the display semilogarithmically and indicates compressed sections with a split. 
+         </p>
+         
+         
+         <p>Below the Process Memory pane, the Process Memory subpane shows your selected memory category (e.g. Stack, Library) linearly.
+            The subpane colors the memory by subcategory (e.g. a stack's guard page), and shows unused memory. 
+         </p>
+         
+         
+         <p>The Memory Information view's table lists all the memory segments and the associated virtual address, size, permissions, and
+            offset. The major categories list the total sizes for the subcategories (e.g. Library lists the sizes for code/data in the
+            Size column). The Process Memory pane and subpane update their displays as you make selections in the table. 
+         </p>
+         
+         
+         <p>The Memory Information view's table includes the following columns: </p>
+         
+         
+         <dl>
+            <dt class="dlterm">Name</dt>
+            <dd>The name of the category. </dd>
+            <dt class="dlterm">V. Addr.</dt>
+            <dd>The virtual address of the memory. </dd>
+            <dt class="dlterm">Size</dt>
+            <dd>The size of the section of memory. For the major categories, the column lists the totals for the minor categories. </dd>
+            <dt class="dlterm">Map Flags</dt>
+            <dd>The flags and protection bits for the memory block. See the <a href="../../com.qnx.doc.neutrino_lib_ref/m/mmap.html" shape="rect"><tt>mmap</tt>
+                  </a> function's <var class="varname">flags</var> and <var class="varname">prot</var> arguments in the Neutrino <cite>Library Reference</cite>. 
+            </dd>
+            <dt class="dlterm">Offset</dt>
+            <dd>The memory block's offset into shared memory, which is equal to the <a href="../../com.qnx.doc.neutrino_lib_ref/m/mmap.html" shape="rect"><tt>mmap</tt></a> function's <var class="varname">off</var> argument. 
+               
+            </dd>
+         </dl>
+         
+         
+         <div class="p">To toggle the Memory Information view's table arrangement between a flat list and a categorized list: <br clear="none" /><ol>
+               <li>Select the dropdown menu (<span><img src="../images/sysinfo_Memory_information_.xml_d167901e244.jpg" alt="Icon: Menu" /></span>) in the Memory Information view's title bar and select <span class="uicontrol">Categorize</span>.
+               </li>
+            </ol>
+            
+         </div>
+         
+         
+         <p>
+            <strong>Stack errors</strong>
+            
+         </p>
+         
+         
+         <p>Stack errors can occur if your program contains functions that are deeply recursive or use a significant amount of local data.
+            Errors of this sort can be difficult to find using conventional testing; although your program seems to work properly during
+            testing, the system could fail in the field, likely when your system is busiest and is needed the most. 
+            
+            
+            
+         </p>
+         
+         
+         <p>The Memory Information view lets you see how much stack memory your program and its threads use. The view can warn you of
+            potential stack errors. 
+            
+         </p>
+         
+         
+         <p>
+            <strong>Inefficient heap usage</strong>
+            
+         </p>
+         
+         
+         <p>Your program can experience problems if it uses the heap inefficiently. Memory-allocation operations are expensive, so your
+            program may run slowly if it repeatedly allocates and frees memory, or continuously reallocates memory in small chunks. 
+            
+            
+         </p>
+         
+         
+         <p>The Malloc Information view shows a count of your program's memory allocations; if your program has an unusually high turnover
+            rate, this might mean that the program is allocating and freeing more memory than it should. 
+            
+            
+            
+         </p>
+         
+         
+         <p>You may also find that your program uses a surprising amount of memory, even though you were careful not to allocate more
+            memory than you required. Programs that make many small allocations can incur substantial overhead. 
+         </p>
+         
+         
+         <p>The Malloc Information view lets you see the amount of overhead memory the <span class="filepath">malloc</span> library uses to manage your program's heap. If the overhead is substantial, you can review the data structures and algorithms
+            used by your program, and then make adjustments so that your program uses its memory resources more efficiently. The Malloc
+            Information view lets you track your program's reduction in overall memory usage. 
+         </p>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> To learn more about the common causes of memory problems, see <a href="../../com.qnx.doc.neutrino_prog/hat.html" shape="rect">Heap Analysis: Making Memory Errors a Thing of the Past</a> in the QNX Neutrino <cite>Programmer's Guide</cite>.
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/sysinfo_Base_.html" shape="rect">Getting System Information</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/sysinfo_INTRO_.html" shape="rect">Introduction</a></div>
+            
+            <div><a href="../topic/sysinfo_SYSINFOPERSP_.html" shape="rect">What the System Information perspective reveals</a></div>
+            
+            <div><a href="../topic/sysinfo_Views_.html" shape="rect">Associated views</a></div>
+            
+            <div><a href="../topic/sysinfo_Target_navigator_.html" shape="rect">Controlling your system information session</a></div>
+            
+            <div><a href="../topic/sysinfo_System_summary_.html" shape="rect">Examining your target system's attributes</a></div>
+            
+            <div><a href="../topic/sysinfo_Process_information_.html" shape="rect">Watching your processes</a></div>
+            
+            <div><a href="../topic/sysinfo_Malloc_information_.html" shape="rect">Tracking heap usage</a></div>
+            
+            <div><a href="../topic/sysinfo_Signal_information_.html" shape="rect">Examining process signals</a></div>
+            
+            <div><a href="../topic/sysinfo_System_blocking_graph_.html" shape="rect">Getting channel information</a></div>
+            
+            <div><a href="../topic/sysinfo_Connection_information_.html" shape="rect">Tracking file descriptors</a></div>
+            
+            <div><a href="../topic/sysinfo_System_resources_.html" shape="rect">Tracking resource usage</a></div>
+            
+            <div><a href="../topic/sysinfo_Aps_view_.html" shape="rect">Tracking the use of adaptive partitioning</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/sysinfo_Logging_.html" shape="rect">Logging system information</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

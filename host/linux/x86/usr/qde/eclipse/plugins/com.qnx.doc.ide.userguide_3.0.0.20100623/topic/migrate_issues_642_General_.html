@@ -1,0 +1,140 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="General migration considerations" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_630sp2_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_640_migandco_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_640_compilers_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_Binary_Compatibility.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_640_CDTImpact_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_640_installLoc_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_640_switch_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_640_reset_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_640_console_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_640_revert_.html" />
+      <meta name="DC.Relation" scheme="URI" content="migrate_issues_640_migandco_.html" />
+      <meta name="DC.Relation" scheme="URI" content="migrate_issues_640_compilers_.html" />
+      <meta name="DC.Relation" scheme="URI" content="migrate_Binary_Compatibility.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Generalmigrationconsiderations" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>General migration considerations</title>
+   </head>
+   <body id="Generalmigrationconsiderations"><a name="Generalmigrationconsiderations" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">General migration considerations</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>For IDE 4.7, you need to be aware of the following when you migrate:</p>
+         
+         <br clear="none" /><ul>
+            <li>On Windows hosts, you'll find a configuration program called <tt>QWinCfg</tt> for switching between versions of QNX Momentics. You launch <tt>QWinCfg</tt> via the start menu ( e.g. All <span class="menucascade">
+                  <span class="uicontrol">Programs</span>
+                  &gt; <span class="uicontrol">QNX Software Development Platform 6.5.0</span>
+                  &gt; <span class="uicontrol">Configuration</span>
+                  </span>). For details about using <tt>QWinCfg</tt>, see <a href="../../com.qnx.doc.neutrino_utilities/q/qwincfg.html" shape="rect">
+                  <tt>QWinCfg</tt>
+                  </a> in the <cite>Utilities Reference</cite>.
+            </li>
+            <li>For non-Windows hosts, if you're using the command-line tools, use the <tt>qconfig</tt> utility to configure your machine to use a specific version of Neutrino: <br clear="none" /><ul>
+                  <li>If you run it without any options, <tt>qconfig</tt> lists the versions that are installed on your machine. 
+                  </li>
+                  <li>If you specify the <span class="option">-e</span> option, you can set up the environment for building software for a specific version of the OS. For example, if you're using
+                     the Korn shell (<tt>ksh</tt>), you can configure your machine like this: <pre class="codeblock" xml:space="preserve">eval `qconfig -n "QNX Software Development Platform 6.5.0" -e`</pre>
+                     </li>
+               </ul>
+               
+               <div class="note"><span class="notetitle">Note:</span> In the above command, you must use the <span class="q">"back tick"</span> character (`), not the single quote character ('). The string that you pass to the <span class="option">-n</span> option is the <span class="uicontrol">Installation Name</span> field as printed by <tt>qconfig</tt>. 
+               </div>
+               
+               <p>This command affects only the shell in which you ran <tt>qconfig</tt>. Other windows, for example, will be unaffected. To change environments in all your windows, you can run the command in your
+                  shell-initialization script or in your <span class="filepath">.profile</span>. You can also define separate users who use different coexisting versions. 
+               </p>
+               
+            </li>
+            <li>In most cases, the IDE installed with version 6.5.0 should work with the toolchains from earlier releases (6.4.1, 6.3.x and
+               6.2.x).
+            </li>
+            <li>You can't link old C++ libraries into new C++ programs. The QNX Momentics Tool Suite on Windows and Linux includes version
+               4.7 of the IDE.
+            </li>
+            <li>You can now get Board Support Packages from our website. For information about building BSPs from earlier releases, see the
+               <a href="http://community.qnx.com/sf/wiki/do/viewPage/projects.bsp/wiki/PRE640BSP_migrationDoc" target="_blank" shape="rect">http://community.qnx.com/sf/wiki/do/viewPage/projects.bsp/wiki/PRE640BSP_migrationDoc</a> on our Foundry27 community website. 
+            </li>
+            <li>You'll need to recompile ATAPI drivers that are BSP-specific for 6.5.0 (the driver, <samp class="codeph">io-blk</samp>, and the filesystems need to be in sync). 
+            </li>
+            <li>6.3.x USB drivers should be compatible with 6.5.0. </li>
+         </ul>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/migrate_issues_630sp2_.html" shape="rect">Migration issues</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/migrate_issues_640_migandco_.html" shape="rect">Coexistence</a></div>
+            
+            <div><a href="../topic/migrate_issues_640_compilers_.html" shape="rect">Compiler issues</a></div>
+            
+            <div><a href="../topic/migrate_Binary_Compatibility.html" shape="rect">Binary compatibility</a></div>
+            
+            <div><a href="../topic/migrate_issues_640_CDTImpact_.html" shape="rect">CDT impact on the IDE</a></div>
+            
+            <div><a href="../topic/migrate_issues_640_installLoc_.html" shape="rect">IDE location</a></div>
+            
+            <div><a href="../topic/migrate_issues_640_reset_.html" shape="rect">Missing features in context menus</a></div>
+            
+            <div><a href="../topic/migrate_issues_640_revert_.html" shape="rect">Reverting to an older version of the IDE</a></div>
+            
+            <div><a href="migrate_issues_640_migandco_.html" shape="rect">Coexistence</a></div>
+            
+            <div><a href="migrate_issues_640_compilers_.html" shape="rect">Compiler issues</a></div>
+            
+            <div><a href="migrate_Binary_Compatibility.html" shape="rect">Binary compatibility</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/migrate_issues_640_switch_.html" shape="rect">Old launch configurations don't switch perspectives automatically</a></div>
+            
+            <div><a href="../topic/migrate_issues_640_console_.html" shape="rect">System Builder Console doesn't come to front</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

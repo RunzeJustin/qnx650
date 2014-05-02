@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+   <extension-point id="symboltranslator" name="SymbolTranslator" schema="schema/symboltranslator.exsd"/>
+   <extension
+         point="com.qnx.tools.ide.addresstranslator.symboltranslator">
+      <SymbolTranslator
+            class="com.qnx.tools.ide.addresstranslator.core.translators.CDTBinaryParserTranslator"
+            name="CDT Binary Parser"
+            id="com.qnx.tools.ide.addresstranslator.CDTBinaryParser"/>
+      <SymbolTranslator
+            class="com.qnx.tools.ide.addresstranslator.core.translators.MAPFileTranslator"
+            name="MAP File Translator"
+            id="com.qnx.tools.ide.addresstranslator.MAPFile"/>
+      <SymbolTranslator
+            class="com.qnx.tools.ide.addresstranslator.core.translators.CSVFileTranslator"
+            id="com.qnx.tools.ide.addresstranslator.CSVTranslator"
+            name="CSV File Translator"/>
+   </extension>
+
+</plugin>

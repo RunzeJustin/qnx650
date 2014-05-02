@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+	id="com.qnx.tools.ide.doc.qnx.neutrino.system.architecture"
+	label="%featureName"
+	version="3.1.0.20120626"
+	provider-name="%providerName"
+	plugin="com.qnx.tools.ide.doc.qnx.neutrino.system.architecture">
+
+	<description>
+		%description
+	</description>
+
+	<copyright>
+		%copyright
+	</copyright>
+
+	<license url="%licenseURL">
+		%license
+	</license>
+
+	<plugin
+		id="com.qnx.doc.neutrino_sys_arch"
+		version="3.1.0.20120626"
+		download-size="0"
+		install-size="0"
+		unpack="true"/>
+</feature>

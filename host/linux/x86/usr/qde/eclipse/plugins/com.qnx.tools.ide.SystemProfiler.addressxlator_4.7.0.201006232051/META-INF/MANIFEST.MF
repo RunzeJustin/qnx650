@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Bundle-Activator: com.qnx.tools.ide.SystemProfiler.addressxlator.SPAdd
+ ressTranslatorPlugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ActivationPolicy: lazy
+Export-Package: com.qnx.tools.ide.SystemProfiler.addressxlator,com.qnx
+ .tools.ide.SystemProfiler.addressxlator.actions,com.qnx.tools.ide.Sys
+ temProfiler.addressxlator.adapter,com.qnx.tools.ide.SystemProfiler.ad
+ dressxlator.dataextractor,com.qnx.tools.ide.SystemProfiler.addressxla
+ tor.properties
+Bundle-Version: 4.7.0.201006232051
+Bundle-Name: %pluginName
+Bundle-ClassPath: addressxlator.jar
+Bundle-ManifestVersion: 2
+Bundle-Vendor: %providerName
+Bundle-SymbolicName: com.qnx.tools.ide.SystemProfiler.addressxlator; s
+ ingleton:=true
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.core.resources,co
+ m.qnx.tools.ide.addresstranslator,com.qnx.tools.ide.SystemProfiler.co
+ re,org.eclipse.cdt.core;visibility:=reexport,com.qnx.tools.utils,com.
+ qnx.tools.ide.qde.core,org.eclipse.ui.ide,org.eclipse.ui.views,org.ec
+ lipse.jface.text,org.eclipse.ui.workbench.texteditor,org.eclipse.ui.e
+ ditors,org.eclipse.ui,org.eclipse.cdt.ui,org.eclipse.debug.ui,org.ecl
+ ipse.core.filesystem
+
+

@@ -1,0 +1,222 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Building projects" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_Base_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_CDEVPERS_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_UnderstandingIDEProjects_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_CREATE_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_CONTROL_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_WRITE_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_RUN_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_Delete_A_Project.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_FEATURES_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_make_choosing_QNX_CPP_Projects.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_make_choosing_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_Config_Automated_Builds.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_Example_1.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_Building_all_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_make_configuring_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_IDE_BuildingFromIDE_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_Building_selected_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_Build_From_Command_Line.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_Cleaning_all_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_Cleaning_selected_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_Autosave_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_make_personaloptions_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_Build_Custom_Target.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_Removing_Make_Target.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_make_addusemessage_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_AddUseMassage_QNX_CPP_Project.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_AddUseMassage_Standard_CPP_Project.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_Create_Target_System.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_Create_Launch_Configuration.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Buildingprojects" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Building projects</title>
+   </head>
+   <body id="Buildingprojects"><a name="Buildingprojects" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Building projects</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>After you've created a project, you'll want to build it. Note that the IDE uses the same <span class="cmdname">make</span> utility and <span class="filepath">Makefile</span>s that are used on the command line. 
+         </p>
+         
+         
+         <p>The IDE can build projects automatically (i.e. whenever you change your source), or let you build them manually. When you
+            do manual builds, you can also decide on the scope of the build. 
+            
+         </p>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> When you right-click on a project and select <span class="uicontrol">Build Project</span>, there is a particular scenario where the C/C++ perspective will ignore the <span class="uicontrol">Build Project</span> command. For example, if you build a <span class="cmdname">make</span> project and then modify and build the project outside the IDE (for a library that it needs to link against), when you attempt
+            to select <span class="uicontrol">Build Project</span> in the IDE, it won't reissue the <tt>make all</tt> for the project. The IDE ignores the explicit user-specified build request for this particular scenario.
+         </div>
+         
+         
+         <p>The IDE uses a number of terms to describe the scope of the build: 
+            
+         </p>
+         
+         
+         <dl>
+            <dt class="dlterm">
+               <span class="uicontrol">Build Project</span>
+               
+            </dt>
+            <dd>Build only the components affected by modified files in that particular project (i.e. <tt>make all</tt>). 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Clean Project</span>
+               
+            </dt>
+            <dd>Delete all the built components (i.e. <span class="filepath">.o</span>, <span class="filepath">.so</span>, <span class="filepath">.exe</span>, and so on) without building anything (i.e. <tt>make clean</tt>). 
+               
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Rebuild</span>
+               
+            </dt>
+            <dd>Build the project from scratch (i.e. <tt>make clean all</tt>). 
+            </dd>
+         </dl>
+         
+         
+         <p>You can watch a build's progress and see output from the build command in the Console view. If a build generates any errors
+            or warnings, you can see them in the Problems view. 
+            
+            
+            
+            
+         </p>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <ul class="ullinks">
+            <li class="ulchildlink"><strong><a href="../topic/devel_make_choosing_QNX_CPP_Projects.html" shape="rect">Enabling the autobuild feature for QNX C/C++ projects</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/devel_make_choosing_.html" shape="rect">Enabling the autobuild feature for non QNX C/C++ projects</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/devel_Config_Automated_Builds.html" shape="rect">Configuring automated builds</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/devel_Example_1.html" shape="rect">Example #1: the Makefile is in the root</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/devel_Building_all_.html" shape="rect">Building all projects</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/devel_make_configuring_.html" shape="rect">Configuring the project build order</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/devel_IDE_BuildingFromIDE_.html" shape="rect">Building a single project</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/devel_Building_selected_.html" shape="rect">Building selected projects</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/devel_Build_From_Command_Line.html" shape="rect">Building from the command line</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/devel_Cleaning_all_.html" shape="rect">Cleaning and rebuilding all projects</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/devel_Cleaning_selected_.html" shape="rect">Cleaning selected projects</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/devel_Autosave_.html" shape="rect">Autosave before building</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/devel_make_personaloptions_.html" shape="rect">Creating custom options</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/devel_Build_Custom_Target.html" shape="rect">Building a project with a custom make target</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/devel_Removing_Make_Target.html" shape="rect">Removing a make target</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/devel_make_addusemessage_.html" shape="rect">Adding a use message</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/devel_AddUseMassage_QNX_CPP_Project.html" shape="rect">Adding a usage message when using a QNX C/C++ Project</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/devel_AddUseMassage_Standard_CPP_Project.html" shape="rect">Adding a usage message when using a Standard Project</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/devel_Create_Target_System.html" shape="rect">Creating a QNX target system Project</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/devel_Create_Launch_Configuration.html" shape="rect">Creating a launch configuration</a></strong><br clear="none" />
+               
+            </li>
+         </ul>
+         
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/devel_Base_.html" shape="rect">Developing C/C++ Programs</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/devel_CDEVPERS_.html" shape="rect">The C/C++ perspective</a></div>
+            
+            <div><a href="../topic/devel_UnderstandingIDEProjects_.html" shape="rect">Understanding projects in the IDE</a></div>
+            
+            <div><a href="../topic/devel_CREATE_.html" shape="rect">Developing projects in the IDE</a></div>
+            
+            <div><a href="../topic/devel_CONTROL_.html" shape="rect">Working with projects</a></div>
+            
+            <div><a href="../topic/devel_WRITE_.html" shape="rect">Writing code</a></div>
+            
+            <div><a href="../topic/devel_FEATURES_.html" shape="rect">More development features</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/devel_RUN_.html" shape="rect">Running binaries for a project</a></div>
+            
+            <div><a href="../topic/devel_Delete_A_Project.html" shape="rect">Deleting a project</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

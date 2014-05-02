@@ -1,0 +1,39 @@
+[ UC_LANGUAGE_t ]
+#
+# Description:
+# This is the User's Configuration (UC) Language data file
+# Containing a list of supported languages.
+# 
+#
+# Keyword       Comment/{Values}/[Default]
+# ========      ================================================================
+# language    - .
+#    name     - Language name as it is shown in the window
+#               [English]
+#    lang_id  - The language ID for the PhAB
+#               [en_EN]
+#
+
+language = Belgian French, 		fr_BE
+language = Canadian English, 	en_CA
+language = Canadian French,		fr_CA
+language = Chinese,				zh_CN
+language = Danish,				da_DK
+language = Dutch,				nl_FR
+language = French,				fr_FR
+language = German,				de_DE
+language = Italian,				it_IT
+language = Japanese,			jp_JP
+language = Korean (North),		ko_KP
+language = Korean (South),		ko_KR
+language = Norwegian,			no_NO
+language = Polish,				pl_PL
+language = Portuguese,			pt_PT
+language = Russian,				ru_RU
+language = Slovak,				sk_SK
+language = Spanish,				es_ES
+language = Swedish,				sv_SE
+language = Swiss French,		fr_CH
+language = Swiss German,		de_CH
+language = UK English,			en_GB
+language = US English,			en_US

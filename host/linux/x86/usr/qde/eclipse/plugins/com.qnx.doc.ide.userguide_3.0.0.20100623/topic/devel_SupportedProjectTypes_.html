@@ -1,0 +1,151 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Supported project types in the IDE" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_UnderstandingIDEProjects_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_TheIDEProjectModel_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_IDE_ProjectCreation_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_CheckingOutPartialSourceTree_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_IDE_SharingProjects_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_IDE_CheckingOutExistingProjects_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_IDE_ProjectBuildProperties_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_Container_Projects.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="SupportedprojecttypesintheIDE" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Supported project types in the IDE</title>
+   </head>
+   <body id="SupportedprojecttypesintheIDE"><a name="SupportedprojecttypesintheIDE" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Supported project types in the IDE</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>The QNX IDE supports these project types: </p>
+         
+         <br clear="none" /><a name="SupportedprojecttypesintheIDE__ul_69b43df5-3dd4-411c-85b8-848840586597" shape="rect">
+            <!-- --></a><ul id="SupportedprojecttypesintheIDE__ul_69b43df5-3dd4-411c-85b8-848840586597">
+            <li><tt>Makefile</tt> project 
+            </li>
+            <li>QNX Project </li>
+            <li>Managed Project</li>
+         </ul>
+         
+         
+         <p>
+            <strong><tt>Makefile</tt> project</strong>
+            
+         </p>
+         
+         
+         <p>A <tt>Makefile</tt> project would work for any project that has a <tt>Makefile</tt> (by default). A <tt>Makefile</tt> project can launch anything as an external builder in any folder. The IDE starts <span class="cmdname">make</span>, and after <span class="cmdname">make</span> exits, the IDE refreshes the workspace to see what was created. You can change the <span class="cmdname">make</span> command and/or run specific <span class="cmdname">make</span> targets, but the IDE has no control over what <span class="cmdname">make</span> is doing. 
+         </p>
+         
+         
+         <p>Since the IDE doesn't know what's being built, it would have problems parsing source files (which it does internally to allow
+            navigation, code completion, syntax highlighting, code generation, and refactoring). Therefore, if you use a <tt>Makefile</tt> project, you have to modify the Indexer (the internal parser) to point it to the missing <tt>Includes</tt>, as well as what <tt>Defines</tt> your parser uses for conditional compilation. The process of determining this is called Discovery, and it can be controlled
+            using <span class="uicontrol">Discovery Options</span>. 
+         </p>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> If you know what includes and defines you want to use, it's easier to specify them directly (<span class="menucascade">
+               <span class="uicontrol">Project</span>
+               &gt; <span class="uicontrol">Properties</span>
+               &gt; <span class="uicontrol">C/C++ General</span>
+               &gt; <span class="uicontrol">Path and Settings</span>
+               </span>).
+         </div>
+         
+         
+         <p>
+            <strong>QNX Project</strong>
+            
+         </p>
+         
+         
+         <p>A QNX project is a special kind of <tt>Makefile</tt> project with additional control over the <span class="cmdname">make</span>. To use a QNX project, you also have to use QNX recursive <tt>Makefile</tt>s. QNX recursive <tt>Makefile</tt>s are <a href="../../com.qnx.doc.neutrino_prog/make_convent.html" shape="rect">conventions</a> for creating <tt>Makefile</tt>s that use specific variables and layout. This lets the IDE parse the <tt>common.mk</tt>, and to provide the GUI with control over the <tt>Makefile</tt> options and build variants. Typically, a single QNX project is good enough to build one binary/library for several variants,
+            such as x86 and PPC in the debug and release modes. 
+         </p>
+         
+         
+         <p>
+            <strong>Managed Project</strong>
+            
+         </p>
+         
+         
+         <p>A managed project is a CDT-specific project that doesn't use <tt>Makefile</tt>s, and all of the build settings are controlled by the GUI. However, it can use <tt>Makefile</tt>s, if you use the external <span class="cmdname">make</span> builder. In that case, it generates them automatically and they shouldn't be checked into source control. 
+         </p>
+         
+         
+         <p>The problem associated with this project type is its inability to perform a build of the project from command line (although,
+            it's possible in simple cases with some additional setup files). In addition, there are restrictions on what you build and
+            how, particularly if you use special steps in the build that involves other tools. 
+         </p>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <ul class="ullinks">
+            <li class="ulchildlink"><strong><a href="../topic/devel_Container_Projects.html" shape="rect">Container project</a></strong><br clear="none" />
+               
+            </li>
+         </ul>
+         
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/devel_UnderstandingIDEProjects_.html" shape="rect">Understanding projects in the IDE</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/devel_TheIDEProjectModel_.html" shape="rect">The IDE project model</a></div>
+            
+            <div><a href="../topic/devel_IDE_ProjectCreation_.html" shape="rect">Scenarios for creating a project for the first time</a></div>
+            
+            <div><a href="../topic/devel_IDE_SharingProjects_.html" shape="rect">Sharing projects</a></div>
+            
+            <div><a href="../topic/devel_IDE_ProjectBuildProperties_.html" shape="rect">Setting build properties for a project</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/devel_CheckingOutPartialSourceTree_.html" shape="rect">Checking out a partial source tree</a></div>
+            
+            <div><a href="../topic/devel_IDE_CheckingOutExistingProjects_.html" shape="rect">Checking out existing projects</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

@@ -1,0 +1,174 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Importing GCC coverage data from a project" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_importing_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_importwiz_container_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_importwiz_existing_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_importwiz_features_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_importwiz_filesystem_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_importwiz_bsp_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_importwiz_mkifs_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_importwiz_qnxsource_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_importwiz_team_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_importwiz_zip_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_importbreakpoints_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_importlaunchconfigs_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="ImportingGCCcoveragedatafromaproject" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Importing GCC coverage data from a project</title>
+   </head>
+   <body id="ImportingGCCcoveragedatafromaproject"><a name="ImportingGCCcoveragedatafromaproject" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Importing GCC coverage data from a project</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         
+         <p>The <span class="uicontrol">GCC Coverage Data from Project</span> option in the
+            Import wizard lets you import code coverage data from
+            applications that have been run outside of the IDE.
+         </p>
+         
+         
+         <p>For example, in a self-hosted build environment, if you run a
+            code-coverage-enabled program from the command-line, it writes
+            code-coverage data into a <span class="filepath"><var class="varname">project_name</var>.gcda</span>
+            file in the same directory as the program's code.
+         </p>
+         
+         
+         <p>To import code-coverage data:</p>
+         
+         <br clear="none" /><ol>
+            <li>In the Import wizard (<span class="menucascade">
+                  <span class="uicontrol">File</span>
+                  &gt; <span class="uicontrol">Import</span>
+                  </span>), expand <span class="uicontrol"></span>, choose <span class="uicontrol">GCC Coverage Data</span>, and then click <span class="uicontrol">Next</span>.
+               
+               	
+               <p>	The IDE shows the <span class="uicontrol">GCC Coverage Import</span> panel.
+                  	
+               </p>
+               
+               
+               	
+               <p><span><img src="../images/wizards_importwiz_coverage_.xml_d212642e77.jpg" alt="GCC Coverage Data" /></span></p>
+               
+               	
+               	
+            </li>
+            <li>	Enter a code-coverage session name in the <span class="uicontrol">Session name</span>
+               	field.
+               	
+            </li>
+            <li>	Enter a project name in the <span class="uicontrol">Project</span> field, or click the
+               	<span class="uicontrol">Browse…</span> button to select a project.
+               	
+            </li>
+            <li>Click <span class="uicontrol">Next</span> to continue.
+               
+               	
+            </li>
+            <li>Select a protocol type and a location for the coverage data.
+               
+               	
+            </li>
+            <li>Click <span class="uicontrol">Next</span>.
+               
+               	
+               <p>	The IDE shows the next panel.
+                  	
+               </p>
+               
+               
+               	
+               <p><span><img src="../images/wizards_importwiz_coverage_.xml_d212642e116.jpg" alt="Importing code-coverage" /></span></p>
+               
+               	
+               	
+            </li>
+            <li>	To include code-coverage data from referenced projects, select
+               	them in the <span class="uicontrol">Referenced projects to include coverage data
+                  	from</span> list.
+               	
+            </li>
+            <li>	To include any comments with the new code-coverage session (such
+               	as details about the data you're importing), enter them in the
+               	<span class="uicontrol">Comments for this coverage session</span> field.
+               	
+            </li>
+            <li>	Click <span class="uicontrol">Finish</span> to import the code coverage data as a new
+               	session in the <span class="uicontrol">Code Coverage Sessions</span> view.
+               	
+            </li>
+            <li>Click <span class="uicontrol">Next</span>.
+            </li>
+         </ol>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/wizards_importing_.html" shape="rect">Importing projects</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/wizards_importwiz_container_.html" shape="rect">Importing an existing container project into a workspace</a></div>
+            
+            <div><a href="../topic/wizards_importwiz_existing_.html" shape="rect">Importing an existing project into a workspace</a></div>
+            
+            <div><a href="../topic/wizards_importwiz_features_.html" shape="rect">Importing external features</a></div>
+            
+            <div><a href="../topic/wizards_importwiz_filesystem_.html" shape="rect">Importing a file system</a></div>
+            
+            <div><a href="../topic/wizards_importwiz_bsp_.html" shape="rect">Importing a QNX Source Package</a></div>
+            
+            <div><a href="../topic/wizards_importwiz_mkifs_.html" shape="rect">Importing a QNX mkifs Buildfile</a></div>
+            
+            <div><a href="../topic/wizards_importwiz_qnxsource_.html" shape="rect">Importing a QNX source package</a></div>
+            
+            <div><a href="../topic/wizards_importwiz_team_.html" shape="rect">Importing a team project set</a></div>
+            
+            <div><a href="../topic/wizards_importwiz_zip_.html" shape="rect">Importing an archive file</a></div>
+            
+            <div><a href="../topic/wizards_importbreakpoints_.html" shape="rect">Breakpoints</a></div>
+            
+            <div><a href="../topic/wizards_importlaunchconfigs_.html" shape="rect">Launch configurations</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

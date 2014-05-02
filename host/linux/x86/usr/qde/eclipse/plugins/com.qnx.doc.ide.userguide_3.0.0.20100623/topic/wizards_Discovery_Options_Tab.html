@@ -1,0 +1,245 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Discovery options tab" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_c_tabs_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="WizardsDiscoveryOptionsTab" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Discovery options tab</title>
+   </head>
+   <body id="WizardsDiscoveryOptionsTab"><a name="WizardsDiscoveryOptionsTab" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Discovery options tab</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>If you're building a C/C++ project, this tab lets you control how include paths and C/C++ macro 
+            definitions for this particular project are automatically discovered. Certain features of the 
+            IDE (e.g. syntax highlighting, code assistance, etc.) rely on this information, as do source-code 
+            parsers. You can configure various options for the scanner configuration on the Discovery Options 
+            page of the Makefile Project panel in the Preferences window.
+            
+            
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/zards_Discovery_Options_Tab.xml_d201021e20.jpg" alt="Discovery options tab" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>Controlling how include paths and C/C++ macro definitions are automatically discovered on the Discovery options tab.</p>
+            
+            
+         </div>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> At a later time, you can supply this data using the <span class="uicontrol">Search Paths</span> item in the project properties.
+         </div>
+         
+         
+         <dl>
+            <dt class="dlterm">
+               <span class="uicontrol">Configuration</span>
+               
+            </dt>
+            <dd>Refer to the "Builder settings tab" section for more information about the Configuration field. </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Discovery Profiles Scope</span>
+               
+            </dt>
+            <dd>Specifies the type of profile to set for discovery: <br clear="none" /><ul>
+                  <li><span class="uicontrol">Per Language</span> — Enables the association of different profiles with different resource types (different tools and input types), to have
+                     different settings discovered, e.g. for C and C++ source files and for different tools used by the project. In addition, selecting
+                     this option lets you specify different profile settings for different folders; however, only project profile types are allowed.
+                     
+                  </li>
+                  <li><span class="uicontrol">Configuration-wide</span> — The Eclipse CDT uses only one profile for discovering scanner information for the entire project (configuration). This
+                     means that both the project and per-file discovery profiles are allowed. 
+                  </li>
+               </ul>
+               
+            </dd>
+            <dt class="dlterm">Left pane list (language specific)</dt>
+            <dd>Shows a list of language specific compilers. Select a language from the list. </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Automate discovery of paths and symbols</span>
+               
+            </dt>
+            <dd>Scans the build output to populate the path and symbol tables, such as symbol definitions, system include directories, local
+               include directories, macros, and include files. 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Report path detection problems</span>
+               
+            </dt>
+            <dd>Sets the notification of diagnostic errors for include paths that the Eclipse CDT is unable to resolve. </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Discovery profile</span>
+               
+            </dt>
+            <dd>Indicates the discovery profile to use for paths and symbol detection. The type of configuration and Discovery Profile Scope
+               you specify determine which Discovery Profile options appear on this tab. 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Enable build output scanner info discovery</span>
+               
+            </dt>
+            <dd>Configures the scanner to parse build output for compiler commands with options that specify the definition of preprocessor
+               symbols, and include search paths (for GCC compiler, <span class="option">-D</span> and <span class="option">-I</span> respectively). This button is only visible when <span class="uicontrol">Configuration</span> is set to <cite>Release</cite> and the <span class="uicontrol">Discovery Profiles Scope</span> is set to <cite>Configuration-wide</cite>. 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Load</span>
+               
+            </dt>
+            <dd>Lets you load a file to discover paths and symbols based on a previous builds' output. To activate the discovery select a
+               build log file and then click the <span class="uicontrol">Load</span> button. This button is only visible when <span class="uicontrol">Configuration</span> is set to <cite>Release</cite> and the <span class="uicontrol">Discovery Profiles Scope</span> is set to <cite>Configuration-wide</cite>. Note that you can click <span class="uicontrol">Variables</span> to open the Select Variables window to define a build output file. 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Load build output from file</span>
+               
+            </dt>
+            <dd>Specifies the name of the file you selected to load the build output from. This button is only visible when <span class="uicontrol">Configuration</span> is set to <cite>Release</cite> and the <span class="uicontrol">Discovery Profiles Scope</span> is set to <cite>Configuration-wide</cite>. 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Browse</span>
+               
+            </dt>
+            <dd>Click to locate a previously built output file. This button is only visible when <span class="uicontrol">Configuration</span> is set to <cite>Release</cite> and the <span class="uicontrol">Discovery Profiles Scope</span> is set to <cite>Configuration-wide</cite>. 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Variables</span>
+               
+            </dt>
+            <dd>Click to specify an argument, or create and configure simple launch variables which you can reference in some launch configurations.
+               This button is only visible when <span class="uicontrol">Configuration</span> is set to <cite>Release</cite> and the <span class="uicontrol">Discovery Profiles Scope</span> is set to <cite>Configuration-wide</cite>. 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Enable generate scanner info command</span>
+               
+            </dt>
+            <dd>Enables the retrieval of information from the scanner. If it is not selected, the includes will be populated with default
+               <span class="cmdname">gcc</span> system includes. Eclipse gathers the compiler settings based on the specified toolchain. This means that the Eclipse CDT
+               can obtain the default <span class="cmdname">gcc</span> system includes to associate with the project. When selected, you can specify any required compiler specific commands in
+               the Compiler invocation command field. 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Compiler invocation command</span>
+               
+            </dt>
+            <dd>Indicates the compiler specific command used to invoke the compiler. For example, the command <samp class="codeph">gcc -E -P -v hello.c | hello.cpp</samp> reads a compiler's configuration file and prints out information that includes the compiler's internally defined preprocessor
+               symbols and include search paths. The information is complementary to the scanner configuration discovered when the output
+               is parsed (if you've enabled the Enable build output scanner info discovery option), and is added to the project's scanner
+               configuration. You can click <span class="uicontrol">Browse</span> to locate this command, if required. 
+               <p>The parsing of build output for scanner information is compiler specific. For example, the GNU toolchain compilers (<span class="cmdname">gcc</span> and g++) use <span class="option">-I</span> for include paths, and <span class="option">-D</span> for symbol definitions. Consult your compiler specific documentation for more information about scanner information commands,
+                  such as the following <span class="cmdname">gcc</span> commands:
+               </p>
+               <br clear="none" /><ul>
+                  <li>
+                     <span class="option">-D</span>
+                     <var class="varname">name</var>
+                     
+                  </li>
+                  <li>
+                     <span class="option">-I</span>
+                     
+                  </li>
+                  <li>
+                     <span class="option">-U</span>
+                     <var class="varname">name</var>
+                     
+                  </li>
+                  <li>
+                     <span class="option">-I-</span>
+                     
+                  </li>
+                  <li>
+                     <span class="option">-nostdinc</span>
+                     
+                  </li>
+                  <li>
+                     <span class="option">-nostdinc++</span>
+                     
+                  </li>
+                  <li>
+                     <span class="option">-include file</span>
+                     
+                  </li>
+                  <li>
+                     <span class="option">-imacros file</span>
+                     
+                  </li>
+                  <li>
+                     <span class="option">-idirafter dir</span>
+                     
+                  </li>
+                  <li>
+                     <span class="option">-isystem dir</span>
+                     
+                  </li>
+                  <li>
+                     <span class="option">-iprefix prefix</span>
+                     
+                  </li>
+                  <li>
+                     <span class="option">-iwithprefix dir</span>
+                     
+                  </li>
+                  <li>
+                     <span class="option">-iwithprefixbefore dir</span>
+                     
+                  </li>
+               </ul>
+               
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Browse</span>
+               
+            </dt>
+            <dd>Browse for a file to include in the compiler invocation command. This button is only visible when <span class="uicontrol">Configuration</span> is set to <cite>Release</cite> and the <span class="uicontrol">Discovery Profiles Scope</span> is set to <cite>Configuration-wide</cite>. 
+            </dd>
+         </dl>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/wizards_c_tabs_.html" shape="rect">Project properties</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

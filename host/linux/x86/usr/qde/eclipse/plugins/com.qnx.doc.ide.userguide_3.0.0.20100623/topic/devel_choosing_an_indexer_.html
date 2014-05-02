@@ -1,0 +1,137 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Choosing an indexer" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_CREATE_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_createsimpleproj_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_create_equiv_make_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/devel_MakeMakefileProjects_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Choosinganindexer" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Choosing an indexer</title>
+   </head>
+   <body id="Choosinganindexer"><a name="Choosinganindexer" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Choosing an indexer</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>
+            
+            
+            
+            
+            The C/C++ search features use an index of symbols (from the source code in your projects, and from external header files)
+            to find the locations of declarations and references. By default, the indexer is set to Fast, which means that it provides
+            fastest indexing capabilities (for declarations and cross reference information). This is the recommended indexer. 
+         </p>
+         
+         
+         <p>To specify an indexer type for a project, open the project's Properties dialog, and then select <span class="uicontrol">C/C++ Indexer</span> from the list on the left. 
+         </p>
+         
+         
+         <p>To specify an indexer type as the default indexer for new projects, choose <span class="menucascade">
+               <span class="uicontrol">Window</span>
+               &gt; <span class="uicontrol">Preferences…</span>
+               </span>, expand <span class="uicontrol">C/C++</span> in the list on the left, and then choose <span class="uicontrol">Indexer</span>. 
+         </p>
+         
+         
+         <p>In either case, you have the following choices:</p>
+         
+         
+         <dl>
+            <dt class="dlterm">
+               <span class="uicontrol">Full indexer (complete parse)</span>
+               
+            </dt>
+            <dd>Parses your project in the same manner that a compiler does. It starts at each compilation unit and parses that file and all
+               files that it includes. This provides the most accurate index information. For large projects using complex C++ code, this
+               indexer can slow down the IDE. 
+               
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Fast indexer (recommended)</span>
+               
+            </dt>
+            <dd>Similar to the Full indexer, except it parses each header file included in a project only once. For example, if a header file
+               is included by two compilation units, the parsing of the second unit reuses the results of parsing the first unit. This is
+               similar to how precompiled headers work. The indexing of large projects using the Fast indexer uses fewer resources than the
+               Full indexer, but the resulting index isn't quite as accurate. 
+               
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">No indexer (search features will not work correctly)</span>
+               
+            </dt>
+            <dd>Disables indexing completely. This also disables much of the search functionality.
+               
+            </dd>
+         </dl>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> Currently, the indexer gathers information to identify overloaded operators, which means that indexing time may be longer,
+            and the size of the index file will likely be larger. Therefore, to skip the collection of implicit references, select the
+            <span class="uicontrol">Skip implicit references (e.g. overloaded operators)</span> option from <span class="menucascade">
+               <span class="uicontrol">Window</span>
+               &gt; <span class="uicontrol">Preferences</span>
+               &gt; <span class="uicontrol">C/C++</span>
+               &gt; <span class="uicontrol">Indexer</span>
+               </span>. 
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/devel_CREATE_.html" shape="rect">Developing projects in the IDE</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/devel_MakeMakefileProjects_.html" shape="rect">Managed make projects</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/devel_createsimpleproj_.html" shape="rect">Creating a simple project</a></div>
+            
+            <div><a href="../topic/devel_create_equiv_make_.html" shape="rect">Creating a make project</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

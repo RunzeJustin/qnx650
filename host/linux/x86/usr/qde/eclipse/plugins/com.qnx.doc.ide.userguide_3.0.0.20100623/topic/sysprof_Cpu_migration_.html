@@ -1,0 +1,96 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="CPU Migration pane" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_anal_multiproc_sys.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="CPUMigrationpane" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>CPU Migration pane</title>
+   </head>
+   <body id="CPUMigrationpane"><a name="CPUMigrationpane" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">CPU Migration pane</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>The CPU Migration pane provides a display that draws attention to some of the potential
+            performance problems that are associated with multiple-CPU systems. 
+         </p>
+         
+         
+         <p><span><img src="../images/opic2Fsysprof_Cpu_migration_.xml_d174341e18.jpg" alt="CPU Migration pane" /></span></p>
+         
+         
+         <div class="fignone">
+            
+            <p>The System Profiler's CPU Migration pane.</p>
+            
+            
+         </div>
+         
+         
+         <p>There are two migration details that are currently charted over the period of the log
+            file:
+         </p>
+         
+         <br clear="none" /><ul>
+            <li> The first chart provides a display showing the number of CPU- scheduling migrations
+               over time. The count is incremented each time a thread switches CPUs. The peaks in
+               this chart indicate areas where there's a high level of contention for particular
+               CPUs. This type of cross-CPU migration can reduce performance because the
+               instruction code cache is flushed, invalidated, and then reloaded on the new CPU. 
+            </li>
+            <li> The second chart shows the count of cross-CPU communication, where the sending
+               client thread and the receiving server thread are running on different CPUs. This
+               type of cross-CPU communication on the initial message-sends is a potential
+               performance problem since the data that is associated with the message-pass can't be
+               maintained in the processor data cache. The caches must be invalidated, as the data
+               transfer is moved to the new CPU. 
+            </li>
+         </ul>
+         
+         
+         <p>This pane contains valid data only when the log file contains events from a system where
+            there are multiple CPUs.
+         </p>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/sysprof_anal_multiproc_sys.html" shape="rect">Analyzing multiprocessor systems</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

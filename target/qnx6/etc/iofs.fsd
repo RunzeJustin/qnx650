@@ -1,0 +1,21 @@
+# Driver startup rules. Uncomment any driver you wanted auto started.
+# You can use the -d option to io-fs to force start and driver.
+#
+# The mount= option is only available for drivers which can only mount a single
+# known fle system like "media", "tmp" or "et". Block can mount many file systems
+# so they are coded in the general iofs.fsm table.
+#
+# DRIVER       OPTIONS
+#tmp           mount=/fs/tmpfs
+#file          dir=/dev:/var/images,safe
+#ata
+#umass
+
+#mtest         mount=/fs/mtest%#
+#ipod          device=/dev/ser1,mount=/fs/ipod%#
+#pfs           mount=/fs/pfs%#
+#upnp          mount=fs/upnp%#
+
+#sim_nor       object=/nor,size=32m,mount=/fs/etfs%#
+#sim_nand512   object=/nand512,size=512k,mount=/fs/etfs%#
+#sim_nand2048  object=/nand2048,size=64m,mount=/fs/etfs%#

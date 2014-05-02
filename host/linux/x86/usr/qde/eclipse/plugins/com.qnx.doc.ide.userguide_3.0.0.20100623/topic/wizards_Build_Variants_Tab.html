@@ -1,0 +1,145 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Build Variants tab" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizard_wizard_properties.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_Options_Tab.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_General_Tab.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_Library_Tab.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_Compiler_Tab.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_Linker_Tab.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="WizardsBuildVariantsTab" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Build Variants tab</title>
+   </head>
+   <body id="WizardsBuildVariantsTab"><a name="WizardsBuildVariantsTab" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Build Variants tab</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>The Build Variants tab lets you choose the platforms to compile executables for, and you can also click <span class="uicontrol">Add</span> to specify your own custom variants, such as a unit testing variant. 
+            
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/2Fwizards_Build_Variants_Tab.xml_d198772e23.jpg" alt="Common wizards: C/C++ Projects; Build Variants tab" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>Selecting a build variant on the Build Variants tab.</p>
+            
+            
+         </div>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> 
+            <p>By default, <em>none</em> of the platforms are enabled. You might want to change your default preferences for all new QNX projects. To do this, open
+               <span class="menucascade">
+                  <span class="uicontrol">Window</span>
+                  &gt; <span class="uicontrol">Preferences</span>
+                  &gt; <span class="uicontrol">QNX</span>
+                  &gt; <span class="uicontrol">New Project</span>
+                  &gt; <span class="uicontrol">Build Variants</span>
+                  </span>. 
+               
+            </p>
+            
+            
+            <p>For PhAB projects, the following variant types aren't supported: ARM v7, MIPS, and PPC SPE.</p>
+            
+            
+         </div>
+         
+         
+         <p>Select the specific architecture(s) and build variant(s) you want to build for your project. Note that QNX projects are different
+            from managed-build projects. 
+         </p>
+         
+         
+         <p>To make a change to your existing variant(s), you'll need to select <span class="menucascade">
+               <span class="uicontrol">File</span>
+               &gt; <span class="uicontrol">Clean</span>
+               </span> and then build again, or perform the clean before you make the change to the target variant(s).
+         </p>
+         
+         
+         <p>You can click the <span class="uicontrol">Select All</span> button to enable all of the listed variants, or the <span class="uicontrol">Deselect All</span> button to disable all of the listed variants.
+         </p>
+         
+         
+         <p>You can click the <span class="uicontrol">Add</span> button to add a new variant under the currently selected target architecture, or the <span class="uicontrol">Delete</span> button to remove the currently selected variant.
+         </p>
+         
+         
+         <p>To choose a build variant for the Indexer to use:</p>
+         
+         <br clear="none" /><ol>
+            <li> Select the build variant for the indexer to use. </li>
+            <li> Click the <span class="uicontrol">Set Indexer Variant</span> button. 
+               <p>The variant's name changes to include &gt;. This variant's symbols and include paths will be used for source indexing. The impact
+                  on the C/C++ Editor is that it determines the macro definitions, inclusion/exclusion of additional code, the navigation to
+                  the deader files and so on.
+               </p>
+               
+            </li>
+         </ol>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/wizard_wizard_properties.html" shape="rect">Wizard properties</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/wizards_Options_Tab.html" shape="rect">Options tab</a></div>
+            
+            <div><a href="../topic/wizards_General_Tab.html" shape="rect">General tab</a></div>
+            
+            <div><a href="../topic/wizards_Library_Tab.html" shape="rect">Library tab</a></div>
+            
+            <div><a href="../topic/wizards_Compiler_Tab.html" shape="rect">Compiler tab</a></div>
+            
+            <div><a href="../topic/wizards_Linker_Tab.html" shape="rect">Linker tab</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

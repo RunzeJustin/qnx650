@@ -1,0 +1,148 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="General" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/builder_prop_item_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="ItemPropertiesGeneral" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>General</title>
+   </head>
+   <body id="ItemPropertiesGeneral"><a name="ItemPropertiesGeneral" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">General</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <dl>
+            <dt class="dlterm">
+               <span class="uicontrol">Absolute Location on Host</span>
+               
+            </dt>
+            <dd>The absolute location for this item's data on the host. By default, if you add a
+               binary from the workspace or filesystem, the absolute path for the file
+               automatically shows in the <span class="uicontrol">Absolute Location on Host</span>
+               property. If you add a binary <tt>devc-serpsc</tt> from
+               <var class="varname">QNX_TARGET</var> where the BSP is installed, the absolute path
+               would show as <span class="filepath"><var class="varname">QNX_TARGET</var>/ppcbe/sbin</span>,
+               where <var class="varname">QNX_TARGET</var> is the default absolute path (i.e., for
+               Windows it would be <span class="filepath">C:\QNX641\target\qnx6</span>). If you add a
+               binary using the default search path, the <span class="uicontrol">Absolute Location on
+                  Host</span> field will be empty because the IDE already knows the
+               location of the file. For more information, see
+               <a href="builder_CREATE_.html" shape="rect">Creating a new QNX System Builder project for an OS image</a>. 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Include In Image</span>
+               
+            </dt>
+            <dd>If Yes, the QNX System Builder includes this item when it builds the image.
+               
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Optional Item?</span>
+               
+            </dt>
+            <dd>If Yes, this item is considered optional. It's excluded from the image if the
+               image is too large to fit in the architecture-specific maximum image size. 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Filename</span>
+               
+            </dt>
+            <dd>The name of the file for this item (e.g. <span class="filepath">devc-ser8250</span>). The
+               filename property refers to the filename of the item in the target image. The
+               default is the same as <span class="uicontrol">Filename on Host</span>, but you can
+               rename it. 
+               
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Location In Image</span>
+               
+            </dt>
+            <dd>The directory where the item lives. If you change this setting, the directory
+               location shown in the Filesystem pane changes as well. 
+               <div class="note"><span class="notetitle">Note:</span> 
+                  
+                  <p>Symbolic links also have a <span class="uicontrol">Linked To</span> field for the
+                     source file.
+                  </p>
+                  
+                  
+                  <p>A deleted directory persists if it still contains items. To completely
+                     remove the directory, delete the reference to the directory in the
+                     <span class="uicontrol">Location In Image</span> field in the Properties
+                     view for all the items in the directory.
+                  </p>
+                  
+                  
+               </div>
+               
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Absolute Location on Host</span>
+               
+            </dt>
+            <dd>The fully-qualified directory where the item resides. You browse to a directory
+               to set this location. 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Filename on host</span>
+               
+            </dt>
+            <dd>The filename of the item on the host development system being included in the
+               image. 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Strip File</span>
+               
+            </dt>
+            <dd>By default, <span class="cmdname">strip</span> strips debugging information from executable files
+               that you include in the image. Doing this helps reduce the size of the image. To
+               keep this information, select No. See <a href="../../com.qnx.doc.neutrino_utilities/m/mkifs.html" shape="rect">
+                  <span class="cmdname">mkifs</span>
+                  </a> (especially the +raw attribute) and <a href="../../com.qnx.doc.neutrino_utilities/s/strip.html" shape="rect">
+                  <span class="cmdname">mksbp</span>
+                  </a> in the <cite>Utilities Reference</cite>. 
+            </dd>
+         </dl>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/builder_prop_item_.html" shape="rect">Item properties</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

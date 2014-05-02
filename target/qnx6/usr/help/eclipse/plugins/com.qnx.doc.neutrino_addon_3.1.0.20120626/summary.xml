@@ -1,0 +1,82 @@
+<function_summary>
+<function
+   name="AoAdd"
+   summary="Add the interfaces contained in a DLL to the global list of interfaces"
+   synopsis="#include &lt;aoi.h&gt;\n const AOICtrl_t *AoAdd(const char *path);\n"
+/>
+<function
+   name="AoAddDirectory"
+   summary="Add the interfaces contained in all DLLs in a directory to the global list of interfaces"
+   synopsis="#include &lt;aoi.h&gt;\n int32_t AoAddDirectory(const char *path, const char *pattern);\n"
+/>
+<function
+   name="AoAddStatic"
+   summary="Add a static list of interfaces to the global list of interfaces"
+   synopsis="#include &lt;aoi.h&gt;\n const AOICtrl_t *AoAddStatic(AOInterface_t *interfaces);\n"
+/>
+<function
+   name="AoAddUnloadSignal"
+   summary="Add an unload signal for an addon to an application"
+   synopsis="#include &lt;aoi.h&gt;\n int32_t AoAddUnloadSignal(int sig);\n"
+/>
+<function
+   name="AoGetInterface"
+   summary="Retrieve an interface from a control"
+   synopsis="#include &lt;aoi.h&gt;\n void *AoGetInterface(const AOICtrl_t *control, const char *name, const int32_t version, const int32_t nth);\n"
+/>
+<function
+   name="AoHold"
+   summary="Increment the hold counter for a control "
+   synopsis="#include &lt;aoi.h&gt;\n int32_t AoHold(const AOICtrl_t *ctrl);\n"
+/>
+<function
+   name="AoIterate"
+   summary="Find a list of controls for an interface name and version "
+   synopsis="#include &lt;aoi.h&gt;\n const AOICtrl_t *AoIterate(const char *name, const int32_t version, int32_t * const cookie);\n"
+/>
+<function
+   name="AoIterateHoldGet"
+   summary="Search for a specific interface and hold its control "
+   synopsis="#include &lt;aoi.h&gt;\n const AOICtrl_t *AoIterateHoldGet(const char *name, const int32_t version, int32_t *cookie, void **interface);\n"
+/>
+<function
+   name="AoRelease"
+   summary="Decrement the hold counter for a control "
+   synopsis="#include &lt;aoi.h&gt;\n int32_t AoRelease(const AOICtrl_t *control);\n"
+/>
+<function
+   name="AoRemove"
+   summary="Remove a control from the global list of interfaces"
+   synopsis="#include &lt;aoi.h&gt;\n int32_t AoRemove(const AOICtrl_t *control);\n"
+/>
+<function
+   name="AoFindExt"
+   summary="Find a control with a AOExtInspector interface, and which is best suited for a specific file extension"
+   synopsis="#include &lt;aoi.h&gt;\n const AOICtrl_t *AoFindExt(const char *extension, int32_t *rating, const char *interface, int32_t version);\n"
+/>
+<function
+   name="AoFindFormats"
+   summary="Find the interface control that can handle a specific media format"
+   synopsis="#include &lt;aoi.h&gt;\n const AOICtrl_t *AoFindFormats(const AODataFormat_t *format, int32_t *rating, const char *interface, int32_t version);\n"
+/>
+<function
+   name="AoFindMime"
+   summary="Find a control with the best rating for a mimetype"
+   synopsis="#include &lt;aoi.h&gt;\n const AOICtrl_t *AoFindMime(const char *mimetype, int32_t *rating, const char *interface, int32_t version);\n"
+/>
+<function
+   name="AoFindName"
+   summary="Find a control by its Name interface"
+   synopsis="#include &lt;aoi.h&gt;\n const AOICtrl_t *AoFindName(const char *name, const char *interface, int32_t version);\n"
+/>
+<function
+   name="AoFindStreams"
+   summary="Find a control with the best rating for a specific stream"
+   synopsis="#include &lt;aoi.h&gt;\n const AOICtrl_t *AoFindStreams(AOIStream_t *stream, int32_t *rating, const char *interface, int32_t version);\n"
+/>
+<function
+   name="AoOpenFilespec"
+   summary="Finds the first control that can open a file in a given mode"
+   synopsis="#include &lt;aoi.h&gt;\n AOIStream_t *AoOpenFilespec(const char *filename, const char *mode);\n"
+/>
+</function_summary>

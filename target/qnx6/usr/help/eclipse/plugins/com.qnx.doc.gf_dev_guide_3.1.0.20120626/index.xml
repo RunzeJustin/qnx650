@@ -1,0 +1,1350 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<index>
+ <entry keyword="3D targets">
+  <entry keyword="creating">
+   <topic href="api/gf_3d_target_free.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="freeing">
+   <topic href="api/gf_3d_target_create.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="querying">
+   <topic href="api/gf_3d_query_config.html#id9" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="alpha blending">
+  <topic href="layers.html#context_alpha" title="Context Alpha Blending"/>
+  <topic href="layers.html#layer_alpha" title="Layer blending and chroma"/>
+  <entry keyword="data structure">
+   <topic href="api/gf_alpha_t.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="disabling">
+   <topic href="api/gf_context_disable_alpha.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="setting">
+   <topic href="api/gf_context_set_alpha.html#id9" title="Description:"/>
+   <topic href="api/gf_layer_set_blending.html#id9" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="anti-aliasing">
+  <entry keyword="polylines">
+   <topic href="layers.html#anti-aliasing_polylines" title="Anti-aliasing polylines"/>
+  </entry>
+ </entry>
+ <entry keyword="antialias">
+  <entry keyword="disabling">
+   <topic href="api/gf_context_disable_antialias.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="setting">
+   <topic href="api/gf_context_set_antialias.html#id9" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="background">
+  <entry keyword="color">
+   <topic href="layers.html#context_foreground" title="Setting foreground and background colors"/>
+  </entry>
+ </entry>
+ <entry keyword="bitmaps">
+  <entry keyword="drawing">
+   <topic href="api/gf_draw_bitmap.html#id9" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="blitting">
+  <topic href="api/gf_draw_blit1.html#id9" title="Description:"/>
+  <topic href="api/gf_draw_blit2.html#id9" title="Description:"/>
+  <topic href="api/gf_draw_blitscaled.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="bluescreen">
+  <entry keyword="chroma keying">
+   <topic href="layers.html#context_chroma" title="Chroma Keying"/>
+  </entry>
+ </entry>
+ <entry keyword="buffers">
+  <entry keyword="configuration for 3D">
+   <topic href="3d.html#using" title="Using OpenGL ES"/>
+  </entry>
+ </entry>
+ <entry keyword="buildfile">
+  <entry keyword="example">
+   <topic href="embedding.html#id6" title="2D example: vsync"/>
+  </entry>
+ </entry>
+ <entry keyword="Carmine">
+  <entry keyword="limitations">
+   <topic href="hardware.html#id4" title="OpenGL ES Hardware Acceleration"/>
+  </entry>
+ </entry>
+ <entry keyword="chroma">
+  <entry keyword="setting">
+   <topic href="api/gf_display_set_external_chroma.html#id9" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="chroma key">
+  <entry keyword="data structure">
+   <topic href="api/gf_chroma_t.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="disabling">
+   <topic href="api/gf_context_disable_chroma.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="setting">
+   <topic href="api/gf_context_set_chroma.html#id9" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="chroma keying">
+  <topic href="layers.html#context_chroma" title="Chroma Keying"/>
+  <entry keyword="example">
+   <topic href="layers.html#context_chroma" title="Chroma Keying"/>
+  </entry>
+ </entry>
+ <entry keyword="clipping">
+  <topic href="layers.html#clipping" title="Clipping"/>
+  <entry keyword="disabling">
+   <topic href="api/gf_context_disable_clipping.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="setting">
+   <topic href="api/gf_context_set_clipping.html#id9" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="codecs">
+  <entry keyword="listing">
+   <topic href="img/img_codec_list.html#id9" title="Description:"/>
+   <topic href="img/img_codec_list_byext.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="listing by MIME">
+   <topic href="img/img_codec_list_bymime.html#id9" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="color">
+  <entry keyword="background">
+   <topic href="api/gf_context_set_bgcolor.html#id9" title="Description:"/>
+   <topic href="api/gf_context_set_bgcolor_native.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="buffer">
+   <topic href="3d.html#using" title="Using OpenGL ES"/>
+  </entry>
+  <entry keyword="datatype">
+   <topic href="api/gf_palette_t.html#gf_color_t" title="The gf_color_t Type"/>
+  </entry>
+  <entry keyword="foreground">
+   <topic href="api/gf_context_set_fgcolor.html#id9" title="Description:"/>
+   <topic href="api/gf_context_set_fgcolor_native.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="palette structure">
+   <topic href="api/gf_palette_t.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="setting">
+   <topic href="layers.html#context_foreground" title="Setting foreground and background colors"/>
+  </entry>
+ </entry>
+ <entry keyword="configuration">
+  <entry keyword="img.conf">
+   <topic href="img/img_lib_attach.html#config" title="The img.conf Configuration File"/>
+  </entry>
+ </entry>
+ <entry keyword="contexts">
+  <entry keyword="creating">
+   <topic href="layers.html#contexts" title="Using contexts"/>
+  </entry>
+ </entry>
+ <entry keyword="conventions">
+  <entry keyword="typographical">
+   <topic href="about.html#id3" title="Typographical conventions"/>
+  </entry>
+ </entry>
+ <entry keyword="Coral">
+  <entry keyword="limitations">
+   <topic href="hardware.html#coral" title="Fujitsu Coral"/>
+  </entry>
+ </entry>
+ <entry keyword="cursors">
+  <entry keyword="disabling">
+   <topic href="api/gf_cursor_disable.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="enabling">
+   <topic href="api/gf_cursor_enable.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="position">
+   <topic href="api/gf_cursor_set_pos.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="setting">
+   <topic href="api/gf_cursor_set.html#id9" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="decoding">
+  <entry keyword="video">
+   <topic href="vidcap.html#id3" title="Video capture"/>
+  </entry>
+ </entry>
+ <entry keyword="device">
+  <entry keyword="attaching to">
+   <topic href="api/gf_dev_attach.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="detatching from">
+   <topic href="api/gf_dev_detach.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="errors">
+   <topic href="api/gf_dev_get_error.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="memory">
+   <topic href="api/gf_dev_get_meminfo.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="registering">
+   <topic href="api/gf_dev_register_thread.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="surface">
+   <topic href="api/gf_surface_get_dev.html" title="gf_surface_get_dev"/>
+   <topic href="layers.html#surfaces" title="Using surfaces"/>
+  </entry>
+ </entry>
+ <entry keyword="dimensions">
+  <entry keyword="data structure">
+   <topic href="api/gf_dim_t.html#id5" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="display">
+  <entry keyword="attaching to">
+   <topic href="api/gf_display_attach.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="buffer">
+   <topic href="3d.html#using" title="Using OpenGL ES"/>
+  </entry>
+  <entry keyword="buffer formats">
+   <topic href="3d.html#using" title="Using OpenGL ES"/>
+  </entry>
+  <entry keyword="data structure">
+   <topic href="api/gf_display_query.html#id9" title="Description:"/>
+   <topic href="api/gf_display_attach.html#gf_display_info_t" title="gf_display_info_t"/>
+  </entry>
+  <entry keyword="detaching to">
+   <topic href="api/gf_display_detach.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="mode structure">
+   <topic href="api/gf_display_query_mode.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="querying">
+   <topic href="api/gf_display_query.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="querying modes">
+   <topic href="api/gf_display_query_mode.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="setting modes">
+   <topic href="api/gf_display_set_mode.html#id9" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="displays">
+  <entry keyword="attaching">
+   <topic href="layers.html#layers" title="Using layers"/>
+  </entry>
+  <entry keyword="capturing images">
+   <topic href="api/gf_display_snapshot.html#id9" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="draw context">
+  <entry keyword="creating">
+   <topic href="api/gf_context_create.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="flushing">
+   <topic href="api/gf_draw_flush.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="freeing">
+   <topic href="api/gf_context_free.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="get surface">
+   <topic href="api/gf_context_get_surface.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="restoring defaults">
+   <topic href="api/gf_context_init.html#id9" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="drawing">
+  <entry keyword="ending">
+   <topic href="api/gf_draw_end.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="thread safe">
+   <topic href="api/gf_draw_begin.html#id9" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="EGL">
+  <entry keyword="buffer configuration">
+   <topic href="3d.html#using" title="Using OpenGL ES"/>
+  </entry>
+  <entry keyword="constructs">
+   <topic href="3d.html" title="Using OpenGL ES"/>
+  </entry>
+ </entry>
+ <entry keyword="EGL_NATIVE_VISUAL_ID">
+  <topic href="3d.html" title="Using OpenGL ES"/>
+ </entry>
+ <entry keyword="eglChooseConfig()">
+  <topic href="3d.html#using" title="Using OpenGL ES"/>
+ </entry>
+ <entry keyword="eglCreateWindowSurface()">
+  <topic href="3d.html#window_surfaces" title="Window surfaces"/>
+ </entry>
+ <entry keyword="eglGetDisplay()">
+  <topic href="3d.html#using" title="Using OpenGL ES"/>
+ </entry>
+ <entry keyword="embedding">
+  <topic href="embedding.html" title="Embedding 2D and 3D Applications"/>
+ </entry>
+ <entry keyword="extension, OpenGL ES">
+  <topic href="3d.html#vbos" title="Using Vertex Buffer Objects"/>
+ </entry>
+ <entry keyword="Extreme2">
+  <entry keyword="limitations">
+   <topic href="hardware.html#extreme2" title="Intel Extreme2"/>
+  </entry>
+ </entry>
+ <entry keyword="filter">
+  <entry keyword="setting">
+   <topic href="api/gf_context_set_filter.html#id9" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="Font Fusion">
+  <topic href="embedding.html#id8" title="Font example: font-cache"/>
+ </entry>
+ <entry keyword="fonts">
+  <entry keyword="embedding">
+   <topic href="embedding.html#id8" title="Font example: font-cache"/>
+  </entry>
+ </entry>
+ <entry keyword="foreground">
+  <entry keyword="color">
+   <topic href="layers.html#context_foreground" title="Setting foreground and background colors"/>
+  </entry>
+ </entry>
+ <entry keyword="formats">
+  <entry keyword="endian issues">
+   <topic href="layers.html#layers" title="Using layers"/>
+  </entry>
+ </entry>
+ <entry keyword="frames">
+  <entry keyword="decoding">
+   <topic href="img/img_decode_begin.html#id9" title="Description:"/>
+   <topic href="img/img_decode_finish.html#id9" title="Description:"/>
+   <topic href="img/img_decode_frame.html#id9" title="Description:"/>
+   <topic href="img/img_decode_validate.html#id9" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="Fujitsu Carmine">
+  <entry keyword="limitations">
+   <topic href="hardware.html#id4" title="OpenGL ES Hardware Acceleration"/>
+  </entry>
+ </entry>
+ <entry keyword="Fujitsu Coral">
+  <entry keyword="limitations">
+   <topic href="hardware.html#coral" title="Fujitsu Coral"/>
+  </entry>
+ </entry>
+ <entry keyword="geometry">
+  <entry keyword="dimensions">
+   <topic href="api/gf_dim_t.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="point">
+   <topic href="api/gf_point_t.html#id5" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="GF">
+  <entry keyword="steps to using">
+   <topic href="draw.html#steps" title="Setting up GF"/>
+  </entry>
+ </entry>
+ <entry keyword="gf_3d_create_target()">
+  <topic href="3d.html#window_surfaces" title="Window surfaces"/>
+ </entry>
+ <entry keyword="gf_3d_query_config()">
+  <topic href="api/gf_3d_query_config.html#id9" title="Description:"/>
+  <topic href="3d.html#pixmap_surfaces" title="Pixmap surfaces"/>
+ </entry>
+ <entry keyword="gf_3d_target_create()">
+  <topic href="api/gf_3d_target_create.html#id9" title="Description:"/>
+  <topic href="api/gf_3d_target_free.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_3d_target_t">
+  <topic href="3d.html" title="Using OpenGL ES"/>
+ </entry>
+ <entry keyword="gf_alpha_t">
+  <topic href="layers.html#context_alpha" title="Context Alpha Blending"/>
+  <topic href="api/gf_alpha_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="GF_CHROMA_OP_DRAW">
+  <topic href="layers.html#context_chroma" title="Chroma Keying"/>
+ </entry>
+ <entry keyword="GF_CHROMA_OP_DST_MATCH">
+  <topic href="layers.html#context_chroma" title="Chroma Keying"/>
+ </entry>
+ <entry keyword="GF_CHROMA_OP_NO_DRAW">
+  <topic href="layers.html#context_chroma" title="Chroma Keying"/>
+ </entry>
+ <entry keyword="GF_CHROMA_OP_SRC_MATCH">
+  <topic href="layers.html#context_chroma" title="Chroma Keying"/>
+ </entry>
+ <entry keyword="gf_chroma_t">
+  <topic href="api/gf_chroma_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="gf_color_t">
+  <topic href="api/gf_palette_t.html#gf_color_t" title="The gf_color_t Type"/>
+ </entry>
+ <entry keyword="gf_context_create()">
+  <topic href="api/gf_context_create.html#id9" title="Description:"/>
+  <topic href="layers.html#contexts" title="Using contexts"/>
+ </entry>
+ <entry keyword="gf_context_disable_alpha()">
+  <topic href="api/gf_context_disable_alpha.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_context_disable_antialias()">
+  <topic href="api/gf_context_disable_antialias.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_context_disable_chroma()">
+  <topic href="api/gf_context_disable_chroma.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_context_disable_clipping()">
+  <topic href="api/gf_context_disable_clipping.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_context_disable_linedash()">
+  <topic href="api/gf_context_disable_linedash.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_context_disable_pattern()">
+  <topic href="api/gf_context_disable_pattern.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_context_disable_planemask()">
+  <topic href="api/gf_context_disable_planemask.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_context_disable_transform()">
+  <topic href="api/gf_context_disable_transform.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_context_disable_translation()">
+  <topic href="api/gf_context_disable_translation.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_context_free()">
+  <topic href="api/gf_context_free.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_context_get_surface()">
+  <topic href="api/gf_context_get_surface.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_context_init()">
+  <topic href="api/gf_context_init.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_context_set_alpha()">
+  <topic href="layers.html#context_alpha" title="Context Alpha Blending"/>
+  <topic href="api/gf_context_set_alpha.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_context_set_antialias()">
+  <topic href="layers.html#anti-aliasing_polylines" title="Anti-aliasing polylines"/>
+  <topic href="api/gf_context_set_antialias.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_context_set_bgcolor()">
+  <topic href="api/gf_context_set_bgcolor.html#id9" title="Description:"/>
+  <topic href="layers.html#context_foreground" title="Setting foreground and background colors"/>
+ </entry>
+ <entry keyword="gf_context_set_bgcolor_native()">
+  <topic href="api/gf_context_set_bgcolor_native.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_context_set_capstyle()">
+  <topic href="api/gf_context_set_capstyle.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_context_set_chroma()">
+  <topic href="layers.html#context_chroma" title="Chroma Keying"/>
+  <topic href="api/gf_context_set_chroma.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_context_set_clipping()">
+  <topic href="layers.html#clipping" title="Clipping"/>
+  <topic href="api/gf_context_set_clipping.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_context_set_fgcolor()">
+  <topic href="api/gf_context_set_fgcolor.html#id9" title="Description:"/>
+  <topic href="layers.html#context_foreground" title="Setting foreground and background colors"/>
+ </entry>
+ <entry keyword="gf_context_set_fgcolor_native()">
+  <topic href="api/gf_context_set_fgcolor_native.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_context_set_filter()">
+  <topic href="api/gf_context_set_filter.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_context_set_hw_polygon()">
+  <topic href="api/gf_context_set_hw_polygon.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_context_set_linedash()">
+  <topic href="api/gf_context_set_linedash.html#id9" title="Description:"/>
+  <topic href="layers.html#line_attributes" title="Setting line attributes"/>
+ </entry>
+ <entry keyword="gf_context_set_linejoin()">
+  <topic href="api/gf_context_set_linejoin.html#id9" title="Description:"/>
+  <topic href="layers.html#line_attributes" title="Setting line attributes"/>
+ </entry>
+ <entry keyword="gf_context_set_pattern()">
+  <topic href="layers.html#rops" title="Raster operations"/>
+ </entry>
+ <entry keyword="gf_context_set_penwidth()">
+  <topic href="api/gf_context_set_pattern.html#id9" title="Description:"/>
+  <topic href="api/gf_context_set_penwidth.html#id9" title="Description:"/>
+  <topic href="layers.html#line_attributes" title="Setting line attributes"/>
+ </entry>
+ <entry keyword="gf_context_set_planemask()">
+  <topic href="api/gf_context_set_planemask.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_context_set_polyfill()">
+  <topic href="api/gf_context_set_polyfill.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_context_set_rop()">
+  <topic href="api/gf_context_set_rop.html#id9" title="Description:"/>
+  <topic href="layers.html#rops" title="Raster operations"/>
+ </entry>
+ <entry keyword="gf_context_set_surface()">
+  <topic href="api/gf_context_set_surface.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_context_set_surface_3d()">
+  <topic href="api/gf_context_set_surface_3d.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_context_set_transform()">
+  <topic href="api/gf_context_set_transform.html#id9" title="Description:"/>
+  <topic href="layers.html#transform" title="Transform matrices and translations"/>
+ </entry>
+ <entry keyword="gf_context_set_translation()">
+  <topic href="api/gf_context_set_translation.html#id9" title="Description:"/>
+  <topic href="layers.html#transform" title="Transform matrices and translations"/>
+ </entry>
+ <entry keyword="gf_context_unset_surface()">
+  <topic href="api/gf_context_unset_surface.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_cursor_disable()">
+  <topic href="api/gf_cursor_disable.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_cursor_enable()">
+  <topic href="api/gf_cursor_enable.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_cursor_set()">
+  <topic href="api/gf_cursor_set.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_cursor_set_pos()">
+  <topic href="api/gf_cursor_set_pos.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_dev_attach()">
+  <topic href="api/gf_dev_attach.html#id9" title="Description:"/>
+  <topic href="3d.html#using" title="Using OpenGL ES"/>
+ </entry>
+ <entry keyword="gf_dev_detach()">
+  <topic href="api/gf_dev_detach.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_dev_get_error()">
+  <topic href="api/gf_dev_get_error.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_dev_get_meminfo()">
+  <topic href="api/gf_dev_get_meminfo.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_dev_register_thread()">
+  <topic href="api/gf_dev_register_thread.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_dev_t">
+  <topic href="3d.html" title="Using OpenGL ES"/>
+ </entry>
+ <entry keyword="gf_dim_t">
+  <topic href="api/gf_dim_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="gf_display_attach()">
+  <topic href="api/gf_display_attach.html#id9" title="Description:"/>
+  <topic href="layers.html#layers" title="Using layers"/>
+ </entry>
+ <entry keyword="gf_display_detach()">
+  <topic href="api/gf_display_detach.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_display_info_t">
+  <topic href="api/gf_display_query.html#id9" title="Description:"/>
+  <topic href="api/gf_display_attach.html#gf_display_info_t" title="gf_display_info_t"/>
+  <topic href="layers.html#layers" title="Using layers"/>
+ </entry>
+ <entry keyword="gf_display_query()">
+  <topic href="api/gf_display_query.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_display_query_mode()">
+  <topic href="api/gf_display_query_mode.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_display_set_dpms()">
+  <topic href="api/gf_display_set_dpms.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_display_set_external_chroma()">
+  <topic href="api/gf_display_set_external_chroma.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_display_set_layer_order()">
+  <topic href="api/gf_display_set_layer_order.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_display_set_mode()">
+  <topic href="api/gf_display_set_mode.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_display_snapshot()">
+  <topic href="api/gf_display_snapshot.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_display_wait_vsync()">
+  <topic href="api/gf_display_wait_vsync.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_draw_begin()">
+  <topic href="api/gf_draw_begin.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_draw_bitmap()">
+  <topic href="api/gf_draw_bitmap.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_draw_blit1()">
+  <topic href="api/gf_draw_blit1.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_draw_blit2()">
+  <topic href="api/gf_draw_blit2.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_draw_blitscaled()">
+  <topic href="api/gf_draw_blitscaled.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_draw_end()">
+  <topic href="api/gf_draw_end.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_draw_finish()">
+  <topic href="api/gf_draw_finish.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_draw_flush()">
+  <topic href="api/gf_draw_flush.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_draw_image()">
+  <topic href="api/gf_draw_image.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_draw_poly_fill()">
+  <topic href="api/gf_draw_poly_fill.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_draw_polyline()">
+  <topic href="api/gf_draw_polyline.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_draw_rect()">
+  <topic href="api/gf_draw_rect.html#id9" title="Description:"/>
+  <topic href="draw.html#rect" title="Drawing rectangles"/>
+ </entry>
+ <entry keyword="gf_draw_span()">
+  <topic href="api/gf_draw_span.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_draw_spanlist()">
+  <topic href="api/gf_draw_spanlist.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_fixed_t">
+  <topic href="api/gf_context_set_transform.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_format_t">
+  <topic href="api/gf_format_t.html#id5" title="Description:"/>
+  <topic href="layers.html#layers" title="Using layers"/>
+ </entry>
+ <entry keyword="gf_i2c_read()">
+  <topic href="api/gf_i2c_read.html#id9" title="Description:"/>
+  <topic href="vidcap.html#id3" title="Video capture"/>
+ </entry>
+ <entry keyword="gf_i2c_write()">
+  <topic href="api/gf_i2c_write.html#id9" title="Description:"/>
+  <topic href="vidcap.html#id3" title="Video capture"/>
+ </entry>
+ <entry keyword="gf_i2c_writeread()">
+  <topic href="api/gf_i2c_writeread.html#id9" title="Description:"/>
+  <topic href="vidcap.html#id3" title="Video capture"/>
+ </entry>
+ <entry keyword="gf_layer_attach()">
+  <topic href="api/gf_layer_attach.html#id9" title="Description:"/>
+  <topic href="layers.html#layers" title="Using layers"/>
+ </entry>
+ <entry keyword="GF_LAYER_CAP_DISABLE">
+  <topic href="layers.html#layer_visibility" title="Layer visibility"/>
+ </entry>
+ <entry keyword="GF_LAYER_CAP_PAN_DEST">
+  <topic href="layers.html#viewports" title="Viewports"/>
+ </entry>
+ <entry keyword="GF_LAYER_CAP_PAN_SOURCE">
+  <topic href="layers.html#viewports" title="Viewports"/>
+ </entry>
+ <entry keyword="GF_LAYER_CAP_SET_BRIGHTNESS">
+  <topic href="layers.html#layer_brightness" title="Layer brightness, contrast, saturation, and hue"/>
+ </entry>
+ <entry keyword="GF_LAYER_CAP_SET_CONTRAST">
+  <topic href="layers.html#layer_brightness" title="Layer brightness, contrast, saturation, and hue"/>
+ </entry>
+ <entry keyword="GF_LAYER_CAP_SET_HUE">
+  <topic href="layers.html#layer_brightness" title="Layer brightness, contrast, saturation, and hue"/>
+ </entry>
+ <entry keyword="GF_LAYER_CAP_SET_SATURATION">
+  <topic href="layers.html#layer_brightness" title="Layer brightness, contrast, saturation, and hue"/>
+ </entry>
+ <entry keyword="GF_LAYER_CAP_SIZE_DEST">
+  <topic href="layers.html#viewports" title="Viewports"/>
+ </entry>
+ <entry keyword="gf_layer_choose_format()">
+  <topic href="api/gf_layer_choose_format.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_layer_detach()">
+  <topic href="api/gf_layer_detach.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_layer_disable()">
+  <topic href="api/gf_layer_disable.html#id9" title="Description:"/>
+  <topic href="layers.html#layer_visibility" title="Layer visibility"/>
+ </entry>
+ <entry keyword="gf_layer_enable()">
+  <topic href="api/gf_layer_enable.html#id9" title="Description:"/>
+  <topic href="layers.html#layer_visibility" title="Layer visibility"/>
+ </entry>
+ <entry keyword="gf_layer_query()">
+  <topic href="api/gf_layer_query.html#id9" title="Description:"/>
+  <topic href="layers.html#layers" title="Using layers"/>
+  <topic href="3d.html#using" title="Using OpenGL ES"/>
+ </entry>
+ <entry keyword="gf_layer_set_blending()">
+  <topic href="api/gf_layer_set_blending.html#id9" title="Description:"/>
+  <topic href="layers.html#layer_alpha" title="Layer blending and chroma"/>
+ </entry>
+ <entry keyword="gf_layer_set_brightness()">
+  <topic href="api/gf_layer_set_brightness.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_layer_set_chroma()">
+  <topic href="api/gf_layer_set_chroma.html#id9" title="Description:"/>
+  <topic href="layers.html#layer_alpha" title="Layer blending and chroma"/>
+ </entry>
+ <entry keyword="gf_layer_set_contrast()">
+  <topic href="api/gf_layer_set_contrast.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_layer_set_dst_viewport()">
+  <topic href="api/gf_layer_set_src_viewport.html#id9" title="Description:"/>
+  <topic href="layers.html#viewports" title="Viewports"/>
+ </entry>
+ <entry keyword="gf_layer_set_edge()">
+  <topic href="api/gf_layer_set_edge.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_layer_set_filter()">
+  <topic href="api/gf_layer_set_filter.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_layer_set_hue()">
+  <topic href="api/gf_layer_set_hue.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_layer_set_outputs()">
+  <topic href="api/gf_layer_set_outputs.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_layer_set_saturation()">
+  <topic href="api/gf_layer_set_saturation.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_layer_set_src_viewport()">
+  <topic href="api/gf_layer_set_dst_viewport.html#id9" title="Description:"/>
+  <topic href="layers.html#viewports" title="Viewports"/>
+ </entry>
+ <entry keyword="gf_layer_set_surfaces()">
+  <topic href="api/gf_layer_set_surfaces.html#id9" title="Description:"/>
+  <topic href="layers.html#layers" title="Using layers"/>
+ </entry>
+ <entry keyword="gf_layer_update()">
+  <topic href="api/gf_layer_update.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_layer_update_multi()">
+  <topic href="api/gf_layer_update_multi.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_modeinfo_t">
+  <topic href="api/gf_display_query_mode.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_palette_t">
+  <topic href="api/gf_palette_t.html#id5" title="Description:"/>
+  <topic href="layers.html#context_foreground" title="Setting foreground and background colors"/>
+ </entry>
+ <entry keyword="gf_point_t">
+  <topic href="api/gf_point_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="GF_SURFACE_3D_TARGETABLE">
+  <topic href="3d.html#window_surfaces" title="Window surfaces"/>
+ </entry>
+ <entry keyword="gf_surface_attach()">
+  <topic href="api/gf_surface_attach.html#id9" title="Description:"/>
+  <topic href="layers.html#surfaces" title="Using surfaces"/>
+ </entry>
+ <entry keyword="gf_surface_attach_by_sid()">
+  <topic href="layers.html#surfaces" title="Using surfaces"/>
+ </entry>
+ <entry keyword="gf_surface_create()">
+  <topic href="api/gf_surface_create.html#id9" title="Description:"/>
+  <topic href="layers.html#surfaces" title="Using surfaces"/>
+ </entry>
+ <entry keyword="GF_SURFACE_CREATE_CPU_FAST_ACCESS">
+  <topic href="layers.html#surfaces" title="Using surfaces"/>
+ </entry>
+ <entry keyword="gf_surface_create_layer()">
+  <topic href="api/gf_surface_attach_by_sid.html#id9" title="Description:"/>
+  <topic href="api/gf_surface_create_layer.html#id9" title="Description:"/>
+  <topic href="layers.html#surfaces" title="Using surfaces"/>
+ </entry>
+ <entry keyword="gf_surface_free()">
+  <topic href="api/gf_surface_free.html#id9" title="Description:"/>
+  <topic href="layers.html#surfaces" title="Using surfaces"/>
+ </entry>
+ <entry keyword="gf_surface_get_dev()">
+  <topic href="api/gf_surface_get_dev.html" title="gf_surface_get_dev"/>
+  <topic href="layers.html#surfaces" title="Using surfaces"/>
+ </entry>
+ <entry keyword="gf_surface_get_info()">
+  <topic href="api/gf_surface_get_info.html#id9" title="Description:"/>
+  <topic href="layers.html#surfaces" title="Using surfaces"/>
+ </entry>
+ <entry keyword="gf_surface_info_t">
+  <topic href="layers.html#surfaces" title="Using surfaces"/>
+ </entry>
+ <entry keyword="gf_surface_reattach()">
+  <topic href="api/gf_surface_reattach.html#id9" title="Description:"/>
+  <topic href="layers.html#surfaces" title="Using surfaces"/>
+ </entry>
+ <entry keyword="gf_surface_t">
+  <topic href="3d.html" title="Using OpenGL ES"/>
+ </entry>
+ <entry keyword="gf_vcap_attach()">
+  <topic href="api/gf_vcap_attach.html#id9" title="Description:"/>
+  <topic href="vidcap.html#id3" title="Video capture"/>
+ </entry>
+ <entry keyword="gf_vcap_bind_to_layer()">
+  <topic href="api/gf_vcap_bind_to_layer.html#id9" title="Description:"/>
+  <topic href="vidcap.html#id3" title="Video capture"/>
+ </entry>
+ <entry keyword="gf_vcap_detach()">
+  <topic href="api/gf_vcap_detach.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_vcap_disable()">
+  <topic href="api/gf_vcap_disable.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_vcap_enable()">
+  <topic href="api/gf_vcap_enable.html#id9" title="Description:"/>
+  <topic href="vidcap.html#id3" title="Video capture"/>
+ </entry>
+ <entry keyword="gf_vcap_set_*()">
+  <topic href="vidcap.html#id3" title="Video capture"/>
+ </entry>
+ <entry keyword="gf_vcap_set_brightness()">
+  <topic href="api/gf_vcap_set_brightness.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_vcap_set_contrast()">
+  <topic href="api/gf_vcap_set_contrast.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_vcap_set_flags()">
+  <topic href="api/gf_vcap_set_flags.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_vcap_set_input_dimensions()">
+  <topic href="api/gf_vcap_set_input_dimensions.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_vcap_set_input_source()">
+  <topic href="api/gf_vcap_set_input_source.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_vcap_set_input_viewport()">
+  <topic href="api/gf_vcap_set_input_viewport.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_vcap_set_output_dimensions()">
+  <topic href="api/gf_vcap_set_output_dimensions.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_vcap_set_saturation()">
+  <topic href="api/gf_vcap_set_saturation.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_vcap_set_sync_values()">
+  <topic href="api/gf_vcap_set_sync_values.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="gf_vcap_update()">
+  <topic href="api/gf_vcap_update.html#id9" title="Description:"/>
+  <topic href="vidcap.html#id3" title="Video capture"/>
+ </entry>
+ <entry keyword="hardware">
+  <entry keyword="limitations">
+   <topic href="hardware.html" title="Hardware Capabilities"/>
+  </entry>
+  <entry keyword="waiting on">
+   <topic href="api/gf_draw_finish.html#id9" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="I2C">
+  <entry keyword="read transaction">
+   <topic href="api/gf_i2c_read.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="write transaction">
+   <topic href="api/gf_i2c_write.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="write/read transaction">
+   <topic href="api/gf_i2c_writeread.html#id9" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="image">
+  <entry keyword="building">
+   <topic href="embedding.html#id4" title="Building the image"/>
+  </entry>
+ </entry>
+ <entry keyword="images">
+  <topic href="api/gf_draw_image.html#id9" title="Description:"/>
+  <entry keyword="bits per pixel">
+   <topic href="img/img_fmt_bpp.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="converting">
+   <topic href="img/img_convert_data.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="embedding">
+   <topic href="embedding.html#id10" title="Image example: img_decode_simple"/>
+  </entry>
+  <entry keyword="loading">
+   <topic href="img/img_load.html#id9" title="Description:"/>
+   <topic href="img/img_load_file.html#id9" title="Description:"/>
+   <topic href="img/img_load_resize_file.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="scanline">
+   <topic href="img/img_fmt_bpl.html#id9" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="img.conf">
+  <topic href="img/img_lib_attach.html#config" title="The img.conf Configuration File"/>
+ </entry>
+ <entry keyword="img_cfg_read()">
+  <topic href="img/img_cfg_read.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="img_codec_get_criteria()">
+  <topic href="img/img_codec_get_criteria.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="img_codec_list()">
+  <topic href="img/img_codec_list.html#id9" title="Description:"/>
+  <topic href="img/img_codec_list_byext.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="img_codec_list_bymime()">
+  <topic href="img/img_codec_list_bymime.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="img_convert_data()">
+  <topic href="img/img_convert_data.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="img_decode_begin()">
+  <topic href="img/img_decode_begin.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="img_decode_callouts_t">
+  <topic href="img/img_decode_callouts_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="img_decode_finish()">
+  <topic href="img/img_decode_finish.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="img_decode_frame()">
+  <topic href="img/img_decode_frame.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="img_decode_validate()">
+  <topic href="img/img_decode_validate.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="IMG_FMT_BGR888">
+  <topic href="img/img_convert_data.html#img_format_t" title="The img_format_t type"/>
+ </entry>
+ <entry keyword="IMG_FMT_BPL()">
+  <topic href="img/img_fmt_bpl.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="IMG_FMT_BPP()">
+  <topic href="img/img_fmt_bpp.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="IMG_FMT_G8">
+  <topic href="img/img_convert_data.html#img_format_t" title="The img_format_t type"/>
+ </entry>
+ <entry keyword="IMG_FMT_INVALID">
+  <topic href="img/img_convert_data.html#img_format_t" title="The img_format_t type"/>
+ </entry>
+ <entry keyword="IMG_FMT_MONO">
+  <topic href="img/img_convert_data.html#img_format_t" title="The img_format_t type"/>
+ </entry>
+ <entry keyword="IMG_FMT_PAL1">
+  <topic href="img/img_convert_data.html#img_format_t" title="The img_format_t type"/>
+ </entry>
+ <entry keyword="IMG_FMT_PAL8">
+  <topic href="img/img_convert_data.html#img_format_t" title="The img_format_t type"/>
+ </entry>
+ <entry keyword="IMG_FMT_PKBE_ARGB1555">
+  <topic href="img/img_convert_data.html#img_format_t" title="The img_format_t type"/>
+ </entry>
+ <entry keyword="IMG_FMT_PKBE_ARGB8888">
+  <topic href="img/img_convert_data.html#img_format_t" title="The img_format_t type"/>
+ </entry>
+ <entry keyword="IMG_FMT_PKBE_RGB565">
+  <topic href="img/img_convert_data.html#img_format_t" title="The img_format_t type"/>
+ </entry>
+ <entry keyword="IMG_FMT_PKBE_XRGB8888">
+  <topic href="img/img_convert_data.html#img_format_t" title="The img_format_t type"/>
+ </entry>
+ <entry keyword="IMG_FMT_PKLE_ARGB1555">
+  <topic href="img/img_convert_data.html#img_format_t" title="The img_format_t type"/>
+ </entry>
+ <entry keyword="IMG_FMT_PKLE_ARGB8888">
+  <topic href="img/img_convert_data.html#img_format_t" title="The img_format_t type"/>
+ </entry>
+ <entry keyword="IMG_FMT_PKLE_RGB565">
+  <topic href="img/img_convert_data.html#img_format_t" title="The img_format_t type"/>
+ </entry>
+ <entry keyword="IMG_FMT_PKLE_XRGB8888">
+  <topic href="img/img_convert_data.html#img_format_t" title="The img_format_t type"/>
+ </entry>
+ <entry keyword="IMG_FMT_RGB888">
+  <topic href="img/img_convert_data.html#img_format_t" title="The img_format_t type"/>
+ </entry>
+ <entry keyword="IMG_FMT_RGBA8888">
+  <topic href="img/img_convert_data.html#img_format_t" title="The img_format_t type"/>
+ </entry>
+ <entry keyword="img_lib_attach()">
+  <topic href="img/img_lib_attach.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="img_lib_detach()">
+  <topic href="img/img_lib_detach.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="img_load()">
+  <topic href="img/img_load.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="img_load_file()">
+  <topic href="img/img_load_file.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="img_load_resize_file()">
+  <topic href="img/img_load_resize_file.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="input stream">
+  <entry keyword="closing">
+   <topic href="img/io_close.html#id9" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="Intel Extreme2">
+  <entry keyword="limitations">
+   <topic href="hardware.html#extreme2" title="Intel Extreme2"/>
+  </entry>
+ </entry>
+ <entry keyword="io_close()">
+  <topic href="img/io_close.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="io_open()">
+  <topic href="img/io_open.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="layers">
+  <entry keyword="attaching">
+   <topic href="layers.html#layers" title="Using layers"/>
+  </entry>
+  <entry keyword="attaching to">
+   <topic href="api/gf_layer_attach.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="blending">
+   <topic href="api/gf_layer_set_blending.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="brightness">
+   <topic href="api/gf_layer_set_brightness.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="capabilities">
+   <topic href="layers.html#layers" title="Using layers"/>
+  </entry>
+  <entry keyword="chroma">
+   <topic href="api/gf_layer_set_chroma.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="contrast">
+   <topic href="api/gf_layer_set_contrast.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="detaching from">
+   <topic href="api/gf_layer_detach.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="DPMS mode">
+   <topic href="api/gf_display_set_dpms.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="edge">
+   <topic href="api/gf_layer_set_edge.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="filter">
+   <topic href="api/gf_layer_set_filter.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="formats">
+   <topic href="api/gf_layer_choose_format.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="hue">
+   <topic href="api/gf_layer_set_hue.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="information">
+   <topic href="layers.html#layers" title="Using layers"/>
+  </entry>
+  <entry keyword="ordering">
+   <topic href="api/gf_display_set_layer_order.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="output">
+   <topic href="api/gf_layer_set_outputs.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="querying">
+   <topic href="api/gf_layer_query.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="saturation">
+   <topic href="api/gf_layer_set_saturation.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="supported formats">
+   <topic href="layers.html#layers" title="Using layers"/>
+  </entry>
+  <entry keyword="surfaces">
+   <topic href="api/gf_layer_set_surfaces.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="updating parameters">
+   <topic href="api/gf_layer_update.html#id9" title="Description:"/>
+   <topic href="api/gf_layer_update_multi.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="viewport">
+   <topic href="api/gf_layer_set_dst_viewport.html#id9" title="Description:"/>
+   <topic href="api/gf_layer_set_src_viewport.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="visibility">
+   <topic href="api/gf_layer_disable.html#id9" title="Description:"/>
+   <topic href="api/gf_layer_enable.html#id9" title="Description:"/>
+   <topic href="layers.html#layer_visibility" title="Layer visibility"/>
+  </entry>
+ </entry>
+ <entry keyword="libFF_t2k.so.2">
+  <topic href="embedding.html#id8" title="Font example: font-cache"/>
+ </entry>
+ <entry keyword="library">
+  <entry keyword="detaching">
+   <topic href="img/img_lib_detach.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="initializing">
+   <topic href="img/img_lib_attach.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="loading codecs">
+   <topic href="img/img_cfg_read.html#id9" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="limitations, hardware">
+  <topic href="hardware.html" title="Hardware Capabilities"/>
+ </entry>
+ <entry keyword="lines">
+  <entry keyword="cap style">
+   <topic href="api/gf_context_set_capstyle.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="dash style">
+   <topic href="api/gf_context_set_linedash.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="dashes, disabling">
+   <topic href="api/gf_context_disable_linedash.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="dashing, setting">
+   <topic href="layers.html#line_attributes" title="Setting line attributes"/>
+  </entry>
+  <entry keyword="join style">
+   <topic href="api/gf_context_set_linejoin.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="join style, setting">
+   <topic href="layers.html#line_attributes" title="Setting line attributes"/>
+  </entry>
+  <entry keyword="width">
+   <topic href="api/gf_context_set_pattern.html#id9" title="Description:"/>
+   <topic href="api/gf_context_set_penwidth.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="width, setting">
+   <topic href="layers.html#line_attributes" title="Setting line attributes"/>
+  </entry>
+ </entry>
+ <entry keyword="modes">
+  <entry keyword="querying">
+   <topic href="api/gf_display_query_mode.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="setting">
+   <topic href="api/gf_display_set_mode.html#id9" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="NativeDisplayType">
+  <topic href="3d.html" title="Using OpenGL ES"/>
+ </entry>
+ <entry keyword="NativePixemapType">
+  <topic href="3d.html" title="Using OpenGL ES"/>
+ </entry>
+ <entry keyword="NativeWindowType">
+  <topic href="3d.html" title="Using OpenGL ES"/>
+ </entry>
+ <entry keyword="OpenGL ES">
+  <topic href="3d.html" title="Using OpenGL ES"/>
+  <entry keyword="extensions">
+   <topic href="3d.html#vbos" title="Using Vertex Buffer Objects"/>
+  </entry>
+ </entry>
+ <entry keyword="palette">
+  <topic href="api/gf_palette_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="pathname delimiter in QNX documentation">
+  <topic href="about.html#WINDOWSNOTE" title="Note to Windows users"/>
+ </entry>
+ <entry keyword="pattern, disabling">
+  <topic href="api/gf_context_disable_pattern.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="pbuffer surface">
+  <topic href="3d.html#pbuffer_surfaces" title="pbuffer surfaces"/>
+ </entry>
+ <entry keyword="pixels, copying">
+  <topic href="api/gf_draw_blit1.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="pixmap surfaces">
+  <topic href="3d.html#pixmap_surfaces" title="Pixmap surfaces"/>
+ </entry>
+ <entry keyword="planemask">
+  <entry keyword="disabling">
+   <topic href="api/gf_context_disable_planemask.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="setting">
+   <topic href="api/gf_context_set_planemask.html#id9" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="point, data structure">
+  <topic href="api/gf_point_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="polygons">
+  <entry keyword="fill">
+   <topic href="api/gf_context_set_polyfill.html#id9" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="polygons, drawing">
+  <topic href="api/gf_draw_poly_fill.html#id9" title="Description:"/>
+  <topic href="api/gf_draw_polyline.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="polylines">
+  <entry keyword="anti-aliasing">
+   <topic href="layers.html#anti-aliasing_polylines" title="Anti-aliasing polylines"/>
+  </entry>
+ </entry>
+ <entry keyword="raster operations">
+  <topic href="layers.html#rops" title="Raster operations"/>
+ </entry>
+ <entry keyword="rectangles">
+  <topic href="draw.html#rect" title="Drawing rectangles"/>
+ </entry>
+ <entry keyword="rectangles, drawing">
+  <topic href="api/gf_draw_rect.html#id9" title="Description:"/>
+ </entry>
+ <entry keyword="ROPs (Raster Operations)">
+  <entry keyword="setting">
+   <topic href="api/gf_context_set_rop.html#id9" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="scrolling">
+  <entry keyword="with viewports">
+   <topic href="layers.html#viewports" title="Viewports"/>
+  </entry>
+ </entry>
+ <entry keyword="spans">
+  <entry keyword="drawing">
+   <topic href="api/gf_draw_span.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="drawing a list">
+   <topic href="api/gf_draw_spanlist.html#id9" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="stream">
+  <entry keyword="initializing">
+   <topic href="img/io_open.html#id9" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="support">
+  <topic href="about.html#id7" title="Technical support"/>
+ </entry>
+ <entry keyword="support, technical">
+  <topic href="about.html#id7" title="Technical support"/>
+ </entry>
+ <entry keyword="surfaces">
+  <entry keyword="attaching">
+   <topic href="api/gf_surface_attach.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="capabilities">
+   <topic href="layers.html#surfaces" title="Using surfaces"/>
+  </entry>
+  <entry keyword="creating">
+   <topic href="api/gf_surface_attach_by_sid.html#id9" title="Description:"/>
+   <topic href="api/gf_surface_create.html#id9" title="Description:"/>
+   <topic href="api/gf_surface_create_layer.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="freeing">
+   <topic href="api/gf_surface_free.html#id9" title="Description:"/>
+   <topic href="layers.html#surfaces" title="Using surfaces"/>
+  </entry>
+  <entry keyword="graphics device">
+   <topic href="api/gf_surface_get_dev.html" title="gf_surface_get_dev"/>
+   <topic href="layers.html#surfaces" title="Using surfaces"/>
+  </entry>
+  <entry keyword="information">
+   <topic href="api/gf_surface_get_info.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="location">
+   <topic href="layers.html#surfaces" title="Using surfaces"/>
+  </entry>
+  <entry keyword="reattaching">
+   <topic href="api/gf_surface_reattach.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="setting">
+   <topic href="api/gf_context_set_surface.html#id9" title="Description:"/>
+   <topic href="api/gf_context_set_surface_3d.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="unsetting">
+   <topic href="api/gf_context_unset_surface.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="using">
+   <topic href="layers.html#surfaces" title="Using surfaces"/>
+  </entry>
+ </entry>
+ <entry keyword="technical support">
+  <topic href="about.html#id7" title="Technical support"/>
+ </entry>
+ <entry keyword="transform matricies">
+  <topic href="layers.html#transform" title="Transform matrices and translations"/>
+ </entry>
+ <entry keyword="transform matrix">
+  <entry keyword="disabling">
+   <topic href="api/gf_context_disable_transform.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="setting">
+   <topic href="api/gf_context_set_transform.html#id9" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="translations">
+  <topic href="layers.html#transform" title="Transform matrices and translations"/>
+  <entry keyword="disabling">
+   <topic href="api/gf_context_disable_translation.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="setting">
+   <topic href="api/gf_context_set_translation.html#id9" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="typographical conventions">
+  <topic href="about.html#id3" title="Typographical conventions"/>
+ </entry>
+ <entry keyword="video capture">
+  <topic href="vidcap.html#id3" title="Video capture"/>
+  <entry keyword="attaching device">
+   <topic href="api/gf_vcap_attach.html#id9" title="Description:"/>
+   <topic href="api/gf_vcap_update.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="attaching to layer">
+   <topic href="api/gf_vcap_bind_to_layer.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="brightness">
+   <topic href="api/gf_vcap_set_brightness.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="contrast">
+   <topic href="api/gf_vcap_set_contrast.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="detaching">
+   <topic href="api/gf_vcap_detach.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="device settings">
+   <topic href="api/gf_vcap_set_sync_values.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="dimensions">
+   <topic href="api/gf_vcap_set_input_dimensions.html#id9" title="Description:"/>
+   <topic href="api/gf_vcap_set_output_dimensions.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="disabling">
+   <topic href="api/gf_vcap_disable.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="enabling">
+   <topic href="api/gf_vcap_enable.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="flags">
+   <topic href="api/gf_vcap_set_flags.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="input source">
+   <topic href="api/gf_vcap_set_input_source.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="input viewport">
+   <topic href="api/gf_vcap_set_input_viewport.html#id9" title="Description:"/>
+  </entry>
+  <entry keyword="saturation">
+   <topic href="api/gf_vcap_set_saturation.html#id9" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="viewports">
+  <entry keyword="hardware limitations">
+   <topic href="layers.html#viewports" title="Viewports"/>
+  </entry>
+ </entry>
+ <entry keyword="vsync">
+  <entry keyword="blocking on">
+   <topic href="api/gf_display_wait_vsync.html#id9" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="window surfaces">
+  <topic href="3d.html#window_surfaces" title="Window surfaces"/>
+ </entry>
+</index>

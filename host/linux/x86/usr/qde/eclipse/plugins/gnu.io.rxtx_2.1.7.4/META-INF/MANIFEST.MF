@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-Name: rxtx Plug-in
+Bundle-ClassPath: gnu.io.rxtx_2.1.7.4_v20071016.jar
+Bundle-Vendor: rxtx.org
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: gnu.io.rxtx
+Export-Package: gnu.io
+Bundle-Version: 2.1.7.4
+
+

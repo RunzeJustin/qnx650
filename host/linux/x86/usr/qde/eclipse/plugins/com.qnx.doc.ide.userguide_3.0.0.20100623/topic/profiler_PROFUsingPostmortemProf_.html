@@ -1,0 +1,175 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="task" />
+      <meta name="DC.Title" content="Using postmortem profiling for Call Count and Sampling" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROUSECASES_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_USEAPPPROFUNCINST_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_FISAMPLMODE_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_FISINGAPP_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_FISYSPROF_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFCreateSessFromIDELnch_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFCreateSessByImpData_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFSingleThreadedApp_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFaRunProcess_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFPsotMortemProfiling_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFRunningFromTermCmdLine_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFTakeSnapshot_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROCompResults_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="UsingpostmortemprofilingforCallCountandSampling" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Using postmortem profiling for Call Count and Sampling</title>
+   </head>
+   <body id="UsingpostmortemprofilingforCallCountandSampling"><a name="UsingpostmortemprofilingforCallCountandSampling" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Using postmortem profiling for Call Count and Sampling</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <div class="p">You can change the configuration options to profile an application to capture performance
+            information whereby profiling is done by code linked into the process, and after the
+            process exits normally (without error). Data, which is the function information (such as
+            call counts, callers, and statistics), is written to a file that you can then load into
+            the IDE. 
+         </div>
+         
+         
+         <div class="section">To configure postmortem profiling: </div>
+         
+         
+         <ol>
+            <li class="stepexpand"><span>In the Project Explorer view, right-click your project and select
+                  <span class="uicontrol">Properties</span>. </span></li>
+            <li class="stepexpand"><span>In the left pane, select <span class="uicontrol">QNX C/C++ project</span>. </span></li>
+            <li class="stepexpand"><span>In the right pane, select the <span class="uicontrol">Options</span> tab. </span></li>
+            <li class="stepexpand"><span>Select <span class="uicontrol">Build for Profiling (Call Count)</span>. </span></li>
+            <li class="stepexpand"><span>Select the <span class="uicontrol">Build Variants</span> tab and select the
+                  <span class="uicontrol">Debug</span> variant for your target(s). </span></li>
+            <li class="stepexpand"><span>Click <span class="uicontrol">OK</span>. </span></li>
+            <li class="stepexpand"><span>When prompted, click <span class="uicontrol">Yes</span> to rebuild your project. </span></li>
+            <li class="stepexpand"><span>Create a launch configuration for a debuggable executable. </span></li>
+            <li class="stepexpand"><span>Select the <span class="uicontrol">Environment</span> tab. </span>
+               Profiling information is
+               written to a file in the location you specify with the
+               <var class="varname">PROFDIR</var> environment variable. If you don't set
+               <var class="varname">PROFDIR</var>, the information is written to a file called
+               <span class="filepath">gmon.out</span> in the directory the process was run from.
+               
+            </li>
+            <li class="stepexpand"><span>In the <span class="uicontrol">Name</span> field, type <var class="varname">PROFDIR</var>. </span></li>
+            <li class="stepexpand"><span>In the <span class="uicontrol">Value</span> field. Type a valid path to a directory on your
+                  target machine, (i.e. <span class="filepath">/tmp</span>). </span></li>
+            <li class="stepexpand"><span>Click <span class="uicontrol">OK</span>. </span></li>
+            <li class="stepexpand"><span>Run the program. </span></li>
+            <li class="stepexpand"><span>When the execution finishes, import a data file, such as
+                  <span class="filepath">gmon.out</span>, by doing the following: </span>
+               <br clear="none" /><ol type="a">
+                  <li>Select <span class="menucascade">
+                        <span class="uicontrol">Window</span>
+                        &gt; <span class="uicontrol">Show View</span>
+                        &gt; <span class="uicontrol">Other</span>
+                        &gt; <span class="uicontrol">QNX Targets</span>
+                        &gt; <span class="uicontrol">Target File System Navigator</span>
+                        </span>. 
+                  </li>
+                  <li>In the Select target folder dialog, select the project related to your
+                     program. 
+                  </li>
+                  <li>Click <span class="uicontrol">OK</span>. 
+                  </li>
+               </ol>
+               
+            </li>
+            <li class="stepexpand"><span>In the Project Explorer view, right-click the imported file and rename it, i.e. to
+                  <span class="filepath">gmon.out</span>. </span></li>
+            <li class="stepexpand"><span>To start a postmortem profiling session, do the following: </span>
+               <br clear="none" /><ol type="a">
+                  <li>In the Project Explorer view, right-click on the file
+                     <span class="filepath">gmon.out</span> and select the
+                     <span class="uicontrol">Import/Open</span> action in the QNX Application
+                     Profiler. 
+                  </li>
+                  <li>In the Import from <span class="filepath">gmon.out</span> file window, browse to set
+                     the location of the executable file. 
+                  </li>
+                  <li>Click <span class="uicontrol">Finish</span>. 
+                  </li>
+               </ol>
+               
+            </li>
+         </ol>
+         
+         
+         <div class="section">Now, you can begin to analyze the profiler data. </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/profiler_PROUSECASES_.html" shape="rect">Using the Application Profiler</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/profiler_USEAPPPROFUNCINST_.html" shape="rect">Using Function Instrumentation with the Application Profiler</a></div>
+            
+            <div><a href="../topic/profiler_FISAMPLMODE_.html" shape="rect">Using Sampling and Call Count instrumentation mode</a></div>
+            
+            <div><a href="../topic/profiler_FISINGAPP_.html" shape="rect">Using Function Instrumentation mode for a single application</a></div>
+            
+            <div><a href="../topic/profiler_FISYSPROF_.html" shape="rect">Using Function Instrumentation in the System Profiler</a></div>
+            
+            <div><a href="../topic/profiler_PROCompResults_.html" shape="rect">Comparing profiles</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/profiler_PROFCreateSessFromIDELnch_.html" shape="rect">Creating an Application Profiler session</a></div>
+            
+            <div><a href="../topic/profiler_PROFCreateSessByImpData_.html" shape="rect">Creating a profiler session by importing profiler data</a></div>
+            
+            <div><a href="../topic/profiler_PROFSingleThreadedApp_.html" shape="rect">Profiling a single-threaded application</a></div>
+            
+            <div><a href="../topic/profiler_PROFaRunProcess_.html" shape="rect">Profiling a running process for an existing project</a></div>
+            
+            <div><a href="../topic/profiler_PROFPsotMortemProfiling_.html" shape="rect">Postmortem profiling</a></div>
+            
+            <div><a href="../topic/profiler_PROFRunningFromTermCmdLine_.html" shape="rect">Running an instrumented binary with profiling from a command prompt (Function Instrumentation mode)</a></div>
+            
+            <div><a href="../topic/profiler_PROFTakeSnapshot_.html" shape="rect">Taking a snapshot of a profiling session</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

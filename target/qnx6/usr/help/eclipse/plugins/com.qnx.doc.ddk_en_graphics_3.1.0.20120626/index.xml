@@ -1,0 +1,2780 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<index>
+ <entry keyword="graphics/display.h">
+  <topic href="writing.html#binding_to_framework" title="Binding your driver to the graphics framework"/>
+ </entry>
+ <entry keyword="2D">
+  <entry keyword="capabilities, getting">
+   <topic href="disp_2d_caps_t.html#id5" title="Description:"/>
+   <topic href="disp_draw_miscfuncs_t.html#ddm_get_2d_caps" title="get_2d_caps()"/>
+  </entry>
+  <entry keyword="drawing functions">
+   <topic href="writing.html#2DDrawing" title="2D drawing"/>
+   <entry keyword="FFB versions">
+    <topic href="writing.html#SampleDrivers" title="Sample drivers"/>
+   </entry>
+   <entry keyword="getting">
+    <topic href="devg_get_corefuncs.html#id5" title="Description:"/>
+   </entry>
+  </entry>
+  <entry keyword="driver acceleration">
+   <topic href="disp_adapter_t.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="rendering functions">
+   <topic href="writing.html#Modules" title="The modules"/>
+  </entry>
+ </entry>
+ <entry keyword="3D">
+  <entry keyword="rendering functions">
+   <topic href="writing.html#Modules" title="The modules"/>
+  </entry>
+ </entry>
+ <entry keyword="3D driver acceleration">
+  <topic href="disp_adapter_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="adapter, graphics hardware">
+  <topic href="disp_adapter_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="AGP bus">
+  <topic href="disp_adapter_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="alloc__layer_surface()">
+  <topic href="disp_memfuncs_t.html#mm_alloc_layer_surface" title="alloc_layer_surface()"/>
+ </entry>
+ <entry keyword="alloc_surface()">
+  <topic href="disp_memfuncs_t.html#mm_alloc_surface" title="alloc_surface()"/>
+ </entry>
+ <entry keyword="alpha blending">
+  <entry keyword="factors">
+   <entry keyword="destination">
+    <topic href="disp_draw_context_t.html#alpha_mode_blending_dst_bits" title="Alpha mode blending (destination) operation"/>
+    <topic href="disp_draw_context_t.html#id5" title="Description:"/>
+   </entry>
+   <entry keyword="source">
+    <topic href="disp_draw_context_t.html#alpha_mode_blending_src_bits" title="Alpha mode blending (source) operation"/>
+    <topic href="disp_draw_context_t.html#id5" title="Description:"/>
+   </entry>
+  </entry>
+  <entry keyword="map">
+   <entry keyword="offset">
+    <topic href="disp_draw_context_t.html#id5" title="Description:"/>
+   </entry>
+  </entry>
+  <entry keyword="modes">
+   <topic href="disp_draw_context_t.html#alpha_mode_bits" title="Alpha mode bits (alpha_mode)"/>
+   <topic href="disp_draw_context_t.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="pixel formats">
+   <topic href="writing.html#pixel_format" title="Pixel formats"/>
+  </entry>
+  <entry keyword="updating">
+   <topic href="disp_draw_contextfuncs_t.html#ddc_update_alpha" title="update_alpha()"/>
+  </entry>
+ </entry>
+ <entry keyword="attach_external()">
+  <topic href="disp_draw_miscfuncs_t.html#ddm_attach_external" title="attach_external()"/>
+ </entry>
+ <entry keyword="background color">
+  <topic href="disp_draw_context_t.html#id5" title="Description:"/>
+  <entry keyword="updating">
+   <topic href="disp_draw_contextfuncs_t.html#ddc_update_color" title="update_color()"/>
+  </entry>
+ </entry>
+ <entry keyword="bind_layer()">
+  <entry keyword="disp_vcapfuncs_t">
+   <topic href="disp_vcapfuncs_t.html#vc_bind_layer" title="bind_layer()"/>
+  </entry>
+ </entry>
+ <entry keyword="BIOS services">
+  <topic href="libraries.html#VBIOS_services" title="Video BIOS services (x86 only)"/>
+ </entry>
+ <entry keyword="bitmaps, drawing">
+  <topic href="disp_draw_corefuncs_t.html#draw_bitmap" title="draw_bitmap()"/>
+ </entry>
+ <entry keyword="blend_pixels()">
+  <topic href="disp_draw_contextfuncs_t.html#ddc_blend_pixels" title="blend_pixels()"/>
+ </entry>
+ <entry keyword="blit">
+  <entry keyword="scaled">
+   <topic href="disp_draw_corefuncs_t.html#scaled_blit" title="scaled_blit()"/>
+  </entry>
+ </entry>
+ <entry keyword="blit()">
+  <topic href="disp_draw_contextfuncs_t.html#ddc_blit" title="blit()"/>
+ </entry>
+ <entry keyword="blit1()">
+  <topic href="disp_draw_corefuncs_t.html#blit1" title="blit1()"/>
+ </entry>
+ <entry keyword="blit2()">
+  <topic href="disp_draw_corefuncs_t.html#blit2" title="blit2()"/>
+ </entry>
+ <entry keyword="blitting">
+  <topic href="disp_draw_contextfuncs_t.html#ddc_blit" title="blit()"/>
+  <topic href="disp_draw_corefuncs_t.html#blit1" title="blit1()"/>
+  <topic href="disp_draw_corefuncs_t.html#blit2" title="blit2()"/>
+  <entry keyword="scaled">
+   <topic href="disp_draw_contextfuncs_t.html#ddc_scaled_blit" title="scaled_blit()"/>
+  </entry>
+ </entry>
+ <entry keyword="Bresenham algorithm">
+  <entry keyword="parameters">
+   <topic href="disp_draw_corefuncs_t.html#get_bresenham_params" title="get_bresenham_params()"/>
+  </entry>
+ </entry>
+ <entry keyword="bus">
+  <entry keyword="AGP">
+   <topic href="disp_adapter_t.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="ISA">
+   <topic href="disp_adapter_t.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="PCI">
+   <topic href="disp_adapter_t.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="unknown">
+   <topic href="disp_adapter_t.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="VESA local">
+   <topic href="disp_adapter_t.html#id5" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="capabilities">
+  <entry keyword="information">
+   <topic href="disp_layer_query_t.html#id5" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="chroma key">
+  <entry keyword="colors">
+   <topic href="writing.html#Colors" title="Colors"/>
+   <topic href="disp_draw_context_t.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="mode">
+   <topic href="disp_draw_context_t.html#chroma_mode_bits" title="Chroma mode bits"/>
+   <topic href="disp_draw_context_t.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="updating">
+   <topic href="disp_draw_contextfuncs_t.html#ddc_update_chroma" title="update_chroma()"/>
+  </entry>
+ </entry>
+ <entry keyword="circular patterns">
+  <topic href="writing.html#patdef" title="Patterns"/>
+ </entry>
+ <entry keyword="clipping">
+  <entry keyword="update">
+   <topic href="disp_draw_corefuncs_t.html#update_clipping" title="update_clipping()"/>
+  </entry>
+ </entry>
+ <entry keyword="colors">
+  <entry keyword="background and foreground">
+   <topic href="disp_draw_context_t.html#id5" title="Description:"/>
+   <entry keyword="updating">
+    <topic href="disp_draw_contextfuncs_t.html#ddc_update_color" title="update_color()"/>
+   </entry>
+  </entry>
+  <entry keyword="chroma key">
+   <topic href="writing.html#Colors" title="Colors"/>
+   <topic href="disp_draw_contextfuncs_t.html#ddc_update_chroma" title="update_chroma()"/>
+  </entry>
+  <entry keyword="formats">
+   <topic href="writing.html#Colors" title="Colors"/>
+   <topic href="writing.html#pixel_format" title="Pixel formats"/>
+  </entry>
+  <entry keyword="palette, setting">
+   <topic href="disp_draw_miscfuncs_t.html#ddm_set_palette" title="set_palette()"/>
+   <topic href="disp_modefuncs_t.html#dm_set_palette" title="set_palette()"/>
+  </entry>
+ </entry>
+ <entry keyword="community website (Foundry27)">
+  <topic href="writing.html#Getting_source" title="Getting the source code"/>
+ </entry>
+ <entry keyword="connectors">
+  <topic href="introduction.html#photon" title="Photon-based graphics system"/>
+ </entry>
+ <entry keyword="context">
+  <entry keyword="2D drawing functions">
+   <topic href="writing.html#binding_to_framework" title="Binding your driver to the graphics framework"/>
+   <topic href="writing.html#CoreVsContext" title="Core vs. context 2D functions"/>
+   <topic href="disp_draw_contextfuncs_t.html#id5" title="Description:"/>
+   <entry keyword="fallback routines">
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+    <topic href="writing.html#DrawFunctions" title="Supplying draw functions and software fallback"/>
+   </entry>
+  </entry>
+  <entry keyword="information">
+   <topic href="writing.html#ContextInformation" title="Context information"/>
+   <topic href="disp_draw_context_t.html#id5" title="Description:"/>
+   <entry keyword="updating">
+    <topic href="writing.html#ContextInformation" title="Context information"/>
+    <topic href="disp_draw_contextfuncs_t.html#ddc_update_general" title="update_general()"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="conventions">
+  <entry keyword="typographical">
+   <topic href="about.html#Typographical_conventions" title="Typographical conventions"/>
+  </entry>
+ </entry>
+ <entry keyword="coordinates">
+  <entry keyword="inclusiveness">
+   <topic href="writing.html#Inclusiveness" title="Inclusiveness"/>
+  </entry>
+  <entry keyword="order of">
+   <topic href="writing.html#CoordinateOrder" title="Order"/>
+  </entry>
+  <entry keyword="origin">
+   <topic href="writing.html#Coordinates" title="Coordinate system"/>
+  </entry>
+ </entry>
+ <entry keyword="core 2D drawing functions">
+  <topic href="writing.html#binding_to_framework" title="Binding your driver to the graphics framework"/>
+  <topic href="writing.html#CoreVsContext" title="Core vs. context 2D functions"/>
+  <topic href="disp_draw_corefuncs_t.html#id5" title="Description:"/>
+  <entry keyword="fallback routines">
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   <topic href="writing.html#DrawFunctions" title="Supplying draw functions and software fallback"/>
+  </entry>
+ </entry>
+ <entry keyword="CRT Controller (CRTC) settings">
+  <topic href="disp_crtc_settings_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DDK_REVISION">
+  <topic href="disp_module_info_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DDK_VERSION_MAJOR">
+  <topic href="disp_module_info_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DDK_VERSION_MINOR">
+  <topic href="disp_module_info_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="detach_external()">
+  <topic href="disp_draw_miscfuncs_t.html#ddm_detach_external" title="detach_external()"/>
+ </entry>
+ <entry keyword="devg_get_contextfuncs()">
+  <topic href="writing.html#binding_to_framework" title="Binding your driver to the graphics framework"/>
+  <topic href="devg_get_contextfuncs.html#id5" title="Description:"/>
+  <topic href="writing.html#DrawFunctions" title="Supplying draw functions and software fallback"/>
+ </entry>
+ <entry keyword="devg_get_corefuncs()">
+  <topic href="writing.html#binding_to_framework" title="Binding your driver to the graphics framework"/>
+  <topic href="devg_get_corefuncs.html#id5" title="Description:"/>
+  <topic href="writing.html#DrawFunctions" title="Supplying draw functions and software fallback"/>
+ </entry>
+ <entry keyword="devg_get_memfuncs()">
+  <topic href="writing.html#binding_to_framework" title="Binding your driver to the graphics framework"/>
+  <topic href="devg_get_memfuncs.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="devg_get_miscfuncs()">
+  <topic href="writing.html#binding_to_framework" title="Binding your driver to the graphics framework"/>
+  <topic href="devg_get_miscfuncs.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="devg_get_modefuncs()">
+  <topic href="writing.html#binding_to_framework" title="Binding your driver to the graphics framework"/>
+  <topic href="devg_get_modefuncs.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="devg_get_vcapfuncs()">
+  <topic href="writing.html#binding_to_framework" title="Binding your driver to the graphics framework"/>
+  <topic href="devg_get_vcapfuncs.html#id7" title="Description:"/>
+ </entry>
+ <entry keyword="disable_hw_cursor()">
+  <topic href="disp_modefuncs_t.html#dm_disable_hw_cursor" title="disable_hw_cursor()"/>
+ </entry>
+ <entry keyword="DISP_2D_ACCEL_ANTIALIAS">
+  <topic href="disp_2d_caps_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_2D_ACCEL_BRESENHAM_LINES">
+  <topic href="disp_2d_caps_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_2D_ACCEL_COMPLEX_POLYGONS">
+  <topic href="disp_2d_caps_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_2D_ACCEL_COMPLEX_ROPS">
+  <topic href="disp_2d_caps_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_2D_ACCEL_DST_CHROMA">
+  <topic href="disp_2d_caps_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_2D_ACCEL_DSTALPHA_BLEND_GLOBAL">
+  <topic href="disp_2d_caps_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_2D_ACCEL_DSTALPHA_BLEND_MAP">
+  <topic href="disp_2d_caps_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_2D_ACCEL_DSTALPHA_BLEND_PIXEL">
+  <topic href="disp_2d_caps_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_2D_ACCEL_MONO_PAT">
+  <topic href="disp_2d_caps_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_2D_ACCEL_OPAQUE_BLIT">
+  <topic href="disp_2d_caps_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_2D_ACCEL_OPAQUE_FILL">
+  <topic href="disp_2d_caps_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_2D_ACCEL_SCALED_BLIT">
+  <topic href="disp_2d_caps_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_2D_ACCEL_SIMPLE_POLYGONS">
+  <topic href="disp_2d_caps_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_2D_ACCEL_SIMPLE_ROPS">
+  <topic href="disp_2d_caps_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_2D_ACCEL_SRC_CHROMA">
+  <topic href="disp_2d_caps_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_2D_ACCEL_SRCALPHA_BLEND_GLOBAL">
+  <topic href="disp_2d_caps_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_2D_ACCEL_SRCALPHA_BLEND_MAP">
+  <topic href="disp_2d_caps_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_2D_ACCEL_SRCALPHA_BLEND_PIXEL">
+  <topic href="disp_2d_caps_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_2D_ACCEL_TRANS_PAT">
+  <topic href="disp_2d_caps_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="disp_2d_caps_t">
+  <topic href="disp_2d_caps_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_2D_SRC_DST_STRIDE_EQUAL">
+  <topic href="disp_2d_caps_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="disp_acquire_vga_resources()">
+  <topic href="libraries.html#disp_acquire_vga_resources" title="disp_acquire_vga_resources()"/>
+ </entry>
+ <entry keyword="disp_adapter_t">
+  <topic href="writing.html#binding_to_framework" title="Binding your driver to the graphics framework"/>
+  <topic href="disp_adapter_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_ADD_FUNC()">
+  <topic href="writing.html#binding_to_framework" title="Binding your driver to the graphics framework"/>
+  <topic href="disp_add_func.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_ALPHA_M1_DST_PIXEL_ALPHA">
+  <topic href="disp_draw_context_t.html#alpha_mode_bits" title="Alpha mode bits (alpha_mode)"/>
+ </entry>
+ <entry keyword="DISP_ALPHA_M1_GLOBAL">
+  <topic href="disp_draw_context_t.html#alpha_mode_bits" title="Alpha mode bits (alpha_mode)"/>
+ </entry>
+ <entry keyword="DISP_ALPHA_M1_MAP">
+  <topic href="disp_draw_context_t.html#alpha_mode_bits" title="Alpha mode bits (alpha_mode)"/>
+ </entry>
+ <entry keyword="DISP_ALPHA_M1_SRC_PIXEL_ALPHA">
+  <topic href="disp_draw_context_t.html#alpha_mode_bits" title="Alpha mode bits (alpha_mode)"/>
+ </entry>
+ <entry keyword="DISP_ALPHA_M2_DST_PIXEL_ALPHA">
+  <topic href="disp_draw_context_t.html#alpha_mode_bits" title="Alpha mode bits (alpha_mode)"/>
+ </entry>
+ <entry keyword="DISP_ALPHA_M2_GLOBAL">
+  <topic href="disp_draw_context_t.html#alpha_mode_bits" title="Alpha mode bits (alpha_mode)"/>
+ </entry>
+ <entry keyword="DISP_ALPHA_M2_MAP">
+  <topic href="disp_draw_context_t.html#alpha_mode_bits" title="Alpha mode bits (alpha_mode)"/>
+ </entry>
+ <entry keyword="DISP_ALPHA_M2_SRC_PIXEL_ALPHA">
+  <topic href="disp_draw_context_t.html#alpha_mode_bits" title="Alpha mode bits (alpha_mode)"/>
+ </entry>
+ <entry keyword="DISP_BITS_PER_PIXEL()">
+  <topic href="writing.html#pixel_format" title="Pixel formats"/>
+ </entry>
+ <entry keyword="DISP_BLEND_DST_0">
+  <topic href="disp_draw_context_t.html#alpha_mode_blending_dst_bits" title="Alpha mode blending (destination) operation"/>
+ </entry>
+ <entry keyword="DISP_BLEND_DST_1">
+  <topic href="disp_draw_context_t.html#alpha_mode_blending_dst_bits" title="Alpha mode blending (destination) operation"/>
+ </entry>
+ <entry keyword="DISP_BLEND_DST_1mA0M1">
+  <topic href="disp_draw_context_t.html#alpha_mode_blending_dst_bits" title="Alpha mode blending (destination) operation"/>
+ </entry>
+ <entry keyword="DISP_BLEND_DST_1mA0M2">
+  <topic href="disp_draw_context_t.html#alpha_mode_blending_dst_bits" title="Alpha mode blending (destination) operation"/>
+ </entry>
+ <entry keyword="DISP_BLEND_DST_1mA1M1">
+  <topic href="disp_draw_context_t.html#alpha_mode_blending_dst_bits" title="Alpha mode blending (destination) operation"/>
+ </entry>
+ <entry keyword="DISP_BLEND_DST_1mA1M2">
+  <topic href="disp_draw_context_t.html#alpha_mode_blending_dst_bits" title="Alpha mode blending (destination) operation"/>
+ </entry>
+ <entry keyword="DISP_BLEND_DST_1mM1">
+  <topic href="disp_draw_context_t.html#alpha_mode_blending_dst_bits" title="Alpha mode blending (destination) operation"/>
+ </entry>
+ <entry keyword="DISP_BLEND_DST_1mM2">
+  <topic href="disp_draw_context_t.html#alpha_mode_blending_dst_bits" title="Alpha mode blending (destination) operation"/>
+ </entry>
+ <entry keyword="DISP_BLEND_DST_1mS">
+  <topic href="disp_draw_context_t.html#alpha_mode_blending_dst_bits" title="Alpha mode blending (destination) operation"/>
+ </entry>
+ <entry keyword="DISP_BLEND_DST_A0M1">
+  <topic href="disp_draw_context_t.html#alpha_mode_blending_dst_bits" title="Alpha mode blending (destination) operation"/>
+ </entry>
+ <entry keyword="DISP_BLEND_DST_A0M2">
+  <topic href="disp_draw_context_t.html#alpha_mode_blending_dst_bits" title="Alpha mode blending (destination) operation"/>
+ </entry>
+ <entry keyword="DISP_BLEND_DST_A1M1">
+  <topic href="disp_draw_context_t.html#alpha_mode_blending_dst_bits" title="Alpha mode blending (destination) operation"/>
+ </entry>
+ <entry keyword="DISP_BLEND_DST_A1M2">
+  <topic href="disp_draw_context_t.html#alpha_mode_blending_dst_bits" title="Alpha mode blending (destination) operation"/>
+ </entry>
+ <entry keyword="DISP_BLEND_DST_FACTOR">
+  <topic href="disp_draw_context_t.html#alpha_mode_blending_dst_bits" title="Alpha mode blending (destination) operation"/>
+ </entry>
+ <entry keyword="DISP_BLEND_DST_M1">
+  <topic href="disp_draw_context_t.html#alpha_mode_blending_dst_bits" title="Alpha mode blending (destination) operation"/>
+ </entry>
+ <entry keyword="DISP_BLEND_DST_M2">
+  <topic href="disp_draw_context_t.html#alpha_mode_blending_dst_bits" title="Alpha mode blending (destination) operation"/>
+ </entry>
+ <entry keyword="DISP_BLEND_DST_S">
+  <topic href="disp_draw_context_t.html#alpha_mode_blending_dst_bits" title="Alpha mode blending (destination) operation"/>
+ </entry>
+ <entry keyword="DISP_BLEND_SRC_0">
+  <topic href="disp_draw_context_t.html#alpha_mode_blending_src_bits" title="Alpha mode blending (source) operation"/>
+ </entry>
+ <entry keyword="DISP_BLEND_SRC_1">
+  <topic href="disp_draw_context_t.html#alpha_mode_blending_src_bits" title="Alpha mode blending (source) operation"/>
+ </entry>
+ <entry keyword="DISP_BLEND_SRC_1mA0M1">
+  <topic href="disp_draw_context_t.html#alpha_mode_blending_src_bits" title="Alpha mode blending (source) operation"/>
+ </entry>
+ <entry keyword="DISP_BLEND_SRC_1mA0M2">
+  <topic href="disp_draw_context_t.html#alpha_mode_blending_src_bits" title="Alpha mode blending (source) operation"/>
+ </entry>
+ <entry keyword="DISP_BLEND_SRC_1mA1M1">
+  <topic href="disp_draw_context_t.html#alpha_mode_blending_src_bits" title="Alpha mode blending (source) operation"/>
+ </entry>
+ <entry keyword="DISP_BLEND_SRC_1mA1M2">
+  <topic href="disp_draw_context_t.html#alpha_mode_blending_src_bits" title="Alpha mode blending (source) operation"/>
+ </entry>
+ <entry keyword="DISP_BLEND_SRC_1mD">
+  <topic href="disp_draw_context_t.html#alpha_mode_blending_src_bits" title="Alpha mode blending (source) operation"/>
+ </entry>
+ <entry keyword="DISP_BLEND_SRC_1mM1">
+  <topic href="disp_draw_context_t.html#alpha_mode_blending_src_bits" title="Alpha mode blending (source) operation"/>
+ </entry>
+ <entry keyword="DISP_BLEND_SRC_1mM2">
+  <topic href="disp_draw_context_t.html#alpha_mode_blending_src_bits" title="Alpha mode blending (source) operation"/>
+ </entry>
+ <entry keyword="DISP_BLEND_SRC_A0M1">
+  <topic href="disp_draw_context_t.html#alpha_mode_blending_src_bits" title="Alpha mode blending (source) operation"/>
+ </entry>
+ <entry keyword="DISP_BLEND_SRC_A0M2">
+  <topic href="disp_draw_context_t.html#alpha_mode_blending_src_bits" title="Alpha mode blending (source) operation"/>
+ </entry>
+ <entry keyword="DISP_BLEND_SRC_A1M1">
+  <topic href="disp_draw_context_t.html#alpha_mode_blending_src_bits" title="Alpha mode blending (source) operation"/>
+ </entry>
+ <entry keyword="DISP_BLEND_SRC_A1M2">
+  <topic href="disp_draw_context_t.html#alpha_mode_blending_src_bits" title="Alpha mode blending (source) operation"/>
+ </entry>
+ <entry keyword="DISP_BLEND_SRC_D">
+  <topic href="disp_draw_context_t.html#alpha_mode_blending_src_bits" title="Alpha mode blending (source) operation"/>
+ </entry>
+ <entry keyword="DISP_BLEND_SRC_M1">
+  <topic href="disp_draw_context_t.html#alpha_mode_blending_src_bits" title="Alpha mode blending (source) operation"/>
+ </entry>
+ <entry keyword="DISP_BLEND_SRC_M2">
+  <topic href="disp_draw_context_t.html#alpha_mode_blending_src_bits" title="Alpha mode blending (source) operation"/>
+ </entry>
+ <entry keyword="DISP_BUS_PCI">
+  <topic href="libraries.html#disp_pci_init" title="disp_pci_init()"/>
+ </entry>
+ <entry keyword="DISP_BUS_TYPE_AGP">
+  <topic href="disp_adapter_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_BUS_TYPE_ISA">
+  <topic href="disp_adapter_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_BUS_TYPE_PCI">
+  <topic href="disp_adapter_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_BUS_TYPE_UNKNOWN">
+  <topic href="disp_adapter_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_BUS_TYPE_VL">
+  <topic href="disp_adapter_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_BYTES_PER_PIXEL()">
+  <topic href="writing.html#pixel_format" title="Pixel formats"/>
+ </entry>
+ <entry keyword="DISP_CAP_2D_ACCEL">
+  <topic href="disp_adapter_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_CAP_3D_ACCEL">
+  <topic href="disp_adapter_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_CAP_DYNAMIC_MODESWITCH">
+  <topic href="disp_adapter_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_CAP_MULTI_MONITOR_SAFE">
+  <topic href="disp_adapter_t.html#id5" title="Description:"/>
+  <topic href="libraries.html#disp_acquire_vga_resources" title="disp_acquire_vga_resources()"/>
+ </entry>
+ <entry keyword="DISP_CAP_NO_IO_PRIVITY">
+  <topic href="disp_adapter_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_CHROMA_OP_DRAW">
+  <topic href="disp_draw_context_t.html#chroma_mode_bits" title="Chroma mode bits"/>
+  <topic href="disp_draw_context_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_CHROMA_OP_DST_MATCH">
+  <topic href="disp_draw_context_t.html#chroma_mode_bits" title="Chroma mode bits"/>
+  <topic href="disp_draw_context_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_CHROMA_OP_NO_DRAW">
+  <topic href="disp_draw_context_t.html#chroma_mode_bits" title="Chroma mode bits"/>
+  <topic href="disp_draw_context_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_CHROMA_OP_SRC_MATCH">
+  <topic href="disp_draw_context_t.html#chroma_mode_bits" title="Chroma mode bits"/>
+  <topic href="disp_draw_context_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="disp_crtc_calc()">
+  <topic href="libraries.html#disp_crtc_calc" title="disp_crtc_calc()"/>
+ </entry>
+ <entry keyword="disp_crtc_settings_t">
+  <topic href="disp_crtc_settings_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="disp_delay()">
+  <topic href="libraries.html#disp_delay" title="disp_delay()"/>
+ </entry>
+ <entry keyword="disp_draw_context_t">
+  <topic href="writing.html#ContextInformation" title="Context information"/>
+  <topic href="disp_draw_context_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="disp_draw_contextfuncs_t">
+  <topic href="disp_draw_contextfuncs_t.html#id5" title="Description:"/>
+  <entry keyword="blend_pixels()">
+   <topic href="disp_draw_contextfuncs_t.html#ddc_blend_pixels" title="blend_pixels()"/>
+  </entry>
+  <entry keyword="blit()">
+   <topic href="disp_draw_contextfuncs_t.html#ddc_blit" title="blit()"/>
+  </entry>
+  <entry keyword="draw_line()">
+   <topic href="disp_draw_contextfuncs_t.html#ddc_draw_line" title="draw_line()"/>
+  </entry>
+  <entry keyword="draw_polyline()">
+   <topic href="disp_draw_contextfuncs_t.html#ddc_draw_polyline" title="draw_polyline()"/>
+  </entry>
+  <entry keyword="draw_rect()">
+   <topic href="disp_draw_contextfuncs_t.html#ddc_draw_rect" title="draw_rect()"/>
+  </entry>
+  <entry keyword="draw_span()">
+   <topic href="disp_draw_contextfuncs_t.html#ddc_draw_span" title="draw_span()"/>
+  </entry>
+  <entry keyword="draw_span_list()">
+   <topic href="disp_draw_contextfuncs_t.html#ddc_draw_span_list" title="draw_span_list()"/>
+  </entry>
+  <entry keyword="fallback functions">
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   <topic href="writing.html#DrawFunctions" title="Supplying draw functions and software fallback"/>
+  </entry>
+  <entry keyword="fill_poly()">
+   <topic href="disp_draw_contextfuncs_t.html#ddc_fill_poly" title="fill_poly()"/>
+  </entry>
+  <entry keyword="scaled_blit()">
+   <topic href="disp_draw_contextfuncs_t.html#ddc_scaled_blit" title="scaled_blit()"/>
+  </entry>
+  <entry keyword="update_alpha()">
+   <topic href="writing.html#ContextInformation" title="Context information"/>
+   <topic href="disp_draw_contextfuncs_t.html#ddc_update_alpha" title="update_alpha()"/>
+  </entry>
+  <entry keyword="update_chroma()">
+   <topic href="writing.html#ContextInformation" title="Context information"/>
+   <topic href="disp_draw_contextfuncs_t.html#ddc_update_chroma" title="update_chroma()"/>
+  </entry>
+  <entry keyword="update_color()">
+   <topic href="writing.html#ContextInformation" title="Context information"/>
+   <topic href="disp_draw_contextfuncs_t.html#ddc_update_color" title="update_color()"/>
+  </entry>
+  <entry keyword="update_general()">
+   <topic href="writing.html#ContextInformation" title="Context information"/>
+   <topic href="disp_draw_contextfuncs_t.html#ddc_update_general" title="update_general()"/>
+  </entry>
+  <entry keyword="update_line()">
+   <topic href="disp_draw_contextfuncs_t.html#ddc_update_line" title="update_line()"/>
+  </entry>
+  <entry keyword="update_planemask()">
+   <topic href="disp_draw_contextfuncs_t.html#ddc_update_planemask" title="update_planemask()"/>
+  </entry>
+  <entry keyword="update_rop3()">
+   <topic href="writing.html#ContextInformation" title="Context information"/>
+   <topic href="disp_draw_contextfuncs_t.html#ddc_update_rop3" title="update_rop3()"/>
+  </entry>
+ </entry>
+ <entry keyword="disp_draw_corefuncs_t">
+  <topic href="disp_draw_corefuncs_t.html#id5" title="Description:"/>
+  <entry keyword="blit1()">
+   <topic href="disp_draw_corefuncs_t.html#blit1" title="blit1()"/>
+  </entry>
+  <entry keyword="blit2()">
+   <topic href="disp_draw_corefuncs_t.html#blit2" title="blit2()"/>
+  </entry>
+  <entry keyword="draw_bitmap()">
+   <topic href="disp_draw_corefuncs_t.html#draw_bitmap" title="draw_bitmap()"/>
+  </entry>
+  <entry keyword="draw_line()">
+   <topic href="disp_draw_corefuncs_t.html#draw_line" title="draw_line()"/>
+  </entry>
+  <entry keyword="draw_line_pat8x1()">
+   <topic href="disp_draw_corefuncs_t.html#draw_line_pat8x1" title="draw_line_pat8x1()"/>
+  </entry>
+  <entry keyword="draw_line_trans8x1()">
+   <topic href="disp_draw_corefuncs_t.html#draw_line_trans8x1" title="draw_line_trans8x1()"/>
+  </entry>
+  <entry keyword="draw_rect_pat8x8()">
+   <topic href="disp_draw_corefuncs_t.html#draw_rect_pat8x8" title="draw_rect_pat8x8()"/>
+  </entry>
+  <entry keyword="draw_rect_trans8x8()">
+   <topic href="disp_draw_corefuncs_t.html#draw_rect_trans8x8" title="draw_rect_trans8x8()"/>
+  </entry>
+  <entry keyword="draw_solid_rect()">
+   <topic href="disp_draw_corefuncs_t.html#draw_solid_rect" title="draw_solid_rect()"/>
+  </entry>
+  <entry keyword="draw_span()">
+   <topic href="disp_draw_corefuncs_t.html#draw_span" title="draw_span()"/>
+  </entry>
+  <entry keyword="draw_span_list()">
+   <topic href="disp_draw_corefuncs_t.html#draw_span_list" title="draw_span_list()"/>
+  </entry>
+  <entry keyword="fallback functions">
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   <topic href="writing.html#DrawFunctions" title="Supplying draw functions and software fallback"/>
+  </entry>
+  <entry keyword="fill_poly()">
+   <topic href="disp_draw_corefuncs_t.html#fill_poly" title="fill_poly()"/>
+  </entry>
+  <entry keyword="get_bresenham_params()">
+   <topic href="disp_draw_corefuncs_t.html#get_bresenham_params" title="get_bresenham_params()"/>
+  </entry>
+  <entry keyword="scaled_blit()">
+   <topic href="disp_draw_corefuncs_t.html#scaled_blit" title="scaled_blit()"/>
+  </entry>
+  <entry keyword="update_clipping()">
+   <topic href="disp_draw_corefuncs_t.html#update_clipping" title="update_clipping()"/>
+  </entry>
+  <entry keyword="update_draw_surface()">
+   <topic href="writing.html#ContextInformation" title="Context information"/>
+   <topic href="disp_draw_corefuncs_t.html#update_draw_surface" title="update_draw_surface()"/>
+  </entry>
+  <entry keyword="update_pattern()">
+   <topic href="writing.html#ContextInformation" title="Context information"/>
+   <topic href="disp_draw_corefuncs_t.html#update_pattern" title="update_pattern()"/>
+  </entry>
+  <entry keyword="update_transform()">
+   <topic href="disp_draw_corefuncs_t.html#update_transform" title="update_transform()"/>
+  </entry>
+  <entry keyword="wait_idle()">
+   <topic href="disp_draw_corefuncs_t.html#wait_idle" title="wait_idle()"/>
+  </entry>
+ </entry>
+ <entry keyword="DISP_DRAW_FLAG_ANTIALIAS">
+  <topic href="disp_draw_context_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_DRAW_FLAG_COMPLEX_ROP">
+  <topic href="disp_draw_context_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_DRAW_FLAG_FILTERED_SCALING">
+  <topic href="disp_draw_context_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_DRAW_FLAG_MONO_PATTERN">
+  <topic href="disp_draw_context_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_DRAW_FLAG_SIMPLE_ROP">
+  <topic href="disp_draw_context_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_DRAW_FLAG_SOFTWARE_SCALING">
+  <topic href="disp_draw_context_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_DRAW_FLAG_SUBPIXEL">
+  <topic href="disp_draw_context_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_DRAW_FLAG_TRANS_PATTERN">
+  <topic href="disp_draw_context_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_DRAW_FLAG_TRANSFORM">
+  <topic href="disp_draw_context_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_DRAW_FLAG_USE_ALPHA">
+  <topic href="disp_draw_context_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_DRAW_FLAG_USE_CHROMA">
+  <topic href="disp_draw_context_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_DRAW_FLAG_USE_PLANE_MASK">
+  <topic href="disp_draw_context_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="disp_draw_miscfuncs_t">
+  <topic href="disp_draw_miscfuncs_t.html#id5" title="Description:"/>
+  <entry keyword="attach_external()">
+   <topic href="disp_draw_miscfuncs_t.html#ddm_attach_external" title="attach_external()"/>
+  </entry>
+  <entry keyword="detach_external()">
+   <topic href="disp_draw_miscfuncs_t.html#ddm_detach_external" title="detach_external()"/>
+  </entry>
+  <entry keyword="end_of_draw()">
+   <topic href="disp_draw_miscfuncs_t.html#ddm_end_of_draw" title="end_of_draw()"/>
+  </entry>
+  <entry keyword="fini()">
+   <topic href="writing.html#CallingSequence" title="Calling sequence"/>
+   <topic href="disp_draw_miscfuncs_t.html#ddm_fini" title="fini()"/>
+  </entry>
+  <entry keyword="flushrect()">
+   <topic href="disp_draw_miscfuncs_t.html#ddm_flushrect" title="flushrect()"/>
+  </entry>
+  <entry keyword="get_2d_caps()">
+   <topic href="disp_2d_caps_t.html#id5" title="Description:"/>
+   <topic href="disp_draw_miscfuncs_t.html#ddm_get_2d_caps" title="get_2d_caps()"/>
+  </entry>
+  <entry keyword="get_contextfuncs_sw()">
+   <topic href="disp_draw_miscfuncs_t.html#ddm_get_contextfuncs_sw" title="get_contextfuncs_sw()"/>
+  </entry>
+  <entry keyword="get_corefuncs_sw()">
+   <topic href="disp_draw_miscfuncs_t.html#ddm_get_corefuncs_sw" title="get_corefuncs_sw()"/>
+  </entry>
+  <entry keyword="init()">
+   <topic href="writing.html#CallingSequence" title="Calling sequence"/>
+   <topic href="disp_draw_miscfuncs_t.html#ddm_init" title="init()"/>
+  </entry>
+  <entry keyword="module_info()">
+   <topic href="disp_draw_miscfuncs_t.html#ddm_module_info" title="module_info()"/>
+  </entry>
+  <entry keyword="recover()">
+   <topic href="disp_draw_miscfuncs_t.html#ddm_recover" title="recover()"/>
+  </entry>
+  <entry keyword="set_palette()">
+   <topic href="disp_draw_miscfuncs_t.html#ddm_set_palette" title="set_palette()"/>
+  </entry>
+  <entry keyword="wait_idle()">
+   <topic href="disp_draw_miscfuncs_t.html#ddm_wait_idle" title="wait_idle()"/>
+  </entry>
+ </entry>
+ <entry keyword="disp_freemem()">
+  <topic href="libraries.html#disp_freemem" title="disp_freemem()"/>
+ </entry>
+ <entry keyword="disp_get_rom_image()">
+  <topic href="libraries.html#disp_get_rom_image" title="disp_get_rom_image()"/>
+ </entry>
+ <entry keyword="disp_getmem()">
+  <topic href="libraries.html#disp_getmem" title="disp_getmem()"/>
+ </entry>
+ <entry keyword="DISP_LAYER_FORMAT_ARGB1555">
+  <topic href="writing.html#pixel_formats_for_layers" title="Pixel formats for layers"/>
+ </entry>
+ <entry keyword="DISP_LAYER_FORMAT_ARGB8888">
+  <topic href="writing.html#pixel_formats_for_layers" title="Pixel formats for layers"/>
+ </entry>
+ <entry keyword="DISP_LAYER_FORMAT_PAL8">
+  <topic href="writing.html#pixel_formats_for_layers" title="Pixel formats for layers"/>
+ </entry>
+ <entry keyword="DISP_LAYER_FORMAT_RGB565">
+  <topic href="writing.html#pixel_formats_for_layers" title="Pixel formats for layers"/>
+ </entry>
+ <entry keyword="DISP_LAYER_FORMAT_RGB888">
+  <topic href="writing.html#pixel_formats_for_layers" title="Pixel formats for layers"/>
+ </entry>
+ <entry keyword="DISP_LAYER_FORMAT_UYVY">
+  <topic href="writing.html#pixel_formats_for_layers" title="Pixel formats for layers"/>
+ </entry>
+ <entry keyword="DISP_LAYER_FORMAT_V422">
+  <topic href="writing.html#pixel_formats_for_layers" title="Pixel formats for layers"/>
+ </entry>
+ <entry keyword="DISP_LAYER_FORMAT_YUV420">
+  <topic href="writing.html#pixel_formats_for_layers" title="Pixel formats for layers"/>
+ </entry>
+ <entry keyword="DISP_LAYER_FORMAT_YUY2">
+  <topic href="writing.html#pixel_formats_for_layers" title="Pixel formats for layers"/>
+ </entry>
+ <entry keyword="DISP_LAYER_FORMAT_YV12">
+  <topic href="writing.html#pixel_formats_for_layers" title="Pixel formats for layers"/>
+ </entry>
+ <entry keyword="DISP_LAYER_FORMAT_YVYU">
+  <topic href="writing.html#pixel_formats_for_layers" title="Pixel formats for layers"/>
+ </entry>
+ <entry keyword="DISP_MAP_BELOW_16M">
+  <topic href="libraries.html#disp_getmem" title="disp_getmem()"/>
+ </entry>
+ <entry keyword="DISP_MAP_LAZY">
+  <topic href="libraries.html#disp_mmap_device_memory" title="disp_mmap_device_memory()"/>
+ </entry>
+ <entry keyword="DISP_MAP_PHYS">
+  <topic href="libraries.html#disp_getmem" title="disp_getmem()"/>
+ </entry>
+ <entry keyword="disp_memfuncs_t">
+  <topic href="disp_memfuncs_t.html#id5" title="Description:"/>
+  <entry keyword="alloc_layer_surface()">
+   <topic href="disp_memfuncs_t.html#mm_alloc_layer_surface" title="alloc_layer_surface()"/>
+  </entry>
+  <entry keyword="alloc_surface()">
+   <topic href="disp_memfuncs_t.html#mm_alloc_surface" title="alloc_surface()"/>
+  </entry>
+  <entry keyword="fini()">
+   <topic href="writing.html#CallingSequence" title="Calling sequence"/>
+   <topic href="disp_memfuncs_t.html#mm_fini" title="fini()"/>
+  </entry>
+  <entry keyword="free_surface()">
+   <topic href="disp_memfuncs_t.html#mm_free_surface" title="free_surface()"/>
+  </entry>
+  <entry keyword="get_alloc_info()">
+   <topic href="disp_memfuncs_t.html#mm_get_alloc_info" title="get_alloc_info()"/>
+  </entry>
+  <entry keyword="get_alloc_layer_info()">
+   <topic href="disp_memfuncs_t.html#mm_get_alloc_layer_info" title="get_alloc_layer_info()"/>
+  </entry>
+  <entry keyword="init()">
+   <topic href="writing.html#CallingSequence" title="Calling sequence"/>
+   <topic href="disp_memfuncs_t.html#mm_init" title="init()"/>
+  </entry>
+  <entry keyword="mem_avail()">
+   <topic href="disp_memfuncs_t.html#mm_mem_avail" title="mem_avail()"/>
+  </entry>
+  <entry keyword="module_info()">
+   <topic href="disp_memfuncs_t.html#mm_module_info" title="module_info()"/>
+  </entry>
+  <entry keyword="query_apertures()">
+   <topic href="disp_memfuncs_t.html#mm_query_apertures" title="query_apertures()"/>
+  </entry>
+  <entry keyword="query_surface()">
+   <topic href="disp_memfuncs_t.html#mm_query_surface" title="query_surface()"/>
+  </entry>
+  <entry keyword="reset()">
+   <topic href="disp_memfuncs_t.html#mm_reset" title="reset()"/>
+  </entry>
+ </entry>
+ <entry keyword="disp_mmap_device_io()">
+  <topic href="libraries.html#disp_mmap_device_io" title="disp_mmap_device_io()"/>
+ </entry>
+ <entry keyword="disp_mmap_device_memory()">
+  <topic href="libraries.html#disp_mmap_device_memory" title="disp_mmap_device_memory()"/>
+ </entry>
+ <entry keyword="DISP_MODE_GENERIC">
+  <topic href="disp_mode_info_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="disp_mode_get_entry()">
+  <topic href="libraries.html#disp_mode_get_entry" title="disp_mode_get_entry()"/>
+ </entry>
+ <entry keyword="disp_mode_info_t">
+  <topic href="disp_mode_info_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_MODE_LISTEND">
+  <topic href="disp_modefuncs_t.html#dm_get_modelist" title="get_modelist()"/>
+ </entry>
+ <entry keyword="DISP_MODE_NUM_REFRESH">
+  <topic href="disp_mode_info_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="disp_modefuncs_t">
+  <topic href="disp_modefuncs_t.html#id5" title="Description:"/>
+  <entry keyword="disable_hw_cursor()">
+   <topic href="disp_modefuncs_t.html#dm_disable_hw_cursor" title="disable_hw_cursor()"/>
+  </entry>
+  <entry keyword="enable_hw_cursor()">
+   <topic href="disp_modefuncs_t.html#dm_enable_hw_cursor" title="enable_hw_cursor()"/>
+  </entry>
+  <entry keyword="fini()">
+   <topic href="writing.html#CallingSequence" title="Calling sequence"/>
+   <topic href="disp_modefuncs_t.html#dm_fini" title="fini()"/>
+  </entry>
+  <entry keyword="get_modeinfo()">
+   <topic href="disp_modefuncs_t.html#dm_get_modeinfo" title="get_modeinfo()"/>
+  </entry>
+  <entry keyword="get_modelist()">
+   <topic href="disp_modefuncs_t.html#dm_get_modelist" title="get_modelist()"/>
+  </entry>
+  <entry keyword="i2c_read()">
+   <topic href="disp_modefuncs_t.html#dm_i2c_read" title="i2c_read()"/>
+  </entry>
+  <entry keyword="i2c_write()">
+   <topic href="disp_modefuncs_t.html#dm_i2c_write" title="i2c_write()"/>
+  </entry>
+  <entry keyword="i2c_writeread()">
+   <topic href="disp_modefuncs_t.html#dm_i2c_writeread" title="i2c_writeread()"/>
+  </entry>
+  <entry keyword="init()">
+   <topic href="writing.html#CallingSequence" title="Calling sequence"/>
+   <topic href="disp_modefuncs_t.html#dm_init" title="init()"/>
+  </entry>
+  <entry keyword="layer_disable()">
+   <topic href="disp_modefuncs_t.html#dm_layer_disable" title="layer_disable()"/>
+  </entry>
+  <entry keyword="layer_enable()">
+   <topic href="disp_modefuncs_t.html#dm_layer_enable" title="layer_enable()"/>
+  </entry>
+  <entry keyword="layer_query()">
+   <topic href="disp_modefuncs_t.html#dm_layer_query" title="layer_query()"/>
+  </entry>
+  <entry keyword="layer_reset()">
+   <topic href="disp_modefuncs_t.html#dm_layer_reset" title="layer_reset()"/>
+  </entry>
+  <entry keyword="layer_set_alpha_map()">
+   <topic href="disp_modefuncs_t.html#layer_set_alpha_map" title="layer_set_alpha_map()"/>
+  </entry>
+  <entry keyword="layer_set_blending()">
+   <topic href="disp_modefuncs_t.html#dm_layer_set_blending" title="layer_set_blending()"/>
+  </entry>
+  <entry keyword="layer_set_brightness()">
+   <topic href="disp_modefuncs_t.html#dm_layer_set_brightness" title="layer_set_brightness()"/>
+  </entry>
+  <entry keyword="layer_set_chromakey()">
+   <topic href="disp_modefuncs_t.html#dm_layer_set_chromakey" title="layer_set_chromakey()"/>
+  </entry>
+  <entry keyword="layer_set_contrast()">
+   <topic href="disp_modefuncs_t.html#dm_layer_set_contrast" title="layer_set_contrast()"/>
+  </entry>
+  <entry keyword="layer_set_dest_viewport()">
+   <topic href="disp_modefuncs_t.html#dm_layer_set_dest_viewport" title="layer_set_dest_viewport()"/>
+  </entry>
+  <entry keyword="layer_set_flags()">
+   <topic href="disp_modefuncs_t.html#dm_layer_set_flags" title="layer_set_flags()"/>
+  </entry>
+  <entry keyword="layer_set_hue()">
+   <topic href="disp_modefuncs_t.html#dm_layer_set_hue" title="layer_set_hue()"/>
+  </entry>
+  <entry keyword="layer_set_order()">
+   <topic href="disp_modefuncs_t.html#dm_layer_set_order" title="layer_set_order()"/>
+  </entry>
+  <entry keyword="layer_set_saturation()">
+   <topic href="disp_modefuncs_t.html#dm_layer_set_saturation" title="layer_set_saturation()"/>
+  </entry>
+  <entry keyword="layer_set_source_viewport()">
+   <topic href="disp_modefuncs_t.html#dm_layer_set_source_viewport" title="layer_set_source_viewport()"/>
+  </entry>
+  <entry keyword="layer_set_surface()">
+   <topic href="disp_modefuncs_t.html#dm_layer_set_surface" title="layer_set_surface()"/>
+  </entry>
+  <entry keyword="layer_update_begin()">
+   <topic href="disp_modefuncs_t.html#dm_layer_update_begin" title="layer_update_begin()"/>
+  </entry>
+  <entry keyword="layer_update_end()">
+   <topic href="disp_modefuncs_t.html#dm_layer_update_end" title="layer_update_end()"/>
+  </entry>
+  <entry keyword="module_info()">
+   <topic href="disp_modefuncs_t.html#dm_module_info" title="module_info()"/>
+  </entry>
+  <entry keyword="set_display_offset()">
+   <topic href="disp_modefuncs_t.html#dm_set_display_offset" title="set_display_offset()"/>
+  </entry>
+  <entry keyword="set_dpms_mode()">
+   <topic href="disp_modefuncs_t.html#dm_set_dpms_mode" title="set_dpms_mode()"/>
+  </entry>
+  <entry keyword="set_hw_cursor()">
+   <topic href="disp_modefuncs_t.html#dm_set_hw_cursor" title="set_hw_cursor()"/>
+  </entry>
+  <entry keyword="set_hw_cursor_pos()">
+   <topic href="disp_modefuncs_t.html#dm_set_hw_cursor_pos" title="set_hw_cursor_pos()"/>
+  </entry>
+  <entry keyword="set_mode()">
+   <topic href="writing.html#CallingSequence" title="Calling sequence"/>
+   <topic href="disp_modefuncs_t.html#dm_set_mode" title="set_mode()"/>
+  </entry>
+  <entry keyword="set_palette()">
+   <topic href="disp_modefuncs_t.html#dm_set_palette" title="set_palette()"/>
+  </entry>
+  <entry keyword="wait_vsync()">
+   <topic href="disp_modefuncs_t.html#dm_wait_vsync" title="wait_vsync()"/>
+  </entry>
+ </entry>
+ <entry keyword="disp_module_info_t">
+  <topic href="disp_module_info_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="disp_munmap_device_io()">
+  <topic href="libraries.html#disp_munmap_device_io" title="disp_munmap_device_io()"/>
+ </entry>
+ <entry keyword="disp_munmap_device_memory()">
+  <topic href="libraries.html#disp_munmap_device_memory" title="disp_munmap_device_memory()"/>
+ </entry>
+ <entry keyword="DISP_PATTERN_FORMAT_MONO_8x1">
+  <topic href="disp_draw_context_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_PATTERN_FORMAT_MONO_8x8">
+  <topic href="disp_draw_context_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_PCI_ALL">
+  <topic href="libraries.html#disp_pci_init" title="disp_pci_init()"/>
+ </entry>
+ <entry keyword="DISP_PCI_BASE[0-5]">
+  <topic href="libraries.html#disp_pci_init" title="disp_pci_init()"/>
+ </entry>
+ <entry keyword="DISP_PCI_BASES">
+  <topic href="libraries.html#disp_pci_init" title="disp_pci_init()"/>
+ </entry>
+ <entry keyword="disp_pci_dev_find()">
+  <topic href="libraries.html#disp_pci_dev_find" title="disp_pci_dev_find()"/>
+ </entry>
+ <entry keyword="disp_pci_dev_read_config()">
+  <topic href="libraries.html#disp_pci_dev_read_config" title="disp_pci_dev_read_config()"/>
+ </entry>
+ <entry keyword="disp_pci_dev_write_config()">
+  <topic href="libraries.html#disp_pci_dev_write_config" title="disp_pci_dev_write_config()"/>
+ </entry>
+ <entry keyword="disp_pci_info()">
+  <topic href="libraries.html#disp_pci_info" title="disp_pci_info()"/>
+ </entry>
+ <entry keyword="disp_pci_init()">
+  <topic href="libraries.html#disp_pci_init" title="disp_pci_init()"/>
+ </entry>
+ <entry keyword="DISP_PCI_INIT_IRQ">
+  <topic href="libraries.html#disp_pci_init" title="disp_pci_init()"/>
+ </entry>
+ <entry keyword="disp_pci_read_config()">
+  <topic href="libraries.html#disp_pci_read_config" title="disp_pci_read_config()"/>
+ </entry>
+ <entry keyword="disp_pci_shutdown()">
+  <topic href="libraries.html#disp_pci_shutdown" title="disp_pci_shutdown()"/>
+ </entry>
+ <entry keyword="disp_pci_write_config()">
+  <topic href="libraries.html#disp_pci_write_config" title="disp_pci_write_config()"/>
+ </entry>
+ <entry keyword="disp_perror()">
+  <topic href="libraries.html#disp_perror" title="disp_perror()"/>
+ </entry>
+ <entry keyword="disp_phys_addr()">
+  <topic href="libraries.html#disp_phys_addr" title="disp_phys_addr()"/>
+ </entry>
+ <entry keyword="DISP_POLY_CLASS_CONVEX">
+  <topic href="disp_2d_caps_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_POLY_CLASS_MONOTONE_VERTICAL">
+  <topic href="disp_2d_caps_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_POLY_CLASS_MONOTONE_VERTICAL_SIMPLE">
+  <topic href="disp_2d_caps_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_POLY_CLASS_NON_SIMPLE">
+  <topic href="disp_2d_caps_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_POLY_CLASS_SIMPLE">
+  <topic href="disp_2d_caps_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="disp_printf()">
+  <topic href="libraries.html#disp_printf" title="disp_printf()"/>
+ </entry>
+ <entry keyword="DISP_PROT_NOCACHE">
+  <topic href="libraries.html#disp_mmap_device_memory" title="disp_mmap_device_memory()"/>
+ </entry>
+ <entry keyword="DISP_PROT_READ">
+  <topic href="libraries.html#disp_mmap_device_memory" title="disp_mmap_device_memory()"/>
+ </entry>
+ <entry keyword="DISP_PROT_WRITE">
+  <topic href="libraries.html#disp_mmap_device_memory" title="disp_mmap_device_memory()"/>
+ </entry>
+ <entry keyword="disp_register_adapter()">
+  <topic href="libraries.html#disp_register_adapter" title="disp_register_adapter()"/>
+ </entry>
+ <entry keyword="disp_release_vga_resources()">
+  <topic href="libraries.html#disp_release_vga_resources" title="disp_release_vga_resources()"/>
+ </entry>
+ <entry keyword="DISP_SURFACE_2D_READABLE">
+  <topic href="disp_surface_t.html#disp_surface_t-flags" title="flags"/>
+ </entry>
+ <entry keyword="DISP_SURFACE_2D_TARGETABLE">
+  <topic href="disp_surface_t.html#disp_surface_t-flags" title="flags"/>
+ </entry>
+ <entry keyword="DISP_SURFACE_3D_READABLE">
+  <topic href="disp_surface_t.html#disp_surface_t-flags" title="flags"/>
+ </entry>
+ <entry keyword="DISP_SURFACE_3D_TARGETABLE">
+  <topic href="disp_surface_t.html#disp_surface_t-flags" title="flags"/>
+ </entry>
+ <entry keyword="DISP_SURFACE_ALPHA_MAP">
+  <topic href="disp_surface_t.html#disp_surface_t-flags" title="flags"/>
+ </entry>
+ <entry keyword="DISP_SURFACE_BYTES_REVERSED">
+  <topic href="disp_surface_t.html#disp_surface_t-flags" title="flags"/>
+ </entry>
+ <entry keyword="DISP_SURFACE_CPU_LINEAR_READABLE">
+  <topic href="disp_surface_t.html#disp_surface_t-flags" title="flags"/>
+ </entry>
+ <entry keyword="DISP_SURFACE_CPU_LINEAR_WRITEABLE">
+  <topic href="disp_surface_t.html#disp_surface_t-flags" title="flags"/>
+ </entry>
+ <entry keyword="DISP_SURFACE_DISPLAYABLE">
+  <topic href="libraries.html#disp_vm_create_pool" title="disp_vm_create_pool()"/>
+  <topic href="disp_surface_t.html#disp_surface_t-flags" title="flags"/>
+ </entry>
+ <entry keyword="DISP_SURFACE_DRIVER_NOT_OWNER">
+  <topic href="disp_surface_t.html#disp_surface_t-flags" title="flags"/>
+ </entry>
+ <entry keyword="DISP_SURFACE_FORMAT_ARGB1555">
+  <topic href="writing.html#pixel_format" title="Pixel formats"/>
+ </entry>
+ <entry keyword="DISP_SURFACE_FORMAT_ARGB8888">
+  <topic href="writing.html#pixel_format" title="Pixel formats"/>
+ </entry>
+ <entry keyword="DISP_SURFACE_FORMAT_BYTES">
+  <topic href="libraries.html#disp_vm_create_pool" title="disp_vm_create_pool()"/>
+  <topic href="writing.html#pixel_format" title="Pixel formats"/>
+ </entry>
+ <entry keyword="DISP_SURFACE_FORMAT_MONO">
+  <topic href="writing.html#pixel_format" title="Pixel formats"/>
+ </entry>
+ <entry keyword="DISP_SURFACE_FORMAT_PACKEDYUV_UYVY">
+  <topic href="writing.html#pixel_format" title="Pixel formats"/>
+ </entry>
+ <entry keyword="DISP_SURFACE_FORMAT_PACKEDYUV_V422">
+  <topic href="writing.html#pixel_format" title="Pixel formats"/>
+ </entry>
+ <entry keyword="DISP_SURFACE_FORMAT_PACKEDYUV_YUY2">
+  <topic href="writing.html#pixel_format" title="Pixel formats"/>
+ </entry>
+ <entry keyword="DISP_SURFACE_FORMAT_PACKEDYUV_YVYU">
+  <topic href="writing.html#pixel_format" title="Pixel formats"/>
+ </entry>
+ <entry keyword="DISP_SURFACE_FORMAT_PAL8">
+  <topic href="writing.html#pixel_format" title="Pixel formats"/>
+ </entry>
+ <entry keyword="DISP_SURFACE_FORMAT_RGB565">
+  <topic href="writing.html#pixel_format" title="Pixel formats"/>
+ </entry>
+ <entry keyword="DISP_SURFACE_FORMAT_RGB888">
+  <topic href="writing.html#pixel_format" title="Pixel formats"/>
+ </entry>
+ <entry keyword="DISP_SURFACE_FORMAT_UPLANE">
+  <topic href="writing.html#pixel_format" title="Pixel formats"/>
+ </entry>
+ <entry keyword="DISP_SURFACE_FORMAT_VPLANE">
+  <topic href="writing.html#pixel_format" title="Pixel formats"/>
+ </entry>
+ <entry keyword="DISP_SURFACE_FORMAT_YPLANE">
+  <topic href="writing.html#pixel_format" title="Pixel formats"/>
+ </entry>
+ <entry keyword="DISP_SURFACE_NON_CACHEABLE">
+  <topic href="disp_surface_t.html#disp_surface_t-flags" title="flags"/>
+ </entry>
+ <entry keyword="DISP_SURFACE_PAGE_ALIGNED">
+  <topic href="disp_surface_t.html#disp_surface_t-flags" title="flags"/>
+ </entry>
+ <entry keyword="DISP_SURFACE_PHYS_CONTIG">
+  <topic href="disp_surface_t.html#disp_surface_t-flags" title="flags"/>
+ </entry>
+ <entry keyword="disp_surface_t">
+  <topic href="disp_surface_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_SURFACE_VMI_TARGETABLE">
+  <topic href="disp_surface_t.html#disp_surface_t-flags" title="flags"/>
+ </entry>
+ <entry keyword="DISP_SYNC_POLARITY_H_POS">
+  <topic href="disp_crtc_settings_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_SYNC_POLARITY_NN">
+  <topic href="disp_crtc_settings_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_SYNC_POLARITY_NP">
+  <topic href="disp_crtc_settings_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_SYNC_POLARITY_PN">
+  <topic href="disp_crtc_settings_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_SYNC_POLARITY_PP">
+  <topic href="disp_crtc_settings_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="DISP_SYNC_POLARITY_V_POS">
+  <topic href="disp_crtc_settings_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="disp_unregister_adapter()">
+  <topic href="libraries.html#disp_unregister_adapter" title="disp_unregister_adapter()"/>
+ </entry>
+ <entry keyword="disp_usecspin()">
+  <topic href="libraries.html#disp_usecspin" title="disp_usecspin()"/>
+ </entry>
+ <entry keyword="disp_vcap_props_t">
+  <topic href="disp_vcap_props_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="disp_vcapfuncs_t">
+  <topic href="disp_vcapfuncs_t.html#id5" title="Description:"/>
+  <entry keyword="bind_layer()">
+   <topic href="disp_vcapfuncs_t.html#vc_bind_layer" title="bind_layer()"/>
+  </entry>
+  <entry keyword="fini()">
+   <topic href="disp_vcapfuncs_t.html#vc_fini" title="fini()"/>
+  </entry>
+  <entry keyword="init()">
+   <topic href="disp_vcapfuncs_t.html#vc_init" title="init()"/>
+  </entry>
+  <entry keyword="module_info()">
+   <topic href="disp_vcapfuncs_t.html#vc_module_info" title="module_info()"/>
+  </entry>
+  <entry keyword="set_adjustments()">
+   <topic href="disp_vcapfuncs_t.html#vc_set_adjustments" title="set_adjustments()"/>
+  </entry>
+  <entry keyword="set_enabled()">
+   <topic href="disp_vcapfuncs_t.html#vc_set_enabled" title="set_enabled()"/>
+  </entry>
+  <entry keyword="set_props()">
+   <topic href="disp_vcapfuncs_t.html#vc_set_props" title="set_props()"/>
+  </entry>
+  <entry keyword="wait_vsync()">
+   <topic href="disp_vcapfuncs_t.html#vc_wait_vsync" title="wait_vsync()"/>
+  </entry>
+ </entry>
+ <entry keyword="disp_vga_restore_state()">
+  <topic href="libraries.html#disp_vga_restore_state" title="disp_vga_restore_state()"/>
+ </entry>
+ <entry keyword="disp_vga_save_state()">
+  <topic href="libraries.html#disp_vga_save_state" title="disp_vga_save_state()"/>
+ </entry>
+ <entry keyword="disp_vga_state_t">
+  <topic href="libraries.html#disp_vga_restore_state" title="disp_vga_restore_state()"/>
+  <topic href="libraries.html#disp_vga_save_state" title="disp_vga_save_state()"/>
+  <topic href="libraries.html#disp_vga_state_t" title="disp_vga_state_t"/>
+ </entry>
+ <entry keyword="disp_vm_alloc_surface()">
+  <topic href="libraries.html#disp_vm_alloc_surface" title="disp_vm_alloc_surface()"/>
+ </entry>
+ <entry keyword="disp_vm_alloc_surface_external()">
+  <topic href="libraries.html#disp_vm_alloc_surface_external" title="disp_vm_alloc_surface_external()"/>
+ </entry>
+ <entry keyword="disp_vm_create_pool()">
+  <topic href="libraries.html#disp_vm_create_pool" title="disp_vm_create_pool()"/>
+ </entry>
+ <entry keyword="disp_vm_destroy_pool()">
+  <topic href="libraries.html#disp_vm_destroy_pool" title="disp_vm_destroy_pool()"/>
+ </entry>
+ <entry keyword="disp_vm_free_surface()">
+  <topic href="libraries.html#disp_vm_free_surface" title="disp_vm_free_surface()"/>
+ </entry>
+ <entry keyword="disp_vm_mem_avail()">
+  <topic href="libraries.html#disp_vm_mem_avail" title="disp_vm_mem_avail()"/>
+ </entry>
+ <entry keyword="display control">
+  <topic href="writing.html#Modules" title="The modules"/>
+  <entry keyword="functions">
+   <topic href="devg_get_modefuncs.html#id5" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="display offset">
+  <entry keyword="setting">
+   <topic href="disp_modefuncs_t.html#dm_set_display_offset" title="set_display_offset()"/>
+  </entry>
+ </entry>
+ <entry keyword="disputil">
+  <entry keyword="disp_acquire_vga_resources()">
+   <topic href="libraries.html#disp_acquire_vga_resources" title="disp_acquire_vga_resources()"/>
+  </entry>
+  <entry keyword="disp_crtc_calc()">
+   <topic href="libraries.html#disp_crtc_calc" title="disp_crtc_calc()"/>
+  </entry>
+  <entry keyword="disp_delay()">
+   <topic href="libraries.html#disp_delay" title="disp_delay()"/>
+  </entry>
+  <entry keyword="disp_freemem()">
+   <topic href="libraries.html#disp_freemem" title="disp_freemem()"/>
+  </entry>
+  <entry keyword="disp_get_rom_image()">
+   <topic href="libraries.html#disp_get_rom_image" title="disp_get_rom_image()"/>
+  </entry>
+  <entry keyword="disp_getmem()">
+   <topic href="libraries.html#disp_getmem" title="disp_getmem()"/>
+  </entry>
+  <entry keyword="disp_mmap_device_io()">
+   <topic href="libraries.html#disp_mmap_device_io" title="disp_mmap_device_io()"/>
+  </entry>
+  <entry keyword="disp_mmap_device_memory()">
+   <topic href="libraries.html#disp_mmap_device_memory" title="disp_mmap_device_memory()"/>
+  </entry>
+  <entry keyword="disp_mode_get_entry()">
+   <topic href="libraries.html#disp_mode_get_entry" title="disp_mode_get_entry()"/>
+  </entry>
+  <entry keyword="disp_munmap_device_io()">
+   <topic href="libraries.html#disp_munmap_device_io" title="disp_munmap_device_io()"/>
+  </entry>
+  <entry keyword="disp_munmap_device_memory()">
+   <topic href="libraries.html#disp_munmap_device_memory" title="disp_munmap_device_memory()"/>
+  </entry>
+  <entry keyword="disp_pci_dev_find()">
+   <topic href="libraries.html#disp_pci_dev_find" title="disp_pci_dev_find()"/>
+  </entry>
+  <entry keyword="disp_pci_dev_read_config()">
+   <topic href="libraries.html#disp_pci_dev_read_config" title="disp_pci_dev_read_config()"/>
+  </entry>
+  <entry keyword="disp_pci_dev_write_config()">
+   <topic href="libraries.html#disp_pci_dev_write_config" title="disp_pci_dev_write_config()"/>
+  </entry>
+  <entry keyword="disp_pci_info()">
+   <topic href="libraries.html#disp_pci_info" title="disp_pci_info()"/>
+  </entry>
+  <entry keyword="disp_pci_init()">
+   <topic href="libraries.html#disp_pci_init" title="disp_pci_init()"/>
+  </entry>
+  <entry keyword="disp_pci_read_config()">
+   <topic href="libraries.html#disp_pci_read_config" title="disp_pci_read_config()"/>
+  </entry>
+  <entry keyword="disp_pci_shutdown()">
+   <topic href="libraries.html#disp_pci_shutdown" title="disp_pci_shutdown()"/>
+  </entry>
+  <entry keyword="disp_pci_write_config()">
+   <topic href="libraries.html#disp_pci_write_config" title="disp_pci_write_config()"/>
+  </entry>
+  <entry keyword="disp_perror()">
+   <topic href="libraries.html#disp_perror" title="disp_perror()"/>
+  </entry>
+  <entry keyword="disp_phys_addr()">
+   <topic href="libraries.html#disp_phys_addr" title="disp_phys_addr()"/>
+  </entry>
+  <entry keyword="disp_printf()">
+   <topic href="libraries.html#disp_printf" title="disp_printf()"/>
+  </entry>
+  <entry keyword="disp_register_adapter()">
+   <topic href="libraries.html#disp_register_adapter" title="disp_register_adapter()"/>
+  </entry>
+  <entry keyword="disp_release_vga_resources()">
+   <topic href="libraries.html#disp_release_vga_resources" title="disp_release_vga_resources()"/>
+  </entry>
+  <entry keyword="disp_unregister_adapter()">
+   <topic href="libraries.html#disp_unregister_adapter" title="disp_unregister_adapter()"/>
+  </entry>
+  <entry keyword="disp_usecspin()">
+   <topic href="libraries.html#disp_usecspin" title="disp_usecspin()"/>
+  </entry>
+  <entry keyword="disp_vga_restore_state()">
+   <topic href="libraries.html#disp_vga_restore_state" title="disp_vga_restore_state()"/>
+  </entry>
+  <entry keyword="disp_vga_save_state()">
+   <topic href="libraries.html#disp_vga_save_state" title="disp_vga_save_state()"/>
+  </entry>
+  <entry keyword="disp_vm_alloc_surface()">
+   <topic href="libraries.html#disp_vm_alloc_surface" title="disp_vm_alloc_surface()"/>
+  </entry>
+  <entry keyword="disp_vm_alloc_surface_external()">
+   <topic href="libraries.html#disp_vm_alloc_surface_external" title="disp_vm_alloc_surface_external()"/>
+  </entry>
+  <entry keyword="disp_vm_create_pool()">
+   <topic href="libraries.html#disp_vm_create_pool" title="disp_vm_create_pool()"/>
+  </entry>
+  <entry keyword="disp_vm_destroy_pool()">
+   <topic href="libraries.html#disp_vm_destroy_pool" title="disp_vm_destroy_pool()"/>
+  </entry>
+  <entry keyword="disp_vm_free_surface()">
+   <topic href="libraries.html#disp_vm_free_surface" title="disp_vm_free_surface()"/>
+  </entry>
+  <entry keyword="disp_vm_mem_avail()">
+   <topic href="libraries.html#disp_vm_mem_avail" title="disp_vm_mem_avail()"/>
+  </entry>
+  <entry keyword="vbios_call()">
+   <topic href="libraries.html#vbios_call" title="vbios_call()"/>
+  </entry>
+  <entry keyword="vbios_context_t">
+   <topic href="libraries.html#vbios_context_t" title="vbios_context_t"/>
+  </entry>
+  <entry keyword="vbios_dowarmboot()">
+   <topic href="libraries.html#vbios_dowarmboot" title="vbios_dowarmboot()"/>
+  </entry>
+  <entry keyword="vbios_get_realptr()">
+   <topic href="libraries.html#vbios_get_realptr" title="vbios_get_realptr()"/>
+  </entry>
+  <entry keyword="vbios_int()">
+   <topic href="libraries.html#vbios_int" title="vbios_int()"/>
+  </entry>
+  <entry keyword="vbios_register()">
+   <topic href="libraries.html#vbios_register" title="vbios_register()"/>
+  </entry>
+  <entry keyword="vbios_unregister()">
+   <topic href="libraries.html#vbios_unregister" title="vbios_unregister()"/>
+  </entry>
+ </entry>
+ <entry keyword="dlopen()">
+  <topic href="writing.html#binding_to_framework" title="Binding your driver to the graphics framework"/>
+ </entry>
+ <entry keyword="DPMS">
+  <entry keyword="mode, setting">
+   <topic href="disp_modefuncs_t.html#dm_set_dpms_mode" title="set_dpms_mode()"/>
+  </entry>
+ </entry>
+ <entry keyword="draw stream interpreter">
+  <topic href="introduction.html#photon" title="Photon-based graphics system"/>
+ </entry>
+ <entry keyword="draw_bitmap()">
+  <topic href="disp_draw_corefuncs_t.html#draw_bitmap" title="draw_bitmap()"/>
+ </entry>
+ <entry keyword="draw_line()">
+  <topic href="disp_draw_contextfuncs_t.html#ddc_draw_line" title="draw_line()"/>
+  <topic href="disp_draw_corefuncs_t.html#draw_line" title="draw_line()"/>
+ </entry>
+ <entry keyword="draw_line_pat8x1()">
+  <topic href="disp_draw_corefuncs_t.html#draw_line_pat8x1" title="draw_line_pat8x1()"/>
+ </entry>
+ <entry keyword="draw_line_trans8x1()">
+  <topic href="disp_draw_corefuncs_t.html#draw_line_trans8x1" title="draw_line_trans8x1()"/>
+ </entry>
+ <entry keyword="draw_polyline()">
+  <topic href="disp_draw_contextfuncs_t.html#ddc_draw_polyline" title="draw_polyline()"/>
+ </entry>
+ <entry keyword="draw_rect()">
+  <topic href="disp_draw_contextfuncs_t.html#ddc_draw_rect" title="draw_rect()"/>
+ </entry>
+ <entry keyword="draw_rect_pat8x8()">
+  <topic href="disp_draw_corefuncs_t.html#draw_rect_pat8x8" title="draw_rect_pat8x8()"/>
+ </entry>
+ <entry keyword="draw_rect_trans8x8()">
+  <topic href="disp_draw_corefuncs_t.html#draw_rect_trans8x8" title="draw_rect_trans8x8()"/>
+ </entry>
+ <entry keyword="draw_solid_rect()">
+  <topic href="disp_draw_corefuncs_t.html#draw_solid_rect" title="draw_solid_rect()"/>
+ </entry>
+ <entry keyword="draw_span()">
+  <entry keyword="disp_draw_contextfuncs_t">
+   <topic href="disp_draw_contextfuncs_t.html#ddc_draw_span" title="draw_span()"/>
+  </entry>
+  <entry keyword="disp_draw_corefuncs_t">
+   <topic href="disp_draw_corefuncs_t.html#draw_span" title="draw_span()"/>
+  </entry>
+ </entry>
+ <entry keyword="draw_span_list()">
+  <entry keyword="disp_draw_contextfuncs_t">
+   <topic href="disp_draw_contextfuncs_t.html#ddc_draw_span_list" title="draw_span_list()"/>
+  </entry>
+  <entry keyword="disp_draw_corefuncs_t">
+   <topic href="disp_draw_corefuncs_t.html#draw_span_list" title="draw_span_list()"/>
+  </entry>
+ </entry>
+ <entry keyword="drawing functions, miscellaneous">
+  <topic href="disp_draw_miscfuncs_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="drivers">
+  <entry keyword="dirty rectangle">
+   <topic href="disp_draw_miscfuncs_t.html#ddm_flushrect" title="flushrect()"/>
+  </entry>
+  <entry keyword="samples">
+   <topic href="writing.html#SampleDrivers" title="Sample drivers"/>
+  </entry>
+  <entry keyword="source code, downloading">
+   <topic href="writing.html#Getting_source" title="Getting the source code"/>
+  </entry>
+  <entry keyword="updating">
+   <topic href="updating.html#Overview" title="Overview"/>
+  </entry>
+ </entry>
+ <entry keyword="enable_hw_cursor()">
+  <topic href="disp_modefuncs_t.html#dm_enable_hw_cursor" title="enable_hw_cursor()"/>
+ </entry>
+ <entry keyword="end_of_draw()">
+  <topic href="disp_draw_miscfuncs_t.html#ddm_end_of_draw" title="end_of_draw()"/>
+ </entry>
+ <entry keyword="enumeration, mode">
+  <topic href="writing.html#Modeswitching" title="Modeswitching and enumeration"/>
+ </entry>
+ <entry keyword="fallback functions">
+  <entry keyword="ffb_color_translate()">
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   <topic href="libraries.html#ffb_color_translate" title="ffb_color_translate()"/>
+  </entry>
+  <entry keyword="ffb_core_blit1()">
+   <topic href="disp_draw_corefuncs_t.html#blit1" title="blit1()"/>
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  </entry>
+  <entry keyword="ffb_core_blit2()">
+   <topic href="disp_draw_corefuncs_t.html#blit2" title="blit2()"/>
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  </entry>
+  <entry keyword="ffb_core_draw_line()">
+   <topic href="disp_draw_corefuncs_t.html#draw_line" title="draw_line()"/>
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  </entry>
+  <entry keyword="ffb_core_scaled_blit()">
+   <topic href="disp_draw_corefuncs_t.html#scaled_blit" title="scaled_blit()"/>
+  </entry>
+  <entry keyword="ffb_ctx_blit()">
+   <topic href="disp_draw_contextfuncs_t.html#ddc_blit" title="blit()"/>
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  </entry>
+  <entry keyword="ffb_ctx_draw_line()">
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  </entry>
+  <entry keyword="ffb_ctx_draw_polyline()">
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  </entry>
+  <entry keyword="ffb_ctx_draw_rect()">
+   <topic href="disp_draw_contextfuncs_t.html#ddc_draw_rect" title="draw_rect()"/>
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  </entry>
+  <entry keyword="ffb_ctx_draw_span()">
+   <topic href="disp_draw_contextfuncs_t.html#ddc_draw_span" title="draw_span()"/>
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  </entry>
+  <entry keyword="ffb_ctx_draw_span_list()">
+   <topic href="disp_draw_contextfuncs_t.html#ddc_draw_span_list" title="draw_span_list()"/>
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  </entry>
+  <entry keyword="ffb_ctx_fill_poly()">
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  </entry>
+  <entry keyword="ffb_ctx_scaled_blit()">
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   <topic href="disp_draw_contextfuncs_t.html#ddc_scaled_blit" title="scaled_blit()"/>
+  </entry>
+  <entry keyword="ffb_ctx_update_alpha()">
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   <topic href="disp_draw_contextfuncs_t.html#ddc_update_alpha" title="update_alpha()"/>
+  </entry>
+  <entry keyword="ffb_ctx_update_chroma()">
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   <topic href="disp_draw_contextfuncs_t.html#ddc_update_chroma" title="update_chroma()"/>
+  </entry>
+  <entry keyword="ffb_ctx_update_color()">
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   <topic href="disp_draw_contextfuncs_t.html#ddc_update_color" title="update_color()"/>
+  </entry>
+  <entry keyword="ffb_ctx_update_general()">
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   <topic href="disp_draw_contextfuncs_t.html#ddc_update_general" title="update_general()"/>
+  </entry>
+  <entry keyword="ffb_ctx_update_line()">
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   <topic href="disp_draw_contextfuncs_t.html#ddc_update_line" title="update_line()"/>
+  </entry>
+  <entry keyword="ffb_ctx_update_planemask()">
+   <topic href="disp_draw_contextfuncs_t.html#ddc_draw_line" title="draw_line()"/>
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   <topic href="disp_draw_contextfuncs_t.html#ddc_update_planemask" title="update_planemask()"/>
+  </entry>
+  <entry keyword="ffb_ctx_update_rop3()">
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   <topic href="disp_draw_contextfuncs_t.html#ddc_update_rop3" title="update_rop3()"/>
+  </entry>
+  <entry keyword="ffb_draw_bitmap_*()">
+   <topic href="disp_draw_corefuncs_t.html#draw_bitmap" title="draw_bitmap()"/>
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  </entry>
+  <entry keyword="ffb_draw_line_pat8x1_*()">
+   <topic href="disp_draw_corefuncs_t.html#draw_line_pat8x1" title="draw_line_pat8x1()"/>
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  </entry>
+  <entry keyword="ffb_draw_line_trans8x1_*()">
+   <topic href="disp_draw_corefuncs_t.html#draw_line_trans8x1" title="draw_line_trans8x1()"/>
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  </entry>
+  <entry keyword="ffb_draw_rect_pat8x8_*()">
+   <topic href="disp_draw_corefuncs_t.html#draw_rect_pat8x8" title="draw_rect_pat8x8()"/>
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  </entry>
+  <entry keyword="ffb_draw_rect_trans8x8_*()">
+   <topic href="disp_draw_corefuncs_t.html#draw_rect_trans8x8" title="draw_rect_trans8x8()"/>
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  </entry>
+  <entry keyword="ffb_draw_solid_rect_*()">
+   <topic href="disp_draw_corefuncs_t.html#draw_solid_rect" title="draw_solid_rect()"/>
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  </entry>
+  <entry keyword="ffb_draw_span_*()">
+   <topic href="disp_draw_corefuncs_t.html#draw_span" title="draw_span()"/>
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  </entry>
+  <entry keyword="ffb_draw_span_list_*()">
+   <topic href="disp_draw_corefuncs_t.html#draw_span_list" title="draw_span_list()"/>
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  </entry>
+  <entry keyword="ffb_get_bresenham_params()">
+   <topic href="disp_draw_corefuncs_t.html#get_bresenham_params" title="get_bresenham_params()"/>
+  </entry>
+  <entry keyword="ffb_get_contextfuncs()">
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   <topic href="libraries.html#ffb_get_contextfuncs" title="ffb_get_contextfuncs()"/>
+   <topic href="writing.html#DrawFunctions" title="Supplying draw functions and software fallback"/>
+  </entry>
+  <entry keyword="ffb_get_corefuncs()">
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   <topic href="libraries.html#ffb_get_corefuncs" title="ffb_get_corefuncs()"/>
+   <topic href="writing.html#pixel_format" title="Pixel formats"/>
+   <topic href="writing.html#DrawFunctions" title="Supplying draw functions and software fallback"/>
+  </entry>
+  <entry keyword="ffb_hw_idle()">
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  </entry>
+  <entry keyword="ffb_update_clipping()">
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   <topic href="disp_draw_corefuncs_t.html#update_clipping" title="update_clipping()"/>
+  </entry>
+  <entry keyword="ffb_update_draw_surface()">
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   <topic href="disp_draw_corefuncs_t.html#update_draw_surface" title="update_draw_surface()"/>
+  </entry>
+  <entry keyword="ffb_update_pattern()">
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   <topic href="disp_draw_corefuncs_t.html#update_pattern" title="update_pattern()"/>
+  </entry>
+  <entry keyword="ffb_update_transform()">
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   <topic href="disp_draw_corefuncs_t.html#update_transform" title="update_transform()"/>
+  </entry>
+  <entry keyword="ffb_wait_idle()">
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   <topic href="disp_draw_corefuncs_t.html#wait_idle" title="wait_idle()"/>
+  </entry>
+ </entry>
+ <entry keyword="falling back on software">
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  <topic href="writing.html#SampleDrivers" title="Sample drivers"/>
+  <topic href="writing.html#DrawFunctions" title="Supplying draw functions and software fallback"/>
+ </entry>
+ <entry keyword="FFB">
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  <topic href="introduction.html#photon" title="Photon-based graphics system"/>
+  <topic href="writing.html#SampleDrivers" title="Sample drivers"/>
+  <topic href="writing.html#DrawFunctions" title="Supplying draw functions and software fallback"/>
+ </entry>
+ <entry keyword="ffb_color_translate()">
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  <topic href="libraries.html#ffb_color_translate" title="ffb_color_translate()"/>
+ </entry>
+ <entry keyword="ffb_core_blit1()">
+  <topic href="disp_draw_corefuncs_t.html#blit1" title="blit1()"/>
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+ </entry>
+ <entry keyword="ffb_core_blit2()">
+  <topic href="disp_draw_corefuncs_t.html#blit2" title="blit2()"/>
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+ </entry>
+ <entry keyword="ffb_core_draw_line()">
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+ </entry>
+ <entry keyword="ffb_core_draw_linev()">
+  <topic href="disp_draw_corefuncs_t.html#draw_line" title="draw_line()"/>
+ </entry>
+ <entry keyword="ffb_core_scaled_blit()">
+  <topic href="disp_draw_corefuncs_t.html#scaled_blit" title="scaled_blit()"/>
+ </entry>
+ <entry keyword="ffb_ctx_blit()">
+  <topic href="disp_draw_contextfuncs_t.html#ddc_blit" title="blit()"/>
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+ </entry>
+ <entry keyword="ffb_ctx_draw_line()">
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+ </entry>
+ <entry keyword="ffb_ctx_draw_polyline()">
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+ </entry>
+ <entry keyword="ffb_ctx_draw_rect()">
+  <topic href="disp_draw_contextfuncs_t.html#ddc_draw_rect" title="draw_rect()"/>
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+ </entry>
+ <entry keyword="ffb_ctx_draw_span()">
+  <topic href="disp_draw_contextfuncs_t.html#ddc_draw_span" title="draw_span()"/>
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+ </entry>
+ <entry keyword="ffb_ctx_draw_span_list()">
+  <topic href="disp_draw_contextfuncs_t.html#ddc_draw_span_list" title="draw_span_list()"/>
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+ </entry>
+ <entry keyword="ffb_ctx_fill_poly()">
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+ </entry>
+ <entry keyword="ffb_ctx_scaled_blit()">
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  <topic href="disp_draw_contextfuncs_t.html#ddc_scaled_blit" title="scaled_blit()"/>
+ </entry>
+ <entry keyword="ffb_ctx_update_alpha()">
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  <topic href="disp_draw_contextfuncs_t.html#ddc_update_alpha" title="update_alpha()"/>
+ </entry>
+ <entry keyword="ffb_ctx_update_chroma()">
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  <topic href="disp_draw_contextfuncs_t.html#ddc_update_chroma" title="update_chroma()"/>
+ </entry>
+ <entry keyword="ffb_ctx_update_color()">
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  <topic href="disp_draw_contextfuncs_t.html#ddc_update_color" title="update_color()"/>
+ </entry>
+ <entry keyword="ffb_ctx_update_general()">
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  <topic href="disp_draw_contextfuncs_t.html#ddc_update_general" title="update_general()"/>
+ </entry>
+ <entry keyword="ffb_ctx_update_line()">
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  <topic href="disp_draw_contextfuncs_t.html#ddc_update_line" title="update_line()"/>
+ </entry>
+ <entry keyword="ffb_ctx_update_planemask()">
+  <topic href="disp_draw_contextfuncs_t.html#ddc_draw_line" title="draw_line()"/>
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  <topic href="disp_draw_contextfuncs_t.html#ddc_update_planemask" title="update_planemask()"/>
+ </entry>
+ <entry keyword="ffb_ctx_update_rop3()">
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  <topic href="disp_draw_contextfuncs_t.html#ddc_update_rop3" title="update_rop3()"/>
+ </entry>
+ <entry keyword="ffb_draw_bitmap_*()">
+  <topic href="disp_draw_corefuncs_t.html#draw_bitmap" title="draw_bitmap()"/>
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+ </entry>
+ <entry keyword="ffb_draw_line_pat8x1_*()">
+  <topic href="disp_draw_corefuncs_t.html#draw_line_pat8x1" title="draw_line_pat8x1()"/>
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+ </entry>
+ <entry keyword="ffb_draw_line_trans8x1_*()">
+  <topic href="disp_draw_corefuncs_t.html#draw_line_trans8x1" title="draw_line_trans8x1()"/>
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+ </entry>
+ <entry keyword="ffb_draw_rect_pat8x8_*()">
+  <topic href="disp_draw_corefuncs_t.html#draw_rect_pat8x8" title="draw_rect_pat8x8()"/>
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+ </entry>
+ <entry keyword="ffb_draw_rect_trans8x8_*()">
+  <topic href="disp_draw_corefuncs_t.html#draw_rect_trans8x8" title="draw_rect_trans8x8()"/>
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+ </entry>
+ <entry keyword="ffb_draw_solid_rect_*()">
+  <topic href="disp_draw_corefuncs_t.html#draw_solid_rect" title="draw_solid_rect()"/>
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+ </entry>
+ <entry keyword="ffb_draw_span_*()">
+  <topic href="disp_draw_corefuncs_t.html#draw_span" title="draw_span()"/>
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+ </entry>
+ <entry keyword="ffb_draw_span_list_*()">
+  <topic href="disp_draw_corefuncs_t.html#draw_span_list" title="draw_span_list()"/>
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+ </entry>
+ <entry keyword="ffb_get_bresenham_params()">
+  <topic href="disp_draw_corefuncs_t.html#get_bresenham_params" title="get_bresenham_params()"/>
+ </entry>
+ <entry keyword="ffb_get_contextfuncs()">
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  <topic href="libraries.html#ffb_get_contextfuncs" title="ffb_get_contextfuncs()"/>
+  <topic href="writing.html#DrawFunctions" title="Supplying draw functions and software fallback"/>
+ </entry>
+ <entry keyword="ffb_get_corefuncs()">
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  <topic href="libraries.html#ffb_get_corefuncs" title="ffb_get_corefuncs()"/>
+  <topic href="writing.html#pixel_format" title="Pixel formats"/>
+  <topic href="writing.html#DrawFunctions" title="Supplying draw functions and software fallback"/>
+ </entry>
+ <entry keyword="ffb_hw_idle()">
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+ </entry>
+ <entry keyword="ffb_update_clipping()">
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  <topic href="disp_draw_corefuncs_t.html#update_clipping" title="update_clipping()"/>
+ </entry>
+ <entry keyword="ffb_update_draw_surface()">
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  <topic href="disp_draw_corefuncs_t.html#update_draw_surface" title="update_draw_surface()"/>
+ </entry>
+ <entry keyword="ffb_update_pattern()">
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  <topic href="disp_draw_corefuncs_t.html#update_pattern" title="update_pattern()"/>
+ </entry>
+ <entry keyword="ffb_update_transform()">
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  <topic href="disp_draw_corefuncs_t.html#update_transform" title="update_transform()"/>
+ </entry>
+ <entry keyword="ffb_wait_idle()">
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  <topic href="disp_draw_corefuncs_t.html#wait_idle" title="wait_idle()"/>
+ </entry>
+ <entry keyword="fill_poly()">
+  <topic href="disp_draw_contextfuncs_t.html#ddc_fill_poly" title="fill_poly()"/>
+  <topic href="disp_draw_corefuncs_t.html#fill_poly" title="fill_poly()"/>
+ </entry>
+ <entry keyword="fini()">
+  <entry keyword="disp_draw_miscfuncs_t">
+   <topic href="writing.html#CallingSequence" title="Calling sequence"/>
+   <topic href="disp_draw_miscfuncs_t.html#ddm_fini" title="fini()"/>
+  </entry>
+  <entry keyword="disp_memfuncs_t">
+   <topic href="writing.html#CallingSequence" title="Calling sequence"/>
+   <topic href="disp_memfuncs_t.html#mm_fini" title="fini()"/>
+  </entry>
+  <entry keyword="disp_modefuncs_t">
+   <topic href="writing.html#CallingSequence" title="Calling sequence"/>
+   <topic href="disp_modefuncs_t.html#dm_fini" title="fini()"/>
+  </entry>
+  <entry keyword="disp_vcapfuncs_t">
+   <topic href="disp_vcapfuncs_t.html#vc_fini" title="fini()"/>
+  </entry>
+ </entry>
+ <entry keyword="Flat Frame Buffer">
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  <topic href="introduction.html#photon" title="Photon-based graphics system"/>
+  <topic href="writing.html#SampleDrivers" title="Sample drivers"/>
+  <topic href="writing.html#DrawFunctions" title="Supplying draw functions and software fallback"/>
+ </entry>
+ <entry keyword="flushrect()">
+  <topic href="disp_draw_miscfuncs_t.html#ddm_flushrect" title="flushrect()"/>
+ </entry>
+ <entry keyword="font manager">
+  <topic href="introduction.html#photon" title="Photon-based graphics system"/>
+ </entry>
+ <entry keyword="foreground color">
+  <topic href="disp_draw_context_t.html#id5" title="Description:"/>
+  <entry keyword="updating">
+   <topic href="disp_draw_contextfuncs_t.html#ddc_update_color" title="update_color()"/>
+  </entry>
+ </entry>
+ <entry keyword="formats">
+  <entry keyword="colors">
+   <topic href="writing.html#Colors" title="Colors"/>
+   <topic href="writing.html#pixel_format" title="Pixel formats"/>
+  </entry>
+  <entry keyword="pixel layers">
+   <topic href="writing.html#pixel_formats_for_layers" title="Pixel formats for layers"/>
+  </entry>
+  <entry keyword="pixels">
+   <topic href="writing.html#pixel_format" title="Pixel formats"/>
+  </entry>
+ </entry>
+ <entry keyword="Foundry27 community website">
+  <topic href="writing.html#Getting_source" title="Getting the source code"/>
+ </entry>
+ <entry keyword="free_surface()">
+  <topic href="disp_memfuncs_t.html#mm_free_surface" title="free_surface()"/>
+ </entry>
+ <entry keyword="functions">
+  <entry keyword="adding to a table">
+   <topic href="disp_add_func.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="calling sequence">
+   <topic href="writing.html#CallingSequence" title="Calling sequence"/>
+  </entry>
+  <entry keyword="context 2D drawing">
+   <topic href="writing.html#2DDrawing" title="2D drawing"/>
+   <topic href="writing.html#binding_to_framework" title="Binding your driver to the graphics framework"/>
+   <topic href="writing.html#CoreVsContext" title="Core vs. context 2D functions"/>
+   <entry keyword="fallback routines">
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+    <topic href="writing.html#DrawFunctions" title="Supplying draw functions and software fallback"/>
+   </entry>
+   <entry keyword="getting">
+    <topic href="devg_get_contextfuncs.html#id5" title="Description:"/>
+   </entry>
+  </entry>
+  <entry keyword="core 2D drawing">
+   <topic href="writing.html#2DDrawing" title="2D drawing"/>
+   <topic href="writing.html#binding_to_framework" title="Binding your driver to the graphics framework"/>
+   <topic href="writing.html#CoreVsContext" title="Core vs. context 2D functions"/>
+   <entry keyword="fallback routines">
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+    <topic href="writing.html#DrawFunctions" title="Supplying draw functions and software fallback"/>
+   </entry>
+   <entry keyword="getting">
+    <topic href="devg_get_corefuncs.html#id5" title="Description:"/>
+   </entry>
+  </entry>
+  <entry keyword="fallback">
+   <entry keyword="ffb_color_translate()">
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+    <topic href="libraries.html#ffb_color_translate" title="ffb_color_translate()"/>
+   </entry>
+   <entry keyword="ffb_core_blit1()">
+    <topic href="disp_draw_corefuncs_t.html#blit1" title="blit1()"/>
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   </entry>
+   <entry keyword="ffb_core_blit2()">
+    <topic href="disp_draw_corefuncs_t.html#blit2" title="blit2()"/>
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   </entry>
+   <entry keyword="ffb_core_draw_line()">
+    <topic href="disp_draw_corefuncs_t.html#draw_line" title="draw_line()"/>
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   </entry>
+   <entry keyword="ffb_core_scaled_blit()">
+    <topic href="disp_draw_corefuncs_t.html#scaled_blit" title="scaled_blit()"/>
+   </entry>
+   <entry keyword="ffb_ctx_blit()">
+    <topic href="disp_draw_contextfuncs_t.html#ddc_blit" title="blit()"/>
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   </entry>
+   <entry keyword="ffb_ctx_draw_line()">
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   </entry>
+   <entry keyword="ffb_ctx_draw_polyline()">
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   </entry>
+   <entry keyword="ffb_ctx_draw_rect()">
+    <topic href="disp_draw_contextfuncs_t.html#ddc_draw_rect" title="draw_rect()"/>
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   </entry>
+   <entry keyword="ffb_ctx_draw_span()">
+    <topic href="disp_draw_contextfuncs_t.html#ddc_draw_span" title="draw_span()"/>
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   </entry>
+   <entry keyword="ffb_ctx_draw_span_list()">
+    <topic href="disp_draw_contextfuncs_t.html#ddc_draw_span_list" title="draw_span_list()"/>
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   </entry>
+   <entry keyword="ffb_ctx_fill_poly()">
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   </entry>
+   <entry keyword="ffb_ctx_scaled_blit()">
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+    <topic href="disp_draw_contextfuncs_t.html#ddc_scaled_blit" title="scaled_blit()"/>
+   </entry>
+   <entry keyword="ffb_ctx_update_alpha()">
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+    <topic href="disp_draw_contextfuncs_t.html#ddc_update_alpha" title="update_alpha()"/>
+   </entry>
+   <entry keyword="ffb_ctx_update_chroma()">
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+    <topic href="disp_draw_contextfuncs_t.html#ddc_update_chroma" title="update_chroma()"/>
+   </entry>
+   <entry keyword="ffb_ctx_update_color()">
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+    <topic href="disp_draw_contextfuncs_t.html#ddc_update_color" title="update_color()"/>
+   </entry>
+   <entry keyword="ffb_ctx_update_general()">
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+    <topic href="disp_draw_contextfuncs_t.html#ddc_update_general" title="update_general()"/>
+   </entry>
+   <entry keyword="ffb_ctx_update_line()">
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+    <topic href="disp_draw_contextfuncs_t.html#ddc_update_line" title="update_line()"/>
+   </entry>
+   <entry keyword="ffb_ctx_update_planemask()">
+    <topic href="disp_draw_contextfuncs_t.html#ddc_draw_line" title="draw_line()"/>
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+    <topic href="disp_draw_contextfuncs_t.html#ddc_update_planemask" title="update_planemask()"/>
+   </entry>
+   <entry keyword="ffb_ctx_update_rop3()">
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+    <topic href="disp_draw_contextfuncs_t.html#ddc_update_rop3" title="update_rop3()"/>
+   </entry>
+   <entry keyword="ffb_draw_bitmap_*()">
+    <topic href="disp_draw_corefuncs_t.html#draw_bitmap" title="draw_bitmap()"/>
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   </entry>
+   <entry keyword="ffb_draw_line_pat8x1_*()">
+    <topic href="disp_draw_corefuncs_t.html#draw_line_pat8x1" title="draw_line_pat8x1()"/>
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   </entry>
+   <entry keyword="ffb_draw_line_trans8x1_*()">
+    <topic href="disp_draw_corefuncs_t.html#draw_line_trans8x1" title="draw_line_trans8x1()"/>
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   </entry>
+   <entry keyword="ffb_draw_rect_pat8x8_*()">
+    <topic href="disp_draw_corefuncs_t.html#draw_rect_pat8x8" title="draw_rect_pat8x8()"/>
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   </entry>
+   <entry keyword="ffb_draw_rect_trans8x8_*()">
+    <topic href="disp_draw_corefuncs_t.html#draw_rect_trans8x8" title="draw_rect_trans8x8()"/>
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   </entry>
+   <entry keyword="ffb_draw_solid_rect_*()">
+    <topic href="disp_draw_corefuncs_t.html#draw_solid_rect" title="draw_solid_rect()"/>
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   </entry>
+   <entry keyword="ffb_draw_span_*()">
+    <topic href="disp_draw_corefuncs_t.html#draw_span" title="draw_span()"/>
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   </entry>
+   <entry keyword="ffb_draw_span_list_*()">
+    <topic href="disp_draw_corefuncs_t.html#draw_span_list" title="draw_span_list()"/>
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   </entry>
+   <entry keyword="ffb_get_bresenham_params()">
+    <topic href="disp_draw_corefuncs_t.html#get_bresenham_params" title="get_bresenham_params()"/>
+   </entry>
+   <entry keyword="ffb_get_contextfuncs()">
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+    <topic href="libraries.html#ffb_get_contextfuncs" title="ffb_get_contextfuncs()"/>
+    <topic href="writing.html#DrawFunctions" title="Supplying draw functions and software fallback"/>
+   </entry>
+   <entry keyword="ffb_get_corefuncs()">
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+    <topic href="libraries.html#ffb_get_corefuncs" title="ffb_get_corefuncs()"/>
+    <topic href="writing.html#pixel_format" title="Pixel formats"/>
+    <topic href="writing.html#DrawFunctions" title="Supplying draw functions and software fallback"/>
+   </entry>
+   <entry keyword="ffb_hw_idle()">
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   </entry>
+   <entry keyword="ffb_update_clipping()">
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+    <topic href="disp_draw_corefuncs_t.html#update_clipping" title="update_clipping()"/>
+   </entry>
+   <entry keyword="ffb_update_draw_surface()">
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+    <topic href="disp_draw_corefuncs_t.html#update_draw_surface" title="update_draw_surface()"/>
+   </entry>
+   <entry keyword="ffb_update_pattern()">
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+    <topic href="disp_draw_corefuncs_t.html#update_pattern" title="update_pattern()"/>
+   </entry>
+   <entry keyword="ffb_update_transform()">
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+    <topic href="disp_draw_corefuncs_t.html#update_transform" title="update_transform()"/>
+   </entry>
+   <entry keyword="ffb_wait_idle()">
+    <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+    <topic href="disp_draw_corefuncs_t.html#wait_idle" title="wait_idle()"/>
+   </entry>
+  </entry>
+  <entry keyword="memory management">
+   <topic href="writing.html#binding_to_framework" title="Binding your driver to the graphics framework"/>
+  </entry>
+  <entry keyword="miscellaneous 2D drawing">
+   <topic href="writing.html#binding_to_framework" title="Binding your driver to the graphics framework"/>
+   <entry keyword="getting">
+    <topic href="devg_get_miscfuncs.html#id5" title="Description:"/>
+   </entry>
+  </entry>
+  <entry keyword="modeswitcher">
+   <topic href="writing.html#binding_to_framework" title="Binding your driver to the graphics framework"/>
+   <topic href="disp_modefuncs_t.html#id5" title="Description:"/>
+   <entry keyword="getting">
+    <topic href="devg_get_modefuncs.html#id5" title="Description:"/>
+   </entry>
+  </entry>
+  <entry keyword="video capture">
+   <topic href="writing.html#binding_to_framework" title="Binding your driver to the graphics framework"/>
+   <entry keyword="getting">
+    <topic href="devg_get_vcapfuncs.html#id7" title="Description:"/>
+   </entry>
+  </entry>
+  <entry keyword="video memory management">
+   <topic href="libraries.html#videomemory" title="Video memory management functions"/>
+   <entry keyword="getting">
+    <topic href="devg_get_memfuncs.html#id5" title="Description:"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="get_2d_caps()">
+  <topic href="disp_2d_caps_t.html#id5" title="Description:"/>
+  <topic href="disp_draw_miscfuncs_t.html#ddm_get_2d_caps" title="get_2d_caps()"/>
+ </entry>
+ <entry keyword="get_alloc_info()">
+  <topic href="disp_memfuncs_t.html#mm_get_alloc_info" title="get_alloc_info()"/>
+ </entry>
+ <entry keyword="get_alloc_layer_info()">
+  <topic href="disp_memfuncs_t.html#mm_get_alloc_layer_info" title="get_alloc_layer_info()"/>
+ </entry>
+ <entry keyword="get_bresenham_params()">
+  <topic href="disp_draw_corefuncs_t.html#get_bresenham_params" title="get_bresenham_params()"/>
+ </entry>
+ <entry keyword="get_contextfuncs_sw()">
+  <topic href="disp_draw_miscfuncs_t.html#ddm_get_contextfuncs_sw" title="get_contextfuncs_sw()"/>
+ </entry>
+ <entry keyword="get_corefuncs_sw()">
+  <topic href="disp_draw_miscfuncs_t.html#ddm_get_corefuncs_sw" title="get_corefuncs_sw()"/>
+ </entry>
+ <entry keyword="get_modeinfo()">
+  <topic href="disp_modefuncs_t.html#dm_get_modeinfo" title="get_modeinfo()"/>
+ </entry>
+ <entry keyword="get_modelist()">
+  <topic href="disp_modefuncs_t.html#dm_get_modelist" title="get_modelist()"/>
+ </entry>
+ <entry keyword="graphics framework">
+  <entry keyword="binding your driver to">
+   <topic href="writing.html#binding_to_framework" title="Binding your driver to the graphics framework"/>
+  </entry>
+  <entry keyword="capabilities information">
+   <topic href="disp_layer_query_t.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="context 2D drawing functions">
+   <topic href="disp_draw_contextfuncs_t.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="context information">
+   <topic href="writing.html#ContextInformation" title="Context information"/>
+   <topic href="disp_draw_context_t.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="coordinates">
+   <topic href="writing.html#CoordinateOrder" title="Order"/>
+  </entry>
+  <entry keyword="core 2D drawing functions">
+   <topic href="disp_draw_corefuncs_t.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="debug stream">
+   <topic href="libraries.html#disp_perror" title="disp_perror()"/>
+   <topic href="libraries.html#disp_printf" title="disp_printf()"/>
+  </entry>
+  <entry keyword="devg_get_contextfuncs()">
+   <topic href="writing.html#binding_to_framework" title="Binding your driver to the graphics framework"/>
+   <topic href="devg_get_contextfuncs.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="devg_get_corefuncs()">
+   <topic href="writing.html#binding_to_framework" title="Binding your driver to the graphics framework"/>
+   <topic href="devg_get_corefuncs.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="devg_get_memfuncs()">
+   <topic href="writing.html#binding_to_framework" title="Binding your driver to the graphics framework"/>
+   <topic href="devg_get_memfuncs.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="devg_get_miscfuncs()">
+   <topic href="writing.html#binding_to_framework" title="Binding your driver to the graphics framework"/>
+   <topic href="devg_get_miscfuncs.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="devg_get_modefuncs()">
+   <topic href="writing.html#binding_to_framework" title="Binding your driver to the graphics framework"/>
+   <topic href="devg_get_modefuncs.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="devg_get_vcapfuncs()">
+   <topic href="writing.html#binding_to_framework" title="Binding your driver to the graphics framework"/>
+   <topic href="devg_get_vcapfuncs.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="fallback routines">
+   <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+   <topic href="writing.html#SampleDrivers" title="Sample drivers"/>
+  </entry>
+  <entry keyword="memory management functions">
+   <topic href="disp_memfuncs_t.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="miscellaneous drawing functions">
+   <topic href="disp_draw_miscfuncs_t.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="modeswitcher functions">
+   <topic href="disp_modefuncs_t.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="video capture functions">
+   <topic href="disp_vcapfuncs_t.html#id5" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="graphics hardware adapter">
+  <topic href="disp_adapter_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="graphics memory manager">
+  <topic href="writing.html#GraphicsMemory" title="Graphics memory manager"/>
+  <topic href="writing.html#Modules" title="The modules"/>
+ </entry>
+ <entry keyword="hardware">
+  <entry keyword="idle">
+   <entry keyword="waiting until">
+    <topic href="disp_draw_corefuncs_t.html#wait_idle" title="wait_idle()"/>
+   </entry>
+  </entry>
+  <entry keyword="initializing">
+   <topic href="disp_draw_miscfuncs_t.html#ddm_init" title="init()"/>
+   <topic href="disp_modefuncs_t.html#dm_init" title="init()"/>
+  </entry>
+  <entry keyword="shutting down">
+   <topic href="disp_draw_miscfuncs_t.html#ddm_fini" title="fini()"/>
+   <topic href="disp_modefuncs_t.html#dm_fini" title="fini()"/>
+  </entry>
+ </entry>
+ <entry keyword="hardware cursor">
+  <entry keyword="attributes, setting">
+   <topic href="disp_modefuncs_t.html#dm_set_hw_cursor" title="set_hw_cursor()"/>
+  </entry>
+  <entry keyword="disabling">
+   <topic href="disp_modefuncs_t.html#dm_disable_hw_cursor" title="disable_hw_cursor()"/>
+  </entry>
+  <entry keyword="enabling">
+   <topic href="disp_modefuncs_t.html#dm_enable_hw_cursor" title="enable_hw_cursor()"/>
+  </entry>
+  <entry keyword="position, setting">
+   <topic href="disp_modefuncs_t.html#dm_set_hw_cursor_pos" title="set_hw_cursor_pos()"/>
+  </entry>
+ </entry>
+ <entry keyword="hotspot">
+  <topic href="disp_modefuncs_t.html#dm_set_hw_cursor" title="set_hw_cursor()"/>
+ </entry>
+ <entry keyword="I/O privileges">
+  <topic href="disp_adapter_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="I2C">
+  <entry keyword="reading">
+   <topic href="disp_modefuncs_t.html#dm_i2c_read" title="i2c_read()"/>
+  </entry>
+  <entry keyword="writeread">
+   <topic href="disp_modefuncs_t.html#dm_i2c_writeread" title="i2c_writeread()"/>
+  </entry>
+  <entry keyword="writing">
+   <topic href="disp_modefuncs_t.html#dm_i2c_write" title="i2c_write()"/>
+  </entry>
+ </entry>
+ <entry keyword="i2c_read()">
+  <topic href="disp_modefuncs_t.html#dm_i2c_read" title="i2c_read()"/>
+ </entry>
+ <entry keyword="i2c_write()">
+  <topic href="disp_modefuncs_t.html#dm_i2c_write" title="i2c_write()"/>
+ </entry>
+ <entry keyword="i2c_writeread()">
+  <topic href="disp_modefuncs_t.html#dm_i2c_writeread" title="i2c_writeread()"/>
+ </entry>
+ <entry keyword="init()">
+  <entry keyword="disp_draw_miscfuncs_t">
+   <topic href="writing.html#CallingSequence" title="Calling sequence"/>
+   <topic href="disp_draw_miscfuncs_t.html#ddm_init" title="init()"/>
+  </entry>
+  <entry keyword="disp_memfuncs_t">
+   <topic href="writing.html#CallingSequence" title="Calling sequence"/>
+   <topic href="disp_memfuncs_t.html#mm_init" title="init()"/>
+  </entry>
+  <entry keyword="disp_modefuncs_t">
+   <topic href="writing.html#CallingSequence" title="Calling sequence"/>
+   <topic href="disp_modefuncs_t.html#dm_init" title="init()"/>
+  </entry>
+  <entry keyword="disp_vcapfuncs_t">
+   <topic href="disp_vcapfuncs_t.html#vc_init" title="init()"/>
+  </entry>
+ </entry>
+ <entry keyword="io-graphics">
+  <topic href="introduction.html#photon" title="Photon-based graphics system"/>
+ </entry>
+ <entry keyword="ISA bus">
+  <topic href="disp_adapter_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="layer capabilities, query">
+  <topic href="disp_modefuncs_t.html#dm_layer_query" title="layer_query()"/>
+ </entry>
+ <entry keyword="layer surfaces">
+  <entry keyword="allocating">
+   <topic href="disp_memfuncs_t.html#mm_alloc_layer_surface" title="alloc_layer_surface()"/>
+  </entry>
+ </entry>
+ <entry keyword="layer, begin update">
+  <topic href="disp_modefuncs_t.html#dm_layer_update_begin" title="layer_update_begin()"/>
+ </entry>
+ <entry keyword="layer, disable">
+  <topic href="disp_modefuncs_t.html#dm_layer_disable" title="layer_disable()"/>
+ </entry>
+ <entry keyword="layer, enable">
+  <topic href="disp_modefuncs_t.html#dm_layer_enable" title="layer_enable()"/>
+ </entry>
+ <entry keyword="layer, end update">
+  <topic href="disp_modefuncs_t.html#dm_layer_update_end" title="layer_update_end()"/>
+ </entry>
+ <entry keyword="layer, reset">
+  <topic href="disp_modefuncs_t.html#dm_layer_reset" title="layer_reset()"/>
+ </entry>
+ <entry keyword="layer, set alpha map">
+  <topic href="disp_modefuncs_t.html#layer_set_alpha_map" title="layer_set_alpha_map()"/>
+ </entry>
+ <entry keyword="layer, set blending">
+  <topic href="disp_modefuncs_t.html#dm_layer_set_blending" title="layer_set_blending()"/>
+ </entry>
+ <entry keyword="layer, set brightness">
+  <topic href="disp_modefuncs_t.html#dm_layer_set_brightness" title="layer_set_brightness()"/>
+ </entry>
+ <entry keyword="layer, set chromakey">
+  <topic href="disp_modefuncs_t.html#dm_layer_set_chromakey" title="layer_set_chromakey()"/>
+ </entry>
+ <entry keyword="layer, set contrast">
+  <topic href="disp_modefuncs_t.html#dm_layer_set_contrast" title="layer_set_contrast()"/>
+ </entry>
+ <entry keyword="layer, set flags">
+  <topic href="disp_modefuncs_t.html#dm_layer_set_flags" title="layer_set_flags()"/>
+ </entry>
+ <entry keyword="layer, set hue">
+  <topic href="disp_modefuncs_t.html#dm_layer_set_hue" title="layer_set_hue()"/>
+ </entry>
+ <entry keyword="layer, set order">
+  <topic href="disp_modefuncs_t.html#dm_layer_set_order" title="layer_set_order()"/>
+ </entry>
+ <entry keyword="layer, set saturation">
+  <topic href="disp_modefuncs_t.html#dm_layer_set_saturation" title="layer_set_saturation()"/>
+ </entry>
+ <entry keyword="layer, set surface">
+  <topic href="disp_modefuncs_t.html#dm_layer_set_surface" title="layer_set_surface()"/>
+ </entry>
+ <entry keyword="layer_disable()">
+  <topic href="disp_modefuncs_t.html#dm_layer_disable" title="layer_disable()"/>
+ </entry>
+ <entry keyword="layer_enable()">
+  <topic href="disp_modefuncs_t.html#dm_layer_enable" title="layer_enable()"/>
+ </entry>
+ <entry keyword="layer_query">
+  <topic href="disp_layer_query_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="layer_query()">
+  <topic href="disp_modefuncs_t.html#dm_layer_query" title="layer_query()"/>
+ </entry>
+ <entry keyword="layer_reset()">
+  <topic href="disp_modefuncs_t.html#dm_layer_reset" title="layer_reset()"/>
+ </entry>
+ <entry keyword="layer_set_alpha_map()">
+  <topic href="disp_modefuncs_t.html#layer_set_alpha_map" title="layer_set_alpha_map()"/>
+ </entry>
+ <entry keyword="layer_set_blending()">
+  <topic href="disp_modefuncs_t.html#dm_layer_set_blending" title="layer_set_blending()"/>
+ </entry>
+ <entry keyword="layer_set_brightness()">
+  <topic href="disp_modefuncs_t.html#dm_layer_set_brightness" title="layer_set_brightness()"/>
+ </entry>
+ <entry keyword="layer_set_chromakey()">
+  <topic href="disp_modefuncs_t.html#dm_layer_set_chromakey" title="layer_set_chromakey()"/>
+ </entry>
+ <entry keyword="layer_set_contrast()">
+  <topic href="disp_modefuncs_t.html#dm_layer_set_contrast" title="layer_set_contrast()"/>
+ </entry>
+ <entry keyword="layer_set_dest_viewport()">
+  <topic href="disp_modefuncs_t.html#dm_layer_set_dest_viewport" title="layer_set_dest_viewport()"/>
+ </entry>
+ <entry keyword="layer_set_flags()">
+  <topic href="disp_modefuncs_t.html#dm_layer_set_flags" title="layer_set_flags()"/>
+ </entry>
+ <entry keyword="layer_set_hue()">
+  <topic href="disp_modefuncs_t.html#dm_layer_set_hue" title="layer_set_hue()"/>
+ </entry>
+ <entry keyword="layer_set_order()">
+  <topic href="disp_modefuncs_t.html#dm_layer_set_order" title="layer_set_order()"/>
+ </entry>
+ <entry keyword="layer_set_saturation()">
+  <topic href="disp_modefuncs_t.html#dm_layer_set_saturation" title="layer_set_saturation()"/>
+ </entry>
+ <entry keyword="layer_set_source_viewport()">
+  <topic href="disp_modefuncs_t.html#dm_layer_set_source_viewport" title="layer_set_source_viewport()"/>
+ </entry>
+ <entry keyword="layer_set_surface()">
+  <topic href="disp_modefuncs_t.html#dm_layer_set_surface" title="layer_set_surface()"/>
+ </entry>
+ <entry keyword="layer_update_begin()">
+  <topic href="disp_modefuncs_t.html#dm_layer_update_begin" title="layer_update_begin()"/>
+ </entry>
+ <entry keyword="layer_update_end()">
+  <topic href="disp_modefuncs_t.html#dm_layer_update_end" title="layer_update_end()"/>
+ </entry>
+ <entry keyword="line">
+  <entry keyword="draw">
+   <topic href="disp_draw_corefuncs_t.html#draw_line" title="draw_line()"/>
+  </entry>
+ </entry>
+ <entry keyword="lines">
+  <entry keyword="drawing">
+   <topic href="disp_draw_contextfuncs_t.html#ddc_draw_line" title="draw_line()"/>
+  </entry>
+ </entry>
+ <entry keyword="lines, drawing">
+  <entry keyword="context">
+   <topic href="disp_draw_contextfuncs_t.html#ddc_draw_span" title="draw_span()"/>
+   <topic href="disp_draw_contextfuncs_t.html#ddc_draw_span_list" title="draw_span_list()"/>
+  </entry>
+  <entry keyword="patterned">
+   <topic href="disp_draw_corefuncs_t.html#draw_line_pat8x1" title="draw_line_pat8x1()"/>
+   <topic href="disp_draw_corefuncs_t.html#draw_line_trans8x1" title="draw_line_trans8x1()"/>
+  </entry>
+  <entry keyword="solid">
+   <topic href="disp_draw_corefuncs_t.html#draw_span" title="draw_span()"/>
+   <topic href="disp_draw_corefuncs_t.html#draw_span_list" title="draw_span_list()"/>
+  </entry>
+ </entry>
+ <entry keyword="mem_avail()">
+  <topic href="disp_memfuncs_t.html#mm_mem_avail" title="mem_avail()"/>
+ </entry>
+ <entry keyword="memory management">
+  <topic href="writing.html#GraphicsMemory" title="Graphics memory manager"/>
+  <topic href="writing.html#Modules" title="The modules"/>
+  <entry keyword="functions">
+   <topic href="writing.html#binding_to_framework" title="Binding your driver to the graphics framework"/>
+   <topic href="devg_get_memfuncs.html#id5" title="Description:"/>
+   <topic href="disp_memfuncs_t.html#id5" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="miscellaneous 2D drawing functions">
+  <topic href="writing.html#binding_to_framework" title="Binding your driver to the graphics framework"/>
+ </entry>
+ <entry keyword="modes">
+  <entry keyword="DPMS">
+   <entry keyword="setting">
+    <topic href="disp_modefuncs_t.html#dm_set_dpms_mode" title="set_dpms_mode()"/>
+   </entry>
+  </entry>
+  <entry keyword="information">
+   <topic href="disp_mode_info_t.html#id5" title="Description:"/>
+   <entry keyword="getting">
+    <topic href="disp_modefuncs_t.html#dm_get_modeinfo" title="get_modeinfo()"/>
+    <topic href="disp_modefuncs_t.html#dm_get_modelist" title="get_modelist()"/>
+   </entry>
+  </entry>
+  <entry keyword="setting">
+   <topic href="disp_modefuncs_t.html#dm_set_mode" title="set_mode()"/>
+  </entry>
+  <entry keyword="video, enumerating">
+   <topic href="writing.html#Modeswitching" title="Modeswitching and enumeration"/>
+  </entry>
+ </entry>
+ <entry keyword="modeswitcher">
+  <topic href="writing.html#Modeswitching" title="Modeswitching and enumeration"/>
+  <entry keyword="functions">
+   <topic href="writing.html#binding_to_framework" title="Binding your driver to the graphics framework"/>
+  </entry>
+ </entry>
+ <entry keyword="modswitching">
+  <topic href="disp_adapter_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="module_info()">
+  <entry keyword="disp_draw_miscfuncs_t">
+   <topic href="disp_draw_miscfuncs_t.html#ddm_module_info" title="module_info()"/>
+  </entry>
+  <entry keyword="disp_memfuncs_t">
+   <topic href="disp_memfuncs_t.html#mm_module_info" title="module_info()"/>
+  </entry>
+  <entry keyword="disp_modefuncs_t">
+   <topic href="disp_modefuncs_t.html#dm_module_info" title="module_info()"/>
+  </entry>
+  <entry keyword="disp_vcapfuncs_t">
+   <topic href="disp_vcapfuncs_t.html#vc_module_info" title="module_info()"/>
+  </entry>
+ </entry>
+ <entry keyword="modules">
+  <topic href="writing.html#binding_to_framework" title="Binding your driver to the graphics framework"/>
+  <topic href="writing.html#Modules" title="The modules"/>
+  <entry keyword="information">
+   <topic href="disp_module_info_t.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="information about, getting">
+   <topic href="disp_draw_miscfuncs_t.html#ddm_module_info" title="module_info()"/>
+   <topic href="disp_modefuncs_t.html#dm_module_info" title="module_info()"/>
+  </entry>
+ </entry>
+ <entry keyword="monochrome format">
+  <topic href="writing.html#pixel_format" title="Pixel formats"/>
+ </entry>
+ <entry keyword="palettes">
+  <entry keyword="32-bit colors">
+   <topic href="writing.html#pixel_format" title="Pixel formats"/>
+  </entry>
+  <entry keyword="setting">
+   <topic href="disp_draw_miscfuncs_t.html#ddm_set_palette" title="set_palette()"/>
+   <topic href="disp_modefuncs_t.html#dm_set_palette" title="set_palette()"/>
+  </entry>
+ </entry>
+ <entry keyword="pathname delimiter in QNX documentation">
+  <topic href="about.html#WINDOWSNOTE" title="Note to Windows users"/>
+ </entry>
+ <entry keyword="patterns">
+  <topic href="disp_draw_context_t.html#id5" title="Description:"/>
+  <topic href="writing.html#patdef" title="Patterns"/>
+  <entry keyword="lines, applying to">
+   <topic href="disp_draw_corefuncs_t.html#draw_line_pat8x1" title="draw_line_pat8x1()"/>
+   <topic href="disp_draw_corefuncs_t.html#draw_line_trans8x1" title="draw_line_trans8x1()"/>
+  </entry>
+  <entry keyword="offset">
+   <topic href="disp_draw_context_t.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="rectangles, applying to">
+   <topic href="disp_draw_corefuncs_t.html#draw_rect_pat8x8" title="draw_rect_pat8x8()"/>
+   <topic href="disp_draw_corefuncs_t.html#draw_rect_trans8x8" title="draw_rect_trans8x8()"/>
+  </entry>
+  <entry keyword="updating">
+   <topic href="disp_draw_corefuncs_t.html#update_pattern" title="update_pattern()"/>
+  </entry>
+ </entry>
+ <entry keyword="PCI bus">
+  <topic href="disp_adapter_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="Photon microGUI, interacting with">
+  <topic href="introduction.html#photon" title="Photon-based graphics system"/>
+ </entry>
+ <entry keyword="pixel formats">
+  <topic href="writing.html#pixel_format" title="Pixel formats"/>
+ </entry>
+ <entry keyword="pixel_format_layers">
+  <topic href="writing.html#pixel_formats_for_layers" title="Pixel formats for layers"/>
+ </entry>
+ <entry keyword="planemask">
+  <entry keyword="updating">
+   <topic href="disp_draw_contextfuncs_t.html#ddc_update_planemask" title="update_planemask()"/>
+  </entry>
+ </entry>
+ <entry keyword="polygons">
+  <entry keyword="filled">
+   <topic href="disp_draw_contextfuncs_t.html#ddc_fill_poly" title="fill_poly()"/>
+   <topic href="disp_draw_corefuncs_t.html#fill_poly" title="fill_poly()"/>
+  </entry>
+ </entry>
+ <entry keyword="polylines">
+  <entry keyword="drawing">
+   <topic href="disp_draw_contextfuncs_t.html#ddc_draw_polyline" title="draw_polyline()"/>
+  </entry>
+ </entry>
+ <entry keyword="query_apertures()">
+  <topic href="disp_memfuncs_t.html#mm_query_apertures" title="query_apertures()"/>
+ </entry>
+ <entry keyword="query_surface()">
+  <topic href="disp_memfuncs_t.html#mm_query_surface" title="query_surface()"/>
+ </entry>
+ <entry keyword="raster operations">
+  <entry keyword="current">
+   <topic href="disp_draw_context_t.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="updating">
+   <topic href="disp_draw_contextfuncs_t.html#ddc_update_rop3" title="update_rop3()"/>
+  </entry>
+ </entry>
+ <entry keyword="rasterizer">
+  <topic href="introduction.html#photon" title="Photon-based graphics system"/>
+ </entry>
+ <entry keyword="recover()">
+  <topic href="disp_draw_miscfuncs_t.html#ddm_recover" title="recover()"/>
+ </entry>
+ <entry keyword="rectangles, drawing">
+  <entry keyword="context">
+   <topic href="disp_draw_contextfuncs_t.html#ddc_draw_rect" title="draw_rect()"/>
+  </entry>
+  <entry keyword="patterned">
+   <topic href="disp_draw_corefuncs_t.html#draw_rect_pat8x8" title="draw_rect_pat8x8()"/>
+   <topic href="disp_draw_corefuncs_t.html#draw_rect_trans8x8" title="draw_rect_trans8x8()"/>
+  </entry>
+  <entry keyword="solid">
+   <topic href="disp_draw_corefuncs_t.html#draw_solid_rect" title="draw_solid_rect()"/>
+  </entry>
+ </entry>
+ <entry keyword="render library">
+  <topic href="introduction.html#photon" title="Photon-based graphics system"/>
+ </entry>
+ <entry keyword="reset()">
+  <topic href="disp_memfuncs_t.html#mm_reset" title="reset()"/>
+ </entry>
+ <entry keyword="retrace, vertical, waiting for">
+  <topic href="disp_modefuncs_t.html#dm_wait_vsync" title="wait_vsync()"/>
+ </entry>
+ <entry keyword="ROP3">
+  <topic href="disp_draw_context_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="ROP3, updating">
+  <topic href="disp_draw_contextfuncs_t.html#ddc_update_rop3" title="update_rop3()"/>
+ </entry>
+ <entry keyword="scaled_blit()">
+  <topic href="disp_draw_contextfuncs_t.html#ddc_scaled_blit" title="scaled_blit()"/>
+  <topic href="disp_draw_corefuncs_t.html#scaled_blit" title="scaled_blit()"/>
+ </entry>
+ <entry keyword="services, BIOS">
+  <topic href="libraries.html#VBIOS_services" title="Video BIOS services (x86 only)"/>
+ </entry>
+ <entry keyword="set_adjustments()">
+  <entry keyword="disp_vcapfuncs_t">
+   <topic href="disp_vcapfuncs_t.html#vc_set_adjustments" title="set_adjustments()"/>
+  </entry>
+ </entry>
+ <entry keyword="set_display_offset()">
+  <topic href="disp_modefuncs_t.html#dm_set_display_offset" title="set_display_offset()"/>
+ </entry>
+ <entry keyword="set_dpms_mode()">
+  <topic href="disp_modefuncs_t.html#dm_set_dpms_mode" title="set_dpms_mode()"/>
+ </entry>
+ <entry keyword="set_enabled()">
+  <entry keyword="disp_vcapfuncs_t">
+   <topic href="disp_vcapfuncs_t.html#vc_set_enabled" title="set_enabled()"/>
+  </entry>
+ </entry>
+ <entry keyword="set_hw_cursor()">
+  <topic href="disp_modefuncs_t.html#dm_set_hw_cursor" title="set_hw_cursor()"/>
+ </entry>
+ <entry keyword="set_hw_cursor_pos()">
+  <topic href="disp_modefuncs_t.html#dm_set_hw_cursor_pos" title="set_hw_cursor_pos()"/>
+ </entry>
+ <entry keyword="set_mode()">
+  <topic href="writing.html#CallingSequence" title="Calling sequence"/>
+  <topic href="disp_modefuncs_t.html#dm_set_mode" title="set_mode()"/>
+ </entry>
+ <entry keyword="set_palette()">
+  <entry keyword="disp_draw_miscfuncs_t">
+   <topic href="disp_draw_miscfuncs_t.html#ddm_set_palette" title="set_palette()"/>
+  </entry>
+  <entry keyword="disp_modefuncs_t">
+   <topic href="disp_modefuncs_t.html#dm_set_palette" title="set_palette()"/>
+  </entry>
+ </entry>
+ <entry keyword="set_props()">
+  <entry keyword="disp_vcapfuncs_t">
+   <topic href="disp_vcapfuncs_t.html#vc_set_props" title="set_props()"/>
+  </entry>
+ </entry>
+ <entry keyword="software, falling back on">
+  <topic href="libraries.html#graphics_helpers" title="FFB library — 2D software fallback routines"/>
+  <topic href="writing.html#SampleDrivers" title="Sample drivers"/>
+  <topic href="writing.html#DrawFunctions" title="Supplying draw functions and software fallback"/>
+ </entry>
+ <entry keyword="source code, downloading">
+  <topic href="writing.html#Getting_source" title="Getting the source code"/>
+ </entry>
+ <entry keyword="stride">
+  <entry keyword="bitmap">
+   <topic href="disp_draw_corefuncs_t.html#draw_bitmap" title="draw_bitmap()"/>
+  </entry>
+  <entry keyword="cursor image">
+   <topic href="disp_modefuncs_t.html#dm_set_hw_cursor" title="set_hw_cursor()"/>
+  </entry>
+  <entry keyword="surfaces">
+   <topic href="disp_2d_caps_t.html#id5" title="Description:"/>
+   <topic href="libraries.html#disp_vm_alloc_surface" title="disp_vm_alloc_surface()"/>
+   <topic href="libraries.html#disp_vm_create_pool" title="disp_vm_create_pool()"/>
+   <topic href="disp_surface_t.html#disp_surface_t-sizing" title="Relationship of stride, height, and width"/>
+  </entry>
+ </entry>
+ <entry keyword="support, technical">
+  <topic href="about.html#Support" title="Technical support"/>
+ </entry>
+ <entry keyword="surfaces">
+  <entry keyword="2D capabilities, getting">
+   <topic href="disp_draw_miscfuncs_t.html#ddm_get_2d_caps" title="get_2d_caps()"/>
+  </entry>
+  <entry keyword="allocating">
+   <topic href="disp_memfuncs_t.html#mm_alloc_surface" title="alloc_surface()"/>
+   <topic href="devg_get_memfuncs.html#id5" title="Description:"/>
+   <topic href="libraries.html#disp_vm_alloc_surface" title="disp_vm_alloc_surface()"/>
+  </entry>
+  <entry keyword="blitting">
+   <topic href="disp_draw_contextfuncs_t.html#ddc_blit" title="blit()"/>
+   <topic href="disp_draw_corefuncs_t.html#blit1" title="blit1()"/>
+   <topic href="disp_draw_corefuncs_t.html#blit2" title="blit2()"/>
+   <topic href="disp_draw_contextfuncs_t.html#ddc_scaled_blit" title="scaled_blit()"/>
+  </entry>
+  <entry keyword="color formats">
+   <topic href="writing.html#Colors" title="Colors"/>
+   <topic href="writing.html#pixel_format" title="Pixel formats"/>
+  </entry>
+  <entry keyword="current target">
+   <topic href="disp_draw_context_t.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="description of">
+   <topic href="disp_surface_t.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="flushing to">
+   <topic href="disp_draw_miscfuncs_t.html#ddm_flushrect" title="flushrect()"/>
+  </entry>
+  <entry keyword="freeing">
+   <topic href="libraries.html#disp_vm_destroy_pool" title="disp_vm_destroy_pool()"/>
+   <topic href="libraries.html#disp_vm_free_surface" title="disp_vm_free_surface()"/>
+   <topic href="disp_memfuncs_t.html#mm_free_surface" title="free_surface()"/>
+  </entry>
+  <entry keyword="idle">
+   <entry keyword="waiting until">
+    <topic href="disp_draw_corefuncs_t.html#wait_idle" title="wait_idle()"/>
+   </entry>
+  </entry>
+  <entry keyword="images, drawing">
+   <topic href="disp_draw_corefuncs_t.html#draw_bitmap" title="draw_bitmap()"/>
+  </entry>
+  <entry keyword="memory, managing">
+   <topic href="libraries.html#disp_vm_create_pool" title="disp_vm_create_pool()"/>
+   <topic href="writing.html#GraphicsMemory" title="Graphics memory manager"/>
+  </entry>
+  <entry keyword="mode, setting">
+   <topic href="disp_modefuncs_t.html#dm_set_mode" title="set_mode()"/>
+  </entry>
+  <entry keyword="properties">
+   <topic href="disp_memfuncs_t.html#mm_mem_avail" title="mem_avail()"/>
+  </entry>
+  <entry keyword="stride">
+   <topic href="disp_2d_caps_t.html#id5" title="Description:"/>
+   <topic href="libraries.html#disp_vm_alloc_surface" title="disp_vm_alloc_surface()"/>
+   <topic href="libraries.html#disp_vm_create_pool" title="disp_vm_create_pool()"/>
+   <topic href="disp_surface_t.html#disp_surface_t-sizing" title="Relationship of stride, height, and width"/>
+  </entry>
+  <entry keyword="updating">
+   <topic href="disp_draw_corefuncs_t.html#update_draw_surface" title="update_draw_surface()"/>
+  </entry>
+ </entry>
+ <entry keyword="technical support">
+  <topic href="about.html#Support" title="Technical support"/>
+ </entry>
+ <entry keyword="transform">
+  <entry keyword="update">
+   <topic href="disp_draw_corefuncs_t.html#update_transform" title="update_transform()"/>
+  </entry>
+ </entry>
+ <entry keyword="typographical conventions">
+  <topic href="about.html#Typographical_conventions" title="Typographical conventions"/>
+ </entry>
+ <entry keyword="unknown bus">
+  <topic href="disp_adapter_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="update_alpha()">
+  <topic href="writing.html#ContextInformation" title="Context information"/>
+  <topic href="disp_draw_contextfuncs_t.html#ddc_update_alpha" title="update_alpha()"/>
+ </entry>
+ <entry keyword="update_chroma()">
+  <topic href="writing.html#ContextInformation" title="Context information"/>
+  <topic href="disp_draw_contextfuncs_t.html#ddc_update_chroma" title="update_chroma()"/>
+ </entry>
+ <entry keyword="update_clipping()">
+  <topic href="disp_draw_corefuncs_t.html#update_clipping" title="update_clipping()"/>
+ </entry>
+ <entry keyword="update_color()">
+  <topic href="writing.html#ContextInformation" title="Context information"/>
+  <topic href="disp_draw_contextfuncs_t.html#ddc_update_color" title="update_color()"/>
+ </entry>
+ <entry keyword="update_draw_surface()">
+  <topic href="writing.html#ContextInformation" title="Context information"/>
+  <topic href="disp_draw_corefuncs_t.html#update_draw_surface" title="update_draw_surface()"/>
+ </entry>
+ <entry keyword="update_general()">
+  <topic href="writing.html#ContextInformation" title="Context information"/>
+  <topic href="disp_draw_contextfuncs_t.html#ddc_update_general" title="update_general()"/>
+ </entry>
+ <entry keyword="update_line()">
+  <topic href="disp_draw_contextfuncs_t.html#ddc_update_line" title="update_line()"/>
+ </entry>
+ <entry keyword="update_pattern()">
+  <topic href="writing.html#ContextInformation" title="Context information"/>
+  <topic href="disp_draw_corefuncs_t.html#update_pattern" title="update_pattern()"/>
+ </entry>
+ <entry keyword="update_planemask()">
+  <topic href="disp_draw_contextfuncs_t.html#ddc_update_planemask" title="update_planemask()"/>
+ </entry>
+ <entry keyword="update_rop3()">
+  <topic href="writing.html#ContextInformation" title="Context information"/>
+  <topic href="disp_draw_contextfuncs_t.html#ddc_update_rop3" title="update_rop3()"/>
+ </entry>
+ <entry keyword="update_transform()">
+  <topic href="disp_draw_corefuncs_t.html#update_transform" title="update_transform()"/>
+ </entry>
+ <entry keyword="vbios_call()">
+  <topic href="libraries.html#vbios_call" title="vbios_call()"/>
+ </entry>
+ <entry keyword="vbios_context_t">
+  <topic href="libraries.html#vbios_context_t" title="vbios_context_t"/>
+ </entry>
+ <entry keyword="vbios_dowarmboot()">
+  <topic href="libraries.html#vbios_dowarmboot" title="vbios_dowarmboot()"/>
+ </entry>
+ <entry keyword="vbios_get_realptr()">
+  <topic href="libraries.html#vbios_get_realptr" title="vbios_get_realptr()"/>
+ </entry>
+ <entry keyword="vbios_int()">
+  <topic href="libraries.html#vbios_int" title="vbios_int()"/>
+ </entry>
+ <entry keyword="vbios_register()">
+  <topic href="libraries.html#vbios_register" title="vbios_register()"/>
+ </entry>
+ <entry keyword="vbios_unregister()">
+  <topic href="libraries.html#vbios_unregister" title="vbios_unregister()"/>
+ </entry>
+ <entry keyword="vertical retrace, waiting for">
+  <topic href="disp_modefuncs_t.html#dm_wait_vsync" title="wait_vsync()"/>
+ </entry>
+ <entry keyword="VESA local bus">
+  <topic href="disp_adapter_t.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="VGA">
+  <entry keyword="cards, working with other">
+   <topic href="disp_adapter_t.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="registers, accessing">
+   <topic href="libraries.html#disp_acquire_vga_resources" title="disp_acquire_vga_resources()"/>
+  </entry>
+ </entry>
+ <entry keyword="video BIOS services">
+  <topic href="libraries.html#VBIOS_services" title="Video BIOS services (x86 only)"/>
+ </entry>
+ <entry keyword="video capture">
+  <topic href="writing.html#Modules" title="The modules"/>
+  <entry keyword="function table">
+   <topic href="disp_vcapfuncs_t.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="functions">
+   <topic href="writing.html#binding_to_framework" title="Binding your driver to the graphics framework"/>
+   <topic href="devg_get_vcapfuncs.html#id7" title="Description:"/>
+  </entry>
+  <entry keyword="properties">
+   <topic href="disp_vcap_props_t.html#id5" title="Description:"/>
+  </entry>
+ </entry>
+ <entry keyword="video memory management">
+  <entry keyword="functions">
+   <topic href="devg_get_memfuncs.html#id5" title="Description:"/>
+   <topic href="libraries.html#videomemory" title="Video memory management functions"/>
+  </entry>
+ </entry>
+ <entry keyword="video modes, enumerating">
+  <topic href="writing.html#Modeswitching" title="Modeswitching and enumeration"/>
+ </entry>
+ <entry keyword="viewport, set destination">
+  <topic href="disp_modefuncs_t.html#dm_layer_set_dest_viewport" title="layer_set_dest_viewport()"/>
+ </entry>
+ <entry keyword="viewport, set source">
+  <topic href="disp_modefuncs_t.html#dm_layer_set_source_viewport" title="layer_set_source_viewport()"/>
+ </entry>
+ <entry keyword="wait_idle()">
+  <topic href="disp_draw_corefuncs_t.html#wait_idle" title="wait_idle()"/>
+  <topic href="disp_draw_miscfuncs_t.html#ddm_wait_idle" title="wait_idle()"/>
+ </entry>
+ <entry keyword="wait_vsync()">
+  <topic href="disp_modefuncs_t.html#dm_wait_vsync" title="wait_vsync()"/>
+  <entry keyword="disp_vcapfuncs_t">
+   <topic href="disp_vcapfuncs_t.html#vc_wait_vsync" title="wait_vsync()"/>
+  </entry>
+ </entry>
+ <entry keyword="write combining or gathering">
+  <topic href="libraries.html#disp_mmap_device_memory" title="disp_mmap_device_memory()"/>
+ </entry>
+</index>

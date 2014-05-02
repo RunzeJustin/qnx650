@@ -1,0 +1,175 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="C/C++ Build panel" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_c_tabs_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="WizardsBuilderSettingsPanel" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>C/C++ Build panel</title>
+   </head>
+   <body id="WizardsBuilderSettingsPanel"><a name="WizardsBuilderSettingsPanel" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">C/C++ Build panel</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>The C/C++ Build panel serves as the main window that contains all builder-specific property pages. In addition, directly from
+            this window you can define preferences for the Builder settings and Behaviour properties. The <span class="uicontrol">C/C++ Build</span> panel has the following tabs: 
+         </p>
+         
+         <br clear="none" /><ul>
+            <li>
+               <a href="wizards_Settings_Panel.html" shape="rect">Settings panel</a>
+               
+            </li>
+            <li>
+               <a href="wizards_behaviour_tab.html" shape="rect">Behaviour tab</a>
+               
+            </li>
+         </ul>
+         
+         
+         <p>
+            <strong>Builder Settings tab</strong>
+            
+         </p>
+         
+         
+         <p>From the Builder Settings tab, you can define preferences for the builder specific settings for your project. </p>
+         
+         
+         <p>
+            <span><img src="../images/izards_Builder_Settings_Tab.xml_d199057e46.jpg" alt="Builder Settings options" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>Setting builder preferences for your project.</p>
+            
+            
+         </div>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> Modifying some settings, such as the <span class="uicontrol">Generate makefiles automatically option</span>, might affect other parameters (setting them from enabled to disabled in some situations) and, moreover, change the visibility
+            of other property pages.
+         </div>
+         
+         
+         <dl>
+            <dt class="dlterm">
+               <span class="uicontrol">Configuration</span>
+               
+            </dt>
+            <dd>Specifies the type of configuration(s) for the selected project. A <span class="uicontrol">Debug</span> configuration lets you see what's going on inside a program as it executes. To debug your application, you must use executables
+               compiled for debugging. These executables contain additional debug information that lets the debugger make direct associations
+               between the source code and the binaries generated from the original source. A <span class="uicontrol">Release</span> configuration creates applications with the best performance. 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Builder type</span>
+               
+            </dt>
+            <dd>Specifies the type of builder to use: Internal builder (builds C/C++ programs using a compiler that implements the C/C++ Language
+               Specification) and External builder (external tools let you configure and run programs and Ant buildfiles using the Workbench.
+               These can be saved and run at a later time to perform a build). 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Use default build command</span>
+               
+            </dt>
+            <dd>When enabled, this option indicates that you want to use the default make command. When disabled, it indicates the use of
+               a new make command. This option is only available when the Build type option is set to External. 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Build command</span>
+               
+            </dt>
+            <dd>Specifies the default command used to start the build utility for your specific toolchain. Use this field if you want to use
+               a build utility other than the default make command (when the Use default build command is not selected the field is active,
+               and when you use an external builder or a custom makefile, you can provide your specific commands). 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Variables</span>
+               
+            </dt>
+            <dd>Opens the Select build variable dialog where you can add environment variables and custom variables to the build command.
+               
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Generate Makefiles automatically</span>
+               
+            </dt>
+            <dd>When selected, Eclipse changes between two different CDT modes: it either uses the customer's makefile for the build (referred
+               to as a Standard Make project in CDT 3.x) if one exists, or it generate makefiles for the user (called Managed build project
+               in CDT 3.x). By default, this option is automatically set. Expand <span class="uicontrol">Env. Variable Refs in Makefiles</span> defines whether environment variables ( <var class="varname">${xxx}</var> ) should be expanded in <span class="filepath">makefile</span>. This option is set by default. 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Build directory</span>
+               
+            </dt>
+            <dd>Defines the location where the build operation takes place. This location will contain the generated artifacts from the build
+               process. This option is disabled when the <span class="uicontrol">Generate makefiles automatically</span> option is enabled. 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Workspace</span>
+               
+            </dt>
+            <dd>Opens the Folder Selection dialog where you can select a workspace location for the project. This is the directory that will
+               contain the plug-ins and features to build, including any generated artifacts. This button is only visible when <span class="uicontrol">Generate makefiles automatically</span> is not selected. 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">File system</span>
+               
+            </dt>
+            <dd>Opens the file system navigator where you can specify another file system to use. This button is only visible when <span class="uicontrol">Generate makefiles automatically</span> is not selected. 
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Variables</span>
+               
+            </dt>
+            <dd>Opens the Select build variable dialog where you can select a variable to specify as an argument, or create and configure
+               simple build variables which you can reference in some build configurations. This button is only visible when <span class="uicontrol">Generate makefiles automatically</span> is set not selected. 
+            </dd>
+         </dl>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/wizards_c_tabs_.html" shape="rect">Project properties</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

@@ -1,0 +1,220 @@
+
+[ANSI_X3.4-1968]
+MIBenum		=	3
+Alias		=	iso-ir-6,ANSI_X3.4-1986,ISO_646.irv:1991,ASCII,ISO646-US,US-ASCII,us,IBM367,cp367,csASCII
+Method		=	7bit
+Table		=	ascii.tab
+MIME        =	US-ASCII
+Description	=	US ASCII
+
+[ISO_8859-1:1987]
+MIBenum		=	4
+Alias		=	iso8859-1,iso-ir-100,ISO_8859-1,ISO-8859-1,latin1,l1,IBM819,CP819,csISOLatin1
+Method		=	8bit
+Table		=	8859-1.tab
+MIME        =	ISO-8859-1
+Description	=	Western European (ISO 8859-1)
+
+[ISO_8859-2:1987]
+MIBenum		=	5
+Alias		=	iso-ir-101,ISO_8859-2,ISO-8859-2,latin2,l2,csISOLatin2
+Method		=	8bit
+Table		=	8859-2.tab
+MIME        =	ISO-8859-2
+Description	=	Central European (ISO 8859-2)
+
+[ISO_8859-3:1988]
+MIBenum		=	6
+Alias		=	iso-ir-109,ISO_8859-3,ISO-8859-3,latin3,l3,csISOLatin3
+Method		=	8bit
+Table		=	8859-3.tab
+MIME        =	ISO-8859-3
+Description	=	Maltese (ISO 8859-3)
+
+[ISO_8859-4:1988]
+MIBenum		=	7
+Alias		=	iso-ir-110,ISO_8859-4,ISO-8859-4,latin4,l4,csISOLatin4
+Method		=	8bit
+Table		=	8859-4.tab
+MIME        =	ISO-8859-4
+Description	=	Latvian (ISO 8859-4)
+
+[ISO_8859-5:1988]
+MIBenum		=	8
+Alias		=	iso-ir-144,ISO_8859-5,ISO-8859-5,cyrillic,csISOLatinCyrillic
+Method		=	8bit
+Table		=	8859-5.tab
+MIME        =	ISO-8859-5
+Description	=	Cyrillic (ISO 8859-5)
+
+[ISO_8859-7:1987]
+MIBenum		=	10
+Alias		=	iso-ir-126,ISO_8859-7,ISO-8859-7,ELOT_928,ECMA-118,greek,greek8,csISOLatinGreek
+Method		=	8bit
+Table		=	8859-7.tab
+MIME        =	ISO-8859-7
+Description	=	Greek (ISO 8859-7)
+
+[ISO_8859-9:1989]
+MIBenum		=	12
+Alias		=	iso-ir-148,ISO_8859-9,ISO-8859-9,latin5,l5,csISOLatin5
+Method		=	8bit
+Table		=	8859-9.tab
+MIME        =	ISO-8859-9
+Description	=	Turkish (ISO 8859-9)
+
+[ISO-2022-JP]
+MIBenum		=	16
+Alias		=	iso-2022-jp,JIS
+Method		=	jis
+Table		=	ja_JP.tab
+MIME		=	ISO-2022-JP
+Description	=	ISO-2022-JP
+
+[Shift_JIS]
+MIBenum		=	17
+Alias		=	MS_Kanji,csShiftJIS,sjis,x-sjis,SHIFT_JIS
+Method		=	sjis
+Table		=	ja_JP.tab
+MIME        =	Shift_JIS
+Description	=	Japanese (Shift JIS)
+
+[Extended_UNIX_Code_Packed_Format_for_Japanese]
+MIBenum		=	18
+Alias		=	csEUCPkdFmtJapanese,EUC-JP
+Method		=	euc
+Table		=	ja_JP.tab
+MIME        =	EUC-JP
+Description	=	Japanese (EUC)
+
+[EUC-KR]
+MIBenum		=	38
+Alias		=	csEUCKR
+Method		=	euc
+Table		=	ko_KR.tab
+MIME        =	csEUCKR
+Description	=	Korean (EUC)
+
+[UTF-8]
+MIBenum		=	106
+Method		=	internal
+MIME        =	UTF-8
+Description =	Unicode (UTF-8)
+
+[UTF-16BE]
+MIBenum		=	1013
+Method		=	internal
+MIME        =	UTF-16BE
+Description =	Unicode (UTF-16BE)
+
+[UTF-16LE]
+MIBenum		=	1014
+Method		=	internal
+MIME        =	UTF-16LE
+Description =	Unicode (UTF-16LE)
+
+[UTF-32BE]
+MIBenum		=	1018
+Method		=	internal
+MIME        =	UTF-32BE
+Description =	Unicode (UTF-32BE)
+
+[UTF-32LE]
+MIBenum		=	1019
+Method		=	internal
+MIME        =	UTF-32LE
+Description =	Unicode (UTF-32LE)
+
+[IBM437]
+MIBenum		=	2011
+Alias		=	cp437,437,csPC8CodePage437
+Method		=	8bit
+Table		=	cp437.tab
+MIME        =	IBM437
+Description	=	US Latin (IBM 437)
+
+[HZ]
+MIBenum		=	2024
+Alias		=	hz
+Method		=	hz
+Table		=	zh_CN.tab
+MIME		=	HZ
+Description	= 	HZ
+
+[GB2312-80]
+MIBenum		=	2025
+Alias		=	gb,gb2312
+Method		=	gb
+Table		=	zh_CN.tab
+MIME		=	GB2312-80
+Description	=	GB2312-80
+
+[Big5]
+MIBenum		=	2026
+Alias		=	csBig5,big5
+Method		=	big5
+Table		=	zh_TW_big5.tab
+Description	=	Big5
+MIME		=	Big5
+
+[KOI8-R]
+MIBenum		=	2084
+Alias		=	csKOI8R
+Method		=	8bit
+Table		=	koi8r.tab
+MIME        =	KOI8-R
+Description	=	Cyrillic (KOI8-R)
+
+[IBM866]
+MIBenum		=	2086
+Alias		=	cp866,866,csIBM866
+Method		=	8bit
+Table		=	cp866.tab
+MIME        =	IBM866
+Description	=	Cyrillic (IBM 866)
+
+[windows-1250]
+MIBenum		=	2250
+Method		=	8bit
+Table		=	cp1250.tab
+MIME        =	Windows-1250
+Description	=	Central European (Windows 1250)
+
+[windows-1251]
+MIBenum		=	2251
+Alias		=	cp1251,1251,win1251,WIN1251,Win1251
+Method		=	8bit
+Table		=	cp1251.tab
+MIME        =	Windows-1251
+Description	=	Cyrillic (Windows 1251)
+
+[windows-1252]
+MIBenum		=	2252
+Method		=	8bit
+Table		=	cp1252.tab
+MIME        =	Windows-1252
+Description	=	Western European (Windows 1252)
+
+[IBM874]
+MIBenum		=	2016
+Alias		=	cp874,874,csIBM874,IBM-Thai,csIBMThai
+Method		=	8bit
+Table		=	cp874.tab
+MIME        =	IBM874
+Description	=	Thai (IBM 874)
+
+[TIS-620]
+MIBenum		=	2259
+Alias		=	iso8859-11,ISO_8859-11,ISO-8859-11,TIS620,Tis620,tis620,th
+Method		=	8bit
+Table		=	tis620.tab
+MIME        =	TIS-620
+Description	=	Latin/Thai (TIS-620)
+
+[GB18030]
+MIBenum		=	114
+Alias       =   cp54936
+Method		=	gb18030
+Table		=	gb18030.tab
+MIME		=	GB18030
+Description	=	GB18030

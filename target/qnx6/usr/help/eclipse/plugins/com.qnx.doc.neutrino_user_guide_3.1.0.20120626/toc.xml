@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="User's Guide">
+      <topic label="About This Guide" href="about.html">
+          <topic label="What you'll find in this guide" href="about.html#In_this_guide"/>
+          <topic label="Typographical conventions" href="about.html#Typographical_conventions">
+            <topic label="Note to Windows users" href="about.html#WINDOWSNOTE"/>
+            <topic label="Navigation buttons" href="about.html#Navigation"/>
+          </topic>
+          <topic label="Technical support" href="about.html#Support"/>
+      </topic>
+      <topic label="Getting to Know the OS" href="os_intro.html">
+          <topic label="How QNX Neutrino compares to other operating systems" href="os_intro.html#OtherOSs">
+            <topic label="UNIX" href="os_intro.html#LikeUnix"/>
+            <topic label="Microsoft Windows" href="os_intro.html#Windows"/>
+            <topic label="Limitations" href="os_intro.html#Limitations"/>
+          </topic>
+          <topic label="How Neutrino is unique" href="os_intro.html#Unique">
+            <topic label="Resource managers" href="os_intro.html#RESMGR"/>
+          </topic>
+      </topic>
+      <topic label="Logging In, Logging Out, and Shutting Down" href="login.html">
+          <topic label="root or non-root?" href="login.html#RootOrNot"/>
+          <topic label="Logging in" href="login.html#Login">
+            <topic label="Photon mode" href="login.html#Photon_login"/>
+            <topic label="Text mode" href="login.html#Text_login"/>
+            <topic label="Once you've logged in" href="login.html#LoggedIn"/>
+          </topic>
+          <topic label="Logging out" href="login.html#Logout">
+            <topic label="Photon mode" href="login.html#Photon_logout"/>
+            <topic label="Text mode" href="login.html#Text_logout"/>
+          </topic>
+          <topic label="Shutting down and rebooting" href="login.html#Shutdown"/>
+      </topic>
+      <topic label="Managing User Accounts" href="accounts.html">
+          <topic label="What does a user account do?" href="accounts.html#UserAccounts">
+            <topic label="User accounts vs user IDs: login, lookup, and permissions" href="accounts.html#AccountsIDs"/>
+            <topic label="What happens when you log in?" href="accounts.html#WhatHappens"/>
+          </topic>
+          <topic label="Account database" href="accounts.html#AccountDatabase">
+            <topic label="/etc/passwd" href="accounts.html#etc_passwd"/>
+            <topic label="/etc/group" href="accounts.html#etc_group"/>
+            <topic label="/etc/shadow" href="accounts.html#etc_shadow"/>
+            <topic label="/etc/.pwlock" href="accounts.html#etc_pwlock"/>
+          </topic>
+          <topic label="Managing your own account" href="accounts.html#OwnAccount">
+            <topic label="Changing your password" href="accounts.html#ChangingPasswords"/>
+            <topic label="Forgot your password?" href="accounts.html#ForgotPassword"/>
+          </topic>
+          <topic label="Managing other accounts" href="accounts.html#OtherAccounts">
+            <topic label="Adding users" href="accounts.html#AddingUsers"/>
+            <topic label="Removing accounts" href="accounts.html#Removing"/>
+            <topic label="Defining groups" href="accounts.html#DefiningGroups">
+              <topic label="Creating a new group" href="accounts.html#CreatingGroups"/>
+              <topic label="Modifying an existing group" href="accounts.html#ModifyGroup"/>
+            </topic>
+          </topic>
+          <topic label="Troubleshooting" href="accounts.html#Troubleshooting"/>
+      </topic>
+      <topic label="Using the Command Line" href="cmdline.html">
+          <topic label="Command line or GUI?" href="cmdline.html#INTRODUCTION"/>
+          <topic label="Processing a command" href="cmdline.html#Interpreting"/>
+          <topic label="Character-device drivers" href="cmdline.html#CharDevices">
+            <topic label="Input modes" href="cmdline.html#InputModes"/>
+            <topic label="Terminal support" href="cmdline.html#TerminalSupport"/>
+            <topic label="Telnet" href="cmdline.html#Telnet"/>
+            <topic label="The keyboard at a glance" href="cmdline.html#Keyboard"/>
+            <topic label="Physical and virtual consoles" href="cmdline.html#VIRTUALCONSOLES"/>
+          </topic>
+          <topic label="Shell" href="cmdline.html#Shell">
+            <topic label="Editing the command line" href="cmdline.html#Shell_editing"/>
+            <topic label="Command and filename completion" href="cmdline.html#Completion"/>
+            <topic label="Reserved words" href="cmdline.html#ReservedWords"/>
+            <topic label="Entering multiple commands" href="cmdline.html#MultipleCommands"/>
+            <topic label="Aliases" href="cmdline.html#Aliases"/>
+            <topic label="Substitutions" href="cmdline.html#Substitutions">
+              <topic label="Directories --- tilde expansion" href="cmdline.html#Directories"/>
+              <topic label="Parameters" href="cmdline.html#Parameters"/>
+              <topic label="Commands" href="cmdline.html#Commands"/>
+              <topic label="Arithmetical expressions" href="cmdline.html#Arithmetic"/>
+              <topic label="Braces" href="cmdline.html#Braces"/>
+              <topic label="Filename generation" href="cmdline.html#FilenameGeneration"/>
+            </topic>
+            <topic label="Redirecting input and output" href="cmdline.html#Redirection"/>
+            <topic label="Pipes" href="cmdline.html#Pipes"/>
+            <topic label="Quoting special characters" href="cmdline.html#Quoting"/>
+            <topic label="History: recalling commands" href="cmdline.html#History"/>
+            <topic label="Shell scripts" href="cmdline.html#ShellScripts"/>
+          </topic>
+          <topic label="Utilities" href="cmdline.html#Utilities">
+            <topic label="Understanding command syntax" href="cmdline.html#CommandSyntax"/>
+            <topic label="Displaying online usage messages" href="cmdline.html#Usage"/>
+            <topic label="Executing commands on another node or tty" href="cmdline.html#RemoteExecution"/>
+            <topic label="Priorities" href="cmdline.html#Priorities"/>
+          </topic>
+          <topic label="Basic commands" href="cmdline.html#BasicCommands"/>
+          <topic label="International keyboards" href="cmdline.html#International"/>
+          <topic label="Neutrino for MS-DOS users" href="cmdline.html#DOS_vs_Nto">
+            <topic label="DOS commands and their Neutrino equivalents" href="cmdline.html#DOS_commands">
+              <topic label="diskcomp" href="cmdline.html#diskcomp"/>
+            </topic>
+            <topic label="MS-DOS local command-interpreter variables" href="cmdline.html#DOS_variables"/>
+          </topic>
+          <topic label="Troubleshooting" href="cmdline.html#Troubleshooting"/>
+      </topic>
+      <topic label="Using the Photon microGUI" href="using_photon.html">
+          <topic label="Overview of Photon" href="using_photon.html#Overview">
+            <topic label="Why is it called Photon?" href="using_photon.html#id4"/>
+            <topic label="Why is it called a microGUI?" href="using_photon.html#id6"/>
+            <topic label="Your workspace" href="using_photon.html#id8"/>
+          </topic>
+          <topic label="Modifying the shelf" href="using_photon.html#modifying_shelf"/>
+          <topic label="Modifying the Launch menu" href="using_photon.html#Launch_menu">
+            <topic label="Creating items and submenus" href="using_photon.html#id12"/>
+            <topic label="Target files" href="using_photon.html#TargetFiles"/>
+            <topic label="Controlling the order of items" href="using_photon.html#ItemOrder"/>
+            <topic label="Additional menu control" href="using_photon.html#MenuControl"/>
+            <topic label="Troubleshooting" href="using_photon.html#id17"/>
+          </topic>
+          <topic label="Modifying the Desktop menu" href="using_photon.html#modifying_pwm_menu"/>
+          <topic label="Starting applications automatically" href="using_photon.html#starting_applications_automatically"/>
+          <topic label="Configuration tools" href="using_photon.html#using_photon_configuration_tools"/>
+          <topic label="Browsing files with the File Manager" href="using_photon.html#file_manager"/>
+          <topic label="Getting help with the Helpviewer" href="using_photon.html#helpviewer">
+            <topic label="Searching for a topic or keyword" href="using_photon.html#id24"/>
+            <topic label="Bookmarking a topic to view it again later" href="using_photon.html#id26"/>
+            <topic label="Navigating around help files" href="using_photon.html#id28"/>
+            <topic label="Viewing more than one topic at once" href="using_photon.html#id30"/>
+          </topic>
+          <topic label="Surfing the web" href="using_photon.html#Browser"/>
+          <topic label="Connecting to other systems" href="using_photon.html#connecting">
+            <topic label="Phditto" href="using_photon.html#id34"/>
+            <topic label="Phindows" href="using_photon.html#id36">
+              <topic label="Configuring the Neutrino machine for TCP/IP use" href="using_photon.html#id38"/>
+              <topic label="Starting Phindows" href="using_photon.html#id40"/>
+              <topic label="Additional options" href="using_photon.html#id42"/>
+            </topic>
+          </topic>
+          <topic label="Hotkeys and shortcuts" href="using_photon.html#hotkeys">
+            <topic label="pterm" href="using_photon.html#id45"/>
+            <topic label="Text field" href="using_photon.html#id47"/>
+            <topic label="Window" href="using_photon.html#id49"/>
+            <topic label="Workspace" href="using_photon.html#id51"/>
+            <topic label="Exiting Photon" href="using_photon.html#id53"/>
+          </topic>
+          <topic label="Photon environment variables" href="using_photon.html#environment_variables"/>
+          <topic label="Troubleshooting" href="using_photon.html#troubleshooting"/>
+      </topic>
+      <topic label="Working with Files" href="files.html">
+          <topic label="Everything is a file" href="files.html#EVERYTHINGSAFILE">
+            <topic label="Types of files" href="files.html#FileTypes"/>
+          </topic>
+          <topic label="Filenames and pathnames" href="files.html#PATHNAMES">
+            <topic label="Absolute and relative pathnames" href="files.html#id6"/>
+            <topic label="Dot and dot-dot directories" href="files.html#Dot">
+              <topic label="A note about cd" href="files.html#id9"/>
+            </topic>
+            <topic label="No drive letters" href="files.html#DriveLetters"/>
+            <topic label="Pathnames that begin with a dot" href="files.html#Hidden"/>
+            <topic label="Extensions" href="files.html#id13"/>
+            <topic label="Pathname-space mapping" href="files.html#id15"/>
+            <topic label="Filename rules" href="files.html#id17"/>
+          </topic>
+          <topic label="Where everything is stored" href="files.html#FILELOCATIONS">
+            <topic label="/" href="files.html#Slash"/>
+            <topic label="/bin" href="files.html#bin"/>
+            <topic label="/boot" href="files.html#boot"/>
+            <topic label="/dev" href="files.html#dev"/>
+            <topic label="/etc" href="files.html#etc"/>
+            <topic label="/fs" href="files.html#fs"/>
+            <topic label="/home" href="files.html#home"/>
+            <topic label="/lib" href="files.html#lib"/>
+            <topic label="/proc" href="files.html#proc"/>
+            <topic label="/root" href="files.html#root"/>
+            <topic label="/sbin" href="files.html#sbin"/>
+            <topic label="/tmp" href="files.html#tmp"/>
+            <topic label="/usr" href="files.html#usr"/>
+            <topic label="/var" href="files.html#var"/>
+          </topic>
+          <topic label="File ownership and permissions" href="files.html#PERMISSIONS">
+            <topic label="Setuid and setgid" href="files.html#setuid_setgid"/>
+            <topic label="Sticky bit" href="files.html#Sticky"/>
+            <topic label="Default file permissions" href="files.html#umask"/>
+          </topic>
+          <topic label="Filename extensions" href="files.html#FILEEXTENSIONS"/>
+          <topic label="Troubleshooting" href="files.html#TROUBLESHOOTING"/>
+      </topic>
+      <topic label="Using Editors" href="editors.html">
+          <topic label="Choosing an editor" href="editors.html#intro"/>
+          <topic label="Supported editors" href="editors.html#Supported">
+            <topic label="vi" href="editors.html#vi"/>
+            <topic label="ped" href="editors.html#ped"/>
+          </topic>
+          <topic label="Specifying the default editor" href="editors.html#DefaultEditor"/>
+      </topic>
+      <topic label="Controlling How Neutrino Starts" href="starting.html">
+          <topic label="What happens when you boot?" href="starting.html#Booting"/>
+          <topic label="Loading a Neutrino image" href="starting.html#NtoImage">
+            <topic label="Power-Safe filesystem" href="starting.html#id5"/>
+            <topic label="QNX 4 filesystem" href="starting.html#id7"/>
+          </topic>
+          <topic label="diskboot" href="starting.html#diskboot"/>
+          <topic label=".diskroot" href="starting.html#diskroot"/>
+          <topic label="/etc/system/sysinit" href="starting.html#sysinit"/>
+          <topic label="Device enumeration" href="starting.html#Enumeration">
+            <topic label="oem file or directory" href="starting.html#OEM"/>
+            <topic label="overrides file or directory" href="starting.html#Overrides"/>
+            <topic label="Host-specific enumerators" href="starting.html#Host_specific"/>
+          </topic>
+          <topic label="/etc/rc.d/rc.sysinit" href="starting.html#rc.sysinit"/>
+          <topic label="rc.local" href="starting.html#rc.local"/>
+          <topic label="tinit" href="starting.html#tinit"/>
+          <topic label="Updating disk drivers" href="starting.html#Disk_drivers">
+            <topic label="Applying a driver update patch after you've installed QNX Neutrino" href="starting.html#id20"/>
+          </topic>
+          <topic label="Troubleshooting" href="starting.html#Troubleshooting"/>
+      </topic>
+      <topic label="Configuring Your Environment" href="environment.html">
+          <topic label="What happens when you log in?" href="environment.html#LoggingIn"/>
+          <topic label="Customizing your home" href="environment.html#Home"/>
+          <topic label="Configuring your shell" href="environment.html#Shell">
+            <topic label="/etc/profile" href="environment.html#etc_profile"/>
+            <topic label="$HOME/.profile" href="environment.html#.profile"/>
+            <topic label="ksh's startup file" href="environment.html#ksh"/>
+          </topic>
+          <topic label="Environment variables" href="environment.html#EnvironmentVars">
+            <topic label="Setting PATH and LD_LIBRARY_PATH" href="environment.html#PATH"/>
+          </topic>
+          <topic label="Configuration strings" href="environment.html#ConfigStrings"/>
+          <topic label="Setting the time zone" href="environment.html#TimeZone">
+            <topic label="Caveats" href="environment.html#Caveats"/>
+            <topic label="Examples" href="environment.html#TimeZoneExamples">
+              <topic label="Eastern time" href="environment.html#Eastern"/>
+              <topic label="Pacific time" href="environment.html#Pacific"/>
+              <topic label="Newfoundland time" href="environment.html#Newfoundland"/>
+              <topic label="Central European time" href="environment.html#CentralEuropean"/>
+              <topic label="Japanese time" href="environment.html#Japanese"/>
+            </topic>
+            <topic label="Programming with time zones" href="environment.html#ProgrammingTimeZones"/>
+          </topic>
+          <topic label="Customizing Photon" href="environment.html#Photon">
+            <topic label="Starting applications automatically" href="environment.html#phapps"/>
+            <topic label="The right fonts" href="environment.html#Fonts"/>
+            <topic label="Input methods" href="environment.html#InputMethods"/>
+          </topic>
+          <topic label="Terminal types" href="environment.html#TerminalTypes"/>
+          <topic label="Troubleshooting" href="environment.html#Troubleshooting"/>
+      </topic>
+      <topic label="Writing Shell Scripts" href="scripts.html">
+          <topic label="What's a script?" href="scripts.html#Introduction"/>
+          <topic label="Available shells" href="scripts.html#Shells"/>
+          <topic label="Running a shell script" href="scripts.html#Running"/>
+          <topic label="The first line" href="scripts.html#First_line">
+            <topic label="Arguments to a ksh script" href="scripts.html#ksh_arguments"/>
+            <topic label="Arguments to a gawk script" href="scripts.html#gawk_arguments"/>
+            <topic label="Arguments to a perl script" href="scripts.html#perl_arguments"/>
+          </topic>
+          <topic label="Example of a Korn shell script" href="scripts.html#Example"/>
+          <topic label="Efficiency" href="scripts.html#Efficiency"/>
+          <topic label="Caveat scriptor" href="scripts.html#Caveat"/>
+      </topic>
+      <topic label="Working with Filesystems" href="fsystems.html">
+          <topic label="Introduction" href="fsystems.html#Introduction"/>
+          <topic label="Setting up, starting, and stopping a block filesystem" href="fsystems.html#SetUp"/>
+          <topic label="Mounting and unmounting filesystems" href="fsystems.html#Mounting"/>
+          <topic label="Image filesystem" href="fsystems.html#Image">
+            <topic label="Configuring an OS image" href="fsystems.html#Configuring_OS_image"/>
+          </topic>
+          <topic label="/dev/shmem RAM filesystem" href="fsystems.html#RAM"/>
+          <topic label="QNX_4 filesystem" href="fsystems.html#QNX4">
+              <topic label="Extents" href="fsystems.html#Extents"/>
+              <topic label="Filenames" href="fsystems.html#QNX4_filenames"/>
+              <topic label="Links and inodes" href="fsystems.html#LINKSANDINODES"/>
+              <topic label="Removing links" href="fsystems.html#Removing_links"/>
+              <topic label="Directory links" href="fsystems.html#Directory_links"/>
+              <topic label="Symbolic links" href="fsystems.html#SYMBOLICLINKS"/>
+            <topic label="Filesystem robustness" href="fsystems.html#QNX4_robustness"/>
+          </topic>
+          <topic label="Power-Safe filesystem" href="fsystems.html#QNX6_filesystem">
+            <topic label="Booting" href="fsystems.html#QNX6_fs_booting"/>
+            <topic label="Snapshots" href="fsystems.html#QNX6_snapshots"/>
+          </topic>
+          <topic label="DOS filesystem" href="fsystems.html#DOS"/>
+          <topic label="CD-ROM filesystem" href="fsystems.html#CDROM"/>
+          <topic label="Linux Ext2 filesystem" href="fsystems.html#Ext2"/>
+          <topic label="Flash filesystems" href="fsystems.html#Flash"/>
+          <topic label="CIFS filesystem" href="fsystems.html#CIFS"/>
+          <topic label="NFS filesystem" href="fsystems.html#NFS">
+            <topic label="Setting up NFS" href="fsystems.html#Setting_up_NFS"/>
+            <topic label="NFS server" href="fsystems.html#NFS_server"/>
+            <topic label="NFS client" href="fsystems.html#NFS_client"/>
+          </topic>
+          <topic label="Universal Disk Format (UDF) filesystem" href="fsystems.html#UDF"/>
+          <topic label="Apple Macintosh HFS and HFS Plus" href="fsystems.html#HFS"/>
+          <topic label="Windows NT filesystem" href="fsystems.html#NTFS"/>
+          <topic label="Inflator filesystem" href="fsystems.html#Inflator"/>
+          <topic label="Troubleshooting" href="fsystems.html#Troubleshooting"/>
+      </topic>
+      <topic label="Using Qnet for Transparent Distributed Processing" href="qnet.html">
+          <topic label="What is Qnet?" href="qnet.html#Introduction"/>
+          <topic label="When should you use Qnet?" href="qnet.html#Choosing"/>
+          <topic label="Conventions for naming nodes" href="qnet.html#NamingConventions"/>
+          <topic label="Software components for Qnet networking" href="qnet.html#Components"/>
+          <topic label="Starting Qnet" href="qnet.html#StartingQnet">
+            <topic label="Creating useqnet" href="qnet.html#useqnet"/>
+            <topic label="Starting the network manager, protocols, and drivers" href="qnet.html#Starting"/>
+          </topic>
+          <topic label="Checking out the neighborhood" href="qnet.html#UsingQnet">
+            <topic label="Populating /net" href="qnet.html#Populating"/>
+          </topic>
+          <topic label="Troubleshooting" href="qnet.html#Troubleshooting">
+            <topic label="Is Qnet running?" href="qnet.html#QnetFunctional"/>
+            <topic label="Are io-pkt* and the drivers running?" href="qnet.html#io_pkt_running"/>
+            <topic label="Is the network card functional?" href="qnet.html#Card"/>
+            <topic label="How do I get diagnostic information?" href="qnet.html#Diagnostics"/>
+            <topic label="Is the hostname unique?" href="qnet.html#Hostname"/>
+            <topic label="Are the nodes in the same domain?" href="qnet.html#Domain"/>
+          </topic>
+      </topic>
+      <topic label="TCP/IP Networking" href="tcpip.html">
+          <topic label="Overview of TCP/IP" href="tcpip.html#Introduction">
+            <topic label="Clients and servers" href="tcpip.html#ClientsServers"/>
+            <topic label="Hosts and gateways" href="tcpip.html#HostsGateways"/>
+            <topic label="Name servers" href="tcpip.html#Name servers"/>
+            <topic label="Routing" href="tcpip.html#Routing"/>
+          </topic>
+          <topic label="Software components for TCP/IP networking" href="tcpip.html#Components"/>
+          <topic label="Running the Internet daemons" href="tcpip.html#Daemons"/>
+          <topic label="Running multiple instances of the TCP/IP stack" href="tcpip.html#MultipleStacks"/>
+          <topic label="Dynamically assigned TCP/IP parameters" href="tcpip.html#Dynamic">
+            <topic label="Using PPPoE" href="tcpip.html#PPPoE">
+              <topic label="Establishing a PPPoE session" href="tcpip.html#id13"/>
+              <topic label="Starting a point-to-point connection over PPPoE session" href="tcpip.html#id15"/>
+            </topic>
+            <topic label="Using DHCP" href="tcpip.html#Using_DHCP"/>
+            <topic label="Using AutoIP" href="tcpip.html#AutoIP"/>
+          </topic>
+          <topic label="Troubleshooting" href="tcpip.html#Troubleshooting">
+            <topic label="Are io-pkt* and the drivers running?" href="tcpip.html#io_pkt_running"/>
+            <topic label="What is the name server information?" href="tcpip.html#NameserverInfo"/>
+            <topic label="How do I map hostnames to IP addresses?" href="tcpip.html#MappingHostNames"/>
+            <topic label="How do I get the network status?" href="tcpip.html#NetworkStatus"/>
+            <topic label="How do I make sure I'm connected to other hosts?" href="tcpip.html#Connected"/>
+            <topic label="How do I display information about an interface controller?" href="tcpip.html#InterfaceController"/>
+          </topic>
+      </topic>
+      <topic label="Printing" href="printing.html">
+          <topic label="Overview of printing" href="printing.html#Overview"/>
+          <topic label="Printing with lpr" href="printing.html#Print_lpr">
+            <topic label="User interface" href="printing.html#lpr_UI">
+              <topic label="lpd --- printer daemon" href="printing.html#lpd"/>
+              <topic label="lpr --- start a print job" href="printing.html#lpr"/>
+              <topic label="lprq --- show printer queue" href="printing.html#id8"/>
+              <topic label="lprrm --- remove jobs from a queue" href="printing.html#id10"/>
+              <topic label="lprc --- printer-control program" href="printing.html#lprc"/>
+            </topic>
+            <topic label="Spooling directories" href="printing.html#SpoolingDirs"/>
+            <topic label="Access control" href="printing.html#ACCESS"/>
+            <topic label="Network manager" href="printing.html#NetworkManager"/>
+            <topic label="Printer capabilities: /etc/printcap" href="printing.html#printcap">
+              <topic label="A typical setup" href="printing.html#id17"/>
+              <topic label="Printers on serial lines" href="printing.html#id19"/>
+              <topic label="Remote printers" href="printing.html#Remote"/>
+              <topic label="Filters" href="printing.html#FILTERS"/>
+            </topic>
+            <topic label="Some /etc/printcap examples" href="printing.html#Printcap_examples">
+              <topic label="USB printer" href="printing.html#USB_printcap"/>
+              <topic label="Single printer" href="printing.html#id25"/>
+              <topic label="Multiple printers" href="printing.html#id27"/>
+              <topic label="Local and remote printers" href="printing.html#LocalAndRemote"/>
+            </topic>
+            <topic label="Remote printing to a printer on another network" href="printing.html#id30"/>
+            <topic label="Remote printing to a TCP/IP-enabled printer using lpr" href="printing.html#TCPIPENABLEDPRINTERLPR"/>
+          </topic>
+          <topic label="Printing with spooler" href="printing.html#SPOOLER">
+            <topic label="Setting up spooler" href="printing.html#SpoolerSetup"/>
+            <topic label="Printing on a USB printer" href="printing.html#USB_spooler"/>
+            <topic label="Remote printing over Qnet" href="printing.html#id36"/>
+            <topic label="Remote printing over TCP/IP" href="printing.html#id38"/>
+          </topic>
+          <topic label="Troubleshooting" href="printing.html#Troubleshooting">
+            <topic label="Understanding lpr error messages" href="printing.html#LPRERROR">
+              <topic label="lpr error messages" href="printing.html#id42"/>
+              <topic label="lprq error messages" href="printing.html#id44"/>
+              <topic label="lprrm error messages" href="printing.html#id46"/>
+              <topic label="lprc error messages" href="printing.html#id48"/>
+              <topic label="lpd error messages" href="printing.html#id50"/>
+            </topic>
+            <topic label="Troubleshooting remote printing problems" href="printing.html#id52"/>
+          </topic>
+      </topic>
+      <topic label="Connecting Hardware" href="hardware.html">
+          <topic label="Introduction" href="hardware.html#Introduction"/>
+          <topic label="PCI/AGP devices" href="hardware.html#PCI_AGP"/>
+          <topic label="CD-ROMs and DVDs" href="hardware.html#CDROM_DVD"/>
+          <topic label="Floppy disks" href="hardware.html#Floppy"/>
+          <topic label="Hard disks" href="hardware.html#HardDisks">
+            <topic label="EIDE" href="hardware.html#EIDE">
+              <topic label="Troubleshooting for devb-eide" href="hardware.html#id9"/>
+            </topic>
+            <topic label="SCSI devices" href="hardware.html#SCSI"/>
+            <topic label="SCSI RAID" href="hardware.html#SCSIRAID"/>
+            <topic label="LS-120" href="hardware.html#LS120"/>
+            <topic label="ORB" href="hardware.html#id14"/>
+            <topic label="Zip and Jaz disks" href="hardware.html#id16">
+              <topic label="Magnetic optical drives" href="hardware.html#id18"/>
+            </topic>
+          </topic>
+          <topic label="RAM disks" href="hardware.html#RAM_disks"/>
+          <topic label="Input devices" href="hardware.html#Input">
+            <topic label="Mice and keyboards" href="hardware.html#MiceKeyboards"/>
+            <topic label="Touchscreens" href="hardware.html#TouchScreens"/>
+          </topic>
+          <topic label="Audio cards" href="hardware.html#Audio">
+            <topic label="ISA cards" href="hardware.html#id25">
+              <topic label="Non-PnP-based" href="hardware.html#id27"/>
+              <topic label="PnP-based" href="hardware.html#id29"/>
+            </topic>
+            <topic label="PCI Cards" href="hardware.html#id31"/>
+          </topic>
+          <topic label="PCCARD and PCMCIA cards" href="hardware.html#PCCARD_PCMCIA"/>
+          <topic label="USB devices" href="hardware.html#USB">
+            <topic label="Printers" href="hardware.html#USB_printers"/>
+            <topic label="Mice and keyboards" href="hardware.html#USB_input"/>
+            <topic label="Touchscreens" href="hardware.html#USB_touchscreens"/>
+            <topic label="Ethernet adapters" href="hardware.html#USB_Ethernet"/>
+            <topic label="Mass-storage devices" href="hardware.html#UMass">
+              <topic label="Troubleshooting" href="hardware.html#id40"/>
+            </topic>
+          </topic>
+          <topic label="Character devices" href="hardware.html#Character">
+            <topic label="General serial adapters" href="hardware.html#GeneralSerial"/>
+            <topic label="Multiport serial adapters" href="hardware.html#MultiportSerial"/>
+            <topic label="Parallel ports" href="hardware.html#Parallel"/>
+            <topic label="Terminals" href="hardware.html#Terminals"/>
+            <topic label="I/O attributes" href="hardware.html#IO_Attributes"/>
+          </topic>
+          <topic label="Network adapters" href="hardware.html#NetworkAdapters">
+            <topic label="Identify your NIC" href="hardware.html#id49"/>
+            <topic label="Start the driver" href="hardware.html#id51"/>
+            <topic label="Make sure the driver is communicating properly with the hardware" href="hardware.html#id53">
+              <topic label="Physical Node ID" href="hardware.html#NodeID"/>
+              <topic label="Current Physical Node ID" href="hardware.html#id56"/>
+              <topic label="Current Operation Rate" href="hardware.html#id58"/>
+              <topic label="Active Interface Type" href="hardware.html#id60"/>
+              <topic label="Active PHY Address" href="hardware.html#id62"/>
+              <topic label="Power Management State" href="hardware.html#id64"/>
+              <topic label="Maximum Transmittable data Unit" href="hardware.html#id66"/>
+              <topic label="Maximum Receivable data Unit" href="hardware.html#id68"/>
+              <topic label="Receive Checksumming Enabled, Transmit Checksumming Enabled" href="hardware.html#id70"/>
+              <topic label="Hardware Interrupt" href="hardware.html#HWInterrupt"/>
+              <topic label="DMA Channel" href="hardware.html#id73"/>
+              <topic label="I/O Aperture" href="hardware.html#IO_Aperture"/>
+              <topic label="Memory Aperture" href="hardware.html#id76"/>
+              <topic label="ROM Aperture" href="hardware.html#id78"/>
+              <topic label="Promiscuous Mode" href="hardware.html#Promiscuous"/>
+              <topic label="Multicast Support" href="hardware.html#id81"/>
+              <topic label="Packets Transmitted OK" href="hardware.html#Packets_Tx_OK"/>
+              <topic label="Bytes Transmitted OK" href="hardware.html#id84"/>
+              <topic label="Total Packets Transmitted Bad" href="hardware.html#Packets_Tx_Bad"/>
+              <topic label="Broadcast Packets Transmitted OK" href="hardware.html#id87"/>
+              <topic label="Multicast Packets Transmitted OK" href="hardware.html#id89"/>
+              <topic label="Memory Allocation Failures on Transmit" href="hardware.html#id91"/>
+              <topic label="Packets Received OK" href="hardware.html#Packets_Rx_OK"/>
+              <topic label="Bytes Received OK" href="hardware.html#id94"/>
+              <topic label="Single Collisions on Transmit" href="hardware.html#id96"/>
+              <topic label="Multiple Collisions on Transmit" href="hardware.html#id98"/>
+              <topic label="Deferred Transmits" href="hardware.html#id100"/>
+              <topic label="Late Collision on Transmit errors" href="hardware.html#id102"/>
+              <topic label="Transmits aborted (excessive collisions)" href="hardware.html#id104"/>
+              <topic label="Transmits aborted (excessive deferrals)" href="hardware.html#id106"/>
+              <topic label="Transmit Underruns" href="hardware.html#id108"/>
+              <topic label="No Carrier on Transmit" href="hardware.html#id110"/>
+              <topic label="Jabber detected" href="hardware.html#id112"/>
+              <topic label="Receive Alignment errors" href="hardware.html#id114"/>
+              <topic label="Received packets with CRC errors" href="hardware.html#CRC_errors"/>
+              <topic label="Packets Dropped on receive" href="hardware.html#id117"/>
+              <topic label="Ethernet Headers out of range" href="hardware.html#id119"/>
+              <topic label="Oversized Packets received" href="hardware.html#id121"/>
+              <topic label="Frames with Dribble Bits" href="hardware.html#id123"/>
+              <topic label="Total Frames experiencing Collision(s)" href="hardware.html#id125"/>
+            </topic>
+          </topic>
+          <topic label="Modems" href="hardware.html#Modems">
+            <topic label="Internal modems" href="hardware.html#id128">
+              <topic label="ISA non-PnP" href="hardware.html#id130"/>
+              <topic label="ISA PnP" href="hardware.html#id132"/>
+            </topic>
+            <topic label="PCI-based modems" href="hardware.html#id134"/>
+            <topic label="External modems" href="hardware.html#id136"/>
+            <topic label="Cable Modems / ISDN" href="hardware.html#id138"/>
+            <topic label="Testing modems" href="hardware.html#TestingModems"/>
+            <topic label="Troubleshooting modems" href="hardware.html#id141"/>
+          </topic>
+          <topic label="Video cards" href="hardware.html#Video">
+            <topic label="Changing video modes in Photon" href="hardware.html#id144"/>
+            <topic label="Manually setting up your video card" href="hardware.html#VideoManually"/>
+            <topic label="Setting up multiple displays" href="hardware.html#Multiheaded">
+              <topic label="GF" href="hardware.html#id148"/>
+              <topic label="Photon" href="hardware.html#id150">
+                <topic label="Configuring multiple displays with multiple video cards" href="hardware.html#id152"/>
+                <topic label="Configuring multiple displays using a single video device" href="hardware.html#id154"/>
+              </topic>
+            </topic>
+          </topic>
+      </topic>
+      <topic label="Setting Up an Embedded Web Server" href="embedded_web_server.html">
+          <topic label="Where should you put the files?" href="embedded_web_server.html#FileLocation"/>
+          <topic label="Running Slinger" href="embedded_web_server.html#Running"/>
+          <topic label="Dynamic HTML" href="embedded_web_server.html#Dynamic">
+            <topic label="CGI method" href="embedded_web_server.html#CGIMethod"/>
+            <topic label="SSI method" href="embedded_web_server.html#SSIMethod">
+              <topic label="Syntax for SSI Commands" href="embedded_web_server.html#id8"/>
+            </topic>
+            <topic label="Data server method" href="embedded_web_server.html#DateServerMethod"/>
+          </topic>
+          <topic label="Security precautions" href="embedded_web_server.html#Security"/>
+          <topic label="Examples" href="embedded_web_server.html#Examples">
+            <topic label="Configuration" href="embedded_web_server.html#id13"/>
+            <topic label="Script" href="embedded_web_server.html#id15">
+              <topic label="rand_images.c" href="embedded_web_server.html#id17"/>
+              <topic label="rand_images.pl" href="embedded_web_server.html#id19"/>
+            </topic>
+          </topic>
+      </topic>
+      <topic label="Using CVS" href="using_cvs.html">
+          <topic label="A crash course in CVS" href="using_cvs.html#CrashCourse"/>
+          <topic label="CVS basics" href="using_cvs.html#Basics">
+            <topic label="Revisions" href="using_cvs.html#id5"/>
+            <topic label="Basic operations" href="using_cvs.html#id7"/>
+            <topic label="Repositories" href="using_cvs.html#id9"/>
+            <topic label="Editors and CVS" href="using_cvs.html#id11"/>
+            <topic label="Creating a repository" href="using_cvs.html#Creating"/>
+            <topic label="Getting files in and out of the repository" href="using_cvs.html#id14"/>
+            <topic label="Putting changes back into the repository" href="using_cvs.html#id16"/>
+            <topic label="Importing an existing source tree" href="using_cvs.html#id18"/>
+            <topic label="Getting information on files" href="using_cvs.html#id20"/>
+            <topic label="Changing files" href="using_cvs.html#id22"/>
+            <topic label="More information on files: what changed and why" href="using_cvs.html#id24"/>
+          </topic>
+          <topic label="CVS and directory trees" href="using_cvs.html#Trees"/>
+          <topic label="Concurrent development: branching and merging" href="using_cvs.html#Branching">
+            <topic label="Branching" href="using_cvs.html#id28"/>
+            <topic label="Merging" href="using_cvs.html#id30"/>
+          </topic>
+          <topic label="Removing and restoring files" href="using_cvs.html#Attic"/>
+          <topic label="Setting up a CVS server" href="using_cvs.html#Server"/>
+      </topic>
+      <topic label="Backing Up and Recovering Data" href="lost_data.html">
+          <topic label="Introduction" href="lost_data.html#Introduction"/>
+          <topic label="Backup strategies" href="lost_data.html#Strategies">
+            <topic label="Choosing backup storage media and location" href="lost_data.html#id5"/>
+            <topic label="Choosing a backup format" href="lost_data.html#id7"/>
+            <topic label="Controlling your backup" href="lost_data.html#id9"/>
+          </topic>
+          <topic label="Archiving your data" href="lost_data.html#Archiving">
+            <topic label="Creating an archive" href="lost_data.html#id12"/>
+            <topic label="Extracting from an archive" href="lost_data.html#id14"/>
+            <topic label="Compressing an archive" href="lost_data.html#id16"/>
+            <topic label="Decompressing the archive" href="lost_data.html#id18"/>
+          </topic>
+          <topic label="Storage choices" href="lost_data.html#Storage">
+            <topic label="CDs" href="lost_data.html#CD"/>
+            <topic label="Bootable CDs" href="lost_data.html#id22"/>
+            <topic label="Removable media" href="lost_data.html#id24"/>
+            <topic label="Backing up physical hard disks" href="lost_data.html#id26"/>
+            <topic label="Ghost Images" href="lost_data.html#id28"/>
+          </topic>
+          <topic label="Remote backups" href="lost_data.html#RemoteBackups">
+            <topic label="CVS" href="lost_data.html#id31"/>
+            <topic label="Remote filesystems" href="lost_data.html#id33"/>
+            <topic label="Other remote backups" href="lost_data.html#id35"/>
+          </topic>
+          <topic label="QNX_4 disk structure" href="lost_data.html#DISKSTRUCTURE">
+            <topic label="Partition components" href="lost_data.html#id38">
+              <topic label="Loader block" href="lost_data.html#id40"/>
+              <topic label="Root block" href="lost_data.html#id42"/>
+              <topic label="Bitmap blocks" href="lost_data.html#id44"/>
+              <topic label="Root directory" href="lost_data.html#id46"/>
+            </topic>
+            <topic label="Directories" href="lost_data.html#DIRS"/>
+            <topic label="Links" href="lost_data.html#id49"/>
+            <topic label="Extent blocks" href="lost_data.html#id51"/>
+            <topic label="Files" href="lost_data.html#id53"/>
+          </topic>
+          <topic label="File-maintenance utilities" href="lost_data.html#File_maintenance">
+            <topic label="fdisk" href="lost_data.html#fdisk"/>
+            <topic label="dinit" href="lost_data.html#dinit"/>
+            <topic label="chkfsys" href="lost_data.html#chkfsys"/>
+            <topic label="dcheck" href="lost_data.html#dcheck"/>
+            <topic label="zap" href="lost_data.html#zap">
+              <topic label="Recovering a zapped file" href="lost_data.html#id61"/>
+            </topic>
+            <topic label="spatch" href="lost_data.html#spatch"/>
+          </topic>
+          <topic label="Recovering disks and files" href="lost_data.html#Recovering">
+            <topic label="Using chkfsys" href="lost_data.html#id65">
+              <topic label="When to run chkfsys" href="lost_data.html#id67"/>
+              <topic label="Using chkfsys on a live system" href="lost_data.html#id69"/>
+            </topic>
+            <topic label="Recovering from a bad block in the middle of a file" href="lost_data.html#id71"/>
+          </topic>
+          <topic label="What to do if your system will no longer boot" href="lost_data.html#IFNOBOOT">
+            <topic label="If the mount fails..." href="lost_data.html#id74"/>
+            <topic label="If the disk is unrecoverable" href="lost_data.html#id76"/>
+            <topic label="If the filesystem is intact" href="lost_data.html#id78"/>
+          </topic>
+      </topic>
+      <topic label="Securing Your System" href="security.html">
+          <topic label="General OS security" href="security.html#General">
+            <topic label="Remote and local attacks" href="security.html#Remote_Local">
+              <topic label="Remote exploits" href="security.html#id5"/>
+              <topic label="Local exploits" href="security.html#id7"/>
+            </topic>
+            <topic label="Effects of attacks" href="security.html#Effects"/>
+            <topic label="Viruses" href="security.html#Viruses"/>
+            <topic label="Neutrino security in general" href="security.html#NeutrinoSecurity"/>
+          </topic>
+          <topic label="Neutrino-specific security issues" href="security.html#NeutrinoSpecific">
+            <topic label="Message passing" href="security.html#MessagePassing"/>
+            <topic label="pdebug" href="security.html#pdebug"/>
+            <topic label="qconn" href="security.html#qconn"/>
+            <topic label="Qnet" href="security.html#Qnet"/>
+            <topic label="IPSec" href="security.html#IPSec"/>
+          </topic>
+          <topic label="Setting up a firewall" href="security.html#Firewall"/>
+      </topic>
+      <topic label="Fine-Tuning Your System" href="fine_tuning.html">
+          <topic label="Getting the system's status" href="fine_tuning.html#SystemStatus"/>
+          <topic label="Improving performance" href="fine_tuning.html#Performance"/>
+          <topic label="Faster boot times" href="fine_tuning.html#BootTimes"/>
+          <topic label="Filesystems and block I/O (devb-*) drivers" href="fine_tuning.html#Filesystems">
+            <topic label="Performance and robustness" href="fine_tuning.html#Tradeoff"/>
+            <topic label="Metadata updates" href="fine_tuning.html#MetadateUpdates">
+              <topic label="Ordering the updates to metadata" href="fine_tuning.html#id9"/>
+            </topic>
+            <topic label="Throughput" href="fine_tuning.html#Throughput"/>
+            <topic label="Configuration" href="fine_tuning.html#Configuration">
+              <topic label="Block I/O commit level" href="fine_tuning.html#commit"/>
+              <topic label="Record size" href="fine_tuning.html#RecordSize"/>
+              <topic label="Double buffering" href="fine_tuning.html#DoubleBuffering"/>
+              <topic label="File descriptor vs standard I/O" href="fine_tuning.html#FDvsStdio"/>
+              <topic label="Pregrowing a file" href="fine_tuning.html#Pregrowing"/>
+            </topic>
+            <topic label="Fine-tuning USB storage devices" href="fine_tuning.html#USB"/>
+          </topic>
+          <topic label="How small can you get?" href="fine_tuning.html#Small"/>
+      </topic>
+      <topic label="Understanding System Limits" href="limits.html">
+          <topic label="The limits on describing limits" href="limits.html#Limits"/>
+          <topic label="Configurable limits" href="limits.html#ConfigLimits"/>
+          <topic label="Filesystem limits" href="limits.html#Filesystems">
+            <topic label="Querying filesystem limits" href="limits.html#QueryFSLimits"/>
+            <topic label="QNX 4 filesystem" href="limits.html#QNX"/>
+            <topic label="Power-Safe (fs-qnx6.so) filesystem" href="limits.html#QNX6_limits"/>
+            <topic label="Ext2 filesystem" href="limits.html#Ext2"/>
+            <topic label="DOS FAT12/16/32 filesystem" href="limits.html#FAT"/>
+            <topic label="CD-ROM (ISO9660) filesystem" href="limits.html#ISO9660"/>
+            <topic label="NFS2 and NFS3 filesystem" href="limits.html#NFS2"/>
+            <topic label="CIFS filesystem" href="limits.html#CIFS"/>
+            <topic label="Embedded (flash) filesystem" href="limits.html#Flash"/>
+            <topic label="Embedded Transaction filesystem (ETFS)" href="limits.html#ETFS"/>
+            <topic label="UDF filesystem" href="limits.html#UDF"/>
+            <topic label="Apple Macintosh HFS and HFS Plus" href="limits.html#HFS"/>
+            <topic label="Windows NT filesystem" href="limits.html#NTFS"/>
+          </topic>
+          <topic label="Other system limits" href="limits.html#OtherLimits">
+            <topic label="File descriptors" href="limits.html#FileDescriptors"/>
+            <topic label="Synchronization primitives" href="limits.html#Synch"/>
+            <topic label="TCP/IP limits" href="limits.html#TCPIP"/>
+            <topic label="Shared memory" href="limits.html#SharedMemory"/>
+            <topic label="Message queues" href="limits.html#Mqueue"/>
+            <topic label="Platform-specific limits" href="limits.html#PlatformSpecific"/>
+          </topic>
+      </topic>
+      <topic label="Technical Support" href="support.html"/>
+      <topic label="Examples" href="examples.html">
+          <topic label="Buildfile for an NFS-mounting target" href="examples.html#NFS_buildfile"/>
+          <topic label="qnxbasedma.build" href="examples.html#qnxbasedma.build"/>
+          <topic label="Buildfile that doesn't use diskboot" href="examples.html#no_diskboot"/>
+          <topic label=".profile" href="examples.html#.profile"/>
+          <topic label=".kshrc" href="examples.html#.kshrc"/>
+          <topic label="Configuration files for spooler" href="examples.html#spooler_config">
+            <topic label="Using lpr" href="examples.html#spooler_lpr"/>
+            <topic label="Using NCFTP" href="examples.html#spooler_ncftp"/>
+            <topic label="Using SAMBA" href="examples.html#spooler_SMB"/>
+          </topic>
+          <topic label="PPP with CHAP authentication between two Neutrino boxes" href="examples.html#ppp_chap"/>
+      </topic>
+      <topic label="Glossary" href="glossary.html"/>
+</toc>

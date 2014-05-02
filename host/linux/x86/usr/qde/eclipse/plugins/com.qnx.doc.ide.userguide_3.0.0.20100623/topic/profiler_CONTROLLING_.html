@@ -1,0 +1,309 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Controlling your profiling sessions" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_Base_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_INTRO_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROFILING_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_UNDERSTANDING_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_APPSESSVIEW_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_IDE_DEBUGSESSTAB_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_Exit_Enter_time_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_APPPROFEDITPANE_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/profiler_PROUSECASES_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Controllingyourprofilingsessions" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Controlling your profiling sessions</title>
+   </head>
+   <body id="Controllingyourprofilingsessions"><a name="Controllingyourprofilingsessions" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Controlling your profiling sessions</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>The Profiler Sessions view (<span class="menucascade">
+               <span class="uicontrol">Window</span>
+               &gt; <span class="uicontrol">Show View</span>
+               &gt; <span class="uicontrol">Other…</span>
+               &gt; <span class="uicontrol">QNX Application Profiler</span>
+               &gt; <span class="uicontrol">Profiler Sessions</span>
+               </span>) lets you control multiple profiling sessions simultaneously. You can: 
+            
+            
+         </p>
+         
+         <br clear="none" /><ul>
+            <li>export or import profiler data (see <a href="profiler_Export_Profiler_Session.html" shape="rect">Exporting a profiler session</a>)
+            </li>
+            <li>rename a session </li>
+            <li>open or close a session </li>
+            <li>compare sessions (see <a href="profiler_PROCompResults_.html" shape="rect">Comparing profiles</a>)
+            </li>
+            <li>create a sample session (see <a href="profiler_Create_Sample_Session.html" shape="rect">Creating a sample profile session</a>)
+            </li>
+            <li>start and stop the profiling of a running application</li>
+            <li>take a snapshot of a running session (see <a href="profiler_PROFTakeSnapshot_.html" shape="rect">Taking a snapshot of a profiling session</a>)
+            </li>
+         </ul>
+         
+         
+         <p>
+            <span><img src="../images/topic2Fprofiler_CONTROLLING_.xml_d145682e88.jpg" alt="Profiler view" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>The Profiler Sessions view.</p>
+            
+            
+         </div>
+         
+         
+         <p>From the Debug tab, you can see more detail about the session: </p>
+         
+         
+         <p>
+            <span><img src="../images/topic2Fprofiler_CONTROLLING_.xml_d145682e107.jpg" alt="Debug view" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>The Debug tab for profile sessions.</p>
+            
+            
+         </div>
+         
+         
+         <p>The Profiler Sessions view shows the following as a hierarchical tree for each profiling session: 
+            
+         </p>
+         
+         
+         <table cellpadding="4" cellspacing="0" summary="" border="1" class="simpletableborder">
+            <tr>
+               <th valign="bottom" align="left" id="d145682e132" rowspan="1" colspan="1">Type</th>
+               <th valign="bottom" align="left" id="d145682e135" rowspan="1" colspan="1">Description</th>
+            </tr>
+            <tr>
+               <td valign="top" headers="d145682e132" rowspan="1" colspan="1">Session ID</td>
+               <td valign="top" headers="d145682e135" rowspan="1" colspan="1">A consecutive identifier assigned to each profiler session.</td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d145682e132" rowspan="1" colspan="1">Session Name</td>
+               <td valign="top" headers="d145682e135" rowspan="1" colspan="1">Launch instance name (i.e. <cite>ApplicationProfiling</cite>). 
+               </td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d145682e132" rowspan="1" colspan="1">Session State</td>
+               <td valign="top" headers="d145682e135" rowspan="1" colspan="1">The current state of the session (open, closed)</td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d145682e132" rowspan="1" colspan="1">Session Timestamp</td>
+               <td valign="top" headers="d145682e135" rowspan="1" colspan="1">The date and time the session was created.</td>
+            </tr>
+         </table>
+         
+         
+         <p>The icons that appear in the Profiler Sessions view are: </p>
+         
+         
+         <table cellpadding="4" cellspacing="0" summary="" border="1" class="simpletableborder">
+            <tr>
+               <th valign="bottom" align="left" id="d145682e186" rowspan="1" colspan="1">Name</th>
+               <th valign="bottom" align="left" id="d145682e189" rowspan="1" colspan="1">Icon</th>
+            </tr>
+            <tr>
+               <td valign="top" headers="d145682e186" rowspan="1" colspan="1">Running Process</td>
+               <td valign="top" headers="d145682e189" rowspan="1" colspan="1">
+                  
+                  <p>
+                     <span><img src="../images/topic2Fprofiler_CONTROLLING_.xml_d145682e202.jpg" alt="Icon: Running process" /></span>
+                     
+                  </p>
+                  
+                  
+               </td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d145682e186" rowspan="1" colspan="1">Executable</td>
+               <td valign="top" headers="d145682e189" rowspan="1" colspan="1">
+                  
+                  <p>
+                     <span><img src="../images/topic2Fprofiler_CONTROLLING_.xml_d145682e220.jpg" alt="Icon: Executable" /></span>
+                     
+                  </p>
+                  
+                  
+               </td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d145682e186" rowspan="1" colspan="1">Shared libraries</td>
+               <td valign="top" headers="d145682e189" rowspan="1" colspan="1">
+                  
+                  <p>
+                     <span><img src="../images/topic2Fprofiler_CONTROLLING_.xml_d145682e238.jpg" alt="Icon: Library" /></span>
+                     
+                  </p>
+                  
+                  
+               </td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d145682e186" rowspan="1" colspan="1">DLLs</td>
+               <td valign="top" headers="d145682e189" rowspan="1" colspan="1">
+                  
+                  <p>
+                     <span><img src="../images/topic2Fprofiler_CONTROLLING_.xml_d145682e256.jpg" alt="Icon: DLL" /></span>
+                     
+                  </p>
+                  
+                  
+               </td>
+            </tr>
+            <tr>
+               <td valign="top" headers="d145682e186" rowspan="1" colspan="1">Unknown</td>
+               <td valign="top" headers="d145682e189" rowspan="1" colspan="1">
+                  
+                  <p>
+                     <span><img src="../images/topic2Fprofiler_CONTROLLING_.xml_d145682e275.jpg" alt="Icon: Unknown" /></span>
+                     
+                  </p>
+                  
+                  
+               </td>
+            </tr>
+         </table>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> 
+            
+            <p>A node named <span class="uicontrol">Unknown</span> refers to a container for code that doesn't belong to any binary or library. Usually, this type refers to kernel code mapped
+               to process virtual memory. 
+            </p>
+            
+            
+            <p>For Sampling and Call Count profiling, not all shared libraries or the binary appear in the tree view. The view can include
+               only those libraries and binaries that were instrumented with Call Count instrumentation, or those that have corresponding
+               samples during the execution. If the application runs for a short period of time (less than ten seconds), a library might
+               not even have a single probe. 
+            </p>
+            
+            
+            <p>For Function Instrumentation, profiling only an instrumented binary and libraries would display in the tree view. System libraries,
+               such as <tt>libc</tt>, would never appear in the view. 
+            </p>
+            
+            
+         </div>
+         
+         
+         <p>To choose which executable or library to show information for in the Execution Time view:</p>
+         
+         <br clear="none" /><ol>
+            <li>In the Profiler Sessions view, click one of the following: <br clear="none" /><ul>
+                  <li>a session</li>
+                  <li>an executable</li>
+                  <li>a shared library</li>
+                  <li>a DLL</li>
+               </ul>
+               
+            </li>
+         </ol>
+         
+         
+         <p>To terminate an application running on a target:
+            
+            
+         </p>
+         
+         <br clear="none" /><ol>
+            <li>In the Debug view, select a launch configuration.</li>
+            <li>Click the <span class="uicontrol">Terminate</span> button ( <span><img src="../images/topic2Fprofiler_CONTROLLING_.xml_d145682e348.jpg" alt="Icon: Terminate" /></span>) in the title bar of the corresponding Console view. 
+               <div class="note"><span class="notetitle">Note:</span>  To clear old launch listings from this view, click the <span class="uicontrol">Remove All Terminated Launches</span> button (<span><img src="../images/topic2Fprofiler_CONTROLLING_.xml_d145682e359.jpg" alt="Icon: Remove All Terminated Launches" /></span>). 
+                  
+               </div>
+               
+            </li>
+         </ol>
+         
+         
+         <p>To disconnect from an application running on a target:
+            
+            
+         </p>
+         
+         <br clear="none" /><ol>
+            <li>In the Debug view, select a running profiler session. </li>
+            <li>Select a QNX Application Profiler Service. </li>
+            <li> Click the <span class="uicontrol">Disconnect</span> button ( <span><img src="../images/topic2Fprofiler_CONTROLLING_.xml_d145682e399.jpg" alt="Icon: Disconnect" /></span>) in the view's title bar. 
+               <div class="note"><span class="notetitle">Note:</span>  To clear old launch listings from this view, click the <span class="uicontrol">Remove All Terminated Launches</span> button ( <span><img src="../images/topic2Fprofiler_CONTROLLING_.xml_d145682e410.jpg" alt="Icon: Remove All Terminated Launches" /></span>). 
+                  
+               </div>
+               
+            </li>
+         </ol>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/profiler_Base_.html" shape="rect">Profiling an Application</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/profiler_INTRO_.html" shape="rect">Types of profiling</a></div>
+            
+            <div><a href="../topic/profiler_PROFILING_.html" shape="rect">Profiling your programs</a></div>
+            
+            <div><a href="../topic/profiler_UNDERSTANDING_.html" shape="rect">Understanding your profiling data</a></div>
+            
+            <div><a href="../topic/profiler_APPSESSVIEW_.html" shape="rect">Profiler Sessions view</a></div>
+            
+            <div><a href="../topic/profiler_IDE_DEBUGSESSTAB_.html" shape="rect">Debug view</a></div>
+            
+            <div><a href="../topic/profiler_Exit_Enter_time_.html" shape="rect">Execution Time view</a></div>
+            
+            <div><a href="../topic/profiler_APPPROFEDITPANE_.html" shape="rect">Annotated source editor</a></div>
+            
+            <div><a href="../topic/profiler_PROUSECASES_.html" shape="rect">Using the Application Profiler</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

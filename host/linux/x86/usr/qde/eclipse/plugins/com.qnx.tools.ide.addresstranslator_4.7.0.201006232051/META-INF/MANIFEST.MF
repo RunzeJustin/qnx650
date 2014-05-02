@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-Name: %pluginName
+Bundle-Activator: com.qnx.tools.ide.addresstranslator.AddressTranslato
+ rPlugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Vendor: %providerName
+Bundle-ManifestVersion: 2
+Bundle-Localization: plugin
+Bundle-SymbolicName: com.qnx.tools.ide.addresstranslator;singleton:=tr
+ ue
+Bundle-ActivationPolicy: lazy
+Export-Package: com.qnx.tools.ide.addresstranslator,com.qnx.tools.ide.
+ addresstranslator.core,com.qnx.tools.ide.addresstranslator.symbols
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.co
+ re.resources,org.eclipse.cdt.core,com.qnx.tools.ide.qde.core,com.qnx.
+ tools.ide.core
+Bundle-Version: 4.7.0.201006232051
+
+

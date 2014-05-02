@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Quickstart Guide">
+      <topic label="10 Steps to Developing a QNX Program: Quickstart Guide" href="about.html">
+          <topic label="1. Requirements" href="about.html#Requirements"/>
+          <topic label="2. Installing the QNX Software Development Platform on the development host" href="about.html#Install_host"/>
+          <topic label="3. Installing the QNX Neutrino RTOS on the target system" href="about.html#Install_Neutrino"/>
+          <topic label="4. Networking with QNX Neutrino" href="about.html#Networking"/>
+          <topic label="5. Creating a program project" href="about.html#Create_Project"/>
+          <topic label="6. Communicating with QNX Neutrino" href="about.html#Communicating"/>
+          <topic label="7. Compiling and linking" href="about.html#Compiling"/>
+          <topic label="8. Preparing to launch the program" href="about.html#Prepare_Launch"/>
+          <topic label="9. Starting and debugging" href="about.html#Starting"/>
+          <topic label="10. Making the program your own" href="about.html#Your_program"/>
+      </topic>
+</toc>

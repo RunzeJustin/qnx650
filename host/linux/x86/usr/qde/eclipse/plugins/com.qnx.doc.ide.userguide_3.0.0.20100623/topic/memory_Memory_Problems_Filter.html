@@ -1,0 +1,149 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Memory Problems Filter" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Memory_Problems_View.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Memory_Problems_Preferences.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Viewing_Statistics_For_Memory_Problems.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="MemProbsFilter" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Memory Problems Filter</title>
+   </head>
+   <body id="MemProbsFilter"><a name="MemProbsFilter" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Memory Problems Filter</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>The Memory Problems filter lets you filter data by certain fields, such as a pointer, a range, a file, a binary or a thread.
+            You can open the Memory Problems filter by running the <span class="uicontrol">Filter…</span> action from the Memory Problems view (from context menu, action menu, or action toolbar).
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/mory_Memory_Problems_Filter.xml_d120162e20.jpg" /></span>
+            
+         </p>
+         
+         
+         
+         <div class="tablenoborder">
+            <table cellpadding="4" cellspacing="0" summary="" frame="border" border="1" rules="all">
+               <thead align="left">
+                  <tr>
+                     <th class="cellrowborder" valign="top" width="NaN%" id="d120162e35" rowspan="1" colspan="1">Field</th>
+                     <th class="cellrowborder" valign="top" width="NaN%" id="d120162e38" rowspan="1" colspan="1">Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120162e35" rowspan="1" colspan="1">
+                        <span class="uicontrol">Pointer</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120162e38" rowspan="1" colspan="1">Filter field based on the pointer value involved in the error condition (usually a pointer to the heap). This field accepts
+                        the individual pointer values, such as <tt>0x8023896</tt> or ranges such as <tt>0xb34000-0xb44000</tt>. 
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120162e35" rowspan="1" colspan="1">
+                        <span class="uicontrol">Backtrace Id </span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120162e38" rowspan="1" colspan="1">This field is automatically set when you select quick for errors of the same backtrace.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120162e35" rowspan="1" colspan="1">
+                        <span class="uicontrol">Time Stamp Range</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120162e38" rowspan="1" colspan="1">Filter based on the timestamp. This filter can accept individual values or a range of values. The range can be open-ended,
+                        such as <tt>100000-*</tt>.
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120162e35" rowspan="1" colspan="1">
+                        <span class="uicontrol">Event Id Range</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120162e38" rowspan="1" colspan="1">Filter based on the error ID (the <span class="uicontrol">Event ID</span> column). It accepts individual values or ranges. The range can be open-ended, such as <tt>25-*</tt>.
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120162e35" rowspan="1" colspan="1">
+                        <span class="uicontrol">Files</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120162e38" rowspan="1" colspan="1">Select a file where the error occurred, and all files referenced in the backtrace of the error.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120162e35" rowspan="1" colspan="1">
+                        <span class="uicontrol">Binaries and Libraries</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120162e38" rowspan="1" colspan="1">Filter based on the binary or library where the error occurred, and all binaries referenced in the backtrace of the error.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120162e35" rowspan="1" colspan="1">
+                        <span class="uicontrol">Threads</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d120162e38" rowspan="1" colspan="1">When a problem is detected, filter errors based on the thread ID of a running thread.</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/memory_Memory_Problems_View.html" shape="rect">Memory Problems view</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/memory_Memory_Problems_Preferences.html" shape="rect">Memory Problems Preferences</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/memory_Viewing_Statistics_For_Memory_Problems.html" shape="rect">Viewing statistics for memory problems</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

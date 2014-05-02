@@ -1,0 +1,187 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Estimating the average allocation size" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Memory_Optimization.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_ProcessMem_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Performance_Of_Heap_Allocations.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_analyzingallocpatterns_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_OptHeapMem_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_AllocationOverhead_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_TuningAllocator_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_OptstaticStackMem_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Estimatingtheaverageallocationsize" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Estimating the average allocation size</title>
+   </head>
+   <body id="Estimatingtheaverageallocationsize"><a name="Estimatingtheaverageallocationsize" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Estimating the average allocation size</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>To estimate the average allocation size for a particular function call, find the backtrace of a call in the <span class="uicontrol">Memory Backtrace</span> view. The <span class="uicontrol">Count</span> column represents the number of allocations for a particular stack trace, and the <span class="uicontrol">Total Allocated</span> column shows the total size of the allocated memory. To calculate an average, divide the <span class="uicontrol">Total Allocated</span> value by the <span class="uicontrol">Count</span> value. 
+         </p>
+         
+         
+         <p>
+            <strong>Padding overhead</strong>
+            
+         </p>
+         
+         
+         <p>Padding overhead affects the <samp class="codeph">struct</samp> type on processors with alignment restrictions. The fields in a structure are arranged in a way that the <samp class="codeph">sizeof</samp> of a structure is larger than the sum of the <samp class="codeph">sizeof</samp> of all of its fields. You can save some space by re-arranging the fields of the structure. Usually, it is better to group
+            fields of the same type together. You can measure the result by writing a <samp class="codeph">sizeof</samp> test. Typically, it is worth performing this task if the resulting <samp class="codeph">sizeof</samp> matches with the allocator block size (see below).
+            
+         </p>
+         
+         
+         <p>
+            <strong>Heap fragmentation</strong>
+            
+         </p>
+         
+         
+         <p>Heap fragmentation occurs when a process uses a lot of heap allocation and deallocation of different sizes. When this occurs,
+            the allocator divides large blocks of memory into smaller ones, which later can't be used for larger blocks because the address
+            space isn't contiguous. In this case, the process will allocate another physical page even if it looks like it has enough
+            free memory. The QNX memory allocator is a bands allocator, which already solves most of this problem by allocating blocks
+            of memory of constant sizes of 16, 24, 32, 48, 64, 80, 96 and 128 bytes. Having only a limited number of possible sizes lets
+            the allocator choose the free block faster, and keeps the fragmentation to a minimum. If a block is more that 128 bytes, it's
+            allocated in a general heap list, which means a slower allocation and more fragmentation. You can inspect the heap fragmentation
+            by reviewing the Bins or Bands graphs. An indication of an unhealthy fragmentation occurs when there is growth of free blocks
+            of a smaller size over a period of time.
+            
+         </p>
+         
+         
+         <p>
+            <strong>Block overhead</strong>
+            
+         </p>
+         
+         
+         <p>Block overhead is a side effect of combating heap fragmentation. Block overhead occurs when there is extra space in the heap
+            block; it is the difference between the user requested allocation size and actual block size. You can inspect Block overhead
+            using the Memory Analysis tool:
+            
+         </p>
+         
+         
+         <p>In the allocation table, you can see the size of the requested block (11) and the actual size allocated (16). You can also
+            estimate the overall impact of the block overhead by switching to the Usage page: 
+         </p>
+         
+         
+         <p>You can see in this example that current overhead is larger than the actual memory currently in use. Some techniques to avoid
+            block overhead are: 
+         </p>
+         
+         
+         <p>You should consider allocator band numbers, when choosing allocation size, particularly for predictive <tt>realloc()</tt>. This is the algorithm that can provide you with the next highest power or two for a given number <cite>m</cite> if it is less than 128, or a 128 divider if it is more than 128: 
+         </p>
+         
+         <pre class="codeblock" xml:space="preserve">int n;
+if (m &gt; 256) {
+n = ((m + 127) &gt;&gt; 7) &lt;&lt; 7;
+} else {
+n = m - 1;
+n = n | (n &gt;&gt; 1);
+n = n | (n &gt;&gt; 2);
+n = n | (n &gt;&gt; 4);
+n = n + 1;
+}</pre>
+         
+         <p>It will generate the following size sequence: 1,2,4,8,16,32,64,128,256,384,512,640, and so on. </p>
+         
+         
+         <p>You can attempt to optimize data structures to align with values of the allocator blocks (unless they are in an array). For
+            example, if you have a linked list in memory, and a data structure does not fit within 128 bytes, you should consider dividing
+            it into smaller chunks (which may require an additional allocation call), but it will improve both performance (since band
+            allocation is generally faster), and memory usage (since there is no need to worry about fragmentation). You can run the program
+            with the Memory Analysis tool enabled once again (using the same options), and compare the Usage chart to see if you've achieved
+            the desired results. You can observe how memory objects were distributed per block range using Bands page: 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/y_EstimatingAllocationSize_.xml_d108962e110.jpg" alt="Bands allocation to show memory usage" /></span>
+            
+         </p>
+         
+         
+         <p>This chart shows, for example, that at the end there were 85 used blocks of 128 bytes in a block list. You also can see the
+            number of free blocks by selecting a time range. 
+         </p>
+         
+         
+         <p>
+            <strong>Free blocks overhead</strong>
+            
+         </p>
+         
+         
+         <p>When you free memory using the <tt>free()</tt> function, memory is returned to the process pool, but it does not mean that the process will free it. When the process allocates
+            pages of physical memory, they are almost never returned. However, a page can be deallocated when the ratio of used pages
+            reaches the low water mark. Even in this case, a virtual page can be freed only if it consists entirely of free blocks.
+            
+         </p>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/memory_Memory_Optimization.html" shape="rect">Memory optimization</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/memory_ProcessMem_.html" shape="rect">Process memory</a></div>
+            
+            <div><a href="../topic/memory_Performance_Of_Heap_Allocations.html" shape="rect">Performance of heap allocations</a></div>
+            
+            <div><a href="../topic/memory_analyzingallocpatterns_.html" shape="rect">Analyzing allocation patterns</a></div>
+            
+            <div><a href="../topic/memory_OptHeapMem_.html" shape="rect">Optimizing heap memory</a></div>
+            
+            <div><a href="../topic/memory_AllocationOverhead_.html" shape="rect">Types of allocation overhead</a></div>
+            
+            <div><a href="../topic/memory_TuningAllocator_.html" shape="rect">Tuning the allocator</a></div>
+            
+            <div><a href="../topic/memory_OptstaticStackMem_.html" shape="rect">Optimizing static and stack memory</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

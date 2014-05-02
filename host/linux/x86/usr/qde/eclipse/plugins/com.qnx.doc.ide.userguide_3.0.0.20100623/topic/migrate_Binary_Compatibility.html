@@ -1,0 +1,112 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Binary compatibility" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_630sp2_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_642_General_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_640_migandco_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_640_compilers_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_640_CDTImpact_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_640_installLoc_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_640_switch_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_640_reset_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_640_console_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/migrate_issues_640_revert_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Migrate_Binary_Compatibility" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Binary compatibility</title>
+   </head>
+   <body id="Migrate_Binary_Compatibility"><a name="Migrate_Binary_Compatibility" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Binary compatibility</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>When migrating, you need to be aware of the following information:</p>
+         
+         <br clear="none" /><ul>
+            <li>Binaries created with QNX Momentics 6.3.x should be compatible with 6.5.0, but note that the same C++ ABI change between <span class="cmdname">gcc</span> 2.95.3 and 3.3.5 exists between 2.95.3 and 4.4.1. 
+            </li>
+            <li>Older C++ binaries linked against <span class="filepath">libcpp.so.3</span> and <span class="filepath">libstc++.so.5</span> will continue to work because we ship those legacy C++ libraries in 6.5.0. You can't link old C++ libraries into new C++
+               programs.
+            </li>
+            <li>Serial drivers are statically linked, so there's no issue running binaries from 6.5.0 on 6.3.x. If you want to compile a 6.5.0
+               serial driver on 6.3.x, you'll need the 6.5.0 versions of <span class="filepath">libio-char.a</span>, &lt;io-char.h&gt;, and <span class="filepath">dcmd_chr.h</span>.
+            </li>
+            <li>Since <span class="cmdname">gcc</span> modified the way it handles its runtime support routines, we've had to change the version number of <span class="filepath">libc.so</span> to version <span class="filepath">3</span> to support old binaries on a 6.5.0 system. This means that binaries created with QNX Momentics 6.3.x should be compatible
+               with version 6.5.0; however, you'll need to update your buildfiles because the version number of <span class="filepath">libc.so</span> was incremented to 3 in order to support these older binaries. 
+               <p>To use the new version of <span class="filepath">libc.so</span>, you'll need to update your buildfiles to use <span class="filepath">libc.so.3</span> instead of <span class="filepath">libc.so.2</span>. For additional information, see the Release Notes.
+               </p>
+               
+            </li>
+            <li>All 6.3.x driver binaries should be compatible with 6.5.0, except audio (<samp class="codeph">deva-*</samp>), block I/O (<samp class="codeph">devb-*</samp>), and graphics (<samp class="codeph">devg-*</samp>) drivers. The audio and block I/O drivers should compile on 6.5.0 with minor code changes. The 6.5.0 graphics drivers run
+               on top of io-display instead of on Photon. 
+            </li>
+         </ul>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/migrate_issues_630sp2_.html" shape="rect">Migration issues</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/migrate_issues_642_General_.html" shape="rect">General migration considerations</a></div>
+            
+            <div><a href="../topic/migrate_issues_640_migandco_.html" shape="rect">Coexistence</a></div>
+            
+            <div><a href="../topic/migrate_issues_640_compilers_.html" shape="rect">Compiler issues</a></div>
+            
+            <div><a href="../topic/migrate_issues_640_CDTImpact_.html" shape="rect">CDT impact on the IDE</a></div>
+            
+            <div><a href="../topic/migrate_issues_640_installLoc_.html" shape="rect">IDE location</a></div>
+            
+            <div><a href="../topic/migrate_issues_640_reset_.html" shape="rect">Missing features in context menus</a></div>
+            
+            <div><a href="../topic/migrate_issues_640_revert_.html" shape="rect">Reverting to an older version of the IDE</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/migrate_issues_640_switch_.html" shape="rect">Old launch configurations don't switch perspectives automatically</a></div>
+            
+            <div><a href="../topic/migrate_issues_640_console_.html" shape="rect">System Builder Console doesn't come to front</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

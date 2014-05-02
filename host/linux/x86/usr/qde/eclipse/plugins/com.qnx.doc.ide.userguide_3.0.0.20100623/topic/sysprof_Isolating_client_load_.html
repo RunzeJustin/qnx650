@@ -1,0 +1,197 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Mapping and isolating client CPU load from server CPU load" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_Use_cases_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="MappingandisolatingclientCPUloadfromserverCPUload" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Mapping and isolating client CPU load from server CPU load</title>
+   </head>
+   <body id="MappingandisolatingclientCPUloadfromserverCPUload"><a name="MappingandisolatingclientCPUloadfromserverCPUload" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Mapping and isolating client CPU load from server CPU load</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>There are many cases where high CPU load is traced back to server activity. However, in
+            most cases what is required to reduce this CPU load isn't to make the servers more
+            efficient, but to look more closely at the client activity that is causing the servers
+            to run. 
+         </p>
+         
+         
+         <p>
+            <strong>Requirements</strong>
+            
+         </p>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> Make sure you've read and understood
+            <a href="sysprof_High_CPU_usage_.html" shape="rect">Locating sources of high CPU usage</a> before examining this use
+            case.
+         </div>
+         
+         
+         <p>In addition to the Neutrino RUNNING thread state, the log must contain the communication
+            events SEND/RECEIVE/REPLY|ERROR. These communication events are used to establish the
+            relationship between clients and servers. 
+         </p>
+         
+         
+         <p>
+            <strong>Procedure</strong>
+            
+         </p>
+         
+         
+         <p>QNX Neutrino systems rely heavily on client/server communications most often performed
+            via message passing. In these systems, clients send requests to servers asking them to
+            do work on their behalf such as shown: 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/prof_Isolating_client_load_.xml_d177263e43.jpg" alt="System Profiler: servers and clients" /></span>
+            
+         </p>
+         
+         
+         <p>Here, A's real CPU usage would be considered to be 2 units of time, B's as 10, and C's as
+            2 units of time. Since B and C are both acting as servers, they really execute only when
+            there are clients generating requests for action. Most standard CPU Usage metrics don't
+            take this type of on behalf of work into consideration. However, if the goal of a kernel
+            log file investigation is to locate the source or sources of CPU load, then this type of
+            metric is invaluable in assigning blame for high CPU usage. 
+         </p>
+         
+         
+         <p>The System Profiler provides the Client/Server CPU Statistics view to help extract this
+            type of on behalf of metric. You can activate this view via the <span class="menucascade">
+               <span class="uicontrol">Window</span>
+               &gt; <span class="uicontrol">Show View</span>
+               &gt; <span class="uicontrol">Other…</span>
+               &gt; <span class="uicontrol">Client/Server CPU Statistics</span>
+               </span>. 
+         </p>
+         
+         
+         <p>Once activated, the Client/Server CPU Statistics are gathered on demand, by default,
+            targeting the full range of the target log file: 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/prof_Isolating_client_load_.xml_d177263e76.jpg" alt="System Profiler: Gather statistics" /></span>
+            
+         </p>
+         
+         
+         <p>The default display of this view shows the simplified view that displays the RUNNING time
+            (slightly different from the CPU Usage in that it doesn't remove the time spent
+            interrupted by interrupt handlers) that CPU consumers are consuming directly,
+            indirectly, and summed together as a total: 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/prof_Isolating_client_load_.xml_d177263e89.jpg" alt="System Profiler: RUNNING time" /></span>
+            
+         </p>
+         
+         
+         <p>In this case, it's clear that while the <cite>qconn- Thread 1</cite> isn't consuming much
+            CPU on its own, it's imposing a significant amount of time on the system indirectly. If
+            you compare this data to what the CPU Usage editor pane displays, you'll see the
+            difference in what's reported: 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/prof_Isolating_client_load_.xml_d177263e104.jpg" alt="System Profiler: qconn Thread 1" /></span>
+            
+         </p>
+         
+         
+         <p>In the CPU Usage table, <cite>procnto- Thread 8</cite> ranks ahead of <cite>qconn- Thread
+               1</cite> in its usage. However, <span class="cmdname">proncto</span> is a pure server process, so we
+            know that it consumes no CPU resources without being solicited to do so. We suspect that
+            perhaps <cite>qconn- Thread 1</cite> is driving <cite>procnto- Thread 1</cite>. 
+         </p>
+         
+         
+         <p>We can confirm this suspicion by looking at which servers <cite>qconn- Thread 1</cite> is
+            imposing CPU usage on. You can configure the Client/Server CPU Usage view to display all
+            of the CPU consumers that are being imposed on (and by whom) by selecting <span class="uicontrol">Show all times</span> from the view's dropdown menu: 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/prof_Isolating_client_load_.xml_d177263e141.jpg" alt="System Profiler: Show all times" /></span>
+            
+         </p>
+         
+         
+         <p>The Client/Server CPU Usage view table changes to show all of the imposed-on servers that
+            clients are communicating with. The servers are listed in the columns and the clients in
+            the Owner column. Note that this may result in a table with many columns (imposed on
+            servers): 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/prof_Isolating_client_load_.xml_d177263e153.jpg" alt="System Profiler: imposed-on servers" /></span>
+            
+         </p>
+         
+         
+         <p>Here we can see that in fact nearly all of the time that <cite>procnto- Thread 8</cite>
+            is spending consuming CPU is due to requests coming from <cite>qconn- Thread 1</cite>,
+            with only a minimal amount being imposed on it by another <span class="cmdname">qconn</span> thread, <cite>qconn- Thread 6</cite>. 
+         </p>
+         
+         
+         <p>This is to be expected, since in order to query the system, the <span class="cmdname">qconn</span> process
+            must communicate with the kernel to extract the system state and all the process and
+            thread information. 
+         </p>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/sysprof_Use_cases_.html" shape="rect">System Profiler use cases</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

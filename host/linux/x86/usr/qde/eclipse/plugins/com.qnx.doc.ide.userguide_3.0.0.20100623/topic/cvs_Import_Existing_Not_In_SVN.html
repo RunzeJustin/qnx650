@@ -1,0 +1,159 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="task" />
+      <meta name="DC.Title" content="Importing C/C++ code that doesn't have the project metadata for SVN" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/cvs_Importing_code_into_the_IDE_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="ImportingCPPNotInSVN" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Importing C/C++ code that doesn't have the project metadata for SVN</title>
+   </head>
+   <body id="ImportingCPPNotInSVN"><a name="ImportingCPPNotInSVN" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Importing C/C++ code that doesn't have the project metadata for SVN</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <div class="section">
+            
+            <p>To check out existing C/C++ code that doesn't have the project metadata for SVN:</p>
+            
+            
+         </div>
+         
+         
+         <ol>
+            <li class="stepexpand">
+               <span>Right-click the module or directory in the SVN Repositories view, and choose <span class="uicontrol">Find/Check Out As…</span> from the menu.</span>
+               
+               
+               <p>The IDE shows the Check Out As wizard: </p>
+               
+               
+               <p>
+                  <span><img src="../images/_Import_Existing_Not_In_SVN.xml_d34943e39.jpg" alt="Find/Check Out As" /></span>
+                  
+               </p>
+               
+               
+               
+            </li>
+            <li class="stepexpand">
+               <span>&gt; Choose how to check out this project:</span>
+               
+               
+               <table border="1" frame="hsides" rules="rows" cellpadding="4" cellspacing="0" summary="" class="choicetableborder">
+                  <thead>
+                     <tr>
+                        <th id="d34943e53-option" valign="bottom" align="left" rowspan="1" colspan="1">Option</th>
+                        <th id="d34943e53-desc" valign="bottom" align="left" rowspan="1" colspan="1">Description</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td valign="top" headers="d34943e53-option" id="d34943e57" rowspan="1" colspan="1"><strong>A project</strong></td>
+                        <td valign="top" headers="d34943e53-desc d34943e57" rowspan="1" colspan="1">As a project configured using the New Project wizard</td>
+                     </tr>
+                     <tr>
+                        <td valign="top" headers="d34943e53-option" id="d34943e66" rowspan="1" colspan="1"><strong>A new project</strong></td>
+                        <td valign="top" headers="d34943e53-desc d34943e66" rowspan="1" colspan="1">As a new project in the workspace</td>
+                     </tr>
+                     <tr>
+                        <td valign="top" headers="d34943e53-option" id="d34943e75" rowspan="1" colspan="1"><strong>A C/C++ project</strong></td>
+                        <td valign="top" headers="d34943e53-desc d34943e75" rowspan="1" colspan="1">As a C/C++ Project – when you need to create your own <span class="filepath">Makefile</span> to integrate with an existing build process
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+               
+            </li>
+            <li class="stepexpand">
+               <span>Select the <span class="uicontrol">Checkout recursively</span> and <span class="uicontrol">Ignore externals</span> options, if required. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Click <span class="uicontrol">Next</span>. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Select the project location. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Click <span class="uicontrol">Finish</span>. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span> If you're creating or checking out a QNX project:</span>
+               
+               <ol type="a">
+                  <li class="substepexpand">
+                     <span> Right-click the new project in the Project Explorer view, select <span class="uicontrol">Properties</span>, and then click on <span class="uicontrol">QNX C/C ++ Project</span> on the left. </span>
+                     
+                  </li>
+                  <li class="substepexpand">
+                     <span> Click the <span class="uicontrol">Build Variants</span> tab, which shows a warning: </span>
+                     
+                     
+                     <p>
+                        <span><img src="../images/_Import_Existing_Not_In_SVN.xml_d34943e155.jpg" alt="At least one platform should be selected" /></span>
+                        
+                     </p>
+                     
+                     
+                     
+                  </li>
+                  <li class="substepexpand">
+                     <span> Select the build variants that are already present in the project's folder structure, then click <span class="uicontrol">OK</span>. </span>
+                     
+                  </li>
+               </ol>
+               
+               
+            </li>
+            <li class="stepexpand">
+               <span> If you're creating a <span class="cmdname">Makefile</span> C/C++ project, create a new <span class="filepath">Makefile</span> with appropriate <samp class="codeph">all:</samp> and <samp class="codeph">clean:</samp> targets. </span>
+               
+            </li>
+         </ol>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/cvs_Importing_code_into_the_IDE_.html" shape="rect">Importing code into the IDE</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

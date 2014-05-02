@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Building Custom Widgets">
+      <topic label="About This Manual" href="about.html">
+          <topic label="Typographical conventions" href="about.html#id3">
+            <topic label="Note to Windows users" href="about.html#WINDOWSNOTE"/>
+            <topic label="Navigation buttons" href="about.html#Navigation"/>
+          </topic>
+          <topic label="Technical support" href="about.html#id7"/>
+      </topic>
+      <topic label="Overview" href="overview.html">
+          <topic label="Subclassing widgets" href="overview.html#SUBCLASSING"/>
+          <topic label="Design considerations" href="overview.html#DESIGN"/>
+          <topic label="A quick look at a widget" href="overview.html#QUICKLOOK">
+            <topic label="Widget header file" href="overview.html#WidgetHeaderFile">
+              <topic label="Instance structure members" href="overview.html#id7"/>
+            </topic>
+            <topic label="Widget source file" href="overview.html#WidgetSourceFile">
+              <topic label="Class structure members" href="overview.html#id10"/>
+            </topic>
+          </topic>
+          <topic label="Types of widgets" href="overview.html#TYPES">
+            <topic label="Class hierarchy" href="overview.html#id13"/>
+            <topic label="Basic widgets" href="overview.html#id15"/>
+            <topic label="Container widgets" href="overview.html#id17"/>
+            <topic label="Compound widgets" href="overview.html#id19"/>
+          </topic>
+      </topic>
+      <topic label="Life Cycle of a Widget" href="lifewidg.html">
+          <topic label="All widgets" href="lifewidg.html#AllWidgets"/>
+          <topic label="Basic widgets" href="lifewidg.html#BASIC">
+            <topic label="Instantiating the widget" href="lifewidg.html#id5">
+              <topic label="Creating and initializing the widget class" href="lifewidg.html#id7"/>
+              <topic label="Setting default values" href="lifewidg.html#id9"/>
+              <topic label="Setting application resources" href="lifewidg.html#id11"/>
+            </topic>
+            <topic label="Realizing a widget instance" href="lifewidg.html#id13">
+              <topic label="Processing methods" href="lifewidg.html#id15"/>
+              <topic label="Initialization method" href="lifewidg.html#id17"/>
+              <topic label="Extent method" href="lifewidg.html#id19"/>
+              <topic label="Connection method" href="lifewidg.html#id21"/>
+              <topic label="Realization method" href="lifewidg.html#id23"/>
+              <topic label="Draw method" href="lifewidg.html#id25"/>
+            </topic>
+            <topic label="After realizing a widget" href="lifewidg.html#id27"/>
+            <topic label="Destroying a widget" href="lifewidg.html#id29">
+              <topic label="Unrealization method" href="lifewidg.html#id31"/>
+              <topic label="Destruction method" href="lifewidg.html#id33"/>
+              <topic label="Other methods" href="lifewidg.html#id35"/>
+            </topic>
+          </topic>
+          <topic label="Container widgets" href="lifewidg.html#CONTAINER">
+            <topic label="Child constraints" href="lifewidg.html#id38"/>
+            <topic label="Child redirection" href="lifewidg.html#id40"/>
+          </topic>
+          <topic label="Compound widgets" href="lifewidg.html#COMPOUND">
+            <topic label="Exporting subordinate widgets" href="lifewidg.html#id43"/>
+          </topic>
+      </topic>
+      <topic label="Anatomy of a Widget" href="anatomy.html">
+          <topic label="Defining resources" href="anatomy.html#DEFINERESEOURCES">
+            <topic label="Resource manifests" href="anatomy.html#id4"/>
+            <topic label="PtResourceRec_t resource records" href="anatomy.html#PtResourceRectStructure">
+              <topic label="type member" href="anatomy.html#TypeMember"/>
+              <topic label="mod_f member" href="anatomy.html#ModfMember"/>
+              <topic label="query_f member" href="anatomy.html#QueryfMember"/>
+              <topic label="arg_value and arg_len members" href="anatomy.html#ArgValueAndLenMembers">
+                <topic label="Scalar resources" href="anatomy.html#id11"/>
+                <topic label="Flags resources" href="anatomy.html#id13"/>
+                <topic label="String resources" href="anatomy.html#id15"/>
+                <topic label="Struct resources" href="anatomy.html#id17"/>
+                <topic label="Pointer resources" href="anatomy.html#id19"/>
+                <topic label="Alloc resources" href="anatomy.html#id21"/>
+                <topic label="Link resources" href="anatomy.html#id23"/>
+                <topic label="Callback resources" href="anatomy.html#id25"/>
+                <topic label="Boolean resources" href="anatomy.html#id27"/>
+                <topic label="Array resources" href="anatomy.html#id29"/>
+                <topic label="Image resources" href="anatomy.html#id31"/>
+              </topic>
+              <topic label="Examples" href="anatomy.html#Examples"/>
+            </topic>
+          </topic>
+          <topic label="Defining the widget class" href="anatomy.html#DEFINECLASS">
+            <topic label="Widget class structure" href="anatomy.html#id35">
+              <topic label="Widget class structure description" href="anatomy.html#id37"/>
+            </topic>
+            <topic label="Widget class resource table" href="anatomy.html#WidgetClassResource"/>
+            <topic label="PtBasic class resource additions" href="anatomy.html#id40"/>
+          </topic>
+          <topic label="Class methods" href="anatomy.html#CLASSMETHODS">
+            <topic label="Defaults method" href="anatomy.html#DefaultsMethod"/>
+            <topic label="Initialization method" href="anatomy.html#InitializationMethod"/>
+            <topic label="Extent method" href="anatomy.html#ExtentMethod"/>
+            <topic label="Connection method" href="anatomy.html#ConnectionMethod"/>
+            <topic label="Realization method" href="anatomy.html#RealizationMethod"/>
+            <topic label="Draw method" href="anatomy.html#DrawMethod">
+              <topic label="Using the Pg library safely" href="anatomy.html#UsingPgLibrary"/>
+            </topic>
+            <topic label="Unrealization method" href="anatomy.html#UnrealizationMethod"/>
+            <topic label="Destruction method" href="anatomy.html#DestructionMethod"/>
+            <topic label="Set Resources method" href="anatomy.html#SetResourcesMethod"/>
+            <topic label="Get Resources method" href="anatomy.html#GetResourcesMethod"/>
+            <topic label="Got Focus method" href="anatomy.html#GotFocusMethod"/>
+            <topic label="Lost Focus method" href="anatomy.html#LostFocusMethod"/>
+            <topic label="Calc Opaque Rect method" href="anatomy.html#CalcOpaqueRectMethod"/>
+          </topic>
+          <topic label="Widget actions" href="anatomy.html#ACTIONS">
+            <topic label="Raw callback list" href="anatomy.html#id58"/>
+          </topic>
+          <topic label="Container widget anatomy" href="anatomy.html#CONTAINERANATOMY">
+            <topic label="Child-constraint support" href="anatomy.html#id61">
+              <topic label="Child Created method" href="anatomy.html#id63"/>
+              <topic label="Child Realizing method" href="anatomy.html#id65"/>
+              <topic label="Child Realized method" href="anatomy.html#id67"/>
+              <topic label="Child Moved/Resized method" href="anatomy.html#id69"/>
+              <topic label="Child Unrealizing method" href="anatomy.html#id71"/>
+              <topic label="Child Unrealized method" href="anatomy.html#id73"/>
+              <topic label="Child Destroyed method" href="anatomy.html#id75"/>
+              <topic label="Child Setting Resource method" href="anatomy.html#id77"/>
+              <topic label="Child Getting Resource method" href="anatomy.html#id79"/>
+              <topic label="Child Getting Focus method" href="anatomy.html#id81"/>
+              <topic label="Child Losing Focus method" href="anatomy.html#id83"/>
+              <topic label="Child Redirection method" href="anatomy.html#ContainerRedirectorFunction"/>
+            </topic>
+            <topic label="Fundamental methods" href="anatomy.html#id86">
+              <topic label="Defaults method" href="anatomy.html#id88"/>
+              <topic label="Extent method" href="anatomy.html#id90"/>
+              <topic label="Realization method" href="anatomy.html#id92"/>
+            </topic>
+          </topic>
+          <topic label="Compound widget anatomy" href="anatomy.html#COMPOUNDANATOMY">
+            <topic label="Blocking resources" href="anatomy.html#id95"/>
+            <topic label="Compound redirection" href="anatomy.html#CompoundRedirection"/>
+            <topic label="Fundamental methods" href="anatomy.html#id98">
+              <topic label="Defaults method" href="anatomy.html#CompoundDefaultsMethod"/>
+              <topic label="Realization method" href="anatomy.html#id101"/>
+              <topic label="Get Resources and Set Resources methods" href="anatomy.html#id103"/>
+              <topic label="Destruction method" href="anatomy.html#id105"/>
+            </topic>
+          </topic>
+      </topic>
+      <topic label="Using Widget Superclasses" href="superclass.html">
+          <topic label="PtWidget" href="superclass.html#PTWIDGET">
+            <topic label="Class hierarchy" href="superclass.html#id4"/>
+            <topic label="Class flags" href="superclass.html#id6"/>
+            <topic label="Methods" href="superclass.html#id8">
+              <topic label="Defaults method" href="superclass.html#id10"/>
+              <topic label="Initialization method" href="superclass.html#id12"/>
+              <topic label="Extent method" href="superclass.html#id14"/>
+              <topic label="Connection method" href="superclass.html#id16"/>
+              <topic label="Realization method" href="superclass.html#id18"/>
+              <topic label="Unrealization method" href="superclass.html#id20"/>
+              <topic label="Destruction method" href="superclass.html#id22"/>
+            </topic>
+            <topic label="Widget actions" href="superclass.html#id24"/>
+            <topic label="Resource definitions" href="superclass.html#id26"/>
+            <topic label="Functions" href="superclass.html#id28"/>
+          </topic>
+          <topic label="PtBasic" href="superclass.html#PTBASIC">
+            <topic label="Class hierarchy" href="superclass.html#id31"/>
+            <topic label="Class extensions" href="superclass.html#id33"/>
+            <topic label="Methods" href="superclass.html#id35">
+              <topic label="Defaults method" href="superclass.html#id37"/>
+              <topic label="Initialization method" href="superclass.html#id39"/>
+              <topic label="Extent method" href="superclass.html#id41"/>
+              <topic label="Connection method" href="superclass.html#id43"/>
+              <topic label="Realization method" href="superclass.html#id45"/>
+              <topic label="Draw method" href="superclass.html#id47"/>
+              <topic label="Unrealization method" href="superclass.html#id49"/>
+              <topic label="Destruction method" href="superclass.html#id51"/>
+              <topic label="Got Focus method" href="superclass.html#id53"/>
+              <topic label="Lost Focus method" href="superclass.html#id55"/>
+              <topic label="Calc Opaque Rect method" href="superclass.html#id57"/>
+            </topic>
+            <topic label="Widget actions" href="superclass.html#id59"/>
+            <topic label="Resource definitions" href="superclass.html#id61"/>
+            <topic label="Functions" href="superclass.html#id63"/>
+          </topic>
+          <topic label="PtContainer" href="superclass.html#PTCONTAINER">
+            <topic label="Class hierarchy" href="superclass.html#id66"/>
+            <topic label="Class extensions" href="superclass.html#id68"/>
+            <topic label="Methods" href="superclass.html#id70">
+              <topic label="Defaults method" href="superclass.html#id72"/>
+              <topic label="Initialization method" href="superclass.html#id74"/>
+              <topic label="Extent method" href="superclass.html#id76"/>
+              <topic label="Connection method" href="superclass.html#id78"/>
+              <topic label="Realization method" href="superclass.html#id80"/>
+              <topic label="Draw method" href="superclass.html#id82"/>
+              <topic label="Unrealization method" href="superclass.html#id84"/>
+              <topic label="Destruction method" href="superclass.html#id86"/>
+              <topic label="Got Focus method" href="superclass.html#id88"/>
+              <topic label="Lost Focus method" href="superclass.html#id90"/>
+              <topic label="Calc Opaque Rect method" href="superclass.html#id92"/>
+              <topic label="Child Created method" href="superclass.html#id94"/>
+              <topic label="Child Realized/Unrealized method" href="superclass.html#id96"/>
+              <topic label="Child Moved/Resized method" href="superclass.html#id98"/>
+              <topic label="Child Destroyed method" href="superclass.html#id100"/>
+              <topic label="Child Setting Resources method" href="superclass.html#id102"/>
+              <topic label="Child Getting Resources method" href="superclass.html#id104"/>
+              <topic label="Child Getting Focus method" href="superclass.html#id106"/>
+              <topic label="Child Losing Focus method" href="superclass.html#id108"/>
+            </topic>
+            <topic label="Widget actions" href="superclass.html#id110"/>
+            <topic label="Resource definitions" href="superclass.html#id112"/>
+            <topic label="Functions" href="superclass.html#id114"/>
+          </topic>
+          <topic label="PtCompound" href="superclass.html#PTCOMPOUND">
+            <topic label="Class hierarchy" href="superclass.html#id117"/>
+            <topic label="Class extensions" href="superclass.html#id119"/>
+            <topic label="Methods" href="superclass.html#id121">
+              <topic label="Defaults method" href="superclass.html#id123"/>
+              <topic label="Initialization method" href="superclass.html#id125"/>
+              <topic label="Extent method" href="superclass.html#id127"/>
+              <topic label="Connection method" href="superclass.html#id129"/>
+              <topic label="Realization method" href="superclass.html#id131"/>
+              <topic label="Draw method" href="superclass.html#id133"/>
+              <topic label="Unrealization method" href="superclass.html#id135"/>
+              <topic label="Destruction method" href="superclass.html#id137"/>
+              <topic label="Got Focus method" href="superclass.html#id139"/>
+              <topic label="Lost Focus method" href="superclass.html#id141"/>
+              <topic label="Calc Opaque Rect method" href="superclass.html#id143"/>
+            </topic>
+            <topic label="Widget actions" href="superclass.html#id145"/>
+            <topic label="Resource definitions" href="superclass.html#id147"/>
+            <topic label="Functions" href="superclass.html#id149"/>
+          </topic>
+          <topic label="PtGenList" href="superclass.html#PTGENLIST">
+            <topic label="Class hierarchy" href="superclass.html#id152"/>
+            <topic label="Class extensions" href="superclass.html#id154"/>
+            <topic label="Methods" href="superclass.html#id156">
+              <topic label="Defaults method" href="superclass.html#id158"/>
+              <topic label="Initialization method" href="superclass.html#id160"/>
+              <topic label="Extent method" href="superclass.html#id162"/>
+              <topic label="Connection method" href="superclass.html#id164"/>
+              <topic label="Realization method" href="superclass.html#id166"/>
+              <topic label="Draw method" href="superclass.html#id168"/>
+              <topic label="Unrealization method" href="superclass.html#id170"/>
+              <topic label="Destruction method" href="superclass.html#id172"/>
+              <topic label="Got Focus method" href="superclass.html#id174"/>
+              <topic label="Lost Focus method" href="superclass.html#id176"/>
+              <topic label="Calc Opaque Rect method" href="superclass.html#id178"/>
+              <topic label="Child Created method" href="superclass.html#id180"/>
+              <topic label="Child Realized method" href="superclass.html#id182"/>
+              <topic label="Child Moved/Resized method" href="superclass.html#id184"/>
+              <topic label="Child Unrealized method" href="superclass.html#id186"/>
+              <topic label="Child Destroyed method" href="superclass.html#id188"/>
+              <topic label="Child Setting Resources method" href="superclass.html#id190"/>
+              <topic label="Child Getting Resources method" href="superclass.html#id192"/>
+              <topic label="Child Getting Focus method" href="superclass.html#id194"/>
+              <topic label="Child Losing Focus method" href="superclass.html#id196"/>
+              <topic label="List Draw method" href="superclass.html#id198"/>
+              <topic label="List Mouse method" href="superclass.html#id200"/>
+              <topic label="List Key method" href="superclass.html#id202"/>
+              <topic label="List Select method" href="superclass.html#id204"/>
+              <topic label="List Inflate method" href="superclass.html#id206"/>
+              <topic label="List Attributes method" href="superclass.html#id208"/>
+            </topic>
+            <topic label="Widget actions" href="superclass.html#id210"/>
+            <topic label="Resource definitions" href="superclass.html#id212"/>
+            <topic label="Functions" href="superclass.html#id214"/>
+          </topic>
+          <topic label="PtGenTree" href="superclass.html#PTGENTREE">
+            <topic label="Class hierarchy" href="superclass.html#id217"/>
+            <topic label="Class extensions" href="superclass.html#id219"/>
+            <topic label="Methods" href="superclass.html#id221">
+              <topic label="Defaults method" href="superclass.html#id223"/>
+              <topic label="Initialization method" href="superclass.html#id225"/>
+              <topic label="Extent method" href="superclass.html#id227"/>
+              <topic label="Connection method" href="superclass.html#id229"/>
+              <topic label="Realization method" href="superclass.html#id231"/>
+              <topic label="Draw method" href="superclass.html#id233"/>
+              <topic label="Unrealization method" href="superclass.html#id235"/>
+              <topic label="Destruction method" href="superclass.html#id237"/>
+              <topic label="Got Focus method" href="superclass.html#id239"/>
+              <topic label="Lost Focus method" href="superclass.html#id241"/>
+              <topic label="Calc Opaque Rect method" href="superclass.html#id243"/>
+              <topic label="Child Created method" href="superclass.html#id245"/>
+              <topic label="Child Realized method" href="superclass.html#id247"/>
+              <topic label="Child Moved/Resized method" href="superclass.html#id249"/>
+              <topic label="Child Unrealized method" href="superclass.html#id251"/>
+              <topic label="Child Destroyed method" href="superclass.html#id253"/>
+              <topic label="Child Setting Resources method" href="superclass.html#id255"/>
+              <topic label="Child Getting Resources method" href="superclass.html#id257"/>
+              <topic label="Child Getting Focus method" href="superclass.html#id259"/>
+              <topic label="Child Losing Focus method" href="superclass.html#id261"/>
+              <topic label="List Draw method" href="superclass.html#id263"/>
+              <topic label="List Mouse method" href="superclass.html#id265"/>
+              <topic label="List Key method" href="superclass.html#id267"/>
+              <topic label="Tree Draw Item method" href="superclass.html#id269"/>
+              <topic label="Tree Item State method" href="superclass.html#id271"/>
+            </topic>
+            <topic label="Widget actions" href="superclass.html#id273"/>
+            <topic label="Resource definitions" href="superclass.html#id275"/>
+            <topic label="Functions" href="superclass.html#id277"/>
+          </topic>
+          <topic label="PtLabel" href="superclass.html#PTLABEL">
+            <topic label="Class hierarchy" href="superclass.html#id280"/>
+            <topic label="Methods" href="superclass.html#id282">
+              <topic label="Defaults method" href="superclass.html#id284"/>
+              <topic label="Initialization method" href="superclass.html#id286"/>
+              <topic label="Extent method" href="superclass.html#id288"/>
+              <topic label="Connection method" href="superclass.html#id290"/>
+              <topic label="Realization method" href="superclass.html#id292"/>
+              <topic label="Draw method" href="superclass.html#id294"/>
+              <topic label="Unrealization method" href="superclass.html#id296"/>
+              <topic label="Got focus method" href="superclass.html#id298"/>
+              <topic label="Lost Focus method" href="superclass.html#id300"/>
+              <topic label="Calc Opaque Rect method" href="superclass.html#id302"/>
+            </topic>
+            <topic label="Widget actions" href="superclass.html#id304"/>
+            <topic label="Resource definitions" href="superclass.html#id306"/>
+            <topic label="Functions" href="superclass.html#id308"/>
+          </topic>
+          <topic label="PtGraphic" href="superclass.html#PTGRAPHIC">
+            <topic label="Class hierarchy" href="superclass.html#id311"/>
+            <topic label="Methods" href="superclass.html#id313">
+              <topic label="Defaults method" href="superclass.html#id315"/>
+              <topic label="Initialization method" href="superclass.html#id317"/>
+              <topic label="Extent method" href="superclass.html#id319"/>
+              <topic label="Connection method" href="superclass.html#id321"/>
+              <topic label="Realization method" href="superclass.html#id323"/>
+              <topic label="Draw method" href="superclass.html#id325"/>
+              <topic label="Unrealization method" href="superclass.html#id327"/>
+              <topic label="Destruction method" href="superclass.html#id329"/>
+              <topic label="Got Focus method" href="superclass.html#id331"/>
+              <topic label="Lost Focus method" href="superclass.html#id333"/>
+              <topic label="Calc Opaque Rect method" href="superclass.html#id335"/>
+            </topic>
+            <topic label="Widget actions" href="superclass.html#id337"/>
+            <topic label="Resource definitions" href="superclass.html#id339"/>
+            <topic label="Functions" href="superclass.html#id341"/>
+          </topic>
+          <topic label="PtGauge" href="superclass.html#PTGAUGE">
+            <topic label="Class hierarchy" href="superclass.html#id344"/>
+            <topic label="Methods" href="superclass.html#id346">
+              <topic label="Defaults method" href="superclass.html#id348"/>
+              <topic label="Initialization method" href="superclass.html#id350"/>
+              <topic label="Extent method" href="superclass.html#id352"/>
+              <topic label="Connection method" href="superclass.html#id354"/>
+              <topic label="Realization method" href="superclass.html#id356"/>
+              <topic label="Draw method" href="superclass.html#id358"/>
+              <topic label="Unrealization method" href="superclass.html#id360"/>
+              <topic label="Destruction method" href="superclass.html#id362"/>
+              <topic label="Got Focus method" href="superclass.html#id364"/>
+              <topic label="Lost Focus method" href="superclass.html#id366"/>
+              <topic label="Calc Opaque Rect method" href="superclass.html#id368"/>
+            </topic>
+            <topic label="Widget actions" href="superclass.html#id370"/>
+            <topic label="Resource definitions" href="superclass.html#id372"/>
+            <topic label="Functions" href="superclass.html#id374"/>
+          </topic>
+      </topic>
+      <topic label="Creating a List Widget" href="list.html">
+          <topic label="Overview" href="list.html#OVERVIEW"/>
+          <topic label="Item structure" href="list.html#ItemStructure"/>
+          <topic label="Widget instance structure" href="list.html#WidgetInstanceStructure"/>
+          <topic label="Methods" href="list.html#Methods">
+            <topic label="List Draw method" href="list.html#DrawMethod"/>
+            <topic label="List Mouse method" href="list.html#MouseMethod"/>
+            <topic label="List Key method" href="list.html#KeyMethod"/>
+            <topic label="List Select method" href="list.html#SelectMethod"/>
+            <topic label="List Inflate method" href="list.html#InflateMethod"/>
+            <topic label="List Attributes method" href="list.html#AttrMethod"/>
+          </topic>
+          <topic label="Convenience functions" href="list.html#CONVENIENCE"/>
+          <topic label="PtSuperClassGenListDraw" href="libs/ptsuperclassgenlistdraw.html">
+            <topic label="Description:" href="libs/ptsuperclassgenlistdraw.html#id7"/>
+          </topic>
+          <topic label="PtSuperClassGenListInflate" href="libs/ptsuperclassgenlistinflate.html">
+            <topic label="Description:" href="libs/ptsuperclassgenlistinflate.html#id7"/>
+          </topic>
+          <topic label="PtSuperClassGenListKey" href="libs/ptsuperclassgenlistkey.html">
+            <topic label="Description:" href="libs/ptsuperclassgenlistkey.html#id7"/>
+          </topic>
+          <topic label="PtSuperClassGenListMouse" href="libs/ptsuperclassgenlistmouse.html">
+            <topic label="Description:" href="libs/ptsuperclassgenlistmouse.html#id7"/>
+          </topic>
+          <topic label="PtSuperClassGenListSelect" href="libs/ptsuperclassgenlistselect.html">
+            <topic label="Description:" href="libs/ptsuperclassgenlistselect.html#id7"/>
+          </topic>
+      </topic>
+      <topic label="Creating a Tree Widget" href="tree.html">
+          <topic label="Overview" href="tree.html#OVERVIEW"/>
+          <topic label="Item structure" href="tree.html#ItemStructure"/>
+          <topic label="Methods" href="tree.html#Methods">
+            <topic label="Tree Draw Item method" href="tree.html#DrawMethod"/>
+            <topic label="Tree Item State method" href="tree.html#TreeItemStateMethod"/>
+          </topic>
+          <topic label="Convenience functions" href="tree.html#CONVENIENCE"/>
+          <topic label="PtSuperClassGenTreeDrawItem" href="libs/ptsuperclassgentreedrawitem.html">
+            <topic label="Description:" href="libs/ptsuperclassgentreedrawitem.html#id7"/>
+          </topic>
+          <topic label="PtSuperClassGenTreeItemState" href="libs/ptsuperclassgentreeitemstate.html">
+            <topic label="Description:" href="libs/ptsuperclassgentreeitemstate.html#id7"/>
+          </topic>
+      </topic>
+      <topic label="Binding Widgets into PhAB" href="bind.html">
+          <topic label="Widget design considerations" href="bind.html#DesignConsiderations">
+            <topic label="Single-value resources" href="bind.html#SingleValueResources"/>
+            <topic label="When to add custom widgets to palette files" href="bind.html#WhenToAdd"/>
+            <topic label="Displaying your custom widget" href="bind.html#DisplayingCustomWidget"/>
+          </topic>
+          <topic label="Creating a shared object" href="bind.html#SharedObject"/>
+          <topic label="Creating a template" href="bind.html#Templates"/>
+          <topic label="Editing palette.def" href="bind.html#PaletteFile"/>
+          <topic label="Creating a widget description table" href="bind.html#WidgetDescriptionTable">
+            <topic label="Widget class name (w=)" href="bind.html#ClassName"/>
+            <topic label="Widget hierarchy (h=)" href="bind.html#Hierarchy"/>
+            <topic label="List of resources (r=)" href="bind.html#ListOfResources">
+              <topic label="Option and flag pairs" href="bind.html#OptionFlagPairs"/>
+              <topic label="Pointer-to-function resources" href="bind.html#PtrToFns"/>
+            </topic>
+            <topic label="List of callbacks (c=, k=, e=)" href="bind.html#ListOfCallbacks"/>
+            <topic label="Inherited resources and callbacks (i=, n=)" href="bind.html#InheritedResources"/>
+            <topic label="Base widget (b=)" href="bind.html#BaseWidget"/>
+            <topic label="Change class definition (q=)" href="bind.html#ChangeClass"/>
+            <topic label="Create-type definition (t=)" href="bind.html#CreateTypeDefinition"/>
+            <topic label="Cursor styles (s=)" href="bind.html#CursorStyles"/>
+            <topic label="Default values (d=)" href="bind.html#DefaultValues"/>
+          </topic>
+      </topic>
+      <topic label="Widget Building Library API" href="libs.html">
+          <topic label="PtAddWidgetData" href="libs/ptaddwidgetdata.html">
+            <topic label="Description:" href="libs/ptaddwidgetdata.html#id7"/>
+          </topic>
+          <topic label="PtAnchorDeregister" href="libs/ptanchorderegister.html">
+            <topic label="Description:" href="libs/ptanchorderegister.html#id7"/>
+          </topic>
+          <topic label="PtAnchorRegister" href="libs/ptanchorregister.html">
+            <topic label="Description:" href="libs/ptanchorregister.html#id7"/>
+          </topic>
+          <topic label="PtAnchorWidget" href="libs/ptanchorwidget.html">
+            <topic label="Description:" href="libs/ptanchorwidget.html#id7"/>
+          </topic>
+          <topic label="PtApplyAnchors" href="libs/ptapplyanchors.html">
+            <topic label="Description:" href="libs/ptapplyanchors.html#id7"/>
+          </topic>
+          <topic label="PtAttemptResize" href="libs/ptattemptresize.html">
+            <topic label="Description:" href="libs/ptattemptresize.html#id7"/>
+          </topic>
+          <topic label="PtCalcAnchorOffsets" href="libs/ptcalcanchoroffsets.html">
+            <topic label="Description:" href="libs/ptcalcanchoroffsets.html#id7"/>
+          </topic>
+          <topic label="PtCalcRegion" href="libs/ptcalcregion.html">
+            <topic label="Description:" href="libs/ptcalcregion.html#id7"/>
+          </topic>
+          <topic label="PtChildBoundingBox" href="libs/ptchildboundingbox.html">
+            <topic label="Description:" href="libs/ptchildboundingbox.html#id7"/>
+          </topic>
+          <topic label="PtClipAdd" href="libs/ptclipadd.html">
+            <topic label="Description:" href="libs/ptclipadd.html#id7"/>
+          </topic>
+          <topic label="PtClipRemove" href="libs/ptclipremove.html">
+            <topic label="Description:" href="libs/ptclipremove.html#id5"/>
+          </topic>
+          <topic label="PtCompoundRedirect" href="libs/ptcompoundredirect.html">
+            <topic label="Description:" href="libs/ptcompoundredirect.html#id7"/>
+          </topic>
+          <topic label="PtCoreChangeRegion" href="libs/ptcorechangeregion.html">
+            <topic label="Description:" href="libs/ptcorechangeregion.html#id7"/>
+          </topic>
+          <topic label="PtCreateWidgetClass" href="libs/ptcreatewidgetclass.html">
+            <topic label="Description:" href="libs/ptcreatewidgetclass.html#id7"/>
+            <topic label="Examples:" href="libs/ptcreatewidgetclass.html#id11"/>
+          </topic>
+          <topic label="PtDamageExposed" href="libs/ptdamageexposed.html">
+            <topic label="Description:" href="libs/ptdamageexposed.html#id7"/>
+            <topic label="Examples:" href="libs/ptdamageexposed.html#id9"/>
+          </topic>
+          <topic label="PtDestroyCallbackList" href="libs/ptdestroycallbacklist.html">
+            <topic label="Description:" href="libs/ptdestroycallbacklist.html#id7"/>
+          </topic>
+          <topic label="PtDestroyHotkeyCallbacks" href="libs/ptdestroyhotkeycallbacks.html">
+            <topic label="Description:" href="libs/ptdestroyhotkeycallbacks.html#id7"/>
+          </topic>
+          <topic label="PtDestroyRawCallbacks" href="libs/ptdestroyrawcallbacks.html">
+            <topic label="Description:" href="libs/ptdestroyrawcallbacks.html#id7"/>
+          </topic>
+          <topic label="PtFindNextWidgetData" href="libs/ptfindnextwidgetdata.html">
+            <topic label="Description:" href="libs/ptfindnextwidgetdata.html#id7"/>
+          </topic>
+          <topic label="PtFindResource" href="libs/ptfindresource.html">
+            <topic label="Description:" href="libs/ptfindresource.html#id7"/>
+            <topic label="Examples:" href="libs/ptfindresource.html#id11"/>
+          </topic>
+          <topic label="PtFindWidgetData" href="libs/ptfindwidgetdata.html">
+            <topic label="Description:" href="libs/ptfindwidgetdata.html#id7"/>
+          </topic>
+          <topic label="PtGetCallbackList" href="libs/ptgetcallbacklist.html">
+            <topic label="Description:" href="libs/ptgetcallbacklist.html#id7"/>
+            <topic label="Examples:" href="libs/ptgetcallbacklist.html#id11"/>
+          </topic>
+          <topic label="PtGetStruct" href="libs/ptgetstruct.html">
+            <topic label="Description:" href="libs/ptgetstruct.html#id7"/>
+          </topic>
+          <topic label="PtInvokeCallbackList" href="libs/ptinvokecallbacklist.html">
+            <topic label="Description:" href="libs/ptinvokecallbacklist.html#id7"/>
+          </topic>
+          <topic label="PtInvokeCallbackType" href="libs/ptinvokecallbacktype.html">
+            <topic label="Description:" href="libs/ptinvokecallbacktype.html#id7"/>
+          </topic>
+          <topic label="PtInvokeResizeCallbacks" href="libs/ptinvokeresizecallbacks.html">
+            <topic label="Description:" href="libs/ptinvokeresizecallbacks.html#id7"/>
+          </topic>
+          <topic label="PtMoveResizeWidget" href="libs/ptmoveresizewidget.html">
+            <topic label="Description:" href="libs/ptmoveresizewidget.html#id7"/>
+          </topic>
+          <topic label="PtRemoveWidgetData" href="libs/ptremovewidgetdata.html">
+            <topic label="Description:" href="libs/ptremovewidgetdata.html#id7"/>
+          </topic>
+          <topic label="PtResizeCanvas" href="libs/ptresizecanvas.html">
+            <topic label="Description:" href="libs/ptresizecanvas.html#id7"/>
+          </topic>
+          <topic label="PtResizePolicy" href="libs/ptresizepolicy.html">
+            <topic label="Description:" href="libs/ptresizepolicy.html#id7"/>
+            <topic label="Examples:" href="libs/ptresizepolicy.html#id11"/>
+          </topic>
+          <topic label="PtSetExtentFromArea" href="libs/ptsetextentfromarea.html">
+            <topic label="Description:" href="libs/ptsetextentfromarea.html#id7"/>
+          </topic>
+          <topic label="PtSetStruct" href="libs/ptsetstruct.html">
+            <topic label="Description:" href="libs/ptsetstruct.html#id7"/>
+          </topic>
+          <topic label="PtSetValue" href="libs/ptsetvalue.html">
+            <topic label="Description:" href="libs/ptsetvalue.html#id7"/>
+          </topic>
+          <topic label="PtSuperClassCalcOpaque" href="libs/ptsuperclasscalcopaque.html">
+            <topic label="Description:" href="libs/ptsuperclasscalcopaque.html#id7"/>
+          </topic>
+          <topic label="PtSuperClassChildCreated" href="libs/ptsuperclasschildcreated.html">
+            <topic label="Description:" href="libs/ptsuperclasschildcreated.html#id7"/>
+          </topic>
+          <topic label="PtSuperClassChildDestroyed" href="libs/ptsuperclasschilddestroyed.html">
+            <topic label="Description:" href="libs/ptsuperclasschilddestroyed.html#id7"/>
+          </topic>
+          <topic label="PtSuperClassChildGettingFocus" href="libs/ptsuperclasschildgettingfocus.html">
+            <topic label="Description:" href="libs/ptsuperclasschildgettingfocus.html#id7"/>
+          </topic>
+          <topic label="PtSuperClassChildGettingResources" href="libs/ptsuperclasschildgettingresources.html">
+            <topic label="Description:" href="libs/ptsuperclasschildgettingresources.html#id7"/>
+          </topic>
+          <topic label="PtSuperClassChildLosingFocus" href="libs/ptsuperclasschildlosingfocus.html">
+            <topic label="Description:" href="libs/ptsuperclasschildlosingfocus.html#id7"/>
+          </topic>
+          <topic label="PtSuperClassChildMovedResized" href="libs/ptsuperclasschildmovedresized.html">
+            <topic label="Description:" href="libs/ptsuperclasschildmovedresized.html#id7"/>
+          </topic>
+          <topic label="PtSuperClassChildRealized" href="libs/ptsuperclasschildrealized.html">
+            <topic label="Description:" href="libs/ptsuperclasschildrealized.html#id7"/>
+          </topic>
+          <topic label="PtSuperClassChildSettingResources" href="libs/ptsuperclasschildsettingresources.html">
+            <topic label="Description:" href="libs/ptsuperclasschildsettingresources.html#id7"/>
+          </topic>
+          <topic label="PtSuperClassChildUnrealized" href="libs/ptsuperclasschildunrealized.html">
+            <topic label="Description:" href="libs/ptsuperclasschildunrealized.html#id7"/>
+          </topic>
+          <topic label="PtSuperClassConnect, PtSuperClassConnectFrom" href="libs/ptsuperclassconnect.html">
+            <topic label="Description:" href="libs/ptsuperclassconnect.html#id7"/>
+          </topic>
+          <topic label="PtSuperClassDraw" href="libs/ptsuperclassdraw.html">
+            <topic label="Description:" href="libs/ptsuperclassdraw.html#id7"/>
+            <topic label="Examples:" href="libs/ptsuperclassdraw.html#id9"/>
+          </topic>
+          <topic label="PtSuperClassExtent" href="libs/ptsuperclassextent.html">
+            <topic label="Description:" href="libs/ptsuperclassextent.html#id7"/>
+            <topic label="Examples:" href="libs/ptsuperclassextent.html#id9"/>
+          </topic>
+          <topic label="PtSuperClassGetResources" href="libs/ptsuperclassgetresources.html">
+            <topic label="Description:" href="libs/ptsuperclassgetresources.html#id7"/>
+          </topic>
+          <topic label="PtSuperClassGotFocus" href="libs/ptsuperclassgotfocus.html">
+            <topic label="Description:" href="libs/ptsuperclassgotfocus.html#id7"/>
+          </topic>
+          <topic label="PtSuperClassInit, PtSuperClassInitFrom" href="libs/ptsuperclassinit.html">
+            <topic label="Description:" href="libs/ptsuperclassinit.html#id7"/>
+          </topic>
+          <topic label="PtSuperClassLostFocus" href="libs/ptsuperclasslostfocus.html">
+            <topic label="Description:" href="libs/ptsuperclasslostfocus.html#id7"/>
+          </topic>
+          <topic label="PtSuperClassRawEvent, PtSuperClassRawEventFrom" href="libs/ptsuperclassrawevent.html">
+            <topic label="Description:" href="libs/ptsuperclassrawevent.html#id7"/>
+          </topic>
+          <topic label="PtSuperClassRealized" href="libs/ptsuperclassrealized.html">
+            <topic label="Description:" href="libs/ptsuperclassrealized.html#id7"/>
+          </topic>
+          <topic label="PtSuperClassSetResources" href="libs/ptsuperclasssetresources.html">
+            <topic label="Description:" href="libs/ptsuperclasssetresources.html#id7"/>
+            <topic label="Examples:" href="libs/ptsuperclasssetresources.html#id11"/>
+          </topic>
+          <topic label="PtUpdateVisibility" href="libs/ptupdatevisibility.html">
+            <topic label="Description:" href="libs/ptupdatevisibility.html#id7"/>
+          </topic>
+          <topic label="PtWidgetAbove" href="libs/ptwidgetabove.html">
+            <topic label="Description:" href="libs/ptwidgetabove.html#id7"/>
+          </topic>
+      </topic>
+      <topic label="Creating Custom Resource Editors" href="resource_editors.html">
+            <topic label="Resource datatypes" href="resource_editors.html#resource_datatypes">
+              <topic label="Resource datatypes general notes" href="resource_editors.html#id4"/>
+              <topic label="RES_DATATYPE_ALLOC" href="resource_editors.html#RES_DATATYPE_ALLOC">
+                <topic label="An example of implementing RES_DATATYPE_ALLOC" href="resource_editors.html#alloc_example"/>
+              </topic>
+              <topic label="RES_DATATYPE_CHOICE" href="resource_editors.html#RES_DATATYPE_CHOICE"/>
+              <topic label="RES_DATATYPE_CODE" href="resource_editors.html#RES_DATATYPE_CODE"/>
+              <topic label="RES_DATATYPE_COLOR" href="resource_editors.html#RES_DATATYPE_COLOR"/>
+              <topic label="RES_DATATYPE_DOUBLE" href="resource_editors.html#RES_DATATYPE_DOUBLE"/>
+              <topic label="RES_DATATYPE_FLAG" href="resource_editors.html#RES_DATATYPE_FLAG"/>
+              <topic label="RES_DATATYPE_FONT" href="resource_editors.html#RES_DATATYPE_FONT"/>
+              <topic label="RES_DATATYPE_LIST" href="resource_editors.html#RES_DATATYPE_LIST"/>
+              <topic label="RES_DATATYPE_MULTI" href="resource_editors.html#RES_DATATYPE_MULTI"/>
+              <topic label="RES_DATATYPE_NUMERIC" href="resource_editors.html#RES_DATATYPE_NUMERIC"/>
+              <topic label="RES_DATATYPE_PATTERN" href="resource_editors.html#RES_DATATYPE_PATTERN"/>
+              <topic label="RES_DATATYPE_PIXMAP" href="resource_editors.html#RES_DATATYPE_PIXMAP"/>
+              <topic label="RES_DATATYPE_STRING" href="resource_editors.html#RES_DATATYPE_STRING"/>
+            </topic>
+            <topic label="The life cycle of a plugin instance" href="resource_editors.html#plugin_lifecycle">
+              <topic label="The frugal resource editor" href="resource_editors.html#id21"/>
+              <topic label="The full resource editor" href="resource_editors.html#id23"/>
+              <topic label="An external application resource editor" href="resource_editors.html#id25"/>
+            </topic>
+            <topic label="The res_editors.def file" href="resource_editors.html#res_editors"/>
+            <topic label="Endian issues" href="resource_editors.html#plugin_endian_issues"/>
+      </topic>
+      <topic label="The resource editor API" href="plugin_api.html">
+            <topic label="Resource Editor API structures" href="plugin_api.html#id3"/>
+            <topic label="Functions exported from PhAB" href="plugin_api.html#id5">
+              <topic label="The resource editor's window supporting functions" href="plugin_api.html#id7"/>
+            </topic>
+          <topic label="PhABResExportCommon_t.alloc_image" href="api/alloc_image.html">
+            <topic label="Description:" href="api/alloc_image.html#id7"/>
+          </topic>
+          <topic label="PhABResExportCommon_t.alloc_mem" href="api/alloc_mem.html">
+            <topic label="Description:" href="api/alloc_mem.html#id7"/>
+          </topic>
+          <topic label="PhABResExportFull_t.answer_changes" href="api/answer_changes.html">
+            <topic label="Description:" href="api/answer_changes.html#id7"/>
+          </topic>
+          <topic label="PhABResExportCommon_t.apply" href="api/apply.html">
+            <topic label="Description:" href="api/apply.html#id7"/>
+          </topic>
+          <topic label="PhABResExportFull_t.closing" href="api/closing.html">
+            <topic label="Description:" href="api/closing.html#id7"/>
+          </topic>
+          <topic label="PhABResExportCommon_t.cmp" href="api/cmp.html">
+            <topic label="Description:" href="api/cmp.html#id7"/>
+          </topic>
+          <topic label="PhABResExportFull_t.create_window" href="api/create_window.html">
+            <topic label="Description:" href="api/create_window.html#id7"/>
+          </topic>
+          <topic label="PhABResExportFull_t.destroy" href="api/destroy.html">
+            <topic label="Description:" href="api/destroy.html#id7"/>
+          </topic>
+          <topic label="PhABResExportCommon_t.dup" href="api/dup.html">
+            <topic label="Description:" href="api/dup.html#id7"/>
+          </topic>
+          <topic label="PhABResExportCommon_t.free" href="api/free.html">
+            <topic label="Description:" href="api/free.html#id7"/>
+          </topic>
+          <topic label="PhABResExportCommon_t.free_image" href="api/free_image.html">
+            <topic label="Description:" href="api/free_image.html#id7"/>
+          </topic>
+          <topic label="PhABResExportCommon_t.free_mem" href="api/free_mem.html">
+            <topic label="Description:" href="api/free_mem.html#id7"/>
+          </topic>
+          <topic label="PhABResExportFull_t.get_area" href="api/get_area.html">
+            <topic label="Description:" href="api/get_area.html#id7"/>
+          </topic>
+          <topic label="PhABResExportCommon_t.get_res" href="api/get_res.html">
+            <topic label="Description:" href="api/get_res.html#id7"/>
+            <topic label="Examples:" href="api/get_res.html#id9"/>
+          </topic>
+          <topic label="PhABResExportCommon_t.message" href="api/message.html">
+            <topic label="Description:" href="api/message.html#id7"/>
+          </topic>
+          <topic label="PhABResExportFrugal_t.open" href="api/open.html">
+            <topic label="Description:" href="api/open.html#id7"/>
+          </topic>
+          <topic label="PhABResExportCommon_t" href="api/phabresexportcommon_t.html">
+            <topic label="Description:" href="api/phabresexportcommon_t.html#id5"/>
+          </topic>
+          <topic label="PhABResExportFrugal_t" href="api/phabresexportfrugal_t.html">
+            <topic label="Description:" href="api/phabresexportfrugal_t.html#id5"/>
+          </topic>
+          <topic label="PhABResExportFull_t" href="api/phabresexportfull_t.html">
+            <topic label="Description:" href="api/phabresexportfull_t.html#id5"/>
+          </topic>
+          <topic label="ResPlugin_t" href="api/resplugin_t.html">
+            <topic label="Description:" href="api/resplugin_t.html#id5"/>
+          </topic>
+          <topic label="ResPluginAnyChangesF_t" href="api/respluginanychangesf_t.html">
+            <topic label="Description:" href="api/respluginanychangesf_t.html#id5">
+              <topic label="Should return:" href="api/respluginanychangesf_t.html#id9"/>
+            </topic>
+            <topic label="Examples:" href="api/respluginanychangesf_t.html#id11"/>
+          </topic>
+          <topic label="ResPluginBlockF_t" href="api/respluginblockf_t.html">
+            <topic label="Description:" href="api/respluginblockf_t.html#id5"/>
+            <topic label="Examples:" href="api/respluginblockf_t.html#id9"/>
+          </topic>
+          <topic label="ResPluginCommon_t" href="api/resplugincommon_t.html">
+            <topic label="Description:" href="api/resplugincommon_t.html#id5"/>
+          </topic>
+          <topic label="ResPluginDestroyF_t" href="api/resplugindestroyf_t.html">
+            <topic label="Description:" href="api/resplugindestroyf_t.html#id5"/>
+            <topic label="Examples:" href="api/resplugindestroyf_t.html#id9"/>
+          </topic>
+          <topic label="ResPluginDisableF_t" href="api/resplugindisablef_t.html">
+            <topic label="Description:" href="api/resplugindisablef_t.html#id5"/>
+            <topic label="Examples:" href="api/resplugindisablef_t.html#id9"/>
+          </topic>
+          <topic label="ResPluginFrugalCreateF_t" href="api/respluginfrugalcreatef_t.html">
+            <topic label="Description:" href="api/respluginfrugalcreatef_t.html#id5">
+              <topic label="Should return:" href="api/respluginfrugalcreatef_t.html#id9"/>
+            </topic>
+            <topic label="Examples:" href="api/respluginfrugalcreatef_t.html#id11"/>
+          </topic>
+          <topic label="ResPluginFrugalEditor_t" href="api/respluginfrugaleditor_t.html">
+            <topic label="Description:" href="api/respluginfrugaleditor_t.html#id5"/>
+          </topic>
+          <topic label="ResPluginFullCreateF_t" href="api/respluginfullcreatef_t.html">
+            <topic label="Description:" href="api/respluginfullcreatef_t.html#id5">
+              <topic label="Should return:" href="api/respluginfullcreatef_t.html#id9"/>
+            </topic>
+            <topic label="Examples:" href="api/respluginfullcreatef_t.html#id11"/>
+          </topic>
+          <topic label="ResPluginFullEditor_t" href="api/respluginfulleditor_t.html">
+            <topic label="Description:" href="api/respluginfulleditor_t.html#id5"/>
+          </topic>
+          <topic label="ResPluginGetAreaF_t" href="api/resplugingetareaf_t.html">
+            <topic label="Description:" href="api/resplugingetareaf_t.html#id5"/>
+            <topic label="Examples:" href="api/resplugingetareaf_t.html#id9"/>
+          </topic>
+          <topic label="ResPluginGetChangesF_t" href="api/resplugingetchangesf_t.html">
+            <topic label="Description:" href="api/resplugingetchangesf_t.html#id5"/>
+            <topic label="Examples:" href="api/resplugingetchangesf_t.html#id9"/>
+          </topic>
+          <topic label="ResPluginLoadingF_t" href="api/respluginloadingf_t.html">
+            <topic label="Description:" href="api/respluginloadingf_t.html#id5">
+              <topic label="Should return:" href="api/respluginloadingf_t.html#id9"/>
+            </topic>
+            <topic label="Examples:" href="api/respluginloadingf_t.html#id11"/>
+          </topic>
+          <topic label="ResPluginSetDataF_t" href="api/respluginsetdataf_t.html">
+            <topic label="Description:" href="api/respluginsetdataf_t.html#id5"/>
+            <topic label="Examples:" href="api/respluginsetdataf_t.html#id9"/>
+          </topic>
+          <topic label="ResPluginToFrontF_t" href="api/resplugintofrontf_t.html">
+            <topic label="Description:" href="api/resplugintofrontf_t.html#id5"/>
+            <topic label="Examples:" href="api/resplugintofrontf_t.html#id9"/>
+          </topic>
+          <topic label="ResPluginUnloadingF_t" href="api/respluginunloadingf_t.html">
+            <topic label="Description:" href="api/respluginunloadingf_t.html#id5"/>
+            <topic label="Examples:" href="api/respluginunloadingf_t.html#id7"/>
+          </topic>
+          <topic label="PhABResExportFull_t.set_state" href="api/set_state.html">
+            <topic label="Description:" href="api/set_state.html#id7"/>
+          </topic>
+          <topic label="PhABResExportFull_t.to_front" href="api/to_front.html">
+            <topic label="Description:" href="api/to_front.html#id7"/>
+          </topic>
+      </topic>
+      <topic label="Resource editor plugin examples" href="plugin_example.html">
+            <topic label="A string editor" href="plugin_example.html#string_editor"/>
+            <topic label="An external editor" href="plugin_example.html#external_editor"/>
+      </topic>
+      <topic label="Miscellaneous Widget-Building Tips" href="misc_tips.html"/>
+      <topic label="What's New" href="whatsnew.html">
+          <topic label="What's new in Photon for QNX Neutrino 6.3.0 Service Pack 1" href="whatsnew.html#WhatsNew63sp1"/>
+          <topic label="What's new in Photon for QNX Neutrino 6.3" href="whatsnew.html#WhatsNew63">
+            <topic label="Resource editor plugin API" href="whatsnew.html#id5"/>
+          </topic>
+          <topic label="What's new in Photon for QNX Neutrino 6.2.1" href="whatsnew.html#WhatsNew621">
+            <topic label="Errata" href="whatsnew.html#Errata621"/>
+          </topic>
+          <topic label="What's new in Photon for QNX Neutrino 6.2.0" href="whatsnew.html#WhatsNew62">
+              <topic label="Overview" href="whatsnew.html#Overview62"/>
+              <topic label="Anatomy of a Widget" href="whatsnew.html#Anatomy62"/>
+              <topic label="Creating a List Widget" href="whatsnew.html#List62"/>
+              <topic label="Creating a Tree Widget" href="whatsnew.html#Tree62"/>
+              <topic label="Binding Widgets into PhAB" href="whatsnew.html#Binding62"/>
+              <topic label="Widget Building Library API" href="whatsnew.html#API62"/>
+              <topic label="Miscellaneous Widget-Building Tips" href="whatsnew.html#Tips62"/>
+          </topic>
+      </topic>
+      <topic label="Glossary" href="glossary.html"/>
+</toc>

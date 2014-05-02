@@ -1,0 +1,35 @@
+Manifest-Version: 1.0
+Bundle-Activator: com.qnx.tools.ide.coverage.internal.ui.CoverageUIPlu
+ gin
+Import-Package: javax.servlet;version="2.4.0",javax.servlet.http;versi
+ on="2.4.0"
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ActivationPolicy: lazy
+Export-Package: com.qnx.tools.ide.coverage.internal.ui;x-internal:=tru
+ e,com.qnx.tools.ide.coverage.internal.ui.actions;x-internal:=true,com
+ .qnx.tools.ide.coverage.internal.ui.decorator;x-internal:=true,com.qn
+ x.tools.ide.coverage.internal.ui.editor;x-internal:=true,com.qnx.tool
+ s.ide.coverage.internal.ui.gcc;x-internal:=true,com.qnx.tools.ide.cov
+ erage.internal.ui.launch;x-internal:=true,com.qnx.tools.ide.coverage.
+ internal.ui.properties;x-internal:=true,com.qnx.tools.ide.coverage.in
+ ternal.ui.servlet;x-internal:=true,com.qnx.tools.ide.coverage.interna
+ l.ui.views;x-internal:=true,com.qnx.tools.ide.coverage.ui
+Bundle-Version: 4.7.0.201006232051
+Eclipse-LazyStart: true
+Bundle-Name: %pluginName
+Bundle-ManifestVersion: 2
+Bundle-Vendor: %providerName
+Bundle-SymbolicName: com.qnx.tools.ide.coverage.ui; singleton:=true
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.ui.ide,org.eclipse.ui.views,org.eclipse.jf
+ ace.text,org.eclipse.ui,org.eclipse.ui.ide,com.qnx.tools.ide.qde.ui,o
+ rg.eclipse.debug.ui,com.qnx.tools.ide.coverage.core,com.qnx.tools.ide
+ .qde.debug.core,com.qnx.tools.utils.ui,org.eclipse.ui.workbench.texte
+ ditor,org.eclipse.ui.console,org.eclipse.core.runtime,org.eclipse.cor
+ e.filesystem,org.eclipse.ui.editors,org.eclipse.cdt.launch,org.eclips
+ e.equinox.http.jetty,com.qnx.tools.utils,com.qnx.tools.ide.core,org.e
+ clipse.core.variables,com.qnx.tools.ide.fsys,com.qnx.tools.ide.qde.co
+ re,org.eclipse.cdt.core,org.eclipse.cdt.ui,com.qnx.tools.ide.target.q
+ conn.core,com.qnx.tools.ide.target.core;bundle-version="4.0.1"
+
+

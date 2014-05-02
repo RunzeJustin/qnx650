@@ -1,0 +1,259 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Tracking the use of adaptive partitioning" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Base_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_INTRO_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_SYSINFOPERSP_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Logging_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Views_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Target_navigator_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_System_summary_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Process_information_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Memory_information_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Malloc_information_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Signal_information_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_System_blocking_graph_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Connection_information_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_System_resources_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Views_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Trackingtheuseofadaptivepartitioning" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Tracking the use of adaptive partitioning</title>
+   </head>
+   <body id="Trackingtheuseofadaptivepartitioning"><a name="Trackingtheuseofadaptivepartitioning" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Tracking the use of adaptive partitioning</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>
+            
+            This view displays information about the adaptive partitioning scheduling (APS) on the target system. 
+         </p>
+         
+         
+         <div class="p">For more information about adaptive partitioning, see: <br clear="none" /><ul>
+               <li>the <a href="../../com.qnx.doc.neutrino_sys_arch/adaptive.html" shape="rect">Adaptive partitioning</a> chapter of the <cite>System Architecture</cite> guide 
+               </li>
+               <li>the <a href="../../com.qnx.doc.neutrino_utilities/a/aps.html" shape="rect"><tt>aps</tt></a> chapter in the <cite>Adaptive Partitioning User's Guide</cite>. 
+               </li>
+            </ul>
+            
+         </div>
+         
+         
+         <p>The APS view shows the budget pie chart as well as the APS System parameters and Partition Information: </p>
+         
+         
+         <p>
+            <span><img src="../images/emp2Ftopic2Fsysinfo_Aps_view_.xml_d165340e58.jpg" alt="APS view" /></span>
+            
+         </p>
+         
+         
+         <p>If you expand the APS System information item, the view shows the following: </p>
+         
+         
+         <p>
+            <span><img src="../images/emp2Ftopic2Fsysinfo_Aps_view_.xml_d165340e71.jpg" alt="System information" /></span>
+            
+         </p>
+         
+         
+         <p>The Partitions item includes the following: </p>
+         
+         
+         <p>
+            <span><img src="../images/emp2Ftopic2Fsysinfo_Aps_view_.xml_d165340e83.jpg" alt="Partitions" /></span>
+            
+         </p>
+         
+         
+         <p>You can drag and drop processes or threads to move them from one partition to another. This might cause other processes or
+            threads to move as well. 
+         </p>
+         
+         
+         <p>The Partition Statistics item shows the following information: </p>
+         
+         
+         <p>
+            <span><img src="../images/emp2Ftopic2Fsysinfo_Aps_view_.xml_d165340e98.jpg" alt="Statistics" /></span>
+            
+         </p>
+         
+         
+         <p>The APS Bankruptcy item shows information about bankruptcies: </p>
+         
+         
+         <p>
+            <span><img src="../images/emp2Ftopic2Fsysinfo_Aps_view_.xml_d165340e111.jpg" alt="Bankruptcy" /></span>
+            
+         </p>
+         
+         
+         <p>The pane at the bottom of the view shows graphical information: </p>
+         
+         <br clear="none" /><ul>
+            <li>Partition budgets (in percentages): 
+               <p>
+                  <span><img src="../images/emp2Ftopic2Fsysinfo_Aps_view_.xml_d165340e127.jpg" alt="Budgets" /></span>
+                  
+               </p>
+               
+            </li>
+            <li>CPU usage by partition (in percentages): 
+               <p>
+                  <span><img src="../images/emp2Ftopic2Fsysinfo_Aps_view_.xml_d165340e138.jpg" alt="CPU usage" /></span>
+                  
+               </p>
+               
+            </li>
+            <li>Critical time usage (in milliseconds): 
+               <p>
+                  <span><img src="../images/emp2Ftopic2Fsysinfo_Aps_view_.xml_d165340e149.jpg" alt="Critical time" /></span>
+                  
+               </p>
+               
+            </li>
+         </ul>
+         
+         
+         <p>If you right-click on your target, the menu includes some options for the adaptive partitioning scheduler: </p>
+         
+         
+         <p>
+            <span><img src="../images/emp2Ftopic2Fsysinfo_Aps_view_.xml_d165340e162.jpg" alt="APS options" /></span>
+            
+         </p>
+         
+         
+         <p>This menu includes: </p>
+         
+         <br clear="none" /><ul>
+            <li>Set APS Security: 
+               <p>
+                  <span><img src="../images/emp2Ftopic2Fsysinfo_Aps_view_.xml_d165340e179.jpg" alt="Security flags" /></span>
+                  
+               </p>
+               
+               <p> For information about the flags, see <a href="../../com.qnx.doc.neutrino_lib_ref/s/schedctl.html#Scheduling_policies" shape="rect">Scheduling policies</a> in the entry for <em>SchedCtl()</em> in the Neutrino <cite>Library Reference</cite>. 
+               </p>
+               
+            </li>
+            <li>Set APS Parameters: 
+               
+               <p>
+                  <span><img src="../images/emp2Ftopic2Fsysinfo_Aps_view_.xml_d165340e206.jpg" alt="Parameters" /></span>
+                  
+               </p>
+               
+               <p> These parameters control: </p>
+               <br clear="none" /><ul>
+                  <li>the length of the sliding averaging window over which the adaptive partitioning scheduler calculates the CPU usage </li>
+                  <li>how the scheduler handles bankruptcies. For more information, see <a href="../../com.qnx.doc.neutrino_lib_ref/s/schedctl.html#Bankruptcy" shape="rect">Handling bankruptcy</a> in the entry for <em>SchedCtl()</em> in the Neutrino <cite>Library Reference</cite>. 
+                  </li>
+               </ul>
+               
+            </li>
+            <li>Modify Existing Partition: 
+               <p>
+                  <span><img src="../images/emp2Ftopic2Fsysinfo_Aps_view_.xml_d165340e236.jpg" alt="Modifying a partition" /></span>
+                  
+               </p>
+               
+               <p> The partition's budget is a percentage of CPU usage, while the critical budget is in milliseconds. </p>
+               
+            </li>
+            <li>Create New Partition: 
+               
+               <p>
+                  <span><img src="../images/emp2Ftopic2Fsysinfo_Aps_view_.xml_d165340e256.jpg" alt="Creating a partition" /></span>
+                  
+               </p>
+               
+               <p> The new partition's budget is taken from its parent partition's budget.</p>
+               
+            </li>
+         </ul>
+         
+         
+         <p>You can also get information about the usage of adaptive partitioning on your system over a specified period of time through
+            the System Profiler perspective's <a href="sysprof_Sysprof_partitions_.html" shape="rect">Partition Summary pane</a> pane. For more information, see the <a href="sysprof_Base_.html" shape="rect">Analyzing Your System with Kernel Tracing</a> chapter in this guide.
+         </p>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/sysinfo_Base_.html" shape="rect">Getting System Information</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/sysinfo_INTRO_.html" shape="rect">Introduction</a></div>
+            
+            <div><a href="../topic/sysinfo_SYSINFOPERSP_.html" shape="rect">What the System Information perspective reveals</a></div>
+            
+            <div><a href="../topic/sysinfo_Views_.html" shape="rect">Associated views</a></div>
+            
+            <div><a href="../topic/sysinfo_Target_navigator_.html" shape="rect">Controlling your system information session</a></div>
+            
+            <div><a href="../topic/sysinfo_System_summary_.html" shape="rect">Examining your target system's attributes</a></div>
+            
+            <div><a href="../topic/sysinfo_Process_information_.html" shape="rect">Watching your processes</a></div>
+            
+            <div><a href="../topic/sysinfo_Memory_information_.html" shape="rect">Examining your target system's memory (inspecting virtual address space)</a></div>
+            
+            <div><a href="../topic/sysinfo_Malloc_information_.html" shape="rect">Tracking heap usage</a></div>
+            
+            <div><a href="../topic/sysinfo_Signal_information_.html" shape="rect">Examining process signals</a></div>
+            
+            <div><a href="../topic/sysinfo_System_blocking_graph_.html" shape="rect">Getting channel information</a></div>
+            
+            <div><a href="../topic/sysinfo_Connection_information_.html" shape="rect">Tracking file descriptors</a></div>
+            
+            <div><a href="../topic/sysinfo_System_resources_.html" shape="rect">Tracking resource usage</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/sysinfo_Logging_.html" shape="rect">Logging system information</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

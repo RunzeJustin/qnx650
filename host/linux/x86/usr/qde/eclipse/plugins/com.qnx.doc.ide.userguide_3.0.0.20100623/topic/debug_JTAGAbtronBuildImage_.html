@@ -1,0 +1,168 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="task" />
+      <meta name="DC.Title" content="Building a system image" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGAbtron_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Buildingasystemimage" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Building a system image</title>
+   </head>
+   <body id="Buildingasystemimage"><a name="Buildingasystemimage" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Building a system image</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <div class="p">Next, you can use the QNX Momentics IDE to build an image file that can be loaded onto the target board, and debugged by the
+            Abatron BDI2000 Debugger. 
+         </div>
+         
+         
+         <div class="section">To build a system image:</div>
+         
+         
+         <ol>
+            <li class="stepexpand">
+               <span>Download a BSP (Board Support Package) corresponding to your target hardware. You can find BSPs for a wide variety of architectures
+                  from the QNX Foundry27 BSP Directory (after you log on) at: </span>
+               
+               
+               <p>
+                  <a href="http://community.qnx.com/sf/wiki/do/viewPage/projects.bsp/wiki/BSPAndDrivers" target="_blank" shape="rect">http://community.qnx.com/sf/wiki/do/viewPage/projects.bsp/wiki/BSPAndDrivers</a>
+                  
+               </p>
+               
+               
+               <p>Ensure that you download a version of the BSP installer appropriate for your host machine as well. </p>
+               
+               
+               
+            </li>
+            <li class="stepexpand">
+               <span>Install the BSP downloaded in the previous step. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Launch the QNX Momentics IDE and switch to the System Builder perspective. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>In the System Builder Projects view, right-click and select <span class="uicontrol">Import</span>. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Select <span class="menucascade">
+                     <span class="uicontrol">QNX</span>
+                     &gt; <span class="uicontrol">QNX Board Support Package</span>
+                     </span> as an import source.</span>
+               
+               
+               <p>
+                  <span><img src="../images/debug_JTAGAbtronBuildImage_.xml_d44856e81.jpg" alt="Importing a BSP" /></span>
+                  
+               </p>
+               
+               
+               
+            </li>
+            <li class="stepexpand">
+               <span>Click <span class="uicontrol">Next</span>. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Select a BSP package to import, and click <span class="uicontrol">Finish</span>. If you're prompted with the message, Build the projects from the imported package?, click <span class="uicontrol">Yes</span>. Wait for the build to finish before proceeding. Note that the import process may take several minutes, depending on the
+                  BSP you selected. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Open the <span class="filepath">project.bld</span> file from the System Builder Projects view, and from the new view that appears, select the image that corresponds to your
+                  board.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>In the Properties view on the right, ensure that the <span class="uicontrol">Create startup sym file?</span> property is set to <span class="uicontrol">Yes</span>, and that the <span class="uicontrol">Boot file</span> type is set to elf or set to a supported type such as elf. Also, make note of the <span class="uicontrol">Image Address</span> value, as you'll need it later. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Open the Project Explorer view. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Right-click on the project whose name ends with <span class="filepath">_libstartup</span>, and select <span class="uicontrol">Properties</span>. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>From the menu on the left, select <span class="uicontrol">QNX C/C++ Project</span>, and click the <span class="uicontrol">Compiler</span> tab. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>In the <span class="uicontrol">Code generation</span> section, ensure that the <span class="uicontrol">Optimization level</span> is set to <span class="uicontrol">No optimize</span>, and add <span class="option">-g</span> to the end of the <span class="uicontrol">Other Options</span> field to build with no optimization and the debug variant.</span>
+               Occasionally, you might have to specify a <span class="option">-O0</span> in the <span class="uicontrol">Other Options</span> field in order to overwrite the macros defined, which could contain optimization. Click <span class="uicontrol">OK</span>, and when prompted to rebuild the C++ project, click <span class="uicontrol">Yes</span> and wait for the build to finish. 
+               
+            </li>
+            <li class="stepexpand">
+               <span>Return to the System Builder Projects view and rebuild the image by right-clicking on the project and selecting <span class="uicontrol">Build Project</span>. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>In the Console view, you'll observe some output. For example, scroll up to locate a line that looks similar to this: </span>
+               
+               <pre class="codeblock" xml:space="preserve">400280 d188 403960 --- startup-bios.sym</pre>
+               
+               <p>Or something like this:</p>
+               
+               <pre class="codeblock" xml:space="preserve">200280 10188 202244 --- startup-mpc8349e-qs.sym</pre>
+               
+               <div class="note"><span class="notetitle">Note:</span> The exact numerical values and filename will differ; however, you want to focus on the line ending with <span class="filepath">.sym</span>. Take note of the first and third numerical values on this line, as you'll need them later.
+               </div>
+               
+               
+               
+            </li>
+         </ol>
+         
+         
+         <div class="section">Now, in the System Builder Projects view, if you expand the <span class="filepath">Images</span> directory, it should contain an <span class="filepath">.elf</span> file and a <span class="filepath">.sym</span> file. This is the Neutrino image that is ready to be uploaded and debugged. However, before you can continue with the debugging
+            process, you'll need to create a launch configuration. 
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/debug_JTAGAbtron_.html" shape="rect">JTAG: Using the Abatron BDI2000 JTAG Debugger with a QNX Neutrino kernel image</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

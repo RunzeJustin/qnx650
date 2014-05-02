@@ -1,0 +1,15 @@
+t=ja_JP.euc,Japanese EUC (or JIS)
+t=ja_JP.sjis,Japanese SJIS (or JIS)
+t=ko_KR.euc,Korean EUC
+t=zh_CN.euc,Chinese GB EUC
+t=zh_TW.big5,Chinese Big-5
+t=el_GR.8bit-8859-7,Greek
+t=.8bit-8859-1,Western (Latin-1)
+t=lv_LV.8bit-8859-4,Latvian
+t=mt_MT.8bit-8859-3,Maltese
+t=.8bit-8859-2,Central European (ISO 8859-2)
+t=.8bit-cp1250,Central European (Win 1250)
+t=ru_RU.8bit-8859-5,Cyrillic (ISO 8859-5)
+t=ru_RU.8bit-cp1251,Cyrillic (Win 1251)
+t=ru_RU.8bit-koi8r,Cyrillic (KOI8-R)
+t=tr_TR.8bit-8859-9,Turkish

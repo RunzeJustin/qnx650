@@ -1,0 +1,273 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Timeline view" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_System_profiler_editor_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Timelineview" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Timeline view</title>
+   </head>
+   <body id="Timelineview"><a name="Timelineview" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Timeline view</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>The timeline provides a detailed view of elements in the trace, and its related states and events, as shown below.</p>
+         
+         
+         <p>
+            <span><img src="../images/sprof_SysProf_TimelineView_.xml_d177821e17.jpg" alt="System Profiler Timeline view" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>The System Profiler's Timeline view.</p>
+            
+            
+         </div>
+         
+         
+         <p>The Timeline also serves to populate many of the other views and panes within System Profiler. For example, other panes and
+            views generally react to the selected time in System Profiler to populate their data.
+         </p>
+         
+         
+         <p>The timeline is laid out vertically as a sequence of timeline drawers. Each drawer corresponds to details about the log file,
+            laid out horizontally along a time axis. There are two types of timeline drawers: processes and threads. Threads are grouped
+            under their parent process. For each process or thread, its name is displayed along with a line that follows the time axis.
+            The line is populated with markings for each event that occurred for the thread, and colored areas to indicate which state
+            the thread was in during a given point in time. The following image shows an example of a thread shown on the timeline. 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/sprof_SysProf_TimelineView_.xml_d177821e39.jpg" alt="System Profiler Timeline drawer" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>A Timeline drawer.</p>
+            
+            
+         </div>
+         
+         
+         <p>You zoom the timeline using the toolbar menu actions or key shortcuts. The timeline range, shown at the top of the timeline,
+            displays which portion of the log file is currently displayed, relative to the full log file.
+         </p>
+         
+         
+         <p>The scrollbar that appears above the shaded area allows you to quickly modify which portion of the trace is being displayed.
+            By dragging the scrollbar left or right, the shaded area is updated, along with the end points in the header of the Processes
+            and Threads section. The Processes and Threads section updates once you release the scrollbar.
+         </p>
+         
+         
+         <p>In addition, the Timeline is annotated with details such as Event Labels (described below) and lines indicating IPC activity
+            between different threads. 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/sprof_SysProf_TimelineView_.xml_d177821e63.jpg" alt="System Profiler Timeline: IPC activity between threads" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>An example of IPC activity between three threads on the Timeline.</p>
+            
+            
+         </div>
+         
+         
+         <p>You can configure the timeline information that's shown in the search result view to show only the interesting trace event
+            fields. The content of this table can be cut and pasted to the system clipboard as CSV-formatted data.
+         </p>
+         
+         
+         <p>
+            <strong>Event labels</strong>
+            
+         </p>
+         
+         
+         <p>Timeline event labels let distinguish between different types of events (the label only shows the data for the event and its
+            type). In addition, you can also set the Timeline view to display address translation information, such as function name.
+            By using event labels, you can quickly differentiate between different types of events, or display multiple data values for
+            the same event. The purpose of event labels is to annotate function entry and exit events in the Timeline pane with their
+            corresponding function names. 
+         </p>
+         
+         
+         <p>To access the label options, select the Toggle Labels icon in the System Profiler perspective: </p>
+         
+         
+         <p>
+            <span><img src="../images/sprof_SysProf_TimelineView_.xml_d177821e94.jpg" alt="Icon: Toggle Labels for System Profiler Timeline view" /></span>
+            
+         </p>
+         
+         
+         <p>The Timeline event label data selection dialog is available by clicking the Toggle labels icon, and then selecting <span class="uicontrol">Configuring Event Labels</span>: 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/sprof_SysProf_TimelineView_.xml_d177821e110.jpg" alt="System Profiler Timeline view: Set Event Label dialog" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>Setting event labels in the System Profiler's Timeline view.</p>
+            
+            
+         </div>
+         
+         
+         <p>The data selection list lets you select multiple data keys. In addition, the dialog lets you define whether you want to customize
+            the display pattern for the corresponding label. By default, a default display pattern is provided and consists of the event
+            type label, followed by a comma separated list of data keys. The display pattern supports the following replacement patterns:
+         </p>
+         
+         <br clear="none" /><ul>
+            <li>Data keys are specified by using <samp class="codeph">$data_key_name$</samp>, and in the Timeline view, they're replaced by the actual value in the event for the given data key. 
+            </li>
+            <li>To allow labels to span multiple lines, use the <span class="option">\n</span> option. 
+            </li>
+         </ul>
+         
+         
+         <p>For a list of event data keys specific to address translation, see <a href="sysprof_AddressTranslationsSysProf_.html" shape="rect">Address translation</a>. 
+         </p>
+         
+         
+         <p>The Timeline event preference page and the property page show the new properties of the labels (select <span class="menucascade">
+               <span class="uicontrol">Window</span>
+               &gt; <span class="uicontrol">Preferences</span>
+               </span> and then expand <span class="menucascade">
+               <span class="uicontrol">QNX</span>
+               &gt; <span class="uicontrol">System Profiler</span>
+               </span> and select <span class="uicontrol">Timeline Event labels</span>): 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/sprof_SysProf_TimelineView_.xml_d177821e175.jpg" alt="System Profiler Timeline view preferences" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>Setting preferences for the System Profiler's Timeline view.</p>
+            
+            
+         </div>
+         
+         
+         <p>Once you specify any event labels, the Timeline view shows the display pattern for the label and displays multiple keys. </p>
+         
+         
+         <p>
+            <span><img src="../images/sprof_SysProf_TimelineView_.xml_d177821e193.jpg" alt="System Profiler Timeline view with labels" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>The System Profiler's Timeline view that includes labels.</p>
+            
+            
+         </div>
+         
+         
+         <p>In the Preferences dialog, click <span class="uicontrol">Edit</span> to edit any existing labels, or click <span class="uicontrol">Add</span> to select an event type for which a label had already been defined. Any changes you make change the previously defined label,
+            for which you'll receive a notification message. 
+         </p>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> The IDE performs kernel tracing events as background tasks. You can monitor the progress of the trace by opening the Progress
+            view.
+         </div>
+         
+         
+         <p>In the System Profiler editor's Timeline view, you can navigate to the next or previous event for a specific event owner only.
+            This lets you follow a sequence of events generated by a particular set of event owners (for example finding the next event
+            owned by a thread, or the messages generated by a client and server).
+         </p>
+         
+         
+         <p>In locations where single events have been identified (for example, the Trace Log view, Search Results view), you can navigate
+            directly to the event location in the System Profiler Timeline editor pane by double-clicking. The selection marker is moved
+            to the event location and, if possible, the specific event owner is scrolled into view in the Timeline editor pane.
+         </p>
+         
+         
+         <p>The Navigate menu contains a <span class="uicontrol">Go To Event</span> command that lets you jump directly to a specific event. This command allows developers to collaborate more easily with one
+            another by providing direct event navigation by event index, event cycle, or natural time.
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/sprof_SysProf_TimelineView_.xml_d177821e233.jpg" alt="Go to event" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>The System Profiler's Go To Event command.</p>
+            
+            
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/sysprof_System_profiler_editor_.html" shape="rect">System Profiler editor</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

@@ -1,0 +1,144 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Thread Call Stack view" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_Views_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_General_statistics_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_Event_owner_statistics_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_Clientserver_cpu_statistics_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_Sysprof_overview_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_Condition_statistics_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Sysprof_ThreadCallStack" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Thread Call Stack view</title>
+   </head>
+   <body id="Sysprof_ThreadCallStack"><a name="Sysprof_ThreadCallStack" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Thread Call Stack view</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>The Thread Call Stack view displays the current thread call stack at a given point in time for all instrumented threads.</p>
+         
+         
+         <p>
+            <span><img src="../images/prof_Thread_Call_Stack_View.xml_d180100e17.jpg" /></span>
+            
+         </p>
+         
+         
+         <p>When you profile an application with function instrumentation, the profiler records function enter and function exit events,
+            and uses events to determine the stack at any point in a program.
+         </p>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> Only processes that have been instrumented will appear in the Thread Call Stack view. 
+         </div>
+         
+         
+         <p>Double-clicking on an entry in the Thread Call Stack view opens the associated source file. If one of the events in the Trace
+            Event Log view is selected, it will appear highlighted in the Thread Call Stack view, and in the Timeline view. Double-click
+            a stack entry to open the corresponding source file in the editor.
+         </p>
+         
+         
+         <p>If the address translation (the property page of the <span class="filepath">.kev</span> file) is properly configured for the trace, the call stack shows the function names, source files and line numbers. If it's
+            not configured, the view shows only addresses.
+         </p>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> Function and source file names won't appear unless address translation is currently configured. For information about enabling
+            and configuring address translation, see <a href="sysprof_AddressTranslationsSysProf_.html" shape="rect">Address translation</a>.
+         </div>
+         
+         
+         <p>On the Thread Call Stack view, there are two buttons:</p>
+         
+         
+         
+         <div class="tablenoborder">
+            <table cellpadding="4" cellspacing="0" summary="" frame="border" border="1" rules="all">
+               <thead align="left">
+                  <tr>
+                     <th class="cellrowborder" valign="top" id="d180100e54" rowspan="1" colspan="1">Icon</th>
+                     <th class="cellrowborder" valign="top" id="d180100e57" rowspan="1" colspan="1">Name</th>
+                     <th class="cellrowborder" valign="top" id="d180100e60" rowspan="1" colspan="1">Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td class="cellrowborder" valign="top" headers="d180100e54 d180100e57 d180100e60" rowspan="1" colspan="1">
+                        <span><img src="../images/prof_Thread_Call_Stack_View.xml_d180100e71.jpg" /></span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" headers="d180100e54 d180100e57 d180100e60" rowspan="1" colspan="1">Synchronize with editor filters</td>
+                     <td class="cellrowborder" valign="top" headers="d180100e54 d180100e57 d180100e60" rowspan="1" colspan="1">Adjusts the current data with the setting specified in the filters.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" headers="d180100e54 d180100e57 d180100e60" rowspan="1" colspan="1">
+                        <span><img src="../images/prof_Thread_Call_Stack_View.xml_d180100e85.jpg" /></span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" headers="d180100e54 d180100e57 d180100e60" rowspan="1" colspan="1">Export to application profiler session</td>
+                     <td class="cellrowborder" valign="top" headers="d180100e54 d180100e57 d180100e60" rowspan="1" colspan="1">Takes the data from a <span class="filepath">.kev</span> trace file and exports it to an Application Profiler session.
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/sysprof_Views_.html" shape="rect">Gathering statistics from trace data</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/sysprof_General_statistics_.html" shape="rect">General Statistics view</a></div>
+            
+            <div><a href="../topic/sysprof_Event_owner_statistics_.html" shape="rect">Event Owner Statistics view</a></div>
+            
+            <div><a href="../topic/sysprof_Clientserver_cpu_statistics_.html" shape="rect">Client/Server CPU Statistics view</a></div>
+            
+            <div><a href="../topic/sysprof_Sysprof_overview_.html" shape="rect">Overview view</a></div>
+            
+            <div><a href="../topic/sysprof_Condition_statistics_.html" shape="rect">Condition Statistics view</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

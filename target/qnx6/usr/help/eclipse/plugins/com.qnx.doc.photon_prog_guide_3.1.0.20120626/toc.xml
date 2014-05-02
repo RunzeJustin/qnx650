@@ -1,0 +1,1079 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Programmer's Guide">
+      <topic label="About This Guide" href="about.html">
+          <topic label="Typographical conventions" href="about.html#id3">
+            <topic label="Note to Windows users" href="about.html#WINDOWSNOTE"/>
+            <topic label="Navigation buttons" href="about.html#Navigation"/>
+          </topic>
+          <topic label="Technical support" href="about.html#id7"/>
+      </topic>
+      <topic label="Introduction" href="intro.html">
+          <topic label="Overview of the Photon architecture" href="intro.html#PhotonArchitecture"/>
+          <topic label="Photon Application Builder (PhAB)" href="intro.html#PhABApplications">
+              <topic label="Get immediate results" href="intro.html#id5"/>
+              <topic label="Concentrate on functionality" href="intro.html#id7"/>
+              <topic label="Create prototypes without writing code" href="intro.html#id9"/>
+              <topic label="Cut code size" href="intro.html#id11"/>
+              <topic label="Create consistent applications" href="intro.html#id13"/>
+              <topic label="Create all kinds of applications" href="intro.html#id15"/>
+          </topic>
+          <topic label="Widget concepts" href="intro.html#WIDGETCONCEPTS">
+            <topic label="Widget life cycle" href="intro.html#WidgetLifeCycle"/>
+            <topic label="Widget geometry" href="intro.html#WidgetGeometry"/>
+          </topic>
+          <topic label="Programming paradigm" href="intro.html#ProgrammingParadigm">
+            <topic label="Text-mode application" href="intro.html#TextApplication"/>
+            <topic label="Non-PhAB application" href="intro.html#NonPhABApplication"/>
+            <topic label="PhAB application" href="intro.html#PhABApplication"/>
+          </topic>
+          <topic label="Photon libraries" href="intro.html#PhotonLibraries">
+            <topic label="API categories and libraries" href="intro.html#API_Categories"/>
+            <topic label="Versions and platforms" href="intro.html#Versions"/>
+          </topic>
+          <topic label="Building applications with PhAB---an overview" href="intro.html#BuildingapplicationswithPhAB">
+            <topic label="Step 1: Create modules" href="intro.html#Modules"/>
+            <topic label="Step 2: Add widgets" href="intro.html#Widgets"/>
+            <topic label="Step 3: Attach callbacks" href="intro.html#Callbacks"/>
+            <topic label="Step 4: Generate code" href="intro.html#GenerateCode"/>
+            <topic label="Step 5: Run your application" href="intro.html#Runningyourapplication"/>
+            <topic label="Step 6: Repeat any previous step" href="intro.html#Repeatanypreviousstep"/>
+          </topic>
+          <topic label="Writing applications without PhAB" href="intro.html#NonPhABApplications"/>
+      </topic>
+      <topic label="Tutorials" href="tutorls.html">
+          <topic label="Before you start..." href="tutorls.html#Beforeyoustart">
+            <topic label="Creating a Photon project and starting PhAB" href="tutorls.html#creating">
+              <topic label="From the IDE:" href="tutorls.html#id5"/>
+              <topic label="From standalone PhAB:" href="tutorls.html#id7"/>
+            </topic>
+          </topic>
+          <topic label="PhAB's Interface" href="tutorls.html#interface"/>
+          <topic label="Tutorial 1 --- Hello, world" href="tutorls.html#TUTORIAL1">
+            <topic label="Creating the application" href="tutorls.html#id11"/>
+            <topic label="Generating code" href="tutorls.html#GeneratingCode">
+              <topic label="From the IDE" href="tutorls.html#id14"/>
+              <topic label="From standalone PhAB" href="tutorls.html#id16"/>
+            </topic>
+            <topic label="Want more info?" href="tutorls.html#id18"/>
+          </topic>
+          <topic label="Tutorial 2 --- editing resources" href="tutorls.html#TUTORIAL2">
+            <topic label="Adding a button widget" href="tutorls.html#id21"/>
+            <topic label="Changing the bevel width" href="tutorls.html#ChangingBevelWidth"/>
+            <topic label="Changing the font" href="tutorls.html#ChangingFont"/>
+            <topic label="Changing the text alignment" href="tutorls.html#ChangingAlignment"/>
+            <topic label="Setting flags" href="tutorls.html#SettingFlags"/>
+            <topic label="Changing the fill color" href="tutorls.html#ChangingColor"/>
+            <topic label="Editing a pixmap" href="tutorls.html#EditingPixmap"/>
+            <topic label="Editing multiline text" href="tutorls.html#EditingMultiText"/>
+            <topic label="Editing a list of text items" href="tutorls.html#EditingLists"/>
+            <topic label="Creating a template" href="tutorls.html#CreatingTemplates"/>
+            <topic label="Want more info?" href="tutorls.html#id32"/>
+          </topic>
+          <topic label="Tutorial 3 --- creating menus and menubars" href="tutorls.html#TUTORIAL3">
+            <topic label="About link callbacks" href="tutorls.html#LinkCallbacks"/>
+            <topic label="About instance names" href="tutorls.html#id36"/>
+            <topic label="Creating a menubar" href="tutorls.html#CreatingMenubars"/>
+            <topic label="Creating the File menu module" href="tutorls.html#id39"/>
+            <topic label="Adding menu items" href="tutorls.html#id41"/>
+            <topic label="Creating the Help menu module" href="tutorls.html#id43"/>
+            <topic label="Attaching link callbacks" href="tutorls.html#id45">
+              <topic label="Attaching a module-type link callback" href="tutorls.html#id47"/>
+              <topic label="Attaching a code-type link callback" href="tutorls.html#id49"/>
+            </topic>
+            <topic label="Setting up the code" href="tutorls.html#id51"/>
+            <topic label="Want more info?" href="tutorls.html#id53"/>
+          </topic>
+          <topic label="Tutorial 4 --- creating dialogs" href="tutorls.html#TUTORIAL4">
+            <topic label="About dialogs" href="tutorls.html#id56"/>
+            <topic label="More on instance names" href="tutorls.html#MoreOnInstanceNames"/>
+            <topic label="Attaching a dialog module" href="tutorls.html#id59"/>
+            <topic label="Adding widgets to the dialog" href="tutorls.html#id61"/>
+            <topic label="Adding a callback to the Done button" href="tutorls.html#id63"/>
+            <topic label="Modifying a generated code function" href="tutorls.html#id65"/>
+            <topic label="Compiling and Running" href="tutorls.html#id67"/>
+            <topic label="Want more info?" href="tutorls.html#id69"/>
+          </topic>
+          <topic label="Tutorial 5 --- creating windows" href="tutorls.html#TUTORIAL5">
+            <topic label="Creating a window" href="tutorls.html#id72"/>
+            <topic label="Attaching callbacks" href="tutorls.html#id74"/>
+            <topic label="Adding widgets" href="tutorls.html#id76"/>
+            <topic label="Generating and modifying the code" href="tutorls.html#id78">
+              <topic label="Generating the code" href="tutorls.html#id80"/>
+              <topic label="Modifying the setup function" href="tutorls.html#id82"/>
+              <topic label="Modifying the color-change function" href="tutorls.html#id84"/>
+              <topic label="Modifying the window-close function" href="tutorls.html#id86"/>
+            </topic>
+            <topic label="Compiling and running" href="tutorls.html#id88"/>
+            <topic label="Want more info?" href="tutorls.html#id90"/>
+          </topic>
+      </topic>
+      <topic label="PhAB's Environment" href="phab_env.html">
+          <topic label="Menus" href="phab_env.html#MenuBar">
+            <topic label="File menu" href="phab_env.html#FileMenu"/>
+            <topic label="Edit menu" href="phab_env.html#EditMenu"/>
+            <topic label="Project menu" href="phab_env.html#ProjectMenu"/>
+            <topic label="Build menu" href="phab_env.html#BuildMenu"/>
+            <topic label="Widget menu" href="phab_env.html#WidgetMenu"/>
+            <topic label="View menu" href="phab_env.html#ViewMenu"/>
+            <topic label="Window menu" href="phab_env.html#WindowMenu"/>
+            <topic label="Help menu" href="phab_env.html#HelpMenu"/>
+          </topic>
+          <topic label="Toolbars" href="phab_env.html#Toolbars"/>
+          <topic label="Control panels" href="phab_env.html#ControlPanels"/>
+          <topic label="Widget palette" href="phab_env.html#WidgetPalette">
+            <topic label="Modes (create vs select)" href="phab_env.html#MODESCREATEVERSUSSELECT">
+              <topic label="Determining the mode" href="phab_env.html#Determiningthemode"/>
+              <topic label="Switching to create mode" href="phab_env.html#Switchingtocreatemode"/>
+              <topic label="Switching to select mode" href="phab_env.html#Switchingtoselectmode"/>
+            </topic>
+          </topic>
+          <topic label="Resources panel" href="phab_env.html#ResourcesPanel"/>
+          <topic label="Callbacks panel" href="phab_env.html#CallbacksPanel"/>
+          <topic label="Module Tree panel" href="phab_env.html#ModuleTreePanel"/>
+          <topic label="Module Links panel" href="phab_env.html#ModuleLinksPanel"/>
+          <topic label="Browse Files panel" href="phab_env.html#BrowseFilesPanel"/>
+          <topic label="Search dialog" href="phab_env.html#SearchDialog"/>
+          <topic label="Customizing your PhAB environment" href="phab_env.html#PREFERENCES">
+            <topic label="General preferences" href="phab_env.html#GENERALPREFERENCES"/>
+            <topic label="Color preferences" href="phab_env.html#COLORPREFERENCES"/>
+            <topic label="Dragging preferences" href="phab_env.html#DRAGGINGPREFERENCES"/>
+            <topic label="Grid preferences" href="phab_env.html#GRIDPREFERENCES"/>
+          </topic>
+      </topic>
+      <topic label="Working with Applications" href="applications.html">
+          <topic label="Creating an application" href="applications.html#CreatingAnApplication">
+              <topic label="From the IDE:" href="applications.html#id4"/>
+              <topic label="Standalone PhAB:" href="applications.html#id6"/>
+              <topic label="Choosing a main window style" href="applications.html#id8"/>
+          </topic>
+          <topic label="Opening an application" href="applications.html#OPENINGANAPPLICATION">
+              <topic label="From the IDE" href="applications.html#id11"/>
+              <topic label="Standalone PhAB" href="applications.html#id13"/>
+          </topic>
+          <topic label="Saving an application" href="applications.html#SAVINGANAPPLICATION">
+            <topic label="From the IDE" href="applications.html#id16"/>
+            <topic label="From standalone PhAB" href="applications.html#id18">
+              <topic label="Naming or renaming an application" href="applications.html#NamingOrRenaming"/>
+              <topic label="Saving an existing application" href="applications.html#SAVINGANEXISTINGAPPLICATION"/>
+              <topic label="Overwriting an existing application" href="applications.html#Overwriting an existing application"/>
+            </topic>
+          </topic>
+          <topic label="Closing an application" href="applications.html#CLOSINGANAPPLICATION"/>
+          <topic label="Specifying project properties" href="applications.html#ProjectProperties">
+            <topic label="Startup Windows tab" href="applications.html#STARTUPWINDOWS">
+              <topic label="Define a startup window" href="applications.html#DefineStartupWindow">
+                <topic label="Adding a startup window" href="applications.html#Addingastartupwindow"/>
+                <topic label="Modifying a startup window" href="applications.html#Modifyingastartupwindow"/>
+                <topic label="Deleting a startup window" href="applications.html#Deletingastartupwindow"/>
+              </topic>
+              <topic label="Specifying a global header file" href="applications.html#GlobalHeader"/>
+              <topic label="Initialization function" href="applications.html#INITIALIZATIONFUNCTION"/>
+            </topic>
+            <topic label="Generate Options tab" href="applications.html#GenerateOptions">
+              <topic label="Other Generate options" href="applications.html#OtherOptions"/>
+            </topic>
+            <topic label="Run options" href="applications.html#RunOptions"/>
+            <topic label="Build and Debug options" href="applications.html#BuildDebugOptions"/>
+          </topic>
+          <topic label="Importing files" href="applications.html#ImportingFiles">
+            <topic label="Importing PhAB modules from other applications" href="applications.html#IMPORTINGPHABMODULES"/>
+            <topic label="Importing XBM images" href="applications.html#ImportingXBM"/>
+            <topic label="Importing graphics images" href="applications.html#ImportingGraphics"/>
+          </topic>
+          <topic label="Exporting files" href="applications.html#ExportingFiles"/>
+      </topic>
+      <topic label="Working with Modules" href="modules.html">
+          <topic label="Module types" href="modules.html#ModuleTypes"/>
+          <topic label="Anatomy of a module" href="modules.html#ANATOMYOFAMODULE"/>
+          <topic label="Selecting a module" href="modules.html#Selectingamodule"/>
+          <topic label="How modules are saved" href="modules.html#Howmodulesaresaved"/>
+          <topic label="Changing module resources" href="modules.html#Changingmoduleresources"/>
+          <topic label="Creating a new module" href="modules.html#Creatinganewmodule"/>
+          <topic label="Deleting a module" href="modules.html#Deletingamodule"/>
+          <topic label="Iconifying modules" href="modules.html#Iconifyingmodules"/>
+          <topic label="Displaying modules at run time" href="modules.html#DisplayingModules">
+            <topic label="Positioning a module" href="modules.html#LocationDialog"/>
+          </topic>
+          <topic label="Finding lost modules and icons" href="modules.html#Findingmodules"/>
+          <topic label="Window modules" href="modules.html#Windowmodules">
+            <topic label="Resizing a window module" href="modules.html#id15"/>
+          </topic>
+          <topic label="Dialog modules" href="modules.html#Dialogmodules">
+            <topic label="Resizing a dialog module" href="modules.html#id18"/>
+            <topic label="Predefined dialogs" href="modules.html#PredfinedDialogs"/>
+          </topic>
+          <topic label="Menu modules" href="modules.html#Menumodules">
+            <topic label="Opening the menu editor" href="modules.html#Openingthemenueditor"/>
+            <topic label="Specifying instance names" href="modules.html#Specifyinginstancenames"/>
+            <topic label="Creating hotkeys and shortcuts" href="modules.html#Hotkeysandshortcuts"/>
+            <topic label="Resizing a menu module" href="modules.html#id25"/>
+            <topic label="Creating command items" href="modules.html#COMMANDMENUITEMS"/>
+            <topic label="Creating submenu items" href="modules.html#SUBMENUITEMS"/>
+            <topic label="Creating separator items" href="modules.html#SEPARATORMENUITEMS"/>
+            <topic label="Creating toggle items" href="modules.html#TOGGLEMENUITEMS"/>
+            <topic label="Creating function items" href="modules.html#FunctionMenuItems"/>
+            <topic label="Moving menu items" href="modules.html#Movingmenuitems"/>
+            <topic label="Using a menu module" href="modules.html#UsingMenuModule"/>
+          </topic>
+          <topic label="Picture modules" href="modules.html#Picturemodules">
+            <topic label="Displaying a picture" href="modules.html#id35"/>
+            <topic label="Using pictures as widget databases" href="modules.html#id37"/>
+            <topic label="Resizing a picture module" href="modules.html#id39"/>
+          </topic>
+      </topic>
+      <topic label="Creating Widgets in PhAB" href="widgets.html">
+          <topic label="Types of widgets" href="widgets.html#TypesOfWidgets"/>
+          <topic label="Instance names" href="widgets.html#InstanceNames">
+            <topic label="Default instance name" href="widgets.html#id5"/>
+            <topic label="When to assign a unique name" href="widgets.html#id7"/>
+            <topic label="Instance names and translations" href="widgets.html#id9"/>
+            <topic label="Duplicate names" href="widgets.html#id11"/>
+          </topic>
+          <topic label="Creating a widget" href="widgets.html#CreatingAWidget">
+            <topic label="Creating several widgets" href="widgets.html#CreatingSeveralWidgets"/>
+            <topic label="Canceling create mode" href="widgets.html#Cancelingcreatemode"/>
+          </topic>
+          <topic label="Selecting widgets" href="widgets.html#Selectingwidgets">
+            <topic label="A single widget" href="widgets.html#Selectingasinglewidget">
+              <topic label="Point-and-click method" href="widgets.html#Pointandclickmethod"/>
+              <topic label="Control-panel methods" href="widgets.html#Controlpanelmethod"/>
+            </topic>
+            <topic label="Multiple widgets" href="widgets.html#Selectingmultiplewidgets">
+              <topic label="Using a bounding box" href="widgets.html#Usingaboundingbox"/>
+              <topic label="Using Shift and click" href="widgets.html#UsingShiftandclick"/>
+              <topic label="Using the control panels" href="widgets.html#Controlpanelmethods"/>
+            </topic>
+            <topic label="Widgets within a group" href="widgets.html#SELECTINGWIDGETSWITHINAGROUP">
+              <topic label="Using the Module Tree panel" href="widgets.html#id25"/>
+              <topic label="Using the Next and Previous buttons" href="widgets.html#id27"/>
+            </topic>
+            <topic label="Hidden widgets" href="widgets.html#SELECTINGHIDDENWIDGETS"/>
+          </topic>
+          <topic label="Aligning widgets" href="widgets.html#ALIGNINGWIDGETS">
+            <topic label="To another widget" href="widgets.html#Aligningtoanotherwidget"/>
+            <topic label="To a parent container" href="widgets.html#Aligningtoaparentcontainer"/>
+          </topic>
+          <topic label="Distributing widgets" href="widgets.html#DistributingWidgets"/>
+          <topic label="Common User Access (CUA) and handling focus" href="widgets.html#HandlingFocus">
+            <topic label="Changing focus with the keyboard" href="widgets.html#id35"/>
+            <topic label="Controlling focus" href="widgets.html#id37"/>
+            <topic label="Focus callbacks" href="widgets.html#id39"/>
+            <topic label="Focus-handling functions" href="widgets.html#id41"/>
+          </topic>
+          <topic label="Ordering widgets" href="widgets.html#ORDERINGWIDGETS"/>
+          <topic label="Dragging widgets" href="widgets.html#DRAGGING">
+              <topic label="Dragging preferences" href="widgets.html#id45"/>
+          </topic>
+          <topic label="Setting a widget's x and y coordinates" href="widgets.html#SETTINGXANDYVALUES"/>
+          <topic label="Transferring widgets between containers" href="widgets.html#MOVINGWIDGETSBETWEENCONTAINERS"/>
+          <topic label="Resizing widgets and modules" href="widgets.html#RESIZINGWIDGETS"/>
+          <topic label="Clipboard" href="widgets.html#CLIPBOARD">
+            <topic label="Cutting and copying" href="widgets.html#CUTTINGANDCOPYING"/>
+            <topic label="Pasting" href="widgets.html#PASTING"/>
+          </topic>
+          <topic label="Duplicating widgets and containers" href="widgets.html#DUPLICATINGWIDGETSANDCONTAINERS"/>
+          <topic label="Deleting widgets or modules" href="widgets.html#DELETINGWIDGETS"/>
+          <topic label="Matching widget resources and callbacks" href="widgets.html#Matching"/>
+          <topic label="Importing graphic files" href="widgets.html#IMPORTINGGRAPHICFILES"/>
+          <topic label="Changing a widget's class" href="widgets.html#ChangingClass"/>
+          <topic label="Templates" href="widgets.html#Templates">
+            <topic label="Creating templates" href="widgets.html#CreatingTemplates"/>
+            <topic label="Adding a widget class" href="widgets.html#AddingWidgetClass"/>
+            <topic label="Editing templates" href="widgets.html#EditingTemplates"/>
+            <topic label="Deleting templates" href="widgets.html#DeletingTemplates"/>
+          </topic>
+      </topic>
+      <topic label="Editing Resources and Callbacks in PhAB" href="resources.html">
+          <topic label="Editing widget resources" href="resources.html#EDITINGWIDGETRESOURCESGENERAL"/>
+          <topic label="Pixmap editor" href="resources.html#PIXMAPEDITOR">
+            <topic label="Setting the pixmap's size" href="resources.html#SETTINGTHEPIXMAPSSIZE"/>
+            <topic label="How to draw and erase" href="resources.html#HOWTODRAWANDERASE"/>
+            <topic label="Choosing colors" href="resources.html#CHOOSINGCOLORS">
+              <topic label="Choosing a background color" href="resources.html#id8"/>
+            </topic>
+            <topic label="Drawing freehand" href="resources.html#DRAWINGFREEHAND"/>
+            <topic label="Drawing lines, rectangles, and circles" href="resources.html#DRAWINGLINESRECTANGLESANDCIRCLES"/>
+            <topic label="Filling an enclosed area" href="resources.html#FILLINGANENCLOSEDAREA"/>
+            <topic label="Selecting an area" href="resources.html#SELECTINGANAREA"/>
+            <topic label="Nudging an area" href="resources.html#NUDGINGANAREA"/>
+            <topic label="Using the Pixmap toolbar" href="resources.html#USINGTHEPIXMAPTOOLSWINDOW"/>
+            <topic label="Other pixmap controls" href="resources.html#OTHERPIXMAPCONTROLS"/>
+          </topic>
+          <topic label="Color editor" href="resources.html#COLOREDITOR">
+            <topic label="Full color editor" href="resources.html#FullColorEditor"/>
+            <topic label="Quick color editor" href="resources.html#QuickColorEditor"/>
+          </topic>
+          <topic label="Flag/choice editor" href="resources.html#FLAGOPTIONEDITOR">
+            <topic label="Flag resources" href="resources.html#FLAGRESOURCES"/>
+            <topic label="Option list resources" href="resources.html#OPTIONLISTRESOURCES"/>
+          </topic>
+          <topic label="Font editor" href="resources.html#FONTEDITOR"/>
+          <topic label="List editor" href="resources.html#LISTEDITOR">
+            <topic label="Editing existing list items" href="resources.html#Editingexistinglistitems"/>
+            <topic label="Deleting list items" href="resources.html#Deleting list items"/>
+          </topic>
+          <topic label="Number editor" href="resources.html#NUMBEREDITOR"/>
+          <topic label="Text editors" href="resources.html#TEXTEDITOR"/>
+          <topic label="Code editor" href="resources.html#FunctionEditor"/>
+          <topic label="Layout editors" href="resources.html#LayoutEditors">
+            <topic label="Fill layout info editor" href="resources.html#id31"/>
+            <topic label="Row layout info editor" href="resources.html#id33"/>
+            <topic label="Grid layout info editor:" href="resources.html#id35"/>
+            <topic label="Row layout data editor" href="resources.html#id37"/>
+            <topic label="Grid layout data editor" href="resources.html#id39"/>
+          </topic>
+          <topic label="Callbacks" href="resources.html#Attachingcallbacks"/>
+          <topic label="Editing callbacks" href="resources.html#CALLBACKEDITOR"/>
+          <topic label="Module callbacks" href="resources.html#ModuleCallback">
+            <topic label="Prerealize setup function" href="resources.html#Prerealizesetupfunction"/>
+            <topic label="Postrealize setup function" href="resources.html#Postrealizesetupfunction"/>
+            <topic label="Setup functions are stored in stub files" href="resources.html#Setupfunctionsarestoredinstubfiles"/>
+          </topic>
+          <topic label="Code callbacks" href="resources.html#CodeCallback">
+            <topic label="Callback functions are stored in stub files" href="resources.html#Callbackfunctionsarestoredinstubfiles"/>
+          </topic>
+          <topic label="Hotkey callbacks" href="resources.html#HotkeyCallbacks">
+            <topic label="Hotkeys --- the basics" href="resources.html#HotkeyBasics"/>
+            <topic label="Specifying the hotkey label" href="resources.html#HotkeyLabel"/>
+            <topic label="Specifying the callback" href="resources.html#SpecifyingHotkeyCallback">
+              <topic label="Where you want a module to appear" href="resources.html#id53"/>
+              <topic label="What widget you need in the callback function" href="resources.html#id55"/>
+              <topic label="Where the user is going to type the hotkey" href="resources.html#id57"/>
+            </topic>
+            <topic label="Processing hotkeys" href="resources.html#ProcessingHotkeys"/>
+            <topic label="Disabling hotkeys" href="resources.html#DisablingHotkeys"/>
+          </topic>
+          <topic label="Event handlers --- raw and filter callbacks" href="resources.html#EventHandlers"/>
+      </topic>
+      <topic label="Geometry Management" href="geometry.html">
+          <topic label="Container widgets" href="geometry.html#ContainerWidgets"/>
+          <topic label="Geometry negotiation" href="geometry.html#GeometryNegotiation">
+            <topic label="Resize policy" href="geometry.html#ResizePolicy">
+              <topic label="Setting the resize policy in PhAB" href="geometry.html#id6"/>
+              <topic label="Setting the resize policy in your application's code" href="geometry.html#id8"/>
+            </topic>
+          </topic>
+          <topic label="Absolute positioning" href="geometry.html#AbsolutePositioning"/>
+          <topic label="Aligning widgets using groups" href="geometry.html#AligningUsingGroups">
+            <topic label="Joining widgets into a group" href="geometry.html#JOININGWIDGETS"/>
+            <topic label="Accessing widgets in a group" href="geometry.html#id13"/>
+            <topic label="Aligning widgets horizontally or vertically" href="geometry.html#id15"/>
+            <topic label="Aligning widgets in rows and columns" href="geometry.html#id17"/>
+            <topic label="Using the Group flags" href="geometry.html#GroupFlags"/>
+            <topic label="Splitting apart a group" href="geometry.html#SPLITTINGAPARTAGROUP"/>
+          </topic>
+          <topic label="Constraint management using anchors" href="geometry.html#Anchors">
+            <topic label="Anchor resources" href="geometry.html#id22">
+              <topic label="Setting anchor flags in PhAB" href="geometry.html#id24"/>
+              <topic label="Setting anchor flags in your application's code" href="geometry.html#id26"/>
+            </topic>
+          </topic>
+          <topic label="Using layouts" href="geometry.html#layouts">
+            <topic label="PtFillLayout" href="geometry.html#id29"/>
+            <topic label="PtRowLayout" href="geometry.html#id31"/>
+            <topic label="PtGridLayout" href="geometry.html#id33"/>
+            <topic label="Using hints" href="geometry.html#id35"/>
+          </topic>
+          <topic label="Enforcing position or size constraints without anchors or layouts" href="geometry.html#WithoutAnchors"/>
+      </topic>
+      <topic label="Generating, Compiling, and Running Code" href="generating.html">
+          <topic label="Using the Build menu" href="generating.html#UsingBuildMenu">
+            <topic label="Building your application" href="generating.html#id4"/>
+          </topic>
+          <topic label="Generating application code" href="generating.html#GENERATINGAPPLICATIONCODE">
+            <topic label="What PhAB generates" href="generating.html#WhatPhABgenerates"/>
+            <topic label="Version control" href="generating.html#VersionControl">
+              <topic label="Tips on using CVS" href="generating.html#id9"/>
+            </topic>
+            <topic label="Function prototypes" href="generating.html#Prototypes">
+              <topic label="Potential problems with generating proto.h" href="generating.html#PrototypeProblems"/>
+            </topic>
+          </topic>
+          <topic label="How application files are organized" href="generating.html#Howapplicationfilesareorganized">
+            <topic label="Multiplatform applications" href="generating.html#MultiPlatformDirectories"/>
+            <topic label="Single-platform applications" href="generating.html#SinglePlatformDirectories"/>
+            <topic label="Converting to Eclipse" href="generating.html#ConvertingToEclipse"/>
+          </topic>
+          <topic label="Editing source" href="generating.html#Editingsource">
+            <topic label="Choosing an editor or browser" href="generating.html#Choosinganeditor"/>
+            <topic label="Creating a source module" href="generating.html#Creatingasourcemodule"/>
+            <topic label="Changing the file display" href="generating.html#Changingthefiledisplay"/>
+          </topic>
+          <topic label="Compiling and linking" href="generating.html#CompilingAndLinking">
+            <topic label="Specifying additional libraries" href="generating.html#Librariesstaticvsshared"/>
+            <topic label="Running make" href="generating.html#Making">
+              <topic label="Modifying the make command" href="generating.html#Modifyingthemakecommand"/>
+            </topic>
+          </topic>
+          <topic label="Customizing the build process" href="generating.html#id25"/>
+          <topic label="Running the application" href="generating.html#Runningtheapplication"/>
+          <topic label="Debugging" href="generating.html#Debugging"/>
+          <topic label="Managing targets" href="generating.html#ManagingTargets"/>
+          <topic label="The Build menu" href="generating.html#BuildMenu"/>
+          <topic label="Including non-PhAB files in your application" href="generating.html#IncludingNonPhABFiles">
+            <topic label="Eclipse Project applications" href="generating.html#id32"/>
+            <topic label="Multiplatform applications" href="generating.html#id34"/>
+            <topic label="Single-platform applications" href="generating.html#id36"/>
+            <topic label="Adding libraries" href="generating.html#AddingLibraries"/>
+          </topic>
+          <topic label="Making a DLL out of a PhAB application" href="generating.html#MakingDLL">
+            <topic label="Compiling and linking" href="generating.html#CompilingLinkingDLL"/>
+            <topic label="Initializing your DLL" href="generating.html#InitDLL"/>
+            <topic label="Unloading your DLL" href="generating.html#UnloadDLL"/>
+          </topic>
+      </topic>
+      <topic label="Working with Code" href="code.html">
+          <topic label="Variables and manifests" href="code.html#Manifestsandvariables">
+            <topic label="Widget variables and manifests" href="code.html#id4"/>
+            <topic label="Using the global variable and widget manifest" href="code.html#id6"/>
+            <topic label="Handling multiple instances of a window" href="code.html#MultipleWindowInstances"/>
+            <topic label="Internal link manifests" href="code.html#id9"/>
+          </topic>
+          <topic label="Global header file" href="code.html#GlobalHeader"/>
+          <topic label="Function names and filenames" href="code.html#FunctionFileNames"/>
+          <topic label="Initialization function" href="code.html#InitializationFn">
+            <topic label="Processing command-line options" href="code.html#CommandLineOptions"/>
+          </topic>
+          <topic label="Module setup functions" href="code.html#ModuleSetupFns"/>
+          <topic label="Code-callback functions" href="code.html#CodeCallbackFns"/>
+          <topic label="Geometry data types" href="code.html#GeometryDataTypes"/>
+          <topic label="Timers" href="code.html#Timers">
+            <topic label="Using PtTimer" href="code.html#PtTimerWidget"/>
+            <topic label="RtTimer* functions" href="code.html#RtTimerFunctions"/>
+          </topic>
+          <topic label="Initializing menus" href="code.html#InitializingMenus">
+            <topic label="Enabling, disabling, or toggling menu items" href="code.html#EnablingMenuItems"/>
+            <topic label="Changing menu-item text" href="code.html#ChangingMenuItemText"/>
+            <topic label="Generating menu items" href="code.html#GeneratingMenuItems">
+              <topic label="Creating submenus" href="code.html#CreatingSubmenus"/>
+            </topic>
+          </topic>
+          <topic label="Delaying and forcing updates to the display" href="code.html#Updates">
+            <topic label="Globally" href="code.html#GlobalHold"/>
+            <topic label="For a specific container" href="code.html#ContainerHold"/>
+            <topic label="Forcing updates" href="code.html#ForcingUpdates"/>
+          </topic>
+      </topic>
+      <topic label="Manipulating Resources in Application Code" href="res_code.html">
+          <topic label="Argument lists" href="res_code.html#ArgumentLists"/>
+          <topic label="Setting resources" href="res_code.html#SettingResources">
+            <topic label="Argument lists for setting resources" href="res_code.html#ArgListSetting">
+              <topic label="Scalar and color resources" href="res_code.html#SetScalar"/>
+              <topic label="String resources" href="res_code.html#SetString"/>
+              <topic label="Alloc resources" href="res_code.html#SetAlloc"/>
+              <topic label="Image resources" href="res_code.html#SetImage"/>
+              <topic label="Array resources" href="res_code.html#SetArray"/>
+              <topic label="Flag resources" href="res_code.html#SetFlags"/>
+              <topic label="Function resources" href="res_code.html#SetFunction"/>
+              <topic label="Pointer resources" href="res_code.html#SetPointers"/>
+              <topic label="Link resources" href="res_code.html#SetLinks"/>
+              <topic label="Struct resources" href="res_code.html#SetStruct"/>
+              <topic label="Boolean resources" href="res_code.html#SetBoolean"/>
+            </topic>
+            <topic label="Calling PtSetResources" href="res_code.html#CallingPtSetResources"/>
+            <topic label="Setting one resource" href="res_code.html#SettingOneResource"/>
+          </topic>
+          <topic label="Getting resources" href="res_code.html#GettingResources">
+            <topic label="Not using pointers" href="res_code.html#NotUsingPointers">
+              <topic label="Scalar and flag resources (nonpointer method)" href="res_code.html#GetScalarFlagNonPointer"/>
+              <topic label="String resources (nonpointer method)" href="res_code.html#GetStringsNonPointer"/>
+              <topic label="Boolean resources (nonpointer method)" href="res_code.html#GetBooleanNonPointer"/>
+            </topic>
+            <topic label="Using pointers" href="res_code.html#UsingPointers">
+              <topic label="Scalar and flag resources (pointer method)" href="res_code.html#GetScalarFlagPointer"/>
+              <topic label="String resources (pointer method)" href="res_code.html#GetStringPointer"/>
+              <topic label="Alloc resources (pointer method)" href="res_code.html#GetAllocPointer"/>
+              <topic label="Image resources (pointer method)" href="res_code.html#GetImagePointer"/>
+              <topic label="Array resources (pointer method)" href="res_code.html#GetArrayPointer"/>
+              <topic label="Pointer resources (pointer method)" href="res_code.html#GetPointerPointer"/>
+              <topic label="Link resources (pointer method)" href="res_code.html#GetLinkPointer"/>
+              <topic label="Struct resources (pointer method)" href="res_code.html#GetStructPointer"/>
+              <topic label="Boolean resources (pointer method)" href="res_code.html#GetBooleanPointer"/>
+            </topic>
+            <topic label="Calling PtGetResources" href="res_code.html#CallingPtGetResources"/>
+            <topic label="Getting one resource" href="res_code.html#GettingOneResource"/>
+          </topic>
+          <topic label="Application-level resources" href="res_code.html#ApplicationResources">
+            <topic label="Setting resources" href="res_code.html#id37"/>
+            <topic label="Removing callbacks" href="res_code.html#id39"/>
+            <topic label="Getting callbacks" href="res_code.html#id41"/>
+          </topic>
+      </topic>
+      <topic label="Managing Widgets in Application Code" href="wgt_code.html">
+          <topic label="Creating widgets" href="wgt_code.html#CreatingWidgets"/>
+          <topic label="Ordering widgets" href="wgt_code.html#OrderingWidgets">
+            <topic label="Working in the widget family" href="wgt_code.html#WidgetFamily"/>
+          </topic>
+          <topic label="Callbacks" href="wgt_code.html#NonPhABCallbacks">
+            <topic label="Adding callbacks" href="wgt_code.html#id7"/>
+            <topic label="Callback invocation" href="wgt_code.html#id9"/>
+            <topic label="Removing callbacks" href="wgt_code.html#REMOVINGCALLBACKS"/>
+            <topic label="Examining callbacks" href="wgt_code.html#ExaminingCallbacks"/>
+          </topic>
+          <topic label="Event handlers" href="wgt_code.html#NonPhABEventHandlers">
+            <topic label="Adding event handlers" href="wgt_code.html#ADDINGEVENTHANDLERS"/>
+            <topic label="Removing event handlers" href="wgt_code.html#REMOVINGEVENTHANDLERS"/>
+            <topic label="Event handler invocation" href="wgt_code.html#id16"/>
+          </topic>
+          <topic label="Widget styles" href="wgt_code.html#Styles">
+            <topic label="Photon hook" href="wgt_code.html#id19">
+              <topic label="Multi-hook" href="wgt_code.html#id21"/>
+              <topic label="Setting widget styles using the Photon Hook" href="wgt_code.html#id23"/>
+            </topic>
+          </topic>
+      </topic>
+      <topic label="Control Surfaces" href="ctrl_surfaces.html">
+          <topic label="What's a control surface?" href="ctrl_surfaces.html#Introduction">
+            <topic label="Limitations" href="ctrl_surfaces.html#Limitations"/>
+            <topic label="Binding actions to control surfaces" href="ctrl_surfaces.html#Binding"/>
+            <topic label="Referring to control surfaces" href="ctrl_surfaces.html#Referring"/>
+          </topic>
+          <topic label="Control-surface API" href="ctrl_surfaces.html#API">
+            <topic label="Creating and destroying control surfaces" href="ctrl_surfaces.html#Creating"/>
+            <topic label="Finding IDs for control surfaces" href="ctrl_surfaces.html#FindingIds"/>
+            <topic label="Calculating geometry for control surfaces" href="ctrl_surfaces.html#Geometry"/>
+            <topic label="Drawing control surfaces" href="ctrl_surfaces.html#Drawing"/>
+            <topic label="Activating control surfaces" href="ctrl_surfaces.html#Activating"/>
+            <topic label="Enabling and disabling control surfaces" href="ctrl_surfaces.html#Enabling"/>
+            <topic label="Finding control surfaces" href="ctrl_surfaces.html#Finding"/>
+            <topic label="Hiding and showing control surfaces" href="ctrl_surfaces.html#Hiding"/>
+            <topic label="Ordering control surfaces" href="ctrl_surfaces.html#Ordering"/>
+            <topic label="Storing user data with control surfaces" href="ctrl_surfaces.html#UserData"/>
+          </topic>
+          <topic label="Example" href="ctrl_surfaces.html#Example"/>
+      </topic>
+      <topic label="Accessing PhAB Modules from Code" href="intlinks.html">
+          <topic label="Creating internal links" href="intlinks.html#CreatingInternalLinks"/>
+          <topic label="Using internal links in your code" href="intlinks.html#UsingInternalLinks">
+            <topic label="Manifests" href="intlinks.html#id5"/>
+            <topic label="Internal-link functions" href="intlinks.html#InternalLinksAPI"/>
+            <topic label="Example --- displaying a menu" href="intlinks.html#MenuExample"/>
+          </topic>
+          <topic label="Using widget databases" href="intlinks.html#Widgetdatabases">
+            <topic label="Creating a database" href="intlinks.html#Creatingadatabase"/>
+            <topic label="Preattaching callbacks" href="intlinks.html#Preattachingcallbacks"/>
+            <topic label="Assigning unique instance names" href="intlinks.html#id12"/>
+            <topic label="Creating a dynamic database" href="intlinks.html#id14"/>
+            <topic label="Widget-database functions" href="intlinks.html#id16"/>
+          </topic>
+      </topic>
+      <topic label="International Language Support" href="languages.html">
+          <topic label="Application design considerations" href="languages.html#DesignConsiderations">
+            <topic label="Size of text-based widgets" href="languages.html#SizeOfTextWidgets"/>
+            <topic label="Justification" href="languages.html#Justification"/>
+            <topic label="Font height" href="languages.html#id6"/>
+            <topic label="Hard-coded strings" href="languages.html#id8"/>
+            <topic label="Use of @ in instance names" href="languages.html#id10"/>
+            <topic label="Bilingual applications" href="languages.html#id12"/>
+            <topic label="Common strings" href="languages.html#CommonStrings"/>
+          </topic>
+          <topic label="Generating a language database" href="languages.html#GeneratingALanguageDatabase"/>
+          <topic label="Message databases" href="languages.html#MessageDatabases"/>
+          <topic label="Language editor" href="languages.html#LanguageEditor">
+            <topic label="Starting the Language Editor within PhAB" href="languages.html#LanguageEditorInPhAB"/>
+            <topic label="Starting the Language Editor as a stand-alone application" href="languages.html#LanguageEditorStandalone"/>
+            <topic label="Creating a new translation file" href="languages.html#id20"/>
+            <topic label="Editing an existing translation file" href="languages.html#id22"/>
+            <topic label="Translating the text" href="languages.html#id24"/>
+            <topic label="Hotkeys" href="languages.html#Hotkeys"/>
+            <topic label="Help resources" href="languages.html#id27"/>
+            <topic label="Translation functions" href="languages.html#TranslationAPI"/>
+          </topic>
+          <topic label="Running your application" href="languages.html#RunningYourApplication"/>
+          <topic label="Distributing your application" href="languages.html#DistributingYourApplication"/>
+      </topic>
+      <topic label="Context-Sensitive Help" href="help.html">
+          <topic label="Referring to help topics" href="help.html#ReferringToHelpTopics">
+            <topic label="Universal Resource Locator (URL)" href="help.html#URL"/>
+            <topic label="Topic path" href="help.html#TopicPath"/>
+          </topic>
+          <topic label="Connecting help to widgets" href="help.html#ConnectingHelpToWidgets">
+            <topic label="Displaying help in the Helpviewer" href="help.html#Helpviewer"/>
+            <topic label="Displaying help in a balloon" href="help.html#HelpBalloon"/>
+            <topic label="Help without the ? icon" href="help.html#NoQuestionIcon"/>
+          </topic>
+          <topic label="Accessing help from your code" href="help.html#AccessingHelpFromYourCode"/>
+      </topic>
+      <topic label="Interprocess Communication" href="ipc.html">
+          <topic label="Connections" href="ipc.html#Connections">
+            <topic label="Naming conventions" href="ipc.html#NamingConventions"/>
+            <topic label="Typical scenario" href="ipc.html#ConnectionScenario"/>
+            <topic label="Local connections" href="ipc.html#LocalConnections"/>
+            <topic label="Example" href="ipc.html#ConnectorExample"/>
+          </topic>
+          <topic label="Sending QNX messages" href="ipc.html#SendingQNXMessages"/>
+          <topic label="Receiving QNX messages" href="ipc.html#ReceivingQNXMessages">
+            <topic label="Adding an input handler" href="ipc.html#AddingInputHandler">
+              <topic label="name_attach and PtAppAddInput" href="ipc.html#NameAttach"/>
+            </topic>
+            <topic label="Removing an input handler" href="ipc.html#id12"/>
+            <topic label="Message buffer size" href="ipc.html#MessageBufferSize"/>
+            <topic label="Example --- logging error messages" href="ipc.html#InputHandlerExample"/>
+          </topic>
+          <topic label="Photon pulses" href="ipc.html#PhotonPulses">
+            <topic label="Photon application that receives a pulse" href="ipc.html#PulseRecipient">
+              <topic label="Creating a pulse" href="ipc.html#CreatePulse"/>
+              <topic label="Arming a pulse" href="ipc.html#ArmPulse"/>
+              <topic label="Sending the pulse message to the deliverer" href="ipc.html#SendPulseMsg"/>
+              <topic label="Registering an input handler" href="ipc.html#RegisterPulseHandler"/>
+              <topic label="Delivering a pulse to yourself" href="ipc.html#DeliverPulseToSelf"/>
+              <topic label="Destroying a pulse" href="ipc.html#DestroyPulse"/>
+              <topic label="Example --- message queues" href="ipc.html#PulseRecipientExample"/>
+            </topic>
+            <topic label="Photon application that delivers a pulse" href="ipc.html#PhotonPulser"/>
+          </topic>
+          <topic label="Processing signals" href="ipc.html#ProcessingSignals">
+            <topic label="Adding a signal-processing function" href="ipc.html#AddingASignalFn"/>
+            <topic label="Removing a signal-processing function" href="ipc.html#RemovingASignalFn"/>
+          </topic>
+          <topic label="Other I/O mechanisms" href="ipc.html#OtherIOMechanisms"/>
+      </topic>
+      <topic label="Parallel Operations" href="lengthy.html">
+          <topic label="Overview" href="lengthy.html#Overview"/>
+          <topic label="Background processing" href="lengthy.html#BackgroundProcessing"/>
+          <topic label="Work procedures" href="lengthy.html#WorkProcedures"/>
+          <topic label="Threads" href="lengthy.html#Threads">
+            <topic label="Locking the Photon library" href="lengthy.html#LibraryLock"/>
+            <topic label="Multiple event-processing threads" href="lengthy.html#MultipleEvents"/>
+            <topic label="Realtime threads" href="lengthy.html#RealtimeThreads"/>
+            <topic label="Non-Photon and Photon threads" href="lengthy.html#EnterLeaveFlags"/>
+            <topic label="Modal operations and threads" href="lengthy.html#ModalThreadOperations"/>
+            <topic label="Exiting a multithreaded program" href="lengthy.html#Exiting"/>
+            <topic label="Threads and work procedures" href="lengthy.html#ThreadsAndWorkProcs"/>
+          </topic>
+      </topic>
+      <topic label="Raw Drawing and Animation" href="draw.html">
+          <topic label="PtRaw widget" href="draw.html#PtRawWidget">
+            <topic label="Raw drawing function" href="draw.html#RawDrawingFunction">
+              <topic label="Determining the raw widget canvas" href="draw.html#RawCanvas"/>
+              <topic label="Translating coordinates" href="draw.html#RawTranslation"/>
+              <topic label="Clipping" href="draw.html#RawClipping"/>
+              <topic label="Using damage tiles" href="draw.html#RawDamage"/>
+              <topic label="Using a model for more complex drawing" href="draw.html#RawModel"/>
+              <topic label="Examples of simple PtRaw drawing functions" href="draw.html#RawExamples"/>
+            </topic>
+          </topic>
+          <topic label="Color" href="draw.html#Color"/>
+          <topic label="Drawing attributes" href="draw.html#DrawingAttributes">
+            <topic label="General attributes" href="draw.html#GeneralAttributes"/>
+            <topic label="Text attributes" href="draw.html#TextAttributes"/>
+            <topic label="Fill attributes" href="draw.html#FillAttributes"/>
+            <topic label="Stroke (line) attributes" href="draw.html#StrokeAttributes"/>
+          </topic>
+          <topic label="Arcs, ellipses, polygons, and rectangles" href="draw.html#ARCSELLIPSESPOLYGONSANDRECTANGLES">
+            <topic label="Rectangles" href="draw.html#Rectangles"/>
+            <topic label="Rounded rectangles" href="draw.html#RoundedRectangles"/>
+            <topic label="Beveled boxes, rectangles, and arrows" href="draw.html#BeveledBoxes"/>
+            <topic label="Polygons" href="draw.html#Polygons">
+              <topic label="Overlapping polygons" href="draw.html#id22"/>
+            </topic>
+            <topic label="Arcs, circles, chords, and pies" href="draw.html#Arcs"/>
+            <topic label="Spans --- complex shapes" href="draw.html#Spans"/>
+          </topic>
+          <topic label="Lines, pixels, and pixel arrays" href="draw.html#LINESPIXELSANDPIXELARRAYS"/>
+          <topic label="Text" href="draw.html#TEXT"/>
+          <topic label="Bitmaps" href="draw.html#BITMAPS"/>
+          <topic label="Images" href="draw.html#IMAGES">
+            <topic label="Palette-based images" href="draw.html#PaletteBasedImages"/>
+            <topic label="Direct-color images" href="draw.html#DirectColorImages"/>
+            <topic label="Gradient-color images" href="draw.html#GradientColorImages"/>
+            <topic label="Creating images" href="draw.html#CreatingImages"/>
+            <topic label="Caching images" href="draw.html#CachingImages"/>
+            <topic label="Transparency in images" href="draw.html#TransparentImages">
+              <topic label="Using chroma" href="draw.html#TransparencyChroma"/>
+              <topic label="Using a transparency mask" href="draw.html#TransparencyMask"/>
+            </topic>
+            <topic label="Displaying images" href="draw.html#DisplayingImages"/>
+            <topic label="Manipulating images" href="draw.html#ManipulatingImages"/>
+            <topic label="Releasing images" href="draw.html#ReleasingImages"/>
+          </topic>
+          <topic label="Animation" href="draw.html#Animation">
+            <topic label="Creating a series of snapshots" href="draw.html#CreatingSnapshots">
+              <topic label="Using a widget database" href="draw.html#UsingAWidgetDatabase"/>
+              <topic label="Using a file" href="draw.html#UsingAFile"/>
+            </topic>
+            <topic label="Cycling through the snapshots" href="draw.html#CyclingThroughSnapshots"/>
+            <topic label="Flickerless animation" href="draw.html#FlickerlessAnimation">
+              <topic label="PtOSContainer" href="draw.html#id47"/>
+              <topic label="Memory-context functions" href="draw.html#id49"/>
+            </topic>
+          </topic>
+          <topic label="Direct mode" href="draw.html#DirectMode">
+            <topic label="Example" href="draw.html#DirectModeExample"/>
+          </topic>
+          <topic label="Video memory offscreen" href="draw.html#VideoMemoryOffscreen">
+            <topic label="Offscreen locks" href="draw.html#OffscreenLocks"/>
+          </topic>
+          <topic label="Alpha blending support" href="draw.html#AlphaBlendingSupport"/>
+          <topic label="Chroma key support" href="draw.html#ChromaKey"/>
+          <topic label="Extended raster operations" href="draw.html#ExtendedRasterOperations"/>
+          <topic label="Video modes" href="draw.html#VideoModes"/>
+          <topic label="Gradients" href="draw.html#Gradients">
+            <topic label="Driver-level gradients" href="draw.html#DriverLevel"/>
+            <topic label="Application-level gradients" href="draw.html#ApplicationLevel"/>
+          </topic>
+          <topic label="Video overlay" href="draw.html#VideoOverlay">
+            <topic label="Example" href="draw.html#VideoOverlayExample"/>
+          </topic>
+          <topic label="Layers" href="draw.html#Layers">
+            <topic label="Surfaces" href="draw.html#Surfaces"/>
+            <topic label="Viewports" href="draw.html#Viewports"/>
+            <topic label="Layer API" href="draw.html#Layer API"/>
+            <topic label="Using layers" href="draw.html#using_layers"/>
+            <topic label="Example" href="draw.html#Example"/>
+          </topic>
+      </topic>
+      <topic label="Understanding Encodings, Fonts, Languages and Code Tables" href="understanding_fonts.html">
+            <topic label="Terminology Definitions" href="understanding_fonts.html#terms">
+              <topic label="Language" href="understanding_fonts.html#id4"/>
+              <topic label="Code Table" href="understanding_fonts.html#id6"/>
+              <topic label="Encoding" href="understanding_fonts.html#id8"/>
+              <topic label="Font" href="understanding_fonts.html#id10"/>
+              <topic label="Characters" href="understanding_fonts.html#id12"/>
+            </topic>
+            <topic label="Unicode encoding in Photon" href="understanding_fonts.html#photon">
+                <topic label="UTF-8, UTF-16 (Pg_TEXT_WIDECHAR)" href="understanding_fonts.html#id15"/>
+                <topic label="UTF-8" href="understanding_fonts.html#id17"/>
+                <topic label="UTF-8, UTF-16 (PF_WIDECHAR), UTF-32 (PF_WIDECHAR32)" href="understanding_fonts.html#id19"/>
+                <topic label="UTF-16" href="understanding_fonts.html#id21"/>
+              <topic label="String representation" href="understanding_fonts.html#id23"/>
+              <topic label="Translation" href="understanding_fonts.html#id25"/>
+              <topic label="Services" href="understanding_fonts.html#id27"/>
+            </topic>
+            <topic label="Advanced Graphics" href="understanding_fonts.html#gf"/>
+            <topic label="General Notes" href="understanding_fonts.html#notes"/>
+            <topic label="Language Notes" href="understanding_fonts.html#language"/>
+      </topic>
+      <topic label="Fonts" href="fonts.html">
+          <topic label="Symbol metrics" href="fonts.html#SymbolMetrics"/>
+          <topic label="Font function libraries" href="fonts.html#Libraries"/>
+          <topic label="Font names" href="fonts.html#FontNames">
+            <topic label="Querying available fonts" href="fonts.html#UsingPfQueryFonts"/>
+            <topic label="FontDetails structure" href="fonts.html#FontDetailsStructure"/>
+            <topic label="Generating font names" href="fonts.html#GeneratingFontNames"/>
+            <topic label="Example" href="fonts.html#Example"/>
+          </topic>
+          <topic label="Writing text in a rectangular area" href="fonts.html#TextInARectangle"/>
+          <topic label="Repairing damage to proportional text" href="fonts.html#ProportionalRepair"/>
+      </topic>
+      <topic label="Printing" href="printing.html">
+          <topic label="Overview" href="printing.html#Overview"/>
+          <topic label="Print contexts" href="printing.html#PrintContexts">
+            <topic label="Creating a print context" href="printing.html#CreatingPC"/>
+            <topic label="Modifying a print context" href="printing.html#ModifyingPC"/>
+          </topic>
+          <topic label="Starting a print job" href="printing.html#StartingPrinting"/>
+          <topic label="Printing the desired widgets" href="printing.html#PrintingWidgets">
+            <topic label="Printing a new page" href="printing.html#id9"/>
+            <topic label="Printing widgets that scroll" href="printing.html#PrintingScrollingWidgets">
+              <topic label="PtList" href="printing.html#PrintingPtList"/>
+              <topic label="PtMultiText" href="printing.html#PrintingPtMultiText"/>
+              <topic label="PtScrollArea" href="printing.html#PrintingPtScrollArea"/>
+            </topic>
+          </topic>
+          <topic label="Suspending and resuming a print job" href="printing.html#SuspendResume"/>
+          <topic label="Ending a print job" href="printing.html#EndingJob"/>
+          <topic label="Freeing the print context" href="printing.html#FreeingPC"/>
+          <topic label="Example" href="printing.html#Example"/>
+      </topic>
+      <topic label="Drag and Drop" href="dragndrop.html">
+          <topic label="Transport mechanism" href="dragndrop.html#TransportMechanism"/>
+          <topic label="Using drag and drop" href="dragndrop.html#UsingDragAndDrop">
+            <topic label="Starting drag and drop" href="dragndrop.html#StartingDnD">
+              <topic label="Example" href="dragndrop.html#StartingDnDExample"/>
+            </topic>
+            <topic label="Receiving drag-and-drop events" href="dragndrop.html#ReceivingDnDEvents">
+              <topic label="Source widget" href="dragndrop.html#DND_source"/>
+              <topic label="Destination widget" href="dragndrop.html#DND_dest"/>
+            </topic>
+            <topic label="Canceling drag and drop" href="dragndrop.html#CancelingDnd"/>
+          </topic>
+          <topic label="Registering new transport types" href="dragndrop.html#RegisteringTransportTypes">
+            <topic label="A simple data structure" href="dragndrop.html#SimpleStructure"/>
+            <topic label="A more complicated structure" href="dragndrop.html#ComplicatedStructure">
+              <topic label="Clear-references list" href="dragndrop.html#ClearReferences"/>
+              <topic label="Endian list" href="dragndrop.html#EndianList"/>
+              <topic label="Fixup list" href="dragndrop.html#FixupList"/>
+              <topic label="Registry entry" href="dragndrop.html#RegistryEntry"/>
+            </topic>
+            <topic label="Transport functions" href="dragndrop.html#TransportFunctions">
+              <topic label="Both applications" href="dragndrop.html#BothApplications"/>
+              <topic label="Source application" href="dragndrop.html#SourceApplication"/>
+              <topic label="Destination application" href="dragndrop.html#DestinationApplication"/>
+            </topic>
+          </topic>
+      </topic>
+      <topic label="Regions" href="regions.html">
+          <topic label="Photon coordinate space" href="regions.html#PhotonCoordinateSpace"/>
+          <topic label="Region coordinates" href="regions.html#RegionCoordinates">
+            <topic label="Region origins" href="regions.html#REGIONORIGINS"/>
+            <topic label="Initial dimensions and location" href="regions.html#id6">
+              <topic label="Origin at (0,0) and initial rectangle at (0,0)" href="regions.html#id8"/>
+              <topic label="Origin at (0,0) and initial rectangle not at (0,0)" href="regions.html#id10"/>
+              <topic label="Origin not at (0,0) and initial rectangle not at (0,0)" href="regions.html#id12"/>
+            </topic>
+            <topic label="About child regions" href="regions.html#id14"/>
+          </topic>
+          <topic label="Regions and event clipping" href="regions.html#RegionsAndEventClipping"/>
+          <topic label="Placement and hierarchy" href="regions.html#PLACEMENTANDHIERARCHY">
+            <topic label="Region hierarchy" href="regions.html#id18"/>
+            <topic label="Parent region" href="regions.html#id20"/>
+            <topic label="Brother regions" href="regions.html#id22"/>
+            <topic label="Default placement" href="regions.html#id24">
+              <topic label="Ph_FORCE_FRONT flag" href="regions.html#PhForceFrontFlag"/>
+            </topic>
+            <topic label="Specific placement" href="regions.html#SPECIFICPLACEMENT"/>
+          </topic>
+          <topic label="Using regions" href="regions.html#UsingRegions">
+            <topic label="Opening a region" href="regions.html#id29"/>
+            <topic label="Placing regions" href="regions.html#id31">
+              <topic label="Changing region placement" href="regions.html#id33"/>
+              <topic label="Changing the parent" href="regions.html#CHANGINGTHEPARENT"/>
+              <topic label="Specifying brothers" href="regions.html#id36"/>
+            </topic>
+          </topic>
+          <topic label="System information" href="regions.html#SystemInformation"/>
+      </topic>
+      <topic label="Events" href="events.html">
+          <topic label="Pointer events" href="events.html#PointerEvents">
+              <topic label="Pressing a button" href="events.html#id4"/>
+              <topic label="Releasing a button" href="events.html#id6"/>
+              <topic label="Multiple clicks" href="events.html#id8"/>
+              <topic label="Modifier keys" href="events.html#ModifierKeys"/>
+          </topic>
+          <topic label="Emitting events" href="events.html#EMITTINGEVENTS">
+            <topic label="Targeting specific regions" href="events.html#Targetingspecificregions">
+              <topic label="Inclusive event" href="events.html#id13"/>
+              <topic label="Direct event" href="events.html#id15"/>
+            </topic>
+            <topic label="Targeting specific widgets" href="events.html#TargetingWidgets"/>
+            <topic label="Emitting key events" href="events.html#KeyEvents"/>
+          </topic>
+          <topic label="Event coordinates" href="events.html#EventCoordinates"/>
+          <topic label="Event handlers --- raw and filter callbacks" href="events.html#EventHandlers"/>
+          <topic label="Collecting events" href="events.html#CollectingEvents"/>
+          <topic label="Event compression" href="events.html#EVENTCOMPRESSION"/>
+          <topic label="Dragging" href="events.html#Dragging">
+            <topic label="Initiating dragging" href="events.html#InitiatingDragging">
+              <topic label="Outline dragging" href="events.html#OutlineDragging"/>
+              <topic label="Opaque dragging" href="events.html#id26"/>
+            </topic>
+            <topic label="Handling drag events" href="events.html#HandlingDragEvents">
+              <topic label="Outline dragging" href="events.html#id29"/>
+              <topic label="Opaque dragging" href="events.html#id31"/>
+            </topic>
+          </topic>
+      </topic>
+      <topic label="Window Management" href="window_mgmt.html">
+          <topic label="Window-management flags" href="window_mgmt.html#WMFlags">
+            <topic label="Window-rendering flags" href="window_mgmt.html#id4"/>
+            <topic label="Window-managed flags" href="window_mgmt.html#id6"/>
+            <topic label="Window-notify flags" href="window_mgmt.html#NotifyFlags"/>
+          </topic>
+          <topic label="Notification callback" href="window_mgmt.html#NotificationCallback">
+            <topic label="Example: verifying window closure" href="window_mgmt.html#id10"/>
+          </topic>
+          <topic label="Getting and setting the window state" href="window_mgmt.html#WindowState"/>
+          <topic label="Managing multiple windows" href="window_mgmt.html#MultipleWindows"/>
+          <topic label="Window-manager functions" href="window_mgmt.html#WindowManagerFunctions"/>
+          <topic label="Running a standalone application" href="window_mgmt.html#StandaloneApplication"/>
+          <topic label="Modal dialogs" href="window_mgmt.html#MODALDIALOGS"/>
+      </topic>
+      <topic label="Programming Photon without PhAB" href="nonphab.html">
+          <topic label="Basic steps" href="nonphab.html#BasicSteps"/>
+          <topic label="Compiling and linking a non-PhAB application" href="nonphab.html#CompilingLinking"/>
+          <topic label="Sample application" href="nonphab.html#SAMPLEAPPLICATION">
+            <topic label="What's going on" href="nonphab.html#id6">
+              <topic label="PtInit" href="nonphab.html#id8"/>
+              <topic label="PtCreateWidget --- first call" href="nonphab.html#id10"/>
+              <topic label="PtSetArg" href="nonphab.html#id12"/>
+              <topic label="PtCreateWidget --- second call" href="nonphab.html#id14"/>
+              <topic label="PtRealizeWidget" href="nonphab.html#id16"/>
+              <topic label="PtMainLoop" href="nonphab.html#id18"/>
+            </topic>
+          </topic>
+          <topic label="Connecting application code to widgets" href="nonphab.html#CONNECTINGAPPLICATIONCODETOWIDGETS">
+            <topic label="Callbacks" href="nonphab.html#id21"/>
+            <topic label="Event handling" href="nonphab.html#id23"/>
+          </topic>
+          <topic label="Complete sample application" href="nonphab.html#CompleteApplication"/>
+      </topic>
+      <topic label="Photon Architecture" href="architecture.html">
+          <topic label="Event space" href="architecture.html#EVENTSPACE">
+            <topic label="Regions and events" href="architecture.html#id4"/>
+          </topic>
+          <topic label="Events" href="architecture.html#EVENTS">
+            <topic label="Initial rectangle set" href="architecture.html#id7"/>
+            <topic label="Collected rectangle set" href="architecture.html#id9"/>
+          </topic>
+          <topic label="Regions" href="architecture.html#REGIONS">
+            <topic label="Sensitivity" href="architecture.html#id12"/>
+            <topic label="Opacity" href="architecture.html#id14"/>
+            <topic label="Attribute summary" href="architecture.html#id16"/>
+            <topic label="Event logging" href="architecture.html#id18"/>
+            <topic label="Event modification" href="architecture.html#id20"/>
+            <topic label="Parent/child relationships" href="architecture.html#id22"/>
+            <topic label="Photon coordinate space" href="architecture.html#id24"/>
+            <topic label="Root region" href="architecture.html#id26"/>
+          </topic>
+          <topic label="Event types" href="architecture.html#EVENTTYPES"/>
+          <topic label="How region owners are notified of events" href="architecture.html#HOWREGIONOWNERSARENOTIFIEDOFEVENTS">
+            <topic label="Polling" href="architecture.html#id30"/>
+            <topic label="Synchronous notification" href="architecture.html#id32"/>
+            <topic label="Asynchronous notification" href="architecture.html#ASYNCHRONOUSNOTIFICATION"/>
+          </topic>
+          <topic label="Device region" href="architecture.html#DEVICEREGION">
+            <topic label="Pointer focus" href="architecture.html#id36"/>
+            <topic label="Keyboard focus" href="architecture.html#id38"/>
+            <topic label="Drag events" href="architecture.html#id40"/>
+            <topic label="Drag-and-drop events" href="architecture.html#DragNDrop"/>
+          </topic>
+          <topic label="Photon drivers" href="architecture.html#PHOTONDRIVERS">
+            <topic label="Input drivers" href="architecture.html#id44">
+              <topic label="Mouse driver" href="architecture.html#id46"/>
+              <topic label="Keyboard driver" href="architecture.html#id48"/>
+            </topic>
+            <topic label="Output drivers" href="architecture.html#id50">
+              <topic label="Graphics driver" href="architecture.html#id52"/>
+              <topic label="Multiple graphic drivers" href="architecture.html#id54"/>
+              <topic label="Drivers using separate regions" href="architecture.html#id56"/>
+              <topic label="Drivers using overlapping regions" href="architecture.html#id58"/>
+              <topic label="Encapsulation drivers" href="architecture.html#id60"/>
+            </topic>
+          </topic>
+          <topic label="Photon window manager" href="architecture.html#PHOTONWINDOWMANAGER">
+            <topic label="Window-frame regions" href="architecture.html#WindowFrameRegions"/>
+            <topic label="Focus region" href="architecture.html#FocusRegion"/>
+            <topic label="Workspace region" href="architecture.html#WorkspaceRegion"/>
+            <topic label="Backdrop region" href="architecture.html#BackdropRegion"/>
+          </topic>
+      </topic>
+      <topic label="Widgets at a Glance" href="widget_qref.html"/>
+      <topic label="Unicode Multilingual Support" href="utfencode.html">
+          <topic label="Wide and multibyte characters" href="utfencode.html#Chars"/>
+          <topic label="Unicode" href="utfencode.html#Unicode"/>
+          <topic label="UTF-8 encoding" href="utfencode.html#UTF8Encoding"/>
+          <topic label="Conversion functions" href="utfencode.html#ConversionFunctions"/>
+          <topic label="Other encodings" href="utfencode.html#OtherEncodings"/>
+          <topic label="Keyboard drivers" href="utfencode.html#KeyboardDrivers">
+            <topic label="Example: text widgets" href="utfencode.html#id9"/>
+            <topic label="Dead keys and compose sequences" href="utfencode.html#id11"/>
+          </topic>
+          <topic label="Photon compose sequences" href="utfencode.html#COMPSEQ"/>
+      </topic>
+      <topic label="Photon in Embedded Systems" href="embed.html">
+          <topic label="Assumptions" href="embed.html#ASSUME"/>
+          <topic label="Introduction" href="embed.html#INTRO">
+            <topic label="QNX Graphics framework server" href="embed.html#id5"/>
+            <topic label="Photon Server" href="embed.html#id7"/>
+            <topic label="Graphics subsystem" href="embed.html#id9"/>
+            <topic label="Font support" href="embed.html#id11"/>
+            <topic label="Input support" href="embed.html#id13"/>
+            <topic label="User applications" href="embed.html#id15"/>
+            <topic label="Steps to boot into Photon" href="embed.html#id17"/>
+          </topic>
+          <topic label="The basics" href="embed.html#BASICS">
+              <topic label="Step 1. Start the QNX graphics framework server" href="embed.html#startgraphicsframework"/>
+              <topic label="Step 2. Export environment variables" href="embed.html#exportEnvar"/>
+              <topic label="Step 3. Start the Photon server" href="embed.html#startPhotonServer"/>
+            <topic label="Files needed" href="embed.html#id23">
+              <topic label="Step 4. Configure fonts" href="embed.html#configureFonts"/>
+              <topic label="Step 5. Start the graphics driver" href="embed.html#startGraphics"/>
+              <topic label="Step 5. Start the input driver" href="embed.html#startInput"/>
+            </topic>
+            <topic label="Files needed" href="embed.html#id28">
+              <topic label="Step 6. Start the window manager" href="embed.html#startPWM"/>
+            </topic>
+            <topic label="Files needed" href="embed.html#id31">
+              <topic label="Step 7. Start your application" href="embed.html#startApp"/>
+            </topic>
+            <topic label="Files needed" href="embed.html#id34"/>
+          </topic>
+          <topic label="Caveats" href="embed.html#ISSUES">
+            <topic label="Flash filesystems" href="embed.html#id37"/>
+            <topic label="Graphics" href="embed.html#id39"/>
+            <topic label="Miscellaneous" href="embed.html#id41"/>
+          </topic>
+          <topic label="Example" href="embed.html#Example">
+            <topic label="Required binaries" href="embed.html#RequiredBinaries"/>
+            <topic label="Required libraries" href="embed.html#RequiredLibraries"/>
+            <topic label="Required fonts" href="embed.html#RequiredFonts"/>
+            <topic label="Putting it all together" href="embed.html#AllTogether"/>
+            <topic label="Troubleshooting" href="embed.html#Troubleshooting"/>
+          </topic>
+          <topic label="Example: Using the IDE's System Builder" href="embed.html#ide_example"/>
+          <topic label="Advanced topics" href="embed.html#advanced">
+            <topic label="Configuring fonts" href="embed.html#configuring_fonts">
+                <topic label="Internal or external?" href="embed.html#id52"/>
+                <topic label="Required fonts" href="embed.html#id54"/>
+                <topic label="Required fonts binaries" href="embed.html#id56"/>
+                <topic label="Configure the font server" href="embed.html#configuringFonts"/>
+            </topic>
+          </topic>
+      </topic>
+      <topic label="Using PhAB under Microsoft Windows" href="winhost.html">
+          <topic label="Photon in a single window" href="winhost.html#PHWINDOW"/>
+          <topic label="Exiting PhAB" href="winhost.html#EXIT"/>
+          <topic label="Advanced options" href="winhost.html#ADVANCED"/>
+          <topic label="PHINDOWSOPTS" href="winhost.html#PHINDOWSOPTS"/>
+          <topic label="Using the clipboard" href="winhost.html#CLIPBOARD"/>
+          <topic label="Transferring PhAB projects" href="winhost.html#Transferring"/>
+          <topic label="Debugger launch line" href="winhost.html#DebuggerLaunch"/>
+          <topic label="Custom widget development and PhAB" href="winhost.html#CustomWidgets"/>
+          <topic label="Using custom TrueType fonts and PhAB" href="winhost.html#CustomFonts"/>
+          <topic label="Photon Hook DLLs" href="winhost.html#PhotonHookDLLs"/>
+          <topic label="Running multiple copies of PhAB" href="winhost.html#MultiCopy"/>
+      </topic>
+      <topic label="PhAB Keyboard Shortcuts" href="shortcuts.html">
+            <topic label="Project management shortcuts" href="shortcuts.html#project"/>
+            <topic label="Editing shortcuts" href="shortcuts.html#editing"/>
+            <topic label="Adding items shortcuts" href="shortcuts.html#adding"/>
+            <topic label="Building shortcuts" href="shortcuts.html#building"/>
+            <topic label="Widget management shortcuts" href="shortcuts.html#widget"/>
+            <topic label="View and window shortcuts" href="shortcuts.html#view"/>
+            <topic label="Other shortcuts" href="shortcuts.html#other"/>
+      </topic>
+      <topic label="What's New" href="whatsnew.html">
+          <topic label="What's new in Photon for QNX Neutrino 6.5.0" href="whatsnew.html#WhatsNew650">
+            <topic label="New content" href="whatsnew.html#NewContent650"/>
+          </topic>
+          <topic label="What's new in Photon for QNX Neutrino 6.4.1" href="whatsnew.html#WhatsNew641">
+            <topic label="New content" href="whatsnew.html#NewContent641"/>
+          </topic>
+          <topic label="What's new in Photon for QNX Neutrino 6.4" href="whatsnew.html#WhatsNew64">
+            <topic label="New content" href="whatsnew.html#NewContent64"/>
+          </topic>
+          <topic label="What's new in Photon for QNX Neutrino 6.3" href="whatsnew.html#WhatsNew63">
+            <topic label="New content" href="whatsnew.html#NewContent63"/>
+          </topic>
+          <topic label="What's new in Photon for QNX Neutrino 6.2.1" href="whatsnew.html#WhatsNew621">
+            <topic label="New content" href="whatsnew.html#NewContent621"/>
+            <topic label="Errata" href="whatsnew.html#Errata621"/>
+          </topic>
+          <topic label="What's new in Photon for QNX Neutrino 6.2.0" href="whatsnew.html#WhatsNew62">
+            <topic label="New content" href="whatsnew.html#NewContent62"/>
+          </topic>
+          <topic label="What's new in Photon for QNX Neutrino 6.0" href="whatsnew.html#WhatsNew20">
+              <topic label="Introduction" href="whatsnew.html#Introduction"/>
+              <topic label="PhAB's Environment" href="whatsnew.html#PhABsEnvironment"/>
+              <topic label="Working with Applications" href="whatsnew.html#Applications"/>
+              <topic label="Working with Modules" href="whatsnew.html#Modules"/>
+              <topic label="Creating Widgets in PhAB" href="whatsnew.html#WidgetsInPhAB"/>
+              <topic label="Geometry Management" href="whatsnew.html#Geometry"/>
+              <topic label="Working with Code" href="whatsnew.html#Code"/>
+              <topic label="Manipulating Resources in Application Code" href="whatsnew.html#ResourcesInCode"/>
+              <topic label="Managing Widgets in Application Code" href="whatsnew.html#WidgetsInCode"/>
+              <topic label="Context-Sensitive Help" href="whatsnew.html#Help"/>
+              <topic label="Interprocess Communication" href="whatsnew.html#IPC"/>
+              <topic label="Parallel Operations" href="whatsnew.html#LengthyOperations"/>
+              <topic label="Raw Drawing and Animation" href="whatsnew.html#Drawing"/>
+              <topic label="Fonts" href="whatsnew.html#Fonts"/>
+              <topic label="Printing" href="whatsnew.html#Printing"/>
+              <topic label="Drag and Drop" href="whatsnew.html#DragAndDrop"/>
+              <topic label="Events" href="whatsnew.html#Events"/>
+          </topic>
+      </topic>
+      <topic label="Glossary" href="glossary.html"/>
+</toc>

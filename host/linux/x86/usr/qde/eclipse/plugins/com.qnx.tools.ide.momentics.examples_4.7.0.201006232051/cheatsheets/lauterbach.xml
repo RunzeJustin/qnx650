@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cheatsheet title="Lauterbach Cheat Sheet">
+   <intro href="/com.qnx.doc.ide.userguide/topic/debug_JTAGNeutrino_.html">
+      <description>
+         This cheat sheet will walk you through the process of installing, configuring, and using the Lauterbach Trace32 In-Circuit Debugger with a QNX Neutrino kernel image.
+      </description>
+   </intro>
+   <item title="Hardware Check" dialog="true" skip="false" href="/com.qnx.doc.ide.userguide/topic/debug_JTAGNeutInstTrace32Prereq_.html">
+      <description>
+         First, verify that you have all of the necessary hardware. This includes: <br/><br/>
+
+• Lauterbach Power Debug Interface<br/>
+• Lauterbach Podbus Ethernet Controller<br/>
+• An appropriate JTAG debug cable for your target architecture<br/>
+• An ethernet cable<br/>
+• A switch to your local network<br/>
+      </description>
+   </item>
+   <item title="Software Check" dialog="true" skip="false" href="/com.qnx.doc.ide.userguide/topic/debug_JTAGNeutInstTrace32Prereq_.html">
+      <description>
+         Verify that you have all of the necessary software. This includes: <br/><br/>
+
+• Lauterbach TRACE32 Installation CD-ROM (September 2006 version or later)<br/>
+• QNX Momentics IDE<br/><br/>
+
+You must be running Microsoft Windows in order to use the Lauterbach debugger. Currently their required software does not support Linux or Neutrino hosts.
+      </description>
+   </item>
+   <item title="Install TRACE32 Software" dialog="true" skip="false" href="/com.qnx.doc.ide.userguide/topic/debug_JTAGNeutInstTrace32sw_.html">
+      <description>
+         In this step we will install the Lauterbach TRACE32 software onto the host development machine.
+      </description>
+      <subitem label="Insert the TRACE32 installation CD into the host development machine&apos;s CD-ROM drive." skip="false">
+      </subitem>
+      <subitem label="The InstallShield installer should have automatically started once the CD was inserted. If it did not, start it manually by opening Windows Explorer, navigating to the CD-ROM drive (usually D:\) and selecting Autoplay from the right-click menu." skip="true">
+      </subitem>
+      <subitem label="Follow the steps in the installer to complete installation of the TRACE32 software." skip="false">
+      </subitem>
+   </item>
+   <item title="Install the TRACE32 Eclipse Plug-in" dialog="true" skip="false" href="/com.qnx.doc.ide.userguide/topic/debug_JTAGNeutInstTrace32pi_.html">
+      <description>
+         In this step we will install the TRACE32 Eclipse Plug-in through Lauterbach&apos;s remote installation site.
+      </description>
+      <subitem label="Bring up the QNX Momentics IDE on the host development machine. Open Help-&gt;Software Updates-&gt;Find and Install." skip="false">
+         <command serialization="org.eclipse.ui.update.findAndInstallUpdates" confirm="false">
+         </command>
+      </subitem>
+      <subitem label="Choose &quot;Search for new features to install&quot; and click Next." skip="false">
+      </subitem>
+      <subitem label="Click &quot;New Remote Site&quot; and use the following URL: http://www.lauterbach.com/eclipse . Click OK." skip="false">
+      </subitem>
+      <subitem label="Make sure the newly-added site is checked, and click &quot;Finish&quot;." skip="false">
+      </subitem>
+      <subitem label="From the remote site, install the &quot;Lauterbach T32 Debugger Integration&quot; feature. Restart the Momentics IDE if prompted to." skip="false">
+      </subitem>
+   </item>
+   <item title="Connecting the Debugger" dialog="true" skip="false" href="/com.qnx.doc.ide.userguide/topic/debug_JTAGNeutConnectTrace32_.html">
+      <description>
+         In this step we will physically connect the debugger to the target hardware.
+      </description>
+      <subitem label="Find the Podbus Ethernet Controller and the Power Debug Interface pieces of the debugger. The Ethernet Controller should have a &quot;Podbus Out&quot; female port, and the Debug Interface should have a &quot;Podbus In&quot; male port. Connect these two peices together through this port." skip="false">
+      </subitem>
+      <subitem label="Connect an ethernet cable to the RJ45 jack of the Podbus Ethernet Controller, and the other end to your local network&apos;s switch." skip="false">
+      </subitem>
+      <subitem label="Connect the parallel connector of the JTAG cable connector to the &quot;Debug Cable&quot; port of the Power Debug Interface. Connect the other end to the JTAG or COP port of your target hardware." skip="false">
+      </subitem>
+      <subitem label="Connect the 7.5V AC adapter to the power socket on the Podbus Ethernet Controller and plug it in." skip="false">
+      </subitem>
+   </item>
+   <item title="Configuring the Debugger" dialog="true" skip="false" href="/com.qnx.doc.ide.userguide/topic/debug_JTAGNeutConfigTrace32_.html">
+      <description>
+         In this step we will configure the debugger for use with the target hardware and the QNX Momentics IDE.
+      </description>
+      <subitem label="Choose an IP address for the JTAG debugger. This address needs to be leasable from your local network&apos;s DHCP server. Contact your system administrator if you are unsure of what to choose here." skip="false">
+      </subitem>
+      <subitem label="You must add this IP address to Windows&apos; ARP cache. To do this, open a command prompt and type: arp -s &lt;ip-addr&gt; &lt;mac-addr&gt;. The MAC address should be printed on a sticker on the back side of the Podbus Ethernet Controller." skip="false">
+      </subitem>
+      <subitem label="You must specify this IP address in TRACE32&apos;s configuration file. Open the C:\T32\config.t32 file (your installation may be located elsewhere) and edit the NODE=&lt;ip-addr&gt; line to specify the address chosen above." skip="false">
+      </subitem>
+      <subitem label="Add the following lines to the end of the config.t32 file: &quot;RCL=NETASSIST&quot;, &quot;PACKLEN=1024&quot;, &quot;PORT=20006&quot;. Surround these lines on both ends with a blank line." skip="false">
+      </subitem>
+   </item>
+   <item title="Creating a Launch Configuration" dialog="true" skip="false" href="/com.qnx.doc.ide.userguide/topic/debug_JTAGNeutCreateLaunchConfig_.html">
+      <description>
+         In this step we will create a launch configuration for a C/C++ project written for the target hardware.
+      </description>
+      <subitem label="Open the &quot;Project Explorer&quot; View and select the project you want to debug. Right-click on the project icon, and select &quot;Debug As-&gt;Open Debug Dialog...&quot;" skip="false">
+      </subitem>
+      <subitem label="Create a new instance of the &quot;Lauterbach Trace32 Debug Configuration&quot;. Give it an appropriate name, and ensure that the &quot;Project&quot; field is correctly set to the project you are debugging." skip="false">
+      </subitem>
+      <subitem label="Under &quot;Debugger Settings&quot;, select the &quot;T32 executable&quot; option, browse to the Trace32 installation directory, and select the appropriate executable for your target hardware architecture. For instance, choose t32mppc.exe for a PowerPC target." skip="false">
+      </subitem>
+      <subitem label="Set the &quot;Configuration File&quot; to your Trace32 configuration. Unless you have rolled your own, this file will usually be named CONFIG.T32 and will be located in the root of your Trace32 installation directory." skip="false">
+      </subitem>
+      <subitem label="Click &quot;Apply&quot; to save the configuration, and then &quot;Close&quot; the debug dialog." skip="false">
+      </subitem>
+   </item>
+   <item title="Creating a Startup Script" dialog="true" skip="false" href="/com.qnx.doc.ide.userguide/topic/debug_JTAGNeutCreateStartup_.html">
+      <description>
+         In this step we will create a startup script for the TRACE32 Debugger software which can bring up the target hardware and load the image into RAM.
+      </description>
+      <subitem label="Locate and open the T32.cmm file located in the root of your TRACE32 installation directory." skip="false">
+      </subitem>
+      <subitem label="Locate the &quot;enddo&quot; line of the file. Usually this is the last non-empty line. All of our extra lines will be placed directly before this line." skip="false">
+      </subitem>
+      <subitem label="Add a line: &quot;sys.cpu _CPU_&quot;, where _CPU_ is your architecture. For example, &quot;sys.cpu MPC8349&quot;. (Quotation marks excluded)" skip="false">
+      </subitem>
+      <subitem label="Add the following lines, in this order, directly after the previous one: &quot;sys.reset&quot; &quot;sys.up&quot; &quot;go&quot; &quot;wait 5000.ms&quot; &quot;break&quot;" skip="false">
+      </subitem>
+      <subitem label="Locate the image file you want to load onto the target on your hard drive. It should be in either .srec, .elf, or .ifs format." skip="false">
+      </subitem>
+      <subitem label="Add the line: &quot;data.load._FORMAT_ _IMAGE&quot;, where _FORMAT_ is one of &quot;elf&quot; (.elf), &quot;S1record&quot; (.srec), or &quot;Binary&quot; (.ifs), and _IMAGE_ is the full path to the image from the previous step." skip="false">
+      </subitem>
+      <subitem label="Add the following lines, in order: &quot;step&quot;, &quot;Data.List&quot;, &quot;Register /SpotLight&quot;" skip="false">
+      </subitem>
+      <subitem label="Save and close the T32.cmm file." skip="false">
+      </subitem>
+   </item>
+</cheatsheet>

@@ -1,0 +1,163 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Memory errors" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_MEMANALREVEAL_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Memory_Leaks.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_setup_for_error_ananysis_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_setting_error_options_runtime_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Error_interpreting_Mem_results_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Memoryerrors" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Memory errors</title>
+   </head>
+   <body id="Memoryerrors"><a name="Memoryerrors" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Memory errors</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>
+            Memory errors can occur if your process corrupts the memory or tries to free the same memory twice, or uses a stale or invalid
+            pointer. These silent errors can cause surprising, random application crashes. The source of the error can be extremely difficult
+            to find, because the incorrect operation could have occurred in a different section of code long before an innocent operation
+            triggered a crash. 
+         </p>
+         
+         
+         <p> To learn more about the common causes of memory problems, see the topic <a href="../../com.qnx.doc.neutrino_prog/hat.html" shape="rect">Heap Analysis: Making Memory Errors a Thing of the Past</a> chapter of the QNX Neutrino <cite>Programmer's Guide</cite>. 
+         </p>
+         
+         
+         <p>To detect a memory error, you should launch your program with the Memory Analysis tool enabled. 
+            
+            
+            
+         </p>
+         
+         
+         <p>Memory Analysis tooling consists of IDE Visualization tools and a runtime library called <span class="filepath">librcheck.so</span>. The library overrides the allocator and standard <tt>str*</tt> and <tt>mem*</tt> functions to insert trace collection and runtime correctness checks. You don't need to re-compile you program to enable error
+            detection; the library can be pre-loaded at runtime if you're running your program with Memory Analysis enabled. 
+         </p>
+         
+         
+         <p>To enable memory analysis: 
+            
+         </p>
+         
+         <br clear="none" /><ol>
+            <li>From an existing launch configuration, select the <span class="uicontrol">Tools</span> tab. 
+            </li>
+            <li>Select <span class="uicontrol">Add/Delete Tool</span>. 
+            </li>
+            <li>Select <span class="uicontrol">Memory Analysis</span> and click <span class="uicontrol">OK</span>. 
+            </li>
+            <li>Select desired options for the tool.
+               <p>
+                  <span><img src="../images/e2Ftemp2Ftopic2Fmemory_MEMERR_.xml_d115105e101.jpg" alt="Memory Analysis Tool - Error Settings" /></span>
+                  
+               </p>
+               
+            </li>
+            <li>Select the <span class="uicontrol">Switch to this tool's perspective on launch'</span> option.
+            </li>
+            <li>After enabling Memory Analysis in a launch configuration, run that configuration. </li>
+         </ol>
+         
+         
+         <p>There are a few other ways to enable memory analysis, including attaching to a running application or postmortem analysis.
+            For more information about these and other launch options, see <a href="memory_analyzing_.html" shape="rect">Launching your program with Memory Analysis</a>. 
+         </p>
+         
+         
+         <p>After you configure the IDE for memory analysis, you can begin to use the results to identify memory errors in your programs,
+            and then trace them back to your code. 
+         </p>
+         
+         
+         <p>To view the memory errors identified by the IDE: </p>
+         
+         <br clear="none" /><ol>
+            <li>Switch to the Memory Analysis perspective.</li>
+            <li>In the <span class="uicontrol">Session</span> view, click your desired launch configuration. 
+               <p>
+                  <span><img src="../images/e2Ftemp2Ftopic2Fmemory_MEMERR_.xml_d115105e144.jpg" alt="Memory Analysis Tool: Memory Problems view" /></span>
+                  
+               </p>
+               
+               <p>The <span class="uicontrol">Memory Problems</span> view will open. 
+               </p>
+               
+            </li>
+            <li>From the problems list, select a problem. 
+               <p>Notice that the information in the <span class="uicontrol">Memory Backtrace</span> view dynamically updates to reflect the error that you've selected.
+               </p>
+               
+            </li>
+            <li>Double-click on an error or backtrace line to navigate to that error in the code editor. </li>
+            <li>Modify the code, as required, to correct the memory error for the selected problem. </li>
+         </ol>
+         
+         
+         <p>For more information about how to interpret memory errors during memory analysis, see the topic <a href="memory_Memory_detail_.html" shape="rect">Interpreting errors during memory analysis</a> later in this chapter. 
+         </p>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <ul class="ullinks">
+            <li class="ulchildlink"><strong><a href="../topic/memory_setup_for_error_ananysis_.html" shape="rect">Configuring the IDE for error analysis</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/memory_setting_error_options_runtime_.html" shape="rect">Changing error detection options at runtime</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/memory_Error_interpreting_Mem_results_.html" shape="rect">Interpreting memory errors</a></strong><br clear="none" />
+               
+            </li>
+         </ul>
+         
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/memory_MEMANALREVEAL_.html" shape="rect">Using Memory Analysis tooling</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/memory_Memory_Leaks.html" shape="rect">Memory leaks</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

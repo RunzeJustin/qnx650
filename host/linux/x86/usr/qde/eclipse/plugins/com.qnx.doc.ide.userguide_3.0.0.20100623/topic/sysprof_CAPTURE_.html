@@ -1,0 +1,140 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Capturing instrumentation data in event log files" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_TARGET_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_WIZARD_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_AddressTranslationsSysProf_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysprof_WIZOPTS_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Capturinginstrumentationdataineventlogfiles" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Capturing instrumentation data in event log files</title>
+   </head>
+   <body id="Capturinginstrumentationdataineventlogfiles"><a name="Capturinginstrumentationdataineventlogfiles" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Capturing instrumentation data in event log files</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>Regardless of how your log file is captured, you have a number of different options for regulating the amount of information
+            actually captured: 
+            
+            
+            
+         </p>
+         
+         <br clear="none" /><ul>
+            <li>On/Off toggling of tracing</li>
+            <li>Static per-class Off/Fast/Wide mode filters</li>
+            <li>Static per-event Off/Fast/Wide mode filters</li>
+            <li>User event-handler filters</li>
+         </ul>
+         
+         
+         <p>(For more information, see the SAT <a href="../../com.qnx.doc.instr_en_instr/about.html" shape="rect">User's Guide</a>.) 
+         </p>
+         
+         
+         <p>The IDE lets you access the first three of the above filters. You can enable tracing (currently done by activating the Log
+            Configuration dialog), and then select what kind of data is logged for various events in the system. 
+         </p>
+         
+         
+         <p>The events in the system are organized into different classes (kernel calls, communication, thread states, interrupts, etc.).
+            You can toggle each of these classes in order to indicate whether or not you want to generate such events for logging. 
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/temp2Ftopic2Fsysprof_CAPTURE_.xml_d173627e61.jpg" alt=" Log Configuration filter dialog" /></span>
+            
+         </p>
+         
+         
+         <div class="p">The data logged with events comes in the following modes: 
+            <dl>
+               <dt class="dlterm">Fast mode</dt>
+               <dd>A small-payload data packet that conveys only the most important aspects of the particular event. Better for performance.
+                  
+               </dd>
+               <dt class="dlterm">Wide mode</dt>
+               <dd>A larger-payload data packet that contains a more complete event definition, with more context. Better for understanding the
+                  data. 
+               </dd>
+               <dt class="dlterm">Class Specific</dt>
+               <dd>This mode lets you select Disable (no data is collected), Fast, Wide, or Event Specific for each of the following event classes:
+                  <br clear="none" /><ul>
+                     <li>Interrupts</li>
+                     <li>Process and Thread</li>
+                     <li>System</li>
+                     <li>Communication</li>
+                  </ul>
+                  
+                  <p>Choosing Event Specific lets you select Disable, Fast, or Wide for each event in that class.</p>
+                  
+               </dd>
+            </dl>
+            
+         </div>
+         
+         
+         <p>Depending on the purpose of the trace, you'll want to selectively enable different tracing modes for different types of events
+            so as to minimize the impact on the overall system. For its part in the analysis of these events, the IDE does its best to
+            work with whatever data is present. (But note that some functionality may not be available for post-capture analysis if it
+            isn't present in the raw event log. 
+         </p>
+         
+         
+         <div class="note"><span class="notetitle">Note:</span> By default, the IDE logs all events in <span class="uicontrol">Fast</span> mode, except for Thread Running events, which it logs in <span class="uicontrol">Wide</span> mode.
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/sysprof_TARGET_.html" shape="rect">Configuring a target for system profiling</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/sysprof_WIZARD_.html" shape="rect">Launching the Log Configuration dialog</a></div>
+            
+            <div><a href="../topic/sysprof_AddressTranslationsSysProf_.html" shape="rect">Address translation</a></div>
+            
+            <div><a href="../topic/sysprof_WIZOPTS_.html" shape="rect">Configuring your kernel event trace</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

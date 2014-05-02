@@ -1,0 +1,254 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="task" />
+      <meta name="DC.Title" content="Debugging a child process" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_debug_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="DebuggingAChildProcess" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Debugging a child process</title>
+   </head>
+   <body id="DebuggingAChildProcess"><a name="DebuggingAChildProcess" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Debugging a child process</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <div class="p">
+            
+            <p>On most systems, GDB has no special support for debugging programs that create additional processes using the <em>fork</em>() function. By default, when a program forks, GDB continues to debug the parent process, while the child process runs unimpeded.
+               If you set a breakpoint in any code that the child then executes, the child will get a <var class="varname">SIGTRAP</var> signal that causes it to terminate (unless it catches the signal). 
+            </p>
+            
+            
+            <p>To debug the child process, include a call to <em>sleep</em>() in the code that the child process executes after the <em>fork</em>(). It may be useful to sleep only if a certain environment variable is set, or a certain file exists, so that the delay doesn't
+               occur when you don't want to run GDB on the child. While the child is sleeping, use the <span class="filepath">ps</span> program to get its process ID, and then instruct GDB to attach to the child process (use a new invocation of GDB if you're
+               also debugging the parent process). From that point on, you can debug the child process like any other process that you attach
+               to. 
+            </p>
+            
+            
+            <p>The modes available are:</p>
+            
+            
+            <dl>
+               <dt class="dlterm">
+                  <tt>set follow-fork-mode mode</tt>
+                  
+               </dt>
+               <dd>Set the debugger response to a program call of <em>fork</em>() or <em>vfork</em>(). A call to <em>fork</em>() or <em>vfork</em>() creates a new process. If you want to follow the child process instead of the parent process, use this command. The type
+                  can be one of the following: 
+                  <p><strong>parent</strong>
+                     — The original process is debugged after a <em>fork</em>(). The child process runs unimpeded. This type is the default. 
+                  </p>
+                  
+                  <p><strong>child</strong>
+                     — The new process is debugged after a <em>fork</em>(). The parent process runs unimpeded. 
+                  </p>
+                  
+                  <p><strong>ask</strong>
+                     — The debugger will prompt you for either parent or child. 
+                  </p>
+                  
+               </dd>
+               <dt class="dlterm">
+                  <samp class="codeph">show follow-fork-mode</samp>
+                  
+               </dt>
+               <dd>Display the current debugger response to a <em>fork</em>() or <em>vfork</em>() call. 
+               </dd>
+            </dl>
+            
+            
+            <p>If you ask to debug a child process and a <em>vfork</em>() is followed by an <tt>exec()</tt>, GDB executes the new target up to the first breakpoint encountered in the new target. If there's a breakpoint set on <tt>main()</tt> in your original program, the breakpoint will also be set on the <tt>main()</tt> function for the child process. 
+            </p>
+            
+            
+            <p>When a child process is spawned by <em>vfork</em>(), you can't debug the child or parent until an <tt>exec()</tt> call completes. 
+            </p>
+            
+            
+            <p>If you issue a <tt>run</tt> command to GDB after an <tt>exec()</tt> call executes, the new target restarts. To restart the parent process, use the <tt>file</tt> command with the parent executable name as its argument. 
+            </p>
+            
+            
+            <p>You can use the <tt>catch</tt> command to make GDB stop whenever a <em>fork</em>(), <em>vfork</em>(), or <tt>exec()</tt> call is made. 
+            </p>
+            
+            
+            <p>For additional information about catchpoints, see <a href="debug_adding_Breakpoints.html" shape="rect">Adding breakpoints</a>. 
+            </p>
+            
+            
+            <div class="note"><span class="notetitle">Note:</span> For more information about starting your programs and the launch configuration options, see the <a href="launch_Base_.html" shape="rect">Launch Configurations Reference</a> chapter.
+            </div>
+            
+            
+            <p>After building a debug-enabled executable, your next step is to create a launch configuration for that executable so you can
+               run and debug it: 
+               
+            </p>
+            
+            
+         </div>
+         
+         
+         <div class="section"> To launch your program: </div>
+         
+         
+         <ol>
+            <li class="stepexpand">
+               <span>From the main menu, select <span class="menucascade">
+                     <span class="uicontrol">Run</span>
+                     &gt; <span class="uicontrol">Debug…</span>
+                     </span> (alternatively, you can select <span class="menucascade">
+                     <span class="uicontrol">Run</span>
+                     &gt; <span class="uicontrol">Debug Configurations…</span>
+                     </span> to open the dialog directly). You'll be prompted to select a configuration type for new projects.</span>
+               The launch configuration dialog appears. 
+               
+               
+               <p>
+                  <span><img src="../images/bug_debugging_Child_Process.xml_d63254e212.jpg" alt="Debug launch configurations" /></span>
+                  
+               </p>
+               
+               
+               
+            </li>
+            <li class="stepexpand">
+               <span>Create a launch configuration as you normally would, but don't click <span class="uicontrol">OK</span>. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Select the <span class="uicontrol">Debugger</span> tab. </span>
+               
+               
+               <p>
+                  <span><img src="../images/bug_debugging_Child_Process.xml_d63254e242.jpg" alt="Debugger tab" /></span>
+                  
+               </p>
+               
+               
+               
+            </li>
+            <li class="stepexpand">
+               <span>Enable the <span class="uicontrol">Stop on startup at</span> option for <span class="uicontrol">main</span> if it's not currently selected.</span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Optional: For GDB, select <span class="uicontrol">Verbose console mode</span> to see all of the commands sent to GDB, and all of the responses returned from GDB.
+                  </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Optional: Set <span class="uicontrol">Use full path to set breakpoints</span> to set breakpoints if you have many files with the same base name in the project. When file names are identical but their
+                  paths are different, setting this option ensures that breakpoints are set for the appropriate file, as expected.</span>
+               
+               
+               <div class="note"><span class="notetitle">Note:</span> This feature works only when you use <span class="cmdname">gcc</span> 4.3 or higher and <tt>gdb</tt> 6.8.
+               </div>
+               
+               
+               
+            </li>
+            <li class="stepexpand">
+               <span>Click <span class="uicontrol">Apply</span>. </span>
+               
+            </li>
+            <li class="stepexpand">
+               <span>Click <span class="uicontrol">Debug</span>. </span>
+               
+            </li>
+         </ol>
+         
+         
+         <div class="section">
+            
+            <p>The IDE changes to the Debug perspective. </p>
+            
+            
+            <p>
+               <span><img src="../images/bug_debugging_Child_Process.xml_d63254e323.jpg" alt="Debug perspective for HelloWorld project" /></span>
+               
+            </p>
+            
+            
+            <div class="fignone">
+               
+               <p>The default view of the Debug perspective for a simple HelloWorld QNX C++ project.</p>
+               
+               
+            </div>
+            
+            
+            <p>
+               
+               If launching a debugging session doesn't work when connected to the target with <span class="cmdname">qconn</span>, ensure that <tt>pdebug</tt> is on the target, and it is located in one of the directories in the <var class="varname">PATH</var> that <span class="cmdname">qconn</span> uses (typically <span class="filepath">/usr/bin</span>).
+            </p>
+            
+            
+            <div class="note"><span class="notetitle">Note:</span> By default: <br clear="none" /><ul>
+                  <li>For serial debugging on a Windows host, the specification for the serial port has changed. When specifying a device name,
+                     you have to set <span class="filepath">COM1</span> instead of <span class="filepath">/dev/com1</span>; otherwise, you'll receive an error similar to the following: <pre class="codeblock" xml:space="preserve">Debug session is not started - error: 
+Failed Launching Serial Debugger 
+Error initializing: /dev/com1: No such file or directory.</pre>
+                     <p>The device name <span class="filepath">/dev/com1</span> would no longer be considered a valid name for a device. You would instead set <span class="filepath">COM1</span> in the <span class="uicontrol">Serial Port</span> option in Debug Launch Configuration dialog. 
+                     </p>
+                     
+                  </li>
+                  <li>The IDE automatically changes to the Debug perspective when you debug a program. If the default is no longer set, or if you
+                     wish to change to a different perspective when you debug, see the <a href="launch_lnch_run2_.html" shape="rect">Running and debugging subsequent times</a> section in the Launch Configurations Reference chapter. 
+                  </li>
+                  <li>The IDE removes terminated debugging sessions from the Debug view when you launch a new session. This frees resources on your
+                     development host <em>and</em> your debugging target. You can retain the completed debug sessions by deselecting the <span class="uicontrol">Remove terminated launches when a new launch is created</span> box in the <span class="menucascade">
+                        <span class="uicontrol">Run/Debug</span>
+                        &gt; <span class="uicontrol">Launching</span>
+                        </span> pane of the Preferences dialog. 
+                  </li>
+               </ul>
+               
+            </div>
+            
+            
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/debug_debug_.html" shape="rect">Debugging your program (building an executable for debugging)</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

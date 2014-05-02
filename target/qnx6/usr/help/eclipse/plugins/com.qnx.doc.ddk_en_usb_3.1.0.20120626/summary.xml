@@ -1,0 +1,212 @@
+<function_summary>
+<function
+   name="usbd_abort_pipe"
+   summary="Abort all requests on a pipe"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n int usbd_abort_pipe( struct usbd_pipe *pipe );\n"
+/>
+<function
+   name="usbd_alloc"
+   summary="Allocate a memory area to use for data transfers"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n void *usbd_alloc( size_t size );\n"
+/>
+<function
+   name="usbd_alloc_urb"
+   summary="Allocate a USB Request Block for subsequent URB-based operations"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n struct usbd_urb *usbd_alloc_urb( struct usbd_urb *link );\n"
+/>
+<function
+   name="usbd_args_lookup"
+   summary="Look up a driver's command-line arguments"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n void usbd_args_lookup(struct usbd_connection *connection, int *argc, char ***argv );\n"
+/>
+<function
+   name="usbd_attach"
+   summary="Attach to a USB device"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n int usbd_attach( struct usbd_connection *connection, usbd_device_instance_t *instance, size_t extra, struct usbd_device **device );\n"
+/>
+<function
+   name="usbd_close_pipe"
+   summary="Close a pipe previously opened by usbd_open_pipe"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n int usbd_close_pipe( struct usbd_pipe *pipe );\n"
+/>
+<function
+   name="usbd_configuration_descriptor"
+   summary="Get the configuration descriptor for a specific configuration setting"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n usbd_configuration_descriptor_t *usbd_configuration_descriptor( struct usbd_device *device, uint8_t cfg, struct usbd_desc_node **node );\n"
+/>
+<function
+   name="usbd_connect"
+   summary="Connect a client driver to the USB stack"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n int usbd_connect( usbd_connect_parm_t *parm, struct usbd_connection **connection );\n"
+/>
+<function
+   name="usbd_descriptor"
+   summary="Get or set USB descriptors"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n int usbd_descriptor( struct usbd_device *device, int set, uint8_t type, uint16_t rtype, uint8_t index, uint16_t langid, uint8_t *desc, size_t len );\n"
+/>
+<function
+   name="usbd_detach"
+   summary="Detach from the USB device"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n int usbd_detach( struct usbd_device *device );\n"
+/>
+<function
+   name="usbd_device_descriptor"
+   summary="Get the device descriptor for a specific device"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n usbd_device_descriptor_t *usbd_device_descriptor( struct usbd_device *device, struct usbd_desc_node **node );\n"
+/>
+<function
+   name="usbd_device_extra"
+   summary="Get a pointer to the memory allocated by the extra parameter"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n void *usbd_device_extra( struct usbd_device *device );\n"
+/>
+<function
+   name="usbd_device_lookup"
+   summary="Map the device instance identifier to an opaque device handle (from usbd_attach)"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n struct usbd_device *usbd_device_lookup( struct usbd_connection *connection, usbd_device_instance_t *instance );\n"
+/>
+<function
+   name="usbd_disconnect"
+   summary="Disconnect a client driver from the USB stack"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n int usbd_disconnect( struct usbd_connection *connection );\n"
+/>
+<function
+   name="usbd_endpoint_descriptor"
+   summary="Get the endpoint descriptor for a specific endpoint setting"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n usbd_endpoint_descriptor_t *usbd_endpoint_descriptor( struct usbd_device *device, uint8_t config, uint8_t iface, uint8_t alt, uint8_t endpoint, struct usbd_desc_node **node );\n"
+/>
+<function
+   name="usbd_feature"
+   summary="Control a feature for a USB device"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n int usbd_feature( struct usbd_device *device, int set, uint16_t feature, uint16_t rtype, uint16_t index );\n"
+/>
+<function
+   name="usbd_free"
+   summary="Free the memory area allocated by usbd_alloc"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n void usbd_free( void* ptr );\n"
+/>
+<function
+   name="usbd_free_urb"
+   summary="Free the USB Request Block allocated by usbd_alloc_urb"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n struct usbd_urb *usbd_free_urb( struct usbd_urb *urb );\n"
+/>
+<function
+   name="usbd_get_frame"
+   summary="Get the current frame number and frame length for a device"
+   synopsis="int usbd_get_frame( struct usdb_device *device, int32_t *fnum, int32_t *flen );\n"
+/>
+<function
+   name="usbd_hcd_ext_info, usbd_hcd_info"
+   summary="Get information on the USB host controller and DDK library"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n int usbd_hcd_ext_info( struct usbd_connection *connection, uint32_t cindex, usbd_hcd_info_t *info );\n int usbd_hcd_info( struct usbd_connection *connection, usbd_hcd_info_t *info );\n"
+/>
+<function
+   name="usbd_hub_descriptor"
+   summary="Get the hub descriptor for a specific (hub) device"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n usbd_hub_descriptor_t *usbd_hub_descriptor( struct usbd_device *device, struct usbd_desc_node **node );\n"
+/>
+<function
+   name="usbd_interface_descriptor"
+   summary="Get the interface descriptor for a specific interface setting"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n usbd_interface_descriptor_t *usbd_interface_descriptor( struct usbd_device *device, uint8_t cfg, uint8_t ifc, uint8_t alt, struct usbd_desc_node **node );\n"
+/>
+<function
+   name="usbd_io"
+   summary="Submit a previously set up URB to the USB stack"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n int usbd_io( struct usbd_urb *urb, struct usbd_pipe *pipe, void (*func)(struct usbd_urb *, struct usbd_pipe *, void *), void *handle, uint32_t timeout );\n"
+/>
+<function
+   name="usbd_languages_descriptor"
+   summary="Get the table of supported LANGIDs for the given device"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n usbd_string_descriptor_t *usbd_languages_descriptor( struct usbd_device *device, struct usbd_desc_node **node );\n"
+/>
+<function
+   name="usbd_mphys"
+   summary="Get the physical address of memory allocated by usbd_alloc"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n paddr_t usbd_mphys( const void *ptr );\n"
+/>
+<function
+   name="usbd_open_pipe"
+   summary="Initialize the pipe described by the device or endpoint descriptor"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n int usbd_open_pipe( struct usbd_device *device, usbd_descriptors_t *desc, struct usbd_pipe **pipe );\n"
+/>
+<function
+   name="usbd_parse_descriptors"
+   summary="Parse device descriptors looking for a specific entry"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n usbd_descriptors_t *usbd_parse_descriptors( struct usbd_device *device, struct usbd_desc_node *root, uint8_t type, int index, struct usbd_desc_node **node );\n"
+/>
+<function
+   name="usbd_pipe_device"
+   summary="Retrieve the device associated with the pipe"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n struct usbd_device* usbd_pipe_device( struct usbd_pipe *pipe );\n"
+/>
+<function
+   name="usbd_pipe_endpoint"
+   summary="Retrieve the endpoint number associated with the pipe"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n uint32_t usbd_pipe_endpoint( struct usbd_pipe *pipe );\n"
+/>
+<function
+   name="usbd_reset_device"
+   summary="Reset a USB device"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n int usbd_reset_device( struct usbd_device *device );\n"
+/>
+<function
+   name="usbd_reset_pipe"
+   summary="Clear a stall condition on an endpoint identified by the pipe handle"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n int usbd_reset_pipe( struct usbd_pipe *pipe );\n"
+/>
+<function
+   name="usbd_select_config"
+   summary="Select the configuration for a USB device"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n int usbd_select_config( struct usbd_device *device, uint8_t cfg );\n"
+/>
+<function
+   name="usbd_select_interface"
+   summary="Select the interface for a USB device"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n int usbd_select_interface( struct usbd_device *device, uint8_t ifc, uint8_t alt );\n"
+/>
+<function
+   name="usbd_setup_bulk"
+   summary="Set up a URB for a bulk data transfer"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n int usbd_setup_bulk( struct usbd_urb *urb, uint32_t flags, void *addr, uint32_t len );\n"
+/>
+<function
+   name="usbd_setup_control"
+   summary="Set up a URB for a control transfer"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n usbd_setup_control( struct usbd_urb *urb, uint32_t flags, uint16_t request, uint16_t rtype, uint16_t value, uint16_t index, void *addr, uint32_t len );\n"
+/>
+<function
+   name="usbd_setup_interrupt"
+   summary="Set up a URB for an interrupt transfer"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n int usbd_setup_interrupt( struct usbd_urb *urb, uint32_t flags, void *addr, uint32_t len );\n"
+/>
+<function
+   name="usbd_setup_isochronous"
+   summary="Set up a URB for an isochronous transfer"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n int usbd_setup_isochronous( struct usbd_urb *urb, uint32_t flags, int32_t frame, void *addr, uint32_t len );\n"
+/>
+<function
+   name="usbd_setup_vendor"
+   summary="Set up a URB for a vendor-specific transfer"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n int usbd_setup_vendor( struct usbd_urb *urb, uint32_t flags, uint16_t request, uint16_t rtype, uint16_t value, uint16_t index, void *addr, uint32_t len );\n"
+/>
+<function
+   name="usbd_status"
+   summary="Get specific device status"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n int usbd_status( struct usbd_device *device, uint16_t rtype, uint16_t index, void *addr, uint32_t len )"
+/>
+<function
+   name="usbd_string"
+   summary="Get a string descriptor"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n char *usbd_string( struct usbd_device *device, uint8_t index, int langid );\n"
+/>
+<function
+   name="usbd_topology, usbd_topology_ext"
+   summary="Get the USB bus physical topology"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n int usbd_topology( struct usbd_connection *connection, usbd_bus_topology_t *tp ) int usbd_topology_ext( struct usbd_connection *connection, uint8_t busno, usbd_bus_topology_t *tp )"
+/>
+<function
+   name="usbd_urb_status"
+   summary="Return status information on a URB"
+   synopsis="#include &lt;sys/usbdi.h&gt;\n int usbd_urb_status( struct usbd_urb *urb, uint32_t *status, uint32_t *len )"
+/>
+</function_summary>

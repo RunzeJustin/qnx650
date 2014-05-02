@@ -1,0 +1,757 @@
+<function_summary>
+<function
+   name="gf_3d_target_create"
+   summary="Create a target for 3D rendering"
+   synopsis="#include &lt;gf3d.h&gt;\n int gf_3d_target_create( gf_3d_target_t * ptarget, gf_layer_t layer, gf_surface_t * surfaces, int nsurfaces, int width, int height, gf_format_t format );\n"
+/>
+<function
+   name="gf_3d_target_free"
+   summary="Free 3D rendering target"
+   synopsis="#include &lt;gf3d.h&gt;\n void gf_3d_target_free( gf_3d_target_t target );\n"
+/>
+<function
+   name="gf_3d_query_config"
+   summary="Query a 3D configuration"
+   synopsis="#include &lt;gf3d.h&gt;\n int gf_3d_query_config( gf_3d_config_info_t* info, gf_dev_t dev, EGLDisplay display, EGLConfig cfg );\n"
+/>
+<function
+   name="gf_context_create"
+   summary="Create and initialize a new draw context"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_context_create( gf_context_t * pcontext );\n"
+/>
+<function
+   name="gf_context_disable_alpha"
+   summary="Disable the current alpha operation"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_context_disable_alpha( gf_context_t context );\n"
+/>
+<function
+   name="gf_context_disable_antialias"
+   summary="Disable antialiasing"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_context_disable_antialias( gf_context_t context unsigned flags );\n"
+/>
+<function
+   name="gf_context_disable_chroma"
+   summary="Disable the current chroma operation"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_context_disable_chroma( gf_context_t context );\n"
+/>
+<function
+   name="gf_context_disable_clipping"
+   summary="Disable the clipping rectangle"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_context_disable_clipping( gf_context_t context );\n"
+/>
+<function
+   name="gf_context_disable_linedash"
+   summary="Disable line dashing"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_context_disable_linedash( gf_context_t context );\n"
+/>
+<function
+   name="gf_context_disable_pattern"
+   summary="Disable the pattern"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_context_disable_pattern( gf_context_t context );\n"
+/>
+<function
+   name="gf_context_disable_planemask"
+   summary="Disable the current planemask"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_context_disable_planemask( gf_context_t context );\n"
+/>
+<function
+   name="gf_context_disable_transform"
+   summary="Disable 2D transform matrix"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_context_disable_transform( gf_context_t context );\n"
+/>
+<function
+   name="gf_context_disable_translation"
+   summary="Disable translation"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_context_disable_translation( gf_context_t context );\n"
+/>
+<function
+   name="gf_context_free"
+   summary="Destroy a draw context"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_context_free( gf_context_t context );\n"
+/>
+<function
+   name="gf_context_get_surface"
+   summary="Provide the surface that is currently targeted by the context"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_context_get_surface( gf_context_t context, gf_surface_t * psurface );\n"
+/>
+<function
+   name="gf_context_init"
+   summary="Restore a context's default settings"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_context_init( gf_context_t context );\n"
+/>
+<function
+   name="gf_context_set_alpha"
+   summary="Set the current alpha operation"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_context_set_alpha( gf_context_t context, gf_alpha_t const *alpha );\n"
+/>
+<function
+   name="gf_context_set_antialias"
+   summary="Set the antialias behavior"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_context_set_antialias( gf_context_t context, unsigned flags );\n"
+/>
+<function
+   name="gf_context_set_bgcolor"
+   summary="Replace the background rendering color"
+   synopsis="#include &lt;gf/gf.h&gt;\n gf_color_t gf_context_set_bgcolor( gf_context_t context, gf_color_t color );\n"
+/>
+<function
+   name="gf_context_set_bgcolor_native"
+   summary="Replace the background rendering color"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_context_set_bgcolor_native( gf_context_t context, unsigned color );\n"
+/>
+<function
+   name="gf_context_set_capstyle"
+   summary="Set the thick line cap style"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_context_set_capstyle( gf_context_t context, int cap_style );\n"
+/>
+<function
+   name="gf_context_set_chroma"
+   summary="Replace the current chroma operation"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_context_set_chroma( gf_context_t context, gf_chroma_t const *chroma );\n"
+/>
+<function
+   name="gf_context_set_clipping"
+   summary="Replace the clipping rectangle"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_context_set_clipping( gf_context_t context, int x1, int y1, int x2, int y2 );\n"
+/>
+<function
+   name="gf_context_set_fgcolor"
+   summary="Replace the foreground rendering color"
+   synopsis="#include &lt;gf/gf.h&gt;\n gf_color_t gf_context_set_fgcolor( gf_context_t context, gf_color_t color );\n"
+/>
+<function
+   name="gf_context_set_fgcolor_native"
+   summary="Replace the foreground rendering color"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_context_set_fgcolor_native( gf_context_t context, unsigned color );\n"
+/>
+<function
+   name="gf_context_set_filter"
+   summary="Set the filter for a context"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_context_set_filter( gf_context_t context, unsigned filter );\n"
+/>
+<function
+   name="gf_context_set_hw_polygon"
+   summary="Toggles the behavior of polygon software fallback rendering"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_context_set_hw_polygon( gf_context_t context, uint8_t hw_only );\n"
+/>
+<function
+   name="gf_context_set_linedash"
+   summary="Set the current line dash style"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_context_set_linedash( gf_context_t context, uint32 line_pat, unsigned line_pat_offset, int line_repeat, unsigned flags );\n"
+/>
+<function
+   name="gf_context_set_linejoin"
+   summary="Replace the line join style"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_context_set_linejoin( gf_context_t context, int line_join );\n"
+/>
+<function
+   name="gf_context_set_pattern"
+   summary="Set the current ROP pattern"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_context_set_pattern( gf_context_t context, const uint8_t *pattern, unsigned short x_offset, unsigned short y_offset, unsigned flags )"
+/>
+<function
+   name="gf_context_set_penwidth"
+   summary="Set the pen width"
+   synopsis="#include &lt;gf/gf.h&gt;\n unsigned gf_context_set_penwidth( gf_context_t context, unsigned w );\n"
+/>
+<function
+   name="gf_context_set_planemask"
+   summary="Set the current planemask"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_context_set_planemask( gf_context_t context, unsigned planemask );\n"
+/>
+<function
+   name="gf_context_set_polyfill"
+   summary="Set the polygon fill rule"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_context_set_polyfill( gf_context_t context, int polyfill );\n"
+/>
+<function
+   name="gf_context_set_rop"
+   summary="Replace the current raster operation"
+   synopsis="#include &lt;gf/gf.h&gt;\n uint8_t gf_context_set_rop( gf_context_t context, unsigned short rop );\n"
+/>
+<function
+   name="gf_context_set_surface"
+   summary="Associate a surface with the draw context"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_context_set_surface( gf_context_t context, gf_surface_t surface );\n"
+/>
+<function
+   name="gf_context_set_surface_3d"
+   summary="Associate a 3D surface with the draw context"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_context_set_surface_3d( gf_context_t context, EGLSurface surface );\n"
+/>
+<function
+   name="gf_context_set_transform"
+   summary="Set the current 2D transform matrix"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_context_set_transform( gf_context_t context, const gf_fixed_t *xform_matrix );\n"
+/>
+<function
+   name="gf_context_set_translation"
+   summary="Set the current translation values"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_context_set_translation( gf_context_t context, int tx, int ty );\n"
+/>
+<function
+   name="gf_context_unset_surface"
+   summary="Disassociate a surface from the draw context"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_context_unset_surface( gf_context_t context )"
+/>
+<function
+   name="gf_cursor_disable"
+   summary="Disable a hardware cursor"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_cursor_disable( gf_display_t display, unsigned cursor_index );\n"
+/>
+<function
+   name="gf_cursor_enable"
+   summary="Enable a hardware cursor"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_cursor_enable( gf_display_t display unsigned cursor_index );\n"
+/>
+<function
+   name="gf_cursor_set"
+   summary="Set the current hardware cursor bitmap definition"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_cursor_set( gf_display_t display, unsigned cursor_index, const gf_cursor_t * cursor );\n"
+/>
+<function
+   name="gf_cursor_set_pos"
+   summary="Set the hardware cursor position"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_cursor_set_pos( gf_display_t display, unsigned cursor_index, int x, int y );\n"
+/>
+<function
+   name="gf_dev_attach"
+   summary="Connect to a graphics device"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_dev_attach( gf_dev_t* pdev, const char* name, gf_dev_info_t* info );\n"
+/>
+<function
+   name="gf_dev_detach"
+   summary="Disconnect from a graphics device"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_dev_detach( gf_dev_t gdev );\n"
+/>
+<function
+   name="gf_dev_get_error"
+   summary="Return the last GF error code"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_dev_get_error( gf_dev_t gdev );\n"
+/>
+<function
+   name="gf_dev_get_meminfo"
+   summary="Return information about a device's memory usage"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_dev_get_meminfo( gf_dev_t gdev, gf_mem_info_t * info) ;"
+/>
+<function
+   name="gf_dev_register_thread"
+   summary="Register a device with a thread"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_dev_register_thread( gf_dev_t gdev );\n"
+/>
+<function
+   name="gf_display_attach"
+   summary="Attach to a display on a graphics device"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_display_attach( gf_display_t * pdisplay, gf_dev_t gfx, unsigned display_index, gf_display_info_t *info );\n"
+/>
+<function
+   name="gf_display_detach"
+   summary="Detach from a display"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_display_detach( gf_display_t display );\n"
+/>
+<function
+   name="gf_display_query"
+   summary="Query the current display mode"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_display_query( gf_dev_t gdev, unsigned display_index, gf_display_info_t *info );\n"
+/>
+<function
+   name="gf_display_query_mode"
+   summary="Query a display for supported modes"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_display_query_mode( gf_display_t display, int index, gf_modeinfo_t *mode );\n"
+/>
+<function
+   name="gf_display_set_dpms"
+   summary="Set the display power-saving mode"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_display_set_dpms ( gf_display_t display, unsigned mode );\n"
+/>
+<function
+   name="gf_display_set_external_chroma"
+   summary="Set the external chroma for a display"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_display_set_external_chroma( gf_display_t display, gf_chroma_t *chroma );\n"
+/>
+<function
+   name="gf_display_set_layer_order"
+   summary="Set the ordering of the layers for a display"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_display_set_layer_order( gf_display_t display, const unsigned order[], unsigned flags );\n"
+/>
+<function
+   name="gf_display_set_mode"
+   summary="Set the display mode"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_display_set_mode( gf_display_t display, int xres, int yres, int refresh, gf_format_t format, unsigned flags );\n"
+/>
+<function
+   name="gf_display_snapshot"
+   summary="Save the contents of a display to a surface"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_display_snapshot( gf_display_t display, int output, int x1, int y1, int x2, int y2, gf_surface_t surface );\n"
+/>
+<function
+   name="gf_display_wait_vsync"
+   summary="Block until the next vertical synchronization"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_display_wait_vsync( gf_display_t display );\n"
+/>
+<function
+   name="gf_draw_begin"
+   summary="Begin rendering"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_draw_begin( gf_context_t context );\n"
+/>
+<function
+   name="gf_draw_bitmap"
+   summary="Draw a bitmap"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_draw_bitmap( gf_context_t context, const uint8_t *image, unsigned stride, unsigned bit0_offset, int x, int y, unsigned w, unsigned h, unsigned flags );\n"
+/>
+<function
+   name="gf_draw_blit1"
+   summary="Blit an area within a surface"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_draw_blit1( gf_context_t context, int sx1, int sy1, int sx2, int sy2, int dx1, int dy1 );\n"
+/>
+<function
+   name="gf_draw_blit2"
+   summary="Blit an area from one surface to another"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_draw_blit2( gf_context_t context, gf_surface_t ssurface, gf_surface_t dsurface, int sx1, int sy1, int sx2, int sy2, int dx, int dy );\n"
+/>
+<function
+   name="gf_draw_blitscaled"
+   summary="Perform a scaled blit"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_draw_blitscaled( gf_context_t context, gf_surface_t ssurface, gf_surface_t dsurface, int sx1, int sy1, int sx2, int sy2, int dx1, int dy1, int dx2, int dy2 );\n"
+/>
+<function
+   name="gf_draw_end"
+   summary="Finish rendering"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_draw_end( gf_context_t context );\n"
+/>
+<function
+   name="gf_draw_finish"
+   summary="Wait for the rendering hardware to finish"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_draw_finish( gf_context_t context );\n"
+/>
+<function
+   name="gf_draw_flush"
+   summary="Flush the draw buffer"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_draw_flush( gf_context_t context );\n"
+/>
+<function
+   name="gf_draw_image"
+   summary="Render an image"
+   synopsis="#include &lt;gf/gf.h&gt;\n extern int gf_draw_image( gf_context_t context, const uint8_t *pixels, gf_format_t format, unsigned stride, int x, int y, unsigned w, unsigned h, unsigned flags );\n"
+/>
+<function
+   name="gf_draw_poly_fill"
+   summary="Draw a filled polygon"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_draw_poly_fill( gf_context_t context, const gf_point_t *pts, size_t npoints );\n"
+/>
+<function
+   name="gf_draw_polyline"
+   summary="Draw a polyline"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_draw_polyline( gf_context_t context, const gf_point_t *pts, size_t npoints, uint32_t flags );\n"
+/>
+<function
+   name="gf_draw_rect"
+   summary="Draw a filled rectangle"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_draw_rect( gf_context_t context, int x1, int y1, int x2, int y2 );\n"
+/>
+<function
+   name="gf_draw_span"
+   summary="Draw a span"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_draw_span ( gf_context_t context, int x1, int x2, int y );\n"
+/>
+<function
+   name="gf_draw_spanlist"
+   summary="Draw a list of spans"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_draw_spanlist ( gf_context_t context, unsigned nspans, int x1[], int x2[], int y[] );\n"
+/>
+<function
+   name="gf_i2c_read"
+   summary="Perform an I2C master-read transaction"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_i2c_read ( gf_dev_t gdev, int busno, int slaveaddr, uint8_t * idata, int ibytes );\n"
+/>
+<function
+   name="gf_i2c_write"
+   summary="Perform an I2C master-write transaction"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_i2c_write ( gf_dev_t gdev, int busno, int slaveaddr, uint8_t * odata, int obytes );\n"
+/>
+<function
+   name="gf_i2c_writeread"
+   summary="Perform an I2C master write/read transaction"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_i2c_writeread ( gf_dev_t gdev, int busno, int slaveaddr, uint8_t * odata, int obytes, uint8_t * idata, int ibytes );\n"
+/>
+<function
+   name="gf_layer_attach"
+   summary="Attach to a layer"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_layer_attach( gf_layer_t * player, gf_display_t display, unsigned layer_index, unsigned flags );\n"
+/>
+<function
+   name="gf_layer_choose_format"
+   summary="Choose a format"
+   synopsis="#include &lt;gf/gf.h&gt;\n unsigned gf_layer_choose_format ( gf_layer_t layer, gf_format_t format[], size_t nformat, const unsigned * criteria );\n"
+/>
+<function
+   name="gf_layer_detach"
+   summary="Detach from a layer"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_layer_detach( gf_layer_t layer );\n"
+/>
+<function
+   name="gf_layer_disable"
+   summary="Disable a display layer"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_layer_disable( gf_layer_t layer );\n"
+/>
+<function
+   name="gf_layer_enable"
+   summary="Enable a display layer"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_layer_enable( gf_layer_t layer );\n"
+/>
+<function
+   name="gf_layer_query"
+   summary="Query a layer's capabilities"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_layer_query( gf_layer_t layer, int format_index, gf_layer_info_t *info );\n"
+/>
+<function
+   name="gf_layer_set_blending"
+   summary="Set layer blending"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_layer_set_blending( gf_layer_t layer, const gf_alpha_t * alpha );\n"
+/>
+<function
+   name="gf_layer_set_brightness"
+   summary="Set a layer's brightness"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_layer_set_brightness( gf_layer_t layer, int brightness );\n"
+/>
+<function
+   name="gf_layer_set_chroma"
+   summary="Set a layer's chroma operation"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_layer_set_chroma( gf_layer_t layer, const gf_chroma_t * chroma );\n"
+/>
+<function
+   name="gf_layer_set_contrast"
+   summary="Set a layer's contrast level"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_layer_set_contrast( gf_layer_t layer, int contrast );\n"
+/>
+<function
+   name="gf_layer_set_dst_viewport"
+   summary="Set a layer's destination viewport"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_layer_set_dst_viewport( gf_layer_t layer, int x1, int y1, int x2, int y2 );\n"
+/>
+<function
+   name="gf_layer_set_edge"
+   summary="Set the edge processing method for a layer"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_layer_set_edge(gf_layer_t layer, unsigned edge );\n"
+/>
+<function
+   name="gf_layer_set_filter"
+   summary="Set a layer's filter"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_layer_set_filter( gf_layer_t layer, unsigned filter );\n"
+/>
+<function
+   name="gf_layer_set_hue"
+   summary="Specify a layer's hue setting"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_layer_set_hue( gf_layer_t layer, int hue );\n"
+/>
+<function
+   name="gf_layer_set_outputs"
+   summary="Set the output for a display"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_layer_set_outputs( gf_layer_t layer, uint32_t mask );\n"
+/>
+<function
+   name="gf_layer_set_saturation"
+   summary="Set a layer's saturation level"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_layer_set_saturation( gf_layer_t layer, int saturation );\n"
+/>
+<function
+   name="gf_layer_set_src_viewport"
+   summary="Set a layer's source viewport"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_layer_set_src_viewport( gf_layer_t layer, int x1, int y1, int x2, int y2 );\n"
+/>
+<function
+   name="gf_layer_set_surfaces"
+   summary="Set the target surface for a layer"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_layer_set_surfaces( gf_layer_t layer, gf_surface_t surface[], int nsurfs );\n"
+/>
+<function
+   name="gf_layer_update"
+   summary="Update layer parameters"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_layer_update( gf_layer_t layer, unsigned flags );\n"
+/>
+<function
+   name="gf_layer_update_multi"
+   summary="Update parameters for multiple layers"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_layer_update_multi( gf_layer_t layer[], unsigned nlayers, unsigned flags );\n"
+/>
+<function
+   name="gf_surface_attach"
+   summary="Create a new surface from existing memory"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_surface_attach( gf_surface_t* psurface, gf_dev_t gdev, int w, int h, int stride, gf_format_t format, const gf_palette_t* palette, uint8_t* ptr, unsigned flags );\n"
+/>
+<function
+   name="gf_surface_attach_by_sid"
+   summary="Attach to a previously allocated surface"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_surface_attach_by_sid( gf_surface_t * psurface, gf_dev_t gdev, gf_sid_t sid);\n"
+/>
+<function
+   name="gf_surface_create"
+   summary="Create a new surface"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_surface_create( gf_surface_t* psurface, gf_dev_t gdev, int w, int h, gf_format_t format, const gf_palette_t* palette, unsigned flags );\n"
+/>
+<function
+   name="gf_surface_create_layer"
+   summary="Create a surface that a layer can target"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_surface_create_layer( gf_surface_t *psurface, gf_layer_t *layer, int nlayers, int surface_index, int w, int h, gf_format_t format, const gf_palette_t *palette, uint32_t flags );\n"
+/>
+<function
+   name="gf_surface_free"
+   summary="Free a surface"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_surface_free( gf_surface_t surface );\n"
+/>
+<function
+   name="gf_surface_get_dev"
+   summary="Get the handle of the graphics device currently targeted by a surface"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_surface_get_dev( gf_surface_t surface, gf_dev_t * pdev );\n"
+/>
+<function
+   name="gf_surface_get_info"
+   summary="Get surface parameters"
+   synopsis="#include &lt;gf/gf.h&gt;\n gf_surface_info_t *gf_surface_get_info( gf_surface_t surface, gf_surface_info_t *info);\n"
+/>
+<function
+   name="gf_surface_reattach"
+   summary="Recycle a surface previously created with gf_surface_attach"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_surface_reattach( gf_surface_t surface, int w, int h, int stride, const gf_palette_t * palette, uint8_t * ptr, unsigned flags );\n"
+/>
+<function
+   name="gf_vcap_attach"
+   summary="Attach to a video capture unit"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_vcap_attach ( gf_vcap_t * pvcap, gf_dev_t gdev, unsigned vcap_index, unsigned flags );\n"
+/>
+<function
+   name="gf_vcap_bind_to_layer"
+   summary="Bind video capture unit to a layer"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_vcap_bind_to_layer ( gf_vcap_t vcap, gf_layer_t layer );\n"
+/>
+<function
+   name="gf_vcap_detach"
+   summary="Detach from a video capture unit"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_vcap_detach ( gf_vcap_t vcap );\n"
+/>
+<function
+   name="gf_vcap_disable"
+   summary="Disable a video capture unit"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_vcap_disable ( gf_vcap_t vcap );\n"
+/>
+<function
+   name="gf_vcap_enable"
+   summary="Enable a video capture unit"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_vcap_enable ( gf_vcap_t vcap );\n"
+/>
+<function
+   name="gf_vcap_set_brightness"
+   summary="Set the video brightness"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_vcap_set_brightness ( gf_vcap_t vcap, int brightness );\n"
+/>
+<function
+   name="gf_vcap_set_contrast"
+   summary="Set the video capture unit contrast"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_vcap_set_contrast ( gf_vcap_t vcap, int contrast );\n"
+/>
+<function
+   name="gf_vcap_set_flags"
+   summary="Set video capture flags"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_vcap_set_flags ( gf_vcap_t vcap, unsigned flags );\n"
+/>
+<function
+   name="gf_vcap_set_input_dimensions"
+   summary="Set video capture input dimensions"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_vcap_set_input_dimensions ( gf_vcap_t vcap, int width, int height );\n"
+/>
+<function
+   name="gf_vcap_set_input_source"
+   summary="Set the video capture source"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_vcap_set_input_source ( gf_vcap_t vcap, int source_index );\n"
+/>
+<function
+   name="gf_vcap_set_input_viewport"
+   summary="Set the video capture source viewport"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_vcap_set_input_viewport ( gf_vcap_t vcap, int x1, int y1, int x2, int y2 );\n"
+/>
+<function
+   name="gf_vcap_set_output_dimensions"
+   summary="Set video capture output dimensions"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_vcap_set_output_dimensions ( gf_vcap_t vcap, int width, int height );\n"
+/>
+<function
+   name="gf_vcap_set_saturation"
+   summary="Set the video capture saturation"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_vcap_set_saturation ( gf_vcap_t vcap, int saturation );\n"
+/>
+<function
+   name="gf_vcap_set_sync_values"
+   summary="Set the video device synchronization values"
+   synopsis="#include &lt;gf/gf.h&gt;\n void gf_vcap_set_sync_values ( gf_vcap_t vcap, int h_offset, int v_offset, int h_total, int v_total );\n"
+/>
+<function
+   name="gf_vcap_update"
+   summary="Update video capture unit parameters"
+   synopsis="#include &lt;gf/gf.h&gt;\n int gf_vcap_update ( gf_vcap_t vcap, unsigned flags );\n"
+/>
+<function
+   name="img_cfg_read"
+   summary="Read a configuration file and load codecs"
+   synopsis="#include &lt;img.h&gt;\n int img_cfg_read (img_lib_t ilib, const char *path )"
+/>
+<function
+   name="img_codec_get_criteria"
+   summary="Gets the extension and mime information for a given codec"
+   synopsis="#include &lt;img/img.h&gt;\n void img_codec_get_criteria( img_codec_t codec, const char **ext, const char **mime );\n"
+/>
+<function
+   name="img_codec_list"
+   summary="Enumerate codecs"
+   synopsis="#include &lt;img.h&gt;\n size_t img_codec_list( img_lib_t ilib, img_codec_t* buf, size_t nbuf, img_codec_t* exclude, size_t nexclude );\n"
+/>
+<function
+   name="img_codec_list_byext"
+   summary="Enumerate codecs by file extension"
+   synopsis="#include &lt;img.h&gt;\n size_t img_codec_list_byext( img_lib_t ilib, const char* string, img_codec_t* buf, size_t nbuf);\n"
+/>
+<function
+   name="img_codec_list_bymime"
+   summary="Enumerate codecs by MIME type"
+   synopsis="#include &lt;img.h&gt;\n size_t img_codec_list_bymime( img_lib_t ilib, const char* mime, img_codec_t* buf, size_t nbuf );\n"
+/>
+<function
+   name="img_convert_data"
+   summary="Convert data from one image format to another"
+   synopsis="#include &lt;img.h&gt;\n int img_convert_data( img_format_t sformat, const uint8_t* src, img_format_t dformat, uint8_t* dst, size_t n );\n"
+/>
+<function
+   name="img_convert_getfunc"
+   summary="Get a function to convert one image format to another"
+   synopsis="#include &lt;img.h&gt;\n img_convert_f *img_convert_getfunc( img_format_t src, img_format_t dst )"
+/>
+<function
+   name="img_crop"
+   summary="Crop an image"
+   synopsis="#include img.h int img_crop( const img_t *src, img_t *dst, const unsigned x, const unsigned y );\n"
+/>
+<function
+   name="img_decode_begin"
+   summary="Prepare to decode a frame from a stream"
+   synopsis="#include &lt;img.h&gt;\n int img_decode_begin( img_codec_t codec, io_stream_t *input, uintptr_t *decode_data );\n"
+/>
+<function
+   name="img_decode_finish"
+   summary="Release decode resources"
+   synopsis="#include &lt;img.h&gt;\n int img_decode_finish( img_codec_t codec, io_stream_t * input, uintptr_t * decode_data );\n"
+/>
+<function
+   name="img_decode_frame"
+   summary="Decode a frame"
+   synopsis="#include &lt;img.h&gt;\n int img_decode_frame( img_codec_t codec, io_stream_t* input, const img_decode_callouts_t* callouts, img_t* img, uintptr_t* decode_data );\n"
+/>
+<function
+   name="img_decode_validate"
+   summary="Find a codec for decoding"
+   synopsis="#include &lt;img.h&gt;\n int img_decode_validate( const img_codec_t* codecs, size_t ncodecs, io_stream_t* input, unsigned* codec );\n"
+/>
+<function
+   name="img_dtransform"
+   summary="Convert an image from one format to another"
+   synopsis="#include &lt;img.h&gt;\n int img_dtransform( const img_t *src, img_t *dst );\n"
+/>
+<function
+   name="img_dtransform_apply"
+   summary="Apply a data transform"
+   synopsis="#include &lt;img.h&gt;\n void img_dtransform_apply( img_dtransform_t xform, const uint8_t *src, uint8_t *dst, unsigned n );\n"
+/>
+<function
+   name="img_dtransform_create"
+   summary="Prepare to transform an image"
+   synopsis="#include &lt;img.h&gt;\n int img_dtransform_create( const img_t *src, const img_t *dst, img_dtransform_t *xform );\n"
+/>
+<function
+   name="img_dtransform_free"
+   summary="Free a transform structure"
+   synopsis="#include &lt;img.h&gt;\n void img_dtransform_free (img_dtransform_t xform );\n"
+/>
+<function
+   name="img_encode_begin"
+   summary="Prepare to encode a frame to a stream"
+   synopsis="#include img.h int img_encode_begin( img_codec_t codec, io_stream_t *output, uintptr_t *encode_data );\n"
+/>
+<function
+   name="img_encode_finish"
+   summary="Release encode resources"
+   synopsis="#include img.h int img_encode_finish( img_codec_t codec, io_stream_t * output, uintptr_t * encode_data );\n"
+/>
+<function
+   name="img_encode_frame"
+   summary="Encode a frame"
+   synopsis="#include img.h int img_encode_frame( img_codec_t codec, io_stream_t* output, const img_encode_callouts_t* callouts, img_t* img, uintptr_t* encode_data );\n"
+/>
+<function
+   name="img_expand_getfunc"
+   summary="Get a function to convert a palette format to a direct format"
+   synopsis="#include &lt;img.h&gt;\n img_expand_f *img_expand_getfunc( img_format_t src, img_format_t lut )"
+/>
+<function
+   name="IMG_FMT_BPL"
+   summary="Calculate the minimum number of bytes required to represent a pixel run"
+   synopsis="#include &lt;img.h&gt;\n #define IMG_FMT_BPL(_fmt, _w) ..."
+/>
+<function
+   name="IMG_FMT_BPP"
+   summary="Determine the number of bits per pixel for the specified format"
+   synopsis="#include &lt;img.h&gt;\n #define IMG_FMT_BPP(_fmt) ..."
+/>
+<function
+   name="img_lib_attach"
+   summary="Initialize the image library"
+   synopsis="#include &lt;img.h&gt;\n int img_lib_attach( img_lib_t* ilib );\n"
+/>
+<function
+   name="img_lib_detach"
+   summary="Detach from the library"
+   synopsis="#include &lt;img.h&gt;\n void img_lib_detach( img_lib_t ilib );\n"
+/>
+<function
+   name="img_load"
+   summary="Decode a frame from a stream"
+   synopsis="#include &lt;img.h&gt;\n int img_load( img_lib_t ilib, io_stream_t* input, const img_decode_callouts_t* callouts, img_t* img );\n"
+/>
+<function
+   name="img_load_file"
+   summary="Decode a frame from a file on the filesystem"
+   synopsis="#include &lt;img.h&gt;\n int img_load_file( img_lib_t ilib, const char* path, const img_decode_callouts_t* callouts, img_t* img );\n"
+/>
+<function
+   name="img_load_resize_file"
+   summary="Decode and resize a frame from a file on the filesystem"
+   synopsis="#include &lt;img.h&gt;\n int img_load_resize_file( img_lib_t ilib, const char* path, const img_decode_callouts_t* callouts, img_t* img );\n"
+/>
+<function
+   name="img_resize_fs"
+   summary="Resize an image"
+   synopsis="#include img.h int img_resize_fs( const img_t *src, img_t *dst );\n"
+/>
+<function
+   name="img_rotate_ortho"
+   summary="Rotate an image by 90-degree increments"
+   synopsis="#include img.h int img_rotate_ortho( const img_t *src, img_t *dst, img_fixed_t angle );\n"
+/>
+<function
+   name="img_write_file"
+   summary="Encode a frame to a file on the filesystem"
+   synopsis="#include img.h int img_write_file( img_lib_t ilib, const char* path, const img_encode_callouts_t* callouts, img_t* img );\n"
+/>
+<function
+   name="img_write"
+   summary="Encode a frame to an output stream on the filesystem"
+   synopsis="#include img.h int img_write( img_lib_t ilib, io_stream_t* output, const img_encode_callouts_t* callouts, img_t* img img_codec_t* codec );\n"
+/>
+<function
+   name="io_close"
+   summary="Release an input stream"
+   synopsis="#include &lt;img.h&gt;\n void io_close( io_stream_t *stream );\n"
+/>
+<function
+   name="io_open"
+   summary="Initialize an IO stream"
+   synopsis="#include &lt;img.h&gt;\n io_stream_t *io_open( io_open_f *open_f, io_mode_t mode, ...)"
+/>
+</function_summary>

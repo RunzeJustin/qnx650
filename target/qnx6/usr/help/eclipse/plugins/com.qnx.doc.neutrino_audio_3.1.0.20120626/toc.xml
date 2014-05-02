@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Audio Developer's Guide">
+      <topic label="About This Guide" href="about.html">
+          <topic label="What you'll find in this guide" href="about.html#In_this_guide"/>
+          <topic label="Typographical conventions" href="about.html#Typographical_conventions">
+            <topic label="Note to Windows users" href="about.html#WINDOWSNOTE"/>
+            <topic label="Navigation buttons" href="about.html#Navigation"/>
+          </topic>
+          <topic label="Technical support" href="about.html#Support"/>
+          <topic label="What's new in this release?" href="about.html#Whats_new">
+            <topic label="What's new in QNX Neutrino 6.5.0 Service Pack 1" href="about.html#WhatsNew650SP1"/>
+            <topic label="What's new in QNX Neutrino 6.5.0" href="about.html#WhatsNew650"/>
+            <topic label="What's new in QNX Neutrino 6.4" href="about.html#WhatsNew64"/>
+            <topic label="What's new in QNX Neutrino 6.3" href="about.html#WhatsNew63"/>
+            <topic label="What's new in QNX Neutrino 6.2" href="about.html#WhatsNew62"/>
+            <topic label="What's new in QNX Neutrino 6.1" href="about.html#WhatsNew61"/>
+          </topic>
+      </topic>
+      <topic label="Audio Architecture" href="architecture.html">
+          <topic label="QNX Sound Architecture" href="architecture.html#QSA"/>
+          <topic label="Cards and devices" href="architecture.html#CardsDevices"/>
+          <topic label="Control device" href="architecture.html#ControlDevice"/>
+          <topic label="Mixer devices" href="architecture.html#MixerDevices"/>
+          <topic label="Pulse Code Modulation (PCM) devices" href="architecture.html#PCMDevices">
+            <topic label="Data formats" href="architecture.html#PCMFormats"/>
+            <topic label="PCM state machine" href="architecture.html#StateMachine"/>
+            <topic label="Software PCM mixing" href="architecture.html#SoftwarePCMMixing"/>
+            <topic label="PCM plugin converters" href="architecture.html#PluginConverters"/>
+          </topic>
+      </topic>
+      <topic label="Playing and Capturing Audio Data" href="pcm.html">
+          <topic label="Handling PCM devices" href="pcm.html#PCMDevices">
+            <topic label="Opening your PCM device" href="pcm.html#OpeningYourPCMDevice"/>
+            <topic label="Configuring the PCM device" href="pcm.html#ConfiguringPCM"/>
+            <topic label="Controlling voice conversion" href="pcm.html#Voice_conversion"/>
+            <topic label="Preparing the PCM subchannel" href="pcm.html#PreparingPCMSubchannel"/>
+            <topic label="Closing the PCM subchannel" href="pcm.html#ClosingSubchannel"/>
+          </topic>
+          <topic label="Playing audio data" href="pcm.html#Playback">
+            <topic label="Playback states" href="pcm.html#PlaybackStates"/>
+            <topic label="Sending data to the PCM subchannel" href="pcm.html#SendingData"/>
+            <topic label="If the PCM subchannel stops during playback" href="pcm.html#PlaybackPCMSubchannelStops"/>
+            <topic label="Stopping the playback" href="pcm.html#StoppingPlayback"/>
+            <topic label="Synchronizing with the PCM subchannel" href="pcm.html#PlaybackSynchronizing"/>
+          </topic>
+          <topic label="Capturing audio data" href="pcm.html#Capture">
+            <topic label="Selecting what to capture" href="pcm.html#SelectingCapture"/>
+            <topic label="Capture states" href="pcm.html#CaptureStates"/>
+            <topic label="Receiving data from the PCM subchannel" href="pcm.html#ReceivingData"/>
+            <topic label="If the PCM subchannel stops during capture" href="pcm.html#CapturePCMSubchannelStops"/>
+            <topic label="Stopping the capture" href="pcm.html#StoppingCapture"/>
+            <topic label="Synchronizing with the PCM subchannel" href="pcm.html#CaptureSynchronizingPCMSubchannel"/>
+          </topic>
+      </topic>
+      <topic label="Mixer Architecture" href="mixer.html">
+          <topic label="Opening the mixer device" href="mixer.html#OpeningMixer"/>
+          <topic label="Controlling a mixer group" href="mixer.html#ControllingMixerGroup"/>
+          <topic label="The best mixer group with respect to your PCM subchannel" href="mixer.html#BestMixerGroup"/>
+          <topic label="Finding all mixer groups" href="mixer.html#FindingAllMixerGroups"/>
+          <topic label="Mixer event notification" href="mixer.html#MixerEventNotification"/>
+          <topic label="Closing the mixer device" href="mixer.html#ClosingMixer"/>
+      </topic>
+      <topic label="Audio Library" href="summary.html">
+          <topic label="snd_card_get_longname" href="libs/snd_card_get_longname.html">
+            <topic label="Description:" href="libs/snd_card_get_longname.html#id9"/>
+          </topic>
+          <topic label="snd_card_get_name" href="libs/snd_card_get_name.html">
+            <topic label="Description:" href="libs/snd_card_get_name.html#id9"/>
+          </topic>
+          <topic label="snd_card_name" href="libs/snd_card_name.html">
+            <topic label="Description:" href="libs/snd_card_name.html#id9"/>
+          </topic>
+          <topic label="snd_cards" href="libs/snd_cards.html">
+            <topic label="Description:" href="libs/snd_cards.html#id7"/>
+          </topic>
+          <topic label="snd_cards_list" href="libs/snd_cards_list.html">
+            <topic label="Description:" href="libs/snd_cards_list.html#id9"/>
+          </topic>
+          <topic label="snd_ctl_callbacks_t" href="libs/snd_ctl_callbacks_t.html">
+            <topic label="Description:" href="libs/snd_ctl_callbacks_t.html#id5">
+              <topic label="rebuild callback" href="libs/snd_ctl_callbacks_t.html#rebuild"/>
+              <topic label="xswitch callback" href="libs/snd_ctl_callbacks_t.html#xswitch"/>
+            </topic>
+          </topic>
+          <topic label="snd_ctl_close" href="libs/snd_ctl_close.html">
+            <topic label="Description:" href="libs/snd_ctl_close.html#id9"/>
+          </topic>
+          <topic label="snd_ctl_file_descriptor" href="libs/snd_ctl_file_descriptor.html">
+            <topic label="Description:" href="libs/snd_ctl_file_descriptor.html#id9"/>
+          </topic>
+          <topic label="snd_ctl_hw_info" href="libs/snd_ctl_hw_info.html">
+            <topic label="Description:" href="libs/snd_ctl_hw_info.html#id9"/>
+          </topic>
+          <topic label="snd_ctl_hw_info_t" href="libs/snd_ctl_hw_info_t.html">
+            <topic label="Description:" href="libs/snd_ctl_hw_info_t.html#id5"/>
+          </topic>
+          <topic label="snd_ctl_mixer_switch_list" href="libs/snd_ctl_mixer_switch_list.html">
+            <topic label="Description:" href="libs/snd_ctl_mixer_switch_list.html#id9"/>
+          </topic>
+          <topic label="snd_ctl_mixer_switch_read" href="libs/snd_ctl_mixer_switch_read.html">
+            <topic label="Description:" href="libs/snd_ctl_mixer_switch_read.html#id9"/>
+          </topic>
+          <topic label="snd_ctl_mixer_switch_write" href="libs/snd_ctl_mixer_switch_write.html">
+            <topic label="Description:" href="libs/snd_ctl_mixer_switch_write.html#id9"/>
+          </topic>
+          <topic label="snd_ctl_open" href="libs/snd_ctl_open.html">
+            <topic label="Description:" href="libs/snd_ctl_open.html#id9"/>
+          </topic>
+          <topic label="snd_ctl_pcm_channel_info" href="libs/snd_ctl_pcm_channel_info.html">
+            <topic label="Description:" href="libs/snd_ctl_pcm_channel_info.html#id9"/>
+          </topic>
+          <topic label="snd_ctl_pcm_info" href="libs/snd_ctl_pcm_info.html">
+            <topic label="Description:" href="libs/snd_ctl_pcm_info.html#id9"/>
+          </topic>
+          <topic label="snd_ctl_read" href="libs/snd_ctl_read.html">
+            <topic label="Description:" href="libs/snd_ctl_read.html#id9"/>
+          </topic>
+          <topic label="snd_mixer_callbacks_t" href="libs/snd_mixer_callbacks_t.html">
+            <topic label="Description:" href="libs/snd_mixer_callbacks_t.html#id5">
+              <topic label="rebuild callback" href="libs/snd_mixer_callbacks_t.html#rebuild"/>
+              <topic label="element callback" href="libs/snd_mixer_callbacks_t.html#element"/>
+              <topic label="group callback" href="libs/snd_mixer_callbacks_t.html#group"/>
+            </topic>
+            <topic label="Examples:" href="libs/snd_mixer_callbacks_t.html#id10"/>
+          </topic>
+          <topic label="snd_mixer_close" href="libs/snd_mixer_close.html">
+            <topic label="Description:" href="libs/snd_mixer_close.html#id9"/>
+          </topic>
+          <topic label="snd_mixer_eid_t" href="libs/snd_mixer_eid_t.html">
+            <topic label="Description:" href="libs/snd_mixer_eid_t.html#id5"/>
+          </topic>
+          <topic label="snd_mixer_element_read" href="libs/snd_mixer_element_read.html">
+            <topic label="Description:" href="libs/snd_mixer_element_read.html#id9"/>
+          </topic>
+          <topic label="snd_mixer_element_t" href="libs/snd_mixer_element_t.html">
+            <topic label="Description:" href="libs/snd_mixer_element_t.html#id5"/>
+          </topic>
+          <topic label="snd_mixer_element_write" href="libs/snd_mixer_element_write.html">
+            <topic label="Description:" href="libs/snd_mixer_element_write.html#id9"/>
+          </topic>
+          <topic label="snd_mixer_elements" href="libs/snd_mixer_elements.html">
+            <topic label="Description:" href="libs/snd_mixer_elements.html#id9"/>
+          </topic>
+          <topic label="snd_mixer_elements_t" href="libs/snd_mixer_elements_t.html">
+            <topic label="Description:" href="libs/snd_mixer_elements_t.html#id5"/>
+          </topic>
+          <topic label="snd_mixer_file_descriptor" href="libs/snd_mixer_file_descriptor.html">
+            <topic label="Description:" href="libs/snd_mixer_file_descriptor.html#id9"/>
+          </topic>
+          <topic label="snd_mixer_filter_t" href="libs/snd_mixer_filter_t.html">
+            <topic label="Description:" href="libs/snd_mixer_filter_t.html#id5"/>
+          </topic>
+          <topic label="snd_mixer_get_bit" href="libs/snd_mixer_get_bit.html">
+            <topic label="Description:" href="libs/snd_mixer_get_bit.html#id9"/>
+          </topic>
+          <topic label="snd_mixer_get_filter" href="libs/snd_mixer_get_filter.html">
+            <topic label="Description:" href="libs/snd_mixer_get_filter.html#id9"/>
+          </topic>
+          <topic label="snd_mixer_gid_t" href="libs/snd_mixer_gid_t.html">
+            <topic label="Description:" href="libs/snd_mixer_gid_t.html#id5"/>
+          </topic>
+          <topic label="snd_mixer_group_read" href="libs/snd_mixer_group_read.html">
+            <topic label="Description:" href="libs/snd_mixer_group_read.html#id9"/>
+          </topic>
+          <topic label="snd_mixer_group_t" href="libs/snd_mixer_group_t.html">
+            <topic label="Description:" href="libs/snd_mixer_group_t.html#id5"/>
+          </topic>
+          <topic label="snd_mixer_group_write" href="libs/snd_mixer_group_write.html">
+            <topic label="Description:" href="libs/snd_mixer_group_write.html#id9"/>
+          </topic>
+          <topic label="snd_mixer_groups" href="libs/snd_mixer_groups.html">
+            <topic label="Description:" href="libs/snd_mixer_groups.html#id9"/>
+          </topic>
+          <topic label="snd_mixer_groups_t" href="libs/snd_mixer_groups_t.html">
+            <topic label="Description:" href="libs/snd_mixer_groups_t.html#id5"/>
+          </topic>
+          <topic label="snd_mixer_info" href="libs/snd_mixer_info.html">
+            <topic label="Description:" href="libs/snd_mixer_info.html#id9"/>
+          </topic>
+          <topic label="snd_mixer_info_t" href="libs/snd_mixer_info_t.html">
+            <topic label="Description:" href="libs/snd_mixer_info_t.html#id5"/>
+          </topic>
+          <topic label="snd_mixer_open" href="libs/snd_mixer_open.html">
+            <topic label="Description:" href="libs/snd_mixer_open.html#id9"/>
+          </topic>
+          <topic label="snd_mixer_open_name" href="libs/snd_mixer_open_name.html">
+            <topic label="Description:" href="libs/snd_mixer_open_name.html#id9"/>
+          </topic>
+          <topic label="snd_mixer_read" href="libs/snd_mixer_read.html">
+            <topic label="Description:" href="libs/snd_mixer_read.html#id9"/>
+          </topic>
+          <topic label="snd_mixer_routes" href="libs/snd_mixer_routes.html">
+            <topic label="Description:" href="libs/snd_mixer_routes.html#id9"/>
+          </topic>
+          <topic label="snd_mixer_routes_t" href="libs/snd_mixer_routes_t.html">
+            <topic label="Description:" href="libs/snd_mixer_routes_t.html#id5"/>
+          </topic>
+          <topic label="snd_mixer_set_bit" href="libs/snd_mixer_set_bit.html">
+            <topic label="Description:" href="libs/snd_mixer_set_bit.html#id9"/>
+          </topic>
+          <topic label="snd_mixer_set_filter" href="libs/snd_mixer_set_filter.html">
+            <topic label="Description:" href="libs/snd_mixer_set_filter.html#id9"/>
+          </topic>
+          <topic label="snd_mixer_sort_eid_table" href="libs/snd_mixer_sort_eid_table.html">
+            <topic label="Description:" href="libs/snd_mixer_sort_eid_table.html#id9"/>
+          </topic>
+          <topic label="snd_mixer_sort_gid_table" href="libs/snd_mixer_sort_gid_table.html">
+            <topic label="Description:" href="libs/snd_mixer_sort_gid_table.html#id9"/>
+          </topic>
+          <topic label="snd_mixer_weight_entry_t" href="libs/snd_mixer_weight_entry_t.html">
+            <topic label="Description:" href="libs/snd_mixer_weight_entry_t.html#id5"/>
+          </topic>
+          <topic label="snd_pcm_build_linear_format" href="libs/snd_pcm_build_linear_format.html">
+            <topic label="Description:" href="libs/snd_pcm_build_linear_format.html#id9"/>
+          </topic>
+          <topic label="snd_pcm_capture_flush" href="libs/snd_pcm_capture_flush.html">
+            <topic label="Description:" href="libs/snd_pcm_capture_flush.html#id9"/>
+          </topic>
+          <topic label="snd_pcm_capture_prepare" href="libs/snd_pcm_capture_prepare.html">
+            <topic label="Description:" href="libs/snd_pcm_capture_prepare.html#id9"/>
+          </topic>
+          <topic label="snd_pcm_channel_flush" href="libs/snd_pcm_channel_flush.html">
+            <topic label="Description:" href="libs/snd_pcm_channel_flush.html#id9"/>
+          </topic>
+          <topic label="snd_pcm_channel_info" href="libs/snd_pcm_channel_info.html">
+            <topic label="Description:" href="libs/snd_pcm_channel_info.html#id9"/>
+          </topic>
+          <topic label="snd_pcm_channel_info_t" href="libs/snd_pcm_channel_info_t.html">
+            <topic label="Description:" href="libs/snd_pcm_channel_info_t.html#id5"/>
+          </topic>
+          <topic label="snd_pcm_channel_params" href="libs/snd_pcm_channel_params.html">
+            <topic label="Description:" href="libs/snd_pcm_channel_params.html#id9"/>
+          </topic>
+          <topic label="snd_pcm_channel_params_t" href="libs/snd_pcm_channel_params_t.html">
+            <topic label="Description:" href="libs/snd_pcm_channel_params_t.html#id5"/>
+          </topic>
+          <topic label="snd_pcm_channel_prepare" href="libs/snd_pcm_channel_prepare.html">
+            <topic label="Description:" href="libs/snd_pcm_channel_prepare.html#id9"/>
+          </topic>
+          <topic label="snd_pcm_channel_setup" href="libs/snd_pcm_channel_setup.html">
+            <topic label="Description:" href="libs/snd_pcm_channel_setup.html#id9"/>
+          </topic>
+          <topic label="snd_pcm_channel_setup_t" href="libs/snd_pcm_channel_setup_t.html">
+            <topic label="Description:" href="libs/snd_pcm_channel_setup_t.html#id5"/>
+          </topic>
+          <topic label="snd_pcm_channel_status" href="libs/snd_pcm_channel_status.html">
+            <topic label="Description:" href="libs/snd_pcm_channel_status.html#id9"/>
+          </topic>
+          <topic label="snd_pcm_channel_status_t" href="libs/snd_pcm_channel_status_t.html">
+            <topic label="Description:" href="libs/snd_pcm_channel_status_t.html#id5"/>
+          </topic>
+          <topic label="snd_pcm_close" href="libs/snd_pcm_close.html">
+            <topic label="Description:" href="libs/snd_pcm_close.html#id9"/>
+          </topic>
+          <topic label="snd_pcm_file_descriptor" href="libs/snd_pcm_file_descriptor.html">
+            <topic label="Description:" href="libs/snd_pcm_file_descriptor.html#id9"/>
+          </topic>
+          <topic label="snd_pcm_find" href="libs/snd_pcm_find.html">
+            <topic label="Description:" href="libs/snd_pcm_find.html#id9"/>
+          </topic>
+          <topic label="snd_pcm_format_big_endian" href="libs/snd_pcm_format_big_endian.html">
+            <topic label="Description:" href="libs/snd_pcm_format_big_endian.html#id9"/>
+          </topic>
+          <topic label="snd_pcm_format_linear" href="libs/snd_pcm_format_linear.html">
+            <topic label="Description:" href="libs/snd_pcm_format_linear.html#id9"/>
+          </topic>
+          <topic label="snd_pcm_format_little_endian" href="libs/snd_pcm_format_little_endian.html">
+            <topic label="Description:" href="libs/snd_pcm_format_little_endian.html#id9"/>
+          </topic>
+          <topic label="snd_pcm_format_signed" href="libs/snd_pcm_format_signed.html">
+            <topic label="Description:" href="libs/snd_pcm_format_signed.html#id9"/>
+          </topic>
+          <topic label="snd_pcm_format_size" href="libs/snd_pcm_format_size.html">
+            <topic label="Description:" href="libs/snd_pcm_format_size.html#id9"/>
+          </topic>
+          <topic label="snd_pcm_format_t" href="libs/snd_pcm_format_t.html">
+            <topic label="Description:" href="libs/snd_pcm_format_t.html#id5"/>
+          </topic>
+          <topic label="snd_pcm_format_unsigned" href="libs/snd_pcm_format_unsigned.html">
+            <topic label="Description:" href="libs/snd_pcm_format_unsigned.html#id9"/>
+          </topic>
+          <topic label="snd_pcm_format_width" href="libs/snd_pcm_format_width.html">
+            <topic label="Description:" href="libs/snd_pcm_format_width.html#id9"/>
+          </topic>
+          <topic label="snd_pcm_get_format_name" href="libs/snd_pcm_get_format_name.html">
+            <topic label="Description:" href="libs/snd_pcm_get_format_name.html#id9"/>
+          </topic>
+          <topic label="snd_pcm_info" href="libs/snd_pcm_info.html">
+            <topic label="Description:" href="libs/snd_pcm_info.html#id9"/>
+          </topic>
+          <topic label="snd_pcm_info_t" href="libs/snd_pcm_info_t.html">
+            <topic label="Description:" href="libs/snd_pcm_info_t.html#id5"/>
+          </topic>
+          <topic label="snd_pcm_nonblock_mode" href="libs/snd_pcm_nonblock_mode.html">
+            <topic label="Description:" href="libs/snd_pcm_nonblock_mode.html#id9"/>
+          </topic>
+          <topic label="snd_pcm_open" href="libs/snd_pcm_open.html">
+            <topic label="Description:" href="libs/snd_pcm_open.html#id9"/>
+            <topic label="Examples:" href="libs/snd_pcm_open.html#id15"/>
+          </topic>
+          <topic label="snd_pcm_open_name" href="libs/snd_pcm_open_name.html">
+            <topic label="Description:" href="libs/snd_pcm_open_name.html#id9"/>
+            <topic label="Examples:" href="libs/snd_pcm_open_name.html#id15"/>
+          </topic>
+          <topic label="snd_pcm_open_preferred" href="libs/snd_pcm_open_preferred.html">
+            <topic label="Description:" href="libs/snd_pcm_open_preferred.html#id9"/>
+            <topic label="Examples:" href="libs/snd_pcm_open_preferred.html#id15"/>
+          </topic>
+          <topic label="snd_pcm_playback_drain" href="libs/snd_pcm_playback_drain.html">
+            <topic label="Description:" href="libs/snd_pcm_playback_drain.html#id9"/>
+          </topic>
+          <topic label="snd_pcm_playback_flush" href="libs/snd_pcm_playback_flush.html">
+            <topic label="Description:" href="libs/snd_pcm_playback_flush.html#id9"/>
+          </topic>
+          <topic label="snd_pcm_playback_prepare" href="libs/snd_pcm_playback_prepare.html">
+            <topic label="Description:" href="libs/snd_pcm_playback_prepare.html#id9"/>
+          </topic>
+          <topic label="snd_pcm_plugin_flush" href="libs/snd_pcm_plugin_flush.html">
+            <topic label="Description:" href="libs/snd_pcm_plugin_flush.html#id9"/>
+            <topic label="Examples:" href="libs/snd_pcm_plugin_flush.html#id15"/>
+          </topic>
+          <topic label="snd_pcm_plugin_get_voice_conversion" href="libs/snd_pcm_plugin_get_voice_conversion.html">
+            <topic label="Description:" href="libs/snd_pcm_plugin_get_voice_conversion.html#id9"/>
+          </topic>
+          <topic label="snd_pcm_plugin_info" href="libs/snd_pcm_plugin_info.html">
+            <topic label="Description:" href="libs/snd_pcm_plugin_info.html#id9"/>
+            <topic label="Examples:" href="libs/snd_pcm_plugin_info.html#id15"/>
+          </topic>
+          <topic label="snd_pcm_plugin_params" href="libs/snd_pcm_plugin_params.html">
+            <topic label="Description:" href="libs/snd_pcm_plugin_params.html#id9"/>
+            <topic label="Examples:" href="libs/snd_pcm_plugin_params.html#id15"/>
+          </topic>
+          <topic label="snd_pcm_plugin_playback_drain" href="libs/snd_pcm_plugin_playback_drain.html">
+            <topic label="Description:" href="libs/snd_pcm_plugin_playback_drain.html#id9"/>
+          </topic>
+          <topic label="snd_pcm_plugin_prepare" href="libs/snd_pcm_plugin_prepare.html">
+            <topic label="Description:" href="libs/snd_pcm_plugin_prepare.html#id9"/>
+            <topic label="Examples:" href="libs/snd_pcm_plugin_prepare.html#id15"/>
+          </topic>
+          <topic label="snd_pcm_plugin_read" href="libs/snd_pcm_plugin_read.html">
+            <topic label="Description:" href="libs/snd_pcm_plugin_read.html#id9"/>
+          </topic>
+          <topic label="snd_pcm_plugin_set_disable" href="libs/snd_pcm_plugin_set_disable.html">
+            <topic label="Description:" href="libs/snd_pcm_plugin_set_disable.html#id9"/>
+            <topic label="Examples:" href="libs/snd_pcm_plugin_set_disable.html#id13"/>
+          </topic>
+          <topic label="snd_pcm_plugin_set_src_mode" href="libs/snd_pcm_plugin_set_src_mode.html">
+            <topic label="Description:" href="libs/snd_pcm_plugin_set_src_mode.html#id9"/>
+          </topic>
+          <topic label="snd_pcm_plugin_set_voice_conversion" href="libs/snd_pcm_plugin_set_voice_conversion.html">
+            <topic label="Description:" href="libs/snd_pcm_plugin_set_voice_conversion.html#id9"/>
+          </topic>
+          <topic label="snd_pcm_plugin_setup" href="libs/snd_pcm_plugin_setup.html">
+            <topic label="Description:" href="libs/snd_pcm_plugin_setup.html#id9"/>
+            <topic label="Examples:" href="libs/snd_pcm_plugin_setup.html#id15"/>
+          </topic>
+          <topic label="snd_pcm_plugin_src_max_frag" href="libs/snd_pcm_plugin_src_max_frag.html">
+            <topic label="Description:" href="libs/snd_pcm_plugin_src_max_frag.html#id9"/>
+          </topic>
+          <topic label="snd_pcm_plugin_set_src_method" href="libs/snd_pcm_plugin_set_src_method.html">
+            <topic label="Description:" href="libs/snd_pcm_plugin_set_src_method.html#id9"/>
+          </topic>
+          <topic label="snd_pcm_plugin_status" href="libs/snd_pcm_plugin_status.html">
+            <topic label="Description:" href="libs/snd_pcm_plugin_status.html#id9"/>
+            <topic label="Examples:" href="libs/snd_pcm_plugin_status.html#id15"/>
+          </topic>
+          <topic label="snd_pcm_plugin_update_src" href="libs/snd_pcm_plugin_update_src.html">
+            <topic label="Description:" href="libs/snd_pcm_plugin_update_src.html#id9"/>
+          </topic>
+          <topic label="snd_pcm_plugin_write" href="libs/snd_pcm_plugin_write.html">
+            <topic label="Description:" href="libs/snd_pcm_plugin_write.html#id9"/>
+            <topic label="Examples:" href="libs/snd_pcm_plugin_write.html#id15"/>
+          </topic>
+          <topic label="snd_pcm_read" href="libs/snd_pcm_read.html">
+            <topic label="Description:" href="libs/snd_pcm_read.html#id9"/>
+          </topic>
+          <topic label="snd_pcm_voice_conversion_t" href="libs/snd_pcm_voice_conversion_t.html">
+            <topic label="Description:" href="libs/snd_pcm_voice_conversion_t.html#id5"/>
+          </topic>
+          <topic label="snd_pcm_write" href="libs/snd_pcm_write.html">
+            <topic label="Description:" href="libs/snd_pcm_write.html#id9"/>
+          </topic>
+          <topic label="snd_strerror" href="libs/snd_strerror.html">
+            <topic label="Description:" href="libs/snd_strerror.html#id9"/>
+            <topic label="Examples:" href="libs/snd_strerror.html#id13"/>
+          </topic>
+          <topic label="snd_switch_t" href="libs/snd_switch_t.html">
+            <topic label="Description:" href="libs/snd_switch_t.html#id5"/>
+          </topic>
+      </topic>
+      <topic label="wave.c example" href="wavec.html"/>
+      <topic label="waverec.c example" href="waverec.html"/>
+      <topic label="mixer_ctl.c example" href="mixerc.html"/>
+      <topic label="LGPL License Agreement" href="copyright_3p.html"/>
+      <topic label="Glossary" href="glossary.html"/>
+</toc>

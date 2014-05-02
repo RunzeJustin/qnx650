@@ -1,0 +1,559 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Eclipse 3.4 and CDT 5.0.2 integration" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/whatsnew_WhatsNewInIDE46_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/whatsnew_IntegrateMudflap_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/whatsnew_F27IntegrationOfBSP_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/whatsnew_SystemProfiler46_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/whatsnew_whatsnewcompilertools46_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Eclipse34andCDT502integration" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Eclipse 3.4 and CDT 5.0.2 integration</title>
+   </head>
+   <body id="Eclipse34andCDT502integration"><a name="Eclipse34andCDT502integration" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Eclipse 3.4 and CDT 5.0.2 integration</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         
+         <p>IDE 4.6 was updated to include the integration with Eclipse 3.4 and CDT 5.0.2. For
+            detailed information about the changes in Eclipse 3.4 and the CDT 5.0.2 project,
+            see:
+         </p>
+         
+         
+         <p><a href="http://wiki.eclipse.org/CDT/User/NewIn50" target="_blank" shape="rect">http://wiki.eclipse.org/CDT/User/NewIn50</a></p>
+         
+         
+         <p>The highlights of the new features to CDT are:</p>
+         
+         <br clear="none" /><ul>
+            <li>Editor: <br clear="none" /><ul>
+                  <li>Code and File Templates — user-definable templates can be used in
+                     the New Class and New Source/Header File wizards 
+                  </li>
+                  <li>There's a new preference page for Code Templates (select <span class="menucascade">
+                        <span class="uicontrol">Window</span>
+                        &gt; <span class="uicontrol">Preferences</span>
+                        </span>, and then expand <span class="menucascade">
+                        <span class="uicontrol">C/C++</span>
+                        &gt; <span class="uicontrol">Code Style</span>
+                        </span>, and select <span class="uicontrol">Code Templates</span>) 
+                  </li>
+                  <li>There's now an Outline view for assembly files </li>
+                  <li>A code formatter improvements including new whitespace and line wrapping
+                     options, Improved GNU coding style compliance 
+                  </li>
+                  <li>Various content assist improvements </li>
+                  <li>Doxygen editor support — autogeneration of tags and a pluggable
+                     framework for other documentation tools is now available 
+                  </li>
+                  <li>Mark Occurrences — highlights where the selected identifier occurs
+                     elsewhere in the editor 
+                  </li>
+                  <li>Folding of compound statements </li>
+                  <li>Macro Expansion hover and exploration tool </li>
+                  <li>Spell checking available and enabled by default </li>
+                  <li>Scalability mode for working with very large files </li>
+                  <li>Visual Studio key bindings </li>
+               </ul>
+               
+               
+            </li>
+            <li>Navigation and Search <br clear="none" /><ul>
+                  <li>Open Declaration for operators, empty macros, element in the outline view,
+                     and so on 
+                  </li>
+                  <li>Open Element support for static functions and variables, as well as other
+                     improvements 
+                  </li>
+                  <li>Search — for Static functions and variables, macros, references of
+                     local variables, and Search view usability improvements 
+                  </li>
+               </ul>
+               
+               
+            </li>
+            <li>Call Hierarchy <br clear="none" /><ul>
+                  <li>Read/write decorators indicate read/write status for variables </li>
+                  <li>Polymorphic method calls (virtual methods) support </li>
+               </ul>
+               
+               
+            </li>
+            <li>Refactoring <br clear="none" /><ul>
+                  <li>Refactoring infrastructure has significantly improved (it now models
+                     transformation on the AST) 
+                  </li>
+                  <li>Generate Getters and Setters </li>
+                  <li>Hide Method </li>
+                  <li>Implement Method </li>
+                  <li>Extract Constant </li>
+                  <li>Extract Function </li>
+               </ul>
+               
+               
+            </li>
+            <li>Indexer <br clear="none" /><ul>
+                  <li>Improved accuracy and performance </li>
+                  <li>Entirely new preprocessor </li>
+                  <li>Improved infrastructure </li>
+                  <li>Visual indication of indexer status </li>
+               </ul>
+               
+               
+            </li>
+            <li>Projects and Build <br clear="none" /><ul>
+                  <li>Project Properties improved usability </li>
+                  <li>Make target locations — <span class="cmdname">make</span> targets at the project level
+                     are built in the project build directory 
+                  </li>
+               </ul>
+               
+               
+            </li>
+            <li>Debug <br clear="none" /><ul>
+                  <li>Executables view </li>
+                  <li>Event breakpoints — <tt>gdb</tt> catchpoints support was included
+                     
+                  </li>
+               </ul>
+               
+            </li>
+         </ul>
+         
+         
+         <p>The highlights of the new features to Eclipse are:</p>
+         
+         <br clear="none" /><ul>
+            <li>Platform Changes <br clear="none" /><ul>
+                  <li>New update UI — The UI for performing installation and updates is
+                     completely new in 3.4. You can access the new UI by selecting <span class="menucascade">
+                        <span class="uicontrol">Help</span>
+                        &gt; <span class="uicontrol">Software Updates</span>
+                        </span>. 
+                  </li>
+                  <li>Unlike previous versions, you no longer have to find and select all
+                     prerequisites of the software you're trying to install. You can select only
+                     the single component of software you want, and all prerequisites are then
+                     automatically determined and installed for you. The Installed Software tab
+                     only shows the exact software items that you chose to install, rather than
+                     listing everything that's currently installed on your system. When you
+                     update software, all prerequisites of the software being updated are also
+                     updated, as required. 
+                  </li>
+                  <li>The new update dialog (<span class="menucascade">
+                        <span class="uicontrol">Help</span>
+                        &gt; <span class="uicontrol">Software Updates</span>
+                        &gt; <span class="uicontrol">Available Software</span>
+                        </span>) also lets you add update sites using drag and drop. To make
+                     an update site available in Eclipse, you can drag and drop a site URL link
+                     from supported browsers into the page. 
+                  </li>
+                  <li>You can now view the software that's available for install or update in
+                     multiple ways. The Available Software tab (<span class="menucascade">
+                        <span class="uicontrol">Help</span>
+                        &gt; <span class="uicontrol">Software Updates</span>
+                        &gt; <span class="uicontrol">Available Software</span>
+                        </span>) provides a <span class="uicontrol">View</span> menu button that lets
+                     you view the software by site, category, or by name. 
+                  </li>
+                  <li>Checkbox options (<span class="uicontrol">Show only the latest versions of available
+                        software</span> and <span class="uicontrol">Include items that have already been
+                        installed</span>) at the bottom of the Available Software dialog
+                     let you further control what's displayed in the view. 
+                  </li>
+                  <li>A new Markers view (<span class="menucascade">
+                        <span class="uicontrol">Window</span>
+                        &gt; <span class="uicontrol">Show View</span>
+                        &gt; <span class="uicontrol">Other</span>
+                        &gt; <span class="uicontrol">Markers</span>
+                        </span>) was added to incorporate your problems, bookmarks, and tasks
+                     into a single view. 
+                  </li>
+                  <li>The Problems view, Bookmarks view, and Tasks view now have a new look that
+                     include the following features: <br clear="none" /><ul>
+                        <li>Predefined filters for all errors and warnings on selection </li>
+                        <li>Union or intersection of problems showing </li>
+                        <li>A forms-based configuration dialog </li>
+                        <li>Use of the commands defined in the workbench rather than custom
+                           actions, which results in consistency with key bindings and the main
+                           window menu 
+                        </li>
+                        <li>Working sets are now first class selection sources (i.e. if the
+                           Package Explorer view shows working sets and the Problems view is
+                           filtering on the selection, you'll only see the problems in that
+                           working set) 
+                        </li>
+                        <li>Show multiple content sets. The Problems view lets you see all
+                           markers, or just the problems. 
+                        </li>
+                     </ul>
+                     
+                     
+                  </li>
+                  <li>The System Proxy Settings preference page (<span class="menucascade">
+                        <span class="uicontrol">General</span>
+                        &gt; <span class="uicontrol">Network Connections</span>
+                        </span>) lets you specify the proxy settings to use when connecting
+                     to the network. The new System proxy configuration option lets you reuse OS
+                     proxy settings. Eclipse supports proxy manual settings and automatic
+                     configuration for Windows, and proxy environment variables and Gnome
+                     settings for Linux. 
+                  </li>
+                  <li>Eclipse for 64-bit Windows (Windows x86_64/AMD64 and IA64) are now included
+                     in Eclipse platforms and SWT downloads. To use them, you must run on a
+                     64-bit edition of Windows with a 64-bit JRE. 
+                     <div class="note"><span class="notetitle">Note:</span> The 32-bit versions of
+                        SWT and Eclipse can still be used on these configurations with a 32-bit
+                        JRE.
+                     </div>
+                     
+                     
+                  </li>
+                  <li>For source refactoring, the move, delete and rename resource actions now
+                     support refactoring; these new actions are available in the Project
+                     Explorer. 
+                  </li>
+                  <li>There is a new dropins folder at the root of the Eclipse platform install
+                     that can be used to drop in additional plugins, separate from the base
+                     application. This folder supports various layouts of plugins, features, and
+                     link files. On each startup, this directory is scanned, and any newly added
+                     content is automatically installed, and any removed content is uninstalled
+                     from the running application. 
+                  </li>
+                  <li>The Eclipse SDK now has a simple installer that you can use to install the
+                     SDK from <span class="filepath">www.eclipse.org</span> or its mirrors. This feature
+                     provides a faster, authenticated download. The installer also supports a
+                     shared install so that multiple Eclipse applications on your system share
+                     the same data. The installer is available from the Equinox Download Page. 
+                  </li>
+                  <li>Now, when you install or upgrade using <span class="menucascade">
+                        <span class="uicontrol">Help</span>
+                        &gt; <span class="uicontrol">Software Updates</span>
+                        </span>, the install process examines the signatures of the code
+                     being installed, and verifies that you trust the provider of the software.
+                     This verification occurs only once during the install process, after all the
+                     new software has been downloaded. The dialog lets you view the certificate
+                     trust chain, and examine the details of each certificate. 
+                  </li>
+                  <li>Previously, icons for files were chosen based on the file's name and
+                     extension only. Workbench views now show more specific file icons based on
+                     the file's content type. The IDE will initially display a generic icon, and
+                     then after determining content types in the background, icons will be
+                     replaced with more specific ones, if available. To turn off this behavior,
+                     select <span class="menucascade">
+                        <span class="uicontrol">General</span>
+                        &gt; <span class="uicontrol">Appearance</span>
+                        &gt; <span class="uicontrol">Label Decorations preference page</span>
+                        </span>. 
+                  </li>
+                  <li>Eclipse 3.4 now allows multiple remote information centers to contribute
+                     content to the Help system. You can specify this feature by selecting <span class="menucascade">
+                        <span class="uicontrol">Window</span>
+                        &gt; <span class="uicontrol">Preferences</span>
+                        &gt; <span class="uicontrol">Help</span>
+                        &gt; <span class="uicontrol">Content</span>
+                        </span>. 
+                  </li>
+                  <li>The column widths of certain tables and trees can now be changed in a
+                     keyboard-accessible way. This appears in the list of plugins or features
+                     available from the About dialog, and as a new view menu item in all views
+                     displaying markers (Problems, Tasks, Bookmarks, and Markers). 
+                  </li>
+                  <li>The Help view now has a <span class="uicontrol">Print</span> button. 
+                  </li>
+                  <li>New projects can now be added to working sets during their creation.
+                     Currently all major wizards make use of this feature and there is API
+                     available for plugin developer. 
+                  </li>
+                  <li>You can now close view and editor tabs by clicking anywhere on the tab using
+                     the middle mouse button. If your mouse doesn't have a middle button, try
+                     clicking on the mouse wheel if it has one. 
+                  </li>
+               </ul>
+               
+               
+            </li>
+            <li>Search Changes <br clear="none" /><ul>
+                  <li>The text search was improved such that regular expressions support for text
+                     search was extended. For example, select <span class="menucascade">
+                        <span class="uicontrol">Search</span>
+                        &gt; <span class="uicontrol">Search</span>
+                        </span>, and in the <span class="uicontrol">Containing</span> field, the new
+                     pattern \R will match any line delimiter (Windows <span class="option">\r\n</span>, Linux <span class="option">\n</span>). The \R
+                     can't be used in character groups (<samp class="codeph">[]</samp>), since the
+                     Windows delimiter \r\n consists of two characters. 
+                  </li>
+                  <li>Several new constructs are available when replacing text in files,
+                     including: <br clear="none" /><ul>
+                        <li><span class="option">\R</span> inserts the document line delimiter (same as the <tt>Enter</tt>
+                           key) 
+                        </li>
+                        <li><span class="option">\r</span> and <span class="option">\n</span> insert carriage return and newline characters,
+                           respectively. Mixing line delimiters inside a document isn't
+                           recommended and may lead to problems with external editors.
+                           Typically, <span class="option">\R</span> is a better choice. 
+                        </li>
+                        <li><span class="option">\t</span> inserts a Tab 
+                        </li>
+                        <li><span class="option">\xhh</span> and <span class="option">\uhhhh</span> to insert the specified character 
+                        </li>
+                     </ul>
+                     
+                     
+                  </li>
+                  <li>In the Search view, the file search results now show line matches below
+                     files. 
+                  </li>
+                  <li> The text search replace dialog was improved such that replacing text
+                     matches (<span class="uicontrol">Replace All</span> or <span class="uicontrol">Replace
+                        Selected</span> in the context menu of the text search result view)
+                     now uses the same dialog as refactorings (it also includes preview and
+                     undo). 
+                  </li>
+               </ul>
+               
+               
+            </li>
+            <li>Editor Changes <br clear="none" /><ul>
+                  <li>Direct interaction with text hovers doesn't require you to press <tt>F2</tt>
+                     to see the full contents of a hover, and to scroll down. Now, you can just
+                     move your mouse over hovers that support this functionality and start
+                     scrolling. You can configure the behavior of hovers when the mouse is moved
+                     by selecting <span class="menucascade">
+                        <span class="uicontrol">Window</span>
+                        &gt; <span class="uicontrol">Preferences</span>
+                        </span>, and then selecting <span class="menucascade">
+                        <span class="uicontrol">General</span>
+                        &gt; <span class="uicontrol">Editors</span>
+                        &gt; <span class="uicontrol">Text Editors</span>
+                        </span>. 
+                  </li>
+                  <li>If a location resolves to multiple hyperlinks, text editors now present all
+                     available hyperlinks in a dropdown. You can change the behavior for
+                     hyperlinks by selecting <span class="menucascade">
+                        <span class="uicontrol">Window</span>
+                        &gt; <span class="uicontrol">Preferences</span>
+                        </span>, and then selecting <span class="menucascade">
+                        <span class="uicontrol">General</span>
+                        &gt; <span class="uicontrol">Editors</span>
+                        &gt; <span class="uicontrol">Text Editors</span>
+                        &gt; <span class="uicontrol">Hyperlinking</span>
+                        </span>. 
+                  </li>
+                  <li>The regular expressions support in the Find/Replace dialog (<tt>CTRL+F</tt>)
+                     was extended such that in the <span class="uicontrol">Find</span> field, the new
+                     pattern \R matches any line delimiter (Windows \r\n, Linux \n). The \R can't
+                     be used in character groups <samp class="codeph">[]</samp>), since the Windows
+                     delimiter \r\n consists of two characters. 
+                  </li>
+                  <li>In the <span class="uicontrol">Replace With</span> field, several new constructs
+                     have been added, for example: <br clear="none" /><ul>
+                        <li>\R inserts the document line delimiter (same as the <tt>Enter</tt>
+                           key) 
+                        </li>
+                        <li>\r and \n insert carriage return and newline characters,
+                           respectively. Mixing line delimiters inside a document isn't
+                           recommended and may lead to problems with external editors.
+                           Typically, \R is a better choice. 
+                        </li>
+                        <li>\t inserts a Tab </li>
+                        <li>\xhh and \uhhhh to insert the specified character </li>
+                     </ul>
+                     
+                     
+                  </li>
+                  <li>There's a new regular expression that allows the case of each match to be
+                     retained when using Find/Replace. For example, replacing test with Foo in
+                     <samp class="codeph">Test test= TEST</samp> results in <samp class="codeph">Foo foo=
+                        FOO</samp>. You can use the same patterns when replacing from the
+                     Search view. 
+                  </li>
+               </ul>
+               
+               
+            </li>
+            <li>Various printing improvements <br clear="none" /><ul>
+                  <li>The printing support for editors has the following improvements: <br clear="none" /><ul>
+                        <li>Line numbers are now printed if enabled in the editor </li>
+                        <li>Background color is no longer printed </li>
+                        <li>Annotations (e.g. error squiggles) are now printed </li>
+                        <li>Each page shows the file name in the header </li>
+                        <li>Each page shows the current page number in the footer </li>
+                        <li>The print job gets a meaningful name </li>
+                     </ul>
+                     
+                     
+                  </li>
+                  <li>You can click on the ruler to go to the corresponding line, and you can
+                     hover anywhere on the ruler to see the line number at that ruler location. 
+                  </li>
+                  <li>The overview ruler now has its own context menu that lets you open the
+                     preferences. If the context menu is opened on an annotation, then it takes
+                     you directly to its annotation type on the Annotations preference page. 
+                  </li>
+                  <li>Text in the editor can now also be selected by using <tt>Shift+Click</tt> in
+                     the ruler's line number. 
+                  </li>
+                  <li>For the annotation text styles, you can now choose from all available styles
+                     for drawing an annotation inside the editor. 
+                  </li>
+               </ul>
+               
+               
+            </li>
+            <li>Team/CVS Changes <br clear="none" /><ul>
+                  <li>Right-click on a project in the Project Explorer, and when you select <span class="menucascade">
+                        <span class="uicontrol">Team</span>
+                        &gt; <span class="uicontrol">Share Project</span>
+                        </span>, the action now supports multi-select so multiple projects
+                     can be shared in a single operation. 
+                  </li>
+                  <li>The comment area of the CVS Commit Wizard now presents you with suggested
+                     corrections for misspelled words. The options are available using quick
+                     assist (<tt>CTRL+1</tt>) and are also shown in the context menu. 
+                  </li>
+                  <li>File changes can now be viewed in the CVS Commit Wizard. You can view the
+                     changes for a file by double-clicking on the file in the Changes pane. 
+                  </li>
+                  <li>Right-click on a project in the Project Explorer, and when you select <span class="menucascade">
+                        <span class="uicontrol">Team</span>
+                        &gt; <span class="uicontrol">Ignored Resources</span>
+                        </span>, the preference page now lets you specify ignore path
+                     patterns, as well as file name patterns. 
+                  </li>
+                  <li>Improvements have been made to the Apply Patch wizard such that the handling
+                     of unmatched patch segments has been modified to be more consistent with how
+                     the standard patch application works. Segments that don't match at the
+                     location indicated in the patch are automatically tested at previous and
+                     later locations in the file to see if an exact match for the patch appears
+                     elsewhere. Also, if an exact match can't be found, the number of context
+                     lines to ignore when searching for a match can be automatically calculated
+                     and applied. 
+                  </li>
+               </ul>
+               
+               
+            </li>
+            <li>Import Team Project Set improvements <br clear="none" /><ul>
+                  <li>Improvements have been made about how the import of CVS projects occurs when
+                     using a Team Project Set. Previously, a repository location was
+                     automatically created with the given connection method, and without a user
+                     name when CVS projects were imported from a project set. Now, the import
+                     process lets you fully configure the repository location, enabling you to
+                     specify a user name and change the connection method. For example, a project
+                     set file containing <tt>extssh</tt> connections could now be used you can
+                     reconfigure the repository location connection method on import to be
+                     <tt>pserver</tt>. 
+                  </li>
+                  <li>The CVS Apply Patch wizard now lets you see and inspect the sections that
+                     matched. Previously, only conflicting chunks were visible. 
+                  </li>
+                  <li>There's a new option in the CVS Share Project dialog that lets you choose to
+                     use the project name as the module name, and place it under the selected
+                     module. 
+                  </li>
+                  <li>The Apply Patch wizard counts lines added and removed in the patch. The
+                     default mechanism sums all lines starting with + and -. To define custom
+                     patterns that you can use to exclude empty lines or comments, select <span class="menucascade">
+                        <span class="uicontrol">Window</span>
+                        &gt; <span class="uicontrol">Preferences</span>
+                        </span>, and then select <span class="menucascade">
+                        <span class="uicontrol">General</span>
+                        &gt; <span class="uicontrol">Compare/Patch</span>
+                        </span>. 
+                  </li>
+               </ul>
+               
+               
+            </li>
+            <li>Debug Changes <br clear="none" /><ul>
+                  <li>You can now import and export launch configurations in the local file
+                     system. Select Launch Configurations from the <span class="uicontrol">Run</span> or
+                     <span class="uicontrol">Debug</span> category of the Export wizard, and the next
+                     page in the wizard lets you select the configurations to export to a
+                     location in the local file system. 
+                  </li>
+                  <li>You can import launch configurations from a directory in the local file
+                     system. 
+                  </li>
+               </ul>
+               
+               
+            </li>
+            <li>Default console and file encoding<br clear="none" /><ul>
+                  <li>The console encoding used when running or debugging a program automatically
+                     matches the encoding of the program being run or debugged. For example, your
+                     program's encoding will be used by the console and a corresponding VM
+                     argument will be added to the command line (for example,
+                     <span class="option">-Dfile.encoding=UTF-8</span>). This makes it simpler to run and debug code
+                     displaying console output. 
+                  </li>
+                  <li>You can now drag text into the Expressions view to create expressions, and
+                     you can reorder entries in the Expressions view with drag-and-drop. 
+                  </li>
+                  <li>You can now remove items from the launch history menus. Use
+                     <tt>Control+Shift+Click</tt> to remove an item from a launch history
+                     (select the menu item while pressing <tt>CTRL+Shift</tt>). The launch will
+                     be removed from your history, but the configuration isn't deleted. 
+                  </li>
+               </ul>
+               
+            </li>
+         </ul>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/whatsnew_WhatsNewInIDE46_.html" shape="rect">What's New in IDE 4.6</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/whatsnew_IntegrateMudflap_.html" shape="rect">Mudflap integration</a></div>
+            
+            <div><a href="../topic/whatsnew_F27IntegrationOfBSP_.html" shape="rect">Integration with Foundry27 and importing BSPs</a></div>
+            
+            <div><a href="../topic/whatsnew_SystemProfiler46_.html" shape="rect">System Profiler</a></div>
+            
+            <div><a href="../topic/whatsnew_whatsnewcompilertools46_.html" shape="rect">Compiler and Tools</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

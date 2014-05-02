@@ -1,0 +1,226 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="task" />
+      <meta name="DC.Title" content="Debugging the startup binary" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/debug_JTAGAbtron_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Debuggingthestartupbinary" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Debugging the startup binary</title>
+   </head>
+   <body id="Debuggingthestartupbinary"><a name="Debuggingthestartupbinary" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Debugging the startup binary</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <div class="p">Using the Debug perspective from the QNX Momentics IDE, you can debug the startup binary
+            of the Neutrino image.
+            
+         </div>
+         
+         
+         <div class="section">To debug the startup binary:</div>
+         
+         
+         <ol>
+            <li class="stepexpand">
+               <span>Change to the Debug perspective if it is not currently open. </span>
+               
+               
+               <p>The first thing you
+                  will notice is that the target board has been automatically restarted. After
+                  waiting a certain number of seconds as specified in the <span class="uicontrol">Reset and
+                     Delay (seconds)</span> checkbox on the <span class="uicontrol">Startup</span>
+                  tab of the Debug launch configuration, the QNX Momentics IDE will begin
+                  uploading the image to the target through the JTAG pins. 
+               </p>
+               
+               
+               <p>After the image
+                  has been successfully uploaded, startup will commence until it hits a
+                  breakpoint. 
+               </p>
+               
+               
+               <p>Once the IDE encounters a breakpoint, you will see several
+                  things at once. In the top-left portion of the Debug perspective, you will see a
+                  stack trace for the current location of the code. 
+               </p>
+               
+               
+               <p>
+                  <span><img src="../images/bug_JTAGAbtronDebugStartup_.xml_d46532e54.jpg" alt="Debug perspective" /></span>
+                  
+               </p>
+               
+               
+               <p>In your debug results, it might appear to be more shallow than the stack
+                  traces that you would typically see because the code is not running in a
+                  complicated environment, but rather directly on the hardware. 
+               </p>
+               
+               
+               <p>You can use
+                  the Registers view to expand and show all of the processor registers on your
+                  target board, and their contents over time. While stepping through, register
+                  rows will change color to indicate a changed value. 
+               </p>
+               
+               
+               <p>You can also select
+                  the <span class="uicontrol">Variables</span> tab to view the value of local and global
+                  variables for which symbols exist, and you'll see the Code view and Disassembly
+                  view. The Disassembly view will incorporate the source code into its display,
+                  allowing you to easily see which machine instructions correspond to which lines
+                  of code. 
+               </p>
+               
+               
+               
+            </li>
+            <li class="stepexpand">
+               <span>In either the Code view or the Disassembly view, you can set and remove breakpoints
+                  by double-clicking on the margin. You can use the Step and Continue tools at the top
+                  of the screen to resume execution.</span>
+               
+            </li>
+         </ol>
+         
+         
+         <div class="section">
+            
+            <p>Once you've finished your debugging session, you should remove all breakpoints and click
+               <span class="uicontrol">Continue</span> to let startup finish booting up. A quick look at
+               the serial console will show a fully-booted Neutrino image.
+            </p>
+            
+            
+            <p>The following topics discuss the process of installing, configuring, and using the
+               Lauterbach Trace32 In-Circuit Debugger with a QNX Neutrino kernel image, as well as
+               describing the steps necessary to debug using the Debugger: 
+            </p>
+            
+            <br clear="none" /><ul>
+               <li>
+                  <a href="debug_JTAGNeutInstTrace32Prereq_.html" shape="rect">Prerequisites</a>
+                  
+               </li>
+               <li>
+                  <a href="debug_JTAGNeutInstTrace32sw_.html" shape="rect">Installing the Lauterbach Trace32 In-Circuit Debugger software</a>
+                  
+               </li>
+               <li>
+                  <a href="debug_JTAGNeutInstTrace32pi_.html" shape="rect">Installing the Lauterbach Trace32 Eclipse plug-in software</a>
+                  
+               </li>
+               <li>
+                  <a href="debug_JTAGNeutConnectTrace32_.html" shape="rect">Connecting the Lauterbach Trace32 In-Circuit Debugger</a>
+                  
+               </li>
+               <li>
+                  <a href="debug_JTAGNeutConfigTrace32_.html" shape="rect">Configuring the Lauterbach Trace32 In-Circuit Debugger</a>
+                  
+               </li>
+               <li>
+                  <a href="debug_JTAGNeutCreateLaunchConfig_.html" shape="rect">Creating a launch configuration for the target hardware</a>
+                  
+               </li>
+               <li>
+                  <a href="debug_JTAGNeutCreateStartup_.html" shape="rect">Creating a startup script for the Lauterbach Trace32 In-Circuit software</a>
+                  
+               </li>
+            </ul>
+            
+            
+            <div class="note"><span class="notetitle">Note:</span> 
+               
+               <p>Currently, the Lauterbach TRACE In-Circuit Debugger doesn't integrate with
+                  <tt>gdb</tt>.
+               </p>
+               
+               
+               <p>The JTAG integration in the IDE is limited to source-level debugging of the source
+                  code only. 
+               </p>
+               
+               
+               <p>Since the Lauterbach Trace32 In-Circuit Debugger doesn't support Linux or Neutrino
+                  hosts, your host must run with Microsoft Windows. 
+               </p>
+               
+               
+               <p>The proper powering-up/down sequence is to power up the debugger first, and then the
+                  target, and the powering-down sequence is to power down the target, and then the
+                  debugger. 
+               </p>
+               
+               
+               <p>When prompted to specify a directory location, if you don't want to use the default
+                  directory specified, we recommended that you not use the system directory itself. 
+               </p>
+               
+               
+               <p>The IDE contains built-in support for the Abatron BDI2000 and Macraigor USB2Demon
+                  JTAG devices, with other device support through self-defined hardware-specific
+                  command sets. 
+               </p>
+               
+               
+               <p>The JTAG debug launch configuration supports GDB Hardware Debug through the JTAG
+                  interface.
+               </p>
+               
+               
+            </div>
+            
+            
+            <p>For more information about the Lauterbach Trace32 In-Circuit Debugger, see the Lauterbach
+               documentation and refer specifically to the <cite>ICD Debugger User's Guide</cite>,
+               <cite>ICE User's Guide</cite>, and <cite>ICE User's Guide</cite>. Descriptions for
+               all of the general commands are found in the <cite>IDE Reference Guide</cite> and
+               <cite>General Reference Guide</cite>.
+            </p>
+            
+            
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/debug_JTAGAbtron_.html" shape="rect">JTAG: Using the Abatron BDI2000 JTAG Debugger with a QNX Neutrino kernel image</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

@@ -1,0 +1,183 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Common tab" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/launch_lnch_tabs_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/launch_tab_main_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/launch_tab_arguments_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/launch_tab_environment_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/launch_tab_download_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/launch_tab_debugger_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/launch_tab_source_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/launch_tab_tools_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Commontab" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Common tab</title>
+   </head>
+   <body id="Commontab"><a name="Commontab" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Common tab</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>The Common tab lets you define where the launch configuration is stored, how you access it, and what perspective you change
+            to when you launch. 
+            
+            
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/mp2Ftopic2Flaunch_tab_common_.xml_d100162e25.jpg" alt="Launch - Common tab" /></span>
+            
+         </p>
+         
+         
+         <div class="fignone">
+            
+            <p>The Common tab in the Launch Configurations dialog.</p>
+            
+            
+         </div>
+         
+         
+         <dl>
+            <dt class="dlterm">
+               <span class="uicontrol">Save as</span>
+               
+            </dt>
+            <dd>When you create a launch configuration, the IDE saves it as a <span class="filepath">.launch</span> file. If you select <span class="uicontrol">Local</span>, the IDE stores the configuration in one of its own plugin directories. If you select <span class="uicontrol">Shared</span> file, you can save it in a location you specify (such as in your project). Saving as a shared file lets you commit the <span class="filepath">.launch</span> file to source control, such as CVS or Subversion, which allows others to run the program using the same configuration. 
+               <dl>
+                  <dt class="dlterm">
+                     <span class="uicontrol">Local file</span>
+                     
+                  </dt>
+                  <dd>Saves the launch configuration locally. </dd>
+                  <dt class="dlterm">
+                     <span class="uicontrol">Shared file</span>
+                     
+                  </dt>
+                  <dd>Specifies the path of, or browse to, a workspace to store the launch configuration file, and be able to commit it to CVS.
+                     
+                  </dd>
+               </dl>
+               
+               
+               
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Display in favorites menu</span>
+               
+            </dt>
+            <dd>Add configuration name to Run, Debug, or Profile menus for easy selection. You can have your launch configuration displayed
+               when you click the <span class="uicontrol">Run</span>, <span class="uicontrol">Debug</span>, or <span class="uicontrol">Profile</span> dropdown menus in the toolbar. To do so, check the <span class="uicontrol">Run</span>, <span class="uicontrol">Debug</span>, or <span class="uicontrol">Profile</span> options under the <span class="uicontrol">Display in favorites menu</span> heading. 
+               
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Console Encoding</span>
+               
+            </dt>
+            <dd>Specify the encoding scheme to use for console output. 
+               
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Allocate Console (necessary for input)</span>
+               
+            </dt>
+            <dd>Check to assign a console view to receive the output. 
+               
+            </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">File</span>
+               
+            </dt>
+            <dd>Specify the file name to save the output. </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Workspace</span>
+               
+            </dt>
+            <dd>Specifies the path of, or browse to, a workspace to store the output file. </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">File System</span>
+               
+            </dt>
+            <dd>Specifies the path of, or browse to, a file system directory to store the output file. </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Variables</span>
+               
+            </dt>
+            <dd>Select variables by name to include in the output file. </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Append</span>
+               
+            </dt>
+            <dd>Select to append the output. Deselect this option to recreate the file each time. </dd>
+            <dt class="dlterm">
+               <span class="uicontrol">Launch in background</span>
+               
+            </dt>
+            <dd>Select this option to launch configuration in background mode. This option is enabled by default, letting the IDE launch applications
+               in the background so that you can continue to use the IDE while waiting for a large application to be transferred to the target.
+               
+               
+            </dd>
+         </dl>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/launch_lnch_tabs_.html" shape="rect">Setting execution options</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/launch_tab_main_.html" shape="rect">Main tab</a></div>
+            
+            <div><a href="../topic/launch_tab_arguments_.html" shape="rect">Arguments tab</a></div>
+            
+            <div><a href="../topic/launch_tab_environment_.html" shape="rect">Environment tab</a></div>
+            
+            <div><a href="../topic/launch_tab_download_.html" shape="rect">Upload tab</a></div>
+            
+            <div><a href="../topic/launch_tab_debugger_.html" shape="rect">Debugger tab</a></div>
+            
+            <div><a href="../topic/launch_tab_source_.html" shape="rect">Source tab</a></div>
+            
+            <div><a href="../topic/launch_tab_tools_.html" shape="rect">Tools tab</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="QNX Persistent Publish/Subscribe Developer's Guide">
+      <topic label="About This Guide" href="about.html">
+          <topic label="Typographical conventions" href="about.html#conventions">
+            <topic label="Note to Windows users" href="about.html#WINDOWSNOTE"/>
+            <topic label="Navigation buttons" href="about.html#Navigation"/>
+          </topic>
+          <topic label="Technical support options" href="about.html#id6"/>
+      </topic>
+      <topic label="QNX PPS Service" href="pps.html">
+          <topic label="Running PPS" href="pps.html#run"/>
+      </topic>
+      <topic label="Objects and their Attributes" href="objects.html">
+          <topic label="Object files" href="objects.html#fil">
+            <topic label="Object and directory sizes" href="objects.html#siz"/>
+            <topic label="Special objects" href="objects.html#obj_spec"/>
+          </topic>
+          <topic label="Object syntax" href="objects.html#syntax">
+            <topic label="Objects in filesystem listings" href="objects.html#obj_listing"/>
+            <topic label="Change notification" href="objects.html#o_cre_del">
+              <topic label="Responding to an object deletion" href="objects.html#obj_del"/>
+            </topic>
+          </topic>
+          <topic label="Attributes" href="objects.html#attributes"/>
+      </topic>
+      <topic label="Persistence" href="persistence.html">
+          <topic label="Persistent storage" href="persistence.html#storage">
+            <topic label="Persistence and filesystem limitations" href="persistence.html#fs"/>
+          </topic>
+          <topic label="Saving objects" href="persistence.html#pru"/>
+          <topic label="Loading objects" href="persistence.html#olr"/>
+      </topic>
+      <topic label="Publishing" href="publish.html">
+          <topic label="Creating, modifying and deleting" href="publish.html#create"/>
+          <topic label="Multiple publishers" href="publish.html#mpb"/>
+      </topic>
+      <topic label="Subscribing" href="subscribe.html">
+          <topic label="Blocking and non-blocking reads" href="subscribe.html#sbl">
+            <topic label="Setting PPS to block" href="subscribe.html#wait">
+              <topic label="Clearing O_NONBLOCK" href="subscribe.html#blk_clear"/>
+            </topic>
+          </topic>
+          <topic label="io_notify functionality" href="subscribe.html#not"/>
+          <topic label="Getting notifications of data on a file descriptor" href="subscribe.html#notif_fd"/>
+          <topic label="Subscription Modes" href="subscribe.html#ofd">
+            <topic label="Full mode" href="subscribe.html#ful"/>
+            <topic label="Delta mode" href="subscribe.html#dta">
+              <topic label="Delta mode queues" href="subscribe.html#msd"/>
+              <topic label="Changes to multiple attributes" href="subscribe.html#cma"/>
+            </topic>
+            <topic label="Server objects" href="subscribe.html#server"/>
+          </topic>
+          <topic label="Subscribing to multiple objects" href="subscribe.html#smo">
+            <topic label="Subscribe to all objects in a directory" href="subscribe.html#all"/>
+            <topic label="Notification groups" href="subscribe.html#notif_groups">
+              <topic label="Creating notification groups" href="subscribe.html#notif_create"/>
+              <topic label="Using notification groups" href="subscribe.html#notif_use"/>
+              <topic label="Notification of closed file descriptors for objects" href="subscribe.html#notif_close"/>
+            </topic>
+          </topic>
+      </topic>
+      <topic label="Options and Qualifiers" href="options.html">
+          <topic label="Pathname open options" href="options.html#pathname_opt">
+            <topic label="Critical option" href="options.html#critical">
+              <topic label="Duplicate file descriptors" href="options.html#caveat">
+                <topic label="Critical file descriptors" href="options.html#critical_fd"/>
+                <topic label="Server file descriptors" href="options.html#server_fd"/>
+              </topic>
+            </topic>
+          </topic>
+          <topic label="Object and attribute qualifiers" href="options.html#object_opt">
+            <topic label="Setting qualifiers" href="options.html#opt-set"/>
+            <topic label="No-persistence qualifier" href="options.html#non_persist"/>
+            <topic label="Item qualifier" href="options.html#item">
+              <topic label="Adding and deleting set items" href="options.html#item_ad">
+                <topic label="Incorrect item syntax" href="options.html#item_wrong"/>
+              </topic>
+              <topic label="Examples" href="options.html#id14">
+                <topic label="Example 1: Duplicate items" href="options.html#id16"/>
+                <topic label="Example 2: Null items" href="options.html#id18"/>
+                <topic label="Example 3: Delete an item" href="options.html#id20"/>
+              </topic>
+            </topic>
+          </topic>
+          <topic label="ppsparse" href="api/ppsparse.html">
+            <topic label="Description:" href="api/ppsparse.html#desc">
+              <topic label="pps_attrib_t" href="api/ppsparse.html#pps_attrib_t"/>
+              <topic label="pps_attrib_flags_t" href="api/ppsparse.html#pps_attrib_flags_t"/>
+              <topic label="pps_options_t" href="api/ppsparse.html#pps_options_t"/>
+              <topic label="pps_status_t" href="api/ppsparse.html#pps_status_t"/>
+            </topic>
+            <topic label="Examples:" href="api/ppsparse.html#id16"/>
+          </topic>
+      </topic>
+</toc>

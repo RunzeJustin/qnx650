@@ -1,0 +1,395 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Memory Events view" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_MEMANALEDIT_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Memory_Analysis_Editor_Group.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Memory_Problems_View.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Memory_Backtrace.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_InspectMemAllocations_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Memory_detail_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Memory_Event_Filter.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Memory_Event_Preferences.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/memory_Viewing_Statistics_For_Memory_Events.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="memory_Memory_Events_View" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Memory Events view</title>
+   </head>
+   <body id="memory_Memory_Events_View"><a name="memory_Memory_Events_View" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Memory Events view</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>Use this view to show the memory events (allocation and deallocation) that are found in your program by memory analysis tooling.
+            
+         </p>
+         
+         
+         <p>
+            <span><img src="../images/c2Fmemory_Memory_Events_View.xml_d118126e17.jpg" alt="Memory Events view" /></span>
+            
+         </p>
+         
+         
+         <p>To populate the view, click on a session or session element (such as a thread, file, and so on) from the Session View (see
+            <a href="memory_session_view_info.html" shape="rect">Managing Memory Analysis sessions: The Session view</a>), or activate the memory analysis editor (see <a href="memory_Memory_Analysis_Editor_Group.html" shape="rect">Memory Analysis editor</a>), and then select a region in the allocations chart (when the view is synchronized). 
+         </p>
+         
+         
+         <p>The Memory Events view provides the following columns in the events table (not all columns are present by default, you can
+            select columns using the view's preferences):
+         </p>
+         
+         
+         
+         <div class="tablenoborder">
+            <table cellpadding="4" cellspacing="0" summary="" frame="border" border="1" rules="all">
+               <thead align="left">
+                  <tr>
+                     <th class="cellrowborder" valign="top" width="NaN%" id="d118126e50" rowspan="1" colspan="1">Column</th>
+                     <th class="cellrowborder" valign="top" width="NaN%" id="d118126e53" rowspan="1" colspan="1">Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d118126e50" rowspan="1" colspan="1">
+                        <span class="uicontrol">Kind</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d118126e53" rowspan="1" colspan="1">A kind of allocation (<em>malloc()</em>, <em>calloc()</em>, <em>new()</em>, <em>free()</em>, etc.) with a matched icon (the icon has checkmark if the allocation has a corresponding <em>free()</em>.)
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d118126e50" rowspan="1" colspan="1">
+                        <span class="uicontrol">Requested Size</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d118126e53" rowspan="1" colspan="1">The size of memory in bytes requested.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d118126e50" rowspan="1" colspan="1">
+                        <span class="uicontrol">Actual Size</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d118126e53" rowspan="1" colspan="1">The size of the memory block allocator used.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d118126e50" rowspan="1" colspan="1">
+                        <span class="uicontrol">Pointer</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d118126e53" rowspan="1" colspan="1">A pointer value.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d118126e50" rowspan="1" colspan="1">
+                        <span class="uicontrol">Tid</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d118126e53" rowspan="1" colspan="1">The thread ID of thread that did the allocation.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d118126e50" rowspan="1" colspan="1">
+                        <span class="uicontrol">Pid</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d118126e53" rowspan="1" colspan="1">The process ID.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d118126e50" rowspan="1" colspan="1">
+                        <span class="uicontrol">CPU</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d118126e53" rowspan="1" colspan="1">The CPU on which the allocation or deallocation occurred.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d118126e50" rowspan="1" colspan="1">
+                        <span class="uicontrol">Binary</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d118126e53" rowspan="1" colspan="1">The binary or library name of the requester (the top frame of a backtrace).</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d118126e50" rowspan="1" colspan="1">
+                        <span class="uicontrol">Location</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d118126e53" rowspan="1" colspan="1">The <var class="varname">file</var>:<var class="varname">line</var> of the requester (the top frame of a backtrace).
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d118126e50" rowspan="1" colspan="1">
+                        <span class="uicontrol">Timestamp</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d118126e53" rowspan="1" colspan="1">The timestamp of an allocation (the timestamp can wrap around).</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d118126e50" rowspan="1" colspan="1">
+                        <span class="uicontrol">Event id</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d118126e53" rowspan="1" colspan="1">The unique ID in the order of appearance.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d118126e50" rowspan="1" colspan="1">
+                        <span class="uicontrol">Average size</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d118126e53" rowspan="1" colspan="1">When grouped, it refers to the average size of the requested allocations.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d118126e50" rowspan="1" colspan="1">
+                        <span class="uicontrol">Max size</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d118126e53" rowspan="1" colspan="1">When grouped, it's the maximum size of the requested allocations.</td>
+                  </tr>
+                  <tr>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d118126e50" rowspan="1" colspan="1">
+                        <span class="uicontrol">Count</span>
+                        
+                     </td>
+                     <td class="cellrowborder" valign="top" width="NaN%" headers="d118126e53" rowspan="1" colspan="1">When grouped, it's the count of the grouped allocations.</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </div>
+         
+         
+         <div class="p">The icons in the table indicate the type of allocation or deallocation: 
+            <dl>
+               <dt class="dlterm">
+                  <span><img src="../images/c2Fmemory_Memory_Events_View.xml_d118126e263.jpg" alt="Matched allocation" /></span>
+                  
+               </dt>
+               <dd>An allocation with a matching deallocation. </dd>
+               <dt class="dlterm">
+                  <span><img src="../images/c2Fmemory_Memory_Events_View.xml_d118126e278.jpg" alt="Matched deallocation" /></span>
+                  
+               </dt>
+               <dd>A deallocation with a matching allocation. </dd>
+               <dt class="dlterm">
+                  <span><img src="../images/c2Fmemory_Memory_Events_View.xml_d118126e293.jpg" alt="Unmatched allocation" /></span>
+                  
+               </dt>
+               <dd>An allocation without a matching deallocation. </dd>
+               <dt class="dlterm">
+                  <span><img src="../images/c2Fmemory_Memory_Events_View.xml_d118126e308.jpg" alt="Unmatched deallocation" /></span>
+                  
+               </dt>
+               <dd>A deallocation without a matching allocation. </dd>
+            </dl>
+            
+         </div>
+         
+         
+         <p>Non-aggregated columns show data for the first event in the group when the events are grouped. You can use your mouse to resize,
+            hide and rearrange columns using standard drag-and-drop commands on table header. To hide the column, resize it to <span class="uicontrol">none</span>. To make a column more visible, use the <span class="uicontrol">Prefereces…</span> dialog. 
+         </p>
+         
+         
+         <p>The Memory Analysis view provides the following features:</p>
+         
+         
+         <div class="p">
+            <br clear="none" /><ul>
+               <li>Double-click a particular event in the list, and the IDE highlights the corresponding source code line (if it exists).</li>
+               <li>Click a particular event in the list, the problem is selected, and then the IDE updates the problem backtrace in <a href="memory_Memory_Backtrace.html" shape="rect">Memory Backtrace view</a>.
+               </li>
+               <li>Click a column header, and the IDE sorts the data by the column value.</li>
+               <li>Drag-and-drop columns by their header to rearrange the column order.</li>
+               <li>Press <span class="key">Ctrl-C</span> (or your specific platform copy command), and then the IDE copies the text representation of the event to the clipboard.
+               </li>
+               <li>Double-click on the view header to maximize the view (or return to normal when currently maximized).</li>
+               <li>Right-click in the table to open the context menu (see below for descriptions).</li>
+            </ul>
+            
+            
+         </div>
+         
+         
+         <div class="p">
+            <strong>View action bar</strong>
+            <br clear="none" /><ul>
+               <li><span class="uicontrol">Remove Events</span> - remove (by filtering) the current events from the view. Enabled when running.
+               </li>
+               <li><span class="uicontrol">Start/Stop memory tracing</span> - Start or stop tracing.
+               </li>
+               <li><span class="uicontrol">Open Filter Dialog</span> - open the Filter dialog (see below for descriptions). This item is disabled when the view is synchronized with the editor
+                  selection; the IDE uses the editor filter for this situation.
+               </li>
+               <li><span class="uicontrol">Synchronize with Editor Selection</span> - when enabled, the view shows the selection details from the editor allocations page, and uses the editor filters.
+               </li>
+               <li><span class="uicontrol">Prevent Auto-Refresh</span> - don't automatically perform a refresh. Enabled when running.
+               </li>
+               <li><span class="uicontrol">Refresh</span> - update the data in the view.
+               </li>
+               <li><span class="uicontrol">View Menu</span> - open the view menu (see description below).
+               </li>
+               <li><span class="uicontrol">Minimize</span> - minimize the view. 
+               </li>
+               <li><span class="uicontrol">Maximize</span> - maximize the view (or return to normal when currently maximized).
+               </li>
+            </ul>
+            
+            
+         </div>
+         
+         
+         <div class="p">
+            <strong>Memory Events view context menu</strong>
+            <br clear="none" /><ul>
+               <li>
+                  <span class="uicontrol">Filter...</span> - opens the traces filter. 
+               </li>
+               <li>
+                  <span class="uicontrol">Find matching event</span>
+                  
+               </li>
+               <li>
+                  <span class="uicontrol">Quick Filter</span>
+                  <br clear="none" /><ul>
+                     <li>
+                        <span class="uicontrol">Up to Event</span> - show only events up to this current event (by time occurrence).
+                     </li>
+                     <li>
+                        <span class="uicontrol">From Event</span> - show only events from this event (by time occurrence). 
+                     </li>
+                     <li>
+                        <span class="uicontrol">Matching with Event</span> - show only this event and the matching event (the allocation and deallocation pair). 
+                     </li>
+                     <li>
+                        <span class="uicontrol">Same pointer</span> - show only events that have the same pointer. 
+                     </li>
+                     <li>
+                        <span class="uicontrol">Same size</span> - show only events that have same size of allocation.
+                     </li>
+                     <li>
+                        <span class="uicontrol">Same band</span> - show only events that are allocated in the same band.
+                     </li>
+                     <li>
+                        <span class="uicontrol">Same backtrace</span> - show only events with the same allocation backtrace.
+                     </li>
+                     <li>
+                        <span class="uicontrol">Show All</span> - reset the filter (show all events).
+                     </li>
+                  </ul>
+                  
+                  
+               </li>
+               <li>
+                  <span class="uicontrol">Group By</span>
+                  <br clear="none" /><ul>
+                     <li>
+                        <span class="uicontrol">None</span> - no grouping is performed in the view.
+                     </li>
+                     <li>
+                        <span class="uicontrol">Kind</span> - group by allocation kind (e.g. <em>malloc</em>(), <em>calloc</em>(), etc.) 
+                     </li>
+                     <li>
+                        <span class="uicontrol">Size</span> - group by the requested size. 
+                     </li>
+                     <li>
+                        <span class="uicontrol">Band Size</span> - group by band size (events from the non-band allocator aren't grouped).
+                     </li>
+                     <li>
+                        <span class="uicontrol">Pointer</span> - group by the same pointer. 
+                     </li>
+                     <li>
+                        <span class="uicontrol">Backtrace</span> - group events with the same backtrace under one group. For the group row ,non-aggregated columns show the value of the first
+                        entry. 
+                     </li>
+                     <li>
+                        <span class="uicontrol">Thread</span> - group by thread ID. 
+                     </li>
+                  </ul>
+                  
+                  
+               </li>
+               <li>
+                  <span class="uicontrol">Show Backtrace</span> - activate the Memory Backtrace view and show the current backtrace in the view.
+               </li>
+               <li>
+                  <span class="uicontrol">Show Source</span> - show the context menu and double-click to select an event source location. 
+               </li>
+               <li>
+                  <span class="uicontrol">Preferences...</span> - open the view Preferences dialog to set the column selection and order.
+               </li>
+            </ul>
+            
+            
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <ul class="ullinks">
+            <li class="ulchildlink"><strong><a href="../topic/memory_Memory_Event_Filter.html" shape="rect">Memory Events Filter</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/memory_Memory_Event_Preferences.html" shape="rect">Memory Events Preferences</a></strong><br clear="none" />
+               
+            </li>
+            <li class="ulchildlink"><strong><a href="../topic/memory_Viewing_Statistics_For_Memory_Events.html" shape="rect">Viewing statistics for memory events</a></strong><br clear="none" />
+               
+            </li>
+         </ul>
+         
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/memory_MEMANALEDIT_.html" shape="rect">Viewing Memory Analysis data</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/memory_Memory_Analysis_Editor_Group.html" shape="rect">Memory Analysis editor</a></div>
+            
+            <div><a href="../topic/memory_Memory_Problems_View.html" shape="rect">Memory Problems view</a></div>
+            
+            <div><a href="../topic/memory_Memory_Backtrace.html" shape="rect">Memory Backtrace view</a></div>
+            
+            <div><a href="../topic/memory_Memory_detail_.html" shape="rect">Interpreting errors during memory analysis</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/memory_InspectMemAllocations_.html" shape="rect">Inspecting outstanding allocations</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

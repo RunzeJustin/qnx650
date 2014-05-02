@@ -1,0 +1,277 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="How to create a C/C++ project" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_c_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="HowtocreateaCCproject" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>How to create a C/C++ project</title>
+   </head>
+   <body id="HowtocreateaCCproject"><a name="HowtocreateaCCproject" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">How to create a C/C++ project</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>To create a C/C++ project: 
+            
+         </p>
+         
+         <br clear="none" /><ol>
+            <li>From the menu, select <span class="menucascade">
+                  <span class="uicontrol">File</span>
+                  &gt; <span class="uicontrol">New</span>
+                  &gt; <span class="uicontrol">Project…</span>
+                  </span>. 
+            </li>
+            <li>In the left pane, select the project's nature and type according to this table: 
+               
+               <div class="tablenoborder">
+                  <table cellpadding="4" cellspacing="0" summary="" frame="border" border="1" rules="all">
+                     <thead align="left">
+                        <tr>
+                           <th class="cellrowborder" valign="top" width="NaN%" id="d209117e51" rowspan="1" colspan="1">If you want to build a:</th>
+                           <th class="cellrowborder" valign="top" width="NaN%" id="d209117e54" rowspan="1" colspan="1">Select:</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td class="cellrowborder" valign="top" width="NaN%" headers="d209117e51" rowspan="1" colspan="1">C Project</td>
+                           <td class="cellrowborder" valign="top" width="NaN%" headers="d209117e54" rowspan="1" colspan="1">
+                              <span class="menucascade">
+                                 <span class="uicontrol">C</span>
+                                 &gt; <span class="uicontrol">C Project</span>
+                                 </span>
+                              
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="cellrowborder" valign="top" width="NaN%" headers="d209117e51" rowspan="1" colspan="1">QNX C Project</td>
+                           <td class="cellrowborder" valign="top" width="NaN%" headers="d209117e54" rowspan="1" colspan="1">
+                              <span class="menucascade">
+                                 <span class="uicontrol">C</span>
+                                 &gt; <span class="uicontrol">QNX C Project</span>
+                                 </span>
+                              
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="cellrowborder" valign="top" width="NaN%" headers="d209117e51" rowspan="1" colspan="1">C++ Project</td>
+                           <td class="cellrowborder" valign="top" width="NaN%" headers="d209117e54" rowspan="1" colspan="1">
+                              <span class="menucascade">
+                                 <span class="uicontrol">C++</span>
+                                 &gt; <span class="uicontrol">C++ Project</span>
+                                 </span>
+                              
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="cellrowborder" valign="top" width="NaN%" headers="d209117e51" rowspan="1" colspan="1">QNX C++ Project</td>
+                           <td class="cellrowborder" valign="top" width="NaN%" headers="d209117e54" rowspan="1" colspan="1">
+                              <span class="menucascade">
+                                 <span class="uicontrol">C++</span>
+                                 &gt; <span class="uicontrol">QNX C++ Project</span>
+                                 </span>
+                              
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+               </div>
+               
+            </li>
+            <li>Click <span class="uicontrol">Next</span>. 
+            </li>
+            <li>In the <span class="uicontrol">Project name</span> field, type a name for your project. 
+               <div class="note"><span class="notetitle">Note:</span> Although the wizard allows it, don't use any of the following characters in your project name: 
+                  <p>
+                     <cite>| ! $ ( " ) &amp; ` : ; \ ' * ? [ ] # ~ = % &lt; &gt; { }</cite>
+                     
+                  </p>
+                  
+                  <p>as they may cause problems later.</p>
+                  
+               </div>
+               
+            </li>
+            <li>If you don't want to use the default location for the project, ensure that the <span class="uicontrol">Use Default Location</span> option is deselected, and specify where the resources reside in the filesystem (if they don't reside in your workspace).
+               
+            </li>
+            <li>Required (when <span class="uicontrol">Use Default Location</span> is not selected): In the <span class="uicontrol">Location</span> field, type the path to your source (or click <span class="uicontrol">Browse…</span>).
+            </li>
+            <li>Click <span class="uicontrol">Next</span>. 
+            </li>
+            <li>Select a type: <br clear="none" /><ul>
+                  <li>For a QNX C or C++ Project: <br clear="none" /><ul>
+                        <li><span class="uicontrol">Application</span>
+                           — A standalone executable. 
+                        </li>
+                        <li><span class="uicontrol">Static library (libxx.a)</span>
+                           — Archive of binary objects (i.e. <span class="filepath">*.o</span>) that are directly linked against an executable. 
+                        </li>
+                        <li><span class="uicontrol">Shared library (libxx.so,libxxS.a)</span>
+                           — Combines binary objects together and joins them so that they are relocatable and can be shared by many processes. 
+                        </li>
+                        <li><span class="uicontrol">Static+Static shared library (libxx.a,libxxS.a)</span>
+                           — From one set of sources, creates static library <span class="filepath">libxxx.a</span> and static library for shared objects <span class="filepath">libxxS.a</span> (the same as static library, but uses position-independent code - PIC). Use this type if you want a library that will later
+                           be linked into a shared object. The System Builder uses these types of libraries to create new shared libraries that contain
+                           only the symbols that are absolutely required by a specific set of programs. 
+                        </li>
+                        <li><span class="uicontrol">Shared library without export (xx.dll)</span>
+                           — A shared library that you are not going to link with another application. Instead, it is intended to be manually opened
+                           at runtime using the <tt>dlopen()</tt> function, and other specific functions are to be looked up using the <tt>dlsym()</tt> function. 
+                           <p>
+                              <span><img src="../images/p2Ftopic2Fwizards_c_creating_.xml_d209117e231.jpg" alt="Project type field" /></span>
+                              
+                           </p>
+                           
+                           <p>If you're building a library, see <a href="wizards_LinkerExtraLib_.html" shape="rect">Extra libraries</a> and <a href="wizards_LinkerExtraPaths_.html" shape="rect">Extra library paths</a>. 
+                           </p>
+                           
+                        </li>
+                     </ul>
+                     
+                  </li>
+                  <li>For a C++ Project: <br clear="none" /><ul>
+                        <li>Executable — Provides an executable application. This project type folder contains three templates: <br clear="none" /><ul>
+                              <li><span class="uicontrol">Empty Project</span>
+                                 — A single-source project folder that doesn't contain any files. 
+                              </li>
+                              <li><span class="uicontrol">Hello World C++ Project</span>
+                                 — A simple C++ application with <tt>main()</tt>. 
+                              </li>
+                           </ul>
+                           
+                           <p>After specifying an <span class="uicontrol">Executable</span> template, the workbench creates a project with only the metadata files required for your project type, and automatically
+                              creates a makefile for you. You can modify these source files, and provide them for the project's target. 
+                           </p>
+                           
+                        </li>
+                        <li><span class="uicontrol">Shared Library</span>
+                           — An executable module compiled and linked separately. For more information about this type, see <a href="wizards_c_.html" shape="rect">Creating a C/C++ project</a>. 
+                        </li>
+                        <li><span class="uicontrol">Static Library</span>
+                           — A collection of object files that you can link into another application (<span class="filepath">libxx.a</span>). For more information about this type, see <a href="wizards_c_.html" shape="rect">Creating a C/C++ project</a>. 
+                        </li>
+                        <li><span class="uicontrol">Makefile Project</span>
+                           — Creates an empty project without any metadata files. For more information about this type, see <a href="wizards_c_.html" shape="rect">Creating a C/C++ project</a>. 
+                        </li>
+                     </ul>
+                     
+                     <p>
+                        <span><img src="../images/p2Ftopic2Fwizards_c_creating_.xml_d209117e308.jpg" alt="Project type field" /></span>
+                        
+                     </p>
+                     
+                  </li>
+               </ul>
+               
+               <div class="note"><span class="notetitle">Note:</span> 
+                  
+                  <p>When you create a shared library, it's name is recorded in a special dynamic section. You can display the information in this
+                     section to see a <tt>SONAME</tt> record. For example, you can use the following: 
+                  </p>
+                  
+                  <pre class="codeblock" xml:space="preserve">ntoarm-readelf -d <var class="varname">libname</var>.so</pre>
+                  
+                  <p>When you link against this library, your application will look for that name. </p>
+                  
+                  
+                  <p>When you perform a <tt>make install</tt>, the <span class="filepath">.so</span> is copied to <span class="filepath">.so.1</span>, and a <span class="filepath">.so</span> symbolic link is created to point to it. You'll also notice that <span class="filepath">.so</span> will get the right version. If you install a <span class="filepath">.so.2</span> (where the <span class="filepath">.so</span> points to it), your old version <tt>1</tt> clients can still run.
+                  </p>
+                  
+                  
+               </div>
+               
+            </li>
+            <li>Select a required toolchain from the <span class="uicontrol">Toolchain</span> list. 
+               <p>A toolchain represents the specific tools (such as a compiler, linker, and assembler) used to build your project. Additional
+                  tools, such as a debugger, can also be associated with a toolchain. Depending on the compilers installed on your system, there
+                  might be several toolchains available to select from. 
+               </p>
+               
+            </li>
+            <li>Click <span class="uicontrol">Next</span>.
+            </li>
+            <li>Optional: You can specify basic properties for the project, and click <span class="uicontrol">Next</span>.
+            </li>
+            <li>Select the types of platforms and configurations you want to deploy for this project. 
+               <p>
+                  <span><img src="../images/p2Ftopic2Fwizards_c_creating_.xml_d209117e386.jpg" alt="Select platforms and configurations" /></span>
+                  
+               </p>
+               
+            </li>
+            <li>Optional: Click <span class="uicontrol">Advanced Settings...</span> to edit' the project's properties. 
+               <p>The fields for each panel are described in the <a href="wizards_c_tabs_.html" shape="rect">Project properties</a> section, below.
+               </p>
+               
+            </li>
+            <li>Expand <span class="uicontrol">C/C++ Build</span> and select <span class="uicontrol">Settings</span>.
+            </li>
+            <li>Click the <span class="uicontrol">Binary Parsers</span> tab.
+            </li>
+            <li>Select a parser. 
+               <p>After you select the correct parser for your development environment and build your project, you can view the components of
+                  the <span class="filepath">.o</span> file in the Project Explorer view. You can also view the contents of the <span class="filepath">.o</span> file in the C/C++ editor. 
+               </p>
+               
+            </li>
+            <li>Click <span class="uicontrol">OK</span>.
+            </li>
+            <li>Click <span class="uicontrol">Finish</span>. 
+               <p>The IDE creates your new project in your workspace. Your new project is listed in the Project Explorer view. If a message
+                  box prompts you to change perspectives, click <span class="uicontrol">Yes</span>.
+               </p>
+               
+            </li>
+         </ol>
+         
+         
+         <p>Depending on the type of project you choose, the New Project wizard shows a variety of different tabs that you can use to
+            configure your new C/C++ project. For information about these tabs, see <a href="wizards_c_tabs_.html" shape="rect">Project properties</a>. 
+            
+            
+         </p>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/wizards_c_.html" shape="rect">Creating a C/C++ project</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

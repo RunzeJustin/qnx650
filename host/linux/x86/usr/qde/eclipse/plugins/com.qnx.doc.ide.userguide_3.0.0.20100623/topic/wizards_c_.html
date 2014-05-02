@@ -1,0 +1,151 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="concept" />
+      <meta name="DC.Title" content="Creating a C/C++ project" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/getstarted_CPSTEP1_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/getstarted_Creating_Basic_Project.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/getstarted_Creating_C_Makefile_Project.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/creating_make.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/creating_make_2.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_target_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_convert_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_importing_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/getstarted_Rename_Project.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/wizards_c_creating_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="CreatingaCCproject" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Creating a C/C++ project</title>
+   </head>
+   <body id="CreatingaCCproject"><a name="CreatingaCCproject" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Creating a C/C++ project</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <p>You use the New Project wizard to create a C or C++ project, which can be one of these varieties: 
+            
+            
+         </p>
+         
+         
+         <dl>
+            <dt class="dlterm">QNX C ProjectQNX C++ Project</dt>
+            <dd>A C or C++ project for multiple target platforms. It supports the QNX-specific project structure using <span class="filepath">common.mk</span> files to perform a QNX recursive <span class="cmdname">make</span>. A QNX Project can automatically build either one executable or one library object (in different formats). You can switch
+               between application or library nature by using the project properties. 
+            </dd>
+            <dt class="dlterm">C ProjectC++ Project</dt>
+            <dd>Depending on the project type you specify, it will provide one of the following: <br clear="none" /><ul>
+                  <li>Executable — Provides an executable application. This project type folder contains three templates. <br clear="none" /><ul>
+                        <li><span class="uicontrol">Empty Project</span>
+                           — A single source project folder that doesn't contain any files. After specifying an <span class="uicontrol">Executable</span> template, the workbench creates a project with only the metadata files required for your project type. Now, you can modify
+                           these source files, as required, and provide the source files for the project's target. Note that for an <span class="uicontrol">Executable</span> project type, a makefile is automatically created for you. 
+                        </li>
+                        <li><span class="uicontrol">Hello World C++ Project</span>
+                           — A basic C or C++ application with <tt>main()</tt>. The result is a project that uses a standard <span class="filepath">Makefile</span> and GNU <span class="cmdname">make</span> to build the source files. You don't get the added functionality of the QNX build organization and the <span class="filepath">common.mk</span> file, but these projects adapt well to your existing code that you wish to bring into the IDE. (For more about <span class="filepath">Makefile</span>s and the <a href="../../com.qnx.doc.neutrino_utilities/m/make.html" shape="rect">
+                              <span class="cmdname">make</span>
+                              </a> utility, see the <a href="../../com.qnx.doc.neutrino_prog/make_convent.html" shape="rect">Conventions for Recursive Makefiles and Directories</a> chapter in the Neutrino <cite>Programmer's Guide</cite>.)
+                        </li>
+                     </ul>
+                     
+                  </li>
+                  <li><span class="uicontrol">Shared Library</span>
+                     — An executable module compiled and linked separately. When you create a project that uses a shared library (<span class="filepath">libxx.so</span>), you define your shared library's project as a Project Reference for your application. For this project type, the CDT combines
+                     object files together and joins them so they're relocatable and can be shared by many processes. Shared libraries are named
+                     using the format <span class="filepath">libxx.so.<var class="varname">version</var></span>, where <var class="varname">version</var> is a number with a default of 1. The <span class="filepath">libxx.so</span> file usually is a symbolic link to the latest version. The makefile for this project type is automatically created by the
+                     CDT. 
+                  </li>
+                  <li><span class="uicontrol">Static Library</span>
+                     — A collection of object files that you can link into another application (<span class="filepath">libxx.a</span>). The CDT combines object files (i.e. <span class="filepath">*.o</span>) into an archive (<span class="filepath">*.a</span>) that is directly linked into an executable. The makefile for this project type is automatically created by the CDT. 
+                  </li>
+                  <li><span class="uicontrol">Makefile Project</span>
+                     — Creates an empty project without any metadata files. This template type is useful for importing and modifying existing makefile-based
+                     projects; a new makefile is not created for this project type. By default, the Toolchain and template types that currently
+                     show up in the lists are based on the language support for the project type that you selected. 
+                  </li>
+               </ul>
+               
+               <div class="note"><span class="notetitle">Note:</span> 
+                  
+                  <p>As a rule, the IDE provides UI elements to control most of the build properties of QNX projects.</p>
+                  
+                  
+                  <p>The <span class="filepath">module.dep</span> and <span class="filepath">module.mk</span> files are created for every project subdirectory. These files are required for your managed make projects to build successfully.
+                  </p>
+                  
+                  
+               </div>
+               
+            </dd>
+         </dl>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <ul class="ullinks">
+            <li class="ulchildlink"><strong><a href="../topic/wizards_c_creating_.html" shape="rect">How to create a C/C++ project</a></strong><br clear="none" />
+               
+            </li>
+         </ul>
+         
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/getstarted_CPSTEP1_.html" shape="rect">Creating a project</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/wizards_convert_.html" shape="rect">Converting projects</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related tasks</strong><br clear="none" />
+            
+            <div><a href="../topic/getstarted_Creating_Basic_Project.html" shape="rect">Creating a simple project</a></div>
+            
+            <div><a href="../topic/getstarted_Creating_C_Makefile_Project.html" shape="rect">Creating a C Makefile project</a></div>
+            
+            <div><a href="../topic/creating_make.html" shape="rect">Creating a make project</a></div>
+            
+            <div><a href="../topic/creating_make_2.html" shape="rect">Creating a make project that can be launched outside the IDE</a></div>
+            
+            <div><a href="../topic/wizards_target_.html" shape="rect">Creating a target system project</a></div>
+            
+            <div><a href="../topic/wizards_importing_.html" shape="rect">Importing projects</a></div>
+            
+            <div><a href="../topic/getstarted_Rename_Project.html" shape="rect">Renaming a project</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            description="QNX Update Action Set"
+            id="com.qnx.tools.ide.updater"
+            label="QNX Updates"
+            visible="true">
+         <menu
+               id="qnx.help"
+               label="&amp;QNX Software Updates"
+               path="help/qnx">
+            <separator
+                  name="qconn">
+            </separator>
+         </menu>
+         <action
+               class="com.qnx.tools.ide.updater.action.QconnUpdaterAction"
+               id="com.qnx.tools.ide.updater.qconn"
+               label="Qconn Updates..."
+               menubarPath="help/qnx.help/qconn"
+               style="push"/>
+      </actionSet>
+   </extension>
+
+</plugin>

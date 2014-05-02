@@ -1,0 +1,360 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<index>
+ <entry keyword="absolute (type of device/event bus)">
+  <topic href="overview.html#id7" title="Types of event bus lines"/>
+ </entry>
+ <entry keyword="begin()">
+  <topic href="api/begin.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="buff_append()">
+  <topic href="api/buff_append.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="buff_create()">
+  <topic href="api/buff_create.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="buff_delete()">
+  <topic href="api/buff_delete.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="buff_flush()">
+  <topic href="api/buff_flush.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="buff_getc()">
+  <topic href="api/buff_getc.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="buff_putc()">
+  <topic href="api/buff_putc.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="buff_waiting()">
+  <topic href="api/buff_waiting.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="calibration file format">
+  <topic href="write_driver.html#id13" title="Calibration file format"/>
+ </entry>
+ <entry keyword="callbacks">
+  <topic href="write_driver.html#REENTRANT" title="A note about reentrancy"/>
+ </entry>
+ <entry keyword="clk_get()">
+  <topic href="write_driver.html#DATAFORMAT" title="Data format"/>
+  <topic href="api/clk_get.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="combination device/protocol module">
+  <topic href="write_driver.html#COMBOMODULE" title="Writing a combination device/protocol module"/>
+ </entry>
+ <entry keyword="conventions">
+  <entry keyword="typographical">
+   <topic href="about.html#Typographical_conventions" title="Typographical conventions"/>
+  </entry>
+ </entry>
+ <entry keyword="data formats">
+  <entry keyword="for protocol modules">
+   <topic href="write_driver.html#DATAFORMAT" title="Data format"/>
+  </entry>
+ </entry>
+ <entry keyword="debugging">
+  <topic href="test_debug.html" title="Testing and Debugging Your Driver"/>
+  <entry keyword="printf() method of">
+   <topic href="test_debug.html" title="Testing and Debugging Your Driver"/>
+  </entry>
+ </entry>
+ <entry keyword="devctrl() module function">
+  <topic href="api/devctrl.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="devi-*">
+  <entry keyword="command line">
+   <topic href="overview.html#MODULES" title="How modules are linked"/>
+  </entry>
+ </entry>
+ <entry keyword="devi-hirun">
+  <topic href="overview.html#MODULES" title="How modules are linked"/>
+ </entry>
+ <entry keyword="DEVI_CLASS_">
+  <topic href="write_driver.html#COMBOMODULE" title="Writing a combination device/protocol module"/>
+ </entry>
+ <entry keyword="devi_enqueue_packet()">
+  <topic href="api/devi_enqueue_packet.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="devi_register_interrupt()">
+  <topic href="api/devi_register_interrupt.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="devi_register_pulse()">
+  <topic href="api/devi_register_pulse.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="devi_register_timer()">
+  <topic href="api/devi_register_timer.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="devi_request_iorange()">
+  <topic href="api/devi_request_iorange.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="device-layer modules">
+  <topic href="overview.html#MODULES" title="How modules are linked"/>
+ </entry>
+ <entry keyword="driver">
+  <entry keyword="running without graphics">
+   <topic href="test_debug.html#id3" title="Debugging a keyboard/mouse driver"/>
+  </entry>
+ </entry>
+ <entry keyword="elo directory">
+  <topic href="write_driver.html#ABS" title="Absolute devices"/>
+  <topic href="overview.html#SRCORG" title="Source file organization for devi-*"/>
+ </entry>
+ <entry keyword="en_US_101.kdef">
+  <topic href="write_driver.html#KBD" title="Keyboard devices"/>
+ </entry>
+ <entry keyword="event bus lines">
+  <topic href="overview.html#INSIDE" title="Inside an input driver"/>
+ </entry>
+ <entry keyword="filter-layer modules">
+  <topic href="overview.html#MODULES" title="How modules are linked"/>
+ </entry>
+ <entry keyword="graphics region">
+  <entry keyword="telling driver to ignore">
+   <topic href="test_debug.html#id3" title="Debugging a keyboard/mouse driver"/>
+  </entry>
+ </entry>
+ <entry keyword="hirun directory">
+  <topic href="overview.html#id3" title="In this chapter..."/>
+  <topic href="write_driver.html#REL" title="Relative devices"/>
+  <topic href="overview.html#SRCORG" title="Source file organization for devi-*"/>
+ </entry>
+ <entry keyword="init() module function">
+  <topic href="api/init.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="input">
+  <entry keyword="library">
+   <topic href="overview.html#INSIDE" title="Inside an input driver"/>
+  </entry>
+ </entry>
+ <entry keyword="input driver">
+  <entry keyword="interface to">
+   <topic href="overview.html#INTERFACE" title="Interface to the system"/>
+  </entry>
+  <entry keyword="main parts of">
+   <topic href="overview.html#INSIDE" title="Inside an input driver"/>
+  </entry>
+ </entry>
+ <entry keyword="input() module function">
+  <topic href="api/input.html#id5" title="Description:"/>
+  <topic href="api/pulse.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="input_module_t">
+  <topic href="write_driver.html#INPUTMODULE" title="Creating an input module"/>
+ </entry>
+ <entry keyword="interrupt handlers">
+  <topic href="api/pulse.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="KEY_SCAN_VALID">
+  <topic href="write_driver.html#KBD" title="Keyboard devices"/>
+ </entry>
+ <entry keyword="keyboard">
+  <entry keyword="definition file">
+   <topic href="write_driver.html#KBD" title="Keyboard devices"/>
+  </entry>
+  <entry keyword="locations of filter module">
+   <topic href="write_driver.html#KBD" title="Keyboard devices"/>
+  </entry>
+  <entry keyword="module">
+   <topic href="write_driver.html#REENTRANT" title="A note about reentrancy"/>
+  </entry>
+  <entry keyword="scan codes">
+   <topic href="write_driver.html#KBD" title="Keyboard devices"/>
+  </entry>
+  <entry keyword="type of device/event bus">
+   <topic href="overview.html#id7" title="Types of event bus lines"/>
+  </entry>
+ </entry>
+ <entry keyword="lib directory">
+  <topic href="overview.html#SRCORG" title="Source file organization for devi-*"/>
+ </entry>
+ <entry keyword="Microsoft mouse">
+  <topic href="write_driver.html#REL" title="Relative devices"/>
+ </entry>
+ <entry keyword="mkkbd">
+  <topic href="write_driver.html#KBD" title="Keyboard devices"/>
+ </entry>
+ <entry keyword="modules">
+  <entry keyword="command-line arguments">
+   <topic href="api/parm.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="configuring from an external source">
+   <topic href="api/devctrl.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="device-layer">
+   <topic href="overview.html#MODULES" title="How modules are linked"/>
+  </entry>
+  <entry keyword="filter-layer">
+   <topic href="overview.html#MODULES" title="How modules are linked"/>
+  </entry>
+  <entry keyword="functions">
+   <entry keyword="devctrl()">
+    <topic href="api/devctrl.html#id5" title="Description:"/>
+   </entry>
+   <entry keyword="init()">
+    <topic href="api/init.html#id5" title="Description:"/>
+   </entry>
+   <entry keyword="input()">
+    <topic href="api/input.html#id5" title="Description:"/>
+    <topic href="api/pulse.html#id5" title="Description:"/>
+   </entry>
+   <entry keyword="output()">
+    <topic href="api/output.html#id5" title="Description:"/>
+   </entry>
+   <entry keyword="parm()">
+    <topic href="api/parm.html#id5" title="Description:"/>
+   </entry>
+   <entry keyword="pulse()">
+    <topic href="api/input.html#id5" title="Description:"/>
+    <topic href="api/pulse.html#id5" title="Description:"/>
+   </entry>
+   <entry keyword="reset()">
+    <topic href="api/reset.html#id5" title="Description:"/>
+   </entry>
+   <entry keyword="shutdown()">
+    <topic href="api/shutdown.html#id5" title="Description:"/>
+   </entry>
+  </entry>
+  <entry keyword="linked according to command-line options">
+   <topic href="overview.html#MODULES" title="How modules are linked"/>
+  </entry>
+  <entry keyword="organization of">
+   <topic href="overview.html#INSIDE" title="Inside an input driver"/>
+  </entry>
+  <entry keyword="passing data">
+   <entry keyword="to a higher layer">
+    <topic href="api/input.html#id5" title="Description:"/>
+   </entry>
+   <entry keyword="to a lower layer">
+    <topic href="api/output.html#id5" title="Description:"/>
+   </entry>
+  </entry>
+  <entry keyword="private data">
+   <topic href="api/init.html#id5" title="Description:"/>
+  </entry>
+  <entry keyword="protocol-layer">
+   <topic href="overview.html#MODULES" title="How modules are linked"/>
+  </entry>
+  <entry keyword="types of">
+   <topic href="overview.html#MODULES" title="How modules are linked"/>
+   <topic href="overview.html#INSIDE" title="Inside an input driver"/>
+  </entry>
+ </entry>
+ <entry keyword="Mouse Systems mouse">
+  <topic href="write_driver.html#REL" title="Relative devices"/>
+ </entry>
+ <entry keyword="MS-mouse protocol code (samp_proto) ">
+  <topic href="write_driver.html#id8" title="In the sample directory"/>
+ </entry>
+ <entry keyword="output() module function">
+  <topic href="api/output.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="packet_rel">
+  <topic href="write_driver.html#REL" title="Relative devices"/>
+ </entry>
+ <entry keyword="parm() module function">
+  <topic href="api/parm.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="pathname delimiter in QNX documentation">
+  <topic href="about.html#WINDOWSNOTE" title="Note to Windows users"/>
+ </entry>
+ <entry keyword="Photon">
+  <entry keyword="how to disable interface">
+   <topic href="overview.html#INTERFACE" title="Interface to the system"/>
+  </entry>
+  <entry keyword="interface to input driver">
+   <topic href="overview.html#INTERFACE" title="Interface to the system"/>
+  </entry>
+ </entry>
+ <entry keyword="protocol-layer modules">
+  <topic href="overview.html#MODULES" title="How modules are linked"/>
+  <entry keyword="data formats of">
+   <topic href="write_driver.html#DATAFORMAT" title="Data format"/>
+  </entry>
+ </entry>
+ <entry keyword="PS/2 mouse">
+  <topic href="test_debug.html#id5" title="PS/2 mouse"/>
+  <topic href="write_driver.html#REL" title="Relative devices"/>
+ </entry>
+ <entry keyword="pulse() module function">
+  <topic href="api/input.html#id5" title="Description:"/>
+  <topic href="api/pulse.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="reentrancy">
+  <topic href="write_driver.html#REENTRANT" title="A note about reentrancy"/>
+  <entry keyword="global variables and">
+   <topic href="write_driver.html#REENTRANT" title="A note about reentrancy"/>
+  </entry>
+ </entry>
+ <entry keyword="relative (type of device/event bus)">
+  <topic href="write_driver.html#REL" title="Relative devices"/>
+  <topic href="overview.html#id7" title="Types of event bus lines"/>
+ </entry>
+ <entry keyword="reset() module function">
+  <topic href="api/reset.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="resource manager">
+  <entry keyword="interface">
+   <entry keyword="how to enable">
+    <topic href="overview.html#INTERFACE" title="Interface to the system"/>
+   </entry>
+   <entry keyword="to input driver">
+    <topic href="overview.html#INTERFACE" title="Interface to the system"/>
+   </entry>
+   <entry keyword="when to use">
+    <topic href="overview.html#INTERFACE" title="Interface to the system"/>
+   </entry>
+  </entry>
+ </entry>
+ <entry keyword="samp_dev">
+  <topic href="write_driver.html#id8" title="In the sample directory"/>
+ </entry>
+ <entry keyword="samp_proto">
+  <topic href="write_driver.html#id8" title="In the sample directory"/>
+ </entry>
+ <entry keyword="sample device module (samp_dev)">
+  <topic href="write_driver.html#id8" title="In the sample directory"/>
+ </entry>
+ <entry keyword="sample directory">
+  <topic href="write_driver.html#INPUTMODULE" title="Creating an input module"/>
+  <topic href="overview.html#id3" title="In this chapter..."/>
+ </entry>
+ <entry keyword="shutdown() module function">
+  <topic href="api/shutdown.html#id5" title="Description:"/>
+ </entry>
+ <entry keyword="source code">
+  <entry keyword="file organization of">
+   <topic href="overview.html#SRCORG" title="Source file organization for devi-*"/>
+  </entry>
+ </entry>
+ <entry keyword="struct _keyboard_data">
+  <topic href="write_driver.html#KBD" title="Keyboard devices"/>
+ </entry>
+ <entry keyword="struct packet_*">
+  <topic href="write_driver.html#COMBOMODULE" title="Writing a combination device/protocol module"/>
+ </entry>
+ <entry keyword="struct packet_abs">
+  <topic href="write_driver.html#DATAFORMAT" title="Data format"/>
+ </entry>
+ <entry keyword="struct packet_kbd">
+  <topic href="write_driver.html#DATAFORMAT" title="Data format"/>
+  <topic href="write_driver.html#KBD" title="Keyboard devices"/>
+ </entry>
+ <entry keyword="struct packet_rel">
+  <topic href="write_driver.html#DATAFORMAT" title="Data format"/>
+ </entry>
+ <entry keyword="support, technical">
+  <topic href="about.html#Support" title="Technical support"/>
+ </entry>
+ <entry keyword="technical support">
+  <topic href="about.html#Support" title="Technical support"/>
+ </entry>
+ <entry keyword="touchscreens">
+  <entry keyword="calibrating">
+   <topic href="write_driver.html#ABS" title="Absolute devices"/>
+  </entry>
+  <entry keyword="testing">
+   <topic href="test_debug.html#id3" title="Debugging a keyboard/mouse driver"/>
+  </entry>
+ </entry>
+ <entry keyword="typographical conventions">
+  <topic href="about.html#Typographical_conventions" title="Typographical conventions"/>
+ </entry>
+</index>

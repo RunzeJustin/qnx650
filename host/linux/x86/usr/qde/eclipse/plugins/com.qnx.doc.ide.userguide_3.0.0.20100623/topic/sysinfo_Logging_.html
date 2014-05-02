@@ -1,0 +1,235 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="copyright" content="(C) Copyright 2005" />
+      <meta name="DC.rights.owner" content="(C) Copyright 2005" />
+      <meta name="DC.Type" content="task" />
+      <meta name="DC.Title" content="Logging system information" />
+      <meta name="abstract" content="" />
+      <meta name="description" content="" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Base_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_INTRO_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_SYSINFOPERSP_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Views_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Target_navigator_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_System_summary_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Process_information_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Memory_information_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Malloc_information_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Signal_information_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_System_blocking_graph_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Connection_information_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_System_resources_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Aps_view_.html" />
+      <meta name="DC.Relation" scheme="URI" content="../topic/sysinfo_Views_.html" />
+      <meta name="DC.Format" content="XHTML" />
+      <meta name="DC.Identifier" content="Loggingsysteminformation" />
+      <meta name="DC.Language" content="en-us" />
+      <link rel="stylesheet" type="text/css" href="../commonltr.css" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Logging system information</title>
+   </head>
+   <body id="Loggingsysteminformation"><a name="Loggingsysteminformation" shape="rect">
+         <!-- --></a>
+      
+      
+      
+      <h1 class="topictitle1">Logging system information</h1>
+      
+      
+      
+      <div>
+         <p></p>
+         
+         
+         <div class="section">You can gather system information from a Neutrino target and log it to a file, and then view it later in the IDE. Here's how:
+            
+            
+            
+         </div>
+         
+         
+         <ol>
+            <li>
+               <span>Right-click your target in the Target Navigator view, and then choose <span class="menucascade">
+                     <span class="uicontrol">Log With...</span>
+                     &gt; <span class="uicontrol">Open Log Dialog…</span>
+                     </span> from the menu. </span>
+               
+            </li>
+            <li>
+               <span>Select <span class="uicontrol">System Information Logging Configuration</span>, and then select the New launch configuration icon (<span><img src="../images/temp2Ftopic2Fsysinfo_Logging_.xml_d166858e49.jpg" alt="New launch configuration" /></span>) to create a Log configuration. </span>
+               
+            </li>
+            <li>
+               <span>On the <span class="uicontrol">Main</span> tab of the log configuration, select the location where you'd like to store the log file. <span><img src="../images/temp2Ftopic2Fsysinfo_Logging_.xml_d166858e64.jpg" alt="Main tab" /></span>
+                  </span>
+               
+            </li>
+            <li>
+               <span>Select the mode to use: </span>
+               
+               <ul>
+                  <li>Snapshot mode collects all the requested data, and then stops.</li>
+                  <li>Continuous mode collects the data, and then continues to collect any changes to the data for the requested period of time
+                     at an interval provided (the default is 1 second).
+                  </li>
+               </ul>
+               
+               
+            </li>
+            <li>
+               <span>Select the Neutrino target and any processes you want to collect data for. </span>
+               
+            </li>
+            <li>
+               <span>If you wish, select the <span class="uicontrol">Logging Options</span> tab and select the level of information you require. </span>
+               
+            </li>
+            <li>
+               <span>Select <span class="uicontrol">Log</span>. </span>
+               
+            </li>
+         </ol>
+         
+         
+         <div class="section">
+            
+            <p>Here are a few things to consider when setting up your log configuration: 
+               
+               
+            </p>
+            
+            <br clear="none" /><ul>
+               <li>In order to log some types of data, you need to log, monitor, or include other types of data. For example, if you want to
+                  collect any of the process-level data, you must select Processes in the list of system-level data. Similarly, if you want
+                  to collect thread-level data, you must select Threads in the list of process-level data. 
+               </li>
+               <li>If you select specific processes for logging, the IDE doesn't log process data for any new processes that are created by the
+                  logging session (e.g. process IDs show as -1). If you wish to log all processes, including those created during the logging
+                  operation, don't select any processes in the process-selection area on the Main tab of the log configuration.
+               </li>
+            </ul>
+            
+            
+            <p>
+               <strong>Viewing captured system information</strong>
+               
+            </p>
+            
+            
+            <p>Once the logging process has begun, you'll see a progress monitor for it in the Progress view and the lower right progress
+               area of the main IDE window. You can cancel the logging at any time through the Progress view. 
+               
+               
+            </p>
+            
+            
+            <p>When the logging operation finishes, the IDE presents the captured data as a target in the System Information History View.
+               This view behaves the same way as the Target Navigator view; selecting the target or one or more processes causes the System
+               Information views to show the corresponding data from the log. 
+            </p>
+            
+            
+            <p>
+               <span><img src="../images/temp2Ftopic2Fsysinfo_Logging_.xml_d166858e162.jpg" alt="System information history" /></span>
+               
+            </p>
+            
+            
+            <div class="fignone">
+               
+               <p>The System Information History view shows captured information for the program.</p>
+               
+               
+            </div>
+            
+            
+            <p>To view the data captured over a period of time in continuous mode, drag the time index slider at the bottom of the System
+               Information History view to the point in time where you'd like to view the data; the views update to show the data at that
+               point in time. 
+            </p>
+            
+            
+            <p>To view a log file from a previous logging session, select the Search log files button (<span><img src="../images/temp2Ftopic2Fsysinfo_Logging_.xml_d166858e180.jpg" alt="Search log files" /></span>) in the toolbar area of the System Information History view. This presents you with a dialog showing a list of the log files
+               that the IDE has found: 
+            </p>
+            
+            
+            <p>
+               <span><img src="../images/temp2Ftopic2Fsysinfo_Logging_.xml_d166858e189.jpg" alt="Open System Information Log File" /></span>
+               
+            </p>
+            
+            
+            <div class="fignone">
+               
+               <p>Opening a log file from a previous logging session.</p>
+               
+               
+            </div>
+            
+            
+            <p>In the Open System Information Log File dialog, you can set search paths for the IDE to use to find log files, and you can
+               load these log files into the System Information perspective. By default any existing log configurations that you've used
+               to gather information are shown. To load a log file, select it in the tree, and then select <span class="uicontrol">Open Log</span>. When the file is loaded, the data from the log file appears as a target in the System Information History view. 
+            </p>
+            
+            
+         </div>
+         
+         
+      </div>
+      
+      
+      <div>
+         
+         <div class="familylinks">
+            
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="../topic/sysinfo_Base_.html" shape="rect">Getting System Information</a></div>
+            
+         </div>
+         
+         <div class="relinfo"><strong>Related concepts</strong><br clear="none" />
+            
+            <div><a href="../topic/sysinfo_INTRO_.html" shape="rect">Introduction</a></div>
+            
+            <div><a href="../topic/sysinfo_SYSINFOPERSP_.html" shape="rect">What the System Information perspective reveals</a></div>
+            
+            <div><a href="../topic/sysinfo_Views_.html" shape="rect">Associated views</a></div>
+            
+            <div><a href="../topic/sysinfo_Target_navigator_.html" shape="rect">Controlling your system information session</a></div>
+            
+            <div><a href="../topic/sysinfo_System_summary_.html" shape="rect">Examining your target system's attributes</a></div>
+            
+            <div><a href="../topic/sysinfo_Process_information_.html" shape="rect">Watching your processes</a></div>
+            
+            <div><a href="../topic/sysinfo_Memory_information_.html" shape="rect">Examining your target system's memory (inspecting virtual address space)</a></div>
+            
+            <div><a href="../topic/sysinfo_Malloc_information_.html" shape="rect">Tracking heap usage</a></div>
+            
+            <div><a href="../topic/sysinfo_Signal_information_.html" shape="rect">Examining process signals</a></div>
+            
+            <div><a href="../topic/sysinfo_System_blocking_graph_.html" shape="rect">Getting channel information</a></div>
+            
+            <div><a href="../topic/sysinfo_Connection_information_.html" shape="rect">Tracking file descriptors</a></div>
+            
+            <div><a href="../topic/sysinfo_System_resources_.html" shape="rect">Tracking resource usage</a></div>
+            
+            <div><a href="../topic/sysinfo_Aps_view_.html" shape="rect">Tracking the use of adaptive partitioning</a></div>
+            
+         </div>
+         
+      </div>
+      
+      <div id="custom-footer">
+         	
+         <p class="copyright-notice"><a href="PLUGINS_ROOT/com.qnx.doc.copyright/topic/copyright_overview.html" style="color:black" shape="rect">Copyright</a> | <a href="http://community.qnx.com/sf/sfmain/do/home" style="color:black" shape="rect">Community</a></p>
+         
+      </div>
+      
+   </body>
+</html>
